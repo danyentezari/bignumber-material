@@ -190,6 +190,11 @@
                 "url": "https://docs.google.com/document/d/152XBus6axUobGVNhxgupIm9ZRsAGI1vHH2zg915PwW4?usp=sharing"
             },
             {
+                "title": "Introductory Video",
+                "icon": "video",
+                "url": "https://www.youtube.com/watch?v=y0-rK_ZqKk0"
+            },
+            {
                 "title": "Zoom Link",
                 "icon": "link",
                 "url": "https://us06web.zoom.us/j/83708274816?pwd=SEJMTEljT2hMQVVEZjhnY2dJMEJhZz09"
