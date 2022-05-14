@@ -44,10 +44,28 @@
         "enrollmentType": "Archived",
         "courseDate": "27/Aug/2021 to 24/Sep/2021",
         "status": "Archived",
-        "handbook": "https://drive.google.com/file/d/1yeV-PTqVKlQOGIdOVuUyCfMSONyVFRZ1/view?usp=sharing",
-        "lessonPlan": "https://docs.google.com/document/d/1XgZto05D_QnYYfMt2-XeCc4OBP1UwBSfLerWk0Epuhw?usp=sharing",
-        "presenterNotes": "https://docs.google.com/document/d/10h9lqJV5xD8au8x0MD1EJnd7kNqO1Vb_ThmxuYLm6uE?usp=sharing",
-        "boxMap": "",
+        "rootDocs": [
+            {
+                "title": "Lesson Plan",
+                "icon": "file",
+                "url": "https://docs.google.com/document/d/1XgZto05D_QnYYfMt2-XeCc4OBP1UwBSfLerWk0Epuhw?usp=sharing"
+            },
+            {
+                "title": "Presentor Notes",
+                "icon": "file",
+                "url": "https://docs.google.com/document/d/10h9lqJV5xD8au8x0MD1EJnd7kNqO1Vb_ThmxuYLm6uE?usp=sharing"
+            },
+            {
+                "title": "BoxMap",
+                "icon": "file",
+                "url": ""
+            },
+            {
+                "title": "Handbook",
+                "icon": "file",
+                "url": "https://drive.google.com/file/d/1yeV-PTqVKlQOGIdOVuUyCfMSONyVFRZ1/view?usp=sharing"
+            }
+        ],
         "schedule": [
             ["Lecture 1", "27/Aug/2021", "15:00 to 17:00 UTC (GMT+0)"],
             ["Assignment 1 Submission", "12/Aug/2021", "23:00 UTC (GMT+0)"],
@@ -200,6 +218,18 @@
         "lessonPlan": "https://docs.google.com/document/d/1zypX6m0ntzNIgRi98iQAKQoSzAyQ3FpLz6JaoJ6loU0?usp=sharing",
         "presenterNotes": "https://docs.google.com/document/d/152XBus6axUobGVNhxgupIm9ZRsAGI1vHH2zg915PwW4?usp=sharing",
         "boxMap": "",
+        "rootDocs": [
+            {
+                "title": "Lesson Plan",
+                "icon": "file",
+                "url": "https://docs.google.com/document/d/1zypX6m0ntzNIgRi98iQAKQoSzAyQ3FpLz6JaoJ6loU0?usp=sharing"
+            },
+            {
+                "title": "Presentor Notes",
+                "icon": "file",
+                "url": "https://docs.google.com/document/d/152XBus6axUobGVNhxgupIm9ZRsAGI1vHH2zg915PwW4?usp=sharing"
+            }
+        ],
         "weeks": [
             {
                 "date": "",
