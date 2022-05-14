@@ -188,6 +188,11 @@
                 "title": "Presentor Notes",
                 "icon": "file",
                 "url": "https://docs.google.com/document/d/152XBus6axUobGVNhxgupIm9ZRsAGI1vHH2zg915PwW4?usp=sharing"
+            },
+            {
+                "title": "Zoom Link",
+                "icon": "link",
+                "url": "https://us06web.zoom.us/j/83708274816?pwd=SEJMTEljT2hMQVVEZjhnY2dJMEJhZz09"
             }
         ],
         "weeks": [
