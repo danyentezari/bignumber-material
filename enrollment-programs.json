@@ -1,0 +1,222 @@
+{
+    "CSPv1": {
+        "title": "Computer Science with Python Programming",
+        "enrollmentType": "Audit",
+        "courseDate": "18/Jun/2021 to 09/Jul/2021",
+        "url": "/dashboard/enrollments/computer-science-with-python-programming",
+        "weeks": [
+            {
+                "weekTitle": "Module 1",
+                "description": "",
+                "documents": [
+                    {
+                        "title": "Slides",
+                        "url": ""
+                    }
+                ]
+            },
+            {
+                "weekTitle": "Module 2",
+                "description": "",
+                "documents": [
+                    {
+                        "title": "Slides",
+                        "url": ""
+                    }
+                ]
+            },
+            {
+                "weekTitle": "Module 3",
+                "description": "",
+                "documents": [
+                    {
+                        "title": "Slides",
+                        "url": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "SPRv2": {
+        "code": "SPRv2",
+        "title": "Statistics, Probability Theory, and R",
+        "urlTitle": "statistics-probability-theory-and-r",
+        "enrollmentType": "Archived",
+        "courseDate": "27/Aug/2021 to 24/Sep/2021",
+        "status": "Archived",
+        "handbook": "https://drive.google.com/file/d/1yeV-PTqVKlQOGIdOVuUyCfMSONyVFRZ1/view?usp=sharing",
+        "lessonPlan": "https://docs.google.com/document/d/1XgZto05D_QnYYfMt2-XeCc4OBP1UwBSfLerWk0Epuhw?usp=sharing",
+        "presenterNotes": "https://docs.google.com/document/d/10h9lqJV5xD8au8x0MD1EJnd7kNqO1Vb_ThmxuYLm6uE?usp=sharing",
+        "boxMap": "",
+        "schedule": [
+            ["Lecture 1", "27/Aug/2021", "15:00 to 17:00 UTC (GMT+0)"],
+            ["Assignment 1 Submission", "12/Aug/2021", "23:00 UTC (GMT+0)"],
+
+            ["Lecture 2", "03/Sep/2021", "15:00 to 17:00 UTC (GMT+0)"],
+            ["Assignment 2 Submission", "19/Aug/2021", "23:00 UTC (GMT+0)"],
+
+            ["Lecture 3", "10/Sep/2021", "15:00 to 17:00 UTC (GMT+0)"],
+            ["Assignment 3 Submission", "26/Aug/2021", "23:00 UTC (GMT+0)"]
+        ],
+        "url": "/dashboard/enrollments/statistics-probability-theory-and-r",
+        "weeks": [
+            {
+                "date": "",
+                "weekTitle": "Module 1 - Statistics and Probability Theory: Principles",
+                "description": "In this week, we will begin by covering an important prerequisite, Mathematical Thinking, which will be about how math is used in Statistics and Probability Theory and the different notations that will be used. We will then go over some fundamental concepts in Statistics and Probability, which will help us to appreciate and quickly understand more advanced topics going forward. <br/><br/> Assessment:<br/> You will complete a questionnaire about fundamental topics that are covered in Module 1.<br/><br/> Topics: <br/><ul> <li>Definition: Statistics and Probability Theory</li> <li>Mathematical Thinking</li> <li>Set Theory</li> <li>Bayes Theorem</li> <li>Probability Space, Sample Space, and Event Space</li> <li>Experiments, Trials, and Observations</li> <li>Measures of Dispersion</li> <li>The Four Moments</li> <li>Random Variables</li> <li>Probability Distributions</li> <li>Statistics and Parameters</li> <li>Overview of Probability Functions</li> <li>Overview of Hypothesis Testing</li></ul>",
+                "documents": [
+                    {
+                        "title": "Slides 1",
+                        "icon": "file",
+                        "url": "https://docs.google.com/presentation/d/1WEFimI8nSwq7ZYU8ZsfCx1QGp1EMZ4Ujxs8wktslu9Q?usp=sharing"
+                    },
+                    {
+                        "title": "Map (archive)",
+                        "icon": "file",
+                        "url": "https://map.bignumber.xyz/5f6359f3801e4d001723ab08?shareid=qpP01223s"
+                    },
+                    {
+                        "title": "Lecture 1 (archive)",
+                        "icon": "video",
+                        "url": "https://www.youtube.com/watch?v=cCrWuYa78mQ"
+                    },
+                    {
+                        "title": "Lecture 1",
+                        "icon": "video",
+                        "url": "https://www.youtube.com/watch?v=FzfoMotQ2eI"
+                    },
+                    {
+                        "title": "Quiz 1",
+                        "icon": "file",
+                        "url": "https://forms.gle/pSYX9C1BA7CzovCR9"
+                    }
+                ]
+            },
+            {
+                "weekTitle": "Module 2 - Applied Mathematical Statistics",
+                "description": "In Module 2, we delve deeper into Probability Theory and other mathematical subjects which are involved in Statistics. We will look at the properties of Random Variables, Probability Distributions, and Moments. In particular, we\"ll go over two important topics central to Probability Theory: Expected Values The Normal Distribution. <br/><br/>Assessment:<br/>You will complete a programming assignment in R with these requirements: <br/><ol><li>Import the provided CSV as a table</li><li>Use the appropriate function(s) to produce summary statistics (Standard Deviation, min, max, quartiles, etc.)</li><li>Use the appropriate functions to generate labelled plots (Frequency Chart, Histogtam, and Scatterplot)</li><li>Produce a table indicating the Covariance and Correlation of Random Variables in the data</li><li>Produce a Simple Linear Regression plot</li></ol>Topics:<br/> <ul><li>Discrete and Continuous Random Variables</li><li>Probability Functions: PMF, PDF, and CMF</li><li>Appendix: Combinatorics </li><li>Appendix: Riemann Integral</li><li>Moments: Variance, Standard Deviation, Skewness, and Kurtosis</li><li>Moment Generating Functions</li><li>Expected Values</li><li>The Normal Distribution and Standardization</li><li>Important Probability Distributions</li><li>Covariance and Correlation</li><li>ANOVA</li><li>Joint Probability Distributions</li><li>Introduction to R Programming</li></ul>",
+                "documents": [
+                    {
+                        "title": "Slides 2",
+                        "icon": "file",
+                        "url": "https://docs.google.com/presentation/d/1lj68SfDlsjOUqzLGjoILLiFtfiNyseNR_vZsMol9Oqo/edit?usp=sharing"
+                    },
+                    {
+                        "title": "Map",
+                        "icon": "file",
+                        "url": "https://map.bignumber.xyz/6128f79c8d985b0018f52968?shareid=7sua7o0"
+                    },
+                    {
+                        "title": "Lecture 2 (archive)",
+                        "icon": "video",
+                        "url": "https://www.youtube.com/watch?v=ubXYcpWOEds"
+                    },
+                    {
+                        "title": "Lecture 2",
+                        "icon": "video",
+                        "url": "https://youtu.be/ePK4L_qZgZI"
+                    },
+                    {
+                        "title": "R - Hypothesis Testing Example 1",
+                        "icon": "file",
+                        "url": "https://drive.google.com/file/d/12R_1h_vbFA25Uq89dlMikXDy_zq-4HBk/view?usp=sharing"
+                    },
+                    {
+                        "title": "R - Programming Essentials",
+                        "icon": "file",
+                        "url": "https://drive.google.com/file/d/1RLdwAUrhruod-5oZpyprA1pxxI4-XpbH/view?usp=sharing"
+                    },
+                    {
+                        "title": "R - Sample CSV File",
+                        "icon": "file",
+                        "url": "https://drive.google.com/file/d/1eVWORiAjdV-Cv0byxLiBgDWKvcy6FS5S/view?usp=sharing"
+                    },
+                    {
+                        "title": "R Assignment 1",
+                        "icon": "file",
+                        "url": "https://drive.google.com/file/d/1JB1erKi85rsT-anb8NqvBMYrPXzsp1Fy/view?usp=sharing"
+                    },
+                    {
+                        "title": "Quiz 2",
+                        "icon": "file",
+                        "url": "https://forms.gle/o2D8PdVy198UTSur7"
+                    },
+                    {
+                        "title": "R Assignment 1 submission form",
+                        "icon": "upload",
+                        "url": "https://forms.gle/nsHxs1AnKzJPC5Jb9"
+                    }
+                ]
+            },
+            {
+                "weekTitle": "Module 3 - Inferential Statistics",
+                "description": "In Module 3, we will further cover concepts in Mathematical Statistics and study the relationship between multiple explanatory variables in more details. In particular, we will focus on Analysis of Variance (ANOVA). We will look at how Hypothesis Testing and Regression Analysis is performed and better understand tests for Statistical Signigicance. <br/><br/> Assessment:<br/> You will complete a programming assignment in R with these requirements: <br/> <ol><li>Import the provided CSV as a table</li><li>Use the appropriate function(s) to produce summary statistics (Standard Deviation, min, max, quartiles, etc.)</li><li>Use the appropriate functions to generate labelled plots (Frequency Chart, Histogtam, and Scatterplot)</li><li>Produce multiple Samples from the Population</li><li>Produce a table indicating the Covariance and Correlation of Random Variables in the data</li><li>Produce an ANOVA table for the Variables in the data</li><li>Produce a Multiple Linear Regression plot</li><li>Produce table of results for different Methods of Least Squares</li></ol>Topics:<br/><ul><li>Choosing Statistical Tests</li><li>Linear Regression Example</li><li>Interpreting Regression Models</li><li>Goodness of Fit</li><li>Point Estimation and Confidence Intervals</li><li>Maximum Likelihood</li><li>Statistical Testing in R</li><li>Analysis of Variance (ANOVA) in R</li><li>Further Study: Bayesian Statistics, Dynamic Programming, Random Vectors</li><li>Topics in Statistical Learning (Machine Learning)</li></ul>",
+                "documents": [
+                    {
+                        "title": "Slides 3",
+                        "icon": "file",
+                        "url": "https://docs.google.com/presentation/d/1-_mMNdM60SupxKIQmaV_2WM-vIAQCiwH4TXdMAD_bGg/edit?usp=sharing"
+                    },
+                    {
+                        "title": "Lecture 3 (archive)",
+                        "icon": "video",
+                        "url": "https://www.youtube.com/watch?v=5d9SYwHSWZU"
+                    },
+                    {
+                        "title": "R - ANOVA Example",
+                        "icon": "file",
+                        "url": "https://drive.google.com/file/d/173I41TPSsiBNxKbIlbd0mQMkGY2Te5bE/view?usp=sharing"
+                    },
+                    {
+                        "title": "Quiz 3",
+                        "icon": "file",
+                        "url": "https://forms.gle/S7vb2LisREL2TEXBA"
+                    },
+                    {
+                        "title": "R Assignment 2",
+                        "icon": "file",
+                        "url": "https://drive.google.com/file/d/1fd6S79H43lqkiF4NZxD_mPI7Dylwptrr/view?usp=sharing"
+                    },
+                    {
+                        "title": "R Assignment 2 submission form",
+                        "icon": "upload",
+                        "url": "https://forms.gle/oTptK8XWrRRmkyEU9"
+                    }
+                ]
+            }
+        ]
+    },
+    "SPRv3": {
+
+    },
+    "MPDv1": {
+        "code": "MPDv1",
+        "payment": "https://wise.com/pay#WHmsZe53ZB35T9Ih2G6o26RJL1M",
+        "title": "Mathematics and Programming",
+        "urlTitle": "mathematics-and-programming",
+        "enrollmentType": "Audit",
+        "courseDate": "15/May/2022 to 05/Jun/2022",
+        "url": "/dashboard/enrollments/mathematics-and-programming",
+        "lessonPlan": "https://docs.google.com/document/d/1zypX6m0ntzNIgRi98iQAKQoSzAyQ3FpLz6JaoJ6loU0?usp=sharing",
+        "presenterNotes": "https://docs.google.com/document/d/152XBus6axUobGVNhxgupIm9ZRsAGI1vHH2zg915PwW4?usp=sharing",
+        "boxMap": "",
+        "weeks": [
+            {
+                "date": "",
+                "weekTitle": "Module 1 - Introduction to Programming and Computer Science",
+                "description": "In the first week, we will learn the building blocks of a programming language and implementation of algorithms. We will learn to write algorithms in sequential, conditional, and iterative patterns. For data structures, we will go in depth about linear data structures, their methods, and algorithms for searching in and writing into data structures.<br/><br/> Assessment:<br/> You will complete a programming assignment about topics covered in Module 1. <br/><br/>Topics: <br/> <ul><li>Overview of Computer Science</li><li>Getting Started with Python</li><li>Variables and Built-in Functions</li><li>Control Statements</li><li>Data Structures: Lists</li><li>Data Structures: Dictionaries, Sets, and Tuples</li><li>Classes and Objects</li><li>Time & Space Complexity</li></ul>",
+                "documents": []
+            },
+            {
+                "weekTitle": "Module 2 - Discrete Mathematics & Algebra",
+                "description": "In week 2, we will use our understanding of programming as a bridge to understand fundamental mathematical concepts and syntax. Symbols and terminology will be introduced to you and you will be able recognize mathematical objects in any branch of mathematics. We will cover functions, sets and relations, logic and boolean algebra, and combinatorics. We will then apply these mathematical concepts directly in programming. <br/><br/>\n\nAssessment:<br/>You will complete a programming assignment about topics covered in Module 2. <br/><br/>Topics:<br/><ul><li>Overview of Pure Mathematics</li><li>Overview of Discrete Mathematics</li><li>Logic, Axiom, Lemma, Corollary, and Theorem</li><li>Accumulation, Sequence and Series</li><li>Maps and Functions</li><li>Sets and Relations</li><li>Boolean Algebra</li><li>Combinatorics</li></ul>",
+                "documents": []
+            },
+            {
+                "weekTitle": "Module 3 -  Discrete Mathematics and Advanced Programming",
+                "description": "In week 3, we will develop our mathematical proficiency in Discrete Mathematics by exploring and working with examples of graphs, which are mathematical objects with broad applications in both Computer Science and Data Science. Furthermore, we will learn about Languages, Grammars, and Finite State Machines. From there, we will apply what we have learned to Graph Data Structures and then Regular Expressions.<br/><br/>Assessment:<br/>You will complete a programming assignment about topics covered in Module 2. <br/><br/>Topics:<br/><ul><li>Graph Theory</li><li>Directed Graphs</li><li>Binary Trees</li><li>Finite State Machines</li><li>Regular Expressions</li><li>Proofs and Mathematical Induction</li><li>Graph Data Structures</li><li>Capstone Project</li></ul>",
+                "documents": []
+            }
+        ]
+    }
+}
