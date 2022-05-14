@@ -1,42 +1,4 @@
 {
-    "CSPv1": {
-        "title": "Computer Science with Python Programming",
-        "enrollmentType": "Audit",
-        "courseDate": "18/Jun/2021 to 09/Jul/2021",
-        "url": "/dashboard/enrollments/computer-science-with-python-programming",
-        "weeks": [
-            {
-                "weekTitle": "Module 1",
-                "description": "",
-                "documents": [
-                    {
-                        "title": "Slides",
-                        "url": ""
-                    }
-                ]
-            },
-            {
-                "weekTitle": "Module 2",
-                "description": "",
-                "documents": [
-                    {
-                        "title": "Slides",
-                        "url": ""
-                    }
-                ]
-            },
-            {
-                "weekTitle": "Module 3",
-                "description": "",
-                "documents": [
-                    {
-                        "title": "Slides",
-                        "url": ""
-                    }
-                ]
-            }
-        ]
-    },
     "SPRv2": {
         "code": "SPRv2",
         "title": "Statistics, Probability Theory, and R",
@@ -215,8 +177,6 @@
         "enrollmentType": "Audit",
         "courseDate": "15/May/2022 to 05/Jun/2022",
         "url": "/dashboard/enrollments/mathematics-and-programming",
-        "lessonPlan": "https://docs.google.com/document/d/1zypX6m0ntzNIgRi98iQAKQoSzAyQ3FpLz6JaoJ6loU0?usp=sharing",
-        "presenterNotes": "https://docs.google.com/document/d/152XBus6axUobGVNhxgupIm9ZRsAGI1vHH2zg915PwW4?usp=sharing",
         "boxMap": "",
         "rootDocs": [
             {
