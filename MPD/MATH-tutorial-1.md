@@ -42,7 +42,7 @@ A set is a mathematical structure; that is, it is a collection of mathematical o
 
 ```
 A = {1,2,3,4,5}
-B = {1,2,3,A,f}
+B = {1,2,3,{A},f}
 
 def f(someSet):
     return len(someSet)
