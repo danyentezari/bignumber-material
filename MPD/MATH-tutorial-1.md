@@ -12,19 +12,19 @@
 
 
 **Set Operations**
-| Symbol             | Name
-|--------------------|-----
-|$ \cap $            | Intersection
-|$ \cup $            | Union
-|$ \neg $            | Complement
+| Symbol             | Name                |
+|--------------------|-------------------- |
+|$ \cap $            | Intersection        |
+|$ \cup $            | Union               |
+|$ \neg $            | Complement          |
 
 
 **Logic**
-| Symbol             | Name
-|--------------------|-----
-|$ \land $           | And
-|$ \lor $            | Or
-|$ \neg $            | Not
+| Symbol             | Name                |
+|--------------------|-------------------- |
+|$ \land $           | And                 |
+|$ \lor $            | Or                  |
+|$ \neg $            | Not                 |
 
 
 <br/><br/>
