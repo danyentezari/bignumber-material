@@ -240,6 +240,11 @@
                         "title": "Assignment 1",
                         "icon": "File",
                         "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-1.py"
+                    },
+                    {
+                        "title": "Assignment 1 Submission",
+                        "icon": "link",
+                        "url": "https://forms.gle/QfL9M6JcTSGt3qjR6"
                     }
                 ]
             },
