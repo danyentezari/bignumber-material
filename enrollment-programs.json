@@ -235,6 +235,11 @@
                         "title": "CS Tutorial 1",
                         "icon": "file",
                         "url": "https://danyentezari.github.io/bignumber-material/MPD/CS-tutorial-1.html"
+                    },
+                    {
+                        "title": "Assignment 1",
+                        "icon": "File",
+                        "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-1.py"
                     }
                 ]
             },
