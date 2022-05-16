@@ -200,6 +200,11 @@
                 "url": "https://youtube.com/playlist?list=PLyEUMdxGyloFyx4ZRjPiBr3fB5nRDQfNF"
             },
             {
+                "title": "Session Files",
+                "icon": "link",
+                "url": "https://github.com/danyentezari/mathematics-and-programming-mayjun2022"
+            },
+            {
                 "title": "Zoom Link",
                 "icon": "link",
                 "url": "https://us06web.zoom.us/j/83708274816?pwd=SEJMTEljT2hMQVVEZjhnY2dJMEJhZz09"
