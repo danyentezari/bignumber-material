@@ -227,6 +227,11 @@
                         "url": "https://vimeo.com/710469739/78e57b6607"
                     },
                     {
+                        "title": "Session 2",
+                        "icon": "video",
+                        "url": "https://vimeo.com/710952196/e2878c3059"
+                    },
+                    {
                         "title": "Getting Started with Python",
                         "icon": "file",
                         "url": "https://danyentezari.github.io/bignumber-material/MPD/getting-started-with-python.html"
