@@ -232,6 +232,11 @@
                         "url": "https://vimeo.com/710952196/e2878c3059"
                     },
                     {
+                        "title": "Session 3",
+                        "icon": "video",
+                        "url": "https://vimeo.com/710952196/e2878c3059"
+                    },
+                    {
                         "title": "Getting Started with Python",
                         "icon": "file",
                         "url": "https://danyentezari.github.io/bignumber-material/MPD/getting-started-with-python.html"
@@ -257,7 +262,7 @@
                         "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-1.py"
                     },
                     {
-                        "title": "Assignment 1",
+                        "title": "Assignment 2",
                         "icon": "file",
                         "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-2.py"
                     },
