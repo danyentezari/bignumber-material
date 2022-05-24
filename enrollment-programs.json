@@ -283,7 +283,7 @@
                 "description": "In week 2, we will use our understanding of programming as a bridge to understand fundamental mathematical concepts and syntax. Symbols and terminology will be introduced to you and you will be able recognize mathematical objects in any branch of mathematics. We will cover functions, sets and relations, logic and boolean algebra, and combinatorics. We will then apply these mathematical concepts directly in programming. <br/><br/>\n\nAssessment:<br/>You will complete programming assignments about topics covered in Module 2. <br/><br/>Topics:<br/><ul><li>Overview of Pure Mathematics</li><li>Overview of Discrete Mathematics</li><li>Logic, Axiom, Lemma, Corollary, and Theorem</li><li>Accumulation, Sequence and Series</li><li>Maps and Functions</li><li>Sets and Relations</li><li>Boolean Algebra</li><li>Combinatorics</li></ul>",
                 "documents": [
                     {
-                        "title": "Slides",
+                        "title": "Module 2 Slides",
                         "icon": "file",
                         "url": "https://docs.google.com/presentation/d/19_kYSYaawaDHrZdISqXDXOUZNxW5CXQ8AOcP2tqw2eE/edit?usp=sharing"
                     },
