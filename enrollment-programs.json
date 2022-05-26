@@ -274,7 +274,7 @@
                 ]
             },
             {
-                "weekTitle": "Module 2 - Discrete Mathematics & Algebra",
+                "weekTitle": "Module 2 - Introduction to Discrete Mathematics",
                 "description": "In week 2, we will use our understanding of programming as a bridge to understand fundamental mathematical concepts and syntax. Symbols and terminology will be introduced to you and you will be able recognize mathematical objects in any branch of mathematics. We will cover functions, sets and relations, logic, proofs and mathematical induction. We will then apply these mathematical concepts directly in programming. <br/><br/>\n\nAssessment:<br/>You will complete assignments about topics covered in Module 2. <br/><br/>Topics:<br/><ul><li>Overview of Pure Mathematics</li><li>Overview of Discrete Mathematics</li><li>Logic, Axiom, Lemma, Corollary, and Theorem</li><li>Accumulation, Sequence and Series</li><li>Maps and Functions</li><li>Sets and Relations</li><li>Mathematical Induction</li><li>Recursion</li></ul>",
                 "documents": [
                     {
