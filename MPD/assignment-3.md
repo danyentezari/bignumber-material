@@ -28,8 +28,11 @@ Evaluate the expression
 #### Question 3
 
 Given
-> $(\forall x \in S)p(x)$
+> $(\forall x \in S_1)p(x)$
 > where
 > $p(x)$ is "$x\equiv 0$ (mod 5)"
+
+Note:
+See $S_1$ in Question 1.
 
 Write the truth set $T_p$ for $p(x)$
