@@ -195,11 +195,6 @@
                 "url": "https://www.youtube.com/watch?v=y0-rK_ZqKk0"
             },
             {
-                "title": "Session Recordings",
-                "icon": "video",
-                "url": "https://youtube.com/playlist?list=PLyEUMdxGyloFyx4ZRjPiBr3fB5nRDQfNF"
-            },
-            {
                 "title": "Session Files",
                 "icon": "link",
                 "url": "https://github.com/danyentezari/mathematics-and-programming-mayjun2022"
@@ -247,12 +242,12 @@
                         "url": "https://youtu.be/stMq7PjJOtg"
                     },
                     {
-                        "title": "CS Tutorial 1",
+                        "title": "CS Tutorial 1 (Pointers)",
                         "icon": "file",
                         "url": "https://danyentezari.github.io/bignumber-material/MPD/CS-tutorial-1.html"
                     },
                     {
-                        "title": "Math Tutorial 1",
+                        "title": "Math Tutorial 1 (Logarithm Function)",
                         "icon": "file",
                         "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-1.html"
                     },
@@ -298,14 +293,29 @@
                         "url": "https://vimeo.com/713852941/71ee6318b8"
                     },
                     {
-                        "title": "Math Tutorial 2",
+                        "title": "Math Tutorial 2 (Sets, Relations, and Graphs)",
                         "icon": "file",
                         "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-2.html"
                     },
                     {
-                        "title": "Math Tutorial 3",
+                        "title": "Math Tutorial 3 (Sets Notation and Logic)",
                         "icon": "file",
                         "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-3.html"
+                    },
+                    {
+                        "title": "Math Tutorial 4 (Mathematical Induction)",
+                        "icon": "file",
+                        "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-4.html"
+                    },
+                    {
+                        "title": "Assignment 3",
+                        "icon": "file",
+                        "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-3.pdf"
+                    },
+                    {
+                        "title": "Assignment 3 Submission",
+                        "icon": "link",
+                        "url": "https://forms.gle/E2D4bKWKCjCAcBkA6"
                     }
                 ]
             },
