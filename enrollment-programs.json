@@ -332,6 +332,16 @@
                         "title": "Session 7",
                         "icon": "video",
                         "url": "https://vimeo.com/715958833/56db24a171"
+                    },
+                    {
+                        "title": "Singly-Linked List (Class Implementation)",
+                        "icon": "file",
+                        "url": "https://danyentezari.github.io/bignumber-material/MPD/linked-list-class.py"
+                    },
+                    {
+                        "title": "Doubly-Linked List (Class Implementation)",
+                        "icon": "file",
+                        "url": "https://danyentezari.github.io/bignumber-material/MPD/doubly-list-class.py"
                     }
                 ]
             }
