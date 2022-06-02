@@ -334,6 +334,11 @@
                         "url": "https://vimeo.com/715958833/56db24a171"
                     },
                     {
+                        "title": "Session 8",
+                        "icon": "video",
+                        "url": "https://vimeo.com/716369650/8846219ab6"
+                    },
+                    {
                         "title": "Singly-Linked List (Class Implementation)",
                         "icon": "file",
                         "url": "https://danyentezari.github.io/bignumber-material/MPD/linked-list-class.py"
