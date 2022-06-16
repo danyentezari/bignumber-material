@@ -371,5 +371,45 @@
                 ]
             }
         ]
+    },
+    "LMP": {
+        "title": "Linear Mathematics with Python",
+        "code": "LMP",
+        "payment": "",
+        "urlTitle": "linear-mathematics-with-python",
+        "enrollmentType": "Audit",
+        "courseDate": "26/Jun/2022 to 24/Jul/2022",
+        "url": "/dashboard/enrollments/linear-mathematics-with-python",
+        "boxMap": "",
+
+        "rootDocs": [
+            {
+                "title": "lessonPlan",
+                "icon":"file",
+                "url": "https://docs.google.com/document/d/171LjRvUWdiv4NuRd65-Gd5_0GXK8dtpBGAfVXWMU9W4/edit?usp=sharing"
+            },
+            {
+                "title": "lessonPlan",
+                "icon":"file",
+                "url": "https://docs.google.com/document/d/152XBus6axUobGVNhxgupIm9ZRsAGI1vHH2zg915PwW4?usp=sharing"
+            }            
+        ],
+        "weeks": [
+            {
+                "weekTitle": "Module 1 - Introduction to Linear Mathematics",
+                "description": "In the first week, we will create a motivating reason to learn about the applications of matrices and systems of equations. We will understand the development of linear algebra from a historical and practical perspective. The objective of this module is to develop a strong foundation for learning linear algebra and applications of it. Furthermore, this course is based in Python; therefore, we will thoroughly review the programming language and the famous library designed for multidimensional tabular data – NumPy.",
+                "documents": []
+            },
+            {
+                "weekTitle": "Module 2 & 3 - Matrix Operations and Real-World Applications",
+                "description": "In weeks 2 & 3, we will develop a more complete understanding of matrices, the algebra of matrices, and linear programming. In other words, Modules 2 and 3 are about mastering linear algebra and a closely related branch of mathematics called linear programming. Linear algebra is a very important branch of mathematics with very broad applications in the real world, and we will look at applications from economics to quantitative finance to logistics.",
+                "documents": []
+            },
+            {
+                "weekTitle": "Module 4 -  Machine Learning and Neural Networks ",
+                "description": "In week 4, we will be introduced to machine learning and neural networks in the context of matrix representation of data. Neural Networks are the center of the most advanced use cases of machine learning such as computer vision and natural language processing. In this module we will look at examples of how matrices are used in machine learning.",
+                "documents": []
+            }
+        ]
     }
 }
