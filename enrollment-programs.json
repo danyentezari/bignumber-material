@@ -381,17 +381,16 @@
         "courseDate": "26/Jun/2022 to 24/Jul/2022",
         "url": "/dashboard/enrollments/linear-mathematics-with-python",
         "boxMap": "",
-
         "rootDocs": [
             {
-                "title": "lessonPlan",
+                "title": "Lesson Plan",
                 "icon":"file",
                 "url": "https://docs.google.com/document/d/171LjRvUWdiv4NuRd65-Gd5_0GXK8dtpBGAfVXWMU9W4/edit?usp=sharing"
             },
             {
-                "title": "lessonPlan",
+                "title": "Presentor Notes",
                 "icon":"file",
-                "url": "https://docs.google.com/document/d/152XBus6axUobGVNhxgupIm9ZRsAGI1vHH2zg915PwW4?usp=sharing"
+                "url": "https://docs.google.com/document/d/1ucI5ed2jJWccaSXpMeSqNlgCMdVPeWAx9udP6KQc1tk/edit?usp=sharing"
             }            
         ],
         "weeks": [
