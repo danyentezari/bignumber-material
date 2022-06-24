@@ -1,430 +1,646 @@
 {
-    "SPRv2": {
-        "code": "SPRv2",
-        "title": "Statistics, Probability Theory, and R",
-        "urlTitle": "statistics-probability-theory-and-r",
-        "enrollmentType": "Archived",
-        "courseDate": "27/Aug/2021 to 24/Sep/2021",
-        "status": "Archived",
-        "rootDocs": [
-            {
-                "title": "Lesson Plan",
-                "icon": "file",
-                "url": "https://docs.google.com/document/d/1XgZto05D_QnYYfMt2-XeCc4OBP1UwBSfLerWk0Epuhw?usp=sharing"
-            },
-            {
-                "title": "Presentor Notes",
-                "icon": "file",
-                "url": "https://docs.google.com/document/d/10h9lqJV5xD8au8x0MD1EJnd7kNqO1Vb_ThmxuYLm6uE?usp=sharing"
-            },
-            {
-                "title": "BoxMap",
-                "icon": "file",
-                "url": ""
-            },
-            {
-                "title": "Handbook",
-                "icon": "file",
-                "url": "https://drive.google.com/file/d/1yeV-PTqVKlQOGIdOVuUyCfMSONyVFRZ1/view?usp=sharing"
-            }
-        ],
-        "schedule": [
-            ["Lecture 1", "27/Aug/2021", "15:00 to 17:00 UTC (GMT+0)"],
-            ["Assignment 1 Submission", "12/Aug/2021", "23:00 UTC (GMT+0)"],
+    "programs":{
+        "LMP": {
+            "title": "Linear Mathematics with Python",
+            "code": "LMP",
+            "description": "Learn the fundamentals and applications of linear algebra, matrix theory, and linear programming. In this course, you will learn about matrix operations, systems of equations, and optimization in the context of real-world applications and machine learning.",
+            "urlTitle": "linear-mathematics-with-python",
+            "enrollmentType": "Audit",
+            "courseDate": "26/Jun/2022 to 24/Jul/2022",
+            "url": "/dashboard/enrollments/linear-mathematics-with-python",
+            "boxMap": "",
+            "rootDocs": [
+                {
+                    "title": "Lesson Plan",
+                    "icon":"file",
+                    "url": "https://docs.google.com/document/d/171LjRvUWdiv4NuRd65-Gd5_0GXK8dtpBGAfVXWMU9W4/edit?usp=sharing"
+                },
+                {
+                    "title": "Presentor Notes",
+                    "icon":"file",
+                    "url": "https://docs.google.com/document/d/1ucI5ed2jJWccaSXpMeSqNlgCMdVPeWAx9udP6KQc1tk/edit?usp=sharing"
+                }            
+            ],
+            "weeks": [
+                {
+                    "weekTitle": "Module 1 - Introduction to Linear Mathematics",
+                    "description": "In the first week, we will create a motivating reason to learn about the applications of matrices and systems of equations. We will understand the development of linear algebra from a historical and practical perspective. The objective of this module is to develop a strong foundation for learning linear algebra and applications of it. Furthermore, this course is based in Python; therefore, we will thoroughly review the programming language and the famous library designed for multidimensional tabular data – NumPy.",
+                    "documents": []
+                },
+                {
+                    "weekTitle": "Module 2 & 3 - Matrix Operations and Real-World Applications",
+                    "description": "In weeks 2 & 3, we will develop a more complete understanding of matrices, the algebra of matrices, and linear programming. In other words, Modules 2 and 3 are about mastering linear algebra and a closely related branch of mathematics called linear programming. Linear algebra is a very important branch of mathematics with very broad applications in the real world, and we will look at applications from economics to quantitative finance to logistics.",
+                    "documents": []
+                },
+                {
+                    "weekTitle": "Module 4 -  Machine Learning and Neural Networks ",
+                    "description": "In week 4, we will be introduced to machine learning and neural networks in the context of matrix representation of data. Neural Networks are the center of the most advanced use cases of machine learning such as computer vision and natural language processing. In this module we will look at examples of how matrices are used in machine learning.",
+                    "documents": []
+                }
+            ],
+            "payment": "",
+            "cta": "Learn More",
+            "disabled": false,
+            "date": "27/Jun/2022 to 25/Jul/2022",
+            "numCourses": "4 modules",
+            "duration": "4 weeks",
+            "buttonLabel": "Learn More",
+            "lessonPlan":"https://docs.google.com/document/d/171LjRvUWdiv4NuRd65-Gd5_0GXK8dtpBGAfVXWMU9W4/edit?usp=sharing",
+            "cpdCertification": "https://cpduk.co.uk/courses/bignumber-statistics-probability-theory-and-r",
+            "path": "/certificate-programs/linear-mathematics-with-python",
+            "image": "https://images.unsplash.com/photo-1632507127789-eb70cc8757af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1774&q=80",
+            "courseID": "LMP",
+            "ctaIsExternal": false,
+            "event": "Attend the Course Q&A on 27/Jul/2022 to learn more about this program.",
+            "price": 600,
+            "numOfWeeks": 4
+        },
+        "SPRv3": {
+            "code": "SPRv3",
+            "title": "Statistics, Probability Theory, and R Programming",
+            "description": "Learn the mathematical science behind artificial intelligence, econometrics, risk engineering, and epidemiology. Learn to perform statistical analysis with the R programming language.",
+            "descriptionLong": "This courses teaches Statistics and Probability Theory with emphasis on learning from first principles. To learn advanced Statistics and, in particular, Probability Theory, it is necessary to be familiar with other mathematical topics including Integration, Sequences, Series, Sets, and Combinatrics. Although this course has Statistics and Probability Theory in the title, it contains sufficient supplementary material about other mathematical subjects that is necessary for mastery in Statistics and Probability Theory. <br/><br/>This course also teaches R, the programming language for statistical analysis. You will learn the required programming constructs to perform analysis in this specialized programming language. You will learn to apply the appropriate functions and methods, import and process data, produce meaningful visualizations, and interpret the results of analysis (e.g, Correlation, ANOVA, etc.)",
+            "urlTitle": "statistics-probability-theory-and-r",
+            "enrollmentType": "Audit",
+            "courseDate": "24/Aug/2022 to 14/Sep/2022",
+            "status": "Audit",
+            "rootDocs": [
+                {
+                    "title": "Lesson Plan",
+                    "icon": "file",
+                    "url": "https://docs.google.com/document/d/1XgZto05D_QnYYfMt2-XeCc4OBP1UwBSfLerWk0Epuhw?usp=sharing"
+                },
+                {
+                    "title": "Presentor Notes",
+                    "icon": "file",
+                    "url": "https://docs.google.com/document/d/10h9lqJV5xD8au8x0MD1EJnd7kNqO1Vb_ThmxuYLm6uE?usp=sharing"
+                },
+                {
+                    "title": "BoxMap",
+                    "icon": "file",
+                    "url": ""
+                },
+                {
+                    "title": "Handbook",
+                    "icon": "file",
+                    "url": "https://drive.google.com/file/d/1yeV-PTqVKlQOGIdOVuUyCfMSONyVFRZ1/view?usp=sharing"
+                }
+            ],
+            "url": "/dashboard/enrollments/statistics-probability-theory-and-r",
+            "weeks": [
+                {
+                    "date": "",
+                    "weekTitle": "Module 1 - Statistics and Probability Theory: Principles",
+                    "description": "In this week, we will begin by covering an important prerequisite, Mathematical Thinking, which will be about how math is used in Statistics and Probability Theory and the different notations that will be used. We will then go over some fundamental concepts in Statistics and Probability, which will help us to appreciate and quickly understand more advanced topics going forward. <br/><br/> Assessment:<br/> You will complete a questionnaire about fundamental topics that are covered in Module 1.<br/><br/> Topics: <br/><ul> <li>Definition: Statistics and Probability Theory</li> <li>Mathematical Thinking</li> <li>Set Theory</li> <li>Bayes Theorem</li> <li>Probability Space, Sample Space, and Event Space</li> <li>Experiments, Trials, and Observations</li> <li>Measures of Dispersion</li> <li>The Four Moments</li> <li>Random Variables</li> <li>Probability Distributions</li> <li>Statistics and Parameters</li> <li>Overview of Probability Functions</li> <li>Overview of Hypothesis Testing</li></ul>",
+                    "documents": [
+                        {
+                            "title": "Slides 1",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1WEFimI8nSwq7ZYU8ZsfCx1QGp1EMZ4Ujxs8wktslu9Q?usp=sharing"
+                        },
+                        {
+                            "title": "Map (archive)",
+                            "icon": "file",
+                            "url": "https://map.bignumber.xyz/5f6359f3801e4d001723ab08?shareid=qpP01223s"
+                        },
+                        {
+                            "title": "Lecture 1 (archive)",
+                            "icon": "video",
+                            "url": "https://www.youtube.com/watch?v=cCrWuYa78mQ"
+                        },
+                        {
+                            "title": "Lecture 1",
+                            "icon": "video",
+                            "url": "https://www.youtube.com/watch?v=FzfoMotQ2eI"
+                        },
+                        {
+                            "title": "Quiz 1",
+                            "icon": "file",
+                            "url": "https://forms.gle/pSYX9C1BA7CzovCR9"
+                        }
+                    ]
+                },
+                {
+                    "weekTitle": "Module 2 - Applied Mathematical Statistics",
+                    "description": "In Module 2, we delve deeper into Probability Theory and other mathematical subjects which are involved in Statistics. We will look at the properties of Random Variables, Probability Distributions, and Moments. In particular, we\"ll go over two important topics central to Probability Theory: Expected Values The Normal Distribution. <br/><br/>Assessment:<br/>You will complete a programming assignment in R with these requirements: <br/><ol><li>Import the provided CSV as a table</li><li>Use the appropriate function(s) to produce summary statistics (Standard Deviation, min, max, quartiles, etc.)</li><li>Use the appropriate functions to generate labelled plots (Frequency Chart, Histogtam, and Scatterplot)</li><li>Produce a table indicating the Covariance and Correlation of Random Variables in the data</li><li>Produce a Simple Linear Regression plot</li></ol>Topics:<br/> <ul><li>Discrete and Continuous Random Variables</li><li>Probability Functions: PMF, PDF, and CMF</li><li>Appendix: Combinatorics </li><li>Appendix: Riemann Integral</li><li>Moments: Variance, Standard Deviation, Skewness, and Kurtosis</li><li>Moment Generating Functions</li><li>Expected Values</li><li>The Normal Distribution and Standardization</li><li>Important Probability Distributions</li><li>Covariance and Correlation</li><li>ANOVA</li><li>Joint Probability Distributions</li><li>Introduction to R Programming</li></ul>",
+                    "documents": [
+                        {
+                            "title": "Slides 2",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1lj68SfDlsjOUqzLGjoILLiFtfiNyseNR_vZsMol9Oqo/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Map",
+                            "icon": "file",
+                            "url": "https://map.bignumber.xyz/6128f79c8d985b0018f52968?shareid=7sua7o0"
+                        },
+                        {
+                            "title": "Lecture 2 (archive)",
+                            "icon": "video",
+                            "url": "https://www.youtube.com/watch?v=ubXYcpWOEds"
+                        },
+                        {
+                            "title": "Lecture 2",
+                            "icon": "video",
+                            "url": "https://youtu.be/ePK4L_qZgZI"
+                        },
+                        {
+                            "title": "R - Hypothesis Testing Example 1",
+                            "icon": "file",
+                            "url": "https://drive.google.com/file/d/12R_1h_vbFA25Uq89dlMikXDy_zq-4HBk/view?usp=sharing"
+                        },
+                        {
+                            "title": "R - Programming Essentials",
+                            "icon": "file",
+                            "url": "https://drive.google.com/file/d/1RLdwAUrhruod-5oZpyprA1pxxI4-XpbH/view?usp=sharing"
+                        },
+                        {
+                            "title": "R - Sample CSV File",
+                            "icon": "file",
+                            "url": "https://drive.google.com/file/d/1eVWORiAjdV-Cv0byxLiBgDWKvcy6FS5S/view?usp=sharing"
+                        },
+                        {
+                            "title": "R Assignment 1",
+                            "icon": "file",
+                            "url": "https://drive.google.com/file/d/1JB1erKi85rsT-anb8NqvBMYrPXzsp1Fy/view?usp=sharing"
+                        },
+                        {
+                            "title": "Quiz 2",
+                            "icon": "file",
+                            "url": "https://forms.gle/o2D8PdVy198UTSur7"
+                        },
+                        {
+                            "title": "R Assignment 1 submission form",
+                            "icon": "upload",
+                            "url": "https://forms.gle/nsHxs1AnKzJPC5Jb9"
+                        }
+                    ]
+                },
+                {
+                    "weekTitle": "Module 3 - Inferential Statistics",
+                    "description": "In Module 3, we will further cover concepts in Mathematical Statistics and study the relationship between multiple explanatory variables in more details. In particular, we will focus on Analysis of Variance (ANOVA). We will look at how Hypothesis Testing and Regression Analysis is performed and better understand tests for Statistical Signigicance. <br/><br/> Assessment:<br/> You will complete a programming assignment in R with these requirements: <br/> <ol><li>Import the provided CSV as a table</li><li>Use the appropriate function(s) to produce summary statistics (Standard Deviation, min, max, quartiles, etc.)</li><li>Use the appropriate functions to generate labelled plots (Frequency Chart, Histogtam, and Scatterplot)</li><li>Produce multiple Samples from the Population</li><li>Produce a table indicating the Covariance and Correlation of Random Variables in the data</li><li>Produce an ANOVA table for the Variables in the data</li><li>Produce a Multiple Linear Regression plot</li><li>Produce table of results for different Methods of Least Squares</li></ol>Topics:<br/><ul><li>Choosing Statistical Tests</li><li>Linear Regression Example</li><li>Interpreting Regression Models</li><li>Goodness of Fit</li><li>Point Estimation and Confidence Intervals</li><li>Maximum Likelihood</li><li>Statistical Testing in R</li><li>Analysis of Variance (ANOVA) in R</li><li>Further Study: Bayesian Statistics, Dynamic Programming, Random Vectors</li><li>Topics in Statistical Learning (Machine Learning)</li></ul>",
+                    "documents": [
+                        {
+                            "title": "Slides 3",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1-_mMNdM60SupxKIQmaV_2WM-vIAQCiwH4TXdMAD_bGg/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Lecture 3 (archive)",
+                            "icon": "video",
+                            "url": "https://www.youtube.com/watch?v=5d9SYwHSWZU"
+                        },
+                        {
+                            "title": "R - ANOVA Example",
+                            "icon": "file",
+                            "url": "https://drive.google.com/file/d/173I41TPSsiBNxKbIlbd0mQMkGY2Te5bE/view?usp=sharing"
+                        },
+                        {
+                            "title": "Quiz 3",
+                            "icon": "file",
+                            "url": "https://forms.gle/S7vb2LisREL2TEXBA"
+                        },
+                        {
+                            "title": "R Assignment 2",
+                            "icon": "file",
+                            "url": "https://drive.google.com/file/d/1fd6S79H43lqkiF4NZxD_mPI7Dylwptrr/view?usp=sharing"
+                        },
+                        {
+                            "title": "R Assignment 2 submission form",
+                            "icon": "upload",
+                            "url": "https://forms.gle/oTptK8XWrRRmkyEU9"
+                        }
+                    ]
+                },
+                {
+                    "weekTitle": "Module 4 – Bayesian Probability and Time Series",
+                    "description": "In week 4, we cover Bayesian probability and its applications. Time series concepts will be covered and concepts in regression will be reviewed and further developed. For both Bayesian probability and time series, emphasis will be put on the mathematical foundations for thorough understanding of theorems and models."
+                }
+            ],
+            "payment": "",
+            "cta": "Learn More",
+            "disabled": false,
+            "date": "24/Aug/2022 to 14/Sep/2022",
+            "numCourses": "4 Modules",
+            "duration": "4 Weeks",
+            "buttonLabel": "Learn More",
+            "cpdCertification": "https://cpduk.co.uk/courses/bignumber-statistics-probability-theory-and-r",
+            "path": "/certificate-programs/statistics-probability-theory-and-r",
+            "image": "https://images.unsplash.com/photo-1476445704028-a36e0c798192?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+            "courseID": "SPRv3",
+            "ctaIsExternal": false,
+            "event": "Attend the Course Q&A on TBD to learn more about this program.",
+            "price": 600,
+            "numOfWeeks": 4
+        },
+        "MPDv1": {
+            "code": "MPDv1",
+            "description": "Discover the fundamental concepts in mathematics through computer programming. Become proficient in both mathematics and programming. Gain key skills for mathematical sciences such as computer science, data science, and engineering.",
+            "descriptionLong": "This course covers programming in Python, the fundamentals Computer Science, and the fundamentals of Mathematics. In addition to learning to program in Python, you will understand, at the high level, how computers work and interpret programming languages. A high-level understanding of computer architecture will allow you to understand the most complex of algorithms and data structures. This course, which is the foundation couse for more advanced courses at BigNumber, is self-contained and focused on the first-principles of Computer Science and Pure Mathematics.<br/><br/>Pure Mathematics is about concepts in mathematics that are ubiquitous in all of Mathematics. In this course, you will learn the building blocks of mathematics that are relevant and necessary in all of the Mathematical and the Physical Sciences (e.g, Computer Science, Data Science, Engineering, and Economics).",
+            "payment": "https://wise.com/pay#WHmsZe53ZB35T9Ih2G6o26RJL1M",
+            "title": "Mathematics and Programming",
+            "urlTitle": "mathematics-and-programming",
+            "enrollmentType": "Audit",
+            "courseDate": "15/May/2022 to 05/Jun/2022",
+            "url": "/dashboard/enrollments/mathematics-and-programming",
+            "boxMap": "",
+            "rootDocs": [
+                {
+                    "title": "Lesson Plan",
+                    "icon": "file",
+                    "url": "https://docs.google.com/document/d/1zypX6m0ntzNIgRi98iQAKQoSzAyQ3FpLz6JaoJ6loU0?usp=sharing"
+                },
+                {
+                    "title": "Presentor Notes",
+                    "icon": "file",
+                    "url": "https://docs.google.com/document/d/152XBus6axUobGVNhxgupIm9ZRsAGI1vHH2zg915PwW4?usp=sharing"
+                },
+                {
+                    "title": "Introductory Video",
+                    "icon": "video",
+                    "url": "https://www.youtube.com/watch?v=y0-rK_ZqKk0"
+                },
+                {
+                    "title": "Session Files",
+                    "icon": "link",
+                    "url": "https://github.com/danyentezari/mathematics-and-programming-mayjun2022"
+                },
+                {
+                    "title": "Zoom Link",
+                    "icon": "link",
+                    "url": "https://us06web.zoom.us/j/83708274816?pwd=SEJMTEljT2hMQVVEZjhnY2dJMEJhZz09"
+                }
+            ],
+            "weeks": [
+                {
+                    "date": "",
+                    "weekTitle": "Module 1 - Introduction to Programming and Computer Science",
+                    "description": "In the first week, we will learn the building blocks of a programming language and implementation of algorithms. We will learn to write algorithms in sequential, conditional, and iterative patterns. For data structures, we will go in depth about linear data structures, their methods, and algorithms for searching in and writing into data structures.<br/><br/> Assessment:<br/> You will complete programming assignments about topics covered in Module 1. <br/><br/>Assignment Dates:<br/><ul><li>Assignment 1: 20/May/2022</li><li>Assignment 2: 24/May/2022</li></ul><br/><br/>Topics: <br/> <ul><li>Overview of Computer Science</li><li>Overview of Programming and Computer Organization</li><li>Getting Started with Python</li><li>Control Statements</li><li>Data Structures: Lists</li><li>Data Structures: Dictionaries, Sets, and Tuples</li><li>Classes and Objects</li><li>Time & Space Complexity</li></ul>",
+                    "documents": [
+                        {
+                            "title": "Module 1 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1Kc1N3pua2jGiTcs2GxBZlCQ41TFyLfbIO7oILxhZFG0"
+                        },
+                        {
+                            "title": "Session 1",
+                            "icon": "video",
+                            "url": "https://vimeo.com/710469739/78e57b6607"
+                        },
+                        {
+                            "title": "Session 2",
+                            "icon": "video",
+                            "url": "https://vimeo.com/710952196/e2878c3059"
+                        },
+                        {
+                            "title": "Session 3",
+                            "icon": "video",
+                            "url": "https://vimeo.com/712250050/226eb5f59d"
+                        },
+                        {
+                            "title": "Getting Started with Python",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/getting-started-with-python.html"
+                        },
+                        {
+                            "title": "Python Tutorial | Part 1",
+                            "icon": "video",
+                            "url": "https://youtu.be/stMq7PjJOtg"
+                        },
+                        {
+                            "title": "CS Tutorial 1 (Pointers)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/CS-tutorial-1.html"
+                        },
+                        {
+                            "title": "Math Tutorial 1 (Logarithm Function)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-1.html"
+                        },
+                        {
+                            "title": "Assignment 1",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-1.py"
+                        },
+                        {
+                            "title": "Assignment 2",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-2.py"
+                        },
+                        {
+                            "title": "Assignment 1 Submission",
+                            "icon": "link",
+                            "url": "https://forms.gle/QfL9M6JcTSGt3qjR6"
+                        },
+                        {
+                            "title": "Assignment 2 Submission",
+                            "icon": "link",
+                            "url": "https://forms.gle/DtyVRadYkpsUskyHA"
+                        }
+                    ]
+                },
+                {
+                    "weekTitle": "Module 2 - Introduction to Discrete Mathematics",
+                    "description": "In week 2, we will use our understanding of programming as a bridge to understand fundamental mathematical concepts and syntax. Symbols and terminology will be introduced to you and you will be able recognize mathematical objects in any branch of mathematics. We will cover functions, sets and relations, logic, proofs and mathematical induction. We will then apply these mathematical concepts directly in programming. <br/><br/>\n\nAssessment:<br/>You will complete assignments about topics covered in Module 2. <br/><br/>Assignment Dates:<br/><ul><li>Assignment 3: 31/May/2022</li></ul><br/>Topics:<br/><ul><li>Overview of Pure Mathematics</li><li>Overview of Discrete Mathematics</li><li>Logic, Axiom, Lemma, Corollary, and Theorem</li><li>Accumulation, Sequence and Series</li><li>Maps and Functions</li><li>Sets and Relations</li><li>Mathematical Induction</li><li>Recursion</li></ul>",
+                    "documents": [
+                        {
+                            "title": "Module 2 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/19_kYSYaawaDHrZdISqXDXOUZNxW5CXQ8AOcP2tqw2eE/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Session 4",
+                            "icon": "video",
+                            "url": "https://vimeo.com/713047584/d226bf07bd"
+                        },
+                        {
+                            "title": "Session 5",
+                            "icon": "video",
+                            "url": "https://vimeo.com/713852941/71ee6318b8"
+                        },
+                        {
+                            "title": "Session 6",
+                            "icon": "video",
+                            "url": "https://vimeo.com/714813616/28506f055e"
+                        },
+                        {
+                            "title": "Math Tutorial 2 (Sets, Relations, and Graphs)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-2.html"
+                        },
+                        {
+                            "title": "Math Tutorial 3 (Sets Notation and Logic)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-3.html"
+                        },
+                        {
+                            "title": "Math Tutorial 4 (Mathematical Induction)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-4.html"
+                        },
+                        {
+                            "title": "Assignment 3",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-3.pdf"
+                        },
+                        {
+                            "title": "Assignment 3 Submission",
+                            "icon": "link",
+                            "url": "https://forms.gle/E2D4bKWKCjCAcBkA6"
+                        }
+                    ]
+                },
+                {
+                    "weekTitle": "Module 3 -  Discrete Mathematics and Advanced Programming",
+                    "description": "In week 3, we will develop our mathematical proficiency in Discrete Mathematics by exploring and working with examples of graphs, which are mathematical objects with broad applications in both Computer Science and Data Science. Furthermore, we will learn about Languages, Grammars, and Finite State Machines. From there, we will apply what we have learned to Graph Data Structures and then Regular Expressions.<br/><br/>Assessment:<br/>You will complete programming assignments about topics covered in Module 3.<br/><br/>Assignment Dates:<br/><ul><li>Assignment 4: 10/Jun/2022</li></ul><br/>Topics:<br/><ul><li>Graph Theory</li><li>Directed Graphs</li><liAdvanced Binary Trees</li><li>Finite State Machines</li><li>Regular Expressions</li><li>Graph Data Structures</li><li>Combinatorics</li><li>Capstone Project</li></ul>",
+                    "documents": [
+                        {
+                            "title": "Session 7",
+                            "icon": "video",
+                            "url": "https://vimeo.com/715958833/56db24a171"
+                        },
+                        {
+                            "title": "Session 8",
+                            "icon": "video",
+                            "url": "https://vimeo.com/716369650/8846219ab6"
+                        },
+                        {
+                            "title": "Session 9",
+                            "icon": "video",
+                            "url": "https://vimeo.com/717041462/8a32959d77"
+                        },
+                        {
+                            "title": "Singly-Linked List (Class Implementation)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/linked-list-class.py"
+                        },
+                        {
+                            "title": "Doubly-Linked List (Class Implementation)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/doubly-list-class.py"
+                        },
+                        {
+                            "title": "Math Tutorial 5 (Languages, Regular Expressions, FSA)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-5.pdf"
+                        },
+                        {
+                            "title": "Assignment 4",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-4.py"
+                        },
+                        {
+                            "title": "Assignment 4 Submission",
+                            "icon": "link",
+                            "url": "https://forms.gle/yXwktzW3K4vszdv16"
+                        }
+                    ]
+                }
+            ],
+            "cta": "Learn More",
+            "disabled": false,
+            "date": "15/May/2022 to 05/Jun/2022",
+            "numCourses": "3 Modules",
+            "duration": "3 Weeks",
+            "buttonLabel": "Learn More",
+            "cpdCertification": true,
+            "path": "/certificate-programs/mathematics-and-programming",
+            "image": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
+            "courseID": "LMP",
+            "ctaIsExternal": false,
+            "event": "Attend the Course Q&A on 08/May/2022 to learn more about this program.",
+            "price": 450,
+            "numOfWeeks": 3
+        },
+        "SPRv2": {
+            "code": "SPRv2",
+            "title": "Statistics, Probability Theory, and R",
+            "description": "Learn the mathematical science behind Artificial Intelligence, Economics, Risk Engineering, and Epidemiology.",
+            "descriptionLong": "This courses teaches Statistics and Probability Theory with emphasis on learning from first principles. To learn advanced Statistics and, in particular, Probability Theory, it is necessary to be familiar with other mathematical topics including Integration, Sequences, Series, Sets, and Combinatrics. Although this course has Statistics and Probability Theory in the title, it contains sufficient supplementary material about other mathematical subjects that is necessary for mastery in Statistics and Probability Theory. <br/><br/>This course also teaches R, the programming language for statistical analysis. You will learn the required programming constructs to perform analysis in this specialized programming language. You will learn to apply the appropriate functions and methods, import and process data, produce meaningful visualizations, and interpret the results of analysis (e.g, Correlation, ANOVA, etc.)",
+            "urlTitle": "statistics-probability-theory-and-r",
+            "enrollmentType": "Archived",
+            "courseDate": "27/Aug/2021 to 24/Sep/2021",
+            "status": "Archived",
+            "rootDocs": [
+                {
+                    "title": "Lesson Plan",
+                    "icon": "file",
+                    "url": "https://docs.google.com/document/d/1XgZto05D_QnYYfMt2-XeCc4OBP1UwBSfLerWk0Epuhw?usp=sharing"
+                },
+                {
+                    "title": "Presentor Notes",
+                    "icon": "file",
+                    "url": "https://docs.google.com/document/d/10h9lqJV5xD8au8x0MD1EJnd7kNqO1Vb_ThmxuYLm6uE?usp=sharing"
+                },
+                {
+                    "title": "BoxMap",
+                    "icon": "file",
+                    "url": ""
+                },
+                {
+                    "title": "Handbook",
+                    "icon": "file",
+                    "url": "https://drive.google.com/file/d/1yeV-PTqVKlQOGIdOVuUyCfMSONyVFRZ1/view?usp=sharing"
+                }
+            ],
+            "schedule": [
+                ["Lecture 1", "27/Aug/2021", "15:00 to 17:00 UTC (GMT+0)"],
+                ["Assignment 1 Submission", "12/Aug/2021", "23:00 UTC (GMT+0)"],
 
-            ["Lecture 2", "03/Sep/2021", "15:00 to 17:00 UTC (GMT+0)"],
-            ["Assignment 2 Submission", "19/Aug/2021", "23:00 UTC (GMT+0)"],
+                ["Lecture 2", "03/Sep/2021", "15:00 to 17:00 UTC (GMT+0)"],
+                ["Assignment 2 Submission", "19/Aug/2021", "23:00 UTC (GMT+0)"],
 
-            ["Lecture 3", "10/Sep/2021", "15:00 to 17:00 UTC (GMT+0)"],
-            ["Assignment 3 Submission", "26/Aug/2021", "23:00 UTC (GMT+0)"]
-        ],
-        "url": "/dashboard/enrollments/statistics-probability-theory-and-r",
-        "weeks": [
-            {
-                "date": "",
-                "weekTitle": "Module 1 - Statistics and Probability Theory: Principles",
-                "description": "In this week, we will begin by covering an important prerequisite, Mathematical Thinking, which will be about how math is used in Statistics and Probability Theory and the different notations that will be used. We will then go over some fundamental concepts in Statistics and Probability, which will help us to appreciate and quickly understand more advanced topics going forward. <br/><br/> Assessment:<br/> You will complete a questionnaire about fundamental topics that are covered in Module 1.<br/><br/> Topics: <br/><ul> <li>Definition: Statistics and Probability Theory</li> <li>Mathematical Thinking</li> <li>Set Theory</li> <li>Bayes Theorem</li> <li>Probability Space, Sample Space, and Event Space</li> <li>Experiments, Trials, and Observations</li> <li>Measures of Dispersion</li> <li>The Four Moments</li> <li>Random Variables</li> <li>Probability Distributions</li> <li>Statistics and Parameters</li> <li>Overview of Probability Functions</li> <li>Overview of Hypothesis Testing</li></ul>",
-                "documents": [
-                    {
-                        "title": "Slides 1",
-                        "icon": "file",
-                        "url": "https://docs.google.com/presentation/d/1WEFimI8nSwq7ZYU8ZsfCx1QGp1EMZ4Ujxs8wktslu9Q?usp=sharing"
-                    },
-                    {
-                        "title": "Map (archive)",
-                        "icon": "file",
-                        "url": "https://map.bignumber.xyz/5f6359f3801e4d001723ab08?shareid=qpP01223s"
-                    },
-                    {
-                        "title": "Lecture 1 (archive)",
-                        "icon": "video",
-                        "url": "https://www.youtube.com/watch?v=cCrWuYa78mQ"
-                    },
-                    {
-                        "title": "Lecture 1",
-                        "icon": "video",
-                        "url": "https://www.youtube.com/watch?v=FzfoMotQ2eI"
-                    },
-                    {
-                        "title": "Quiz 1",
-                        "icon": "file",
-                        "url": "https://forms.gle/pSYX9C1BA7CzovCR9"
-                    }
-                ]
-            },
-            {
-                "weekTitle": "Module 2 - Applied Mathematical Statistics",
-                "description": "In Module 2, we delve deeper into Probability Theory and other mathematical subjects which are involved in Statistics. We will look at the properties of Random Variables, Probability Distributions, and Moments. In particular, we\"ll go over two important topics central to Probability Theory: Expected Values The Normal Distribution. <br/><br/>Assessment:<br/>You will complete a programming assignment in R with these requirements: <br/><ol><li>Import the provided CSV as a table</li><li>Use the appropriate function(s) to produce summary statistics (Standard Deviation, min, max, quartiles, etc.)</li><li>Use the appropriate functions to generate labelled plots (Frequency Chart, Histogtam, and Scatterplot)</li><li>Produce a table indicating the Covariance and Correlation of Random Variables in the data</li><li>Produce a Simple Linear Regression plot</li></ol>Topics:<br/> <ul><li>Discrete and Continuous Random Variables</li><li>Probability Functions: PMF, PDF, and CMF</li><li>Appendix: Combinatorics </li><li>Appendix: Riemann Integral</li><li>Moments: Variance, Standard Deviation, Skewness, and Kurtosis</li><li>Moment Generating Functions</li><li>Expected Values</li><li>The Normal Distribution and Standardization</li><li>Important Probability Distributions</li><li>Covariance and Correlation</li><li>ANOVA</li><li>Joint Probability Distributions</li><li>Introduction to R Programming</li></ul>",
-                "documents": [
-                    {
-                        "title": "Slides 2",
-                        "icon": "file",
-                        "url": "https://docs.google.com/presentation/d/1lj68SfDlsjOUqzLGjoILLiFtfiNyseNR_vZsMol9Oqo/edit?usp=sharing"
-                    },
-                    {
-                        "title": "Map",
-                        "icon": "file",
-                        "url": "https://map.bignumber.xyz/6128f79c8d985b0018f52968?shareid=7sua7o0"
-                    },
-                    {
-                        "title": "Lecture 2 (archive)",
-                        "icon": "video",
-                        "url": "https://www.youtube.com/watch?v=ubXYcpWOEds"
-                    },
-                    {
-                        "title": "Lecture 2",
-                        "icon": "video",
-                        "url": "https://youtu.be/ePK4L_qZgZI"
-                    },
-                    {
-                        "title": "R - Hypothesis Testing Example 1",
-                        "icon": "file",
-                        "url": "https://drive.google.com/file/d/12R_1h_vbFA25Uq89dlMikXDy_zq-4HBk/view?usp=sharing"
-                    },
-                    {
-                        "title": "R - Programming Essentials",
-                        "icon": "file",
-                        "url": "https://drive.google.com/file/d/1RLdwAUrhruod-5oZpyprA1pxxI4-XpbH/view?usp=sharing"
-                    },
-                    {
-                        "title": "R - Sample CSV File",
-                        "icon": "file",
-                        "url": "https://drive.google.com/file/d/1eVWORiAjdV-Cv0byxLiBgDWKvcy6FS5S/view?usp=sharing"
-                    },
-                    {
-                        "title": "R Assignment 1",
-                        "icon": "file",
-                        "url": "https://drive.google.com/file/d/1JB1erKi85rsT-anb8NqvBMYrPXzsp1Fy/view?usp=sharing"
-                    },
-                    {
-                        "title": "Quiz 2",
-                        "icon": "file",
-                        "url": "https://forms.gle/o2D8PdVy198UTSur7"
-                    },
-                    {
-                        "title": "R Assignment 1 submission form",
-                        "icon": "upload",
-                        "url": "https://forms.gle/nsHxs1AnKzJPC5Jb9"
-                    }
-                ]
-            },
-            {
-                "weekTitle": "Module 3 - Inferential Statistics",
-                "description": "In Module 3, we will further cover concepts in Mathematical Statistics and study the relationship between multiple explanatory variables in more details. In particular, we will focus on Analysis of Variance (ANOVA). We will look at how Hypothesis Testing and Regression Analysis is performed and better understand tests for Statistical Signigicance. <br/><br/> Assessment:<br/> You will complete a programming assignment in R with these requirements: <br/> <ol><li>Import the provided CSV as a table</li><li>Use the appropriate function(s) to produce summary statistics (Standard Deviation, min, max, quartiles, etc.)</li><li>Use the appropriate functions to generate labelled plots (Frequency Chart, Histogtam, and Scatterplot)</li><li>Produce multiple Samples from the Population</li><li>Produce a table indicating the Covariance and Correlation of Random Variables in the data</li><li>Produce an ANOVA table for the Variables in the data</li><li>Produce a Multiple Linear Regression plot</li><li>Produce table of results for different Methods of Least Squares</li></ol>Topics:<br/><ul><li>Choosing Statistical Tests</li><li>Linear Regression Example</li><li>Interpreting Regression Models</li><li>Goodness of Fit</li><li>Point Estimation and Confidence Intervals</li><li>Maximum Likelihood</li><li>Statistical Testing in R</li><li>Analysis of Variance (ANOVA) in R</li><li>Further Study: Bayesian Statistics, Dynamic Programming, Random Vectors</li><li>Topics in Statistical Learning (Machine Learning)</li></ul>",
-                "documents": [
-                    {
-                        "title": "Slides 3",
-                        "icon": "file",
-                        "url": "https://docs.google.com/presentation/d/1-_mMNdM60SupxKIQmaV_2WM-vIAQCiwH4TXdMAD_bGg/edit?usp=sharing"
-                    },
-                    {
-                        "title": "Lecture 3 (archive)",
-                        "icon": "video",
-                        "url": "https://www.youtube.com/watch?v=5d9SYwHSWZU"
-                    },
-                    {
-                        "title": "R - ANOVA Example",
-                        "icon": "file",
-                        "url": "https://drive.google.com/file/d/173I41TPSsiBNxKbIlbd0mQMkGY2Te5bE/view?usp=sharing"
-                    },
-                    {
-                        "title": "Quiz 3",
-                        "icon": "file",
-                        "url": "https://forms.gle/S7vb2LisREL2TEXBA"
-                    },
-                    {
-                        "title": "R Assignment 2",
-                        "icon": "file",
-                        "url": "https://drive.google.com/file/d/1fd6S79H43lqkiF4NZxD_mPI7Dylwptrr/view?usp=sharing"
-                    },
-                    {
-                        "title": "R Assignment 2 submission form",
-                        "icon": "upload",
-                        "url": "https://forms.gle/oTptK8XWrRRmkyEU9"
-                    }
-                ]
-            }
-        ]
-    },
-    "SPRv3": {
-
-    },
-    "MPDv1": {
-        "code": "MPDv1",
-        "payment": "https://wise.com/pay#WHmsZe53ZB35T9Ih2G6o26RJL1M",
-        "title": "Mathematics and Programming",
-        "urlTitle": "mathematics-and-programming",
-        "enrollmentType": "Audit",
-        "courseDate": "15/May/2022 to 05/Jun/2022",
-        "url": "/dashboard/enrollments/mathematics-and-programming",
-        "boxMap": "",
-        "rootDocs": [
-            {
-                "title": "Lesson Plan",
-                "icon": "file",
-                "url": "https://docs.google.com/document/d/1zypX6m0ntzNIgRi98iQAKQoSzAyQ3FpLz6JaoJ6loU0?usp=sharing"
-            },
-            {
-                "title": "Presentor Notes",
-                "icon": "file",
-                "url": "https://docs.google.com/document/d/152XBus6axUobGVNhxgupIm9ZRsAGI1vHH2zg915PwW4?usp=sharing"
-            },
-            {
-                "title": "Introductory Video",
-                "icon": "video",
-                "url": "https://www.youtube.com/watch?v=y0-rK_ZqKk0"
-            },
-            {
-                "title": "Session Files",
-                "icon": "link",
-                "url": "https://github.com/danyentezari/mathematics-and-programming-mayjun2022"
-            },
-            {
-                "title": "Zoom Link",
-                "icon": "link",
-                "url": "https://us06web.zoom.us/j/83708274816?pwd=SEJMTEljT2hMQVVEZjhnY2dJMEJhZz09"
-            }
-        ],
-        "weeks": [
-            {
-                "date": "",
-                "weekTitle": "Module 1 - Introduction to Programming and Computer Science",
-                "description": "In the first week, we will learn the building blocks of a programming language and implementation of algorithms. We will learn to write algorithms in sequential, conditional, and iterative patterns. For data structures, we will go in depth about linear data structures, their methods, and algorithms for searching in and writing into data structures.<br/><br/> Assessment:<br/> You will complete programming assignments about topics covered in Module 1. <br/><br/>Assignment Dates:<br/><ul><li>Assignment 1: 20/May/2022</li><li>Assignment 2: 24/May/2022</li></ul><br/><br/>Topics: <br/> <ul><li>Overview of Computer Science</li><li>Overview of Programming and Computer Organization</li><li>Getting Started with Python</li><li>Control Statements</li><li>Data Structures: Lists</li><li>Data Structures: Dictionaries, Sets, and Tuples</li><li>Classes and Objects</li><li>Time & Space Complexity</li></ul>",
-                "documents": [
-                    {
-                        "title": "Module 1 Slides",
-                        "icon": "file",
-                        "url": "https://docs.google.com/presentation/d/1Kc1N3pua2jGiTcs2GxBZlCQ41TFyLfbIO7oILxhZFG0"
-                    },
-                    {
-                        "title": "Session 1",
-                        "icon": "video",
-                        "url": "https://vimeo.com/710469739/78e57b6607"
-                    },
-                    {
-                        "title": "Session 2",
-                        "icon": "video",
-                        "url": "https://vimeo.com/710952196/e2878c3059"
-                    },
-                    {
-                        "title": "Session 3",
-                        "icon": "video",
-                        "url": "https://vimeo.com/712250050/226eb5f59d"
-                    },
-                    {
-                        "title": "Getting Started with Python",
-                        "icon": "file",
-                        "url": "https://danyentezari.github.io/bignumber-material/MPD/getting-started-with-python.html"
-                    },
-                    {
-                        "title": "Python Tutorial | Part 1",
-                        "icon": "video",
-                        "url": "https://youtu.be/stMq7PjJOtg"
-                    },
-                    {
-                        "title": "CS Tutorial 1 (Pointers)",
-                        "icon": "file",
-                        "url": "https://danyentezari.github.io/bignumber-material/MPD/CS-tutorial-1.html"
-                    },
-                    {
-                        "title": "Math Tutorial 1 (Logarithm Function)",
-                        "icon": "file",
-                        "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-1.html"
-                    },
-                    {
-                        "title": "Assignment 1",
-                        "icon": "file",
-                        "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-1.py"
-                    },
-                    {
-                        "title": "Assignment 2",
-                        "icon": "file",
-                        "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-2.py"
-                    },
-                    {
-                        "title": "Assignment 1 Submission",
-                        "icon": "link",
-                        "url": "https://forms.gle/QfL9M6JcTSGt3qjR6"
-                    },
-                    {
-                        "title": "Assignment 2 Submission",
-                        "icon": "link",
-                        "url": "https://forms.gle/DtyVRadYkpsUskyHA"
-                    }
-                ]
-            },
-            {
-                "weekTitle": "Module 2 - Introduction to Discrete Mathematics",
-                "description": "In week 2, we will use our understanding of programming as a bridge to understand fundamental mathematical concepts and syntax. Symbols and terminology will be introduced to you and you will be able recognize mathematical objects in any branch of mathematics. We will cover functions, sets and relations, logic, proofs and mathematical induction. We will then apply these mathematical concepts directly in programming. <br/><br/>\n\nAssessment:<br/>You will complete assignments about topics covered in Module 2. <br/><br/>Assignment Dates:<br/><ul><li>Assignment 3: 31/May/2022</li></ul><br/>Topics:<br/><ul><li>Overview of Pure Mathematics</li><li>Overview of Discrete Mathematics</li><li>Logic, Axiom, Lemma, Corollary, and Theorem</li><li>Accumulation, Sequence and Series</li><li>Maps and Functions</li><li>Sets and Relations</li><li>Mathematical Induction</li><li>Recursion</li></ul>",
-                "documents": [
-                    {
-                        "title": "Module 2 Slides",
-                        "icon": "file",
-                        "url": "https://docs.google.com/presentation/d/19_kYSYaawaDHrZdISqXDXOUZNxW5CXQ8AOcP2tqw2eE/edit?usp=sharing"
-                    },
-                    {
-                        "title": "Session 4",
-                        "icon": "video",
-                        "url": "https://vimeo.com/713047584/d226bf07bd"
-                    },
-                    {
-                        "title": "Session 5",
-                        "icon": "video",
-                        "url": "https://vimeo.com/713852941/71ee6318b8"
-                    },
-                    {
-                        "title": "Session 6",
-                        "icon": "video",
-                        "url": "https://vimeo.com/714813616/28506f055e"
-                    },
-                    {
-                        "title": "Math Tutorial 2 (Sets, Relations, and Graphs)",
-                        "icon": "file",
-                        "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-2.html"
-                    },
-                    {
-                        "title": "Math Tutorial 3 (Sets Notation and Logic)",
-                        "icon": "file",
-                        "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-3.html"
-                    },
-                    {
-                        "title": "Math Tutorial 4 (Mathematical Induction)",
-                        "icon": "file",
-                        "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-4.html"
-                    },
-                    {
-                        "title": "Assignment 3",
-                        "icon": "file",
-                        "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-3.pdf"
-                    },
-                    {
-                        "title": "Assignment 3 Submission",
-                        "icon": "link",
-                        "url": "https://forms.gle/E2D4bKWKCjCAcBkA6"
-                    }
-                ]
-            },
-            {
-                "weekTitle": "Module 3 -  Discrete Mathematics and Advanced Programming",
-                "description": "In week 3, we will develop our mathematical proficiency in Discrete Mathematics by exploring and working with examples of graphs, which are mathematical objects with broad applications in both Computer Science and Data Science. Furthermore, we will learn about Languages, Grammars, and Finite State Machines. From there, we will apply what we have learned to Graph Data Structures and then Regular Expressions.<br/><br/>Assessment:<br/>You will complete programming assignments about topics covered in Module 3.<br/><br/>Assignment Dates:<br/><ul><li>Assignment 4: 10/Jun/2022</li></ul><br/>Topics:<br/><ul><li>Graph Theory</li><li>Directed Graphs</li><liAdvanced Binary Trees</li><li>Finite State Machines</li><li>Regular Expressions</li><li>Graph Data Structures</li><li>Combinatorics</li><li>Capstone Project</li></ul>",
-                "documents": [
-                    {
-                        "title": "Session 7",
-                        "icon": "video",
-                        "url": "https://vimeo.com/715958833/56db24a171"
-                    },
-                    {
-                        "title": "Session 8",
-                        "icon": "video",
-                        "url": "https://vimeo.com/716369650/8846219ab6"
-                    },
-                    {
-                        "title": "Session 9",
-                        "icon": "video",
-                        "url": "https://vimeo.com/717041462/8a32959d77"
-                    },
-                    {
-                        "title": "Singly-Linked List (Class Implementation)",
-                        "icon": "file",
-                        "url": "https://danyentezari.github.io/bignumber-material/MPD/linked-list-class.py"
-                    },
-                    {
-                        "title": "Doubly-Linked List (Class Implementation)",
-                        "icon": "file",
-                        "url": "https://danyentezari.github.io/bignumber-material/MPD/doubly-list-class.py"
-                    },
-                    {
-                        "title": "Math Tutorial 5 (Languages, Regular Expressions, FSA)",
-                        "icon": "file",
-                        "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-5.pdf"
-                    },
-                    {
-                        "title": "Assignment 4",
-                        "icon": "file",
-                        "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-4.py"
-                    },
-                    {
-                        "title": "Assignment 4 Submission",
-                        "icon": "link",
-                        "url": "https://forms.gle/yXwktzW3K4vszdv16"
-                    }
-                ]
-            }
-        ]
-    },
-    "LMP": {
-        "title": "Linear Mathematics with Python",
-        "code": "LMP",
-        "payment": "",
-        "urlTitle": "linear-mathematics-with-python",
-        "enrollmentType": "Audit",
-        "courseDate": "26/Jun/2022 to 24/Jul/2022",
-        "url": "/dashboard/enrollments/linear-mathematics-with-python",
-        "boxMap": "",
-        "rootDocs": [
-            {
-                "title": "Lesson Plan",
-                "icon":"file",
-                "url": "https://docs.google.com/document/d/171LjRvUWdiv4NuRd65-Gd5_0GXK8dtpBGAfVXWMU9W4/edit?usp=sharing"
-            },
-            {
-                "title": "Presentor Notes",
-                "icon":"file",
-                "url": "https://docs.google.com/document/d/1ucI5ed2jJWccaSXpMeSqNlgCMdVPeWAx9udP6KQc1tk/edit?usp=sharing"
-            }            
-        ],
-        "weeks": [
-            {
-                "weekTitle": "Module 1 - Introduction to Linear Mathematics",
-                "description": "In the first week, we will create a motivating reason to learn about the applications of matrices and systems of equations. We will understand the development of linear algebra from a historical and practical perspective. The objective of this module is to develop a strong foundation for learning linear algebra and applications of it. Furthermore, this course is based in Python; therefore, we will thoroughly review the programming language and the famous library designed for multidimensional tabular data – NumPy.",
-                "documents": []
-            },
-            {
-                "weekTitle": "Module 2 & 3 - Matrix Operations and Real-World Applications",
-                "description": "In weeks 2 & 3, we will develop a more complete understanding of matrices, the algebra of matrices, and linear programming. In other words, Modules 2 and 3 are about mastering linear algebra and a closely related branch of mathematics called linear programming. Linear algebra is a very important branch of mathematics with very broad applications in the real world, and we will look at applications from economics to quantitative finance to logistics.",
-                "documents": []
-            },
-            {
-                "weekTitle": "Module 4 -  Machine Learning and Neural Networks ",
-                "description": "In week 4, we will be introduced to machine learning and neural networks in the context of matrix representation of data. Neural Networks are the center of the most advanced use cases of machine learning such as computer vision and natural language processing. In this module we will look at examples of how matrices are used in machine learning.",
-                "documents": []
-            }
-        ]
-    },
-    "MLPapers": {
-        "title": "ML Papers",
-        "code": "MLPapers",
-        "urlTitle": "google-developers-ml-papers",
-        "enrollmentType": "Audit",
-        "courseDate": "22/Jun/2022 ongoing",
-        "url": "/dashboard/enrollments/google-developers-ml-papers",
-        "rootDocs": []
-    },
-    "weeks": [
-        {
-            "weekTitle": "Paper 1 - Zero Shot Learning Through Cross-Modal Transfer",
-            "description": "This work introduces a model that can recognize objects in images even if no training data is available for the objects. The only necessary knowledge about the unseen categories comes from unsupervised large text corpora. In our zero-shot framework distributional information in language can be seen as spanning a semantic basis for understanding what objects look like. Most previous zero-shot learning models can only differentiate between unseen classes. In contrast, our model can both obtain state of the art performance on classes that have thousands of training images and obtain reasonable performance on unseen classes. This is achieved by first using outlier detection in the semantic space and then two separate recognition models. Furthermore, our model does not require any manually defined semantic features for either words or images. ",
-            "documents": []
+                ["Lecture 3", "10/Sep/2021", "15:00 to 17:00 UTC (GMT+0)"],
+                ["Assignment 3 Submission", "26/Aug/2021", "23:00 UTC (GMT+0)"]
+            ],
+            "url": "/dashboard/enrollments/statistics-probability-theory-and-r",
+            "weeks": [
+                {
+                    "date": "",
+                    "weekTitle": "Module 1 - Statistics and Probability Theory: Principles",
+                    "description": "In this week, we will begin by covering an important prerequisite, Mathematical Thinking, which will be about how math is used in Statistics and Probability Theory and the different notations that will be used. We will then go over some fundamental concepts in Statistics and Probability, which will help us to appreciate and quickly understand more advanced topics going forward. <br/><br/> Assessment:<br/> You will complete a questionnaire about fundamental topics that are covered in Module 1.<br/><br/> Topics: <br/><ul> <li>Definition: Statistics and Probability Theory</li> <li>Mathematical Thinking</li> <li>Set Theory</li> <li>Bayes Theorem</li> <li>Probability Space, Sample Space, and Event Space</li> <li>Experiments, Trials, and Observations</li> <li>Measures of Dispersion</li> <li>The Four Moments</li> <li>Random Variables</li> <li>Probability Distributions</li> <li>Statistics and Parameters</li> <li>Overview of Probability Functions</li> <li>Overview of Hypothesis Testing</li></ul>",
+                    "documents": [
+                        {
+                            "title": "Slides 1",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1WEFimI8nSwq7ZYU8ZsfCx1QGp1EMZ4Ujxs8wktslu9Q?usp=sharing"
+                        },
+                        {
+                            "title": "Map (archive)",
+                            "icon": "file",
+                            "url": "https://map.bignumber.xyz/5f6359f3801e4d001723ab08?shareid=qpP01223s"
+                        },
+                        {
+                            "title": "Lecture 1 (archive)",
+                            "icon": "video",
+                            "url": "https://www.youtube.com/watch?v=cCrWuYa78mQ"
+                        },
+                        {
+                            "title": "Lecture 1",
+                            "icon": "video",
+                            "url": "https://www.youtube.com/watch?v=FzfoMotQ2eI"
+                        },
+                        {
+                            "title": "Quiz 1",
+                            "icon": "file",
+                            "url": "https://forms.gle/pSYX9C1BA7CzovCR9"
+                        }
+                    ]
+                },
+                {
+                    "weekTitle": "Module 2 - Applied Mathematical Statistics",
+                    "description": "In Module 2, we delve deeper into Probability Theory and other mathematical subjects which are involved in Statistics. We will look at the properties of Random Variables, Probability Distributions, and Moments. In particular, we\"ll go over two important topics central to Probability Theory: Expected Values The Normal Distribution. <br/><br/>Assessment:<br/>You will complete a programming assignment in R with these requirements: <br/><ol><li>Import the provided CSV as a table</li><li>Use the appropriate function(s) to produce summary statistics (Standard Deviation, min, max, quartiles, etc.)</li><li>Use the appropriate functions to generate labelled plots (Frequency Chart, Histogtam, and Scatterplot)</li><li>Produce a table indicating the Covariance and Correlation of Random Variables in the data</li><li>Produce a Simple Linear Regression plot</li></ol>Topics:<br/> <ul><li>Discrete and Continuous Random Variables</li><li>Probability Functions: PMF, PDF, and CMF</li><li>Appendix: Combinatorics </li><li>Appendix: Riemann Integral</li><li>Moments: Variance, Standard Deviation, Skewness, and Kurtosis</li><li>Moment Generating Functions</li><li>Expected Values</li><li>The Normal Distribution and Standardization</li><li>Important Probability Distributions</li><li>Covariance and Correlation</li><li>ANOVA</li><li>Joint Probability Distributions</li><li>Introduction to R Programming</li></ul>",
+                    "documents": [
+                        {
+                            "title": "Slides 2",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1lj68SfDlsjOUqzLGjoILLiFtfiNyseNR_vZsMol9Oqo/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Map",
+                            "icon": "file",
+                            "url": "https://map.bignumber.xyz/6128f79c8d985b0018f52968?shareid=7sua7o0"
+                        },
+                        {
+                            "title": "Lecture 2 (archive)",
+                            "icon": "video",
+                            "url": "https://www.youtube.com/watch?v=ubXYcpWOEds"
+                        },
+                        {
+                            "title": "Lecture 2",
+                            "icon": "video",
+                            "url": "https://youtu.be/ePK4L_qZgZI"
+                        },
+                        {
+                            "title": "R - Hypothesis Testing Example 1",
+                            "icon": "file",
+                            "url": "https://drive.google.com/file/d/12R_1h_vbFA25Uq89dlMikXDy_zq-4HBk/view?usp=sharing"
+                        },
+                        {
+                            "title": "R - Programming Essentials",
+                            "icon": "file",
+                            "url": "https://drive.google.com/file/d/1RLdwAUrhruod-5oZpyprA1pxxI4-XpbH/view?usp=sharing"
+                        },
+                        {
+                            "title": "R - Sample CSV File",
+                            "icon": "file",
+                            "url": "https://drive.google.com/file/d/1eVWORiAjdV-Cv0byxLiBgDWKvcy6FS5S/view?usp=sharing"
+                        },
+                        {
+                            "title": "R Assignment 1",
+                            "icon": "file",
+                            "url": "https://drive.google.com/file/d/1JB1erKi85rsT-anb8NqvBMYrPXzsp1Fy/view?usp=sharing"
+                        },
+                        {
+                            "title": "Quiz 2",
+                            "icon": "file",
+                            "url": "https://forms.gle/o2D8PdVy198UTSur7"
+                        },
+                        {
+                            "title": "R Assignment 1 submission form",
+                            "icon": "upload",
+                            "url": "https://forms.gle/nsHxs1AnKzJPC5Jb9"
+                        }
+                    ]
+                },
+                {
+                    "weekTitle": "Module 3 - Inferential Statistics",
+                    "description": "In Module 3, we will further cover concepts in Mathematical Statistics and study the relationship between multiple explanatory variables in more details. In particular, we will focus on Analysis of Variance (ANOVA). We will look at how Hypothesis Testing and Regression Analysis is performed and better understand tests for Statistical Signigicance. <br/><br/> Assessment:<br/> You will complete a programming assignment in R with these requirements: <br/> <ol><li>Import the provided CSV as a table</li><li>Use the appropriate function(s) to produce summary statistics (Standard Deviation, min, max, quartiles, etc.)</li><li>Use the appropriate functions to generate labelled plots (Frequency Chart, Histogtam, and Scatterplot)</li><li>Produce multiple Samples from the Population</li><li>Produce a table indicating the Covariance and Correlation of Random Variables in the data</li><li>Produce an ANOVA table for the Variables in the data</li><li>Produce a Multiple Linear Regression plot</li><li>Produce table of results for different Methods of Least Squares</li></ol>Topics:<br/><ul><li>Choosing Statistical Tests</li><li>Linear Regression Example</li><li>Interpreting Regression Models</li><li>Goodness of Fit</li><li>Point Estimation and Confidence Intervals</li><li>Maximum Likelihood</li><li>Statistical Testing in R</li><li>Analysis of Variance (ANOVA) in R</li><li>Further Study: Bayesian Statistics, Dynamic Programming, Random Vectors</li><li>Topics in Statistical Learning (Machine Learning)</li></ul>",
+                    "documents": [
+                        {
+                            "title": "Slides 3",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1-_mMNdM60SupxKIQmaV_2WM-vIAQCiwH4TXdMAD_bGg/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Lecture 3 (archive)",
+                            "icon": "video",
+                            "url": "https://www.youtube.com/watch?v=5d9SYwHSWZU"
+                        },
+                        {
+                            "title": "R - ANOVA Example",
+                            "icon": "file",
+                            "url": "https://drive.google.com/file/d/173I41TPSsiBNxKbIlbd0mQMkGY2Te5bE/view?usp=sharing"
+                        },
+                        {
+                            "title": "Quiz 3",
+                            "icon": "file",
+                            "url": "https://forms.gle/S7vb2LisREL2TEXBA"
+                        },
+                        {
+                            "title": "R Assignment 2",
+                            "icon": "file",
+                            "url": "https://drive.google.com/file/d/1fd6S79H43lqkiF4NZxD_mPI7Dylwptrr/view?usp=sharing"
+                        },
+                        {
+                            "title": "R Assignment 2 submission form",
+                            "icon": "upload",
+                            "url": "https://forms.gle/oTptK8XWrRRmkyEU9"
+                        }
+                    ]
+                }
+            ],
+            "payment": "",
+            "cta": "Learn More",
+            "disabled": false,
+            "date": "24/Aug/2022 to 14/Sep/2022",
+            "numCourses": "3 Modules",
+            "duration": "3 Weeks",
+            "buttonLabel": "Learn More",
+            "cpdCertification": "https://cpduk.co.uk/courses/bignumber-statistics-probability-theory-and-r",
+            "path": "",
+            "image": "https://images.unsplash.com/photo-1476445704028-a36e0c798192?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+            "courseID": "LMP",
+            "ctaIsExternal": false,
+            "event": "Attend the Course Q&A on TBD to learn more about this program.",
+            "price": 0,
+            "numOfWeeks": 0
         }
-    ]
+    },
+    "url_map": {
+        "statistics-probability-theory-and-r": "SPRv2",
+        "mathematics-and-programming": "MPDv1",
+        "linear-mathematics-with-python": "LMP",
+        "google-developers-ml-papers": "MLPapers"
+    }
 }
