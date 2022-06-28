@@ -35,6 +35,11 @@
                             "title": "Module 1 Slides",
                             "icon": "file",
                             "url": "https://docs.google.com/presentation/d/1pxZlfglAbiXedakyR3T3j9SHf5PE6THUAeY-gdg3NQg/edit?usp=sharing" 
+                        },
+                        {
+                            "title": "MATH Tutorial 6 (Abstract Algebra)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-6.html" 
                         }
                     ]
                 },
@@ -444,6 +449,11 @@
                             "title": "Assignment 4 Submission",
                             "icon": "link",
                             "url": "https://forms.gle/yXwktzW3K4vszdv16"
+                        },
+                        {
+                            "title": "MATH Tutorial 6 (Abstract Algebra)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-6.html" 
                         }
                     ]
                 }
