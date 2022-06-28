@@ -19,13 +19,24 @@
                     "title": "Presentor Notes",
                     "icon":"file",
                     "url": "https://docs.google.com/document/d/1ucI5ed2jJWccaSXpMeSqNlgCMdVPeWAx9udP6KQc1tk/edit?usp=sharing"
-                }            
+                },
+                {
+                    "title": "Zoom Link",
+                    "icon": "link",
+                    "url": "https://us06web.zoom.us/j/85286580980?pwd=NjIwa0JiN2tXZnQ4dFR6bnZSQm5QUT09"
+                }           
             ],
             "weeks": [
                 {
                     "weekTitle": "Module 1 - Introduction to Linear Mathematics",
                     "description": "In the first week, we will create a motivating reason to learn about the applications of matrices and systems of equations. We will understand the development of linear algebra from a historical and practical perspective. The objective of this module is to develop a strong foundation for learning linear algebra and applications of it. Furthermore, this course is based in Python; therefore, we will thoroughly review the programming language and the famous library designed for multidimensional tabular data – NumPy.",
-                    "documents": []
+                    "documents": [
+                        {
+                            "title": "Module 1 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1pxZlfglAbiXedakyR3T3j9SHf5PE6THUAeY-gdg3NQg/edit?usp=sharing" 
+                        }
+                    ]
                 },
                 {
                     "weekTitle": "Module 2 & 3 - Matrix Operations and Real-World Applications",
