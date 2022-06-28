@@ -1,7 +1,7 @@
 ## Abstract Algebra
 
 ##### Binary Operations
-Mathematical operations (for example, arithmetc) that can be applied to elements in a set. Operators $+$ and $\times$ are both binary operators.
+Mathematical operations (for example, arithmetic) that can be applied to elements in a set. Operators $+$ and $\times$ are both binary operators.
 
 <br/>
 
@@ -23,7 +23,7 @@ A group is a tuple $(G, *)$ to which these axioms apply
 <br/>
 
 ##### Abelian Group
-An Abelian Group is a group with axioms 1-4 and,
+An Abelian Group is a group with axioms (1) to (4) and,
 
 5. Commutativity
 >$a * b = b * a$
@@ -62,7 +62,7 @@ A set to which the following axioms apply:
 <br/>
 
 ##### Integral Domain
-A type of ring with axioms 1 to 8 but not 7.
+A type of ring with axioms (1) to (8) but not (7).
 
 <br/>
 
