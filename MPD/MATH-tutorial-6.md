@@ -18,7 +18,7 @@ A group is a tuple $(G, *)$ to which these axioms apply
 > $a * a^{-1} = a^{-1} * a = i$
 
 4. Associativity
->$a*(b*c) = (a*b)*+*c$
+>$a*(b*c) = (a*b)*c$
 
 <br/>
 
