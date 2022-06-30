@@ -91,7 +91,7 @@
             "title": "Statistics, Probability Theory, and R Programming",
             "description": "Learn the mathematical science behind artificial intelligence, econometrics, risk engineering, and epidemiology. Learn to perform statistical analysis with the R programming language.",
             "descriptionLong": "This courses teaches Statistics and Probability Theory with emphasis on learning from first principles. To learn advanced Statistics and, in particular, Probability Theory, it is necessary to be familiar with other mathematical topics including Integration, Sequences, Series, Sets, and Combinatrics. Although this course has Statistics and Probability Theory in the title, it contains sufficient supplementary material about other mathematical subjects that is necessary for mastery in Statistics and Probability Theory. <br/><br/>This course also teaches R, the programming language for statistical analysis. You will learn the required programming constructs to perform analysis in this specialized programming language. You will learn to apply the appropriate functions and methods, import and process data, produce meaningful visualizations, and interpret the results of analysis (e.g, Correlation, ANOVA, etc.)",
-            "urlTitle": "statistics-probability-theory-and-r",
+            "urlTitle": "statistics-probability-theory-and-r-v3",
             "enrollmentType": "Audit",
             "courseDate": "24/Aug/2022 to 14/Sep/2022",
             "status": "Audit",
@@ -117,7 +117,7 @@
                     "url": "https://drive.google.com/file/d/1yeV-PTqVKlQOGIdOVuUyCfMSONyVFRZ1/view?usp=sharing"
                 }
             ],
-            "url": "/dashboard/enrollments/statistics-probability-theory-and-r",
+            "url": "/dashboard/enrollments/statistics-probability-theory-and-r-v3",
             "weeks": [
                 {
                     "date": "",
@@ -245,7 +245,8 @@
                 },
                 {
                     "weekTitle": "Module 4 – Bayesian Probability and Time Series",
-                    "description": "In week 4, we cover Bayesian probability and its applications. Time series concepts will be covered and concepts in regression will be reviewed and further developed. For both Bayesian probability and time series, emphasis will be put on the mathematical foundations for thorough understanding of theorems and models."
+                    "description": "In week 4, we cover Bayesian probability and its applications. Time series concepts will be covered and concepts in regression will be reviewed and further developed. For both Bayesian probability and time series, emphasis will be put on the mathematical foundations for thorough understanding of theorems and models.",
+                    "documents": []
                 }
             ],
             "payment": "",
@@ -666,15 +667,49 @@
             "cpdCertification": "https://cpduk.co.uk/courses/bignumber-statistics-probability-theory-and-r",
             "path": "",
             "image": "https://images.unsplash.com/photo-1476445704028-a36e0c798192?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
-            "courseID": "LMP",
+            "courseID": "SPRv2",
             "ctaIsExternal": false,
             "event": "Attend the Course Q&A on TBD to learn more about this program.",
             "price": 0,
             "numOfWeeks": 0
+        },
+        "MLPapers": {
+            "title": "ML Papers",
+            "code": "MLPapers",
+            "urlTitle": "google-developers-ml-papers",
+            "enrollmentType": "Audit",
+            "courseDate": "22/Jun/2022 ongoing",
+            "url": "/dashboard/enrollments/google-developers-ml-papers",
+            "rootDocs": [],
+            "weeks": [
+                {
+                    "weekTitle": "Episode 1: Zero Shot Learning Through Cross-Modal Transfer",
+                    "description": "This work introduces a model that can recognize objects in images even if no training data is available for the objects. The only necessary knowledge about the unseen categories comes from unsupervised large text corpora. In our zero-shot framework distributional information in language can be seen as spanning a semantic basis for understanding what objects look like. Most previous zero-shot learning models can only differentiate between unseen classes. In contrast, our model can both obtain state of the art performance on classes that have thousands of training images and obtain reasonable performance on unseen classes. This is achieved by first using outlier detection in the semantic space and then two separate recognition models. Furthermore, our model does not require any manually defined semantic features for either words or images. ",
+                    "documents": []
+                }
+            ],
+            "description": "This course, in collaboration with Google Developers ML, teaches machine learning and mathematics through some of the most influential research papers on machine learning.",
+            "cta": "Learn More",
+            "disabled": false,
+            "date": "22/Jun/2022 and Ongoing",
+            "numCourses": "10 modules",
+            "duration": "Ongoing",
+            "buttonLabel": "Learn More",
+            "lessonPlan":"https://docs.google.com/document/d/171LjRvUWdiv4NuRd65-Gd5_0GXK8dtpBGAfVXWMU9W4/edit?usp=sharing",
+            "cpdCertification": "https://cpduk.co.uk/courses/bignumber-statistics-probability-theory-and-r",
+            "path": "/certificate-programs/google-developers-ml-papers",
+            "image": "https://images.unsplash.com/photo-1632507127789-eb70cc8757af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1774&q=80",
+            "courseID": "MLPapers",
+            "ctaIsExternal": false,
+            "event": "Watch the first episode from 22/Jun/2022 to learn more about this program.",
+            "price": 0,
+            "numOfWeeks": 10,
+            "status": "Hidden"
         }
     },
     "url_map": {
         "statistics-probability-theory-and-r": "SPRv2",
+        "statistics-probability-theory-and-r-v3": "SPRv3",
         "mathematics-and-programming": "MPDv1",
         "linear-mathematics-with-python": "LMP",
         "google-developers-ml-papers": "MLPapers"
