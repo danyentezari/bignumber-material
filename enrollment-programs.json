@@ -37,9 +37,14 @@
                             "url": "https://docs.google.com/presentation/d/1pxZlfglAbiXedakyR3T3j9SHf5PE6THUAeY-gdg3NQg/edit?usp=sharing" 
                         },
                         {
-                            "title": "MATH Tutorial 6 (Abstract Algebra)",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-6.html" 
+                            "title": "Session 1",
+                            "icon": "video",
+                            "url": "https://vimeo.com/725637042/543c490c30" 
+                        },
+                        {
+                            "title": "Session 2",
+                            "icon": "video",
+                            "url": "https://vimeo.com/725639069/823ece0708" 
                         },
                         {
                             "title": "MATH Tutorial 6 (Abstract Algebra)",
