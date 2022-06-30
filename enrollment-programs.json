@@ -55,6 +55,26 @@
                             "title": "MATH Tutorial 7 (Linear Programming Example)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-7.html" 
+                        },
+                        {
+                            "title": "MATH Tutorial 7 (Linear Algebra Basics)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-7.html" 
+                        },
+                        {
+                            "title": "Python Data Structures",
+                            "icon": "video",
+                            "url": "https://vimeo.com/710469739/78e57b6607"
+                        },
+                        {
+                            "title": "Getting Started with Python",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/getting-started-with-python.html"
+                        },
+                        {
+                            "title": "Python Tutorial | Part 1",
+                            "icon": "video",
+                            "url": "https://youtu.be/stMq7PjJOtg"
                         }
                     ]
                 },
