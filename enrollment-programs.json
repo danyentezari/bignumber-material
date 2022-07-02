@@ -57,14 +57,19 @@
                             "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-6.html" 
                         },
                         {
-                            "title": "MATH Tutorial 7 (Linear Programming Example)",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-7.html" 
-                        },
-                        {
                             "title": "MATH Tutorial 8 (Linear Algebra Fundamentals)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-8.html" 
+                        },
+                        {
+                            "title": "LP Tutorial 1",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/LP-tutorial-1.html" 
+                        },
+                        {
+                            "title": "LP Tutorial 1 (Notebook)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/LP-tutorial-1.ipynb" 
                         },
                         {
                             "title": "Python Data Structures",
