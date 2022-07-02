@@ -35,7 +35,7 @@ Let
 
 <br/><br/>
 
-Objective Functions
+Objective function
 > $f(x,y) = 80x + 70y$
 
 Constraints
