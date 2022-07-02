@@ -1,0 +1,12 @@
+['A','B','C','D','E']
+['A','B','C','D','E']
+['A','B','C','D','E']
+['A','B','C','D','E']
+['A','B','C','D','E']
+['A','B','C','D','E']
+
+recursive_uppercase(letters, 4, ['A','B','C','D'])  ---> ['A','B','C','D','E']
+recursive_uppercase(letters, 3, ['A','B','C'])      ---> ['A','B','C','D']
+recursive_uppercase(letters, 2, ['A','B'])          ---> ['A','B','C']
+recursive_uppercase(letters, 1, ['A'])              ---> ['A','B']
+recursive_uppercase(letters, 0, [])                 ---> ['A']

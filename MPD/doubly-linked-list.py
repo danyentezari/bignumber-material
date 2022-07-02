@@ -21,14 +21,24 @@ class DoublyLinkedList:
         # Make the new node the last node
         self.last = new_node
         
-
     def pop_node(self):
        prev = self.last.prev 
        del self.last
        self.last = prev 
        
-    
-    # def remove():
+
+    def count(self):
+        # Complete the code to count the total number of elements
+        # in the tree
+        # Your code here
+        
+        counter = 0
+        next_node = self.start
+        while(next_node is not None):
+            counter += 1
+            next_node = next_node.next
+                
+        return counter
         
 
 
@@ -38,13 +48,11 @@ d_linked_list = DoublyLinkedList("A")
 d_linked_list.append_node("B")
 d_linked_list.append_node("C")
 d_linked_list.append_node("D")
-d_linked_list.append_node("E")
-d_linked_list.append_node("F")
+
+# Test the .count() method
+print(d_linked_list.count())
 
 
-print(d_linked_list.last.data)
-
-d_linked_list.pop_node()
-d_linked_list.pop_node()
-
-print(d_linked_list.last.data)
+# print(d_linked_list.last.data)
+# d_linked_list.pop_node()
+# d_linked_list.pop_node()
