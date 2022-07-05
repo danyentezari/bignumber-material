@@ -29,7 +29,7 @@
             "weeks": [
                 {
                     "weekTitle": "Module 1 - Introduction to Linear Mathematics",
-                    "description": "In the first week, we will create a motivating reason to learn about the applications of matrices and systems of equations. We will understand the development of linear algebra from a historical and practical perspective. The objective of this module is to develop a strong foundation for learning linear algebra and applications of it. Furthermore, this course is based in Python; therefore, we will thoroughly review the programming language and the famous library designed for multidimensional tabular data – NumPy.",
+                    "description": "In the first week, we will create a motivating reason to learn about the applications of matrices and systems of equations. We will understand the development of linear algebra from a historical and practical perspective. The objective of this module is to develop a strong foundation for learning linear algebra and applications of it. Furthermore, this course is based in Python; therefore, we will thoroughly review the programming language and the famous library designed for multidimensional tabular data – NumPy.<br><br/>Assignment Deadlines: <ul><li>Assignment 1: 11/Jul/2022</li></ul>",
                     "documents": [
                         {
                             "title": "Module 1 Slides",
