@@ -2,9 +2,11 @@
 
 #### Background
 
-A sovereign state (breadbasket) that exports grain to importing countries is looking to maximize their profit.
+A sovereign state (breadbasket) that exports grain to importing countries is looking to export their commodity to the international market. They need container liners to ship the grain export.
 
-A state-owned manufacturer of agriculture equipment produces two containers liners for storing and transporting grain: 
+The government contracts a state-owned manufacturer of agriculture equipment to deliver the right containers for this export.
+
+The manufacturer produces two containers liners for storing and transporting grain: 
 1. $C_s=$ standard container
 2. $C_p=$ premium container
 
@@ -12,33 +14,39 @@ $C_s$ container can contain 100kg of barley and 100kg of of wheat.
 
 $C_p$ container can contain 200kg of barley and 100kg of of wheat.
 
-The manufacturer has recieved a qoute of
+The manufacturer has now recieved a qoute for
 - $3000 \times 10^4$ tonnes of wheat and 
 - $4000 \times 10^4$ tonnes of barley.
 
-They will earn 80 cents on the dollar for $C_p$ and 70 cents for $C_s$.
+They will earn 80 cents on the dollar for $C_p$ and 70 cents for $C_s$. 
 
+They must now deliver the right combination of containers to meet the requirements of the export and also maximize their profit.
 
+<br/>
 
 #### Problem Tasks
-1. Express the objective function for profit
+1. Express the objective function for as a function of the two variables ($C_p$, $C_s$)
 2. Maximize the object function given the constraints
 
 
-Objective function
+#### Solution to Problem Task
+
+We express the objective function as follows
 > $f(C_p,C_s) = 80C_p + 70C_s$
 
-Let 
+<br/>
+
+To simplify the notation of this LP problem, let 
 > $x=C_p$ 
 > $y = C_s$
 
 
-<br/><br/>
+<br/>
 
-Objective function
+Thus, we will rewrite the objective function
 > $f(x,y) = 80x + 70y$
 
-Constraints
+With constraints
 > $100x + 100y \leq 3000 \times 10^4$ and $x \geq 0$ (for wheat)
 
 > $200x + 100y \leq 4000 \times 10^4$ and $y \geq 0$ (for barley)
@@ -49,10 +57,16 @@ Constraints
 1. Find the feasible region for objective function
 2. Find the best point for objective function
 
+Formally, we express the LP problem as follows
+
+| <!-- -->    | <!-- -->    |
+|----------|----------------------|
+| Maximize | $f(x,y) = 80x + 70y$ |
+| Subject to | $100x + 100y \leq 3000 \times 10^4$ &nbsp;&nbsp;&nbsp;&nbsp; $x \geq 0$ <br/> $200x + 100y \leq 4000 \times 10^4$ &nbsp;&nbsp;&nbsp;&nbsp; $y \geq 0$|
 
 
-
-#### Task 1
+<br/>
+#### Solution to Task 1
 
 To find the feasible region, we must find the roots of the constraint equations to find the point(s) outlining the feasible region.
 
@@ -92,7 +106,7 @@ Substituting $x$ in eq2
 <br/>
 
 
-#### Task 2
+#### Solution to Task 2
 
 To find the best point, where "best" refers to the point that maximizes the objective function, we solve for the roots of the objective function.
 
