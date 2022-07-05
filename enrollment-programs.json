@@ -62,16 +62,6 @@
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-8.html" 
                         },
                         {
-                            "title": "LP Tutorial 1",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/LMP/LP-tutorial-1.html" 
-                        },
-                        {
-                            "title": "LP Tutorial 1 (Notebook)",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/LMP/LP-tutorial-1.ipynb" 
-                        },
-                        {
                             "title": "Python Data Structures",
                             "icon": "video",
                             "url": "https://vimeo.com/710469739/78e57b6607"
@@ -85,6 +75,31 @@
                             "title": "Python Tutorial | Part 1",
                             "icon": "video",
                             "url": "https://youtu.be/stMq7PjJOtg"
+                        },
+                        {
+                            "title": "LP Tutorial 1",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/LP-tutorial-1.html" 
+                        },
+                        {
+                            "title": "LP Tutorial 1 (Notebook)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/LP-tutorial-1.ipynb" 
+                        },
+                        {
+                            "title": "Assignment 1 (Instructions)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-1.html" 
+                        },
+                        {
+                            "title": "Assignment 1 (Notebook)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-1.ipynb" 
+                        },
+                        {
+                            "title": "Assignment 1 Submission",
+                            "icon": "link",
+                            "url": "https://docs.google.com/forms/d/e/1FAIpQLScvcHRREsBHIFnKdY2kJsRpIhUfDRl8QlhL-97JvODlxpPYUA/viewform?usp=sf_link" 
                         }
                     ]
                 },
