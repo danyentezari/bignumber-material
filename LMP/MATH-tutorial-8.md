@@ -48,13 +48,16 @@ A vector space is the set of vectors to which the following axioms apply.
 
 >$ \mathbf{u} + \mathbf{v} \in V$ 
 
-(2) Vector Multiplication
+(2) Scalar Multiplication
 
->$\mathbf{u},\mathbf{v} \in V$  
+>$c \in \mathbb{R},\mathbf{v} \in V$  
 
->$ \mathbf{u} \times \mathbf{v} \in V$ 
+>$ c \times \mathbf{v} \in V$ 
 
-Formally, we say we have $V$ over the field $K$ with the above axioms.
+Formally, we say we have $V$ over the field $K$ with the axioms (1) and (2).
+
+(3) Inner Product (or Dot Product)
+>$ \mathbf{u} \cdot \mathbf{v} = (u_1 \times v_1) + (u_2 \times v_2) + \dots + (u_n \times v_n) $
 
 
 <br/>
