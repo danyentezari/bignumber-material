@@ -106,7 +106,28 @@
                 {
                     "weekTitle": "Module 2 & 3 - Matrix Operations and Real-World Applications",
                     "description": "In weeks 2 & 3, we will develop a more complete understanding of matrices, the algebra of matrices, and linear programming. In other words, Modules 2 and 3 are about mastering linear algebra and a closely related branch of mathematics called linear programming. Linear algebra is a very important branch of mathematics with very broad applications in the real world, and we will look at applications from economics to quantitative finance to logistics.",
-                    "documents": []
+                    "documents": [
+                        {
+                            "title": "MATH Tutorial 9 (Matrix Operations)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-9.html" 
+                        },
+                        {
+                            "title": "PY Tutorial 9 (Matrix Operations Notebook)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/PY-tutorial-9.html" 
+                        },
+                        {
+                            "title": "MATH Tutorial 10 (Vector Applications)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-10.html" 
+                        },
+                        {
+                            "title": "PY Tutorial 9 (Vector Applications Notebook)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/PY-tutorial-10.ipynb" 
+                        }
+                    ]
                 },
                 {
                     "weekTitle": "Module 4 -  Machine Learning and Neural Networks ",
