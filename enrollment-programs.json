@@ -145,7 +145,16 @@
                     "documents": []
                 }
             ],
-            "payment": "https://wise.com/pay#A_tAZ6mCWebDoMvpO8PHO64Q290",
+            "payment": [
+                {
+                    "title": "Payment 1",
+                    "url": "https://wise.com/pay#WpWNL0jklWzAGFmRyQQEnakuPI4"
+                },
+                {
+                    "title": "Payment 2",
+                    "url": "https://wise.com/pay#1Xj0OF7NmoCL7h3Yf13Vym8QBQI"
+                }
+            ],
             "cta": "Learn More",
             "disabled": false,
             "date": "27/Jun/2022 to 25/Jul/2022",
