@@ -148,11 +148,15 @@
             "payment": [
                 {
                     "title": "Payment 1",
-                    "url": "https://wise.com/pay#WpWNL0jklWzAGFmRyQQEnakuPI4"
+                    "url": "https://wise.com/pay#48LfurB0nVjRsICyudyzxMuFtd0"
                 },
                 {
                     "title": "Payment 2",
-                    "url": "https://wise.com/pay#1Xj0OF7NmoCL7h3Yf13Vym8QBQI"
+                    "url": "https://wise.com/pay#072rW1cBlevTtPDBNQyFrkVp8RI"
+                },
+                {
+                    "title": "Payment 3",
+                    "url": "https://wise.com/pay#dxiiDcdiHdif-3DfAUprvDWJSZ0"
                 }
             ],
             "cta": "Learn More",
