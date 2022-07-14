@@ -91,7 +91,7 @@ For constants $a_1,a_2,...,a_k \in \mathbb{R}$
 
 <br/>
 
-#### Linear Span
+#### Linear Span (or Span) [6, pp. 160]
 
 Given a vector space, $V$, with elements 
 >$\mathbf{v}_1,\mathbf{v}_2,\cdots,\mathbf{v}_k \in V$
@@ -99,9 +99,12 @@ Given a vector space, $V$, with elements
 and the set 
 >$X = \{ \mathbf{v}_1,\mathbf{v}_2,\cdots,\mathbf{v}_k \}$
 
-The linear span of $X$, denoted $Lin(X)$ is the set of linear combinations. Thus,
+The linear span of $X$, denoted $\text{Lin}(X)$, is the set of linear combinations. Thus,
 
->$\text{Lin}(X) = \{ a_1\mathbf{v}_1 + a_2\mathbf{v}_2  + \cdots + a_k\mathbf{v}_k | a_1,a_2,...,a_k \in \mathbb{R} \}$
+>$\text{Lin}(X) = \{ a_1\mathbf{v}_1 + a_2\mathbf{v}_2  + \cdots + a_k\mathbf{v}_k \: | \: a_1,a_2,...,a_k \in \mathbb{R} \}$
+
+**Example**
+(See Example 4.1 [6. pp. 114])
 
 <br/>
 

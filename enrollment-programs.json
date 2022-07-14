@@ -118,6 +118,16 @@
                             "url": "https://vimeo.com/728309512/c792a16871" 
                         },
                         {
+                            "title": "Session 6",
+                            "icon": "video",
+                            "url": "https://vimeo.com/729235708/627d3d8737" 
+                        },
+                        {
+                            "title": "Session 7",
+                            "icon": "video",
+                            "url": "https://vimeo.com/729240034/07d6b9d8f0" 
+                        },
+                        {
                             "title": "MATH Tutorial 9 (Matrix Operations)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-9.html" 
@@ -136,6 +146,16 @@
                             "title": "PY Tutorial 9 (Vector Applications Notebook)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/PY-tutorial-10.ipynb" 
+                        },
+                        {
+                            "title": "MATH Tutorial 11 (Linear Transformation)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-10.html" 
+                        },
+                        {
+                            "title": "PY Tutorial 11 (Linear Transformations)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/PY-tutorial-11.ipynb" 
                         }
                     ]
                 },
