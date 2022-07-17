@@ -602,7 +602,7 @@
             "cpdCertification": true,
             "path": "/certificate-programs/mathematics-and-programming",
             "image": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
-            "courseID": "LMP",
+            "courseID": "MPDv1",
             "ctaIsExternal": false,
             "event": "Attend the Course Q&A on 08/May/2022 to learn more about this program.",
             "price": 450,
