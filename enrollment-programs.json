@@ -385,6 +385,7 @@
             "numOfWeeks": 4
         },
         "MPDv1": {
+            "open": true,
             "code": "MPDv1",
             "description": "Discover the fundamental concepts in mathematics through computer programming. Become proficient in both mathematics and programming. Gain key skills for mathematical sciences such as computer science, data science, and engineering.",
             "descriptionLong": "This course covers programming in Python, the fundamentals Computer Science, and the fundamentals of Mathematics. In addition to learning to program in Python, you will understand, at the high level, how computers work and interpret programming languages. A high-level understanding of computer architecture will allow you to understand the most complex of algorithms and data structures. This course, which is the foundation couse for more advanced courses at BigNumber, is self-contained and focused on the first-principles of Computer Science and Pure Mathematics.<br/><br/>Pure Mathematics is about concepts in mathematics that are ubiquitous in all of Mathematics. In this course, you will learn the building blocks of mathematics that are relevant and necessary in all of the Mathematical and the Physical Sciences (e.g, Computer Science, Data Science, Engineering, and Economics).",
