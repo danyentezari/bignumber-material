@@ -166,6 +166,36 @@
                             "title": "PY Tutorial 11 (Linear Transformations)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/PY-tutorial-11.ipynb" 
+                        },
+                        {
+                            "title": "Assignment 2 (Instructions)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-2.html" 
+                        },
+                        {
+                            "title": "Assignment 2 (Notebook)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-2.ipynb" 
+                        },
+                        {
+                            "title": "Assignment 2 Submission",
+                            "icon": "link",
+                            "url": "https://forms.gle/E3ZaRnxZWUPTY81X7" 
+                        },
+                        {
+                            "title": "Assignment 3 (Instructions)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-3.html" 
+                        },
+                        {
+                            "title": "Assignment 3 (Notebook)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-3.ipynb" 
+                        },
+                        {
+                            "title": "Assignment 3 Submission",
+                            "icon": "link",
+                            "url": "https://forms.gle/ZwXyDNnMYGD9iMyTA" 
                         }
                     ]
                 },
