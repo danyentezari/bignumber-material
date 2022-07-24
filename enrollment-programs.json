@@ -244,6 +244,11 @@
                             "url": "https://vimeo.com/732973660/b875e0211c" 
                         },
                         {
+                            "title": "Mathematics for Data Science #2 (reference video)",
+                            "icon": "video",
+                            "url": "https://www.youtube.com/watch?v=1cuD3BERyoo"
+                        },
+                        {
                             "title": "MATH Tutorial 17 (Neural Networks)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-17.html" 
