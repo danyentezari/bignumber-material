@@ -225,8 +225,8 @@
                     "documents": [
                         {
                             "title": "Module 3 Slides",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-17.html" 
+                            "icon": "slides",
+                            "url": "https://docs.google.com/presentation/d/19sm_I4QbqpnemEecZAzmLXHU-Ygv7dthCfDXhUNjGF4/edit?usp=sharing" 
                         },
                         {
                             "title": "Session 10",
@@ -244,9 +244,14 @@
                             "url": "https://vimeo.com/732973660/b875e0211c" 
                         },
                         {
-                            "title": "Session 12",
-                            "icon": "slides",
-                            "url": "https://docs.google.com/presentation/d/19sm_I4QbqpnemEecZAzmLXHU-Ygv7dthCfDXhUNjGF4/edit?usp=sharing" 
+                            "title": "MATH Tutorial 17 (Neural Networks)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-17.html" 
+                        },
+                        {
+                            "title": "PY Tutorial 17 (NN Image Classification)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/PY-tutorial-17.ipynb" 
                         }
                     ]
                 }
