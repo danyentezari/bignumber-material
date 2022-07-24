@@ -224,6 +224,21 @@
                     "description": "In week 4, we will be introduced to machine learning and neural networks in the context of matrix representation of data. Neural Networks are the center of the most advanced use cases of machine learning such as computer vision and natural language processing. In this module we will look at examples of how matrices are used in machine learning.",
                     "documents": [
                         {
+                            "title": "Session 10",
+                            "icon": "video",
+                            "url": "https://vimeo.com/732969614/c91d2c9cf9" 
+                        },
+                        {
+                            "title": "Session 11",
+                            "icon": "video",
+                            "url": "https://vimeo.com/732972322/206640c516" 
+                        },
+                        {
+                            "title": "Session 12",
+                            "icon": "video",
+                            "url": "https://vimeo.com/732973660/b875e0211c" 
+                        },
+                        {
                             "title": "MATH Tutorial 17 (Neural Networks)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-17.html" 
