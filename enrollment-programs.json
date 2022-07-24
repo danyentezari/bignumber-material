@@ -168,6 +168,26 @@
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/PY-tutorial-11.ipynb" 
                         },
                         {
+                            "title": "MATH Tutorial 12 (Determinants)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-12.html" 
+                        },
+                        {
+                            "title": "MATH Tutorial 13 (Diagonalization)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-13.html" 
+                        },
+                        {
+                            "title": "MATH Tutorial 14 (Basis)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-14.html" 
+                        },
+                        {
+                            "title": "MATH Tutorial 15 (Singular Value Decomposition)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-15.html" 
+                        },
+                        {
                             "title": "Assignment 2 (Instructions)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-2.html" 
@@ -202,7 +222,13 @@
                 {
                     "weekTitle": "Module 4 -  Machine Learning and Neural Networks ",
                     "description": "In week 4, we will be introduced to machine learning and neural networks in the context of matrix representation of data. Neural Networks are the center of the most advanced use cases of machine learning such as computer vision and natural language processing. In this module we will look at examples of how matrices are used in machine learning.",
-                    "documents": []
+                    "documents": [
+                        {
+                            "title": "MATH Tutorial 17 (Neural Networks)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-17.html" 
+                        }
+                    ]
                 }
             ],
             "payment": [
