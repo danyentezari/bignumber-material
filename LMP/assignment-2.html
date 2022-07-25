@@ -274,8 +274,8 @@ pre[data-line] .line-highlight[data-end]:after {
 <ol>
 <li>Find the norm of the matrix <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">A</mi></mrow><annotation encoding="application/x-tex">\mathbf{A}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord mathbf">A</span></span></span></span></li>
 <li>Express the characteristic polynomial for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">A</mi></mrow><annotation encoding="application/x-tex">\mathbf{A}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord mathbf">A</span></span></span></span></li>
-<li>Find the eigenvalues and eigenvectors of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">A</mi></mrow><annotation encoding="application/x-tex">\mathbf{A}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord mathbf">A</span></span></span></span></li>
-<li>Perform tasks 1 &amp; 3 in python (see assignment-2.ipynb)</li>
+<li>Find the eigenvalues and eigenvectors of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">A</mi></mrow><annotation encoding="application/x-tex">\mathbf{A}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord mathbf">A</span></span></span></span> (see Note 4!)</li>
+<li>Perform tasks 1, 2 and 3 in python (see assignment-2.ipynb)</li>
 </ol>
 <br>
 <h4 class="mume-header" id="notes">Notes:</h4>
@@ -284,8 +284,20 @@ pre[data-line] .line-highlight[data-end]:after {
 <li>For this assignment, you need to submit both the mathematical solution and programming solution</li>
 <li>Show all the steps for the mathematical solution</li>
 <li>Add comments for the programming solution</li>
+<li>The eigenvalues for this matrix are complex. You may use NumPy to find the roots of the characteristic polynomial (see code below).</li>
 </ol>
+<pre data-role="codeBlock" data-info class="language-"><code>import numpy as np
+# Example cubic polynomial
+# ax^3 + bx^2 + cx^1 + d = 0
 
+a = 1
+b = 5
+c = 7
+d = 9
+
+coeff = [a,b,c,d]
+np.roots(coeff)
+</code></pre>
       </div>
       
       
