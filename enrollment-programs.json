@@ -2,6 +2,7 @@
     "programs":{
         "LMP": {
             "title": "Linear Mathematics with Python",
+            "tags": ["Linear Algebra","Linear Programming","Singular Value Decomposition","Principal Component Anlaysis","NumPy","Neural Networks","Systems of Equations", "Vector Applications","Eigendecomposition"],
             "code": "LMP",
             "description": "Learn the fundamentals and applications of linear algebra, matrix theory, and linear programming. In this course, you will learn about matrix operations, systems of equations, and optimization in the context of real-world applications and machine learning.",
             "urlTitle": "linear-mathematics-with-python",
@@ -294,6 +295,7 @@
         "SPRv3": {
             "code": "SPRv3",
             "title": "Statistics, Probability Theory, and R Programming",
+            "tags": ["Probability Distributions","Hypothesis Testing","Regression Analysis","Combinatorics","Bayesian Statistics","R Programming","Maximum Likelihood", "Confidence Intervals","Markov Processes"],
             "description": "Learn the mathematical science behind artificial intelligence, econometrics, risk engineering, and epidemiology. Learn to perform statistical analysis with the R programming language.",
             "descriptionLong": "This courses teaches Statistics and Probability Theory with emphasis on learning from first principles. To learn advanced Statistics and, in particular, Probability Theory, it is necessary to be familiar with other mathematical topics including Integration, Sequences, Series, Sets, and Combinatrics. Although this course has Statistics and Probability Theory in the title, it contains sufficient supplementary material about other mathematical subjects that is necessary for mastery in Statistics and Probability Theory. <br/><br/>This course also teaches R, the programming language for statistical analysis. You will learn the required programming constructs to perform analysis in this specialized programming language. You will learn to apply the appropriate functions and methods, import and process data, produce meaningful visualizations, and interpret the results of analysis (e.g, Correlation, ANOVA, etc.)",
             "urlTitle": "statistics-probability-theory-and-r-v3",
@@ -477,6 +479,7 @@
             "descriptionLong": "This course covers programming in Python, the fundamentals Computer Science, and the fundamentals of Mathematics. In addition to learning to program in Python, you will understand, at the high level, how computers work and interpret programming languages. A high-level understanding of computer architecture will allow you to understand the most complex of algorithms and data structures. This course, which is the foundation couse for more advanced courses at BigNumber, is self-contained and focused on the first-principles of Computer Science and Pure Mathematics.<br/><br/>Pure Mathematics is about concepts in mathematics that are ubiquitous in all of Mathematics. In this course, you will learn the building blocks of mathematics that are relevant and necessary in all of the Mathematical and the Physical Sciences (e.g, Computer Science, Data Science, Engineering, and Economics).",
             "payment": "https://wise.com/pay#WHmsZe53ZB35T9Ih2G6o26RJL1M",
             "title": "Mathematics and Programming",
+            "tags": ["Data Structures", "Discrete Mathematics","Problem Solving","Python","Graphs and Binary Trees","Algorithms","Finite State Machines","Regular Expressions"],
             "urlTitle": "mathematics-and-programming",
             "enrollmentType": "Audit",
             "courseDate": "15/May/2022 to 05/Jun/2022",
