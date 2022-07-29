@@ -19,7 +19,7 @@ $y = r \times \cos(\theta)$
 
 <br/>
 
-#### Cartesian Coordinate to  Coordinate Polar
+#### Cartesian Coordinate to Polar Coordinate
 
 $ r = \sqrt{x^2 + y^2} $
 
