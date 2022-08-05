@@ -521,7 +521,7 @@
                 {
                     "date": "",
                     "weekTitle": "Module 1 - Introduction to Programming and Computer Science",
-                    "description": "In the first week, we will learn the building blocks of a programming language and implementation of algorithms. We will learn to write algorithms in sequential, conditional, and iterative patterns. For data structures, we will go in depth about linear data structures, their methods, and algorithms for searching in and writing into data structures.<br/><br/> Assessment:<br/> You will complete programming assignments about topics covered in Module 1.",
+                    "description": "In the first week, we will learn the building blocks of a programming language and implementation of algorithms. We will learn to write algorithms in sequential, conditional, and iterative patterns. For data structures, we will go in depth about linear data structures, their methods, and algorithms for searching in and writing into data structures.",
                     "details": "Assignment Deadlines:<br/><ul><li>Assignment 1: 20/May/2022</li><li>Assignment 2: 24/May/2022</li></ul><br/><br/>Topics: <br/> <ul><li>Overview of Computer Science</li><li>Overview of Programming and Computer Organization</li><li>Getting Started with Python</li><li>Control Statements</li><li>Data Structures: Lists</li><li>Data Structures: Dictionaries, Sets, and Tuples</li><li>Classes and Objects</li><li>Time & Space Complexity</li></ul>",
                     "documents": [
                         {
