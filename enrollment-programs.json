@@ -291,7 +291,7 @@
             "courseID": "LMP",
             "ctaIsExternal": false,
             "event": "Attend the Course Q&A on 27/Jun/2022 to learn more about this program.",
-            "price": 600,
+            "price": 19,
             "numOfWeeks": 4
         },
         "SPRv3": {
@@ -474,7 +474,7 @@
             "courseID": "SPRv3",
             "ctaIsExternal": false,
             "event": "Attend the Course Q&A on TBD to learn more about this program.",
-            "price": 600,
+            "price": 19,
             "numOfWeeks": 4
         },
         "MPDv1": {
@@ -703,7 +703,7 @@
             "courseID": "MPDv1",
             "ctaIsExternal": false,
             "event": "Attend the Course Q&A on 08/May/2022 to learn more about this program.",
-            "price": 450,
+            "price": 19,
             "numOfWeeks": 3
         },
         "SPRv2": {
