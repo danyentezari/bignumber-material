@@ -484,7 +484,7 @@
             "descriptionLong": "This course covers programming in Python, the fundamentals Computer Science, and the fundamentals of Mathematics. In addition to learning to program in Python, you will understand, at the high level, how computers work and interpret programming languages. A high-level understanding of computer architecture will allow you to understand the most complex of algorithms and data structures. This course, which is the foundation couse for more advanced courses at BigNumber, is self-contained and focused on the first-principles of Computer Science and Pure Mathematics.<br/><br/>Pure Mathematics is about concepts in mathematics that are ubiquitous in all of Mathematics. In this course, you will learn the building blocks of mathematics that are relevant and necessary in all of the Mathematical and the Physical Sciences (e.g, Computer Science, Data Science, Engineering, and Economics).",
             "payment": "https://wise.com/pay#WHmsZe53ZB35T9Ih2G6o26RJL1M",
             "title": "Mathematics and Programming",
-            "tags": ["Data Structures", "Discrete Mathematics","Problem Solving","Python","Graphs and Binary Trees","Algorithms","Finite State Machines","Regular Expressions"],
+            "tags": ["Data Structures", "Discrete Mathematics","Problem Solving","Python","Graphs and Binary Trees","Algorithms","Finite State Machines","Regular Expressions","C++","Computer Architecture"],
             "urlTitle": "mathematics-and-programming",
             "enrollmentType": "Audit",
             "courseDate": "15/May/2022 to 05/Jun/2022",
