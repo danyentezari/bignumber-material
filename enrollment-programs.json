@@ -922,6 +922,36 @@
             "price": 0,
             "numOfWeeks": 10,
             "status": "Hidden"
+        },
+        "RLRS": {
+            "title": "Reinforcement Learning and Recommendation Systems",
+            "tags": ["Probabilistic Machine Learning", "Recommender Systems", "Bandit Problems", "Bayesian Probability", "Dynamic Programming", "Tensorflow", "Optimization", "Temporal Learning", "Monte Carlo Methods","Machine Learning"],
+            "numOfWeeks": 4,
+            "duration": "4 Weeks",
+            "numCourses": "4 Modules",
+            "cta": "Coming Soon",
+            "buttonLabel": "Coming Soon",
+            "disabled": true
+        },
+        "DLCV": {
+            "title": "Deep Learning and Computer Vision",
+            "tags": ["Convolutional Neural Networks", "Transformers", "Recurrent Neural Networks", "Autoencoders", "Signal Processing", "TensorFlow", "Neural Networks", "Pattern Recogniition", "Temporal Learning", "Bayesian Probability","Machine Learning"],
+            "numOfWeeks": 4,
+            "duration": "3 Weeks",
+            "numCourses": "3 Modules",
+            "cta": "Coming Soon",
+            "buttonLabel": "Coming Soon",
+            "disabled": true
+        },
+        "DEAP": {
+            "title": "Differential Equations with Applications",
+            "tags": ["Ordinary Differential Equations", "Partial Differential Equations", "Vector Analysis", "Digital Signal Processing", "Engineering", "Mathematical Finance", "Mathematical Physics",  "Complex Analysis", "Fourier Transforms","Laplace Transforms"],
+            "numOfWeeks": 4,
+            "duration": "3 Weeks",
+            "numCourses": "3 Modules",
+            "cta": "Coming Soon",
+            "buttonLabel": "Coming Soon",
+            "disabled": true
         }
     },
     "url_map": {
