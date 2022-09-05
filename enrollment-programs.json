@@ -2,7 +2,7 @@
     "programs":{
         "LMP": {
             "title": "Linear Mathematics with Python",
-            "tags": ["Linear Algebra","Linear Programming","Singular Value Decomposition","Principal Component Anlaysis","NumPy","Neural Networks","Systems of Equations", "Vector Applications","Eigendecomposition"],
+            "tags": ["Linear Algebra","Linear Programming","Singular Value Decomposition","Principal Component Anlaysis","NumPy","Neural Networks","Systems of Equations", "Vector Applications","Eigendecomposition","Mathematics","Data Science"],
             "code": "LMP",
             "description": "Learn the fundamentals and applications of linear algebra, matrix theory, and linear programming. In this course, you will learn about matrix operations, systems of equations, and optimization in the context of real-world applications and machine learning.",
             "urlTitle": "linear-mathematics-with-python",
@@ -279,7 +279,6 @@
                 }
             ],
             "cta": "Learn More",
-            "disabled": false,
             "date": "27/Jun/2022 to 25/Jul/2022",
             "numCourses": "4 modules",
             "duration": "4 weeks",
@@ -292,12 +291,16 @@
             "ctaIsExternal": false,
             "event": "Attend the Course Q&A on 27/Jun/2022 to learn more about this program.",
             "price": 19,
-            "numOfWeeks": 4
+            "numOfWeeks": 4,
+            "disabled": true,
+            "comingSoon": false,
+            "open": false,
+            "free": false
         },
         "SPRv3": {
             "code": "SPRv3",
             "title": "Statistics, Probability Theory, and R Programming",
-            "tags": ["Probability Distributions","Hypothesis Testing","Regression Analysis","Combinatorics","Bayesian Statistics","R Programming","Maximum Likelihood", "Confidence Intervals","Markov Processes"],
+            "tags": ["Probability Distributions","Hypothesis Testing","Regression Analysis","Combinatorics","Bayesian Statistics","R Programming","Maximum Likelihood", "Confidence Intervals","Markov Processes","Mathematics","Data Science"],
             "description": "Learn the mathematical science behind artificial intelligence, econometrics, risk engineering, and epidemiology. Learn to perform statistical analysis with the R programming language.",
             "descriptionLong": "This courses teaches Statistics and Probability Theory with emphasis on learning from first principles. To learn advanced Statistics and, in particular, Probability Theory, it is necessary to be familiar with other mathematical topics including Integration, Sequences, Series, Sets, and Combinatrics. Although this course has Statistics and Probability Theory in the title, it contains sufficient supplementary material about other mathematical subjects that is necessary for mastery in Statistics and Probability Theory. <br/><br/>This course also teaches R, the programming language for statistical analysis. You will learn the required programming constructs to perform analysis in this specialized programming language. You will learn to apply the appropriate functions and methods, import and process data, produce meaningful visualizations, and interpret the results of analysis (e.g, Correlation, ANOVA, etc.)",
             "urlTitle": "statistics-probability-theory-and-r-v3",
@@ -463,7 +466,6 @@
             ],
             "payment": "",
             "cta": "Learn More",
-            "disabled": false,
             "date": "24/Aug/2022 to 14/Sep/2022",
             "numCourses": "4 Modules",
             "duration": "4 Weeks",
@@ -475,16 +477,19 @@
             "ctaIsExternal": false,
             "event": "Attend the Course Q&A on TBD to learn more about this program.",
             "price": 19,
-            "numOfWeeks": 4
+            "numOfWeeks": 4,
+            "disabled": true,
+            "comingSoon": false,
+            "open": false,
+            "free": false
         },
         "MPDv1": {
-            "open": true,
             "code": "MPDv1",
             "description": "Discover the fundamental concepts in mathematics through computer programming. Become proficient in both mathematics and programming. Gain key skills for mathematical sciences such as computer science, data science, and engineering.",
             "descriptionLong": "This course covers programming in Python, the fundamentals Computer Science, and the fundamentals of Mathematics. In addition to learning to program in Python, you will understand, at the high level, how computers work and interpret programming languages. A high-level understanding of computer architecture will allow you to understand the most complex of algorithms and data structures. This course, which is the foundation couse for more advanced courses at BigNumber, is self-contained and focused on the first-principles of Computer Science and Pure Mathematics.<br/><br/>Pure Mathematics is about concepts in mathematics that are ubiquitous in all of Mathematics. In this course, you will learn the building blocks of mathematics that are relevant and necessary in all of the Mathematical and the Physical Sciences (e.g, Computer Science, Data Science, Engineering, and Economics).",
             "payment": "https://wise.com/pay#WHmsZe53ZB35T9Ih2G6o26RJL1M",
             "title": "Mathematics and Programming",
-            "tags": ["Data Structures", "Discrete Mathematics","Problem Solving","Python","Graphs and Binary Trees","Algorithms","Finite State Machines","Regular Expressions","C++","Computer Architecture"],
+            "tags": ["Data Structures", "Discrete Mathematics","Problem Solving","Python","Graphs and Binary Trees","Algorithms","Finite State Machines","Regular Expressions","C++","Computer Architecture","Mathematics","Computer Science"],
             "urlTitle": "mathematics-and-programming",
             "enrollmentType": "Audit",
             "courseDate": "15/May/2022 to 05/Jun/2022",
@@ -692,7 +697,6 @@
                 }
             ],
             "cta": "Learn More",
-            "disabled": false,
             "date": "15/May/2022 to 05/Jun/2022",
             "numCourses": "3 Modules",
             "duration": "3 Weeks",
@@ -704,7 +708,11 @@
             "ctaIsExternal": false,
             "event": "Attend the Course Q&A on 08/May/2022 to learn more about this program.",
             "price": 19,
-            "numOfWeeks": 3
+            "numOfWeeks": 3,
+            "disabled": true,
+            "comingSoon": false,
+            "open": false,
+            "free": false
         },
         "SPRv2": {
             "code": "SPRv2",
@@ -876,7 +884,6 @@
             ],
             "payment": "",
             "cta": "Learn More",
-            "disabled": false,
             "date": "24/Aug/2022 to 14/Sep/2022",
             "numCourses": "3 Modules",
             "duration": "3 Weeks",
@@ -888,7 +895,11 @@
             "ctaIsExternal": false,
             "event": "Attend the Course Q&A on TBD to learn more about this program.",
             "price": 0,
-            "numOfWeeks": 0
+            "numOfWeeks": 0,
+            "disabled": true,
+            "comingSoon": false,
+            "open": false,
+            "free": false
         },
         "MLPapers": {
             "title": "ML Papers",
@@ -925,40 +936,165 @@
         },
         "RLRS": {
             "title": "Reinforcement Learning and Recommendation Systems",
-            "tags": ["Probabilistic Machine Learning", "Recommender Systems", "Bandit Problems", "Bayesian Probability", "Dynamic Programming", "Tensorflow", "Optimization", "Temporal Learning", "Monte Carlo Methods","Machine Learning"],
+            "tags": ["Probabilistic Machine Learning", "Recommender Systems", "Bandit Problems", "Bayesian Probability", "Dynamic Programming", "Tensorflow", "Optimization", "Temporal Learning", "Monte Carlo Methods","Machine Learning","Data Science"],
             "numOfWeeks": 4,
             "duration": "4 Weeks",
             "numCourses": "4 Modules",
             "cta": "Coming Soon",
             "buttonLabel": "Coming Soon",
-            "disabled": true
+            "disabled": true,
+            "comingSoon": true,
+            "open": false,
+            "free": false
         },
         "DLCV": {
             "title": "Deep Learning and Computer Vision",
-            "tags": ["Convolutional Neural Networks", "Transformers", "Recurrent Neural Networks", "Autoencoders", "Signal Processing", "TensorFlow", "Neural Networks", "Pattern Recogniition", "Temporal Learning", "Bayesian Probability","Machine Learning"],
+            "tags": ["Convolutional Neural Networks", "Transformers", "Recurrent Neural Networks", "Autoencoders", "Signal Processing", "TensorFlow", "Neural Networks", "Pattern Recogniition", "Temporal Learning", "Bayesian Probability","Machine Learning","Data Science"],
             "numOfWeeks": 4,
             "duration": "3 Weeks",
             "numCourses": "3 Modules",
             "cta": "Coming Soon",
             "buttonLabel": "Coming Soon",
-            "disabled": true
+            "disabled": true,
+            "comingSoon": true,
+            "open": false,
+            "free": false
         },
         "DEAP": {
             "title": "Differential Equations with Applications",
-            "tags": ["Ordinary Differential Equations", "Partial Differential Equations", "Vector Analysis", "Digital Signal Processing", "Engineering", "Mathematical Finance", "Mathematical Physics",  "Complex Analysis", "Fourier Transforms","Laplace Transforms"],
+            "tags": ["Ordinary Differential Equations", "Partial Differential Equations", "Vector Analysis", "Digital Signal Processing", "Engineering", "Mathematical Finance", "Mathematical Physics",  "Complex Analysis", "Fourier Transforms","Laplace Transforms","Mathematics"],
             "numOfWeeks": 4,
             "duration": "3 Weeks",
             "numCourses": "3 Modules",
             "cta": "Coming Soon",
             "buttonLabel": "Coming Soon",
-            "disabled": true
-        }
+            "disabled": true,
+            "comingSoon": true,
+            "open": false,
+            "free": false
+        },
+        "SQL": {
+            "code": "SQL",
+            "courseID": "SQL",
+            "urlTitle": "introduction-to-sql",
+            "description": "Learn the basics of SQL and relational databases in this course designed for beginners in data science, data engineering, and application development.",
+            "image": "https://www.bignumber.xyz/bignumber-sql.jpg",
+            "enrollmentType": "Free",
+            "title": "Introduction to SQL",
+            "tags": ["SQL", "Databases", "Database Operations", "Data Analysis", "Data Science", "Computer Science", "Free"],
+            "numOfWeeks": "1 Week",
+            "numCourses": "1 Module",
+            "duration": "1 week",
+            "cta": "Learn More",
+            "disabled": false,
+            "buttonLabel": "Learn More",
+            "programType": "Free Course in",
+            "free": true,
+            "comingSoon": false,
+            "open": true,
+            "rootDocs": [],
+            "url": "/dashboard/enrollments/introduction-to-sql",
+            "path": "/certificate-programs/introduction-to-sql",
+            "price": 0,
+            "weeks": [
+                {
+                    "weekTitle": "Module 1 - Introduction to SQL",
+                    "description": "In this module, you will learn the syntax of Structured Query Language and how to write procedures for CRUD (Create, Read, Update, Delete) operations.",
+                    "documents": [
+                        {
+                            "icon": "file",
+                            "title": "Snippets",
+                            "url": ""
+                        }
+                    ]
+                }
+            ],
+            "slack": "https://widget.tagembed.com/61952?view",
+            "videoPlaylist":  [
+                {
+                "section": "Module 1",
+                "children": [
+                        {
+                            "title": "Introduction and Agenda",
+                            "duration": "51s",
+                            "url": "https://player.vimeo.com/video/746271648?h=a9014c8769"
+                        },
+                        {
+                            "title": "Definition: Database, Tables, and Relations",
+                            "duration": "3m 7s",
+                            "url": "https://player.vimeo.com/video/746271516?h=a0b3549460"
+                        },
+                        {
+                            "title": "Overview of RDMBSs",
+                            "duration": "2m 9s",
+                            "url": "https://player.vimeo.com/video/746271424?h=aae94b231c"
+                        },
+                        {
+                            "title": "Definition: CRUD",
+                            "duration": "47s",
+                            "url": "https://player.vimeo.com/video/746271398?h=de6a7d2162"
+                        },
+                        {
+                            "title": "Structured Query",
+                            "duration": "6m 53s",
+                            "url": "https://player.vimeo.com/video/746271155?h=4cf1927290"
+                        },
+                        {
+                            "title": "SQL Tutorial Start",
+                            "duration": "13m 18s",
+                            "url": "https://player.vimeo.com/video/746270864?h=c8a047debd"
+                        },
+                        {
+                            "title": "Inserting Data",
+                            "duration": "2m 2s",
+                            "url": "https://player.vimeo.com/video/746270822?h=a2e9dbbc35"
+                        },
+                        {
+                            "title": "Data Types in Tables",
+                            "duration": "3m 7s",
+                            "url": "https://player.vimeo.com/video/746270705?h=b276fc86a7"
+                        },
+                        {
+                            "title": "Querying Basics",
+                            "duration": "3m 1s",
+                            "url": "https://player.vimeo.com/video/746270630?h=51151077de"
+                        },
+                        {
+                            "title": "Counting and Distinct Values",
+                            "duration": "3m 51s",
+                            "url": "https://player.vimeo.com/video/746270465?h=1f948824ba"
+                        },
+                        {
+                            "title": "Joining Tables and Setting Conditions",
+                            "duration": "10m 34s",
+                            "url": "https://player.vimeo.com/video/746270191?h=39844d027a"
+                        },
+                        {
+                            "title": "Summation and Grouping Values",
+                            "duration": "7m 13s",
+                            "url": "https://player.vimeo.com/video/746270038?h=d95eaa0e28"
+                        },
+                        {
+                            "title": "Table Unions",
+                            "duration": "2m 56s",
+                            "url": "https://player.vimeo.com/video/746269973?h=1c8815237d"
+                        },
+                        {
+                            "title": "Complex Querying",
+                            "duration": "6m 54s",
+                            "url": "https://player.vimeo.com/video/746269839?h=dcd89f774b"
+                        }
+                    ]
+                } 
+            ]
+        }                                              
     },
     "url_map": {
         "statistics-probability-theory-and-r": "SPRv2",
         "statistics-probability-theory-and-r-v3": "SPRv3",
         "mathematics-and-programming": "MPDv1",
         "linear-mathematics-with-python": "LMP",
-        "google-developers-ml-papers": "MLPapers"
+        "google-developers-ml-papers": "MLPapers",
+        "introduction-to-sql": "SQL"
     }
 }
