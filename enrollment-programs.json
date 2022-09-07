@@ -1018,6 +1018,11 @@
                             "icon": "file",
                             "title": "Snippets",
                             "url": "https://danyentezari.github.io/bignumber-material/SQL/snippets.sql"
+                        },
+                        {
+                            "icon": "link",
+                            "title": "Launch SQLite Online",
+                            "url": "https://sqliteonline.com/"
                         }
                     ]
                 }
