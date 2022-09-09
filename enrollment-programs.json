@@ -1008,7 +1008,7 @@
             "rootDocs": [],
             "url": "/dashboard/enrollments/introduction-to-sql",
             "path": "/courses/introduction-to-sql",
-            "price": 0,
+            "price": 90,
             "weeks": [
                 {
                     "weekTitle": "Module 1 - Introduction to SQL",
