@@ -8,7 +8,7 @@ $ \mathbf{A} = \begin{bmatrix}
 <br/>
 
 
-$\mathbf{A} = \mathbf{P} \mathbf{D} \mathbf{P}$
+$\mathbf{A} = \mathbf{P} \mathbf{D} \mathbf{P}^{-1}$
 
 Where
 - $\mathbf{P}$ is the matrix with eigenvectors as columns
@@ -100,7 +100,7 @@ $v_1 = \begin{bmatrix}
 
 **Step 5 (Find the Eigenvectors for $\lambda_2=4$)** 
 
-$v_1 = \begin{bmatrix}
+$v_2 = \begin{bmatrix}
 1 \\
 1
 \end{bmatrix}$
@@ -108,7 +108,7 @@ $v_1 = \begin{bmatrix}
 <br/>
 
 
-**Step 5 (Plugin values for $\mathbf{P}$ and $\mathbf{D})$**
+**Step 6 (Plugin values for $\mathbf{P}$ and $\mathbf{D})$**
 
 
 $A = \begin{bmatrix}

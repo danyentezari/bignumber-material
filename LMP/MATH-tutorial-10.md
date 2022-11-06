@@ -15,6 +15,7 @@ $ \text{cosinesim}(\vec{a}, \vec{b}) = \dfrac{\vec{a} \cdot \vec{b}}{||\vec{a}||
 #### Polar Coordinate to Cartersian Coordinate
 
 $x = r \times \sin(\theta)$
+
 $y = r \times \cos(\theta)$
 
 <br/>
