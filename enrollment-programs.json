@@ -4,7 +4,7 @@
             "title": "Linear Mathematics with Python",
             "promoVideo": "https://player.vimeo.com/video/771586848?h=0706619079",
             "cpd": true,
-            "tags": ["Linear Algebra","Linear Programming","Singular Value Decomposition","Principal Component Anlaysis","NumPy","Neural Networks","Systems of Equations", "Vector Applications","Eigendecomposition"],
+            "tags": ["Linear Algebra","Linear Programming","Singular Value Decomposition","Principal Component Analysis","NumPy","Neural Networks","Systems of Equations", "Vector Applications","Eigendecomposition"],
             "hiddenTags": ["Mathematics","Data Science"], 
             "code": "LMP",
             "description": "Learn the fundamentals and applications of linear algebra, matrix theory, and linear programming. In this course, you will learn about matrix operations, systems of equations, and optimization in the context of real-world applications and machine learning.",
