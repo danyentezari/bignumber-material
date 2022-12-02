@@ -202,6 +202,7 @@
                     ]
                 }
             ],
+            "tabs": ["Module 1", "Modules 2 & 3", "Module 4"],
             "payment": [
                 {
                     "title": "Payment 1",
