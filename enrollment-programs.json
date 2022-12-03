@@ -1275,6 +1275,7 @@
             "url": "/dashboard/enrollments/introduction-to-sql",
             "path": "/courses/introduction-to-sql",
             "price": 90,
+            "tabs": ["Module 1"],
             "weeks": [
                 {
                     "weekTitle": "Module 1 - Introduction to SQL",
