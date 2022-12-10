@@ -39,11 +39,13 @@
                         {
                             "title": "MATH Tutorial 6 (Abstract Algebra)",
                             "icon": "file",
+                            "filename": "MATH-tutorial-6.html",
                             "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-6.html" 
                         },
                         {
                             "title": "MATH Tutorial 8 (Linear Algebra Fundamentals)",
                             "icon": "file",
+                            "filename": "MATH-tutorial-8.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-8.html" 
                         },
                         {
@@ -54,6 +56,7 @@
                         {
                             "title": "Getting Started with Python",
                             "icon": "file",
+                            "filename": "getting-started-with-python.html",
                             "url": "https://danyentezari.github.io/bignumber-material/MPD/getting-started-with-python.html"
                         },
                         {
@@ -64,21 +67,25 @@
                         {
                             "title": "LP Tutorial 1",
                             "icon": "file",
+                            "filename": "LP-tutorial-1.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/LP-tutorial-1.html" 
                         },
                         {
                             "title": "LP Tutorial 1 (Notebook)",
                             "icon": "file",
+                            "filename": "LP-tutorial-1.ipynb",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/LP-tutorial-1.ipynb" 
                         },
                         {
                             "title": "Assignment 1 (Instructions)",
                             "icon": "file",
+                            "filename": "assignment-1.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-1.html" 
                         },
                         {
                             "title": "Assignment 1 (Notebook)",
                             "icon": "file",
+                            "filename": "assignment-1.ipynb",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-1.ipynb" 
                         },
                         {
@@ -96,62 +103,74 @@
                         {
                             "title": "MATH Tutorial 9 (Matrix Operations)",
                             "icon": "file",
+                            "filename": "MATH-tutorial-9.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-9.html" 
                         },
                         {
                             "title": "PY Tutorial 9 (Matrix Operations Notebook)",
                             "icon": "file",
+                            "filename": "PY-tutorial-9.ipynb",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/PY-tutorial-9.ipynb" 
                         },
                         {
                             "title": "MATH Tutorial 10 (Vector Applications)",
                             "icon": "file",
+                            "filename": "MATH-tutorial-10.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-10.html" 
                         },
                         {
                             "title": "PY Tutorial 10 (Vector Applications Notebook)",
                             "icon": "file",
+                            "filename": "PY-tutorial-10.ipynb",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/PY-tutorial-10.ipynb" 
                         },
                         {
                             "title": "MATH Tutorial 11 (Linear Transformation)",
                             "icon": "file",
+                            "filename": "MATH-tutorial-11.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-11.html" 
                         },
                         {
                             "title": "PY Tutorial 11 (Linear Transformations)",
                             "icon": "file",
+                            "filename": "PY-tutorial-11.ipynb",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/PY-tutorial-11.ipynb" 
                         },
                         {
                             "title": "MATH Tutorial 12 (Determinants)",
                             "icon": "file",
+                            "filename": "MATH-tutorial-12.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-12.html" 
                         },
                         {
                             "title": "MATH Tutorial 13 (Diagonalization)",
                             "icon": "file",
+                            "filename": "MATH-tutorial-13.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-13.html" 
                         },
                         {
                             "title": "MATH Tutorial 14 (Basis)",
                             "icon": "file",
+                            "filename": "MATH-tutorial-14.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-14.html" 
                         },
                         {
                             "title": "MATH Tutorial 15 (Singular Value Decomposition)",
                             "icon": "file",
+                            "filename": "MATH-tutorial-15.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-15.html" 
                         },
                         {
                             "title": "Assignment 2 (Instructions)",
                             "icon": "file",
+                            "filename": "assignment-2.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-2.html" 
                         },
                         {
                             "title": "Assignment 2 (Notebook)",
                             "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-2.ipynb" 
+                            "filename": "assignment-2.html",
+                            "url": "https://danyentezari.github.io/bignumber-material/LMP/ssignment-2.html" 
                         },
                         {
                             "title": "Assignment 2 Submission",
@@ -161,11 +180,13 @@
                         {
                             "title": "Assignment 3 (Instructions)",
                             "icon": "file",
+                            "filename": "assignment-3.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-3.html" 
                         },
                         {
                             "title": "Assignment 3 (Notebook)",
                             "icon": "file",
+                            "filename": "assignment-3.ipynb",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-3.ipynb" 
                         },
                         {
@@ -192,11 +213,13 @@
                         {
                             "title": "MATH Tutorial 17 (Neural Networks)",
                             "icon": "file",
+                            "filename": "MATH-tutorial-17.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-17.html" 
                         },
                         {
                             "title": "PY Tutorial 17 (NN Image Classification)",
                             "icon": "file",
+                            "filename": "PY-tutorial-17.ipynb",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/PY-tutorial-17.ipynb" 
                         }
                     ]
@@ -568,6 +591,7 @@
         "SPR": {
             "code": "SPR",
             "title": "Statistics, Probability Theory, and Programming",
+            "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
             "cpd": true,
             "tags": ["Probability Distributions","Hypothesis Testing","Regression Analysis","Combinatorics","Bayesian Statistics","R Programming","Python", "Maximum Likelihood", "Confidence Intervals","Markov Processes"],
             "hiddenTags": ["Mathematics","Data Science"],
@@ -749,7 +773,7 @@
             "event": "Attend the Course Q&A on TBD to learn more about this program.",
             "price": 79,
             "numOfWeeks": 4,
-            "disabled": true,
+            "disabled": false,
             "comingSoon": false,
             "open": false,
             "free": false,
