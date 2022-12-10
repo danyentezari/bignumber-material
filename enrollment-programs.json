@@ -263,10 +263,11 @@
                     "section": "Welcome",
                     "children":[
                         {
-                        "preview": true,
-                        "url": "https://player.vimeo.com/video/771586848?h=0706619079",
-                        "title": "Welcome Video",
-                        "duration": "02:00"}
+                            "preview": true,
+                            "url": "https://player.vimeo.com/video/771586848?h=0706619079",
+                            "title": "Welcome Video",
+                            "duration": "02:00"
+                         }
                     ]
                 },
                 {
@@ -782,10 +783,10 @@
                     "section": "Welcome",
                     "children": [
                         {
-                            "file":"",
-                            "title": "",
-                            "url": "",
-                            "duration": ""
+                            "preview": true,
+                            "url": "https://player.vimeo.com/video/779911021?h=11699f372a",
+                            "title": "Welcome Video",
+                            "duration": "02:54"
                         }
                     ]
                 },
@@ -1022,7 +1023,7 @@
                   "duration": "02:07"}
                   ]
                 }
-              ]
+            ]
         },
         "MPD": {
             "code": "MPD",
