@@ -971,6 +971,40 @@
                             "preview": true
                         },
                         {
+                            "title": "Quiz 1",
+                            "quiz": true,
+                            "details": {
+                                "question": "Quiz 1",
+                                "options": [
+                                    {
+                                        "type": "radio",
+                                        "text": "3"
+                                    },
+                                    {
+                                        "type": "radio",
+                                        "text": "5"
+                                    },
+                                    {
+                                        "type": "radio",
+                                        "text": "7"
+                                    }
+                                ],
+                                "answerKey": 0,
+                                "hint": "Here\"s a hint to consider"
+                            }
+                        },
+                        {
+                            "title": "Note 1",
+                            "quiz": true,
+                            "details": {
+                                "question": "Note 1",
+                                "body": "Here is a text that expalains the idea....",
+                                "options": [],
+                                "answerKey": null,
+                                "hint": null
+                            }
+                        },
+                        {
                             "file": "s1-3-1.mov",
                             "url": "https://player.vimeo.com/video/777834855?h=e25e1f7683",
                             "title": "Inferring with Statistics",
