@@ -175,7 +175,7 @@ Overview of Z-Score
 
 s2-9-1.mov
 <iframe src="https://player.vimeo.com/video/777843839?h=d92c403015" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-Integration the Standard Normal Distribution Function
+Integrating the Standard Normal Distribution Function
 06:47
 
 s2-9-2.mov
