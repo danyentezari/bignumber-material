@@ -105,7 +105,7 @@ Moments: The Shape of a Distribution
 
 s1-10-2.mov
 <iframe src="https://player.vimeo.com/video/777841655?h=6c9e75e40f" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-Caluclating Moments with Generating Functions
+Calculating Moments with Generating Functions
 02:08
 
 s1-10-3.mov
