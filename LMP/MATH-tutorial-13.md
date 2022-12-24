@@ -115,7 +115,7 @@ $x_2 = 1x$
 
 <br/>
 
-Which, when expressed as system of equations, we get
+Which, when expressed as system of equations gives
 
 $\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = 
 \begin{bmatrix} -2 \\ 1 \end{bmatrix}$
