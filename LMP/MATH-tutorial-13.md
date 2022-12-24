@@ -78,17 +78,51 @@ x_2
 0
 \end{bmatrix}$
 
+<br/>
 
-Expressing as systems of equations
+In augmented matrix form
 
-$ 1x_1 + 2x_2 = 0 $
+$\begin{bmatrix}
+1 & 2 & | & 0\\
+1 & 2 & | & 0 
+\end{bmatrix}$ 
+
+<br/>
+
+Solving with Gaussian Elimination
+
+$\begin{bmatrix}
+1 & 2 & | & 0 \\
+1 & 2 & | & 0
+\end{bmatrix} \rightarrow \begin{bmatrix}
+1 & 2 & | & 0\\
+0 & 0 & | & 0
+\end{bmatrix} (R1 - R2 \rightarrow R2)$
+
+<br/>
+
+Express as system of equation
+
+$1x_1 + 2x_2 = 0$
+
+
+<br/>
 
 Solving for $x_1$ and $x_2$ 
 
-$x_1 = -2$
-$x_2 = 1$
+$x_1 = -2x$
+$x_2 = 1x$
 
-Denote the first eigenvector
+<br/>
+
+Which, when expressed as system of equations, we get
+
+$\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = 
+\begin{bmatrix} -2 \\ 1 \end{bmatrix}$
+
+<br/>
+
+This is now the first eigenvector
 
 $v_1 = \begin{bmatrix}
 -2 \\
