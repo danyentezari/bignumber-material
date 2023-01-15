@@ -4,7 +4,10 @@
             "title": "Linear Mathematics with Python",
             "promoVideo": "https://player.vimeo.com/video/771586848?h=0706619079",
             "cpd": true,
-            "updateFrequency": ["Bi-Weekly", "New content is added to this course every two weeks"],
+            "updateFrequency": [
+                "Bi-Weekly",
+                "New content is added to this course every two weeks"
+            ],
             "tags": [
                 "Linear Algebra",
                 "Linear Programming",
@@ -758,7 +761,10 @@
             "title": "Statistics, Probability Theory, and Programming",
             "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
             "cpd": true,
-            "updateFrequency": ["Daily", "New content is added to this course daily"],
+            "updateFrequency": [
+                "Daily",
+                "New content is added to this course daily"
+            ],
             "tags": [
                 "Probability Distributions",
                 "Hypothesis Testing",
@@ -921,7 +927,8 @@
             "tabs": [
                 "Module 1",
                 "Module 2",
-                "Module 3"
+                "Module 3",
+                "Module 4"
             ],
             "payment": "",
             "cta": "Learn More",
@@ -961,139 +968,139 @@
                             "url": "https://player.vimeo.com/video/778894095?h=2ff34083e5",
                             "title": "Terminology in Statistics",
                             "duration": "02:38"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-2-2.mov",
                             "url": "https://player.vimeo.com/video/778894176?h=9e4e928f48",
                             "title": "Syntax: Population and Sample",
                             "duration": "01:12"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-3-1.mov",
                             "url": "https://player.vimeo.com/video/778894525?h=1b37f8e27c",
                             "title": "Inferring with Statistics",
                             "duration": "03:25"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-3-2.mov",
                             "url": "https://player.vimeo.com/video/778894657?h=b4ca8497f0",
                             "title": "Uncertainty and Probability Theory",
                             "duration": "02:15"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-3-3.mov",
                             "url": "https://player.vimeo.com/video/778894760?h=b6d039762b",
                             "title": "Measures of Central Tendency",
                             "duration": "05:01"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-3-5.mov",
                             "url": "https://player.vimeo.com/video/778897101?h=2f711b6793",
                             "title": "Terminology: Statistic and Parameter",
                             "duration": "03:12"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-6-1.mov",
                             "url": "https://player.vimeo.com/video/778897448?h=c5da8a109a",
                             "title": "Example: Calculating Probability ",
                             "duration": "02:51"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-6-2.mov",
                             "url": "https://player.vimeo.com/video/778897577?h=3da099dae1",
                             "title": "Sets and Sample Spaces",
                             "duration": "13:31"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-7-1.mov",
                             "url": "https://player.vimeo.com/video/778900218?h=c8cb7e811c",
                             "title": "Overview of Random Variable",
                             "duration": "05:10"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-7-2.mov",
                             "url": "https://player.vimeo.com/video/778900642?h=98b8541acc",
                             "title": "Exercise: Calculating Probability",
                             "duration": "05:10 "
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-7-3.mov",
                             "url": "https://player.vimeo.com/video/778901311?h=838c0fecd2",
                             "title": "Solution: Calculating Probability",
                             "duration": "09:55"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-8-1.mov",
                             "url": "https://player.vimeo.com/video/778903929?h=745471479f",
                             "title": "Probability Mass Function (PMF)",
                             "duration": "07:42"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-8-2.mov",
                             "url": "https://player.vimeo.com/video/778904759?h=c0ef1e4bff",
                             "title": "Probability Functions: PMF, PDF, and CDF",
                             "duration": "05:10 "
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-9-1.mov",
                             "url": "https://player.vimeo.com/video/778905134?h=0d537170eb",
                             "title": "Cumulative Distribution Function (CDF)",
                             "duration": "08:44"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-9-2.mov",
                             "url": "https://player.vimeo.com/video/778905893?h=a65f475648",
                             "title": "Exercise: Cumulative Distribution Function",
                             "duration": "03:02"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-9-3.mov",
                             "url": "https://player.vimeo.com/video/778906156?h=ef16a54023",
                             "title": "Solution: Cumulative Distribution Function",
                             "duration": "06:38"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-9-4.mov",
                             "url": "https://player.vimeo.com/video/778906584?h=8cad48641c",
                             "title": "Exercise: Discrete Distribution",
                             "duration": "02:29"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-9-5.mov",
                             "url": "https://player.vimeo.com/video/778906821?h=f106d22b92",
                             "title": "Solution: Discrete Distribution",
                             "duration": "11:50"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-10-1.mov",
                             "url": "https://player.vimeo.com/video/778907703?h=f514a36911",
                             "title": "Moments: The Shape of a Distribution",
                             "duration": "06:32"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-10-2.mov",
                             "url": "https://player.vimeo.com/video/778908269?h=15129b6aa0",
                             "title": "Calculating Moments with Generating Functions",
                             "duration": "02:08"
-                          },
-                          {
+                        },
+                        {
                             "file": "s1-10-3.mov",
                             "url": "https://player.vimeo.com/video/778908444?h=c0515e4ad1",
                             "title": "Calculating the Expected Value",
                             "duration": "08:43"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-2-1.mov",
                             "url": "https://player.vimeo.com/video/778911145?h=09f58864df",
                             "title": "Random Variables as Maps",
                             "duration": "02:51"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-3-1.mov",
                             "url": "https://player.vimeo.com/video/778911299?h=f8dec4aa98",
                             "title": "Definite Integration for Distributions",
                             "duration": "04:19"
-                          }                        
+                        }
                     ]
                 },
                 {
@@ -1104,97 +1111,97 @@
                             "url": "https://player.vimeo.com/video/778911488?h=b1e12c9606",
                             "title": "Discrete vs Continuous Distributions",
                             "duration": "02:43"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-4-2.mov",
                             "url": "https://player.vimeo.com/video/778911650?h=8ffd3e5fe7",
                             "title": "The Normal Distribution, Variance, and Risk",
                             "duration": "03:12"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-4-3.mov",
                             "url": "https://player.vimeo.com/video/778911905?h=e105f3afca",
                             "title": "Syntax: Probability Distribution",
                             "duration": "02:44"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-5-1.mov",
                             "url": "https://player.vimeo.com/video/778912128?h=2e2c283882",
                             "title": "Cumulative Probability of a Normal Distribution",
                             "duration": "05:11"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-7-1.mov",
                             "url": "https://player.vimeo.com/video/778912715?h=52743fda02",
                             "title": "Overview of Standardization",
                             "duration": "06:00"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-7-2.mov",
                             "url": "https://player.vimeo.com/video/778913279?h=fde4746bc8",
                             "title": "68%-95%-99.7% Rule",
                             "duration": "02:56"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-8-1.mov",
                             "url": "https://player.vimeo.com/video/778913595?h=b0d76e583b",
                             "title": "Exercise: Normal Distrubution",
                             "duration": "04:07"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-8-2.mov",
                             "url": "https://player.vimeo.com/video/778916013?h=7af1ce35a9",
                             "title": "Solution: Normal Distribution 1",
                             "duration": "04:37"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-8-3.mov",
                             "url": "https://player.vimeo.com/video/778916227?h=10c34d23c9",
                             "title": "The Standard Normal Distribution",
                             "duration": "01:55"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-8-4.mov",
                             "url": "https://player.vimeo.com/video/778916295?h=14791f2211",
                             "title": "Overview of Z-Score",
                             "duration": "03:18"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-9-1.mov",
                             "url": "https://player.vimeo.com/video/778918561?h=9e26253bd2",
                             "title": "Integrating the Standard Normal Distribution Function",
                             "duration": "06:47"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-9-2.mov",
                             "url": "https://player.vimeo.com/video/778919177?h=f75160449e",
                             "title": "Using the Z-Score Table",
                             "duration": "01:49"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-9-3.mov",
                             "url": "https://player.vimeo.com/video/778919410?h=429642ab93",
                             "title": "Standardizing a Normal Random Variable",
                             "duration": "02:22"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-9-4.mov",
                             "url": "https://player.vimeo.com/video/778919540?h=6e71382836",
                             "title": "Comparing Two Probabilities",
                             "duration": "04:19"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-9-5.mov",
                             "url": "https://player.vimeo.com/video/778919751?h=67e7f5d1a4",
                             "title": "Solution: Normal Distribution 2",
                             "duration": "09:25"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-10-1.mov",
                             "url": "https://player.vimeo.com/video/778922327?h=ef60405ef0",
                             "title": "Moments: The Shape of a Distribution",
                             "duration": "06:38"
-                          }                                                  
+                        }
                     ]
                 },
                 {
@@ -1205,49 +1212,144 @@
                             "url": "https://player.vimeo.com/video/778922769?h=0fe25ca32c",
                             "title": "Getting Started with R",
                             "duration": "02:48"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-10-3.mov",
                             "url": "https://player.vimeo.com/video/778923045?h=8b0c3cec9b",
                             "title": "Quantiles: Quartile, Decile, and Percentile",
                             "duration": "04:05"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-10-4.mov",
                             "url": "https://player.vimeo.com/video/781753336?h=ed032c64d1",
                             "title": "Plotting Data",
                             "duration": "03:22"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-10-5.mov",
                             "url": "https://player.vimeo.com/video/781753143?h=943e4a8fa2",
                             "title": "Comparing Two Distributions",
                             "duration": "03:05"
-                          },
-                          {
+                        },
+                        {
                             "file": "s2-12.mov",
                             "url": "https://player.vimeo.com/video/777847574?h=7b78849a21",
                             "title": "Formula for the Moment Generating Function",
                             "duration": "11:49"
-                          },
-                          {
+                        },
+                        {
                             "file": "s3-6-2.mov",
                             "url": "https://player.vimeo.com/video/781759737?h=200c099273",
                             "title": "Regression to The Mean",
                             "duration": "03:15"
-                          },
-                          {
+                        },
+                        {
                             "file": "s3-8-1.mov",
                             "url": "https://player.vimeo.com/video/781755173?h=a7cd83ad95",
                             "title": "Multiple Linear Regression",
                             "duration": "08:38"
-                          },
-                          {
+                        },
+                        {
                             "file": "s3-8-2.mov",
                             "url": "https://player.vimeo.com/video/781755691?h=eb04328b21",
                             "title": "Fitting the Model",
                             "duration": "02:07"
-                          }
+                        }
+                    ]
+                },
+                {
+                    "section": "Module 4",
+                    "children": [
+                        {
+                            "file": "bayes1-1",
+                            "url": "https://player.vimeo.com/video/789265765?h=3b2ab8a303",
+                            "title": "Agenda for Bayes Theorem",
+                            "duration": "02:59"
+                        },
+                        {
+                            "file": "bayes1-2",
+                            "url": "https://player.vimeo.com/video/789265939?h=9ef29a7a46",
+                            "title": "Review of Set Intersection and Union",
+                            "duration": "04:56"
+                        },
+                        {
+                            "file": "bayes2-1",
+                            "url": "https://player.vimeo.com/video/789266079?h=3fad1b8082",
+                            "title": "Marginal and Joint Frequencies",
+                            "duration": "05:25"
+                        },
+                        {
+                            "file": "bayes2-2",
+                            "url": "https://player.vimeo.com/video/789266252?h=118cbdc8cf",
+                            "title": "Joint Frequencies Explained",
+                            "duration": "04:33"
+                        },
+                        {
+                            "file": "bayes2-3",
+                            "url": "https://player.vimeo.com/video/789266412?h=0de6d81d3f",
+                            "title": "Marginal and Joint Relative Frequencies",
+                            "duration": "05:31"
+                        },
+                        {
+                            "file": "bayes5-1",
+                            "url": "https://player.vimeo.com/video/789268973?h=24b7193ca3",
+                            "title": "Deriving Bayes Theorem",
+                            "duration": "10:33"
+                        },
+                        {
+                            "file": "bayes3-1",
+                            "url": "https://player.vimeo.com/video/789266920?h=f41008a3e2",
+                            "title": "Example: Inference with Bayesian Theorem (Part 1)",
+                            "duration": "11:16 "
+                        },
+                        {
+                            "file": "bayes3-2",
+                            "url": "https://player.vimeo.com/video/789267475?h=0cd666805e",
+                            "title": "Example: Inference with Bayesian Theorem (Part 2)",
+                            "duration": "04:22"
+                        },
+                        {
+                            "file": "bayes3-3",
+                            "url": "https://player.vimeo.com/video/789267651?h=1bb406f5b4",
+                            "title": "Example: Inference with Bayesian Theorem (Part 3)",
+                            "duration": "03:12"
+                        },
+                        {
+                            "file": "bayes3-4",
+                            "url": "https://player.vimeo.com/video/789267827?h=da463eddc0",
+                            "title": "Odds Ratio, Likelihood Ratio, and Probability",
+                            "duration": "03:25"
+                        },
+                        {
+                            "file": "bayes3-5",
+                            "url": "https://player.vimeo.com/video/789268051?h=cfc1b3c2ad",
+                            "title": "Example: Inference with Bayesian Theorem (Part 4)",
+                            "duration": "04:17"
+                        },
+                        {
+                            "file": "bayes3-6",
+                            "url": "https://player.vimeo.com/video/789268261?h=47e28dfdce",
+                            "title": "Example: Inference with Bayesian Theorem (Part 5)",
+                            "duration": "02:53"
+                        },
+                        {
+                            "file": "bayes4-1",
+                            "url": "https://player.vimeo.com/video/789268390?h=dad97b0c8c",
+                            "title": "Product of Two Probabilities (Combinatorics)",
+                            "duration": "02:59 "
+                        },
+                        {
+                            "file": "bayes4-2",
+                            "url": "https://player.vimeo.com/video/789268545?h=2e309f0b30",
+                            "title": "Product of Two Probabilities (Distributions)",
+                            "duration": "03:16"
+                        },
+                        {
+                            "file": "bayes4-3",
+                            "url": "https://player.vimeo.com/video/789268626?h=d7aa36519a",
+                            "title": "Posterior Distrubution Intuition",
+                            "duration": "06:02"
+                        }
                     ]
                 }
             ]
