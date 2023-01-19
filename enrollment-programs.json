@@ -1321,6 +1321,12 @@
                             "duration": "09:27"
                         },
                         {
+                            "file": "bayes6-2",
+                            "url": "https://player.vimeo.com/video/790625680?h=07c5f0db4d",
+                            "title": "Example: Inference with Bayesian Theorem (Part 5)",
+                            "duration": "09:47"
+                        },
+                        {
                             "file": "bayes4-1",
                             "url": "https://player.vimeo.com/video/789268390?h=dad97b0c8c",
                             "title": "Product of Two Probabilities (Combinatorics)",
