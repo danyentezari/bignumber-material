@@ -1593,7 +1593,7 @@
             "numOfWeeks": 4,
             "disabled": false,
             "comingSoon": false,
-            "open": true,
+            "open": false,
             "free": false,
             "tabs": [
                 "Module 1",
