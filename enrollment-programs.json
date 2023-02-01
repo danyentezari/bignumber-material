@@ -37,9 +37,9 @@
                     "url": "https://docs.google.com/document/d/1ucI5ed2jJWccaSXpMeSqNlgCMdVPeWAx9udP6KQc1tk/edit?usp=sharing"
                 },
                 {
-                    "title": "Zoom Link",
+                    "title": "Google Meet for Live Office Hours",
                     "icon": "link",
-                    "url": "https://us06web.zoom.us/j/85286580980?pwd=NjIwa0JiN2tXZnQ4dFR6bnZSQm5QUT09"
+                    "url": "https://meet.google.com/jdc-gthm-vyr"
                 }
             ],
             "weeks": [
@@ -807,6 +807,11 @@
                     "title": "Handbook",
                     "icon": "file",
                     "url": "https://drive.google.com/file/d/1yeV-PTqVKlQOGIdOVuUyCfMSONyVFRZ1/view?usp=sharing"
+                },
+                {
+                    "title": "Google Meet for Live Office Hours",
+                    "icon": "link",
+                    "url": "https://meet.google.com/jdc-gthm-vyr"
                 }
             ],
             "url": "/dashboard/enrollments/statistics-probability-theory-and-programming",
@@ -1393,9 +1398,9 @@
                     "url": "https://github.com/danyentezari/mathematics-and-programming-mayjun2022"
                 },
                 {
-                    "title": "Zoom Link",
+                    "title": "Google Meet for Live Office Hours",
                     "icon": "link",
-                    "url": "https://us06web.zoom.us/j/83708274816?pwd=SEJMTEljT2hMQVVEZjhnY2dJMEJhZz09"
+                    "url": "https://meet.google.com/jdc-gthm-vyr"
                 }
             ],
             "weeks": [
