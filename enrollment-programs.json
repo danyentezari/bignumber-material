@@ -833,9 +833,9 @@
                             "url": "https://map.bignumber.xyz/5f6359f3801e4d001723ab08?shareid=qpP01223s"
                         },
                         {
-                            "title": "Quiz 1",
+                            "title": "Assignment 1",
                             "icon": "file",
-                            "url": "https://forms.gle/pSYX9C1BA7CzovCR9"
+                            "url": "https://docs.google.com/forms/d/e/1FAIpQLScw6dU-fcAVUE_pDackdHfCCaBJ1ayTXQ-25SIQh1RMDMR3oQ/viewform?usp=sf_link"
                         }
                     ]
                 },
@@ -870,17 +870,12 @@
                             "url": "https://drive.google.com/file/d/1eVWORiAjdV-Cv0byxLiBgDWKvcy6FS5S/view?usp=sharing"
                         },
                         {
-                            "title": "R Assignment 1",
+                            "title": "Assignment 2 Code",
                             "icon": "file",
                             "url": "https://drive.google.com/file/d/1JB1erKi85rsT-anb8NqvBMYrPXzsp1Fy/view?usp=sharing"
                         },
                         {
-                            "title": "Quiz 2",
-                            "icon": "file",
-                            "url": "https://forms.gle/o2D8PdVy198UTSur7"
-                        },
-                        {
-                            "title": "R Assignment 1 submission form",
+                            "title": "Assignment 2 submission form",
                             "icon": "upload",
                             "url": "https://forms.gle/nsHxs1AnKzJPC5Jb9"
                         }
@@ -907,17 +902,12 @@
                             "url": "https://drive.google.com/file/d/173I41TPSsiBNxKbIlbd0mQMkGY2Te5bE/view?usp=sharing"
                         },
                         {
-                            "title": "Quiz 3",
-                            "icon": "file",
-                            "url": "https://forms.gle/S7vb2LisREL2TEXBA"
-                        },
-                        {
-                            "title": "R Assignment 2",
+                            "title": "Assignment 3 Code",
                             "icon": "file",
                             "url": "https://drive.google.com/file/d/1fd6S79H43lqkiF4NZxD_mPI7Dylwptrr/view?usp=sharing"
                         },
                         {
-                            "title": "R Assignment 2 submission form",
+                            "title": "Assignment 3 submission form",
                             "icon": "upload",
                             "url": "https://forms.gle/oTptK8XWrRRmkyEU9"
                         }
