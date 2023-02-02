@@ -995,15 +995,33 @@
                             "duration": "02:51"
                         },
                         {
+                            "file": "term1.mov",
+                            "url": "https://player.vimeo.com/video/795400358?h=25ec9be6a2",
+                            "title": "Sample Space, Events, Experiments, and Outcomes",
+                            "duration": "05:31"
+                        },
+                        {
+                            "file": "term2.mov",
+                            "url": "https://player.vimeo.com/video/795396435?h=f2c13430a3",
+                            "title": "Random Variable",
+                            "duration": "05:52"
+                        },
+                        {
+                            "file": "term3.mov",
+                            "url": "https://player.vimeo.com/video/795403602?h=6e9909827e",
+                            "title": "Probability Function",
+                            "duration": "03:49"
+                        },
+                        {
                             "file": "s1-6-2.mov",
                             "url": "https://player.vimeo.com/video/778897577?h=3da099dae1",
-                            "title": "Sets and Sample Spaces",
+                            "title": "Example: Sets and Sample Spaces",
                             "duration": "13:31"
                         },
                         {
                             "file": "s1-7-1.mov",
                             "url": "https://player.vimeo.com/video/778900218?h=c8cb7e811c",
-                            "title": "Overview of Random Variable",
+                            "title": "Example: Random Variable",
                             "duration": "05:10"
                         },
                         {
@@ -1593,76 +1611,76 @@
                     "section": "Module 1",
                     "children": [
                         {
-                          "file": "s0-2.mov",
-                          "url": "https://player.vimeo.com/video/785947317?h=4dd2011b95",
-                          "title": "Review of Topics",
-                          "duration": "05:19"
+                            "file": "s0-2.mov",
+                            "url": "https://player.vimeo.com/video/785947317?h=4dd2011b95",
+                            "title": "Review of Topics",
+                            "duration": "05:19"
                         },
                         {
-                          "file": "s0-3.mv",
-                          "url": "https://player.vimeo.com/video/785947454?h=096df80a8b",
-                          "title": "Overview of Computer Science",
-                          "duration": "04:32"
+                            "file": "s0-3.mv",
+                            "url": "https://player.vimeo.com/video/785947454?h=096df80a8b",
+                            "title": "Overview of Computer Science",
+                            "duration": "04:32"
                         },
                         {
-                          "file": "s0-4.mv",
-                          "url": "https://player.vimeo.com/video/785947588?h=9933779a45",
-                          "title": "Definition: Mathematical Objects",
-                          "duration": "05:07"
+                            "file": "s0-4.mv",
+                            "url": "https://player.vimeo.com/video/785947588?h=9933779a45",
+                            "title": "Definition: Mathematical Objects",
+                            "duration": "05:07"
                         },
                         {
-                          "file": "s0-5.mv",
-                          "url": "https://player.vimeo.com/video/785947689?h=edcc3443a1",
-                          "title": "Pure Mathematics vs Applied Mathematics",
-                          "duration": "07:01"
+                            "file": "s0-5.mv",
+                            "url": "https://player.vimeo.com/video/785947689?h=edcc3443a1",
+                            "title": "Pure Mathematics vs Applied Mathematics",
+                            "duration": "07:01"
                         },
                         {
-                          "file": "s0-6.mv",
-                          "url": "https://player.vimeo.com/video/785947867?h=cdcb065bd7",
-                          "title": "Overview of Pure Mathematics",
-                          "duration": "06:25"
+                            "file": "s0-6.mv",
+                            "url": "https://player.vimeo.com/video/785947867?h=cdcb065bd7",
+                            "title": "Overview of Pure Mathematics",
+                            "duration": "06:25"
                         },
                         {
-                          "file": "s0-7.mv",
-                          "url": "https://player.vimeo.com/video/785948059?h=328c594e8c",
-                          "title": "Overview of Discrete Mathematics",
-                          "duration": "05:53"
+                            "file": "s0-7.mv",
+                            "url": "https://player.vimeo.com/video/785948059?h=328c594e8c",
+                            "title": "Overview of Discrete Mathematics",
+                            "duration": "05:53"
                         },
                         {
-                          "file": "s0-8.mv",
-                          "url": "https://player.vimeo.com/video/785948288?h=e48104b8fc",
-                          "title": "Overview of Algorithms",
-                          "duration": "04:35"
+                            "file": "s0-8.mv",
+                            "url": "https://player.vimeo.com/video/785948288?h=e48104b8fc",
+                            "title": "Overview of Algorithms",
+                            "duration": "04:35"
                         },
                         {
-                          "file": "s0-9.mv",
-                          "url": "https://player.vimeo.com/video/785948479?h=4b11566a63",
-                          "title": "Definition: Data Structure",
-                          "duration": "03:19"
+                            "file": "s0-9.mv",
+                            "url": "https://player.vimeo.com/video/785948479?h=4b11566a63",
+                            "title": "Definition: Data Structure",
+                            "duration": "03:19"
                         },
                         {
-                          "file": "s0-10.mv",
-                          "url": "https://player.vimeo.com/video/785948592?h=9f511cded3",
-                          "title": "Arrays and Graphs",
-                          "duration": "03:04"
+                            "file": "s0-10.mv",
+                            "url": "https://player.vimeo.com/video/785948592?h=9f511cded3",
+                            "title": "Arrays and Graphs",
+                            "duration": "03:04"
                         },
                         {
-                          "file": "s0-11.mv",
-                          "url": "https://player.vimeo.com/video/785948692?h=8b9aef3d2d",
-                          "title": "Graphs and Trees",
-                          "duration": "07:58"
+                            "file": "s0-11.mv",
+                            "url": "https://player.vimeo.com/video/785948692?h=8b9aef3d2d",
+                            "title": "Graphs and Trees",
+                            "duration": "07:58"
                         },
                         {
-                          "file": "s0-12.mv",
-                          "url": "https://player.vimeo.com/video/785949061?h=d543079b7e",
-                          "title": "Applications of Discrete Mathematics",
-                          "duration": "09:16"
+                            "file": "s0-12.mv",
+                            "url": "https://player.vimeo.com/video/785949061?h=d543079b7e",
+                            "title": "Applications of Discrete Mathematics",
+                            "duration": "09:16"
                         },
                         {
-                          "file": "s0-13.mv",
-                          "url": "https://player.vimeo.com/video/785949780?h=329f98d92a",
-                          "title": "Mathematical Notation and Programming Syntax",
-                          "duration": "20:32"
+                            "file": "s0-13.mv",
+                            "url": "https://player.vimeo.com/video/785949780?h=329f98d92a",
+                            "title": "Mathematical Notation and Programming Syntax",
+                            "duration": "20:32"
                         }
                     ]
                 },
@@ -1670,106 +1688,106 @@
                     "section": "Module 2",
                     "children": [
                         {
-                          "file": "s1-1.mov",
-                          "url": "https://player.vimeo.com/video/782999088?h=19ab33b12d",
-                          "title": "Overview of Computer Organization",
-                          "duration": "04:36"
+                            "file": "s1-1.mov",
+                            "url": "https://player.vimeo.com/video/782999088?h=19ab33b12d",
+                            "title": "Overview of Computer Organization",
+                            "duration": "04:36"
                         },
                         {
-                          "file": "s1-2.mov",
-                          "url": "https://player.vimeo.com/video/782999844?h=a393781fa7",
-                          "title": "Python and C++",
-                          "duration": "05:09"
+                            "file": "s1-2.mov",
+                            "url": "https://player.vimeo.com/video/782999844?h=a393781fa7",
+                            "title": "Python and C++",
+                            "duration": "05:09"
                         },
                         {
-                          "file": "s1-3.mov",
-                          "url": "https://player.vimeo.com/video/783001046?h=f4bc0ac733",
-                          "title": "Program and Process",
-                          "duration": "01:07"
+                            "file": "s1-3.mov",
+                            "url": "https://player.vimeo.com/video/783001046?h=f4bc0ac733",
+                            "title": "Program and Process",
+                            "duration": "01:07"
                         },
                         {
-                          "file": "s1-5-1.mov",
-                          "url": "https://player.vimeo.com/video/783002055?h=612b2fda09",
-                          "title": "Values, Variables, and Pointers",
-                          "duration": "02:05"
+                            "file": "s1-5-1.mov",
+                            "url": "https://player.vimeo.com/video/783002055?h=612b2fda09",
+                            "title": "Values, Variables, and Pointers",
+                            "duration": "02:05"
                         },
                         {
-                          "file": "s1-5-2.mov",
-                          "url": "https://player.vimeo.com/video/783002449?h=660de81159",
-                          "title": "The Pointer Variable",
-                          "duration": "01:44"
+                            "file": "s1-5-2.mov",
+                            "url": "https://player.vimeo.com/video/783002449?h=660de81159",
+                            "title": "The Pointer Variable",
+                            "duration": "01:44"
                         },
                         {
-                          "file": "s1-5-3.mov",
-                          "url": "https://player.vimeo.com/video/783002956?h=c451cc9add",
-                          "title": "Review of List",
-                          "duration": "03:47"
+                            "file": "s1-5-3.mov",
+                            "url": "https://player.vimeo.com/video/783002956?h=c451cc9add",
+                            "title": "Review of List",
+                            "duration": "03:47"
                         },
                         {
-                          "file": "s1-5-4.mov",
-                          "url": "https://player.vimeo.com/video/783003812?h=591e28c845",
-                          "title": "Review of Multidimensional List",
-                          "duration": "03:20"
+                            "file": "s1-5-4.mov",
+                            "url": "https://player.vimeo.com/video/783003812?h=591e28c845",
+                            "title": "Review of Multidimensional List",
+                            "duration": "03:20"
                         },
                         {
-                          "file": "s1-5-5.mov",
-                          "url": "https://player.vimeo.com/video/783004846?h=72fe9392c8",
-                          "title": "Review of Tuple",
-                          "duration": "02:14"
+                            "file": "s1-5-5.mov",
+                            "url": "https://player.vimeo.com/video/783004846?h=72fe9392c8",
+                            "title": "Review of Tuple",
+                            "duration": "02:14"
                         },
                         {
-                          "file": "s1-5-6.mov",
-                          "url": "https://player.vimeo.com/video/783005560?h=792eabb7ed",
-                          "title": "Review of Set",
-                          "duration": "01:54"
+                            "file": "s1-5-6.mov",
+                            "url": "https://player.vimeo.com/video/783005560?h=792eabb7ed",
+                            "title": "Review of Set",
+                            "duration": "01:54"
                         },
                         {
-                          "file": "s1-5-7.mov",
-                          "url": "https://player.vimeo.com/video/783006249?h=1105db3cd1",
-                          "title": "Review of Dictionary",
-                          "duration": "02:30"
+                            "file": "s1-5-7.mov",
+                            "url": "https://player.vimeo.com/video/783006249?h=1105db3cd1",
+                            "title": "Review of Dictionary",
+                            "duration": "02:30"
                         },
                         {
-                          "file": "s1-5-8.mov",
-                          "url": "https://player.vimeo.com/video/783007036?h=3dff01b39a",
-                          "title": "Review of Functions and Classes",
-                          "duration": "07:53"
+                            "file": "s1-5-8.mov",
+                            "url": "https://player.vimeo.com/video/783007036?h=3dff01b39a",
+                            "title": "Review of Functions and Classes",
+                            "duration": "07:53"
                         },
                         {
-                          "file": "s1-5-9.mov",
-                          "url": "https://player.vimeo.com/video/783009353?h=847ecf4846",
-                          "title": "More on Classes",
-                          "duration": "05:48"
+                            "file": "s1-5-9.mov",
+                            "url": "https://player.vimeo.com/video/783009353?h=847ecf4846",
+                            "title": "More on Classes",
+                            "duration": "05:48"
                         },
                         {
-                          "file": "s1-5-10.mov",
-                          "url": "https://player.vimeo.com/video/783011308?h=54b483d49a",
-                          "title": "Instantiating Classes and Class Methods",
-                          "duration": "09:06"
+                            "file": "s1-5-10.mov",
+                            "url": "https://player.vimeo.com/video/783011308?h=54b483d49a",
+                            "title": "Instantiating Classes and Class Methods",
+                            "duration": "09:06"
                         },
                         {
-                          "file": "s1-5-11.mov",
-                          "url": "https://player.vimeo.com/video/783014227?h=34de2442d3",
-                          "title": "Example of List Methods",
-                          "duration": "05:30"
+                            "file": "s1-5-11.mov",
+                            "url": "https://player.vimeo.com/video/783014227?h=34de2442d3",
+                            "title": "Example of List Methods",
+                            "duration": "05:30"
                         },
                         {
-                          "file": "s1-5-12.mov",
-                          "url": "https://player.vimeo.com/video/783015828?h=66736fc98c",
-                          "title": "Review of Time and Space Complexity",
-                          "duration": "03:37"
+                            "file": "s1-5-12.mov",
+                            "url": "https://player.vimeo.com/video/783015828?h=66736fc98c",
+                            "title": "Review of Time and Space Complexity",
+                            "duration": "03:37"
                         },
                         {
-                          "file": "s1-5-13.mov",
-                          "url": "https://player.vimeo.com/video/783017162?h=12c422c401",
-                          "title": "Review of Graph Data Structures",
-                          "duration": "03:23"
+                            "file": "s1-5-13.mov",
+                            "url": "https://player.vimeo.com/video/783017162?h=12c422c401",
+                            "title": "Review of Graph Data Structures",
+                            "duration": "03:23"
                         },
                         {
-                          "file": "s1-5-14.mov",
-                          "url": "https://player.vimeo.com/video/783018236?h=093d0879db",
-                          "title": "Binary Tree with Dictionary",
-                          "duration": "06:40"
+                            "file": "s1-5-14.mov",
+                            "url": "https://player.vimeo.com/video/783018236?h=093d0879db",
+                            "title": "Binary Tree with Dictionary",
+                            "duration": "06:40"
                         }
                     ]
                 }
