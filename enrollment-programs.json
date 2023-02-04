@@ -79,7 +79,7 @@
                         {
                             "title": "Python Tutorial | Part 1",
                             "icon": "video",
-                            "url": "https://youtu.be/stMq7PjJOtg"
+                            "url": "https://vimeo.com/795747713/6e701416c4"
                         },
                         {
                             "title": "LP Tutorial 1",
@@ -1424,21 +1424,6 @@
                             "url": "https://docs.google.com/presentation/d/1Kc1N3pua2jGiTcs2GxBZlCQ41TFyLfbIO7oILxhZFG0"
                         },
                         {
-                            "title": "Session 1",
-                            "icon": "video",
-                            "url": "https://vimeo.com/710469739/78e57b6607"
-                        },
-                        {
-                            "title": "Session 2",
-                            "icon": "video",
-                            "url": "https://vimeo.com/710952196/e2878c3059"
-                        },
-                        {
-                            "title": "Session 3",
-                            "icon": "video",
-                            "url": "https://vimeo.com/712250050/226eb5f59d"
-                        },
-                        {
                             "title": "Getting Started with Python",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/MPD/getting-started-with-python.html"
@@ -1446,7 +1431,7 @@
                         {
                             "title": "Python Tutorial | Part 1",
                             "icon": "video",
-                            "url": "https://youtu.be/stMq7PjJOtg"
+                            "url": "https://vimeo.com/795747713/6e701416c4"
                         },
                         {
                             "title": "CS Tutorial 1 (Pointers)",
