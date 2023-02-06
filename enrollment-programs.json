@@ -959,12 +959,6 @@
                     "section": "Module 1",
                     "children": [
                         {
-                            "file": "s1-2-1.mov",
-                            "url": "https://player.vimeo.com/video/778894095?h=2ff34083e5",
-                            "title": "Terminology in Statistics",
-                            "duration": "02:38"
-                        },
-                        {
                             "file": "s1-2-2.mov",
                             "url": "https://player.vimeo.com/video/778894176?h=9e4e928f48",
                             "title": "Syntax: Population and Sample",
