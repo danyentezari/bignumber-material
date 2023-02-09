@@ -962,13 +962,15 @@
                             "file": "M1c1.mov",
                             "url": "https://player.vimeo.com/video/797174163?h=c8f7d92f8d",
                             "title": "Inferring with Statistics",
-                            "duration": "01:59"
+                            "duration": "01:59",
+                            "preview": "true"
                         },
                         {
                             "file": "M1c2.mov",
                             "url": "https://player.vimeo.com/video/797174300?h=62934b3418",
                             "title": "Statistics and Probability Theory",
-                            "duration": "03:09"
+                            "duration": "03:09",
+                            "preview": "true"
                         },
                         {
                             "file": "s1-6-1.mov",
@@ -980,7 +982,8 @@
                             "file": "term1.mov",
                             "url": "https://player.vimeo.com/video/795400358?h=25ec9be6a2",
                             "title": "Sample Space, Events, Experiments, and Outcomes",
-                            "duration": "05:31"
+                            "duration": "05:31",
+                            "preview": "true"
                         },
                         {
                             "file": "term2.mov",
