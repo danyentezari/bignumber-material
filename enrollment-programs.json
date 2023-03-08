@@ -1365,7 +1365,7 @@
                 "Mathematics",
                 "Data Science"
             ],
-            "description": "Learn the science and mathematics of inference with examples in machine learning and applications from healthcare to finance to engineering. Perform statistical analysis with Python and understand the foundations of bayesian statistical learning.",
+            "description": "Learn the science and mathematics of inference. Includes examples in machine learning and applications from healthcare to finance to engineering. Perform statistical analysis with Python and understand the foundations of bayesian statistical learning.",
             "descriptionLong": "This courses teaches Statistics and Probability Theory with emphasis on learning from first principles. To learn advanced Statistics and, in particular, Probability Theory, it is necessary to be familiar with other mathematical topics including Integration, Sequences, Series, Sets, and Combinatrics. Although this course has Statistics and Probability Theory in the title, it contains sufficient supplementary material about other mathematical subjects that is necessary for mastery in Statistics and Probability Theory. <br/><br/>This course also teaches R, the programming language for statistical analysis. You will learn the required programming constructs to perform analysis in this specialized programming language. You will learn to apply the appropriate functions and methods, import and process data, produce meaningful visualizations, and interpret the results of analysis (e.g, Correlation, ANOVA, etc.)",
             "urlTitle": "statistics-and-programming",
             "enrollmentType": "Audit",
