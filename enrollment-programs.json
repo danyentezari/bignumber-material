@@ -1342,7 +1342,7 @@
         },
         "SPML": {
             "code": "SPML",
-            "title": "Statistics and Programming | Dubai",
+            "title": "Statistics and Programming (Live in Dubai)",
             "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
             "cpd": true,
             "updateFrequency": [
@@ -1460,7 +1460,7 @@
             "ctaIsExternal": false,
             "event": "Attend the Course Q&A on TBD to learn more about this program.",
             "price": 79,
-            "numOfWeeks": 8,
+            "numOfWeeks": 9,
             "disabled": false,
             "comingSoon": false,
             "open": false,
