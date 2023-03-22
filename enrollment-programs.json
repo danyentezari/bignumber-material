@@ -1403,45 +1403,60 @@
                 {
                     "date": "",
                     "weekTitle": "Module 1 - Overview of Statistics and Machine Learning",
-                    "description": "n module 1, we will look at how statistical and probabilistic techniques are used in different domains – from healthcare to finance to engineering and other disciplines. We will also look at how machine learning evolved from the science and mathematics of statistics."
+                    "description": "n module 1, we will look at how statistical and probabilistic techniques are used in different domains – from healthcare to finance to engineering and other disciplines. We will also look at how machine learning evolved from the science and mathematics of statistics.",
+                    "documents": []
                 },
                 {
                     "date": "",
                     "weekTitle": "Module 2 - Principles of Probability Theory",
-                    "description": "The most central branch of mathematics in statisitcs is probability theory. There are two interpretations of probability theory: frequentist and bayesian. As a result of these different ways of understanding probability, the science of statistics has diverged into two different ways of infering from data. We will see these two interpretations differ and when they are relevant."
+                    "description": "The most central branch of mathematics in statisitcs is probability theory. There are two interpretations of probability theory: frequentist and bayesian. As a result of these different ways of understanding probability, the science of statistics has diverged into two different ways of infering from data. We will see these two interpretations differ and when they are relevant.",
+                    "documents": []
                 },
                 {
                     "date": "",
                     "weekTitle": "Module 3 - Statistical Inference Methods",
-                    "description": "In this module we will introduce two important inferential techniques in classical (or frequentist) statistics: regression analysis and hypothesis testing. We will also look at the concept of likelihood, and, from there, build upon our understanding and work towards the alternative inferential methods of bayesian statistics."
+                    "description": "In this module we will introduce two important inferential techniques in classical (or frequentist) statistics: regression analysis and hypothesis testing. We will also look at the concept of likelihood, and, from there, build upon our understanding and work towards the alternative inferential methods of bayesian statistics.","documents": []
                 },
                 {
                     "weekTitle": "Module 4 - Programming and Scripting: Python and BASH",
-                    "description": "The true power of statisitcs is realized when we implement descriptive and inferential techniques using computation. In this module, we will learn the programming language, Python, and the scripting languge, BASH. Python is the programming language in machine learning and also widely used in statistics. BASH will be used to manage files and install libraries for our work."
+                    "description": "The true power of statisitcs is realized when we implement descriptive and inferential techniques using computation. In this module, we will learn the programming language, Python, and the scripting languge, BASH. Python is the programming language in machine learning and also widely used in statistics. BASH will be used to manage files and install libraries for our work.",
+                    "documents": []
                 },
                 {
                     "weekTitle": "Module 5 - Machine Learning and Programming",
-                    "description": "Machine Learning has evolved from statistical modeling and algorithmic modeling of computer science. More important, machine learning made it possible to perform statistical and probabilistic inferential techniques on large volumes of data. In this module, we will learn further develop our programming skills by applying them to applications in machine learning."
+                    "description": "Machine Learning has evolved from statistical modeling and algorithmic modeling of computer science. More important, machine learning made it possible to perform statistical and probabilistic inferential techniques on large volumes of data. In this module, we will learn further develop our programming skills by applying them to applications in machine learning.",
+                    "documents": []
                 },
                 {
                     "weekTitle": "Module 6 – Bayesian Probability and Inference",
-                    "description": "The Bayesian Theorem (and the algebraic adaptations of it) are at the center of the most powerful machine learning and deep learning models. In this module, we will delve deeper into bayesian methods, discuss the importance of prior and posterior distributions, and understand why bayesian inference is so important in machine learning."
+                    "description": "The Bayesian Theorem (and the algebraic adaptations of it) are at the center of the most powerful machine learning and deep learning models. In this module, we will delve deeper into bayesian methods, discuss the importance of prior and posterior distributions, and understand why bayesian inference is so important in machine learning.",
+                    "documents": []
                 },
                 {
                     "weekTitle": "Module 7 – Calculus and Algebra for Statistics",
-                    "description": "Statistics is a mathematical science with probability theory at its core. However, probability theory can be properly studies if the mathematical prerequisites are learnt. The prerequisites for probability theory include, among other branches of mathematics, calculus, combinatorics, classical algebra, and basic abstract algebra. We will cover these prerequisites both in live lectures and supplementary learning material."
+                    "description": "Statistics is a mathematical science with probability theory at its core. However, probability theory can be properly studies if the mathematical prerequisites are learnt. The prerequisites for probability theory include, among other branches of mathematics, calculus, combinatorics, classical algebra, and basic abstract algebra. We will cover these prerequisites both in live lectures and supplementary learning material.",
+                    "documents": []
                 },
                 {
                     "weekTitle": "Module 8 – Probability Distributions and Machine Learning",
-                    "description": "In this final learning module, we will study the probability distributions, their applications, and their derivations. It is very important for any statistician, data scientist, or anyone who professionally uses statistics to understand how and why probability functions are expressed the way they are. This module will cover important probability distributions such as binomial distribution, Poission distribution, and the normal distribution."
+                    "description": "In this final learning module, we will study the probability distributions, their applications, and their derivations. It is very important for any statistician, data scientist, or anyone who professionally uses statistics to understand how and why probability functions are expressed the way they are. This module will cover important probability distributions such as binomial distribution, Poission distribution, and the normal distribution.",
+                    "documents": []
                 },
                 {
                     "weekTitle": "Module 9 - Capstone Project",
-                    "description": "This module is dedicated to your capstone project, the completion of which is required to earn the certificate for 'Professional Certificate in Statistics and Programing'. Completing this project will involve modeling data, data transformations with Python, visualization, inference and error measurements."
+                    "description": "This module is dedicated to your capstone project, the completion of which is required to earn the certificate for 'Professional Certificate in Statistics and Programing'. Completing this project will involve modeling data, data transformations with Python, visualization, inference and error measurements.",
+                    "documents": []
                 }
             ],
             "tabs": [
-                "Module 1"
+                "Module 1",
+                "Module 2",
+                "Module 3",
+                "Module 4",
+                "Module 5",
+                "Module 6",
+                "Module 7",
+                "Module 8"
             ],
             "payment": "",
             "cta": "Learn More",
