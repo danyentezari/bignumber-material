@@ -1493,11 +1493,25 @@
                     "section": "Module 1",
                     "children": [
                         {
-                            "file": "M1c1.mov",
+                            "file": "",
                             "url": "https://player.vimeo.com/video/810455935?h=aa56e5bad1",
                             "title": "Day 1",
-                            "duration": "02:30:00",
+                            "duration": "02:32:06",
                             "preview": true
+                        },
+                        {
+                            "file": "",
+                            "url": "https://player.vimeo.com/video/811756555?h=4e0ea4e812",
+                            "title": "Day 2",
+                            "duration": "02:39:05",
+                            "preview": true                            
+                        },
+                        {
+                            "file": "",
+                            "url": "https://player.vimeo.com/video/811756555?h=4e0ea4e812",
+                            "title": "Day 3",
+                            "duration": "02:30:00",
+                            "preview": true                            
                         }
                     ]
                 }
