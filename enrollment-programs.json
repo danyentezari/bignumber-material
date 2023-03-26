@@ -1411,9 +1411,24 @@
                             "url": "https://docs.google.com/presentation/d/1h0AOKreCilPnbwDq1bx2Gg3ynSprQ-RQAoxCwWMeAMU/edit?usp=sharing"
                         },
                         {
-                            "title": "Mod 1 Slides",
+                            "title": "Agenda",
                             "icon": "file",
-                            "url": "https://docs.google.com/presentation/d/1h0AOKreCilPnbwDq1bx2Gg3ynSprQ-RQAoxCwWMeAMU/edit?usp=sharing"
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/Agenda.md"
+                        },
+                        {
+                            "title": "Mod 1 Tutorial (Notebook)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/mod-1.ipynb"
+                        },
+                        {
+                            "title": "Exercise 1 (Notebook)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/exercise-1.ipynb"
+                        },
+                        {
+                            "title": "Exercise 2 (Notebook)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/exercise-2.ipynb"
                         }
                     ]
                 },
@@ -1504,21 +1519,21 @@
                     "section": "Module 1",
                     "children": [
                         {
-                            "file": "",
+                            "file": "Mod1",
                             "url": "https://player.vimeo.com/video/810455935?h=aa56e5bad1",
                             "title": "Day 1",
                             "duration": "02:32:06",
                             "preview": true
                         },
                         {
-                            "file": "",
+                            "file": "Mod2",
                             "url": "https://player.vimeo.com/video/811756555?h=4e0ea4e812",
                             "title": "Day 2",
                             "duration": "02:39:05",
                             "preview": true                            
                         },
                         {
-                            "file": "",
+                            "file": "Mod3",
                             "url": "https://player.vimeo.com/video/811756555?h=4e0ea4e812",
                             "title": "Day 3",
                             "duration": "02:30:00",
