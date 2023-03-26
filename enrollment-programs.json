@@ -1404,7 +1404,18 @@
                     "date": "",
                     "weekTitle": "Module 1 - Overview of Statistics and Machine Learning",
                     "description": "n module 1, we will look at how statistical and probabilistic techniques are used in different domains – from healthcare to finance to engineering and other disciplines. We will also look at how machine learning evolved from the science and mathematics of statistics.",
-                    "documents": []
+                    "documents": [
+                        {
+                            "title": "Mod 1 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1h0AOKreCilPnbwDq1bx2Gg3ynSprQ-RQAoxCwWMeAMU/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Mod 1 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1h0AOKreCilPnbwDq1bx2Gg3ynSprQ-RQAoxCwWMeAMU/edit?usp=sharing"
+                        }
+                    ]
                 },
                 {
                     "date": "",
