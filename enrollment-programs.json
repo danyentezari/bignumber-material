@@ -1546,6 +1546,18 @@
                             "preview": true                            
                         }
                     ]
+                },
+                {
+                    "section": "Module 2",
+                    "children": [
+                        {
+                            "file": "Mod2",
+                            "url": "https://player.vimeo.com/video/812428102?h=dbd875d960",
+                            "title": "Day 4",
+                            "duration": "02:52:41",
+                            "preview": true
+                        }
+                    ]
                 }
             ]
         },
