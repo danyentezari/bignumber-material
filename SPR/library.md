@@ -1,22 +1,12 @@
-s1-2-1.mov
-<iframe src="https://player.vimeo.com/video/778894095?h=2ff34083e5" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-Terminology in Statistics
-02:38
-
-s1-2-2.mov
-<iframe src="https://player.vimeo.com/video/778894176?h=9e4e928f48" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-Syntax: Population and Sample
-01:12
-
-s1-3-1.mov
-<iframe src="https://player.vimeo.com/video/778894525?h=1b37f8e27c" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+M1c1.mov
+<iframe src="https://player.vimeo.com/video/797174163?h=c8f7d92f8d" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 Inferring with Statistics
-03:25
+01:59
 
-s1-3-2.mov
-<iframe src="https://player.vimeo.com/video/778894657?h=b4ca8497f0" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-Uncertainty and Probability Theory
-02:15
+M1c2.mov
+<iframe src="https://player.vimeo.com/video/797174300?h=62934b3418&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="M1c2"></iframe>
+Statistics and Probability Theory
+03:09
 
 s1-3-3.mov
 <iframe src="https://player.vimeo.com/video/778894760?h=b6d039762b" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -27,6 +17,21 @@ s1-3-5.mov
 <iframe src="https://player.vimeo.com/video/778897101?h=2f711b6793" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 Terminology: Statistic and Parameter
 03:12
+
+term1.mov
+<iframe src="https://player.vimeo.com/video/795400358?h=25ec9be6a2" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Sample Space, Events, Experiments, and Outcomes
+05:31
+
+term2.mov
+<iframe src="https://player.vimeo.com/video/795396435?h=f2c13430a3" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Random Variable
+05:52
+
+term3.mov
+<iframe src="https://player.vimeo.com/video/795403602?h=6e9909827e" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Probability Function
+03:49
 
 s1-6-1.mov
 <iframe src="https://player.vimeo.com/video/778897448?h=c5da8a109a" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -188,7 +193,6 @@ s2-9-5.mov
 Solution: Normal Distribution 2
 09:25
 
-
 s2-10-1.mov
 <iframe src="https://player.vimeo.com/video/778922327?h=ef60405ef0" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 Moments: The Shape of a Distribution
@@ -248,3 +252,78 @@ s3-8-2.mov
 <iframe src="https://player.vimeo.com/video/781755691?h=eb04328b21" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 Fitting the Model
 02:07
+
+bayes1-1
+<iframe src="https://player.vimeo.com/video/789265765?h=3b2ab8a303" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Agenda for Bayes Theorem
+02:59
+
+bayes1-2
+<iframe src="https://player.vimeo.com/video/789265939?h=9ef29a7a46" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Review of Set Intersection and Union
+04:56
+
+bayes2-1
+<iframe src="https://player.vimeo.com/video/789266079?h=3fad1b8082" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Marginal and Joint Frequencies
+05:25
+
+bayes2-2
+<iframe src="https://player.vimeo.com/video/789266252?h=118cbdc8cf" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Joint Frequencies Explained
+04:33
+
+bayes2-3
+<iframe src="https://player.vimeo.com/video/789266412?h=0de6d81d3f" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Marginal and Joint Relative Frequencies
+05:31
+
+bayes5-1
+<iframe src="https://player.vimeo.com/video/789268973?h=24b7193ca3" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Deriving Bayes Theorem
+10:33
+
+bayes3-1
+<iframe src="https://player.vimeo.com/video/789266920?h=f41008a3e2" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Example: Inference with Bayesian Theorem (Part 1)
+11:16 
+
+bayes3-2
+<iframe src="https://player.vimeo.com/video/789267475?h=0cd666805e" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Example: Inference with Bayesian Theorem (Part 2)
+04:22
+
+bayes3-3
+<iframe src="https://player.vimeo.com/video/789267651?h=1bb406f5b4" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Example: Inference with Bayesian Theorem (Part 3)
+03:12
+
+bayes3-4
+<iframe src="https://player.vimeo.com/video/789267827?h=da463eddc0" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Odds Ratio, Likelihood Ratio, and Probability
+03:25
+
+bayes6-1
+<iframe src="https://player.vimeo.com/video/790618962?h=23af5569df" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Example: Inference with Bayesian Theorem (Part 4)
+09:27
+
+bayes6-2
+<iframe src="https://player.vimeo.com/video/790625680?h=07c5f0db4d" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Example: Inference with Bayesian Theorem (Part 5)
+09:47
+
+bayes4-1
+<iframe src="https://player.vimeo.com/video/789268390?h=dad97b0c8c" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Product of Two Probabilities (Combinatorics)
+02:59 
+
+bayes4-2
+<iframe src="https://player.vimeo.com/video/789268545?h=2e309f0b30" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Product of Two Probabilities (Distributions)
+03:16
+
+bayes4-3
+<iframe src="https://player.vimeo.com/video/789268626?h=d7aa36519a" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Posterior Distrubution Intuition
+06:02

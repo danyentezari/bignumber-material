@@ -64,7 +64,7 @@ $\lambda_2 = 4$
 
 **Step 4 (Find the Eigenvectors for $\lambda_1 = 1$)** 
 
-We want $(\mathbf{A}-\mathbf{I})\mathbf{\lambda} = \mathbf{b}$
+We want $(\mathbf{A}-\mathbf{I}) \vec{\lambda} = \mathbf{b}$
 
 
 $\begin{bmatrix}
