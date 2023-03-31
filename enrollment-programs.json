@@ -1429,6 +1429,11 @@
                             "title": "Exercise 2 (Notebook)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/exercise-2.ipynb"
+                        },
+                        {
+                            "title": "Assignment 1",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/assignment-1.ipynb"
                         }
                     ]
                 },
