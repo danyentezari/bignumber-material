@@ -1455,14 +1455,14 @@
                 },
                 {
                     "date": "",
-                    "weekTitle": "Module 3 - Principles of Probability Theory",
-                    "description": "The most central branch of mathematics in statisitcs is probability theory. There are two interpretations of probability theory: frequentist and bayesian. As a result of these different ways of understanding probability, the science of statistics has diverged into two different ways of infering from data. We will see these two interpretations differ and when they are relevant.",
-                    "documents": []
+                    "weekTitle": "Module 3 - Statistical Inference Methods",
+                    "description": "In this module we will introduce two important inferential techniques in classical (or frequentist) statistics: regression analysis and hypothesis testing. We will also look at the concept of likelihood, and, from there, build upon our understanding and work towards the alternative inferential methods of bayesian statistics.","documents": []
                 },
                 {
                     "date": "",
-                    "weekTitle": "Module 4 - Statistical Inference Methods",
-                    "description": "In this module we will introduce two important inferential techniques in classical (or frequentist) statistics: regression analysis and hypothesis testing. We will also look at the concept of likelihood, and, from there, build upon our understanding and work towards the alternative inferential methods of bayesian statistics.","documents": []
+                    "weekTitle": "Module 4 - Principles of Probability Theory",
+                    "description": "The most central branch of mathematics in statisitcs is probability theory. There are two interpretations of probability theory: frequentist and bayesian. As a result of these different ways of understanding probability, the science of statistics has diverged into two different ways of infering from data. We will see these two interpretations differ and when they are relevant.",
+                    "documents": []
                 },
                 {
                     "weekTitle": "Module 5 - Machine Learning and Programming",
