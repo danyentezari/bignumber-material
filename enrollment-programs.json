@@ -1466,6 +1466,11 @@
                             "title": "Module 3 Slides",
                             "icon": "file",
                             "url": "https://docs.google.com/presentation/d/1xMGL2tOTJd2xErVRezKnYQDMFoDboBZdItI9Q6dgnLA/edit?usp=sharing"
+                        },
+                        {
+                            "title": "script.ipynb",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod3/script.ipynb"
                         }
                     ]
                 },
