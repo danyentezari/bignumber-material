@@ -1571,7 +1571,26 @@
                             "file": "Mod2",
                             "url": "https://player.vimeo.com/video/813507050?h=37d118ab7e",
                             "title": "Day 5",
-                            "duration": "02:30:00",
+                            "duration": "02:27:55",
+                            "preview": true
+                        },
+                        {
+                            "file": "Mod2",
+                            "url": "https://player.vimeo.com/video/814074317?h=e7a0b8daf0",
+                            "title": "Day 6",
+                            "duration": "03:03:30",
+                            "preview": true
+                        }
+                    ]
+                },
+                {
+                    "section": "Module 3",
+                    "children": [
+                        {
+                            "file": "Mod3",
+                            "url": "https://player.vimeo.com/video/814617345?h=3d1e9837dc",
+                            "title": "Day 7",
+                            "duration": "01:52:46",
                             "preview": true
                         }
                     ]
