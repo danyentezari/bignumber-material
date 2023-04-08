@@ -21,3 +21,17 @@ Monday 03/Apr/2023
 - Review of Pandas Dataframes and List Comprehension
 - Python for Descriptive Statistics
 - Example of Simple Linear Regression
+
+
+Wednesday 05/Apr/2023
+- Review the code for descriptive statistics
+- Review the code for regression analysis
+- Review of mathematical formulas for calculating regression coefficients
+- With Python, calculate regression coefficients
+- Review of OLS and Assumptions
+
+
+Friday 07/Apr/2023
+- Overview of OLS Model Metrics
+- Overview of OLS Assumptions
+- Exercise on Statistical Inference with Regression
