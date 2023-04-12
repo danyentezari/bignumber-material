@@ -40,7 +40,14 @@ Friday 07/Apr/2023
 Monday 10/04/2023
 - Introduction to Set Builder Notation
 - Overview of Random Variables
-- Overview of Probability Functions: PMF, PDF, CDF
 - Key Terms: Experiments, Outcomes, Sample Space, Events
 - Set Operations
+
+
+
+Wednesday 12/04/2023
+- Moments
 - Measuring Probability
+- Overview of Probability Functions: PMF, PDF, CDF
+- Python Implementation for Moments
+- Hypothesis Testing
