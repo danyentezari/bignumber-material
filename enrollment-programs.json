@@ -1439,6 +1439,13 @@
                             "title": "terms.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/definitions.md"
+                        },
+                        {
+                            "submissionName": "assignment-1",
+                            "title": "Assignment 1 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-1"
                         }
                     ]
                 },
@@ -1466,6 +1473,18 @@
                             "title": "terms.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/definitions.md"
+                        },
+                        {
+                            "title": "Course Map",
+                            "icon": "link",
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?share=plm9003"
+                        },
+                        {
+                            "submissionName": "assignment-2",
+                            "title": "Assignment 2 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-2"
                         }
                         
                     ]
@@ -1494,6 +1513,18 @@
                             "title": "terms.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/definitions.md"
+                        },
+                        {
+                            "title": "Course Map",
+                            "icon": "link",
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?share=plm9003"
+                        },
+                        {
+                            "submissionName": "assignment-3",
+                            "title": "Assignment 3 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-3"
                         }
                     ]
                 },
@@ -1501,7 +1532,30 @@
                     "dueDate": "01/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
                     "weekTitle": "Module 4 - Principles of Probability Theory",
                     "description": "The most central branch of mathematics in statisitcs is probability theory. There are two interpretations of probability theory: frequentist and bayesian. As a result of these different ways of understanding probability, the science of statistics has diverged into two different ways of infering from data. We will see these two interpretations differ and when they are relevant.",
-                    "documents": []
+                    "documents": [
+                        {
+                            "title": "Module 4 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1E0oZ3fIo3ysDrlyYBbObG3_oKiyF2tKKckYbOs1nkM4/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Course Map",
+                            "icon": "link",
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?share=plm9003"
+                        },
+                        {
+                            "title": "script.ipynb",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod4/script.ipynb"
+                        },
+                        {
+                            "submissionName": "assignment-4",
+                            "title": "Assignment 4 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-4"
+                        }
+                    ]
                 },
                 {
                     "dueDate": "08/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
@@ -2213,5 +2267,87 @@
         "linear-mathematics-with-python": "LMP",
         "google-developers-ml-papers": "MLPapers",
         "introduction-to-sql": "SQL"
+    },
+    "submissions": {
+        "spml/assignment-1": {
+            "title": "Assignment 1",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "spml/assignment-2": {
+            "title": "Assignment 2",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "spml/assignment-3": {
+            "title": "Assignment 3",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "spml/assignment-4": {
+            "title": "Assignment 4",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        }
     }
 }
