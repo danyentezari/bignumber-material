@@ -1698,9 +1698,16 @@
                         },
                         {
                             "file": "Mod3",
-                            "url": "https://player.vimeo.com/video/815577116?h=ce761ac809",
+                            "url": "https://player.vimeo.com/video/819300582?h=d74118ed71",
                             "title": "Day 8",
                             "duration": "01:54:36",
+                            "preview": true
+                        },
+                        {
+                            "file": "Mod3",
+                            "url": "https://player.vimeo.com/video/819465056?h=bfe566ad4c",
+                            "title": "Day 9",
+                            "duration": "02:48:00",
                             "preview": true
                         }
                     ]
