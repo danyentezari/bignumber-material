@@ -106,10 +106,12 @@
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-1.ipynb"
                         },
                         {
+                            "submissionName": "assignment-1",
                             "title": "Assignment 1 Submission",
                             "icon": "link",
-                            "url": "https://docs.google.com/forms/d/e/1FAIpQLScvcHRREsBHIFnKdY2kJsRpIhUfDRl8QlhL-97JvODlxpPYUA/viewform?usp=sf_link"
+                            "url": "/dashboard/assignment?courseID=lmp&name=assignment-1"
                         }
+
                     ]
                 },
                 {
@@ -190,10 +192,11 @@
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-2.ipynb"
                         },
                         {
+                            "submissionName": "assignment-2",
                             "title": "Assignment 2 Submission",
                             "icon": "link",
-                            "url": "https://forms.gle/E3ZaRnxZWUPTY81X7"
-                        },
+                            "url": "/dashboard/assignment?courseID=lmp&name=assignment-2"
+                        }
                         {
                             "title": "Assignment 3 (Instructions)",
                             "icon": "file",
@@ -207,9 +210,10 @@
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-3.ipynb"
                         },
                         {
+                            "submissionName": "assignment-3",
                             "title": "Assignment 3 Submission",
                             "icon": "link",
-                            "url": "https://forms.gle/ZwXyDNnMYGD9iMyTA"
+                            "url": "/dashboard/assignment?courseID=lmp&name=assignment-3"
                         }
                     ]
                 },
@@ -2369,6 +2373,66 @@
         },
         "spml/assignment-4": {
             "title": "Assignment 4",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "lmp/assignment-1": {
+            "title": "Assignment 1",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "lmp/assignment-2": {
+            "title": "Assignment 2",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "lmp/assignment-3": {
+            "title": "Assignment 3",
             "icon": "file",
             "organization": [
                 {
