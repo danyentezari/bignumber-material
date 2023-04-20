@@ -195,8 +195,9 @@
                             "submissionName": "assignment-2",
                             "title": "Assignment 2 Submission",
                             "icon": "link",
+                            "local": true,
                             "url": "/dashboard/assignment?courseID=lmp&name=assignment-2"
-                        }
+                        },
                         {
                             "title": "Assignment 3 (Instructions)",
                             "icon": "file",
@@ -213,6 +214,7 @@
                             "submissionName": "assignment-3",
                             "title": "Assignment 3 Submission",
                             "icon": "link",
+                            "local": true,
                             "url": "/dashboard/assignment?courseID=lmp&name=assignment-3"
                         }
                     ]
