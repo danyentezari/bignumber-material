@@ -1572,7 +1572,28 @@
                     "dueDate": "08/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
                     "weekTitle": "Module 5 - Machine Learning and Programming",
                     "description": "Machine Learning has evolved from statistical modeling and algorithmic modeling of computer science. More important, machine learning made it possible to perform statistical and probabilistic inferential techniques on large volumes of data. In this module, we will learn further develop our programming skills by applying them to applications in machine learning.",
-                    "documents": []
+                    "documents": [
+                        {
+                            "title": "Module 5 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1UAB0i30-roDixW0dKyGwghtidSBFdkwSG96B0zKAJbg/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Course Map",
+                            "icon": "link",
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?share=plm9003"
+                        },
+                        {
+                            "title": "supervised_learning_regression.ipynb",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/supervised_learning_regression.ipynb"
+                        },
+                        {
+                            "title": "terms.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/terms.md"
+                        }
+                    ]
                 },
                 {
                     "dueDate": "15/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
