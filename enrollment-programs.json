@@ -1589,6 +1589,11 @@
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/supervised_learning_regression.ipynb"
                         },
                         {
+                            "title": "supervised_classification.ipynb ",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/supervised_classification.ipynb"
+                        },
+                        {
                             "title": "terms.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/terms.md"
@@ -1761,6 +1766,18 @@
                             "url": "https://player.vimeo.com/video/818376540?h=c339c3d84e",
                             "title": "Day 12",
                             "duration": "02:30:00",
+                            "preview": true
+                        }
+                    ]
+                },
+                {
+                    "section": "Module 5",
+                    "children": [
+                        {
+                            "file": "Mod5",
+                            "url": "https://player.vimeo.com/video/821694212?h=1a9e0d1acc",
+                            "title": "Day 13",
+                            "duration": "02:10:00",
                             "preview": true
                         }
                     ]
