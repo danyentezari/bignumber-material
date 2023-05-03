@@ -1560,6 +1560,11 @@
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod4/script.ipynb"
                         },
                         {
+                            "title": "Assignment 4",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod3/assignment-4.ipynb"
+                        },
+                        {
                             "submissionName": "assignment-4",
                             "title": "Assignment 4 Submission",
                             "icon": "upload",
@@ -1777,6 +1782,32 @@
                             "file": "Mod5",
                             "url": "https://player.vimeo.com/video/821694212?h=1a9e0d1acc",
                             "title": "Day 13",
+                            "duration": "02:10:00",
+                            "preview": true
+                        },
+                        {
+                            "file": "Mod5",
+                            "url": "https://player.vimeo.com/video/823155707?h=7500cf2b34",
+                            "title": "Day 14",
+                            "duration": "02:10:00",
+                            "preview": true
+                        },
+                        {
+                            "file": "Mod5",
+                            "url": "https://player.vimeo.com/video/823144960?h=142e2849a4",
+                            "title": "Day 15",
+                            "duration": "02:57:00",
+                            "preview": true
+                        }
+                    ]
+                },
+                {
+                    "section": "Module 6",
+                    "children": [
+                        {
+                            "file": "Mod6",
+                            "url": "https://player.vimeo.com/video/823136557?h=2752215753",
+                            "title": "Day 16",
                             "duration": "02:10:00",
                             "preview": true
                         }
