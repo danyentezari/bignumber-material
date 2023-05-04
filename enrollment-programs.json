@@ -1841,12 +1841,7 @@
                             "title": "Day 16",
                             "duration": "02:10:00",
                             "preview": true
-                        }
-                    ]
-                },
-                                {
-                    "section": "Module 6",
-                    "children": [
+                        },
                         {
                             "file": "Mod6",
                             "url": "https://player.vimeo.com/video/823701725?h=978c66f52b",
