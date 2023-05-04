@@ -1609,7 +1609,38 @@
                     "dueDate": "15/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
                     "weekTitle": "Module 6 – Bayesian Probability and Inference",
                     "description": "The Bayesian Theorem (and the algebraic adaptations of it) are at the center of the most powerful machine learning and deep learning models. In this module, we will delve deeper into bayesian methods, discuss the importance of prior and posterior distributions, and understand why bayesian inference is so important in machine learning.",
-                    "documents": []
+                    "documents": [
+                        {
+                            "title": "Module 6 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/13GiIi6-m051GWTuYWQDCplhs2bAU8Msd7R-bzhwIGWk/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Course Map",
+                            "icon": "link",
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                        },
+                        {
+                            "title": "joint-and-marginal.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
+                        },
+                        {
+                            "title": "joint-and-marginal-relative.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
+                        },                        
+                        {
+                            "title": "art-of-statistics.md (Bayesian Inference)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
+                        },
+                        {
+                            "title": "bayesian-variants.md (Derivation of Bayes Formula)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/bayesian-variants.md"
+                        }
+                    ]
                 },
                 {
                     "dueDate": "22/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
