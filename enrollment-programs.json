@@ -1531,6 +1531,11 @@
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod3/assignment-3.ipynb"
                         },
                         {
+                            "title": "OLS Assumptions (Visual Verification)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod3/ols-assumptions-visual.ipynb"
+                        },
+                        {
                             "submissionName": "assignment-3",
                             "title": "Assignment 3 Submission",
                             "icon": "upload",
@@ -1562,7 +1567,7 @@
                         {
                             "title": "Assignment 4",
                             "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod3/assignment-4.ipynb"
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod4/assignment-4.ipynb"
                         },
                         {
                             "submissionName": "assignment-4",
