@@ -1651,7 +1651,18 @@
                     "dueDate": "22/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
                     "weekTitle": "Module 7 – Calculus and Algebra for Statistics",
                     "description": "Statistics is a mathematical science with probability theory at its core. However, probability theory can be properly studies if the mathematical prerequisites are learnt. The prerequisites for probability theory include, among other branches of mathematics, calculus, combinatorics, classical algebra, and basic abstract algebra. We will cover these prerequisites both in live lectures and supplementary learning material.",
-                    "documents": []
+                    "documents": [
+                        {
+                            "title": "Module 7 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1Yfqq8FvVqE8OCpSxvtsuZrOvFMcN-BRodY6fXHMKJ88/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Course Map",
+                            "icon": "link",
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                        }
+                    ]
                 },
                 {
                     "dueDate": "29/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
