@@ -1,5 +1,528 @@
 {
     "programs": {
+        "SPML": {
+            "code": "SPML",
+            "title": "Statistics and Programming (Live in Dubai)",
+            "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
+            "cpd": true,
+            "updateFrequency": [
+                "Daily",
+                "New content is added to this course daily"
+            ],
+            "tags": [
+                "Probability Distributions",
+                "Hypothesis Testing",
+                "Regression Analysis",
+                "Combinatorics",
+                "Bayesian Statistics",
+                "Python",
+                "BASH",
+                "Estimation Theory",
+                "Machine Learning",
+                "Mathematics Foundations"
+            ],
+            "hiddenTags": [
+                "Mathematics",
+                "Data Science"
+            ],
+            "description": "Learn the science and mathematics of inference. Includes examples in machine learning and applications from healthcare to finance to engineering. Perform statistical analysis with Python and understand the foundations of bayesian statistical learning.",
+            "descriptionLong": "This courses teaches Statistics and Probability Theory with emphasis on learning from first principles. To learn advanced Statistics and, in particular, Probability Theory, it is necessary to be familiar with other mathematical topics including Integration, Sequences, Series, Sets, and Combinatrics. Although this course has Statistics and Probability Theory in the title, it contains sufficient supplementary material about other mathematical subjects that is necessary for mastery in Statistics and Probability Theory. <br/><br/>This course also teaches R, the programming language for statistical analysis. You will learn the required programming constructs to perform analysis in this specialized programming language. You will learn to apply the appropriate functions and methods, import and process data, produce meaningful visualizations, and interpret the results of analysis (e.g, Correlation, ANOVA, etc.)",
+            "urlTitle": "statistics-and-programming",
+            "enrollmentType": "Enrolled",
+            "courseDate": "24/Aug/2022 to 14/Sep/2022",
+            "status": "Active",
+            "rootDocs": [
+                {
+                    "title": "Lesson Plan",
+                    "icon": "file",
+                    "url": "https://docs.google.com/document/d/1RiZ3Xg8iGF3M1eRxZVprUshmr9SFMlFN2Uio6ZaLT1c/edit?usp=sharing"
+                },
+                {
+                    "title": "Presentor Notes",
+                    "icon": "file",
+                    "url": "https://docs.google.com/document/d/10h9lqJV5xD8au8x0MD1EJnd7kNqO1Vb_ThmxuYLm6uE?usp=sharing"
+                },
+                {
+                    "title": "BoxMap",
+                    "icon": "file",
+                    "url": ""
+                },
+                {
+                    "title": "Handbook",
+                    "icon": "file",
+                    "url": "https://drive.google.com/file/d/1yeV-PTqVKlQOGIdOVuUyCfMSONyVFRZ1/view?usp=sharing"
+                },
+                {
+                    "title": "Google Meet for Live Office Hours",
+                    "icon": "link",
+                    "url": "https://meet.google.com/xcv-nbpy-syj"
+                }
+            ],
+            "url": "/dashboard/enrollments/statistics-and-programming",
+            "weeks": [
+                {
+                    "dueDate": "10/Apr/2023",
+                    "weekTitle": "Module 1 - Overview of Statistics and Machine Learning",
+                    "description": "n module 1, we will look at how statistical and probabilistic techniques are used in different domains – from healthcare to finance to engineering and other disciplines. We will also look at how machine learning evolved from the science and mathematics of statistics.",
+                    "documents": [
+                        {
+                            "title": "Mod 1 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1h0AOKreCilPnbwDq1bx2Gg3ynSprQ-RQAoxCwWMeAMU/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Agenda",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/Agenda.md"
+                        },
+                        {
+                            "title": "Mod 1 Tutorial (Notebook)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/mod-1.ipynb"
+                        },
+                        {
+                            "title": "Exercise 1 (Notebook)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/exercise-1.ipynb"
+                        },
+                        {
+                            "title": "Exercise 2 (Notebook)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/exercise-2.ipynb"
+                        },
+                        {
+                            "title": "Assignment 1",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/assignment-1.ipynb"
+                        },
+                        {
+                            "title": "terms.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/definitions.md"
+                        },
+                        {
+                            "submissionName": "assignment-1",
+                            "title": "Assignment 1 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-1"
+                        }
+                    ]
+                },
+                {
+                    "dueDate": "17/Apr/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
+                    "weekTitle": "Module 2 - Programming and Scripting: Python and BASH",
+                    "description": "The true power of statisitcs is realized when we implement descriptive and inferential techniques using computation. In this module, we will learn the programming language, Python, and the scripting languge, BASH. Python is the programming language in machine learning and also widely used in statistics. BASH will be used to manage files and install libraries for our work.",
+                    "documents": [
+                        {
+                            "title": "Python Tutorial | Part 1",
+                            "icon": "video",
+                            "url": "https://vimeo.com/795747713/6e701416c4"
+                        },
+                        {
+                            "title": "Assignment 2",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod2/assignment-2.ipynb"
+                        },
+                        {
+                            "title": "Module 2 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1gMFxtTzQVnUoSmfG9Mh-0rOFJhcPawJ6ThaVDglqxn8/edit?usp=sharing"
+                        },
+                        {
+                            "title": "terms.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/definitions.md"
+                        },
+                        {
+                            "title": "Course Map",
+                            "icon": "link",
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                        },
+                        {
+                            "submissionName": "assignment-2",
+                            "title": "Assignment 2 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-2"
+                        }
+                        
+                    ]
+                },
+                {
+                    "dueDate": "24/Apr/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
+                    "weekTitle": "Module 3 - Statistical Inference Methods",
+                    "description": "In this module we will introduce two important inferential techniques in classical (or frequentist) statistics: regression analysis and hypothesis testing. We will also look at the concept of likelihood, and, from there, build upon our understanding and work towards the alternative inferential methods of bayesian statistics.",
+                    "documents": [
+                        {
+                            "title": "Module 3 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1xMGL2tOTJd2xErVRezKnYQDMFoDboBZdItI9Q6dgnLA/edit?usp=sharing"
+                        },
+                        {
+                            "title": "script.ipynb",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod3/script.ipynb"
+                        },
+                        {
+                            "title": "exercise-5.ipynb",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/exercise-5.ipynb"
+                        },
+                        {
+                            "title": "terms.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/definitions.md"
+                        },
+                        {
+                            "title": "Course Map",
+                            "icon": "link",
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                        },
+                        {
+                            "title": "Assignment 3",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod3/assignment-3.ipynb"
+                        },
+                        {
+                            "title": "OLS Assumptions (Visual Verification)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod3/ols-assumptions-visual.ipynb"
+                        },
+                        {
+                            "submissionName": "assignment-3",
+                            "title": "Assignment 3 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-3"
+                        }
+                    ]
+                },
+                {
+                    "dueDate": "01/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
+                    "weekTitle": "Module 4 - Principles of Probability Theory",
+                    "description": "The most central branch of mathematics in statisitcs is probability theory. There are two interpretations of probability theory: frequentist and bayesian. As a result of these different ways of understanding probability, the science of statistics has diverged into two different ways of infering from data. We will see these two interpretations differ and when they are relevant.",
+                    "documents": [
+                        {
+                            "title": "Module 4 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1E0oZ3fIo3ysDrlyYBbObG3_oKiyF2tKKckYbOs1nkM4/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Course Map",
+                            "icon": "link",
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                        },
+                        {
+                            "title": "script.ipynb",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod4/script.ipynb"
+                        },
+                        {
+                            "title": "Assignment 4",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod4/assignment-4.ipynb"
+                        },
+                        {
+                            "submissionName": "assignment-4",
+                            "title": "Assignment 4 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-4"
+                        }
+                    ]
+                },
+                {
+                    "dueDate": "08/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
+                    "weekTitle": "Module 5 - Machine Learning and Programming",
+                    "description": "Machine Learning has evolved from statistical modeling and algorithmic modeling of computer science. More important, machine learning made it possible to perform statistical and probabilistic inferential techniques on large volumes of data. In this module, we will learn further develop our programming skills by applying them to applications in machine learning.",
+                    "documents": [
+                        {
+                            "title": "Module 5 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1UAB0i30-roDixW0dKyGwghtidSBFdkwSG96B0zKAJbg/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Course Map",
+                            "icon": "link",
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                        },
+                        {
+                            "title": "supervised_learning_regression.ipynb",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/supervised_learning_regression.ipynb"
+                        },
+                        {
+                            "title": "supervised_classification.ipynb ",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/supervised_classification.ipynb"
+                        },
+                        {
+                            "title": "terms.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/terms.md"
+                        }
+                    ]
+                },
+                {
+                    "dueDate": "15/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
+                    "weekTitle": "Module 6 – Bayesian Probability and Inference",
+                    "description": "The Bayesian Theorem (and the algebraic adaptations of it) are at the center of the most powerful machine learning and deep learning models. In this module, we will delve deeper into bayesian methods, discuss the importance of prior and posterior distributions, and understand why bayesian inference is so important in machine learning.",
+                    "documents": [
+                        {
+                            "title": "Module 6 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/13GiIi6-m051GWTuYWQDCplhs2bAU8Msd7R-bzhwIGWk/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Course Map",
+                            "icon": "link",
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                        },
+                        {
+                            "title": "joint-and-marginal.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
+                        },
+                        {
+                            "title": "joint-and-marginal-relative.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
+                        },                        
+                        {
+                            "title": "art-of-statistics.md (Bayesian Inference)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
+                        },
+                        {
+                            "title": "bayesian-variants.md (Derivation of Bayes Formula)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/bayesian-variants.md"
+                        }
+                    ]
+                },
+                {
+                    "dueDate": "22/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
+                    "weekTitle": "Module 7 – Calculus and Algebra for Statistics",
+                    "description": "Statistics is a mathematical science with probability theory at its core. However, probability theory can be properly studies if the mathematical prerequisites are learnt. The prerequisites for probability theory include, among other branches of mathematics, calculus, combinatorics, classical algebra, and basic abstract algebra. We will cover these prerequisites both in live lectures and supplementary learning material.",
+                    "documents": [
+                        {
+                            "title": "Module 7 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/13GiIi6-m051GWTuYWQDCplhs2bAU8Msd7R-bzhwIGWk/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Course Map",
+                            "icon": "link",
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                        }
+                    ]
+                },
+                {
+                    "dueDate": "29/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
+                    "weekTitle": "Module 8 – Probability Distributions and Machine Learning",
+                    "description": "In this final learning module, we will study the probability distributions, their applications, and their derivations. It is very important for any statistician, data scientist, or anyone who professionally uses statistics to understand how and why probability functions are expressed the way they are. This module will cover important probability distributions such as binomial distribution, Poission distribution, and the normal distribution.",
+                    "documents": []
+                },
+                {
+                    "dueDate": "05/Jun/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
+                    "weekTitle": "Module 9 - Capstone Project",
+                    "description": "This module is dedicated to your capstone project, the completion of which is required to earn the certificate for 'Professional Certificate in Statistics and Programing'. Completing this project will involve modeling data, data transformations with Python, visualization, inference and error measurements.",
+                    "documents": []
+                }
+            ],
+            "tabs": [
+                "Module 1",
+                "Module 2",
+                "Module 3",
+                "Module 4",
+                "Module 5",
+                "Module 6",
+                "Module 7",
+                "Module 8"
+            ],
+            "payment": "",
+            "cta": "Learn More",
+            "date": "24/Aug/2022 to 14/Sep/2022",
+            "numCourses": "8 Modules",
+            "duration": "8 Weeks",
+            "buttonLabel": "Learn More",
+            "cpdCertification": "https://cpduk.co.uk/courses/bignumber-statistics-probability-theory-and-r",
+            "path": "/courses/statistics-and-programming",
+            "dubai": true,
+            "image": "https://images.unsplash.com/photo-1476445704028-a36e0c798192?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+            "courseID": "SPML",
+            "ctaIsExternal": false,
+            "event": "Attend the Course Q&A on TBD to learn more about this program.",
+            "price": 189,
+            "numOfWeeks": 9,
+            "disabled": false,
+            "comingSoon": false,
+            "open": false,
+            "free": false,
+            "videoPlaylist": [
+                {
+                    "section": "Welcome",
+                    "children": [
+                        {
+                            "preview": true,
+                            "url": "https://player.vimeo.com/video/779911021?h=11699f372a",
+                            "title": "Welcome Video",
+                            "duration": "02:54"
+                        }
+                    ]
+                },
+                {
+                    "section": "Module 1",
+                    "children": [
+                        {
+                            "file": "Mod1",
+                            "url": "https://player.vimeo.com/video/810455935?h=aa56e5bad1",
+                            "title": "Day 1",
+                            "duration": "02:32:06",
+                            "preview": true
+                        },
+                        {
+                            "file": "Mod2",
+                            "url": "https://player.vimeo.com/video/811752098?h=88ffc6ed79",
+                            "title": "Day 2",
+                            "duration": "02:39:05",
+                            "preview": true                            
+                        },
+                        {
+                            "file": "Mod3",
+                            "url": "https://player.vimeo.com/video/811756555?h=4e0ea4e812",
+                            "title": "Day 3",
+                            "duration": "02:30:00",
+                            "preview": true                            
+                        }
+                    ]
+                },
+                {
+                    "section": "Module 2",
+                    "children": [
+                        {
+                            "file": "Mod2",
+                            "url": "https://player.vimeo.com/video/812428102?h=dbd875d960",
+                            "title": "Day 4",
+                            "duration": "02:52:41",
+                            "preview": true
+                        },
+                        {
+                            "file": "Mod2",
+                            "url": "https://player.vimeo.com/video/813507050?h=37d118ab7e",
+                            "title": "Day 5",
+                            "duration": "02:27:55",
+                            "preview": true
+                        },
+                        {
+                            "file": "Mod2",
+                            "url": "https://player.vimeo.com/video/814074317?h=e7a0b8daf0",
+                            "title": "Day 6",
+                            "duration": "03:03:30",
+                            "preview": true
+                        }
+                    ]
+                },
+                {
+                    "section": "Module 3",
+                    "children": [
+                        {
+                            "file": "Mod3",
+                            "url": "https://player.vimeo.com/video/814617345?h=3d1e9837dc",
+                            "title": "Day 7",
+                            "duration": "01:52:46",
+                            "preview": true
+                        },
+                        {
+                            "file": "Mod3",
+                            "url": "https://player.vimeo.com/video/819476438?h=c9fe622576",
+                            "title": "Day 8",
+                            "duration": "01:54:36",
+                            "preview": true
+                        },
+                        {
+                            "file": "Mod3",
+                            "url": "https://player.vimeo.com/video/819473480?h=bb12c01e01",
+                            "title": "Day 9",
+                            "duration": "02:48:00",
+                            "preview": true
+                        }
+                    ]
+                },
+                {
+                    "section": "Module 4",
+                    "children": [
+                        {
+                            "file": "Mod4",
+                            "url": "https://player.vimeo.com/video/818383575?h=d3e8b3a972",
+                            "title": "Day 10",
+                            "duration": "02:30:00",
+                            "preview": true
+                        },
+                        {
+                            "file": "Mod4",
+                            "url": "https://player.vimeo.com/video/818380142?h=cc57e940e6",
+                            "title": "Day 11",
+                            "duration": "02:30:00",
+                            "preview": true
+                        },
+                        {
+                            "file": "Mod4",
+                            "url": "https://player.vimeo.com/video/818376540?h=c339c3d84e",
+                            "title": "Day 12",
+                            "duration": "02:30:00",
+                            "preview": true
+                        }
+                    ]
+                },
+                {
+                    "section": "Module 5",
+                    "children": [
+                        {
+                            "file": "Mod5",
+                            "url": "https://player.vimeo.com/video/821694212?h=1a9e0d1acc",
+                            "title": "Day 13",
+                            "duration": "02:10:00",
+                            "preview": true
+                        },
+                        {
+                            "file": "Mod5",
+                            "url": "https://player.vimeo.com/video/823155707?h=7500cf2b34",
+                            "title": "Day 14",
+                            "duration": "02:10:00",
+                            "preview": true
+                        },
+                        {
+                            "file": "Mod5",
+                            "url": "https://player.vimeo.com/video/823144960?h=142e2849a4",
+                            "title": "Day 15",
+                            "duration": "02:57:00",
+                            "preview": true
+                        }
+                    ]
+                },
+                {
+                    "section": "Module 6",
+                    "children": [
+                        {
+                            "file": "Mod6",
+                            "url": "https://player.vimeo.com/video/823136557?h=2752215753",
+                            "title": "Day 16",
+                            "duration": "02:10:00",
+                            "preview": true
+                        },
+                        {
+                            "file": "Mod6",
+                            "url": "https://player.vimeo.com/video/823701725?h=978c66f52b",
+                            "title": "Day 17",
+                            "duration": "02:29:00",
+                            "preview": true
+                        }
+                    ]
+                }
+            ]
+        },
         "LMP": {
             "title": "Linear Mathematics with Python",
             "promoVideo": "https://player.vimeo.com/video/771586848?h=0706619079",
@@ -1341,952 +1864,6 @@
                             "url": "https://player.vimeo.com/video/789268626?h=d7aa36519a",
                             "title": "Posterior Distrubution Intuition",
                             "duration": "06:02"
-                        }
-                    ]
-                }
-            ]
-        },
-        "SPML": {
-            "code": "SPML",
-            "title": "Statistics and Programming (Live in Dubai)",
-            "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
-            "cpd": true,
-            "updateFrequency": [
-                "Daily",
-                "New content is added to this course daily"
-            ],
-            "tags": [
-                "Probability Distributions",
-                "Hypothesis Testing",
-                "Regression Analysis",
-                "Combinatorics",
-                "Bayesian Statistics",
-                "Python",
-                "BASH",
-                "Estimation Theory",
-                "Machine Learning",
-                "Mathematics Foundations"
-            ],
-            "hiddenTags": [
-                "Mathematics",
-                "Data Science"
-            ],
-            "description": "Learn the science and mathematics of inference. Includes examples in machine learning and applications from healthcare to finance to engineering. Perform statistical analysis with Python and understand the foundations of bayesian statistical learning.",
-            "descriptionLong": "This courses teaches Statistics and Probability Theory with emphasis on learning from first principles. To learn advanced Statistics and, in particular, Probability Theory, it is necessary to be familiar with other mathematical topics including Integration, Sequences, Series, Sets, and Combinatrics. Although this course has Statistics and Probability Theory in the title, it contains sufficient supplementary material about other mathematical subjects that is necessary for mastery in Statistics and Probability Theory. <br/><br/>This course also teaches R, the programming language for statistical analysis. You will learn the required programming constructs to perform analysis in this specialized programming language. You will learn to apply the appropriate functions and methods, import and process data, produce meaningful visualizations, and interpret the results of analysis (e.g, Correlation, ANOVA, etc.)",
-            "urlTitle": "statistics-and-programming",
-            "enrollmentType": "Enrolled",
-            "courseDate": "24/Aug/2022 to 14/Sep/2022",
-            "status": "Active",
-            "rootDocs": [
-                {
-                    "title": "Lesson Plan",
-                    "icon": "file",
-                    "url": "https://docs.google.com/document/d/1RiZ3Xg8iGF3M1eRxZVprUshmr9SFMlFN2Uio6ZaLT1c/edit?usp=sharing"
-                },
-                {
-                    "title": "Presentor Notes",
-                    "icon": "file",
-                    "url": "https://docs.google.com/document/d/10h9lqJV5xD8au8x0MD1EJnd7kNqO1Vb_ThmxuYLm6uE?usp=sharing"
-                },
-                {
-                    "title": "BoxMap",
-                    "icon": "file",
-                    "url": ""
-                },
-                {
-                    "title": "Handbook",
-                    "icon": "file",
-                    "url": "https://drive.google.com/file/d/1yeV-PTqVKlQOGIdOVuUyCfMSONyVFRZ1/view?usp=sharing"
-                },
-                {
-                    "title": "Google Meet for Live Office Hours",
-                    "icon": "link",
-                    "url": "https://meet.google.com/xcv-nbpy-syj"
-                }
-            ],
-            "url": "/dashboard/enrollments/statistics-and-programming",
-            "weeks": [
-                {
-                    "dueDate": "10/Apr/2023",
-                    "weekTitle": "Module 1 - Overview of Statistics and Machine Learning",
-                    "description": "n module 1, we will look at how statistical and probabilistic techniques are used in different domains – from healthcare to finance to engineering and other disciplines. We will also look at how machine learning evolved from the science and mathematics of statistics.",
-                    "documents": [
-                        {
-                            "title": "Mod 1 Slides",
-                            "icon": "file",
-                            "url": "https://docs.google.com/presentation/d/1h0AOKreCilPnbwDq1bx2Gg3ynSprQ-RQAoxCwWMeAMU/edit?usp=sharing"
-                        },
-                        {
-                            "title": "Agenda",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/Agenda.md"
-                        },
-                        {
-                            "title": "Mod 1 Tutorial (Notebook)",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/mod-1.ipynb"
-                        },
-                        {
-                            "title": "Exercise 1 (Notebook)",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/exercise-1.ipynb"
-                        },
-                        {
-                            "title": "Exercise 2 (Notebook)",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/exercise-2.ipynb"
-                        },
-                        {
-                            "title": "Assignment 1",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/assignment-1.ipynb"
-                        },
-                        {
-                            "title": "terms.md",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/definitions.md"
-                        },
-                        {
-                            "submissionName": "assignment-1",
-                            "title": "Assignment 1 Submission",
-                            "icon": "upload",
-                            "local": true,
-                            "url": "/dashboard/assignment?courseID=spml&name=assignment-1"
-                        }
-                    ]
-                },
-                {
-                    "dueDate": "17/Apr/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
-                    "weekTitle": "Module 2 - Programming and Scripting: Python and BASH",
-                    "description": "The true power of statisitcs is realized when we implement descriptive and inferential techniques using computation. In this module, we will learn the programming language, Python, and the scripting languge, BASH. Python is the programming language in machine learning and also widely used in statistics. BASH will be used to manage files and install libraries for our work.",
-                    "documents": [
-                        {
-                            "title": "Python Tutorial | Part 1",
-                            "icon": "video",
-                            "url": "https://vimeo.com/795747713/6e701416c4"
-                        },
-                        {
-                            "title": "Assignment 2",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod2/assignment-2.ipynb"
-                        },
-                        {
-                            "title": "Module 2 Slides",
-                            "icon": "file",
-                            "url": "https://docs.google.com/presentation/d/1gMFxtTzQVnUoSmfG9Mh-0rOFJhcPawJ6ThaVDglqxn8/edit?usp=sharing"
-                        },
-                        {
-                            "title": "terms.md",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/definitions.md"
-                        },
-                        {
-                            "title": "Course Map",
-                            "icon": "link",
-                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
-                        },
-                        {
-                            "submissionName": "assignment-2",
-                            "title": "Assignment 2 Submission",
-                            "icon": "upload",
-                            "local": true,
-                            "url": "/dashboard/assignment?courseID=spml&name=assignment-2"
-                        }
-                        
-                    ]
-                },
-                {
-                    "dueDate": "24/Apr/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
-                    "weekTitle": "Module 3 - Statistical Inference Methods",
-                    "description": "In this module we will introduce two important inferential techniques in classical (or frequentist) statistics: regression analysis and hypothesis testing. We will also look at the concept of likelihood, and, from there, build upon our understanding and work towards the alternative inferential methods of bayesian statistics.",
-                    "documents": [
-                        {
-                            "title": "Module 3 Slides",
-                            "icon": "file",
-                            "url": "https://docs.google.com/presentation/d/1xMGL2tOTJd2xErVRezKnYQDMFoDboBZdItI9Q6dgnLA/edit?usp=sharing"
-                        },
-                        {
-                            "title": "script.ipynb",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod3/script.ipynb"
-                        },
-                        {
-                            "title": "exercise-5.ipynb",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/exercise-5.ipynb"
-                        },
-                        {
-                            "title": "terms.md",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/definitions.md"
-                        },
-                        {
-                            "title": "Course Map",
-                            "icon": "link",
-                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
-                        },
-                        {
-                            "title": "Assignment 3",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod3/assignment-3.ipynb"
-                        },
-                        {
-                            "title": "OLS Assumptions (Visual Verification)",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod3/ols-assumptions-visual.ipynb"
-                        },
-                        {
-                            "submissionName": "assignment-3",
-                            "title": "Assignment 3 Submission",
-                            "icon": "upload",
-                            "local": true,
-                            "url": "/dashboard/assignment?courseID=spml&name=assignment-3"
-                        }
-                    ]
-                },
-                {
-                    "dueDate": "01/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
-                    "weekTitle": "Module 4 - Principles of Probability Theory",
-                    "description": "The most central branch of mathematics in statisitcs is probability theory. There are two interpretations of probability theory: frequentist and bayesian. As a result of these different ways of understanding probability, the science of statistics has diverged into two different ways of infering from data. We will see these two interpretations differ and when they are relevant.",
-                    "documents": [
-                        {
-                            "title": "Module 4 Slides",
-                            "icon": "file",
-                            "url": "https://docs.google.com/presentation/d/1E0oZ3fIo3ysDrlyYBbObG3_oKiyF2tKKckYbOs1nkM4/edit?usp=sharing"
-                        },
-                        {
-                            "title": "Course Map",
-                            "icon": "link",
-                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
-                        },
-                        {
-                            "title": "script.ipynb",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod4/script.ipynb"
-                        },
-                        {
-                            "title": "Assignment 4",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod4/assignment-4.ipynb"
-                        },
-                        {
-                            "submissionName": "assignment-4",
-                            "title": "Assignment 4 Submission",
-                            "icon": "upload",
-                            "local": true,
-                            "url": "/dashboard/assignment?courseID=spml&name=assignment-4"
-                        }
-                    ]
-                },
-                {
-                    "dueDate": "08/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
-                    "weekTitle": "Module 5 - Machine Learning and Programming",
-                    "description": "Machine Learning has evolved from statistical modeling and algorithmic modeling of computer science. More important, machine learning made it possible to perform statistical and probabilistic inferential techniques on large volumes of data. In this module, we will learn further develop our programming skills by applying them to applications in machine learning.",
-                    "documents": [
-                        {
-                            "title": "Module 5 Slides",
-                            "icon": "file",
-                            "url": "https://docs.google.com/presentation/d/1UAB0i30-roDixW0dKyGwghtidSBFdkwSG96B0zKAJbg/edit?usp=sharing"
-                        },
-                        {
-                            "title": "Course Map",
-                            "icon": "link",
-                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
-                        },
-                        {
-                            "title": "supervised_learning_regression.ipynb",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/supervised_learning_regression.ipynb"
-                        },
-                        {
-                            "title": "supervised_classification.ipynb ",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/supervised_classification.ipynb"
-                        },
-                        {
-                            "title": "terms.md",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/terms.md"
-                        }
-                    ]
-                },
-                {
-                    "dueDate": "15/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
-                    "weekTitle": "Module 6 – Bayesian Probability and Inference",
-                    "description": "The Bayesian Theorem (and the algebraic adaptations of it) are at the center of the most powerful machine learning and deep learning models. In this module, we will delve deeper into bayesian methods, discuss the importance of prior and posterior distributions, and understand why bayesian inference is so important in machine learning.",
-                    "documents": [
-                        {
-                            "title": "Module 6 Slides",
-                            "icon": "file",
-                            "url": "https://docs.google.com/presentation/d/13GiIi6-m051GWTuYWQDCplhs2bAU8Msd7R-bzhwIGWk/edit?usp=sharing"
-                        },
-                        {
-                            "title": "Course Map",
-                            "icon": "link",
-                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
-                        },
-                        {
-                            "title": "joint-and-marginal.md",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
-                        },
-                        {
-                            "title": "joint-and-marginal-relative.md",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
-                        },                        
-                        {
-                            "title": "art-of-statistics.md (Bayesian Inference)",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
-                        },
-                        {
-                            "title": "bayesian-variants.md (Derivation of Bayes Formula)",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/bayesian-variants.md"
-                        }
-                    ]
-                },
-                {
-                    "dueDate": "22/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
-                    "weekTitle": "Module 7 – Calculus and Algebra for Statistics",
-                    "description": "Statistics is a mathematical science with probability theory at its core. However, probability theory can be properly studies if the mathematical prerequisites are learnt. The prerequisites for probability theory include, among other branches of mathematics, calculus, combinatorics, classical algebra, and basic abstract algebra. We will cover these prerequisites both in live lectures and supplementary learning material.",
-                    "documents": [
-                        {
-                            "title": "Module 7 Slides",
-                            "icon": "file",
-                            "url": "https://docs.google.com/presentation/d/13GiIi6-m051GWTuYWQDCplhs2bAU8Msd7R-bzhwIGWk/edit?usp=sharing"
-                        },
-                        {
-                            "title": "Course Map",
-                            "icon": "link",
-                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
-                        }
-                    ]
-                },
-                {
-                    "dueDate": "29/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
-                    "weekTitle": "Module 8 – Probability Distributions and Machine Learning",
-                    "description": "In this final learning module, we will study the probability distributions, their applications, and their derivations. It is very important for any statistician, data scientist, or anyone who professionally uses statistics to understand how and why probability functions are expressed the way they are. This module will cover important probability distributions such as binomial distribution, Poission distribution, and the normal distribution.",
-                    "documents": []
-                },
-                {
-                    "dueDate": "05/Jun/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
-                    "weekTitle": "Module 9 - Capstone Project",
-                    "description": "This module is dedicated to your capstone project, the completion of which is required to earn the certificate for 'Professional Certificate in Statistics and Programing'. Completing this project will involve modeling data, data transformations with Python, visualization, inference and error measurements.",
-                    "documents": []
-                }
-            ],
-            "tabs": [
-                "Module 1",
-                "Module 2",
-                "Module 3",
-                "Module 4",
-                "Module 5",
-                "Module 6",
-                "Module 7",
-                "Module 8"
-            ],
-            "payment": "",
-            "cta": "Learn More",
-            "date": "24/Aug/2022 to 14/Sep/2022",
-            "numCourses": "8 Modules",
-            "duration": "8 Weeks",
-            "buttonLabel": "Learn More",
-            "cpdCertification": "https://cpduk.co.uk/courses/bignumber-statistics-probability-theory-and-r",
-            "path": "/courses/statistics-and-programming",
-            "dubai": true,
-            "image": "https://images.unsplash.com/photo-1476445704028-a36e0c798192?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
-            "courseID": "SPML",
-            "ctaIsExternal": false,
-            "event": "Attend the Course Q&A on TBD to learn more about this program.",
-            "price": 189,
-            "numOfWeeks": 9,
-            "disabled": false,
-            "comingSoon": false,
-            "open": false,
-            "free": false,
-            "videoPlaylist": [
-                {
-                    "section": "Welcome",
-                    "children": [
-                        {
-                            "preview": true,
-                            "url": "https://player.vimeo.com/video/779911021?h=11699f372a",
-                            "title": "Welcome Video",
-                            "duration": "02:54"
-                        }
-                    ]
-                },
-                {
-                    "section": "Module 1",
-                    "children": [
-                        {
-                            "file": "Mod1",
-                            "url": "https://player.vimeo.com/video/810455935?h=aa56e5bad1",
-                            "title": "Day 1",
-                            "duration": "02:32:06",
-                            "preview": true
-                        },
-                        {
-                            "file": "Mod2",
-                            "url": "https://player.vimeo.com/video/811752098?h=88ffc6ed79",
-                            "title": "Day 2",
-                            "duration": "02:39:05",
-                            "preview": true                            
-                        },
-                        {
-                            "file": "Mod3",
-                            "url": "https://player.vimeo.com/video/811756555?h=4e0ea4e812",
-                            "title": "Day 3",
-                            "duration": "02:30:00",
-                            "preview": true                            
-                        }
-                    ]
-                },
-                {
-                    "section": "Module 2",
-                    "children": [
-                        {
-                            "file": "Mod2",
-                            "url": "https://player.vimeo.com/video/812428102?h=dbd875d960",
-                            "title": "Day 4",
-                            "duration": "02:52:41",
-                            "preview": true
-                        },
-                        {
-                            "file": "Mod2",
-                            "url": "https://player.vimeo.com/video/813507050?h=37d118ab7e",
-                            "title": "Day 5",
-                            "duration": "02:27:55",
-                            "preview": true
-                        },
-                        {
-                            "file": "Mod2",
-                            "url": "https://player.vimeo.com/video/814074317?h=e7a0b8daf0",
-                            "title": "Day 6",
-                            "duration": "03:03:30",
-                            "preview": true
-                        }
-                    ]
-                },
-                {
-                    "section": "Module 3",
-                    "children": [
-                        {
-                            "file": "Mod3",
-                            "url": "https://player.vimeo.com/video/814617345?h=3d1e9837dc",
-                            "title": "Day 7",
-                            "duration": "01:52:46",
-                            "preview": true
-                        },
-                        {
-                            "file": "Mod3",
-                            "url": "https://player.vimeo.com/video/819476438?h=c9fe622576",
-                            "title": "Day 8",
-                            "duration": "01:54:36",
-                            "preview": true
-                        },
-                        {
-                            "file": "Mod3",
-                            "url": "https://player.vimeo.com/video/819473480?h=bb12c01e01",
-                            "title": "Day 9",
-                            "duration": "02:48:00",
-                            "preview": true
-                        }
-                    ]
-                },
-                {
-                    "section": "Module 4",
-                    "children": [
-                        {
-                            "file": "Mod4",
-                            "url": "https://player.vimeo.com/video/818383575?h=d3e8b3a972",
-                            "title": "Day 10",
-                            "duration": "02:30:00",
-                            "preview": true
-                        },
-                        {
-                            "file": "Mod4",
-                            "url": "https://player.vimeo.com/video/818380142?h=cc57e940e6",
-                            "title": "Day 11",
-                            "duration": "02:30:00",
-                            "preview": true
-                        },
-                        {
-                            "file": "Mod4",
-                            "url": "https://player.vimeo.com/video/818376540?h=c339c3d84e",
-                            "title": "Day 12",
-                            "duration": "02:30:00",
-                            "preview": true
-                        }
-                    ]
-                },
-                {
-                    "section": "Module 5",
-                    "children": [
-                        {
-                            "file": "Mod5",
-                            "url": "https://player.vimeo.com/video/821694212?h=1a9e0d1acc",
-                            "title": "Day 13",
-                            "duration": "02:10:00",
-                            "preview": true
-                        },
-                        {
-                            "file": "Mod5",
-                            "url": "https://player.vimeo.com/video/823155707?h=7500cf2b34",
-                            "title": "Day 14",
-                            "duration": "02:10:00",
-                            "preview": true
-                        },
-                        {
-                            "file": "Mod5",
-                            "url": "https://player.vimeo.com/video/823144960?h=142e2849a4",
-                            "title": "Day 15",
-                            "duration": "02:57:00",
-                            "preview": true
-                        }
-                    ]
-                },
-                {
-                    "section": "Module 6",
-                    "children": [
-                        {
-                            "file": "Mod6",
-                            "url": "https://player.vimeo.com/video/823136557?h=2752215753",
-                            "title": "Day 16",
-                            "duration": "02:10:00",
-                            "preview": true
-                        },
-                        {
-                            "file": "Mod6",
-                            "url": "https://player.vimeo.com/video/823701725?h=978c66f52b",
-                            "title": "Day 17",
-                            "duration": "02:29:00",
-                            "preview": true
-                        }
-                    ]
-                }
-            ]
-        },
-        "MPD": {
-            "code": "MPD",
-            "description": "Discover the fundamental concepts in mathematics through computer programming. Become proficient in both mathematics and programming. Gain key skills for mathematical sciences such as computer science, data science, and engineering.",
-            "descriptionLong": "This course covers programming in Python, the fundamentals Computer Science, and the fundamentals of Mathematics. In addition to learning to program in Python, you will understand, at the high level, how computers work and interpret programming languages. A high-level understanding of computer architecture will allow you to understand the most complex of algorithms and data structures. This course, which is the foundation couse for more advanced courses at BigNumber, is self-contained and focused on the first-principles of Computer Science and Pure Mathematics.<br/><br/>Pure Mathematics is about concepts in mathematics that are ubiquitous in all of Mathematics. In this course, you will learn the building blocks of mathematics that are relevant and necessary in all of the Mathematical and the Physical Sciences (e.g, Computer Science, Data Science, Engineering, and Economics).",
-            "payment": "https://wise.com/pay#WHmsZe53ZB35T9Ih2G6o26RJL1M",
-            "title": "Mathematics and Programming",
-            "cpd": true,
-            "tags": [
-                "Data Structures",
-                "Discrete Mathematics",
-                "Problem Solving",
-                "Python",
-                "Graphs and Binary Trees",
-                "Algorithms",
-                "Finite State Machines",
-                "Regular Expressions",
-                "C++",
-                "Computer Architecture"
-            ],
-            "hiddenTags": [
-                "Mathematics",
-                "Data Science",
-                "Computer Science"
-            ],
-            "urlTitle": "mathematics-and-programming",
-            "enrollmentType": "Audit",
-            "courseDate": "15/May/2022 to 05/Jun/2022",
-            "url": "/dashboard/enrollments/mathematics-and-programming",
-            "boxMap": "",
-            "rootDocs": [
-                {
-                    "title": "Lesson Plan",
-                    "icon": "file",
-                    "url": "https://docs.google.com/document/d/1zypX6m0ntzNIgRi98iQAKQoSzAyQ3FpLz6JaoJ6loU0?usp=sharing"
-                },
-                {
-                    "title": "Presentor Notes",
-                    "icon": "file",
-                    "url": "https://docs.google.com/document/d/152XBus6axUobGVNhxgupIm9ZRsAGI1vHH2zg915PwW4?usp=sharing"
-                },
-                {
-                    "title": "Introductory Video",
-                    "icon": "video",
-                    "url": "https://www.youtube.com/watch?v=y0-rK_ZqKk0"
-                },
-                {
-                    "title": "Session Files",
-                    "icon": "link",
-                    "url": "https://github.com/danyentezari/mathematics-and-programming-mayjun2022"
-                },
-                {
-                    "title": "Google Meet for Live Office Hours",
-                    "icon": "link",
-                    "url": "https://meet.google.com/xcv-nbpy-syj"
-                }
-            ],
-            "weeks": [
-                {
-                    "date": "",
-                    "weekTitle": "Module 1 - Introduction to Programming and Computer Science",
-                    "description": "In the first week, we will learn the building blocks of a programming language and implementation of algorithms. We will learn to write algorithms in sequential, conditional, and iterative patterns. For data structures, we will go in depth about linear data structures, their methods, and algorithms for searching in and writing into data structures.",
-                    "details": "Topics: <br/> <ul><li>Overview of Computer Science</li><li>Overview of Programming and Computer Organization</li><li>Getting Started with Python</li><li>Control Statements</li><li>Data Structures: Lists</li><li>Data Structures: Dictionaries, Sets, and Tuples</li><li>Classes and Objects</li><li>Time & Space Complexity</li></ul>",
-                    "documents": [
-                        {
-                            "title": "Module 1 Slides",
-                            "icon": "file",
-                            "url": "https://docs.google.com/presentation/d/1Kc1N3pua2jGiTcs2GxBZlCQ41TFyLfbIO7oILxhZFG0"
-                        },
-                        {
-                            "title": "Getting Started with Python",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/MPD/getting-started-with-python.html"
-                        },
-                        {
-                            "title": "Python Tutorial | Part 1",
-                            "icon": "video",
-                            "url": "https://vimeo.com/795747713/6e701416c4"
-                        },
-                        {
-                            "title": "CS Tutorial 1 (Pointers)",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/MPD/CS-tutorial-1.html"
-                        },
-                        {
-                            "title": "Math Tutorial 1 (Logarithm Function)",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-1.html"
-                        },
-                        {
-                            "title": "Assignment 1",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-1.py"
-                        },
-                        {
-                            "title": "Assignment 2",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-2.py"
-                        },
-                        {
-                            "title": "Assignment 1 Submission",
-                            "icon": "link",
-                            "url": "https://forms.gle/QfL9M6JcTSGt3qjR6"
-                        },
-                        {
-                            "title": "Assignment 2 Submission",
-                            "icon": "link",
-                            "url": "https://forms.gle/DtyVRadYkpsUskyHA"
-                        }
-                    ]
-                },
-                {
-                    "weekTitle": "Module 2 - Introduction to Discrete Mathematics",
-                    "description": "In week 2, we will use our understanding of programming as a bridge to understand fundamental mathematical concepts and syntax. Symbols and terminology will be introduced to you and you will be able recognize mathematical objects in any branch of mathematics. We will cover functions, sets and relations, logic, proofs and mathematical induction. We will then apply these mathematical concepts directly in programming.",
-                    "details": "Assessment:<br/>You will complete assignments about topics covered in Module 2. <br/>Topics:<br/><ul><li>Overview of Pure Mathematics</li><li>Overview of Discrete Mathematics</li><li>Logic, Axiom, Lemma, Corollary, and Theorem</li><li>Accumulation, Sequence and Series</li><li>Maps and Functions</li><li>Sets and Relations</li><li>Mathematical Induction</li><li>Recursion</li></ul>",
-                    "documents": [
-                        {
-                            "title": "Module 2 Slides",
-                            "icon": "file",
-                            "url": "https://docs.google.com/presentation/d/19_kYSYaawaDHrZdISqXDXOUZNxW5CXQ8AOcP2tqw2eE/edit?usp=sharing"
-                        },
-                        {
-                            "title": "Session 4",
-                            "icon": "video",
-                            "url": "https://vimeo.com/713047584/d226bf07bd"
-                        },
-                        {
-                            "title": "Session 5",
-                            "icon": "video",
-                            "url": "https://vimeo.com/713852941/71ee6318b8"
-                        },
-                        {
-                            "title": "Session 6",
-                            "icon": "video",
-                            "url": "https://vimeo.com/714813616/28506f055e"
-                        },
-                        {
-                            "title": "Math Tutorial 2 (Sets, Relations, and Graphs)",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-2.html"
-                        },
-                        {
-                            "title": "Math Tutorial 3 (Sets Notation and Logic)",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-3.html"
-                        },
-                        {
-                            "title": "Math Tutorial 4 (Mathematical Induction)",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-4.html"
-                        },
-                        {
-                            "title": "Assignment 3",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-3.pdf"
-                        },
-                        {
-                            "title": "Assignment 3 Submission",
-                            "icon": "link",
-                            "url": "https://forms.gle/E2D4bKWKCjCAcBkA6"
-                        }
-                    ]
-                },
-                {
-                    "weekTitle": "Module 3 -  Discrete Mathematics and Advanced Programming",
-                    "description": "In week 3, we will develop our mathematical proficiency in Discrete Mathematics by exploring and working with examples of graphs, which are mathematical objects with broad applications in both Computer Science and Data Science. Furthermore, we will learn about Languages, Grammars, and Finite State Machines. From there, we will apply what we have learned to Graph Data Structures and then Regular Expressions.",
-                    "details": "Topics:<br/><ul><li>Graph Theory</li><li>Directed Graphs</li><liAdvanced Binary Trees</li><li>Finite State Machines</li><li>Regular Expressions</li><li>Graph Data Structures</li><li>Combinatorics</li><li>Capstone Project</li></ul>",
-                    "documents": [
-                        {
-                            "title": "Session 7",
-                            "icon": "video",
-                            "url": "https://vimeo.com/715958833/56db24a171"
-                        },
-                        {
-                            "title": "Session 8",
-                            "icon": "video",
-                            "url": "https://vimeo.com/716369650/8846219ab6"
-                        },
-                        {
-                            "title": "Session 9",
-                            "icon": "video",
-                            "url": "https://vimeo.com/717041462/8a32959d77"
-                        },
-                        {
-                            "title": "Singly-Linked List (Class Implementation)",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/MPD/linked-list-class.py"
-                        },
-                        {
-                            "title": "Doubly-Linked List (Class Implementation)",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/MPD/doubly-list-class.py"
-                        },
-                        {
-                            "title": "Math Tutorial 5 (Languages, Regular Expressions, FSA)",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-5.pdf"
-                        },
-                        {
-                            "title": "Assignment 4",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-4.py"
-                        },
-                        {
-                            "title": "Assignment 4 Submission",
-                            "icon": "link",
-                            "url": "https://forms.gle/yXwktzW3K4vszdv16"
-                        },
-                        {
-                            "title": "MATH Tutorial 6 (Abstract Algebra)",
-                            "icon": "file",
-                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-6.html"
-                        }
-                    ]
-                }
-            ],
-            "cta": "Learn More",
-            "date": "15/May/2022 to 05/Jun/2022",
-            "numCourses": "4 Modules",
-            "duration": "4 Weeks",
-            "buttonLabel": "Learn More",
-            "cpdCertification": true,
-            "path": "/courses/mathematics-and-programming",
-            "image": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
-            "courseID": "MPD",
-            "ctaIsExternal": false,
-            "event": "Attend the Course Q&A on 08/May/2022 to learn more about this program.",
-            "price": 189,
-            "numOfWeeks": 4,
-            "disabled": false,
-            "comingSoon": false,
-            "open": false,
-            "free": false,
-            "tabs": [
-                "Module 1",
-                "Module 2"
-            ],
-            "videoPlaylist": [
-                {
-                    "section": "Module 1",
-                    "children": [
-                        {
-                            "file": "s0-2.mov",
-                            "url": "https://player.vimeo.com/video/785947317?h=4dd2011b95",
-                            "title": "Review of Topics",
-                            "duration": "05:19"
-                        },
-                        {
-                            "file": "s0-3.mv",
-                            "url": "https://player.vimeo.com/video/785947454?h=096df80a8b",
-                            "title": "Overview of Computer Science",
-                            "duration": "04:32"
-                        },
-                        {
-                            "file": "s0-4.mv",
-                            "url": "https://player.vimeo.com/video/785947588?h=9933779a45",
-                            "title": "Definition: Mathematical Objects",
-                            "duration": "05:07"
-                        },
-                        {
-                            "file": "s0-5.mv",
-                            "url": "https://player.vimeo.com/video/785947689?h=edcc3443a1",
-                            "title": "Pure Mathematics vs Applied Mathematics",
-                            "duration": "07:01"
-                        },
-                        {
-                            "file": "s0-6.mv",
-                            "url": "https://player.vimeo.com/video/785947867?h=cdcb065bd7",
-                            "title": "Overview of Pure Mathematics",
-                            "duration": "06:25"
-                        },
-                        {
-                            "file": "s0-7.mv",
-                            "url": "https://player.vimeo.com/video/785948059?h=328c594e8c",
-                            "title": "Overview of Discrete Mathematics",
-                            "duration": "05:53"
-                        },
-                        {
-                            "file": "s0-8.mv",
-                            "url": "https://player.vimeo.com/video/785948288?h=e48104b8fc",
-                            "title": "Overview of Algorithms",
-                            "duration": "04:35"
-                        },
-                        {
-                            "file": "s0-9.mv",
-                            "url": "https://player.vimeo.com/video/785948479?h=4b11566a63",
-                            "title": "Definition: Data Structure",
-                            "duration": "03:19"
-                        },
-                        {
-                            "file": "s0-10.mv",
-                            "url": "https://player.vimeo.com/video/785948592?h=9f511cded3",
-                            "title": "Arrays and Graphs",
-                            "duration": "03:04"
-                        },
-                        {
-                            "file": "s0-11.mv",
-                            "url": "https://player.vimeo.com/video/785948692?h=8b9aef3d2d",
-                            "title": "Graphs and Trees",
-                            "duration": "07:58"
-                        },
-                        {
-                            "file": "s0-12.mv",
-                            "url": "https://player.vimeo.com/video/785949061?h=d543079b7e",
-                            "title": "Applications of Discrete Mathematics",
-                            "duration": "09:16"
-                        },
-                        {
-                            "file": "s0-13.mv",
-                            "url": "https://player.vimeo.com/video/785949780?h=329f98d92a",
-                            "title": "Mathematical Notation and Programming Syntax",
-                            "duration": "20:32"
-                        }
-                    ]
-                },
-                {
-                    "section": "Module 2",
-                    "children": [
-                        {
-                            "file": "s1-1.mov",
-                            "url": "https://player.vimeo.com/video/782999088?h=19ab33b12d",
-                            "title": "Overview of Computer Organization",
-                            "duration": "04:36"
-                        },
-                        {
-                            "file": "s1-2.mov",
-                            "url": "https://player.vimeo.com/video/782999844?h=a393781fa7",
-                            "title": "Python and C++",
-                            "duration": "05:09"
-                        },
-                        {
-                            "file": "s1-3.mov",
-                            "url": "https://player.vimeo.com/video/783001046?h=f4bc0ac733",
-                            "title": "Program and Process",
-                            "duration": "01:07"
-                        },
-                        {
-                            "file": "s1-5-1.mov",
-                            "url": "https://player.vimeo.com/video/783002055?h=612b2fda09",
-                            "title": "Values, Variables, and Pointers",
-                            "duration": "02:05"
-                        },
-                        {
-                            "file": "s1-5-2.mov",
-                            "url": "https://player.vimeo.com/video/783002449?h=660de81159",
-                            "title": "The Pointer Variable",
-                            "duration": "01:44"
-                        },
-                        {
-                            "file": "s1-5-3.mov",
-                            "url": "https://player.vimeo.com/video/783002956?h=c451cc9add",
-                            "title": "Review of List",
-                            "duration": "03:47"
-                        },
-                        {
-                            "file": "s1-5-4.mov",
-                            "url": "https://player.vimeo.com/video/783003812?h=591e28c845",
-                            "title": "Review of Multidimensional List",
-                            "duration": "03:20"
-                        },
-                        {
-                            "file": "s1-5-5.mov",
-                            "url": "https://player.vimeo.com/video/783004846?h=72fe9392c8",
-                            "title": "Review of Tuple",
-                            "duration": "02:14"
-                        },
-                        {
-                            "file": "s1-5-6.mov",
-                            "url": "https://player.vimeo.com/video/783005560?h=792eabb7ed",
-                            "title": "Review of Set",
-                            "duration": "01:54"
-                        },
-                        {
-                            "file": "s1-5-7.mov",
-                            "url": "https://player.vimeo.com/video/783006249?h=1105db3cd1",
-                            "title": "Review of Dictionary",
-                            "duration": "02:30"
-                        },
-                        {
-                            "file": "s1-5-8.mov",
-                            "url": "https://player.vimeo.com/video/783007036?h=3dff01b39a",
-                            "title": "Review of Functions and Classes",
-                            "duration": "07:53"
-                        },
-                        {
-                            "file": "s1-5-9.mov",
-                            "url": "https://player.vimeo.com/video/783009353?h=847ecf4846",
-                            "title": "More on Classes",
-                            "duration": "05:48"
-                        },
-                        {
-                            "file": "s1-5-10.mov",
-                            "url": "https://player.vimeo.com/video/783011308?h=54b483d49a",
-                            "title": "Instantiating Classes and Class Methods",
-                            "duration": "09:06"
-                        },
-                        {
-                            "file": "s1-5-11.mov",
-                            "url": "https://player.vimeo.com/video/783014227?h=34de2442d3",
-                            "title": "Example of List Methods",
-                            "duration": "05:30"
-                        },
-                        {
-                            "file": "s1-5-12.mov",
-                            "url": "https://player.vimeo.com/video/783015828?h=66736fc98c",
-                            "title": "Review of Time and Space Complexity",
-                            "duration": "03:37"
-                        },
-                        {
-                            "file": "s1-5-13.mov",
-                            "url": "https://player.vimeo.com/video/783017162?h=12c422c401",
-                            "title": "Review of Graph Data Structures",
-                            "duration": "03:23"
-                        },
-                        {
-                            "file": "s1-5-14.mov",
-                            "url": "https://player.vimeo.com/video/783018236?h=093d0879db",
-                            "title": "Binary Tree with Dictionary",
-                            "duration": "06:40"
                         }
                     ]
                 }
