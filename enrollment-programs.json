@@ -9,6 +9,7 @@
                 "Daily",
                 "New content is added to this course daily"
             ],
+            "live": true,
             "tags": [
                 "Probability Distributions",
                 "Hypothesis Testing",
