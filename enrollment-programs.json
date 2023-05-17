@@ -262,6 +262,18 @@
                             "title": "terms.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/terms.md"
+                        },
+                        {
+                            "title": "Assignment 5",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/assignment-5.ipynb"
+                        },
+                        {
+                            "submissionName": "assignment-5",
+                            "title": "Assignment 5 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-5"
                         }
                     ]
                 },
