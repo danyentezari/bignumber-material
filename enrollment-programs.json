@@ -566,8 +566,8 @@
                 "Weekly",
                 "New content is added to this course weekly"
             ],
-            "disabled": false,
-            "comingSoon": false,
+            "disabled": true,
+            "comingSoon": true,
             "open": false,
             "free": false,
             "weeks": [
