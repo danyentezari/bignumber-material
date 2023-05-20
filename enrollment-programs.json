@@ -9,7 +9,6 @@
                 "Daily",
                 "New content is added to this course daily"
             ],
-            "live": true,
             "tags": [
                 "Probability Distributions",
                 "Hypothesis Testing",
@@ -26,6 +25,7 @@
                 "Mathematics",
                 "Data Science"
             ],
+            "live": true,
             "description": "Learn the science and mathematics of inference. Includes examples in machine learning and applications from healthcare to finance to engineering. Perform statistical analysis with Python and understand the foundations of bayesian statistical learning.",
             "descriptionLong": "This courses teaches Statistics and Probability Theory with emphasis on learning from first principles. To learn advanced Statistics and, in particular, Probability Theory, it is necessary to be familiar with other mathematical topics including Integration, Sequences, Series, Sets, and Combinatrics. Although this course has Statistics and Probability Theory in the title, it contains sufficient supplementary material about other mathematical subjects that is necessary for mastery in Statistics and Probability Theory. <br/><br/>This course also teaches R, the programming language for statistical analysis. You will learn the required programming constructs to perform analysis in this specialized programming language. You will learn to apply the appropriate functions and methods, import and process data, produce meaningful visualizations, and interpret the results of analysis (e.g, Correlation, ANOVA, etc.)",
             "urlTitle": "statistics-and-programming",
@@ -262,18 +262,6 @@
                             "title": "terms.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/terms.md"
-                        },
-                        {
-                            "title": "Assignment 5",
-                            "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/assignment-5.ipynb"
-                        },
-                        {
-                            "submissionName": "assignment-5",
-                            "title": "Assignment 5 Submission",
-                            "icon": "upload",
-                            "local": true,
-                            "url": "/dashboard/assignment?courseID=spml&name=assignment-5"
                         }
                     ]
                 },
@@ -353,6 +341,14 @@
                 "Module 6",
                 "Module 7",
                 "Module 8"
+            ],
+            "highlights": [
+                "Beginner-friendly course. Includes advanced content for intermediate learners.",
+                "Covers the mathematics and statistics of machine learning.",
+                "Intuitive explanations of mathematical and statistical theory",
+                "Step-by-step breakdown of complex technical concepts.",
+                "Learn through programming, exercises, and practical real-world applications.",
+                "First-principles teaching style. Learn from elementary to advanced concepts."
             ],
             "payment": "",
             "cta": "Learn More",
@@ -531,43 +527,93 @@
                             "title": "Day 17",
                             "duration": "02:29:00",
                             "preview": true
-                        },
-                        {
-                            "file": "Mod6",
-                            "url": "https://player.vimeo.com/video/827595328?h=809d497ca8",
-                            "title": "Day 18",
-                            "duration": "02:29:00",
-                            "preview": true
-                        }
-                    ]
-                },
-                {
-                    "section": "Module 7",
-                    "children": [
-                        {
-                            "file": "Mod7",
-                            "url": "https://player.vimeo.com/video/827593421?h=7b28fcf0cf",
-                            "title": "Day 19",
-                            "duration": "02:10:00",
-                            "preview": true
-                        },
-                        {
-                            "file": "Mod7",
-                            "url": "https://player.vimeo.com/video/827589811?h=bd2f8e63ba",
-                            "title": "Day 20",
-                            "duration": "02:29:00",
-                            "preview": true
-                        },
-                        {
-                            "file": "Mod7",
-                            "url": "https://player.vimeo.com/video/827585829?h=9ec7c2f74a",
-                            "title": "Day 21",
-                            "duration": "02:29:00",
-                            "preview": true
                         }
                     ]
                 }
             ]
+        },
+        "CSApp": {
+            "code": "CSApp",
+            "courseID": "CSApp",
+            "title": "Computer Science and Applications — Dubai",
+            "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
+            "cpd": true,
+            "live": true,
+            "dubai": true,
+            "description": "Learn the science and mathematics of inference. Includes examples in machine learning and applications from healthcare to finance to engineering. Perform statistical analysis with Python and understand the foundations of bayesian statistical learning.",
+            "urlTitle": "computer-science-and-applications",
+            "path": "/courses/computer-science-and-applications",
+            "url": "/dashboard/enrollments/computer-science-and-applications",   
+            "image": "https://images.unsplash.com/photo-1476445704028-a36e0c798192?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",         
+            "tags": [
+                "JavaScript",
+                "Python",
+                "Data Structures",
+                "Analysis of Algorithms",
+                "Computer Organization",
+                "App Development",
+                "Computer Networks",
+                "Discrete Mathematics",
+                "Cryptography"
+            ],
+            "highlights": [],
+            "numOfWeeks": 9,
+            "numCourses": "9 Modules",
+            "duration": "9 Weeks",
+            "cta": "Learn More",
+            "buttonLabel": "Learn More",
+            "updateFrequency": [
+                "Weekly",
+                "New content is added to this course weekly"
+            ],
+            "disabled": false,
+            "comingSoon": false,
+            "open": false,
+            "free": false,
+            "weeks": [
+                {
+                    "weekTitle": "JavaScript Programming I",
+                    "description": "",
+                    "documents": []
+                },
+                {
+                    "weekTitle": "JavaScript Programming II",
+                    "description": "",
+                    "documents": []
+                },
+                {
+                    "weekTitle": "Data Structures",
+                    "description": "",
+                    "documents": []
+                },
+                {
+                    "weekTitle": "UI App Development",
+                    "description": "",
+                    "documents": []
+                },
+                {
+                    "weekTitle": "HTTP, APIs, and Networks",
+                    "description": "",
+                    "documents": []
+                },
+                {
+                    "weekTitle": "Computer Organization",
+                    "description": "",
+                    "documents": []
+                },
+                {
+                    "weekTitle": "Cloud Computing with GCS",
+                    "description": "",
+                    "documents": []
+                },
+                {
+                    "weekTitle": "Specialization",
+                    "description": "",
+                    "documents": []
+                }
+            ],
+            "rootDocs": [],
+            "videoPlaylist": []
         },
         "LMP": {
             "title": "Linear Mathematics with Python",
@@ -2053,6 +2099,7 @@
     "url_map": {
         "statistics-probability-theory-and-programming": "SPR",
         "statistics-and-programming": "SPML",
+        "computer-science-and-applications": "CSApp",
         "mathematics-and-programming": "MPD",
         "linear-mathematics-with-python": "LMP",
         "google-developers-ml-papers": "MLPapers",
@@ -2121,106 +2168,6 @@
         },
         "spml/assignment-4": {
             "title": "Assignment 4",
-            "icon": "file",
-            "organization": [
-                {
-                    "title": "File Submission",
-                    "details": {
-                        "question": "Submit your file",
-                        "options": [
-                            {
-                                "type": "file",
-                                "text": "Attach"
-                            }
-                        ],
-                        "answerKey": 0,
-                        "hint": ""
-                    }
-                }
-            ]
-        },
-        "spml/assignment-5": {
-            "title": "Assignment 5",
-            "icon": "file",
-            "organization": [
-                {
-                    "title": "File Submission",
-                    "details": {
-                        "question": "Submit your file",
-                        "options": [
-                            {
-                                "type": "file",
-                                "text": "Attach"
-                            }
-                        ],
-                        "answerKey": 0,
-                        "hint": ""
-                    }
-                }
-            ]
-        },
-        "spml/assignment-6": {
-            "title": "Assignment 6",
-            "icon": "file",
-            "organization": [
-                {
-                    "title": "File Submission",
-                    "details": {
-                        "question": "Submit your file",
-                        "options": [
-                            {
-                                "type": "file",
-                                "text": "Attach"
-                            }
-                        ],
-                        "answerKey": 0,
-                        "hint": ""
-                    }
-                }
-            ]
-        },
-        "spml/assignment-7": {
-            "title": "Assignment 7",
-            "icon": "file",
-            "organization": [
-                {
-                    "title": "File Submission",
-                    "details": {
-                        "question": "Submit your file",
-                        "options": [
-                            {
-                                "type": "file",
-                                "text": "Attach"
-                            }
-                        ],
-                        "answerKey": 0,
-                        "hint": ""
-                    }
-                }
-            ]
-        },
-        "spml/assignment-8": {
-            "title": "Assignment 8",
-            "icon": "file",
-            "organization": [
-                {
-                    "title": "File Submission",
-                    "details": {
-                        "question": "Submit your file",
-                        "options": [
-                            {
-                                "type": "file",
-                                "text": "Attach"
-                            }
-                        ],
-                        "answerKey": 0,
-                        "hint": ""
-                    }
-                }
-            ]
-        },
-        "spml/assignment-9": {
-            "title": "Assignment 9",
             "icon": "file",
             "organization": [
                 {
