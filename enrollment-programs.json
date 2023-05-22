@@ -1553,17 +1553,14 @@
                         {
                             "title": "R - Hypothesis Testing Example 1",
                             "icon": "file",
-                            "url": "https://drive.google.com/file/d/12R_1h_vbFA25Uq89dlMikXDy_zq-4HBk/view?usp=sharing"
+                            "url_old": "https://drive.google.com/file/d/12R_1h_vbFA25Uq89dlMikXDy_zq-4HBk/view?usp=sharing",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod2/example-1-hypothesis-test.R"
                         },
                         {
-                            "title": "R - Programming Essentials",
+                            "title": "R - ANOVA Example",
                             "icon": "file",
-                            "url": "https://drive.google.com/file/d/1RLdwAUrhruod-5oZpyprA1pxxI4-XpbH/view?usp=sharing"
-                        },
-                        {
-                            "title": "R - Sample CSV File",
-                            "icon": "file",
-                            "url": "https://drive.google.com/file/d/1eVWORiAjdV-Cv0byxLiBgDWKvcy6FS5S/view?usp=sharing"
+                            "url_old": "https://drive.google.com/file/d/173I41TPSsiBNxKbIlbd0mQMkGY2Te5bE/view?usp=sharing",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod2/example-3-anova.R"
                         },
                         {
                             "title": "Assignment 2 (R)",
@@ -1604,21 +1601,45 @@
                             "url": "https://docs.google.com/presentation/d/1-_mMNdM60SupxKIQmaV_2WM-vIAQCiwH4TXdMAD_bGg/edit?usp=sharing"
                         },
                         {
-                            "title": "R - ANOVA Example",
+                            "title": "R - Sample CSV File",
                             "icon": "file",
-                            "url": "https://drive.google.com/file/d/173I41TPSsiBNxKbIlbd0mQMkGY2Te5bE/view?usp=sharing"
+                            "url_old": "https://drive.google.com/file/d/1eVWORiAjdV-Cv0byxLiBgDWKvcy6FS5S/view?usp=sharing"
                         },
                         {
-                            "title": "Assignment 3",
+                            "title": "R - Regression Example",
+                            "icon": "file",
+                            "url_old": "https://drive.google.com/file/d/1RLdwAUrhruod-5oZpyprA1pxxI4-XpbH/view?usp=sharing",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod2/r-essentials.R"
+                        },
+                        {
+                            "title": "Assignment 3 (R)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod3/assignment-3-r.ipynb"
+                        },
+                        {
+                            "submissionName": "assignment-3-r",
+                            "title": "Assignment 3 Submission (R)",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spr&name=assignment-3-r"
+                        },
+                        {
+                            "title": "Python - Regression Example",
+                            "icon": "file",
+                            "url_old": "https://drive.google.com/file/d/1RLdwAUrhruod-5oZpyprA1pxxI4-XpbH/view?usp=sharing",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod3/script.ipynb"
+                        },
+                        {
+                            "title": "Assignment 3 (Python)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod3/assignment-3.ipynb"
                         },
                         {
-                            "submissionName": "assignment-3",
-                            "title": "Assignment 3 Submission",
+                            "submissionName": "assignment-3-python",
+                            "title": "Assignment 3 Submission (Python)",
                             "icon": "upload",
                             "local": true,
-                            "url": "/dashboard/assignment?courseID=spr&name=assignment-3"
+                            "url": "/dashboard/assignment?courseID=spr&name=assignment-3-python"
                         }
                     ]
                 },
@@ -2442,8 +2463,28 @@
                 }
             ]
         },
-        "spr/assignment-3": {
-            "title": "Assignment 4",
+        "spr/assignment-3-python": {
+            "title": "Assignment 3 (Python)",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "spr/assignment-3-r": {
+            "title": "Assignment 3 (R)",
             "icon": "file",
             "organization": [
                 {
