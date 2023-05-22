@@ -2186,6 +2186,86 @@
                 }
             ]
         },
+        "spml/assignment-5": {
+            "title": "Assignment 5",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "spml/assignment-6": {
+            "title": "Assignment 6",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "spml/assignment-7": {
+            "title": "Assignment 7",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "spml/assignment-8": {
+            "title": "Assignment 8",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
         "lmp/assignment-1": {
             "title": "Assignment 1",
             "icon": "file",
