@@ -633,8 +633,8 @@
                 "Weekly",
                 "New content is added to this course weekly"
             ],
-            "disabled": true,
-            "comingSoon": true,
+            "disabled": false,
+            "comingSoon": false,
             "open": false,
             "free": false,
             "weeks": [
@@ -1536,7 +1536,7 @@
                     ]
                 },
                 {
-                    "weekTitle": "Module 2 - Applied Mathematical Statistics",
+                    "weekTitle": "Module 2 - Statistical Testing",
                     "description": "In Module 2, we delve deeper into Probability Theory and other mathematical subjects which are involved in Statistics. We will look at the properties of Random Variables, Probability Distributions, and Moments. In particular, we\"ll go over two important topics central to Probability Theory: Expected Values The Normal Distribution.",
                     "details": "",
                     "documents": [
@@ -1566,9 +1566,10 @@
                             "url": "https://drive.google.com/file/d/1eVWORiAjdV-Cv0byxLiBgDWKvcy6FS5S/view?usp=sharing"
                         },
                         {
-                            "title": "Assignment 3 (R)",
+                            "title": "Assignment 2 (R)",
                             "icon": "file",
-                            "url": "https://drive.google.com/file/d/1JB1erKi85rsT-anb8NqvBMYrPXzsp1Fy/view?usp=sharing"
+                            "url_old": "https://drive.google.com/file/d/1JB1erKi85rsT-anb8NqvBMYrPXzsp1Fy/view?usp=sharing",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod2/assignment-2.r"
                         },
                         {
                             "submissionName": "assignment-2-r",
@@ -1580,7 +1581,7 @@
                         {
                             "title": "Assignment 2 (Python)",
                             "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod2/assignment-2.ipynb"
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod2/assignment-2.ipynb"
                         },
                         {
                             "submissionName": "assignment-2-python",
@@ -1610,7 +1611,7 @@
                         {
                             "title": "Assignment 3",
                             "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod4/assignment-3.ipynb"
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod3/assignment-3.ipynb"
                         },
                         {
                             "submissionName": "assignment-3",
@@ -1628,22 +1629,22 @@
                         {
                             "title": "joint-and-marginal.md",
                             "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod4/art-of-statistics.md"
                         },
                         {
                             "title": "joint-and-marginal-relative.md",
                             "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod4/art-of-statistics.md"
                         },                        
                         {
                             "title": "art-of-statistics.md (Bayesian Inference)",
                             "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod4/art-of-statistics.md"
                         },
                         {
                             "title": "bayesian-variants.md (Derivation of Bayes Formula)",
                             "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/bayesian-variants.md"
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod4/bayesian-variants.md"
                         },
                         {
                             "submissionName": "assignment-4",
