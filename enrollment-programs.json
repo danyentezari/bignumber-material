@@ -262,6 +262,13 @@
                             "title": "terms.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/terms.md"
+                        },
+                        {
+                            "submissionName": "assignment-5",
+                            "title": "Assignment 5 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-5"
                         }
                     ]
                 },
@@ -299,6 +306,13 @@
                             "title": "bayesian-variants.md (Derivation of Bayes Formula)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/bayesian-variants.md"
+                        },
+                        {
+                            "submissionName": "assignment-6",
+                            "title": "Assignment 6 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-6"
                         }
                     ]
                 },
@@ -316,6 +330,13 @@
                             "title": "Course Map",
                             "icon": "link",
                             "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                        },
+                        {
+                            "submissionName": "assignment-7",
+                            "title": "Assignment 7 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-7"
                         }
                     ]
                 },
@@ -323,7 +344,20 @@
                     "dueDate": "29/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
                     "weekTitle": "Module 8 – Probability Distributions and Machine Learning",
                     "description": "In this final learning module, we will study the probability distributions, their applications, and their derivations. It is very important for any statistician, data scientist, or anyone who professionally uses statistics to understand how and why probability functions are expressed the way they are. This module will cover important probability distributions such as binomial distribution, Poission distribution, and the normal distribution.",
-                    "documents": []
+                    "documents": [
+                        {
+                            "title": "Course Map",
+                            "icon": "link",
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                        },
+                        {
+                            "submissionName": "assignment-8",
+                            "title": "Assignment 8 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-8"
+                        }
+                    ]
                 },
                 {
                     "dueDate": "05/Jun/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
