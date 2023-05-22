@@ -1508,7 +1508,7 @@
                     "date": "",
                     "weekTitle": "Module 1 - Statistics and Probability Theory: Principles",
                     "description": "In this week, we will begin by covering an important prerequisite, Mathematical Thinking, which will be about how math is used in Statistics and Probability Theory and the different notations that will be used. We will then go over some fundamental concepts in Statistics and Probability, which will help us to appreciate and quickly understand more advanced topics going forward.",
-                    "details": "Assessment:<br/> You will complete a questionnaire about fundamental topics that are covered in Module 1.",
+                    "details": "",
                     "documents": [
                         {
                             "title": "Slides 1",
@@ -1523,14 +1523,22 @@
                         {
                             "title": "Assignment 1",
                             "icon": "file",
-                            "url": "https://docs.google.com/forms/d/e/1FAIpQLScw6dU-fcAVUE_pDackdHfCCaBJ1ayTXQ-25SIQh1RMDMR3oQ/viewform?usp=sf_link"
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/assignment-1.ipynb"
+                        },
+                        {
+                            "submissionName": "assignment-1",
+                            "title": "Assignment 1 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "spml_equivalence": "assignment-1",
+                            "url": "/dashboard/assignment?courseID=spr&name=assignment-1"
                         }
                     ]
                 },
                 {
                     "weekTitle": "Module 2 - Applied Mathematical Statistics",
                     "description": "In Module 2, we delve deeper into Probability Theory and other mathematical subjects which are involved in Statistics. We will look at the properties of Random Variables, Probability Distributions, and Moments. In particular, we\"ll go over two important topics central to Probability Theory: Expected Values The Normal Distribution.",
-                    "details": "Assessment:<br/>You will complete a programming assignment in R with these requirements: <br/><ol><li>Import the provided CSV as a table</li><li>Use the appropriate function(s) to produce summary statistics (Standard Deviation, min, max, quartiles, etc.)</li><li>Use the appropriate functions to generate labelled plots (Frequency Chart, Histogtam, and Scatterplot)</li><li>Produce a table indicating the Covariance and Correlation of Random Variables in the data</li><li>Produce a Simple Linear Regression plot</li></ol>",
+                    "details": "",
                     "documents": [
                         {
                             "title": "Slides 2",
@@ -1558,21 +1566,36 @@
                             "url": "https://drive.google.com/file/d/1eVWORiAjdV-Cv0byxLiBgDWKvcy6FS5S/view?usp=sharing"
                         },
                         {
-                            "title": "Assignment 2 Code",
+                            "title": "Assignment 3 (R)",
                             "icon": "file",
                             "url": "https://drive.google.com/file/d/1JB1erKi85rsT-anb8NqvBMYrPXzsp1Fy/view?usp=sharing"
                         },
                         {
-                            "title": "Assignment 2 submission form",
+                            "submissionName": "assignment-2-r",
+                            "title": "Assignment 2 Submission (R)",
                             "icon": "upload",
-                            "url": "https://forms.gle/nsHxs1AnKzJPC5Jb9"
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spr&name=assignment-2-r"
+                        },
+                        {
+                            "title": "Assignment 2 (Python)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod2/assignment-2.ipynb"
+                        },
+                        {
+                            "submissionName": "assignment-2-python",
+                            "spml_equivalence": "assignment-2",
+                            "title": "Assignment 2 Submission (Python)",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spr&name=assignment-2-python"
                         }
                     ]
                 },
                 {
                     "weekTitle": "Module 3 - Inferential Statistics",
                     "description": "In Module 3, we will further cover concepts in Mathematical Statistics and study the relationship between multiple explanatory variables in more details. In particular, we will focus on Analysis of Variance (ANOVA). We will look at how Hypothesis Testing and Regression Analysis is performed and better understand tests for Statistical Signigicance.",
-                    "details": "Assessment:<br/> You will complete a programming assignment in R with these requirements: <br/> <ol><li>Import the provided CSV as a table</li><li>Use the appropriate function(s) to produce summary statistics (Standard Deviation, min, max, quartiles, etc.)</li><li>Use the appropriate functions to generate labelled plots (Frequency Chart, Histogtam, and Scatterplot)</li><li>Produce multiple Samples from the Population</li><li>Produce a table indicating the Covariance and Correlation of Random Variables in the data</li><li>Produce an ANOVA table for the Variables in the data</li><li>Produce a Multiple Linear Regression plot</li><li>Produce table of results for different Methods of Least Squares</li></ol>",
+                    "details": "",
                     "documents": [
                         {
                             "title": "Slides 3",
@@ -1580,31 +1603,56 @@
                             "url": "https://docs.google.com/presentation/d/1-_mMNdM60SupxKIQmaV_2WM-vIAQCiwH4TXdMAD_bGg/edit?usp=sharing"
                         },
                         {
-                            "title": "Lecture 3 (archive)",
-                            "icon": "video",
-                            "url": "https://www.youtube.com/watch?v=5d9SYwHSWZU"
-                        },
-                        {
                             "title": "R - ANOVA Example",
                             "icon": "file",
                             "url": "https://drive.google.com/file/d/173I41TPSsiBNxKbIlbd0mQMkGY2Te5bE/view?usp=sharing"
                         },
                         {
-                            "title": "Assignment 3 Code",
+                            "title": "Assignment 3",
                             "icon": "file",
-                            "url": "https://drive.google.com/file/d/1fd6S79H43lqkiF4NZxD_mPI7Dylwptrr/view?usp=sharing"
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod4/assignment-3.ipynb"
                         },
                         {
-                            "title": "Assignment 3 submission form",
+                            "submissionName": "assignment-3",
+                            "title": "Assignment 3 Submission",
                             "icon": "upload",
-                            "url": "https://forms.gle/oTptK8XWrRRmkyEU9"
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spr&name=assignment-3"
                         }
                     ]
                 },
                 {
-                    "weekTitle": "Module 4 – Bayesian Probability and Time Series",
-                    "description": "In week 4, we cover Bayesian probability and its applications. Time series concepts will be covered and concepts in regression will be reviewed and further developed. For both Bayesian probability and time series, emphasis will be put on the mathematical foundations for thorough understanding of theorems and models.",
-                    "documents": []
+                    "weekTitle": "Module 4 – Bayesian Probability",
+                    "description": "The Bayesian Theorem (and the algebraic adaptations of it) are at the center of the most powerful machine learning and deep learning models. In this module, we will delve deeper into bayesian methods, discuss the importance of prior and posterior distributions, and understand why bayesian inference is so important in machine learning.",
+                    "documents": [
+                        {
+                            "title": "joint-and-marginal.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
+                        },
+                        {
+                            "title": "joint-and-marginal-relative.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
+                        },                        
+                        {
+                            "title": "art-of-statistics.md (Bayesian Inference)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
+                        },
+                        {
+                            "title": "bayesian-variants.md (Derivation of Bayes Formula)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/bayesian-variants.md"
+                        },
+                        {
+                            "submissionName": "assignment-4",
+                            "title": "Assignment 4 Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spr&name=assignment-4"
+                        }
+                    ]
                 }
             ],
             "tabs": [
@@ -2315,6 +2363,106 @@
         },
         "spml/assignment-8": {
             "title": "Assignment 8",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "spr/assignment-1": {
+            "title": "Assignment 1",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "spr/assignment-2-python": {
+            "title": "Assignment 2 (Python)",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "spr/assignment-2-r": {
+            "title": "Assignment 2 (R)",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "spr/assignment-3": {
+            "title": "Assignment 4",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "spr/assignment-4": {
+            "title": "Assignment 4",
             "icon": "file",
             "organization": [
                 {
