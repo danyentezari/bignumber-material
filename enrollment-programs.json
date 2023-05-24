@@ -638,15 +638,15 @@
                 },
                 {
                     "weekTitle": "Module 4 - UI Development",
-                    "description": "In this module, you will learn the fundamentals of creating a user interface (UI) and to control the behaviour of the UI element with event binding and listening. You will learn to organize a UI with the HTML markup language and control elements with JavaScript.  Design systems and styling (via CSS) will be covered as independent learning.",
+                    "description": "In this module, you will learn the fundamentals of creating a user interface (UI) and to control the behaviour of the UI element with event binding and listening. You will learn to organize a UI with the HTML markup language and control elements with JavaScript. Design systems and styling (via CSS) will be covered as independent learning.",
                     "documents": []
                 }, {
                     "weekTitle": "Module 5 - HTTP, APIs, and Networks",
-                    "description": "HyperText Transfer Protocol is the set of methods by which data is exchanged between computers in the Internet.   To understand HTTP is to understand how computers exchange data, and this level of understanding is key for building applications — in particular backend applications. You will learn to develop and work with APIs,   the OSI layer, and connect your UI and backend apps together via HTTP.",
+                    "description": "HyperText Transfer Protocol is the set of methods by which data is exchanged between computers in the Internet. To understand HTTP is to understand how computers exchange data, and this level of understanding is key for building applications — in particular backend applications. You will learn to develop and work with APIs, the OSI layer, and connect your UI and backend apps together via HTTP.",
                     "documents": []
                 }, {
                     "weekTitle": "Module 6 - Backend 1: Database",
-                    "description": "This module will cover the different types of database systems and their use cases. Additionally,  you will learn to use and host data on the MongoDB database service, which is a popular graph-based (or NoSQL)  databaseu used a wide-variety of applications. You will learn how to configure a MongoDB cluster, connect to it from an application, and performing CRUD operations via Mongo Shell and the Mongoose library.",
+                    "description": "This module will cover the different types of database systems and their use cases. Additionally, you will learn to use and host data on the MongoDB database service, which is a popular graph-based (or NoSQL) database management system used in a wide variety of applications. You will learn how to configure a MongoDB cluster, connect to it from an application, and perform CRUD operations via Mongo shell and the Mongoose library.",
                     "documents": []
                 }, {
                     "weekTitle": "Module 7 - Backend 2: Web Service",
@@ -654,7 +654,7 @@
                     "documents": []
                 }, {
                     "weekTitle": "Module 7 - Cloud Computing with GCS",
-                    "description": "GCS, or Google Cloud Computing, is a service from Google for running applications and storing data in Google data centers.Cloud computing, generally speaking, is the about using clusters of specialized computers for running process that are intensive with respect to processing, storage, memory, or networking (or all of these). You will learn general concepts in cloud computing and how to deploy your app and store data on GCS.",
+                    "description": "GCS, or Google Cloud Computing, is a service from Google for running applications and storing data in Google data centers. Cloud computing, generally speaking, is the about using clusters of specialized computers for running process that are intensive with respect to processing, storage, memory, or networking (or all of these). You will learn general concepts in cloud computing and how to deploy your app and store data on GCS.",
                     "documents": []
                 }, {
                     "weekTitle": "Module 8 - Specialization",
