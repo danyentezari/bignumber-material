@@ -571,7 +571,7 @@
             "title": "Computer Science and Applications — Dubai",
             "stripe": "https://buy.stripe.com/aEU7sT5St1s338A148",
             "promoVideo": false,
-            "previewUrl": "/preview/enrollments/statistics-probability-theory-and-programming",
+            "previewUrl": "/preview/enrollments/mathematics-and-programming",
             "cpd": true,
             "live": true,
             "dubai": true,
@@ -2064,6 +2064,434 @@
                             "title": "Complex Querying",
                             "duration": "6m 54s",
                             "url": "https://player.vimeo.com/video/746269839?h=dcd89f774b"
+                        }
+                    ]
+                }
+            ]
+        },
+        "MPD": {
+            "code": "MPD",
+            "description": "Discover the fundamental concepts in mathematics through computer programming. Become proficient in both mathematics and programming. Gain key skills for mathematical sciences such as computer science, data science, and engineering.",
+            "descriptionLong": "This course covers programming in Python, the fundamentals Computer Science, and the fundamentals of Mathematics. In addition to learning to program in Python, you will understand, at the high level, how computers work and interpret programming languages. A high-level understanding of computer architecture will allow you to understand the most complex of algorithms and data structures. This course, which is the foundation couse for more advanced courses at BigNumber, is self-contained and focused on the first-principles of Computer Science and Pure Mathematics.<br/><br/>Pure Mathematics is about concepts in mathematics that are ubiquitous in all of Mathematics. In this course, you will learn the building blocks of mathematics that are relevant and necessary in all of the Mathematical and the Physical Sciences (e.g, Computer Science, Data Science, Engineering, and Economics).",
+            "payment": "https://wise.com/pay#WHmsZe53ZB35T9Ih2G6o26RJL1M",
+            "title": "Mathematics and Programming",
+            "cpd": true,
+            "tags": [
+                "Data Structures",
+                "Discrete Mathematics",
+                "Problem Solving",
+                "Python",
+                "Graphs and Binary Trees",
+                "Algorithms",
+                "Finite State Machines",
+                "Regular Expressions",
+                "C++",
+                "Computer Architecture"
+            ],
+            "hiddenTags": [
+                "Mathematics",
+                "Data Science",
+                "Computer Science"
+            ],
+            "urlTitle": "mathematics-and-programming",
+            "enrollmentType": "Audit",
+            "courseDate": "15/May/2022 to 05/Jun/2022",
+            "url": "/dashboard/enrollments/mathematics-and-programming",
+            "boxMap": "",
+            "rootDocs": [
+                {
+                    "title": "Lesson Plan",
+                    "icon": "file",
+                    "url": "https://docs.google.com/document/d/1zypX6m0ntzNIgRi98iQAKQoSzAyQ3FpLz6JaoJ6loU0?usp=sharing"
+                },
+                {
+                    "title": "Presentor Notes",
+                    "icon": "file",
+                    "url": "https://docs.google.com/document/d/152XBus6axUobGVNhxgupIm9ZRsAGI1vHH2zg915PwW4?usp=sharing"
+                },
+                {
+                    "title": "Introductory Video",
+                    "icon": "video",
+                    "url": "https://www.youtube.com/watch?v=y0-rK_ZqKk0"
+                },
+                {
+                    "title": "Session Files",
+                    "icon": "link",
+                    "url": "https://github.com/danyentezari/mathematics-and-programming-mayjun2022"
+                },
+                {
+                    "title": "Google Meet for Live Office Hours",
+                    "icon": "link",
+                    "url": "https://meet.google.com/xcv-nbpy-syj"
+                }
+            ],
+            "weeks": [
+                {
+                    "date": "",
+                    "weekTitle": "Module 1 - Introduction to Programming and Computer Science",
+                    "description": "In the first week, we will learn the building blocks of a programming language and implementation of algorithms. We will learn to write algorithms in sequential, conditional, and iterative patterns. For data structures, we will go in depth about linear data structures, their methods, and algorithms for searching in and writing into data structures.",
+                    "details": "Topics: <br/> <ul><li>Overview of Computer Science</li><li>Overview of Programming and Computer Organization</li><li>Getting Started with Python</li><li>Control Statements</li><li>Data Structures: Lists</li><li>Data Structures: Dictionaries, Sets, and Tuples</li><li>Classes and Objects</li><li>Time & Space Complexity</li></ul>",
+                    "documents": [
+                        {
+                            "title": "Module 1 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1Kc1N3pua2jGiTcs2GxBZlCQ41TFyLfbIO7oILxhZFG0"
+                        },
+                        {
+                            "title": "Getting Started with Python",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/getting-started-with-python.html"
+                        },
+                        {
+                            "title": "Python Tutorial | Part 1",
+                            "icon": "video",
+                            "url": "https://vimeo.com/795747713/6e701416c4"
+                        },
+                        {
+                            "title": "CS Tutorial 1 (Pointers)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/CS-tutorial-1.html"
+                        },
+                        {
+                            "title": "Math Tutorial 1 (Logarithm Function)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-1.html"
+                        },
+                        {
+                            "title": "Assignment 1",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-1.py"
+                        },
+                        {
+                            "title": "Assignment 2",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-2.py"
+                        },
+                        {
+                            "title": "Assignment 1 Submission",
+                            "icon": "link",
+                            "url": "https://forms.gle/QfL9M6JcTSGt3qjR6"
+                        },
+                        {
+                            "title": "Assignment 2 Submission",
+                            "icon": "link",
+                            "url": "https://forms.gle/DtyVRadYkpsUskyHA"
+                        }
+                    ]
+                },
+                {
+                    "weekTitle": "Module 2 - Introduction to Discrete Mathematics",
+                    "description": "In week 2, we will use our understanding of programming as a bridge to understand fundamental mathematical concepts and syntax. Symbols and terminology will be introduced to you and you will be able recognize mathematical objects in any branch of mathematics. We will cover functions, sets and relations, logic, proofs and mathematical induction. We will then apply these mathematical concepts directly in programming.",
+                    "details": "Assessment:<br/>You will complete assignments about topics covered in Module 2. <br/>Topics:<br/><ul><li>Overview of Pure Mathematics</li><li>Overview of Discrete Mathematics</li><li>Logic, Axiom, Lemma, Corollary, and Theorem</li><li>Accumulation, Sequence and Series</li><li>Maps and Functions</li><li>Sets and Relations</li><li>Mathematical Induction</li><li>Recursion</li></ul>",
+                    "documents": [
+                        {
+                            "title": "Module 2 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/19_kYSYaawaDHrZdISqXDXOUZNxW5CXQ8AOcP2tqw2eE/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Session 4",
+                            "icon": "video",
+                            "url": "https://vimeo.com/713047584/d226bf07bd"
+                        },
+                        {
+                            "title": "Session 5",
+                            "icon": "video",
+                            "url": "https://vimeo.com/713852941/71ee6318b8"
+                        },
+                        {
+                            "title": "Session 6",
+                            "icon": "video",
+                            "url": "https://vimeo.com/714813616/28506f055e"
+                        },
+                        {
+                            "title": "Math Tutorial 2 (Sets, Relations, and Graphs)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-2.html"
+                        },
+                        {
+                            "title": "Math Tutorial 3 (Sets Notation and Logic)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-3.html"
+                        },
+                        {
+                            "title": "Math Tutorial 4 (Mathematical Induction)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-4.html"
+                        },
+                        {
+                            "title": "Assignment 3",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-3.pdf"
+                        },
+                        {
+                            "title": "Assignment 3 Submission",
+                            "icon": "link",
+                            "url": "https://forms.gle/E2D4bKWKCjCAcBkA6"
+                        }
+                    ]
+                },
+                {
+                    "weekTitle": "Module 3 -  Discrete Mathematics and Advanced Programming",
+                    "description": "In week 3, we will develop our mathematical proficiency in Discrete Mathematics by exploring and working with examples of graphs, which are mathematical objects with broad applications in both Computer Science and Data Science. Furthermore, we will learn about Languages, Grammars, and Finite State Machines. From there, we will apply what we have learned to Graph Data Structures and then Regular Expressions.",
+                    "details": "Topics:<br/><ul><li>Graph Theory</li><li>Directed Graphs</li><liAdvanced Binary Trees</li><li>Finite State Machines</li><li>Regular Expressions</li><li>Graph Data Structures</li><li>Combinatorics</li><li>Capstone Project</li></ul>",
+                    "documents": [
+                        {
+                            "title": "Session 7",
+                            "icon": "video",
+                            "url": "https://vimeo.com/715958833/56db24a171"
+                        },
+                        {
+                            "title": "Session 8",
+                            "icon": "video",
+                            "url": "https://vimeo.com/716369650/8846219ab6"
+                        },
+                        {
+                            "title": "Session 9",
+                            "icon": "video",
+                            "url": "https://vimeo.com/717041462/8a32959d77"
+                        },
+                        {
+                            "title": "Singly-Linked List (Class Implementation)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/linked-list-class.py"
+                        },
+                        {
+                            "title": "Doubly-Linked List (Class Implementation)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/doubly-list-class.py"
+                        },
+                        {
+                            "title": "Math Tutorial 5 (Languages, Regular Expressions, FSA)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-5.pdf"
+                        },
+                        {
+                            "title": "Assignment 4",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-4.py"
+                        },
+                        {
+                            "title": "Assignment 4 Submission",
+                            "icon": "link",
+                            "url": "https://forms.gle/yXwktzW3K4vszdv16"
+                        },
+                        {
+                            "title": "MATH Tutorial 6 (Abstract Algebra)",
+                            "icon": "file",
+                            "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-6.html"
+                        }
+                    ]
+                }
+            ],
+            "cta": "Learn More",
+            "date": "15/May/2022 to 05/Jun/2022",
+            "numCourses": "4 Modules",
+            "duration": "4 Weeks",
+            "buttonLabel": "Coming Soon",
+            "cpdCertification": true,
+            "path": "/courses/mathematics-and-programming",
+            "image": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
+            "courseID": "MPD",
+            "ctaIsExternal": false,
+            "event": "Attend the Course Q&A on 08/May/2022 to learn more about this program.",
+            "price": 189,
+            "numOfWeeks": 4,
+            "disabled": true,
+            "comingSoon": true,
+            "open": false,
+            "free": false,
+            "tabs": [
+                "Module 1",
+                "Module 2"
+            ],
+            "videoPlaylist": [
+                {
+                    "section": "Module 1",
+                    "children": [
+                        {
+                            "file": "s0-2.mov",
+                            "url": "https://player.vimeo.com/video/785947317?h=4dd2011b95",
+                            "title": "Review of Topics",
+                            "duration": "05:19",
+                            "preview": false
+                        },
+                        {
+                            "file": "s0-3.mv",
+                            "url": "https://player.vimeo.com/video/785947454?h=096df80a8b",
+                            "title": "Overview of Computer Science",
+                            "duration": "04:32",
+                            "preview": true
+                        },
+                        {
+                            "file": "s0-4.mv",
+                            "url": "https://player.vimeo.com/video/785947588?h=9933779a45",
+                            "title": "Definition: Mathematical Objects",
+                            "duration": "05:07"
+                        },
+                        {
+                            "file": "s0-5.mv",
+                            "url": "https://player.vimeo.com/video/785947689?h=edcc3443a1",
+                            "title": "Pure Mathematics vs Applied Mathematics",
+                            "duration": "07:01"
+                        },
+                        {
+                            "file": "s0-6.mv",
+                            "url": "https://player.vimeo.com/video/785947867?h=cdcb065bd7",
+                            "title": "Overview of Pure Mathematics",
+                            "duration": "06:25"
+                        },
+                        {
+                            "file": "s0-7.mv",
+                            "url": "https://player.vimeo.com/video/785948059?h=328c594e8c",
+                            "title": "Overview of Discrete Mathematics",
+                            "duration": "05:53"
+                        },
+                        {
+                            "file": "s0-8.mv",
+                            "url": "https://player.vimeo.com/video/785948288?h=e48104b8fc",
+                            "title": "Overview of Algorithms",
+                            "duration": "04:35",
+                            "preview": true
+                        },
+                        {
+                            "file": "s0-9.mv",
+                            "url": "https://player.vimeo.com/video/785948479?h=4b11566a63",
+                            "title": "Definition: Data Structure",
+                            "duration": "03:19",
+                            "preview": true
+                        },
+                        {
+                            "file": "s0-10.mv",
+                            "url": "https://player.vimeo.com/video/785948592?h=9f511cded3",
+                            "title": "Arrays and Graphs",
+                            "duration": "03:04"
+                        },
+                        {
+                            "file": "s0-11.mv",
+                            "url": "https://player.vimeo.com/video/785948692?h=8b9aef3d2d",
+                            "title": "Graphs and Trees",
+                            "duration": "07:58"
+                        },
+                        {
+                            "file": "s0-12.mv",
+                            "url": "https://player.vimeo.com/video/785949061?h=d543079b7e",
+                            "title": "Applications of Discrete Mathematics",
+                            "duration": "09:16"
+                        },
+                        {
+                            "file": "s0-13.mv",
+                            "url": "https://player.vimeo.com/video/785949780?h=329f98d92a",
+                            "title": "Mathematical Notation and Programming Syntax",
+                            "duration": "20:32",
+                            "preview": true
+                        }
+                    ]
+                },
+                {
+                    "section": "Module 2",
+                    "children": [
+                        {
+                            "file": "s1-1.mov",
+                            "url": "https://player.vimeo.com/video/782999088?h=19ab33b12d",
+                            "title": "Overview of Computer Organization",
+                            "duration": "04:36"
+                        },
+                        {
+                            "file": "s1-2.mov",
+                            "url": "https://player.vimeo.com/video/782999844?h=a393781fa7",
+                            "title": "Python and C++",
+                            "duration": "05:09"
+                        },
+                        {
+                            "file": "s1-3.mov",
+                            "url": "https://player.vimeo.com/video/783001046?h=f4bc0ac733",
+                            "title": "Program and Process",
+                            "duration": "01:07"
+                        },
+                        {
+                            "file": "s1-5-1.mov",
+                            "url": "https://player.vimeo.com/video/783002055?h=612b2fda09",
+                            "title": "Values, Variables, and Pointers",
+                            "duration": "02:05"
+                        },
+                        {
+                            "file": "s1-5-2.mov",
+                            "url": "https://player.vimeo.com/video/783002449?h=660de81159",
+                            "title": "The Pointer Variable",
+                            "duration": "01:44"
+                        },
+                        {
+                            "file": "s1-5-3.mov",
+                            "url": "https://player.vimeo.com/video/783002956?h=c451cc9add",
+                            "title": "Review of List",
+                            "duration": "03:47"
+                        },
+                        {
+                            "file": "s1-5-4.mov",
+                            "url": "https://player.vimeo.com/video/783003812?h=591e28c845",
+                            "title": "Review of Multidimensional List",
+                            "duration": "03:20"
+                        },
+                        {
+                            "file": "s1-5-5.mov",
+                            "url": "https://player.vimeo.com/video/783004846?h=72fe9392c8",
+                            "title": "Review of Tuple",
+                            "duration": "02:14"
+                        },
+                        {
+                            "file": "s1-5-6.mov",
+                            "url": "https://player.vimeo.com/video/783005560?h=792eabb7ed",
+                            "title": "Review of Set",
+                            "duration": "01:54"
+                        },
+                        {
+                            "file": "s1-5-7.mov",
+                            "url": "https://player.vimeo.com/video/783006249?h=1105db3cd1",
+                            "title": "Review of Dictionary",
+                            "duration": "02:30"
+                        },
+                        {
+                            "file": "s1-5-8.mov",
+                            "url": "https://player.vimeo.com/video/783007036?h=3dff01b39a",
+                            "title": "Review of Functions and Classes",
+                            "duration": "07:53"
+                        },
+                        {
+                            "file": "s1-5-9.mov",
+                            "url": "https://player.vimeo.com/video/783009353?h=847ecf4846",
+                            "title": "More on Classes",
+                            "duration": "05:48"
+                        },
+                        {
+                            "file": "s1-5-10.mov",
+                            "url": "https://player.vimeo.com/video/783011308?h=54b483d49a",
+                            "title": "Instantiating Classes and Class Methods",
+                            "duration": "09:06"
+                        },
+                        {
+                            "file": "s1-5-11.mov",
+                            "url": "https://player.vimeo.com/video/783014227?h=34de2442d3",
+                            "title": "Example of List Methods",
+                            "duration": "05:30"
+                        },
+                        {
+                            "file": "s1-5-12.mov",
+                            "url": "https://player.vimeo.com/video/783015828?h=66736fc98c",
+                            "title": "Review of Time and Space Complexity",
+                            "duration": "03:37"
+                        },
+                        {
+                            "file": "s1-5-13.mov",
+                            "url": "https://player.vimeo.com/video/783017162?h=12c422c401",
+                            "title": "Review of Graph Data Structures",
+                            "duration": "03:23"
+                        },
+                        {
+                            "file": "s1-5-14.mov",
+                            "url": "https://player.vimeo.com/video/783018236?h=093d0879db",
+                            "title": "Binary Tree with Dictionary",
+                            "duration": "06:40"
                         }
                     ]
                 }
