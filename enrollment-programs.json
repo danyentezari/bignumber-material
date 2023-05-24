@@ -3,11 +3,13 @@
         "SPML": {
             "code": "SPML",
             "title": "Statistics and Programming — Dubai",
+            "dates": "05 Jun 2023 - 26 July 2023",
             "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
+            "stripe": "https://buy.stripe.com/cN26oP6Wx4EfdNe147",
+            "previewUrl": "/preview/enrollments/statistics-probability-theory-and-programming",
             "cpd": true,
             "updateFrequency": [
-                "Daily",
-                "New content is added to this course daily"
+                "Daily", "New content is added to this course daily"
             ],
             "tags": [
                 "Probability Distributions",
@@ -22,10 +24,10 @@
                 "Mathematics Foundations"
             ],
             "hiddenTags": [
-                "Mathematics",
-                "Data Science"
+                "Mathematics", "Data Science"
             ],
             "live": true,
+            "summary": "This beginner-friendly course teaches the core theoretical and practical concepts in statistical inference and, by extension, machine learning. Statistics and ML have very wide applications in the real world but many struggle to learn statistics and ML because they don't have a strong foundation in mathematics and programming. \n\nThis course teaches the foundations of mathematics and programming, and enable you to actually understand statistics and machine learning.",
             "description": "Learn the science and mathematics of inference. Includes examples in machine learning and applications from healthcare to finance to engineering. Perform statistical analysis with Python and understand the foundations of bayesian statistical learning.",
             "descriptionLong": "This courses teaches Statistics and Probability Theory with emphasis on learning from first principles. To learn advanced Statistics and, in particular, Probability Theory, it is necessary to be familiar with other mathematical topics including Integration, Sequences, Series, Sets, and Combinatrics. Although this course has Statistics and Probability Theory in the title, it contains sufficient supplementary material about other mathematical subjects that is necessary for mastery in Statistics and Probability Theory. <br/><br/>This course also teaches R, the programming language for statistical analysis. You will learn the required programming constructs to perform analysis in this specialized programming language. You will learn to apply the appropriate functions and methods, import and process data, produce meaningful visualizations, and interpret the results of analysis (e.g, Correlation, ANOVA, etc.)",
             "urlTitle": "statistics-and-programming",
@@ -52,8 +54,7 @@
                     "title": "Handbook",
                     "icon": "file",
                     "url": "https://drive.google.com/file/d/1yeV-PTqVKlQOGIdOVuUyCfMSONyVFRZ1/view?usp=sharing"
-                },
-                {
+                }, {
                     "title": "Google Meet for Live Office Hours",
                     "icon": "link",
                     "url": "https://meet.google.com/xcv-nbpy-syj"
@@ -85,23 +86,19 @@
                             "title": "Exercise 1 (Notebook)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/exercise-1.ipynb"
-                        },
-                        {
+                        }, {
                             "title": "Exercise 2 (Notebook)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/exercise-2.ipynb"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 1",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/assignment-1.ipynb"
-                        },
-                        {
+                        }, {
                             "title": "terms.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/definitions.md"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-1",
                             "title": "Assignment 1 Submission",
                             "icon": "upload",
@@ -134,20 +131,18 @@
                             "title": "terms.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/definitions.md"
-                        },
-                        {
+                        }, {
                             "title": "Course Map",
                             "icon": "link",
                             "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-2",
                             "title": "Assignment 2 Submission",
                             "icon": "upload",
                             "local": true,
                             "url": "/dashboard/assignment?courseID=spml&name=assignment-2"
                         }
-                        
+
                     ]
                 },
                 {
@@ -174,23 +169,19 @@
                             "title": "terms.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/definitions.md"
-                        },
-                        {
+                        }, {
                             "title": "Course Map",
                             "icon": "link",
                             "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 3",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod3/assignment-3.ipynb"
-                        },
-                        {
+                        }, {
                             "title": "OLS Assumptions (Visual Verification)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod3/ols-assumptions-visual.ipynb"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-3",
                             "title": "Assignment 3 Submission",
                             "icon": "upload",
@@ -223,8 +214,7 @@
                             "title": "Assignment 4",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod4/assignment-4.ipynb"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-4",
                             "title": "Assignment 4 Submission",
                             "icon": "upload",
@@ -232,8 +222,7 @@
                             "url": "/dashboard/assignment?courseID=spml&name=assignment-4"
                         }
                     ]
-                },
-                {
+                }, {
                     "dueDate": "08/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
                     "weekTitle": "Module 5 - Machine Learning and Programming",
                     "description": "Machine Learning has evolved from statistical modeling and algorithmic modeling of computer science. More important, machine learning made it possible to perform statistical and probabilistic inferential techniques on large volumes of data. In this module, we will learn further develop our programming skills by applying them to applications in machine learning.",
@@ -257,13 +246,11 @@
                             "title": "supervised_classification.ipynb ",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/supervised_classification.ipynb"
-                        },
-                        {
+                        }, {
                             "title": "terms.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/terms.md"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-5",
                             "title": "Assignment 5 Submission",
                             "icon": "upload",
@@ -271,8 +258,7 @@
                             "url": "/dashboard/assignment?courseID=spml&name=assignment-5"
                         }
                     ]
-                },
-                {
+                }, {
                     "dueDate": "15/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
                     "weekTitle": "Module 6 – Bayesian Probability and Inference",
                     "description": "The Bayesian Theorem (and the algebraic adaptations of it) are at the center of the most powerful machine learning and deep learning models. In this module, we will delve deeper into bayesian methods, discuss the importance of prior and posterior distributions, and understand why bayesian inference is so important in machine learning.",
@@ -296,18 +282,15 @@
                             "title": "joint-and-marginal-relative.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
-                        },                        
-                        {
+                        }, {
                             "title": "art-of-statistics.md (Bayesian Inference)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
-                        },
-                        {
+                        }, {
                             "title": "bayesian-variants.md (Derivation of Bayes Formula)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/bayesian-variants.md"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-6",
                             "title": "Assignment 6 Submission",
                             "icon": "upload",
@@ -315,8 +298,7 @@
                             "url": "/dashboard/assignment?courseID=spml&name=assignment-6"
                         }
                     ]
-                },
-                {
+                }, {
                     "dueDate": "22/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
                     "weekTitle": "Module 7 – Calculus and Algebra for Statistics",
                     "description": "Statistics is a mathematical science with probability theory at its core. However, probability theory can be properly studies if the mathematical prerequisites are learnt. The prerequisites for probability theory include, among other branches of mathematics, calculus, combinatorics, classical algebra, and basic abstract algebra. We will cover these prerequisites both in live lectures and supplementary learning material.",
@@ -325,13 +307,11 @@
                             "title": "Module 7 Slides",
                             "icon": "file",
                             "url": "https://docs.google.com/presentation/d/13GiIi6-m051GWTuYWQDCplhs2bAU8Msd7R-bzhwIGWk/edit?usp=sharing"
-                        },
-                        {
+                        }, {
                             "title": "Course Map",
                             "icon": "link",
                             "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-7",
                             "title": "Assignment 7 Submission",
                             "icon": "upload",
@@ -339,8 +319,7 @@
                             "url": "/dashboard/assignment?courseID=spml&name=assignment-7"
                         }
                     ]
-                },
-                {
+                }, {
                     "dueDate": "29/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
                     "weekTitle": "Module 8 – Probability Distributions and Machine Learning",
                     "description": "In this final learning module, we will study the probability distributions, their applications, and their derivations. It is very important for any statistician, data scientist, or anyone who professionally uses statistics to understand how and why probability functions are expressed the way they are. This module will cover important probability distributions such as binomial distribution, Poission distribution, and the normal distribution.",
@@ -349,8 +328,7 @@
                             "title": "Course Map",
                             "icon": "link",
                             "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-8",
                             "title": "Assignment 8 Submission",
                             "icon": "upload",
@@ -358,8 +336,7 @@
                             "url": "/dashboard/assignment?courseID=spml&name=assignment-8"
                         }
                     ]
-                },
-                {
+                }, {
                     "dueDate": "05/Jun/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
                     "weekTitle": "Module 9 - Capstone Project",
                     "description": "This module is dedicated to your capstone project, the completion of which is required to earn the certificate for 'Professional Certificate in Statistics and Programing'. Completing this project will involve modeling data, data transformations with Python, visualization, inference and error measurements.",
@@ -383,6 +360,13 @@
                 "Step-by-step breakdown of complex technical concepts.",
                 "Learn through programming, exercises, and practical real-world applications.",
                 "First-principles teaching style. Learn from elementary to advanced concepts."
+            ],
+            "resources": [
+                "python.jpg",
+                "jupyter.jpg",
+                "routledge.jpg",
+                "springer.jpg",
+                "dover.jpg"
             ],
             "payment": "",
             "cta": "Learn More",
@@ -424,20 +408,18 @@
                             "title": "Day 1",
                             "duration": "02:32:06",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "Mod2",
                             "url": "https://player.vimeo.com/video/811752098?h=88ffc6ed79",
                             "title": "Day 2",
                             "duration": "02:39:05",
-                            "preview": true                            
-                        },
-                        {
+                            "preview": true
+                        }, {
                             "file": "Mod3",
                             "url": "https://player.vimeo.com/video/811756555?h=4e0ea4e812",
                             "title": "Day 3",
                             "duration": "02:30:00",
-                            "preview": true                            
+                            "preview": true
                         }
                     ]
                 },
@@ -450,15 +432,13 @@
                             "title": "Day 4",
                             "duration": "02:52:41",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "Mod2",
                             "url": "https://player.vimeo.com/video/813507050?h=37d118ab7e",
                             "title": "Day 5",
                             "duration": "02:27:55",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "Mod2",
                             "url": "https://player.vimeo.com/video/814074317?h=e7a0b8daf0",
                             "title": "Day 6",
@@ -476,15 +456,13 @@
                             "title": "Day 7",
                             "duration": "01:52:46",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "Mod3",
                             "url": "https://player.vimeo.com/video/819476438?h=c9fe622576",
                             "title": "Day 8",
                             "duration": "01:54:36",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "Mod3",
                             "url": "https://player.vimeo.com/video/819473480?h=bb12c01e01",
                             "title": "Day 9",
@@ -492,8 +470,7 @@
                             "preview": true
                         }
                     ]
-                },
-                {
+                }, {
                     "section": "Module 4",
                     "children": [
                         {
@@ -502,15 +479,13 @@
                             "title": "Day 10",
                             "duration": "02:30:00",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "Mod4",
                             "url": "https://player.vimeo.com/video/818380142?h=cc57e940e6",
                             "title": "Day 11",
                             "duration": "02:30:00",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "Mod4",
                             "url": "https://player.vimeo.com/video/818376540?h=c339c3d84e",
                             "title": "Day 12",
@@ -518,8 +493,7 @@
                             "preview": true
                         }
                     ]
-                },
-                {
+                }, {
                     "section": "Module 5",
                     "children": [
                         {
@@ -528,15 +502,13 @@
                             "title": "Day 13",
                             "duration": "02:10:00",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "Mod5",
                             "url": "https://player.vimeo.com/video/823155707?h=7500cf2b34",
                             "title": "Day 14",
                             "duration": "02:10:00",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "Mod5",
                             "url": "https://player.vimeo.com/video/823144960?h=142e2849a4",
                             "title": "Day 15",
@@ -544,8 +516,7 @@
                             "preview": true
                         }
                     ]
-                },
-                {
+                }, {
                     "section": "Module 6",
                     "children": [
                         {
@@ -554,15 +525,13 @@
                             "title": "Day 16",
                             "duration": "02:10:00",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "Mod6",
                             "url": "https://player.vimeo.com/video/823701725?h=978c66f52b",
                             "title": "Day 17",
                             "duration": "02:29:00",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "Mod6",
                             "url": "https://player.vimeo.com/video/827595328?h=809d497ca8",
                             "title": "Day 18",
@@ -570,8 +539,7 @@
                             "preview": true
                         }
                     ]
-                },
-                {
+                }, {
                     "section": "Module 7",
                     "children": [
                         {
@@ -580,15 +548,13 @@
                             "title": "Day 19",
                             "duration": "02:10:00",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "Mod7",
                             "url": "https://player.vimeo.com/video/827589811?h=bd2f8e63ba",
                             "title": "Day 20",
                             "duration": "02:29:00",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "Mod7",
                             "url": "https://player.vimeo.com/video/827585829?h=9ec7c2f74a",
                             "title": "Day 21",
@@ -603,15 +569,19 @@
             "code": "CSApp",
             "courseID": "CSApp",
             "title": "Computer Science and Applications — Dubai",
-            "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
+            "stripe": "https://buy.stripe.com/aEU7sT5St1s338A148",
+            "promoVideo": false,
+            "previewUrl": "/preview/enrollments/statistics-probability-theory-and-programming",
             "cpd": true,
             "live": true,
             "dubai": true,
-            "description": "Learn the science and mathematics of inference. Includes examples in machine learning and applications from healthcare to finance to engineering. Perform statistical analysis with Python and understand the foundations of bayesian statistical learning.",
+            "dates": "11 Jun 2023 - 01 Aug 2023",
+            "summary": "This beginner-friendly course teaches programming and computer science through application development with JavaScript and the NodeJS ecosystem. You will learn how to develop the different components of a complete application (fullstack) and, in the process, the importance of various topics of computer science such data structures, computer networks, and computer organization. Additionally, you learn to deploy your app to the Google Cloud Platform.\n\n You will have the option to specialize your certificate in areas such Fullstack Development, CS Theory, Cybersecurity, Data Analysis, or general Computer Science.",
+            "description": "Learn computer science and programming with modern application development. Choose to specialize in an area such as CS theory, fullstack devleopment, data analysis, or cybersecurity.",
             "urlTitle": "computer-science-and-applications",
             "path": "/courses/computer-science-and-applications",
-            "url": "/dashboard/enrollments/computer-science-and-applications",   
-            "image": "https://images.unsplash.com/photo-1476445704028-a36e0c798192?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",         
+            "url": "/dashboard/enrollments/computer-science-and-applications",
+            "image": "https://images.unsplash.com/photo-1476445704028-a36e0c798192?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
             "tags": [
                 "JavaScript",
                 "Python",
@@ -623,59 +593,98 @@
                 "Discrete Mathematics",
                 "Cryptography"
             ],
-            "highlights": [],
+            "highlights": [
+                "Beginner-friendly course. Includes advanced content for intermediate learners.",
+                "Covers the applications and theory of computer science.",
+                "Intuitive explanations of programming and theoretical topics",
+                "Step-by-step breakdown of complex technical concepts.",
+                "Learn through programming, exercises, and practical real-world applications.",
+                "First-principles teaching style. Learn from elementary to advanced concepts."
+            ],
             "numOfWeeks": 9,
             "numCourses": "9 Modules",
             "duration": "9 Weeks",
             "cta": "Learn More",
-            "buttonLabel": "Coming Soon 22/May/2023",
+            "buttonLabel": "Learn More",
             "updateFrequency": [
-                "Weekly",
-                "New content is added to this course weekly"
+                "Weekly", "New content is added to this course weekly"
             ],
             "disabled": false,
             "comingSoon": false,
             "open": false,
             "free": false,
+            "resources": [     
+                "js.jpg",
+                "python.jpg",
+                "next.jpg",
+                "react.jpg",
+                "express.jpg",
+                "gcs.jpg",
+                "nodejs.jpg",
+                "numpy.jpg",
+                "openapi.jpg",
+                "mongodb.jpg"
+            ],
             "weeks": [
                 {
-                    "weekTitle": "JavaScript Programming I",
-                    "description": "",
+                    "weekTitle": "Module 1 - JavaScript Programming",
+                    "description": "The first module of the course will introduce to main programming constructs in found in almost all programming languages such as variables, control statements, functions, and basic data structures. JavaScript is both a general purpose programming language and loosely typed, which means many applications can be built with it and it is reletively easy to learn.",
                     "documents": []
                 },
                 {
-                    "weekTitle": "JavaScript Programming II",
-                    "description": "",
+                    "weekTitle": "Module 2 - Data Structures",
+                    "description": "The most important skill for any programmer is the understanding of and implementation of data structures. Mastering data structures requires the understanding of how computers organize and process data. The better your understanding of data structures, the better your problem solving abilities.",
                     "documents": []
                 },
                 {
-                    "weekTitle": "Data Structures",
-                    "description": "",
+                    "weekTitle": "Module 4 - UI Development",
+                    "description": "In this module, you will learn the fundamentals of creating a user interface (UI) and to control the behaviour of the UI element with event binding and listening. You will learn to organize a UI with the HTML markup language and control elements with JavaScript.  Design systems and styling (via CSS) will be covered as independent learning.",
                     "documents": []
-                },
-                {
-                    "weekTitle": "UI App Development",
-                    "description": "",
+                }, {
+                    "weekTitle": "Module 5 - HTTP, APIs, and Networks",
+                    "description": "HyperText Transfer Protocol is the set of methods by which data is exchanged between computers in the Internet.   To understand HTTP is to understand how computers exchange data, and this level of understanding is key for building applications — in particular backend applications. You will learn to develop and work with APIs,   the OSI layer, and connect your UI and backend apps together via HTTP.",
                     "documents": []
-                },
-                {
-                    "weekTitle": "HTTP, APIs, and Networks",
-                    "description": "",
+                }, {
+                    "weekTitle": "Module 6 - Backend 1: Database",
+                    "description": "This module will cover the different types of database systems and their use cases. Additionally,  you will learn to use and host data on the MongoDB database service, which is a popular graph-based (or NoSQL)  databaseu used a wide-variety of applications. You will learn how to configure a MongoDB cluster, connect to it from an application, and performing CRUD operations via Mongo Shell and the Mongoose library.",
                     "documents": []
-                },
-                {
-                    "weekTitle": "Computer Organization",
-                    "description": "",
+                }, {
+                    "weekTitle": "Module 7 - Backend 2: Web Service",
+                    "description": "In this module, we combine what we learn about computer networks and databases to build a prototye application for interfacing between the UI and the database. We will learn to use the Git CLI (command line interface) for both version control and its role in DevOps (developer operations).  We will in more detail look at API development using OpenAPI and ",
                     "documents": []
-                },
-                {
-                    "weekTitle": "Cloud Computing with GCS",
-                    "description": "",
+                }, {
+                    "weekTitle": "Module 7 - Cloud Computing with GCS",
+                    "description": "GCS, or Google Cloud Computing, is a service from Google for running applications and storing data in Google data centers.Cloud computing, generally speaking, is the about using clusters of specialized computers for running process that are intensive with respect to processing, storage, memory, or networking (or all of these). You will learn general concepts in cloud computing and how to deploy your app and store data on GCS.",
                     "documents": []
-                },
-                {
-                    "weekTitle": "Specialization",
-                    "description": "",
+                }, {
+                    "weekTitle": "Module 8 - Specialization",
+                    "description": "In this module, you can choose a specialization for your professional certification. You can choose from one of the following topics to specialize in:  ",
+                    "extra": [
+                        {
+                            "title": "Computer Science",
+                            "description": "This covers computer science more broadly wit special focus on computer organization, computer architecture, and low level programming. In particular, C++ will be covered as this is both a low-level and high-level programming language, which helps us to appreciate how computers work from the application level all the way down to the hardware level.   ",
+                            "highlights": ["C++ & Computer Memory ", "Computer Organization", "Computer Networking"]
+                        },
+                        {
+                            "title": "CS Theory",
+                            "description": "This specialization focus on discrete mathematics, the most important branch of mathematics in computer science. Discrete mathematics will provide us with the tools to analyze the performance, theoretically, of algorithms. Moreover, will look at more advanced graph data structures – the understanding of which requires a good foundation in discrete mathenatics.",
+                            "highlights": ["Discrete Mathematics", "Languages and Automata", "Analysis of Algorithms", "Advanced Data Structures"]
+                        },
+                        {
+                            "title": "Cybersecurity",
+                            "description": "This specialization is centered on cryptography, the mathematics of it, and the algorithms that allow for data to be securely transmitted and stored. Additionally, we will cover aspects of vulnerabilities with respect to digital exchange of data, and what methods are used to address these vulnerabilities.",
+                            "highlights": ["Mathematics for Cryptography", "Cryptographic Algorithms", "Penetration Testing", "Ethical Hacking"]
+                        },
+                        {
+                            "title": "Fullstack Development",
+                            "description": "This specialization teaches ReactJS and NextJS. The former is library for UI state management and the latter is a library (and framework) for building React-based fullstack applications. You will learn about React concepts, such as states, props, hooks, contexts, and conditional rendering. You will also learn the ins-and-outs of NextJS for provision a backend app for your fullstack app. Unit-testing will be covered as independent learning.",
+                            "highlights": ["NextJS", "ReactJS", "ExpressJS", "MaterialUI"]
+                        }, {
+                            "title": "Data Analysis",
+                            "description": "A new discipline that relies greatly on the power of computers and computer programming is data science.           This specialization covers the aspects of comptuer scienec relevant to data science such as Python, data preprocessing, APIs, BASH scripting, the NumPy library, and descriptive statistics – which provides a good foundation for the more advanced inferential statistics.",
+                            "highlights": ["Python and Data Science Libraries", "Data Preprocessing", "Descriptive Statistics", "Data Visualization"]
+                        }
+                    ],
                     "documents": []
                 }
             ],
@@ -687,8 +696,7 @@
             "promoVideo": "https://player.vimeo.com/video/771586848?h=0706619079",
             "cpd": true,
             "updateFrequency": [
-                "Bi-Weekly",
-                "New content is added to this course every two weeks"
+                "Bi-Weekly", "New content is added to this course every two weeks"
             ],
             "tags": [
                 "Linear Algebra",
@@ -702,8 +710,7 @@
                 "Eigendecomposition"
             ],
             "hiddenTags": [
-                "Mathematics",
-                "Data Science"
+                "Mathematics", "Data Science"
             ],
             "code": "LMP",
             "description": "Learn the fundamentals and applications of linear algebra, matrix theory, and linear programming. In this course, you will learn about matrix operations, systems of equations, and optimization in the context of real-world applications and machine learning.",
@@ -717,8 +724,7 @@
                     "title": "Presentor Notes",
                     "icon": "file",
                     "url": "https://docs.google.com/document/d/1ucI5ed2jJWccaSXpMeSqNlgCMdVPeWAx9udP6KQc1tk/edit?usp=sharing"
-                },
-                {
+                }, {
                     "title": "Google Meet for Live Office Hours",
                     "icon": "link",
                     "url": "https://meet.google.com/xcv-nbpy-syj"
@@ -751,43 +757,36 @@
                             "title": "Python Data Structures",
                             "icon": "video",
                             "url": "https://vimeo.com/710469739/78e57b6607"
-                        },
-                        {
+                        }, {
                             "title": "Getting Started with Python",
                             "icon": "file",
                             "filename": "getting-started-with-python.html",
                             "url": "https://danyentezari.github.io/bignumber-material/MPD/getting-started-with-python.html"
-                        },
-                        {
+                        }, {
                             "title": "Python Tutorial | Part 1",
                             "icon": "video",
                             "url": "https://vimeo.com/795747713/6e701416c4"
-                        },
-                        {
+                        }, {
                             "title": "LP Tutorial 1",
                             "icon": "file",
                             "filename": "LP-tutorial-1.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/LP-tutorial-1.html"
-                        },
-                        {
+                        }, {
                             "title": "LP Tutorial 1 (Notebook)",
                             "icon": "file",
                             "filename": "LP-tutorial-1.ipynb",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/LP-tutorial-1.ipynb"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 1 (Instructions)",
                             "icon": "file",
                             "filename": "assignment-1.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-1.html"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 1 (Notebook)",
                             "icon": "file",
                             "filename": "assignment-1.ipynb",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-1.ipynb"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-1",
                             "title": "Assignment 1 Submission",
                             "icon": "link",
@@ -795,8 +794,7 @@
                         }
 
                     ]
-                },
-                {
+                }, {
                     "weekTitle": "Module 2 & 3 - Matrix Operations and Real-World Applications",
                     "description": "In weeks 2 & 3, we will develop a more complete understanding of matrices, the algebra of matrices, and linear programming. In other words, Modules 2 and 3 are about mastering linear algebra and a closely related branch of mathematics called linear programming. Linear algebra is a very important branch of mathematics with very broad applications in the real world, and we will look at applications from economics to quantitative finance to logistics.",
                     "details": "",
@@ -824,75 +822,63 @@
                             "icon": "file",
                             "filename": "PY-tutorial-10.ipynb",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/PY-tutorial-10.ipynb"
-                        },
-                        {
+                        }, {
                             "title": "MATH Tutorial 11 (Linear Transformation)",
                             "icon": "file",
                             "filename": "MATH-tutorial-11.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-11.html"
-                        },
-                        {
+                        }, {
                             "title": "PY Tutorial 11 (Linear Transformations)",
                             "icon": "file",
                             "filename": "PY-tutorial-11.ipynb",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/PY-tutorial-11.ipynb"
-                        },
-                        {
+                        }, {
                             "title": "MATH Tutorial 12 (Determinants)",
                             "icon": "file",
                             "filename": "MATH-tutorial-12.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-12.html"
-                        },
-                        {
+                        }, {
                             "title": "MATH Tutorial 13 (Diagonalization)",
                             "icon": "file",
                             "filename": "MATH-tutorial-13.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-13.html"
-                        },
-                        {
+                        }, {
                             "title": "MATH Tutorial 14 (Basis)",
                             "icon": "file",
                             "filename": "MATH-tutorial-14.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-14.html"
-                        },
-                        {
+                        }, {
                             "title": "MATH Tutorial 15 (Singular Value Decomposition)",
                             "icon": "file",
                             "filename": "MATH-tutorial-15.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-15.html"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 2 (Instructions)",
                             "icon": "file",
                             "filename": "assignment-2.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-2.html"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 2 (Notebook)",
                             "icon": "file",
                             "filename": "assignment-2.ipynb",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-2.ipynb"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-2",
                             "title": "Assignment 2 Submission",
                             "icon": "link",
                             "local": true,
                             "url": "/dashboard/assignment?courseID=lmp&name=assignment-2"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 3 (Instructions)",
                             "icon": "file",
                             "filename": "assignment-3.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-3.html"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 3 (Notebook)",
                             "icon": "file",
                             "filename": "assignment-3.ipynb",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-3.ipynb"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-3",
                             "title": "Assignment 3 Submission",
                             "icon": "link",
@@ -900,8 +886,7 @@
                             "url": "/dashboard/assignment?courseID=lmp&name=assignment-3"
                         }
                     ]
-                },
-                {
+                }, {
                     "weekTitle": "Module 4 -  Machine Learning and Neural Networks ",
                     "description": "In week 4, we will be introduced to machine learning and neural networks in the context of matrix representation of data. Neural Networks are the center of the most advanced use cases of machine learning such as computer vision and natural language processing. In this module we will look at examples of how matrices are used in machine learning.",
                     "documents": [
@@ -909,19 +894,16 @@
                             "title": "Module 4 Slides",
                             "icon": "file",
                             "url": "https://docs.google.com/presentation/d/19sm_I4QbqpnemEecZAzmLXHU-Ygv7dthCfDXhUNjGF4/edit?usp=sharing"
-                        },
-                        {
+                        }, {
                             "title": "Mathematics for Data Science #2 (reference video)",
                             "icon": "video",
                             "url": "https://www.youtube.com/watch?v=1cuD3BERyoo"
-                        },
-                        {
+                        }, {
                             "title": "MATH Tutorial 17 (Neural Networks)",
                             "icon": "file",
                             "filename": "MATH-tutorial-17.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/MATH-tutorial-17.html"
-                        },
-                        {
+                        }, {
                             "title": "PY Tutorial 17 (NN Image Classification)",
                             "icon": "file",
                             "filename": "PY-tutorial-17.ipynb",
@@ -931,20 +913,16 @@
                 }
             ],
             "tabs": [
-                "Module 1",
-                "Modules 2 & 3",
-                "Module 4"
+                "Module 1", "Modules 2 & 3", "Module 4"
             ],
             "payment": [
                 {
                     "title": "Payment 1",
                     "url": "https://wise.com/pay#48LfurB0nVjRsICyudyzxMuFtd0"
-                },
-                {
+                }, {
                     "title": "Payment 2",
                     "url": "https://wise.com/pay#072rW1cBlevTtPDBNQyFrkVp8RI"
-                },
-                {
+                }, {
                     "title": "Payment 3",
                     "url": "https://wise.com/pay#dxiiDcdiHdif-3DfAUprvDWJSZ0"
                 }
@@ -1008,58 +986,49 @@
                             "url": "https://player.vimeo.com/video/768505245?h=2b87c99418",
                             "title": "System of Linear Equations",
                             "duration": "11:11"
-                        },
-                        {
+                        }, {
                             "file": "S2_f-2.mov",
                             "url": "https://player.vimeo.com/video/768506867?h=cb00a99b7d",
                             "preview": false,
                             "title": "Set Builder Notation",
                             "duration": "05:06"
-                        },
-                        {
+                        }, {
                             "file": "S2_f-3.mov",
                             "url": "https://player.vimeo.com/video/768507583?h=d97717f93a",
                             "title": "Overview of Abstract Algebra - Part 1",
                             "duration": "11:11"
-                        },
-                        {
+                        }, {
                             "file": "S2_f-4a.mov",
                             "url": "https://player.vimeo.com/video/768509222?h=5c5e1ed5c7",
                             "title": "Overview of Abstract Algebra - Part 2",
                             "duration": "10:40"
-                        },
-                        {
+                        }, {
                             "file": "S2_f-4b.mov (needs editing)",
                             "preview": true,
                             "url": "https://player.vimeo.com/video/768511197?h=59d0a29504",
                             "title": "Matrices and Spaces",
                             "duration": "02:42"
-                        },
-                        {
+                        }, {
                             "file": "S2_f-5.mov",
                             "url": "https://player.vimeo.com/video/768511695?h=3c0d215ad1",
                             "title": "Exercise 1: Vectors and NumPy",
                             "duration": "04:54"
-                        },
-                        {
+                        }, {
                             "file": "S2_f-6-1.mov",
                             "url": "https://player.vimeo.com/video/768512363?h=230be68f47",
                             "title": "Exercise 1 Solution",
                             "duration": "07:04"
-                        },
-                        {
+                        }, {
                             "file": "S3f_2_2_2.mov",
                             "url": "https://player.vimeo.com/video/768541821?h=706081807e",
                             "title": "Linear Programming Practical",
                             "duration": "07:30"
-                        },
-                        {
+                        }, {
                             "file": "S3f_2_2.mov",
                             "url": "https://player.vimeo.com/video/768543004?h=8d84f71048",
                             "title": "LP Task 1",
                             "duration": "08:16"
-                        },
-                        {
+                        }, {
                             "file": "S3f-3-4.mov",
                             "url": "https://player.vimeo.com/video/768544550?h=dec69f9426",
                             "title": "LP Task 2",
@@ -1093,86 +1062,72 @@
                             "url": "https://player.vimeo.com/video/768517337?h=89fb04f4a5",
                             "title": "Gaussian Elimination with Python",
                             "duration": "06:37"
-                        },
-                        {
+                        }, {
                             "file": "S4f_6_1.mov",
                             "url": "https://player.vimeo.com/video/768518296?h=837d54f563",
                             "title": "LU Decomposition Overview",
                             "duration": "01:16"
-                        },
-                        {
+                        }, {
                             "file": "S4f_6_2.mov",
                             "url": "https://player.vimeo.com/video/768518486?h=d38ba36095",
                             "title": "Elimination Matrices and Identity Matrices",
                             "duration": "04:55"
-                        },
-                        {
+                        }, {
                             "file": "S4f_6_3.mov",
                             "url": "https://player.vimeo.com/video/768519281?h=511337cb63",
                             "title": "LU Decomposition with Python - Part 1",
                             "duration": "08:24"
-                        },
-                        {
+                        }, {
                             "file": "S4f_6_4.mov",
                             "url": "https://player.vimeo.com/video/768520239?h=07a5bc6e4b",
                             "title": "LU Decomposition with Python - Part 2",
                             "duration": "08:11"
-                        },
-                        {
+                        }, {
                             "file": "S4f_6_5.mov",
                             "url": "https://player.vimeo.com/video/768521269?h=0aaec2163e",
                             "title": "LU Decomposition with Python - Part 3",
                             "duration": "02:04"
-                        },
-                        {
+                        }, {
                             "file": "S5_f-5.mov",
                             "url": "https://player.vimeo.com/video/768521559?h=3b3f5a117a",
                             "title": "Vectors",
                             "duration": "16:39"
-                        },
-                        {
+                        }, {
                             "file": "S5_f-6.mov",
                             "url": "https://player.vimeo.com/video/768524049?h=52e9ee98f0",
                             "title": "Vectors in 3 Dimensions",
                             "duration": "05:38"
-                        },
-                        {
+                        }, {
                             "file": "S5f_7_1.mov",
                             "url": "https://player.vimeo.com/video/768524844?h=f71e0ee10c",
                             "title": "Vectors and Cosine Similarity",
                             "duration": "02:21"
-                        },
-                        {
+                        }, {
                             "file": "S5f_7_2.mov",
                             "url": "https://player.vimeo.com/video/768525231?h=bc80659663",
                             "title": "Cartesian and Polar Coordinate Systems",
                             "duration": "04:47"
-                        },
-                        {
+                        }, {
                             "file": "S5f_7_3.mov",
                             "url": "https://player.vimeo.com/video/768526030?h=90c951b86e",
                             "title": "Plotting Cosine Similarity",
                             "duration": "07:12"
-                        },
-                        {
+                        }, {
                             "file": "S6_5-3.mov",
                             "url": "https://player.vimeo.com/video/768527484?h=7d1d1b2958",
                             "title": "Overview of Linear Transformations",
                             "duration": "07:52"
-                        },
-                        {
+                        }, {
                             "file": "S6_f-4.mov",
                             "url": "https://player.vimeo.com/video/768528623?h=6a67bcd678",
                             "title": "Linear Transformation in Computer Graphics",
                             "duration": "04:29"
-                        },
-                        {
+                        }, {
                             "file": "S6_f-5.mov",
                             "url": "https://player.vimeo.com/video/768529324?h=2d07ccc8e7",
                             "title": "Linear Transformation Practical - Part 1",
                             "duration": "09:31"
-                        },
-                        {
+                        }, {
                             "file": "S6_f-6.mov",
                             "url": "https://player.vimeo.com/video/768530683?h=39901d5943",
                             "title": "Linear Transformation Practical - Part 2",
@@ -1206,88 +1161,74 @@
                             "url": "https://player.vimeo.com/video/768535035?h=7380c81841",
                             "title": "Eigendecomposition - Step 1",
                             "duration": "02:00"
-                        },
-                        {
+                        }, {
                             "file": "S8f_3_3.mov",
                             "url": "https://player.vimeo.com/video/768535319?h=17fb1c54ee",
                             "title": "Eigendecomposition - Step 2",
                             "duration": "01:33"
-                        },
-                        {
+                        }, {
                             "file": "S8f_3_4.mov",
                             "url": "https://player.vimeo.com/video/768535511?h=842530e178",
                             "title": "Eigendecomposition - Step 3",
                             "duration": "05:57"
-                        },
-                        {
+                        }, {
                             "file": "S8f_3_5.mov",
                             "url": "https://player.vimeo.com/video/768536587?h=55bc6e5233",
                             "title": "Eigendecomposition - Step 4",
                             "duration": "00:32"
-                        },
-                        {
+                        }, {
                             "file": "S8f_3_6.mov",
                             "url": "https://player.vimeo.com/video/768536705?h=bff40d64d1",
                             "title": "Eigendecomposition - Step 5",
                             "duration": "02:06"
-                        },
-                        {
+                        }, {
                             "file": "S8f_3_7.mov",
                             "url": "https://player.vimeo.com/video/768537034?h=a87bcd497a",
                             "title": "Eigendecomposition - Step 6",
                             "duration": "02:07"
-                        },
-                        {
+                        }, {
                             "file": "S9_f-2.mov",
                             "url": "https://player.vimeo.com/video/768537378?h=36a2cb8766",
                             "title": "Overview of Singular Value Decomposition",
                             "duration": "03:40"
-                        },
-                        {
+                        }, {
                             "file": "S9_f-2c.mov",
                             "url": "https://player.vimeo.com/video/770167958?h=8a4b1dc8a4",
                             "title": "Overview of Steps for SVD",
                             "duration": "02:29"
-                        },
-                        {
+                        }, {
                             "file": "S9_f-3-SVD1.mov",
                             "url": "https://player.vimeo.com/video/770171993?h=a2e244ae77",
                             "title": "SVD - Step 1",
                             "duration": "02:14"
-                        },
-                        {
+                        }, {
                             "file": "S9_f-3-SVD.mov",
                             "url": "https://player.vimeo.com/video/770172455?h=769911f124",
                             "title": "SVD - Step 2",
                             "duration": "01:08"
-                        },
-                        {
+                        }, {
                             "file": "S9_f-4-5-SVD-3-4.mov",
                             "url": "https://player.vimeo.com/video/770168515?h=05ac993953",
                             "title": "SVD - Steps 3 & 4",
                             "duration": "06:50"
-                        },
-                        {
+                        }, {
                             "file": "S9_f-4-5b-Orthonormal-for-SVD-5-6.mov",
                             "url": "https://player.vimeo.com/video/770169767?h=c5a4559043",
                             "title": "Orthonormal and Orthogonal Matrices",
                             "duration": "04:36"
-                        },
-                        {
+                        }, {
                             "file": "S9_f-4-5c-GramSchmidt-Basis-InnerProduct.mov",
                             "url": "https://player.vimeo.com/video/770170795?h=1b48b644b5",
                             "title": "Gram-Schmidt Process",
                             "duration": "06:12"
-                        },
-                        {
+                        }, {
                             "file": "S9f-4-steps-5-6.mov",
                             "url": "https://player.vimeo.com/video/770172789?h=7d706622b1",
                             "title": "SVD - Steps 5 & 6",
                             "duration": "16:05"
                         }
                     ]
-                },
-                {
+                }, {
                     "section": "Module 4",
                     "children": [
                         {
@@ -1313,128 +1254,107 @@
                             "url": "https://player.vimeo.com/video/770702835?h=68ec0f2f73",
                             "title": "Types of Neural Networks",
                             "duration": "06:18"
-                        },
-                        {
+                        }, {
                             "file": "S10-f-3.mov",
                             "url": "https://player.vimeo.com/video/770704909?h=ed096bc606",
                             "title": "Mathematical Expression of Neural Networks",
                             "duration": "01:40"
-                        },
-                        {
+                        }, {
                             "file": "S10-f-4.mov",
                             "url": "https://player.vimeo.com/video/770705057?h=c9d39685cd",
                             "title": "Forecasting with Neural Networks and TensorFlow",
                             "duration": "14:42"
-                        },
-                        {
+                        }, {
                             "file": "S11f-2a.mov",
                             "url": "https://player.vimeo.com/video/772738838?h=5bdacf0170",
                             "title": "Image Classification with TensorFlow - Part 1",
                             "duration": "11:12"
-                        },
-                        {
+                        }, {
                             "file": "S11f-3a.mov",
                             "url": "https://player.vimeo.com/video/772775477?h=eac7107d88",
                             "title": "Overview of Train, Validation, and Test",
                             "duration": "07:03"
-                        },
-                        {
+                        }, {
                             "file": "S11f-3b.mov",
                             "url": "https://player.vimeo.com/video/772774443?h=2c1ccc6ef5",
                             "title": "Image Classification with TensorFlow - Part 2",
                             "duration": "04:28"
-                        },
-                        {
+                        }, {
                             "file": "S11f-4.mov",
                             "url": "https://player.vimeo.com/video/772774076?h=e6da598bd6",
                             "title": "Image Classification with TensorFlow - Part 3",
                             "duration": "01:44"
-                        },
-                        {
+                        }, {
                             "file": "S11f-4b.mov",
                             "url": "https://player.vimeo.com/video/772773600?h=1dd591a118",
                             "title": "Image Classification with TensorFlow - Part 3",
                             "duration": "01:56"
-                        },
-                        {
+                        }, {
                             "file": "S11f-5a.mov",
                             "url": "https://player.vimeo.com/video/772771788?h=03a260808b",
                             "title": "Matrix Convolution",
                             "duration": "08:19"
-                        },
-                        {
+                        }, {
                             "file": "S11f-5b.mov",
                             "url": "https://player.vimeo.com/video/772770651?h=b17acf7896",
                             "title": "Filters in Neural Networks",
                             "duration": "05:04"
-                        },
-                        {
+                        }, {
                             "file": "S11f-5c.mov",
                             "url": "https://player.vimeo.com/video/772768596?h=5f64224958",
                             "title": "Max Pooling",
                             "duration": "07:35"
-                        },
-                        {
+                        }, {
                             "file": "S11f-5d.mov",
                             "url": "https://player.vimeo.com/video/772766549?h=488da2d1a6",
                             "title": "Neural Network Architecture for Image Classification",
                             "duration": "08:49"
-                        },
-                        {
+                        }, {
                             "file": "S12f-2.mov",
                             "url": "https://player.vimeo.com/video/772765255?h=d763d1ac91",
                             "title": "Image Classification with TensorFlow - Part 4",
                             "duration": "05:52"
-                        },
-                        {
+                        }, {
                             "file": "S12f-3.mov",
                             "url": "https://player.vimeo.com/video/772764349?h=177fa5000f",
                             "title": "Training the Neural Network Model",
                             "duration": "03:17"
-                        },
-                        {
+                        }, {
                             "file": "S12f-4.mov",
                             "url": "https://player.vimeo.com/video/772762054?h=abba955ba8",
                             "title": "Activations in Neural Networks (Graph Representation)",
                             "duration": "07:56"
-                        },
-                        {
+                        }, {
                             "file": "S12f-5.mov",
                             "url": "https://player.vimeo.com/video/772759619?h=e695641a62",
                             "title": "Activation Functions",
                             "duration": "08:43"
-                        },
-                        {
+                        }, {
                             "file": "S12f-6.mov",
                             "url": "https://player.vimeo.com/video/772758893?h=e09b1a2215",
                             "title": "Activations in Neural Networks (Matrix Representation)",
                             "duration": "02:48"
-                        },
-                        {
+                        }, {
                             "file": "S12f-7.mov",
                             "url": "https://player.vimeo.com/video/772758541?h=08bfb284cb",
                             "title": "Intuitive Explanation of Neural Networks",
                             "duration": "01:57"
-                        },
-                        {
+                        }, {
                             "file": "S12f-8.mov",
                             "url": "https://player.vimeo.com/video/772755177?h=c0fd9568c2",
                             "title": "Overview of Hyperparamters in TensorFlow Playground",
                             "duration": "11:39"
-                        },
-                        {
+                        }, {
                             "file": "S12f-9.mov",
                             "url": "https://player.vimeo.com/video/772753487?h=cd80be1800",
                             "title": "Image Classification with TensorFlow - Part 5",
                             "duration": "06:24"
-                        },
-                        {
+                        }, {
                             "file": "S12f-10.mov",
                             "url": "https://player.vimeo.com/video/772750822?h=7cd160cbb4",
                             "title": "Probability, Classification, and Sigmoid Function",
                             "duration": "14:01"
-                        },
-                        {
+                        }, {
                             "file": "S12f-11.mov",
                             "url": "https://player.vimeo.com/video/772750519?h=b099b5e5d6",
                             "title": "Example of Logistic Regression for Classification",
@@ -1450,8 +1370,7 @@
             "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
             "cpd": true,
             "updateFrequency": [
-                "Daily",
-                "New content is added to this course daily"
+                "Daily", "New content is added to this course daily"
             ],
             "tags": [
                 "Probability Distributions",
@@ -1466,8 +1385,7 @@
                 "Markov Processes"
             ],
             "hiddenTags": [
-                "Mathematics",
-                "Data Science"
+                "Mathematics", "Data Science"
             ],
             "description": "Learn the mathematical science behind artificial intelligence, econometrics, risk engineering, and epidemiology. Learn to perform statistical analysis with the R and Python programming languages.",
             "descriptionLong": "This courses teaches Statistics and Probability Theory with emphasis on learning from first principles. To learn advanced Statistics and, in particular, Probability Theory, it is necessary to be familiar with other mathematical topics including Integration, Sequences, Series, Sets, and Combinatrics. Although this course has Statistics and Probability Theory in the title, it contains sufficient supplementary material about other mathematical subjects that is necessary for mastery in Statistics and Probability Theory. <br/><br/>This course also teaches R, the programming language for statistical analysis. You will learn the required programming constructs to perform analysis in this specialized programming language. You will learn to apply the appropriate functions and methods, import and process data, produce meaningful visualizations, and interpret the results of analysis (e.g, Correlation, ANOVA, etc.)",
@@ -1495,8 +1413,7 @@
                     "title": "Handbook",
                     "icon": "file",
                     "url": "https://drive.google.com/file/d/1yeV-PTqVKlQOGIdOVuUyCfMSONyVFRZ1/view?usp=sharing"
-                },
-                {
+                }, {
                     "title": "Google Meet for Live Office Hours",
                     "icon": "link",
                     "url": "https://meet.google.com/xcv-nbpy-syj"
@@ -1514,18 +1431,15 @@
                             "title": "Slides 1",
                             "icon": "file",
                             "url": "https://docs.google.com/presentation/d/1WEFimI8nSwq7ZYU8ZsfCx1QGp1EMZ4Ujxs8wktslu9Q?usp=sharing"
-                        },
-                        {
+                        }, {
                             "title": "Map (archive)",
                             "icon": "file",
                             "url": "https://map.bignumber.xyz/5f6359f3801e4d001723ab08?shareid=qpP01223s"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 1",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/assignment-1.ipynb"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-1",
                             "title": "Assignment 1 Submission",
                             "icon": "upload",
@@ -1534,8 +1448,7 @@
                             "url": "/dashboard/assignment?courseID=spr&name=assignment-1"
                         }
                     ]
-                },
-                {
+                }, {
                     "weekTitle": "Module 2 - Statistical Testing",
                     "description": "In Module 2, we delve deeper into Probability Theory and other mathematical subjects which are involved in Statistics. We will look at the properties of Random Variables, Probability Distributions, and Moments. In particular, we\"ll go over two important topics central to Probability Theory: Expected Values The Normal Distribution.",
                     "details": "",
@@ -1561,26 +1474,22 @@
                             "icon": "file",
                             "url_old": "https://drive.google.com/file/d/173I41TPSsiBNxKbIlbd0mQMkGY2Te5bE/view?usp=sharing",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod2/example-3-anova.R"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 2 (R)",
                             "icon": "file",
                             "url_old": "https://drive.google.com/file/d/1JB1erKi85rsT-anb8NqvBMYrPXzsp1Fy/view?usp=sharing",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod2/assignment-2.r"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-2-r",
                             "title": "Assignment 2 Submission (R)",
                             "icon": "upload",
                             "local": true,
                             "url": "/dashboard/assignment?courseID=spr&name=assignment-2-r"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 2 (Python)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod2/assignment-2.ipynb"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-2-python",
                             "spml_equivalence": "assignment-2",
                             "title": "Assignment 2 Submission (Python)",
@@ -1589,8 +1498,7 @@
                             "url": "/dashboard/assignment?courseID=spr&name=assignment-2-python"
                         }
                     ]
-                },
-                {
+                }, {
                     "weekTitle": "Module 3 - Inferential Statistics",
                     "description": "In Module 3, we will further cover concepts in Mathematical Statistics and study the relationship between multiple explanatory variables in more details. In particular, we will focus on Analysis of Variance (ANOVA). We will look at how Hypothesis Testing and Regression Analysis is performed and better understand tests for Statistical Signigicance.",
                     "details": "",
@@ -1616,26 +1524,22 @@
                             "title": "Assignment 3 (R)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod3/assignment-3-r.ipynb"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-3-r",
                             "title": "Assignment 3 Submission (R)",
                             "icon": "upload",
                             "local": true,
                             "url": "/dashboard/assignment?courseID=spr&name=assignment-3-r"
-                        },
-                        {
+                        }, {
                             "title": "Python - Regression Example",
                             "icon": "file",
                             "url_old": "https://drive.google.com/file/d/1RLdwAUrhruod-5oZpyprA1pxxI4-XpbH/view?usp=sharing",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod3/script.ipynb"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 3 (Python)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod3/assignment-3.ipynb"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-3-python",
                             "title": "Assignment 3 Submission (Python)",
                             "icon": "upload",
@@ -1643,8 +1547,7 @@
                             "url": "/dashboard/assignment?courseID=spr&name=assignment-3-python"
                         }
                     ]
-                },
-                {
+                }, {
                     "weekTitle": "Module 4 – Bayesian Probability",
                     "description": "The Bayesian Theorem (and the algebraic adaptations of it) are at the center of the most powerful machine learning and deep learning models. In this module, we will delve deeper into bayesian methods, discuss the importance of prior and posterior distributions, and understand why bayesian inference is so important in machine learning.",
                     "documents": [
@@ -1657,7 +1560,7 @@
                             "title": "joint-and-marginal-relative.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod4/art-of-statistics.md"
-                        },                        
+                        },
                         {
                             "title": "art-of-statistics.md (Bayesian Inference)",
                             "icon": "file",
@@ -1667,8 +1570,7 @@
                             "title": "bayesian-variants.md (Derivation of Bayes Formula)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPR/mod4/bayesian-variants.md"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-4",
                             "title": "Assignment 4 Submission",
                             "icon": "upload",
@@ -1679,10 +1581,7 @@
                 }
             ],
             "tabs": [
-                "Module 1",
-                "Module 2",
-                "Module 3",
-                "Module 4"
+                "Module 1", "Module 2", "Module 3", "Module 4"
             ],
             "payment": "",
             "cta": "Learn More",
@@ -1743,104 +1642,87 @@
                             "title": "Sample Space, Events, Experiments, and Outcomes",
                             "duration": "05:31",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "term2.mov",
                             "url": "https://player.vimeo.com/video/795396435?h=f2c13430a3",
                             "title": "Random Variable",
                             "duration": "05:52"
-                        },
-                        {
+                        }, {
                             "file": "term3.mov",
                             "url": "https://player.vimeo.com/video/795403602?h=6e9909827e",
                             "title": "Probability Function",
                             "duration": "03:49"
-                        },
-                        {
+                        }, {
                             "file": "s1-6-2.mov",
                             "url": "https://player.vimeo.com/video/778897577?h=3da099dae1",
                             "title": "Example: Sets and Sample Spaces",
                             "duration": "13:31"
-                        },
-                        {
+                        }, {
                             "file": "s1-7-1.mov",
                             "url": "https://player.vimeo.com/video/778900218?h=c8cb7e811c",
                             "title": "Example: Random Variable",
                             "duration": "05:10"
-                        },
-                        {
+                        }, {
                             "file": "s1-7-2.mov",
                             "url": "https://player.vimeo.com/video/778900642?h=98b8541acc",
                             "title": "Exercise: Calculating Probability",
                             "duration": "05:10 "
-                        },
-                        {
+                        }, {
                             "file": "s1-7-3.mov",
                             "url": "https://player.vimeo.com/video/778901311?h=838c0fecd2",
                             "title": "Solution: Calculating Probability",
                             "duration": "09:55"
-                        },
-                        {
+                        }, {
                             "file": "s1-8-1.mov",
                             "url": "https://player.vimeo.com/video/778903929?h=745471479f",
                             "title": "Probability Mass Function (PMF)",
                             "duration": "07:42"
-                        },
-                        {
+                        }, {
                             "file": "s1-8-2.mov",
                             "url": "https://player.vimeo.com/video/778904759?h=c0ef1e4bff",
                             "title": "Probability Functions: PMF, PDF, and CDF",
                             "duration": "05:10 "
-                        },
-                        {
+                        }, {
                             "file": "s1-9-1.mov",
                             "url": "https://player.vimeo.com/video/778905134?h=0d537170eb",
                             "title": "Cumulative Distribution Function (CDF)",
                             "duration": "08:44"
-                        },
-                        {
+                        }, {
                             "file": "s1-9-2.mov",
                             "url": "https://player.vimeo.com/video/778905893?h=a65f475648",
                             "title": "Exercise: Cumulative Distribution Function",
                             "duration": "03:02"
-                        },
-                        {
+                        }, {
                             "file": "s1-9-3.mov",
                             "url": "https://player.vimeo.com/video/778906156?h=ef16a54023",
                             "title": "Solution: Cumulative Distribution Function",
                             "duration": "06:38"
-                        },
-                        {
+                        }, {
                             "file": "s1-9-4.mov",
                             "url": "https://player.vimeo.com/video/778906584?h=8cad48641c",
                             "title": "Exercise: Discrete Distribution",
                             "duration": "02:29"
-                        },
-                        {
+                        }, {
                             "file": "s1-9-5.mov",
                             "url": "https://player.vimeo.com/video/778906821?h=f106d22b92",
                             "title": "Solution: Discrete Distribution",
                             "duration": "11:50"
-                        },
-                        {
+                        }, {
                             "file": "s1-10-1.mov",
                             "url": "https://player.vimeo.com/video/778907703?h=f514a36911",
                             "title": "Moments: The Shape of a Distribution",
                             "duration": "06:32"
-                        },
-                        {
+                        }, {
                             "file": "s1-10-2.mov",
                             "url": "https://player.vimeo.com/video/778908269?h=15129b6aa0",
                             "title": "Calculating Moments with Generating Functions",
                             "duration": "02:08"
-                        },
-                        {
+                        }, {
                             "file": "s1-10-3.mov",
                             "url": "https://player.vimeo.com/video/778908444?h=c0515e4ad1",
                             "title": "Calculating the Expected Value",
                             "duration": "08:43"
-                        },
-                        {
+                        }, {
                             "file": "s2-3-1.mov",
                             "url": "https://player.vimeo.com/video/778911299?h=f8dec4aa98",
                             "title": "Definite Integration for Distributions",
@@ -1874,74 +1756,62 @@
                             "url": "https://player.vimeo.com/video/778912128?h=2e2c283882",
                             "title": "Cumulative Probability of a Normal Distribution",
                             "duration": "05:11"
-                        },
-                        {
+                        }, {
                             "file": "s2-7-1.mov",
                             "url": "https://player.vimeo.com/video/778912715?h=52743fda02",
                             "title": "Overview of Standardization",
                             "duration": "06:00"
-                        },
-                        {
+                        }, {
                             "file": "s2-7-2.mov",
                             "url": "https://player.vimeo.com/video/778913279?h=fde4746bc8",
                             "title": "68%-95%-99.7% Rule",
                             "duration": "02:56"
-                        },
-                        {
+                        }, {
                             "file": "s2-8-1.mov",
                             "url": "https://player.vimeo.com/video/778913595?h=b0d76e583b",
                             "title": "Exercise: Normal Distrubution",
                             "duration": "04:07"
-                        },
-                        {
+                        }, {
                             "file": "s2-8-2.mov",
                             "url": "https://player.vimeo.com/video/778916013?h=7af1ce35a9",
                             "title": "Solution: Normal Distribution 1",
                             "duration": "04:37"
-                        },
-                        {
+                        }, {
                             "file": "s2-8-3.mov",
                             "url": "https://player.vimeo.com/video/778916227?h=10c34d23c9",
                             "title": "The Standard Normal Distribution",
                             "duration": "01:55"
-                        },
-                        {
+                        }, {
                             "file": "s2-8-4.mov",
                             "url": "https://player.vimeo.com/video/778916295?h=14791f2211",
                             "title": "Overview of Z-Score",
                             "duration": "03:18"
-                        },
-                        {
+                        }, {
                             "file": "s2-9-1.mov",
                             "url": "https://player.vimeo.com/video/778918561?h=9e26253bd2",
                             "title": "Integrating the Standard Normal Distribution Function",
                             "duration": "06:47"
-                        },
-                        {
+                        }, {
                             "file": "s2-9-2.mov",
                             "url": "https://player.vimeo.com/video/778919177?h=f75160449e",
                             "title": "Using the Z-Score Table",
                             "duration": "01:49"
-                        },
-                        {
+                        }, {
                             "file": "s2-9-3.mov",
                             "url": "https://player.vimeo.com/video/778919410?h=429642ab93",
                             "title": "Standardizing a Normal Random Variable",
                             "duration": "02:22"
-                        },
-                        {
+                        }, {
                             "file": "s2-9-4.mov",
                             "url": "https://player.vimeo.com/video/778919540?h=6e71382836",
                             "title": "Comparing Two Probabilities",
                             "duration": "04:19"
-                        },
-                        {
+                        }, {
                             "file": "s2-9-5.mov",
                             "url": "https://player.vimeo.com/video/778919751?h=67e7f5d1a4",
                             "title": "Solution: Normal Distribution 2",
                             "duration": "09:25"
-                        },
-                        {
+                        }, {
                             "file": "s2-10-1.mov",
                             "url": "https://player.vimeo.com/video/778922327?h=ef60405ef0",
                             "title": "Moments: The Shape of a Distribution",
@@ -1975,34 +1845,29 @@
                             "url": "https://player.vimeo.com/video/781753143?h=943e4a8fa2",
                             "title": "Comparing Two Distributions",
                             "duration": "03:05"
-                        },
-                        {
+                        }, {
                             "file": "s2-12.mov",
                             "url": "https://player.vimeo.com/video/777847574?h=7b78849a21",
                             "title": "Formula for the Moment Generating Function",
                             "duration": "11:49"
-                        },
-                        {
+                        }, {
                             "file": "s3-6-2.mov",
                             "url": "https://player.vimeo.com/video/781759737?h=200c099273",
                             "title": "Regression to The Mean",
                             "duration": "03:15"
-                        },
-                        {
+                        }, {
                             "file": "s3-8-1.mov",
                             "url": "https://player.vimeo.com/video/781755173?h=a7cd83ad95",
                             "title": "Multiple Linear Regression",
                             "duration": "08:38"
-                        },
-                        {
+                        }, {
                             "file": "s3-8-2.mov",
                             "url": "https://player.vimeo.com/video/781755691?h=eb04328b21",
                             "title": "Fitting the Model",
                             "duration": "02:07"
                         }
                     ]
-                },
-                {
+                }, {
                     "section": "Module 4",
                     "children": [
                         {
@@ -2028,68 +1893,57 @@
                             "url": "https://player.vimeo.com/video/789266252?h=118cbdc8cf",
                             "title": "Joint Frequencies Explained",
                             "duration": "04:33"
-                        },
-                        {
+                        }, {
                             "file": "bayes2-3",
                             "url": "https://player.vimeo.com/video/789266412?h=0de6d81d3f",
                             "title": "Marginal and Joint Relative Frequencies",
                             "duration": "05:31"
-                        },
-                        {
+                        }, {
                             "file": "bayes5-1",
                             "url": "https://player.vimeo.com/video/789268973?h=24b7193ca3",
                             "title": "Deriving Bayes Theorem",
                             "duration": "10:33"
-                        },
-                        {
+                        }, {
                             "file": "bayes3-1",
                             "url": "https://player.vimeo.com/video/789266920?h=f41008a3e2",
                             "title": "Example: Inference with Bayesian Theorem (Part 1)",
                             "duration": "11:16 "
-                        },
-                        {
+                        }, {
                             "file": "bayes3-2",
                             "url": "https://player.vimeo.com/video/789267475?h=0cd666805e",
                             "title": "Example: Inference with Bayesian Theorem (Part 2)",
                             "duration": "04:22"
-                        },
-                        {
+                        }, {
                             "file": "bayes3-3",
                             "url": "https://player.vimeo.com/video/789267651?h=1bb406f5b4",
                             "title": "Example: Inference with Bayesian Theorem (Part 3)",
                             "duration": "03:12"
-                        },
-                        {
+                        }, {
                             "file": "bayes3-4",
                             "url": "https://player.vimeo.com/video/789267827?h=da463eddc0",
                             "title": "Odds Ratio, Likelihood Ratio, and Probability",
                             "duration": "03:25"
-                        },
-                        {
+                        }, {
                             "file": "bayes6-1",
                             "url": "https://player.vimeo.com/video/790618962?h=23af5569df",
                             "title": "Example: Inference with Bayesian Theorem (Part 4)",
                             "duration": "09:27"
-                        },
-                        {
+                        }, {
                             "file": "bayes6-2",
                             "url": "https://player.vimeo.com/video/790625680?h=07c5f0db4d",
                             "title": "Example: Inference with Bayesian Theorem (Part 5)",
                             "duration": "09:47"
-                        },
-                        {
+                        }, {
                             "file": "bayes4-1",
                             "url": "https://player.vimeo.com/video/789268390?h=dad97b0c8c",
                             "title": "Product of Two Probabilities (Combinatorics)",
                             "duration": "02:59 "
-                        },
-                        {
+                        }, {
                             "file": "bayes4-2",
                             "url": "https://player.vimeo.com/video/789268545?h=2e309f0b30",
                             "title": "Product of Two Probabilities (Distributions)",
                             "duration": "03:16"
-                        },
-                        {
+                        }, {
                             "file": "bayes4-3",
                             "url": "https://player.vimeo.com/video/789268626?h=d7aa36519a",
                             "title": "Posterior Distrubution Intuition",
@@ -2108,15 +1962,10 @@
             "enrollmentType": "Free",
             "title": "Introduction to SQL",
             "tags": [
-                "SQL",
-                "Databases",
-                "Database Operations",
-                "Data Analysis"
+                "SQL", "Databases", "Database Operations", "Data Analysis"
             ],
             "hiddenTags": [
-                "Data Science",
-                "Computer Science",
-                "Free"
+                "Data Science", "Computer Science", "Free"
             ],
             "numOfWeeks": "1 Week",
             "numCourses": "1 Module",
@@ -2132,9 +1981,7 @@
             "url": "/dashboard/enrollments/introduction-to-sql",
             "path": "/courses/introduction-to-sql",
             "price": 90,
-            "tabs": [
-                "Module 1"
-            ],
+            "tabs": ["Module 1"],
             "weeks": [
                 {
                     "weekTitle": "Module 1 - Introduction to SQL",
@@ -2144,8 +1991,7 @@
                             "icon": "file",
                             "title": "Snippets",
                             "url": "https://danyentezari.github.io/bignumber-material/SQL/snippets.sql"
-                        },
-                        {
+                        }, {
                             "icon": "link",
                             "title": "Launch SQLite Online",
                             "url": "https://sqliteonline.com/"
@@ -2178,53 +2024,43 @@
                             "title": "Definition: CRUD",
                             "duration": "47s",
                             "url": "https://player.vimeo.com/video/746271398?h=de6a7d2162"
-                        },
-                        {
+                        }, {
                             "title": "Structured Query",
                             "duration": "6m 53s",
                             "url": "https://player.vimeo.com/video/746271155?h=4cf1927290"
-                        },
-                        {
+                        }, {
                             "title": "SQL Tutorial Start",
                             "duration": "13m 18s",
                             "url": "https://player.vimeo.com/video/746270864?h=c8a047debd"
-                        },
-                        {
+                        }, {
                             "title": "Inserting Data",
                             "duration": "2m 2s",
                             "url": "https://player.vimeo.com/video/746270822?h=a2e9dbbc35"
-                        },
-                        {
+                        }, {
                             "title": "Data Types in Tables",
                             "duration": "3m 7s",
                             "url": "https://player.vimeo.com/video/746270705?h=b276fc86a7"
-                        },
-                        {
+                        }, {
                             "title": "Querying Basics",
                             "duration": "3m 1s",
                             "url": "https://player.vimeo.com/video/746270630?h=51151077de"
-                        },
-                        {
+                        }, {
                             "title": "Counting and Distinct Values",
                             "duration": "3m 51s",
                             "url": "https://player.vimeo.com/video/746270465?h=1f948824ba"
-                        },
-                        {
+                        }, {
                             "title": "Joining Tables and Setting Conditions",
                             "duration": "10m 34s",
                             "url": "https://player.vimeo.com/video/746270191?h=39844d027a"
-                        },
-                        {
+                        }, {
                             "title": "Summation and Grouping Values",
                             "duration": "7m 13s",
                             "url": "https://player.vimeo.com/video/746270038?h=d95eaa0e28"
-                        },
-                        {
+                        }, {
                             "title": "Table Unions",
                             "duration": "2m 56s",
                             "url": "https://player.vimeo.com/video/746269973?h=1c8815237d"
-                        },
-                        {
+                        }, {
                             "title": "Complex Querying",
                             "duration": "6m 54s",
                             "url": "https://player.vimeo.com/video/746269839?h=dcd89f774b"
