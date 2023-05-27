@@ -300,6 +300,11 @@
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/bayesian-variants.md"
                         }, 
                         {
+                            "title": "bayesian-classifiers.ipynb",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/bayesian-classifiers.ipynb"
+                        }, 
+                        {
                             "title": "Assignment 6",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/assignment-6.ipynb"
