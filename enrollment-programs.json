@@ -356,7 +356,8 @@
                             "title": "Course Map",
                             "icon": "link",
                             "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
-                        }, {
+                        }, 
+                        {
                             "submissionName": "assignment-8",
                             "title": "Assignment 8 Submission",
                             "icon": "upload",
@@ -369,7 +370,20 @@
                     "dueDate": "05/Jun/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
                     "weekTitle": "Module 9 - Capstone Project",
                     "description": "This module is dedicated to your capstone project, the completion of which is required to earn the certificate for 'Professional Certificate in Statistics and Programing'. Completing this project will involve modeling data, data transformations with Python, visualization, inference and error measurements.",
-                    "documents": []
+                    "documents": [
+                        {
+                            "title": "Capstone Project",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod9/capstone-project.ipynb"
+                        },
+                        {
+                            "submissionName": "capstone-project",
+                            "title": "Capstone Project Submission",
+                            "icon": "upload",
+                            "local": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=capstone-project"
+                        }
+                    ]
                 }
             ],
             "tabs": [
@@ -2679,6 +2693,26 @@
         },
         "spml/assignment-8": {
             "title": "Assignment 8",
+            "icon": "file",
+            "organization": [
+                {
+                    "title": "File Submission",
+                    "details": {
+                        "question": "Submit your file",
+                        "options": [
+                            {
+                                "type": "file",
+                                "text": "Attach"
+                            }
+                        ],
+                        "answerKey": 0,
+                        "hint": ""
+                    }
+                }
+            ]
+        },
+        "spml/capstone-project": {
+            "title": "Capstone Project",
             "icon": "file",
             "organization": [
                 {
