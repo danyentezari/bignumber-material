@@ -353,6 +353,16 @@
                     "description": "In this final learning module, we will study the probability distributions, their applications, and their derivations. It is very important for any statistician, data scientist, or anyone who professionally uses statistics to understand how and why probability functions are expressed the way they are. This module will cover important probability distributions such as binomial distribution, Poission distribution, and the normal distribution.",
                     "documents": [
                         {
+                            "title": "Module 8 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1fLRUqLnJRjcib3AD2HCPeSMqRCdhXSdzBDf3eOzP4sU/edit?usp=sharing"
+                        },
+                        {
+                            "title": "distributions-chi-squared.ipynb",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod8/distributions-chi-squared.ipynb"
+                        },
+                        {
                             "title": "Course Map",
                             "icon": "link",
                             "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
