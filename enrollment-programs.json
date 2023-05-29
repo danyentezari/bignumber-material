@@ -218,7 +218,8 @@
                             "title": "Assignment 4",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod4/assignment-4.ipynb"
-                        }, {
+                        }, 
+                        {
                             "submissionName": "assignment-4",
                             "title": "Assignment 4 Submission",
                             "icon": "upload",
@@ -284,12 +285,12 @@
                         {
                             "title": "joint-and-marginal.md",
                             "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/joint-and-marginal.md"
                         },
                         {
                             "title": "joint-and-marginal-relative.md",
                             "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/joint-and-marginal-relative.md"
                         }, 
                         {
                             "title": "art-of-statistics.md (Bayesian Inference)",
@@ -336,6 +337,21 @@
                             "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         }, 
                         {
+                            "title": "structure.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod7/structure.md"
+                        },
+                        {
+                            "title": "gradient-descent.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod7/gradient-descent.md"
+                        },
+                        {
+                            "title": "PY-tutorial-11.ipynb",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod7/PY-tutorial-11.ipynb"
+                        },
+                        {
                             "title": "Assignment 7",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod7/assignment-7.ipynb"
@@ -372,7 +388,7 @@
                         {
                             "title": "Assignment 8",
                             "icon": "file",
-                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod8/assignment-7.ipynb"
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod8/assignment-8.ipynb"
                         }, 
                         {
                             "submissionName": "assignment-8",
@@ -388,6 +404,31 @@
                     "weekTitle": "Module 9 - Capstone Project",
                     "description": "This module is dedicated to your capstone project, the completion of which is required to earn the certificate for 'Professional Certificate in Statistics and Programing'. Completing this project will involve modeling data, data transformations with Python, visualization, inference and error measurements.",
                     "documents": [
+                        {
+                            "title": "Course Map",
+                            "icon": "link",
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                        },
+                        {
+                            "title": "EM%20(Expectation-Maximization) Algorithm.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod9/EM%20(Expectation-Maximizatiom)%20Algorithm%20.md"
+                        },
+                        {
+                            "title": "Hypothesis Testing for Interviews.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod9/Hypothesis%20Testing%20for%20Interviews.md"
+                        },
+                        {
+                            "title": "PY-tutorial-9.ipynb (LU Decomposition)",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod9/PY-tutorial-9.ipynb"
+                        },
+                        {
+                            "title": "topics.md",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod9/Topics.md"
+                        },
                         {
                             "title": "Capstone Project",
                             "icon": "file",
