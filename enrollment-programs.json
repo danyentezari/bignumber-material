@@ -249,9 +249,14 @@
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/supervised_learning_regression.ipynb"
                         },
                         {
-                            "title": "supervised_classification.ipynb ",
+                            "title": "supervised_classification.ipynb",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/supervised_classification.ipynb"
+                        }, 
+                        {
+                            "title": "naive-bayes-classifier.ipynb",
+                            "icon": "file",
+                            "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/naive-bayes-classifier.ipynb"
                         }, 
                         {
                             "title": "terms.md",
