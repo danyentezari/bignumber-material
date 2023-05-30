@@ -576,7 +576,8 @@
                             "preview": true
                         }
                     ]
-                }, {
+                }, 
+                {
                     "section": "Module 4",
                     "children": [
                         {
@@ -599,7 +600,8 @@
                             "preview": true
                         }
                     ]
-                }, {
+                }, 
+                {
                     "section": "Module 5",
                     "children": [
                         {
@@ -622,7 +624,8 @@
                             "preview": true
                         }
                     ]
-                }, {
+                }, 
+                {
                     "section": "Module 6",
                     "children": [
                         {
@@ -645,7 +648,8 @@
                             "preview": true
                         }
                     ]
-                }, {
+                }, 
+                {
                     "section": "Module 7",
                     "children": [
                         {
@@ -654,17 +658,43 @@
                             "title": "Day 19",
                             "duration": "02:10:00",
                             "preview": true
-                        }, {
+                        }, 
+                        {
                             "file": "Mod7",
                             "url": "https://player.vimeo.com/video/827589811?h=bd2f8e63ba",
                             "title": "Day 20",
                             "duration": "02:29:00",
                             "preview": true
-                        }, {
+                        }, 
+                        {
                             "file": "Mod7",
                             "url": "https://player.vimeo.com/video/827585829?h=9ec7c2f74a",
                             "title": "Day 21",
                             "duration": "02:29:00",
+                            "preview": true
+                        }
+                    ]
+                },
+                {
+                    "section": "Module 8",
+                    "children": [
+                        {
+                            "file": "Mod8",
+                            "url": "https://player.vimeo.com/video/828813656?h=76710d8cd0",
+                            "title": "Day 22",
+                            "duration": "02:35:09",
+                            "preview": true
+                        }, {
+                            "file": "Mod8",
+                            "url": "https://player.vimeo.com/video/828806837?h=83dfcc6545",
+                            "title": "Day 23",
+                            "duration": "02:34:43",
+                            "preview": true
+                        }, {
+                            "file": "Mod8",
+                            "url": "https://player.vimeo.com/video/828790337?h=eeba94bd24",
+                            "title": "Day 24",
+                            "duration": "02:38:33",
                             "preview": true
                         }
                     ]
