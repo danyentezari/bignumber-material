@@ -7,6 +7,7 @@
             "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
             "stripe": "https://buy.stripe.com/cN26oP6Wx4EfdNe147",
             "previewUrl": "/preview/enrollments/statistics-probability-theory-and-programming",
+            "pricing": "AED 5,499 or 2 installments of AED 3,499",
             "cpd": true,
             "updateFrequency": [
                 "Daily", "New content is added to this course daily"
@@ -709,6 +710,7 @@
             "promoVideo": false,
             "previewUrl": "/preview/enrollments/mathematics-and-programming",
             "cpd": true,
+            "pricing": "AED 5,499 or 2 installments of AED 3,499",
             "live": true,
             "dubai": true,
             "dates": "11 Jun 2023 - 01 Aug 2023",
@@ -773,19 +775,19 @@
                     "documents": []
                 },
                 {
-                    "weekTitle": "Module 4 - UI Development",
+                    "weekTitle": "Module 3 - UI Development",
                     "description": "In this module, you will learn the fundamentals of creating a user interface (UI) and to control the behaviour of the UI element with event binding and listening. You will learn to organize a UI with the HTML markup language and control elements with JavaScript. Design systems and styling (via CSS) will be covered as independent learning.",
                     "documents": []
                 }, {
-                    "weekTitle": "Module 5 - HTTP, APIs, and Networks",
+                    "weekTitle": "Module 4 - HTTP, APIs, and Networks",
                     "description": "HyperText Transfer Protocol is the set of methods by which data is exchanged between computers in the Internet. To understand HTTP is to understand how computers exchange data, and this level of understanding is key for building applications — in particular backend applications. You will learn to develop and work with APIs, the OSI layer, and connect your UI and backend apps together via HTTP.",
                     "documents": []
                 }, {
-                    "weekTitle": "Module 6 - Backend 1: Database",
+                    "weekTitle": "Module 5 - Backend 1: Database",
                     "description": "This module will cover the different types of database systems and their use cases. Additionally, you will learn to use and host data on the MongoDB database service, which is a popular graph-based (or NoSQL) database management system used in a wide variety of applications. You will learn how to configure a MongoDB cluster, connect to it from an application, and perform CRUD operations via Mongo shell and the Mongoose library.",
                     "documents": []
                 }, {
-                    "weekTitle": "Module 7 - Backend 2: Web Service",
+                    "weekTitle": "Module 6 - Backend 2: Web Service",
                     "description": "In this module, we combine what we learn about computer networks and databases to build a prototye application for interfacing between the UI and the database. We will learn to use the Git CLI (command line interface) for both version control and its role in DevOps (developer operations).  We will in more detail look at API development using OpenAPI and ",
                     "documents": []
                 }, {
@@ -821,6 +823,74 @@
                             "highlights": ["Python and Data Science Libraries", "Data Preprocessing", "Descriptive Statistics", "Data Visualization"]
                         }
                     ],
+                    "documents": []
+                }
+            ],
+            "rootDocs": [],
+            "videoPlaylist": []
+        },
+        "NumPy": {
+            "code": "NumPy",
+            "courseID": "NumPy",
+            "title": "NumPy with Applications",
+            "stripe": "https://buy.stripe.com/aEU7sT5St1s338A148",
+            "promoVideo": false,
+            "previewUrl": "/preview/enrollments/linear-mathematics-with-python",
+            "cpd": true,
+            "live": true,
+            "dubai": true,
+            "dates": "18 Jun 2023 - 22 Jun 2023",
+            "summary": "NumPy is a library for performing matrix operations in the Python programming language. This library is used both directly and indirectly (in other libraries) for all kinds of computational applications such as image processing, statistics, machine learning, and numerical methods.\n\n To make the best use of NumPy, you need to be competent in both (1) programming and (2) linear algebra. Linear algebra is the algebra of special types of sets called vectors, and the general cases of which include matrixes and tensors. \n\nIn this course, you will be given an overview of the NumPy library, and Linear Algebra, and an example application in image processing. You will learn enough of the fundamentals to more quickly advance your understaning of NumPy – and the libraries that are built on top of NumPy such Pandas, TensorFlow, and PyTensor.",
+            "description": "Deep dive into NumPy and learn the fundamentals of matrix operations. Learn to apply various NumPy methods with applications in image processing.",
+            "urlTitle": "numpy-and-applications",
+            "pricing": "One-time payment of AED 650 (inclusive of VAT)",
+            "path": "/courses/numpy-and-applications",
+            "url": "/dashboard/enrollments/numpy-and-applications",
+            "image": "https://images.unsplash.com/photo-1476445704028-a36e0c798192?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+            "tags": [
+                "NumPy",
+                "Matrix Operations",
+                "Image Processing",
+                "Data Processing"
+            ],
+            "highlights": [
+                "Beginner-friendly course. Includes advanced content for intermediate learners.",
+                "Covers some applications and theory of linear algebra.",
+                "Intuitive explanations of programming and theoretical topics",
+                "Step-by-step breakdown of complex technical concepts.",
+                "Learn through programming, exercises, and practical real-world applications.",
+                "First-principles teaching style. Learn from elementary to advanced concepts."
+            ],
+            "numOfWeeks": 1,
+            "numCourses": "3 Modules",
+            "duration": "1 Week",
+            "cta": "Learn More",
+            "buttonLabel": "Learn More",
+            "updateFrequency": [
+                "Weekly", "New content is added to this course weekly"
+            ],
+            "disabled": false,
+            "comingSoon": false,
+            "open": false,
+            "free": false,
+            "resources": [     
+                "python.jpg",
+                "numpy.jpg"
+            ],
+            "weeks": [
+                {
+                    "weekTitle": "Day 1 - NumPy Overview",
+                    "description": "In day 1, you will be introduction to the main object of the NumPy library, nd.array, and its attributes and methods. You will learn how to process data with basic NumPy methods and how to access sections in multidimensional data. You will also apply what you learn to solve a practical data processing problem",
+                    "documents": []
+                },
+                {
+                    "weekTitle": "Day 2 - Linear Algebra Overview",
+                    "description": "In day 2, you will be introduced to fundamental concepts in linear algebra, including algebra axioms, gaussian elimination, matrix inversion, determinants, echelon form matrices, identity matrices, and others. You will apply what you learn about linear algebra to solve a system of equations.",
+                    "documents": []
+                },
+                {
+                    "weekTitle": "Day 3 - NumPy Application: Image Processing",
+                    "description": "In the final module, you will learn the basic of image processing and computer vision, with technqiues such as filters and convolutions. You will learn to use NumPy to preprocess and manipulate images as a practical exercise. Finally, you will be guided towards learning more advanced applications of NumPy and linear algebra",
                     "documents": []
                 }
             ],
@@ -2640,6 +2710,7 @@
         "computer-science-and-applications": "CSApp",
         "mathematics-and-programming": "MPD",
         "linear-mathematics-with-python": "LMP",
+        "numpy-and-applicaions": "NumPy",
         "google-developers-ml-papers": "MLPapers",
         "introduction-to-sql": "SQL"
     },
