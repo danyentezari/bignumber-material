@@ -1,6 +1,7 @@
 {
     "programs": {
         "SPML": {
+            "pro": true,
             "code": "SPML",
             "title": "Statistics and Programming — Dubai",
             "dates": "05 Jun 2023 - 26 July 2023",
@@ -704,6 +705,7 @@
             ]
         },
         "CSApp": {
+            "pro": true,
             "code": "CSApp",
             "courseID": "CSApp",
             "title": "Computer Science and Applications — Dubai",
@@ -831,6 +833,7 @@
             "videoPlaylist": []
         },
         "NumPy": {
+            "pro": false,
             "code": "NumPy",
             "courseID": "NumPy",
             "title": "NumPy with Applications - Dubai",
