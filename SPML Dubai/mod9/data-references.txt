@@ -1,0 +1,23 @@
+Student Performance Prediction
+https://www.kaggle.com/datasets/csafrit2/higher-education-students-performance-evaluation
+https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod9/student_prediction.xls
+
+Employee Performance
+https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset
+https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod9/WA_Fn-UseC_-HR-Employee-Attrition.xls
+
+
+Online Learning Adaptability
+https://www.kaggle.com/datasets/mdmahmudulhasansuzan/students-adaptability-level-in-online-education
+https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod9/students_adaptability_level_online_education.csv
+
+
+Grade Prediction
+https://www.kaggle.com/datasets/janiobachmann/math-students
+https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod9/student-mat.csv
+
+State Education Data
+https://www.kaggle.com/datasets/noriuk/us-education-datasets-unification-project?select=states_all_extended.csv
+https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod9/states_all_extended.csv
+
+
