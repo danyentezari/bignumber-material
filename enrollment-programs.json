@@ -852,7 +852,7 @@
             "summary": "NumPy is a library for performing matrix operations in the Python programming language. This library is used both directly and indirectly (in other libraries) for all kinds of computational applications such as image processing, statistics, machine learning, and numerical methods.\n\n To make the best use of NumPy, you need to be competent in both (1) programming and (2) linear algebra. Linear algebra is the algebra of special types of sets called vectors, and the general cases of which include matrices and tensors. \n\nIn this course, you will be given an overview of the NumPy library, Linear Algebra, and example applications in image processing. You will learn enough of the fundamentals to more quickly advance your understanding of NumPy and the libraries that are built on top of NumPy such Pandas, TensorFlow, and PyTensor.",
             "description": "Deep dive into NumPy and learn the fundamentals of matrix operations. Learn to apply various NumPy methods with applications in image processing.",
             "urlTitle": "numpy-and-applications",
-            "pricing": "One-time payment of AED 650 (inclusive of VAT)",
+            "pricing": "For Certifcation: AED 650 (inclusive of VAT)",
             "path": "/courses/numpy-and-applications",
             "url": "/dashboard/enrollments/numpy-and-applications",
             "image": "https://images.unsplash.com/photo-1476445704028-a36e0c798192?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
