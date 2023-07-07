@@ -3,12 +3,13 @@
         "SPML": {
             "pro": true,
             "code": "SPML",
-            "title": "Statistics and Programming — Dubai",
-            "dates": "05 Jun 2023 - 26 July 2023",
+            "dates": "24 Jul 2023 - 15 Sep 2023",
+            "discounts": ["30% before 10 Jul 2023", "15% before 17 July 2023"],
+            "title": "Statistics and Programming",
             "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
             "stripe": "https://buy.stripe.com/cN26oP6Wx4EfdNe147",
             "previewUrl": "/preview/enrollments/statistics-probability-theory-and-programming",
-            "pricing": "AED 5,499 or 2 installments of AED 3,499",
+            "pricing": "AED 5,499",
             "cpd": true,
             "updateFrequency": [
                 "Daily", "New content is added to this course daily"
@@ -67,7 +68,7 @@
                 {
                     "dueDate": "10/Apr/2023",
                     "weekTitle": "Module 1 - Overview of Statistics and Machine Learning",
-                    "description": "n module 1, we will look at how statistical and probabilistic techniques are used in different domains – from healthcare to finance to engineering and other disciplines. We will also look at how machine learning evolved from the science and mathematics of statistics.",
+                    "description": "n module 1, we will look at how statistical and probabilistic techniques are used in different domains \u2013 from healthcare to finance to engineering and other disciplines. We will also look at how machine learning evolved from the science and mathematics of statistics.",
                     "documents": [
                         {
                             "title": "Mod 1 Slides",
@@ -88,23 +89,19 @@
                             "title": "Exercise 1 (Notebook)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/exercise-1.ipynb"
-                        }, 
-                        {
+                        }, {
                             "title": "Exercise 2 (Notebook)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/exercise-2.ipynb"
-                        }, 
-                        {
+                        }, {
                             "title": "terms.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/definitions.md"
-                        }, 
-                        {
+                        }, {
                             "title": "Assignment 1",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod1/assignment-1.ipynb"
-                        }, 
-                        {
+                        }, {
                             "submissionName": "assignment-1",
                             "title": "Assignment 1 Submission",
                             "icon": "upload",
@@ -148,7 +145,6 @@
                             "local": true,
                             "url": "/dashboard/assignment?courseID=spml&name=assignment-2"
                         }
-
                     ]
                 },
                 {
@@ -220,8 +216,7 @@
                             "title": "Assignment 4",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod4/assignment-4.ipynb"
-                        }, 
-                        {
+                        }, {
                             "submissionName": "assignment-4",
                             "title": "Assignment 4 Submission",
                             "icon": "upload",
@@ -229,8 +224,7 @@
                             "url": "/dashboard/assignment?courseID=spml&name=assignment-4"
                         }
                     ]
-                }, 
-                {
+                }, {
                     "dueDate": "29/May/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
                     "weekTitle": "Module 5 - Machine Learning and Programming",
                     "description": "Machine Learning has evolved from statistical modeling and algorithmic modeling of computer science. More important, machine learning made it possible to perform statistical and probabilistic inferential techniques on large volumes of data. In this module, we will learn further develop our programming skills by applying them to applications in machine learning.",
@@ -254,18 +248,15 @@
                             "title": "supervised_classification.ipynb",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/supervised_classification.ipynb"
-                        }, 
-                        {
+                        }, {
                             "title": "naive_bayes_classifier.ipynb",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/naive_bayes_classifier.ipynb"
-                        }, 
-                        {
+                        }, {
                             "title": "terms.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod5/terms.md"
-                        }, 
-                        {
+                        }, {
                             "submissionName": "assignment-5",
                             "title": "Assignment 5 Submission",
                             "icon": "upload",
@@ -273,10 +264,9 @@
                             "url": "/dashboard/assignment?courseID=spml&name=assignment-5"
                         }
                     ]
-                }, 
-                {
+                }, {
                     "dueDate": "05/Jun/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
-                    "weekTitle": "Module 6 – Bayesian Probability and Inference",
+                    "weekTitle": "Module 6 \u2013 Bayesian Probability and Inference",
                     "description": "The Bayesian Theorem (and the algebraic adaptations of it) are at the center of the most powerful machine learning and deep learning models. In this module, we will delve deeper into bayesian methods, discuss the importance of prior and posterior distributions, and understand why bayesian inference is so important in machine learning.",
                     "documents": [
                         {
@@ -298,28 +288,23 @@
                             "title": "joint-and-marginal-relative.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/joint-and-marginal-relative.md"
-                        }, 
-                        {
+                        }, {
                             "title": "art-of-statistics.md (Bayesian Inference)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/art-of-statistics.md"
-                        }, 
-                        {
+                        }, {
                             "title": "bayesian-variants.md (Derivation of Bayes Formula)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/bayesian-variants.md"
-                        }, 
-                        {
+                        }, {
                             "title": "bayesian-classifiers.ipynb",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/bayesian-classifiers.ipynb"
-                        }, 
-                        {
+                        }, {
                             "title": "Assignment 6",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod6/assignment-6.ipynb"
-                        },
-                        {
+                        }, {
                             "submissionName": "assignment-6",
                             "title": "Assignment 6 Submission",
                             "icon": "upload",
@@ -327,22 +312,21 @@
                             "url": "/dashboard/assignment?courseID=spml&name=assignment-6"
                         }
                     ]
-                }, 
-                {
+                }, {
                     "dueDate": "09/Jun/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
-                    "weekTitle": "Module 7 – Calculus and Algebra for Statistics",
+                    "weekTitle": "Module 7 \u2013 Calculus and Algebra for Statistics",
                     "description": "Statistics is a mathematical science with probability theory at its core. However, probability theory can be properly studies if the mathematical prerequisites are learnt. The prerequisites for probability theory include, among other branches of mathematics, calculus, combinatorics, classical algebra, and basic abstract algebra. We will cover these prerequisites both in live lectures and supplementary learning material.",
                     "documents": [
                         {
                             "title": "Module 7 Slides",
                             "icon": "file",
                             "url": "https://docs.google.com/presentation/d/1DC6ZGw8mmQ-ogKxCIFAsoO8J-ng6XtEt6PA4wy94jXo/edit?usp=sharing"
-                        }, 
+                        },
                         {
                             "title": "Course Map",
                             "icon": "link",
                             "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
-                        }, 
+                        },
                         {
                             "title": "structure.md",
                             "icon": "file",
@@ -352,18 +336,15 @@
                             "title": "gradient-descent.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod7/gradient-descent.md"
-                        },
-                        {
+                        }, {
                             "title": "PY-tutorial-11.ipynb",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod7/PY-tutorial-11.ipynb"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 7",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod7/assignment-7.ipynb"
-                        }, 
-                        {
+                        }, {
                             "submissionName": "assignment-7",
                             "title": "Assignment 7 Submission",
                             "icon": "upload",
@@ -371,10 +352,9 @@
                             "url": "/dashboard/assignment?courseID=spml&name=assignment-7"
                         }
                     ]
-                }, 
-                {
+                }, {
                     "dueDate": "12/Jun/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
-                    "weekTitle": "Module 8 – Probability Distributions and Machine Learning",
+                    "weekTitle": "Module 8 \u2013 Probability Distributions and Machine Learning",
                     "description": "In this final learning module, we will study the probability distributions, their applications, and their derivations. It is very important for any statistician, data scientist, or anyone who professionally uses statistics to understand how and why probability functions are expressed the way they are. This module will cover important probability distributions such as binomial distribution, Poission distribution, and the normal distribution.",
                     "documents": [
                         {
@@ -391,13 +371,12 @@
                             "title": "Course Map",
                             "icon": "link",
                             "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
-                        }, 
+                        },
                         {
                             "title": "Assignment 8",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod8/assignment-8.ipynb"
-                        }, 
-                        {
+                        }, {
                             "submissionName": "assignment-8",
                             "title": "Assignment 8 Submission",
                             "icon": "upload",
@@ -405,8 +384,7 @@
                             "url": "/dashboard/assignment?courseID=spml&name=assignment-8"
                         }
                     ]
-                }, 
-                {
+                }, {
                     "dueDate": "19/Jun/2023 - 11:00pm GMT+0400 (Gulf Standard Time)",
                     "weekTitle": "Module 9 - Capstone Project",
                     "description": "This module is dedicated to your capstone project, the completion of which is required to earn the certificate for 'Professional Certificate in Statistics and Programing'. Completing this project will involve modeling data, data transformations with Python, visualization, inference and error measurements.",
@@ -430,23 +408,19 @@
                             "title": "PY-tutorial-9.ipynb (LU Decomposition)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod9/PY-tutorial-9.ipynb"
-                        },
-                        {
+                        }, {
                             "title": "anova.ipynb (ANOVA and F-Test)",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod9/anova.ipynb"
-                        },
-                        {
+                        }, {
                             "title": "topics.md",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod9/Topics.md"
-                        },
-                        {
+                        }, {
                             "title": "Capstone Project",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/SPML%20Dubai/mod9/capstone-project.ipynb"
-                        },
-                        {
+                        }, {
                             "submissionName": "capstone-project",
                             "title": "Capstone Project Submission",
                             "icon": "upload",
@@ -584,8 +558,7 @@
                             "preview": true
                         }
                     ]
-                }, 
-                {
+                }, {
                     "section": "Module 4",
                     "children": [
                         {
@@ -608,8 +581,7 @@
                             "preview": true
                         }
                     ]
-                }, 
-                {
+                }, {
                     "section": "Module 5",
                     "children": [
                         {
@@ -632,8 +604,7 @@
                             "preview": true
                         }
                     ]
-                }, 
-                {
+                }, {
                     "section": "Module 6",
                     "children": [
                         {
@@ -656,8 +627,7 @@
                             "preview": true
                         }
                     ]
-                }, 
-                {
+                }, {
                     "section": "Module 7",
                     "children": [
                         {
@@ -666,15 +636,13 @@
                             "title": "Day 19",
                             "duration": "02:10:00",
                             "preview": true
-                        }, 
-                        {
+                        }, {
                             "file": "Mod7",
                             "url": "https://player.vimeo.com/video/827589811?h=bd2f8e63ba",
                             "title": "Day 20",
                             "duration": "02:29:00",
                             "preview": true
-                        }, 
-                        {
+                        }, {
                             "file": "Mod7",
                             "url": "https://player.vimeo.com/video/827585829?h=9ec7c2f74a",
                             "title": "Day 21",
@@ -682,8 +650,7 @@
                             "preview": true
                         }
                     ]
-                },
-                {
+                }, {
                     "section": "Module 8",
                     "children": [
                         {
@@ -713,12 +680,13 @@
             "pro": true,
             "code": "CSApp",
             "courseID": "CSApp",
-            "title": "Computer Science and Applications — Dubai",
+            "title": "Computer Science and Applications",
             "stripe": "https://buy.stripe.com/aEU7sT5St1s338A148",
             "promoVideo": false,
             "previewUrl": "/preview/enrollments/mathematics-and-programming",
             "cpd": true,
-            "pricing": "AED 5,499 or 2 installments of AED 3,499",
+            "pricing": "AED 5,499",
+            "discounts": ["30% before 10 Jul 2023", "15% before 17 July 2023"],
             "live": true,
             "dubai": true,
             "dates": "23 Jul 2023 - 14 Sep 2023",
@@ -759,7 +727,7 @@
             "comingSoon": false,
             "open": false,
             "free": false,
-            "resources": [     
+            "resources": [
                 "js.jpg",
                 "python.jpg",
                 "next.jpg",
@@ -786,9 +754,10 @@
                     "weekTitle": "Module 3 - UI Development",
                     "description": "In this module, you will learn the fundamentals of creating a user interface (UI) and to control the behaviour of the UI element with event binding and listening. You will learn to organize a UI with the HTML markup language and control elements with JavaScript. Design systems and styling (via CSS) will be covered as independent learning.",
                     "documents": []
-                }, {
+                },
+                {
                     "weekTitle": "Module 4 - HTTP, APIs, and Networks",
-                    "description": "HyperText Transfer Protocol is the set of methods by which data is exchanged between computers in the Internet. To understand HTTP is to understand how computers exchange data, and this level of understanding is key for building applications — in particular backend applications. You will learn to develop and work with APIs, the OSI layer, and connect your UI and backend apps together via HTTP.",
+                    "description": "HyperText Transfer Protocol is the set of methods by which data is exchanged between computers in the Internet. To understand HTTP is to understand how computers exchange data, and this level of understanding is key for building applications \u2014 in particular backend applications. You will learn to develop and work with APIs, the OSI layer, and connect your UI and backend apps together via HTTP.",
                     "documents": []
                 }, {
                     "weekTitle": "Module 5 - Backend 1: Database",
@@ -813,7 +782,7 @@
                         },
                         {
                             "title": "CS Theory",
-                            "description": "This specialization focus on discrete mathematics, the most important branch of mathematics in computer science. Discrete mathematics will provide us with the tools to analyze the performance, theoretically, of algorithms. Moreover, will look at more advanced graph data structures – the understanding of which requires a good foundation in discrete mathenatics.",
+                            "description": "This specialization focus on discrete mathematics, the most important branch of mathematics in computer science. Discrete mathematics will provide us with the tools to analyze the performance, theoretically, of algorithms. Moreover, will look at more advanced graph data structures \u2013 the understanding of which requires a good foundation in discrete mathenatics.",
                             "highlights": ["Discrete Mathematics", "Languages and Automata", "Analysis of Algorithms", "Advanced Data Structures"]
                         },
                         {
@@ -827,7 +796,7 @@
                             "highlights": ["NextJS", "ReactJS", "ExpressJS", "MaterialUI"]
                         }, {
                             "title": "Data Analysis",
-                            "description": "A new discipline that relies greatly on the power of computers and computer programming is data science.           This specialization covers the aspects of comptuer scienec relevant to data science such as Python, data preprocessing, APIs, BASH scripting, the NumPy library, and descriptive statistics – which provides a good foundation for the more advanced inferential statistics.",
+                            "description": "A new discipline that relies greatly on the power of computers and computer programming is data science.           This specialization covers the aspects of comptuer scienec relevant to data science such as Python, data preprocessing, APIs, BASH scripting, the NumPy library, and descriptive statistics \u2013 which provides a good foundation for the more advanced inferential statistics.",
                             "highlights": ["Python and Data Science Libraries", "Data Preprocessing", "Descriptive Statistics", "Data Visualization"]
                         }
                     ],
@@ -858,10 +827,7 @@
             "url": "/dashboard/enrollments/numpy-and-applications",
             "image": "https://images.unsplash.com/photo-1476445704028-a36e0c798192?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
             "tags": [
-                "NumPy",
-                "Matrix Operations",
-                "Image Processing",
-                "Data Processing"
+                "NumPy", "Matrix Operations", "Image Processing", "Data Processing"
             ],
             "highlights": [
                 "Beginner-friendly course. Includes advanced content for intermediate learners.",
@@ -883,22 +849,20 @@
             "comingSoon": false,
             "open": false,
             "free": false,
-            "resources": [     
-                "python.jpg",
-                "numpy.jpg"
+            "status": "Hidden",
+            "resources": [
+                "python.jpg", "numpy.jpg"
             ],
             "weeks": [
                 {
                     "weekTitle": "Day 1 - NumPy Overview",
                     "description": "In day 1, you will be introduction to the main object of the NumPy library, nd.array, and its attributes and methods. You will learn how to process data with basic NumPy methods and how to access sections in multidimensional data. You will also apply what you learn to solve a practical data processing problem",
                     "documents": []
-                },
-                {
+                }, {
                     "weekTitle": "Day 2 - Linear Algebra Overview",
                     "description": "In day 2, you will be introduced to fundamental concepts in linear algebra, including algebra axioms, gaussian elimination, matrix inversion, determinants, echelon form matrices, identity matrices, and others. You will apply what you learn about linear algebra to solve a system of equations.",
                     "documents": []
-                },
-                {
+                }, {
                     "weekTitle": "Day 3 - NumPy Application: Image Processing",
                     "description": "In the final module, you will learn the basic of image processing and computer vision, with technqiues such as filters and convolutions. You will learn to use NumPy to preprocess and manipulate images as a practical exercise. Finally, you will be guided towards learning more advanced applications of NumPy and linear algebra",
                     "documents": []
@@ -928,6 +892,7 @@
             "hiddenTags": [
                 "Mathematics", "Data Science"
             ],
+            "status": "Hidden",
             "code": "LMP",
             "description": "Learn the fundamentals and applications of linear algebra, matrix theory, and linear programming. In this course, you will learn about matrix operations, systems of equations, and optimization in the context of real-world applications and machine learning.",
             "urlTitle": "linear-mathematics-with-python",
@@ -949,7 +914,7 @@
             "weeks": [
                 {
                     "weekTitle": "Module 1 - Introduction to Linear Mathematics",
-                    "description": "In the first week, we will create a motivating reason to learn about the applications of matrices and systems of equations. We will understand the development of linear algebra from a historical and practical perspective. The objective of this module is to develop a strong foundation for learning linear algebra and applications of it. Furthermore, this course is based in Python; therefore, we will thoroughly review the programming language and the famous library designed for multidimensional tabular data – NumPy.",
+                    "description": "In the first week, we will create a motivating reason to learn about the applications of matrices and systems of equations. We will understand the development of linear algebra from a historical and practical perspective. The objective of this module is to develop a strong foundation for learning linear algebra and applications of it. Furthermore, this course is based in Python; therefore, we will thoroughly review the programming language and the famous library designed for multidimensional tabular data \u2013 NumPy.",
                     "details": "",
                     "documents": [
                         {
@@ -997,8 +962,7 @@
                             "icon": "file",
                             "filename": "assignment-1.html",
                             "url": "https://danyentezari.github.io/bignumber-material/LMP/assignment-1.html"
-                        }, 
-                        {
+                        }, {
                             "title": "Assignment 1 (Notebook)",
                             "icon": "file",
                             "filename": "assignment-1.ipynb",
@@ -1608,7 +1572,7 @@
             "urlTitle": "statistics-probability-theory-and-programming",
             "enrollmentType": "Audit",
             "courseDate": "24/Aug/2022 to 14/Sep/2022",
-            "status": "Not Active Yet",
+            "status": "Hidden",
             "rootDocs": [
                 {
                     "title": "Lesson Plan",
@@ -1764,7 +1728,7 @@
                         }
                     ]
                 }, {
-                    "weekTitle": "Module 4 – Bayesian Probability",
+                    "weekTitle": "Module 4 \u2013 Bayesian Probability",
                     "description": "The Bayesian Theorem (and the algebraic adaptations of it) are at the center of the most powerful machine learning and deep learning models. In this module, we will delve deeper into bayesian methods, discuss the importance of prior and posterior distributions, and understand why bayesian inference is so important in machine learning.",
                     "documents": [
                         {
@@ -1819,9 +1783,11 @@
             "free": false,
             "videoPlaylist": [
                 {
+                    "fileName": "Module-0",
                     "section": "Welcome",
                     "children": [
                         {
+                            "file": "Welcome",
                             "preview": true,
                             "url": "https://player.vimeo.com/video/779911021?h=11699f372a",
                             "title": "Welcome Video",
@@ -1830,340 +1796,1127 @@
                     ]
                 },
                 {
+                    "fileName": "Module-1",
                     "section": "Module 1",
                     "children": [
                         {
-                            "file": "M1c1.mov",
-                            "url": "https://player.vimeo.com/video/797174163?h=c8f7d92f8d",
-                            "title": "Inferring with Statistics",
-                            "duration": "01:59",
-                            "preview": true
+                            "file": "file-1-1.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-1.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-1.md",
+                            "title": "Overview",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-1.md",
+                            "duration": "0mins"
                         },
                         {
-                            "file": "M1c2.mov",
-                            "url": "https://player.vimeo.com/video/797174300?h=62934b3418",
-                            "title": "Statistics and Probability Theory",
-                            "duration": "03:09",
-                            "preview": true
+                            "file": "file-1-2.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-2.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-2.md",
+                            "title": "Goal of Statistics (vid)",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-2.md",
+                            "duration": "0mins"
                         },
                         {
-                            "file": "s1-6-1.mov",
-                            "url": "https://player.vimeo.com/video/778897448?h=c5da8a109a",
-                            "title": "Example: Calculating Probability ",
-                            "duration": "02:51"
+                            "file": "file-1-3.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-3.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-3.md",
+                            "title": "Goal of Probability Theory (vid)",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-3.md",
+                            "duration": "0mins"
                         },
                         {
-                            "file": "term1.mov",
-                            "url": "https://player.vimeo.com/video/795400358?h=25ec9be6a2",
-                            "title": "Sample Space, Events, Experiments, and Outcomes",
-                            "duration": "05:31",
-                            "preview": true
+                            "file": "file-1-3.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-3.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-3.ba",
+                            "title": "Quiz 1-1",
+                            "assessment": "load('./file-1-3.json')",
+                            "duration": "0mins"
                         }, {
-                            "file": "term2.mov",
-                            "url": "https://player.vimeo.com/video/795396435?h=f2c13430a3",
-                            "title": "Random Variable",
-                            "duration": "05:52"
+                            "file": "file-1-4.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-4.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-4.md",
+                            "title": "Distributions",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-4.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "term3.mov",
-                            "url": "https://player.vimeo.com/video/795403602?h=6e9909827e",
-                            "title": "Probability Function",
-                            "duration": "03:49"
+                            "file": "file-1-5.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-5.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-5.md",
+                            "title": "Visualizing Distributions",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-5.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s1-6-2.mov",
-                            "url": "https://player.vimeo.com/video/778897577?h=3da099dae1",
-                            "title": "Example: Sets and Sample Spaces",
-                            "duration": "13:31"
+                            "file": "file-1-6.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-6.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-6.md",
+                            "title": "Law of Large Numbers",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-6.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s1-7-1.mov",
-                            "url": "https://player.vimeo.com/video/778900218?h=c8cb7e811c",
-                            "title": "Example: Random Variable",
-                            "duration": "05:10"
+                            "file": "file-1-6.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-6.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-6.ba",
+                            "title": "Quiz 1-2",
+                            "assessment": "load('./file-1-6.json')",
+                            "duration": "0mins"
                         }, {
-                            "file": "s1-7-2.mov",
-                            "url": "https://player.vimeo.com/video/778900642?h=98b8541acc",
-                            "title": "Exercise: Calculating Probability",
-                            "duration": "05:10 "
+                            "file": "file-1-7.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-7.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-7.md",
+                            "title": "Probability Theory",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-7.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s1-7-3.mov",
-                            "url": "https://player.vimeo.com/video/778901311?h=838c0fecd2",
-                            "title": "Solution: Calculating Probability",
-                            "duration": "09:55"
+                            "file": "file-1-8.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-8.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-8.md",
+                            "title": "Parameters and Statistics",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-8.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s1-8-1.mov",
-                            "url": "https://player.vimeo.com/video/778903929?h=745471479f",
-                            "title": "Probability Mass Function (PMF)",
-                            "duration": "07:42"
+                            "file": "file-1-8.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-8.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-8.ba",
+                            "title": "Quiz 1-3",
+                            "assessment": "load('./file-1-8.json')",
+                            "duration": "0mins"
                         }, {
-                            "file": "s1-8-2.mov",
-                            "url": "https://player.vimeo.com/video/778904759?h=c0ef1e4bff",
-                            "title": "Probability Functions: PMF, PDF, and CDF",
-                            "duration": "05:10 "
+                            "file": "file-1-9.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-9.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-9.md",
+                            "title": "Modeling Data",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-9.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s1-9-1.mov",
-                            "url": "https://player.vimeo.com/video/778905134?h=0d537170eb",
-                            "title": "Cumulative Distribution Function (CDF)",
-                            "duration": "08:44"
+                            "file": "file-1-9.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-9.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-9.ba",
+                            "title": "Quiz 1-4",
+                            "assessment": "load('./file-1-9.json')",
+                            "duration": "0mins"
                         }, {
-                            "file": "s1-9-2.mov",
-                            "url": "https://player.vimeo.com/video/778905893?h=a65f475648",
-                            "title": "Exercise: Cumulative Distribution Function",
-                            "duration": "03:02"
+                            "file": "file-1-10.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-10.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-10.md",
+                            "title": "Learning Probability Theory",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-10.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s1-9-3.mov",
-                            "url": "https://player.vimeo.com/video/778906156?h=ef16a54023",
-                            "title": "Solution: Cumulative Distribution Function",
-                            "duration": "06:38"
-                        }, {
-                            "file": "s1-9-4.mov",
-                            "url": "https://player.vimeo.com/video/778906584?h=8cad48641c",
-                            "title": "Exercise: Discrete Distribution",
-                            "duration": "02:29"
-                        }, {
-                            "file": "s1-9-5.mov",
-                            "url": "https://player.vimeo.com/video/778906821?h=f106d22b92",
-                            "title": "Solution: Discrete Distribution",
-                            "duration": "11:50"
-                        }, {
-                            "file": "s1-10-1.mov",
-                            "url": "https://player.vimeo.com/video/778907703?h=f514a36911",
-                            "title": "Moments: The Shape of a Distribution",
-                            "duration": "06:32"
-                        }, {
-                            "file": "s1-10-2.mov",
-                            "url": "https://player.vimeo.com/video/778908269?h=15129b6aa0",
-                            "title": "Calculating Moments with Generating Functions",
-                            "duration": "02:08"
-                        }, {
-                            "file": "s1-10-3.mov",
-                            "url": "https://player.vimeo.com/video/778908444?h=c0515e4ad1",
-                            "title": "Calculating the Expected Value",
-                            "duration": "08:43"
-                        }, {
-                            "file": "s2-3-1.mov",
-                            "url": "https://player.vimeo.com/video/778911299?h=f8dec4aa98",
-                            "title": "Definite Integration for Distributions",
-                            "duration": "04:19"
+                            "file": "file-1-10.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-10.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/file-1-10.ba",
+                            "title": "Quiz 1-5",
+                            "assessment": "load('./file-1-10.json')",
+                            "duration": "0mins"
                         }
                     ]
                 },
                 {
+                    "fileName": "Module-2",
                     "section": "Module 2",
                     "children": [
                         {
-                            "file": "s2-4-1.mov",
-                            "url": "https://player.vimeo.com/video/778911488?h=b1e12c9606",
-                            "title": "Discrete vs Continuous Distributions",
-                            "duration": "02:43"
+                            "file": "file-2-1.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-1.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-1.md",
+                            "title": "Outline",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-1.md",
+                            "duration": "0mins"
                         },
                         {
-                            "file": "s2-4-2.mov",
-                            "url": "https://player.vimeo.com/video/778911650?h=8ffd3e5fe7",
-                            "title": "The Normal Distribution, Variance, and Risk",
-                            "duration": "03:12"
+                            "file": "file-2-2.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-2.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-2.py",
+                            "title": "Built-In Functions",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-2.md",
+                            "duration": "0mins"
                         },
                         {
-                            "file": "s2-4-3.mov",
-                            "url": "https://player.vimeo.com/video/778911905?h=e105f3afca",
-                            "title": "Syntax: Probability Distribution",
-                            "duration": "02:44"
+                            "file": "file-2-3.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-3.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-3.py",
+                            "title": "Variables",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-3.md",
+                            "duration": "0mins"
                         },
                         {
-                            "file": "s2-5-1.mov",
-                            "url": "https://player.vimeo.com/video/778912128?h=2e2c283882",
-                            "title": "Cumulative Probability of a Normal Distribution",
-                            "duration": "05:11"
+                            "file": "file-2-3.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-3.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-3.py",
+                            "title": "Quiz 2-1",
+                            "code": true,
+                            "assessment": "load('./file-2-3.json')",
+                            "duration": "0mins"
                         }, {
-                            "file": "s2-7-1.mov",
-                            "url": "https://player.vimeo.com/video/778912715?h=52743fda02",
-                            "title": "Overview of Standardization",
-                            "duration": "06:00"
+                            "file": "file-2-4.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-4.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-4.py",
+                            "title": "Control Statements 1",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-4.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s2-7-2.mov",
-                            "url": "https://player.vimeo.com/video/778913279?h=fde4746bc8",
-                            "title": "68%-95%-99.7% Rule",
-                            "duration": "02:56"
+                            "file": "file-2-5.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-5.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-5.py",
+                            "title": "Control Statements 2",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-5.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s2-8-1.mov",
-                            "url": "https://player.vimeo.com/video/778913595?h=b0d76e583b",
-                            "title": "Exercise: Normal Distrubution",
-                            "duration": "04:07"
+                            "file": "file-2-5.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-5.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-5.py",
+                            "title": "Quiz 2-2",
+                            "code": true,
+                            "assessment": "load('./file-2-5.json')",
+                            "duration": "0mins"
                         }, {
-                            "file": "s2-8-2.mov",
-                            "url": "https://player.vimeo.com/video/778916013?h=7af1ce35a9",
-                            "title": "Solution: Normal Distribution 1",
-                            "duration": "04:37"
+                            "file": "file-2-6.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-6.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-6.py",
+                            "title": "While Loop",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-6.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s2-8-3.mov",
-                            "url": "https://player.vimeo.com/video/778916227?h=10c34d23c9",
-                            "title": "The Standard Normal Distribution",
-                            "duration": "01:55"
+                            "file": "file-2-7.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-7.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-7.py",
+                            "title": "Data Structures",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-7.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s2-8-4.mov",
-                            "url": "https://player.vimeo.com/video/778916295?h=14791f2211",
-                            "title": "Overview of Z-Score",
-                            "duration": "03:18"
+                            "file": "file-2-8.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-8.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-8.py",
+                            "title": "List Methods",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-8.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s2-9-1.mov",
-                            "url": "https://player.vimeo.com/video/778918561?h=9e26253bd2",
-                            "title": "Integrating the Standard Normal Distribution Function",
-                            "duration": "06:47"
+                            "file": "file-2-9.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-9.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-9.py",
+                            "title": "Loops and Data Structures",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-9.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s2-9-2.mov",
-                            "url": "https://player.vimeo.com/video/778919177?h=f75160449e",
-                            "title": "Using the Z-Score Table",
-                            "duration": "01:49"
+                            "file": "file-2-9.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-9.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-9.py",
+                            "title": "Quiz 2-3",
+                            "code": true,
+                            "assessment": "load('./file-2-9.json')",
+                            "duration": "0mins"
                         }, {
-                            "file": "s2-9-3.mov",
-                            "url": "https://player.vimeo.com/video/778919410?h=429642ab93",
-                            "title": "Standardizing a Normal Random Variable",
-                            "duration": "02:22"
+                            "file": "file-2-10.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-10.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-10.py",
+                            "title": "Methods",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-10.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s2-9-4.mov",
-                            "url": "https://player.vimeo.com/video/778919540?h=6e71382836",
-                            "title": "Comparing Two Probabilities",
-                            "duration": "04:19"
+                            "file": "file-2-11.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-11.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-11.py",
+                            "title": "Classes",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-11.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s2-9-5.mov",
-                            "url": "https://player.vimeo.com/video/778919751?h=67e7f5d1a4",
-                            "title": "Solution: Normal Distribution 2",
-                            "duration": "09:25"
+                            "file": "file-2-11.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-11.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-11.py",
+                            "title": "Quiz 2-4",
+                            "code": true,
+                            "assessment": "load('./file-2-11.json')",
+                            "duration": "0mins"
                         }, {
-                            "file": "s2-10-1.mov",
-                            "url": "https://player.vimeo.com/video/778922327?h=ef60405ef0",
-                            "title": "Moments: The Shape of a Distribution",
-                            "duration": "06:38"
+                            "file": "file-2-12.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-12.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-12.py",
+                            "title": "Jupyter and Pandas",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-12.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-2-12.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-12.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/file-2-12.py",
+                            "title": "Quiz 2-5",
+                            "code": true,
+                            "assessment": "load('./file-2-12.json')",
+                            "duration": "0mins"
                         }
                     ]
                 },
                 {
+                    "fileName": "Module-3",
                     "section": "Module 3",
                     "children": [
                         {
-                            "file": "s2-10-2.mov",
-                            "url": "https://player.vimeo.com/video/778922769?h=0fe25ca32c",
-                            "title": "Getting Started with R",
-                            "duration": "02:48"
+                            "file": "file-3-1.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-1.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-1.md",
+                            "title": "Overview",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-1.md",
+                            "duration": "0mins"
                         },
                         {
-                            "file": "s2-10-3.mov",
-                            "url": "https://player.vimeo.com/video/778923045?h=8b0c3cec9b",
-                            "title": "Quantiles: Quartile, Decile, and Percentile",
-                            "duration": "04:05"
+                            "file": "file-3-2.ipynb",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-2.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-2.ipynb",
+                            "title": "Jupyter",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-2.md",
+                            "code": true,
+                            "notebook": true,
+                            "duration": "0mins"
                         },
                         {
-                            "file": "s2-10-4.mov",
-                            "url": "https://player.vimeo.com/video/781753336?h=ed032c64d1",
-                            "title": "Plotting Data",
-                            "duration": "03:22"
+                            "file": "file-3-2.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-2.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-2.ipynb",
+                            "title": "Quiz 3-1",
+                            "code": true,
+                            "notebook": true,
+                            "assessment": "load('./file-3-2.json')",
+                            "duration": "0mins"
                         },
                         {
-                            "file": "s2-10-5.mov",
-                            "url": "https://player.vimeo.com/video/781753143?h=943e4a8fa2",
-                            "title": "Comparing Two Distributions",
-                            "duration": "03:05"
+                            "file": "file-3-3.ipynb",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-3.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-3.ipynb",
+                            "title": "Pandas",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-3.md",
+                            "code": true,
+                            "notebook": true,
+                            "duration": "0mins"
                         }, {
-                            "file": "s2-12.mov",
-                            "url": "https://player.vimeo.com/video/777847574?h=7b78849a21",
-                            "title": "Formula for the Moment Generating Function",
-                            "duration": "11:49"
+                            "file": "file-3-3.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-3.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-3.ipynb",
+                            "title": "Quiz 3-2",
+                            "code": true,
+                            "notebook": true,
+                            "assessment": "load('./file-3-3.json')",
+                            "duration": "0mins"
                         }, {
-                            "file": "s3-6-2.mov",
-                            "url": "https://player.vimeo.com/video/781759737?h=200c099273",
-                            "title": "Regression to The Mean",
-                            "duration": "03:15"
+                            "file": "file-3-4.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-4.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-4.md",
+                            "title": "Descriptive Statistics",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-4.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "s3-8-1.mov",
-                            "url": "https://player.vimeo.com/video/781755173?h=a7cd83ad95",
-                            "title": "Multiple Linear Regression",
-                            "duration": "08:38"
+                            "file": "file-3-5.ipynb",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-5.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-5.ipynb",
+                            "title": "Descriptive Statistics Example",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-5.md",
+                            "code": true,
+                            "notebook": true,
+                            "duration": "0mins"
                         }, {
-                            "file": "s3-8-2.mov",
-                            "url": "https://player.vimeo.com/video/781755691?h=eb04328b21",
-                            "title": "Fitting the Model",
-                            "duration": "02:07"
+                            "file": "file-3-6.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-6.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-6.md",
+                            "title": "Correlation",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-6.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-3-7.ipynb",
+                            "filePath": "bignumber-material/SPR/mod3/file-3-7.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-7.ipynb",
+                            "title": "Correlation Example",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-7.md",
+                            "code": true,
+                            "notebook": true,
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-3-7.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-7.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-7.ipynb",
+                            "title": "Quiz 3-3",
+                            "code": true,
+                            "notebook": true,
+                            "assessment": "load('./file-3-7.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-3-8.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-8.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-8.md",
+                            "title": "Plotting",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-8.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-3-9.ipynb",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-9.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-9.ipynb",
+                            "title": "Plotting",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-9.md",
+                            "code": true,
+                            "notebook": true,
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-3-9.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-9.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-9.ipynb",
+                            "title": "Quiz 3-4",
+                            "code": true,
+                            "notebook": true,
+                            "assessment": "load('./file-3-9.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-3-10.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-10.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-10.md",
+                            "title": "Modeling",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-10.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-3-11.ipynb",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-11.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-11.ipynb",
+                            "title": "Modeling",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-11.md",
+                            "code": true,
+                            "notebook": true,
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-3-12.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-12.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-12.md",
+                            "title": "Overview of Regression Analysis",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-12.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "Regression",
+                            "filePath": "http://localhost:3000/Regression",
+                            "url": "http://localhost:3000/Regression",
+                            "title": "Simple Linear Regression",
+                            "math_viz": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-13.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-3-14.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-14.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-14.md",
+                            "title": "Best-Fit",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-14.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-3-15.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-15.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-15.md",
+                            "title": "Ordinary Least Squares",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-15.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-3-16.ipynb",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-16.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-16.ipynb",
+                            "title": "OLS Example",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-16.md",
+                            "code": true,
+                            "notebook": true,
+                            "duration": "0mins"
+                        }, {
+                            "file": "MultipleRegression",
+                            "filePath": "http://localhost:3000/MultipleRegression",
+                            "url": "http://localhost:3000/MultipleRegression",
+                            "title": "Multiple Regression",
+                            "math_viz": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-17.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-3-18.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-18.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-18.md",
+                            "title": "Other Regression Techniques",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-18.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-3-18.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-18.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/file-3-18.ipynb",
+                            "title": "Quiz 3-5",
+                            "code": true,
+                            "notebook": true,
+                            "assessment": "load('./file-3-18.json')",
+                            "duration": "0mins"
                         }
                     ]
                 }, {
+                    "fileName": "Module-4",
                     "section": "Module 4",
                     "children": [
                         {
-                            "file": "bayes1-1",
-                            "url": "https://player.vimeo.com/video/789265765?h=3b2ab8a303",
-                            "title": "Agenda for Bayes Theorem",
-                            "duration": "02:59"
+                            "file": "file-4-1.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-1.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-1.md",
+                            "title": "Overview",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-1.md",
+                            "duration": "0mins"
                         },
                         {
-                            "file": "bayes1-2",
-                            "url": "https://player.vimeo.com/video/789265939?h=9ef29a7a46",
-                            "title": "Review of Set Intersection and Union",
-                            "duration": "04:56"
+                            "file": "file-4-2.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-2.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-2.md",
+                            "title": "Overview of Probability",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-2.md",
+                            "duration": "0mins"
                         },
                         {
-                            "file": "bayes2-1",
-                            "url": "https://player.vimeo.com/video/789266079?h=3fad1b8082",
-                            "title": "Marginal and Joint Frequencies",
-                            "duration": "05:25"
+                            "file": "file-4-3.ipynb",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-3.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-3.ipynb",
+                            "title": "Overview of Probability",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-3.md",
+                            "code": true,
+                            "notebook": true,
+                            "duration": "0mins"
                         },
                         {
-                            "file": "bayes2-2",
-                            "url": "https://player.vimeo.com/video/789266252?h=118cbdc8cf",
-                            "title": "Joint Frequencies Explained",
-                            "duration": "04:33"
+                            "file": "file-4-3.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-3.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-3.ba",
+                            "title": "Quiz 4-1",
+                            "assessment": "load('./file-4-3.json')",
+                            "duration": "0mins"
                         }, {
-                            "file": "bayes2-3",
-                            "url": "https://player.vimeo.com/video/789266412?h=0de6d81d3f",
-                            "title": "Marginal and Joint Relative Frequencies",
-                            "duration": "05:31"
+                            "file": "file-4-4.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-4.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-4.md",
+                            "title": "Frequency to Distribution",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-4.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "bayes5-1",
+                            "file": "file-4-4.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-4.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-4.ba",
+                            "title": "Quiz 4-2",
+                            "assessment": "load('./file-4-4.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-5.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-5.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-5.md",
+                            "title": "Random Variables",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-5.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-5.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-5.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-5.ba",
+                            "title": "Quiz 4-3",
+                            "assessment": "load('./file-4-5.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-6.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-6.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-6.md",
+                            "title": "Set Notation",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-6.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-7.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-7.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-7.md",
+                            "title": "Set Operations",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-7.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-7.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-7.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-7.ba",
+                            "title": "Quiz 4-4",
+                            "assessment": "load('./file-4-7.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-8.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-8.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-8.md",
+                            "title": "Sample Spaces, Events, and Experiments",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-8.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-8.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-8.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-8.ba",
+                            "title": "Quiz 4-5",
+                            "assessment": "load('./file-4-8.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-9.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-9.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-9.md",
+                            "title": "Parameters as Random Variables",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-9.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-9.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-9.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-9.ba",
+                            "title": "Quiz 4-6",
+                            "assessment": "load('./file-4-9.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-10.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-10.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-10.md",
+                            "title": "Moments",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-10.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-11.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-11.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-11.md",
+                            "title": "Expectation",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-11.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-11.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-11.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-11.ba",
+                            "title": "Quiz 4-7",
+                            "assessment": "load('./file-4-11.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-12.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-12.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-12.md",
+                            "title": "Probability Distributions",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-12.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-13.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-13.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-13.md",
+                            "title": "Probability Mass Function",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-13.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-14.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-14.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-14.md",
+                            "title": "Probability Density",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-14.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-14.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-14.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-14.ba",
+                            "title": "Quiz 4-8",
+                            "assessment": "load('./file-4-14.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-15.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-15.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-15.md",
+                            "title": "Density to Probability",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-15.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-4-15.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-15.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/file-4-15.ba",
+                            "title": "Quiz 4-9",
+                            "assessment": "load('./file-4-15.json')",
+                            "duration": "0mins"
+                        }
+                    ]
+                }, {
+                    "fileName": "Module-5",
+                    "section": "Module 5",
+                    "children": [
+                        {
+                            "file": "file-5-1.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-1.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-1.md",
+                            "title": "Sampling Distributon",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-1.md",
+                            "duration": "0mins"
+                        },
+                        {
+                            "file": "file-5-2.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-2.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-2.py",
+                            "title": "Sampling Distributon Example",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-2.md",
+                            "duration": "0mins"
+                        },
+                        {
+                            "file": "file-5-2.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-2.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-2.ba",
+                            "title": "Quiz 5-1",
+                            "assessment": "load('./file-5-2.json')",
+                            "duration": "0mins"
+                        },
+                        {
+                            "file": "file-5-3.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-3.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-3.md",
+                            "title": "Point Estimation",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-3.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-4.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-4.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-4.py",
+                            "title": "Point Estimation Example",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-4.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-4.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-4.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-4.ba",
+                            "title": "Quiz 5-2",
+                            "assessment": "load('./file-5-4.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-5.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-5.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-5.md",
+                            "title": "Confidence Intervals",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-5.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-5.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-5.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-5.ba",
+                            "title": "Quiz 5-3",
+                            "assessment": "load('./file-5-5.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-6.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-6.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-6.py",
+                            "title": "Confidence Intervals in Regression",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-6.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-7.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-7.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-7.md",
+                            "title": "Significance Testing",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-7.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-8.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-8.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-8.md",
+                            "title": "Hypothesis Testing Concepts",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-8.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-8.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-8.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-8.ba",
+                            "title": "Quiz 5-4",
+                            "assessment": "load('./file-5-8.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-9.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-9.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-9.md",
+                            "title": "T-Test",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-9.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-10.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-10.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-10.py",
+                            "title": "T-Test Example",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-10.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-11.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-11.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-11.md",
+                            "title": "Z-Test",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-11.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-12.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-12.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-12.md",
+                            "title": "Z-Table",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-12.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-13.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-13.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-13.py",
+                            "title": "Chi-Square Test",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-13.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-13.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-13.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-13.ba",
+                            "title": "Quiz 5-5",
+                            "assessment": "load('./file-5-13.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-14.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-14.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-14.md",
+                            "title": "ANOVA",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-14.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-15.py",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-15.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-15.py",
+                            "title": "ANOVA Example",
+                            "code": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-15.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-15.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-15.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-15.ba",
+                            "title": "Quiz 5-6",
+                            "assessment": "load('./file-5-15.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-16.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-16.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-16.md",
+                            "title": "Nonparametric Tests",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-16.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-5-16.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-16.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/file-5-16.ba",
+                            "title": "Quiz 5-7",
+                            "assessment": "load('./file-5-16.json')",
+                            "duration": "0mins"
+                        }
+                    ]
+                }, {
+                    "fileName": "Module-6",
+                    "section": "Module 6",
+                    "children": []
+                }, {
+                    "fileName": "Module-7",
+                    "section": "Module 7",
+                    "children": [
+                        {
+                            "file": "file-7-1.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-1.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-1.md",
+                            "title": "Overview",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-1.md",
+                            "duration": "0mins"
+                        },
+                        {
+                            "file": "file-7-2.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-2.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-2.md",
+                            "title": "Special Functions",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-2.md",
+                            "duration": "0mins"
+                        },
+                        {
+                            "file": "file-7-2.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-2.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-2.ba",
+                            "title": "Quiz 7-1",
+                            "assessment": "load('./file-7-2.json')",
+                            "duration": "0mins"
+                        },
+                        {
+                            "file": "file-7-3.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-3.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-3.md",
+                            "title": "Exponental Function",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-3.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-7-3.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-3.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-3.ba",
+                            "title": "Quiz 7-2",
+                            "assessment": "load('./file-7-3.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-7-4.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-4.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-4.md",
+                            "title": "Gamma Functions",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-4.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-7-4.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-4.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-4.ba",
+                            "title": "Quiz 7-3",
+                            "assessment": "load('./file-7-4.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-7-5.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-5.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-5.md",
+                            "title": "Transforms",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-5.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-7-5.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-5.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-5.ba",
+                            "title": "Quiz 7-4",
+                            "assessment": "load('./file-7-5.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-7-6.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-6.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-6.md",
+                            "title": "Definite Integrals",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-6.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-7-7.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-7.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-7.md",
+                            "title": "Indefinite Integrals",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-7.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-7-8.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-8.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-8.md",
+                            "title": "Improper Intergals",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-8.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-7-9.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-9.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-9.md",
+                            "title": "Gaussian Integrals",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-9.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-7-9.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-9.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-9.ba",
+                            "title": "Quiz 7-5",
+                            "assessment": "load('./file-7-9.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-7-10.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-10.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-10.md",
+                            "title": "Complex Numbers",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-10.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-7-10.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-10.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-10.ba",
+                            "title": "Quiz 7-6",
+                            "assessment": "load('./file-7-10.json')",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-7-11.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-11.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-11.md",
+                            "title": "Matrix Algebra",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-11.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-7-11.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-11.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/file-7-11.ba",
+                            "title": "Quiz 7-7",
+                            "assessment": "load('./file-7-11.json')",
+                            "duration": "0mins"
+                        }
+                    ]
+                }, {
+                    "fileName": "Module-8",
+                    "section": "Module 8",
+                    "children": [
+                        {
+                            "file": "file-8-1.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-1.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-1.md",
+                            "title": "Subjective Probability",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-1.md",
+                            "duration": "0mins"
+                        },
+                        {
+                            "file": "file-8-2.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-2.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-2.md",
+                            "title": "Joint and Marginal Probabilities",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-2.md",
+                            "duration": "0mins"
+                        },
+                        {
+                            "file": "file-8-2.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-2.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-2.ba",
+                            "title": "Quiz 8-1",
+                            "assessment": "load('./file-8-2.json')",
+                            "duration": "0mins"
+                        },
+                        {
+                            "file": "file-8-3.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-3.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-3.md",
+                            "title": "Conditional Probabilties",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-3.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "https://player.vimeo.com/video/789268973?h=24b7193ca3",
+                            "filePath": "https://player.vimeo.com/video/789268973?h=24b7193ca3",
                             "url": "https://player.vimeo.com/video/789268973?h=24b7193ca3",
-                            "title": "Deriving Bayes Theorem",
-                            "duration": "10:33"
+                            "title": "Derivation of Bayes Theorem",
+                            "duration": "0mins",
+                            "description": "In this video, we'll look at the alebraic variations of the Bayes theorem and explain the terms that go into the formulae of the Bayes Theorem."
                         }, {
-                            "file": "bayes3-1",
-                            "url": "https://player.vimeo.com/video/789266920?h=f41008a3e2",
-                            "title": "Example: Inference with Bayesian Theorem (Part 1)",
-                            "duration": "11:16 "
+                            "file": "file-8-4.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-4.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-4.ba",
+                            "title": "Quiz 8-2",
+                            "assessment": "load('./file-8-4.json')",
+                            "duration": "0mins"
                         }, {
-                            "file": "bayes3-2",
-                            "url": "https://player.vimeo.com/video/789267475?h=0cd666805e",
-                            "title": "Example: Inference with Bayesian Theorem (Part 2)",
-                            "duration": "04:22"
+                            "file": "file-8-5.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-5.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-5.md",
+                            "title": "Bayesian Inference Example",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-5.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "bayes3-3",
-                            "url": "https://player.vimeo.com/video/789267651?h=1bb406f5b4",
-                            "title": "Example: Inference with Bayesian Theorem (Part 3)",
-                            "duration": "03:12"
+                            "file": "MLE",
+                            "filePath": "http://localhost:3000/MLE",
+                            "url": "http://localhost:3000/MLE",
+                            "title": "MLE",
+                            "math_viz": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-6.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "bayes3-4",
-                            "url": "https://player.vimeo.com/video/789267827?h=da463eddc0",
-                            "title": "Odds Ratio, Likelihood Ratio, and Probability",
-                            "duration": "03:25"
+                            "file": "file-8-7.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-7.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-7.md",
+                            "title": "MAP",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-7.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "bayes6-1",
-                            "url": "https://player.vimeo.com/video/790618962?h=23af5569df",
-                            "title": "Example: Inference with Bayesian Theorem (Part 4)",
-                            "duration": "09:27"
+                            "file": "file-8-7.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-7.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/file-8-7.ba",
+                            "title": "Quiz 8-3",
+                            "assessment": "load('./file-8-7.json')",
+                            "duration": "0mins"
+                        }
+                    ]
+                }, {
+                    "fileName": "Module-9",
+                    "section": "Module 9",
+                    "children": [
+                        {
+                            "file": "file-9-1.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-1.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-1.md",
+                            "title": "Overview",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-1.md",
+                            "duration": "0mins"
+                        },
+                        {
+                            "file": "file-9-2.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-2.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-2.md",
+                            "title": "Bayes Factor",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-2.md",
+                            "duration": "0mins"
+                        },
+                        {
+                            "file": "file-9-2.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-2.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-2.ba",
+                            "title": "Quiz 9-1",
+                            "assessment": "load('./file-9-2.json')",
+                            "duration": "0mins"
+                        },
+                        {
+                            "file": "file-9-3.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-3.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-3.md",
+                            "title": "BIC",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-3.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "bayes6-2",
-                            "url": "https://player.vimeo.com/video/790625680?h=07c5f0db4d",
-                            "title": "Example: Inference with Bayesian Theorem (Part 5)",
-                            "duration": "09:47"
+                            "file": "file-9-3.ba",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-3.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-3.ba",
+                            "title": "Quiz 9-2",
+                            "assessment": "load('./file-9-3.json')",
+                            "duration": "0mins"
                         }, {
-                            "file": "bayes4-1",
-                            "url": "https://player.vimeo.com/video/789268390?h=dad97b0c8c",
-                            "title": "Product of Two Probabilities (Combinatorics)",
-                            "duration": "02:59 "
+                            "file": "file-9-4.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-4.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-4.md",
+                            "title": "Multivariate Gaussian Distribution",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-4.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "bayes4-2",
-                            "url": "https://player.vimeo.com/video/789268545?h=2e309f0b30",
-                            "title": "Product of Two Probabilities (Distributions)",
-                            "duration": "03:16"
+                            "file": "Mixture",
+                            "filePath": "http://localhost:3000/Mixture",
+                            "url": "http://localhost:3000/Mixture",
+                            "title": "Mixture Models",
+                            "math_viz": true,
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-5.md",
+                            "duration": "0mins"
                         }, {
-                            "file": "bayes4-3",
-                            "url": "https://player.vimeo.com/video/789268626?h=d7aa36519a",
-                            "title": "Posterior Distrubution Intuition",
-                            "duration": "06:02"
+                            "file": "file-9-6.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-6.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-6.md",
+                            "title": "Markov Process",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-6.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-9-7.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-7.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-7.md",
+                            "title": "Markov Chain",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-7.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-9-8.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-8.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-8.md",
+                            "title": "Parameter Distributions",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-8.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-9-9.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-9.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-9.md",
+                            "title": "Monte-Carlo Markov Chains",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-9.md",
+                            "duration": "0mins"
+                        }, {
+                            "file": "file-9-10.md",
+                            "filePath": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-10.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-10.md",
+                            "title": "Metropolis-Hastings Algorithm",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/file-9-10.md",
+                            "duration": "0mins"
                         }
                     ]
                 }
@@ -2305,9 +3058,7 @@
                 "Computer Architecture"
             ],
             "hiddenTags": [
-                "Mathematics",
-                "Data Science",
-                "Computer Science"
+                "Mathematics", "Data Science", "Computer Science"
             ],
             "urlTitle": "mathematics-and-programming",
             "enrollmentType": "Audit",
@@ -2334,8 +3085,7 @@
                     "title": "Session Files",
                     "icon": "link",
                     "url": "https://github.com/danyentezari/mathematics-and-programming-mayjun2022"
-                },
-                {
+                }, {
                     "title": "Google Meet for Live Office Hours",
                     "icon": "link",
                     "url": "https://meet.google.com/xcv-nbpy-syj"
@@ -2367,35 +3117,29 @@
                             "title": "CS Tutorial 1 (Pointers)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/MPD/CS-tutorial-1.html"
-                        },
-                        {
+                        }, {
                             "title": "Math Tutorial 1 (Logarithm Function)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-1.html"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 1",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-1.py"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 2",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-2.py"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 1 Submission",
                             "icon": "link",
                             "url": "https://forms.gle/QfL9M6JcTSGt3qjR6"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 2 Submission",
                             "icon": "link",
                             "url": "https://forms.gle/DtyVRadYkpsUskyHA"
                         }
                     ]
-                },
-                {
+                }, {
                     "weekTitle": "Module 2 - Introduction to Discrete Mathematics",
                     "description": "In week 2, we will use our understanding of programming as a bridge to understand fundamental mathematical concepts and syntax. Symbols and terminology will be introduced to you and you will be able recognize mathematical objects in any branch of mathematics. We will cover functions, sets and relations, logic, proofs and mathematical induction. We will then apply these mathematical concepts directly in programming.",
                     "details": "Assessment:<br/>You will complete assignments about topics covered in Module 2. <br/>Topics:<br/><ul><li>Overview of Pure Mathematics</li><li>Overview of Discrete Mathematics</li><li>Logic, Axiom, Lemma, Corollary, and Theorem</li><li>Accumulation, Sequence and Series</li><li>Maps and Functions</li><li>Sets and Relations</li><li>Mathematical Induction</li><li>Recursion</li></ul>",
@@ -2419,35 +3163,29 @@
                             "title": "Session 6",
                             "icon": "video",
                             "url": "https://vimeo.com/714813616/28506f055e"
-                        },
-                        {
+                        }, {
                             "title": "Math Tutorial 2 (Sets, Relations, and Graphs)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-2.html"
-                        },
-                        {
+                        }, {
                             "title": "Math Tutorial 3 (Sets Notation and Logic)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-3.html"
-                        },
-                        {
+                        }, {
                             "title": "Math Tutorial 4 (Mathematical Induction)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-4.html"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 3",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-3.pdf"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 3 Submission",
                             "icon": "link",
                             "url": "https://forms.gle/E2D4bKWKCjCAcBkA6"
                         }
                     ]
-                },
-                {
+                }, {
                     "weekTitle": "Module 3 -  Discrete Mathematics and Advanced Programming",
                     "description": "In week 3, we will develop our mathematical proficiency in Discrete Mathematics by exploring and working with examples of graphs, which are mathematical objects with broad applications in both Computer Science and Data Science. Furthermore, we will learn about Languages, Grammars, and Finite State Machines. From there, we will apply what we have learned to Graph Data Structures and then Regular Expressions.",
                     "details": "Topics:<br/><ul><li>Graph Theory</li><li>Directed Graphs</li><liAdvanced Binary Trees</li><li>Finite State Machines</li><li>Regular Expressions</li><li>Graph Data Structures</li><li>Combinatorics</li><li>Capstone Project</li></ul>",
@@ -2471,28 +3209,23 @@
                             "title": "Singly-Linked List (Class Implementation)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/MPD/linked-list-class.py"
-                        },
-                        {
+                        }, {
                             "title": "Doubly-Linked List (Class Implementation)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/MPD/doubly-list-class.py"
-                        },
-                        {
+                        }, {
                             "title": "Math Tutorial 5 (Languages, Regular Expressions, FSA)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-5.pdf"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 4",
                             "icon": "file",
                             "url": "https://github.com/danyentezari/bignumber-material/blob/master/MPD/assignment-4.py"
-                        },
-                        {
+                        }, {
                             "title": "Assignment 4 Submission",
                             "icon": "link",
                             "url": "https://forms.gle/yXwktzW3K4vszdv16"
-                        },
-                        {
+                        }, {
                             "title": "MATH Tutorial 6 (Abstract Algebra)",
                             "icon": "file",
                             "url": "https://danyentezari.github.io/bignumber-material/MPD/MATH-tutorial-6.html"
@@ -2518,8 +3251,7 @@
             "open": false,
             "free": false,
             "tabs": [
-                "Module 1",
-                "Module 2"
+                "Module 1", "Module 2"
             ],
             "videoPlaylist": [
                 {
@@ -2550,52 +3282,44 @@
                             "url": "https://player.vimeo.com/video/785947689?h=edcc3443a1",
                             "title": "Pure Mathematics vs Applied Mathematics",
                             "duration": "07:01"
-                        },
-                        {
+                        }, {
                             "file": "s0-6.mv",
                             "url": "https://player.vimeo.com/video/785947867?h=cdcb065bd7",
                             "title": "Overview of Pure Mathematics",
                             "duration": "06:25"
-                        },
-                        {
+                        }, {
                             "file": "s0-7.mv",
                             "url": "https://player.vimeo.com/video/785948059?h=328c594e8c",
                             "title": "Overview of Discrete Mathematics",
                             "duration": "05:53"
-                        },
-                        {
+                        }, {
                             "file": "s0-8.mv",
                             "url": "https://player.vimeo.com/video/785948288?h=e48104b8fc",
                             "title": "Overview of Algorithms",
                             "duration": "04:35",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "s0-9.mv",
                             "url": "https://player.vimeo.com/video/785948479?h=4b11566a63",
                             "title": "Definition: Data Structure",
                             "duration": "03:19",
                             "preview": true
-                        },
-                        {
+                        }, {
                             "file": "s0-10.mv",
                             "url": "https://player.vimeo.com/video/785948592?h=9f511cded3",
                             "title": "Arrays and Graphs",
                             "duration": "03:04"
-                        },
-                        {
+                        }, {
                             "file": "s0-11.mv",
                             "url": "https://player.vimeo.com/video/785948692?h=8b9aef3d2d",
                             "title": "Graphs and Trees",
                             "duration": "07:58"
-                        },
-                        {
+                        }, {
                             "file": "s0-12.mv",
                             "url": "https://player.vimeo.com/video/785949061?h=d543079b7e",
                             "title": "Applications of Discrete Mathematics",
                             "duration": "09:16"
-                        },
-                        {
+                        }, {
                             "file": "s0-13.mv",
                             "url": "https://player.vimeo.com/video/785949780?h=329f98d92a",
                             "title": "Mathematical Notation and Programming Syntax",
@@ -2603,8 +3327,7 @@
                             "preview": true
                         }
                     ]
-                },
-                {
+                }, {
                     "section": "Module 2",
                     "children": [
                         {
@@ -2630,80 +3353,67 @@
                             "url": "https://player.vimeo.com/video/783002055?h=612b2fda09",
                             "title": "Values, Variables, and Pointers",
                             "duration": "02:05"
-                        },
-                        {
+                        }, {
                             "file": "s1-5-2.mov",
                             "url": "https://player.vimeo.com/video/783002449?h=660de81159",
                             "title": "The Pointer Variable",
                             "duration": "01:44"
-                        },
-                        {
+                        }, {
                             "file": "s1-5-3.mov",
                             "url": "https://player.vimeo.com/video/783002956?h=c451cc9add",
                             "title": "Review of List",
                             "duration": "03:47"
-                        },
-                        {
+                        }, {
                             "file": "s1-5-4.mov",
                             "url": "https://player.vimeo.com/video/783003812?h=591e28c845",
                             "title": "Review of Multidimensional List",
                             "duration": "03:20"
-                        },
-                        {
+                        }, {
                             "file": "s1-5-5.mov",
                             "url": "https://player.vimeo.com/video/783004846?h=72fe9392c8",
                             "title": "Review of Tuple",
                             "duration": "02:14"
-                        },
-                        {
+                        }, {
                             "file": "s1-5-6.mov",
                             "url": "https://player.vimeo.com/video/783005560?h=792eabb7ed",
                             "title": "Review of Set",
                             "duration": "01:54"
-                        },
-                        {
+                        }, {
                             "file": "s1-5-7.mov",
                             "url": "https://player.vimeo.com/video/783006249?h=1105db3cd1",
                             "title": "Review of Dictionary",
                             "duration": "02:30"
-                        },
-                        {
+                        }, {
                             "file": "s1-5-8.mov",
                             "url": "https://player.vimeo.com/video/783007036?h=3dff01b39a",
                             "title": "Review of Functions and Classes",
                             "duration": "07:53"
-                        },
-                        {
+                        }, {
                             "file": "s1-5-9.mov",
                             "url": "https://player.vimeo.com/video/783009353?h=847ecf4846",
                             "title": "More on Classes",
                             "duration": "05:48"
-                        },
-                        {
+                        }, {
                             "file": "s1-5-10.mov",
                             "url": "https://player.vimeo.com/video/783011308?h=54b483d49a",
                             "title": "Instantiating Classes and Class Methods",
                             "duration": "09:06"
-                        },
-                        {
+                        }, {
                             "file": "s1-5-11.mov",
                             "url": "https://player.vimeo.com/video/783014227?h=34de2442d3",
                             "title": "Example of List Methods",
                             "duration": "05:30"
-                        },
-                        {
+                        }, {
                             "file": "s1-5-12.mov",
                             "url": "https://player.vimeo.com/video/783015828?h=66736fc98c",
                             "title": "Review of Time and Space Complexity",
                             "duration": "03:37"
-                        },
-                        {
+                        }, {
                             "file": "s1-5-13.mov",
                             "url": "https://player.vimeo.com/video/783017162?h=12c422c401",
                             "title": "Review of Graph Data Structures",
                             "duration": "03:23"
-                        },
-                        {
+                        }, {
                             "file": "s1-5-14.mov",
                             "url": "https://player.vimeo.com/video/783018236?h=093d0879db",
                             "title": "Binary Tree with Dictionary",
@@ -3084,6 +3794,32 @@
                     }
                 }
             ]
+        }
+    },
+    "code_setup": {
+        "bignumber-material/SPR/mod2/file-2-1.py": {
+            "runtime": "python",
+            "docker_image": "code_docker_python_image",
+            "prerun": [""],
+            "postrun": ["print('done')", "print('yes')"]
+        },
+        "http://localhost:3001/bignumber-material/SPR/mod3/file-3-7.ipynb": {
+            "runtime": "jupyter",
+            "docker_image": "code_docker_jupyter_image",
+            "prerun": [""],
+            "postrun": [""]
+        },
+        "bignumber-material/SPR/mod3/ols-assumptions-visual.ipynb": {
+            "runtime": "jupyter",
+            "docker_image": "code_docker_jupyter_image",
+            "prerun": [""],
+            "postrun": [""]
+        },
+        "bignumber-material/SPR/mod3/exercise-5.ipynb": {
+            "runtime": "jupyter",
+            "docker_image": "code_docker_jupyter_image",
+            "prerun": [""],
+            "postrun": [""]
         }
     }
 }
