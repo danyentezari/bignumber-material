@@ -483,9 +483,18 @@
                             "preview": true,
                             "url": "https://player.vimeo.com/video/779911021?h=11699f372a",
                             "title": "Welcome Video",
-                            "duration": "02:54"
+                            "duration": "00:02:54"
                         }
                     ]
+                },
+                {
+                    "section": "Module 1",
+                    "children": {
+                            "preview": true,
+                            "url": "https://player.vimeo.com/video/848205939",
+                            "title": "Day 1",
+                            "duration": "02:00:00"
+                        }
                 }
             ]
         },
