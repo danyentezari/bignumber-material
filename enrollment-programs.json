@@ -489,12 +489,12 @@
                 },
                 {
                     "section": "Module 1",
-                    "children": {
+                    "children": [{
                             "preview": true,
                             "url": "https://player.vimeo.com/video/848205939",
                             "title": "Day 1",
                             "duration": "02:00:00"
-                        }
+                    }]
                 }
             ]
         },
