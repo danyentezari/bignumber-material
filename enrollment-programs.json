@@ -71,9 +71,14 @@
                     "description": "In module 1, we will look at how statistical and probabilistic techniques are used in different domains \u2013 from healthcare to finance to engineering and other disciplines. We will also look at how machine learning evolved from the science and mathematics of statistics.",
                     "documents": [
                         {
-                            "title": "Mod 1 Slides",
+                            "title": "Mod 1 Slides (Apr2023)",
                             "icon": "file",
                             "url": "https://docs.google.com/presentation/d/1h0AOKreCilPnbwDq1bx2Gg3ynSprQ-RQAoxCwWMeAMU/edit?usp=sharing"
+                        },
+                        {
+                            "title": "Mod 1 Slides",
+                            "icon": "file",
+                            "url": "https://docs.google.com/presentation/d/1Lz4e_uG0aWd3eHGzu9i1BeblI_61CTm9CG3sXz420HY/edit?usp=sharing"
                         },
                         {
                             "title": "Agenda",
