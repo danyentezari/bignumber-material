@@ -494,13 +494,22 @@
                 },
                 {
                     "section": "Module 1",
-                    "children": [{
+                    "children": [
+                        {
                             "preview": true,
                             "url": "https://player.vimeo.com/video/848205939?h=19c85efd4a",
                             "title": "Day 1",
                             "duration": "02:00:00",
                             "description": "In the first session, we go over the modules of the course and how they are relevant to the study of statistics and machine learning. We then learn about some key concepts to which we will be making references throughout the course. In particular, we begin our discussion with the most important topic of all: the distribution."
-                    }]
+                        },
+                        {
+                            "preview": true,
+                            "title": "Day 2",
+                            "duration": "02:00:00",
+                            "url": "https://player.vimeo.com/video/849019319?h=94ae9fb270",
+                            "description": "In this session, we cover the basics of descriptive statistics. We go over numerical quantities that help us make sense about distribution such as central tendency, dispersion, standard deviation, and the interquartile range. We also learn about important mathematical notation that will help us to understand the formulas for both descriptive and inferential statistics."
+                        }
+                    ]
                 }
             ]
         },
