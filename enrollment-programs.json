@@ -5,7 +5,7 @@
             "code": "SPML",
             "dates": "24 Aug 2023 - 15 Oct 2023",
             "discounts": ["15% off before 17 July 2023"],
-            "title": "Statistics and Programming",
+            "title": "Statistics and Programming (Data Science)",
             "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
             "stripe": "https://book.stripe.com/00g4gHcgRb2D8sUcN1?prefilled_promo_code=15OFF",
             "previewUrl": "/preview/enrollments/statistics-probability-theory-and-programming",
@@ -1383,7 +1383,7 @@
         },
         "SPR": {
             "code": "SPR",
-            "title": "Statistics and Programming (Data Science)",
+            "title": "Statistics, Probability Theory, and Programming",
             "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
             "cpd": true,
             "updateFrequency": [
