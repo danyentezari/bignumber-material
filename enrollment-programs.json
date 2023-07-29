@@ -1383,7 +1383,7 @@
         },
         "SPR": {
             "code": "SPR",
-            "title": "Statistics, Probability Theory, and Programming",
+            "title": "Statistics and Programming (Data Science)",
             "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
             "cpd": true,
             "updateFrequency": [
@@ -1404,7 +1404,7 @@
             "hiddenTags": [
                 "Mathematics", "Data Science"
             ],
-            "description": "Learn the mathematical science behind artificial intelligence, econometrics, risk engineering, and epidemiology. Learn to perform statistical analysis with the R and Python programming languages.",
+            "description": "Learn the mathematics of data science and statistics. Learn to perform statistical analysis with the R and Python programming languages.",
             "descriptionLong": "This courses teaches Statistics and Probability Theory with emphasis on learning from first principles. To learn advanced Statistics and, in particular, Probability Theory, it is necessary to be familiar with other mathematical topics including Integration, Sequences, Series, Sets, and Combinatrics. Although this course has Statistics and Probability Theory in the title, it contains sufficient supplementary material about other mathematical subjects that is necessary for mastery in Statistics and Probability Theory. <br/><br/>This course also teaches R, the programming language for statistical analysis. You will learn the required programming constructs to perform analysis in this specialized programming language. You will learn to apply the appropriate functions and methods, import and process data, produce meaningful visualizations, and interpret the results of analysis (e.g, Correlation, ANOVA, etc.)",
             "urlTitle": "statistics-probability-theory-and-programming",
             "enrollmentType": "Audit",
