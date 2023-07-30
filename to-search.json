@@ -1,0 +1,35 @@
+[
+    {
+        "weeks": [
+            {
+                "weekTitle": "Module 1 - Introduction to SQL",
+                "description": "In this module, you will learn the syntax of Structured Query Language and how to write procedures for CRUD (Create, Read, Update, Delete) operations.",
+                "documents": [
+                    {
+                        "icon": "file",
+                        "title": "Snippets",
+                        "url": "https://danyentezari.github.io/bignumber-material/SQL/snippets.sql"
+                    },
+                    {
+                        "icon": "link",
+                        "title": "Launch SQLite Online",
+                        "url": "https://sqliteonline.com/"
+                    }
+                ]
+            }
+        ],
+        "videoPlaylist":  [
+        {
+            "section": "Module 1",
+            "children": [
+                    {
+                        "preview": true,
+                        "title": "Introduction and Agenda",
+                        "duration": "2m 2s",
+                        "url": "https://player.vimeo.com/video/746271648?h=a9014c8769"
+                    }
+                ]
+            }
+        ]
+    }
+]    

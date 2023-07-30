@@ -1,0 +1,33 @@
+--- template_start ---
+fileName:: Assessment-1
+file:: Assessment-1
+title:: Assessment 1
+duration:: 2m
+quiz:: true
+url:: spr/Assessment-1
+--- template_end ---        
+
+
+qt:: Q1 
+    t:: radio
+    q:: What is the sum of 2+2?
+    o::
+        c:: 4
+        c:: 3
+        c:: 0
+    a:: 4
+    h:: Don't be silly
+
+
+qt:: Q2
+    t:: text
+    q:: Enter your name
+    a:: Dany
+    h:: C'mon now!
+
+qt:: Q3
+    t:: text
+    q:: What is $f(x)^2$; when $x$ = 2?
+    a:: 4
+    h:: Wrong! 
+    

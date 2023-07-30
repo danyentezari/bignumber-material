@@ -1,0 +1,25 @@
+--- template_start ---
+fileName:: Mathematical-Notation
+file:: Mathematical-Notation
+title:: Mathematical Notation
+duration:: 2m
+quiz:: true
+url:: spr/Mathematical-Notation
+--- template_end ---        
+
+
+qt:: Q1 
+    t:: radio
+    q:: Which expression below...?
+    o::
+        c:: $x \in X$
+        c:: $x \subset X$
+        c:: $x \propersubset X$
+    a:: 4
+    h:: Don't be silly
+
+qt:: Q2
+    t:: text
+    q:: What is $f(x)^2$; when $x$ = 2?
+    a:: 4
+    h:: Wrong! 
