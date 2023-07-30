@@ -142,7 +142,7 @@
                         }, {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         }, {
                             "submissionName": "assignment-2",
                             "title": "Assignment 2 Submission",
@@ -179,7 +179,7 @@
                         }, {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         }, {
                             "title": "Assignment 3",
                             "icon": "file",
@@ -210,7 +210,7 @@
                         {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         },
                         {
                             "title": "script.ipynb",
@@ -242,7 +242,7 @@
                         {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         },
                         {
                             "title": "supervised_learning_regression.ipynb",
@@ -282,7 +282,7 @@
                         {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         },
                         {
                             "title": "joint-and-marginal.md",
@@ -330,7 +330,7 @@
                         {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         },
                         {
                             "title": "structure.md",
@@ -375,7 +375,7 @@
                         {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         },
                         {
                             "title": "Assignment 8",
@@ -397,7 +397,7 @@
                         {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         },
                         {
                             "title": "EM%20(Expectation-Maximization) Algorithm.md",
@@ -1451,7 +1451,7 @@
                         }, {
                             "title": "Map (archive)",
                             "icon": "file",
-                            "url": "https://map.bignumber.xyz/5f6359f3801e4d001723ab08?shareid=qpP01223s"
+                            "url": "https://b-web-map.herokuapp.com/5f6359f3801e4d001723ab08?shareid=qpP01223s"
                         }, {
                             "title": "Assignment 1",
                             "icon": "file",
@@ -1478,7 +1478,7 @@
                         {
                             "title": "Map",
                             "icon": "file",
-                            "url": "https://map.bignumber.xyz/6128f79c8d985b0018f52968?shareid=7sua7o0"
+                            "url": "https://b-web-map.herokuapp.com/6128f79c8d985b0018f52968?shareid=7sua7o0"
                         },
                         {
                             "title": "R - Hypothesis Testing Example 1",
