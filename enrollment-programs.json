@@ -4,7 +4,7 @@
             "pro": true,
             "code": "SPML",
             "dates": "24 Aug 2023 - 15 Oct 2023",
-            "discounts": ["15% off before 17 July 2023"],
+            "discounts": ["25% off before 5 Aug 2023", "15% off before 15 Aug 2023"],
             "title": "Statistics and Programming (Data Science)",
             "promoVideo": "https://player.vimeo.com/video/779911021?h=11699f372a",
             "stripe": "https://book.stripe.com/00g4gHcgRb2D8sUcN1?prefilled_promo_code=15OFF",
@@ -68,17 +68,12 @@
                 {
                     "dueDate": "10/Apr/2023",
                     "weekTitle": "Module 1 - Overview of Statistics and Machine Learning",
-                    "description": "In module 1, we will look at how statistical and probabilistic techniques are used in different domains \u2013 from healthcare to finance to engineering and other disciplines. We will also look at how machine learning evolved from the science and mathematics of statistics.",
+                    "description": "n module 1, we will look at how statistical and probabilistic techniques are used in different domains \u2013 from healthcare to finance to engineering and other disciplines. We will also look at how machine learning evolved from the science and mathematics of statistics.",
                     "documents": [
-                        {
-                            "title": "Mod 1 Slides (Apr2023)",
-                            "icon": "file",
-                            "url": "https://docs.google.com/presentation/d/1h0AOKreCilPnbwDq1bx2Gg3ynSprQ-RQAoxCwWMeAMU/edit?usp=sharing"
-                        },
                         {
                             "title": "Mod 1 Slides",
                             "icon": "file",
-                            "url": "https://docs.google.com/presentation/d/1Lz4e_uG0aWd3eHGzu9i1BeblI_61CTm9CG3sXz420HY/edit?usp=sharing"
+                            "url": "https://docs.google.com/presentation/d/1h0AOKreCilPnbwDq1bx2Gg3ynSprQ-RQAoxCwWMeAMU/edit?usp=sharing"
                         },
                         {
                             "title": "Agenda",
@@ -142,7 +137,7 @@
                         }, {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         }, {
                             "submissionName": "assignment-2",
                             "title": "Assignment 2 Submission",
@@ -179,7 +174,7 @@
                         }, {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         }, {
                             "title": "Assignment 3",
                             "icon": "file",
@@ -210,7 +205,7 @@
                         {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         },
                         {
                             "title": "script.ipynb",
@@ -242,7 +237,7 @@
                         {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         },
                         {
                             "title": "supervised_learning_regression.ipynb",
@@ -282,7 +277,7 @@
                         {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         },
                         {
                             "title": "joint-and-marginal.md",
@@ -330,7 +325,7 @@
                         {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         },
                         {
                             "title": "structure.md",
@@ -375,7 +370,7 @@
                         {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         },
                         {
                             "title": "Assignment 8",
@@ -397,7 +392,7 @@
                         {
                             "title": "Course Map",
                             "icon": "link",
-                            "url": "https://b-web-map.herokuapp.com/6436ac3e09aa640014a00ddd?shareid=plm9003"
+                            "url": "https://map.bignumber.xyz/6436ac3e09aa640014a00ddd?shareid=plm9003"
                         },
                         {
                             "title": "EM%20(Expectation-Maximization) Algorithm.md",
@@ -488,7 +483,7 @@
                             "preview": true,
                             "url": "https://player.vimeo.com/video/779911021?h=11699f372a",
                             "title": "Welcome Video",
-                            "duration": "00:02:54"
+                            "duration": "02:54"
                         }
                     ]
                 },
@@ -496,18 +491,186 @@
                     "section": "Module 1",
                     "children": [
                         {
-                            "preview": true,
-                            "url": "https://player.vimeo.com/video/848205939?h=19c85efd4a",
+                            "file": "Mod1",
+                            "url": "https://player.vimeo.com/video/810455935?h=aa56e5bad1",
                             "title": "Day 1",
-                            "duration": "02:00:00",
-                            "description": "In the first session, we go over the modules of the course and how they are relevant to the study of statistics and machine learning. We then learn about some key concepts to which we will be making references throughout the course. In particular, we begin our discussion with the most important topic of all: the distribution."
-                        },
-                        {
-                            "preview": true,
+                            "duration": "02:32:06",
+                            "preview": true
+                        }, {
+                            "file": "Mod2",
+                            "url": "https://player.vimeo.com/video/811752098?h=88ffc6ed79",
                             "title": "Day 2",
-                            "duration": "02:00:00",
-                            "url": "https://player.vimeo.com/video/849019319?h=94ae9fb270",
-                            "description": "In this session, we cover the basics of descriptive statistics. We go over numerical quantities that help us make sense about distribution such as central tendency, dispersion, standard deviation, and the interquartile range. We also learn about important mathematical notation that will help us to understand the formulas for both descriptive and inferential statistics."
+                            "duration": "02:39:05",
+                            "preview": true
+                        }, {
+                            "file": "Mod3",
+                            "url": "https://player.vimeo.com/video/811756555?h=4e0ea4e812",
+                            "title": "Day 3",
+                            "duration": "02:30:00",
+                            "preview": true
+                        }
+                    ]
+                },
+                {
+                    "section": "Module 2",
+                    "children": [
+                        {
+                            "file": "Mod2",
+                            "url": "https://player.vimeo.com/video/812428102?h=dbd875d960",
+                            "title": "Day 4",
+                            "duration": "02:52:41",
+                            "preview": true
+                        }, {
+                            "file": "Mod2",
+                            "url": "https://player.vimeo.com/video/813507050?h=37d118ab7e",
+                            "title": "Day 5",
+                            "duration": "02:27:55",
+                            "preview": true
+                        }, {
+                            "file": "Mod2",
+                            "url": "https://player.vimeo.com/video/814074317?h=e7a0b8daf0",
+                            "title": "Day 6",
+                            "duration": "03:03:30",
+                            "preview": true
+                        }
+                    ]
+                },
+                {
+                    "section": "Module 3",
+                    "children": [
+                        {
+                            "file": "Mod3",
+                            "url": "https://player.vimeo.com/video/814617345?h=3d1e9837dc",
+                            "title": "Day 7",
+                            "duration": "01:52:46",
+                            "preview": true
+                        }, {
+                            "file": "Mod3",
+                            "url": "https://player.vimeo.com/video/819476438?h=c9fe622576",
+                            "title": "Day 8",
+                            "duration": "01:54:36",
+                            "preview": true
+                        }, {
+                            "file": "Mod3",
+                            "url": "https://player.vimeo.com/video/819473480?h=bb12c01e01",
+                            "title": "Day 9",
+                            "duration": "02:48:00",
+                            "preview": true
+                        }
+                    ]
+                }, {
+                    "section": "Module 4",
+                    "children": [
+                        {
+                            "file": "Mod4",
+                            "url": "https://player.vimeo.com/video/818383575?h=d3e8b3a972",
+                            "title": "Day 10",
+                            "duration": "02:30:00",
+                            "preview": true
+                        }, {
+                            "file": "Mod4",
+                            "url": "https://player.vimeo.com/video/818380142?h=cc57e940e6",
+                            "title": "Day 11",
+                            "duration": "02:30:00",
+                            "preview": true
+                        }, {
+                            "file": "Mod4",
+                            "url": "https://player.vimeo.com/video/818376540?h=c339c3d84e",
+                            "title": "Day 12",
+                            "duration": "02:30:00",
+                            "preview": true
+                        }
+                    ]
+                }, {
+                    "section": "Module 5",
+                    "children": [
+                        {
+                            "file": "Mod5",
+                            "url": "https://player.vimeo.com/video/821694212?h=1a9e0d1acc",
+                            "title": "Day 13",
+                            "duration": "02:10:00",
+                            "preview": true
+                        }, {
+                            "file": "Mod5",
+                            "url": "https://player.vimeo.com/video/823155707?h=7500cf2b34",
+                            "title": "Day 14",
+                            "duration": "02:10:00",
+                            "preview": true
+                        }, {
+                            "file": "Mod5",
+                            "url": "https://player.vimeo.com/video/823144960?h=142e2849a4",
+                            "title": "Day 15",
+                            "duration": "02:57:00",
+                            "preview": true
+                        }
+                    ]
+                }, {
+                    "section": "Module 6",
+                    "children": [
+                        {
+                            "file": "Mod6",
+                            "url": "https://player.vimeo.com/video/823136557?h=2752215753",
+                            "title": "Day 16",
+                            "duration": "02:10:00",
+                            "preview": true
+                        }, {
+                            "file": "Mod6",
+                            "url": "https://player.vimeo.com/video/823701725?h=978c66f52b",
+                            "title": "Day 17",
+                            "duration": "02:29:00",
+                            "preview": true
+                        }, {
+                            "file": "Mod6",
+                            "url": "https://player.vimeo.com/video/827595328?h=809d497ca8",
+                            "title": "Day 18",
+                            "duration": "02:29:00",
+                            "preview": true
+                        }
+                    ]
+                }, {
+                    "section": "Module 7",
+                    "children": [
+                        {
+                            "file": "Mod7",
+                            "url": "https://player.vimeo.com/video/827593421?h=7b28fcf0cf",
+                            "title": "Day 19",
+                            "duration": "02:10:00",
+                            "preview": true
+                        }, {
+                            "file": "Mod7",
+                            "url": "https://player.vimeo.com/video/827589811?h=bd2f8e63ba",
+                            "title": "Day 20",
+                            "duration": "02:29:00",
+                            "preview": true
+                        }, {
+                            "file": "Mod7",
+                            "url": "https://player.vimeo.com/video/827585829?h=9ec7c2f74a",
+                            "title": "Day 21",
+                            "duration": "02:29:00",
+                            "preview": true
+                        }
+                    ]
+                }, {
+                    "section": "Module 8",
+                    "children": [
+                        {
+                            "file": "Mod8",
+                            "url": "https://player.vimeo.com/video/828813656?h=76710d8cd0",
+                            "title": "Day 22",
+                            "duration": "02:35:09",
+                            "preview": true
+                        }, {
+                            "file": "Mod8",
+                            "url": "https://player.vimeo.com/video/828806837?h=83dfcc6545",
+                            "title": "Day 23",
+                            "duration": "02:34:43",
+                            "preview": true
+                        }, {
+                            "file": "Mod8",
+                            "url": "https://player.vimeo.com/video/828790337?h=eeba94bd24",
+                            "title": "Day 24",
+                            "duration": "02:38:33",
+                            "preview": true
                         }
                     ]
                 }
@@ -651,7 +814,7 @@
             "stripe_": "https://buy.stripe.com/8wM4gHdkVeePfVm4gl",
             "stripe": "https://forms.gle/jnAZMb5kJ2SfxUZW6",
             "promoVideo": false,
-            "previewUrl": "/preview/enrollments/linear-mathematics-with-python",
+            "previewUrl": "/preview/enrollments/linear-mathematics-with-python-",
             "cpd": true,
             "live": true,
             "dubai": true,
@@ -711,6 +874,7 @@
         "LMP": {
             "title": "Linear Mathematics with Python",
             "promoVideo": "https://player.vimeo.com/video/771586848?h=0706619079",
+            "previewUrl": "/preview/enrollments/linear-mathematics-with-python",
             "cpd": true,
             "updateFrequency": [
                 "Bi-Weekly", "New content is added to this course every two weeks"
@@ -1404,7 +1568,7 @@
             "hiddenTags": [
                 "Mathematics", "Data Science"
             ],
-            "description": "Learn the mathematics of data science and statistics. Learn to perform statistical analysis with the R and Python programming languages.",
+            "description": "Learn the mathematical science behind artificial intelligence, econometrics, risk engineering, and epidemiology. Learn to perform statistical analysis with the R and Python programming languages.",
             "descriptionLong": "This courses teaches Statistics and Probability Theory with emphasis on learning from first principles. To learn advanced Statistics and, in particular, Probability Theory, it is necessary to be familiar with other mathematical topics including Integration, Sequences, Series, Sets, and Combinatrics. Although this course has Statistics and Probability Theory in the title, it contains sufficient supplementary material about other mathematical subjects that is necessary for mastery in Statistics and Probability Theory. <br/><br/>This course also teaches R, the programming language for statistical analysis. You will learn the required programming constructs to perform analysis in this specialized programming language. You will learn to apply the appropriate functions and methods, import and process data, produce meaningful visualizations, and interpret the results of analysis (e.g, Correlation, ANOVA, etc.)",
             "urlTitle": "statistics-probability-theory-and-programming",
             "enrollmentType": "Audit",
@@ -1451,7 +1615,7 @@
                         }, {
                             "title": "Map (archive)",
                             "icon": "file",
-                            "url": "https://b-web-map.herokuapp.com/5f6359f3801e4d001723ab08?shareid=qpP01223s"
+                            "url": "https://map.bignumber.xyz/5f6359f3801e4d001723ab08?shareid=qpP01223s"
                         }, {
                             "title": "Assignment 1",
                             "icon": "file",
@@ -1478,7 +1642,7 @@
                         {
                             "title": "Map",
                             "icon": "file",
-                            "url": "https://b-web-map.herokuapp.com/6128f79c8d985b0018f52968?shareid=7sua7o0"
+                            "url": "https://map.bignumber.xyz/6128f79c8d985b0018f52968?shareid=7sua7o0"
                         },
                         {
                             "title": "R - Hypothesis Testing Example 1",
@@ -1639,113 +1803,313 @@
                     "section": "Module 1",
                     "children": [
                         {
-                            "file": "file-1-1_overview.md",
+                            "file": "overview.md",
                             "title": "Overview",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-1_overview.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-1_overview.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-1_overview.md",
+                            "filePath": "bignumber-material/SPR/mod1/overview.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/overview.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/overview.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-1-2_goal_of_statistics_(vid).md",
-                            "title": "Goal of Statistics (vid)",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-2_goal_of_statistics_(vid).md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-2_goal_of_statistics_(vid).md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-2_goal_of_statistics_(vid).md",
+                            "file": "https://player.vimeo.com/video/797174163?h=c8f7d92f8d",
+                            "title": "Goal of Statistics",
+                            "filePath": "https://player.vimeo.com/video/797174163?h=c8f7d92f8d",
+                            "url": "https://player.vimeo.com/video/797174163?h=c8f7d92f8d",
+                            "vimeo": true,
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-1-3_goal_of_probability_theory_(vid).md",
+                            "file": "goal_of_probability_theory_(vid).md",
                             "title": "Goal of Probability Theory (vid)",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-3_goal_of_probability_theory_(vid).md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-3_goal_of_probability_theory_(vid).md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-3_goal_of_probability_theory_(vid).md",
+                            "filePath": "bignumber-material/SPR/mod1/goal_of_probability_theory_(vid).md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/goal_of_probability_theory_(vid).md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/goal_of_probability_theory_(vid).md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-1-4_quiz_1-1.ba",
+                            "file": "quiz_1-1.ba",
                             "title": "Quiz 1-1",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-4_quiz_1-1.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-4_quiz_1-1.ba",
-                            "assessment": "load('./file-1-4_quiz_1-1.json')",
+                            "filePath": "bignumber-material/SPR/mod1/quiz_1-1.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/quiz_1-1.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_1-1.json')"
+                        }, {
+                            "file": "frequency_distributions.md",
+                            "title": "Frequency Distributions",
+                            "filePath": "bignumber-material/SPR/mod1/frequency_distributions.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/frequency_distributions.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/frequency_distributions.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-1-5_distributions.md",
-                            "title": "Distributions",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-5_distributions.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-5_distributions.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-5_distributions.md",
-                            "duration": " 0mins"
-                        }, {
-                            "file": "file-1-6_visualizing_distributions.md",
+                            "file": "visualizing_distributions.md",
                             "title": "Visualizing Distributions",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-6_visualizing_distributions.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-6_visualizing_distributions.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-6_visualizing_distributions.md",
+                            "filePath": "bignumber-material/SPR/mod1/visualizing_distributions.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/visualizing_distributions.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/visualizing_distributions.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-1-7_law_of_large_numbers.md",
+                            "file": "probability_distributions.md",
+                            "title": "Probability Distributions",
+                            "filePath": "bignumber-material/SPR/mod1/probability_distributions.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/probability_distributions.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/probability_distributions.md",
+                            "duration": " 0mins"
+                        }, {
+                            "file": "law_of_large_numbers.md",
                             "title": "Law of Large Numbers",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-7_law_of_large_numbers.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-7_law_of_large_numbers.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-7_law_of_large_numbers.md",
+                            "filePath": "bignumber-material/SPR/mod1/law_of_large_numbers.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/law_of_large_numbers.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/law_of_large_numbers.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-1-8_quiz_1-2.ba",
+                            "file": "quiz_1-2.ba",
                             "title": "Quiz 1-2",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-8_quiz_1-2.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-8_quiz_1-2.ba",
-                            "assessment": "load('./file-1-8_quiz_1-2.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod1/quiz_1-2.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/quiz_1-2.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_1-2.json')"
                         }, {
-                            "file": "file-1-9_probability_theory.md",
-                            "title": "Probability Theory",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-9_probability_theory.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-9_probability_theory.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-9_probability_theory.md",
-                            "duration": " 0mins"
-                        }, {
-                            "file": "file-1-10_parameters_and_statistics.md",
+                            "file": "parameters_and_statistics.md",
                             "title": "Parameters and Statistics",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-10_parameters_and_statistics.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-10_parameters_and_statistics.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-10_parameters_and_statistics.md",
+                            "filePath": "bignumber-material/SPR/mod1/parameters_and_statistics.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/parameters_and_statistics.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/parameters_and_statistics.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-1-11_quiz_1-3.ba",
+                            "file": "mathematical_notation.md",
+                            "title": "Mathematical Notation",
+                            "filePath": "bignumber-material/SPR/mod1/mathematical_notation.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/mathematical_notation.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/mathematical_notation.md",
+                            "duration": " 0mins"
+                        }, {
+                            "file": "mathematical_notation_quiz.ba",
+                            "title": "Mathematical Notation Quiz",
+                            "filePath": "bignumber-material/SPR/mod1/mathematical_notation_quiz.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/mathematical_notation_quiz.ba",
+                            "assessment": {
+                                "fileName": "Mathematical-Notation",
+                                "file": "Mathematical-Notation",
+                                "title": "Mathematical Notation",
+                                "duration": "2m",
+                                "quiz": true,
+                                "url": "spr/Mathematical-Notation",
+                                "assessmentDetails": {
+                                    "organization": [
+                                        {
+                                            "questionTitle": "Q1",
+                                            "details": {
+                                                "options": [
+                                                    {
+                                                        "type": "radio",
+                                                        "choices": [
+                                                            {
+                                                                "text": "$x \\in X$"
+                                                            }, {
+                                                                "text": "$x \\subset X$"
+                                                            }, {
+                                                                "text": "$x \\propersubset X$"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "answerKey": "4",
+                                                "hint": "Don't be silly",
+                                                "question": "Which expression below...?"
+                                            }
+                                        }, {
+                                            "questionTitle": "Q2",
+                                            "details": {
+                                                "options": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": ""
+                                                    }
+                                                ],
+                                                "answerKey": "4",
+                                                "hint": "Wrong!",
+                                                "question": "What is $f(x)^2$; when $x$ = 2?"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./mathematical_notation_quiz.json')"
+                        }, {
+                            "file": "probability_theory.md",
+                            "title": "Probability Theory",
+                            "filePath": "bignumber-material/SPR/mod1/probability_theory.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/probability_theory.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/probability_theory.md",
+                            "duration": " 0mins"
+                        }, {
+                            "file": "measures_of_central_tendency.md",
+                            "title": "Measures of Central Tendency",
+                            "filePath": "bignumber-material/SPR/mod1/measures_of_central_tendency.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/measures_of_central_tendency.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/measures_of_central_tendency.md",
+                            "duration": " 0mins"
+                        }, {
+                            "file": "measures_of_dispersion.md",
+                            "title": "Measures of Dispersion",
+                            "filePath": "bignumber-material/SPR/mod1/measures_of_dispersion.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/measures_of_dispersion.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/measures_of_dispersion.md",
+                            "duration": " 0mins"
+                        }, {
+                            "file": "variance_and_standard_deviation.md",
+                            "title": "Variance and Standard Deviation",
+                            "filePath": "bignumber-material/SPR/mod1/variance_and_standard_deviation.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/variance_and_standard_deviation.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/variance_and_standard_deviation.md",
+                            "duration": " 0mins"
+                        }, {
+                            "file": "interquartile_range.md",
+                            "title": "Interquartile Range",
+                            "filePath": "bignumber-material/SPR/mod1/interquartile_range.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/interquartile_range.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/interquartile_range.md",
+                            "duration": " 0mins"
+                        }, {
+                            "file": "quiz_1-3.ba",
                             "title": "Quiz 1-3",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-11_quiz_1-3.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-11_quiz_1-3.ba",
-                            "assessment": "load('./file-1-11_quiz_1-3.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod1/quiz_1-3.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/quiz_1-3.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_1-3.json')"
                         }, {
-                            "file": "file-1-12_modeling_data.md",
+                            "file": "modeling_data.md",
                             "title": "Modeling Data",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-12_modeling_data.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-12_modeling_data.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-12_modeling_data.md",
+                            "filePath": "bignumber-material/SPR/mod1/modeling_data.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/modeling_data.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/modeling_data.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-1-13_quiz_1-4.ba",
+                            "file": "quiz_1-4.ba",
                             "title": "Quiz 1-4",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-13_quiz_1-4.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-13_quiz_1-4.ba",
-                            "assessment": "load('./file-1-13_quiz_1-4.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod1/quiz_1-4.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/quiz_1-4.ba",
+                            "assessment": {
+                                "fileName": "Assessment-1",
+                                "file": "Assessment-1",
+                                "title": "Assessment 1",
+                                "duration": "2m",
+                                "quiz": true,
+                                "url": "spr/Assessment-1",
+                                "assessmentDetails": {
+                                    "organization": [
+                                        {
+                                            "questionTitle": "Q1",
+                                            "details": {
+                                                "options": [
+                                                    {
+                                                        "type": "radio",
+                                                        "choices": [
+                                                            {
+                                                                "text": "4"
+                                                            }, {
+                                                                "text": "3"
+                                                            }, {
+                                                                "text": "0"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "answerKey": "4",
+                                                "hint": "Don't be silly",
+                                                "question": "What is the sum of 2+2?"
+                                            }
+                                        }, {
+                                            "questionTitle": "Q2",
+                                            "details": {
+                                                "options": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": ""
+                                                    }
+                                                ],
+                                                "answerKey": "Dany",
+                                                "hint": "C'mon now!",
+                                                "question": "Enter your name"
+                                            }
+                                        }, {
+                                            "questionTitle": "Q3",
+                                            "details": {
+                                                "options": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": ""
+                                                    }
+                                                ],
+                                                "answerKey": "4",
+                                                "hint": "Wrong!",
+                                                "question": "What is $f(x)^2$; when $x$ = 2?"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_1-4.json')"
                         }, {
-                            "file": "file-1-14_learning_probability_theory.md",
+                            "file": "learning_probability_theory.md",
                             "title": "Learning Probability Theory",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-14_learning_probability_theory.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-14_learning_probability_theory.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-14_learning_probability_theory.md",
+                            "filePath": "bignumber-material/SPR/mod1/learning_probability_theory.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/learning_probability_theory.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod1/learning_probability_theory.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-1-15_quiz_1-5.ba",
+                            "file": "quiz_1-5.ba",
                             "title": "Quiz 1-5",
-                            "filePath": "bignumber-material/SPR/mod1/file-1-15_quiz_1-5.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod1/file-1-15_quiz_1-5.ba",
-                            "assessment": "load('./file-1-15_quiz_1-5.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod1/quiz_1-5.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod1/quiz_1-5.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_1-5.json')"
                         }
                     ]
                 },
@@ -1754,138 +2118,193 @@
                     "section": "Module 2",
                     "children": [
                         {
-                            "file": "file-2-1_outline.md",
+                            "file": "outline.md",
                             "title": "Outline",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-1_outline.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-1_outline.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-1_outline.md",
+                            "filePath": "bignumber-material/SPR/mod2/outline.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/outline.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/outline.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-2-2_built-in_functions.py",
+                            "file": "built-in_functions.py",
                             "title": "Built-In Functions",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-2_built-in_functions.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-2_built-in_functions.py",
+                            "filePath": "bignumber-material/SPR/mod2/built-in_functions.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/built-in_functions.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-2_built-in_functions.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/built-in_functions.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-2-3_variables.py",
+                            "file": "variables.py",
                             "title": "Variables",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-3_variables.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-3_variables.py",
+                            "filePath": "bignumber-material/SPR/mod2/variables.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/variables.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-3_variables.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/variables.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-2-4_quiz_2-1.ba",
+                            "file": "quiz_2-1.ba",
                             "title": "Quiz 2-1",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-4_quiz_2-1.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-4_quiz_2-1.ba",
-                            "assessment": "load('./file-2-4_quiz_2-1.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod2/quiz_2-1.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/quiz_2-1.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_2-1.json')"
                         }, {
-                            "file": "file-2-5_control_statements_1.py",
+                            "file": "control_statements_1.py",
                             "title": "Control Statements 1",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-5_control_statements_1.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-5_control_statements_1.py",
+                            "filePath": "bignumber-material/SPR/mod2/control_statements_1.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/control_statements_1.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-5_control_statements_1.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/control_statements_1.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-2-6_control_statements_2.py",
+                            "file": "control_statements_2.py",
                             "title": "Control Statements 2",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-6_control_statements_2.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-6_control_statements_2.py",
+                            "filePath": "bignumber-material/SPR/mod2/control_statements_2.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/control_statements_2.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-6_control_statements_2.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/control_statements_2.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-2-7_quiz_2-2.ba",
+                            "file": "quiz_2-2.ba",
                             "title": "Quiz 2-2",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-7_quiz_2-2.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-7_quiz_2-2.ba",
-                            "assessment": "load('./file-2-7_quiz_2-2.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod2/quiz_2-2.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/quiz_2-2.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_2-2.json')"
                         }, {
-                            "file": "file-2-8_while_loop.py",
+                            "file": "while_loop.py",
                             "title": "While Loop",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-8_while_loop.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-8_while_loop.py",
+                            "filePath": "bignumber-material/SPR/mod2/while_loop.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/while_loop.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-8_while_loop.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/while_loop.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-2-9_data_structures.py",
+                            "file": "data_structures.py",
                             "title": "Data Structures",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-9_data_structures.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-9_data_structures.py",
+                            "filePath": "bignumber-material/SPR/mod2/data_structures.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/data_structures.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-9_data_structures.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/data_structures.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-2-10_list_methods.py",
+                            "file": "list_methods.py",
                             "title": "List Methods",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-10_list_methods.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-10_list_methods.py",
+                            "filePath": "bignumber-material/SPR/mod2/list_methods.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/list_methods.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-10_list_methods.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/list_methods.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-2-11_loops_and_data_structures.py",
+                            "file": "loops_and_data_structures.py",
                             "title": "Loops and Data Structures",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-11_loops_and_data_structures.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-11_loops_and_data_structures.py",
+                            "filePath": "bignumber-material/SPR/mod2/loops_and_data_structures.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/loops_and_data_structures.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-11_loops_and_data_structures.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/loops_and_data_structures.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-2-12_quiz_2-3.ba",
+                            "file": "quiz_2-3.ba",
                             "title": "Quiz 2-3",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-12_quiz_2-3.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-12_quiz_2-3.ba",
-                            "assessment": "load('./file-2-12_quiz_2-3.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod2/quiz_2-3.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/quiz_2-3.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_2-3.json')"
                         }, {
-                            "file": "file-2-13_methods.py",
+                            "file": "methods.py",
                             "title": "Methods",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-13_methods.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-13_methods.py",
+                            "filePath": "bignumber-material/SPR/mod2/methods.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/methods.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-13_methods.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/methods.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-2-14_classes.py",
+                            "file": "classes.py",
                             "title": "Classes",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-14_classes.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-14_classes.py",
+                            "filePath": "bignumber-material/SPR/mod2/classes.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/classes.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-14_classes.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/classes.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-2-15_quiz_2-4.ba",
+                            "file": "quiz_2-4.ba",
                             "title": "Quiz 2-4",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-15_quiz_2-4.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-15_quiz_2-4.ba",
-                            "assessment": "load('./file-2-15_quiz_2-4.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod2/quiz_2-4.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/quiz_2-4.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_2-4.json')"
                         }, {
-                            "file": "file-2-16_jupyter_and_pandas.py",
+                            "file": "jupyter_and_pandas.py",
                             "title": "Jupyter and Pandas",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-16_jupyter_and_pandas.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-16_jupyter_and_pandas.py",
+                            "filePath": "bignumber-material/SPR/mod2/jupyter_and_pandas.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/jupyter_and_pandas.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-16_jupyter_and_pandas.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod2/jupyter_and_pandas.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-2-17_quiz_2-5.ba",
+                            "file": "quiz_2-5.ba",
                             "title": "Quiz 2-5",
-                            "filePath": "bignumber-material/SPR/mod2/file-2-17_quiz_2-5.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod2/file-2-17_quiz_2-5.ba",
-                            "assessment": "load('./file-2-17_quiz_2-5.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod2/quiz_2-5.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod2/quiz_2-5.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_2-5.json')"
                         }
                     ]
                 },
@@ -1894,131 +2313,175 @@
                     "section": "Module 3",
                     "children": [
                         {
-                            "file": "file-3-1_overview.md",
+                            "file": "overview.md",
                             "title": "Overview",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-1_overview.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-1_overview.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-1_overview.md",
+                            "filePath": "bignumber-material/SPR/mod3/overview.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/overview.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/overview.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-3-2_jupyter.ipynb",
+                            "file": "jupyter.ipynb",
                             "title": "Jupyter",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-2_jupyter.ipynb",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-2_jupyter.ipynb",
+                            "filePath": "bignumber-material/SPR/mod3/jupyter.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/jupyter.ipynb",
                             "code": true,
                             "notebook": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-2_jupyter.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/jupyter.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-3-3_quiz_3-1.ba",
+                            "file": "quiz_3-1.ba",
                             "title": "Quiz 3-1",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-3_quiz_3-1.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-3_quiz_3-1.ba",
-                            "assessment": "load('./file-3-3_quiz_3-1.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod3/quiz_3-1.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/quiz_3-1.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_3-1.json')"
                         },
                         {
-                            "file": "file-3-4_pandas.ipynb",
+                            "file": "pandas.ipynb",
                             "title": "Pandas",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-4_pandas.ipynb",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-4_pandas.ipynb",
+                            "filePath": "bignumber-material/SPR/mod3/pandas.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/pandas.ipynb",
                             "code": true,
                             "notebook": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-4_pandas.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/pandas.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-3-5_quiz_3-2.ba",
+                            "file": "quiz_3-2.ba",
                             "title": "Quiz 3-2",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-5_quiz_3-2.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-5_quiz_3-2.ba",
-                            "assessment": "load('./file-3-5_quiz_3-2.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod3/quiz_3-2.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/quiz_3-2.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_3-2.json')"
                         }, {
-                            "file": "file-3-6_descriptive_statistics.md",
+                            "file": "descriptive_statistics.md",
                             "title": "Descriptive Statistics",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-6_descriptive_statistics.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-6_descriptive_statistics.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-6_descriptive_statistics.md",
+                            "filePath": "bignumber-material/SPR/mod3/descriptive_statistics.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/descriptive_statistics.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/descriptive_statistics.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-3-7_descriptive_statistics_example.ipynb",
+                            "file": "descriptive_statistics_example.ipynb",
                             "title": "Descriptive Statistics Example",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-7_descriptive_statistics_example.ipynb",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-7_descriptive_statistics_example.ipynb",
+                            "filePath": "bignumber-material/SPR/mod3/descriptive_statistics_example.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/descriptive_statistics_example.ipynb",
                             "code": true,
                             "notebook": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-7_descriptive_statistics_example.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/descriptive_statistics_example.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-3-8_correlation.md",
+                            "file": "correlation.md",
                             "title": "Correlation",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-8_correlation.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-8_correlation.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-8_correlation.md",
+                            "filePath": "bignumber-material/SPR/mod3/correlation.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/correlation.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/correlation.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-3-9_correlation_example.ipynb",
+                            "file": "correlation_example.ipynb",
                             "title": "Correlation Example",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-9_correlation_example.ipynb",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-9_correlation_example.ipynb",
+                            "filePath": "bignumber-material/SPR/mod3/correlation_example.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/correlation_example.ipynb",
                             "code": true,
                             "notebook": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-9_correlation_example.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/correlation_example.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-3-10_quiz_3-3.ba",
+                            "file": "quiz_3-3.ba",
                             "title": "Quiz 3-3",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-10_quiz_3-3.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-10_quiz_3-3.ba",
-                            "assessment": "load('./file-3-10_quiz_3-3.json')",
+                            "filePath": "bignumber-material/SPR/mod3/quiz_3-3.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/quiz_3-3.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_3-3.json')"
+                        }, {
+                            "file": "plotting.md",
+                            "title": "Plotting",
+                            "filePath": "bignumber-material/SPR/mod3/plotting.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/plotting.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/plotting.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-3-11_plotting.md",
+                            "file": "plotting.ipynb",
                             "title": "Plotting",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-11_plotting.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-11_plotting.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-11_plotting.md",
-                            "duration": " 0mins"
-                        }, {
-                            "file": "file-3-12_plotting.ipynb",
-                            "title": "Plotting",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-12_plotting.ipynb",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-12_plotting.ipynb",
+                            "filePath": "bignumber-material/SPR/mod3/plotting.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/plotting.ipynb",
                             "code": true,
                             "notebook": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-12_plotting.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/plotting.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-3-13_quiz_3-4.ba",
+                            "file": "quiz_3-4.ba",
                             "title": "Quiz 3-4",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-13_quiz_3-4.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-13_quiz_3-4.ba",
-                            "assessment": "load('./file-3-13_quiz_3-4.json')",
+                            "filePath": "bignumber-material/SPR/mod3/quiz_3-4.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/quiz_3-4.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_3-4.json')"
+                        }, {
+                            "file": "modeling.md",
+                            "title": "Modeling",
+                            "filePath": "bignumber-material/SPR/mod3/modeling.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/modeling.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/modeling.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-3-14_modeling.md",
+                            "file": "modeling.ipynb",
                             "title": "Modeling",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-14_modeling.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-14_modeling.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-14_modeling.md",
-                            "duration": " 0mins"
-                        }, {
-                            "file": "file-3-15_modeling.ipynb",
-                            "title": "Modeling",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-15_modeling.ipynb",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-15_modeling.ipynb",
+                            "filePath": "bignumber-material/SPR/mod3/modeling.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/modeling.ipynb",
                             "code": true,
                             "notebook": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-15_modeling.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/modeling.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-3-16_overview_of_regression_analysis.md",
+                            "file": "overview_of_regression_analysis.md",
                             "title": "Overview of Regression Analysis",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-16_overview_of_regression_analysis.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-16_overview_of_regression_analysis.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-16_overview_of_regression_analysis.md",
+                            "filePath": "bignumber-material/SPR/mod3/overview_of_regression_analysis.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/overview_of_regression_analysis.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/overview_of_regression_analysis.md",
                             "duration": " 0mins"
                         }, {
                             "file": "Regression",
@@ -2026,30 +2489,30 @@
                             "filePath": "http://localhost:3000/Regression",
                             "url": "http://localhost:3000/Regression",
                             "math_viz": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-17_simple_linear_regression.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/simple_linear_regression.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-3-18_best-fit.md",
+                            "file": "best-fit.md",
                             "title": "Best-Fit",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-18_best-fit.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-18_best-fit.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-18_best-fit.md",
+                            "filePath": "bignumber-material/SPR/mod3/best-fit.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/best-fit.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/best-fit.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-3-19_ordinary_least_squares.md",
+                            "file": "ordinary_least_squares.md",
                             "title": "Ordinary Least Squares",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-19_ordinary_least_squares.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-19_ordinary_least_squares.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-19_ordinary_least_squares.md",
+                            "filePath": "bignumber-material/SPR/mod3/ordinary_least_squares.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/ordinary_least_squares.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/ordinary_least_squares.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-3-20_ols_example.ipynb",
+                            "file": "ols_example.ipynb",
                             "title": "OLS Example",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-20_ols_example.ipynb",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-20_ols_example.ipynb",
+                            "filePath": "bignumber-material/SPR/mod3/ols_example.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/ols_example.ipynb",
                             "code": true,
                             "notebook": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-20_ols_example.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/ols_example.md",
                             "duration": " 0mins"
                         }, {
                             "file": "MultipleRegression",
@@ -2057,22 +2520,33 @@
                             "filePath": "http://localhost:3000/MultipleRegression",
                             "url": "http://localhost:3000/MultipleRegression",
                             "math_viz": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-21_multiple_regression.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/multiple_regression.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-3-22_other_regression_techniques.md",
+                            "file": "other_regression_techniques.md",
                             "title": "Other Regression Techniques",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-22_other_regression_techniques.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-22_other_regression_techniques.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-22_other_regression_techniques.md",
+                            "filePath": "bignumber-material/SPR/mod3/other_regression_techniques.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/other_regression_techniques.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod3/other_regression_techniques.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-3-23_quiz_3-5.ba",
+                            "file": "quiz_3-5.ba",
                             "title": "Quiz 3-5",
-                            "filePath": "bignumber-material/SPR/mod3/file-3-23_quiz_3-5.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod3/file-3-23_quiz_3-5.ba",
-                            "assessment": "load('./file-3-23_quiz_3-5.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod3/quiz_3-5.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod3/quiz_3-5.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_3-5.json')"
                         }
                     ]
                 }, {
@@ -2080,178 +2554,277 @@
                     "section": "Module 4",
                     "children": [
                         {
-                            "file": "file-4-1_overview.md",
+                            "file": "overview.md",
                             "title": "Overview",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-1_overview.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-1_overview.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-1_overview.md",
+                            "filePath": "bignumber-material/SPR/mod4/overview.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/overview.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/overview.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-4-2_overview_of_probability.md",
+                            "file": "overview_of_probability.md",
                             "title": "Overview of Probability",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-2_overview_of_probability.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-2_overview_of_probability.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-2_overview_of_probability.md",
+                            "filePath": "bignumber-material/SPR/mod4/overview_of_probability.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/overview_of_probability.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/overview_of_probability.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-4-3_overview_of_probability.ipynb",
+                            "file": "overview_of_probability.ipynb",
                             "title": "Overview of Probability",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-3_overview_of_probability.ipynb",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-3_overview_of_probability.ipynb",
+                            "filePath": "bignumber-material/SPR/mod4/overview_of_probability.ipynb",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/overview_of_probability.ipynb",
                             "code": true,
                             "notebook": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-3_overview_of_probability.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/overview_of_probability.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-4-4_quiz_4-1.ba",
+                            "file": "quiz_4-1.ba",
                             "title": "Quiz 4-1",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-4_quiz_4-1.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-4_quiz_4-1.ba",
-                            "assessment": "load('./file-4-4_quiz_4-1.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod4/quiz_4-1.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/quiz_4-1.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_4-1.json')"
                         }, {
-                            "file": "file-4-5_frequency_to_distribution.md",
+                            "file": "frequency_to_distribution.md",
                             "title": "Frequency to Distribution",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-5_frequency_to_distribution.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-5_frequency_to_distribution.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-5_frequency_to_distribution.md",
+                            "filePath": "bignumber-material/SPR/mod4/frequency_to_distribution.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/frequency_to_distribution.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/frequency_to_distribution.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-4-6_quiz_4-2.ba",
+                            "file": "quiz_4-2.ba",
                             "title": "Quiz 4-2",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-6_quiz_4-2.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-6_quiz_4-2.ba",
-                            "assessment": "load('./file-4-6_quiz_4-2.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod4/quiz_4-2.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/quiz_4-2.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_4-2.json')"
                         }, {
-                            "file": "file-4-7_random_variables.md",
+                            "file": "random_variables.md",
                             "title": "Random Variables",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-7_random_variables.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-7_random_variables.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-7_random_variables.md",
+                            "filePath": "bignumber-material/SPR/mod4/random_variables.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/random_variables.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/random_variables.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-4-8_quiz_4-3.ba",
+                            "file": "quiz_4-3.ba",
                             "title": "Quiz 4-3",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-8_quiz_4-3.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-8_quiz_4-3.ba",
-                            "assessment": "load('./file-4-8_quiz_4-3.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod4/quiz_4-3.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/quiz_4-3.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_4-3.json')"
                         }, {
-                            "file": "file-4-9_set_notation.md",
+                            "file": "set_notation.md",
                             "title": "Set Notation",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-9_set_notation.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-9_set_notation.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-9_set_notation.md",
+                            "filePath": "bignumber-material/SPR/mod4/set_notation.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/set_notation.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/set_notation.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-4-10_set_operations.md",
+                            "file": "set_operations.md",
                             "title": "Set Operations",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-10_set_operations.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-10_set_operations.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-10_set_operations.md",
+                            "filePath": "bignumber-material/SPR/mod4/set_operations.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/set_operations.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/set_operations.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-4-11_quiz_4-4.ba",
+                            "file": "quiz_4-4.ba",
                             "title": "Quiz 4-4",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-11_quiz_4-4.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-11_quiz_4-4.ba",
-                            "assessment": "load('./file-4-11_quiz_4-4.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod4/quiz_4-4.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/quiz_4-4.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_4-4.json')"
                         }, {
-                            "file": "file-4-12_sample_spaces,_events,_and_experiments.md",
+                            "file": "sample_spaces,_events,_and_experiments.md",
                             "title": "Sample Spaces, Events, and Experiments",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-12_sample_spaces,_events,_and_experiments.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-12_sample_spaces,_events,_and_experiments.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-12_sample_spaces,_events,_and_experiments.md",
+                            "filePath": "bignumber-material/SPR/mod4/sample_spaces,_events,_and_experiments.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/sample_spaces,_events,_and_experiments.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/sample_spaces,_events,_and_experiments.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-4-13_quiz_4-5.ba",
+                            "file": "quiz_4-5.ba",
                             "title": "Quiz 4-5",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-13_quiz_4-5.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-13_quiz_4-5.ba",
-                            "assessment": "load('./file-4-13_quiz_4-5.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod4/quiz_4-5.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/quiz_4-5.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_4-5.json')"
                         }, {
-                            "file": "file-4-14_parameters_as_random_variables.md",
+                            "file": "parameters_as_random_variables.md",
                             "title": "Parameters as Random Variables",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-14_parameters_as_random_variables.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-14_parameters_as_random_variables.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-14_parameters_as_random_variables.md",
+                            "filePath": "bignumber-material/SPR/mod4/parameters_as_random_variables.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/parameters_as_random_variables.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/parameters_as_random_variables.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-4-15_quiz_4-6.ba",
+                            "file": "quiz_4-6.ba",
                             "title": "Quiz 4-6",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-15_quiz_4-6.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-15_quiz_4-6.ba",
-                            "assessment": "load('./file-4-15_quiz_4-6.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod4/quiz_4-6.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/quiz_4-6.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_4-6.json')"
                         }, {
-                            "file": "file-4-16_moments.md",
+                            "file": "moments.md",
                             "title": "Moments",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-16_moments.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-16_moments.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-16_moments.md",
+                            "filePath": "bignumber-material/SPR/mod4/moments.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/moments.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/moments.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-4-17_expectation.md",
+                            "file": "expectation.md",
                             "title": "Expectation",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-17_expectation.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-17_expectation.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-17_expectation.md",
+                            "filePath": "bignumber-material/SPR/mod4/expectation.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/expectation.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/expectation.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-4-18_quiz_4-7.ba",
+                            "file": "quiz_4-7.ba",
                             "title": "Quiz 4-7",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-18_quiz_4-7.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-18_quiz_4-7.ba",
-                            "assessment": "load('./file-4-18_quiz_4-7.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod4/quiz_4-7.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/quiz_4-7.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_4-7.json')"
                         }, {
-                            "file": "file-4-19_probability_distributions.md",
+                            "file": "probability_distributions.md",
                             "title": "Probability Distributions",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-19_probability_distributions.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-19_probability_distributions.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-19_probability_distributions.md",
+                            "filePath": "bignumber-material/SPR/mod4/probability_distributions.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/probability_distributions.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/probability_distributions.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-4-20_probability_mass_function.md",
+                            "file": "probability_mass_function.md",
                             "title": "Probability Mass Function",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-20_probability_mass_function.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-20_probability_mass_function.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-20_probability_mass_function.md",
+                            "filePath": "bignumber-material/SPR/mod4/probability_mass_function.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/probability_mass_function.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/probability_mass_function.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-4-21_probability_density.md",
+                            "file": "probability_density.md",
                             "title": "Probability Density",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-21_probability_density.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-21_probability_density.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-21_probability_density.md",
+                            "filePath": "bignumber-material/SPR/mod4/probability_density.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/probability_density.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/probability_density.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-4-22_quiz_4-8.ba",
+                            "file": "quiz_4-8.ba",
                             "title": "Quiz 4-8",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-22_quiz_4-8.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-22_quiz_4-8.ba",
-                            "assessment": "load('./file-4-22_quiz_4-8.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod4/quiz_4-8.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/quiz_4-8.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_4-8.json')"
                         }, {
-                            "file": "file-4-23_density_to_probability.md",
+                            "file": "density_to_probability.md",
                             "title": "Density to Probability",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-23_density_to_probability.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-23_density_to_probability.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-23_density_to_probability.md",
+                            "filePath": "bignumber-material/SPR/mod4/density_to_probability.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/density_to_probability.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod4/density_to_probability.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-4-24_quiz_4-9.ba",
+                            "file": "quiz_4-9.ba",
                             "title": "Quiz 4-9",
-                            "filePath": "bignumber-material/SPR/mod4/file-4-24_quiz_4-9.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod4/file-4-24_quiz_4-9.ba",
-                            "assessment": "load('./file-4-24_quiz_4-9.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod4/quiz_4-9.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod4/quiz_4-9.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_4-9.json')"
                         }
                     ]
                 }, {
@@ -2259,175 +2832,252 @@
                     "section": "Module 5",
                     "children": [
                         {
-                            "file": "file-5-1_sampling_distributon.md",
+                            "file": "sampling_distributon.md",
                             "title": "Sampling Distributon",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-1_sampling_distributon.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-1_sampling_distributon.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-1_sampling_distributon.md",
+                            "filePath": "bignumber-material/SPR/mod5/sampling_distributon.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/sampling_distributon.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/sampling_distributon.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-5-2_sampling_distributon_example.py",
+                            "file": "sampling_distributon_example.py",
                             "title": "Sampling Distributon Example",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-2_sampling_distributon_example.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-2_sampling_distributon_example.py",
+                            "filePath": "bignumber-material/SPR/mod5/sampling_distributon_example.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/sampling_distributon_example.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-2_sampling_distributon_example.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/sampling_distributon_example.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-5-3_quiz_5-1.ba",
+                            "file": "quiz_5-1.ba",
                             "title": "Quiz 5-1",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-3_quiz_5-1.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-3_quiz_5-1.ba",
-                            "assessment": "load('./file-5-3_quiz_5-1.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod5/quiz_5-1.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/quiz_5-1.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_5-1.json')"
                         },
                         {
-                            "file": "file-5-4_point_estimation.md",
+                            "file": "point_estimation.md",
                             "title": "Point Estimation",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-4_point_estimation.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-4_point_estimation.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-4_point_estimation.md",
+                            "filePath": "bignumber-material/SPR/mod5/point_estimation.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/point_estimation.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/point_estimation.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-5-5_point_estimation_example.py",
+                            "file": "point_estimation_example.py",
                             "title": "Point Estimation Example",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-5_point_estimation_example.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-5_point_estimation_example.py",
+                            "filePath": "bignumber-material/SPR/mod5/point_estimation_example.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/point_estimation_example.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-5_point_estimation_example.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/point_estimation_example.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-5-6_quiz_5-2.ba",
+                            "file": "quiz_5-2.ba",
                             "title": "Quiz 5-2",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-6_quiz_5-2.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-6_quiz_5-2.ba",
-                            "assessment": "load('./file-5-6_quiz_5-2.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod5/quiz_5-2.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/quiz_5-2.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_5-2.json')"
                         }, {
-                            "file": "file-5-7_confidence_intervals.md",
+                            "file": "confidence_intervals.md",
                             "title": "Confidence Intervals",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-7_confidence_intervals.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-7_confidence_intervals.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-7_confidence_intervals.md",
+                            "filePath": "bignumber-material/SPR/mod5/confidence_intervals.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/confidence_intervals.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/confidence_intervals.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-5-8_quiz_5-3.ba",
+                            "file": "quiz_5-3.ba",
                             "title": "Quiz 5-3",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-8_quiz_5-3.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-8_quiz_5-3.ba",
-                            "assessment": "load('./file-5-8_quiz_5-3.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod5/quiz_5-3.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/quiz_5-3.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_5-3.json')"
                         }, {
-                            "file": "file-5-9_confidence_intervals_in_regression.py",
+                            "file": "confidence_intervals_in_regression.py",
                             "title": "Confidence Intervals in Regression",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-9_confidence_intervals_in_regression.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-9_confidence_intervals_in_regression.py",
+                            "filePath": "bignumber-material/SPR/mod5/confidence_intervals_in_regression.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/confidence_intervals_in_regression.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-9_confidence_intervals_in_regression.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/confidence_intervals_in_regression.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-5-10_significance_testing.md",
+                            "file": "significance_testing.md",
                             "title": "Significance Testing",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-10_significance_testing.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-10_significance_testing.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-10_significance_testing.md",
+                            "filePath": "bignumber-material/SPR/mod5/significance_testing.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/significance_testing.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/significance_testing.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-5-11_hypothesis_testing_concepts.md",
+                            "file": "hypothesis_testing_concepts.md",
                             "title": "Hypothesis Testing Concepts",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-11_hypothesis_testing_concepts.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-11_hypothesis_testing_concepts.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-11_hypothesis_testing_concepts.md",
+                            "filePath": "bignumber-material/SPR/mod5/hypothesis_testing_concepts.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/hypothesis_testing_concepts.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/hypothesis_testing_concepts.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-5-12_quiz_5-4.ba",
+                            "file": "quiz_5-4.ba",
                             "title": "Quiz 5-4",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-12_quiz_5-4.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-12_quiz_5-4.ba",
-                            "assessment": "load('./file-5-12_quiz_5-4.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod5/quiz_5-4.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/quiz_5-4.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_5-4.json')"
                         }, {
-                            "file": "file-5-13_t-test.md",
+                            "file": "t-test.md",
                             "title": "T-Test",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-13_t-test.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-13_t-test.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-13_t-test.md",
+                            "filePath": "bignumber-material/SPR/mod5/t-test.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/t-test.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/t-test.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-5-14_t-test_example.py",
+                            "file": "t-test_example.py",
                             "title": "T-Test Example",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-14_t-test_example.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-14_t-test_example.py",
+                            "filePath": "bignumber-material/SPR/mod5/t-test_example.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/t-test_example.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-14_t-test_example.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/t-test_example.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-5-15_z-test.md",
+                            "file": "z-test.md",
                             "title": "Z-Test",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-15_z-test.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-15_z-test.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-15_z-test.md",
+                            "filePath": "bignumber-material/SPR/mod5/z-test.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/z-test.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/z-test.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-5-16_z-table.md",
+                            "file": "z-table.md",
                             "title": "Z-Table",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-16_z-table.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-16_z-table.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-16_z-table.md",
+                            "filePath": "bignumber-material/SPR/mod5/z-table.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/z-table.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/z-table.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-5-17_chi-square_test.py",
+                            "file": "chi-square_test.py",
                             "title": "Chi-Square Test",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-17_chi-square_test.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-17_chi-square_test.py",
+                            "filePath": "bignumber-material/SPR/mod5/chi-square_test.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/chi-square_test.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-17_chi-square_test.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/chi-square_test.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-5-18_quiz_5-5.ba",
+                            "file": "quiz_5-5.ba",
                             "title": "Quiz 5-5",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-18_quiz_5-5.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-18_quiz_5-5.ba",
-                            "assessment": "load('./file-5-18_quiz_5-5.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod5/quiz_5-5.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/quiz_5-5.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_5-5.json')"
                         }, {
-                            "file": "file-5-19_anova.md",
+                            "file": "anova.md",
                             "title": "ANOVA",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-19_anova.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-19_anova.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-19_anova.md",
+                            "filePath": "bignumber-material/SPR/mod5/anova.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/anova.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/anova.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-5-20_anova_example.py",
+                            "file": "anova_example.py",
                             "title": "ANOVA Example",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-20_anova_example.py",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-20_anova_example.py",
+                            "filePath": "bignumber-material/SPR/mod5/anova_example.py",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/anova_example.py",
                             "code": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-20_anova_example.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/anova_example.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-5-21_quiz_5-6.ba",
+                            "file": "quiz_5-6.ba",
                             "title": "Quiz 5-6",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-21_quiz_5-6.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-21_quiz_5-6.ba",
-                            "assessment": "load('./file-5-21_quiz_5-6.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod5/quiz_5-6.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/quiz_5-6.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_5-6.json')"
                         }, {
-                            "file": "file-5-22_nonparametric_tests.md",
+                            "file": "nonparametric_tests.md",
                             "title": "Nonparametric Tests",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-22_nonparametric_tests.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-22_nonparametric_tests.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-22_nonparametric_tests.md",
+                            "filePath": "bignumber-material/SPR/mod5/nonparametric_tests.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/nonparametric_tests.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod5/nonparametric_tests.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-5-23_quiz_5-7.ba",
+                            "file": "quiz_5-7.ba",
                             "title": "Quiz 5-7",
-                            "filePath": "bignumber-material/SPR/mod5/file-5-23_quiz_5-7.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod5/file-5-23_quiz_5-7.ba",
-                            "assessment": "load('./file-5-23_quiz_5-7.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod5/quiz_5-7.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod5/quiz_5-7.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_5-7.json')"
                         }
                     ]
                 }, {
@@ -2439,134 +3089,211 @@
                     "section": "Module 7",
                     "children": [
                         {
-                            "file": "file-7-1_overview.md",
+                            "file": "overview.md",
                             "title": "Overview",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-1_overview.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-1_overview.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-1_overview.md",
+                            "filePath": "bignumber-material/SPR/mod7/overview.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/overview.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/overview.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-7-2_special_functions.md",
+                            "file": "special_functions.md",
                             "title": "Special Functions",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-2_special_functions.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-2_special_functions.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-2_special_functions.md",
+                            "filePath": "bignumber-material/SPR/mod7/special_functions.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/special_functions.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/special_functions.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-7-3_quiz_7-1.ba",
+                            "file": "quiz_7-1.ba",
                             "title": "Quiz 7-1",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-3_quiz_7-1.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-3_quiz_7-1.ba",
-                            "assessment": "load('./file-7-3_quiz_7-1.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod7/quiz_7-1.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/quiz_7-1.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_7-1.json')"
                         },
                         {
-                            "file": "file-7-4_exponental_function.md",
+                            "file": "exponental_function.md",
                             "title": "Exponental Function",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-4_exponental_function.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-4_exponental_function.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-4_exponental_function.md",
+                            "filePath": "bignumber-material/SPR/mod7/exponental_function.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/exponental_function.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/exponental_function.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-7-5_quiz_7-2.ba",
+                            "file": "quiz_7-2.ba",
                             "title": "Quiz 7-2",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-5_quiz_7-2.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-5_quiz_7-2.ba",
-                            "assessment": "load('./file-7-5_quiz_7-2.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod7/quiz_7-2.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/quiz_7-2.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_7-2.json')"
                         }, {
-                            "file": "file-7-6_gamma_functions.md",
+                            "file": "gamma_functions.md",
                             "title": "Gamma Functions",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-6_gamma_functions.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-6_gamma_functions.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-6_gamma_functions.md",
+                            "filePath": "bignumber-material/SPR/mod7/gamma_functions.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/gamma_functions.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/gamma_functions.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-7-7_quiz_7-3.ba",
+                            "file": "quiz_7-3.ba",
                             "title": "Quiz 7-3",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-7_quiz_7-3.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-7_quiz_7-3.ba",
-                            "assessment": "load('./file-7-7_quiz_7-3.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod7/quiz_7-3.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/quiz_7-3.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_7-3.json')"
                         }, {
-                            "file": "file-7-8_transforms.md",
+                            "file": "transforms.md",
                             "title": "Transforms",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-8_transforms.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-8_transforms.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-8_transforms.md",
+                            "filePath": "bignumber-material/SPR/mod7/transforms.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/transforms.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/transforms.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-7-9_quiz_7-4.ba",
+                            "file": "quiz_7-4.ba",
                             "title": "Quiz 7-4",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-9_quiz_7-4.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-9_quiz_7-4.ba",
-                            "assessment": "load('./file-7-9_quiz_7-4.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod7/quiz_7-4.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/quiz_7-4.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_7-4.json')"
                         }, {
-                            "file": "file-7-10_definite_integrals.md",
+                            "file": "definite_integrals.md",
                             "title": "Definite Integrals",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-10_definite_integrals.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-10_definite_integrals.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-10_definite_integrals.md",
+                            "filePath": "bignumber-material/SPR/mod7/definite_integrals.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/definite_integrals.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/definite_integrals.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-7-11_indefinite_integrals.md",
+                            "file": "indefinite_integrals.md",
                             "title": "Indefinite Integrals",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-11_indefinite_integrals.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-11_indefinite_integrals.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-11_indefinite_integrals.md",
+                            "filePath": "bignumber-material/SPR/mod7/indefinite_integrals.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/indefinite_integrals.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/indefinite_integrals.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-7-12_improper_intergals.md",
+                            "file": "improper_intergals.md",
                             "title": "Improper Intergals",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-12_improper_intergals.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-12_improper_intergals.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-12_improper_intergals.md",
+                            "filePath": "bignumber-material/SPR/mod7/improper_intergals.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/improper_intergals.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/improper_intergals.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-7-13_gaussian_integrals.md",
+                            "file": "gaussian_integrals.md",
                             "title": "Gaussian Integrals",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-13_gaussian_integrals.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-13_gaussian_integrals.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-13_gaussian_integrals.md",
+                            "filePath": "bignumber-material/SPR/mod7/gaussian_integrals.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/gaussian_integrals.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/gaussian_integrals.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-7-14_quiz_7-5.ba",
+                            "file": "quiz_7-5.ba",
                             "title": "Quiz 7-5",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-14_quiz_7-5.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-14_quiz_7-5.ba",
-                            "assessment": "load('./file-7-14_quiz_7-5.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod7/quiz_7-5.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/quiz_7-5.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_7-5.json')"
                         }, {
-                            "file": "file-7-15_complex_numbers.md",
+                            "file": "complex_numbers.md",
                             "title": "Complex Numbers",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-15_complex_numbers.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-15_complex_numbers.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-15_complex_numbers.md",
+                            "filePath": "bignumber-material/SPR/mod7/complex_numbers.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/complex_numbers.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/complex_numbers.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-7-16_quiz_7-6.ba",
+                            "file": "quiz_7-6.ba",
                             "title": "Quiz 7-6",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-16_quiz_7-6.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-16_quiz_7-6.ba",
-                            "assessment": "load('./file-7-16_quiz_7-6.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod7/quiz_7-6.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/quiz_7-6.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_7-6.json')"
                         }, {
-                            "file": "file-7-17_matrix_algebra.md",
+                            "file": "matrix_algebra.md",
                             "title": "Matrix Algebra",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-17_matrix_algebra.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-17_matrix_algebra.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-17_matrix_algebra.md",
+                            "filePath": "bignumber-material/SPR/mod7/matrix_algebra.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/matrix_algebra.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod7/matrix_algebra.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-7-18_quiz_7-7.ba",
+                            "file": "quiz_7-7.ba",
                             "title": "Quiz 7-7",
-                            "filePath": "bignumber-material/SPR/mod7/file-7-18_quiz_7-7.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod7/file-7-18_quiz_7-7.ba",
-                            "assessment": "load('./file-7-18_quiz_7-7.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod7/quiz_7-7.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod7/quiz_7-7.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_7-7.json')"
                         }
                     ]
                 }, {
@@ -2574,35 +3301,46 @@
                     "section": "Module 8",
                     "children": [
                         {
-                            "file": "file-8-1_subjective_probability.md",
+                            "file": "subjective_probability.md",
                             "title": "Subjective Probability",
-                            "filePath": "bignumber-material/SPR/mod8/file-8-1_subjective_probability.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod8/file-8-1_subjective_probability.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod8/file-8-1_subjective_probability.md",
+                            "filePath": "bignumber-material/SPR/mod8/subjective_probability.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/subjective_probability.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod8/subjective_probability.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-8-2_joint_and_marginal_probabilities.md",
+                            "file": "joint_and_marginal_probabilities.md",
                             "title": "Joint and Marginal Probabilities",
-                            "filePath": "bignumber-material/SPR/mod8/file-8-2_joint_and_marginal_probabilities.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod8/file-8-2_joint_and_marginal_probabilities.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod8/file-8-2_joint_and_marginal_probabilities.md",
+                            "filePath": "bignumber-material/SPR/mod8/joint_and_marginal_probabilities.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/joint_and_marginal_probabilities.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod8/joint_and_marginal_probabilities.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-8-3_quiz_8-1.ba",
+                            "file": "quiz_8-1.ba",
                             "title": "Quiz 8-1",
-                            "filePath": "bignumber-material/SPR/mod8/file-8-3_quiz_8-1.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod8/file-8-3_quiz_8-1.ba",
-                            "assessment": "load('./file-8-3_quiz_8-1.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod8/quiz_8-1.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/quiz_8-1.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_8-1.json')"
                         },
                         {
-                            "file": "file-8-4_conditional_probabilties.md",
+                            "file": "conditional_probabilties.md",
                             "title": "Conditional Probabilties",
-                            "filePath": "bignumber-material/SPR/mod8/file-8-4_conditional_probabilties.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod8/file-8-4_conditional_probabilties.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod8/file-8-4_conditional_probabilties.md",
+                            "filePath": "bignumber-material/SPR/mod8/conditional_probabilties.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/conditional_probabilties.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod8/conditional_probabilties.md",
                             "duration": " 0mins"
                         }, {
                             "file": "https://player.vimeo.com/video/789268973?h=24b7193ca3",
@@ -2613,18 +3351,29 @@
                             "description": " In this video, we'll look at the alebraic variations of the Bayes theorem and explain the terms that go into the formulae of the Bayes Theorem.",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-8-6_quiz_8-2.ba",
+                            "file": "quiz_8-2.ba",
                             "title": "Quiz 8-2",
-                            "filePath": "bignumber-material/SPR/mod8/file-8-6_quiz_8-2.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod8/file-8-6_quiz_8-2.ba",
-                            "assessment": "load('./file-8-6_quiz_8-2.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod8/quiz_8-2.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/quiz_8-2.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_8-2.json')"
                         }, {
-                            "file": "file-8-7_bayesian_inference_example.md",
+                            "file": "bayesian_inference_example.md",
                             "title": "Bayesian Inference Example",
-                            "filePath": "bignumber-material/SPR/mod8/file-8-7_bayesian_inference_example.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod8/file-8-7_bayesian_inference_example.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod8/file-8-7_bayesian_inference_example.md",
+                            "filePath": "bignumber-material/SPR/mod8/bayesian_inference_example.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/bayesian_inference_example.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod8/bayesian_inference_example.md",
                             "duration": " 0mins"
                         }, {
                             "file": "MLE",
@@ -2632,22 +3381,33 @@
                             "filePath": "http://localhost:3000/MLE",
                             "url": "http://localhost:3000/MLE",
                             "math_viz": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod8/file-8-8_mle.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod8/mle.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-8-9_map.md",
+                            "file": "map.md",
                             "title": "MAP",
-                            "filePath": "bignumber-material/SPR/mod8/file-8-9_map.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod8/file-8-9_map.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod8/file-8-9_map.md",
+                            "filePath": "bignumber-material/SPR/mod8/map.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/map.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod8/map.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-8-10_quiz_8-3.ba",
+                            "file": "quiz_8-3.ba",
                             "title": "Quiz 8-3",
-                            "filePath": "bignumber-material/SPR/mod8/file-8-10_quiz_8-3.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod8/file-8-10_quiz_8-3.ba",
-                            "assessment": "load('./file-8-10_quiz_8-3.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod8/quiz_8-3.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod8/quiz_8-3.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_8-3.json')"
                         }
                     ]
                 }, {
@@ -2655,49 +3415,71 @@
                     "section": "Module 9",
                     "children": [
                         {
-                            "file": "file-9-1_overview.md",
+                            "file": "overview.md",
                             "title": "Overview",
-                            "filePath": "bignumber-material/SPR/mod9/file-9-1_overview.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-1_overview.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-1_overview.md",
+                            "filePath": "bignumber-material/SPR/mod9/overview.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/overview.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/overview.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-9-2_bayes_factor.md",
+                            "file": "bayes_factor.md",
                             "title": "Bayes Factor",
-                            "filePath": "bignumber-material/SPR/mod9/file-9-2_bayes_factor.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-2_bayes_factor.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-2_bayes_factor.md",
+                            "filePath": "bignumber-material/SPR/mod9/bayes_factor.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/bayes_factor.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/bayes_factor.md",
                             "duration": " 0mins"
                         },
                         {
-                            "file": "file-9-3_quiz_9-1.ba",
+                            "file": "quiz_9-1.ba",
                             "title": "Quiz 9-1",
-                            "filePath": "bignumber-material/SPR/mod9/file-9-3_quiz_9-1.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-3_quiz_9-1.ba",
-                            "assessment": "load('./file-9-3_quiz_9-1.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod9/quiz_9-1.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/quiz_9-1.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_9-1.json')"
                         },
                         {
-                            "file": "file-9-4_bic.md",
+                            "file": "bic.md",
                             "title": "BIC",
-                            "filePath": "bignumber-material/SPR/mod9/file-9-4_bic.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-4_bic.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-4_bic.md",
+                            "filePath": "bignumber-material/SPR/mod9/bic.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/bic.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/bic.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-9-5_quiz_9-2.ba",
+                            "file": "quiz_9-2.ba",
                             "title": "Quiz 9-2",
-                            "filePath": "bignumber-material/SPR/mod9/file-9-5_quiz_9-2.ba",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-5_quiz_9-2.ba",
-                            "assessment": "load('./file-9-5_quiz_9-2.json')",
-                            "duration": " 0mins"
+                            "filePath": "bignumber-material/SPR/mod9/quiz_9-2.ba",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/quiz_9-2.ba",
+                            "assessment": {
+                                "fileName": "",
+                                "file": "",
+                                "title": "",
+                                "duration": "",
+                                "quiz": "",
+                                "url": "",
+                                "assessmentDetails": {
+                                    "organization": []
+                                }
+                            },
+                            "duration": " 0mins",
+                            "assessment_ref": "load('./quiz_9-2.json')"
                         }, {
-                            "file": "file-9-6_multivariate_gaussian_distribution.md",
+                            "file": "multivariate_gaussian_distribution.md",
                             "title": "Multivariate Gaussian Distribution",
-                            "filePath": "bignumber-material/SPR/mod9/file-9-6_multivariate_gaussian_distribution.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-6_multivariate_gaussian_distribution.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-6_multivariate_gaussian_distribution.md",
+                            "filePath": "bignumber-material/SPR/mod9/multivariate_gaussian_distribution.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/multivariate_gaussian_distribution.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/multivariate_gaussian_distribution.md",
                             "duration": " 0mins"
                         }, {
                             "file": "Mixture",
@@ -2705,42 +3487,42 @@
                             "filePath": "http://localhost:3000/Mixture",
                             "url": "http://localhost:3000/Mixture",
                             "math_viz": true,
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-7_mixture_models.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/mixture_models.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-9-8_markov_process.md",
+                            "file": "markov_process.md",
                             "title": "Markov Process",
-                            "filePath": "bignumber-material/SPR/mod9/file-9-8_markov_process.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-8_markov_process.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-8_markov_process.md",
+                            "filePath": "bignumber-material/SPR/mod9/markov_process.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/markov_process.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/markov_process.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-9-9_markov_chain.md",
+                            "file": "markov_chain.md",
                             "title": "Markov Chain",
-                            "filePath": "bignumber-material/SPR/mod9/file-9-9_markov_chain.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-9_markov_chain.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-9_markov_chain.md",
+                            "filePath": "bignumber-material/SPR/mod9/markov_chain.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/markov_chain.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/markov_chain.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-9-10_parameter_distributions.md",
+                            "file": "parameter_distributions.md",
                             "title": "Parameter Distributions",
-                            "filePath": "bignumber-material/SPR/mod9/file-9-10_parameter_distributions.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-10_parameter_distributions.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-10_parameter_distributions.md",
+                            "filePath": "bignumber-material/SPR/mod9/parameter_distributions.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/parameter_distributions.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/parameter_distributions.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-9-11_monte-carlo_markov_chains.md",
+                            "file": "monte-carlo_markov_chains.md",
                             "title": "Monte-Carlo Markov Chains",
-                            "filePath": "bignumber-material/SPR/mod9/file-9-11_monte-carlo_markov_chains.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-11_monte-carlo_markov_chains.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-11_monte-carlo_markov_chains.md",
+                            "filePath": "bignumber-material/SPR/mod9/monte-carlo_markov_chains.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/monte-carlo_markov_chains.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/monte-carlo_markov_chains.md",
                             "duration": " 0mins"
                         }, {
-                            "file": "file-9-12_metropolis-hastings_algorithm.md",
+                            "file": "metropolis-hastings_algorithm.md",
                             "title": "Metropolis-Hastings Algorithm",
-                            "filePath": "bignumber-material/SPR/mod9/file-9-12_metropolis-hastings_algorithm.md",
-                            "url": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-12_metropolis-hastings_algorithm.md",
-                            "tutorial": "https://raw.githubusercontent.com/danyentezari/bignumber-material-generator/master/SPR/mod9/file-9-12_metropolis-hastings_algorithm.md",
+                            "filePath": "bignumber-material/SPR/mod9/metropolis-hastings_algorithm.md",
+                            "url": "http://localhost:3001/bignumber-material/SPR/mod9/metropolis-hastings_algorithm.md",
+                            "tutorial": "http://localhost:3001/bignumber-material/SPR/mod9/metropolis-hastings_algorithm.md",
                             "duration": " 0mins"
                         }
                     ]
