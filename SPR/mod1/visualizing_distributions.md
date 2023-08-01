@@ -20,7 +20,11 @@ As an example, have a look at Figure 1.
 
 <br/>
 
-<img src="./histogram.png" width="300">
+<iframe 
+    src="http://localhost:3000/PMF" 
+    height="442" width="450"
+    border=0
+/>
 
 **Figure 1: Histogram**
 
@@ -40,11 +44,13 @@ Here's an example of a density plot.
 
 <br/>
 
-<img src="./density.png" width="300" /> 
+<iframe 
+    src="http://localhost:3000/PDF" 
+    height="442" width="450"
+    border=0
+/>
 
 **Figure 2: Density**
-
-<br/>
 
 The first difference you'll notice is that we use a single curved line instead of the vertical bars. This is because a density plot is used to represent an infinite (i.e, non-discrete) number of distinct observations.
 
@@ -54,11 +60,9 @@ Try increasing the number of experiments in the figure below by dragging the sli
 <br/>
 
 <iframe 
-    src="http://localhost:3000/HistogramAndDensity?x=2" 
-    height="650" width="450"
+    src="http://localhost:3000/HistogramAndDensity?interactive=1" 
+    height="442" width="450"
     border=0
 />
 
 **Figure 3**
-
-<br/><br/>

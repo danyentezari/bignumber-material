@@ -32,8 +32,6 @@ So, side 3 landed 7 times; side 1 landed 3 times...etc.
 
 This is pretty straightforward, of course, but keep reading because this is the foundation for probability distributions!
 
-<br/>
-
 ### Relative Frequency Distribution
 
 A relative frequency distribution is one where the frequency of every observation is divided by the total. Look at the table below which has  changed **Table 1** from a frequency distribution to a relative frequency distribution.

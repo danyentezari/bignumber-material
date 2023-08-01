@@ -33,7 +33,7 @@ So, side 3 landed 7 times; side 1 landed 3 times...etc.
 
 This is pretty straightforward, of course, but keep reading because this is the foundation for probability distributions!
 
-<br/><br/>
+<br/>
 
 ## Relative Frequency Distribution
 

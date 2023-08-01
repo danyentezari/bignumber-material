@@ -6,6 +6,6 @@ So, for example, when the size of the sample is increased more and more, the mea
 
 <iframe 
     src="http://localhost:3000/LLN?" 
-    height="650" width="450"
+    height="442" width="450"
     border=0
 />
