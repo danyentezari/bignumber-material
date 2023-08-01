@@ -40,7 +40,7 @@ If the table is plotted as a graph, it would look like **Figure 4** below.
 
 <iframe 
     src="http://localhost:3000/DiscreteDist" 
-    height="442" width="450"
+    height="370" width="450"
     border=0
 />
 
@@ -54,7 +54,7 @@ A continuous probability distribution is a distribution of probabilities for a p
 
 <iframe 
     src="http://localhost:3000/ContinuousDist" 
-    height="442" width="450"
+    height="370" width="450"
     border=0
 />
 
