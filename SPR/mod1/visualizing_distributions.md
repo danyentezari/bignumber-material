@@ -22,8 +22,9 @@ As an example, have a look at Figure 1.
 
 <iframe 
     src="http://localhost:3000/PMF" 
-    height="442" width="450"
+    height="370" width="450"
     border=0
+    style="overflow: hidden"
 />
 
 **Figure 1: Histogram**
@@ -46,8 +47,9 @@ Here's an example of a density plot.
 
 <iframe 
     src="http://localhost:3000/PDF" 
-    height="442" width="450"
+    height="370" width="450"
     border=0
+    style="overflow: hidden"
 />
 
 **Figure 2: Density**
@@ -63,6 +65,7 @@ Try increasing the number of experiments in the figure below by dragging the sli
     src="http://localhost:3000/HistogramAndDensity?interactive=1" 
     height="442" width="450"
     border=0
+    style="overflow: hidden"
 />
 
 **Figure 3**
