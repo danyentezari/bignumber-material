@@ -24,4 +24,4 @@ In the meantime, consider a function to be something that allows you to run an a
 
 ### Tasks
 
-1. Remove the `#` next to the `print()` function and run the script. If you see
+1. Remove the `#` next to the `print()` function and run the script. If you see "Well done!" in the console, you have completed the first task.
