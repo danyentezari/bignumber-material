@@ -10,14 +10,15 @@ Altough there are countless introductory books and courses on probability theory
 
 We don't want to make that assumption here. So, here goes.
 
-Probability theory is the branch of mathematics about uncertainty and its calculation. 
+Probability theory is the branch of mathematics about uncertainty and its calculation. Because probability theory depeneds on counting outcomes, the set of outcomes, and measuring probabilities, it depends on other branches of mathematics such as combinatorics, abstract algebra, and calculus (or analysis, to be more general).
 
-The word probability itself refers to a number between 0 and 1, the magnitude of uncertainty about some outcome. Now, when there can be multiple possible outcomes from some experiment (e.g, rolling a dice), then that probability must be distributed across all the possible ourcomes.
+In other words, for you to be able to read and understand probability theory, you must have some foundation in related branches of mathematics (see **Figure 6** for some idea).
 
-All of these outcomes must be...
 
 <br/>
 
 <img src="../../SPR/mod1/probability-theory.jpg"
 style="min-width: 300px; width: 100%;"
 />
+
+**Figure 6**
