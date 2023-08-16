@@ -41,20 +41,16 @@ $$ {IQR} = Q3 - Q1 = 8 - 3 = 5$$
 
 Variance measures the average of the squared differences between each data point and the mean. It gives us an idea of how much the data points deviate from the mean.
 
-
 1. Find the mean (average) of the data: <br/>
-   $$\text{Mean} = \dfrac{3 + 3 + 3 + 4 + 6 + 8 + 8 + 9}{8} = \dfrac{44}{8} = 5.5$$
+$$\text{Mean} = \dfrac{3 + 3 + 3 + 4 + 6 + 8 + 8 + 9}{8} = \dfrac{44}{8} = 5.5$$
 
-<br/>
+2. Calculate the squared differences between each data point and the mean:
 
-2. Calculate the squared differences between each data point and the mean: <br/>
-   $$(3 - 5.5)^2, (3 - 5.5)^2, ... , (8 - 5.5)^2, (9 - 5.5)^2$$
-
-<br/>
+$$(3 - 5.5)^2, (3 - 5.5)^2, ... , (8 - 5.5)^2, (9 - 5.5)^2$$
 
 3. Calculate the average of the squared differences: <br/>
-   $$ \text{Variance} = \dfrac{(3 - 5.5)^2 + (3 - 5.5)^2 + ... + (8 - 5.5)^2 + (9 - 5.5)^2}{8}$$
-   $$ = \dfrac{44.5}{8} = 5.5625$$
+$$ \text{Variance} = \dfrac{(3 - 5.5)^2 + (3 - 5.5)^2 + ... + (8 - 5.5)^2 + (9 - 5.5)^2}{8}$$
+$$ = \dfrac{44.5}{8} = 5.5625$$
 
 <br/>
 
