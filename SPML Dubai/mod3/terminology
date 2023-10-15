@@ -1,0 +1,14 @@
+Regression
+- Forecast a specific quantity
+
+Classification
+- Divide all data points into one of two classes
+
+Clustering
+- Divide all data points into one of multiple classes
+
+Hyperparameter
+- Configuration of the model decided by the data scientist
+
+Parameter
+- Weights of variables calculated by the machine
