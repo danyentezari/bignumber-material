@@ -6067,6 +6067,24 @@
                             "vimeo": true,
                             "duration": "02:57:00",
                             "preview": true
+                        },
+                        {
+                            "file": "assignment_5.md",
+                            "title": "Assignment 5",
+                            "filePath": "bignumber-material/SPML Dubai/mod5/assignment_5.md",
+                            "url": "REACT_APP_BIGNUMBER_MATERIAL/bignumber-material/SPML Dubai/mod5/assignment_5.md",
+                            "tutorial": "REACT_APP_BIGNUMBER_MATERIAL/bignumber-material/SPML Dubai/mod5/assignment_5.md",
+                            "duration": "7mins",
+                            "preview": true,
+                            "open": true
+                        },
+                        {
+                            "file": "assignment_5",
+                            "title": "Assignment 5",
+                            "submission": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-5",
+                            "preview": true,
+                            "open": true
                         }
                     ]
                 },
@@ -6100,6 +6118,24 @@
                             "vimeo": true,
                             "duration": "02:29:00",
                             "preview": true
+                        },
+                        {
+                            "file": "assignment_6.md",
+                            "title": "Assignment 6",
+                            "filePath": "bignumber-material/SPML Dubai/mod6/assignment_6.md",
+                            "url": "REACT_APP_BIGNUMBER_MATERIAL/bignumber-material/SPML Dubai/mod6/assignment_6.md",
+                            "tutorial": "REACT_APP_BIGNUMBER_MATERIAL/bignumber-material/SPML Dubai/mod6/assignment_6.md",
+                            "duration": "7mins",
+                            "preview": true,
+                            "open": true
+                        },
+                        {
+                            "file": "assignment_6",
+                            "title": "Assignment 6",
+                            "submission": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-6",
+                            "preview": true,
+                            "open": true
                         }
                     ]
                 },
@@ -6133,6 +6169,24 @@
                             "vimeo": true,
                             "duration": "02:29:00",
                             "preview": true
+                        },
+                        {
+                            "file": "assignment_7.md",
+                            "title": "Assignment 7",
+                            "filePath": "bignumber-material/SPML Dubai/mod7/assignment_7.md",
+                            "url": "REACT_APP_BIGNUMBER_MATERIAL/bignumber-material/SPML Dubai/mod7/assignment_7.md",
+                            "tutorial": "REACT_APP_BIGNUMBER_MATERIAL/bignumber-material/SPML Dubai/mod7/assignment_7.md",
+                            "duration": "7mins",
+                            "preview": true,
+                            "open": true
+                        },
+                        {
+                            "file": "assignment_7",
+                            "title": "Assignment 7",
+                            "submission": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-7",
+                            "preview": true,
+                            "open": true
                         }
                     ]
                 },
@@ -6166,6 +6220,24 @@
                             "vimeo": true,
                             "duration": "02:38:33",
                             "preview": true
+                        },
+                        {
+                            "file": "assignment_8.md",
+                            "title": "Assignment 8",
+                            "filePath": "bignumber-material/SPML Dubai/mod8/assignment_8.md",
+                            "url": "REACT_APP_BIGNUMBER_MATERIAL/bignumber-material/SPML Dubai/mod8/assignment_8.md",
+                            "tutorial": "REACT_APP_BIGNUMBER_MATERIAL/bignumber-material/SPML Dubai/mod8/assignment_8.md",
+                            "duration": "7mins",
+                            "preview": true,
+                            "open": true
+                        },
+                        {
+                            "file": "assignment_8",
+                            "title": "Assignment 8",
+                            "submission": true,
+                            "url": "/dashboard/assignment?courseID=spml&name=assignment-8",
+                            "preview": true,
+                            "open": true
                         }
                     ]
                 }
