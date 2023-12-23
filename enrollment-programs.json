@@ -6238,6 +6238,30 @@
                             "url": "/dashboard/assignment?courseID=spml&name=assignment-8",
                             "preview": true,
                             "open": true
+                        },
+                        {
+                            "fileName": "Module-9",
+                            "section": "Module 9",
+                            "children": [
+                                {
+                                    "file": "capstone_project.md",
+                                    "title": "Capstone Project",
+                                    "filePath": "bignumber-material/SPML Dubai/mod9/capstone_project.md",
+                                    "url": "REACT_APP_BIGNUMBER_MATERIAL/bignumber-material/SPML Dubai/mod9/capstone_project.md",
+                                    "tutorial": "REACT_APP_BIGNUMBER_MATERIAL/bignumber-material/SPML Dubai/mod9/capstone_project.md",
+                                    "duration": "7mins",
+                                    "preview": true,
+                                    "open": true
+                                },
+                                {
+                                    "file": "capstone-project",
+                                    "title": "Capstone Project",
+                                    "submission": true,
+                                    "url": "/dashboard/assignment?courseID=spml&name=capstone-project",
+                                    "preview": true,
+                                    "open": true
+                                }
+                            ]
                         }
                     ]
                 }
