@@ -3878,7 +3878,9 @@
               "url": "REACT_APP_BIGNUMBER_MATH_VIZ/MLE",
               "math_viz": true,
               "tutorial": "REACT_APP_BIGNUMBER_MATERIAL/bignumber-material/SPR/mod8/mle.md",
-              "duration": "5mins"
+              "duration": "5mins",
+              "open": true,
+              "preview": true
             },
             {
               "file": "map.md",
