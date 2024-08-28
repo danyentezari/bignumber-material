@@ -2,7 +2,7 @@
 
 <iframe 
     src="http://localhost:3000/MLE" 
-    height="370" width="450"
+    height="700" width="100%"
     border=0
     style="overflow: hidden"
 />
