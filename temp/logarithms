@@ -1,0 +1,96 @@
+Used for multiplying large numbers more quickly. Developed by John Napier. For example,
+
+$$8 \times 128 = 2^3 \times 2^7 = 2 ^ {10} = 1024$$
+
+You represent the integers you wish to multiply as powers of any number, $n$. In this example, we have $n=2$.
+
+Next, add up the exponents and lookup the table of logarithms to find answer (in this case, $2^{10}$) .
+
+To see logarithm tables and see how they were created, watch these videos by Numberphile
+
+- https://www.youtube.com/watch?v=VRzH4xB0GdM (part 1)
+- https://www.youtube.com/watch?v=vzV50goW_WM (part 2)
+
+#### Constructing the Logarithm Table
+
+John Napier spent 20 laborious years constructing the logarithm table.
+
+We will use the intuitive example given by Professor Bowley in the Numberphile episode to demonstrate the first three numbers of the logarithm table.
+
+We first select an arbitrary base, $a=1 - 0.1$. Now it is peculiar that this is the base as opposed to some natural number. But, as Professor Bowley demonstrated, this base will make it easier for us to compute the values without making overly laborious.
+
+#### Example 1
+
+Consider the logarithm base 2. How are these calculated by hand or machine?
+
+$\log_2(1) = 0$
+$\log_2(2) = 1$
+$\log_2(3) = 1.585$
+$\log_2(4) = 2$
+$\log_2(5) = 2.322$
+
+Evaluating base 2 using logarithms of another base (e.g, base $e$ or base $10$). This technique is called **Change of Base** (see proof).
+
+$$ \log_2(x) = \dfrac{\ln(x)}{\ln(2)} = \dfrac{\log_e(x)}{\log_e(2)} $$
+
+or
+
+$$\log_2(x) =\dfrac{\log_{10}(x)}{\log_{10}(2)} $$
+
+Note that $\log_e(n) = \ln(n)$.
+
+#### Proof for Change of Base
+
+Given,
+
+$$
+b^y = x
+$$
+
+or, equivalently
+
+$$
+x = b^y
+$$
+
+From the definition of logarithm
+
+$$
+\log_b(x) = y = \log_b(b^y) 
+$$
+
+Now, using a different base
+
+$$
+\log_a(b^y) = \log_a(x)
+$$
+
+By the Power Rule [^1].
+
+$$
+y \times \log_a(b) = \log_a(x)
+$$
+
+Isolate, $y$
+
+$$
+y = \frac{\log_a(x)}{\log_a(b)}
+$$
+
+Substitute $y$ for $\log_b(x)$
+
+$$
+\therefore \log_b(x) = \frac{\log_a(x)}{\log_a(b)}
+$$
+
+<br/>
+
+[^1]: Power Rule
+$$
+\log_a(x^p) = p \times \log_a(x) 
+$$
+
+## References
+
+1. D. Bressoud, _Calculus Reordered: A History of the Big Ideas_. Princeton, NJ, USA: Princeton University Press, 2019.
+2. L. Hogben, _Mathematics for the Millions_. London, UK: Allen & Unwin, 1937.

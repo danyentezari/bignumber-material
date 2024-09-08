@@ -14,7 +14,7 @@
 7 area of sector of circle
 8 jacobian
 9 vector differentiation
-
+1
 ### Tree
 
 <br/>
@@ -225,7 +225,36 @@
 > $\displaystyle \int_{-\infty}^{+\infty} e^{-x^2} \: dx = \sqrt{  \displaystyle \int_{0}^{2\pi} \displaystyle \int_{0}^{\infty} e^{-r^2} \: r \: dr \: d\theta}$ <br/>
 > Using Integrated Integral theorem, evaluate inner integral <br/>
 > $\qquad = \sqrt{ \displaystyle \int_{0}^{2\pi}  \Big [ -\dfrac{1}{2} e^{-r^2} \Big ]_{0}^{\infty} \:d\theta }$ <br/>
-> $\qquad =  \sqrt{ \displaystyle \int_{0}^{2\pi} \Big(  -\dfrac{1}{2} e^{-\infty^2} - \Big( -\dfrac{1}{2} e^{-0^2} \Big) \Big) \:d\theta }$ <br/>
+> $\qquad =  \sqrt{ \displaystyle \int_{0}^{2\pi} \Big(  -\dfrac{1}{2} e^{-\infty^2} - \Big( -\dfrac{1}{2} e^{-0^2}\Big) \Big) \:d\theta }$ <br/>
+
+
+>
+> Here, the expression within the paranthesis simplifies to $\dfrac{1}{2}$ because of the following:
+> 
+> **Term 1** 
+>
+> We have
+> 
+> $e^{-\infty^2} = e^{-\infty} \rightarrow 0$
+>
+> Therefore,
+> 
+> $ -\dfrac{1}{2} e^{-\infty^2} = -\dfrac{1}{2}0 = 0$
+>
+> <br/>
+>
+> **Term 2**
+>
+> We have 
+> 
+> $e^{0^2} = e^{0} = 1$
+>
+> Therefore,
+> 
+> $ - \Big( -\dfrac{1}{2} e^{-0^2} \Big) = \dfrac{1}{2} e^{-0^2} = \dfrac{1}{2}$
+> <br/>
+>
+
 > $\qquad = \sqrt{ \displaystyle \int_{0}^{2\pi} \dfrac{1}{2} \:d\theta} $ <br/>
 > $\qquad = \sqrt{ \quad \dfrac{1}{2} \Big ]_{0}^{2\pi} \quad } $ <br/>
 > $\qquad = \sqrt{ \dfrac{1}{2} 2\pi - \dfrac{1}{2}0 }$ <br/>
@@ -286,3 +315,5 @@ References:
 10. http://faculty.up.edu/wootton/calc2/section10.4.pdf
 11. https://www.math.stonybrook.edu/~ndang/mat126-fall20/sec_7.4.pdf
 12. J. Stewart..., Calculus...9th
+13. https://people.maths.bris.ac.uk/~mb13434/Stirling_DeMoivre_Laplace.pdflllkl
+14. https://healy.econ.ohio-state.edu/kcb/Ma103/Notes/Stirling.pdf
