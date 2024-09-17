@@ -33,15 +33,21 @@ Note the following notations,
 
 
 
-Variance [2, pp. 718]
+### Variance [2, pp. 718]
 
-$$\begin{equation} \text{Var}(\overline{Y}) = \dfrac{\sigma^2}{n} \end{equation} \tag{1}$$  
+The variance of the point estimate, $\bar{Y}$, is given by
+$$\text{Var}(\overline{Y}) = \dfrac{\sigma^2}{n} \qquad (1)$$
 
-Here we show the derivation of $(1)$.
+Here we show the derivation of $(1)$
+
+Given, 
 
 $\text{Var}(\overline{Y})$ 
 
+By definition of $\bar{Y}$,
+
 $ =\text{Var}\left(\dfrac{1}{n} \displaystyle \sum_{i=1}^{n} Y_i\right)$ 
+
 
 $ =\left(\dfrac{1}{n^2}\right) \text{Var} \left(\displaystyle \sum_{i=1}^{n} Y_i\right) $
 
@@ -57,4 +63,5 @@ $= \dfrac{\sigma^2}{n}$$
 
 ## References:
 
-1. J. Woolridge..., Econometrics
+[1] L. Wasserman, *All of Statistics*. 2nd ed. New York: Springer, 2005.
+[2] J. M. Wooldridge, *Introductory Econometrics: A Modern Approach*, 7th ed. Boston: Cengage Learning, 2020.
