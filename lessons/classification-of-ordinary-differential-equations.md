@@ -32,9 +32,9 @@ This is one of a number of lessons that will cover differential equations. First
 
 For example,
 
-$$\begin{equation} \dfrac{dv}{dt}+v\dfrac{k}{m}=g \end{equation}$$
+$$ \dfrac{dv}{dt}+v\dfrac{k}{m}=g \qquad (1)$$
 
-$$\begin{equation} \dfrac{d^{2}y}{dx^{2}}+2\dfrac{dy}{dx}=0 \end{equation}$$
+$$ \dfrac{d^{2}y}{dx^{2}}+2\dfrac{dy}{dx}=0 \qquad (2)$$
 
 
 Where $(1)$ and $(2)$ are first-order and second-order differential equations, respectively.
