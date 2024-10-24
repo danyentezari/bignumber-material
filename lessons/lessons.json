@@ -1,37 +1,44 @@
 {
-    "the-p-value-fishers-definition": {
-      "tag": "Statistics",
-      "title": "The P-Value: Fisher's Definition",
-      "description": "Learn about the p-value, its history, and how it is used in statistical significance testing.",
-      "duration": "6 minutes",
-      "status": "published"
-    },
-    "the-logarithm-function": {
-      "tag": "Fundamentals",
-      "title": "The Logarithm Function",
-      "description": "Learn about the logarithm function, its properties, and how to use it to solve problems.",
-      "duration": "15 minutes",
-      "status": "published"
-    },
-    "fourier-transform": {
-      "tag": "Signal Processing",
-      "title": "Fourier Transform",
-      "description": "Used to transform a signal from its time domain signal to its frequency domain signal.",
-      "duration": "6 minutes",
-      "status": "draft"
-    },
-    "maximum-likelihood": {
-      "tag": "Probability Theory",
-      "title": "Maximum Likelihood",
-      "description": "Used to estimate the parameters of a probability distribution by maximizing the likelihood function.",
-      "duration": "6 minutes",
-      "status": "published"
-    },
-    "abstract-algebra-a-quick-introduction": {
-      "tag": "Abstract Algebra",
-      "title": "Abstract Algebra: A Quick Introduction",
-      "description": "Used to study the properties of groups, which are sets with a binary operation that satisfies certain axioms.",
-      "duration": "6 minutes",
-      "status": "published"
-    }
+  "classification-of-ordinary-differential-equations": {
+    "tag": "Statistics",
+    "title": "Classification of Ordinary Differential Equations",
+    "description": "A short lesson going over the types of ordinary differentual equations.",
+    "duration": "6 minutes",
+    "status": "published"
+  },
+  "the-p-value-fishers-definition": {
+    "tag": "Statistics",
+    "title": "The P-Value: Fisher's Definition",
+    "description": "Learn about the p-value, its history, and how it is used in statistical significance testing.",
+    "duration": "6 minutes",
+    "status": "published"
+  },
+  "the-logarithm-function": {
+    "tag": "Fundamentals",
+    "title": "The Logarithm Function",
+    "description": "Learn about the logarithm function, its properties, and how to use it to solve problems.",
+    "duration": "15 minutes",
+    "status": "published"
+  },
+  "fourier-transform": {
+    "tag": "Signal Processing",
+    "title": "Fourier Transform",
+    "description": "Used to transform a signal from its time domain signal to its frequency domain signal.",
+    "duration": "6 minutes",
+    "status": "draft"
+  },
+  "maximum-likelihood": {
+    "tag": "Probability Theory",
+    "title": "Maximum Likelihood",
+    "description": "Used to estimate the parameters of a probability distribution by maximizing the likelihood function.",
+    "duration": "6 minutes",
+    "status": "published"
+  },
+  "abstract-algebra-a-quick-introduction": {
+    "tag": "Abstract Algebra",
+    "title": "Abstract Algebra: A Quick Introduction",
+    "description": "Used to study the properties of groups, which are sets with a binary operation that satisfies certain axioms.",
+    "duration": "6 minutes",
+    "status": "published"
+  }
 }
