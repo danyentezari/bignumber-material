@@ -51,7 +51,7 @@ where:
   
 If $f(x) = 0$, the equation is homogeneous.
 
-The linearity refers to how each term is a product of a function or its derivatives with a coefficient.
+The linearity refers to how each term is a product of (1) a coefficient and (2) the function or its derivatives.
 
 <br/>
 
