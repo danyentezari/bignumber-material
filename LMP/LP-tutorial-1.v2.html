@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>LP-tutorial-1</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1 id="linear-programming-example">Linear Programming Example</h1>
+<h4 id="background">Background</h4>
+<p>A sovereign state (breadbasket) that exports grain to importing
+countries is looking to export their commodity to the international
+market. They need container liners to ship the grain export.</p>
+<p>The government contracts a state-owned manufacturer of agriculture
+equipment to deliver the right containers for this export.</p>
+<p>The manufacturer produces two containers liners for storing and
+transporting grain: 1. <img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20C_s%3D"
+alt="C_s=" title="C_s=" class="math inline" /> standard container 2.
+<img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20C_p%3D"
+alt="C_p=" title="C_p=" class="math inline" /> premium container</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20C_s" alt="C_s"
+title="C_s" class="math inline" /> container can contain 100kg of barley
+and 100kg of of wheat.</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20C_p" alt="C_p"
+title="C_p" class="math inline" /> container can contain 200kg of barley
+and 100kg of of wheat.</p>
+<p>The manufacturer has now recieved a qoute for - <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%203000%20%5Ctimes%2010%5E4"
+alt="3000 \times 10^4" title="3000 \times 10^4" class="math inline" />
+tonnes of wheat and - <img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%204000%20%5Ctimes%2010%5E4"
+alt="4000 \times 10^4" title="4000 \times 10^4" class="math inline" />
+tonnes of barley.</p>
+<p>They will earn 80 cents on the dollar for <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20C_p" alt="C_p"
+title="C_p" class="math inline" /> and 70 cents for <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20C_s" alt="C_s"
+title="C_s" class="math inline" />.</p>
+<p>They must now deliver the right combination of containers to meet the
+requirements of the export and also maximize their profit.</p>
+<p><br/></p>
+<h4 id="problem-tasks">Problem Tasks</h4>
+<ol type="1">
+<li>Express the objective function for as a function of the two
+variables (<img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20C_p" alt="C_p"
+title="C_p" class="math inline" />, <img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20C_s" alt="C_s"
+title="C_s" class="math inline" />)</li>
+<li>Maximize the object function given the constraints</li>
+</ol>
+<h4 id="solution-to-problem-task">Solution to Problem Task</h4>
+<p>We express the objective function as follows &gt; <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20f%28C_p%2CC_s%29%20%3D%2080C_p%20%2B%2070C_s"
+alt="f(C_p,C_s) = 80C_p + 70C_s" title="f(C_p,C_s) = 80C_p + 70C_s"
+class="math inline" /></p>
+<p><br/></p>
+<p>To simplify the notation of this LP problem, let &gt; <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20x%3DC_p"
+alt="x=C_p" title="x=C_p" class="math inline" /> &gt; <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20y%20%3D%20C_s"
+alt="y = C_s" title="y = C_s" class="math inline" /></p>
+<p><br/></p>
+<p>Thus, we will rewrite the objective function</p>
+<blockquote>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20f%28x%2Cy%29%20%3D%2080x%20%2B%2070y"
+alt="f(x,y) = 80x + 70y" title="f(x,y) = 80x + 70y"
+class="math inline" /></p>
+</blockquote>
+<p>With constraints</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20100x%20%2B%20100y%20%5Cleq%203000%20%5Ctimes%2010%5E4"
+alt="100x + 100y \leq 3000 \times 10^4"
+title="100x + 100y \leq 3000 \times 10^4" class="math inline" /> and
+<img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20x%20%5Cgeq%200"
+alt="x \geq 0" title="x \geq 0" class="math inline" /> (for wheat)</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20200x%20%2B%20100y%20%5Cleq%204000%20%5Ctimes%2010%5E4"
+alt="200x + 100y \leq 4000 \times 10^4"
+title="200x + 100y \leq 4000 \times 10^4" class="math inline" /> and
+<img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20y%20%5Cgeq%200"
+alt="y \geq 0" title="y \geq 0" class="math inline" /> (for barley)</p>
+<p><br></p>
+<h4 id="lp-tasks">LP Tasks</h4>
+<ol type="1">
+<li>Find the feasible region for objective function</li>
+<li>Find the best point for objective function</li>
+</ol>
+<p>Formally, we express the LP problem as follows</p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 68%" />
+</colgroup>
+<thead>
+<tr>
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximize</td>
+<td><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20f%28x%2Cy%29%20%3D%2080x%20%2B%2070y"
+alt="f(x,y) = 80x + 70y" title="f(x,y) = 80x + 70y"
+class="math inline" /></td>
+</tr>
+<tr>
+<td>Subject to</td>
+<td><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20100x%20%2B%20100y%20%5Cleq%203000%20%5Ctimes%2010%5E4"
+alt="100x + 100y \leq 3000 \times 10^4"
+title="100x + 100y \leq 3000 \times 10^4" class="math inline" />     
+<img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20x%20%5Cgeq%200"
+alt="x \geq 0" title="x \geq 0" class="math inline" /> <br/> <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20200x%20%2B%20100y%20%5Cleq%204000%20%5Ctimes%2010%5E4"
+alt="200x + 100y \leq 4000 \times 10^4"
+title="200x + 100y \leq 4000 \times 10^4" class="math inline" />     
+<img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20y%20%5Cgeq%200"
+alt="y \geq 0" title="y \geq 0" class="math inline" /></td>
+</tr>
+</tbody>
+</table>
+<p><br/> #### Solution to Task 1</p>
+<p>To find the feasible region, we must find the roots of the constraint
+equations to find the point(s) outlining the feasible region.</p>
+<p>Express the constraints as equations. Then, solve for roots, <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20x%2Cy"
+alt="x,y" title="x,y" class="math inline" />.</p>
+<blockquote>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20200x%20%2B%20100y%20%3D%204000%5E%7B%7D%20%5Ctimes%2010%5E4"
+alt="200x + 100y = 4000^{} \times 10^4"
+title="200x + 100y = 4000^{} \times 10^4" class="math inline" /> (eq 1)
+<img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20100x%20%2B%20100y%20%3D%203000%20%20%5Ctimes%2010%5E4"
+alt="100x + 100y = 3000  \times 10^4"
+title="100x + 100y = 3000  \times 10^4" class="math inline" /> (eq
+2)</p>
+</blockquote>
+<p><br/></p>
+<p><strong>Solving for <img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20x" alt="x"
+title="x" class="math inline" /></strong></p>
+<p>Subtracting (eq 2) from (eq 1) &gt; <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20100x%20%2B%200y%20%3D%201000%20%20%5Ctimes%2010%5E4"
+alt="100x + 0y = 1000  \times 10^4"
+title="100x + 0y = 1000  \times 10^4" class="math inline" /></p>
+<blockquote>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20100x%20%3D%201000%20%5Ctimes%2010%5E4"
+alt="100x = 1000 \times 10^4" title="100x = 1000 \times 10^4"
+class="math inline" /></p>
+</blockquote>
+<p>Simplifying &gt; <img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20x%20%3D%20%281000%20%5Ctimes%2010%5E4%29%2F100%20%3D%2010%20%5Ctimes%2010%5E4"
+alt="x = (1000 \times 10^4)/100 = 10 \times 10^4"
+title="x = (1000 \times 10^4)/100 = 10 \times 10^4"
+class="math inline" /></p>
+<p><br/></p>
+<p><strong>Solving for <img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20y" alt="y"
+title="y" class="math inline" /> (eq 2)</strong></p>
+<p>Substituting <img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20x" alt="x"
+title="x" class="math inline" /> in eq2 &gt; <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20100%2810%29%20%2B%20100y%20%3D%203000%20%5Ctimes%2010%5E4"
+alt="100(10) + 100y = 3000 \times 10^4"
+title="100(10) + 100y = 3000 \times 10^4" class="math inline" /> (eq
+3)</p>
+<blockquote>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20100y%20%3D%20%283000%20%5Ctimes%2010%5E4%29%20-%20%281000%20%5Ctimes%2010%5E4%29%20%3D%202000%20%5Ctimes%2010%5E4"
+alt="100y = (3000 \times 10^4) - (1000 \times 10^4) = 2000 \times 10^4"
+title="100y = (3000 \times 10^4) - (1000 \times 10^4) = 2000 \times 10^4"
+class="math inline" /></p>
+</blockquote>
+<blockquote>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20y%20%3D%20%282000%20%5Ctimes%2010%5E4%29%2F100%20%3D%2020%20%5Ctimes%2010%20%5E%204"
+alt="y = (2000 \times 10^4)/100 = 20 \times 10 ^ 4"
+title="y = (2000 \times 10^4)/100 = 20 \times 10 ^ 4"
+class="math inline" /></p>
+</blockquote>
+<blockquote>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20%28x%2Cy%29%20%3D%20%2810%20%5Ctimes%2010%5E4%2C%2020%20%5Ctimes%2010%5E4%29"
+alt="(x,y) = (10 \times 10^4, 20 \times 10^4)"
+title="(x,y) = (10 \times 10^4, 20 \times 10^4)"
+class="math inline" /></p>
+</blockquote>
+<p><br/></p>
+<h4 id="solution-to-task-2">Solution to Task 2</h4>
+<p>To find the best point, where “best” refers to the point that
+maximizes the objective function, we solve for the roots of the
+objective function.</p>
+<p>Recall the objective function &gt; <img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20f%20%3D%20f%28x%2Cy%29%20%3D%2080x%20%2B%2070y"
+alt="f = f(x,y) = 80x + 70y" title="f = f(x,y) = 80x + 70y"
+class="math inline" /></p>
+<p>Now solve for <img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20y" alt="y"
+title="y" class="math inline" /> &gt;<img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20f%20%3D%2080x%20%2B%2070y"
+alt="f = 80x + 70y" title="f = 80x + 70y" class="math inline" /></p>
+<p>Move <img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%2070y" alt="70y"
+title="70y" class="math inline" /> to the left side &gt;<img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20-70y%20%3D%2080x%20-f"
+alt="-70y = 80x -f" title="-70y = 80x -f" class="math inline" /></p>
+<p>Divide <img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20-70" alt="-70"
+title="-70" class="math inline" /> from both sides &gt;<img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20-70y%20%5Cdfrac%7B1%7D%7B-70%7D%20%3D%2080x%20%5Cdfrac%7B1%7D%7B-70%7D%20-f%20%5Cdfrac%7B1%7D%7B-70%7Dy"
+alt="-70y \dfrac{1}{-70} = 80x \dfrac{1}{-70} -f \dfrac{1}{-70}y"
+title="-70y \dfrac{1}{-70} = 80x \dfrac{1}{-70} -f \dfrac{1}{-70}y"
+class="math inline" /></p>
+<p>Plugin values for <img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20x%2Cy"
+alt="x,y" title="x,y" class="math inline" /> in <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20f" alt="f"
+title="f" class="math inline" /> &gt; <img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20f%20%3D%2080%2810%20%5Ctimes%2010%20%5E%204%29%20%2B%2070%2820%20%5Ctimes%2010%20%5E%204%29%20%3D%202%2C200%20%5Ctimes%2010%20%5E%204%20%3D%2022%2C000%2C000"
+alt="f = 80(10 \times 10 ^ 4) + 70(20 \times 10 ^ 4) = 2,200 \times 10 ^ 4 = 22,000,000"
+title="f = 80(10 \times 10 ^ 4) + 70(20 \times 10 ^ 4) = 2,200 \times 10 ^ 4 = 22,000,000"
+class="math inline" /></p>
+<p>Converting from cents to dollars, we get &gt; <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%2022%2C000%2C000%20%5Ctext%7B%20cent%20%7D%20%3D%20220%2C000%20%5Ctext%7B%20dollars%20%7D"
+alt="22,000,000 \text{ cent } = 220,000 \text{ dollars }"
+title="22,000,000 \text{ cent } = 220,000 \text{ dollars }"
+class="math inline" /></p>
+<p><br/></p>
+<p>Solving the objective function for <img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20y" alt="y"
+title="y" class="math inline" /> &gt;<img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20y%20%3D%20-%5Cdfrac%7B8%7D%7B7%7Dx%20%2B%20%5Cdfrac%7B1%7D%7B70%7Df"
+alt="y = -\dfrac{8}{7}x + \dfrac{1}{70}f"
+title="y = -\dfrac{8}{7}x + \dfrac{1}{70}f" class="math inline" /></p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20y" alt="y"
+title="y" class="math inline" /> is now the slope of the objective
+function that goes through the feasible point &gt; <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20y%20%3D%20mx%20%2B%20b"
+alt="y = mx + b" title="y = mx + b" class="math inline" /></p>
+<blockquote>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20m%20%3D%20-%5Cdfrac%7B8%7D%7B7%7D%20%3D%20-%201.142"
+alt="m = -\dfrac{8}{7} = - 1.142" title="m = -\dfrac{8}{7} = - 1.142"
+class="math inline" /></p>
+</blockquote>
+<blockquote>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20b%20%3D%20%5Cdfrac%7B1%7D%7B70%7Df%20%3D%20%5Cdfrac%7B1%7D%7B70%7D2%2C200%20%5Ctimes%2010%5E4"
+alt="b = \dfrac{1}{70}f = \dfrac{1}{70}2,200 \times 10^4"
+title="b = \dfrac{1}{70}f = \dfrac{1}{70}2,200 \times 10^4"
+class="math inline" /></p>
+</blockquote>
+<p><br/> <br/> <br/> <br/></p>
+</body>
+</html>

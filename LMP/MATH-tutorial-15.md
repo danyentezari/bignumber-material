@@ -6,7 +6,7 @@ See [8, pp. 383, 9. pp. 193]
 
 Given 
 
-> $\mathbf{A} = \begin{bmatrix}
+$\mathbf{A} = \begin{bmatrix}
 10 & 2 \\
 5 & 11
 \end{bmatrix}$
@@ -15,7 +15,7 @@ Given
 
 Find the SVD of $\mathbf{A}$
 
-> $\mathbf{A} = \mathbf{U} \mathbf{S} \mathbf{V}^T$
+$\mathbf{A} = \mathbf{U} \mathbf{S} \mathbf{V}^T$
 
 <br/>
 

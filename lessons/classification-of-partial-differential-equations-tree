@@ -1,0 +1,28 @@
+### Tree
+
+0 $u_{xx}$
+
+
+0 linear first order PDE in two independent variables
+
+1 $a(x,y)u_{x}+b(x,y)u_{y}+c(x,y)u+d(x,y)=0$
+
+0 linear second order PDE in two independent variables 
+
+1 $au_{xx}+2bu_{xv}+cu_{vv}+du_{x}+eu_{v}+fu+g=0$
+
+<br/>
+
+
+### Definitions
+
+0 $u_{xx}$ is an unknown function
+
+
+<br/><br/>
+
+References:
+1. Zachmangolou...Partial Differential Equations
+2. R. Johnson...Partial Differential Equations
+3. https://www.pdx.edu/student-academic-support-services/sites/learningcenter.web.wdt.pdx.edu/files/2020-07/Differential_Equations_ODE_Flow_Chart.pdf
+4. Farlow

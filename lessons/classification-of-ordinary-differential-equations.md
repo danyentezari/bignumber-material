@@ -19,6 +19,7 @@ This is one of a number of lessons that will cover differential equations. First
    - Series Solutions
    - Laplace Transform Method
 
+### Definitions of Terms
 
 **Homogeneous Function** A function $g(x,y)$ is homogeneous of degree $n$ if $g(tx,ty)=t^{n}g(x,y)$ for all $t$.
 
@@ -90,9 +91,9 @@ There are two aspects about a homogeneous linear differential equations:
     $$a_n(x)\frac{d^n y}{dx^n} + a_{n-1}(x)\frac{d^{n-1} y}{dx^{n-1}} + \cdots + a_1(x)\frac{dy}{dx} + a_0(x)y = F(x)$$
 
 where:
-  - $ a_n(x), a_{n-1}(x), \dots, a_0(x) $ are functions of $ x $
-  - $ F(x) = 0 $ is the non-homogeneous term, also called a forcing function
-  - $ y $ is the unknown function
+  - $a_n(x), a_{n-1}(x), \dots, a_0(x)$ are functions of $ x $
+  - $F(x) = 0$ is the non-homogeneous term, also called a forcing function
+  - $y$ is the unknown function
 
 <br/>
 

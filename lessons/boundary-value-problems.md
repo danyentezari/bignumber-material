@@ -1,0 +1,3 @@
+When the solution of a differential equation is specified at more than one point, these conditions are called boundary conditions, and the problem of finding the solution of the differential equation that also satisfies the boundary conditions is called a boundary-value problem. 
+
+(Dover Books on Mathematics) Stanley J. Farlow - An Introduction to Differential Equations and Their Applications-Dover Publications (2006).pdf [pp. 219]

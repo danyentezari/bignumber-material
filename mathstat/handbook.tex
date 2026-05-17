@@ -1,0 +1,675 @@
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{titling}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} %package to manage images
+\usepackage{tabularx}
+\usepackage{mdframed}
+\usepackage{amsmath, amsthm}
+\graphicspath{ {./images/} }
+
+
+\title{Mathematical Statistics Handbook}
+\author{Dany Entezari}
+\date{Draft Version \\
+Published: August 2021 \\
+Last Updated: August 2025}
+
+\newtheorem{definition}{Definition}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Preface}
+This handbook is an active draft. I am writing it with two goals in mind: first, to enable the interested reader to learn probability theory from mathematical first principles; second, to bridge what I consider a pedagogical gap between probability theory and its applications.
+
+I originally began writing this as supplementary material for my students, but I am now generalizing it for anyone interested in learning probability theory and its applications—namely statistics and machine learning—from first principles.
+
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Probability Theory}
+
+Probability theory is about mathematical modeling of the phenomena of randomness. In this section, we briefly define fundamental concepts in probability theory.
+
+\subsection{Important Terminology}
+
+\paragraph{Experiment} 
+A procedure that produces one outcome from a set of possible outcomes.  
+\textit{Example:} Rolling a die.
+
+\paragraph{Trial}
+An experiment with a binary outcome. \textit{Example:} Flipping a coin.
+
+\paragraph{Outcome}
+The result of an experiment or trial. For example, one outcome of flipping a coin is "heads" and the other is "tails".
+
+\paragraph{Sample Space}
+A sample space is the set of possible outcomes in a (random) experiment.
+
+\paragraph{Event}
+An event is a subset of a sample space. For example, an event can be the set of outcomes of rolling a dice five times. If there were another event where the dice were rolled, say, five times, then both events would be subsets of the sample space.
+
+\subsection{Combinatorics}
+Combinatorics is the mathematics of counting things efficiently. In combinatorics, we have techniques for determining the number of possible outcomes of experiments without direct enumeration (i.e, without manually counting). In this section, we will look at some of these techniques which have applications in probability distributions and their functions.
+
+\subsubsection{Permutation with Repetition}
+The function for permutation with repetition (or replacement) is given by
+$$ P^{r}(n,r) = n^r  $$
+
+\subsubsection{Permutation without Repetition}
+The function for permutation without repetition (or replacement) is given by
+$$ P(n,r) = nPr = \frac{n!}{(n-r)!} $$
+
+
+\subsubsection{Combination without Repetition and the Binomial Coefficient}
+The function for combination without repetition (or replacement) is given by
+$$ C(n,r) = nCr = \frac{n!}{r!(n-r)!} $$ \hfill \break 
+$$ \binom{n}{k} = \frac{n!}{r!(n-r)!} $$ \hfill \break
+
+The binomial coefficient notation is used to express combination, alternatively. Binomial coefficients are so called because they are coefficients of terms in the Binomial Theorem.
+
+
+\subsection{Important Concepts in Probability Theory}
+In this section, some properties of probability theory are highlighted because they are relevant throughout the statistics and probability theory.
+
+\subsubsection{Central Limit Theorem}
+The \emph{central limit theorem} states that when samples are drawn from a population, where the size of the samples are 30 or greater, the samples will have a normal distribution. This theorem holds even if the population from which the samples are drawn does is not normally distributed.
+
+\subsubsection{Law of Large Numbers}
+The \emph{law of large numbers} states that as the size of the sample increases, the mean of the sample will approach the mean of its population.
+
+
+\subsection{Bayes Theorem and Conditional Probability}
+The \emph{bayesian theorem} is given by
+$$ P(A_i | B)  = \frac{P(A_i) \times P(B|A_i)}{ \sum_{i=k}^{n} P(B|A_i) } $$
+where \hfill \break
+\begin{itemize}
+    \item $A_i$ is a given a-priori event
+    \item $B$ is the a-posteriori event
+    
+\end{itemize}
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Random Variables}
+A \emph{random variable} is a function, mathematically speaking. They map events in a sample space to a subset of the real numbers. But they can also be considered as sets (see §Convergence of Random Variables, Distributions, and Probabilities.) 
+
+A random variable is typically denoted by $X$ and elements in the domain of the random variable denoted $x$; thus $x \in X$. Along with probability distributions, they are central components in Probability Theory.
+
+\subsection{Discrete Random Variables}
+ A random variable is discrete if it has one of the following two characteristics:
+ \begin{enumerate}
+     \item a finite number of possible values
+     \item an infinite but countable sequence of possible values (see §Countable Sets.)
+ \end{enumerate}
+
+\subsection{Continuous Random Variables}
+A random variable is continuous if its possible values are infinite and not countable (see §Countable Sets.)
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Probability Distributions}
+A probability distribution is a description of data; in particular, the Observations in the data and their corresponding probability. Probability distributions are analogous to frequency distributions which are descriptions of data and their corresponding Frequencies.
+
+\subsection{Probability Distribution Functions}
+Probability distribution functions are models of various types of data. These functions allow us to determine probabilities as functions of Observations and Estimates. Put differently, probability distribution functions will return the probability for a given observation. There are three types of functions which are covered in the following section.
+
+\subsubsection{Probability Mass Function}
+The probability mass function of a discrete random variable will map, for every value in the random variable, the probability that the value will be observed. The probability mass function is denoted by,
+
+$$ P(X=k) = p $$\hfill \break
+where $X$ is a discrete random variable, $k$ is an observable value, and $p$ is a probability.
+
+\subsubsection{Probability Density Function}
+The probability density function of a continuous random variable will map, for every value in the random variable, the probability that the value will be observed. The probability density function is denoted by,
+
+$$ P(X=k) = p $$\hfill \break
+where $X$ is a continuous random variable, $k$ is an observable value, and $p$ is a probability.
+
+\hfill \break
+\subsubsection{Cumulative Probability Function}
+
+The cumulative probability function is denoted by
+
+$$ P(X \leq k) = p = \begin{cases} \sum_{i=1}^{k} f(x) \enspace; \quad \text{ if X is Discrete} \\ \int_{-\infty}^{k} f(x) \: dx \enspace; \quad \text{ if X is Continuous}  \end{cases} $$\hfill \break
+where 
+\begin{itemize}
+    \item $X$ is a random variable
+    \item $f(x)$ is either a PMF or CDF
+    \item $k$ is an observable value
+    \item $p$ is a probability
+\end{itemize}
+The cumulative probability function of a discrete or continuous random variable will map, for every value in the random variable, the probability that the value will be observed. 
+
+\newpage
+\subsection{Important Probability Distributions}
+\subsubsection{Binomial Distribution}
+The PMF of the binomial distribution is given by
+$$f(k)=P(X=k)={n \choose k} p^k (1-p)^{n-k}$$
+where
+\begin{itemize}
+    \item ${n \choose k}$ is the binomial coefficient
+    \item $n$ is a positive integer
+    \item $k$ a number between $0$ and $n$; specifically, $0 \leq r \leq n$
+\end{itemize}
+\hfill \break
+The binomial distribution is used when a discrete random variable has the following characteristics
+\begin{itemize}
+    \item fixed number of trials
+    \item trials can have only two outcomes (e.g, heads or tails)
+\end{itemize}
+
+\subsubsection{Binomial Distribution and the Binomial Coefficient}
+When expressing the PMF of the binomial distribution, sometimes the notation for the binomial coefficient is used.
+
+\subsubsection{Normal Distribution}
+The PDF of the normal distribution is given by
+$$f(x)=\frac{1}{\sigma{\sqrt{2\pi}}} \text{Exp} \bigg [ {-\frac{1}{2} \frac{(x-\mu)^2}{\sigma^2}} \bigg ]$$
+where
+\begin{itemize}
+    \item $\sigma$ is the population standard deviation
+    \item $n\sqrt{2\pi}$ is attributed to the central limit theorem
+    \item $\mu$ is the population mean average
+\end{itemize}
+\hfill \break
+The normal distribution is a generalization of the binomial distribution. This also means that the normal distribution makes it possible to find the probability of values that are not observed in the random variable.
+
+\subsubsection{Poisson Distribution}
+The PDF of the chi-squared distribution is given by
+$$ f(x)=P(X=k)=\frac{\lambda^k}{k!}e^{-\lambda} $$
+where
+\begin{itemize}
+    \item $\lambda$ is the average number of occurrences
+    \item $k$ is the number of successes
+    \item $e^x$ is the exponential function
+\end{itemize}
+\hfill \break
+The Poisson distribution is used to approximate the binomial distribution when the number of trials (i.e, experiments) are large but the number of successes few.
+
+
+\subsubsection{Chi-Squared Distribution ($\chi^2$)}
+The PDF of the chi-squared distribution is given by
+$$ f(x) = \begin{cases} \frac{ x^{k/2-1}e^{-x/2} }{ 2^{k/2} \Gamma(k/2) }
+\enspace ; \text{ for }  x \geq 0  \\ 0 \enspace ; \quad \text{otherwise} \end{cases} $$ \hfill \break
+where
+\begin{itemize}
+    \item $k$\ is parameter representing the degrees of freedom
+    \item $\Gamma(x)$ is the gamma function (see Special Functions)
+    \item $e$ is the exponential function (see Special Functions)
+\end{itemize}
+
+The Chi-Squared distribution is used to determine significant differences between samples and their population with respect to two or more categorical variables.
+
+\subsubsection{(Student's) T-Distribution}
+
+The PDF of the t-distribution is given by
+
+$$ f(x) = \frac{ \Gamma (\frac{v+1}{2}) }{ \sqrt{v \pi} \: \Gamma (\frac{v}{2}) } \Big (1+ \frac{t^2}{v} \Big ) ^ {-\frac{v+1}{2}} $$ \hfill \break
+where
+\begin{itemize}
+    \item $\frac{1}{\sqrt{\pi\:n}} \frac{\Gamma((n+1)/2)}{\Gamma(n/2)}$ is the constant of proportionality
+\end{itemize}
+\hfill \break
+The t-distribution is used when the sample is almost normally distributed but has a size 30 or fewer.
+
+\subsubsection{(Fischer) F-Distribution}
+
+The PDF of the F-distribution is given by
+
+$$ f(x) = \begin{cases} \frac{\Gamma (\frac{v_1 + v_2}{2}) }{ \Gamma (\frac{v_1}{2}) \:  \Gamma (\frac{v_2}{2})  } v_1^{v_1/2} \: v_2^{ v_2/2} \: x^{ (v / 2)-1 } \: (v_2 + v_1 x)^{-(v_1 + v_2)/2} \enspace ; \quad x > 0 \\ 0 \enspace ; \quad x \leq 0 \end{cases} $$
+\hfill \break
+where
+\begin{itemize}
+    \item $v_1, v_2$ are degrees of freedom
+    \item $\Gamma(x)$ is the Gamma function (see Special Functions)
+\end{itemize}
+\hfill \break
+The F-distribution is the ratio of two random variables with chi-squared distribution. The F-distribution is used in ANOVA for two random variables and their mean square ratio.
+
+
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Overview of Moments}
+Moments are specific descriptions of a probability distribution. 
+
+\hfill \break
+\hfill \break
+The $kth$ moment is given by
+$$ E(X^k) $$ \hfill \break
+The $kth$ central moment is given by:
+$$ E((X-\mu)^k) $$
+
+\subsubsection{Expected Value}
+The function of the expected value is given by
+
+$$ E(X) = \begin{cases} \sum_{i}^{k} x_i \cdot f(x_i) \enspace ; \quad \text{ if } X \text{ is discrete} \\ \\ \int_{-\infty}^{\infty} x_i \cdot f(x_i) \: dx_i \enspace ; \quad \text{ if } X \text{ is continuous} \end{cases} $$ \hfill \break
+where
+\begin{itemize}
+    \item $x_i$ is a value of a random variable
+    \item $f(x_i)$ is a PMF or PDF
+\end{itemize}
+\hfill \break
+Expected Value is the average of the values of a random variable. The average is weighted, however, by the probabilities of the outcomes.
+
+%----------------------------------------------------------------------------
+\newpage
+\subsubsection{Variance}
+
+The function for variance is given by
+$$ Var(X) = E(X-\mu)^2 = \sigma^2 $$
+where 
+\begin{itemize}
+    \item $X$ is a random variable
+    \item $\mu$ is the mean average of the random variable
+\end{itemize}
+\hfill \break
+Variance is a measurement of the spread of values of the random variable about the mean. Note that the square root of variance is the standard deviation. In other words, to arrive at the standard deviation of a random variable, the variance must first be calculated. Also, variance can be expressed as
+
+$$ Var(X) = E[X^2] - (E[X])^2  $$
+where
+\begin{itemize}
+    \item $E[X^2] = \begin{cases} \sum_{i}^{k} x_i \cdot f(x_i)^2 \enspace ; \quad \text{ if } X \text{ is discrete} \\ \\ \int_{-\infty}^{\infty} x_i \cdot f(x_i)^2 \: dx_i \enspace ; \quad \text{ if } X \text{ is continuous} \end{cases}$
+\end{itemize}
+\hfill \break
+Note, the expression $E[X^2]$ means that the probability function in the function of expected value is squared!
+
+\subsubsection{Skewness}
+The skewness coefficient is given by
+$$ \frac{E(X-\mu)^3}{\sigma^3} $$
+where
+\begin{itemize}
+    \item $E(X-\mu)^3$ is the third moment about the mean. The expression, $(X-\mu)$ is cubed to indicate asymmetry about the mean. If this term were not cubed, the terms in the expression would cancel out and the result would be zero.
+    \item $\sigma^3$ is the cube of the standard deviation. This term is in the denominator to make skewness independent of any unit of measurement (e.g., cm, inch, etc.).
+\end{itemize}
+
+\subsection{Methods of Moments}
+Methods of Moments are techniques for estimating Parameters of a population. This technique works by equating moments of samples to the theoretical moments of the population from which they are drawn, and then solving for the parameters. 
+
+\subsubsection{Moment Generating Functions}
+Moment generating functions are used to find the characteristics (i.e, moments) of a probability distribution. Moment generating functions are a type of generating functions. Generating Functions are for representing sequences.
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Maximum Likelihood}
+Maximum Likelihood is a technique for estimating, by maximizing likelihood, any parameter of a population given the sample.
+
+$$ L(x_1,\dots,x_n ;\theta)=\prod_{i=1}^{n} f(x_i; \theta) $$ \hfill \break
+where \hfill \break
+\begin{itemize}
+    \item $L(x_1, \dots, x_n; \theta)$ is the likelihood function (see next section)
+    \item $f(x_i; \theta)$ is the probability distribution function (see Probability Distribution Functions).
+    \item $\theta$ is some parameter
+    \item $n$ is the number of variables
+    \item $ x_1, \dots, x_n $ are variables
+    \item $ \prod_{i=1}^{n} $ is the product operator
+\end{itemize}
+
+\subsubsection{Likelihood Function}
+The likelihood function is denoted by
+$$ L(x_1, \dots, x_n; \theta) $$
+where \hfill \break
+\begin{itemize}
+    \item $ x_1, \dots, x_n $ are variables
+    \item $\theta$ is the parameter to be estimated
+\end{itemize}
+\hfill \break
+Note that the likelihood function can output very small probabilities, which is why it is necessary to apply the logarithm function to the likelihood function (see Log-Likelihood).
+
+\subsubsection{Log-Likelihood}
+The log-likelihood function is the natural logarithm of the likelihood function. log-likelihood function is given by
+
+$$ \ln(L(x_1, \dots, x_n; \theta)) = \ell(x_1, \dots, x_n; \theta) = \log_{e} ( L(x_1, \dots, x_n; \theta) ) $$ 
+\hfill \break
+Note that $ \ln(L(x, \theta)) $ is the natural logarithm; that is, the logarithm of base e. Thus, $ \ln(L(x_1, \dots, x_n, \theta)) = \log_{e} ( L(x_1, \dots, x_n, \theta) ) $.
+
+Also note that capital $L$ is used for likelihood and lowercase italic $l$ for log-likelihood.
+
+Log-likelihood is used, and preferably so, because it "scales" the products of the terms in the MLE — especially when the probabilities are small (e.g, p = $10^{-10} = 0.0000000001 $). 
+
+\subsubsection{Differentiating the Log-Likelihood Function}
+Differentiating the log-likelihood function, $\ell(x_1, \dots, x_n,\theta)$, is done to find the critical values of the function. The critical value would then be the value at which the likelihood functions yield the maximum likelihood.
+
+Since the (log) likelihood is a function of multiple variables, we apply the partial derivative to the likelihood function,
+
+$$ \frac{\partial}{\partial x_i} \ell(x_i; \theta) = \frac{\partial}{\partial x} \ln( L(x_i; \theta) ) $$
+
+\subsubsection{Maximum Likelihood Estimator (MLE)}
+An estimator is a function that is used to estimate a parameter.
+$$ \hat{\theta}(x_i) = \underset{\theta}{\text{argmax}} \: \ell(x_i; \theta) $$
+where \hfill \break
+\begin{itemize}
+    \item $\text{argmax}$ is the function that chooses the argument for which the values of some function is maximized
+    \item $ \hat{\theta}(x_i) $ is the maximum likelihood estimator
+    \item $ \theta $ is some parameter
+    \item $  \ell(x_i; \theta) $ is the log-likelihood function
+    \item $ x_i $ is some variable
+\end{itemize}
+
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Measure Theory}
+
+\subsection{Measure}
+
+A \emph{measure} is an abstraction of measurable quantities, such as length, weight, volume, and probability.
+
+More formally, a measure is defined as a function that maps a $\sigma$-algebra to $[0,\infty)$. In other words, it maps sets to a real number that is non-negative or infinity. This non-negative property exists because measurable quantities are inherently non-negative.
+
+Usually, in mathematics convention, $\mu$ (pronounced "mu") stands for measure, but since $\mu$ is reserved, we will denote a measure with the uppercase variant, $\mathcal{M}$. 
+
+$$\mu: S \rightarrow [0,\infty)$$
+
+\subsubsection{$\sigma$-algebra}
+
+A \emph{$\sigma$-algebra} or \emph{sigma-algebra} is a collection of subsets. More specifically, it is a type of collection that is closed under \emph{countable unions} and \emph{complements}. A $\sigma$-algebra is necessary, among other operations, for assigning probabilities to subsets of the sample space. The countable unions of the subsets of the sample space have the effect of allowing probabilities to be assigned to events including even infinitely many possible outcomes. A sigma-algebra is also known as a \emph{sigma-field}.
+
+
+\subsubsection{Measure Space}
+
+A \emph{space} is a set with certain conditions. In mathematics, a space is denoted as a pair of any elements; for example, $(A,B,...)$  We define a measure space together with its conditions formally here.
+
+\begin{mdframed}
+\begin{definition}[Measure Space]
+A \emph{measure space} is a space $(E, \mathcal{E}, \mathcal{M} )$ where:
+\begin{itemize}
+    \item $E$ is a set the subsets of which will be measured
+    \item $\mathcal{E}$ is a $\sigma$-algebra which will be measured
+    \item $\mathcal{M}$ is the measure for $E$ and $\mathcal{E}$ 
+\end{itemize}
+\end{definition}
+\end{mdframed}
+
+
+
+\subsection{Lebesgue Measure}
+
+1 manifold
+2 class cP
+3 class
+2 density
+2 canonical
+
+\subsubsection{Lebesgue Integral}
+
+The \emph{lebesgue integral} is a generalization of the Riemann integral.
+
+
+
+\begin{mdframed}
+\begin{definition}[Lebesgue Integral]
+The \emph{Lebesgue integral} is defined by
+$$
+\int_X f \, d \mathcal{M} = \sup \left\{ \int_X s \, d \mathcal{M} \ \middle|\ s : X \to \mathbb{R} \ \text{ and } 0 \le s \le f \right\}.
+$$
+
+where:
+\begin{itemize}
+    \item $f: X \rightarrow [0,\infty]$ is a non-negative measurable function
+    \item $\mathcal{M}$ is the measure
+    \item $X$ is a set of the measure space
+    \item $s$ is a simple function
+\end{itemize}
+\end{definition}
+\end{mdframed}
+
+
+
+
+\subsection{Probability Measure}
+
+A probability measure is a special case of the general concept of a measure, where the measure of the entire sample space is 1.
+
+More formally, a probability measure is expressed as:
+
+$$
+P: \mathcal{F} \rightarrow [0,1]
+$$
+
+where 
+\begin{enumerate}
+    \item $\mathcal{F}$ is a $\sigma$-algebra of subsets of the sample space.
+\end{enumerate}
+
+\subsubsection{Probability Space}
+
+A \emph{probability space} is a special case of a measure space which we define here formally.
+
+
+\begin{mdframed}
+\begin{definition}[Probability Space]
+
+A \emph{probability space} is a measure space $(\Omega, \mathcal{F}, \mathbb{P} )$ where:
+
+\begin{itemize}
+    \item $\Omega$ is the sample space
+    \item $\mathcal{F}$ is the $\sigma$-algebra
+    \item $\mathbb{P}$ is the measure with domain $[0,1]$ 
+\end{itemize}
+
+\end{definition}
+\end{mdframed}
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Markov Chain Monte–Carlo}
+
+Markov Chain Monte Carlo is a class of algorithms for obtaining information about distributions by sampling from them. An example is sampling from the posterior distribution in Bayesian probability.
+
+\subsection{Preliminaries}
+
+Let us first establish some definitions.
+
+\subsubsection{Stationary Distribution}
+
+A distribution is stationary if it is unchanged after a transition matrix is applied to it.
+
+
+
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Fourier Analysis}
+
+
+\subsection{Limiting Distribution} The distribution to which a sequence of random variables converges.
+
+\subsection{Characteristic Function} The \emph{characteristic function} is a unique representation of a probability distribution. This means that, with the characteristic function, the densities of any continuous random variable or the mass of a discrete random variable are determined for the entirety of the probability function's domain.
+
+In probability theory, the characteristic function is the Fourier transform. The characteristic function is also known as the \emph{indicator function of a set}. 
+
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Convergence of Random Variables, Distributions, and Probabilities}
+
+Convergence of sequences is about how a sequence behaves as it approaches a specific limit. Convergence of functions is about how a function behaves through progression of its domain. 
+
+Understanding the convergence of random variables, distributions, and probabilities is necessary for understanding how distributions behave asymptotically; that is, as a random variable tends toward a limiting value, or a distribution approaches a limiting form, or a probability converges to a fixed value.
+
+
+A random variable is a function when considered as a map from the sample space to real numbers, and a set when considered through its \emph{level set} — the set of outcomes in its domain that map to values in the codomain.
+
+A distribution is a function when considered as a map from the codomain of a random variable to probabilities, and a set when considered through the frequencies or densities associated with values in the codomain of a random variable.
+
+
+\subsection{Convergence Theorem}
+
+\subsection{Weak Convergence Theorem}
+
+\subsection{Lévy's Continuity Theorem}
+
+
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Select Topics in Stochastic Calculus}
+
+\subsection{Martingale}
+
+A \emph{martingale} is, informally, a description about a sequence of random variables.
+
+\subsection{Stochastic Bridges}
+
+A \emph{stochastic bridge} is a random sample path. Stochastic bridges are used to model and understand rare events.
+
+A \emph{random sample path}, in turn, is a sequence of random variables. Let us first start with a definition.
+
+\begin{mdframed}
+\begin{definition}[Random Sample Path]
+A \emph{random sample path} is a sequence of random variables, $ X_1, X_2,...,X_n $ such that
+\begin{enumerate}
+    \item $X_1, X_2, ..., X_n$ are independent \quad and
+    \item $X_1, X_2, ..., X_n$ have identical distributions
+\end{enumerate}
+\end{definition}
+\end{mdframed}
+
+When random variables are independent and have identical distributions, we use the abbreviation \emph{i.i.d}.
+
+
+
+%----------------------------------------------------------------------------
+\newpage
+
+
+\section{Stochastic Differential Geometry and Diffusions on Manifolds}
+
+\subsection{Manifold}
+
+ 
+%----------------------------------------------------------------------------
+\newpage
+\section{Mathematical Appendix} \label{special_functions}
+In this section, we look at some special functions and other concepts widely used in mathematics. This section is for helping you fill in the gaps.
+
+\subsection{Countable Sets}
+
+
+\subsection{Infimum and Supremum}
+
+
+\begin{mdframed}
+\begin{definition}[Infimum]
+An \emph{infimum} is the greatest lower bound of a set.
+\begin{itemize}
+    \item $m \leq x$ for every $x \in A$
+    \item there exists $x \in A$ such that $x < m + \varepsilon$, for every $\varepsilon > 0$
+\end{itemize}
+
+where
+\begin{itemize}
+    \item $m \in \mathbb{R}$ is a real number
+    \item $x \in A$ is a real number
+    \item $A \subset \mathbb{R}$ is a set of real numbers
+\end{itemize}
+\end{definition}
+\end{mdframed}
+
+
+\begin{mdframed}
+\begin{definition}[Supremum]
+An \emph{supremum} is the least upper bound of a set.
+\begin{itemize}
+    \item $m \geq x$ for every $x \in A$
+    \item there exists $x \in A$ such that $x > m - \varepsilon$, for every $\varepsilon > 0$
+\end{itemize}
+
+where
+\begin{itemize}
+    \item $m \in \mathbb{R}$ is a real number
+    \item $x \in A$ is a real number
+    \item $A \subset \mathbb{R}$ is a set of real numbers
+\end{itemize}
+\end{definition}
+\end{mdframed}
+
+
+
+
+
+\subsection{Exponential Function}
+
+The Exponential Function is defined by,
+$$ e^x = \text{Exp}(x) = \sum_{k=0}^{\infty} \frac{x^k}{k!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots   $$
+
+The letter $e$, which represents Euler's constant $\sim 2.718$, is the base unit for exponentiation. In other words, a function becomes exponential when the variable appears in the exponent:
+$$\quad f(x) = e^x. $$
+
+ 
+Note that we are equating $e^x$ to $\text{Exp}(x)$ because the latter is only an alternative (and more convenient) way to write the exponential function. 
+
+
+\subsection{Gamma Function}
+
+The Gamma Function is defined by,
+$$ \Gamma(\alpha) = \int_0^\infty x^{\alpha-1} e^{-x} \: dx $$
+
+The Gamma Function is important because it generalizes the factorial function to all Real Numbers. The factorial operation ($n!$), as a function, is valid only for the Natural Numbers (1,2,3,..). The Gamma Function, however, extends the factorial operation to all Real Numbers greater than 0. For this reason, the Gamma Function is also known as the Generalized Factorial Function.
+
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Table of Symbols}
+\begin{tabularx}{1\textwidth} {|
+  >{\raggedright\arraybackslash}X |
+  >{\raggedright\arraybackslash}X |
+  >{\raggedright\arraybackslash}X 
+ |}
+  \hline
+ \textbf{Symbol} & \textbf{Concept} & \textbf{Read} \\
+ \hline
+ $\mu$ & Population Average & mu \\
+ \hline
+ $\sigma$ & Population Standard Deviation & sigma  \\
+ \hline
+ $s$ & Sample Standard Deviation & s \\
+ \hline
+ $\bar{x}$ & Mean Average & bar x \\
+ \hline
+ $X$ & Random Variable & random variable X \\
+ \hline
+ $\sigma^2$ & Population Variance & sigma squared \\
+ \hline
+ $X \sim N(\mu, \sigma)$ & Normal Distribution & X "has" normal distribution \\
+ \hline
+ $\Omega$  & Sample Space & sample space \\
+ \hline
+ $\mathcal{F}$  & Sigma Algebra & sigma algebra or sigma field \\
+ \hline
+ $\mathbb{P}$  & Probability Measure & probability measure \\
+ \hline
+ $(\Omega, \mathcal{F}, \mathbb{P})$  & Probability Space & probability space \\
+ \hline
+  $\mathcal{M}$  & Measure & measure \\
+ \hline
+\end{tabularx}
+
+%----------------------------------------------------------------------------
+\newpage
+
+\section*{Bibliography}
+\begin{enumerate}
+    \item J. L. Devore and K. N. Berk, Modern Mathematical Statistics with Applications, 3rd ed., Springer, 2021.
+    \item J. R. Munkres, Topology, 2nd ed., Prentice Hall, 2000.
+    \item S. Axler, Measure, Integration \& Real Analysis, Springer, 2020.
+    \item D. van Ravenzwaaij, P. Cassey, and S. D. Brown, A Simple Introduction to Markov Chain Monte-Carlo Sampling, Psychonomic Bulletin \& Review, vol. 25, no. 1, pp. 143--154, 2018.
+    \item Massachusetts Institute of Technology, Unified Engineering: Signals and Systems — Lecture 2, lecture notes, 2007–2008. \newline Available at: https://web.mit.edu/16.unified/www/archives%202007-2008/signals/Lect2witheqs.pdf
+    \item Klenke, A. Probability Theory: A Comprehensive Course, 2nd ed., Springer, London, 2014.
+    \item Billingsley, P. Probability and Measure, 3rd ed., Wiley, New York, 1995.
+    \item Millson, John J., STAT 400: Applied Probability and Statistics I — Lecture 20: Random Samples, lecture notes, University of Maryland. \newline
+    Available at: https://math.umd.edu/~millson/teaching/STAT400/slides/article20.pdf
+    \item University of Cambridge, “Measure Theory,” Part III lecture notes, \newline accessed 8 August 2025, https://www.maths.cam.ac.uk/postgrad/part-iii/files/misc/measuretheory.pdf.
+    \item James Belk (Cornell University), “Defining the Integral,” \newline accessed 9 August 2025, \newline https://e.math.cornell.edu/people/belk/measuretheory/DefiningTheIntegral.pdf
+
+\end{enumerate}
+\end{document}
+

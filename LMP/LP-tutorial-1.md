@@ -44,12 +44,14 @@ To simplify the notation of this LP problem, let
 <br/>
 
 Thus, we will rewrite the objective function
+
 > $f(x,y) = 80x + 70y$
 
 With constraints
-> $100x + 100y \leq 3000 \times 10^4$ and $x \geq 0$ (for wheat)
 
-> $200x + 100y \leq 4000 \times 10^4$ and $y \geq 0$ (for barley)
+ $100x + 100y \leq 3000 \times 10^4$ and $x \geq 0$ (for wheat)
+
+ $200x + 100y \leq 4000 \times 10^4$ and $y \geq 0$ (for barley)
 
 <br>
 
@@ -101,7 +103,7 @@ Substituting $x$ in eq2
 >$y = (2000 \times 10^4)/100 = 20 \times 10 ^ 4$
 
 
->$ (x,y) = (10 \times 10^4, 20 \times 10^4) $
+> $(x,y) = (10 \times 10^4, 20 \times 10^4)$
 
 <br/>
 
@@ -127,7 +129,7 @@ Plugin values for $x,y$ in $f$
 > $f = 80(10 \times 10 ^ 4) + 70(20 \times 10 ^ 4) = 2,200 \times 10 ^ 4 = 22,000,000$
 
 Converting from cents to dollars, we get
-> 22,000,000 cents = 220,000 dollars
+> $22,000,000 \text{ cent } = 220,000 \text{ dollars }$
 
 
 <br/>
