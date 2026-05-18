@@ -231,4 +231,4 @@ where
 
 **Vector Calculus Reference**
 
---> [Vector Calculus.md](../lessons/Vector-Calculus.md)
+--> [Vector Calculus.md](../Calculus/Vector-Calculus.md)
