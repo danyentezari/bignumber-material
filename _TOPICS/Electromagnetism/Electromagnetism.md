@@ -1,6 +1,6 @@
-# Electromagnetism
+## EXPLANATIONS
 
-## Maxwell's Equations
+### Maxwell's Equations
 
 Maxwell's equations express, formally, the properties of electromagnetic waves.
 
@@ -28,7 +28,7 @@ Where
 
 <br/>
 
-## Stoke's Theorem Physics
+### Stoke's Theorem Physics
 
 Stokes' theorem relates the circulation of a vector field $\mathbf{A}$ around a closed path $L$ to the surface integral of its curl over an open surface $S$ bounded by $L$ [1]:
 
@@ -40,7 +40,7 @@ Where:
 
 <br/>
 
-## Stoke's Theorem for Flux Integral
+### Stoke's Theorem for Flux Integral
 
 $$\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$.
 
@@ -58,7 +58,7 @@ In this formula:
 
 <br/>
 
-## Surface Integrals and Fundamental Theorem of Calculus
+### Surface Integrals and Fundamental Theorem of Calculus
 
 $$\int_D d\omega = \int_{\partial D} \omega$$
 
@@ -73,7 +73,7 @@ Where
 
 <br/>
 
-## Special Relativity and Electric Fields
+### Special Relativity and Electric Fields
 
 Changes in the electric field cause changes in the magnetic field. According to special relativity, a magnetic field is actually an electric field distorted by the motion of electrons. 
 
@@ -84,7 +84,7 @@ Changes in the electric field cause changes in the magnetic field. According to 
 
 
 
-## Glossary
+## GLOSSARY
 
 **Principle of Superposition**
 
@@ -122,7 +122,7 @@ $\nabla^2 V$ This operator represents the divergence of the gradient ($\nabla \c
 
 <br/><br/><br/>
 
-## Mathemematics Appendix
+## MATHEMARICS APPENDIX
 
 
 **Stoke's Theorem**
@@ -142,29 +142,6 @@ In this formula:
 * $\mathbf{F}(x, y, z)$ is a continuous vector function
   
 
-**Surface**
-
-A two-dimensional geometric shape or boundary in three-dimensional space. It can be represented mathematically by functions or sets of points, ranging from simple flat planes to complex, curved manifolds.
-
-**Piecewise smooth** 
-
-A surface is piecewise smooth if it consists of finitely many smooth portions. A common example of a piecewise smooth surface is the surface of a cube, which is composed of six smooth (flat) faces joined at edges.
-
-**Oriented surface**
-
-A surface where a consistent direction for the surface normal is chosen at every point. This distinguishes between the two sides, often designated as "inner" and "outer" or "positive" and "negative" orientations.
-
-**Smooth surface**
-
-A surface is considered smooth if its surface normal depends continuously on the points of the surface. At every point P of such a surface, there exists a unique tangent plane and a unique normal whose direction varies continuously.
-
-**Surface Normal**
-
-A vector that is normal to a surface.
-
-**Piecewise smooth simple closed curve**
-
-A path that starts and ends at the same point without intersecting itself, consisting of several smooth segments joined together. Examples include the boundary of a square or a triangle.
 
 
 **Flux** 
@@ -237,13 +214,10 @@ where
 
 <br/>
 
-**K-form**
-
-<br/>
 
 <br/><br/><br/>
 
-## Physics Mathemematical Appendix
+## PHYSICS MATHEMATICAL APPENDIX
 
 **Principle of Superposition**
 
@@ -251,3 +225,10 @@ $$D_\text{net} = D_{1}+D_{2}+\cdots=\sum_{i}D$$
 
 where
 - $D_{i}$ is the displacement caused by each wave
+
+
+## REFERENCES
+
+**Vector Calculus Reference**
+
+--> [Vector Calculus.md](../lessons/Vector-Calculus.md)

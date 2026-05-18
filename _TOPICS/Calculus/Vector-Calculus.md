@@ -1,4 +1,4 @@
-
+## EXPLANATIONS
 
 **Stoke's Theorem**
 
@@ -13,7 +13,6 @@ In this formula:
 *   The **integration around $C$** is performed in a sense consistent with the orientation of the normal vector $\mathbf{n}$, following the **right-hand rule**.
 
 <br/>
-
 
 **Flux** 
 
@@ -42,3 +41,10 @@ where
 There exist double integral with two equivalent notations:
 * Differential Area Form: $\displaystyle \iint_R f(x, y) \, dA$.
 * Coordinate Form: $\displaystyle \iint_R f(x, y) \, dx \, dy$.
+
+<br/>
+
+
+**Topology Reference**
+
+--> [Topology.md](../lessons/topology.md)
