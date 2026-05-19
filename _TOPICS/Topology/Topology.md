@@ -111,3 +111,26 @@ A real function of a real variable that is differentiable that has, at all point
 **Smooth Function**
 
 A synonym for differentiable function.
+
+<br/>
+
+
+**K-Covector**
+
+
+**K-Covector field**
+
+**K-Form**
+Synonym for k-covector field
+
+**K-Tensor**
+
+**K-Fold**
+
+
+
+
+
+
+
+
