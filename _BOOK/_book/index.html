@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="TOPICS Book" />
+<meta property="og:type" content="book" />
+
+
+
+
+<meta name="author" content="bignumber-material" />
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta name="description" content="TOPICS Book">
+
+<title>TOPICS Book</title>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+/* show arrow before summary tag as in bootstrap
+TODO: remove if bootstrap in updated in html_document (rmarkdown#1485) */
+details > summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#introduction" id="toc-introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li class="has-sub"><a href="about.html#about" id="toc-about"><span class="toc-section-number">2</span> About</a>
+<ul>
+<li><a href="about.html#explanations" id="toc-explanations"><span class="toc-section-number">2.1</span> EXPLANATIONS</a></li>
+<li class="has-sub"><a href="about.html#explanations-1" id="toc-explanations-1"><span class="toc-section-number">2.2</span> EXPLANATIONS</a>
+<ul>
+<li><a href="about.html#maxwells-equations" id="toc-maxwells-equations"><span class="toc-section-number">2.2.1</span> Maxwell’s Equations</a></li>
+<li><a href="about.html#stokes-theorem-physics" id="toc-stokes-theorem-physics"><span class="toc-section-number">2.2.2</span> Stoke’s Theorem Physics</a></li>
+<li><a href="about.html#stokes-theorem-for-flux-integral" id="toc-stokes-theorem-for-flux-integral"><span class="toc-section-number">2.2.3</span> Stoke’s Theorem for Flux Integral</a></li>
+<li><a href="about.html#surface-integrals-and-fundamental-theorem-of-calculus" id="toc-surface-integrals-and-fundamental-theorem-of-calculus"><span class="toc-section-number">2.2.4</span> Surface Integrals and Fundamental Theorem of Calculus</a></li>
+<li><a href="about.html#special-relativity-and-electric-fields" id="toc-special-relativity-and-electric-fields"><span class="toc-section-number">2.2.5</span> Special Relativity and Electric Fields</a></li>
+</ul></li>
+<li><a href="about.html#glossary" id="toc-glossary"><span class="toc-section-number">2.3</span> GLOSSARY</a></li>
+<li><a href="about.html#mathemarics-appendix" id="toc-mathemarics-appendix"><span class="toc-section-number">2.4</span> MATHEMARICS APPENDIX</a></li>
+<li><a href="about.html#physics-mathematical-appendix" id="toc-physics-mathematical-appendix"><span class="toc-section-number">2.5</span> PHYSICS MATHEMATICAL APPENDIX</a></li>
+<li><a href="about.html#references" id="toc-references"><span class="toc-section-number">2.6</span> REFERENCES</a></li>
+</ul></li>
+<li><a href="fourier-transform.html#fourier-transform" id="toc-fourier-transform"><span class="toc-section-number">3</span> Fourier Transform</a></li>
+<li class="has-sub"><a href="definitions.html#definitions" id="toc-definitions"><span class="toc-section-number">4</span> Definitions</a>
+<ul>
+<li><a href="definitions.html#references-1" id="toc-references-1"><span class="toc-section-number">4.1</span> References</a></li>
+<li class="has-sub"><a href="definitions.html#explanations-2" id="toc-explanations-2"><span class="toc-section-number">4.2</span> EXPLANATIONS</a>
+<ul>
+<li><a href="definitions.html#manifolds" id="toc-manifolds"><span class="toc-section-number">4.2.1</span> Manifolds</a></li>
+<li><a href="definitions.html#homeomorphic" id="toc-homeomorphic"><span class="toc-section-number">4.2.2</span> Homeomorphic</a></li>
+</ul></li>
+<li><a href="definitions.html#glossary-1" id="toc-glossary-1"><span class="toc-section-number">4.3</span> GLOSSARY</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="header">
+<h1 class="title">TOPICS Book</h1>
+<h4 class="author"><em>bignumber-material</em></h4>
+</div>
+<div id="introduction" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introduction</h1>
+<p>This Bookdown project uses the markdown sources under <code>../_TOPICS</code> without moving them. The generated HTML book is built from <code>_BOOK</code> and can be rendered with <code>bookdown::render_book("index.Rmd", "bookdown::html_book")</code>.</p>
+</div>
+<p style="text-align: center;">
+<a href="about.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>

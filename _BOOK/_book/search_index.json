@@ -1,0 +1,1 @@
+[["index.html", "TOPICS Book 1 Introduction", " TOPICS Book bignumber-material 1 Introduction This Bookdown project uses the markdown sources under ../_TOPICS without moving them. The generated HTML book is built from _BOOK and can be rendered with bookdown::render_book(\"index.Rmd\", \"bookdown::html_book\"). "]]

@@ -1,0 +1,55 @@
+body,
+blockquote,
+p,
+li,
+th,
+td,
+figcaption,
+.caption {
+  font-family: "Times New Roman", Georgia, "Palatino Linotype", Palatino, serif;
+  color: #111;
+  line-height: 1.55;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Times New Roman", Georgia, "Palatino Linotype", Palatino, serif;
+  font-weight: 700;
+}
+
+code, pre, kbd, samp {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.math,
+.mjx-chtml,
+.mjx-skip,
+.mjx-math {
+  font-family: "STIX Two Math", "Latin Modern Math", "Times New Roman", serif !important;
+}
+
+.mjx-chtml {
+  font-size: 1.05em;
+}
+
+.rmd-title,
+.rmd-title a,
+.rmd-title a:visited {
+  font-family: "Times New Roman", Georgia, "Palatino Linotype", Palatino, serif;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+  font-family: "Times New Roman", Georgia, "Palatino Linotype", Palatino, serif;
+}
+
+body {
+  background: #fff;
+}
+
+pre, code {
+  background: #f8f8f8;
+}
+
+table th, table td {
+  vertical-align: top;
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="4 Definitions | TOPICS Book" />
+<meta property="og:type" content="book" />
+
+
+
+
+<meta name="author" content="bignumber-material" />
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta name="description" content="4 Definitions | TOPICS Book">
+
+<title>4 Definitions | TOPICS Book</title>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+/* show arrow before summary tag as in bootstrap
+TODO: remove if bootstrap in updated in html_document (rmarkdown#1485) */
+details > summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#introduction" id="toc-introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li class="has-sub"><a href="about.html#about" id="toc-about"><span class="toc-section-number">2</span> About</a>
+<ul>
+<li><a href="about.html#explanations" id="toc-explanations"><span class="toc-section-number">2.1</span> EXPLANATIONS</a></li>
+<li class="has-sub"><a href="about.html#explanations-1" id="toc-explanations-1"><span class="toc-section-number">2.2</span> EXPLANATIONS</a>
+<ul>
+<li><a href="about.html#maxwells-equations" id="toc-maxwells-equations"><span class="toc-section-number">2.2.1</span> Maxwell’s Equations</a></li>
+<li><a href="about.html#stokes-theorem-physics" id="toc-stokes-theorem-physics"><span class="toc-section-number">2.2.2</span> Stoke’s Theorem Physics</a></li>
+<li><a href="about.html#stokes-theorem-for-flux-integral" id="toc-stokes-theorem-for-flux-integral"><span class="toc-section-number">2.2.3</span> Stoke’s Theorem for Flux Integral</a></li>
+<li><a href="about.html#surface-integrals-and-fundamental-theorem-of-calculus" id="toc-surface-integrals-and-fundamental-theorem-of-calculus"><span class="toc-section-number">2.2.4</span> Surface Integrals and Fundamental Theorem of Calculus</a></li>
+<li><a href="about.html#special-relativity-and-electric-fields" id="toc-special-relativity-and-electric-fields"><span class="toc-section-number">2.2.5</span> Special Relativity and Electric Fields</a></li>
+</ul></li>
+<li><a href="about.html#glossary" id="toc-glossary"><span class="toc-section-number">2.3</span> GLOSSARY</a></li>
+<li><a href="about.html#mathemarics-appendix" id="toc-mathemarics-appendix"><span class="toc-section-number">2.4</span> MATHEMARICS APPENDIX</a></li>
+<li><a href="about.html#physics-mathematical-appendix" id="toc-physics-mathematical-appendix"><span class="toc-section-number">2.5</span> PHYSICS MATHEMATICAL APPENDIX</a></li>
+<li><a href="about.html#references" id="toc-references"><span class="toc-section-number">2.6</span> REFERENCES</a></li>
+</ul></li>
+<li><a href="fourier-transform.html#fourier-transform" id="toc-fourier-transform"><span class="toc-section-number">3</span> Fourier Transform</a></li>
+<li class="has-sub"><a href="definitions.html#definitions" id="toc-definitions"><span class="toc-section-number">4</span> Definitions</a>
+<ul>
+<li><a href="definitions.html#references-1" id="toc-references-1"><span class="toc-section-number">4.1</span> References</a></li>
+<li class="has-sub"><a href="definitions.html#explanations-2" id="toc-explanations-2"><span class="toc-section-number">4.2</span> EXPLANATIONS</a>
+<ul>
+<li><a href="definitions.html#manifolds" id="toc-manifolds"><span class="toc-section-number">4.2.1</span> Manifolds</a></li>
+<li><a href="definitions.html#homeomorphic" id="toc-homeomorphic"><span class="toc-section-number">4.2.2</span> Homeomorphic</a></li>
+</ul></li>
+<li><a href="definitions.html#glossary-1" id="toc-glossary-1"><span class="toc-section-number">4.3</span> GLOSSARY</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="definitions" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Definitions</h1>
+<p><br/><br/></p>
+<ol start="3" style="list-style-type: decimal">
+<li>measurable space [2, pp. 25]</li>
+</ol>
+<p>A measurable space is the space <span class="math inline">\((X,\mathcal{M})\)</span> if</p>
+<ul>
+<li><span class="math inline">\(\mathcal{M} \sub P(X)\)</span></li>
+</ul>
+<p>where
+- <span class="math inline">\(\mathcal{M}\)</span> is <span class="math inline">\(\sigma\)</span>-algebra<br />
+- <span class="math inline">\(X\)</span> is a set
+- <span class="math inline">\(P(X)\)</span> is the family of all subsets [2, pp. 2]</p>
+<p>Note: not to be confused with a “measure space.”</p>
+<p><br/><br/></p>
+<ol start="3" style="list-style-type: decimal">
+<li>measure space [2, pp. 25]</li>
+</ol>
+<p>A measure space is the space <span class="math inline">\((X,\mathcal{M}, \mu)\)</span></p>
+<p>where
+- <span class="math inline">\(\mu\)</span> is the measure</p>
+<p>Note: not to be confused with a “measurable space.”</p>
+<p><br/><br/></p>
+<ol start="2" style="list-style-type: decimal">
+<li>measurable set [2, pp. 25]</li>
+</ol>
+<p>A measurable set is the <span class="math inline">\(\sigma\)</span>-alegbra, <span class="math inline">\(\mathcal{M}\)</span>, in a measurable space:
+<span class="math display">\[ \mathcal{M} \in (X,\mathcal{M}) \]</span></p>
+<p><br/><br/></p>
+<ol style="list-style-type: decimal">
+<li>simple function [1]
+<span class="math display">\[s: X \rightarrow \mathbb{R}\]</span></li>
+</ol>
+<p><span class="math display">\[ s = c_1 \chi_{E1} + c_2 \chi_{E2} \dots + c_n \chi_{En} \]</span></p>
+<p><br/><br/></p>
+<ol start="2" style="list-style-type: decimal">
+<li>borel measure [2, pp. 33]</li>
+</ol>
+<p>…</p>
+<ol style="list-style-type: decimal">
+<li>lebesgue measure [2, pp. 37]</li>
+</ol>
+<ul>
+<li><span class="math inline">\(\mu_F\)</span> is the complete lebesgue measure</li>
+<li><span class="math inline">\(F(x)=x\)</span> function associated with <span class="math inline">\(\mu_F\)</span></li>
+<li><span class="math inline">\(m\)</span> is the length of the measure</li>
+<li><span class="math inline">\(\mathcal{L}\)</span> is the lebesgue measurable set</li>
+</ul>
+<p>Use of the lebesgue measure [3, pp. 33]</p>
+<p><br/><br/></p>
+<ol style="list-style-type: decimal">
+<li>lebesgue integral [2, pp. 56]</li>
+</ol>
+<p>..</p>
+<p><br/><br/></p>
+<div id="references-1" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> References</h2>
+<ol style="list-style-type: decimal">
+<li><a href="https://e.math.cornell.edu/people/belk/measuretheory/DefiningTheIntegral.pdf" class="uri">https://e.math.cornell.edu/people/belk/measuretheory/DefiningTheIntegral.pdf</a></li>
+<li>[Pure and Applied Mathematics_ A Wiley-Interscience Series of Texts, Monographs and Tracts] Gerald B. Folland - Real Analysis_ Modern Techniques and Their Applications (1999, Wiley-Interscience) - libgen.li.pdf</li>
+<li>William Feller - An Introduction to Probability Theory and Its Applications, Vol. 2 (1971, Wiley) - libgen.li.pdf</li>
+</ol>
+
+</div>
+<div id="explanations-2" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> EXPLANATIONS</h2>
+<div id="manifolds" class="section level3" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Manifolds</h3>
+<p>If a surface is a generalization of a curve, then a manifold is the generalization of both surfaces and curves.</p>
+<p>Here’s another way to understand a manifold.</p>
+<p>A curve is a one-dimension manifold.
+A surface is a two-dimension manifold.</p>
+<p>Beyond two dimensions, we just call these things n-manifold, where <span class="math inline">\(n\)</span> is the number of dimensions.</p>
+<p><br/></p>
+</div>
+<div id="homeomorphic" class="section level3" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Homeomorphic</h3>
+<p>A description of a space that preserves the topological structure. An example is a sphere and a torus, which are homeomorphic to each other. By preserving the topological structure, we mean that the sphere and the torus have the same number of holes.</p>
+<p>Let’s look at a more formal definition of a manifold. Let <span class="math inline">\(U \subseteq \mathbb{R}^n\)</span> and <span class="math inline">\(V \subseteq \mathbb{R}^m\)</span>. A function <span class="math inline">\(f: U \to V\)</span> is called a homeomorphism if it is a bijection and its inverse is continuous. Here, continuous means that for any open set <span class="math inline">\(V \subseteq \mathbb{R}^m\)</span>, both <span class="math inline">\(U\)</span> and <span class="math inline">\(V\)</span> are open in <span class="math inline">\(\mathbb{R}^n\)</span> and, to each other, their domains and codomains remain open after the function is applied.</p>
+</div>
+</div>
+<div id="glossary-1" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> GLOSSARY</h2>
+<p><strong>Smooth Manifold:</strong> A smooth manifold is a manifold that is locally homeomorphic to a linear space, which is a vector space.</p>
+<p><br/></p>
+<p><strong>Locally:</strong> A description about how a manifold looks like around a point. When used, it means that it would take exactly <span class="math inline">\(n\)</span> points to describe the manifold around a point.</p>
+<p><br/></p>
+<p><strong>Homeomorphic:</strong> A description of a space that preserves the topological structure. An example is a sphere and a torus, which are homeomorphic to each other.</p>
+<p><br/></p>
+<p><strong>Open Set:</strong> A set that is not a subset of any other set.</p>
+<p><br/></p>
+<p><strong>Holes:</strong> The number of tori that can fit inside a manifold.</p>
+<p><br/></p>
+<p><strong>Tori</strong> A surface that looks like a donut. It has one hole.</p>
+<p><br/></p>
+<p><strong>Topological Structure:</strong> The properties of a space that are preserved under homeomorphisms, which is an operation that maps points in one space to points in another space while preserving the distance between points.</p>
+<p><br/></p>
+<p><strong>Continuous Function:</strong> A function that maps points in one space to points in another space while preserving the distance between points.</p>
+<p><br/></p>
+<p><strong>Differential Form</strong></p>
+<p><br/></p>
+<p><strong>Surface</strong></p>
+<p>A two-dimensional geometric shape or boundary in three-dimensional space. It can be represented mathematically by functions or sets of points, ranging from simple flat planes to complex, curved manifolds.</p>
+<p><strong>Piecewise Smooth</strong></p>
+<p>A surface is piecewise smooth if it consists of finitely many smooth portions. A common example of a piecewise smooth surface is the surface of a cube, which is composed of six smooth (flat) faces joined at edges</p>
+<p><br/></p>
+<p><strong>Oriented Surface</strong></p>
+<p>A surface where a consistent direction for the surface normal is chosen at every point. This distinguishes between the two sides, often designated as “inner” and “outer” or “positive” and “negative” orientations.</p>
+<p><br/></p>
+<p><strong>Smooth Surface</strong></p>
+<p>A surface is considered smooth if its surface normal depends continuously on the points of the surface. At every point P of such a surface, there exists a unique tangent plane and a unique normal whose direction varies continuously.</p>
+<p><br/></p>
+<p><strong>Surface Normal</strong></p>
+<p>A vector that is normal to a surface.</p>
+<p><br/></p>
+<p><strong>Piecewise Smooth Simple Closed Curve</strong></p>
+<p>A path that starts and ends at the same point without intersecting itself, consisting of several smooth segments joined together. Examples include the boundary of a square or a triangle.</p>
+<p><br/></p>
+<p><strong>Differentiable Function</strong></p>
+<p>A real function of a real variable that is differentiable that has, at all points, derivatives of all orders.</p>
+<p><br/></p>
+<p><strong>Smooth Function</strong></p>
+<p>A synonym for differentiable function.</p>
+<p><br/></p>
+<p><strong>K-Covector</strong></p>
+<p><strong>K-Covector field</strong></p>
+<p><strong>K-Form</strong>
+Synonym for k-covector field</p>
+<p><strong>K-Tensor</strong></p>
+<p><strong>K-Fold</strong></p>
+
+</div>
+</div>
+<p style="text-align: center;">
+<a href="fourier-transform.html"><button class="btn btn-default">Previous</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>

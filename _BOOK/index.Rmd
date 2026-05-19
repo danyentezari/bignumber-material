@@ -1,0 +1,14 @@
+---
+title: "TOPICS Book"
+author: "bignumber-material"
+site: bookdown::bookdown_site
+documentclass: book
+---
+
+# Introduction
+
+This Bookdown project uses the markdown sources under `../_TOPICS` without moving them. The generated HTML book is built from `_BOOK` and can be rendered with `bookdown::render_book("index.Rmd", "bookdown::html_book")`.
+
+# About
+
+The chapters are sourced from topic folders in `_TOPICS`. Each file is referenced by relative path from this `_BOOK` folder.
