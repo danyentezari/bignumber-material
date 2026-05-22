@@ -4,15 +4,15 @@
 
 **Stoke's Theorem**
 
-Let $S$ be a **piecewise smooth oriented surface** in space, and let the boundary of $S$ be a **piecewise smooth simple closed curve** $C$. If $\mathbf{F}(x, y, z)$ is a continuous vector function with continuous first partial derivatives in a domain containing $S$, then:
+Let $S$ be a piecewise smooth oriented surface in space, and let the boundary of $S$ be a piecewise smooth simple closed curve $C$. If $\mathbf{F}(x, y, z)$ is a continuous vector function with continuous first partial derivatives in a domain containing $S$, then:
 
 $$\iint_S (\text{curl } \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$.
 
 In this formula:
-*   **$\mathbf{n}$** is the **unit normal vector** of $S$.
-*   **$\mathbf{r}'(s)$** is the **unit tangent vector** of $C$.
-*   **$s$** is the **arc length** of $C$.
-*   The **integration around $C$** is performed in a sense consistent with the orientation of the normal vector $\mathbf{n}$, following the **right-hand rule**.
+*   $\mathbf{n}$ is the unit normal vector of $S$.
+*   $\mathbf{r}'(s)$ is the unit tangent vector of $C$.
+*   $s$ is the arc length of $C$.
+*   The integration around $C$ is performed in a sense consistent with the orientation of the normal vector $\mathbf{n}$, following the right-hand rule.
 
 <br/>
 
@@ -45,6 +45,8 @@ There exist double integral with two equivalent notations:
 * Coordinate Form: $\displaystyle \iint_R f(x, y) \, dx \, dy$.
 
 <br/>
+
+
 
 
 **Topology Reference**

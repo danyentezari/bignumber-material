@@ -7,14 +7,14 @@ This folder contains the Bookdown project for the `_TOPICS` content.
 From `_BOOK`:
 
 ```sh
-Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::html_book")'
+Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::bs4_book")'
 ```
 
 If `Rscript` is not available, install R and ensure it is on your shell `PATH`.
 
 ## Theme
 
-This project now uses `bookdown::bs4_book` with a sidebar-like table of contents.
+This project now uses the built-in `bookdown::bs4_book` theme with Bootswatch `flatly`, plus custom serif font styling via `style.css`.
 
 ## Output
 

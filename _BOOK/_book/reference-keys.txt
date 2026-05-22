@@ -1,7 +1,6 @@
 introduction
-about
+electromagnetism
 explanations
-explanations-1
 maxwells-equations
 stokes-theorem-physics
 stokes-theorem-for-flux-integral
@@ -11,10 +10,11 @@ glossary
 mathemarics-appendix
 physics-mathematical-appendix
 references
-fourier-transform
-definitions
-references-1
-explanations-2
+vector-calculus
+explanations-1
+topology
 manifolds
-homeomorphic
+topological-spaces
+homeomorphism
+appendix
 glossary-1

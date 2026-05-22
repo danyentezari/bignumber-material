@@ -3,9 +3,6 @@ new_session: no
 output_dir: "_book"
 rmd_files:
   - "index.Rmd"
-  - "../_TOPICS/Calculus/Vector-Calculus.md"
-  - "../_TOPICS/Calculus/notes.md"
   - "../_TOPICS/Electromagnetism/Electromagnetism.md"
-  - "../_TOPICS/Functional-Analysis/Fourier-Transform.md"
-  - "../_TOPICS/Real-Analysis/Lebesgue-Integration.md"
+  - "../_TOPICS/Calculus/Vector-Calculus.md"
   - "../_TOPICS/Topology/Topology.md"

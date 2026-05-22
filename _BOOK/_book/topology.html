@@ -4,13 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>5 Definitions | Dany Mathematics</title>
+<title>4 Topology | Geometry of Physics</title>
 <meta name="author" content="bignumber-material">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="5 Definitions | Dany Mathematics">
+<meta property="og:title" content="4 Topology | Geometry of Physics">
 <meta property="og:type" content="book">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="5 Definitions | Dany Mathematics">
+<meta name="twitter:title" content="4 Topology | Geometry of Physics">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -19,9 +19,9 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<meta name="description" content="measurable space [2, pp. 25] A measurable space is the space \((X,\mathcal{M})\) if \(\mathcal{M} \sub P(X)\) where - \(\mathcal{M}\) is \(\sigma\)-algebra - \(X\) is a set - \(P(X)\) is the...">
-<meta property="og:description" content="measurable space [2, pp. 25] A measurable space is the space \((X,\mathcal{M})\) if \(\mathcal{M} \sub P(X)\) where - \(\mathcal{M}\) is \(\sigma\)-algebra - \(X\) is a set - \(P(X)\) is the...">
-<meta name="twitter:description" content="measurable space [2, pp. 25] A measurable space is the space \((X,\mathcal{M})\) if \(\mathcal{M} \sub P(X)\) where - \(\mathcal{M}\) is \(\sigma\)-algebra - \(X\) is a set - \(P(X)\) is the...">
+<meta name="description" content="definition (Topology) A topology, \(\mathcal{T}\), is a collection of subsets of X that satisfies the following conditions: Existence of the set. That is, \(X\) is in \(\mathcal{T}\). Existence of...">
+<meta property="og:description" content="definition (Topology) A topology, \(\mathcal{T}\), is a collection of subsets of X that satisfies the following conditions: Existence of the set. That is, \(X\) is in \(\mathcal{T}\). Existence of...">
+<meta name="twitter:description" content="definition (Topology) A topology, \(\mathcal{T}\), is a collection of subsets of X that satisfies the following conditions: Existence of the set. That is, \(X\) is in \(\mathcal{T}\). Existence of...">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -31,7 +31,7 @@
 
     <div class="d-flex align-items-start justify-content-between">
       <h1>
-        <a href="index.html" title="">Dany Mathematics</a>
+        <a href="index.html" title="">Geometry of Physics</a>
       </h1>
       <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
     </div>
@@ -44,10 +44,9 @@
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
-<li><a class="" href="vector-calculus.html"><span class="header-section-number">2</span> Vector Calculus</a></li>
-<li><a class="" href="electromagnetism.html"><span class="header-section-number">3</span> Electromagnetism</a></li>
-<li><a class="" href="fourier-transform.html"><span class="header-section-number">4</span> Fourier Transform</a></li>
-<li><a class="active" href="definitions.html"><span class="header-section-number">5</span> Definitions</a></li>
+<li><a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a></li>
+<li><a class="" href="vector-calculus.html"><span class="header-section-number">3</span> Vector Calculus</a></li>
+<li><a class="active" href="topology.html"><span class="header-section-number">4</span> Topology</a></li>
 </ul>
 
         <div class="book-extra">
@@ -55,172 +54,131 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="definitions" class="section level1" number="5">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="topology" class="section level1" number="4">
 <h1>
-<span class="header-section-number">5</span> Definitions<a class="anchor" aria-label="anchor" href="#definitions"><i class="fas fa-link"></i></a>
+<span class="header-section-number">4</span> Topology<a class="anchor" aria-label="anchor" href="#topology"><i class="fas fa-link"></i></a>
 </h1>
-<p><br><br></p>
-<ol start="3" style="list-style-type: decimal">
-<li>measurable space [2, pp. 25]</li>
-</ol>
-<p>A measurable space is the space <span class="math inline">\((X,\mathcal{M})\)</span> if</p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Topology</em>) A topology, <span class="math inline">\(\mathcal{T}\)</span>, is a collection of subsets of X that satisfies the following conditions:</p>
 <ul>
-<li><span class="math inline">\(\mathcal{M} \sub P(X)\)</span></li>
+<li>Existence of the set. That is, <span class="math inline">\(X\)</span> is in <span class="math inline">\(\mathcal{T}\)</span>.</li>
+<li>Existence of the empty set. That is, <span class="math inline">\(\emptyset\)</span> is in <span class="math inline">\(\mathcal{T}\)</span>.</li>
+<li>Closure under finite intersections. That is, <span class="math inline">\(U_1 \cap \dots \cap U_n\)</span> is an element of <span class="math inline">\(\mathcal{T}\)</span>.</li>
+<li>Closure under arbitrary unions. That is, <span class="math inline">\(\bigcup_{\alpha \in A} U_\alpha\)</span> is also an element of <span class="math inline">\(\mathcal{T}\)</span>.</li>
 </ul>
 <p>where
-- <span class="math inline">\(\mathcal{M}\)</span> is <span class="math inline">\(\sigma\)</span>-algebra<br>
-- <span class="math inline">\(X\)</span> is a set
-- <span class="math inline">\(P(X)\)</span> is the family of all subsets [2, pp. 2]</p>
-<p>Note: not to be confused with a “measure space.”</p>
-<p><br><br></p>
-<ol start="3" style="list-style-type: decimal">
-<li>measure space [2, pp. 25]</li>
-</ol>
-<p>A measure space is the space <span class="math inline">\((X,\mathcal{M}, \mu)\)</span></p>
-<p>where
-- <span class="math inline">\(\mu\)</span> is the measure</p>
-<p>Note: not to be confused with a “measurable space.”</p>
-<p><br><br></p>
-<ol start="2" style="list-style-type: decimal">
-<li>measurable set [2, pp. 25]</li>
-</ol>
-<p>A measurable set is the <span class="math inline">\(\sigma\)</span>-alegbra, <span class="math inline">\(\mathcal{M}\)</span>, in a measurable space:
-<span class="math display">\[ \mathcal{M} \in (X,\mathcal{M}) \]</span></p>
-<p><br><br></p>
-<ol style="list-style-type: decimal">
-<li>simple function [1]
-<span class="math display">\[s: X \rightarrow \mathbb{R}\]</span>
-</li>
-</ol>
-<p><span class="math display">\[ s = c_1 \chi_{E1} + c_2 \chi_{E2} \dots + c_n \chi_{En} \]</span></p>
-<p><br><br></p>
-<ol start="2" style="list-style-type: decimal">
-<li>borel measure [2, pp. 33]</li>
-</ol>
-<p>…</p>
-<ol style="list-style-type: decimal">
-<li>lebesgue measure [2, pp. 37]</li>
-</ol>
-<ul>
-<li>
-<span class="math inline">\(\mu_F\)</span> is the complete lebesgue measure</li>
-<li>
-<span class="math inline">\(F(x)=x\)</span> function associated with <span class="math inline">\(\mu_F\)</span>
-</li>
-<li>
-<span class="math inline">\(m\)</span> is the length of the measure</li>
-<li>
-<span class="math inline">\(\mathcal{L}\)</span> is the lebesgue measurable set</li>
-</ul>
-<p>Use of the lebesgue measure [3, pp. 33]</p>
-<p><br><br></p>
-<ol style="list-style-type: decimal">
-<li>lebesgue integral [2, pp. 56]</li>
-</ol>
-<p>..</p>
-<p><br><br></p>
-<div id="references-1" class="section level2" number="5.1">
-<h2>
-<span class="header-section-number">5.1</span> References<a class="anchor" aria-label="anchor" href="#references-1"><i class="fas fa-link"></i></a>
-</h2>
-<ol style="list-style-type: decimal">
-<li><a href="https://e.math.cornell.edu/people/belk/measuretheory/DefiningTheIntegral.pdf" class="uri">https://e.math.cornell.edu/people/belk/measuretheory/DefiningTheIntegral.pdf</a></li>
-<li>[Pure and Applied Mathematics_ A Wiley-Interscience Series of Texts, Monographs and Tracts] Gerald B. Folland - Real Analysis_ Modern Techniques and Their Applications (1999, Wiley-Interscience) - libgen.li.pdf</li>
-<li>William Feller - An Introduction to Probability Theory and Its Applications, Vol. 2 (1971, Wiley) - libgen.li.pdf</li>
-</ol>
-</div>
-<div id="explanations-2" class="section level2" number="5.2">
-<h2>
-<span class="header-section-number">5.2</span> EXPLANATIONS<a class="anchor" aria-label="anchor" href="#explanations-2"><i class="fas fa-link"></i></a>
-</h2>
-<div id="manifolds" class="section level3" number="5.2.1">
+- <span class="math inline">\(U_i\)</span> are elements of <span class="math inline">\(\mathcal{T}\)</span>
+- <span class="math inline">\(X\)</span> is a set</p>
+<p></p>
+<div id="manifolds" class="section level3" number="4.0.1">
 <h3>
-<span class="header-section-number">5.2.1</span> Manifolds<a class="anchor" aria-label="anchor" href="#manifolds"><i class="fas fa-link"></i></a>
+<span class="header-section-number">4.0.1</span> Manifolds<a class="anchor" aria-label="anchor" href="#manifolds"><i class="fas fa-link"></i></a>
 </h3>
-<p>If a surface is a generalization of a curve, then a manifold is the generalization of both surfaces and curves.</p>
-<p>Here’s another way to understand a manifold.</p>
-<p>A curve is a one-dimension manifold.
+<p>There are two main types of manifolds, generally: topological and smooth manifolds. We will start with an informal definition of a topological manifold.</p>
+<p>If a surface is a generalization of a curve, then a topological manifold is the generalization of both surfaces and curves.</p>
+<p>Here’s another way to understand a topological manifold.</p>
+<p>A curve is a one-dimension manifold. <br>
 A surface is a two-dimension manifold.</p>
 <p>Beyond two dimensions, we just call these things n-manifold, where <span class="math inline">\(n\)</span> is the number of dimensions.</p>
-<p><br></p>
+<p>Let’s look at a more formal definition of a manifold.</p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Topological Manifold</em>) A topological manifold is a topological space, <span class="math inline">\(M\)</span>, that satisfies the following conditions</p>
+<ul>
+<li>Locally Euclidean of Dimension n</li>
+<li>Hausdorff Space</li>
+<li>Second Countable</li>
+</ul>
+<p></p>
+<p><strong>definition</strong> (<em>Smooth Manifold</em>)</p>
 </div>
-<div id="homeomorphic" class="section level3" number="5.2.2">
+<div id="topological-spaces" class="section level3" number="4.0.2">
 <h3>
-<span class="header-section-number">5.2.2</span> Homeomorphic<a class="anchor" aria-label="anchor" href="#homeomorphic"><i class="fas fa-link"></i></a>
+<span class="header-section-number">4.0.2</span> Topological Spaces<a class="anchor" aria-label="anchor" href="#topological-spaces"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>definition</strong> (<em>Topological Space</em>)</p>
+<p><strong>definition</strong> (<em>Hausdorff Space</em>)</p>
+</div>
+<div id="homeomorphism" class="section level3" number="4.0.3">
+<h3>
+<span class="header-section-number">4.0.3</span> Homeomorphism<a class="anchor" aria-label="anchor" href="#homeomorphism"><i class="fas fa-link"></i></a>
 </h3>
 <p>A description of a space that preserves the topological structure. An example is a sphere and a torus, which are homeomorphic to each other. By preserving the topological structure, we mean that the sphere and the torus have the same number of holes.</p>
-<p>Let’s look at a more formal definition of a manifold. Let <span class="math inline">\(U \subseteq \mathbb{R}^n\)</span> and <span class="math inline">\(V \subseteq \mathbb{R}^m\)</span>. A function <span class="math inline">\(f: U \to V\)</span> is called a homeomorphism if it is a bijection and its inverse is continuous. Here, continuous means that for any open set <span class="math inline">\(V \subseteq \mathbb{R}^m\)</span>, both <span class="math inline">\(U\)</span> and <span class="math inline">\(V\)</span> are open in <span class="math inline">\(\mathbb{R}^n\)</span> and, to each other, their domains and codomains remain open after the function is applied.</p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Homeomorphism</em>) A function between topological spaces <span class="math inline">\(f: \mathbf{U} \to \mathbf{V}\)</span> is called a homeomorphism if the following conditions hold.</p>
+<ul>
+<li>
+<span class="math inline">\(f\)</span> is a bijection and continuous</li>
+<li>
+<span class="math inline">\(f^{-1}\)</span> is continuous</li>
+</ul>
+<p>where
+- <span class="math inline">\(f^{-1}\)</span> is the inverse of <span class="math inline">\(f\)</span>
+- <span class="math inline">\(\mathbf{U}\)</span>, <span class="math inline">\(\mathbf{V}\)</span> are topological spaces.</p>
+<p></p>
 </div>
-</div>
-<div id="glossary-1" class="section level2" number="5.3">
+<div id="appendix" class="section level2" number="4.1">
 <h2>
-<span class="header-section-number">5.3</span> GLOSSARY<a class="anchor" aria-label="anchor" href="#glossary-1"><i class="fas fa-link"></i></a>
+<span class="header-section-number">4.1</span> APPENDIX<a class="anchor" aria-label="anchor" href="#appendix"><i class="fas fa-link"></i></a>
+</h2>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Continuity</em>) For any open set <span class="math inline">\(V \subseteq \mathbb{R}^m\)</span>, both <span class="math inline">\(U\)</span> and <span class="math inline">\(V\)</span> are open in <span class="math inline">\(\mathbb{R}^n\)</span> and, to each other, their domains and codomains remain open after the function is applied.</p>
+<p></p>
+</div>
+<div id="glossary-1" class="section level2" number="4.2">
+<h2>
+<span class="header-section-number">4.2</span> GLOSSARY<a class="anchor" aria-label="anchor" href="#glossary-1"><i class="fas fa-link"></i></a>
 </h2>
 <p><strong>Smooth Manifold:</strong> A smooth manifold is a manifold that is locally homeomorphic to a linear space, which is a vector space.</p>
-<p><br></p>
 <p><strong>Locally:</strong> A description about how a manifold looks like around a point. When used, it means that it would take exactly <span class="math inline">\(n\)</span> points to describe the manifold around a point.</p>
-<p><br></p>
 <p><strong>Homeomorphic:</strong> A description of a space that preserves the topological structure. An example is a sphere and a torus, which are homeomorphic to each other.</p>
-<p><br></p>
 <p><strong>Open Set:</strong> A set that is not a subset of any other set.</p>
-<p><br></p>
 <p><strong>Holes:</strong> The number of tori that can fit inside a manifold.</p>
-<p><br></p>
 <p><strong>Tori</strong> A surface that looks like a donut. It has one hole.</p>
-<p><br></p>
 <p><strong>Topological Structure:</strong> The properties of a space that are preserved under homeomorphisms, which is an operation that maps points in one space to points in another space while preserving the distance between points.</p>
-<p><br></p>
 <p><strong>Continuous Function:</strong> A function that maps points in one space to points in another space while preserving the distance between points.</p>
-<p><br></p>
 <p><strong>Differential Form</strong></p>
-<p><br></p>
 <p><strong>Surface</strong></p>
 <p>A two-dimensional geometric shape or boundary in three-dimensional space. It can be represented mathematically by functions or sets of points, ranging from simple flat planes to complex, curved manifolds.</p>
 <p><strong>Piecewise Smooth</strong></p>
 <p>A surface is piecewise smooth if it consists of finitely many smooth portions. A common example of a piecewise smooth surface is the surface of a cube, which is composed of six smooth (flat) faces joined at edges</p>
-<p><br></p>
 <p><strong>Oriented Surface</strong></p>
 <p>A surface where a consistent direction for the surface normal is chosen at every point. This distinguishes between the two sides, often designated as “inner” and “outer” or “positive” and “negative” orientations.</p>
-<p><br></p>
 <p><strong>Smooth Surface</strong></p>
 <p>A surface is considered smooth if its surface normal depends continuously on the points of the surface. At every point P of such a surface, there exists a unique tangent plane and a unique normal whose direction varies continuously.</p>
-<p><br></p>
 <p><strong>Surface Normal</strong></p>
 <p>A vector that is normal to a surface.</p>
-<p><br></p>
 <p><strong>Piecewise Smooth Simple Closed Curve</strong></p>
 <p>A path that starts and ends at the same point without intersecting itself, consisting of several smooth segments joined together. Examples include the boundary of a square or a triangle.</p>
-<p><br></p>
 <p><strong>Differentiable Function</strong></p>
 <p>A real function of a real variable that is differentiable that has, at all points, derivatives of all orders.</p>
-<p><br></p>
 <p><strong>Smooth Function</strong></p>
 <p>A synonym for differentiable function.</p>
-<p><br></p>
 <p><strong>K-Covector</strong></p>
 <p><strong>K-Covector field</strong></p>
 <p><strong>K-Form</strong>
 Synonym for k-covector field</p>
 <p><strong>K-Tensor</strong></p>
 <p><strong>K-Fold</strong></p>
+<p><strong>Bijection</strong></p>
+<p><strong>Hausdorff Space</strong></p>
 
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="fourier-transform.html"><span class="header-section-number">4</span> Fourier Transform</a></div>
+<div class="prev"><a href="vector-calculus.html"><span class="header-section-number">3</span> Vector Calculus</a></div>
 <div class="empty"></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#definitions"><span class="header-section-number">5</span> Definitions</a></li>
-<li><a class="nav-link" href="#references-1"><span class="header-section-number">5.1</span> References</a></li>
 <li>
-<a class="nav-link" href="#explanations-2"><span class="header-section-number">5.2</span> EXPLANATIONS</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#manifolds"><span class="header-section-number">5.2.1</span> Manifolds</a></li>
-<li><a class="nav-link" href="#homeomorphic"><span class="header-section-number">5.2.2</span> Homeomorphic</a></li>
+<a class="nav-link" href="#topology"><span class="header-section-number">4</span> Topology</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#manifolds"><span class="header-section-number">4.0.1</span> Manifolds</a></li>
+<li><a class="nav-link" href="#topological-spaces"><span class="header-section-number">4.0.2</span> Topological Spaces</a></li>
+<li><a class="nav-link" href="#homeomorphism"><span class="header-section-number">4.0.3</span> Homeomorphism</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#glossary-1"><span class="header-section-number">5.3</span> GLOSSARY</a></li>
+<li><a class="nav-link" href="#appendix"><span class="header-section-number">4.1</span> APPENDIX</a></li>
+<li><a class="nav-link" href="#glossary-1"><span class="header-section-number">4.2</span> GLOSSARY</a></li>
 </ul>
 
       <div class="book-extra">
@@ -237,7 +195,7 @@ Synonym for k-covector field</p>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Dany Mathematics</strong>" was written by bignumber-material. </p>
+    <p>"<strong>Geometry of Physics</strong>" was written by bignumber-material. </p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
