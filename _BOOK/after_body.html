@@ -1,0 +1,60 @@
+<script>
+  (function () {
+    var root = document.documentElement;
+
+    var MOON =
+      '<svg class="theme-toggle-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    var SUN =
+      '<svg class="theme-toggle-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.5" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22.5"/><line x1="3.5" y1="3.5" x2="5.3" y2="5.3"/><line x1="18.7" y1="18.7" x2="20.5" y2="20.5"/><line x1="1.5" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22.5" y2="12"/><line x1="3.5" y1="20.5" x2="5.3" y2="18.7"/><line x1="18.7" y1="5.3" x2="20.5" y2="3.5"/></svg>';
+
+    var btn = document.createElement("button");
+    btn.id = "theme-toggle";
+    btn.className = "theme-toggle";
+    btn.type = "button";
+    btn.setAttribute("aria-label", "Toggle dark and light mode");
+
+    function current() {
+      return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+    }
+
+    function render(theme) {
+      var dark = theme === "dark";
+      btn.innerHTML = dark ? SUN : MOON;
+      btn.setAttribute(
+        "title",
+        dark ? "Switch to light mode" : "Switch to dark mode"
+      );
+    }
+
+    render(current());
+
+    btn.addEventListener("click", function () {
+      var next = current() === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try {
+        localStorage.setItem("book-theme", next);
+      } catch (e) {}
+      render(next);
+    });
+
+    // Append to the header (outside the collapsible nav) so it stays
+    // visible on small screens where #main-nav is collapsed.
+    var target =
+      document.querySelector("header.sidebar-book") ||
+      document.querySelector("#main-nav") ||
+      document.body;
+    target.appendChild(btn);
+
+    // The mobile menu (hamburger) button relies on a FontAwesome icon that
+    // may not resolve; give it a dependable inline SVG instead.
+    var menuBtn = document.querySelector(
+      'button[data-toggle="collapse"][data-target="#main-nav"]'
+    );
+    if (menuBtn) {
+      var sr = menuBtn.querySelector(".sr-only");
+      menuBtn.innerHTML =
+        '<svg class="menu-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>' +
+        (sr ? sr.outerHTML : '<span class="sr-only">Show table of contents</span>');
+    }
+  })();
+</script>

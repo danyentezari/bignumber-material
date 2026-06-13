@@ -14,7 +14,15 @@ If `Rscript` is not available, install R and ensure it is on your shell `PATH`.
 
 ## Theme
 
-This project now uses the built-in `bookdown::bs4_book` theme with Bootswatch `flatly`, plus custom serif font styling via `style.css`.
+This project uses `bookdown::bs4_book` with a custom, MasterClass-inspired UI:
+
+- **Serif typography** (Spectral) for a printed-book feel, with `JetBrains Mono` for code and STIX for math — defined in `style.css`.
+- **Light/dark mode toggle** in the top-right corner. The choice is saved to `localStorage` and defaults to the OS color scheme.
+- Theme plumbing lives in two includes wired through `_output.yml`:
+  - `head.html` — loads fonts and applies the saved theme before first paint (no flash).
+  - `after_body.html` — renders the toggle button and its logic.
+
+Colors are driven by CSS variables on `[data-theme]`, so tweak the `:root` / `[data-theme="dark"]` blocks at the top of `style.css` to recolor the whole book.
 
 ## Output
 

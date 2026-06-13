@@ -1,3 +1,95 @@
+/* =====================================================================
+   Geometry of Physics — MasterClass-inspired theme
+   Serif, editorial typography on a sleek, modern UI.
+   Light + Dark modes driven by [data-theme] on <html>.
+   ===================================================================== */
+
+/* ----------------------------------------------------------------------
+   Design tokens
+---------------------------------------------------------------------- */
+:root {
+  --font-serif: "Spectral", "Iowan Old Style", "Palatino Linotype", Palatino,
+    Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --font-math: "STIX Two Math", "Latin Modern Math", "Times New Roman", serif;
+
+  /* Light (warm paper) */
+  --bg: #faf8f4;
+  --bg-grad-1: #ffffff;
+  --bg-grad-2: #f4f1ea;
+  --surface: #ffffff;
+  --surface-2: #f3efe7;
+  --text: #1b1a18;
+  --text-soft: #36332e;
+  --text-muted: #6f6a62;
+  --border: #e7e1d6;
+  --border-strong: #d8d1c3;
+  --accent: #c8102e;
+  --accent-soft: rgba(200, 16, 46, 0.10);
+  --accent-contrast: #ffffff;
+  --code-bg: #f5f1ea;
+  --code-border: #e7e1d6;
+  --shadow-sm: 0 1px 2px rgba(20, 18, 14, 0.06), 0 2px 8px rgba(20, 18, 14, 0.05);
+  --shadow-md: 0 8px 30px rgba(20, 18, 14, 0.10);
+  --selection: rgba(200, 16, 46, 0.18);
+  --mark: linear-gradient(-100deg, rgba(255, 214, 102, 0.25),
+      rgba(255, 214, 102, 0.65) 95%, rgba(255, 214, 102, 0.1));
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  /* Dark (cinematic black) */
+  --bg: #0c0c0e;
+  --bg-grad-1: #131316;
+  --bg-grad-2: #0a0a0c;
+  --surface: #151518;
+  --surface-2: #1c1c21;
+  --text: #ededec;
+  --text-soft: #d6d4d0;
+  --text-muted: #989389;
+  --border: #2a2a31;
+  --border-strong: #3a3a43;
+  --accent: #ff5d6c;
+  --accent-soft: rgba(255, 93, 108, 0.14);
+  --accent-contrast: #14080a;
+  --code-bg: #161619;
+  --code-border: #2a2a31;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4), 0 2px 10px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 10px 40px rgba(0, 0, 0, 0.55);
+  --selection: rgba(255, 93, 108, 0.30);
+  --mark: linear-gradient(-100deg, rgba(255, 93, 108, 0.20),
+      rgba(255, 93, 108, 0.45) 95%, rgba(255, 93, 108, 0.1));
+
+  color-scheme: dark;
+}
+
+/* ----------------------------------------------------------------------
+   Base
+---------------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  background-image: radial-gradient(
+    1200px 600px at 80% -10%,
+    var(--bg-grad-1) 0%,
+    var(--bg-grad-2) 55%,
+    var(--bg) 100%
+  );
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
 body,
 blockquote,
 p,
@@ -6,50 +98,543 @@ th,
 td,
 figcaption,
 .caption {
-  font-family: "Times New Roman", Georgia, "Palatino Linotype", Palatino, serif;
-  color: #111;
-  line-height: 1.55;
+  font-family: var(--font-serif);
+  color: var(--text);
 }
 
+p {
+  margin-bottom: 1.15rem;
+}
+
+.text-muted,
+caption,
+p.caption {
+  color: var(--text-muted) !important;
+}
+
+::selection {
+  background: var(--selection);
+}
+
+/* ----------------------------------------------------------------------
+   Links
+---------------------------------------------------------------------- */
+main a,
+main a:visited {
+  color: var(--accent);
+  text-decoration: none;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1.5px;
+  transition: background-size 0.25s ease, color 0.2s ease;
+}
+
+main a:hover {
+  color: var(--accent);
+  background-size: 100% 1.5px;
+}
+
+/* ----------------------------------------------------------------------
+   Headings
+---------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Times New Roman", Georgia, "Palatino Linotype", Palatino, serif;
+  font-family: var(--font-serif);
+  color: var(--text);
   font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
 }
 
+main > .section > h1:first-child,
+main .level1 > h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+h3 { font-size: 1.32rem; margin-top: 2rem; }
+h4 { font-size: 1.12rem; margin-top: 1.75rem; }
+h5 { font-size: 1rem; margin-top: 1.5rem; }
+
+.header-section-number {
+  color: inherit;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.anchor {
+  color: var(--text-muted);
+}
+
+/* ----------------------------------------------------------------------
+   Layout polish
+---------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  body { font-size: 18.5px; }
+}
+
+main { margin-top: 1.5rem; }
+
+/* ----------------------------------------------------------------------
+   Left sidebar (book navigation)
+---------------------------------------------------------------------- */
+@media (min-width: 992px) {
+  .sidebar-book {
+    padding-top: 1.75rem;
+    padding-bottom: 1.5rem;
+    border-right: 1px solid var(--border);
+  }
+
+  #main-nav {
+    padding: 0.5rem 0.75rem 0.75rem;
+  }
+}
+
+.sidebar h1 a,
+.sidebar h1 a:visited {
+  font-family: var(--font-serif);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sidebar h1 a:hover {
+  color: var(--accent);
+}
+
+.sidebar h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem !important;
+  font-weight: 700;
+  color: var(--text-muted);
+  font-family: var(--font-serif);
+}
+
+.book-toc {
+  margin-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.book-toc li a {
+  display: block;
+  color: var(--text-soft);
+  text-decoration: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  border-left: 2px solid transparent;
+  transition: background-color 0.18s ease, color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.book-toc li a:hover {
+  color: var(--text);
+  background-color: var(--surface-2);
+}
+
+.book-toc .active {
+  font-weight: 700;
+  color: var(--accent) !important;
+  background-color: var(--accent-soft);
+  border-left-color: var(--accent);
+}
+
+.book-extra {
+  display: none;
+}
+
+/* ----------------------------------------------------------------------
+   Search
+---------------------------------------------------------------------- */
+#search.form-control,
+.sidebar input.form-control {
+  background-color: var(--surface);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 0.55rem 0.85rem;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#search.form-control::placeholder {
+  color: var(--text-muted);
+}
+
+#search.form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+  outline: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu {
+  background-color: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+  border-bottom: 1px solid var(--border);
+  color: var(--text-soft);
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: var(--accent-soft);
+}
+
+.algolia-autocomplete .aa-hint {
+  color: var(--text-muted);
+}
+
+mark {
+  background: var(--mark);
+  color: inherit;
+  border-radius: 2px;
+}
+
+/* ----------------------------------------------------------------------
+   Right sidebar — "On this page" scrollspy
+---------------------------------------------------------------------- */
+.sidebar-chapter {
+  border-left: 1px solid var(--border);
+}
+
+nav[data-toggle="toc"] .nav > li > a {
+  color: var(--text-muted);
+  border-radius: 6px;
+  transition: color 0.18s ease, background-color 0.18s ease;
+}
+
+nav[data-toggle="toc"] .nav > li > a:hover {
+  color: var(--text);
+  text-decoration: none;
+  background-color: var(--surface-2);
+}
+
+nav[data-toggle="toc"] .nav a.nav-link.active,
+nav[data-toggle="toc"] .nav .nav-link.active > li > a {
+  background-color: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ----------------------------------------------------------------------
+   Chapter navigation cards
+---------------------------------------------------------------------- */
+.chapter-nav {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  gap: 1rem;
+}
+
+.chapter-nav .prev,
+.chapter-nav .next {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background-color: var(--surface);
+  box-shadow: var(--shadow-sm);
+  padding: 0.85rem 1.1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.chapter-nav .prev:hover,
+.chapter-nav .next:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+
+.chapter-nav .prev a,
+.chapter-nav .next a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.chapter-nav .empty {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+/* ----------------------------------------------------------------------
+   Code
+---------------------------------------------------------------------- */
 code, pre, kbd, samp {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
 }
 
-.math,
-.mjx-chtml,
-.mjx-skip,
-.mjx-math {
-  font-family: "STIX Two Math", "Latin Modern Math", "Times New Roman", serif !important;
+code {
+  background-color: var(--code-bg);
+  color: var(--text);
+  border-radius: 5px;
+  padding: 0.12em 0.38em;
 }
 
-.mjx-chtml {
-  font-size: 1.05em;
+pre {
+  background-image: none;
+  background-color: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  box-shadow: var(--shadow-sm);
+  color: var(--text);
 }
 
-.rmd-title,
-.rmd-title a,
-.rmd-title a:visited {
-  font-family: "Times New Roman", Georgia, "Palatino Linotype", Palatino, serif;
-}
-
-.navbar-default .navbar-nav > li > a,
-.navbar-default .navbar-brand {
-  font-family: "Times New Roman", Georgia, "Palatino Linotype", Palatino, serif;
-}
-
-body {
-  background: #fff;
+pre code {
+  background-color: transparent;
+  padding: 0;
 }
 
 pre, code {
-  background: #f8f8f8;
+  color: var(--text);
+}
+
+/* Dark-mode syntax highlight overrides for readability */
+[data-theme="dark"] code span.ot,
+[data-theme="dark"] code span.cf,
+[data-theme="dark"] code span.kw,
+[data-theme="dark"] code span.bu,
+[data-theme="dark"] code span.im { color: #6cb6ff; }
+[data-theme="dark"] code span.im { font-weight: 600; }
+[data-theme="dark"] code span.fu { color: #82aaff; }
+[data-theme="dark"] code span.st,
+[data-theme="dark"] code span.vs,
+[data-theme="dark"] code span.ch,
+[data-theme="dark"] code span.sc { color: #95e6a3; }
+[data-theme="dark"] code span.dv,
+[data-theme="dark"] code span.bn,
+[data-theme="dark"] code span.fl { color: #f7a07a; }
+[data-theme="dark"] code span.dt { color: #e0b366; }
+[data-theme="dark"] code span.va { color: #c7a6ff; }
+[data-theme="dark"] code span.co,
+[data-theme="dark"] code span.cv,
+[data-theme="dark"] code span.an,
+[data-theme="dark"] code span.wa { color: #8b8b94; }
+[data-theme="dark"] code span.cn { color: #ff7b8a; }
+[data-theme="dark"] code span.op { color: #b9b9c2; }
+[data-theme="dark"] code span.pp { color: #e0b366; }
+
+code a:any-link {
+  color: inherit;
+  text-decoration-color: var(--border-strong);
+}
+
+/* ----------------------------------------------------------------------
+   Blockquote, tables, callouts
+---------------------------------------------------------------------- */
+blockquote {
+  border-left: 4px solid var(--accent);
+  background-color: var(--surface-2);
+  padding: 0.75rem 1.1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 10px 10px 0;
+  color: var(--text-soft);
+}
+
+blockquote > *:last-child { margin-bottom: 0; }
+
+table {
+  color: var(--text);
 }
 
 table th, table td {
   vertical-align: top;
+  border-color: var(--border) !important;
+}
+
+table th {
+  border-bottom: 2px solid var(--border-strong) !important;
+  font-weight: 700;
+}
+
+.inline-figure {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.figure {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.rmdnote, .rmdcaution, .rmdimportant, .rmdtip, .rmdwarning {
+  border-radius: 12px;
+  background-color: var(--surface-2);
+}
+
+/* ----------------------------------------------------------------------
+   Footer
+---------------------------------------------------------------------- */
+footer.bg-primary {
+  background-color: var(--surface) !important;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted) !important;
+  margin-top: 4rem !important;
+}
+
+footer.bg-primary p,
+footer.bg-primary strong {
+  color: var(--text-muted) !important;
+}
+
+footer.bg-primary a,
+footer .text-light {
+  color: var(--accent) !important;
+  text-decoration: none;
+}
+
+footer.bg-primary a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------------------------------------------------
+   Mobile collapse panel + menu button
+---------------------------------------------------------------------- */
+.collapse-lg {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.sidebar .btn-outline-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background-color: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.sidebar .btn-outline-primary:hover {
+  background-color: var(--surface);
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.sidebar .btn-outline-primary:focus,
+.sidebar .btn-outline-primary:active,
+.sidebar .btn-outline-primary:focus-visible {
+  outline: none;
+  background-color: var(--surface);
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+/* ----------------------------------------------------------------------
+   Math
+---------------------------------------------------------------------- */
+.math,
+.mjx-chtml,
+.mjx-math,
+.MathJax,
+.MathJax_Display {
+  font-family: var(--font-math) !important;
+  color: var(--text) !important;
+}
+
+.mjx-chtml { font-size: 1.04em; }
+
+/* ----------------------------------------------------------------------
+   Theme toggle button
+---------------------------------------------------------------------- */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background-color: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease, border-color 0.2s ease,
+    background-color 0.35s ease;
+}
+
+.theme-toggle-icon {
+  flex: 0 0 auto;
+  display: block;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.theme-toggle:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.theme-toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accent-soft), var(--shadow-sm);
+}
+
+/* On small screens, sit the toggle just left of the menu button */
+@media (max-width: 991.98px) {
+  .sidebar-book {
+    position: relative;
+  }
+  .theme-toggle {
+    position: absolute;
+    top: 0.25rem;
+    right: 4.5rem;
+    margin-top: 0;
+    z-index: 1030;
+  }
+}
+
+@media print {
+  .theme-toggle { display: none; }
+}
+
+/* ----------------------------------------------------------------------
+   Scrollbars
+---------------------------------------------------------------------- */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--border-strong);
+  border-radius: 999px;
+  border: 2px solid var(--bg);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-muted);
 }

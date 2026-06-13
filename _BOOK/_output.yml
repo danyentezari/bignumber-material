@@ -2,4 +2,6 @@ bookdown::bs4_book:
   css: "style.css"
   theme:
     bootswatch: flatly
-
+  includes:
+    in_header: "head.html"
+    after_body: "after_body.html"
