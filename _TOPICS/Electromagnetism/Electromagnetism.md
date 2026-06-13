@@ -19,6 +19,7 @@ $$ \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} $$
 $$ \nabla \times \mathbf{H} = \mathbf{J} + \frac{\partial \mathbf{D}}{\partial t} $$
 
 Where
+
 - $\nabla$ = Vector differential operator.
 - $\mathbf{D}$ = Electric flux density.
 - $\mathbf{B}$ = Magnetic flux density.

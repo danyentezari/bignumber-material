@@ -9,6 +9,7 @@ Let $S$ be a piecewise smooth oriented surface in space, and let the boundary of
 $$\iint_S (\text{curl } \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$.
 
 In this formula:
+
 *   $\mathbf{n}$ is the unit normal vector of $S$.
 *   $\mathbf{r}'(s)$ is the unit tangent vector of $C$.
 *   $s$ is the arc length of $C$.
