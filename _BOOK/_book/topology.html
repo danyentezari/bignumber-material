@@ -47,6 +47,7 @@
 <li><a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a></li>
 <li><a class="" href="vector-calculus.html"><span class="header-section-number">3</span> Vector Calculus</a></li>
 <li><a class="active" href="topology.html"><span class="header-section-number">4</span> Topology</a></li>
+<li><a class="" href="differential-geometry.html"><span class="header-section-number">5</span> Differential Geometry</a></li>
 </ul>
 
         <div class="book-extra">
@@ -66,9 +67,14 @@
 <li>Closure under finite intersections. That is, <span class="math inline">\(U_1 \cap \dots \cap U_n\)</span> is an element of <span class="math inline">\(\mathcal{T}\)</span>.</li>
 <li>Closure under arbitrary unions. That is, <span class="math inline">\(\bigcup_{\alpha \in A} U_\alpha\)</span> is also an element of <span class="math inline">\(\mathcal{T}\)</span>.</li>
 </ul>
-<p>where
-- <span class="math inline">\(U_i\)</span> are elements of <span class="math inline">\(\mathcal{T}\)</span>
-- <span class="math inline">\(X\)</span> is a set</p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(U_i\)</span> are elements of <span class="math inline">\(\mathcal{T}\)</span>
+</li>
+<li>
+<span class="math inline">\(X\)</span> is a set</li>
+</ul>
 <p></p>
 <div id="manifolds" class="section level3" number="4.0.1">
 <h3>
@@ -82,9 +88,10 @@ A surface is a two-dimension manifold.</p>
 <p>Beyond two dimensions, we just call these things n-manifold, where <span class="math inline">\(n\)</span> is the number of dimensions.</p>
 <p>Let’s look at a more formal definition of a manifold.</p>
 <p><i></i></p>
-<p><strong>definition</strong> (<em>Topological Manifold</em>) A topological manifold is a topological space, <span class="math inline">\(M\)</span>, that satisfies the following conditions</p>
+<p><strong>definition</strong> (<em>Topological Manifold</em>) A topological manifold is a topological space, <span class="math inline">\(M\)</span>, that satisfies the following conditions:</p>
 <ul>
-<li>Locally Euclidean of Dimension n</li>
+<li>Locally Euclidean of Dimension <span class="math inline">\(n\)</span>
+</li>
 <li>Hausdorff Space</li>
 <li>Second Countable</li>
 </ul>
@@ -95,14 +102,54 @@ A surface is a two-dimension manifold.</p>
 <h3>
 <span class="header-section-number">4.0.2</span> Topological Spaces<a class="anchor" aria-label="anchor" href="#topological-spaces"><i class="fas fa-link"></i></a>
 </h3>
-<p><strong>definition</strong> (<em>Topological Space</em>)</p>
-<p><strong>definition</strong> (<em>Hausdorff Space</em>)</p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Topological Space</em>) A topological space is a pair <span class="math inline">\((X, \mathcal{T})\)</span> on <span class="math inline">\(X\)</span>, where</p>
+<ul>
+<li>
+<span class="math inline">\(X\)</span> is a set</li>
+<li>
+<span class="math inline">\(\mathcal{T}\)</span> is a topology</li>
+</ul>
+<p></p>
+<p><strong>definition</strong> (<em>Hausdorff Space</em>) A Hausdorff space is a topological space, <span class="math inline">\(X\)</span>, that satisfies the following condition:</p>
+<ul>
+<li>Disjoint neighborhoods: <span class="math inline">\(U_1 \cap U_2 = \empty\)</span>, for any pair of points <span class="math inline">\(p_1,p_2 \in X\)</span>
+</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(U_1, U_2\)</span> are neighborhoods</li>
+<li>
+<span class="math inline">\(p_1,p_2 \in X\)</span> are distinct points</li>
+<li>
+<span class="math inline">\(X\)</span> is a topological space</li>
+</ul>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Neighborhood</em>) A property of a subset <span class="math inline">\(N\)</span> of a topological space <span class="math inline">\(X\)</span> with respect to a point <span class="math inline">\(p \in X\)</span>, where the following condition applies:</p>
+<ul>
+<li>There exists an open set <span class="math inline">\(U\)</span> such that <span class="math inline">\(p \in U \subseteq N\)</span>.</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(X\)</span> is a topological space.</li>
+<li>
+<span class="math inline">\(p\)</span> is a point in <span class="math inline">\(X\)</span>.</li>
+<li>
+<span class="math inline">\(N\)</span> is a subset of <span class="math inline">\(X\)</span>.</li>
+<li>
+<span class="math inline">\(U\)</span> is an open subset of <span class="math inline">\(X\)</span>.
+</li>
+</ul>
 </div>
 <div id="homeomorphism" class="section level3" number="4.0.3">
 <h3>
 <span class="header-section-number">4.0.3</span> Homeomorphism<a class="anchor" aria-label="anchor" href="#homeomorphism"><i class="fas fa-link"></i></a>
 </h3>
-<p>A description of a space that preserves the topological structure. An example is a sphere and a torus, which are homeomorphic to each other. By preserving the topological structure, we mean that the sphere and the torus have the same number of holes.</p>
+<p>A description of two spaces that have the same topological structure.</p>
+<p>Now about something called topological invariants.</p>
+<p>Properties (such as numbers, groups, matrices, or vector spaces) of a topological space that are preserved by homeomorphisms. If two spaces possess different invariants, they cannot be topologically equivalent. Examples include the fundamental group, homology groups, and the Euler characteristic.</p>
 <p><i></i></p>
 <p><strong>definition</strong> (<em>Homeomorphism</em>) A function between topological spaces <span class="math inline">\(f: \mathbf{U} \to \mathbf{V}\)</span> is called a homeomorphism if the following conditions hold.</p>
 <ul>
@@ -111,62 +158,249 @@ A surface is a two-dimension manifold.</p>
 <li>
 <span class="math inline">\(f^{-1}\)</span> is continuous</li>
 </ul>
-<p>where
-- <span class="math inline">\(f^{-1}\)</span> is the inverse of <span class="math inline">\(f\)</span>
-- <span class="math inline">\(\mathbf{U}\)</span>, <span class="math inline">\(\mathbf{V}\)</span> are topological spaces.</p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(f^{-1}\)</span> is the inverse of <span class="math inline">\(f\)</span>
+</li>
+<li>
+<span class="math inline">\(\mathbf{U}\)</span>, <span class="math inline">\(\mathbf{V}\)</span> are topological spaces.</li>
+</ul>
+<p></p>
+</div>
+<div id="open-sets" class="section level3" number="4.0.4">
+<h3>
+<span class="header-section-number">4.0.4</span> Open Sets<a class="anchor" aria-label="anchor" href="#open-sets"><i class="fas fa-link"></i></a>
+</h3>
+<p>The open set is central to topology, and it is required for definitions. We begin with a definition and then an example.</p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Open Set</em>) A subset <span class="math inline">\(U\)</span> of a topological space, <span class="math inline">\((X,\mathcal{T})\)</span>, where the following condition applies:</p>
+<ul>
+<li><span class="math inline">\(U \in \mathcal{T}\)</span></li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(X\)</span> is a set</li>
+<li>
+<span class="math inline">\(\mathcal{T}\)</span> is a topology on <span class="math inline">\(X\)</span>
+</li>
+<li><span class="math inline">\(U \subseteq X\)</span></li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>example</strong> (<em>Open Set</em>) Let</p>
+<p><span class="math display">\[
+X = \{1,2,3\}
+\]</span></p>
+<p><span class="math display">\[
+\mathcal{T}
+=
+\{
+\emptyset,
+\{1\},
+\{1,2\},
+X
+\}.
+\]</span></p>
+<p>Then, <span class="math inline">\((X,\mathcal{T})\)</span> is a topological space, where</p>
+<p><span class="math display">\[
+(X,\mathcal{T})
+=
+\left(
+\{1,2,3\},
+\{
+\emptyset,
+\{1\},
+\{1,2\},
+\{1,2,3\}
+\}
+\right)
+\]</span>.</p>
+<p>Let</p>
+<p><span class="math display">\[
+U = \{1,2\}.
+\]</span></p>
+<p>Since</p>
+<p><span class="math display">\[
+U \in \mathcal{T},
+\]</span></p>
+<p>it follows that <span class="math inline">\(U\)</span> is an open set.</p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+\{1,2\}
+\]</span></p>
+<p>is an open set in <span class="math inline">\((X,\mathcal{T})\)</span>.</p>
 <p></p>
 </div>
 <div id="appendix" class="section level2" number="4.1">
 <h2>
 <span class="header-section-number">4.1</span> APPENDIX<a class="anchor" aria-label="anchor" href="#appendix"><i class="fas fa-link"></i></a>
 </h2>
+<div id="preimages-and-inverse-functions" class="section level3" number="4.1.1">
+<h3>
+<span class="header-section-number">4.1.1</span> Preimages and Inverse Functions<a class="anchor" aria-label="anchor" href="#preimages-and-inverse-functions"><i class="fas fa-link"></i></a>
+</h3>
 <p><i></i></p>
-<p><strong>definition</strong> (<em>Continuity</em>) For any open set <span class="math inline">\(V \subseteq \mathbb{R}^m\)</span>, both <span class="math inline">\(U\)</span> and <span class="math inline">\(V\)</span> are open in <span class="math inline">\(\mathbb{R}^n\)</span> and, to each other, their domains and codomains remain open after the function is applied.</p>
+<p><strong>definition</strong> (<em>Inverse function</em>) A function from the codomain of a function to its domain,</p>
+<p><span class="math display">\[
+f^{-1} : Y \rightarrow X,
+\]</span></p>
+<p>where the following condition applies:</p>
+<ul>
+<li>
+<span class="math inline">\(f^{-1}(y) = x \iff f(x) = y\)</span>.</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(f : X \rightarrow Y\)</span> is a one-to-one and onto function.</li>
+<li>
+<span class="math inline">\(X\)</span> is the domain of <span class="math inline">\(f\)</span>.</li>
+<li>
+<span class="math inline">\(Y\)</span> is the codomain of <span class="math inline">\(f\)</span>.</li>
+<li>
+<span class="math inline">\(x \in X, y \in Y\)</span>.</li>
+</ul>
 <p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Preimage</em>) A subset of the domain of a function,</p>
+<p><span class="math display">\[
+f^{-1}(Y_{subset}) \subseteq X,
+\]</span></p>
+<p>where the following condition applies:</p>
+<ul>
+<li>
+<span class="math inline">\(f^{-1}(Y_{subset}) = \{x \in X : f(x) \in Y_{subset}\}\)</span>.</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(f : X \rightarrow Y\)</span> is a function.</li>
+<li>
+<span class="math inline">\(X\)</span> is the domain of <span class="math inline">\(f\)</span>.</li>
+<li>
+<span class="math inline">\(Y\)</span> is the codomain of <span class="math inline">\(f\)</span>.</li>
+<li>
+<span class="math inline">\(Y_{subset} \subseteq Y\)</span>.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Continuity</em>) A property of a map between open subsets,
+<span class="math inline">\(f: X \rightarrow Y\)</span>, where the following conditions apply:</p>
+<ul>
+<li>The preimage of every open subset of <span class="math inline">\(Y\)</span> is an open subset of <span class="math inline">\(X\)</span>.</li>
+</ul>
+<p>where</p>
+<ul>
+<li><span class="math inline">\(X, Y \subseteq \mathbb{R}^n\)</span></li>
+<li><span class="math inline">\(f^{-1}(U) = \{x \in X : f(x) \in U\}\)</span></li>
+<li>
+<span class="math inline">\(f^{-1} : \mathcal{P}(Y) \rightarrow \mathcal{P}(X)\)</span> is the preimage map from subsets of <span class="math inline">\(Y\)</span> to subsets of <span class="math inline">\(X\)</span>.</li>
+<li><span class="math inline">\(U \subseteq Y\)</span></li>
+<li>
+<span class="math inline">\(\mathcal{P}(X)\)</span> is the power set of <span class="math inline">\(X\)</span>
+</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Surjective</em>) A property of a function from a set <span class="math inline">\(X\)</span> to a set <span class="math inline">\(Y\)</span>,
+<span class="math inline">\(F: X \rightarrow Y\)</span>, where the following condition applies:</p>
+<ul>
+<li>For every element <span class="math inline">\(y\)</span> in <span class="math inline">\(Y\)</span>, there exists an element <span class="math inline">\(x\)</span> in <span class="math inline">\(X\)</span> such that <span class="math inline">\(F(x) = y\)</span>.</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(X\)</span> is the domain of <span class="math inline">\(F\)</span>
+</li>
+<li>
+<span class="math inline">\(Y\)</span> is the co-domain of <span class="math inline">\(F\)</span>
+</li>
+<li>
+<span class="math inline">\(F(X) = Y\)</span> (the range of the function is equal to its co-domain).</li>
+<li>
+<span class="math inline">\(F(X) = \{y \in Y : y = F(x) \text{ for some } x \in X\}\)</span> is the image of <span class="math inline">\(X\)</span> under <span class="math inline">\(F\)</span>.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Injective</em>) A property of a function from a set <span class="math inline">\(X\)</span> to a set <span class="math inline">\(Y\)</span>,
+<span class="math inline">\(F: X \rightarrow Y\)</span>, where the following condition applies:</p>
+<ul>
+<li>For all elements <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> in <span class="math inline">\(X\)</span>, if <span class="math inline">\(F(x_1) = F(x_2)\)</span>, then <span class="math inline">\(x_1 = x_2\)</span>.</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(X\)</span> is the domain of <span class="math inline">\(F\)</span>.</li>
+<li>
+<span class="math inline">\(Y\)</span> is the co-domain of <span class="math inline">\(F\)</span>.</li>
+<li>The condition is logically equivalent to saying that if <span class="math inline">\(x_1 \neq x_2\)</span>, then <span class="math inline">\(F(x_1) \neq F(x_2)\)</span>.</li>
+<li>For an injective function, each element of the co-domain is the image of at most one element of the domain.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Bijective</em>) A property of a function from a set <span class="math inline">\(X\)</span> to a set <span class="math inline">\(Y\)</span>,
+<span class="math inline">\(F: X \rightarrow Y\)</span>, where the following conditions apply:</p>
+<ul>
+<li>The function <span class="math inline">\(F\)</span> is injective</li>
+<li>The function <span class="math inline">\(F\)</span> is surjective</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(X\)</span> is the domain of <span class="math inline">\(F\)</span>.</li>
+<li>
+<span class="math inline">\(Y\)</span> is the co-domain of <span class="math inline">\(F\)</span>
+</li>
+</ul>
+<p></p>
+</div>
 </div>
 <div id="glossary-1" class="section level2" number="4.2">
 <h2>
 <span class="header-section-number">4.2</span> GLOSSARY<a class="anchor" aria-label="anchor" href="#glossary-1"><i class="fas fa-link"></i></a>
 </h2>
-<p><strong>Smooth Manifold:</strong> A smooth manifold is a manifold that is locally homeomorphic to a linear space, which is a vector space.</p>
-<p><strong>Locally:</strong> A description about how a manifold looks like around a point. When used, it means that it would take exactly <span class="math inline">\(n\)</span> points to describe the manifold around a point.</p>
-<p><strong>Homeomorphic:</strong> A description of a space that preserves the topological structure. An example is a sphere and a torus, which are homeomorphic to each other.</p>
-<p><strong>Open Set:</strong> A set that is not a subset of any other set.</p>
-<p><strong>Holes:</strong> The number of tori that can fit inside a manifold.</p>
+<p><strong>Smooth Manifold:</strong> -</p>
+<p><strong>Locally:</strong> -</p>
+<p><strong>Homeomorphic:</strong> A description of two spaces that have the same topological structure.</p>
+<p><strong>Genus</strong></p>
+<p><strong>Holes:</strong> An informal synonym for genus.</p>
 <p><strong>Tori</strong> A surface that looks like a donut. It has one hole.</p>
-<p><strong>Topological Structure:</strong> The properties of a space that are preserved under homeomorphisms, which is an operation that maps points in one space to points in another space while preserving the distance between points.</p>
-<p><strong>Continuous Function:</strong> A function that maps points in one space to points in another space while preserving the distance between points.</p>
-<p><strong>Differential Form</strong></p>
-<p><strong>Surface</strong></p>
-<p>A two-dimensional geometric shape or boundary in three-dimensional space. It can be represented mathematically by functions or sets of points, ranging from simple flat planes to complex, curved manifolds.</p>
-<p><strong>Piecewise Smooth</strong></p>
-<p>A surface is piecewise smooth if it consists of finitely many smooth portions. A common example of a piecewise smooth surface is the surface of a cube, which is composed of six smooth (flat) faces joined at edges</p>
-<p><strong>Oriented Surface</strong></p>
-<p>A surface where a consistent direction for the surface normal is chosen at every point. This distinguishes between the two sides, often designated as “inner” and “outer” or “positive” and “negative” orientations.</p>
-<p><strong>Smooth Surface</strong></p>
-<p>A surface is considered smooth if its surface normal depends continuously on the points of the surface. At every point P of such a surface, there exists a unique tangent plane and a unique normal whose direction varies continuously.</p>
-<p><strong>Surface Normal</strong></p>
-<p>A vector that is normal to a surface.</p>
-<p><strong>Piecewise Smooth Simple Closed Curve</strong></p>
-<p>A path that starts and ends at the same point without intersecting itself, consisting of several smooth segments joined together. Examples include the boundary of a square or a triangle.</p>
-<p><strong>Differentiable Function</strong></p>
-<p>A real function of a real variable that is differentiable that has, at all points, derivatives of all orders.</p>
-<p><strong>Smooth Function</strong></p>
-<p>A synonym for differentiable function.</p>
-<p><strong>K-Covector</strong></p>
-<p><strong>K-Covector field</strong></p>
-<p><strong>K-Form</strong>
-Synonym for k-covector field</p>
-<p><strong>K-Tensor</strong></p>
-<p><strong>K-Fold</strong></p>
-<p><strong>Bijection</strong></p>
-<p><strong>Hausdorff Space</strong></p>
+<p><strong>Topological Structure:</strong> -</p>
+<p><strong>Continuous Function:</strong> -</p>
+<p><strong>Differential Form</strong> A function assigning an alternating k-linear function to each point of an open set or manifold.</p>
+<p><strong>Surface</strong>
+A 2-dimensional manifold, an object modeled locally on <span class="math inline">\(\mathbb{R}^2\)</span>, specifying points with two independent parameters.</p>
+<p><strong>Piecewise Smooth</strong>
+A property of curves or surfaces composed of finitely many smooth segments meeting at corners or edges.</p>
+<p><strong>Oriented Surface</strong> A surface with a consistent choice of orientation at each point, typically specified by a nowhere-vanishing 2-form.</p>
+<p><strong>Smooth Surface</strong> A 2-dimensional manifold equipped with a differentiable structure, allowing for calculus and well-defined tangent spaces.</p>
+<p><strong>Surface Normal:</strong></p>
+<p><strong>Piecewise Smooth Simple Closed Curve</strong> A non-self-intersecting closed path consisting of finitely many differentiable segments joined end-to-end.</p>
+<p><strong>Open Set:</strong>
+A set that is open in a topological space.</p>
+<p><strong>Open Set (Expanded):</strong>
+A subset of a topological space that contains a neighborhood around every one of its points.</p>
+<p><strong>Differentiable Function</strong> -</p>
+<p><strong>Smooth Function</strong> -</p>
+<p><strong>K-Covector</strong> An alternating <span class="math inline">\(k\)</span>-linear function on a vector space, also known as a multicovector of degree <span class="math inline">\(k\)</span>.</p>
+<p><strong>K-Covector field = K-Form</strong> A function assigning a <span class="math inline">\(k\)</span>-covector to each point of a manifold, also called a differential <span class="math inline">\(k\)</span>-form.</p>
+<p><strong>K-Tensor</strong> A multilinear function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers.</p>
+<p><strong>K-Fold</strong> A term denoting the repetition of a set or space <span class="math inline">\(k\)</span> times, typically within a Cartesian product.</p>
+<p><strong>K-linear</strong> A synonym for multilinear function.</p>
+<p><strong>K-Fold product</strong> The Cartesian product of <span class="math inline">\(k\)</span> copies of a set <span class="math inline">\(X\)</span>, often denoted simply as <span class="math inline">\(X^k\)</span>.</p>
+<p><strong>Bijection</strong> A function that is both injective and surjective, also referred to as a one-to-one correspondence.</p>
+<p><strong>Hausdorff Space</strong> A topological space where any two distinct points can be separated by disjoint open neighborhoods.</p>
+<p><strong>Onto</strong> A synonym for surjective function.</p>
+<p><strong>One-to-One</strong> A synonym for an injective function.</p>
+<p><strong>Covariant vector = Covector = 1-form</strong></p>
 
 </div>
 </div>
   <div class="chapter-nav">
 <div class="prev"><a href="vector-calculus.html"><span class="header-section-number">3</span> Vector Calculus</a></div>
-<div class="empty"></div>
+<div class="next"><a href="differential-geometry.html"><span class="header-section-number">5</span> Differential Geometry</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
@@ -175,9 +409,12 @@ Synonym for k-covector field</p>
 <li><a class="nav-link" href="#manifolds"><span class="header-section-number">4.0.1</span> Manifolds</a></li>
 <li><a class="nav-link" href="#topological-spaces"><span class="header-section-number">4.0.2</span> Topological Spaces</a></li>
 <li><a class="nav-link" href="#homeomorphism"><span class="header-section-number">4.0.3</span> Homeomorphism</a></li>
+<li><a class="nav-link" href="#open-sets"><span class="header-section-number">4.0.4</span> Open Sets</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#appendix"><span class="header-section-number">4.1</span> APPENDIX</a></li>
+<li>
+<a class="nav-link" href="#appendix"><span class="header-section-number">4.1</span> APPENDIX</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#preimages-and-inverse-functions"><span class="header-section-number">4.1.1</span> Preimages and Inverse Functions</a></li></ul>
+</li>
 <li><a class="nav-link" href="#glossary-1"><span class="header-section-number">4.2</span> GLOSSARY</a></li>
 </ul>
 

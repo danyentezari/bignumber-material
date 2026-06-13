@@ -19,9 +19,9 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<meta name="description" content="3.1 EXPLANATIONS Stoke’s Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If \(\mathbf{F}(x, y,...">
-<meta property="og:description" content="3.1 EXPLANATIONS Stoke’s Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If \(\mathbf{F}(x, y,...">
-<meta name="twitter:description" content="3.1 EXPLANATIONS Stoke’s Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If \(\mathbf{F}(x, y,...">
+<meta name="description" content="3.0.1 Stoke’s Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If \(\mathbf{F}(x, y, z)\) is a...">
+<meta property="og:description" content="3.0.1 Stoke’s Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If \(\mathbf{F}(x, y, z)\) is a...">
+<meta name="twitter:description" content="3.0.1 Stoke’s Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If \(\mathbf{F}(x, y, z)\) is a...">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -47,6 +47,7 @@
 <li><a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a></li>
 <li><a class="active" href="vector-calculus.html"><span class="header-section-number">3</span> Vector Calculus</a></li>
 <li><a class="" href="topology.html"><span class="header-section-number">4</span> Topology</a></li>
+<li><a class="" href="differential-geometry.html"><span class="header-section-number">5</span> Differential Geometry</a></li>
 </ul>
 
         <div class="book-extra">
@@ -58,23 +59,35 @@
 <h1>
 <span class="header-section-number">3</span> Vector Calculus<a class="anchor" aria-label="anchor" href="#vector-calculus"><i class="fas fa-link"></i></a>
 </h1>
-<div id="explanations-1" class="section level2" number="3.1">
-<h2>
-<span class="header-section-number">3.1</span> EXPLANATIONS<a class="anchor" aria-label="anchor" href="#explanations-1"><i class="fas fa-link"></i></a>
-</h2>
-<p><strong>Stoke’s Theorem</strong></p>
+<div id="stokes-theorem" class="section level3" number="3.0.1">
+<h3>
+<span class="header-section-number">3.0.1</span> Stoke’s Theorem<a class="anchor" aria-label="anchor" href="#stokes-theorem"><i class="fas fa-link"></i></a>
+</h3>
 <p>Let <span class="math inline">\(S\)</span> be a piecewise smooth oriented surface in space, and let the boundary of <span class="math inline">\(S\)</span> be a piecewise smooth simple closed curve <span class="math inline">\(C\)</span>. If <span class="math inline">\(\mathbf{F}(x, y, z)\)</span> is a continuous vector function with continuous first partial derivatives in a domain containing <span class="math inline">\(S\)</span>, then:</p>
 <p><span class="math display">\[\iint_S (\text{curl } \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span>.</p>
-<p>In this formula:
-* <span class="math inline">\(\mathbf{n}\)</span> is the unit normal vector of <span class="math inline">\(S\)</span>.
-* <span class="math inline">\(\mathbf{r}'(s)\)</span> is the unit tangent vector of <span class="math inline">\(C\)</span>.
-* <span class="math inline">\(s\)</span> is the arc length of <span class="math inline">\(C\)</span>.
-* The integration around <span class="math inline">\(C\)</span> is performed in a sense consistent with the orientation of the normal vector <span class="math inline">\(\mathbf{n}\)</span>, following the right-hand rule.</p>
+<p>In this formula:</p>
+<ul>
+<li>
+<span class="math inline">\(\mathbf{n}\)</span> is the unit normal vector of <span class="math inline">\(S\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{r}'(s)\)</span> is the unit tangent vector of <span class="math inline">\(C\)</span>.</li>
+<li>
+<span class="math inline">\(s\)</span> is the arc length of <span class="math inline">\(C\)</span>.</li>
+<li>The integration around <span class="math inline">\(C\)</span> is performed in a sense consistent with the orientation of the normal vector <span class="math inline">\(\mathbf{n}\)</span>, following the right-hand rule.</li>
+</ul>
 <p><br></p>
-<p><strong>Flux</strong></p>
+</div>
+<div id="flux" class="section level3" number="3.0.2">
+<h3>
+<span class="header-section-number">3.0.2</span> Flux<a class="anchor" aria-label="anchor" href="#flux"><i class="fas fa-link"></i></a>
+</h3>
 <p>Total amount of a field or fluid passing through a surface.</p>
 <p><br></p>
-<p><strong>Double Integral</strong></p>
+</div>
+<div id="double-integral" class="section level3" number="3.0.3">
+<h3>
+<span class="header-section-number">3.0.3</span> Double Integral<a class="anchor" aria-label="anchor" href="#double-integral"><i class="fas fa-link"></i></a>
+</h3>
 <p>The double integral is defined by the following identity:
 <span class="math display">\[\iint_R f(x, y) \, dA = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*) \Delta A\]</span>.</p>
 <p>where
@@ -86,12 +99,57 @@
 * The limit is taken as <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> approach infinity such that the maximum diameter (the greatest distance between any two points within a subregion) approaches zero [3, 7].
 * The function <span class="math inline">\(f(x, y)\)</span>, the integrand, is typically assumed to be continuous on <span class="math inline">\(R\)</span> to ensure the limit exists and is independent of the choice of sample points [7, 8].</p>
 <p><br></p>
-<p><strong>Double Integral Notational Variations</strong></p>
+</div>
+<div id="double-integral-notational-variations" class="section level3" number="3.0.4">
+<h3>
+<span class="header-section-number">3.0.4</span> Double Integral Notational Variations<a class="anchor" aria-label="anchor" href="#double-integral-notational-variations"><i class="fas fa-link"></i></a>
+</h3>
 <p>There exist double integral with two equivalent notations:
 * Differential Area Form: <span class="math inline">\(\displaystyle \iint_R f(x, y) \, dA\)</span>.
 * Coordinate Form: <span class="math inline">\(\displaystyle \iint_R f(x, y) \, dx \, dy\)</span>.</p>
 <p><br></p>
-<p><strong>Topology Reference</strong></p>
+</div>
+<div id="projection" class="section level3" number="3.0.5">
+<h3>
+<span class="header-section-number">3.0.5</span> Projection<a class="anchor" aria-label="anchor" href="#projection"><i class="fas fa-link"></i></a>
+</h3>
+<div class="inline-figure"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20260211170054272961/vec_3.webp"></div>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>vector projection</em>) The vector representing the “shadow” of a vector <span class="math inline">\(\mathbf{b}\)</span> cast onto the line containing a vector <span class="math inline">\(\mathbf{a}\)</span>, denoted by <span class="math inline">\(\text{proj}_{\mathbf{a}} \mathbf{b}\)</span>. Geometrically, it is the vector from the common initial point to the foot of the perpendicular dropped from the tip of <span class="math inline">\(\mathbf{b}\)</span> onto the line containing <span class="math inline">\(\mathbf{a}\)</span>. It is calculated using the following formula:</p>
+<ul>
+<li><span class="math inline">\(\text{proj}_{\mathbf{a}} \mathbf{b} = \left( \dfrac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|^2} \right) \mathbf{a}\)</span></li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\mathbf{a}, \mathbf{b}\)</span> are vectors in a coordinate system.</li>
+<li>
+<span class="math inline">\(\mathbf{a} \cdot \mathbf{b}\)</span> is the dot product of the two vectors.</li>
+<li>
+<span class="math inline">\(|\mathbf{a}|\)</span> is the magnitude of vector <span class="math inline">\(\mathbf{a}\)</span>.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>scalar projection</em>) The signed magnitude of the vector projection of <span class="math inline">\(\mathbf{b}\)</span> onto <span class="math inline">\(\mathbf{a}\)</span>, also referred to as the component of <span class="math inline">\(\mathbf{b}\)</span> along <span class="math inline">\(\mathbf{a}\)</span>, denoted by <span class="math inline">\(\text{comp}_{\mathbf{a}} \mathbf{b}\)</span>. It represents the length of the “shadow” and is positive if the angle between the vectors is acute and negative if it is obtuse. It is defined by the following formulas:</p>
+<ul>
+<li><span class="math inline">\(\text{comp}_{\mathbf{a}} \mathbf{b} = \dfrac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|}\)</span></li>
+<li><span class="math inline">\(\text{comp}_{\mathbf{a}} \mathbf{b} = |\mathbf{b}| \cos \theta\)</span></li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\mathbf{a}, \mathbf{b}\)</span> are vectors in a coordinate system.</li>
+<li>
+<span class="math inline">\(\theta\)</span> is the angle between vectors <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span>.</li>
+<li>
+<span class="math inline">\(|\mathbf{b}|\)</span> is the magnitude of vector <span class="math inline">\(\mathbf{b}\)</span>.</li>
+</ul>
+<p></p>
+</div>
+<div id="topology-reference" class="section level3" number="3.0.6">
+<h3>
+<span class="header-section-number">3.0.6</span> Topology Reference<a class="anchor" aria-label="anchor" href="#topology-reference"><i class="fas fa-link"></i></a>
+</h3>
 <p>–&gt; <a href="../lessons/topology.md">Topology.md</a></p>
 
 </div>
@@ -101,10 +159,16 @@
 <div class="next"><a href="topology.html"><span class="header-section-number">4</span> Topology</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#vector-calculus"><span class="header-section-number">3</span> Vector Calculus</a></li>
-<li><a class="nav-link" href="#explanations-1"><span class="header-section-number">3.1</span> EXPLANATIONS</a></li>
+      <ul class="nav navbar-nav"><li>
+<a class="nav-link" href="#vector-calculus"><span class="header-section-number">3</span> Vector Calculus</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#stokes-theorem"><span class="header-section-number">3.0.1</span> Stoke’s Theorem</a></li>
+<li><a class="nav-link" href="#flux"><span class="header-section-number">3.0.2</span> Flux</a></li>
+<li><a class="nav-link" href="#double-integral"><span class="header-section-number">3.0.3</span> Double Integral</a></li>
+<li><a class="nav-link" href="#double-integral-notational-variations"><span class="header-section-number">3.0.4</span> Double Integral Notational Variations</a></li>
+<li><a class="nav-link" href="#projection"><span class="header-section-number">3.0.5</span> Projection</a></li>
+<li><a class="nav-link" href="#topology-reference"><span class="header-section-number">3.0.6</span> Topology Reference</a></li>
 </ul>
+</li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

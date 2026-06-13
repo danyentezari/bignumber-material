@@ -1,8 +1,6 @@
 # Vector Calculus
 
-## EXPLANATIONS
-
-**Stoke's Theorem**
+### Stoke's Theorem
 
 Let $S$ be a piecewise smooth oriented surface in space, and let the boundary of $S$ be a piecewise smooth simple closed curve $C$. If $\mathbf{F}(x, y, z)$ is a continuous vector function with continuous first partial derivatives in a domain containing $S$, then:
 
@@ -17,13 +15,13 @@ In this formula:
 
 <br/>
 
-**Flux** 
+### Flux
 
 Total amount of a field or fluid passing through a surface.
 
 <br/>
 
-**Double Integral**
+### Double Integral
 
 The double integral is defined by the following identity:
 $$\iint_R f(x, y) \, dA = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*) \Delta A$$.
@@ -39,7 +37,7 @@ where
 
 <br/>
 
-**Double Integral Notational Variations**
+### Double Integral Notational Variations
 
 There exist double integral with two equivalent notations:
 * Differential Area Form: $\displaystyle \iint_R f(x, y) \, dA$.
@@ -47,9 +45,39 @@ There exist double integral with two equivalent notations:
 
 <br/>
 
+### Projection
 
+![](https://media.geeksforgeeks.org/wp-content/uploads/20260211170054272961/vec_3.webp)
 
+<i>
 
-**Topology Reference**
+**definition** (*vector projection*) The vector representing the "shadow" of a vector $\mathbf{b}$ cast onto the line containing a vector $\mathbf{a}$, denoted by $\text{proj}_{\mathbf{a}} \mathbf{b}$. Geometrically, it is the vector from the common initial point to the foot of the perpendicular dropped from the tip of $\mathbf{b}$ onto the line containing $\mathbf{a}$. It is calculated using the following formula:
+
+- $\text{proj}_{\mathbf{a}} \mathbf{b} = \left( \dfrac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|^2} \right) \mathbf{a}$
+
+where
+
+- $\mathbf{a}, \mathbf{b}$ are vectors in a coordinate system.
+- $\mathbf{a} \cdot \mathbf{b}$ is the dot product of the two vectors.
+- $|\mathbf{a}|$ is the magnitude of vector $\mathbf{a}$.
+
+</i>
+
+<i>
+
+**definition** (*scalar projection*) The signed magnitude of the vector projection of $\mathbf{b}$ onto $\mathbf{a}$, also referred to as the component of $\mathbf{b}$ along $\mathbf{a}$, denoted by $\text{comp}_{\mathbf{a}} \mathbf{b}$. It represents the length of the "shadow" and is positive if the angle between the vectors is acute and negative if it is obtuse. It is defined by the following formulas:
+
+- $\text{comp}_{\mathbf{a}} \mathbf{b} = \dfrac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|}$
+- $\text{comp}_{\mathbf{a}} \mathbf{b} = |\mathbf{b}| \cos \theta$
+
+where
+
+- $\mathbf{a}, \mathbf{b}$ are vectors in a coordinate system.
+- $\theta$ is the angle between vectors $\mathbf{a}$ and $\mathbf{b}$.
+- $|\mathbf{b}|$ is the magnitude of vector $\mathbf{b}$.
+
+</i>
+
+### Topology Reference
 
 --> [Topology.md](../lessons/topology.md)

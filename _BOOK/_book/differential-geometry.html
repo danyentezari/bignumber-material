@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>5 Differential Geometry | Geometry of Physics</title>
+<meta name="author" content="bignumber-material">
+<meta name="generator" content="bookdown 0.46 with bs4_book()">
+<meta property="og:title" content="5 Differential Geometry | Geometry of Physics">
+<meta property="og:type" content="book">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="5 Differential Geometry | Geometry of Physics">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="5.0.1 Forms Forms are functions that take vectors as input and return scalars. A 1-form takes a single vector as input, a 2-form takes two vectors as input, and so on. definition (1-form = linear...">
+<meta property="og:description" content="5.0.1 Forms Forms are functions that take vectors as input and return scalars. A 1-form takes a single vector as input, a 2-form takes two vectors as input, and so on. definition (1-form = linear...">
+<meta name="twitter:description" content="5.0.1 Forms Forms are functions that take vectors as input and return scalars. A 1-form takes a single vector as input, a 2-form takes two vectors as input, and so on. definition (1-form = linear...">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Geometry of Physics</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a></li>
+<li><a class="" href="vector-calculus.html"><span class="header-section-number">3</span> Vector Calculus</a></li>
+<li><a class="" href="topology.html"><span class="header-section-number">4</span> Topology</a></li>
+<li><a class="active" href="differential-geometry.html"><span class="header-section-number">5</span> Differential Geometry</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="differential-geometry" class="section level1" number="5">
+<h1>
+<span class="header-section-number">5</span> Differential Geometry<a class="anchor" aria-label="anchor" href="#differential-geometry"><i class="fas fa-link"></i></a>
+</h1>
+<div id="forms" class="section level3" number="5.0.1">
+<h3>
+<span class="header-section-number">5.0.1</span> Forms<a class="anchor" aria-label="anchor" href="#forms"><i class="fas fa-link"></i></a>
+</h3>
+<p>Forms are functions that take vectors as input and return scalars. A 1-form takes a single vector as input, a 2-form takes two vectors as input, and so on.</p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>1-form = linear functional = covector = covariant vector</em>) A linear, real-valued function of a single vector input, <span class="math inline">\(\boldsymbol{\omega}: \mathbf{V} \rightarrow \mathbb{R}\)</span>, which satisfies the following conditions for all vectors and scalars:</p>
+<ul>
+<li>(Additivity) <span class="math inline">\(\boldsymbol{\omega}(\mathbf{u} + \mathbf{v}) = \boldsymbol{\omega}(\mathbf{u}) + \boldsymbol{\omega}(\mathbf{v})\)</span>.</li>
+<li>(Homogeneity) <span class="math inline">\(\boldsymbol{\omega}(k\mathbf{v}) = k \cdot \boldsymbol{\omega}(\mathbf{v})\)</span>.</li>
+</ul>
+<p>where
+- <span class="math inline">\(\mathbf{V}\)</span> is a real vector space.
+- <span class="math inline">\(\mathbb{R}\)</span> is the set of real numbers.
+- <span class="math inline">\(\boldsymbol{\omega}\)</span> is a 1-form.
+- <span class="math inline">\(\mathbf{u}, \mathbf{v}\)</span> are vectors in <span class="math inline">\(\mathbf{V}\)</span>.
+- <span class="math inline">\(k\)</span> is a scalar.</p>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>2-form</em>) A bilinear, antisymmetric, real-valued function of two vector inputs, <span class="math inline">\(\boldsymbol{\omega}: \mathbf{V} \times \mathbf{V} \rightarrow \mathbb{R}\)</span>, which satisfies the following conditions for all vectors and scalars:</p>
+<ul>
+<li>(Bilinearity) <span class="math inline">\(\boldsymbol{\omega}(a\mathbf{u} + b\mathbf{u}', \mathbf{v}) = a \cdot \boldsymbol{\omega}(\mathbf{u}, \mathbf{v}) + b \cdot \boldsymbol{\omega}(\mathbf{u}', \mathbf{v})\)</span> and <span class="math inline">\(\boldsymbol{\omega}(\mathbf{u}, a\mathbf{v} + b\mathbf{v}') = a \cdot \boldsymbol{\omega}(\mathbf{u}, \mathbf{v}) + b \cdot \boldsymbol{\omega}(\mathbf{u}, \mathbf{v}')\)</span>.</li>
+<li>(Antisymmetry) <span class="math inline">\(\boldsymbol{\omega}(\mathbf{u}, \mathbf{v}) = -\boldsymbol{\omega}(\mathbf{v}, \mathbf{u})\)</span>.</li>
+</ul>
+<p>where
+- <span class="math inline">\(\mathbf{V}\)</span> is a real vector space.
+- <span class="math inline">\(\mathbb{R}\)</span> is the set of real numbers.
+- <span class="math inline">\(\boldsymbol{\omega}\)</span> is a 2-form.
+- <span class="math inline">\(\mathbf{u}, \mathbf{u}', \mathbf{v}, \mathbf{v}'\)</span> are vectors in <span class="math inline">\(\mathbf{V}\)</span>.
+- <span class="math inline">\(a, b\)</span> are scalars.</p>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>k-form</em>) A multilinear, completely antisymmetric, real-valued function of <span class="math inline">\(k\)</span> vector inputs, <span class="math inline">\(\boldsymbol{\omega}: \mathbf{V}^k \rightarrow \mathbb{R}\)</span>, which satisfies the following conditions for all vectors and scalars:</p>
+<ul>
+<li>(k-Linearity) <span class="math inline">\(\boldsymbol{\omega}(\mathbf{v}_1, \dots, a\mathbf{v}_i + b\mathbf{v}_i', \dots, \mathbf{v}_k) = a \cdot \boldsymbol{\omega}(\mathbf{v}_1, \dots, \mathbf{v}_i, \dots, \mathbf{v}_k) + b \cdot \boldsymbol{\omega}(\mathbf{v}_1, \dots, \mathbf{v}_i', \dots, \mathbf{v}_k)\)</span> for each argument <span class="math inline">\(i\)</span> where <span class="math inline">\(1 \leq i \leq k\)</span>.</li>
+<li>(Complete Antisymmetry) Swapping any two vector inputs reverses the sign of the output: <span class="math inline">\(\boldsymbol{\omega}(\dots, \mathbf{u}, \dots, \mathbf{v}, \dots) = -\boldsymbol{\omega}(\dots, \mathbf{v}, \dots, \mathbf{u}, \dots)\)</span>.</li>
+</ul>
+<p>where
+- <span class="math inline">\(\mathbf{V}\)</span> is a real vector space.
+- <span class="math inline">\(\mathbf{V}^k\)</span> is the <span class="math inline">\(k\)</span>-fold Cartesian product of <span class="math inline">\(\mathbf{V}\)</span>.
+- <span class="math inline">\(\mathbb{R}\)</span> is the set of real numbers.
+- <span class="math inline">\(\boldsymbol{\omega}\)</span> is a <span class="math inline">\(k\)</span>-form.
+- <span class="math inline">\(\mathbf{v}_1, \dots, \mathbf{v}_k, \mathbf{v}_i', \mathbf{u}, \mathbf{v}\)</span> are vectors in <span class="math inline">\(\mathbf{V}\)</span>.
+- <span class="math inline">\(k\)</span> is a positive integer representing the degree of the form.
+- <span class="math inline">\(a, b\)</span> are scalars.</p>
+<p></p>
+</div>
+<div id="tensors" class="section level3" number="5.0.2">
+<h3>
+<span class="header-section-number">5.0.2</span> Tensors<a class="anchor" aria-label="anchor" href="#tensors"><i class="fas fa-link"></i></a>
+</h3>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Multilinear Function</em>) A function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(T: V^k \rightarrow \mathbb{R}\)</span>, where the following conditions apply for each argument <span class="math inline">\(i\)</span> (<span class="math inline">\(1 \leq i \leq k\)</span>):</p>
+<ul>
+<li>
+<span class="math inline">\(T(v_1, \dots, v_i + v_i', \dots, v_k) = T(v_1, \dots, v_i, \dots, v_k) + T(v_1, \dots, v_i', \dots, v_k)\)</span>.</li>
+<li>
+<span class="math inline">\(T(v_1, \dots, av_i, \dots, v_k) = a \cdot T(v_1, \dots, v_i, \dots, v_k)\)</span>.</li>
+</ul>
+<p>where
+- <span class="math inline">\(V\)</span> is a vector space over <span class="math inline">\(\mathbb{R}\)</span>.
+- <span class="math inline">\(V^k\)</span> is the <span class="math inline">\(k\)</span>-fold Cartesian product <span class="math inline">\(V \times \dots \times V\)</span>.
+- <span class="math inline">\(k\)</span> is a positive integer representing the number of arguments, also called the degree of the function.
+- <span class="math inline">\(v_1, \dots, v_k, v_i' \in V\)</span> are vectors.
+- <span class="math inline">\(a \in \mathbb{R}\)</span> is a scalar.</p>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>k-Tensor</em>) A multilinear function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(T: V^k \rightarrow \mathbb{R}\)</span>, where the following condition applies:</p>
+<ul>
+<li>The function <span class="math inline">\(T\)</span> is linear in each of its <span class="math inline">\(k\)</span> arguments.</li>
+</ul>
+<p>where
+- <span class="math inline">\(V\)</span> is a vector space.
+- <span class="math inline">\(V^k\)</span> is the <span class="math inline">\(k\)</span>-fold Cartesian product <span class="math inline">\(V \times \dots \times V\)</span>.
+- <span class="math inline">\(k\)</span> is a positive integer representing the degree of the tensor.
+- <span class="math inline">\(\mathbb{R}\)</span> is the set of real numbers.
+- <span class="math inline">\(\mathcal{L}^k(V)\)</span> (or <span class="math inline">\(\mathcal{J}^k(V)\)</span>) is the vector space of all <span class="math inline">\(k\)</span>-tensors on <span class="math inline">\(V\)</span>.</p>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Multilinear Function</em>) A function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(T: V^k \rightarrow \mathbb{R}\)</span>, where the following conditions apply for each argument <span class="math inline">\(i\)</span> (<span class="math inline">\(1 \leq i \leq k\)</span>):</p>
+<ul>
+<li><span class="math inline">\(T(v_1, \dots, v_i + v_i', \dots, v_k) = T(v_1, \dots, v_i, \dots, v_k) + T(v_1, \dots, v_i', \dots, v_k)\)</span></li>
+<li><span class="math inline">\(T(v_1, \dots, av_i, \dots, v_k) = a \cdot T(v_1, \dots, v_i, \dots, v_k)\)</span></li>
+</ul>
+<p>where
+- <span class="math inline">\(V\)</span> is a vector space over <span class="math inline">\(\mathbb{R}\)</span>.
+- <span class="math inline">\(V^k\)</span> is the <span class="math inline">\(k\)</span>-fold Cartesian product <span class="math inline">\(V \times \dots \times V\)</span>.
+- <span class="math inline">\(k\)</span> is a positive integer representing the number of arguments, also called the degree of the function.
+- <span class="math inline">\(v_1, \dots, v_k, v_i' \in V\)</span> are vectors.
+- <span class="math inline">\(a \in \mathbb{R}\)</span> is a scalar.</p>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>k-Fold Product</em>) A set constructed by the Cartesian product of <span class="math inline">\(k\)</span> copies of a single set, <span class="math inline">\(X^k\)</span>, where the following condition applies:</p>
+<ul>
+<li>The resulting set consists of all ordered <span class="math inline">\(k\)</span>-tuples where each coordinate is an element of the original set.</li>
+</ul>
+<p>where
+- <span class="math inline">\(k\)</span> is a positive integer representing the number of repetitions.
+- <span class="math inline">\(X\)</span> is the underlying set, topological space, or vector space.
+- <span class="math inline">\(X^k\)</span> (or <span class="math inline">\(V^k\)</span>) denotes the <span class="math inline">\(k\)</span>-fold Cartesian product <span class="math inline">\(X \times \dots \times X\)</span>.</p>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Cartesian Product</em>) A set consisting of all possible ordered combinations of elements from a collection of sets, denoted by <span class="math inline">\(X \times Y\)</span> for two sets, <span class="math inline">\(X_1 \times \dots \times X_n\)</span> for <span class="math inline">\(n\)</span> sets, or <span class="math inline">\(\prod_{\alpha \in A} X_\alpha\)</span> for an indexed family, where the following conditions apply:</p>
+<ul>
+<li>For two sets, the product contains all ordered pairs <span class="math inline">\((x, y)\)</span> where the first component is from the first set and the second component is from the second.</li>
+<li>For a finite collection, the product consists of all ordered <span class="math inline">\(n\)</span>-tuples <span class="math inline">\((x_1, \dots, x_n)\)</span> where each <span class="math inline">\(x_i\)</span> is an element of the corresponding factor <span class="math inline">\(X_i\)</span>.</li>
+<li>For an arbitrary indexed family, the product is the set of all functions <span class="math inline">\(x\)</span> from the index set <span class="math inline">\(A\)</span> to the union of the sets such that <span class="math inline">\(x(\alpha) \in X_\alpha\)</span> for each <span class="math inline">\(\alpha \in A\)</span>.</li>
+</ul>
+<p>where
+- <span class="math inline">\(X, Y, X_i, X_\alpha\)</span> are non-empty sets
+- <span class="math inline">\((x, y)\)</span> is an ordered pair
+- <span class="math inline">\((x_1, \dots, x_n)\)</span> is an ordered <span class="math inline">\(n\)</span>-tuple
+- <span class="math inline">\(A\)</span> (or <span class="math inline">\(\Lambda\)</span>) is the index set used to label the family of sets</p>
+<p></p>
+</div>
+<div id="covariant-contravariant-and-coordinate-systems" class="section level3" number="5.0.3">
+<h3>
+<span class="header-section-number">5.0.3</span> Covariant, Contravariant, and Coordinate Systems<a class="anchor" aria-label="anchor" href="#covariant-contravariant-and-coordinate-systems"><i class="fas fa-link"></i></a>
+</h3>
+<p>The context if this section is the following. In physics and mathematics, points exist independently of the coordinates used to represent them.</p>
+<p>First, we begin a discussion on covariant and contravariant vectors.</p>
+<p>Covariant vectors are linear functionals.</p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Linear Functional</em>) A linear transformation from a vector space <span class="math inline">\(V\)</span> to its associated field of scalars <span class="math inline">\(K\)</span>, The mapping <span class="math inline">\(f: V \rightarrow K\)</span> must satisfy the following linearity condition:</p>
+<ul>
+<li><span class="math inline">\(f(ax + by) = af(x) + bf(y)\)</span></li>
+</ul>
+<p>where
+- <span class="math inline">\(x, y \in V\)</span> are vectors
+- <span class="math inline">\(a, b \in K\)</span> are scalars
+- <span class="math inline">\(V\)</span> is a vector space
+- <span class="math inline">\(K\)</span> is the field of scalars.</p>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>k-Covector</em>) An alternating <span class="math inline">\(k\)</span>-linear function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(T: V^k \rightarrow \mathbb{R}\)</span>, where the following conditions apply:</p>
+<ul>
+<li>The function <span class="math inline">\(T\)</span> is linear in each of its <span class="math inline">\(k\)</span> arguments.</li>
+<li>
+<span class="math inline">\(T(v_{\sigma(1)}, \dots, v_{\sigma(k)}) = (\text{sgn } \sigma) T(v_1, \dots, v_k)\)</span> for every permutation <span class="math inline">\(\sigma \in S_k\)</span>.</li>
+</ul>
+<p>where
+- <span class="math inline">\(V\)</span> is a vector space.
+- <span class="math inline">\(k\)</span> is a positive integer representing the degree of the covector.
+- <span class="math inline">\(v_1, \dots, v_k \in V\)</span> are vectors.
+- <span class="math inline">\(A^k(V)\)</span> (or <span class="math inline">\(\Lambda^k(V^*)\)</span>) is the vector space of all <span class="math inline">\(k\)</span>-covectors on <span class="math inline">\(V\)</span>.
+- <span class="math inline">\(\text{sgn } \sigma\)</span> is the sign of the permutation.
+- A <span class="math inline">\(k\)</span>-covector is also called a multicovector of degree k or an alternating k-tensor.</p>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>k-Covector Field</em>) A function assigning a <span class="math inline">\(k\)</span>-covector to each point of a manifold, <span class="math inline">\(\omega: M \rightarrow \Lambda^k(T^*M)\)</span>, where the following condition applies:</p>
+<ul>
+<li>For each point <span class="math inline">\(p\)</span> in <span class="math inline">\(M\)</span>, <span class="math inline">\(\omega(p)\)</span> is an alternating <span class="math inline">\(k\)</span>-linear function on the tangent space <span class="math inline">\(T_pM\)</span>.</li>
+</ul>
+<p>where
+- <span class="math inline">\(M\)</span> is a smooth manifold.
+- <span class="math inline">\(p\)</span> is a point in <span class="math inline">\(M\)</span>.
+- <span class="math inline">\(T_pM\)</span> is the tangent space of <span class="math inline">\(M\)</span> at <span class="math inline">\(p\)</span>.
+- <span class="math inline">\(T^*_pM\)</span> is the cotangent space of <span class="math inline">\(M\)</span> at <span class="math inline">\(p\)</span>.
+- <span class="math inline">\(\Lambda^k(T^*_pM)\)</span> (or <span class="math inline">\(A^k(T_pM)\)</span>) is the space of all alternating <span class="math inline">\(k\)</span>-tensors on the tangent space <span class="math inline">\(T_pM\)</span>.
+- <span class="math inline">\(\Lambda^k(T^*M)\)</span> is the <span class="math inline">\(k\)</span>-th exterior power of the cotangent bundle.
+- A <span class="math inline">\(k\)</span>-covector field is also called a differential <span class="math inline">\(k\)</span>-form.</p>
+<p></p>
+<p><i></i></p>
+<p><strong>example</strong> (<em>k-Covector</em>) Let</p>
+<p><span class="math display">\[
+V = \mathbb{R}^2.
+\]</span></p>
+<p>Define the function</p>
+<p><span class="math display">\[
+T : V^2 \rightarrow \mathbb{R}
+\]</span></p>
+<p>by</p>
+<p><span class="math display">\[
+T((a,b),(c,d))
+=
+ad-bc.
+\]</span></p>
+<p>where <span class="math display">\[a,b,c,d \in \mathbb{R}\]</span>.</p>
+<p>Let</p>
+<p><span class="math display">\[
+v_1=(1,2),
+\qquad
+v_2=(3,4).
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+T(v_1,v_2)
+=
+(1)(4)-(2)(3)
+=
+-2.
+\]</span></p>
+<p>Interchanging the vectors gives</p>
+<p><span class="math display">\[
+T(v_2,v_1)
+=
+(3)(2)-(4)(1)
+=
+2
+=
+-T(v_1,v_2).
+\]</span></p>
+<p>Therefore, <span class="math inline">\(T\)</span> changes sign when its arguments are exchanged, so <span class="math inline">\(T\)</span> is alternating.</p>
+<p>Furthermore, <span class="math inline">\(T\)</span> is linear in each argument. Hence, <span class="math inline">\(T\)</span> is an alternating <span class="math inline">\(2\)</span>-linear function.</p>
+<p>Therefore, <span class="math inline">\(T\)</span> is a <span class="math inline">\(2\)</span>-covector on <span class="math inline">\(\mathbb{R}^2\)</span>.</p>
+<p></p>
+</div>
+<div id="functions" class="section level3" number="5.0.4">
+<h3>
+<span class="header-section-number">5.0.4</span> Functions<a class="anchor" aria-label="anchor" href="#functions"><i class="fas fa-link"></i></a>
+</h3>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Alternating Function</em>) A property of a <span class="math inline">\(k\)</span>-linear function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(T: V^k \rightarrow \mathbb{R}\)</span>, where the following conditions apply:</p>
+<ul>
+<li>
+<span class="math inline">\(T(v_{\sigma(1)}, \dots, v_{\sigma(k)}) = (\text{sgn } \sigma) T(v_1, \dots, v_k)\)</span> for every permutation <span class="math inline">\(\sigma \in S_k\)</span>.</li>
+<li>
+<span class="math inline">\(T(v_1, \dots, v_i, \dots, v_j, \dots, v_k) = -T(v_1, \dots, v_j, \dots, v_i, \dots, v_k)\)</span> for any interchange of two arguments.</li>
+<li>
+<span class="math inline">\(T(v_1, \dots, v_k) = 0\)</span> whenever two of the vectors <span class="math inline">\(v_1, \dots, v_k\)</span> are equal.</li>
+</ul>
+<p>where
+- <span class="math inline">\(V\)</span> is a vector space.
+- <span class="math inline">\(V^k\)</span> is the <span class="math inline">\(k\)</span>-fold Cartesian product <span class="math inline">\(V \times \dots \times V\)</span>.
+- <span class="math inline">\(S_k\)</span> is the permutation group of <span class="math inline">\(k\)</span> objects.
+- <span class="math inline">\(\text{sgn } \sigma\)</span> is the sign of the permutation <span class="math inline">\(\sigma\)</span>, which is <span class="math inline">\(+1\)</span> if the permutation is even and <span class="math inline">\(-1\)</span> if it is odd.
+- <span class="math inline">\(v_1, \dots, v_k\)</span> are vectors in <span class="math inline">\(V\)</span>.
+- <span class="math inline">\(k\)</span> is a positive integer representing the degree of the function.</p>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Alternating k-linear function</em>) A multilinear function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(f: V^k \rightarrow \mathbb{R}\)</span>, where the following conditions apply:</p>
+<ul>
+<li>
+<span class="math inline">\(f(v_{\sigma(1)}, \dots, v_{\sigma(k)}) = (\text{sgn } \sigma) f(v_1, \dots, v_k)\)</span> for all <span class="math inline">\(\sigma \in S_k\)</span>.</li>
+<li>
+<span class="math inline">\(f(v_1, \dots, v_i, \dots, v_j, \dots, v_k) = -f(v_1, \dots, v_j, \dots, v_i, \dots, v_k)\)</span> for any interchange of two arguments.</li>
+<li>
+<span class="math inline">\(f(v_1, \dots, v_k) = 0\)</span> whenever two of the vectors <span class="math inline">\(v_1, \dots, v_k\)</span> are equal.</li>
+</ul>
+<p>where
+- <span class="math inline">\(V\)</span> is a vector space.
+- <span class="math inline">\(V^k\)</span> is the <span class="math inline">\(k\)</span>-fold Cartesian product <span class="math inline">\(V \times \dots \times V\)</span>.
+- <span class="math inline">\(k\)</span> is a positive integer representing the degree of the function.
+- <span class="math inline">\(S_k\)</span> is the permutation group of <span class="math inline">\(k\)</span> objects.
+- <span class="math inline">\(\text{sgn } \sigma\)</span> is the sign of the permutation <span class="math inline">\(\sigma\)</span>.
+- <span class="math inline">\(v_1, \dots, v_k \in V\)</span> are vectors.
+- <span class="math inline">\(A^k(V)\)</span> (or <span class="math inline">\(\Lambda^k(V^*)\)</span>) is the vector space of all alternating <span class="math inline">\(k\)</span>-linear functions on <span class="math inline">\(V\)</span>.</p>
+<p>k-covector, multicovector of degree k, and alternating k-tensor are synonyms for an alternating <span class="math inline">\(k\)</span>-linear function.</p>
+<p></p>
+</div>
+<div id="differential-form" class="section level3" number="5.0.5">
+<h3>
+<span class="header-section-number">5.0.5</span> Differential Form<a class="anchor" aria-label="anchor" href="#differential-form"><i class="fas fa-link"></i></a>
+</h3>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Differential k-Form</em>) A function assigning an alternating k-linear function to each point of a manifold <span class="math inline">\(M\)</span>, where the following condition applies:</p>
+<ul>
+<li>For each point <span class="math inline">\(p \in M\)</span>, <span class="math inline">\(\omega(p)\)</span> is a <span class="math inline">\(k\)</span>-covector on the tangent space <span class="math inline">\(T_pM\)</span>.</li>
+</ul>
+<p>where
+- <span class="math inline">\(M\)</span> is a smooth manifold.
+- <span class="math inline">\(k\)</span> is a non-negative integer representing the degree of the form.
+- <span class="math inline">\(T_pM\)</span> is the tangent space to <span class="math inline">\(M\)</span> at <span class="math inline">\(p\)</span>.
+- <span class="math inline">\(T^*_p M\)</span> (or <span class="math inline">\(T^*_p(M)\)</span>) is the cotangent space at <span class="math inline">\(p\)</span>, defined as the dual space of the tangent space <span class="math inline">\(T_pM\)</span>.
+- <span class="math inline">\(\Lambda^k(T^*_p M)\)</span> (or <span class="math inline">\(A^k(T_pM)\)</span>) is the vector space of all alternating <span class="math inline">\(k\)</span>-tensors (also called <span class="math inline">\(k\)</span>-covectors or multicovectors) on <span class="math inline">\(T_pM\)</span>.
+- <span class="math inline">\(\omega\)</span> is a smooth section of the vector bundle <span class="math inline">\(\Lambda^k(T^*M)\)</span>, the <span class="math inline">\(k\)</span>-th exterior power of the cotangent bundle.</p>
+<p></p>
+</div>
+<div id="appendix-1" class="section level3" number="5.0.6">
+<h3>
+<span class="header-section-number">5.0.6</span> Appendix<a class="anchor" aria-label="anchor" href="#appendix-1"><i class="fas fa-link"></i></a>
+</h3>
+<p><i></i></p>
+<p><strong>definition</strong> (<strong>Linear Function</strong>) A function from a vector space, <span class="math inline">\(f: \mathbf{V} \rightarrow \mathbb{R}\)</span>, that satisfies the following conditions for all vectors and scalars:</p>
+<ul>
+<li>(Additivity) <span class="math inline">\(f(\mathbf{u} + \mathbf{v}) = f(\mathbf{u}) + f(\mathbf{v})\)</span> .</li>
+<li>(Homogeneity) <span class="math inline">\(f(k\mathbf{v}) = k \cdot f(\mathbf{v})\)</span>.</li>
+</ul>
+<p>where
+- <span class="math inline">\(\mathbf{V}\)</span> is a real vector space.
+- <span class="math inline">\(\mathbf{u}, \mathbf{v} \in \mathbf{V}\)</span>.
+- <span class="math inline">\(k\)</span> is a scalar.</p>
+<p></p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="topology.html"><span class="header-section-number">4</span> Topology</a></div>
+<div class="empty"></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav"><li>
+<a class="nav-link" href="#differential-geometry"><span class="header-section-number">5</span> Differential Geometry</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#forms"><span class="header-section-number">5.0.1</span> Forms</a></li>
+<li><a class="nav-link" href="#tensors"><span class="header-section-number">5.0.2</span> Tensors</a></li>
+<li><a class="nav-link" href="#covariant-contravariant-and-coordinate-systems"><span class="header-section-number">5.0.3</span> Covariant, Contravariant, and Coordinate Systems</a></li>
+<li><a class="nav-link" href="#functions"><span class="header-section-number">5.0.4</span> Functions</a></li>
+<li><a class="nav-link" href="#differential-form"><span class="header-section-number">5.0.5</span> Differential Form</a></li>
+<li><a class="nav-link" href="#appendix-1"><span class="header-section-number">5.0.6</span> Appendix</a></li>
+</ul>
+</li></ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Geometry of Physics</strong>" was written by bignumber-material. </p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

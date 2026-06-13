@@ -23,9 +23,16 @@ The rendered HTML book will be placed into `_BOOK/_book` by default.
 
 ## Run
 
+```bash
 cd './_BOOK/_book'
-
 python3 -m http.server 8000
+```
+
+Or, without cd'ing into `_book
+
+```bash
+python3 -m http.server 8000 --directory _book
+```
 
 
 ## Notes
