@@ -8,7 +8,9 @@ $$
 \frac{\partial u}{\partial t} = \alpha \nabla^2 u
 $$
 
-where \( u(x,t) \) represents the temperature at position \( x \) and time \( t \), and \( \alpha \) is the thermal diffusivity constant. The equation models the flow of heat in materials and is used in various fields, including physics, engineering, and finance.
+where
+
+* \( u(x,t) \) represents the temperature at position \( x \) and time \( t \), and \( \alpha \) is the thermal diffusivity constant. The equation models the flow of heat in materials and is used in various fields, including physics, engineering, and finance.
 
 ### 3. Subtopics:
 - Fourier's law
@@ -36,7 +38,9 @@ $$
 u(0, t) = u(L, t) = 0
 $$
 
-where \( L \) is the length of the rod. Initial conditions would also be provided, such as:
+where
+
+* \( L \) is the length of the rod. Initial conditions would also be provided, such as:
 
 $$
 u(x, 0) = f(x)

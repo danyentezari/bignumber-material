@@ -22,11 +22,15 @@ In a heat conduction problem, if a metal rod is insulated at both ends, the boun
 $$
 \frac{\partial u}{\partial x}(0, t) = \frac{\partial u}{\partial x}(L, t) = 0
 $$
-where \( u(x,t) \) represents the temperature in the rod, and \( L \) is the length of the rod.
+where
+
+* \( u(x,t) \) represents the temperature in the rod, and \( L \) is the length of the rod.
 
 ### 7. Example 2:
 For a vibrating string fixed at both ends, the boundary condition specifies that the displacement at the endpoints remains zero, corresponding to a Dirichlet boundary condition:
 $$
 u(0,t) = u(L,t) = 0
 $$
-where \( u(x,t) \) is the displacement of the string, and \( L \) is the length of the string. These conditions ensure that the string does not move at its endpoints.
+where
+
+* \( u(x,t) \) is the displacement of the string, and \( L \) is the length of the string. These conditions ensure that the string does not move at its endpoints.

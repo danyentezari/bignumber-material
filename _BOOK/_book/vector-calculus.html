@@ -82,7 +82,7 @@
 <span class="header-section-number">3.0.1</span> Stoke’s Theorem<a class="anchor" aria-label="anchor" href="#stokes-theorem"><i class="fas fa-link"></i></a>
 </h3>
 <p>Let <span class="math inline">\(S\)</span> be a piecewise smooth oriented surface in space, and let the boundary of <span class="math inline">\(S\)</span> be a piecewise smooth simple closed curve <span class="math inline">\(C\)</span>. If <span class="math inline">\(\mathbf{F}(x, y, z)\)</span> is a continuous vector function with continuous first partial derivatives in a domain containing <span class="math inline">\(S\)</span>, then:</p>
-<p><span class="math display">\[\iint_S (\text{curl } \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span>.</p>
+<p><span class="math display">\[\iint_S (\text{curl } \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span></p>
 <p>In this formula:</p>
 <ul>
 <li>
@@ -107,15 +107,23 @@
 <span class="header-section-number">3.0.3</span> Double Integral<a class="anchor" aria-label="anchor" href="#double-integral"><i class="fas fa-link"></i></a>
 </h3>
 <p>The double integral is defined by the following identity:
-<span class="math display">\[\iint_R f(x, y) \, dA = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*) \Delta A\]</span>.</p>
-<p>where
-* <span class="math inline">\(R\)</span> is a closed bounded region in the <span class="math inline">\(xy\)</span>-plane over which the function is integrated [1, 2].
-* <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are the number of subrectangles into which the region <span class="math inline">\(R\)</span> is partitioned [3, 4].
-* <span class="math inline">\(R_{ij}\)</span> are the smaller subrectangles resulting from dividing <span class="math inline">\(R\)</span> using a grid of lines parallel to the axes [4, 5].
-* <span class="math inline">\(\Delta A\)</span> represents the area of each subrectangle <span class="math inline">\(R_{ij}\)</span> [4, 6].
-* <span class="math inline">\((x_{ij}^*, y_{ij}^*)\)</span> is an arbitrary sample point chosen within the subrectangle <span class="math inline">\(R_{ij}\)</span> [4, 6].
-* The limit is taken as <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> approach infinity such that the maximum diameter (the greatest distance between any two points within a subregion) approaches zero [3, 7].
-* The function <span class="math inline">\(f(x, y)\)</span>, the integrand, is typically assumed to be continuous on <span class="math inline">\(R\)</span> to ensure the limit exists and is independent of the choice of sample points [7, 8].</p>
+<span class="math display">\[\iint_R f(x, y) \, dA = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*) \Delta A\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<li>
+<span class="math inline">\(R\)</span> is a closed bounded region in the <span class="math inline">\(xy\)</span>-plane over which the function is integrated [1, 2].</li>
+<li>
+<span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are the number of subrectangles into which the region <span class="math inline">\(R\)</span> is partitioned [3, 4].</li>
+<li>
+<span class="math inline">\(R_{ij}\)</span> are the smaller subrectangles resulting from dividing <span class="math inline">\(R\)</span> using a grid of lines parallel to the axes [4, 5].</li>
+<li>
+<span class="math inline">\(\Delta A\)</span> represents the area of each subrectangle <span class="math inline">\(R_{ij}\)</span> [4, 6].</li>
+<li>
+<span class="math inline">\((x_{ij}^*, y_{ij}^*)\)</span> is an arbitrary sample point chosen within the subrectangle <span class="math inline">\(R_{ij}\)</span> [4, 6].</li>
+<li>The limit is taken as <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> approach infinity such that the maximum diameter (the greatest distance between any two points within a subregion) approaches zero [3, 7].</li>
+<li>The function <span class="math inline">\(f(x, y)\)</span>, the integrand, is typically assumed to be continuous on <span class="math inline">\(R\)</span> to ensure the limit exists and is independent of the choice of sample points [7, 8].</li>
+</ul>
 <p><br></p>
 </div>
 <div id="double-integral-notational-variations" class="section level3" number="3.0.4">

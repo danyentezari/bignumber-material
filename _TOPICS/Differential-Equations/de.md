@@ -39,6 +39,7 @@ $$
 $$
 
 where
+
 - $F$ is the integral of $f$
 
 <br/>
@@ -63,7 +64,9 @@ $\dfrac{dy}{dx}=f(x)+\phi(y) \quad (eq. 3)$
 
 $g(y)dy=\phi(x)dx  \quad (eq. 4)$
 
-Where 
+where
+
+* 
 - $g(y)=\dfrac{1}{\phi(y)}$
 
 Then, intergrate both sides of (eq.4) with respect to the variables on each side.
@@ -78,7 +81,9 @@ A differential equation of the form
 
 $M(x,y)dx+N(x,y)dx=0$
 
-where 
+where
+
+* 
 - $M(x,y)dx+N(x,y)dx$ is an exact differential 
 
 <br/>
@@ -101,7 +106,8 @@ $\frac{\partial}{\partial x}(x^2 + 2xy) = 2x + 2y$
  
 $$y' + a(x)y=b(x)$$
 
-Where
+where
+
 - $a(x)$, $b(x)$ are known functions
   
  ---
@@ -132,6 +138,7 @@ $\dfrac{dy}{dx} = F ( \dfrac{y}{x} )$
 
 
 where
+
 - $F(\dfrac{y}{x})$ is a homogeneous function
 
 ---
@@ -140,6 +147,7 @@ where
 $y' = f(x,y)$
 
 where
+
 - $y$ is an unknown function
 
 <br/>
@@ -147,7 +155,9 @@ where
 ---
 **1[3, pp.  30] linear differential equation** 
 
-One way to define a linear differential equation is a differential equation wherein there is no power, product, or quotient of the unknown function or it's derivative.
+One way to define a linear differential equation is a differential equation where
+
+*in there is no power, product, or quotient of the unknown function or it's derivative.
 
 ---
 **1[1, pp.19] nonlinear differential equations**
@@ -155,12 +165,15 @@ One way to define a linear differential equation is a differential equation wher
 $\dfrac{d^2\theta}{dt^2} + \dfrac{g}{L} \sin(\theta) = 0$
 
 where
+
 - $\theta$ is a function
 - $\dfrac{g}{L}$ is a constant
 
 This is a non-linear function because the equation involves a term nonlinear in $\theta$.
 
-Another way to define a non-linear differential equation is a differential equation wherein there is a power, product, or quotient of the unknown function or it's derivative.
+Another way to define a non-linear differential equation is a differential equation where
+
+*in there is a power, product, or quotient of the unknown function or it's derivative.
 
 <br/>
 
@@ -169,7 +182,8 @@ Another way to define a non-linear differential equation is a differential equat
 
 $$\dfrac{dy}{dx}+p(x)y=q(x)y^n$$
 
-Where
+where
+
 - $n=2,3,4,...$ 
 
 <br/>
@@ -208,6 +222,7 @@ $$y=f(x)$$
 $$ \dfrac{dT}{dt} = -k(T - T_a) $$
 
 where
+
 - $T$  temperature of the object
 - $T_a$ temperature of ambience
 - $t$ is time

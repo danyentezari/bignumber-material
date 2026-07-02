@@ -7,7 +7,7 @@ This folder contains the Bookdown project for the `_TOPICS` content.
 From `_BOOK`:
 
 ```sh
-Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::bs4_book")'
+Rscript -e 'setwd("_BOOK"); bookdown::render_book("index.Rmd", "bookdown::bs4_book")'
 ```
 
 If `Rscript` is not available, install R and ensure it is on your shell `PATH`.

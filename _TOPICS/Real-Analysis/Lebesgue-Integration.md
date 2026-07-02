@@ -17,6 +17,7 @@ A measurable space is the space $(X,\mathcal{M})$ if
 - $\mathcal{M} \sub P(X)$
 
 where
+
 - $\mathcal{M}$ is $\sigma$-algebra  
 - $X$ is a set
 - $P(X)$ is the family of all subsets [2, pp. 2]
@@ -30,7 +31,9 @@ Note: not to be confused with a "measure space."
 
 A measure space is the space $(X,\mathcal{M}, \mu)$
 
-where 
+where
+
+* 
 - $\mu$ is the measure 
 
 Note: not to be confused with a "measurable space."

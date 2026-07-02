@@ -96,7 +96,7 @@
 <li><p>Ampere-Maxwell Law
 <span class="math display">\[ \nabla \times \mathbf{H} = \mathbf{J} + \frac{\partial \mathbf{D}}{\partial t} \]</span></p></li>
 </ol>
-<p>Where</p>
+<p>where</p>
 <ul>
 <li>
 <span class="math inline">\(\nabla\)</span> = Vector differential operator.</li>
@@ -123,8 +123,9 @@
 </h3>
 <p>Stokes’ theorem relates the circulation of a vector field <span class="math inline">\(\mathbf{A}\)</span> around a closed path <span class="math inline">\(L\)</span> to the surface integral of its curl over an open surface <span class="math inline">\(S\)</span> bounded by <span class="math inline">\(L\)</span> [1]:</p>
 <p><span class="math display">\[ \int_S (\nabla \times \mathbf{A}) \cdot d\mathbf{S} = \oint_L \mathbf{A} \cdot d\mathbf{l}\]</span></p>
-<p>Where:
-* <span class="math inline">\(d\mathbf{S}\)</span> is the surface element vector [1].
+<p>where</p>
+<p><em>:
+</em> <span class="math inline">\(d\mathbf{S}\)</span> is the surface element vector [1].
 * The orientation follows the <strong>right-hand rule</strong> [2].</p>
 <p><br></p>
 </div>
@@ -132,16 +133,25 @@
 <h3>
 <span class="header-section-number">2.1.3</span> Stoke’s Theorem for Flux Integral<a class="anchor" aria-label="anchor" href="#stokes-theorem-for-flux-integral"><i class="fas fa-link"></i></a>
 </h3>
-<p><span class="math display">\[\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span>.</p>
+<p><span class="math display">\[\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span></p>
 <p>Or,</p>
-<p><span class="math display">\[\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span>.</p>
-<p>In this formula:
-* <span class="math inline">\(S\)</span> a piecewise smooth oriented surface in space
-* <span class="math inline">\(C\)</span> a piecewise smooth simple closed curve boundary of <span class="math inline">\(S\)</span>
-* <span class="math inline">\(\mathbf{n}\)</span> is the unit normal vector of <span class="math inline">\(S\)</span>.
-* <span class="math inline">\(\mathbf{r}'(s)\)</span> is the unit tangent vector of <span class="math inline">\(C\)</span>.
-* <span class="math inline">\(s\)</span> is the arc length of <span class="math inline">\(C\)</span>.
-* <span class="math inline">\(\mathbf{F}(x, y, z)\)</span> is a continuous vector function</p>
+<p><span class="math display">\[\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(S\)</span> a piecewise smooth oriented surface in space</li>
+<li>
+<span class="math inline">\(C\)</span> a piecewise smooth simple closed curve boundary of <span class="math inline">\(S\)</span>
+</li>
+<li>
+<span class="math inline">\(\mathbf{n}\)</span> is the unit normal vector of <span class="math inline">\(S\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{r}'(s)\)</span> is the unit tangent vector of <span class="math inline">\(C\)</span>.</li>
+<li>
+<span class="math inline">\(s\)</span> is the arc length of <span class="math inline">\(C\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{F}(x, y, z)\)</span> is a continuous vector function</li>
+</ul>
 <p><br></p>
 </div>
 <div id="surface-integrals-and-fundamental-theorem-of-calculus" class="section level3" number="2.1.4">
@@ -149,17 +159,11 @@
 <span class="header-section-number">2.1.4</span> Surface Integrals and Fundamental Theorem of Calculus<a class="anchor" aria-label="anchor" href="#surface-integrals-and-fundamental-theorem-of-calculus"><i class="fas fa-link"></i></a>
 </h3>
 <p><span class="math display">\[\int_D d\omega = \int_{\partial D} \omega\]</span></p>
-<p>Where</p>
-<ul>
-<li>
-<span class="math inline">\(\omega\)</span>: A differential <span class="math inline">\((k-1)\)</span>-form.</li>
-<li>
-<span class="math inline">\(d\omega\)</span>: The exterior derivative of the form <span class="math inline">\(\omega\)</span>.</li>
-<li>
-<span class="math inline">\(D\)</span>: A <span class="math inline">\(k\)</span>-dimensional domain of integration.</li>
-<li>
-<span class="math inline">\(\partial D\)</span>: The oriented boundary of the domain <span class="math inline">\(D\)</span>.</li>
-</ul>
+<p>where</p>
+<p>** <span class="math inline">\(\omega\)</span>: A differential <span class="math inline">\((k-1)\)</span>-form.
+* <span class="math inline">\(d\omega\)</span>: The exterior derivative of the form <span class="math inline">\(\omega\)</span>.
+* <span class="math inline">\(D\)</span>: A <span class="math inline">\(k\)</span>-dimensional domain of integration.
+* <span class="math inline">\(\partial D\)</span>: The oriented boundary of the domain <span class="math inline">\(D\)</span>.</p>
 <p><br></p>
 </div>
 <div id="special-relativity-and-electric-fields" class="section level3" number="2.1.5">
@@ -178,11 +182,17 @@
 <p>See Physics Mathemematical Appendix.</p>
 <p><strong>Electromagnetism</strong> The phenomena of interactions between charges at rest and in motion.</p>
 <p><strong>Electromagnetic Waves</strong> Oscillations of electric and magnetic fields that propagate through space without the need for charges or currents.</p>
-<p><strong>Reference Frame</strong> A coordinate system where measurements can be made about the time and position about objects.</p>
+<p><strong>Reference Frame</strong> A coordinate system where</p>
+<ul>
+<li>measurements can be made about the time and position about objects.</li>
+</ul>
 <p><strong>Inertial Reference Frame</strong>
-A reference frame based on Newton’s First Law, where all objects are at rest or in motion unless influenced by external force.</p>
-<p><strong>Phase</strong>
-<img src="https://www.researchgate.net/profile/Irene-Van-De-Vijver/publication/336862739/figure/fig2/AS:839368331784194@1577132413781/A-Oscillations-are-characterized-by-their-frequency-the-number-of-cycles-per-time.ppm"></p>
+A reference frame based on Newton’s First Law, where</p>
+<ul>
+<li>all objects are at rest or in motion unless influenced by external force.</li>
+</ul>
+<p><strong>Phase</strong></p>
+<div class="inline-figure"><img src="https://www.researchgate.net/profile/Irene-Van-De-Vijver/publication/336862739/figure/fig2/AS:839368331784194@1577132413781/A-Oscillations-are-characterized-by-their-frequency-the-number-of-cycles-per-time.ppm" width="300"></div>
 <p><strong>Gradient</strong></p>
 <p><span class="math inline">\(\nabla V\)</span> Operating on a scalar function <span class="math inline">\(V\)</span> produces a vector field.</p>
 <p><strong>Divergence</strong></p>
@@ -199,27 +209,40 @@ A reference frame based on Newton’s First Law, where all objects are at rest o
 </h2>
 <p><strong>Stoke’s Theorem</strong></p>
 <p>Let <span class="math inline">\(S\)</span> be a piecewise smooth oriented surface in space, and let the boundary of <span class="math inline">\(S\)</span> be a piecewise smooth simple closed curve <span class="math inline">\(C\)</span>. If with continuous first partial derivatives in a domain containing <span class="math inline">\(S\)</span>, then:</p>
-<p><span class="math display">\[\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span>.</p>
+<p><span class="math display">\[\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span></p>
 <p>Or,</p>
-<p><span class="math display">\[\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span>.</p>
-<p>In this formula:
-* <span class="math inline">\(\mathbf{n}\)</span> is the unit normal vector of <span class="math inline">\(S\)</span>.
-* <span class="math inline">\(\mathbf{r}'(s)\)</span> is the unit tangent vector of <span class="math inline">\(C\)</span>.
-* <span class="math inline">\(s\)</span> is the arc length of <span class="math inline">\(C\)</span>.
-* <span class="math inline">\(\mathbf{F}(x, y, z)\)</span> is a continuous vector function</p>
+<p><span class="math display">\[\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span></p>
+<p>In this formula</p>
+<ul>
+<li>
+<span class="math inline">\(\mathbf{n}\)</span> is the unit normal vector of <span class="math inline">\(S\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{r}'(s)\)</span> is the unit tangent vector of <span class="math inline">\(C\)</span>.</li>
+<li>
+<span class="math inline">\(s\)</span> is the arc length of <span class="math inline">\(C\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{F}(x, y, z)\)</span> is a continuous vector function</li>
+</ul>
 <p><strong>Flux</strong></p>
 <p>Total amount of a field or fluid passing through a surface.</p>
 <p><strong>Double Integral</strong></p>
 <p>The double integral is defined by the following identity:
-<span class="math display">\[\iint_R f(x, y) \, dA = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*) \Delta A\]</span>.</p>
-<p>where
-* <span class="math inline">\(R\)</span> is a closed bounded region in the <span class="math inline">\(xy\)</span>-plane over which the function is integrated [1, 2].
-* <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are the number of subrectangles into which the region <span class="math inline">\(R\)</span> is partitioned [3, 4].
-* <span class="math inline">\(R_{ij}\)</span> are the smaller subrectangles resulting from dividing <span class="math inline">\(R\)</span> using a grid of lines parallel to the axes [4, 5].
-* <span class="math inline">\(\Delta A\)</span> represents the area of each subrectangle <span class="math inline">\(R_{ij}\)</span> [4, 6].
-* <span class="math inline">\((x_{ij}^*, y_{ij}^*)\)</span> is an arbitrary sample point chosen within the subrectangle <span class="math inline">\(R_{ij}\)</span> [4, 6].
-* The limit is taken as <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> approach infinity such that the maximum diameter (the greatest distance between any two points within a subregion) approaches zero [3, 7].
-* The function <span class="math inline">\(f(x, y)\)</span>, the integrand, is typically assumed to be continuous on <span class="math inline">\(R\)</span> to ensure the limit exists and is independent of the choice of sample points [7, 8].</p>
+<span class="math display">\[\iint_R f(x, y) \, dA = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*) \Delta A\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(R\)</span> is a closed bounded region in the <span class="math inline">\(xy\)</span>-plane over which the function is integrated [1, 2].</li>
+<li>
+<span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are the number of subrectangles into which the region <span class="math inline">\(R\)</span> is partitioned [3, 4].</li>
+<li>
+<span class="math inline">\(R_{ij}\)</span> are the smaller subrectangles resulting from dividing <span class="math inline">\(R\)</span> using a grid of lines parallel to the axes [4, 5].</li>
+<li>
+<span class="math inline">\(\Delta A\)</span> represents the area of each subrectangle <span class="math inline">\(R_{ij}\)</span> [4, 6].</li>
+<li>
+<span class="math inline">\((x_{ij}^*, y_{ij}^*)\)</span> is an arbitrary sample point chosen within the subrectangle <span class="math inline">\(R_{ij}\)</span> [4, 6].</li>
+<li>The limit is taken as <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> approach infinity such that the maximum diameter (the greatest distance between any two points within a subregion) approaches zero [3, 7].</li>
+<li>The function <span class="math inline">\(f(x, y)\)</span>, the integrand, is typically assumed to be continuous on <span class="math inline">\(R\)</span> to ensure the limit exists and is independent of the choice of sample points [7, 8].</li>
+</ul>
 <p><br></p>
 <p><strong>Double Integral Notational Variations</strong></p>
 <p>There exist double integral with two equivalent notations:
@@ -242,12 +265,16 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
 <p><strong>Divergence</strong></p>
 <p><br></p>
 <p><strong>Differentiation of Vector</strong></p>
-<p><span class="math display">\[\mathbf{v}'(t) = \lim_{\Delta t \to 0} \frac{\mathbf{v}(t + \Delta t) - \mathbf{v}(t)}{\Delta t}\]</span>.</p>
+<p><span class="math display">\[\mathbf{v}'(t) = \lim_{\Delta t \to 0} \frac{\mathbf{v}(t + \Delta t) - \mathbf{v}(t)}{\Delta t}\]</span></p>
 <p><br></p>
 <p><strong>Vector Function</strong></p>
 <p><span class="math display">\[\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle = f(t)\mathbf{i} + g(t)\mathbf{j} + h(t)\mathbf{k}\]</span></p>
-<p>where
-- <span class="math inline">\(f, g, h\)</span> are components of the <span class="math inline">\(\mathbf{r}(t)\)</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(f, g, h\)</span> are components of the <span class="math inline">\(\mathbf{r}(t)\)</span>
+</li>
+</ul>
 <p><br></p>
 <p><br><br><br></p>
 </div>
@@ -257,8 +284,11 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
 </h2>
 <p><strong>Principle of Superposition</strong></p>
 <p><span class="math display">\[D_\text{net} = D_{1}+D_{2}+\cdots=\sum_{i}D\]</span></p>
-<p>where
-- <span class="math inline">\(D_{i}\)</span> is the displacement caused by each wave</p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(D_{i}\)</span> is the displacement caused by each wave</li>
+</ul>
 </div>
 <div id="references" class="section level2" number="2.5">
 <h2>

@@ -25,7 +25,9 @@
 
 <br/>
 
-**Linear Combination** The sum of the products of two or more quantities, each multiplied by some constant value. The linear combination of the elements of a set of vectors and some scalars is written $a_{1}v_{1}+a_{2}v_{2}+...+a_{k}v_{k}$, where each $a_{i}$ represents a real number and each $v_{i}$ represents a vector.
+**Linear Combination** The sum of the products of two or more quantities, each multiplied by some constant value. The linear combination of the elements of a set of vectors and some scalars is written $a_{1}v_{1}+a_{2}v_{2}+...+a_{k}v_{k}$, where
+
+* each $a_{i}$ represents a real number and each $v_{i}$ represents a vector.
 
 <br/>
 
@@ -38,7 +40,9 @@ $$\begin{equation} \dfrac{dv}{dt}+v\dfrac{k}{m}=g \end{equation}$$
 $$\begin{equation} \dfrac{d^{2}y}{dx^{2}}+2\dfrac{dy}{dx}=0 \end{equation}$$
 
 
-Where $(1)$ and $(2)$ are first-order and second-order differential equations, respectively.
+where
+
+* $(1)$ and $(2)$ are first-order and second-order differential equations, respectively.
 
 <br/>
 
@@ -46,7 +50,9 @@ Where $(1)$ and $(2)$ are first-order and second-order differential equations, r
 
 $$a_{0}(x)\frac{d^{n}y}{dx^{n}} + a_{1}(x)\frac{d^{n-1}y}{dx^{n-1}} + \dots + a_{n}(x)y = f(x), \quad a_{0}(x) \ne 0$$
 
-where:
+where
+
+*:
 - $a_i(x)$ are functions called the coefficients of the differential equation,
 - $f(x)$ is called the non-homogeneous term. 
   
@@ -73,7 +79,9 @@ The linearity refers to how each term is a product of a function or its derivati
 There are two aspects about a homogeneous linear differential equations:
 
 1. Zero condition: when the equation is zero
-2. Dependent variable: where every term in the linear differential equation involves the dependent variable or its derivatives.
+2. Dependent variable: where
+
+* every term in the linear differential equation involves the dependent variable or its derivatives.
 
 <br/>
 
@@ -90,7 +98,9 @@ There are two aspects about a homogeneous linear differential equations:
 - **$n$th-Order:**
     $$a_n(x)\frac{d^n y}{dx^n} + a_{n-1}(x)\frac{d^{n-1} y}{dx^{n-1}} + \cdots + a_1(x)\frac{dy}{dx} + a_0(x)y = F(x)$$
 
-where:
+where
+
+*:
   - $ a_n(x), a_{n-1}(x), \dots, a_0(x) $ are functions of $ x $
   - $ F(x) = 0 $ is the non-homogeneous term, also called a forcing function
   - $ y $ is the unknown function

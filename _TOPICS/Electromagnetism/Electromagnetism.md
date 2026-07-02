@@ -18,7 +18,7 @@ $$ \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} $$
 4. Ampere-Maxwell Law
 $$ \nabla \times \mathbf{H} = \mathbf{J} + \frac{\partial \mathbf{D}}{\partial t} $$
 
-Where
+where
 
 - $\nabla$ = Vector differential operator.
 - $\mathbf{D}$ = Electric flux density.
@@ -37,7 +37,9 @@ Stokes' theorem relates the circulation of a vector field $\mathbf{A}$ around a 
 
 $$ \int_S (\nabla \times \mathbf{A}) \cdot d\mathbf{S} = \oint_L \mathbf{A} \cdot d\mathbf{l}$$
 
-Where:
+where
+
+*:
 *   $d\mathbf{S}$ is the surface element vector [1].
 *   The orientation follows the **right-hand rule** [2].
 
@@ -45,34 +47,20 @@ Where:
 
 ### Stoke's Theorem for Flux Integral
 
-$$\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$.
+$$\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$
 
 Or,
 
-$$\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$.
+$$\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$
 
-In this formula:
+where 
+
 * $S$ a piecewise smooth oriented surface in space
 * $C$ a piecewise smooth simple closed curve boundary of $S$
 * $\mathbf{n}$ is the unit normal vector of $S$.
 * $\mathbf{r}'(s)$ is the unit tangent vector of $C$.
 * $s$ is the arc length of $C$.
 * $\mathbf{F}(x, y, z)$ is a continuous vector function
-
-<br/>
-
-### Surface Integrals and Fundamental Theorem of Calculus
-
-$$\int_D d\omega = \int_{\partial D} \omega$$
-
-Where
-
-* $\omega$: A differential $(k-1)$-form.
-* $d\omega$: The exterior derivative of the form $\omega$.
-* $D$: A $k$-dimensional domain of integration.
-* $\partial D$: The oriented boundary of the domain $D$.
-
-
 
 <br/>
 
@@ -98,13 +86,18 @@ See Physics Mathemematical Appendix.
 
 **Electromagnetic Waves** Oscillations of electric and magnetic fields that propagate through space without the need for charges or currents.
 
-**Reference Frame** A coordinate system where measurements can be made about the time and position about objects.
+**Reference Frame** A coordinate system where
+
+* measurements can be made about the time and position about objects.
 
 **Inertial Reference Frame**
-A reference frame based on Newton's First Law, where all objects are at rest or in motion unless influenced by external force.
+A reference frame based on Newton's First Law, where
+
+* all objects are at rest or in motion unless influenced by external force.
 
 **Phase**
-![](https://www.researchgate.net/profile/Irene-Van-De-Vijver/publication/336862739/figure/fig2/AS:839368331784194@1577132413781/A-Oscillations-are-characterized-by-their-frequency-the-number-of-cycles-per-time.ppm)
+
+<img src="https://www.researchgate.net/profile/Irene-Van-De-Vijver/publication/336862739/figure/fig2/AS:839368331784194@1577132413781/A-Oscillations-are-characterized-by-their-frequency-the-number-of-cycles-per-time.ppm" width="300"/>
 
 **Gradient** 
 
@@ -132,13 +125,14 @@ $\nabla^2 V$ This operator represents the divergence of the gradient ($\nabla \c
 
 Let $S$ be a piecewise smooth oriented surface in space, and let the boundary of $S$ be a piecewise smooth simple closed curve $C$. If  with continuous first partial derivatives in a domain containing $S$, then:
 
-$$\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$.
+$$\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$
 
 Or,
 
-$$\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$.
+$$\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$
 
-In this formula:
+In this formula
+
 * $\mathbf{n}$ is the unit normal vector of $S$.
 * $\mathbf{r}'(s)$ is the unit tangent vector of $C$.
 * $s$ is the arc length of $C$.
@@ -154,9 +148,11 @@ Total amount of a field or fluid passing through a surface.
 **Double Integral**
 
 The double integral is defined by the following identity:
-$$\iint_R f(x, y) \, dA = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*) \Delta A$$.
+$$\iint_R f(x, y) \, dA = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*) \Delta A$$
 
-where 
+where
+
+
 *   $R$ is a closed bounded region in the $xy$-plane over which the function is integrated [1, 2].
 *   $m$ and $n$ are the number of subrectangles into which the region $R$ is partitioned [3, 4].
 *   $R_{ij}$ are the smaller subrectangles resulting from dividing $R$ using a grid of lines parallel to the axes [4, 5].
@@ -203,7 +199,7 @@ The curl of $\mathbf{v}$ (also denoted as $\nabla \times \mathbf{v}$ or $\text{r
 
 **Differentiation of Vector**
 
-$$\mathbf{v}'(t) = \lim_{\Delta t \to 0} \frac{\mathbf{v}(t + \Delta t) - \mathbf{v}(t)}{\Delta t}$$. 
+$$\mathbf{v}'(t) = \lim_{\Delta t \to 0} \frac{\mathbf{v}(t + \Delta t) - \mathbf{v}(t)}{\Delta t}$$ 
 
 
 <br/>
@@ -213,6 +209,7 @@ $$\mathbf{v}'(t) = \lim_{\Delta t \to 0} \frac{\mathbf{v}(t + \Delta t) - \mathb
 $$\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle = f(t)\mathbf{i} + g(t)\mathbf{j} + h(t)\mathbf{k}$$
 
 where
+
 - $f, g, h$ are components of the $\mathbf{r}(t)$
 
 <br/>
@@ -227,6 +224,7 @@ where
 $$D_\text{net} = D_{1}+D_{2}+\cdots=\sum_{i}D$$
 
 where
+
 - $D_{i}$ is the displacement caused by each wave
 
 

@@ -6,7 +6,8 @@ Used to transform a signal from its time domain signal to its frequency domain s
 
 $$F(x) = \dfrac{1}{\sqrt{2 \pi}} \displaystyle \int_{-\infty}^{\infty} f(u) e^{ixu} \: du$$
 
-Where
-$e^{ix} = \cos(x) + i\sin(x)$
+where
+
+*$e^{ix} = \cos(x) + i\sin(x)$
 
 Derivation [3, pp.32]...

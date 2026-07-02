@@ -4,7 +4,7 @@
 
 Let $S$ be a piecewise smooth oriented surface in space, and let the boundary of $S$ be a piecewise smooth simple closed curve $C$. If $\mathbf{F}(x, y, z)$ is a continuous vector function with continuous first partial derivatives in a domain containing $S$, then:
 
-$$\iint_S (\text{curl } \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$.
+$$\iint_S (\text{curl } \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$
 
 In this formula:
 
@@ -24,9 +24,11 @@ Total amount of a field or fluid passing through a surface.
 ### Double Integral
 
 The double integral is defined by the following identity:
-$$\iint_R f(x, y) \, dA = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*) \Delta A$$.
+$$\iint_R f(x, y) \, dA = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*) \Delta A$$
 
-where 
+where
+
+* 
 *   $R$ is a closed bounded region in the $xy$-plane over which the function is integrated [1, 2].
 *   $m$ and $n$ are the number of subrectangles into which the region $R$ is partitioned [3, 4].
 *   $R_{ij}$ are the smaller subrectangles resulting from dividing $R$ using a grid of lines parallel to the axes [4, 5].

@@ -9,10 +9,14 @@
 
 - **Homogeneous Partial Differential Equations (PDEs)**
   - **Homogeneous Linear PDE**
-    - General form: $L(u) = 0$, where $L$ is a linear operator
+    - General form: $L(u) = 0$, where
+
+* $L$ is a linear operator
     - Example: $u_t = αu_xx$
   - **Homogeneous Non-linear PDE**
-    - Equation where all terms involve the dependent variable and its derivatives
+    - Equation where
+
+* all terms involve the dependent variable and its derivatives
     - Example: $u_xx + u_yy = u^2$
 
 - **Homogeneous Systems of Differential Equations**

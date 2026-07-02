@@ -27,7 +27,9 @@ Here's another way to understand a topological manifold.
 A curve is a one-dimension manifold. <br/>
 A surface is a two-dimension manifold.
 
-Beyond two dimensions, we just call these things n-manifold, where $n$ is the number of dimensions.
+Beyond two dimensions, we just call these things n-manifold, where
+
+* $n$ is the number of dimensions.
 
 Let's look at a more formal definition of a manifold.
 
@@ -66,7 +68,9 @@ where
 
 <i>
 
-**definition** (_Neighborhood_) A property of a subset $N$ of a topological space $X$ with respect to a point $p \in X$, where the following condition applies:
+**definition** (_Neighborhood_) A property of a subset $N$ of a topological space $X$ with respect to a point $p \in X$, where
+
+* the following condition applies:
 
 - There exists an open set $U$ such that $p \in U \subseteq N$.
 
@@ -106,7 +110,9 @@ The open set is central to topology, and it is required for definitions. We begi
 
 <i>
 
-**definition** (_Open Set_) A subset $U$ of a topological space, $(X,\mathcal{T})$, where the following condition applies:
+**definition** (_Open Set_) A subset $U$ of a topological space, $(X,\mathcal{T})$, where
+
+* the following condition applies:
 
 - $U \in \mathcal{T}$
 
@@ -139,7 +145,7 @@ $$
 
 Then, $(X,\mathcal{T})$ is a topological space, where
 
-$$
+*$$
 (X,\mathcal{T})
 =
 \left(
@@ -151,7 +157,7 @@ $$
 \{1,2,3\}
 \}
 \right)
-$$.
+$$
 
 
 Let
@@ -192,7 +198,9 @@ $$
 f^{-1} : Y \rightarrow X,
 $$
 
-where the following condition applies:
+where
+
+* the following condition applies:
 
 - $f^{-1}(y) = x \iff f(x) = y$.
 
@@ -213,7 +221,9 @@ $$
 f^{-1}(Y_{subset}) \subseteq X,
 $$
 
-where the following condition applies:
+where
+
+* the following condition applies:
 
 - $f^{-1}(Y_{subset}) = \{x \in X : f(x) \in Y_{subset}\}$.
 
@@ -231,7 +241,9 @@ where
 <i>
 
 **definition** (_Continuity_) A property of a map between open subsets,
-$f: X \rightarrow Y$, where the following conditions apply:
+$f: X \rightarrow Y$, where
+
+* the following conditions apply:
 
 - The preimage of every open subset of $Y$ is an open subset of $X$.
 
@@ -248,7 +260,9 @@ where
 <i>
 
 **definition** (_Surjective_) A property of a function from a set $X$ to a set $Y$,
-$F: X \rightarrow Y$, where the following condition applies:
+$F: X \rightarrow Y$, where
+
+* the following condition applies:
 
 - For every element $y$ in $Y$, there exists an element $x$ in $X$ such that $F(x) = y$.
 
@@ -264,7 +278,9 @@ where
 <i>
 
 **definition** (_Injective_) A property of a function from a set $X$ to a set $Y$,
-$F: X \rightarrow Y$, where the following condition applies:
+$F: X \rightarrow Y$, where
+
+* the following condition applies:
 
 - For all elements $x_1$ and $x_2$ in $X$, if $F(x_1) = F(x_2)$, then $x_1 = x_2$.
 
@@ -280,7 +296,9 @@ where
 <i>
 
 **definition** (_Bijective_) A property of a function from a set $X$ to a set $Y$,
-$F: X \rightarrow Y$, where the following conditions apply:
+$F: X \rightarrow Y$, where
+
+* the following conditions apply:
 
 - The function $F$ is injective
 - The function $F$ is surjective
@@ -318,7 +336,9 @@ A 2-dimensional manifold, an object modeled locally on $\mathbb{R}^2$, specifyin
 **Piecewise Smooth** 
 A property of curves or surfaces composed of finitely many smooth segments meeting at corners or edges.
 
-**Oriented Surface** A surface with a consistent choice of orientation at each point, typically specified by a nowhere-vanishing 2-form.
+**Oriented Surface** A surface with a consistent choice of orientation at each point, typically specified by a nowhere
+
+-vanishing 2-form.
 
 **Smooth Surface** A 2-dimensional manifold equipped with a differentiable structure, allowing for calculus and well-defined tangent spaces.
 
@@ -350,7 +370,9 @@ A subset of a topological space that contains a neighborhood around every one of
 
 **Bijection** A function that is both injective and surjective, also referred to as a one-to-one correspondence.
 
-**Hausdorff Space** A topological space where any two distinct points can be separated by disjoint open neighborhoods.
+**Hausdorff Space** A topological space where
+
+* any two distinct points can be separated by disjoint open neighborhoods.
 
 **Onto** A synonym for surjective function.
 

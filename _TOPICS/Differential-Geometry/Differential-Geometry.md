@@ -1,5 +1,9 @@
 # Differential Geometry
 
+Notes.
+
+In differential geometry, it is convention to generalize tangent vectors as to a differential operator.
+
 ### Forms
 
 Forms are functions that take vectors as input and return scalars. A 1-form takes a single vector as input, a 2-form takes two vectors as input, and so on.
@@ -12,6 +16,7 @@ Forms are functions that take vectors as input and return scalars. A 1-form take
 - (Homogeneity) $\boldsymbol{\omega}(k\mathbf{v}) = k \cdot \boldsymbol{\omega}(\mathbf{v})$.
 
 where
+
 - $\mathbf{V}$ is a real vector space.
 - $\mathbb{R}$ is the set of real numbers.
 - $\boldsymbol{\omega}$ is a 1-form.
@@ -29,6 +34,7 @@ where
 - (Antisymmetry) $\boldsymbol{\omega}(\mathbf{u}, \mathbf{v}) = -\boldsymbol{\omega}(\mathbf{v}, \mathbf{u})$.
 
 where
+
 - $\mathbf{V}$ is a real vector space.
 - $\mathbb{R}$ is the set of real numbers.
 - $\boldsymbol{\omega}$ is a 2-form.
@@ -43,10 +49,13 @@ where
 
 **definition** (*k-form*) A multilinear, completely antisymmetric, real-valued function of $k$ vector inputs, $\boldsymbol{\omega}: \mathbf{V}^k \rightarrow \mathbb{R}$, which satisfies the following conditions for all vectors and scalars:
 
-- (k-Linearity) $\boldsymbol{\omega}(\mathbf{v}_1, \dots, a\mathbf{v}_i + b\mathbf{v}_i', \dots, \mathbf{v}_k) = a \cdot \boldsymbol{\omega}(\mathbf{v}_1, \dots, \mathbf{v}_i, \dots, \mathbf{v}_k) + b \cdot \boldsymbol{\omega}(\mathbf{v}_1, \dots, \mathbf{v}_i', \dots, \mathbf{v}_k)$ for each argument $i$ where $1 \leq i \leq k$.
+- (k-Linearity) $\boldsymbol{\omega}(\mathbf{v}_1, \dots, a\mathbf{v}_i + b\mathbf{v}_i', \dots, \mathbf{v}_k) = a \cdot \boldsymbol{\omega}(\mathbf{v}_1, \dots, \mathbf{v}_i, \dots, \mathbf{v}_k) + b \cdot \boldsymbol{\omega}(\mathbf{v}_1, \dots, \mathbf{v}_i', \dots, \mathbf{v}_k)$ for each argument $i$ where
+
+* $1 \leq i \leq k$.
 - (Complete Antisymmetry) Swapping any two vector inputs reverses the sign of the output: $\boldsymbol{\omega}(\dots, \mathbf{u}, \dots, \mathbf{v}, \dots) = -\boldsymbol{\omega}(\dots, \mathbf{v}, \dots, \mathbf{u}, \dots)$.
 
 where
+
 - $\mathbf{V}$ is a real vector space.
 - $\mathbf{V}^k$ is the $k$-fold Cartesian product of $\mathbf{V}$.
 - $\mathbb{R}$ is the set of real numbers.
@@ -58,17 +67,78 @@ where
 </i>
 
 
+### Exterior Algebra and Exterior Derivatives
+
+Exterior algebra and exterior differentiation extend linear algebra and calculus for manifolds. Exterior algebra is the algebra of alternating tensors; exterior differentiation is the differentiation of differential forms—which assign alternating multilinear functions to points on manifolds.
+
+It is required to extend linear algebra and calculus for manifolds because manifolds are locally Euclidean.
+
+
+### Symmetry
+
+<i>
+
+**definition** (Symmetry) A property of a tensor or matrix where its components remain unchanged when their indices are interchanged or when the object is transposed, satisfying the following conditions:
+
+- **(Tensor Component Form)** For a second-rank tensor $A$, it is symmetric if $A_{mn} = A_{nm}$ for all $m$ and $n$.
+- **(Matrix Transposition)** A matrix is symmetric if it is unchanged by transposition, such that $\tilde{A} = A$.
+- **(Resolution Property)** Every second-rank tensor can be resolved into a symmetric part, given by $\frac{1}{2}(A_{mn} + A_{nm})$, and an antisymmetric part.
+
+where
+- $A$ is a tensor or matrix.
+- $m, n$ are indices identifying components.
+- $\tilde{A}$ (or $A^T$) is the transpose of the matrix.
+
+</i>
+
+
+<i>
+
+**definition** (Antisymmetry) A property of a tensor or matrix where its components change sign when their indices are interchanged, satisfying the following conditions:
+
+- **(Tensor Component Form)** For a second-rank tensor $A$, it is antisymmetric if $A_{mn} = -A_{nm}$ for all $m$ and $n$.
+- **(Diagonal Property)** For any antisymmetric matrix, the diagonal elements (where $m=n$) must be zero.
+- **(Dual Association)** In 3-D space, every antisymmetric second-rank tensor $C$ can be associated with a dual pseudovector $\mathbf{C}$.
+
+where
+- $A$ is a tensor or matrix.
+- $m, n$ are indices identifying components.
+- $C$ is an antisymmetric tensor.
+
+</i>
+
+
+<i>
+
+**definition** (Permutational Antisymmetry = Fermion Antisymmetry) A property of identical-particle systems, specifically fermions, whose wave functions must change sign under pairwise particle interchanges, satisfying the following conditions:
+
+- **(Permutation Condition)** A many-fermion wave function $\Psi_F(1, \dots, n)$ must satisfy $P\Psi_F(1, \dots, n) = \epsilon_P\Psi_F(1, \dots, n)$ for any permutation $P$.
+- **(Representation Role)** $\Psi_F$ serves as the sole basis function for the totally antisymmetric representation of the symmetric group $S_n$.
+- **(Levi-Civita Relation)** The sign of the transformation is determined by the Levi-Civita symbol $\epsilon_P$, where $\epsilon_P = 1$ for even permutations and $\epsilon_P = -1$ for odd permutations.
+
+where
+- $\Psi_F$ is a fermion wave function.
+- $P$ is a permutation operator acting on particle numbers.
+- $\epsilon_P$ is the parity of the permutation.
+- $S_n$ is the symmetric group of order $n!$.
+
+</i>
+
+
 ### Tensors
 
 
 <i>
 
-**definition** (*Multilinear Function*) A function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where the following conditions apply for each argument $i$ ($1 \leq i \leq k$):
+**definition** (*Multilinear Function*) A function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where
+
+* the following conditions apply for each argument $i$ ($1 \leq i \leq k$):
 
 - $T(v_1, \dots, v_i + v_i', \dots, v_k) = T(v_1, \dots, v_i, \dots, v_k) + T(v_1, \dots, v_i', \dots, v_k)$.
 - $T(v_1, \dots, av_i, \dots, v_k) = a \cdot T(v_1, \dots, v_i, \dots, v_k)$.
 
 where
+
 - $V$ is a vector space over $\mathbb{R}$.
 - $V^k$ is the $k$-fold Cartesian product $V \times \dots \times V$.
 - $k$ is a positive integer representing the number of arguments, also called the degree of the function.
@@ -80,11 +150,14 @@ where
 
 <i>
 
-**definition** (*k-Tensor*) A multilinear function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where the following condition applies:
+**definition** (*k-Tensor*) A multilinear function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where
+
+* the following condition applies:
 
 - The function $T$ is linear in each of its $k$ arguments.
 
 where
+
 - $V$ is a vector space.
 - $V^k$ is the $k$-fold Cartesian product $V \times \dots \times V$.
 - $k$ is a positive integer representing the degree of the tensor.
@@ -96,12 +169,15 @@ where
 
 <i>
 
-**definition** (*Multilinear Function*) A function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where the following conditions apply for each argument $i$ ($1 \leq i \leq k$):
+**definition** (*Multilinear Function*) A function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where
+
+* the following conditions apply for each argument $i$ ($1 \leq i \leq k$):
 
 - $T(v_1, \dots, v_i + v_i', \dots, v_k) = T(v_1, \dots, v_i, \dots, v_k) + T(v_1, \dots, v_i', \dots, v_k)$
 - $T(v_1, \dots, av_i, \dots, v_k) = a \cdot T(v_1, \dots, v_i, \dots, v_k)$
 
 where
+
 - $V$ is a vector space over $\mathbb{R}$.
 - $V^k$ is the $k$-fold Cartesian product $V \times \dots \times V$.
 - $k$ is a positive integer representing the number of arguments, also called the degree of the function.
@@ -113,11 +189,16 @@ where
 
 <i>
 
-**definition** (*k-Fold Product*) A set constructed by the Cartesian product of $k$ copies of a single set, $X^k$, where the following condition applies:
+**definition** (*k-Fold Product*) A set constructed by the Cartesian product of $k$ copies of a single set, $X^k$, where
 
-- The resulting set consists of all ordered $k$-tuples where each coordinate is an element of the original set.
+* the following condition applies:
+
+- The resulting set consists of all ordered $k$-tuples where
+
+* each coordinate is an element of the original set.
 
 where
+
 - $k$ is a positive integer representing the number of repetitions.
 - $X$ is the underlying set, topological space, or vector space.
 - $X^k$ (or $V^k$) denotes the $k$-fold Cartesian product $X \times \dots \times X$.
@@ -127,13 +208,20 @@ where
 
 <i>
 
-**definition** (*Cartesian Product*) A set consisting of all possible ordered combinations of elements from a collection of sets, denoted by $X \times Y$ for two sets, $X_1 \times \dots \times X_n$ for $n$ sets, or $\prod_{\alpha \in A} X_\alpha$ for an indexed family, where the following conditions apply:
+**definition** (*Cartesian Product*) A set consisting of all possible ordered combinations of elements from a collection of sets, denoted by $X \times Y$ for two sets, $X_1 \times \dots \times X_n$ for $n$ sets, or $\prod_{\alpha \in A} X_\alpha$ for an indexed family, where
 
-- For two sets, the product contains all ordered pairs $(x, y)$ where the first component is from the first set and the second component is from the second.
-- For a finite collection, the product consists of all ordered $n$-tuples $(x_1, \dots, x_n)$ where each $x_i$ is an element of the corresponding factor $X_i$.
+* the following conditions apply:
+
+- For two sets, the product contains all ordered pairs $(x, y)$ where
+
+* the first component is from the first set and the second component is from the second.
+- For a finite collection, the product consists of all ordered $n$-tuples $(x_1, \dots, x_n)$ where
+
+* each $x_i$ is an element of the corresponding factor $X_i$.
 - For an arbitrary indexed family, the product is the set of all functions $x$ from the index set $A$ to the union of the sets such that $x(\alpha) \in X_\alpha$ for each $\alpha \in A$.
 
 where
+
 - $X, Y, X_i, X_\alpha$ are non-empty sets
 - $(x, y)$ is an ordered pair
 - $(x_1, \dots, x_n)$ is an ordered $n$-tuple
@@ -157,6 +245,7 @@ Covariant vectors are linear functionals.
 - $f(ax + by) = af(x) + bf(y)$ 
 
 where
+
 - $x, y \in V$ are vectors
 - $a, b \in K$ are scalars
 - $V$ is a vector space
@@ -169,12 +258,15 @@ where
 
 <i>
 
-**definition** (*k-Covector*) An alternating $k$-linear function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where the following conditions apply:
+**definition** (*k-Covector*) An alternating $k$-linear function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where
+
+* the following conditions apply:
 
 - The function $T$ is linear in each of its $k$ arguments.
 - $T(v_{\sigma(1)}, \dots, v_{\sigma(k)}) = (\text{sgn } \sigma) T(v_1, \dots, v_k)$ for every permutation $\sigma \in S_k$.
 
 where
+
 - $V$ is a vector space.
 - $k$ is a positive integer representing the degree of the covector.
 - $v_1, \dots, v_k \in V$ are vectors.
@@ -187,11 +279,14 @@ where
 
 <i>
 
-**definition** (*k-Covector Field*) A function assigning a $k$-covector to each point of a manifold, $\omega: M \rightarrow \Lambda^k(T^*M)$, where the following condition applies:
+**definition** (*k-Covector Field*) A function assigning a $k$-covector to each point of a manifold, $\omega: M \rightarrow \Lambda^k(T^*M)$, where
+
+* the following condition applies:
 
 - For each point $p$ in $M$, $\omega(p)$ is an alternating $k$-linear function on the tangent space $T_pM$.
 
 where
+
 - $M$ is a smooth manifold.
 - $p$ is a point in $M$.
 - $T_pM$ is the tangent space of $M$ at $p$.
@@ -226,7 +321,9 @@ T((a,b),(c,d))
 ad-bc.
 $$
 
-where $$a,b,c,d \in \mathbb{R}$$.
+where
+
+* $$a,b,c,d \in \mathbb{R}$$
 
 Let
 
@@ -270,13 +367,16 @@ Therefore, $T$ is a $2$-covector on $\mathbb{R}^2$.
 
 <i>
 
-**definition** (*Alternating Function*) A property of a $k$-linear function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where the following conditions apply:
+**definition** (*Alternating Function*) A property of a $k$-linear function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where
+
+* the following conditions apply:
 
 - $T(v_{\sigma(1)}, \dots, v_{\sigma(k)}) = (\text{sgn } \sigma) T(v_1, \dots, v_k)$ for every permutation $\sigma \in S_k$.
 - $T(v_1, \dots, v_i, \dots, v_j, \dots, v_k) = -T(v_1, \dots, v_j, \dots, v_i, \dots, v_k)$ for any interchange of two arguments.
 - $T(v_1, \dots, v_k) = 0$ whenever two of the vectors $v_1, \dots, v_k$ are equal.
 
 where
+
 - $V$ is a vector space.
 - $V^k$ is the $k$-fold Cartesian product $V \times \dots \times V$.
 - $S_k$ is the permutation group of $k$ objects.
@@ -289,13 +389,16 @@ where
 
 <i>
 
-**definition** (*Alternating k-linear function*) A multilinear function from the $k$-fold product of a vector space to the real numbers, $f: V^k \rightarrow \mathbb{R}$, where the following conditions apply:
+**definition** (*Alternating k-linear function*) A multilinear function from the $k$-fold product of a vector space to the real numbers, $f: V^k \rightarrow \mathbb{R}$, where
+
+* the following conditions apply:
 
 - $f(v_{\sigma(1)}, \dots, v_{\sigma(k)}) = (\text{sgn } \sigma) f(v_1, \dots, v_k)$ for all $\sigma \in S_k$.
 - $f(v_1, \dots, v_i, \dots, v_j, \dots, v_k) = -f(v_1, \dots, v_j, \dots, v_i, \dots, v_k)$ for any interchange of two arguments.
 - $f(v_1, \dots, v_k) = 0$ whenever two of the vectors $v_1, \dots, v_k$ are equal.
 
 where
+
 - $V$ is a vector space.
 - $V^k$ is the $k$-fold Cartesian product $V \times \dots \times V$.
 - $k$ is a positive integer representing the degree of the function.
@@ -312,11 +415,14 @@ k-covector, multicovector of degree k, and alternating k-tensor are synonyms for
 
 <i>
 
-**definition** (*Differential k-Form*) A function assigning an alternating k-linear function to each point of a manifold $M$, where the following condition applies:
+**definition** (*Differential k-Form*) A function assigning an alternating k-linear function to each point of a manifold $M$, where
+
+* the following condition applies:
 
 - For each point $p \in M$, $\omega(p)$ is a $k$-covector on the tangent space $T_pM$.
 
 where
+
 - $M$ is a smooth manifold.
 - $k$ is a non-negative integer representing the degree of the form.
 - $T_pM$ is the tangent space to $M$ at $p$.
@@ -338,8 +444,10 @@ where
 - (Homogeneity) $f(k\mathbf{v}) = k \cdot f(\mathbf{v})$.
 
 where
+
 - $\mathbf{V}$ is a real vector space.
 - $\mathbf{u}, \mathbf{v} \in \mathbf{V}$.
 - $k$ is a scalar.
 
 </i>
+

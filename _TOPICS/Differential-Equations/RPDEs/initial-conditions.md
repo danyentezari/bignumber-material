@@ -29,7 +29,9 @@ $$
 u(x, 0) = f(x)
 $$
 
-where \( f(x) \) describes the initial temperature along the length of the rod.
+where
+
+* \( f(x) \) describes the initial temperature along the length of the rod.
 
 ### 7. Example 2:
 In the case of Newton’s second law of motion, the position \( x(t) \) of a moving object satisfies the equation:
@@ -44,4 +46,6 @@ $$
 x(0) = x_0, \quad \frac{dx}{dt}(0) = v_0
 $$
 
-These initial conditions specify where the object starts and how fast it is moving initially.
+These initial conditions specify where
+
+* the object starts and how fast it is moving initially.

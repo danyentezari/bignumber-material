@@ -5,7 +5,9 @@
 
 $$ay^{\prime\prime}+by^{\prime}+cy=f(x)$$
 
-where the nonhomogeneous term $f(x)$ is a polynomial, exponential, sine, or cosine function or some product of these functions.
+where
+
+* the nonhomogeneous term $f(x)$ is a polynomial, exponential, sine, or cosine function or some product of these functions.
 
 - Step 1. Solve the corresponding homogeneous equation.
 

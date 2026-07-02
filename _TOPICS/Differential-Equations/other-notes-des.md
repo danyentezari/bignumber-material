@@ -23,7 +23,9 @@ $$\begin{equation} u_{t}=\alpha^{2}u_{xx} \end{equation}$$
 $$\begin{equation} u_{t}=\alpha^{2}u_{xx}+1 \end{equation}$$
 $$\begin{equation} u_{xx}+xu_{yy}=0 \end{equation}$$
 
-Where $(3)$ and $(5)$ are homogeneous linear equations, and $(4)$ is a nonhomogeneous linear equation.
+where
+
+* $(3)$ and $(5)$ are homogeneous linear equations, and $(4)$ is a nonhomogeneous linear equation.
 
 Since, 
 
@@ -38,7 +40,9 @@ x_{2}^{\prime}=a_{21}x_{1}+a_{22}x_{2}+\cdot\cdot\cdot+a_{2n}x_{r} \\
 \vdots \\
 x_{n}^{\prime}=a_{n1}x_{1}+a_{n2}x_{2}+\cdot\cdot\cdot+a_{nn}x_{r}$$
 
-where 
+where
+
+* 
 - $a_{11}, a_{12},...,a_{n}$ are given constants.
 
 Homogeneous means that there are no free terms, that is, terms that don't involve any $x_i$.
