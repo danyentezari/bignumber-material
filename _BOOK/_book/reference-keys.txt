@@ -4,7 +4,6 @@ explanations
 maxwells-equations
 stokes-theorem-physics
 stokes-theorem-for-flux-integral
-surface-integrals-and-fundamental-theorem-of-calculus
 special-relativity-and-electric-fields
 glossary
 mathemarics-appendix
@@ -26,9 +25,3 @@ appendix
 preimages-and-inverse-functions
 glossary-1
 differential-geometry
-forms
-tensors
-covariant-contravariant-and-coordinate-systems
-functions
-differential-form
-appendix-1
