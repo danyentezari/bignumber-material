@@ -1,6 +1,4 @@
-#!/usr/bin/env sh
-
-# Build the TOPICS Bookdown book from the _BOOK folder.
-# Requires R and the bookdown package to be installed.
-
-Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::bs4_book")'
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
+Rscript -e 'source("pre-render.R"); bookdown::render_book("index.Rmd", "bookdown::bs4_book"); source("post-render.R")'

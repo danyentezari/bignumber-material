@@ -4,13 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>2 Differential Geometry | Geometry of Physics</title>
+<title>14 Tensors | Geometry of Physics</title>
 <meta name="author" content="bignumber-material">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="2 Differential Geometry | Geometry of Physics">
+<meta property="og:title" content="14 Tensors | Geometry of Physics">
 <meta property="og:type" content="book">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2 Differential Geometry | Geometry of Physics">
+<meta name="twitter:title" content="14 Tensors | Geometry of Physics">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -37,9 +37,9 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<meta name="description" content="Notes. In differential geometry, it is convention to generalize tangent vectors as to a differential operator. Appendix Covariant, Contravariant, and Coordinate Systems Differential Form Exterior...">
-<meta property="og:description" content="Notes. In differential geometry, it is convention to generalize tangent vectors as to a differential operator. Appendix Covariant, Contravariant, and Coordinate Systems Differential Form Exterior...">
-<meta name="twitter:description" content="Notes. In differential geometry, it is convention to generalize tangent vectors as to a differential operator. Appendix Covariant, Contravariant, and Coordinate Systems Differential Form Exterior...">
+<meta name="description" content="definition (Multilinear Function) A function from the \(k\)-fold product of a vector space to the real numbers, \(T: V^k \rightarrow \mathbb{R}\), where the following conditions apply for each...">
+<meta property="og:description" content="definition (Multilinear Function) A function from the \(k\)-fold product of a vector space to the real numbers, \(T: V^k \rightarrow \mathbb{R}\), where the following conditions apply for each...">
+<meta name="twitter:description" content="definition (Multilinear Function) A function from the \(k\)-fold product of a vector space to the real numbers, \(T: V^k \rightarrow \mathbb{R}\), where the following conditions apply for each...">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -60,32 +60,118 @@
 </form>
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled"><li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li><li><a class="active" href="differential-geometry.html"><span class="header-section-number">2</span> Differential Geometry</a></li><li><a class="" href="electromagnetism.html"><span class="header-section-number">3</span> Electromagnetism</a></li><li><a class="" href="linear-algebra.html"><span class="header-section-number">4</span> Linear Algebra</a></li><li><a class="" href="topology.html"><span class="header-section-number">5</span> Topology</a></li></ul>
+        <ul class="book-toc list-unstyled"><li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li><li><a class="" href="differential-geometry.html"><span class="header-section-number">2</span> Differential Geometry</a></li><li><a class="" href="electromagnetism.html"><span class="header-section-number">3</span> Electromagnetism</a></li><li><a class="" href="linear-algebra.html"><span class="header-section-number">4</span> Linear Algebra</a></li><li><a class="" href="topology.html"><span class="header-section-number">5</span> Topology</a></li></ul>
 
         <div class="book-extra">
           
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="differential-geometry" class="section level1" number="2">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="tensors" class="section level1" number="14">
 <h1>
-<span class="header-section-number">2</span> Differential Geometry<a class="anchor" aria-label="anchor" href="#differential-geometry"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14</span> Tensors<a class="anchor" aria-label="anchor" href="#tensors"><i class="fas fa-link"></i></a>
 </h1>
-<p>Notes.</p>
-<p>In differential geometry, it is convention to generalize tangent vectors as to a differential operator.</p>
-<div class="topic-index">
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Multilinear Function</em>) A function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(T: V^k \rightarrow \mathbb{R}\)</span>, where</p>
 <ul>
-<li><a href="appendix.html">Appendix</a></li>
-<li><a href="covariant-contravariant-and-coordinate-systems.html">Covariant, Contravariant, and Coordinate Systems</a></li>
-<li><a href="differential-form.html">Differential Form</a></li>
-<li><a href="exterior-algebra-and-exterior-derivatives.html">Exterior Algebra and Exterior Derivatives</a></li>
-<li><a href="forms.html">Forms</a></li>
-<li><a href="functions.html">Functions</a></li>
-<li><a href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html">Stoke’s Theorem and the Fundamental Theorem of Calculus</a></li>
-<li><a href="symmetry.html">Symmetry</a></li>
-<li><a href="tensors.html">Tensors</a></li>
+<li><p>the following conditions apply for each argument <span class="math inline">\(i\)</span> (<span class="math inline">\(1 \leq i \leq k\)</span>):</p></li>
+<li><p><span class="math inline">\(T(v_1, \dots, v_i + v_i', \dots, v_k) = T(v_1, \dots, v_i, \dots, v_k) + T(v_1, \dots, v_i', \dots, v_k)\)</span>.</p></li>
+<li><p><span class="math inline">\(T(v_1, \dots, av_i, \dots, v_k) = a \cdot T(v_1, \dots, v_i, \dots, v_k)\)</span>.</p></li>
 </ul>
-</div>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(V\)</span> is a vector space over <span class="math inline">\(\mathbb{R}\)</span>.</li>
+<li>
+<span class="math inline">\(V^k\)</span> is the <span class="math inline">\(k\)</span>-fold Cartesian product <span class="math inline">\(V \times \dots \times V\)</span>.</li>
+<li>
+<span class="math inline">\(k\)</span> is a positive integer representing the number of arguments, also called the degree of the function.</li>
+<li>
+<span class="math inline">\(v_1, \dots, v_k, v_i' \in V\)</span> are vectors.</li>
+<li>
+<span class="math inline">\(a \in \mathbb{R}\)</span> is a scalar.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>k-Tensor</em>) A multilinear function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(T: V^k \rightarrow \mathbb{R}\)</span>, where</p>
+<ul>
+<li><p>the following condition applies:</p></li>
+<li><p>The function <span class="math inline">\(T\)</span> is linear in each of its <span class="math inline">\(k\)</span> arguments.</p></li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(V\)</span> is a vector space.</li>
+<li>
+<span class="math inline">\(V^k\)</span> is the <span class="math inline">\(k\)</span>-fold Cartesian product <span class="math inline">\(V \times \dots \times V\)</span>.</li>
+<li>
+<span class="math inline">\(k\)</span> is a positive integer representing the degree of the tensor.</li>
+<li>
+<span class="math inline">\(\mathbb{R}\)</span> is the set of real numbers.</li>
+<li>
+<span class="math inline">\(\mathcal{L}^k(V)\)</span> (or <span class="math inline">\(\mathcal{J}^k(V)\)</span>) is the vector space of all <span class="math inline">\(k\)</span>-tensors on <span class="math inline">\(V\)</span>.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Multilinear Function</em>) A function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(T: V^k \rightarrow \mathbb{R}\)</span>, where</p>
+<ul>
+<li><p>the following conditions apply for each argument <span class="math inline">\(i\)</span> (<span class="math inline">\(1 \leq i \leq k\)</span>):</p></li>
+<li><p><span class="math inline">\(T(v_1, \dots, v_i + v_i', \dots, v_k) = T(v_1, \dots, v_i, \dots, v_k) + T(v_1, \dots, v_i', \dots, v_k)\)</span></p></li>
+<li><p><span class="math inline">\(T(v_1, \dots, av_i, \dots, v_k) = a \cdot T(v_1, \dots, v_i, \dots, v_k)\)</span></p></li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(V\)</span> is a vector space over <span class="math inline">\(\mathbb{R}\)</span>.</li>
+<li>
+<span class="math inline">\(V^k\)</span> is the <span class="math inline">\(k\)</span>-fold Cartesian product <span class="math inline">\(V \times \dots \times V\)</span>.</li>
+<li>
+<span class="math inline">\(k\)</span> is a positive integer representing the number of arguments, also called the degree of the function.</li>
+<li>
+<span class="math inline">\(v_1, \dots, v_k, v_i' \in V\)</span> are vectors.</li>
+<li>
+<span class="math inline">\(a \in \mathbb{R}\)</span> is a scalar.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>k-Fold Product</em>) A set constructed by the Cartesian product of <span class="math inline">\(k\)</span> copies of a single set, <span class="math inline">\(X^k\)</span>, where</p>
+<ul>
+<li><p>the following condition applies:</p></li>
+<li><p>The resulting set consists of all ordered <span class="math inline">\(k\)</span>-tuples where</p></li>
+<li><p>each coordinate is an element of the original set.</p></li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(k\)</span> is a positive integer representing the number of repetitions.</li>
+<li>
+<span class="math inline">\(X\)</span> is the underlying set, topological space, or vector space.</li>
+<li>
+<span class="math inline">\(X^k\)</span> (or <span class="math inline">\(V^k\)</span>) denotes the <span class="math inline">\(k\)</span>-fold Cartesian product <span class="math inline">\(X \times \dots \times X\)</span>.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Cartesian Product</em>) A set consisting of all possible ordered combinations of elements from a collection of sets, denoted by <span class="math inline">\(X \times Y\)</span> for two sets, <span class="math inline">\(X_1 \times \dots \times X_n\)</span> for <span class="math inline">\(n\)</span> sets, or <span class="math inline">\(\prod_{\alpha \in A} X_\alpha\)</span> for an indexed family, where</p>
+<ul>
+<li><p>the following conditions apply:</p></li>
+<li><p>For two sets, the product contains all ordered pairs <span class="math inline">\((x, y)\)</span> where</p></li>
+<li><p>the first component is from the first set and the second component is from the second.</p></li>
+<li><p>For a finite collection, the product consists of all ordered <span class="math inline">\(n\)</span>-tuples <span class="math inline">\((x_1, \dots, x_n)\)</span> where</p></li>
+<li><p>each <span class="math inline">\(x_i\)</span> is an element of the corresponding factor <span class="math inline">\(X_i\)</span>.</p></li>
+<li><p>For an arbitrary indexed family, the product is the set of all functions <span class="math inline">\(x\)</span> from the index set <span class="math inline">\(A\)</span> to the union of the sets such that <span class="math inline">\(x(\alpha) \in X_\alpha\)</span> for each <span class="math inline">\(\alpha \in A\)</span>.</p></li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(X, Y, X_i, X_\alpha\)</span> are non-empty sets</li>
+<li>
+<span class="math inline">\((x, y)\)</span> is an ordered pair</li>
+<li>
+<span class="math inline">\((x_1, \dots, x_n)\)</span> is an ordered <span class="math inline">\(n\)</span>-tuple</li>
+<li>
+<span class="math inline">\(A\)</span> (or <span class="math inline">\(\Lambda\)</span>) is the index set used to label the family of sets</li>
+</ul>
+<p></p>
 
 </div>
 <script>
@@ -148,11 +234,11 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="index.html"><span class="header-section-number">1</span> Introduction</a></div>
-<div class="next"><a href="electromagnetism.html"><span class="header-section-number">3</span> Electromagnetism</a></div>
+<div class="prev"><a href="symmetry.html"><span class="header-section-number">13</span> Symmetry</a></div>
+<div class="empty"></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#differential-geometry"><span class="header-section-number">2</span> Differential Geometry</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#tensors"><span class="header-section-number">14</span> Tensors</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

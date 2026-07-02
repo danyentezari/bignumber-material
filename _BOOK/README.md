@@ -7,7 +7,7 @@ This folder contains the Bookdown project for the `_TOPICS` content.
 From `_BOOK`:
 
 ```sh
-Rscript -e 'setwd("_BOOK"); bookdown::render_book("index.Rmd", "bookdown::bs4_book")'
+./_BOOK/build.sh
 ```
 
 If `Rscript` is not available, install R and ensure it is on your shell `PATH`.
@@ -36,7 +36,7 @@ cd './_BOOK/_book'
 python3 -m http.server 8000
 ```
 
-Or, without cd'ing into `_book
+Or, without cd'ing into `_book`:
 
 ```bash
 python3 -m http.server 8000 --directory _book
@@ -46,5 +46,3 @@ python3 -m http.server 8000 --directory _book
 ## Notes
 
 - Source markdown files remain in `../_TOPICS`.
-- The Bookdown order is defined in `_bookdown.yml`.
-

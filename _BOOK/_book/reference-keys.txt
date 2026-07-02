@@ -1,4 +1,5 @@
 introduction
+differential-geometry
 electromagnetism
 explanations
 maxwells-equations
@@ -9,13 +10,8 @@ glossary
 mathemarics-appendix
 physics-mathematical-appendix
 references
-vector-calculus
-stokes-theorem
-flux
-double-integral
-double-integral-notational-variations
-projection
-topology-reference
+linear-algebra
+glossary-1
 topology
 manifolds
 topological-spaces
@@ -23,5 +19,13 @@ homeomorphism
 open-sets
 appendix
 preimages-and-inverse-functions
-glossary-1
-differential-geometry
+glossary-2
+appendix-1
+covariant-contravariant-and-coordinate-systems
+differential-form
+exterior-algebra-and-exterior-derivatives
+forms
+functions
+stokes-theorem-and-the-fundamental-theorem-of-calculus
+symmetry
+tensors
