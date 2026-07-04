@@ -467,9 +467,29 @@ table th {
   border-radius: 10px;
 }
 
-.figure {
+.figure,
+.float {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+}
+
+#content > .level1 {
+  counter-reset: figure;
+}
+
+#content .figure .figcaption,
+#content .float .figcaption {
+  counter-increment: figure;
+  margin-top: 0.75rem;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+#content .figure .figcaption::before,
+#content .float .figcaption::before {
+  content: "Figure " counter(figure) ": ";
+  font-weight: 600;
+  color: var(--text-soft);
 }
 
 .rmdnote, .rmdcaution, .rmdimportant, .rmdtip, .rmdwarning {
@@ -685,4 +705,8 @@ footer.bg-primary a:hover {
 
 *::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-muted);
+}
+
+img {
+  max-width: 100%
 }
