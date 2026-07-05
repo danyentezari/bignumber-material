@@ -20,5 +20,12 @@
     } catch (e) {
       document.documentElement.setAttribute("data-theme", "light");
     }
+    document.documentElement.classList.add("theme-classic");
+    try {
+      var storedFont = localStorage.getItem("book-font-size");
+      document.documentElement.style.fontSize = (storedFont !== null ? storedFont : "17") + "px";
+    } catch (e) {
+      document.documentElement.style.fontSize = "17px";
+    }
   })();
 </script>
