@@ -1,8 +1,6 @@
 # Electromagnetism
 
-## EXPLANATIONS
-
-### Maxwell's Equations
+## Maxwell's Equations
 
 Maxwell's equations express, formally, the properties of electromagnetic waves.
 
@@ -31,7 +29,7 @@ where
 
 <br/>
 
-### Stoke's Theorem Physics
+## Stoke's Theorem Physics
 
 Stokes' theorem relates the circulation of a vector field $\mathbf{A}$ around a closed path $L$ to the surface integral of its curl over an open surface $S$ bounded by $L$ [1]:
 
@@ -45,7 +43,7 @@ where
 
 <br/>
 
-### Stoke's Theorem for Flux Integral
+## Stoke's Theorem for Flux Integral
 
 $$\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$
 
@@ -64,7 +62,7 @@ where
 
 <br/>
 
-### Special Relativity and Electric Fields
+## Special Relativity and Electric Fields
 
 Changes in the electric field cause changes in the magnetic field. According to special relativity, a magnetic field is actually an electric field distorted by the motion of electrons. 
 

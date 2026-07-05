@@ -130,16 +130,17 @@ def write_bookdown_yml(main_chapters: list[str], sub_chapters: list[str]) -> Non
     BOOKDOWN_YML.write_text("\n".join(lines), encoding="utf-8")
 
 
-def write_sidebar_pages(main_titles: list[str]) -> None:
+def write_sidebar_pages(topics: list[dict[str, object]]) -> None:
     GENERATED_DIR.mkdir(parents=True, exist_ok=True)
-    pages = ["index.html", *(f"{slugify_text(title)}.html" for title in main_titles)]
-    SIDEBAR_PAGES_JSON.write_text(json.dumps(pages, indent=2) + "\n", encoding="utf-8")
+    SIDEBAR_PAGES_JSON.write_text(json.dumps(topics, indent=2) + "\n", encoding="utf-8")
 
 
 def generate() -> None:
     main_chapters: list[str] = []
     sub_chapters: list[str] = []
-    main_titles: list[str] = []
+    sidebar_topics: list[dict[str, object]] = [
+        {"title": "Introduction", "href": "index.html", "children": []}
+    ]
 
     for folder in discover_topic_folders():
         main_file = folder / f"{folder.name}.md"
@@ -161,13 +162,21 @@ def generate() -> None:
             folder, main_file, sibling_files
         )
         main_chapters.append(relative_bookdown_path(generated_main))
-        main_titles.append(title)
+        sidebar_topics.append(
+            {
+                "title": title,
+                "href": f"{slugify_text(title)}.html",
+                "children": [
+                    {"title": extract_title(path)} for path in sibling_files
+                ],
+            }
+        )
 
         for path in sibling_files:
             sub_chapters.append(relative_bookdown_path(path))
 
     write_bookdown_yml(main_chapters, sub_chapters)
-    write_sidebar_pages(main_titles)
+    write_sidebar_pages(sidebar_topics)
 
     print(
         f"Generated {len(main_chapters)} sidebar topics and "

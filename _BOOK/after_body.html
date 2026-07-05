@@ -56,5 +56,39 @@
         '<svg class="menu-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>' +
         (sr ? sr.outerHTML : '<span class="sr-only">Show table of contents</span>');
     }
+
+    document.querySelectorAll(".book-toc-topic").forEach(function (topic) {
+      var toggle = topic.querySelector(".book-toc-toggle");
+      if (!toggle) return;
+
+      function setOpen(open) {
+        topic.classList.toggle("is-open", open);
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      }
+
+      toggle.addEventListener("click", function () {
+        setOpen(!topic.classList.contains("is-open"));
+      });
+    });
+
+    var mainNav = document.getElementById("main-nav");
+    var page = window.location.pathname.split("/").pop() || "index.html";
+    var inTopicSection = !!document.querySelector(
+      ".book-toc-topic.is-open, .book-toc .active, .book-toc .active-parent"
+    );
+    if (
+      mainNav &&
+      inTopicSection &&
+      page !== "index.html" &&
+      window.matchMedia("(max-width: 991.98px)").matches
+    ) {
+      mainNav.classList.add("show");
+      var navToggle = document.querySelector(
+        'button[data-toggle="collapse"][data-target="#main-nav"]'
+      );
+      if (navToggle) {
+        navToggle.setAttribute("aria-expanded", "true");
+      }
+    }
   })();
 </script>

@@ -60,7 +60,29 @@
 </form>
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled"><li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li><li><a class="" href="differential-geometry.html"><span class="header-section-number">2</span> Differential Geometry</a></li><li><a class="" href="electromagnetism.html"><span class="header-section-number">3</span> Electromagnetism</a></li><li><a class="" href="linear-algebra.html"><span class="header-section-number">4</span> Linear Algebra</a></li><li><a class="" href="topology.html"><span class="header-section-number">5</span> Topology</a></li></ul>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li class="book-toc-topic is-open">
+<div class="book-toc-topic-header">
+<button type="button" class="book-toc-toggle" aria-expanded="true" aria-label="Toggle subtopics"></button>
+<a class="active-parent" href="differential-geometry.html"><span class="header-section-number">2</span> Differential Geometry</a>
+</div>
+<ul class="book-toc-section">
+<li><a class="" href="appendix-1.html"><span class="header-section-number">6</span> Appendix</a></li>
+<li><a class="" href="covariant-contravariant-and-coordinate-systems.html"><span class="header-section-number">7</span> Covariant, Contravariant, and Coordinate Systems</a></li>
+<li><a class="" href="differential-form.html"><span class="header-section-number">8</span> Differential Form</a></li>
+<li><a class="" href="exterior-algebra-and-exterior-derivatives.html"><span class="header-section-number">9</span> Exterior Algebra and Exterior Derivatives</a></li>
+<li><a class="" href="forms.html"><span class="header-section-number">10</span> Forms</a></li>
+<li><a class="" href="functions.html"><span class="header-section-number">11</span> Functions</a></li>
+<li><a class="active" href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html"><span class="header-section-number">12</span> Stoke’s Theorem and the Fundamental Theorem of Calculus</a></li>
+<li><a class="" href="symmetry.html"><span class="header-section-number">13</span> Symmetry</a></li>
+<li><a class="" href="tensors.html"><span class="header-section-number">14</span> Tensors</a></li>
+</ul>
+</li>
+<li><a class="" href="electromagnetism.html"><span class="header-section-number">3</span> Electromagnetism</a></li>
+<li><a class="" href="linear-algebra.html"><span class="header-section-number">4</span> Linear Algebra</a></li>
+<li><a class="" href="topology.html"><span class="header-section-number">5</span> Topology</a></li>
+</ul>
 
         <div class="book-extra">
           
@@ -84,6 +106,9 @@
 <li>
 <span class="math inline">\(\partial D\)</span>: The oriented boundary of the domain <span class="math inline">\(D\)</span>.</li>
 </ul>
+<p><br></p>
+<p>Stoke’s Theorem is about manifolds, which are locally Euclidean. The integration applies to differential forms on those local regions. Differential forms are operators that allow applying calculus independent of any specific coordinate system.</p>
+
 </div>
 <script>
   (function () {
@@ -142,6 +167,40 @@
       menuBtn.innerHTML =
         '<svg class="menu-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>' +
         (sr ? sr.outerHTML : '<span class="sr-only">Show table of contents</span>');
+    }
+
+    document.querySelectorAll(".book-toc-topic").forEach(function (topic) {
+      var toggle = topic.querySelector(".book-toc-toggle");
+      if (!toggle) return;
+
+      function setOpen(open) {
+        topic.classList.toggle("is-open", open);
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      }
+
+      toggle.addEventListener("click", function () {
+        setOpen(!topic.classList.contains("is-open"));
+      });
+    });
+
+    var mainNav = document.getElementById("main-nav");
+    var page = window.location.pathname.split("/").pop() || "index.html";
+    var inTopicSection = !!document.querySelector(
+      ".book-toc-topic.is-open, .book-toc .active, .book-toc .active-parent"
+    );
+    if (
+      mainNav &&
+      inTopicSection &&
+      page !== "index.html" &&
+      window.matchMedia("(max-width: 991.98px)").matches
+    ) {
+      mainNav.classList.add("show");
+      var navToggle = document.querySelector(
+        'button[data-toggle="collapse"][data-target="#main-nav"]'
+      );
+      if (navToggle) {
+        navToggle.setAttribute("aria-expanded", "true");
+      }
     }
   })();
 </script><div class="chapter-nav">
