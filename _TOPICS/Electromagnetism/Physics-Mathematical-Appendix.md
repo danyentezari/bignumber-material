@@ -1,4 +1,4 @@
-# PHYSICS MATHEMATICAL APPENDIX
+# Physics Mathematical Appendix
 
 **Principle of Superposition**
 

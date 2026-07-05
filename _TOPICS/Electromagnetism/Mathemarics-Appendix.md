@@ -1,7 +1,7 @@
-# MATHEMARICS APPENDIX
+# Mathemarics Appendix
 
 
-**Stoke's Theorem**
+**Stokes' Theorem**
 
 Let $S$ be a piecewise smooth oriented surface in space, and let the boundary of $S$ be a piecewise smooth simple closed curve $C$. If  with continuous first partial derivatives in a domain containing $S$, then:
 
@@ -21,9 +21,7 @@ In this formula
 
 
 
-**Flux** 
-
-Total amount of a field or fluid passing through a surface.
+**Flux:** Total amount of a field or fluid passing through a surface.
 
 **Double Integral**
 

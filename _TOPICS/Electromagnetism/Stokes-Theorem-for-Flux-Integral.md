@@ -1,4 +1,4 @@
-# Stoke's Theorem for Flux Integral
+# Stokes' Theorem for Flux Integral
 
 $$\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$
 

@@ -16,13 +16,13 @@ $$ \nabla \times \mathbf{H} = \mathbf{J} + \frac{\partial \mathbf{D}}{\partial t
 
 where
 
-- $\nabla$ = Vector differential operator.
-- $\mathbf{D}$ = Electric flux density.
-- $\mathbf{B}$ = Magnetic flux density.
-- $\mathbf{E}$ = Electric field intensity.
-- $\mathbf{H}$ = Magnetic field intensity.
-- $\rho_v$ = Volume charge density.
-- $\mathbf{J}$ = Current density.
-- $\frac{\partial \mathbf{D}}{\partial t}$ = Displacement current density.
+- $\nabla$ = vector differential operator.
+- $\mathbf{D}$ = electric flux density.
+- $\mathbf{B}$ = magnetic flux density.
+- $\mathbf{E}$ = electric field intensity.
+- $\mathbf{H}$ = magnetic field intensity.
+- $\rho_v$ = volume charge density.
+- $\mathbf{J}$ = current density.
+- $\frac{\partial \mathbf{D}}{\partial t}$ = displacement current density.
 
 <br/>
