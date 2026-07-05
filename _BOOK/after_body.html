@@ -59,7 +59,7 @@
 
     document.querySelectorAll(".book-toc-topic").forEach(function (topic) {
       var toggle = topic.querySelector(".book-toc-toggle");
-      if (!toggle) return;
+      if (!toggle || toggle.classList.contains("book-toc-toggle--placeholder")) return;
 
       function setOpen(open) {
         topic.classList.toggle("is-open", open);

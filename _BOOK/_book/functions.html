@@ -61,7 +61,12 @@
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
-<li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
+</div>
+</li>
 <li class="book-toc-topic is-open">
 <div class="book-toc-topic-header">
 <button type="button" class="book-toc-toggle" aria-expanded="true" aria-label="Toggle subtopics"></button>
@@ -95,7 +100,12 @@
 <li><a class="" href="stokes-theorem-physics.html"><span class="header-section-number">22</span> Stokes’ Theorem Physics</a></li>
 </ul>
 </li>
-<li><a class="" href="linear-algebra.html"><span class="header-section-number">4</span> Linear Algebra</a></li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="linear-algebra.html"><span class="header-section-number">4</span> Linear Algebra</a>
+</div>
+</li>
 <li class="book-toc-topic">
 <div class="book-toc-topic-header">
 <button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
@@ -235,7 +245,7 @@
 
     document.querySelectorAll(".book-toc-topic").forEach(function (topic) {
       var toggle = topic.querySelector(".book-toc-toggle");
-      if (!toggle) return;
+      if (!toggle || toggle.classList.contains("book-toc-toggle--placeholder")) return;
 
       function setOpen(open) {
         topic.classList.toggle("is-open", open);

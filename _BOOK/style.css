@@ -306,6 +306,23 @@ main { margin-top: 1.5rem; }
   outline: none;
 }
 
+.book-toc-toggle--placeholder {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.35;
+}
+
+.book-toc-toggle--placeholder:hover,
+.book-toc-toggle--placeholder:focus-visible {
+  color: var(--text-muted);
+  background-color: transparent;
+}
+
+.book-toc-topic--leaf > .book-toc-topic-header > a {
+  flex: 1;
+  min-width: 0;
+}
+
 .book-toc-section {
   list-style: none;
   margin: 0.15rem 0 0.35rem;

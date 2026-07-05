@@ -141,7 +141,15 @@ def build_sidebar_toc(
             lines.append("</ul>")
             lines.append("</li>")
         else:
-            lines.append(f"<li>{render_link(main_item, current_href)}</li>")
+            lines.append('<li class="book-toc-topic book-toc-topic--leaf">')
+            lines.append('<div class="book-toc-topic-header">')
+            lines.append(
+                '<span class="book-toc-toggle book-toc-toggle--placeholder" '
+                'aria-hidden="true"></span>'
+            )
+            lines.append(render_link(main_item, current_href))
+            lines.append("</div>")
+            lines.append("</li>")
 
     lines.append("</ul>")
     return "\n".join(lines)
