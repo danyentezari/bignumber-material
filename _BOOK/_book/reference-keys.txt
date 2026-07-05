@@ -4,14 +4,7 @@ electromagnetism
 linear-algebra
 glossary
 topology
-manifolds
-topological-spaces
-homeomorphism
-open-sets
 appendix
-preimages-and-inverse-functions
-glossary-1
-appendix-1
 covariant-contravariant-and-coordinate-systems
 differential-form
 exterior-algebra-and-exterior-derivatives
@@ -20,7 +13,7 @@ functions
 stokes-theorem-and-the-fundamental-theorem-of-calculus
 symmetry
 tensors
-glossary-2
+glossary-1
 mathemarics-appendix
 maxwells-equations
 physics-mathematical-appendix
@@ -28,3 +21,9 @@ references
 special-relativity-and-electric-fields
 stokes-theorem-for-flux-integral
 stokes-theorem-physics
+glossary-2
+homeomorphism
+manifolds
+open-sets
+preimages-and-inverse-functions
+topological-spaces

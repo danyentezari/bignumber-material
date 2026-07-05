@@ -4,13 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>9 Exterior Algebra and Exterior Derivatives | Geometry of Physics</title>
+<title>26 Open Sets | Geometry of Physics</title>
 <meta name="author" content="bignumber-material">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="9 Exterior Algebra and Exterior Derivatives | Geometry of Physics">
+<meta property="og:title" content="26 Open Sets | Geometry of Physics">
 <meta property="og:type" content="book">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="9 Exterior Algebra and Exterior Derivatives | Geometry of Physics">
+<meta name="twitter:title" content="26 Open Sets | Geometry of Physics">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -37,9 +37,9 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<meta name="description" content="Exterior algebra and exterior differentiation extend linear algebra and calculus for manifolds. Exterior algebra is the algebra of alternating tensors; exterior differentiation is the...">
-<meta property="og:description" content="Exterior algebra and exterior differentiation extend linear algebra and calculus for manifolds. Exterior algebra is the algebra of alternating tensors; exterior differentiation is the...">
-<meta name="twitter:description" content="Exterior algebra and exterior differentiation extend linear algebra and calculus for manifolds. Exterior algebra is the algebra of alternating tensors; exterior differentiation is the...">
+<meta name="description" content="The open set is central to topology, and it is required for definitions. We begin with a definition and then an example. Definition (Open Set) A subset \(U\) of a topological space,...">
+<meta property="og:description" content="The open set is central to topology, and it is required for definitions. We begin with a definition and then an example. Definition (Open Set) A subset \(U\) of a topological space,...">
+<meta name="twitter:description" content="The open set is central to topology, and it is required for definitions. We begin with a definition and then an example. Definition (Open Set) A subset \(U\) of a topological space,...">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -62,16 +62,16 @@
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
-<li class="book-toc-topic is-open">
+<li class="book-toc-topic">
 <div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="true" aria-label="Toggle subtopics"></button>
-<a class="active-parent" href="differential-geometry.html"><span class="header-section-number">2</span> Differential Geometry</a>
+<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
+<a class="" href="differential-geometry.html"><span class="header-section-number">2</span> Differential Geometry</a>
 </div>
 <ul class="book-toc-section">
 <li><a class="" href="appendix.html"><span class="header-section-number">6</span> Appendix</a></li>
 <li><a class="" href="covariant-contravariant-and-coordinate-systems.html"><span class="header-section-number">7</span> Covariant, Contravariant, and Coordinate Systems</a></li>
 <li><a class="" href="differential-form.html"><span class="header-section-number">8</span> Differential Form</a></li>
-<li><a class="active" href="exterior-algebra-and-exterior-derivatives.html"><span class="header-section-number">9</span> Exterior Algebra and Exterior Derivatives</a></li>
+<li><a class="" href="exterior-algebra-and-exterior-derivatives.html"><span class="header-section-number">9</span> Exterior Algebra and Exterior Derivatives</a></li>
 <li><a class="" href="forms.html"><span class="header-section-number">10</span> Forms</a></li>
 <li><a class="" href="functions.html"><span class="header-section-number">11</span> Functions</a></li>
 <li><a class="" href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html"><span class="header-section-number">12</span> Stoke’s Theorem and the Fundamental Theorem of Calculus</a></li>
@@ -96,16 +96,16 @@
 </ul>
 </li>
 <li><a class="" href="linear-algebra.html"><span class="header-section-number">4</span> Linear Algebra</a></li>
-<li class="book-toc-topic">
+<li class="book-toc-topic is-open">
 <div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="topology.html"><span class="header-section-number">5</span> Topology</a>
+<button type="button" class="book-toc-toggle" aria-expanded="true" aria-label="Toggle subtopics"></button>
+<a class="active-parent" href="topology.html"><span class="header-section-number">5</span> Topology</a>
 </div>
 <ul class="book-toc-section">
 <li><a class="" href="glossary-2.html"><span class="header-section-number">23</span> Glossary</a></li>
 <li><a class="" href="homeomorphism.html"><span class="header-section-number">24</span> Homeomorphism</a></li>
 <li><a class="" href="manifolds.html"><span class="header-section-number">25</span> Manifolds</a></li>
-<li><a class="" href="open-sets.html"><span class="header-section-number">26</span> Open Sets</a></li>
+<li><a class="active" href="open-sets.html"><span class="header-section-number">26</span> Open Sets</a></li>
 <li><a class="" href="preimages-and-inverse-functions.html"><span class="header-section-number">27</span> Preimages and Inverse Functions</a></li>
 <li><a class="" href="topological-spaces.html"><span class="header-section-number">28</span> Topological Spaces</a></li>
 </ul>
@@ -117,17 +117,71 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="exterior-algebra-and-exterior-derivatives" class="section level1" number="9">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="open-sets" class="section level1" number="26">
 <h1>
-<span class="header-section-number">9</span> Exterior Algebra and Exterior Derivatives<a class="anchor" aria-label="anchor" href="#exterior-algebra-and-exterior-derivatives"><i class="fas fa-link"></i></a>
+<span class="header-section-number">26</span> Open Sets<a class="anchor" aria-label="anchor" href="#open-sets"><i class="fas fa-link"></i></a>
 </h1>
-<p>Exterior algebra and exterior differentiation extend linear algebra and calculus for manifolds. Exterior algebra is the algebra of alternating tensors; exterior differentiation is the differentiation of differential forms—which assign alternating multilinear functions to points on manifolds.</p>
-<p>It is required to extend linear algebra and calculus for manifolds because manifolds are only locally Euclidean. That is to say, Euclidean geometric axioms apply only to local regions of a manifold.</p>
-<p>Consider <a href="exterior-algebra-and-exterior-derivatives.html#fig:atlas-charts">Figure 1</a>.</p>
-<div class="float" id="fig:atlas-charts">
-<img src="atlas-and-charts.png" alt="Atlas and charts on a manifold."><div class="figcaption">Atlas and charts on a manifold.</div>
-</div>
-<p>Exterior dertivatives are differential operators.</p>
+<p>The open set is central to topology, and it is required for definitions. We begin with a definition and then an example.</p>
+<p><i></i></p>
+<p><strong>Definition</strong> (<em>Open Set</em>) A subset <span class="math inline">\(U\)</span> of a topological space, <span class="math inline">\((X,\mathcal{T})\)</span>, where</p>
+<ul>
+<li><p>the following condition applies:</p></li>
+<li><p><span class="math inline">\(U \in \mathcal{T}\)</span></p></li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(X\)</span> is a set</li>
+<li>
+<span class="math inline">\(\mathcal{T}\)</span> is a topology on <span class="math inline">\(X\)</span>
+</li>
+<li><span class="math inline">\(U \subseteq X\)</span></li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>Example</strong> (<em>Open Set</em>) Let</p>
+<p><span class="math display">\[
+X = \{1,2,3\}
+\]</span></p>
+<p><span class="math display">\[
+\mathcal{T}
+=
+\{
+\emptyset,
+\{1\},
+\{1,2\},
+X
+\}.
+\]</span></p>
+<p>Then, <span class="math inline">\((X,\mathcal{T})\)</span> is a topological space, where</p>
+<p>*<span class="math display">\[
+(X,\mathcal{T})
+=
+\left(
+\{1,2,3\},
+\{
+\emptyset,
+\{1\},
+\{1,2\},
+\{1,2,3\}
+\}
+\right)
+\]</span></p>
+<p>Let</p>
+<p><span class="math display">\[
+U = \{1,2\}.
+\]</span></p>
+<p>Since</p>
+<p><span class="math display">\[
+U \in \mathcal{T},
+\]</span></p>
+<p>it follows that <span class="math inline">\(U\)</span> is an open set.</p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+\{1,2\}
+\]</span></p>
+<p>is an open set in <span class="math inline">\((X,\mathcal{T})\)</span>.</p>
+<p></p>
 
 </div>
 <script>
@@ -224,11 +278,11 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="differential-form.html"><span class="header-section-number">8</span> Differential Form</a></div>
-<div class="next"><a href="forms.html"><span class="header-section-number">10</span> Forms</a></div>
+<div class="prev"><a href="manifolds.html"><span class="header-section-number">25</span> Manifolds</a></div>
+<div class="next"><a href="preimages-and-inverse-functions.html"><span class="header-section-number">27</span> Preimages and Inverse Functions</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#exterior-algebra-and-exterior-derivatives"><span class="header-section-number">9</span> Exterior Algebra and Exterior Derivatives</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#open-sets"><span class="header-section-number">26</span> Open Sets</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
