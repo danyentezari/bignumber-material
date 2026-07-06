@@ -1,5 +1,5 @@
 ---
-title: "Geometry of Physics"
+title: "Mathematics for Physics and Engineering"
 author: "bignumber-material"
 site: bookdown::bookdown_site
 documentclass: book

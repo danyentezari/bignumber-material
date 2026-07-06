@@ -64,7 +64,13 @@ def discover_topic_folders() -> list[Path]:
         raise RuntimeError(f"Topics directory not found: {TOPICS_DIR}")
 
     folders = [path for path in TOPICS_DIR.iterdir() if path.is_dir()]
-    return sorted(folders, key=lambda path: path.name.lower())
+
+    # Keep alphabetical order, but always place "Glossary" at the very bottom.
+    def sort_key(path: Path) -> tuple[int, str]:
+        is_glossary = path.name.lower() == "glossary"
+        return (1 if is_glossary else 0, path.name.lower())
+
+    return sorted(folders, key=sort_key)
 
 
 def is_bookdown_safe_filename(path: Path) -> bool:

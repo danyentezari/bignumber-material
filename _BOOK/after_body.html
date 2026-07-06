@@ -26,7 +26,7 @@
       if (!container || !header || !main) return;
 
       var titleLink = header.querySelector("h1 a");
-      var bookTitle = titleLink ? titleLink.textContent.trim() : "Geometry of Physics";
+      var bookTitle = titleLink ? titleLink.textContent.trim() : "Mathematics for Physics and Engineering";
       var tagline = "";
 
       var page = document.createElement("div");
@@ -258,10 +258,6 @@
         }
         locationWidget.appendChild(locationTitle);
         if (locationList) {
-          var homeLi = document.createElement("li");
-          homeLi.className = "home_page page_item";
-          homeLi.innerHTML = '<a href="index.html" title="Home">Home</a>';
-          locationList.insertBefore(homeLi, locationList.firstChild);
           locationWidget.appendChild(locationList);
         }
       }

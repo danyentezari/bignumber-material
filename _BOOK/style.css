@@ -1,5 +1,5 @@
 /* =====================================================================
-   Geometry of Physics — MasterClass-inspired theme
+   Mathematics for Physics and Engineering — MasterClass-inspired theme
    Serif, editorial typography on a sleek, modern UI.
    Light + Dark modes driven by [data-theme] on <html>.
    ===================================================================== */
@@ -1527,12 +1527,9 @@ html.theme-classic .site-info a:hover {
     max-width: calc(100% - 48px);
   }
 
+  /* Top-bar navigation is redundant on desktop (sidebar has the same links). */
   html.theme-classic .primary-navigation {
-    float: right;
-    font-size: 11px;
-    margin: 0 1px 0 -12px;
-    padding: 0;
-    text-transform: uppercase;
+    display: none;
   }
 
   html.theme-classic .menu-toggle {
