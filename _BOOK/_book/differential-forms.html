@@ -4,13 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>15 Functions | Mathematics for Physics and Engineering</title>
+<title>12 Differential Forms | Mathematics for Physics and Engineering</title>
 <meta name="author" content="bignumber-material">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="15 Functions | Mathematics for Physics and Engineering">
+<meta property="og:title" content="12 Differential Forms | Mathematics for Physics and Engineering">
 <meta property="og:type" content="book">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="15 Functions | Mathematics for Physics and Engineering">
+<meta name="twitter:title" content="12 Differential Forms | Mathematics for Physics and Engineering">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -44,9 +44,9 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<meta name="description" content="definition (Alternating Function) A property of a \(k\)-linear function from the \(k\)-fold product of a vector space to the real numbers, \(T: V^k \rightarrow \mathbb{R}\), where the following...">
-<meta property="og:description" content="definition (Alternating Function) A property of a \(k\)-linear function from the \(k\)-fold product of a vector space to the real numbers, \(T: V^k \rightarrow \mathbb{R}\), where the following...">
-<meta name="twitter:description" content="definition (Alternating Function) A property of a \(k\)-linear function from the \(k\)-fold product of a vector space to the real numbers, \(T: V^k \rightarrow \mathbb{R}\), where the following...">
+<meta name="description" content="definition (Differential k-Form) A function assigning an alternating k-linear function to each point of a manifold \(M\), where the following condition applies: For each point \(p \in M\),...">
+<meta property="og:description" content="definition (Differential k-Form) A function assigning an alternating k-linear function to each point of a manifold \(M\), where the following condition applies: For each point \(p \in M\),...">
+<meta name="twitter:description" content="definition (Differential k-Form) A function assigning an alternating k-linear function to each point of a manifold \(M\), where the following condition applies: For each point \(p \in M\),...">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -82,10 +82,10 @@
 <ul class="book-toc-section">
 <li><a class="" href="appendix.html"><span class="header-section-number">10</span> Appendix</a></li>
 <li><a class="" href="covariant-contravariant-and-coordinate-systems.html"><span class="header-section-number">11</span> Covariant, Contravariant, and Coordinate Systems</a></li>
-<li><a class="" href="differential-forms.html"><span class="header-section-number">12</span> Differential Forms</a></li>
+<li><a class="active" href="differential-forms.html"><span class="header-section-number">12</span> Differential Forms</a></li>
 <li><a class="" href="exterior-algebra-and-exterior-derivatives.html"><span class="header-section-number">13</span> Exterior Algebra and Exterior Derivatives</a></li>
 <li><a class="" href="forms.html"><span class="header-section-number">14</span> Forms</a></li>
-<li><a class="active" href="functions.html"><span class="header-section-number">15</span> Functions</a></li>
+<li><a class="" href="functions.html"><span class="header-section-number">15</span> Functions</a></li>
 <li><a class="" href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html"><span class="header-section-number">16</span> Stoke’s Theorem and the Fundamental Theorem of Calculus</a></li>
 <li><a class="" href="tensors.html"><span class="header-section-number">17</span> Tensors</a></li>
 </ul>
@@ -161,60 +161,31 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="functions" class="section level1" number="15">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="differential-forms" class="section level1" number="12">
 <h1>
-<span class="header-section-number">15</span> Functions<a class="anchor" aria-label="anchor" href="#functions"><i class="fas fa-link"></i></a>
+<span class="header-section-number">12</span> Differential Forms<a class="anchor" aria-label="anchor" href="#differential-forms"><i class="fas fa-link"></i></a>
 </h1>
 <p><i></i></p>
-<p><strong>definition</strong> (<em>Alternating Function</em>) A property of a <span class="math inline">\(k\)</span>-linear function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(T: V^k \rightarrow \mathbb{R}\)</span>, where</p>
+<p><strong>definition</strong> (<em>Differential k-Form</em>) A function assigning an alternating k-linear function to each point of a manifold <span class="math inline">\(M\)</span>, where</p>
 <ul>
-<li><p>the following conditions apply:</p></li>
-<li><p><span class="math inline">\(T(v_{\sigma(1)}, \dots, v_{\sigma(k)}) = (\text{sgn } \sigma) T(v_1, \dots, v_k)\)</span> for every permutation <span class="math inline">\(\sigma \in S_k\)</span>.</p></li>
-<li><p><span class="math inline">\(T(v_1, \dots, v_i, \dots, v_j, \dots, v_k) = -T(v_1, \dots, v_j, \dots, v_i, \dots, v_k)\)</span> for any interchange of two arguments.</p></li>
-<li><p><span class="math inline">\(T(v_1, \dots, v_k) = 0\)</span> whenever two of the vectors <span class="math inline">\(v_1, \dots, v_k\)</span> are equal.</p></li>
+<li><p>the following condition applies:</p></li>
+<li><p>For each point <span class="math inline">\(p \in M\)</span>, <span class="math inline">\(\omega(p)\)</span> is a <span class="math inline">\(k\)</span>-covector on the tangent space <span class="math inline">\(T_pM\)</span>.</p></li>
 </ul>
 <p>where</p>
 <ul>
 <li>
-<span class="math inline">\(V\)</span> is a vector space.</li>
+<span class="math inline">\(M\)</span> is a smooth manifold.</li>
 <li>
-<span class="math inline">\(V^k\)</span> is the <span class="math inline">\(k\)</span>-fold Cartesian product <span class="math inline">\(V \times \dots \times V\)</span>.</li>
+<span class="math inline">\(k\)</span> is a non-negative integer representing the degree of the form.</li>
 <li>
-<span class="math inline">\(S_k\)</span> is the permutation group of <span class="math inline">\(k\)</span> objects.</li>
+<span class="math inline">\(T_pM\)</span> is the tangent space to <span class="math inline">\(M\)</span> at <span class="math inline">\(p\)</span>.</li>
 <li>
-<span class="math inline">\(\text{sgn } \sigma\)</span> is the sign of the permutation <span class="math inline">\(\sigma\)</span>, which is <span class="math inline">\(+1\)</span> if the permutation is even and <span class="math inline">\(-1\)</span> if it is odd.</li>
+<span class="math inline">\(T^*_p M\)</span> (or <span class="math inline">\(T^*_p(M)\)</span>) is the cotangent space at <span class="math inline">\(p\)</span>, defined as the dual space of the tangent space <span class="math inline">\(T_pM\)</span>.</li>
 <li>
-<span class="math inline">\(v_1, \dots, v_k\)</span> are vectors in <span class="math inline">\(V\)</span>.</li>
+<span class="math inline">\(\Lambda^k(T^*_p M)\)</span> (or <span class="math inline">\(A^k(T_pM)\)</span>) is the vector space of all alternating <span class="math inline">\(k\)</span>-tensors (also called <span class="math inline">\(k\)</span>-covectors or multicovectors) on <span class="math inline">\(T_pM\)</span>.</li>
 <li>
-<span class="math inline">\(k\)</span> is a positive integer representing the degree of the function.</li>
+<span class="math inline">\(\omega\)</span> is a smooth section of the vector bundle <span class="math inline">\(\Lambda^k(T^*M)\)</span>, the <span class="math inline">\(k\)</span>-th exterior power of the cotangent bundle.</li>
 </ul>
-<p></p>
-<p><i></i></p>
-<p><strong>definition</strong> (<em>Alternating k-linear function</em>) A multilinear function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(f: V^k \rightarrow \mathbb{R}\)</span>, where</p>
-<ul>
-<li><p>the following conditions apply:</p></li>
-<li><p><span class="math inline">\(f(v_{\sigma(1)}, \dots, v_{\sigma(k)}) = (\text{sgn } \sigma) f(v_1, \dots, v_k)\)</span> for all <span class="math inline">\(\sigma \in S_k\)</span>.</p></li>
-<li><p><span class="math inline">\(f(v_1, \dots, v_i, \dots, v_j, \dots, v_k) = -f(v_1, \dots, v_j, \dots, v_i, \dots, v_k)\)</span> for any interchange of two arguments.</p></li>
-<li><p><span class="math inline">\(f(v_1, \dots, v_k) = 0\)</span> whenever two of the vectors <span class="math inline">\(v_1, \dots, v_k\)</span> are equal.</p></li>
-</ul>
-<p>where</p>
-<ul>
-<li>
-<span class="math inline">\(V\)</span> is a vector space.</li>
-<li>
-<span class="math inline">\(V^k\)</span> is the <span class="math inline">\(k\)</span>-fold Cartesian product <span class="math inline">\(V \times \dots \times V\)</span>.</li>
-<li>
-<span class="math inline">\(k\)</span> is a positive integer representing the degree of the function.</li>
-<li>
-<span class="math inline">\(S_k\)</span> is the permutation group of <span class="math inline">\(k\)</span> objects.</li>
-<li>
-<span class="math inline">\(\text{sgn } \sigma\)</span> is the sign of the permutation <span class="math inline">\(\sigma\)</span>.</li>
-<li>
-<span class="math inline">\(v_1, \dots, v_k \in V\)</span> are vectors.</li>
-<li>
-<span class="math inline">\(A^k(V)\)</span> (or <span class="math inline">\(\Lambda^k(V^*)\)</span>) is the vector space of all alternating <span class="math inline">\(k\)</span>-linear functions on <span class="math inline">\(V\)</span>.</li>
-</ul>
-<p>k-covector, multicovector of degree k, and alternating k-tensor are synonyms for an alternating <span class="math inline">\(k\)</span>-linear function.</p>
 <p></p>
 
 </div>
@@ -608,11 +579,11 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="forms.html"><span class="header-section-number">14</span> Forms</a></div>
-<div class="next"><a href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html"><span class="header-section-number">16</span> Stoke’s Theorem and the Fundamental Theorem of Calculus</a></div>
+<div class="prev"><a href="covariant-contravariant-and-coordinate-systems.html"><span class="header-section-number">11</span> Covariant, Contravariant, and Coordinate Systems</a></div>
+<div class="next"><a href="exterior-algebra-and-exterior-derivatives.html"><span class="header-section-number">13</span> Exterior Algebra and Exterior Derivatives</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#functions"><span class="header-section-number">15</span> Functions</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#differential-forms"><span class="header-section-number">12</span> Differential Forms</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

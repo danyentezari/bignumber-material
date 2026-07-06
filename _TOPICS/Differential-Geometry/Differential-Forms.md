@@ -1,4 +1,4 @@
-# Differential Form
+# Differential Forms
 
 <i>
 

@@ -16,7 +16,7 @@ topology-reference
 glossary-1
 appendix
 covariant-contravariant-and-coordinate-systems
-differential-form
+differential-forms
 exterior-algebra-and-exterior-derivatives
 forms
 functions

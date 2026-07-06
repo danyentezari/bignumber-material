@@ -14,7 +14,7 @@ rmd_files:
   - "../_BOOK/generated/Glossary/Glossary.md"
   - "../_TOPICS/Differential-Geometry/Appendix.md"
   - "../_TOPICS/Differential-Geometry/Covariant-Contravariant-and-Coordinate-Systems.md"
-  - "../_TOPICS/Differential-Geometry/Differential-Form.md"
+  - "../_TOPICS/Differential-Geometry/Differential-Forms.md"
   - "../_TOPICS/Differential-Geometry/Exterior-Algebra-and-Exterior-Derivatives.md"
   - "../_TOPICS/Differential-Geometry/Forms.md"
   - "../_TOPICS/Differential-Geometry/Functions.md"
