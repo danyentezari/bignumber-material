@@ -1,9 +1,11 @@
 ---
 title: "Mathematics for Physics"
 author: "bignumber-material"
+description: "This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism."
 site: bookdown::bookdown_site
 documentclass: book
 ---
 
 # Introduction
-This book is a collection of mathematical concepts and techniques centered around Electromagnetisn and Probability Theory. 
+
+This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism.
