@@ -1,10 +1,9 @@
 introduction
+abstract-algebra
 differential-geometry
 electromagnetism
 functional-analysis
-group-theory
 linear-algebra
-glossary
 topology
 vector-calculus
 stokes-theorem
@@ -13,8 +12,10 @@ double-integral
 double-integral-notational-variations
 projection
 topology-reference
-glossary-1
-appendix
+glossary
+group-theory
+abstract-algebra-preliminaries
+symmetry
 covariant-contravariant-and-coordinate-systems
 differential-forms
 exterior-algebra-and-exterior-derivatives
@@ -30,7 +31,6 @@ special-relativity-and-electric-fields
 stokes-theorem-for-flux-integral
 stokes-theorem-physics
 fourier-transform
-symmetry
 homeomorphism
 manifolds
 open-sets

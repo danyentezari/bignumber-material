@@ -90,3 +90,7 @@ See Mathemarics Appendix.
 **Curl:** $\nabla \times \mathbf{A}$ The cross product of the operator with a vector field $\mathbf{A}$ results in another vector field.
 
 **Laplacian:** $\nabla^2 V$ This operator represents the divergence of the gradient ($\nabla \cdot \nabla V$).
+
+**Linear Operation** A synonym for linear map.
+
+**Linear Transformation** A synonym for linear map.

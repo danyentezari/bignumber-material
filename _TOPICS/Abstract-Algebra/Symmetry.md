@@ -1,5 +1,7 @@
 # Symmetry
 
+Symmetry is about invariance to coordinate systems.
+
 <i>
 
 **definition** (Symmetry) A property of a tensor or matrix where its components remain unchanged when their indices are interchanged or when the object is transposed, satisfying the following conditions:
