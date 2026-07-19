@@ -4,15 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>49 Stokes’ Theorem Physics | Mathematics for Physics</title>
+<title>69 Stokes’ Theorem Physics | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
 <meta name="description" content="Stokes’ theorem relates the circulation of a vector field \(\mathbf{A}\) around a closed path \(L\) to the surface integral of its curl over an open surface \(S\) bounded by \(L\) [1]: \[ \int_S...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="49 Stokes’ Theorem Physics | Mathematics for Physics">
+<meta property="og:title" content="69 Stokes’ Theorem Physics | Mathematics for Physics">
 <meta property="og:type" content="book">
 <meta property="og:description" content="Stokes’ theorem relates the circulation of a vector field \(\mathbf{A}\) around a closed path \(L\) to the surface integral of its curl over an open surface \(S\) bounded by \(L\) [1]: \[ \int_S...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="49 Stokes’ Theorem Physics | Mathematics for Physics">
+<meta name="twitter:title" content="69 Stokes’ Theorem Physics | Mathematics for Physics">
 <meta name="twitter:description" content="Stokes’ theorem relates the circulation of a vector field \(\mathbf{A}\) around a closed path \(L\) to the surface integral of its curl over an open surface \(S\) bounded by \(L\) [1]: \[ \int_S...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -47,6 +47,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html"}, {"title": "Notes", "href": "notes.html"}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -141,9 +142,9 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="stokes-theorem-physics" class="section level1" number="49">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="stokes-theorem-physics" class="section level1" number="69">
 <h1>
-<span class="header-section-number">49</span> Stokes’ Theorem Physics<a class="anchor" aria-label="anchor" href="#stokes-theorem-physics"><i class="fas fa-link"></i></a>
+<span class="header-section-number">69</span> Stokes’ Theorem Physics<a class="anchor" aria-label="anchor" href="#stokes-theorem-physics"><i class="fas fa-link"></i></a>
 </h1>
 <p>Stokes’ theorem relates the circulation of a vector field <span class="math inline">\(\mathbf{A}\)</span> around a closed path <span class="math inline">\(L\)</span> to the surface integral of its curl over an open surface <span class="math inline">\(S\)</span> bounded by <span class="math inline">\(L\)</span> [1]:</p>
 <p><span class="math display">\[ \int_S (\nabla \times \mathbf{A}) \cdot d\mathbf{S} = \oint_L \mathbf{A} \cdot d\mathbf{l}\]</span></p>
@@ -295,6 +296,35 @@
 
       var entryHeader = document.createElement("header");
       entryHeader.className = "entry-header";
+
+      var breadcrumbData = document.getElementById("page-breadcrumbs");
+      if (breadcrumbData) {
+        try {
+          var trail = JSON.parse(breadcrumbData.textContent || "[]");
+          if (Array.isArray(trail) && trail.length) {
+            var breadcrumbs = document.createElement("nav");
+            breadcrumbs.className = "breadcrumbs";
+            breadcrumbs.setAttribute("aria-label", "Breadcrumb");
+            trail.forEach(function (item, index) {
+              if (index > 0) {
+                var sep = document.createElement("span");
+                sep.className = "breadcrumb-sep";
+                sep.textContent = " > ";
+                breadcrumbs.appendChild(sep);
+              }
+              var crumb = document.createElement("a");
+              crumb.href = item.href;
+              crumb.textContent = item.title;
+              breadcrumbs.appendChild(crumb);
+            });
+            var trailing = document.createElement("span");
+            trailing.className = "breadcrumb-sep";
+            trailing.textContent = " >";
+            breadcrumbs.appendChild(trailing);
+            entryHeader.appendChild(breadcrumbs);
+          }
+        } catch (e) {}
+      }
 
       var pageHeading = main.querySelector("h1");
       if (pageHeading) {
@@ -544,11 +574,11 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="stokes-theorem-for-flux-integral.html"><span class="header-section-number">48</span> Stokes’ Theorem for Flux Integral</a></div>
-<div class="next"><a href="conservation-laws.html"><span class="header-section-number">50</span> Conservation Laws</a></div>
+<div class="prev"><a href="stokes-theorem-for-flux-integral.html"><span class="header-section-number">68</span> Stokes’ Theorem for Flux Integral</a></div>
+<div class="next"><a href="time-dependent-schrodinger-equation-1-dimensional.html"><span class="header-section-number">70</span> Time Dependent Schrodinger Equation 1-Dimensional</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#stokes-theorem-physics"><span class="header-section-number">49</span> Stokes’ Theorem Physics</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#stokes-theorem-physics"><span class="header-section-number">69</span> Stokes’ Theorem Physics</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

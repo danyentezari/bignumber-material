@@ -1,4 +1,4 @@
-# Mass–Energy Equivalence
+# Mass-Energy Equivalence
 
 ($E = mc^2$)
 

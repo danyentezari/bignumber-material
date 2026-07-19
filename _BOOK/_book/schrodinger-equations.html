@@ -4,15 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>46 Schrodinger Equations | Mathematics for Physics</title>
+<title>66 Schrodinger Equations | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
 <meta name="description" content="definition (Time Dependent Schrödinger Equation 1-Dimensional) The specific case of the fundamental law of quantum mechanics tailored for a single particle of mass \(m\) constrained to move in one...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="46 Schrodinger Equations | Mathematics for Physics">
+<meta property="og:title" content="66 Schrodinger Equations | Mathematics for Physics">
 <meta property="og:type" content="book">
 <meta property="og:description" content="definition (Time Dependent Schrödinger Equation 1-Dimensional) The specific case of the fundamental law of quantum mechanics tailored for a single particle of mass \(m\) constrained to move in one...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="46 Schrodinger Equations | Mathematics for Physics">
+<meta name="twitter:title" content="66 Schrodinger Equations | Mathematics for Physics">
 <meta name="twitter:description" content="definition (Time Dependent Schrödinger Equation 1-Dimensional) The specific case of the fundamental law of quantum mechanics tailored for a single particle of mass \(m\) constrained to move in one...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -47,6 +47,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html"}, {"title": "Notes", "href": "notes.html"}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -141,9 +142,9 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="schrodinger-equations" class="section level1" number="46">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="schrodinger-equations" class="section level1" number="66">
 <h1>
-<span class="header-section-number">46</span> Schrodinger Equations<a class="anchor" aria-label="anchor" href="#schrodinger-equations"><i class="fas fa-link"></i></a>
+<span class="header-section-number">66</span> Schrodinger Equations<a class="anchor" aria-label="anchor" href="#schrodinger-equations"><i class="fas fa-link"></i></a>
 </h1>
 <p><i></i></p>
 <p><strong>definition</strong> (<em>Time Dependent Schrödinger Equation 1-Dimensional</em>) The specific case of the fundamental law of quantum mechanics tailored for a single particle of mass <span class="math inline">\(m\)</span> constrained to move in one dimension along the <span class="math inline">\(x\)</span>-axis. It serves as a direct quantum analog to Newton’s second law, determining the particle’s wave function <span class="math inline">\(\Psi(x, t)\)</span> for all future time given the potential energy <span class="math inline">\(V(x, t)\)</span> and initial conditions. It is expressed as:</p>
@@ -351,6 +352,35 @@
 
       var entryHeader = document.createElement("header");
       entryHeader.className = "entry-header";
+
+      var breadcrumbData = document.getElementById("page-breadcrumbs");
+      if (breadcrumbData) {
+        try {
+          var trail = JSON.parse(breadcrumbData.textContent || "[]");
+          if (Array.isArray(trail) && trail.length) {
+            var breadcrumbs = document.createElement("nav");
+            breadcrumbs.className = "breadcrumbs";
+            breadcrumbs.setAttribute("aria-label", "Breadcrumb");
+            trail.forEach(function (item, index) {
+              if (index > 0) {
+                var sep = document.createElement("span");
+                sep.className = "breadcrumb-sep";
+                sep.textContent = " > ";
+                breadcrumbs.appendChild(sep);
+              }
+              var crumb = document.createElement("a");
+              crumb.href = item.href;
+              crumb.textContent = item.title;
+              breadcrumbs.appendChild(crumb);
+            });
+            var trailing = document.createElement("span");
+            trailing.className = "breadcrumb-sep";
+            trailing.textContent = " >";
+            breadcrumbs.appendChild(trailing);
+            entryHeader.appendChild(breadcrumbs);
+          }
+        } catch (e) {}
+      }
 
       var pageHeading = main.querySelector("h1");
       if (pageHeading) {
@@ -600,11 +630,11 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="radiation.html"><span class="header-section-number">45</span> Radiation</a></div>
-<div class="next"><a href="special-relativity-and-electric-fields.html"><span class="header-section-number">47</span> Special Relativity and Electric Fields</a></div>
+<div class="prev"><a href="schrodinger-equation-time-independent.html"><span class="header-section-number">65</span> Schrodinger Equation Time-Independent</a></div>
+<div class="next"><a href="special-relativity-and-electric-fields.html"><span class="header-section-number">67</span> Special Relativity and Electric Fields</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#schrodinger-equations"><span class="header-section-number">46</span> Schrodinger Equations</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#schrodinger-equations"><span class="header-section-number">66</span> Schrodinger Equations</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

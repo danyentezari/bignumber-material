@@ -148,6 +148,60 @@ def current_page_href(html: str, toc_body: str) -> str | None:
     return item["href"] if item else None
 
 
+BREADCRUMB_SCRIPT_RE = re.compile(
+    r'<script type="application/json" id="page-breadcrumbs">.*?</script>\n?',
+    re.DOTALL,
+)
+
+
+def build_parent_map(
+    sidebar: list[dict[str, object]],
+    by_href: dict[str, dict[str, str]],
+    by_title: dict[str, dict[str, str]],
+) -> dict[str, dict[str, str]]:
+    parent_of: dict[str, dict[str, str]] = {}
+    for entry in sidebar:
+        main_item = lookup_entry(entry, by_href, by_title)
+        if not main_item:
+            continue
+        children = entry.get("children", [])
+        if not isinstance(children, list):
+            continue
+        for child in children:
+            if not isinstance(child, dict):
+                continue
+            child_item = lookup_entry(child, by_href, by_title)
+            if child_item:
+                parent_of[child_item["href"]] = main_item
+    return parent_of
+
+
+def breadcrumb_trail(
+    current_href: str,
+    parent_of: dict[str, dict[str, str]],
+) -> list[dict[str, str]]:
+    """Ancestor trail for MathWorld-style breadcrumbs (excludes current page)."""
+    if current_href == "index.html":
+        return []
+
+    trail = [{"title": "Home", "href": "index.html"}]
+    parent = parent_of.get(current_href)
+    if parent and parent["href"] != current_href:
+        trail.append({"title": parent["title"], "href": parent["href"]})
+    return trail
+
+
+def inject_breadcrumb_data(html: str, trail: list[dict[str, str]]) -> str:
+    payload = json.dumps(trail, ensure_ascii=True)
+    script = (
+        f'<script type="application/json" id="page-breadcrumbs">{payload}</script>\n'
+    )
+    html = BREADCRUMB_SCRIPT_RE.sub("", html)
+    if "</head>" in html:
+        return html.replace("</head>", script + "</head>", 1)
+    return script + html
+
+
 def rebuild_toc(html: str, sidebar: list[dict[str, object]]) -> str:
     match = TOC_PATTERN.search(html)
     if not match:
@@ -160,7 +214,11 @@ def rebuild_toc(html: str, sidebar: list[dict[str, object]]) -> str:
         return html
 
     rebuilt = build_sidebar_toc(sidebar, by_href, by_title, current_href)
-    return html[: match.start()] + rebuilt + html[match.end() :]
+    html = html[: match.start()] + rebuilt + html[match.end() :]
+
+    parent_of = build_parent_map(sidebar, by_href, by_title)
+    trail = breadcrumb_trail(current_href, parent_of)
+    return inject_breadcrumb_data(html, trail)
 
 
 def load_sidebar_manifest() -> list[dict[str, object]]:

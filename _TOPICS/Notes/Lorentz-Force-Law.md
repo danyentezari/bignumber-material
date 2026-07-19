@@ -1,7 +1,5 @@
 # Lorentz Force Law
 
-Based on the principle of superposition, the Lorentz Force Law relates the total electromagnetic force to the sum of all electromagnetic fields.
-
 <i>
 
 **definition** (*Lorentz Force Law*) The Lorentz Force law is given by,

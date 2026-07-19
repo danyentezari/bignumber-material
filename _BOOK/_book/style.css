@@ -1114,6 +1114,30 @@ html.theme-classic .entry-content .anchor {
   display: none;
 }
 
+html.theme-classic .breadcrumbs {
+  color: #888;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0 0 10px;
+  text-transform: none;
+}
+
+html.theme-classic .breadcrumbs a {
+  color: #888;
+  text-decoration: none;
+}
+
+html.theme-classic .breadcrumbs a:hover,
+html.theme-classic .breadcrumbs a:focus-visible {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+html.theme-classic .breadcrumb-sep {
+  color: #888;
+}
+
 html.theme-classic .entry-title {
   font-size: 33px;
   font-weight: 300;

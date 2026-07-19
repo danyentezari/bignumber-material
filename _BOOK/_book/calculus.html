@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>3 Calculus | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="General Functions Notes Vector Calculus    (function () {   var MOON =    '&lt;svg class=&quot;theme-toggle-icon&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot;...">
+<meta name="description" content="General Functions Notes scalar projection Vector Calculus vector projection    (function () {   var MOON =    '&lt;svg class=&quot;theme-toggle-icon&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="3 Calculus | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="General Functions Notes Vector Calculus    (function () {   var MOON =    '&lt;svg class=&quot;theme-toggle-icon&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot;...">
+<meta property="og:description" content="General Functions Notes scalar projection Vector Calculus vector projection    (function () {   var MOON =    '&lt;svg class=&quot;theme-toggle-icon&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="3 Calculus | Mathematics for Physics">
-<meta name="twitter:description" content="General Functions Notes Vector Calculus    (function () {   var MOON =    '&lt;svg class=&quot;theme-toggle-icon&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot;...">
+<meta name="twitter:description" content="General Functions Notes scalar projection Vector Calculus vector projection    (function () {   var MOON =    '&lt;svg class=&quot;theme-toggle-icon&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -47,6 +47,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html"}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -149,7 +150,9 @@
 <ul>
 <li><a href="general-functions.html">General Functions</a></li>
 <li><a href="notes.html">Notes</a></li>
+<li><a href="scalar-projection.html">scalar projection</a></li>
 <li><a href="vector-calculus.html">Vector Calculus</a></li>
+<li><a href="vector-projection.html">vector projection</a></li>
 </ul>
 </div>
 
@@ -295,6 +298,35 @@
 
       var entryHeader = document.createElement("header");
       entryHeader.className = "entry-header";
+
+      var breadcrumbData = document.getElementById("page-breadcrumbs");
+      if (breadcrumbData) {
+        try {
+          var trail = JSON.parse(breadcrumbData.textContent || "[]");
+          if (Array.isArray(trail) && trail.length) {
+            var breadcrumbs = document.createElement("nav");
+            breadcrumbs.className = "breadcrumbs";
+            breadcrumbs.setAttribute("aria-label", "Breadcrumb");
+            trail.forEach(function (item, index) {
+              if (index > 0) {
+                var sep = document.createElement("span");
+                sep.className = "breadcrumb-sep";
+                sep.textContent = " > ";
+                breadcrumbs.appendChild(sep);
+              }
+              var crumb = document.createElement("a");
+              crumb.href = item.href;
+              crumb.textContent = item.title;
+              breadcrumbs.appendChild(crumb);
+            });
+            var trailing = document.createElement("span");
+            trailing.className = "breadcrumb-sep";
+            trailing.textContent = " >";
+            breadcrumbs.appendChild(trailing);
+            entryHeader.appendChild(breadcrumbs);
+          }
+        } catch (e) {}
+      }
 
       var pageHeading = main.querySelector("h1");
       if (pageHeading) {

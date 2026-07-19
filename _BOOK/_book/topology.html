@@ -47,6 +47,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html"}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -164,11 +165,23 @@
 <p></p>
 <div class="topic-index">
 <ul>
+<li><a href="bijective.html">Bijective</a></li>
+<li><a href="continuity.html">Continuity</a></li>
+<li><a href="hausdorff-space.html">Hausdorff Space</a></li>
 <li><a href="hilbert-space.html">Hilbert Space</a></li>
 <li><a href="homeomorphism.html">Homeomorphism</a></li>
+<li><a href="injective.html">Injective</a></li>
+<li><a href="inverse-function.html">Inverse Function</a></li>
 <li><a href="manifolds.html">Manifolds</a></li>
+<li><a href="neighborhood.html">Neighborhood</a></li>
+<li><a href="open-set.html">Open Set</a></li>
 <li><a href="open-sets.html">Open Sets</a></li>
+<li><a href="preimage.html">Preimage</a></li>
 <li><a href="preimages-and-inverse-functions.html">Preimages and Inverse Functions</a></li>
+<li><a href="smooth-manifold.html">Smooth Manifold</a></li>
+<li><a href="surjective.html">Surjective</a></li>
+<li><a href="topological-manifold.html">Topological Manifold</a></li>
+<li><a href="topological-space.html">Topological Space</a></li>
 <li><a href="topological-spaces.html">Topological Spaces</a></li>
 </ul>
 </div>
@@ -315,6 +328,35 @@
 
       var entryHeader = document.createElement("header");
       entryHeader.className = "entry-header";
+
+      var breadcrumbData = document.getElementById("page-breadcrumbs");
+      if (breadcrumbData) {
+        try {
+          var trail = JSON.parse(breadcrumbData.textContent || "[]");
+          if (Array.isArray(trail) && trail.length) {
+            var breadcrumbs = document.createElement("nav");
+            breadcrumbs.className = "breadcrumbs";
+            breadcrumbs.setAttribute("aria-label", "Breadcrumb");
+            trail.forEach(function (item, index) {
+              if (index > 0) {
+                var sep = document.createElement("span");
+                sep.className = "breadcrumb-sep";
+                sep.textContent = " > ";
+                breadcrumbs.appendChild(sep);
+              }
+              var crumb = document.createElement("a");
+              crumb.href = item.href;
+              crumb.textContent = item.title;
+              breadcrumbs.appendChild(crumb);
+            });
+            var trailing = document.createElement("span");
+            trailing.className = "breadcrumb-sep";
+            trailing.textContent = " >";
+            breadcrumbs.appendChild(trailing);
+            entryHeader.appendChild(breadcrumbs);
+          }
+        } catch (e) {}
+      }
 
       var pageHeading = main.querySelector("h1");
       if (pageHeading) {

@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>58 Homeomorphism | Mathematics for Physics</title>
+<title>83 Homeomorphism | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="A description of two spaces that have the same topological structure. Now about something called topological invariants. Properties (such as numbers, groups, matrices, or vector spaces) of a...">
+<meta name="description" content="Definition (Homeomorphism) A function between topological spaces \(f: \mathbf{U} \to \mathbf{V}\) is called a homeomorphism if the following conditions hold. \(f\) is a bijection and continuous...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="58 Homeomorphism | Mathematics for Physics">
+<meta property="og:title" content="83 Homeomorphism | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="A description of two spaces that have the same topological structure. Now about something called topological invariants. Properties (such as numbers, groups, matrices, or vector spaces) of a...">
+<meta property="og:description" content="Definition (Homeomorphism) A function between topological spaces \(f: \mathbf{U} \to \mathbf{V}\) is called a homeomorphism if the following conditions hold. \(f\) is a bijection and continuous...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="58 Homeomorphism | Mathematics for Physics">
-<meta name="twitter:description" content="A description of two spaces that have the same topological structure. Now about something called topological invariants. Properties (such as numbers, groups, matrices, or vector spaces) of a...">
+<meta name="twitter:title" content="83 Homeomorphism | Mathematics for Physics">
+<meta name="twitter:description" content="Definition (Homeomorphism) A function between topological spaces \(f: \mathbf{U} \to \mathbf{V}\) is called a homeomorphism if the following conditions hold. \(f\) is a bijection and continuous...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -47,6 +47,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html"}, {"title": "Topology", "href": "topology.html"}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -141,13 +142,10 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="homeomorphism" class="section level1" number="58">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="homeomorphism" class="section level1" number="83">
 <h1>
-<span class="header-section-number">58</span> Homeomorphism<a class="anchor" aria-label="anchor" href="#homeomorphism"><i class="fas fa-link"></i></a>
+<span class="header-section-number">83</span> Homeomorphism<a class="anchor" aria-label="anchor" href="#homeomorphism"><i class="fas fa-link"></i></a>
 </h1>
-<p>A description of two spaces that have the same topological structure.</p>
-<p>Now about something called topological invariants.</p>
-<p>Properties (such as numbers, groups, matrices, or vector spaces) of a topological space that are preserved by homeomorphisms. If two spaces possess different invariants, they cannot be topologically equivalent. Examples include the fundamental group, homology groups, and the Euler characteristic.</p>
 <p><i></i></p>
 <p><strong>Definition</strong> (<em>Homeomorphism</em>) A function between topological spaces <span class="math inline">\(f: \mathbf{U} \to \mathbf{V}\)</span> is called a homeomorphism if the following conditions hold.</p>
 <ul>
@@ -308,6 +306,35 @@
 
       var entryHeader = document.createElement("header");
       entryHeader.className = "entry-header";
+
+      var breadcrumbData = document.getElementById("page-breadcrumbs");
+      if (breadcrumbData) {
+        try {
+          var trail = JSON.parse(breadcrumbData.textContent || "[]");
+          if (Array.isArray(trail) && trail.length) {
+            var breadcrumbs = document.createElement("nav");
+            breadcrumbs.className = "breadcrumbs";
+            breadcrumbs.setAttribute("aria-label", "Breadcrumb");
+            trail.forEach(function (item, index) {
+              if (index > 0) {
+                var sep = document.createElement("span");
+                sep.className = "breadcrumb-sep";
+                sep.textContent = " > ";
+                breadcrumbs.appendChild(sep);
+              }
+              var crumb = document.createElement("a");
+              crumb.href = item.href;
+              crumb.textContent = item.title;
+              breadcrumbs.appendChild(crumb);
+            });
+            var trailing = document.createElement("span");
+            trailing.className = "breadcrumb-sep";
+            trailing.textContent = " >";
+            breadcrumbs.appendChild(trailing);
+            entryHeader.appendChild(breadcrumbs);
+          }
+        } catch (e) {}
+      }
 
       var pageHeading = main.querySelector("h1");
       if (pageHeading) {
@@ -557,11 +584,11 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="hilbert-space.html"><span class="header-section-number">57</span> Hilbert Space</a></div>
-<div class="next"><a href="manifolds.html"><span class="header-section-number">59</span> Manifolds</a></div>
+<div class="prev"><a href="hilbert-space.html"><span class="header-section-number">82</span> Hilbert Space</a></div>
+<div class="next"><a href="injective.html"><span class="header-section-number">84</span> Injective</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#homeomorphism"><span class="header-section-number">58</span> Homeomorphism</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#homeomorphism"><span class="header-section-number">83</span> Homeomorphism</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

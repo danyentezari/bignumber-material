@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>16 Vector Calculus | Mathematics for Physics</title>
+<title>19 Vector Calculus | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="16.0.1 Stoke’s Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If \(\mathbf{F}(x, y, z)\) is a...">
+<meta name="description" content="19.0.1 Stoke’s Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If \(\mathbf{F}(x, y, z)\) is a...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="16 Vector Calculus | Mathematics for Physics">
+<meta property="og:title" content="19 Vector Calculus | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="16.0.1 Stoke’s Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If \(\mathbf{F}(x, y, z)\) is a...">
+<meta property="og:description" content="19.0.1 Stoke’s Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If \(\mathbf{F}(x, y, z)\) is a...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="16 Vector Calculus | Mathematics for Physics">
-<meta name="twitter:description" content="16.0.1 Stoke’s Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If \(\mathbf{F}(x, y, z)\) is a...">
+<meta name="twitter:title" content="19 Vector Calculus | Mathematics for Physics">
+<meta name="twitter:description" content="19.0.1 Stoke’s Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If \(\mathbf{F}(x, y, z)\) is a...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -47,6 +47,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html"}, {"title": "Calculus", "href": "calculus.html"}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -141,13 +142,13 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="vector-calculus" class="section level1" number="16">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="vector-calculus" class="section level1" number="19">
 <h1>
-<span class="header-section-number">16</span> Vector Calculus<a class="anchor" aria-label="anchor" href="#vector-calculus"><i class="fas fa-link"></i></a>
+<span class="header-section-number">19</span> Vector Calculus<a class="anchor" aria-label="anchor" href="#vector-calculus"><i class="fas fa-link"></i></a>
 </h1>
-<div id="stokes-theorem" class="section level3" number="16.0.1">
+<div id="stokes-theorem" class="section level3" number="19.0.1">
 <h3>
-<span class="header-section-number">16.0.1</span> Stoke’s Theorem<a class="anchor" aria-label="anchor" href="#stokes-theorem"><i class="fas fa-link"></i></a>
+<span class="header-section-number">19.0.1</span> Stoke’s Theorem<a class="anchor" aria-label="anchor" href="#stokes-theorem"><i class="fas fa-link"></i></a>
 </h3>
 <p>Let <span class="math inline">\(S\)</span> be a piecewise smooth oriented surface in space, and let the boundary of <span class="math inline">\(S\)</span> be a piecewise smooth simple closed curve <span class="math inline">\(C\)</span>. If <span class="math inline">\(\mathbf{F}(x, y, z)\)</span> is a continuous vector function with continuous first partial derivatives in a domain containing <span class="math inline">\(S\)</span>, then:</p>
 <p><span class="math display">\[\iint_S (\text{curl } \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span></p>
@@ -163,16 +164,16 @@
 </ul>
 <p><br></p>
 </div>
-<div id="flux" class="section level3" number="16.0.2">
+<div id="flux" class="section level3" number="19.0.2">
 <h3>
-<span class="header-section-number">16.0.2</span> Flux<a class="anchor" aria-label="anchor" href="#flux"><i class="fas fa-link"></i></a>
+<span class="header-section-number">19.0.2</span> Flux<a class="anchor" aria-label="anchor" href="#flux"><i class="fas fa-link"></i></a>
 </h3>
 <p>Total amount of a field or fluid passing through a surface.</p>
 <p><br></p>
 </div>
-<div id="double-integral" class="section level3" number="16.0.3">
+<div id="double-integral" class="section level3" number="19.0.3">
 <h3>
-<span class="header-section-number">16.0.3</span> Double Integral<a class="anchor" aria-label="anchor" href="#double-integral"><i class="fas fa-link"></i></a>
+<span class="header-section-number">19.0.3</span> Double Integral<a class="anchor" aria-label="anchor" href="#double-integral"><i class="fas fa-link"></i></a>
 </h3>
 <p>The double integral is defined by the following identity:
 <span class="math display">\[\iint_R f(x, y) \, dA = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*) \Delta A\]</span></p>
@@ -194,18 +195,18 @@
 </ul>
 <p><br></p>
 </div>
-<div id="double-integral-notational-variations" class="section level3" number="16.0.4">
+<div id="double-integral-notational-variations" class="section level3" number="19.0.4">
 <h3>
-<span class="header-section-number">16.0.4</span> Double Integral Notational Variations<a class="anchor" aria-label="anchor" href="#double-integral-notational-variations"><i class="fas fa-link"></i></a>
+<span class="header-section-number">19.0.4</span> Double Integral Notational Variations<a class="anchor" aria-label="anchor" href="#double-integral-notational-variations"><i class="fas fa-link"></i></a>
 </h3>
 <p>There exist double integral with two equivalent notations:
 * Differential Area Form: <span class="math inline">\(\displaystyle \iint_R f(x, y) \, dA\)</span>.
 * Coordinate Form: <span class="math inline">\(\displaystyle \iint_R f(x, y) \, dx \, dy\)</span>.</p>
 <p><br></p>
 </div>
-<div id="projection" class="section level3" number="16.0.5">
+<div id="projection" class="section level3" number="19.0.5">
 <h3>
-<span class="header-section-number">16.0.5</span> Projection<a class="anchor" aria-label="anchor" href="#projection"><i class="fas fa-link"></i></a>
+<span class="header-section-number">19.0.5</span> Projection<a class="anchor" aria-label="anchor" href="#projection"><i class="fas fa-link"></i></a>
 </h3>
 <div class="inline-figure"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20260211170054272961/vec_3.webp"></div>
 <p><i></i></p>
@@ -240,9 +241,9 @@
 </ul>
 <p></p>
 </div>
-<div id="topology-reference" class="section level3" number="16.0.6">
+<div id="topology-reference" class="section level3" number="19.0.6">
 <h3>
-<span class="header-section-number">16.0.6</span> Topology Reference<a class="anchor" aria-label="anchor" href="#topology-reference"><i class="fas fa-link"></i></a>
+<span class="header-section-number">19.0.6</span> Topology Reference<a class="anchor" aria-label="anchor" href="#topology-reference"><i class="fas fa-link"></i></a>
 </h3>
 <p>–&gt; <a href="../lessons/topology.md">Topology.md</a></p>
 
@@ -389,6 +390,35 @@
 
       var entryHeader = document.createElement("header");
       entryHeader.className = "entry-header";
+
+      var breadcrumbData = document.getElementById("page-breadcrumbs");
+      if (breadcrumbData) {
+        try {
+          var trail = JSON.parse(breadcrumbData.textContent || "[]");
+          if (Array.isArray(trail) && trail.length) {
+            var breadcrumbs = document.createElement("nav");
+            breadcrumbs.className = "breadcrumbs";
+            breadcrumbs.setAttribute("aria-label", "Breadcrumb");
+            trail.forEach(function (item, index) {
+              if (index > 0) {
+                var sep = document.createElement("span");
+                sep.className = "breadcrumb-sep";
+                sep.textContent = " > ";
+                breadcrumbs.appendChild(sep);
+              }
+              var crumb = document.createElement("a");
+              crumb.href = item.href;
+              crumb.textContent = item.title;
+              breadcrumbs.appendChild(crumb);
+            });
+            var trailing = document.createElement("span");
+            trailing.className = "breadcrumb-sep";
+            trailing.textContent = " >";
+            breadcrumbs.appendChild(trailing);
+            entryHeader.appendChild(breadcrumbs);
+          }
+        } catch (e) {}
+      }
 
       var pageHeading = main.querySelector("h1");
       if (pageHeading) {
@@ -638,18 +668,18 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="notes-1.html"><span class="header-section-number">15</span> Notes</a></div>
-<div class="next"><a href="covariant-contravariant-and-coordinate-systems.html"><span class="header-section-number">17</span> Covariant, Contravariant, and Coordinate Systems</a></div>
+<div class="prev"><a href="scalar-projection.html"><span class="header-section-number">18</span> scalar projection</a></div>
+<div class="next"><a href="vector-projection.html"><span class="header-section-number">20</span> vector projection</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav"><li>
-<a class="nav-link" href="#vector-calculus"><span class="header-section-number">16</span> Vector Calculus</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#stokes-theorem"><span class="header-section-number">16.0.1</span> Stoke’s Theorem</a></li>
-<li><a class="nav-link" href="#flux"><span class="header-section-number">16.0.2</span> Flux</a></li>
-<li><a class="nav-link" href="#double-integral"><span class="header-section-number">16.0.3</span> Double Integral</a></li>
-<li><a class="nav-link" href="#double-integral-notational-variations"><span class="header-section-number">16.0.4</span> Double Integral Notational Variations</a></li>
-<li><a class="nav-link" href="#projection"><span class="header-section-number">16.0.5</span> Projection</a></li>
-<li><a class="nav-link" href="#topology-reference"><span class="header-section-number">16.0.6</span> Topology Reference</a></li>
+<a class="nav-link" href="#vector-calculus"><span class="header-section-number">19</span> Vector Calculus</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#stokes-theorem"><span class="header-section-number">19.0.1</span> Stoke’s Theorem</a></li>
+<li><a class="nav-link" href="#flux"><span class="header-section-number">19.0.2</span> Flux</a></li>
+<li><a class="nav-link" href="#double-integral"><span class="header-section-number">19.0.3</span> Double Integral</a></li>
+<li><a class="nav-link" href="#double-integral-notational-variations"><span class="header-section-number">19.0.4</span> Double Integral Notational Variations</a></li>
+<li><a class="nav-link" href="#projection"><span class="header-section-number">19.0.5</span> Projection</a></li>
+<li><a class="nav-link" href="#topology-reference"><span class="header-section-number">19.0.6</span> Topology Reference</a></li>
 </ul>
 </li></ul>
 

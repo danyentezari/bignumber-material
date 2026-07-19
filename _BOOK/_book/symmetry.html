@@ -4,15 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>13 Symmetry | Mathematics for Physics</title>
+<title>15 Symmetry | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
 <meta name="description" content="Symmetry is about invariance to coordinate systems. definition (Symmetry) A property of a tensor or matrix where its components remain unchanged when their indices are interchanged or when the...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="13 Symmetry | Mathematics for Physics">
+<meta property="og:title" content="15 Symmetry | Mathematics for Physics">
 <meta property="og:type" content="book">
 <meta property="og:description" content="Symmetry is about invariance to coordinate systems. definition (Symmetry) A property of a tensor or matrix where its components remain unchanged when their indices are interchanged or when the...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="13 Symmetry | Mathematics for Physics">
+<meta name="twitter:title" content="15 Symmetry | Mathematics for Physics">
 <meta name="twitter:description" content="Symmetry is about invariance to coordinate systems. definition (Symmetry) A property of a tensor or matrix where its components remain unchanged when their indices are interchanged or when the...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -47,6 +47,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html"}, {"title": "Abstract Algebra", "href": "abstract-algebra.html"}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -141,9 +142,9 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="symmetry" class="section level1" number="13">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="symmetry" class="section level1" number="15">
 <h1>
-<span class="header-section-number">13</span> Symmetry<a class="anchor" aria-label="anchor" href="#symmetry"><i class="fas fa-link"></i></a>
+<span class="header-section-number">15</span> Symmetry<a class="anchor" aria-label="anchor" href="#symmetry"><i class="fas fa-link"></i></a>
 </h1>
 <p>Symmetry is about invariance to coordinate systems.</p>
 <p><i></i></p>
@@ -335,6 +336,35 @@
 
       var entryHeader = document.createElement("header");
       entryHeader.className = "entry-header";
+
+      var breadcrumbData = document.getElementById("page-breadcrumbs");
+      if (breadcrumbData) {
+        try {
+          var trail = JSON.parse(breadcrumbData.textContent || "[]");
+          if (Array.isArray(trail) && trail.length) {
+            var breadcrumbs = document.createElement("nav");
+            breadcrumbs.className = "breadcrumbs";
+            breadcrumbs.setAttribute("aria-label", "Breadcrumb");
+            trail.forEach(function (item, index) {
+              if (index > 0) {
+                var sep = document.createElement("span");
+                sep.className = "breadcrumb-sep";
+                sep.textContent = " > ";
+                breadcrumbs.appendChild(sep);
+              }
+              var crumb = document.createElement("a");
+              crumb.href = item.href;
+              crumb.textContent = item.title;
+              breadcrumbs.appendChild(crumb);
+            });
+            var trailing = document.createElement("span");
+            trailing.className = "breadcrumb-sep";
+            trailing.textContent = " >";
+            breadcrumbs.appendChild(trailing);
+            entryHeader.appendChild(breadcrumbs);
+          }
+        } catch (e) {}
+      }
 
       var pageHeading = main.querySelector("h1");
       if (pageHeading) {
@@ -584,11 +614,11 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="group-theory.html"><span class="header-section-number">12</span> Group Theory</a></div>
-<div class="next"><a href="general-functions.html"><span class="header-section-number">14</span> General Functions</a></div>
+<div class="prev"><a href="permutational-antisymmetry.html"><span class="header-section-number">14</span> Permutational Antisymmetry</a></div>
+<div class="next"><a href="general-functions.html"><span class="header-section-number">16</span> General Functions</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#symmetry"><span class="header-section-number">13</span> Symmetry</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#symmetry"><span class="header-section-number">15</span> Symmetry</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
