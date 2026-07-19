@@ -4,15 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>20 Tensors | Mathematics for Physics</title>
+<title>23 Tensors | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
 <meta name="description" content="definition (Multilinear Function) A function from the \(k\)-fold product of a vector space to the real numbers, \(T: V^k \rightarrow \mathbb{R}\), where the following conditions apply for each...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="20 Tensors | Mathematics for Physics">
+<meta property="og:title" content="23 Tensors | Mathematics for Physics">
 <meta property="og:type" content="book">
 <meta property="og:description" content="definition (Multilinear Function) A function from the \(k\)-fold product of a vector space to the real numbers, \(T: V^k \rightarrow \mathbb{R}\), where the following conditions apply for each...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="20 Tensors | Mathematics for Physics">
+<meta name="twitter:title" content="23 Tensors | Mathematics for Physics">
 <meta name="twitter:description" content="definition (Multilinear Function) A function from the \(k\)-fold product of a vector space to the real numbers, \(T: V^k \rightarrow \mathbb{R}\), where the following conditions apply for each...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -74,126 +74,65 @@
 <a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
 </div>
 </li>
-<li class="book-toc-topic">
+<li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
 <a class="" href="abstract-algebra.html"><span class="header-section-number">2</span> Abstract Algebra</a>
 </div>
-<ul class="book-toc-section">
-<li><a class="" href="group-theory.html"><span class="header-section-number">12</span> Group Theory</a></li>
-<li><a class="" href="symmetry.html"><span class="header-section-number">13</span> Symmetry</a></li>
-</ul>
-</li>
-<li class="book-toc-topic is-open">
-<div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="true" aria-label="Toggle subtopics"></button>
-<a class="active-parent" href="differential-geometry.html"><span class="header-section-number">3</span> Differential Geometry</a>
-</div>
-<ul class="book-toc-section">
-<li><a class="" href="covariant-contravariant-and-coordinate-systems.html"><span class="header-section-number">14</span> Covariant, Contravariant, and Coordinate Systems</a></li>
-<li><a class="" href="differential-forms.html"><span class="header-section-number">15</span> Differential Forms</a></li>
-<li><a class="" href="exterior-algebra-and-exterior-derivatives.html"><span class="header-section-number">16</span> Exterior Algebra and Exterior Derivatives</a></li>
-<li><a class="" href="forms.html"><span class="header-section-number">17</span> Forms</a></li>
-<li><a class="" href="functions.html"><span class="header-section-number">18</span> Functions</a></li>
-<li><a class="" href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html"><span class="header-section-number">19</span> Stoke’s Theorem and the Fundamental Theorem of Calculus</a></li>
-<li><a class="active" href="tensors.html"><span class="header-section-number">20</span> Tensors</a></li>
-</ul>
-</li>
-<li class="book-toc-topic">
-<div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="electromagnetism.html"><span class="header-section-number">4</span> Electromagnetism</a>
-</div>
-<ul class="book-toc-section">
-<li><a class="" href="electric-charge.html"><span class="header-section-number">21</span> Electric Charge</a></li>
-<li><a class="" href="electric-fields.html"><span class="header-section-number">22</span> Electric Fields</a></li>
-<li><a class="" href="electromagnetic-induction.html"><span class="header-section-number">23</span> Electromagnetic Induction</a></li>
-<li><a class="" href="electromagnetic-interaction-1.html"><span class="header-section-number">41</span> Electromagnetic Interaction</a></li>
-<li><a class="" href="electromagnetic-waves.html"><span class="header-section-number">25</span> Electromagnetic Waves</a></li>
-<li><a class="" href="magnetic-fields.html"><span class="header-section-number">26</span> Magnetic Fields</a></li>
-</ul>
-</li>
-<li class="book-toc-topic">
-<div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="functional-analysis.html"><span class="header-section-number">5</span> Functional Analysis</a>
-</div>
-<ul class="book-toc-section">
-<li><a class="" href="fourier-transform.html"><span class="header-section-number">27</span> Fourier Transform</a></li>
-<li><a class="" href="sets.html"><span class="header-section-number">28</span> Sets</a></li>
-</ul>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="linear-algebra.html"><span class="header-section-number">6</span> Linear Algebra</a>
+<a class="" href="calculus.html"><span class="header-section-number">3</span> Calculus</a>
 </div>
 </li>
-<li class="book-toc-topic">
+<li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="notes.html"><span class="header-section-number">7</span> Notes</a>
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="active-parent" href="differential-geometry.html"><span class="header-section-number">4</span> Differential Geometry</a>
 </div>
-<ul class="book-toc-section">
-<li><a class="" href="complex-analysis.html"><span class="header-section-number">29</span> Complex Analysis</a></li>
-<li><a class="" href="electromagnetism-1.html"><span class="header-section-number">30</span> Electromagnetism</a></li>
-<li><a class="" href="lorentz-force-law.html"><span class="header-section-number">31</span> Lorentz Force Law</a></li>
-<li><a class="" href="mathematics-appendix.html"><span class="header-section-number">32</span> Mathematics Appendix</a></li>
-<li><a class="" href="maxwells-equations.html"><span class="header-section-number">33</span> Maxwell’s Equations</a></li>
-<li><a class="" href="physics-mathematical-appendix.html"><span class="header-section-number">34</span> Physics Mathematical Appendix</a></li>
-<li><a class="" href="radiation.html"><span class="header-section-number">35</span> Radiation</a></li>
-<li><a class="" href="schrodinger-equations.html"><span class="header-section-number">36</span> Schrodinger Equations</a></li>
-<li><a class="" href="special-relativity-and-electric-fields.html"><span class="header-section-number">37</span> Special Relativity and Electric Fields</a></li>
-<li><a class="" href="stokes-theorem-for-flux-integral.html"><span class="header-section-number">38</span> Stokes’ Theorem for Flux Integral</a></li>
-<li><a class="" href="stokes-theorem-physics.html"><span class="header-section-number">39</span> Stokes’ Theorem Physics</a></li>
-</ul>
 </li>
-<li class="book-toc-topic">
+<li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="quantum-mechanics-for-electromagnetism.html"><span class="header-section-number">8</span> Quantum Mechanics for Electromagnetism</a>
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="electromagnetism.html"><span class="header-section-number">5</span> Electromagnetism</a>
 </div>
-<ul class="book-toc-section">
-<li><a class="" href="conservation-laws.html"><span class="header-section-number">40</span> Conservation Laws</a></li>
-<li><a class="" href="electromagnetic-interaction-1.html"><span class="header-section-number">41</span> Electromagnetic Interaction</a></li>
-<li><a class="" href="energy-quantization.html"><span class="header-section-number">42</span> Energy Quantization</a></li>
-<li><a class="" href="pauli-exclusion-principle.html"><span class="header-section-number">43</span> Pauli Exclusion Principle</a></li>
-<li><a class="" href="quantum-states-schr%C3%B6dinger-equation.html"><span class="header-section-number">44</span> Quantum States (Schrödinger Equation)</a></li>
-<li><a class="" href="spin.html"><span class="header-section-number">45</span> Spin</a></li>
-<li><a class="" href="wave-particle-duality.html"><span class="header-section-number">46</span> Wave-Particle Duality</a></li>
-</ul>
 </li>
-<li class="book-toc-topic">
+<li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="topology.html"><span class="header-section-number">9</span> Topology</a>
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="functional-analysis.html"><span class="header-section-number">6</span> Functional Analysis</a>
 </div>
-<ul class="book-toc-section">
-<li><a class="" href="hilbert-space.html"><span class="header-section-number">47</span> Hilbert Space</a></li>
-<li><a class="" href="homeomorphism.html"><span class="header-section-number">48</span> Homeomorphism</a></li>
-<li><a class="" href="manifolds.html"><span class="header-section-number">49</span> Manifolds</a></li>
-<li><a class="" href="open-sets.html"><span class="header-section-number">50</span> Open Sets</a></li>
-<li><a class="" href="preimages-and-inverse-functions.html"><span class="header-section-number">51</span> Preimages and Inverse Functions</a></li>
-<li><a class="" href="topological-spaces.html"><span class="header-section-number">52</span> Topological Spaces</a></li>
-</ul>
 </li>
-<li class="book-toc-topic">
+<li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="vector-calculus.html"><span class="header-section-number">10</span> Vector Calculus</a>
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="linear-algebra.html"><span class="header-section-number">7</span> Linear Algebra</a>
 </div>
-<ul class="book-toc-section">
-<li><a class="" href="notes.html"><span class="header-section-number">7</span> Notes</a></li>
-</ul>
 </li>
-<li class="book-toc-topic">
+<li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="notes.html"><span class="header-section-number">8</span> Notes</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="quantum-mechanics-for-electromagnetism.html"><span class="header-section-number">9</span> Quantum Mechanics for Electromagnetism</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="topology.html"><span class="header-section-number">10</span> Topology</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
 <a class="" href="glossary.html"><span class="header-section-number">11</span> Glossary</a>
 </div>
-<ul class="book-toc-section">
-<li><a class="" href="physics-glossary.html"><span class="header-section-number">53</span> Physics Glossary</a></li>
-</ul>
 </li>
 </ul>
 
@@ -202,9 +141,9 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="tensors" class="section level1" number="20">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="tensors" class="section level1" number="23">
 <h1>
-<span class="header-section-number">20</span> Tensors<a class="anchor" aria-label="anchor" href="#tensors"><i class="fas fa-link"></i></a>
+<span class="header-section-number">23</span> Tensors<a class="anchor" aria-label="anchor" href="#tensors"><i class="fas fa-link"></i></a>
 </h1>
 <p><i></i></p>
 <p><strong>definition</strong> (<em>Multilinear Function</em>) A function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(T: V^k \rightarrow \mathbb{R}\)</span>, where</p>
@@ -699,11 +638,11 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html"><span class="header-section-number">19</span> Stoke’s Theorem and the Fundamental Theorem of Calculus</a></div>
-<div class="next"><a href="electric-charge.html"><span class="header-section-number">21</span> Electric Charge</a></div>
+<div class="prev"><a href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html"><span class="header-section-number">22</span> Stoke’s Theorem and the Fundamental Theorem of Calculus</a></div>
+<div class="next"><a href="electric-charge.html"><span class="header-section-number">24</span> Electric Charge</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#tensors"><span class="header-section-number">20</span> Tensors</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#tensors"><span class="header-section-number">23</span> Tensors</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

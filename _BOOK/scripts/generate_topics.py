@@ -106,11 +106,19 @@ def write_generated_main_topic(
 ) -> tuple[Path, str]:
     title, body = split_main_topic(main_file, folder)
 
+    index_entries = [
+        (extract_title(path), f"{slugify_text(extract_title(path))}.html")
+        for path in sibling_files
+    ]
+    topic_index = build_topic_index(index_entries)
+
     generated_path = GENERATED_DIR / folder.name / main_file.name
     generated_path.parent.mkdir(parents=True, exist_ok=True)
     content = f"# {title}\n\n"
     if body:
         content += f"{body}\n\n"
+    if topic_index:
+        content += topic_index
     generated_path.write_text(content, encoding="utf-8")
     return generated_path, title
 

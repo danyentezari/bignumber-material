@@ -63,16 +63,6 @@ def lookup_entry(
     return None
 
 
-def topic_is_open(
-    main_item: dict[str, str],
-    child_items: list[dict[str, str]],
-    current_href: str,
-) -> bool:
-    if main_item["href"] == current_href:
-        return True
-    return any(child["href"] == current_href for child in child_items)
-
-
 def render_link(item: dict[str, str], current_href: str) -> str:
     active_class = "active" if item["href"] == current_href else ""
     return (
@@ -107,6 +97,7 @@ def build_sidebar_toc(
     by_title: dict[str, dict[str, str]],
     current_href: str,
 ) -> str:
+    """Render root-level topics only; subtopics appear on main topic pages."""
     lines = ['<ul class="book-toc list-unstyled">']
 
     for entry in sidebar:
@@ -124,32 +115,18 @@ def build_sidebar_toc(
                 if child_item:
                     child_items.append(child_item)
 
+        lines.append('<li class="book-toc-topic book-toc-topic--leaf">')
+        lines.append('<div class="book-toc-topic-header">')
+        lines.append(
+            '<span class="book-toc-toggle book-toc-toggle--placeholder" '
+            'aria-hidden="true"></span>'
+        )
         if child_items:
-            open_class = " is-open" if topic_is_open(main_item, child_items, current_href) else ""
-            expanded = "true" if open_class else "false"
-            lines.append(f'<li class="book-toc-topic{open_class}">')
-            lines.append('<div class="book-toc-topic-header">')
-            lines.append(
-                f'<button type="button" class="book-toc-toggle" '
-                f'aria-expanded="{expanded}" aria-label="Toggle subtopics"></button>'
-            )
             lines.append(render_parent_link(main_item, current_href, child_items))
-            lines.append("</div>")
-            lines.append('<ul class="book-toc-section">')
-            for child_item in child_items:
-                lines.append(f"<li>{render_link(child_item, current_href)}</li>")
-            lines.append("</ul>")
-            lines.append("</li>")
         else:
-            lines.append('<li class="book-toc-topic book-toc-topic--leaf">')
-            lines.append('<div class="book-toc-topic-header">')
-            lines.append(
-                '<span class="book-toc-toggle book-toc-toggle--placeholder" '
-                'aria-hidden="true"></span>'
-            )
             lines.append(render_link(main_item, current_href))
-            lines.append("</div>")
-            lines.append("</li>")
+        lines.append("</div>")
+        lines.append("</li>")
 
     lines.append("</ul>")
     return "\n".join(lines)

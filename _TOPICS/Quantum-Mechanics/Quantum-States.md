@@ -1,4 +1,4 @@
-# Quantum States (Schrödinger Equation)
+# Quantum States (Schrodinger Equation)
 
 **Bohr Radius**
 

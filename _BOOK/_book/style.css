@@ -823,31 +823,29 @@ footer.bg-primary a:hover {
 /* ----------------------------------------------------------------------
    Topic index (MathWorld-style navigation on main topic pages)
 ---------------------------------------------------------------------- */
+/* MathWorld-style navigation on main topic pages */
 .topic-index {
-  margin: 1.75rem 0 2.25rem;
-  padding: 1.25rem 0 1.5rem;
+  margin: 0.5rem 0 2rem;
+  padding: 0.75rem 0 0;
   border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
 }
 
 .topic-index ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  columns: 3;
-  column-gap: 2rem;
 }
 
 .topic-index li {
-  break-inside: avoid;
-  margin: 0.35rem 0;
+  margin: 0.15rem 0;
   padding-left: 0;
 }
 
 .topic-index a {
   color: var(--accent);
   text-decoration: none;
-  font-weight: 500;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 .topic-index a:hover,
@@ -856,16 +854,12 @@ footer.bg-primary a:hover {
   text-underline-offset: 0.15em;
 }
 
-@media (max-width: 991.98px) {
-  .topic-index ul {
-    columns: 2;
-  }
+html.theme-classic .topic-index {
+  border-top-color: #ccc;
 }
 
-@media (max-width: 575.98px) {
-  .topic-index ul {
-    columns: 1;
-  }
+html.theme-classic .topic-index a {
+  color: #069;
 }
 
 /* ----------------------------------------------------------------------
