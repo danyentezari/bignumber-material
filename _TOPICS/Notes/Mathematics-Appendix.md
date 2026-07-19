@@ -1,4 +1,4 @@
-# Mathemarics Appendix
+# Mathematics Appendix
 
 
 **Stokes' Theorem**

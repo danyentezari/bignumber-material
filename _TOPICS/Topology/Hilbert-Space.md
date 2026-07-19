@@ -1,0 +1,18 @@
+# Hilbert Space
+
+<i>
+
+**definition [D]** (*Hilbert Space*) A complete inner product space, representing a linear vector space (finite or infinite-dimensional) where every Cauchy sequence of vectors converges to a limit within the space. It serves as the mathematical foundation for the states of quantum systems. A space is a Hilbert space if:
+
+* It possesses a well-defined inner product that induces a norm and a metric.
+* It is complete, meaning it has no "holes," similar to the set of real numbers.
+
+where
+
+- $H$ (or $\mathcal{H}$) is the Hilbert space.
+- $\langle \alpha | \beta \rangle$ is the inner product associating a pair of vectors with a complex scalar.
+- $L^2(a, b)$ is the standard example of an infinite-dimensional Hilbert space consisting of square-integrable functions.
+- A Cauchy sequence is a sequence where the distance between elements eventually becomes arbitrarily small.
+- Convergence means the sequence approaches a specific limit element that resides inside the same Hilbert space.
+
+</i>

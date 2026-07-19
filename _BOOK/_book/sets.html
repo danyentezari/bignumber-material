@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>28 Sets | Mathematics for Physics</title>
+<meta name="author" content="bignumber-material">
+<meta name="description" content="definition (Complete Set) A subset of a normed or inner product space whose span is dense in that space, meaning any element in the space can be represented or approximated by a linear combination...">
+<meta name="generator" content="bookdown 0.46 with bs4_book()">
+<meta property="og:title" content="28 Sets | Mathematics for Physics">
+<meta property="og:type" content="book">
+<meta property="og:description" content="definition (Complete Set) A subset of a normed or inner product space whose span is dense in that space, meaning any element in the space can be represented or approximated by a linear combination...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="28 Sets | Mathematics for Physics">
+<meta name="twitter:description" content="definition (Complete Set) A subset of a normed or inner product space whose span is dense in that space, meaning any element in the space can be represented or approximated by a linear combination...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Serif + mono typefaces --><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<!-- Apply saved/preferred theme before first paint to avoid flashing --><script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("book-theme");
+          var theme = stored
+            ? stored
+            : (window.matchMedia &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+        document.documentElement.classList.add("theme-classic");
+        try {
+          var storedFont = localStorage.getItem("book-font-size");
+          document.documentElement.style.fontSize = (storedFont !== null ? storedFont : "17") + "px";
+        } catch (e) {
+          document.documentElement.style.fontSize = "17px";
+        }
+      })();
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Mathematics for Physics</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
+</div>
+</li>
+<li class="book-toc-topic">
+<div class="book-toc-topic-header">
+<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
+<a class="" href="abstract-algebra.html"><span class="header-section-number">2</span> Abstract Algebra</a>
+</div>
+<ul class="book-toc-section">
+<li><a class="" href="group-theory.html"><span class="header-section-number">12</span> Group Theory</a></li>
+<li><a class="" href="symmetry.html"><span class="header-section-number">13</span> Symmetry</a></li>
+</ul>
+</li>
+<li class="book-toc-topic">
+<div class="book-toc-topic-header">
+<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
+<a class="" href="differential-geometry.html"><span class="header-section-number">3</span> Differential Geometry</a>
+</div>
+<ul class="book-toc-section">
+<li><a class="" href="covariant-contravariant-and-coordinate-systems.html"><span class="header-section-number">14</span> Covariant, Contravariant, and Coordinate Systems</a></li>
+<li><a class="" href="differential-forms.html"><span class="header-section-number">15</span> Differential Forms</a></li>
+<li><a class="" href="exterior-algebra-and-exterior-derivatives.html"><span class="header-section-number">16</span> Exterior Algebra and Exterior Derivatives</a></li>
+<li><a class="" href="forms.html"><span class="header-section-number">17</span> Forms</a></li>
+<li><a class="" href="functions.html"><span class="header-section-number">18</span> Functions</a></li>
+<li><a class="" href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html"><span class="header-section-number">19</span> Stoke’s Theorem and the Fundamental Theorem of Calculus</a></li>
+<li><a class="" href="tensors.html"><span class="header-section-number">20</span> Tensors</a></li>
+</ul>
+</li>
+<li class="book-toc-topic">
+<div class="book-toc-topic-header">
+<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
+<a class="" href="electromagnetism.html"><span class="header-section-number">4</span> Electromagnetism</a>
+</div>
+<ul class="book-toc-section">
+<li><a class="" href="electric-charge.html"><span class="header-section-number">21</span> Electric Charge</a></li>
+<li><a class="" href="electric-fields.html"><span class="header-section-number">22</span> Electric Fields</a></li>
+<li><a class="" href="electromagnetic-induction.html"><span class="header-section-number">23</span> Electromagnetic Induction</a></li>
+<li><a class="" href="electromagnetic-interaction-1.html"><span class="header-section-number">41</span> Electromagnetic Interaction</a></li>
+<li><a class="" href="electromagnetic-waves.html"><span class="header-section-number">25</span> Electromagnetic Waves</a></li>
+<li><a class="" href="magnetic-fields.html"><span class="header-section-number">26</span> Magnetic Fields</a></li>
+</ul>
+</li>
+<li class="book-toc-topic is-open">
+<div class="book-toc-topic-header">
+<button type="button" class="book-toc-toggle" aria-expanded="true" aria-label="Toggle subtopics"></button>
+<a class="active-parent" href="functional-analysis.html"><span class="header-section-number">5</span> Functional Analysis</a>
+</div>
+<ul class="book-toc-section">
+<li><a class="" href="fourier-transform.html"><span class="header-section-number">27</span> Fourier Transform</a></li>
+<li><a class="active" href="sets.html"><span class="header-section-number">28</span> Sets</a></li>
+</ul>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="linear-algebra.html"><span class="header-section-number">6</span> Linear Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic">
+<div class="book-toc-topic-header">
+<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
+<a class="" href="notes.html"><span class="header-section-number">7</span> Notes</a>
+</div>
+<ul class="book-toc-section">
+<li><a class="" href="complex-analysis.html"><span class="header-section-number">29</span> Complex Analysis</a></li>
+<li><a class="" href="electromagnetism-1.html"><span class="header-section-number">30</span> Electromagnetism</a></li>
+<li><a class="" href="lorentz-force-law.html"><span class="header-section-number">31</span> Lorentz Force Law</a></li>
+<li><a class="" href="mathematics-appendix.html"><span class="header-section-number">32</span> Mathematics Appendix</a></li>
+<li><a class="" href="maxwells-equations.html"><span class="header-section-number">33</span> Maxwell’s Equations</a></li>
+<li><a class="" href="physics-mathematical-appendix.html"><span class="header-section-number">34</span> Physics Mathematical Appendix</a></li>
+<li><a class="" href="radiation.html"><span class="header-section-number">35</span> Radiation</a></li>
+<li><a class="" href="schrodinger-equations.html"><span class="header-section-number">36</span> Schrodinger Equations</a></li>
+<li><a class="" href="special-relativity-and-electric-fields.html"><span class="header-section-number">37</span> Special Relativity and Electric Fields</a></li>
+<li><a class="" href="stokes-theorem-for-flux-integral.html"><span class="header-section-number">38</span> Stokes’ Theorem for Flux Integral</a></li>
+<li><a class="" href="stokes-theorem-physics.html"><span class="header-section-number">39</span> Stokes’ Theorem Physics</a></li>
+</ul>
+</li>
+<li class="book-toc-topic">
+<div class="book-toc-topic-header">
+<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
+<a class="" href="quantum-mechanics-for-electromagnetism.html"><span class="header-section-number">8</span> Quantum Mechanics for Electromagnetism</a>
+</div>
+<ul class="book-toc-section">
+<li><a class="" href="conservation-laws.html"><span class="header-section-number">40</span> Conservation Laws</a></li>
+<li><a class="" href="electromagnetic-interaction-1.html"><span class="header-section-number">41</span> Electromagnetic Interaction</a></li>
+<li><a class="" href="energy-quantization.html"><span class="header-section-number">42</span> Energy Quantization</a></li>
+<li><a class="" href="pauli-exclusion-principle.html"><span class="header-section-number">43</span> Pauli Exclusion Principle</a></li>
+<li><a class="" href="quantum-states-schr%C3%B6dinger-equation.html"><span class="header-section-number">44</span> Quantum States (Schrödinger Equation)</a></li>
+<li><a class="" href="spin.html"><span class="header-section-number">45</span> Spin</a></li>
+<li><a class="" href="wave-particle-duality.html"><span class="header-section-number">46</span> Wave-Particle Duality</a></li>
+</ul>
+</li>
+<li class="book-toc-topic">
+<div class="book-toc-topic-header">
+<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
+<a class="" href="topology.html"><span class="header-section-number">9</span> Topology</a>
+</div>
+<ul class="book-toc-section">
+<li><a class="" href="hilbert-space.html"><span class="header-section-number">47</span> Hilbert Space</a></li>
+<li><a class="" href="homeomorphism.html"><span class="header-section-number">48</span> Homeomorphism</a></li>
+<li><a class="" href="manifolds.html"><span class="header-section-number">49</span> Manifolds</a></li>
+<li><a class="" href="open-sets.html"><span class="header-section-number">50</span> Open Sets</a></li>
+<li><a class="" href="preimages-and-inverse-functions.html"><span class="header-section-number">51</span> Preimages and Inverse Functions</a></li>
+<li><a class="" href="topological-spaces.html"><span class="header-section-number">52</span> Topological Spaces</a></li>
+</ul>
+</li>
+<li class="book-toc-topic">
+<div class="book-toc-topic-header">
+<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
+<a class="" href="vector-calculus.html"><span class="header-section-number">10</span> Vector Calculus</a>
+</div>
+<ul class="book-toc-section">
+<li><a class="" href="notes.html"><span class="header-section-number">7</span> Notes</a></li>
+</ul>
+</li>
+<li class="book-toc-topic">
+<div class="book-toc-topic-header">
+<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
+<a class="" href="glossary.html"><span class="header-section-number">11</span> Glossary</a>
+</div>
+<ul class="book-toc-section">
+<li><a class="" href="physics-glossary.html"><span class="header-section-number">53</span> Physics Glossary</a></li>
+</ul>
+</li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="sets" class="section level1" number="28">
+<h1>
+<span class="header-section-number">28</span> Sets<a class="anchor" aria-label="anchor" href="#sets"><i class="fas fa-link"></i></a>
+</h1>
+<p><i></i></p>
+<p><strong>definition</strong> (<em>Complete Set</em>) A subset of a normed or inner product space whose span is dense in that space, meaning any element in the space can be represented or approximated by a linear combination of the set’s members. The set must satisfy the following condition:</p>
+<ul>
+<li>The only vector in the space that is orthogonal to every element in the set is the zero vector.</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(M\)</span> is the set of vectors or functions being tested for completeness.</li>
+<li>
+<span class="math inline">\(H\)</span> is the Hilbert space containing the set.</li>
+<li>
+<span class="math inline">\(\text{span } M\)</span> is the set of all finite linear combinations of elements in <span class="math inline">\(M\)</span>.</li>
+<li>
+<span class="math inline">\(\delta(x - x')\)</span> is the Dirac delta function, used to express the completeness relation for sets with continuous indices.</li>
+<li>
+<span class="math inline">\(1 = \sum |e_n\rangle\langle e_n|\)</span> is the completeness relation (or resolution of the identity) for a discrete orthonormal basis.</li>
+</ul>
+<p></p>
+
+</div>
+<script>
+  (function () {
+    var MOON =
+      '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    var SUN =
+      '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.5" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22.5"/><line x1="3.5" y1="3.5" x2="5.3" y2="5.3"/><line x1="18.7" y1="18.7" x2="20.5" y2="20.5"/><line x1="1.5" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22.5" y2="12"/><line x1="3.5" y1="20.5" x2="5.3" y2="18.7"/><line x1="18.7" y1="5.3" x2="20.5" y2="3.5"/></svg>';
+
+    var FONT_MIN = 13;
+    var FONT_MAX = 28;
+    var FONT_STEP = 1.6;
+    var FONT_BASE = 17;
+    var fontSize = FONT_BASE;
+
+    function initClassicLayout() {
+      if (document.getElementById("page")) return;
+
+      var root = document.documentElement;
+      document.body.classList.add("masthead-fixed", "grid");
+
+      var container = document.querySelector(".container-fluid");
+      var header = document.querySelector("header.sidebar-book");
+      var main = document.querySelector("main#content");
+      var chapterSidebar = document.querySelector(".sidebar-chapter");
+      var oldFooter = document.querySelector("footer.bg-primary, footer");
+
+      if (!container || !header || !main) return;
+
+      var titleLink = header.querySelector("h1 a");
+      var bookTitle = titleLink ? titleLink.textContent.trim() : "Mathematics for Physics";
+      var tagline = "";
+
+      var page = document.createElement("div");
+      page.id = "page";
+      page.className = "hfeed site";
+
+      var masthead = document.createElement("header");
+      masthead.id = "masthead";
+      masthead.className = "site-header";
+      masthead.setAttribute("role", "banner");
+
+      var headerMain = document.createElement("div");
+      headerMain.className = "header-main";
+
+      var bookButton = document.createElement("a");
+      bookButton.href = "index.html";
+      bookButton.className = "book-button";
+      bookButton.innerHTML = "<button type=\"button\">Book</button>";
+
+      var siteTitle = document.createElement("h1");
+      siteTitle.className = "site-title";
+      siteTitle.innerHTML =
+        '<a href="index.html" rel="home">' +
+        bookTitle +
+        '<span class="site-tagline">' +
+        tagline +
+        "</span></a>";
+
+      var primaryNav = document.createElement("nav");
+      primaryNav.id = "primary-navigation";
+      primaryNav.className = "site-navigation primary-navigation";
+      primaryNav.setAttribute("role", "navigation");
+
+      var menuToggle = document.createElement("button");
+      menuToggle.className = "menu-toggle";
+      menuToggle.type = "button";
+      menuToggle.textContent = "Primary Menu";
+
+      var skipLink = document.createElement("a");
+      skipLink.className = "screen-reader-text skip-link";
+      skipLink.href = "#content";
+      skipLink.textContent = "Skip to content";
+
+      var primaryMenu = document.createElement("div");
+      primaryMenu.id = "primary-menu";
+      primaryMenu.className = "nav-menu";
+
+      var primaryList = document.createElement("ul");
+      header.querySelectorAll(".book-toc > .book-toc-topic").forEach(function (topic) {
+        var link = topic.querySelector(".book-toc-topic-header > a");
+        if (!link) return;
+
+        var li = document.createElement("li");
+        li.className = "page_item";
+        li.appendChild(link.cloneNode(true));
+
+        var section = topic.querySelector(".book-toc-section");
+        if (section && section.children.length) {
+          li.classList.add("page_item_has_children");
+          var childUl = document.createElement("ul");
+          childUl.className = "children";
+          section.querySelectorAll("li > a").forEach(function (subLink) {
+            var childLi = document.createElement("li");
+            childLi.className = "page_item";
+            childLi.appendChild(subLink.cloneNode(true));
+            childUl.appendChild(childLi);
+          });
+          li.appendChild(childUl);
+        }
+        primaryList.appendChild(li);
+      });
+      primaryMenu.appendChild(primaryList);
+
+      primaryNav.appendChild(menuToggle);
+      primaryNav.appendChild(skipLink);
+      primaryNav.appendChild(primaryMenu);
+
+      menuToggle.addEventListener("click", function () {
+        primaryNav.classList.toggle("toggled-on");
+        menuToggle.setAttribute(
+          "aria-expanded",
+          primaryNav.classList.contains("toggled-on") ? "true" : "false"
+        );
+      });
+
+      headerMain.appendChild(bookButton);
+      headerMain.appendChild(siteTitle);
+      headerMain.appendChild(primaryNav);
+      masthead.appendChild(headerMain);
+
+      var siteMain = document.createElement("div");
+      siteMain.id = "main";
+      siteMain.className = "site-main";
+
+      var mainContent = document.createElement("div");
+      mainContent.id = "main-content";
+      mainContent.className = "main-content";
+
+      var contentArea = document.createElement("div");
+      contentArea.id = "primary";
+      contentArea.className = "content-area";
+
+      var siteContent = document.createElement("div");
+      siteContent.id = "content";
+      siteContent.className = "site-content";
+      siteContent.setAttribute("role", "main");
+
+      var article = document.createElement("article");
+      article.className = "hentry page type-page status-publish";
+
+      var entryHeader = document.createElement("header");
+      entryHeader.className = "entry-header";
+
+      var pageHeading = main.querySelector("h1");
+      if (pageHeading) {
+        var entryTitle = document.createElement("h1");
+        entryTitle.className = "entry-title";
+        var headingClone = pageHeading.cloneNode(true);
+        headingClone.querySelectorAll(".header-section-number, .anchor").forEach(function (n) {
+          n.remove();
+        });
+        entryTitle.textContent = headingClone.textContent.trim();
+        entryHeader.appendChild(entryTitle);
+      }
+
+      var entryContent = document.createElement("div");
+      entryContent.className = "entry-content";
+
+      Array.from(main.childNodes).forEach(function (node) {
+        if (node.nodeType !== 1) return;
+        if (node.matches("script")) return;
+        if (node.classList.contains("chapter-nav")) return;
+        if (node.matches("h1")) return;
+        entryContent.appendChild(node);
+      });
+
+      entryContent.querySelectorAll("h1").forEach(function (h) {
+        h.remove();
+      });
+
+      var chapterNav = main.querySelector(".chapter-nav");
+      if (chapterNav) {
+        chapterNav.remove();
+      }
+
+      article.appendChild(entryHeader);
+      article.appendChild(entryContent);
+      siteContent.appendChild(article);
+      contentArea.appendChild(siteContent);
+
+      var contentSidebar = document.createElement("div");
+      contentSidebar.id = "content-sidebar";
+      contentSidebar.className = "content-sidebar widget-area";
+      contentSidebar.setAttribute("role", "complementary");
+
+      var searchWidget = document.createElement("aside");
+      searchWidget.id = "search-6";
+      searchWidget.className = "widget widget_search";
+
+      var existingForm = header.querySelector('form[role="search"]');
+      if (existingForm) {
+        existingForm.classList.add("search-form");
+        var searchInput = existingForm.querySelector("#search");
+        if (searchInput) {
+          searchInput.classList.remove("form-control");
+          searchInput.classList.add("search-field");
+          searchInput.placeholder = "Search \u2026";
+          if (!existingForm.querySelector("label")) {
+            var searchLabel = document.createElement("label");
+            searchLabel.innerHTML =
+              '<span class="screen-reader-text">Search for:</span>';
+            searchLabel.appendChild(searchInput);
+            existingForm.insertBefore(searchLabel, existingForm.firstChild);
+          }
+        }
+        if (!existingForm.querySelector(".search-submit")) {
+          var submit = document.createElement("input");
+          submit.type = "submit";
+          submit.className = "search-submit";
+          submit.value = "Search";
+          existingForm.appendChild(submit);
+        }
+        searchWidget.appendChild(existingForm);
+      } else {
+        var searchForm = document.createElement("form");
+        searchForm.setAttribute("role", "search");
+        searchForm.className = "search-form";
+        searchForm.innerHTML =
+          '<label><span class="screen-reader-text">Search for:</span>' +
+          '<input type="search" class="search-field" id="search" placeholder="Search &hellip;" aria-label="Search"></label>' +
+          '<input type="submit" class="search-submit" value="Search">';
+        searchWidget.appendChild(searchForm);
+      }
+
+      var locationWidget = document.createElement("aside");
+      locationWidget.id = "flexipages-4";
+      locationWidget.className = "widget widget_pages widget_flexipages flexipages_widget";
+
+      var locationTitle = document.createElement("h1");
+      locationTitle.className = "widget-title";
+      locationTitle.textContent = "Location";
+
+      var locationNav = header.querySelector('nav[aria-label="Table of contents"]');
+      if (locationNav) {
+        var locationList = locationNav.querySelector(".book-toc");
+        if (locationList) {
+          locationList.classList.add("location-list");
+          locationList.querySelectorAll(".book-toc-toggle").forEach(function (toggle) {
+            toggle.remove();
+          });
+          locationList.querySelectorAll(".book-toc-section").forEach(function (section) {
+            section.classList.add("children");
+          });
+          locationList.querySelectorAll(".book-toc-topic").forEach(function (topic) {
+            topic.classList.add("page_item");
+            if (topic.querySelector(".book-toc-section")) {
+              topic.classList.add("page_item_has_children");
+            }
+            var header = topic.querySelector(".book-toc-topic-header");
+            var link = topic.querySelector(".book-toc-topic-header > a");
+            if (header && link) {
+              topic.insertBefore(link, topic.firstChild);
+              header.remove();
+            }
+            if (topic.querySelector(".active, .active-parent")) {
+              topic.classList.add("current_page_item");
+            }
+          });
+        }
+        locationWidget.appendChild(locationTitle);
+        if (locationList) {
+          locationWidget.appendChild(locationList);
+        }
+      }
+
+      var controlsWidget = document.createElement("aside");
+      controlsWidget.id = "zeno_fr_widget-3";
+      controlsWidget.className = "widget widget_controls Zeno_FR_Widget";
+
+      var controlsRow = document.createElement("div");
+      controlsRow.className = "sidebar-controls-row";
+
+      var fontWidget = document.createElement("div");
+      fontWidget.className = "zeno_font_resizer_container";
+      fontWidget.innerHTML =
+        '<p class="zeno_font_resizer">' +
+        '<span>' +
+        '<a href="#" class="zeno_font_resizer_minus" title="Decrease font size">A<span class="screen-reader-text"> Decrease font size.</span></a> ' +
+        '<a href="#" class="zeno_font_resizer_reset" title="Reset font size">A<span class="screen-reader-text"> Reset font size.</span></a> ' +
+        '<a href="#" class="zeno_font_resizer_add" title="Increase font size">A<span class="screen-reader-text"> Increase font size.</span></a>' +
+        "</span></p>";
+
+      var themeBtn = document.createElement("button");
+      themeBtn.id = "theme-toggle";
+      themeBtn.className = "theme-toggle";
+      themeBtn.type = "button";
+      themeBtn.setAttribute("aria-label", "Toggle dark and light mode");
+
+      controlsRow.appendChild(fontWidget);
+      controlsRow.appendChild(themeBtn);
+      controlsWidget.appendChild(controlsRow);
+
+      contentSidebar.appendChild(searchWidget);
+      contentSidebar.appendChild(locationWidget);
+      contentSidebar.appendChild(controlsWidget);
+
+      mainContent.appendChild(contentArea);
+      mainContent.appendChild(contentSidebar);
+      siteMain.appendChild(mainContent);
+
+      var secondary = document.createElement("div");
+      secondary.id = "secondary";
+      secondary.innerHTML = '<h2 class="site-description"></h2>';
+
+      var siteFooter = document.createElement("footer");
+      siteFooter.id = "colophon";
+      siteFooter.className = "site-footer";
+      siteFooter.setAttribute("role", "contentinfo");
+      siteFooter.innerHTML =
+        '<div class="site-info"><em>' +
+        bookTitle +
+        "</em> — built with <a href=\"https://bookdown.org\">bookdown</a></div>";
+
+      page.appendChild(masthead);
+      page.appendChild(siteMain);
+      page.appendChild(secondary);
+      page.appendChild(siteFooter);
+
+      container.parentNode.insertBefore(page, container);
+      container.remove();
+      if (chapterSidebar) chapterSidebar.remove();
+      if (oldFooter) oldFooter.remove();
+
+      function currentTheme() {
+        return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      }
+
+      function renderTheme(theme) {
+        themeBtn.innerHTML = theme === "dark" ? SUN : MOON;
+        themeBtn.setAttribute(
+          "title",
+          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+        );
+      }
+
+      function applyFontSize(size) {
+        fontSize = Math.max(FONT_MIN, Math.min(FONT_MAX, size));
+        root.style.fontSize = fontSize + "px";
+        try {
+          localStorage.setItem("book-font-size", String(fontSize));
+        } catch (e) {}
+      }
+
+      try {
+        var storedFont = localStorage.getItem("book-font-size");
+        if (storedFont !== null) {
+          fontSize = parseFloat(storedFont);
+        }
+      } catch (e) {}
+      applyFontSize(fontSize);
+      renderTheme(currentTheme());
+
+      themeBtn.addEventListener("click", function () {
+        var next = currentTheme() === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try {
+          localStorage.setItem("book-theme", next);
+        } catch (e) {}
+        renderTheme(next);
+      });
+
+      fontWidget.querySelector(".zeno_font_resizer_minus").addEventListener("click", function (e) {
+        e.preventDefault();
+        applyFontSize(fontSize - FONT_STEP);
+      });
+      fontWidget.querySelector(".zeno_font_resizer_reset").addEventListener("click", function (e) {
+        e.preventDefault();
+        applyFontSize(FONT_BASE);
+      });
+      fontWidget.querySelector(".zeno_font_resizer_add").addEventListener("click", function (e) {
+        e.preventDefault();
+        applyFontSize(fontSize + FONT_STEP);
+      });
+
+      primaryNav.querySelectorAll(".page_item_has_children").forEach(function (item) {
+        item.addEventListener("mouseenter", function () {
+          item.classList.add("focus");
+        });
+        item.addEventListener("mouseleave", function () {
+          item.classList.remove("focus");
+        });
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initClassicLayout);
+    } else {
+      initClassicLayout();
+    }
+  })();
+</script><div class="chapter-nav">
+<div class="prev"><a href="fourier-transform.html"><span class="header-section-number">27</span> Fourier Transform</a></div>
+<div class="next"><a href="complex-analysis.html"><span class="header-section-number">29</span> Complex Analysis</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#sets"><span class="header-section-number">28</span> Sets</a></li></ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Mathematics for Physics</strong>" was written by bignumber-material. </p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>
