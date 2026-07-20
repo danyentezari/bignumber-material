@@ -63,12 +63,13 @@ def lookup_entry(
     return None
 
 
-def render_link(item: dict[str, str], current_href: str) -> str:
+def render_link(item: dict[str, str], current_href: str, label: str | None = None) -> str:
     active_class = "active" if item["href"] == current_href else ""
+    text = label if label else item["title"]
     return (
         f'<a class="{active_class}" href="{item["href"]}">'
         f'<span class="header-section-number">{item["section_number"]}</span> '
-        f'{item["title"]}</a>'
+        f"{text}</a>"
     )
 
 
@@ -76,6 +77,7 @@ def render_parent_link(
     item: dict[str, str],
     current_href: str,
     child_items: list[dict[str, str]],
+    label: str | None = None,
 ) -> str:
     classes: list[str] = []
     if item["href"] == current_href:
@@ -84,10 +86,11 @@ def render_parent_link(
         classes.append("active-parent")
     active_class = " ".join(classes)
     class_attr = f' class="{active_class}"' if active_class else ' class=""'
+    text = label if label else item["title"]
     return (
         f"<a{class_attr} href=\"{item['href']}\">"
         f'<span class="header-section-number">{item["section_number"]}</span> '
-        f"{item['title']}</a>"
+        f"{text}</a>"
     )
 
 
@@ -115,6 +118,9 @@ def build_sidebar_toc(
                 if child_item:
                     child_items.append(child_item)
 
+        label = entry.get("label")
+        label_text = label if isinstance(label, str) else None
+
         lines.append('<li class="book-toc-topic book-toc-topic--leaf">')
         lines.append('<div class="book-toc-topic-header">')
         lines.append(
@@ -122,9 +128,11 @@ def build_sidebar_toc(
             'aria-hidden="true"></span>'
         )
         if child_items:
-            lines.append(render_parent_link(main_item, current_href, child_items))
+            lines.append(
+                render_parent_link(main_item, current_href, child_items, label_text)
+            )
         else:
-            lines.append(render_link(main_item, current_href))
+            lines.append(render_link(main_item, current_href, label_text))
         lines.append("</div>")
         lines.append("</li>")
 

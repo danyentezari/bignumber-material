@@ -12,7 +12,4 @@ where
 - $H$ (or $\mathcal{H}$) is the Hilbert space.
 - $\langle \alpha | \beta \rangle$ is the inner product associating a pair of vectors with a complex scalar.
 - $L^2(a, b)$ is the standard example of an infinite-dimensional Hilbert space consisting of square-integrable functions.
-- A Cauchy sequence is a sequence where the distance between elements eventually becomes arbitrarily small.
-- Convergence means the sequence approaches a specific limit element that resides inside the same Hilbert space.
-
 </i>

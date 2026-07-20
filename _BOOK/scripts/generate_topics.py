@@ -60,6 +60,45 @@ def build_topic_index(entries: list[tuple[str, str]]) -> str:
     return "\n".join(lines)
 
 
+def topic_index_for_siblings(sibling_files: list[Path]) -> str:
+    entries = [
+        (extract_title(path), f"{slugify_text(extract_title(path))}.html")
+        for path in sibling_files
+    ]
+    return build_topic_index(entries)
+
+
+def write_generated_page(folder: Path, source: Path, topic_index: str) -> Path:
+    """Copy a topic markdown page into generated/, appending the folder topic index."""
+    text = source.read_text(encoding="utf-8").rstrip()
+    generated_path = GENERATED_DIR / folder.name / source.name
+    generated_path.parent.mkdir(parents=True, exist_ok=True)
+    content = f"{text}\n\n"
+    if topic_index:
+        content += topic_index
+    generated_path.write_text(content, encoding="utf-8")
+    return generated_path
+
+
+def write_generated_main_topic(
+    folder: Path,
+    main_file: Path,
+    sibling_files: list[Path],
+) -> tuple[Path, str]:
+    title, body = split_main_topic(main_file, folder)
+    topic_index = topic_index_for_siblings(sibling_files)
+
+    generated_path = GENERATED_DIR / folder.name / main_file.name
+    generated_path.parent.mkdir(parents=True, exist_ok=True)
+    content = f"# {title}\n\n"
+    if body:
+        content += f"{body}\n\n"
+    if topic_index:
+        content += topic_index
+    generated_path.write_text(content, encoding="utf-8")
+    return generated_path, title
+
+
 def load_sidebar_order() -> list[str] | None:
     """Read topic folder names from sidebar.txt (one per line)."""
     if not SIDEBAR_TXT.is_file():
@@ -148,30 +187,6 @@ def relative_bookdown_path(path: Path) -> str:
     return f"../{path.relative_to(REPO_ROOT).as_posix()}"
 
 
-def write_generated_main_topic(
-    folder: Path,
-    main_file: Path,
-    sibling_files: list[Path],
-) -> tuple[Path, str]:
-    title, body = split_main_topic(main_file, folder)
-
-    index_entries = [
-        (extract_title(path), f"{slugify_text(extract_title(path))}.html")
-        for path in sibling_files
-    ]
-    topic_index = build_topic_index(index_entries)
-
-    generated_path = GENERATED_DIR / folder.name / main_file.name
-    generated_path.parent.mkdir(parents=True, exist_ok=True)
-    content = f"# {title}\n\n"
-    if body:
-        content += f"{body}\n\n"
-    if topic_index:
-        content += topic_index
-    generated_path.write_text(content, encoding="utf-8")
-    return generated_path, title
-
-
 def write_bookdown_yml(main_chapters: list[str], sub_chapters: list[str]) -> None:
     lines = [
         'book_filename: "TOPICS"',
@@ -187,6 +202,38 @@ def write_bookdown_yml(main_chapters: list[str], sub_chapters: list[str]) -> Non
     BOOKDOWN_YML.write_text("\n".join(lines), encoding="utf-8")
 
 
+def assign_chapter_hrefs(titles: list[str]) -> list[str]:
+    """Match bookdown's slug collision scheme: foo.html, foo-1.html, foo-2.html, ..."""
+    # Home page always owns index.html; reserve it so a chapter titled Index becomes index-1.html.
+    counts: dict[str, int] = {"index": 1}
+    hrefs: list[str] = []
+    for index, title in enumerate(titles):
+        if index == 0:
+            hrefs.append("index.html")
+            continue
+        base = slugify_text(title)
+        n = counts.get(base, 0)
+        counts[base] = n + 1
+        hrefs.append(f"{base}.html" if n == 0 else f"{base}-{n}.html")
+    return hrefs
+
+
+def write_site_index(entries: list[tuple[str, str]]) -> Path:
+    """Write alphabetical site-wide subtopic index page."""
+    sorted_entries = sorted(entries, key=lambda item: item[0].lower())
+    topic_index = build_topic_index(sorted_entries)
+    path = GENERATED_DIR / "Site-Index.md"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    # Heading must not be "Index" — that would overwrite the home page index.html.
+    content = "# Site Index\n\n"
+    if topic_index:
+        content += topic_index
+    else:
+        content += "No subtopics yet.\n"
+    path.write_text(content, encoding="utf-8")
+    return path
+
+
 def write_sidebar_pages(topics: list[dict[str, object]]) -> None:
     GENERATED_DIR.mkdir(parents=True, exist_ok=True)
     SIDEBAR_PAGES_JSON.write_text(json.dumps(topics, indent=2) + "\n", encoding="utf-8")
@@ -195,6 +242,8 @@ def write_sidebar_pages(topics: list[dict[str, object]]) -> None:
 def generate() -> None:
     main_chapters: list[str] = []
     sub_chapters: list[str] = []
+    main_titles: list[str] = []
+    sub_titles: list[str] = []
     sidebar_topics: list[dict[str, object]] = [
         {"title": "Introduction", "href": "index.html", "children": []}
     ]
@@ -219,6 +268,7 @@ def generate() -> None:
             folder, main_file, sibling_files
         )
         main_chapters.append(relative_bookdown_path(generated_main))
+        main_titles.append(title)
         sidebar_topics.append(
             {
                 "title": title,
@@ -229,8 +279,34 @@ def generate() -> None:
             }
         )
 
+        topic_index = topic_index_for_siblings(sibling_files)
         for path in sibling_files:
-            sub_chapters.append(relative_bookdown_path(path))
+            generated_sub = write_generated_page(folder, path, topic_index)
+            sub_chapters.append(relative_bookdown_path(generated_sub))
+            sub_titles.append(extract_title(path))
+
+    # Chapter order in the book: Introduction, mains, Index, then all subtopics.
+    # Index is a root sidebar page listing every subtopic alphabetically.
+    index_path = write_site_index([])  # placeholder; filled after href assignment
+    main_chapters.append(relative_bookdown_path(index_path))
+    main_titles.append("Site Index")
+
+    all_titles = ["Introduction", *main_titles, *sub_titles]
+    all_hrefs = assign_chapter_hrefs(all_titles)
+    # Subtopic hrefs start after Introduction + all main titles (including Site Index).
+    sub_start = 1 + len(main_titles)
+    sub_entries = list(zip(sub_titles, all_hrefs[sub_start:]))
+    write_site_index(sub_entries)
+
+    index_href = all_hrefs[1 + len(main_titles) - 1]
+    sidebar_topics.append(
+        {
+            "title": "Site Index",
+            "label": "Index",
+            "href": index_href,
+            "children": [],
+        }
+    )
 
     write_bookdown_yml(main_chapters, sub_chapters)
     write_sidebar_pages(sidebar_topics)

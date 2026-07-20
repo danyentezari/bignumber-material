@@ -1,8 +1,9 @@
 # Complex Conjugate
 
+Complex conjugation of complex numbers produces real, non-negative values. This is useful for measuring lengths in complex vector spaces, such as Hilbert spaces. Complex conjugation can be applied to both complex numbers and complex vectors.
 <i>
 
-**definition** (**Complex Conjugate**) A map $\;\bar{\;\cdot\;}: \mathbb{C} \rightarrow \mathbb{C}$ that flips the imaginary part of a complex number:
+**definition [d]** (**Complex Conjugate**) A map $\;\bar{\;\cdot\;}: \mathbb{C} \rightarrow \mathbb{C}$ that flips the imaginary part of a complex number:
 
 - $\overline{a + bi} = a - bi$ .
 
