@@ -182,7 +182,12 @@
 <ul>
 <li>input <span class="math inline">\(\phi = xy^{2}z^{3}\)</span> .</li>
 </ul>
-<p>acts as</p>
+<p>acts via the partial derivatives</p>
+<ul>
+<li>
+<span class="math inline">\(\dfrac{\partial\phi}{\partial x} = y^{2}z^{3}\)</span>, <span class="math inline">\(\dfrac{\partial\phi}{\partial y} = 2xyz^{3}\)</span>, <span class="math inline">\(\dfrac{\partial\phi}{\partial z} = 3xy^{2}z^{2}\)</span> ,</li>
+</ul>
+<p>giving</p>
 <ul>
 <li>
 <span class="math inline">\(\nabla\phi = y^{2}z^{3}\,\hat{\mathbf{i}} + 2xyz^{3}\,\hat{\mathbf{j}} + 3xy^{2}z^{2}\,\hat{\mathbf{k}}\)</span> .</li>
@@ -193,18 +198,32 @@
 <ul>
 <li>input <span class="math inline">\(\mathbf{a} = x^{2}y^{2}\,\hat{\mathbf{i}} + y^{2}z^{2}\,\hat{\mathbf{j}} + x^{2}z^{2}\,\hat{\mathbf{k}}\)</span> .</li>
 </ul>
-<p>acts as</p>
+<p>acts via the partial derivatives</p>
 <ul>
 <li>
-<span class="math inline">\(\nabla\cdot\mathbf{a} = 2(xy^{2} + yz^{2} + x^{2}z)\)</span> .</li>
+<span class="math inline">\(\dfrac{\partial a_{x}}{\partial x} = 2xy^{2}\)</span>, <span class="math inline">\(\dfrac{\partial a_{y}}{\partial y} = 2yz^{2}\)</span>, <span class="math inline">\(\dfrac{\partial a_{z}}{\partial z} = 2x^{2}z\)</span> ,</li>
+</ul>
+<p>giving</p>
+<ul>
+<li>
+<span class="math inline">\(\nabla\cdot\mathbf{a} = 2xy^{2} + 2yz^{2} + 2x^{2}z = 2(xy^{2} + yz^{2} + x^{2}z)\)</span> .</li>
 </ul>
 <p></p>
 <p><i></i></p>
 <p><strong>example [d]</strong> (<strong>Curl</strong> — Kreyszig) The operator <span class="math inline">\(\nabla\times\)</span> with</p>
 <ul>
-<li>input <span class="math inline">\(\mathbf{F} = [y,\, z,\, x]\)</span> .</li>
+<li>input <span class="math inline">\(\mathbf{F} = [y,\, z,\, x]\)</span> , so <span class="math inline">\(F_{x} = y\)</span>, <span class="math inline">\(F_{y} = z\)</span>, <span class="math inline">\(F_{z} = x\)</span> .</li>
 </ul>
-<p>acts as</p>
+<p>acts via the partial derivatives</p>
+<ul>
+<li>
+<span class="math inline">\(\dfrac{\partial F_{z}}{\partial y} - \dfrac{\partial F_{y}}{\partial z} = 0 - 1 = -1\)</span> ,</li>
+<li>
+<span class="math inline">\(\dfrac{\partial F_{x}}{\partial z} - \dfrac{\partial F_{z}}{\partial x} = 0 - 1 = -1\)</span> ,</li>
+<li>
+<span class="math inline">\(\dfrac{\partial F_{y}}{\partial x} - \dfrac{\partial F_{x}}{\partial y} = 0 - 1 = -1\)</span> ,</li>
+</ul>
+<p>giving</p>
 <ul>
 <li>
 <span class="math inline">\(\nabla\times\mathbf{F} = [-1,\, -1,\, -1]\)</span> .</li>

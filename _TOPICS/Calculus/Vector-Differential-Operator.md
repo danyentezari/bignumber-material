@@ -22,7 +22,11 @@ where
 
 - input $\phi = xy^{2}z^{3}$ .
 
-acts as
+acts via the partial derivatives
+
+- $\dfrac{\partial\phi}{\partial x} = y^{2}z^{3}$, \quad $\dfrac{\partial\phi}{\partial y} = 2xyz^{3}$, \quad $\dfrac{\partial\phi}{\partial z} = 3xy^{2}z^{2}$ ,
+
+giving
 
 - $\nabla\phi = y^{2}z^{3}\,\hat{\mathbf{i}} + 2xyz^{3}\,\hat{\mathbf{j}} + 3xy^{2}z^{2}\,\hat{\mathbf{k}}$ .
 
@@ -34,9 +38,13 @@ acts as
 
 - input $\mathbf{a} = x^{2}y^{2}\,\hat{\mathbf{i}} + y^{2}z^{2}\,\hat{\mathbf{j}} + x^{2}z^{2}\,\hat{\mathbf{k}}$ .
 
-acts as
+acts via the partial derivatives
 
-- $\nabla\cdot\mathbf{a} = 2(xy^{2} + yz^{2} + x^{2}z)$ .
+- $\dfrac{\partial a_{x}}{\partial x} = 2xy^{2}$, \quad $\dfrac{\partial a_{y}}{\partial y} = 2yz^{2}$, \quad $\dfrac{\partial a_{z}}{\partial z} = 2x^{2}z$ ,
+
+giving
+
+- $\nabla\cdot\mathbf{a} = 2xy^{2} + 2yz^{2} + 2x^{2}z = 2(xy^{2} + yz^{2} + x^{2}z)$ .
 
 </i>
 
@@ -44,9 +52,15 @@ acts as
 
 **example [d]** (**Curl** — Kreyszig) The operator $\nabla\times$ with
 
-- input $\mathbf{F} = [y,\, z,\, x]$ .
+- input $\mathbf{F} = [y,\, z,\, x]$ , so $F_{x} = y$, $F_{y} = z$, $F_{z} = x$ .
 
-acts as
+acts via the partial derivatives
+
+- $\dfrac{\partial F_{z}}{\partial y} - \dfrac{\partial F_{y}}{\partial z} = 0 - 1 = -1$ ,
+- $\dfrac{\partial F_{x}}{\partial z} - \dfrac{\partial F_{z}}{\partial x} = 0 - 1 = -1$ ,
+- $\dfrac{\partial F_{y}}{\partial x} - \dfrac{\partial F_{x}}{\partial y} = 0 - 1 = -1$ ,
+
+giving
 
 - $\nabla\times\mathbf{F} = [-1,\, -1,\, -1]$ .
 
