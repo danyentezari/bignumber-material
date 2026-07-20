@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>115 Stokes’ Theorem for Flux Integral | Mathematics for Physics</title>
+<title>90 Operator | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="\[\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\] Or, \[\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C...">
+<meta name="description" content="definition [d] (Operator = Linear Operator = Linear Transformation = Linear Map) A mapping \(T: V \rightarrow W\) between vector spaces over the same field that preserves linear combinations:...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="115 Stokes’ Theorem for Flux Integral | Mathematics for Physics">
+<meta property="og:title" content="90 Operator | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="\[\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\] Or, \[\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C...">
+<meta property="og:description" content="definition [d] (Operator = Linear Operator = Linear Transformation = Linear Map) A mapping \(T: V \rightarrow W\) between vector spaces over the same field that preserves linear combinations:...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="115 Stokes’ Theorem for Flux Integral | Mathematics for Physics">
-<meta name="twitter:description" content="\[\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\] Or, \[\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C...">
+<meta name="twitter:title" content="90 Operator | Mathematics for Physics">
+<meta name="twitter:description" content="definition [d] (Operator = Linear Operator = Linear Transformation = Linear Map) A mapping \(T: V \rightarrow W\) between vector spaces over the same field that preserves linear combinations:...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -47,7 +47,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Notes", "href": "notes.html", "current": false}, {"title": "Stokes\u2019 Theorem for Flux Integral", "href": "stokes-theorem-for-flux-integral.html", "current": true}]</script>
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Linear Algebra", "href": "linear-algebra.html", "current": false}, {"title": "Operator", "href": "operator.html", "current": true}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -114,7 +114,7 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="linear-algebra.html"><span class="header-section-number">8</span> Linear Algebra</a>
+<a class="active-parent" href="linear-algebra.html"><span class="header-section-number">8</span> Linear Algebra</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
@@ -126,7 +126,7 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active-parent" href="notes.html"><span class="header-section-number">10</span> Notes</a>
+<a class="" href="notes.html"><span class="header-section-number">10</span> Notes</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
@@ -154,51 +154,109 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="stokes-theorem-for-flux-integral" class="section level1" number="115">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="operator" class="section level1" number="90">
 <h1>
-<span class="header-section-number">115</span> Stokes’ Theorem for Flux Integral<a class="anchor" aria-label="anchor" href="#stokes-theorem-for-flux-integral"><i class="fas fa-link"></i></a>
+<span class="header-section-number">90</span> Operator<a class="anchor" aria-label="anchor" href="#operator"><i class="fas fa-link"></i></a>
 </h1>
-<p><span class="math display">\[\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span></p>
-<p>Or,</p>
-<p><span class="math display">\[\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span></p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em>Operator = Linear Operator = Linear Transformation = Linear Map</em>) A mapping <span class="math inline">\(T: V \rightarrow W\)</span> between vector spaces over the same field that preserves linear combinations:</p>
+<ul>
+<li>
+<span class="math inline">\(T(\alpha\mathbf{u} + \beta\mathbf{v}) = \alpha\, T(\mathbf{u}) + \beta\, T(\mathbf{v})\)</span> .</li>
+</ul>
 <p>where</p>
 <ul>
 <li>
-<span class="math inline">\(S\)</span> a piecewise smooth oriented surface in space</li>
+<span class="math inline">\(V\)</span> and <span class="math inline">\(W\)</span> are vector spaces over the same scalar field <span class="math inline">\(K\)</span>.</li>
 <li>
-<span class="math inline">\(C\)</span> a piecewise smooth simple closed curve boundary of <span class="math inline">\(S\)</span>
-</li>
-<li>
-<span class="math inline">\(\mathbf{n}\)</span> is the unit normal vector of <span class="math inline">\(S\)</span>.</li>
-<li>
-<span class="math inline">\(\mathbf{r}'(s)\)</span> is the unit tangent vector of <span class="math inline">\(C\)</span>.</li>
-<li>
-<span class="math inline">\(s\)</span> is the arc length of <span class="math inline">\(C\)</span>.</li>
-<li>
-<span class="math inline">\(\mathbf{F}(x, y, z)\)</span> is a continuous vector function</li>
+<span class="math inline">\(\mathbf{u}, \mathbf{v} \in V\)</span> and <span class="math inline">\(\alpha, \beta \in K\)</span>.</li>
 </ul>
-<p><br></p>
+<p></p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em>Operator = Linear Operator = Linear Transformation = Linear Map</em>) A mapping <span class="math inline">\(T: V \rightarrow W\)</span> between vector spaces over the same field that satisfies, for all vectors and scalars:</p>
+<ul>
+<li>(Additivity) <span class="math inline">\(T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})\)</span> .</li>
+<li>(Homogeneity) <span class="math inline">\(T(\alpha\mathbf{u}) = \alpha\, T(\mathbf{u})\)</span> .</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(V\)</span> and <span class="math inline">\(W\)</span> are vector spaces over the same scalar field <span class="math inline">\(K\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{u}, \mathbf{v} \in V\)</span> and <span class="math inline">\(\alpha \in K\)</span>.</li>
+</ul>
+<p></p>
+<div id="examples" class="section level2" number="90.1">
+<h2>
+<span class="header-section-number">90.1</span> Examples<a class="anchor" aria-label="anchor" href="#examples"><i class="fas fa-link"></i></a>
+</h2>
+<p><i></i></p>
+<p><strong>example [d]</strong> (<strong>Matrix multiplication</strong> — Shifrin &amp; Adams) The operator <span class="math inline">\(T(\mathbf{x}) = A\mathbf{x}\)</span> with</p>
+<ul>
+<li>
+<span class="math inline">\(A = \begin{pmatrix} 1 &amp; 3 \\ 2 &amp; -1 \\ 1 &amp; 1 \end{pmatrix}\)</span>, <span class="math inline">\(\mathbf{x} = \begin{pmatrix} 4 \\ -1 \end{pmatrix}\)</span> .</li>
+</ul>
+<p>acts as</p>
+<ul>
+<li>
+<span class="math inline">\(A\mathbf{x} = \begin{pmatrix} 1 \\ 9 \\ 3 \end{pmatrix}\)</span> .</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>example [d]</strong> (<strong>Matrix multiplication</strong> — Kreyszig) The operator <span class="math inline">\(T(\mathbf{x}) = A\mathbf{x}\)</span> with</p>
+<ul>
+<li>
+<span class="math inline">\(A = \begin{pmatrix} 4 &amp; 2 \\ 1 &amp; 8 \end{pmatrix}\)</span>, <span class="math inline">\(\mathbf{x} = \begin{pmatrix} 3 \\ 5 \end{pmatrix}\)</span> .</li>
+</ul>
+<p>acts as</p>
+<ul>
+<li>
+<span class="math inline">\(A\mathbf{x} = \begin{pmatrix} 22 \\ 43 \end{pmatrix}\)</span> .</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>example [d]</strong> (<strong>Differentiation</strong> — Aleksandrov et al.) The operator <span class="math inline">\(D = \dfrac{d}{dx}\)</span> with</p>
+<ul>
+<li>input <span class="math inline">\(y = x^{2}\)</span> .</li>
+</ul>
+<p>acts as</p>
+<ul>
+<li>
+<span class="math inline">\(Dy = 2x\)</span> .</li>
+</ul>
+<p></p>
+</div>
+<div id="references-14" class="section level2" number="90.2">
+<h2>
+<span class="header-section-number">90.2</span> References<a class="anchor" aria-label="anchor" href="#references-14"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Kreyszig, E. <em>Introductory Functional Analysis with Applications</em>. Wiley, 1989. — linear operator axioms; matrix example <span class="math inline">\(A=\begin{pmatrix}4&amp;2\\1&amp;8\end{pmatrix}\)</span>, <span class="math inline">\(\mathbf{x}=\begin{pmatrix}3\\5\end{pmatrix}\)</span>.</li>
+<li>Hassani, S. <em>Mathematical Physics: A Modern Introduction to Its Foundations</em>. Springer, 2013. — linear transformation / linear map.</li>
+<li>Riley, K. F., Hobson, M. P., &amp; Bence, S. J. <em>Mathematical Methods for Physics and Engineering</em>. Cambridge University Press, 2006. — linear operator / linear transformation.</li>
+<li>Shifrin, T., &amp; Adams, M. <em>Linear Algebra: A Geometric Approach</em>. W. H. Freeman, 2010. — matrix example <span class="math inline">\(A=\begin{pmatrix}1&amp;3\\2&amp;-1\\1&amp;1\end{pmatrix}\)</span>, <span class="math inline">\(\mathbf{x}=\begin{pmatrix}4\\-1\end{pmatrix}\)</span>.</li>
+<li>Aleksandrov, A. D., Kolmogorov, A. N., &amp; Lavrent’ev, M. A. <em>Mathematics: Its Content, Methods and Meaning</em>. Dover, 1999. — differentiation example <span class="math inline">\(y=x^{2}\mapsto 2x\)</span>.</li>
+<li>Arfken, G. B., Weber, H. J., &amp; Harris, F. E. <em>Mathematical Methods for Physicists</em>, 7th ed. Elsevier / Academic Press, 2013. — matrix multiplication as a linear transformation.</li>
+<li>Cahill, K. <em>Physical Mathematics</em>. Cambridge University Press, 2019. — matrix multiplication as a linear transformation.</li>
+</ol>
 <div class="topic-index">
 <ul>
-<li><a href="complex-analysis.html">Complex Analysis</a></li>
 <li><a href="complex-conjugate.html">Complex Conjugate</a></li>
-<li><a href="electromagnetism.html">Electromagnetism</a></li>
-<li><a href="lorentz-force-law.html">Lorentz Force Law</a></li>
-<li><a href="mathematics-appendix.html">Mathematics Appendix</a></li>
-<li><a href="maxwells-equations.html">Maxwell’s Equations</a></li>
-<li><a href="operators.html">Operators</a></li>
-<li><a href="physics-mathematical-appendix.html">Physics Mathematical Appendix</a></li>
-<li><a href="radiation.html">Radiation</a></li>
-<li><a href="schrodinger-equation-time-independent.html">Schrodinger Equation Time-Independent</a></li>
-<li><a href="schrodinger-equations.html">Schrodinger Equations</a></li>
-<li><a href="special-relativity-and-electric-fields.html">Special Relativity and Electric Fields</a></li>
-<li><a href="stokes-theorem-for-flux-integral.html">Stokes’ Theorem for Flux Integral</a></li>
-<li><a href="stokes-theorem-physics.html">Stokes’ Theorem Physics</a></li>
-<li><a href="time-dependent-schrodinger-equation-1-dimensional.html">Time Dependent Schrodinger Equation 1-Dimensional</a></li>
-<li><a href="time-dependent-schrodinger-equation-generalized.html">Time Dependent Schrodinger Equation Generalized</a></li>
+<li><a href="conjugate-symmetry.html">Conjugate Symmetry</a></li>
+<li><a href="dual-space.html">Dual Space</a></li>
+<li><a href="hermitian-conjugate.html">Hermitian Conjugate</a></li>
+<li><a href="inner-product.html">Inner Product</a></li>
+<li><a href="inner-product-space.html">Inner Product Space</a></li>
+<li><a href="kronecker-delta.html">Kronecker Delta</a></li>
+<li><a href="linear-function.html">Linear Function</a></li>
+<li><a href="linear-map.html">Linear Map</a></li>
+<li><a href="operator.html">Operator</a></li>
+<li><a href="orthonormal.html">Orthonormal</a></li>
+<li><a href="orthonormal-set-of-functions.html">Orthonormal Set of Functions</a></li>
 </ul>
 </div>
 
+</div>
 </div>
 <script>
   (function () {
@@ -623,11 +681,15 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="special-relativity-and-electric-fields.html"><span class="header-section-number">114</span> Special Relativity and Electric Fields</a></div>
-<div class="next"><a href="stokes-theorem-physics.html"><span class="header-section-number">116</span> Stokes’ Theorem Physics</a></div>
+<div class="prev"><a href="linear-map.html"><span class="header-section-number">89</span> Linear Map</a></div>
+<div class="next"><a href="orthonormal.html"><span class="header-section-number">91</span> Orthonormal</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#stokes-theorem-for-flux-integral"><span class="header-section-number">115</span> Stokes’ Theorem for Flux Integral</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#operator"><span class="header-section-number">90</span> Operator</a></li>
+<li><a class="nav-link" href="#examples"><span class="header-section-number">90.1</span> Examples</a></li>
+<li><a class="nav-link" href="#references-14"><span class="header-section-number">90.2</span> References</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
