@@ -173,15 +173,53 @@
 <li>acting on a scalar <span class="math inline">\(f\)</span>: <span class="math inline">\(\nabla f\)</span> (gradient); on a vector <span class="math inline">\(\mathbf{v}\)</span>: <span class="math inline">\(\nabla \cdot \mathbf{v}\)</span> (divergence), <span class="math inline">\(\nabla \times \mathbf{v}\)</span> (curl).</li>
 </ul>
 <p></p>
-<div id="references-2" class="section level2" number="70.1">
+<div id="examples" class="section level2" number="70.1">
 <h2>
-<span class="header-section-number">70.1</span> References<a class="anchor" aria-label="anchor" href="#references-2"><i class="fas fa-link"></i></a>
+<span class="header-section-number">70.1</span> Examples<a class="anchor" aria-label="anchor" href="#examples"><i class="fas fa-link"></i></a>
+</h2>
+<p><i></i></p>
+<p><strong>example [d]</strong> (<strong>Gradient</strong> — Riley et al.) The operator <span class="math inline">\(\nabla\)</span> with</p>
+<ul>
+<li>input <span class="math inline">\(\phi = xy^{2}z^{3}\)</span> .</li>
+</ul>
+<p>acts as</p>
+<ul>
+<li>
+<span class="math inline">\(\nabla\phi = y^{2}z^{3}\,\hat{\mathbf{i}} + 2xyz^{3}\,\hat{\mathbf{j}} + 3xy^{2}z^{2}\,\hat{\mathbf{k}}\)</span> .</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>example [d]</strong> (<strong>Divergence</strong> — Riley et al.) The operator <span class="math inline">\(\nabla\cdot\)</span> with</p>
+<ul>
+<li>input <span class="math inline">\(\mathbf{a} = x^{2}y^{2}\,\hat{\mathbf{i}} + y^{2}z^{2}\,\hat{\mathbf{j}} + x^{2}z^{2}\,\hat{\mathbf{k}}\)</span> .</li>
+</ul>
+<p>acts as</p>
+<ul>
+<li>
+<span class="math inline">\(\nabla\cdot\mathbf{a} = 2(xy^{2} + yz^{2} + x^{2}z)\)</span> .</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>example [d]</strong> (<strong>Curl</strong> — Kreyszig) The operator <span class="math inline">\(\nabla\times\)</span> with</p>
+<ul>
+<li>input <span class="math inline">\(\mathbf{F} = [y,\, z,\, x]\)</span> .</li>
+</ul>
+<p>acts as</p>
+<ul>
+<li>
+<span class="math inline">\(\nabla\times\mathbf{F} = [-1,\, -1,\, -1]\)</span> .</li>
+</ul>
+<p></p>
+</div>
+<div id="references-2" class="section level2" number="70.2">
+<h2>
+<span class="header-section-number">70.2</span> References<a class="anchor" aria-label="anchor" href="#references-2"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
 <li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — del / nabla; gradient, divergence, curl.</li>
 <li>Arfken, G. B., Weber, H. J., &amp; Harris, F. E. <em>Mathematical Methods for Physicists</em>, 7th ed. Elsevier / Academic Press, 2013. — vector differential operator.</li>
-<li>Kreyszig, E. <em>Advanced Engineering Mathematics</em>, 10th ed. Wiley, 2011. — nabla operator.</li>
-<li>Riley, K. F., Hobson, M. P., &amp; Bence, S. J. <em>Mathematical Methods for Physics and Engineering</em>. Cambridge University Press, 2006. — del operator.</li>
+<li>Kreyszig, E. <em>Advanced Engineering Mathematics</em>, 10th ed. Wiley, 2011. — nabla operator; curl example <span class="math inline">\(\mathbf{F}=[y,z,x]\mapsto[-1,-1,-1]\)</span>.</li>
+<li>Riley, K. F., Hobson, M. P., &amp; Bence, S. J. <em>Mathematical Methods for Physics and Engineering</em>. Cambridge University Press, 2006. — del operator; gradient of <span class="math inline">\(\phi=xy^{2}z^{3}\)</span>; divergence of <span class="math inline">\(\mathbf{a}=x^{2}y^{2}\,\hat{\mathbf{i}}+y^{2}z^{2}\,\hat{\mathbf{j}}+x^{2}z^{2}\,\hat{\mathbf{k}}\)</span>.</li>
 </ol>
 <div class="topic-index">
 <ul>
@@ -625,7 +663,8 @@
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#vector-differential-operator"><span class="header-section-number">70</span> Vector Differential Operator</a></li>
-<li><a class="nav-link" href="#references-2"><span class="header-section-number">70.1</span> References</a></li>
+<li><a class="nav-link" href="#examples"><span class="header-section-number">70.1</span> Examples</a></li>
+<li><a class="nav-link" href="#references-2"><span class="header-section-number">70.2</span> References</a></li>
 </ul>
 
       <div class="book-extra">

@@ -76,6 +76,7 @@ double-integral-notational-variations
 projection
 topology-reference
 vector-differential-operator
+examples
 references-2
 vector-projection
 cauchy-sequence
@@ -108,7 +109,7 @@ kronecker-delta
 linear-function
 linear-map
 operator
-examples
+examples-1
 references-14
 orthonormal
 orthonormal-set-of-functions
