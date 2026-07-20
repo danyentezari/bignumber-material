@@ -100,16 +100,33 @@ def extract_synonym_chain(path: Path) -> str | None:
     if not synonym_names:
         return None
 
-    # One synonym chain on the page: use it even if H1 wording differs slightly
-    # (e.g. H1 "Tensors" / "One-Form" vs definition "Tensor = ..." / "1-form = ...").
-    if len(synonym_names) == 1:
+    def matches_title(name: str) -> bool:
+        primary = re.split(r"\s*=\s*", name, maxsplit=1)[0].strip()
+        if primary.lower() == title.lower():
+            return True
+        primary_key = slugify_text(primary)
+        title_key = slugify_text(title)
+        if primary_key == title_key:
+            return True
+        # Allow singular/plural drift: Tensor vs Tensors, One-Form vs 1-form.
+        if primary_key.rstrip("s") == title_key.rstrip("s"):
+            return True
+        if primary_key.replace("1-form", "one-form") == title_key:
+            return True
+        if title_key.replace("one-form", "1-form") == primary_key:
+            return True
+        return False
+
+    # Prefer a synonym chain whose primary name matches this page's H1.
+    for name in synonym_names:
+        if matches_title(name):
+            return name
+
+    # Single-definition pages may use a slightly different H1 (e.g. Delta Function
+    # vs Dirac Delta Function = ...); still use the chain.
+    if len(names) == 1:
         return synonym_names[0]
 
-    title_key = slugify_text(title)
-    for name in synonym_names:
-        primary = re.split(r"\s*=\s*", name, maxsplit=1)[0].strip()
-        if slugify_text(primary) == title_key or primary.lower() == title.lower():
-            return name
     return None
 
 
