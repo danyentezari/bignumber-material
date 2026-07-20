@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>7 Linear Algebra | Mathematics for Physics</title>
+<title>8 Linear Algebra | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="definition (Linear Map) A map between vector spaces, \(F: \mathbf{V} \rightarrow \mathbf{W}\), is a linear map if the following conditions hold. additivity \(F(\mathbf{u}+\mathbf{v}) =...">
+<meta name="description" content="Complex Conjugate Conjugate Symmetry Inner Product Space Kronecker Delta Linear Function Linear Map Orthonormal Orthonormal Set of Functions    (function () {   var MOON =    '&lt;svg...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="7 Linear Algebra | Mathematics for Physics">
+<meta property="og:title" content="8 Linear Algebra | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="definition (Linear Map) A map between vector spaces, \(F: \mathbf{V} \rightarrow \mathbf{W}\), is a linear map if the following conditions hold. additivity \(F(\mathbf{u}+\mathbf{v}) =...">
+<meta property="og:description" content="Complex Conjugate Conjugate Symmetry Inner Product Space Kronecker Delta Linear Function Linear Map Orthonormal Orthonormal Set of Functions    (function () {   var MOON =    '&lt;svg...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="7 Linear Algebra | Mathematics for Physics">
-<meta name="twitter:description" content="definition (Linear Map) A map between vector spaces, \(F: \mathbf{V} \rightarrow \mathbf{W}\), is a linear map if the following conditions hold. additivity \(F(\mathbf{u}+\mathbf{v}) =...">
+<meta name="twitter:title" content="8 Linear Algebra | Mathematics for Physics">
+<meta name="twitter:description" content="Complex Conjugate Conjugate Symmetry Inner Product Space Kronecker Delta Linear Function Linear Map Orthonormal Orthonormal Set of Functions    (function () {   var MOON =    '&lt;svg...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -47,7 +47,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html"}]</script>
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Linear Algebra", "href": "linear-algebra.html", "current": true}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -78,55 +78,55 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="abstract-algebra.html"><span class="header-section-number">2</span> Abstract Algebra</a>
+<a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="calculus.html"><span class="header-section-number">3</span> Calculus</a>
+<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="differential-geometry.html"><span class="header-section-number">4</span> Differential Geometry</a>
+<a class="" href="topology.html"><span class="header-section-number">4</span> Topology</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="electromagnetism.html"><span class="header-section-number">5</span> Electromagnetism</a>
+<a class="" href="differential-geometry.html"><span class="header-section-number">5</span> Differential Geometry</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="functional-analysis.html"><span class="header-section-number">6</span> Functional Analysis</a>
+<a class="" href="calculus.html"><span class="header-section-number">6</span> Calculus</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active" href="linear-algebra.html"><span class="header-section-number">7</span> Linear Algebra</a>
+<a class="" href="functional-analysis.html"><span class="header-section-number">7</span> Functional Analysis</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="notes.html"><span class="header-section-number">8</span> Notes</a>
+<a class="active" href="linear-algebra.html"><span class="header-section-number">8</span> Linear Algebra</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="quantum-mechanics-for-electromagnetism.html"><span class="header-section-number">9</span> Quantum Mechanics for Electromagnetism</a>
+<a class="" href="abstract-algebra.html"><span class="header-section-number">9</span> Abstract Algebra</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="topology.html"><span class="header-section-number">10</span> Topology</a>
+<a class="" href="notes.html"><span class="header-section-number">10</span> Notes</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
@@ -142,122 +142,14 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="linear-algebra" class="section level1" number="7">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="linear-algebra" class="section level1" number="8">
 <h1>
-<span class="header-section-number">7</span> Linear Algebra<a class="anchor" aria-label="anchor" href="#linear-algebra"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8</span> Linear Algebra<a class="anchor" aria-label="anchor" href="#linear-algebra"><i class="fas fa-link"></i></a>
 </h1>
-<p><i></i></p>
-<p><strong>definition</strong> (<em>Linear Map</em>)
-A map between vector spaces, <span class="math inline">\(F:  \mathbf{V} \rightarrow \mathbf{W}\)</span>, is a linear map if the following conditions hold.</p>
-<ul>
-<li>
-<strong>additivity</strong> <span class="math inline">\(F(\mathbf{u}+\mathbf{v}) = F(\mathbf{u}) + F(\mathbf{v})\)</span>   for all <span class="math inline">\(\mathbf{u},\mathbf{v} \in \mathbf{V}\)</span>
-</li>
-<li>
-<strong>homogeneity</strong> <span class="math inline">\(F(c\mathbf{v}) = cF(\mathbf{v})\)</span>   for all <span class="math inline">\(c \in \mathbb{R}, \mathbf{v} \in \mathbf{V}\)</span>
-</li>
-</ul>
-<p>where</p>
-<ul>
-<li>
-<span class="math inline">\(\mathbf{V}, \mathbf{W} \in \mathbb{R}^{n}\)</span> are vector spaces.</li>
-</ul>
-<p></p>
-<p><i></i></p>
-<p><strong>definition</strong> (<strong>Linear Function</strong>) A function from a vector space, <span class="math inline">\(f: \mathbf{V} \rightarrow \mathbb{R}\)</span>, that satisfies the following conditions for all vectors and scalars:</p>
-<ul>
-<li>(Additivity) <span class="math inline">\(f(\mathbf{u} + \mathbf{v}) = f(\mathbf{u}) + f(\mathbf{v})\)</span> .</li>
-<li>(Homogeneity) <span class="math inline">\(f(k\mathbf{v}) = k \cdot f(\mathbf{v})\)</span>.</li>
-</ul>
-<p>where</p>
-<ul>
-<li>
-<span class="math inline">\(\mathbf{V}\)</span> is a real vector space.</li>
-<li>
-<span class="math inline">\(\mathbf{u}, \mathbf{v} \in \mathbf{V}\)</span>.</li>
-<li>
-<span class="math inline">\(k\)</span> is a scalar.</li>
-</ul>
-<p></p>
-<p><i></i></p>
-<p><strong>definition [D]</strong> (<em>Orthonormal</em>) A collection of mutually orthogonal normalized vectors in an inner product space. The set must satisfy the following conditions:</p>
-<ul>
-<li>Each vector in the set has unit length (norm of 1).</li>
-<li>Any two distinct vectors in the set are orthogonal, meaning their inner product is zero.</li>
-</ul>
-<p>where</p>
-<ul>
-<li>
-<span class="math inline">\(\langle \alpha_i | \alpha_j \rangle\)</span> is the inner product of two vectors in the set.</li>
-<li>
-<span class="math inline">\(\delta_{ij}\)</span> is the Kronecker delta, which is 1 if <span class="math inline">\(i = j\)</span> and 0 otherwise.</li>
-<li>
-<span class="math inline">\(\|\alpha\|\)</span> is the norm (or length) of a vector, defined as the square root of the inner product of the vector with itself.</li>
-<li>
-<span class="math inline">\(V\)</span> is an inner product space or vector space.</li>
-</ul>
-<p></p>
-<p><i></i></p>
-<p><strong>definition [D]</strong> (<em>Orthonormal Set of Functions</em>) A specific system of functions within a function space where each member is normalized to unity and all distinct members are mutually orthogonal. This set applies to functions in a Hilbert space, often defined over a specific interval or domain. The set must satisfy the following condition:</p>
-<ul>
-<li>The integral of the product of one function and the complex conjugate of another (or itself) over the domain equals the Kronecker delta.</li>
-</ul>
-<p>where</p>
-<ul>
-<li>
-<span class="math inline">\(f(x)\)</span> and <span class="math inline">\(g(x)\)</span> are complex-valued functions of a real variable.</li>
-<li>
-<span class="math inline">\(\bar{f}\)</span> (or <span class="math inline">\(f^*\)</span>) denotes the complex conjugate of the function <span class="math inline">\(f\)</span>.</li>
-<li>
-<span class="math inline">\((f, g)\)</span> (or <span class="math inline">\(\langle f | g \rangle\)</span>) represents the inner product defined as the integral <span class="math inline">\(\int f^*(x)g(x) dx\)</span> over a fundamental domain.</li>
-<li>
-<span class="math inline">\(w(x)\)</span> is an optional positive weight function included in the integral.</li>
-<li>
-<span class="math inline">\(Nf\)</span> is the norm of the function, defined as the inner product of the function with itself.</li>
-</ul>
-<p></p>
-<p><i></i></p>
-<p><strong>definition [D]</strong> (<em>Inner Product Space</em>) A vector space equipped with an inner product that associates a complex scalar with every ordered pair of vectors, where</p>
-<ul>
-<li><p>the following conditions apply:</p></li>
-<li><p>The mapping satisfies conjugate symmetry: <span class="math inline">\(\langle \alpha | \beta \rangle = \langle \beta | \alpha \rangle^*\)</span>.</p></li>
-<li><p>The mapping is linear in the second factor: <span class="math inline">\(\langle \alpha | a\beta + b\gamma \rangle = a\langle \alpha | \beta \rangle + b\langle \alpha | \gamma \rangle\)</span>.</p></li>
-<li><p>The mapping is positive definite: <span class="math inline">\(\langle \alpha | \alpha \rangle \ge 0\)</span>, vanishing only if <span class="math inline">\(\alpha = 0\)</span>.</p></li>
-</ul>
-<p>where</p>
-<ul>
-<li>
-<span class="math inline">\(V\)</span> is a vector space (or linear space) over a field <span class="math inline">\(K\)</span>.</li>
-<li>
-<span class="math inline">\(\langle \alpha | \beta \rangle\)</span> is the inner product (or scalar product) of vectors <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>.</li>
-<li>
-<span class="math inline">\(K\)</span> is the scalar field, typically the real numbers <span class="math inline">\(\mathbb{R}\)</span> or complex numbers <span class="math inline">\(\mathbb{C}\)</span>.</li>
-<li>
-<span class="math inline">\(\|\alpha\| = \sqrt{\langle \alpha | \alpha \rangle}\)</span> is the norm, generalizing the concept of “length”.</li>
-</ul>
-<p></p>
-<p><i></i></p>
-<p><strong>definition [D]</strong> (<em>Kronecker Delta</em>) A discrete symbol and numerical tensor representing the components of the identity matrix, serving as the discrete analog of the Dirac delta function, where</p>
-<ul>
-<li><p>the following condition applies:</p></li>
-<li><p>The value is unity if the indices are identical and zero if they are distinct.</p></li>
-</ul>
-<p>where</p>
-<ul>
-<li>
-<span class="math inline">\(i, j\)</span> are discrete indices representing rows and columns.</li>
-<li>
-<span class="math inline">\(\delta_{ij}\)</span> is the Kronecker delta symbol.</li>
-<li>
-<span class="math inline">\(\delta_{ij} = 1\)</span> if <span class="math inline">\(i = j\)</span> and <span class="math inline">\(\delta_{ij} = 0\)</span> if <span class="math inline">\(i \neq j\)</span>.</li>
-<li>
-<span class="math inline">\(I\)</span> is the identity matrix with entries <span class="math inline">\(I_{ik} = \delta_{ik}\)</span>.</li>
-<li>
-<span class="math inline">\(\delta_{ij}\)</span> acts as a mixed second-rank tensor that is coordinate-independent.</li>
-</ul>
-<p></p>
 <div class="topic-index">
 <ul>
+<li><a href="complex-conjugate.html">Complex Conjugate</a></li>
+<li><a href="conjugate-symmetry.html">Conjugate Symmetry</a></li>
 <li><a href="inner-product-space.html">Inner Product Space</a></li>
 <li><a href="kronecker-delta.html">Kronecker Delta</a></li>
 <li><a href="linear-function.html">Linear Function</a></li>
@@ -425,15 +317,19 @@ A map between vector spaces, <span class="math inline">\(F:  \mathbf{V} \rightar
                 sep.textContent = " > ";
                 breadcrumbs.appendChild(sep);
               }
-              var crumb = document.createElement("a");
-              crumb.href = item.href;
-              crumb.textContent = item.title;
-              breadcrumbs.appendChild(crumb);
+              if (item.current || index === trail.length - 1) {
+                var current = document.createElement("span");
+                current.className = "breadcrumb-current";
+                current.textContent = item.title;
+                current.setAttribute("aria-current", "page");
+                breadcrumbs.appendChild(current);
+              } else {
+                var crumb = document.createElement("a");
+                crumb.href = item.href;
+                crumb.textContent = item.title;
+                breadcrumbs.appendChild(crumb);
+              }
             });
-            var trailing = document.createElement("span");
-            trailing.className = "breadcrumb-sep";
-            trailing.textContent = " >";
-            breadcrumbs.appendChild(trailing);
             entryHeader.appendChild(breadcrumbs);
           }
         } catch (e) {}
@@ -687,11 +583,11 @@ A map between vector spaces, <span class="math inline">\(F:  \mathbf{V} \rightar
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="functional-analysis.html"><span class="header-section-number">6</span> Functional Analysis</a></div>
-<div class="next"><a href="notes.html"><span class="header-section-number">8</span> Notes</a></div>
+<div class="prev"><a href="functional-analysis.html"><span class="header-section-number">7</span> Functional Analysis</a></div>
+<div class="next"><a href="abstract-algebra.html"><span class="header-section-number">9</span> Abstract Algebra</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#linear-algebra"><span class="header-section-number">7</span> Linear Algebra</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#linear-algebra"><span class="header-section-number">8</span> Linear Algebra</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

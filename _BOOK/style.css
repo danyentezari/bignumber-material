@@ -886,7 +886,21 @@ html.theme-classic .topic-index a {
 }
 
 img {
-  max-width: 100%
+  max-width: min(100%, 400px);
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+html.theme-classic .entry-content img,
+html.theme-classic .entry-content .figure img,
+html.theme-classic .entry-content .inline-figure img {
+  max-width: min(100%, 400px);
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 /* =====================================================================
@@ -1136,6 +1150,10 @@ html.theme-classic .breadcrumbs a:focus-visible {
 
 html.theme-classic .breadcrumb-sep {
   color: #888;
+}
+
+html.theme-classic .breadcrumb-current {
+  color: #666;
 }
 
 html.theme-classic .entry-title {

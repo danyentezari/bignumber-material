@@ -178,20 +178,26 @@ def build_parent_map(
 
 def breadcrumb_trail(
     current_href: str,
+    current_title: str,
     parent_of: dict[str, dict[str, str]],
-) -> list[dict[str, str]]:
-    """Ancestor trail for MathWorld-style breadcrumbs (excludes current page)."""
+) -> list[dict[str, object]]:
+    """Breadcrumb trail including the current page as the final crumb."""
     if current_href == "index.html":
-        return []
+        return [{"title": "Home", "href": "index.html", "current": True}]
 
-    trail = [{"title": "Home", "href": "index.html"}]
+    trail: list[dict[str, object]] = [
+        {"title": "Home", "href": "index.html", "current": False}
+    ]
     parent = parent_of.get(current_href)
     if parent and parent["href"] != current_href:
-        trail.append({"title": parent["title"], "href": parent["href"]})
+        trail.append(
+            {"title": parent["title"], "href": parent["href"], "current": False}
+        )
+    trail.append({"title": current_title, "href": current_href, "current": True})
     return trail
 
 
-def inject_breadcrumb_data(html: str, trail: list[dict[str, str]]) -> str:
+def inject_breadcrumb_data(html: str, trail: list[dict[str, object]]) -> str:
     payload = json.dumps(trail, ensure_ascii=True)
     script = (
         f'<script type="application/json" id="page-breadcrumbs">{payload}</script>\n'
@@ -217,7 +223,9 @@ def rebuild_toc(html: str, sidebar: list[dict[str, object]]) -> str:
     html = html[: match.start()] + rebuilt + html[match.end() :]
 
     parent_of = build_parent_map(sidebar, by_href, by_title)
-    trail = breadcrumb_trail(current_href, parent_of)
+    current_item = by_href.get(current_href)
+    current_title = current_item["title"] if current_item else current_href
+    trail = breadcrumb_trail(current_href, current_title, parent_of)
     return inject_breadcrumb_data(html, trail)
 
 

@@ -15,6 +15,7 @@ TOPICS_DIR = REPO_ROOT / "_TOPICS"
 GENERATED_DIR = BOOK_DIR / "generated"
 BOOKDOWN_YML = BOOK_DIR / "_bookdown.yml"
 SIDEBAR_PAGES_JSON = GENERATED_DIR / "sidebar-pages.json"
+SIDEBAR_TXT = BOOK_DIR / "sidebar.txt"
 
 
 def slugify_text(text: str) -> str:
@@ -59,18 +60,66 @@ def build_topic_index(entries: list[tuple[str, str]]) -> str:
     return "\n".join(lines)
 
 
+def load_sidebar_order() -> list[str] | None:
+    """Read topic folder names from sidebar.txt (one per line)."""
+    if not SIDEBAR_TXT.is_file():
+        return None
+
+    names: list[str] = []
+    for line in SIDEBAR_TXT.read_text(encoding="utf-8").splitlines():
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        names.append(stripped)
+    return names
+
+
+def resolve_topic_folder(name: str, folders_by_name: dict[str, Path]) -> Path | None:
+    if name in folders_by_name:
+        return folders_by_name[name]
+
+    # Allow "Linear Algebra" or "linear-algebra" style entries.
+    normalized = name.replace(" ", "-")
+    if normalized in folders_by_name:
+        return folders_by_name[normalized]
+
+    lowered = normalized.lower()
+    for key, path in folders_by_name.items():
+        if key.lower() == lowered:
+            return path
+    return None
+
+
 def discover_topic_folders() -> list[Path]:
     if not TOPICS_DIR.is_dir():
         raise RuntimeError(f"Topics directory not found: {TOPICS_DIR}")
 
-    folders = [path for path in TOPICS_DIR.iterdir() if path.is_dir()]
+    folders_by_name = {
+        path.name: path for path in TOPICS_DIR.iterdir() if path.is_dir()
+    }
 
-    # Keep alphabetical order, but always place "Glossary" at the very bottom.
+    order = load_sidebar_order()
+    if order is not None:
+        ordered: list[Path] = []
+        for name in order:
+            folder = resolve_topic_folder(name, folders_by_name)
+            if folder is None:
+                print(f"warning: sidebar.txt entry not found: {name}")
+                continue
+            ordered.append(folders_by_name.pop(folder.name))
+
+        # Append any folders missing from sidebar.txt (Glossary last).
+        def leftover_key(path: Path) -> tuple[int, str]:
+            return (1 if path.name.lower() == "glossary" else 0, path.name.lower())
+
+        ordered.extend(sorted(folders_by_name.values(), key=leftover_key))
+        return ordered
+
+    # Fallback: alphabetical, Glossary last.
     def sort_key(path: Path) -> tuple[int, str]:
-        is_glossary = path.name.lower() == "glossary"
-        return (1 if is_glossary else 0, path.name.lower())
+        return (1 if path.name.lower() == "glossary" else 0, path.name.lower())
 
-    return sorted(folders, key=sort_key)
+    return sorted(folders_by_name.values(), key=sort_key)
 
 
 def is_bookdown_safe_filename(path: Path) -> bool:

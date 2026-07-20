@@ -1,3 +1,1 @@
-# Quantum Mechanics for Electromagnetism
-
-Energy Quantization
+# Quantum Mechanics

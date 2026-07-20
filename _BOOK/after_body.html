@@ -155,15 +155,19 @@
                 sep.textContent = " > ";
                 breadcrumbs.appendChild(sep);
               }
-              var crumb = document.createElement("a");
-              crumb.href = item.href;
-              crumb.textContent = item.title;
-              breadcrumbs.appendChild(crumb);
+              if (item.current || index === trail.length - 1) {
+                var current = document.createElement("span");
+                current.className = "breadcrumb-current";
+                current.textContent = item.title;
+                current.setAttribute("aria-current", "page");
+                breadcrumbs.appendChild(current);
+              } else {
+                var crumb = document.createElement("a");
+                crumb.href = item.href;
+                crumb.textContent = item.title;
+                breadcrumbs.appendChild(crumb);
+              }
             });
-            var trailing = document.createElement("span");
-            trailing.className = "breadcrumb-sep";
-            trailing.textContent = " >";
-            breadcrumbs.appendChild(trailing);
             entryHeader.appendChild(breadcrumbs);
           }
         } catch (e) {}
