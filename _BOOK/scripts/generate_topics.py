@@ -60,6 +60,83 @@ def build_topic_index(entries: list[tuple[str, str]]) -> str:
     return "\n".join(lines)
 
 
+DEF_NAME_RE = re.compile(
+    r"^\*\*[Dd]efinition(?:\s*\[[^\]]+\])?\*\*\s*"
+    r"(?:"
+    r"\(\*\*(?P<a>[^*]+)\*\*\)|"
+    r"\(\*(?P<b>[^*]+)\*\)|"
+    r"\(_(?P<c>[^_]+)_\)|"
+    r"\((?P<e>[^)]+)\)"
+    r")"
+)
+
+
+def extract_definition_names(path: Path) -> list[str]:
+    """Return definition display names from a markdown file."""
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError:
+        return []
+
+    names: list[str] = []
+    for line in text.splitlines():
+        match = DEF_NAME_RE.match(line.strip())
+        if not match:
+            continue
+        name = match.group("a") or match.group("b") or match.group("c") or match.group("e")
+        if name:
+            names.append(name.strip())
+    return names
+
+
+def extract_synonym_chain(path: Path) -> str | None:
+    """
+    If this page is a definition file with synonyms (Name = Alias = ...),
+    return that full chain; otherwise None.
+    """
+    title = extract_title(path)
+    names = extract_definition_names(path)
+    synonym_names = [name for name in names if "=" in name]
+    if not synonym_names:
+        return None
+
+    # Single-definition pages: use the synonym chain even if the H1 wording differs
+    # (e.g. H1 "One-Form" vs definition "1-form = linear functional = ...").
+    if len(names) == 1:
+        return synonym_names[0]
+
+    title_key = slugify_text(title)
+    for name in synonym_names:
+        primary = re.split(r"\s*=\s*", name, maxsplit=1)[0].strip()
+        if slugify_text(primary) == title_key or primary.lower() == title.lower():
+            return name
+    return None
+
+
+def expand_synonym_index_entries(
+    label: str,
+    href: str,
+) -> list[tuple[str, str]]:
+    """
+    Build site-index rows for a label. Synonym chains become one row per alias,
+    each written as Alias = Other = ..., so every synonym is findable alphabetically.
+    """
+    parts = [part.strip() for part in re.split(r"\s*=\s*", label) if part.strip()]
+    if len(parts) < 2:
+        return [(label, href)]
+
+    entries: list[tuple[str, str]] = []
+    for index, part in enumerate(parts):
+        others = parts[:index] + parts[index + 1 :]
+        entries.append((" = ".join([part, *others]), href))
+    return entries
+
+
+def index_sort_key(entry: tuple[str, str]) -> str:
+    primary = re.split(r"\s*=\s*", entry[0], maxsplit=1)[0].strip()
+    return primary.lower()
+
+
 def topic_index_for_siblings(sibling_files: list[Path]) -> str:
     entries = [
         (extract_title(path), f"{slugify_text(extract_title(path))}.html")
@@ -220,7 +297,11 @@ def assign_chapter_hrefs(titles: list[str]) -> list[str]:
 
 def write_site_index(entries: list[tuple[str, str]]) -> Path:
     """Write alphabetical site-wide subtopic index page."""
-    sorted_entries = sorted(entries, key=lambda item: item[0].lower())
+    expanded: list[tuple[str, str]] = []
+    for label, href in entries:
+        expanded.extend(expand_synonym_index_entries(label, href))
+
+    sorted_entries = sorted(expanded, key=index_sort_key)
     topic_index = build_topic_index(sorted_entries)
     path = GENERATED_DIR / "Site-Index.md"
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -244,6 +325,7 @@ def generate() -> None:
     sub_chapters: list[str] = []
     main_titles: list[str] = []
     sub_titles: list[str] = []
+    sub_index_labels: list[str] = []
     sidebar_topics: list[dict[str, object]] = [
         {"title": "Introduction", "href": "index.html", "children": []}
     ]
@@ -283,7 +365,9 @@ def generate() -> None:
         for path in sibling_files:
             generated_sub = write_generated_page(folder, path, topic_index)
             sub_chapters.append(relative_bookdown_path(generated_sub))
+            # H1 titles drive bookdown HTML filenames; synonym chains are index labels only.
             sub_titles.append(extract_title(path))
+            sub_index_labels.append(extract_synonym_chain(path) or extract_title(path))
 
     # Chapter order in the book: Introduction, mains, Index, then all subtopics.
     # Index is a root sidebar page listing every subtopic alphabetically.
@@ -295,7 +379,7 @@ def generate() -> None:
     all_hrefs = assign_chapter_hrefs(all_titles)
     # Subtopic hrefs start after Introduction + all main titles (including Site Index).
     sub_start = 1 + len(main_titles)
-    sub_entries = list(zip(sub_titles, all_hrefs[sub_start:]))
+    sub_entries = list(zip(sub_index_labels, all_hrefs[sub_start:]))
     write_site_index(sub_entries)
 
     index_href = all_hrefs[1 + len(main_titles) - 1]
