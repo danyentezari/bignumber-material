@@ -100,9 +100,9 @@ def extract_synonym_chain(path: Path) -> str | None:
     if not synonym_names:
         return None
 
-    # Single-definition pages: use the synonym chain even if the H1 wording differs
-    # (e.g. H1 "One-Form" vs definition "1-form = linear functional = ...").
-    if len(names) == 1:
+    # One synonym chain on the page: use it even if H1 wording differs slightly
+    # (e.g. H1 "Tensors" / "One-Form" vs definition "Tensor = ..." / "1-form = ...").
+    if len(synonym_names) == 1:
         return synonym_names[0]
 
     title_key = slugify_text(title)
