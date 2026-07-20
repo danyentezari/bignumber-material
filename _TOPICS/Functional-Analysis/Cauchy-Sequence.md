@@ -2,7 +2,7 @@
 
 <i>
 
-**definition [d]** (**Cauchy Sequence**) A sequence $(x_n)$ in a metric space $(X, d)$ whose terms eventually become arbitrarily close to one another:
+**definition [d]** (*Cauchy Sequence = Fundamental Sequence*) A sequence $(x_n)$ in a metric space $(X, d)$ whose terms eventually become arbitrarily close to one another:
 
 - $\forall\, \epsilon > 0,\ \exists\, N \in \mathbb{N}$ such that $d(x_n, x_m) < \epsilon$ for all $m, n \geq N$.
 

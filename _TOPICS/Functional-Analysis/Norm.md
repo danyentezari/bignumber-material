@@ -2,7 +2,7 @@
 
 <i>
 
-**definition [d]** (**Norm**) A function $\lVert \cdot \rVert : V \rightarrow \mathbb{R}$ on a vector space $V$ satisfying, for all $x, y \in V$ and scalars $\alpha$:
+**definition [d]** (*Norm = Length = Magnitude = Modulus = Size*) A function $\lVert \cdot \rVert : V \rightarrow \mathbb{R}$ on a vector space $V$ satisfying, for all $x, y \in V$ and scalars $\alpha$:
 
 - (Positive definiteness) $\lVert x \rVert \geq 0$, with $\lVert x \rVert = 0 \iff x = 0$ .
 - (Absolute homogeneity) $\lVert \alpha x \rVert = |\alpha|\, \lVert x \rVert$ .

@@ -1,6 +1,6 @@
 # Spin
 
-**Electron spin [d]** — Intrinsic angular momentum of an electron, characterized by quantum number 1/2 and represented mathematically by spinors.
+**Electron spin [d]** (*= Spin Angular Momentum = Intrinsic Angular Momentum*) — Intrinsic angular momentum of an electron, characterized by quantum number 1/2 and represented mathematically by spinors.
 *Ref:* Arfken, Weber & Harris, *Mathematical Methods for Physicists*, 7th ed. (2013).
 
 **magnetic moment [d]** — Vector quantity representing the strength and orientation of a magnetic dipole, such as a current loop or spin.

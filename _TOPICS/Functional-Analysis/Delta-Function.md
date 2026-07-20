@@ -2,7 +2,7 @@
 
 <i>
 
-**definition [d]** (**Dirac Delta Function**) A generalized function $\delta(x)$ characterized informally by
+**definition [d]** (*Dirac Delta Function = Delta Function = Delta Distribution = Generalized Function*) A generalized function $\delta(x)$ characterized informally by
 
 - $\delta(x) = 0$ for $x \neq 0$ .
 - $\displaystyle \int_{-\infty}^{\infty} \delta(x)\, dx = 1$ .

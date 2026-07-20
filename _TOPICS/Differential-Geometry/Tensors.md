@@ -1,103 +1,42 @@
 # Tensors
 
-
 <i>
 
-**definition** (*Multilinear Function*) A function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where
+**definition [d]** (*Tensor = Multilinear Map*) A multilinear, real-valued function of type $(r,s)$ on a vector space $V$ and its dual $V^{*}$:
 
-* the following conditions apply for each argument $i$ ($1 \leq i \leq k$):
-
-- $T(v_1, \dots, v_i + v_i', \dots, v_k) = T(v_1, \dots, v_i, \dots, v_k) + T(v_1, \dots, v_i', \dots, v_k)$.
-- $T(v_1, \dots, av_i, \dots, v_k) = a \cdot T(v_1, \dots, v_i, \dots, v_k)$.
+- $T : \underbrace{V^{*} \times \cdots \times V^{*}}_{r} \times \underbrace{V \times \cdots \times V}_{s} \rightarrow \mathbb{R}$ .
 
 where
 
-- $V$ is a vector space over $\mathbb{R}$.
-- $V^k$ is the $k$-fold Cartesian product $V \times \dots \times V$.
-- $k$ is a positive integer representing the number of arguments, also called the degree of the function.
-- $v_1, \dots, v_k, v_i' \in V$ are vectors.
-- $a \in \mathbb{R}$ is a scalar.
+- $V$ is a vector space over $\mathbb{R}$ (or $\mathbb{C}$).
+- $V^{*}$ is the dual space of $V$.
+- $r$ is the contravariant rank (number of covector arguments).
+- $s$ is the covariant rank (number of vector arguments).
+- $T$ is linear in each argument independently.
+- a scalar is type $(0,0)$; a vector is type $(1,0)$; a covector is type $(0,1)$.
 
 </i>
-
 
 <i>
 
-**definition** (*k-Tensor*) A multilinear function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where
+**definition [d]** (**Tensor**) An array of components $T^{i_1\ldots i_p}_{\ j_1\ldots j_q}$ labeled by $p$ contravariant (upper) and $q$ covariant (lower) indices, whose components transform linearly under a coordinate change $x \mapsto x'$:
 
-* the following condition applies:
-
-- The function $T$ is linear in each of its $k$ arguments.
-
-where
-
-- $V$ is a vector space.
-- $V^k$ is the $k$-fold Cartesian product $V \times \dots \times V$.
-- $k$ is a positive integer representing the degree of the tensor.
-- $\mathbb{R}$ is the set of real numbers.
-- $\mathcal{L}^k(V)$ (or $\mathcal{J}^k(V)$) is the vector space of all $k$-tensors on $V$.
-
-</i>
-
-
-<i>
-
-**definition** (*Multilinear Function*) A function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where
-
-* the following conditions apply for each argument $i$ ($1 \leq i \leq k$):
-
-- $T(v_1, \dots, v_i + v_i', \dots, v_k) = T(v_1, \dots, v_i, \dots, v_k) + T(v_1, \dots, v_i', \dots, v_k)$
-- $T(v_1, \dots, av_i, \dots, v_k) = a \cdot T(v_1, \dots, v_i, \dots, v_k)$
+- (Contravariant) $(T')^{i} = \displaystyle \sum_{j} \frac{\partial x^{j}}{\partial (x')^{i}}\, T^{j}$ .
+- (Covariant) $(T')_{i} = \displaystyle \sum_{j} \frac{\partial (x')^{i}}{\partial x^{j}}\, T_{j}$ .
+- (Mixed rank 2) $(T')^{i}_{\ j} = \displaystyle \sum_{k,l} \frac{\partial x^{k}}{\partial (x')^{i}}\, \frac{\partial (x')^{j}}{\partial x^{l}}\, T^{k}_{\ l}$ .
 
 where
 
-- $V$ is a vector space over $\mathbb{R}$.
-- $V^k$ is the $k$-fold Cartesian product $V \times \dots \times V$.
-- $k$ is a positive integer representing the number of arguments, also called the degree of the function.
-- $v_1, \dots, v_k, v_i' \in V$ are vectors.
-- $a \in \mathbb{R}$ is a scalar.
-  
-</i>
-
-
-<i>
-
-**definition** (*k-Fold Product*) A set constructed by the Cartesian product of $k$ copies of a single set, $X^k$, where
-
-* the following condition applies:
-
-- The resulting set consists of all ordered $k$-tuples where
-
-* each coordinate is an element of the original set.
-
-where
-
-- $k$ is a positive integer representing the number of repetitions.
-- $X$ is the underlying set, topological space, or vector space.
-- $X^k$ (or $V^k$) denotes the $k$-fold Cartesian product $X \times \dots \times X$.
+- $p + q$ is the rank; in $d$ dimensions a rank-$n$ tensor has $d^{n}$ components.
+- upper indices transform with the Jacobian $\partial x^{j}/\partial (x')^{i}$; lower indices with its inverse $\partial (x')^{i}/\partial x^{j}$.
+- the transformation laws ensure the tensor represents a coordinate-independent geometric object.
 
 </i>
 
+## References
 
-<i>
-
-**definition** (*Cartesian Product*) A set consisting of all possible ordered combinations of elements from a collection of sets, denoted by $X \times Y$ for two sets, $X_1 \times \dots \times X_n$ for $n$ sets, or $\prod_{\alpha \in A} X_\alpha$ for an indexed family, where
-
-* the following conditions apply:
-
-- For two sets, the product contains all ordered pairs $(x, y)$ where
-
-* the first component is from the first set and the second component is from the second.
-- For a finite collection, the product consists of all ordered $n$-tuples $(x_1, \dots, x_n)$ where
-
-* each $x_i$ is an element of the corresponding factor $X_i$.
-- For an arbitrary indexed family, the product is the set of all functions $x$ from the index set $A$ to the union of the sets such that $x(\alpha) \in X_\alpha$ for each $\alpha \in A$.
-
-where
-
-- $X, Y, X_i, X_\alpha$ are non-empty sets
-- $(x, y)$ is an ordered pair
-- $(x_1, \dots, x_n)$ is an ordered $n$-tuple
-- $A$ (or $\Lambda$) is the index set used to label the family of sets
-  
-</i>
+1. Nash, C., & Sen, S. *Topology and Geometry for Physicists*. Academic Press, 1983. — tensor as multilinear map.
+2. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — multilinear-map definition.
+3. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — component transformation laws.
+4. Riley, K. F., Hobson, M. P., & Bence, S. J. *Mathematical Methods for Physics and Engineering*. Cambridge University Press, 2006. — component transformation definition.
+5. Cahill, K. *Physical Mathematics*. Cambridge University Press, 2019. — component transformation definition.
