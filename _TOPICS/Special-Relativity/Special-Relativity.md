@@ -1,4 +1,4 @@
-# Relativity
+# Special Relativity
 
 reference frames
 inertial reference frame
