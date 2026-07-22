@@ -46,8 +46,72 @@ Note:
 
 </i>
 
+## Examples
+
+<i>
+
+**example [d]** (**Metric Tensor Field** — Frankel) The type-$(0,2)$ metric tensor field on $\mathbb{R}^{3}$ in spherical coordinates $(r, \theta, \phi)$, with line element
+
+- $ds^{2} = dr^{2} + r^{2}\, d\theta^{2} + r^{2}\sin^{2}\theta\, d\phi^{2}$ .
+
+The nonzero components as functions of position are
+
+- $g_{rr}(r, \theta, \phi) = 1$ ,
+- $g_{\theta\theta}(r, \theta, \phi) = r^{2}$ ,
+- $g_{\phi\phi}(r, \theta, \phi) = r^{2}\sin^{2}\theta$ .
+
+In matrix form,
+
+- $(g_{ij}) = \operatorname{diag}(1,\, r^{2},\, r^{2}\sin^{2}\theta)$ .
+
+where
+
+- $(r, \theta, \phi)$ are spherical coordinates.
+- $g_{ij}$ are the components of the metric tensor field.
+- $ds$ is the infinitesimal arc length.
+
+Note:
+
+- off-diagonal components vanish.
+- this is a smooth assignment of a symmetric type-$(0,2)$ tensor to each point.
+
+</i>
+
+<i>
+
+**example [d]** (**Electromagnetic Field Strength** — Carroll, Hassani) The antisymmetric type-$(0,2)$ tensor field $F_{\mu\nu}$ on Minkowski spacetime with coordinates $x^{\mu} = (t, x, y, z)$:
+
+- $F_{\mu\nu} =
+\begin{pmatrix}
+0 & -E_{x} & -E_{y} & -E_{z} \\
+E_{x} & 0 & -B_{z} & B_{y} \\
+E_{y} & B_{z} & 0 & -B_{x} \\
+E_{z} & -B_{y} & B_{x} & 0
+\end{pmatrix}$ ,
+
+where $E_{i}(t,x,y,z)$ and $B_{i}(t,x,y,z)$ are the electric and magnetic field components at each spacetime point.
+
+As a differential form,
+
+- $F = -E_{x}\, dt\wedge dx - E_{y}\, dt\wedge dy - E_{z}\, dt\wedge dz + B_{z}\, dx\wedge dy - B_{y}\, dx\wedge dz + B_{x}\, dy\wedge dz$ .
+
+where
+
+- $F_{\mu\nu}$ are the components of the electromagnetic field strength tensor field.
+- $E_{x}, E_{y}, E_{z}$ are the electric field components.
+- $B_{x}, B_{y}, B_{z}$ are the magnetic field components.
+- $x^{\mu} = (t, x, y, z)$ are spacetime coordinates.
+
+Note:
+
+- $F$ assigns an antisymmetric bilinear form to each event in spacetime.
+- Hassani identifies $F_{j0} = E_{j}$, $F_{12} = B_{3}$, $F_{13} = -B_{2}$, $F_{23} = B_{1}$.
+
+</i>
+
 ## References
 
-1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — tensor field $T:U\to T^{r}_{s}(M)$; $T(P)\in T^{r}_{s,P}(M)$.
-2. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — tensor fields as differentiable, coordinate-independent fields; sections.
-3. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — tensor fields via component transformation laws.
+1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — tensor field $T:U\to T^{r}_{s}(M)$; electromagnetic field strength $F$.
+2. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — metric tensor field in spherical coordinates; $ds^{2}=dr^{2}+r^{2}d\theta^{2}+r^{2}\sin^{2}\theta\,d\phi^{2}$.
+3. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — electromagnetic field strength tensor $F_{\mu\nu}$.
+4. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — tensor fields via component transformation laws.
