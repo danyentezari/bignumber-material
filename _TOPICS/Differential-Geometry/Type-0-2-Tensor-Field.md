@@ -2,7 +2,7 @@
 
 <i>
 
-**definition [d]** (*Type-$(0,2)$ Tensor Field = Covariant Rank-2 Tensor Field = Second-Rank Covariant Tensor Field*) A smooth section of the tensor bundle $T^{0}_{\ 2}(M)$ (Hassani): at each point $P$, a bilinear map
+**definition [d]** (*Type-$(0,2)$ Tensor Field = Covariant Rank-2 Tensor Field = Second-Rank Covariant Tensor Field*) A smooth section of the tensor bundle $T^{0}_{\ 2}(M)$: at each point $P$, a bilinear map
 
 - $T_{P} : T_{P}M \times T_{P}M \rightarrow \mathbb{R}$ ,
 
@@ -10,8 +10,17 @@ with components that are smooth functions of the coordinates.
 
 where
 
+- $M$ is a smooth manifold.
+- $P$ is a point of $M$.
+- $T_{P}$ is the value of the tensor field at $P$.
+- $T_{P}M$ is the tangent space at $P$.
+- $T^{0}_{\ 2}(M)$ is the bundle of type-$(0,2)$ tensors on $M$.
+- $\mathbb{R}$ is the set of real numbers.
+
+Note:
+
 - type $(0,2)$ means two covariant indices and no contravariant indices.
-- equivalently written $\sum_{i,j} T_{ij}\, du^{i}\otimes du^{j}$ in local coframes (Frankel / Arfken).
+- equivalently written $\sum_{i,j} T_{ij}\, du^{i}\otimes du^{j}$ in local coframes.
 
 </i>
 
@@ -24,8 +33,12 @@ where
 
 where
 
+- $T_{ij}$ are the components of the type-$(0,2)$ tensor field.
+
+Note:
+
 - the metric is the fundamental physical example of a symmetric $(0,2)$ field.
-- nondegeneracy: $\det(T_{ij})\neq 0$ (Hassani).
+- nondegeneracy means $\det(T_{ij}) \neq 0$.
 
 </i>
 
