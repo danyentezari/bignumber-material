@@ -2,36 +2,35 @@
 
 <i>
 
-**definition [d]** (*Type-$(0,2)$ Tensor Field = Covariant Rank-2 Tensor Field = Field of Bilinear Forms*) A smooth assignment of a type-$(0,2)$ tensor to each point of a manifold: at each $p$, a multilinear map that takes two tangent vectors and returns a scalar,
+**definition [d]** (*Type-$(0,2)$ Tensor Field = Covariant Rank-2 Tensor Field = Second-Rank Covariant Tensor Field*) A smooth section of the tensor bundle $T^{0}_{\ 2}(M)$ (Hassani): at each point $P$, a bilinear map
 
-- $T_{p} : T_{p}M \times T_{p}M \rightarrow \mathbb{R}$ ,
+- $T_{P} : T_{P}M \times T_{P}M \rightarrow \mathbb{R}$ ,
 
-with components that are smooth functions of the coordinates in every chart.
+with components that are smooth functions of the coordinates.
 
 where
 
-- $M$ is a smooth manifold.
-- type $(0,2)$ means two covariant (lower) indices and no contravariant indices.
-- smoothness ($C^{\infty}$): the component functions $T_{\mu\nu}(x)$ are infinitely differentiable.
+- type $(0,2)$ means two covariant indices and no contravariant indices.
+- equivalently written $\sum_{i,j} T_{ij}\, du^{i}\otimes du^{j}$ in local coframes (Frankel / Arfken).
 
 </i>
 
 <i>
 
-**definition [d]** (*Type-$(0,2)$ Tensor Field = Covariant Rank-2 Tensor Field*) A smooth type-$(0,2)$ tensor field, with two important special cases:
+**definition [d]** (*Type-$(0,2)$ Tensor Field = Field of Bilinear Forms*) A smooth type-$(0,2)$ tensor field, with two important special cases:
 
-- if $T_{\mu\nu}$ is symmetric and nondegenerate, it is a metric tensor .
-- if $T_{\mu\nu}$ is totally antisymmetric, it is a differential $2$-form .
+- if $T_{ij}$ is symmetric and nondegenerate, it is a metric tensor .
+- if $T_{ij}$ is totally antisymmetric, it is a differential $2$-form .
 
 where
 
-- $T_{\mu\nu} = T_{\nu\mu}$ (symmetric case); $T_{\mu\nu} = -T_{\nu\mu}$ (antisymmetric case).
-- the metric generalizes the Euclidean dot product to curved manifolds.
-- a $2$-form is the rank-$2$ case of a differential form.
+- the metric is the fundamental physical example of a symmetric $(0,2)$ field.
+- nondegeneracy: $\det(T_{ij})\neq 0$ (Hassani).
 
 </i>
 
 ## References
 
-1. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — tensor fields; metric as symmetric nondegenerate $(0,2)$ field.
-2. Nakahara, M. *Geometry, Topology and Physics*. IOP, 2003. — type-$(q,r)$ tensor fields; smoothness via components.
+1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — type-$(0,2)$ tensor fields as sections of $T^{0}_{2}(M)$.
+2. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — covariant $2$-tensor fields; metric example.
+3. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — second-rank covariant tensors.

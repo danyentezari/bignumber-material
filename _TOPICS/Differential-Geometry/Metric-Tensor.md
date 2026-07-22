@@ -2,41 +2,41 @@
 
 <i>
 
-**definition [d]** (*Metric Tensor = Metric = First Fundamental Form*) A smooth type-$(0,2)$ tensor field $g$ that assigns to each point $p$ a symmetric, nondegenerate bilinear form on the tangent space:
+**definition [d]** (*Metric Tensor = Riemannian Metric = Metrical Matrix = First Fundamental Form*) A symmetric, covariant second-rank tensor field $G$ giving a bilinear map on tangent vectors (Frankel),
 
-- $g_{p} : T_{p}M \times T_{p}M \rightarrow \mathbb{R}$ ,
-- $g(u,v) = g_{\mu\nu}\, u^{\mu}\, v^{\nu}$ .
+- $G(v,w) = \langle v, w \rangle = \sum_{i,j} g_{ij}\, v^{i}\, w^{j}$ ,
+
+with local components $g_{ij}(x) = \left\langle \partial/\partial x^{i},\, \partial/\partial x^{j} \right\rangle$.
 
 where
 
-- $M$ is a smooth manifold.
-- $g_{\mu\nu} = g_{\nu\mu}$ (symmetry).
-- nondegenerate: $g(u,v) = 0$ for all $v$ implies $u = 0$.
-- Riemannian if $g$ is positive-definite; Lorentzian / pseudo-Riemannian if indefinite.
+- $G$ is symmetric: $g_{ij} = g_{ji}$.
+- the components are differentiable functions of the coordinates.
+- Riemannian if positive-definite; indefinite (Lorentzian) metrics are allowed in relativity.
 
 </i>
 
 <i>
 
-**definition [d]** (*Metric Tensor = Metric = First Fundamental Form*) The symmetric array of components $g_{\mu\nu}$ that defines infinitesimal length (or spacetime interval) via the line element
+**definition [d]** (*Metric Tensor = Riemannian Metric = Metrical Matrix = First Fundamental Form*) A symmetric second-order tensor $g_{ij}$ that fixes the square of infinitesimal arc length (Arfken),
 
-- $ds^{2} = g_{\mu\nu}\, dx^{\mu}\, dx^{\nu}$ ,
+- $(ds)^{2} = g_{ij}\, du^{i}\, du^{j}$ ,
 
-and raises / lowers indices:
+and raises / lowers indices via its inverse $g^{ik}$:
 
-- $V_{\mu} = g_{\mu\nu}\, V^{\nu}$ ,
-- $V^{\mu} = g^{\mu\nu}\, V_{\nu}$ .
+- $V_{i} = g_{ij}\, V^{j}$ ,
+- $V^{i} = g^{ij}\, V_{j}$ .
 
 where
 
-- $g^{\mu\nu}$ is the inverse metric ($g^{\mu\lambda} g_{\lambda\nu} = \delta^{\mu}_{\ \nu}$).
+- $g^{ik} g_{kj} = \delta^{i}_{\ j}$.
 - in flat Minkowski spacetime, $g_{\mu\nu} = \eta_{\mu\nu}$.
-- the components encode the geometry (and, in GR, the gravitational field).
 
 </i>
 
 ## References
 
-1. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — metric as symmetric nondegenerate $(0,2)$ tensor; line element; raising/lowering.
-2. Nakahara, M. *Geometry, Topology and Physics*. IOP, 2003. — metric tensor / first fundamental form.
-3. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — metric components and index gymnastics.
+1. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — metric as symmetric covariant $2$-tensor; $g_{ij}=\langle\partial_{i},\partial_{j}\rangle$; first fundamental form.
+2. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — $(ds)^{2}=g_{ij}\,du^{i}\,du^{j}$; metrical matrix.
+3. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — type-$(0,2)$ tensor fields; nondegenerate metrics.
+4. Reed, M., & Simon, B. *Methods of Modern Mathematical Physics I: Functional Analysis*. Academic Press. — bilinear / sesquilinear forms (functional-analytic setting).

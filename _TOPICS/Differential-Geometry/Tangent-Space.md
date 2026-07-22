@@ -2,37 +2,34 @@
 
 <i>
 
-**definition [d]** (*Tangent Space = Tangent Plane*) The abstract vector space of all tangent vectors to a manifold $M$ at a point $p$:
+**definition [d]** (*Tangent Space = Tangent Plane*) The vector space of all vectors tangent to a manifold $M$ at a point $P$ (Hassani):
 
-- $T_{p}M = \{ \text{tangent vectors at } p \}$ ,
-
-equivalently identified with the space of directional derivatives (derivations) on smooth functions at $p$.
+- $T_{P}(M) = \{ \text{tangent vectors to } M \text{ at } P \}$ .
 
 where
 
-- $M$ is a smooth $n$-dimensional manifold.
-- $p \in M$.
-- $\dim T_{p}M = n$.
-- “tangent plane” is common when $M$ is a surface in $\mathbb{R}^{3}$.
+- $\dim T_{P}(M) = \dim M$.
+- the union of all tangent spaces is the tangent bundle $T(M)$.
+- “tangent plane” is common for surfaces / local pictures.
 
 </i>
 
 <i>
 
-**definition [d]** (*Tangent Space = Tangent Plane*) The $n$-dimensional vector space $T_{p}M$ spanned by the coordinate basis at $p$:
+**definition [d]** (*Tangent Space = Tangent Plane*) The $n$-dimensional vector space $T_{P}M$ spanned by the coordinate basis at $P$:
 
-- $T_{p}M = \operatorname{span}\left\{ \displaystyle \frac{\partial}{\partial x^{1}}\bigg|_{p},\, \ldots,\, \frac{\partial}{\partial x^{n}}\bigg|_{p} \right\}$ .
+- $T_{P}M = \operatorname{span}\left\{ \displaystyle \frac{\partial}{\partial x^{1}}\bigg|_{P},\, \ldots,\, \frac{\partial}{\partial x^{n}}\bigg|_{P} \right\}$ .
 
 where
 
-- $(x^{1},\ldots,x^{n})$ are local coordinates near $p$.
-- any tangent vector is $v = v^{\mu}\, \partial_{\mu}\big|_{p}$ with components $v^{\mu}$.
-- $\partial_{\mu} = \partial / \partial x^{\mu}$.
+- $(x^{1},\ldots,x^{n})$ are local coordinates near $P$.
+- any tangent vector is $v = v^{i}\, \partial_{i}\big|_{P}$.
+- metric components are $g_{ij} = \langle \partial_{i}, \partial_{j} \rangle$ (Frankel).
 
 </i>
 
 ## References
 
-1. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — tangent space; coordinate basis $\partial_{\mu}$.
-2. Nakahara, M. *Geometry, Topology and Physics*. IOP, 2003. — tangent space as derivations / directional derivatives.
-3. Lee, J. M. *Introduction to Smooth Manifolds*. Springer. — tangent space $T_{p}M$.
+1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — tangent space $T_{P}(M)$; tangent bundle $T(M)$.
+2. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — tangent vectors; coordinate basis $\partial_{i}$.
+3. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — basis vectors and components in curvilinear coordinates.

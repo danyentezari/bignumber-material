@@ -2,34 +2,33 @@
 
 <i>
 
-**definition [d]** (*Tensor Field = Section of a Tensor Bundle = Tensor-Valued Function*) A smooth assignment of a type-$(q,r)$ tensor to every point of a manifold:
+**definition [d]** (*Tensor Field = Section*) A mapping that assigns to each point of a manifold a tensor of fixed type (Hassani): for $U \subset M$,
 
-- $p \mapsto T_{p} \in T^{q}_{\ r}(T_{p}M)$ .
+- $T : U \rightarrow T^{r}_{\ s}(M)$ ,
+- $T(P) \equiv T_{P} \in T^{r}_{\ s,P}(M)$ .
 
 where
 
-- $M$ is a smooth manifold.
-- $T^{q}_{\ r}(T_{p}M)$ is the space of type-$(q,r)$ tensors at $p$.
-- $q$ is the contravariant rank; $r$ is the covariant rank.
-- smoothness: components in any chart are smooth functions of position.
+- $T^{r}_{\ s,P}(M)$ is the space of type-$(r,s)$ tensors at $P$ (Hassani: $r$ contravariant, $s$ covariant).
+- a smooth tensor field is a smooth such assignment (smooth section).
 
 </i>
 
 <i>
 
-**definition [d]** (*Tensor Field = Section of a Tensor Bundle = Tensor-Valued Function*) A tensor-valued function on the manifold: a rule that specifies, at each point, a multilinear map taking $q$ covectors and $r$ vectors to a scalar,
+**definition [d]** (*Tensor Field = Section*) A coordinate-independent field on a manifold whose local components vary differentiably (Frankel): at each point, a multilinear map
 
-- $T_{p} : \underbrace{(T_{p}M)^{*}\times\cdots\times(T_{p}M)^{*}}_{q} \times \underbrace{T_{p}M\times\cdots\times T_{p}M}_{r} \rightarrow \mathbb{R}$ .
+- $T_{P} : \underbrace{(T_{P}M)^{*}\times\cdots\times(T_{P}M)^{*}}_{r} \times \underbrace{T_{P}M\times\cdots\times T_{P}M}_{s} \rightarrow \mathbb{R}$ .
 
 where
 
-- $M$ is a smooth manifold.
-- $(T_{p}M)^{*}$ is the cotangent space at $p$.
-- examples: vector fields are type $(1,0)$; covector / $1$-form fields are type $(0,1)$; the metric is type $(0,2)$.
+- examples: vector fields are type $(1,0)$; covector fields type $(0,1)$; the metric type $(0,2)$.
+- equivalently, a section of the tensor bundle $T^{r}_{\ s}(M)$.
 
 </i>
 
 ## References
 
-1. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — tensor field as tensor-valued function on spacetime.
-2. Nakahara, M. *Geometry, Topology and Physics*. IOP, 2003. — smooth type-$(q,r)$ tensor field.
+1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — tensor field $T:U\to T^{r}_{s}(M)$; $T(P)\in T^{r}_{s,P}(M)$.
+2. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — tensor fields as differentiable, coordinate-independent fields; sections.
+3. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — tensor fields via component transformation laws.

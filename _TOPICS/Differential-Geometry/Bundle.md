@@ -2,37 +2,34 @@
 
 <i>
 
-**definition [d]** (*Bundle = Fibre Bundle = Fiber Bundle*) A total space $E$ that is locally a product of a base manifold $M$ and a fiber $F$, with projection $\pi: E \rightarrow M$ such that every $p \in M$ has a neighborhood $U$ with
+**definition [d]** (*Bundle = Fibre Bundle = Fiber Bundle*) A fiber manifold $F^{k}$, total space $E$, and base $M^{n}$, together with a projection $\pi: E \rightarrow M^{n}$ that is locally trivial (Frankel): every point of $M$ has a neighborhood $U$ with
 
-- $\pi^{-1}(U) \cong U \times F$
-
-(a local trivialization).
+- $\pi^{-1}(U) \cong U \times F$ .
 
 where
 
-- $E$ is the total space; $M$ the base; $F$ the typical fiber.
-- $\pi^{-1}(p)$ is the fiber over $p$.
-- globally $E$ need not be the product $M \times F$ (“twisted product” when nontrivial).
+- $E_{p} = \pi^{-1}(p)$ is the fiber over $p$.
+- globally $E$ need not equal the product $M \times F$.
 
 </i>
 
 <i>
 
-**definition [d]** (*Bundle = Tensor Bundle = Bundle of Tensors*) The vector bundle $T^{q}_{\ r}(M)$ whose fiber at each point $p$ is the space of all type-$(q,r)$ tensors at $p$:
+**definition [d]** (*Bundle = Tensor Bundle = Bundle of Tensors*) The bundle of type-$(r,s)$ tensors over $M$ (Hassani / Frankel),
 
-- $T^{q}_{\ r}(M) = \bigcup_{p \in M} T^{q}_{\ r}(T_{p}M)$ ,
+- $T^{r}_{\ s}(M) = \bigcup_{P \in M} T^{r}_{\ s,P}(M)$ ,
 
-with projection sending each tensor to its base point $p$.
+with projection sending each tensor to its base point $P$.
 
 where
 
-- a smooth section of $T^{q}_{\ r}(M)$ is a smooth type-$(q,r)$ tensor field.
-- special cases: $TM = T^{1}_{\ 0}(M)$ (tangent bundle); $T^{*}M = T^{0}_{\ 1}(M)$ (cotangent bundle).
+- a smooth section of $T^{r}_{\ s}(M)$ is a smooth type-$(r,s)$ tensor field.
+- special cases: $T(M) = T^{1}_{\ 0}(M)$ (tangent bundle); $T^{*}(M) = T^{0}_{\ 1}(M)$ (cotangent bundle).
 
 </i>
 
 ## References
 
-1. Nakahara, M. *Geometry, Topology and Physics*. IOP, 2003. — fiber bundles; tensor bundles $T^{q}_{r}(M)$.
-2. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — tangent / tensor bundles.
-3. Lee, J. M. *Introduction to Smooth Manifolds*. Springer. — fiber bundles and vector bundles.
+1. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — fiber bundles; local triviality; tensor bundles.
+2. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — $T^{r}_{s}(M)=\bigcup_{P} T^{r}_{s,P}(M)$.
+3. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — tensor fields on coordinate patches (component view).

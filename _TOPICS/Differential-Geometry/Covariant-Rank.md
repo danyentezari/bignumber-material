@@ -2,31 +2,33 @@
 
 <i>
 
-**definition [d]** (*Covariant Rank = Covariant Degree*) For a type-$(q,r)$ tensor, the integer $r$: the number of vector arguments the tensor accepts,
+**definition [d]** (*Covariant Rank = Covariant Degree*) For a type-$(r,s)$ tensor, the integer $s$: the number of vector ($V$) arguments the multilinear map consumes (Hassani),
 
-- $T(\omega^{1},\ldots,\omega^{q},\, \underbrace{v_{1},\ldots,v_{r}}_{r})$ .
+- $T^{r}_{\ s}(\omega^{1},\ldots,\omega^{r},\, \underbrace{v_{1},\ldots,v_{s}}_{s})$ .
 
 where
 
-- $r$ is the second slot in the type label $(q,r)$.
-- also called the covariant degree or valence $r$.
+- Hassani calls $s$ the covariant degree of a type-$(r,s)$ tensor.
+- same as the second slot in type-$(q,r)$ notation.
 
 </i>
 
 <i>
 
-**definition [d]** (*Covariant Rank = Covariant Degree*) The number of lower indices on the components of a tensor:
+**definition [d]** (*Covariant Rank = Covariant Degree*) The number of subscript (lower) indices on the components of a tensor (Arfken),
 
-- $T^{\mu_1\ldots\mu_q}_{\ \nu_1\ldots\nu_r}$ has covariant rank $r$ .
+- $T^{\mu_1\ldots\mu_r}_{\ \nu_1\ldots\nu_s}$ has covariant rank $s$ ,
+
+transforming covariantly under a change of coordinates.
 
 where
 
-- lower indices transform with the inverse Jacobian $\partial (x')^{\beta}/\partial x^{\nu}$.
-- the total rank (order) is $q + r$.
+- the total rank (order) is $r + s$.
 
 </i>
 
 ## References
 
-1. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — covariant indices / type $(q,r)$.
-2. Nakahara, M. *Geometry, Topology and Physics*. IOP, 2003. — covariant rank / degree.
+1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — covariant degree $s$ of a type-$(r,s)$ tensor.
+2. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — covariant rank = number of lower indices.
+3. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — covariant arguments / indices.

@@ -2,34 +2,36 @@
 
 <i>
 
-**definition [d]** (*Smooth Assignment = Smooth Section*) A rule that attaches a tensor (of fixed type) to each point of a manifold so that the assignment varies in a $C^{\infty}$ way: in every chart, the component functions are smooth functions of the coordinates.
+**definition [d]** (*Smooth Assignment = Smooth Section*) A mapping that attaches a type-$(r,s)$ tensor to each point so the assignment is smooth (Hassani): for $U \subset M$,
 
-- $p \mapsto T_{p}$ with $T_{\mu_1\ldots}{}^{\nu_1\ldots}(x)$ of class $C^{\infty}$ .
+- $T : U \rightarrow T^{r}_{\ s}(M)$ ,
+- $T(P) \equiv T_{P} \in T^{r}_{\ s,P}(M)$ ,
+
+with component functions of class $C^{\infty}$ in every chart.
 
 where
 
-- $M$ is a smooth manifold.
-- this is the defining property of a smooth tensor field / smooth section of a tensor bundle.
+- this is the definition of a smooth tensor field of type $(r,s)$.
 
 </i>
 
 <i>
 
-**definition [d]** (*Smooth Assignment = Smooth Section*) An assignment of a type-$(q,r)$ tensor to each point that yields a smooth scalar whenever it is fed smooth arguments:
+**definition [d]** (*Smooth Assignment = Cross Section = Section*) A differentiable map $s: M \rightarrow E$ into a vector (or tensor) bundle that lands in the fiber over each point (Frankel):
 
-- $T(X_{1},\ldots,X_{r};\, \omega^{1},\ldots,\omega^{q})$ is a $C^{\infty}$ function on $M$
+- $\pi \circ s = \mathrm{id}_{M}$ ,
 
-whenever the $X_{i}$ are smooth vector fields and the $\omega^{j}$ are smooth covector fields.
+so $s(p) \in E_{p} = \pi^{-1}(p)$ for every $p \in M$.
 
 where
 
-- equivalent to smoothness of components in local coordinates.
-- characterizes smooth sections of the tensor bundle $T^{q}_{\ r}(M)$.
+- $\pi: E \rightarrow M$ is the bundle projection.
+- a smooth section of $T^{r}_{\ s}(M)$ is precisely a smooth type-$(r,s)$ tensor field.
 
 </i>
 
 ## References
 
-1. Nakahara, M. *Geometry, Topology and Physics*. IOP, 2003. — smooth assignment / section of a tensor bundle.
-2. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — smooth tensor fields via components.
-3. Lee, J. M. *Introduction to Smooth Manifolds*. Springer. — smooth sections.
+1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — tensor field as smooth assignment $T:U\to T^{r}_{s}(M)$.
+2. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — (cross) section $s:M\to E$ with $\pi\circ s=\mathrm{id}_{M}$.
+3. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — smooth component fields.

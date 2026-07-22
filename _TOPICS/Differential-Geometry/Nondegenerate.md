@@ -2,14 +2,14 @@
 
 <i>
 
-**definition [d]** (*Nondegenerate = Nonsingular*) A property of a bilinear form (or metric) $g$: the only vector orthogonal to all vectors is the zero vector,
+**definition [d]** (*Nondegenerate = Nonsingular = Invertible*) A property of a bilinear form (or metric) $g$: the only vector orthogonal to all vectors is zero (Hassani),
 
-- $g(U, V) = 0$ for all $V$ implies $U = 0$ .
+- $g(v,w) = 0$ for all $w$ implies $v = 0$ .
 
 where
 
-- $g$ acts on a vector space $V$ (e.g. $T_{p}M$).
-- equivalent to: the map $U \mapsto g(U,\cdot)$ from $V$ to $V^{*}$ is injective (hence an isomorphism if $\dim V < \infty$).
+- equivalent to: $v \mapsto g(v,\cdot)$ is an isomorphism $V \rightarrow V^{*}$ when $\dim V < \infty$.
+- Hassani equates nondegenerate with invertible for bilinear forms.
 
 </i>
 
@@ -17,19 +17,20 @@ where
 
 **definition [d]** (*Nondegenerate = Nonsingular*) A property of the component matrix of a bilinear form / metric:
 
-- $\lvert g_{\mu\nu} \rvert \neq 0$ ,
+- $\det(g_{ij}) \neq 0$ ,
 
-which guarantees that an inverse metric $g^{\mu\nu}$ exists.
+which guarantees that an inverse metric $g^{ij}$ exists.
 
 where
 
-- $\lvert g_{\mu\nu} \rvert = \det(g_{\mu\nu})$.
-- nondegeneracy is required for raising and lowering indices.
 - “nonsingular” is used interchangeably for the matrix condition.
+- required for raising and lowering indices (Arfken).
 
 </i>
 
 ## References
 
-1. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — nondegenerate metric; existence of $g^{\mu\nu}$.
-2. Nakahara, M. *Geometry, Topology and Physics*. IOP, 2003. — nondegeneracy / $\det g \neq 0$.
+1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — nondegenerate $\Leftrightarrow$ invertible; $\det g \neq 0$.
+2. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — nonsingular metrical matrix; existence of $g^{ij}$.
+3. Reed, M., & Simon, B. *Methods of Modern Mathematical Physics I: Functional Analysis*. Academic Press. — nonsingular operators / forms.
+4. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — nondegenerate metrics on manifolds.

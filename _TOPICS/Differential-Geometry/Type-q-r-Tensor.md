@@ -2,35 +2,35 @@
 
 <i>
 
-**definition [d]** (*Type-$(q,r)$ Tensor = Valence $\{q,r\}$ = Rank $(q,r)$*) A multilinear map that takes $q$ covectors and $r$ vectors and returns a scalar:
+**definition [d]** (*Type-$(q,r)$ Tensor = Type-$(r,s)$ Tensor = Rank $(r,s)$*) A multilinear map taking $r$ covectors and $s$ vectors to a scalar (Hassani type $(r,s)$),
 
-- $T : \underbrace{V^{*}\times\cdots\times V^{*}}_{q} \times \underbrace{V\times\cdots\times V}_{r} \rightarrow \mathbb{R}$ .
+- $T^{r}_{\ s} : \underbrace{V^{*}\times\cdots\times V^{*}}_{r} \times \underbrace{V\times\cdots\times V}_{s} \rightarrow \mathbb{R}$ .
 
 where
 
-- $V$ is a vector space; $V^{*}$ is its dual.
+- Hassani writes type $(r,s)$ with contravariant degree $r$ and covariant degree $s$ (same ordering as type $(q,r)$ with $q=r$, $r=s$).
 - type $(1,0)$ is a vector; type $(0,1)$ is a covector / $1$-form.
-- type $(0,2)$ includes metrics and $2$-forms (with extra symmetry/antisymmetry).
+- the space of such tensors at a point is denoted $T^{r}_{\ s,P}(M)$.
 
 </i>
 
 <i>
 
-**definition [d]** (*Type-$(q,r)$ Tensor = Valence $\{q,r\}$ = Rank $(q,r)$*) An array of components with $q$ upper (contravariant) indices and $r$ lower (covariant) indices,
+**definition [d]** (*Type-$(q,r)$ Tensor = Rank-$n$ Tensor = Tensorial Set*) A system of components with $r$ upper and $s$ lower indices that transform by the tensor law under coordinate changes (Arfken),
 
-- $T^{\mu_1\ldots\mu_q}_{\ \nu_1\ldots\nu_r}$ ,
+- $T^{\mu_1\ldots\mu_r}_{\ \nu_1\ldots\nu_s}$ ,
 
-transforming as a tensor under coordinate changes.
+with total rank (order) $n = r + s$.
 
 where
 
-- the total rank (order) is $q + r$.
-- upper indices transform with $\partial x / \partial x'$; lower indices with $\partial x' / \partial x$.
+- upper indices transform contravariantly; lower indices covariantly.
+- also called valence $\{r,s\}$ in some texts.
 
 </i>
 
 ## References
 
-1. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — type-$(q,r)$ tensors; index placement.
-2. Nakahara, M. *Geometry, Topology and Physics*. IOP, 2003. — type-$(q,r)$ / rank $(q,r)$ tensors.
-3. Needham, T. — valence $\{q,r\}$ (as cited in notebook).
+1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — type-$(r,s)$ tensor as multilinear map $V^{*r}\times V^{s}\to\mathbb{R}$.
+2. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — rank-$n$ tensors; component transformation laws.
+3. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — multilinear tensor algebra on manifolds.
