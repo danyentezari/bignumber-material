@@ -15,11 +15,12 @@ where
 - $\omega$ is the $k$-covector field.
 - $T_pM$ is the tangent space of $M$ at $p$.
 - $T^*_pM$ is the cotangent space of $M$ at $p$.
-- $\Lambda^k(T^*_pM)$ or $A^k(T_pM)$ is the space of all alternating $k$-tensors on $T_pM$.
+- $\Lambda^k(T^*_pM)$ is the space of all alternating $k$-tensors on $T_pM$.
 - $\Lambda^k(T^*M)$ is the $k$-th exterior power of the cotangent bundle.
 
 Note:
 
-- a $k$-covector field is also called a differential $k$-form.
+- $\Lambda^k(T^*_pM)$ is also written $A^k(T_pM)$.
+- A $k$-covector field is also called a differential $k$-form.
 
 </i>

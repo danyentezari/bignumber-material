@@ -14,6 +14,10 @@ where
 - $V^k$ is the $k$-fold Cartesian product $V \times \dots \times V$.
 - $k$ is a positive integer representing the degree of the tensor.
 - $\mathbb{R}$ is the set of real numbers.
-- $\mathcal{L}^k(V)$ (or $\mathcal{J}^k(V)$) is the vector space of all $k$-tensors on $V$.
+- $\mathcal{L}^k(V)$ is the vector space of all $k$-tensors on $V$.
+
+Note:
+
+- $\mathcal{L}^k(V)$ is also written $\mathcal{J}^k(V)$.
 
 </i>

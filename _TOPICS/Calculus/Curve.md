@@ -21,19 +21,20 @@ Note:
 
 <i>
 
-**definition [d]** (*Curve = Path*) The image of a continuous map $\boldsymbol{\gamma}: [a,b] \rightarrow \mathbb{R}^{n}$ or of a continuous vector function $\mathbf{r}(t)$:
+**definition [d]** (*Curve = Path*) The image of a continuous map $\boldsymbol{\gamma}: [a,b] \rightarrow \mathbb{R}^{n}$:
 
 - $C = \{\, \boldsymbol{\gamma}(t) \mid t \in [a,b] \,\}$ .
 
 where
 
-- $\boldsymbol{\gamma}$ or $\mathbf{r}$ is a continuous map on $[a,b]$.
+- $\boldsymbol{\gamma}$ is a continuous map on $[a,b]$.
 - $C$ is the image set of points traced by the map.
 - $[a,b]$ is the parameter interval.
 - $\mathbb{R}^{n}$ is $n$-dimensional Euclidean space.
 
 Note:
 
+- the map is also written as a continuous vector function $\mathbf{r}(t)$.
 - the map itself is often called a path.
 
 </i>

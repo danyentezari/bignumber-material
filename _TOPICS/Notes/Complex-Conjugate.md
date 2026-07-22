@@ -11,9 +11,14 @@
 where
 
 - $z$ is a complex number composed of real and imaginary parts.
-- $z^*$ (or $\bar{z}$) is the complex conjugate.
+- $z^*$ is the complex conjugate.
 - $x$ is the real part, denoted $\text{Re}(z)$.
 - $y$ is the imaginary part, denoted $\text{Im}(z)$.
 - $i$ is the imaginary unit satisfying $i^2 = -1$.
+
+
+Note:
+
+- $z^*$ is also written $\bar{z}$.
 
 </i>

@@ -9,7 +9,12 @@
 
 where
 
-- $H$ (or $\mathcal{H}$) is the Hilbert space.
+- $H$ is the Hilbert space.
 - $\langle \alpha | \beta \rangle$ is the inner product associating a pair of vectors with a complex scalar.
 - $L^2(a, b)$ is the standard example of an infinite-dimensional Hilbert space consisting of square-integrable functions.
+
+Note:
+
+- $H$ is also written $\mathcal{H}$.
+
 </i>

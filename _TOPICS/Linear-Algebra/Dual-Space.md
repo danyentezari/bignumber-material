@@ -9,13 +9,16 @@
 where
 
 - $V$ is a vector space over a field $K$.
-- $K$ is typically $\mathbb{R}$ or $\mathbb{C}$.
+- $K$ is the scalar field.
 - $\varphi$ is a linear functional from $V$ to $K$.
-- $V^{*}$ or $V'$ is the dual space.
+- $V^{*}$ is the dual space.
 - elements of $V^{*}$ are called covectors.
 
 Note:
 
+- $K$ is typically $\mathbb{R}$.
+- $K$ is also typically $\mathbb{C}$.
+- $V^{*}$ is also written $V'$.
 - a linear functional $\varphi$ maps each vector to a scalar in $K$.
 - if $\dim V = n < \infty$, then $\dim V^{*} = n$.
 

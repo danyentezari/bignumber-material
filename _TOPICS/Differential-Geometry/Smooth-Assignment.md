@@ -13,7 +13,7 @@ where
 
 - $M$ is a smooth manifold.
 - $U$ is a subset of $M$.
-- $T$ is the assignment or tensor field.
+- $T$ is the assignment.
 - $P$ is a point of $M$.
 - $T^{r}_{\ s}(M)$ is the bundle of type-$(r,s)$ tensors on $M$.
 - $T^{r}_{\ s,P}(M)$ is the space of type-$(r,s)$ tensors at $P$.
@@ -23,13 +23,14 @@ where
 
 Note:
 
+- $T$ is also called a tensor field.
 - this is the definition of a smooth tensor field of type $(r,s)$.
 
 </i>
 
 <i>
 
-**definition [d]** (*Smooth Assignment = Cross Section = Section*) A differentiable map $s: M \rightarrow E$ into a vector or tensor bundle that lands in the fiber over each point:
+**definition [d]** (*Smooth Assignment = Cross Section = Section*) A differentiable map $s: M \rightarrow E$ into a vector bundle that lands in the fiber over each point:
 
 - $\pi \circ s = \mathrm{id}_{M}$ ,
 
@@ -47,6 +48,7 @@ where
 
 Note:
 
+- the bundle may be a tensor bundle.
 - a smooth section of $T^{r}_{\ s}(M)$ is precisely a smooth type-$(r,s)$ tensor field.
 
 </i>

@@ -12,9 +12,17 @@
 
 where
 
-- $V$ is a vector space (or linear space) over a field $K$.
-- $\langle \alpha | \beta \rangle$ is the inner product (or scalar product) of vectors $\alpha$ and $\beta$.
-- $K$ is the scalar field, typically the real numbers $\mathbb{R}$ or complex numbers $\mathbb{C}$.
-- $\|\alpha\| = \sqrt{\langle \alpha | \alpha \rangle}$ is the norm, generalizing the concept of "length".
+- $V$ is a vector space over a field $K$.
+- $\langle \alpha | \beta \rangle$ is the inner product of vectors $\alpha$ and $\beta$.
+- $K$ is the scalar field.
+- $\|\alpha\| = \sqrt{\langle \alpha | \alpha \rangle}$ is the norm.
+
+Note:
+
+- a vector space is also called a linear space.
+- the inner product is also called the scalar product.
+- $K$ is typically $\mathbb{R}$.
+- $K$ is also typically $\mathbb{C}$.
+- the norm generalizes the concept of length.
 
 </i>

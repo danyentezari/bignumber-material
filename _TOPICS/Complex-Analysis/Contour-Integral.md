@@ -8,9 +8,15 @@
 
 where
 
-- $C$ (or $\Gamma$) is a contour (a path in the complex plane).
+- $C$ is a contour.
 - $f$ is a complex-valued function.
-- $z(t)$ is a parametrization of $C$; $z'(t) = dz/dt$.
+- $z(t)$ is a parametrization of $C$.
+- $z'(t) = dz/dt$.
+
+Note:
+
+- a contour is a path in the complex plane.
+- $C$ is also written $\Gamma$.
 
 </i>
 

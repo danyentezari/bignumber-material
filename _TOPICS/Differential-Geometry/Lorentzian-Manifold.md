@@ -4,7 +4,7 @@
 
 **definition [d]** (*Lorentzian Manifold = Lorentz Manifold*) A smooth manifold $M$ equipped with a smooth, symmetric, nondegenerate metric tensor field $g$ of Lorentzian signature:
 
-- $(M, g)$ with signature $(-+++)$ or $(+---)$ .
+- $(M, g)$ with signature $(-+++)$ .
 
 where
 
@@ -15,6 +15,7 @@ where
 
 Note:
 
+- the opposite Lorentzian signature is $(+---)$.
 - exactly one eigenvalue of $g$ has opposite sign to the others.
 - unlike a Riemannian metric, $g$ is not positive-definite.
 - the flat prototype is Minkowski spacetime with metric $\eta_{\mu\nu}$.
@@ -23,7 +24,7 @@ Note:
 
 <i>
 
-**definition [d]** (*Lorentzian Manifold = Lorentz Manifold*) A pseudo-Riemannian manifold $(M, g)$ whose metric has Lorentzian signature $(-+++)$ or $(+---)$:
+**definition [d]** (*Lorentzian Manifold = Lorentz Manifold*) A pseudo-Riemannian manifold $(M, g)$ whose metric has Lorentzian signature $(-+++)$:
 
 - $g$ is smooth, symmetric, and nondegenerate on each $T_{p}M$ .
 
@@ -32,6 +33,10 @@ where
 - $M$ is a smooth manifold.
 - $g$ is the Lorentzian metric tensor field.
 - $T_{p}M$ is the tangent space at $p$.
+
+Note:
+
+- the opposite Lorentzian signature is $(+---)$.
 
 </i>
 

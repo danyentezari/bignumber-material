@@ -2,7 +2,7 @@
 
 <i>
 
-**definition** (*Cartesian Product*) A set consisting of all possible ordered combinations of elements from a collection of sets, denoted by $X \times Y$ for two sets, $X_1 \times \dots \times X_n$ for $n$ sets, or $\prod_{\alpha \in A} X_\alpha$ for an indexed family, where
+**definition** (*Cartesian Product*) A set consisting of all possible ordered combinations of elements from a collection of sets, denoted by $X \times Y$ for two sets and by $X_1 \times \dots \times X_n$ for $n$ sets, where
 
 * the following conditions apply:
 
@@ -19,6 +19,12 @@ where
 - $X, Y, X_i, X_\alpha$ are non-empty sets
 - $(x, y)$ is an ordered pair
 - $(x_1, \dots, x_n)$ is an ordered $n$-tuple
-- $A$ (or $\Lambda$) is the index set used to label the family of sets
+- $A$ is the index set used to label the family of sets
   
+
+Note:
+
+- $A$ is also written $\Lambda$.
+- for an indexed family the product is also written $\prod_{\alpha \in A} X_\alpha$.
+
 </i>

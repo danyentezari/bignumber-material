@@ -14,7 +14,8 @@ where
 
 Note:
 
-- $i, j$ run over $1,\ldots,n$ (or $0,\ldots,n-1$ in spacetime).
+- $i, j$ run over $1,\ldots,n$.
+- in spacetime, $i, j$ run over $0,\ldots,n-1$.
 - symmetry cuts the number of independent entries from $n^{2}$ to $n(n+1)/2$.
 
 </i>
@@ -36,7 +37,8 @@ where
 Note:
 
 - the entries $g_{ij}(x)$ are differentiable functions of the coordinates.
-- also called the metrical matrix or the matrix of the first fundamental form.
+- also called the metrical matrix.
+- also called the matrix of the first fundamental form.
 
 </i>
 

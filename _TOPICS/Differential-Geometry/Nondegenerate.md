@@ -2,17 +2,18 @@
 
 <i>
 
-**definition [d]** (*Nondegenerate = Nonsingular = Invertible*) A property of a bilinear form or metric $g$: the only vector orthogonal to all vectors is zero,
+**definition [d]** (*Nondegenerate = Nonsingular = Invertible*) A property of a bilinear form $g$: the only vector orthogonal to all vectors is zero,
 
 - $g(v,w) = 0$ for all $w$ implies $v = 0$ .
 
 where
 
-- $g$ is a bilinear form or metric.
+- $g$ is a bilinear form.
 - $v, w$ are vectors in the underlying vector space $V$.
 
 Note:
 
+- the same property applies when $g$ is a metric.
 - equivalent to: $v \mapsto g(v,\cdot)$ is an isomorphism $V \rightarrow V^{*}$ when $\dim V < \infty$.
 - nondegenerate is equated with invertible for bilinear forms.
 
@@ -20,7 +21,7 @@ Note:
 
 <i>
 
-**definition [d]** (*Nondegenerate = Nonsingular*) A property of the component matrix of a bilinear form or metric:
+**definition [d]** (*Nondegenerate = Nonsingular*) A property of the component matrix of a bilinear form:
 
 - $\det(g_{ij}) \neq 0$ ,
 
@@ -28,12 +29,13 @@ which guarantees that an inverse metric $g^{ij}$ exists.
 
 where
 
-- $g_{ij}$ are the components of the bilinear form or metric.
+- $g_{ij}$ are the components of the bilinear form.
 - $g^{ij}$ are the components of the inverse metric.
 - $\det(g_{ij})$ is the determinant of the component matrix.
 
 Note:
 
+- the same property applies when $g_{ij}$ are metric components.
 - nonsingular is used interchangeably for the matrix condition.
 - required for raising and lowering indices.
 

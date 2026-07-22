@@ -18,7 +18,9 @@ where
 Note:
 
 - type $(r,s)$ uses the same ordering as type $(q,r)$ with $q = r$ and the second slot equal to $s$.
-- type $(1,0)$ is a vector; type $(0,1)$ is a covector or $1$-form.
+- type $(1,0)$ is a vector.
+- type $(0,1)$ is a covector.
+- type $(0,1)$ is also called a $1$-form.
 - the space of such tensors at a point $P$ is denoted $T^{r}_{\ s,P}(M)$.
 
 </i>
@@ -38,10 +40,11 @@ where
 - $\nu_1,\ldots,\nu_s$ are covariant indices.
 - $r$ is the contravariant rank.
 - $s$ is the covariant rank.
-- $n$ is the total rank or order.
+- $n$ is the total rank.
 
 Note:
 
+- $n$ is also called the order.
 - upper indices transform contravariantly; lower indices covariantly.
 - also called valence $\{r,s\}$ in some texts.
 

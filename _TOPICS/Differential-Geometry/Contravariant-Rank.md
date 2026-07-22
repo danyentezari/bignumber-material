@@ -9,8 +9,8 @@
 where
 
 - $T^{r}_{\ s}$ is a tensor of type $(r,s)$.
-- $r$ is the contravariant rank or degree.
-- $s$ is the covariant rank or degree.
+- $r$ is the contravariant rank.
+- $s$ is the covariant rank.
 - $\omega^{1},\ldots,\omega^{r}$ are covectors in $V^{*}$.
 - $v_{1},\ldots,v_{s}$ are vectors in $V$.
 - $V$ is a vector space.
@@ -18,6 +18,8 @@ where
 
 Note:
 
+- $r$ is also called the contravariant degree.
+- $s$ is also called the covariant degree.
 - $r$ is the first slot in type-$(q,r)$ notation when $q = r$.
 
 </i>
@@ -40,7 +42,8 @@ where
 
 Note:
 
-- the total rank or order is $r + s$.
+- the total rank is $r + s$.
+- the total rank is also called the order.
 
 </i>
 

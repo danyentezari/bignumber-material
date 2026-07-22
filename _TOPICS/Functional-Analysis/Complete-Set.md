@@ -12,6 +12,10 @@ where
 - $H$ is the Hilbert space containing the set.
 - $\text{span } M$ is the set of all finite linear combinations of elements in $M$.
 - $\delta(x - x')$ is the Dirac delta function, used to express the completeness relation for sets with continuous indices.
-- $1 = \sum |e_n\rangle\langle e_n|$ is the completeness relation (or resolution of the identity) for a discrete orthonormal basis.
+- $1 = \sum |e_n\rangle\langle e_n|$ is the completeness relation for a discrete orthonormal basis.
+
+Note:
+
+- the completeness relation is also called the resolution of the identity.
 
 </i>

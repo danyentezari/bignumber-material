@@ -9,7 +9,7 @@
 where
 
 - $T$ is the tensor.
-- $V$ is a vector space over $\mathbb{R}$ or $\mathbb{C}$.
+- $V$ is a vector space over $\mathbb{R}$.
 - $V^{*}$ is the dual space of $V$.
 - $r$ is the contravariant rank.
 - $s$ is the covariant rank.
@@ -17,6 +17,7 @@ where
 
 Note:
 
+- $V$ may equally be a vector space over $\mathbb{C}$.
 - $T$ is linear in each argument independently.
 - a scalar is type $(0,0)$; a vector is type $(1,0)$; a covector is type $(0,1)$.
 

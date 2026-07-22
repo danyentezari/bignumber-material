@@ -18,8 +18,11 @@ where
 - $S_k$ is the permutation group of $k$ objects.
 - $\text{sgn } \sigma$ is the sign of the permutation $\sigma$.
 - $v_1, \dots, v_k \in V$ are vectors.
-- $A^k(V)$ (or $\Lambda^k(V^*)$) is the vector space of all alternating $k$-linear functions on $V$.
+- $A^k(V)$ is the vector space of all alternating $k$-linear functions on $V$.
 
-k-covector, multicovector of degree k, and alternating k-tensor are synonyms for an alternating $k$-linear function.
+Note:
+
+- $A^k(V)$ is also written $\Lambda^k(V^*)$.
+- k-covector, multicovector of degree k, and alternating k-tensor are synonyms for an alternating $k$-linear function.
 
 </i>

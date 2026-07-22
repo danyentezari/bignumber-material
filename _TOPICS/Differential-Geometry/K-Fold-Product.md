@@ -13,7 +13,13 @@
 where
 
 - $k$ is a positive integer representing the number of repetitions.
-- $X$ is the underlying set, topological space, or vector space.
-- $X^k$ (or $V^k$) denotes the $k$-fold Cartesian product $X \times \dots \times X$.
+- $X$ is the underlying set.
+- $X^k$ denotes the $k$-fold Cartesian product $X \times \dots \times X$.
+
+Note:
+
+- $X$ may be a topological space.
+- $X$ may be a vector space.
+- $X^k$ is also written $V^k$.
 
 </i>

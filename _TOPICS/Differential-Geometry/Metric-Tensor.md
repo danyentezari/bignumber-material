@@ -32,7 +32,7 @@ Note:
 
 - $(ds)^{2} = g_{ij}\, du^{i}\, du^{j}$ ,
 
-and raises / lowers indices via its inverse $g^{ik}$:
+and raises and lowers indices via its inverse $g^{ik}$:
 
 - $V_{i} = g_{ij}\, V^{j}$ ,
 - $V^{i} = g^{ij}\, V_{j}$ .
@@ -42,13 +42,14 @@ where
 - $g_{ij}$ are the covariant metric components.
 - $g^{ik}$ are the contravariant inverse-metric components.
 - $du^{i}$ are coordinate differentials.
-- $ds$ is the infinitesimal arc length or spacetime interval.
+- $ds$ is the infinitesimal arc length.
 - $V^{i}$ are contravariant components of a vector.
 - $V_{i}$ are covariant components of a vector.
 - $\delta^{i}_{\ j}$ is the Kronecker delta.
 
 Note:
 
+- in spacetime, $ds$ is the infinitesimal spacetime interval.
 - $g^{ik} g_{kj} = \delta^{i}_{\ j}$.
 - in flat Minkowski spacetime, $g_{\mu\nu} = \eta_{\mu\nu}$.
 

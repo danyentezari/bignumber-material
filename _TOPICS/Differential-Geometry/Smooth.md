@@ -2,19 +2,20 @@
 
 <i>
 
-**definition [d]** (*Smooth = Infinitely Differentiable = $C^{\infty}$ = Class $C^{\infty}$*) A property of a real-valued function or Euclidean map: all partial derivatives of all orders exist.
+**definition [d]** (*Smooth = Infinitely Differentiable = $C^{\infty}$ = Class $C^{\infty}$*) A property of a real-valued function: all partial derivatives of all orders exist.
 
 - $f$ is $C^{\infty}$ on an open set $U \subseteq \mathbb{R}^{n}$ .
 
 where
 
-- $f$ is a real-valued function or map.
+- $f$ is a real-valued function.
 - $U$ is an open subset of $\mathbb{R}^{n}$.
 - $\mathbb{R}^{n}$ is $n$-dimensional Euclidean space.
 - $C^{\infty}$ means infinitely differentiable.
 
 Note:
 
+- the same notion applies to Euclidean maps.
 - $C^{k}$ means continuous derivatives up to order $k$; $C^{\infty}$ is the intersection of all $C^{k}$.
 - smooth and infinitely differentiable are synonymous.
 

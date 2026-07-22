@@ -14,7 +14,9 @@ where
 
 Note:
 
-- standard flat examples are the Euclidean metric $\delta_{ij}$ and the Minkowski metric $\eta_{\mu\nu} = \operatorname{diag}(-1,1,1,1)$ or $\operatorname{diag}(1,-1,-1,-1)$.
+- a standard flat example is the Euclidean metric $\delta_{ij}$.
+- another standard flat example is the Minkowski metric $\eta_{\mu\nu} = \operatorname{diag}(-1,1,1,1)$.
+- the opposite Minkowski signature is $\eta_{\mu\nu} = \operatorname{diag}(1,-1,-1,-1)$.
 
 </i>
 
@@ -36,7 +38,8 @@ where
 
 Note:
 
-- vanishing $\Gamma$ is the flat, inertial-coordinate case of Minkowski or Euclidean geometry.
+- vanishing $\Gamma$ is the flat, inertial-coordinate case of Minkowski geometry.
+- the same holds for Euclidean geometry.
 - the prioritized sources treat this via constant flat metrics $\delta$ and $\eta$ rather than as a standalone named term.
 
 </i>

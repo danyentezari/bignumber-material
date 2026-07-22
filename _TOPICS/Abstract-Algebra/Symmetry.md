@@ -13,7 +13,12 @@ Symmetry is about invariance to coordinate systems.
 where
 - $A$ is a tensor or matrix.
 - $m, n$ are indices identifying components.
-- $\tilde{A}$ (or $A^T$) is the transpose of the matrix.
+- $\tilde{A}$ is the transpose of the matrix.
+
+
+Note:
+
+- $\tilde{A}$ is also written $A^T$.
 
 </i>
 
