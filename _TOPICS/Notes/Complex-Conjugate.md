@@ -2,9 +2,7 @@
 
 <i>
 
-**definition [D]** (*Complex Conjugate*) A unique dual complex number associated with a given complex number, geometrically representing its reflection across the real axis in the complex plane, where
-
-* the following condition applies:
+**definition [D]** (*Complex Conjugate*) A unique dual complex number associated with a given complex number, geometrically representing its reflection across the real axis in the complex plane, where the following condition applies:
 
 - For a complex number $z = x + iy$, the conjugate $z^*$ is $x - iy$.
 

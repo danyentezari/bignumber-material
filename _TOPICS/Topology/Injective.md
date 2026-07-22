@@ -3,9 +3,7 @@
 <i>
 
 **Definition** (_Injective_) A property of a function from a set $X$ to a set $Y$,
-$F: X \rightarrow Y$, where
-
-* the following condition applies:
+$F: X \rightarrow Y$, where the following condition applies:
 
 - For all elements $x_1$ and $x_2$ in $X$, if $F(x_1) = F(x_2)$, then $x_1 = x_2$.
 

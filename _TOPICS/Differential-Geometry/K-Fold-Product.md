@@ -2,9 +2,7 @@
 
 <i>
 
-**definition** (*k-Fold Product*) A set constructed by the Cartesian product of $k$ copies of a single set, $X^k$, where
-
-* the following condition applies:
+**definition** (*k-Fold Product*) A set constructed by the Cartesian product of $k$ copies of a single set, $X^k$, where the following condition applies:
 
 - The resulting set consists of all ordered $k$-tuples where
 

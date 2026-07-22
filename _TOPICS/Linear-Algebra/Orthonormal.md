@@ -4,8 +4,8 @@
 
 **definition [D]** (*Orthonormal*) A collection of mutually orthogonal normalized vectors in an inner product space. The set must satisfy the following conditions:
 
-* Each vector in the set has unit length (norm of 1).
-* Any two distinct vectors in the set are orthogonal, meaning their inner product is zero.
+- Each vector in the set has unit length.
+- Any two distinct vectors in the set are orthogonal, meaning their inner product is zero.
 
 where
 
@@ -16,6 +16,7 @@ where
 
 Note:
 
+- unit length means $\|\alpha\| = 1$.
 - the norm is also called the length.
 - $V$ may be regarded as a vector space with an inner product.
 

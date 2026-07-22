@@ -8,9 +8,7 @@ $$
 f^{-1} : Y \rightarrow X,
 $$
 
-where
-
-* the following condition applies:
+where the following condition applies:
 
 - $f^{-1}(y) = x \iff f(x) = y$.
 
@@ -31,9 +29,7 @@ $$
 f^{-1}(Y_{subset}) \subseteq X,
 $$
 
-where
-
-* the following condition applies:
+where the following condition applies:
 
 - $f^{-1}(Y_{subset}) = \{x \in X : f(x) \in Y_{subset}\}$.
 
@@ -51,9 +47,7 @@ where
 <i>
 
 **Definition** (_Continuity_) A property of a map between open subsets,
-$f: X \rightarrow Y$, where
-
-* the following conditions apply:
+$f: X \rightarrow Y$, where the following conditions apply:
 
 - The preimage of every open subset of $Y$ is an open subset of $X$.
 
@@ -70,9 +64,7 @@ where
 <i>
 
 **Definition** (_Surjective_) A property of a function from a set $X$ to a set $Y$,
-$F: X \rightarrow Y$, where
-
-* the following condition applies:
+$F: X \rightarrow Y$, where the following condition applies:
 
 - For every element $y$ in $Y$, there exists an element $x$ in $X$ such that $F(x) = y$.
 
@@ -91,9 +83,7 @@ Note:
 <i>
 
 **Definition** (_Injective_) A property of a function from a set $X$ to a set $Y$,
-$F: X \rightarrow Y$, where
-
-* the following condition applies:
+$F: X \rightarrow Y$, where the following condition applies:
 
 - For all elements $x_1$ and $x_2$ in $X$, if $F(x_1) = F(x_2)$, then $x_1 = x_2$.
 
@@ -113,9 +103,7 @@ Note:
 <i>
 
 **Definition** (_Bijective_) A property of a function from a set $X$ to a set $Y$,
-$F: X \rightarrow Y$, where
-
-* the following conditions apply:
+$F: X \rightarrow Y$, where the following conditions apply:
 
 - The function $F$ is injective
 - The function $F$ is surjective

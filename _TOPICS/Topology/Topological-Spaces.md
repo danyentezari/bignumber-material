@@ -21,9 +21,7 @@ where
 
 <i>
 
-**Definition** (_Neighborhood_) A property of a subset $N$ of a topological space $X$ with respect to a point $p \in X$, where
-
-* the following condition applies:
+**Definition** (_Neighborhood_) A property of a subset $N$ of a topological space $X$ with respect to a point $p \in X$, where the following condition applies:
 
 - There exists an open set $U$ such that $p \in U \subseteq N$.
 

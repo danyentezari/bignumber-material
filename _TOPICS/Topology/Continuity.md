@@ -3,9 +3,7 @@
 <i>
 
 **Definition** (_Continuity_) A property of a map between open subsets,
-$f: X \rightarrow Y$, where
-
-* the following conditions apply:
+$f: X \rightarrow Y$, where the following conditions apply:
 
 - The preimage of every open subset of $Y$ is an open subset of $X$.
 

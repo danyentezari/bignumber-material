@@ -8,9 +8,7 @@ $$
 f^{-1} : Y \rightarrow X,
 $$
 
-where
-
-* the following condition applies:
+where the following condition applies:
 
 - $f^{-1}(y) = x \iff f(x) = y$.
 

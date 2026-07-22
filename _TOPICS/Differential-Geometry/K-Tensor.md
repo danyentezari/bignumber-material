@@ -2,9 +2,7 @@
 
 <i>
 
-**definition** (*k-Tensor*) A multilinear function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where
-
-* the following condition applies:
+**definition** (*k-Tensor*) A multilinear function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where the following condition applies:
 
 - The function $T$ is linear in each of its $k$ arguments.
 

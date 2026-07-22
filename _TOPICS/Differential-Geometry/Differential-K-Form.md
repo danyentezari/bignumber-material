@@ -2,9 +2,7 @@
 
 <i>
 
-**definition** (*Differential k-Form*) A function assigning an alternating k-linear function to each point of a manifold $M$, where
-
-* the following condition applies:
+**definition** (*Differential k-Form*) A function assigning an alternating k-linear function to each point of a manifold $M$, where the following condition applies:
 
 - For each point $p \in M$, $\omega(p)$ is a $k$-covector on the tangent space $T_pM$.
 

@@ -2,9 +2,7 @@
 
 <i>
 
-**definition [D]** (*Inner Product Space*) A vector space equipped with an inner product that associates a complex scalar with every ordered pair of vectors, where
-
-* the following conditions apply:
+**definition [D]** (*Inner Product Space*) A vector space equipped with an inner product that associates a complex scalar with every ordered pair of vectors, where the following conditions apply:
 
 - The mapping satisfies conjugate symmetry: $\langle \alpha | \beta \rangle = \langle \beta | \alpha \rangle^*$.
 - The mapping is linear in the second factor: $\langle \alpha | a\beta + b\gamma \rangle = a\langle \alpha | \beta \rangle + b\langle \alpha | \gamma \rangle$.

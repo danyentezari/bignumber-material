@@ -8,9 +8,7 @@ $$
 f^{-1}(Y_{subset}) \subseteq X,
 $$
 
-where
-
-* the following condition applies:
+where the following condition applies:
 
 - $f^{-1}(Y_{subset}) = \{x \in X : f(x) \in Y_{subset}\}$.
 

@@ -2,9 +2,7 @@
 
 <i>
 
-**definition** (*k-Covector Field*) A function assigning a $k$-covector to each point of a manifold, $\omega: M \rightarrow \Lambda^k(T^*M)$, where
-
-* the following condition applies:
+**definition** (*k-Covector Field*) A function assigning a $k$-covector to each point of a manifold, $\omega: M \rightarrow \Lambda^k(T^*M)$, where the following condition applies:
 
 - For each point $p$ in $M$, $\omega(p)$ is an alternating $k$-linear function on the tangent space $T_pM$.
 

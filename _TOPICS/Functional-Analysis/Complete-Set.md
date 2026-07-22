@@ -4,7 +4,7 @@
 
 **definition** (*Complete Set*) A subset of a normed space whose span is dense in that space, meaning any element in the space can be represented by a linear combination of the set's members. The set must satisfy the following condition:
 
-* The only vector in the space that is orthogonal to every element in the set is the zero vector.
+- The only vector in the space that is orthogonal to every element in the set is the zero vector.
 
 where
 

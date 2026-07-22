@@ -3,9 +3,7 @@
 <i>
 
 **Definition** (_Surjective_) A property of a function from a set $X$ to a set $Y$,
-$F: X \rightarrow Y$, where
-
-* the following condition applies:
+$F: X \rightarrow Y$, where the following condition applies:
 
 - For every element $y$ in $Y$, there exists an element $x$ in $X$ such that $F(x) = y$.
 

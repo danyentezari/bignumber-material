@@ -4,9 +4,7 @@ The open set is central to topology, and it is required for definitions. We begi
 
 <i>
 
-**Definition** (_Open Set_) A subset $U$ of a topological space, $(X,\mathcal{T})$, where
-
-* the following condition applies:
+**Definition** (_Open Set_) A subset $U$ of a topological space, $(X,\mathcal{T})$, where the following condition applies:
 
 - $U \in \mathcal{T}$
 
