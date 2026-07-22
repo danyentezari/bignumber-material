@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>87 Tensor Field | Mathematics for Physics</title>
+<meta name="author" content="bignumber-material">
+<meta name="description" content="definition [d] (Tensor Field = Section) A mapping that assigns to each point of a manifold a tensor of fixed type: for \(U \subset M\), \(T : U \rightarrow T^{r}_{\ s}(M)\) , \(T(P) \equiv T_{P}...">
+<meta name="generator" content="bookdown 0.46 with bs4_book()">
+<meta property="og:title" content="87 Tensor Field | Mathematics for Physics">
+<meta property="og:type" content="book">
+<meta property="og:description" content="definition [d] (Tensor Field = Section) A mapping that assigns to each point of a manifold a tensor of fixed type: for \(U \subset M\), \(T : U \rightarrow T^{r}_{\ s}(M)\) , \(T(P) \equiv T_{P}...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="87 Tensor Field | Mathematics for Physics">
+<meta name="twitter:description" content="definition [d] (Tensor Field = Section) A mapping that assigns to each point of a manifold a tensor of fixed type: for \(U \subset M\), \(T : U \rightarrow T^{r}_{\ s}(M)\) , \(T(P) \equiv T_{P}...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Serif + mono typefaces --><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<!-- Apply saved/preferred theme before first paint to avoid flashing --><script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("book-theme");
+          var theme = stored
+            ? stored
+            : (window.matchMedia &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+        document.documentElement.classList.add("theme-classic");
+        try {
+          var storedFont = localStorage.getItem("book-font-size");
+          document.documentElement.style.fontSize = (storedFont !== null ? storedFont : "17") + "px";
+        } catch (e) {
+          document.documentElement.style.fontSize = "17px";
+        }
+      })();
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Differential Geometry", "href": "differential-geometry.html", "current": false}, {"title": "Tensor Field", "href": "tensor-field.html", "current": true}]</script>
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Mathematics for Physics</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="topology.html"><span class="header-section-number">5</span> Topology</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="active-parent" href="differential-geometry.html"><span class="header-section-number">6</span> Differential Geometry</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="calculus.html"><span class="header-section-number">7</span> Calculus</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="functional-analysis.html"><span class="header-section-number">8</span> Functional Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="linear-algebra.html"><span class="header-section-number">9</span> Linear Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="abstract-algebra.html"><span class="header-section-number">10</span> Abstract Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="notes.html"><span class="header-section-number">11</span> Notes</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="glossary.html"><span class="header-section-number">12</span> Glossary</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="symbols.html"><span class="header-section-number">13</span> Symbols</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="site-index.html"><span class="header-section-number">14</span> Index</a>
+</div>
+</li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="tensor-field" class="section level1" number="87">
+<h1>
+<span class="header-section-number">87</span> Tensor Field<a class="anchor" aria-label="anchor" href="#tensor-field"><i class="fas fa-link"></i></a>
+</h1>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em>Tensor Field = Section</em>) A mapping that assigns to each point of a manifold a tensor of fixed type: for <span class="math inline">\(U \subset M\)</span>,</p>
+<ul>
+<li>
+<span class="math inline">\(T : U \rightarrow T^{r}_{\ s}(M)\)</span> ,</li>
+<li>
+<span class="math inline">\(T(P) \equiv T_{P} \in T^{r}_{\ s,P}(M)\)</span> .</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(M\)</span> is a smooth manifold.</li>
+<li>
+<span class="math inline">\(U\)</span> is a subset of <span class="math inline">\(M\)</span>.</li>
+<li>
+<span class="math inline">\(T\)</span> is the tensor field.</li>
+<li>
+<span class="math inline">\(P\)</span> is a point of <span class="math inline">\(M\)</span>.</li>
+<li>
+<span class="math inline">\(T^{r}_{\ s}(M)\)</span> is the bundle of type-<span class="math inline">\((r,s)\)</span> tensors on <span class="math inline">\(M\)</span>.</li>
+<li>
+<span class="math inline">\(T^{r}_{\ s,P}(M)\)</span> is the space of type-<span class="math inline">\((r,s)\)</span> tensors at <span class="math inline">\(P\)</span>.</li>
+<li>
+<span class="math inline">\(r\)</span> is the contravariant degree.</li>
+<li>
+<span class="math inline">\(s\)</span> is the covariant degree.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>a smooth tensor field is a smooth such assignment, that is, a smooth section.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em>Tensor Field = Section</em>) A coordinate-independent field on a manifold whose local components vary differentiably: at each point, a multilinear map</p>
+<ul>
+<li>
+<span class="math inline">\(T_{P} : \underbrace{(T_{P}M)^{*}\times\cdots\times(T_{P}M)^{*}}_{r} \times \underbrace{T_{P}M\times\cdots\times T_{P}M}_{s} \rightarrow \mathbb{R}\)</span> .</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(T_{P}\)</span> is the value of the tensor field at the point <span class="math inline">\(P\)</span>.</li>
+<li>
+<span class="math inline">\(T_{P}M\)</span> is the tangent space at <span class="math inline">\(P\)</span>.</li>
+<li>
+<span class="math inline">\((T_{P}M)^{*}\)</span> is the cotangent space at <span class="math inline">\(P\)</span>.</li>
+<li>
+<span class="math inline">\(r\)</span> is the number of covector arguments.</li>
+<li>
+<span class="math inline">\(s\)</span> is the number of vector arguments.</li>
+<li>
+<span class="math inline">\(\mathbb{R}\)</span> is the set of real numbers.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>examples: vector fields are type <span class="math inline">\((1,0)\)</span>; covector fields type <span class="math inline">\((0,1)\)</span>; the metric type <span class="math inline">\((0,2)\)</span>.</li>
+<li>equivalently, a section of the tensor bundle <span class="math inline">\(T^{r}_{\ s}(M)\)</span>.</li>
+</ul>
+<p></p>
+<div id="examples" class="section level2" number="87.1">
+<h2>
+<span class="header-section-number">87.1</span> Examples<a class="anchor" aria-label="anchor" href="#examples"><i class="fas fa-link"></i></a>
+</h2>
+<p><i></i></p>
+<p><strong>example [d]</strong> (<strong>Metric Tensor Field</strong> — Frankel) The type-<span class="math inline">\((0,2)\)</span> metric tensor field on <span class="math inline">\(\mathbb{R}^{3}\)</span> in spherical coordinates <span class="math inline">\((r, \theta, \phi)\)</span>, with line element</p>
+<ul>
+<li>
+<span class="math inline">\(ds^{2} = dr^{2} + r^{2}\, d\theta^{2} + r^{2}\sin^{2}\theta\, d\phi^{2}\)</span> .</li>
+</ul>
+<p>The nonzero components as functions of position are</p>
+<ul>
+<li>
+<span class="math inline">\(g_{rr}(r, \theta, \phi) = 1\)</span> ,</li>
+<li>
+<span class="math inline">\(g_{\theta\theta}(r, \theta, \phi) = r^{2}\)</span> ,</li>
+<li>
+<span class="math inline">\(g_{\phi\phi}(r, \theta, \phi) = r^{2}\sin^{2}\theta\)</span> .</li>
+</ul>
+<p>In matrix form,</p>
+<ul>
+<li>
+<span class="math inline">\((g_{ij}) = \operatorname{diag}(1,\, r^{2},\, r^{2}\sin^{2}\theta)\)</span> .</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\((r, \theta, \phi)\)</span> are spherical coordinates.</li>
+<li>
+<span class="math inline">\(g_{ij}\)</span> are the components of the metric tensor field.</li>
+<li>
+<span class="math inline">\(ds\)</span> is the infinitesimal arc length.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>off-diagonal components vanish.</li>
+<li>this is a smooth assignment of a symmetric type-<span class="math inline">\((0,2)\)</span> tensor to each point.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>example [d]</strong> (<strong>Electromagnetic Field Strength</strong> — Carroll, Hassani) The antisymmetric type-<span class="math inline">\((0,2)\)</span> tensor field <span class="math inline">\(F_{\mu\nu}\)</span> on Minkowski spacetime with coordinates <span class="math inline">\(x^{\mu} = (t, x, y, z)\)</span>:</p>
+<ul>
+<li>
+<span class="math inline">\(F_{\mu\nu} =
+\begin{pmatrix}
+0 &amp; -E_{x} &amp; -E_{y} &amp; -E_{z} \\
+E_{x} &amp; 0 &amp; -B_{z} &amp; B_{y} \\
+E_{y} &amp; B_{z} &amp; 0 &amp; -B_{x} \\
+E_{z} &amp; -B_{y} &amp; B_{x} &amp; 0
+\end{pmatrix}\)</span> ,</li>
+</ul>
+<p>where <span class="math inline">\(E_{i}(t,x,y,z)\)</span> and <span class="math inline">\(B_{i}(t,x,y,z)\)</span> are the electric and magnetic field components at each spacetime point.</p>
+<p>As a differential form,</p>
+<ul>
+<li>
+<span class="math inline">\(F = -E_{x}\, dt\wedge dx - E_{y}\, dt\wedge dy - E_{z}\, dt\wedge dz + B_{z}\, dx\wedge dy - B_{y}\, dx\wedge dz + B_{x}\, dy\wedge dz\)</span> .</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(F_{\mu\nu}\)</span> are the components of the electromagnetic field strength tensor field.</li>
+<li>
+<span class="math inline">\(E_{x}, E_{y}, E_{z}\)</span> are the electric field components.</li>
+<li>
+<span class="math inline">\(B_{x}, B_{y}, B_{z}\)</span> are the magnetic field components.</li>
+<li>
+<span class="math inline">\(x^{\mu} = (t, x, y, z)\)</span> are spacetime coordinates.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>
+<span class="math inline">\(F\)</span> assigns an antisymmetric bilinear form to each event in spacetime.</li>
+<li>Hassani identifies <span class="math inline">\(F_{j0} = E_{j}\)</span>, <span class="math inline">\(F_{12} = B_{3}\)</span>, <span class="math inline">\(F_{13} = -B_{2}\)</span>, <span class="math inline">\(F_{23} = B_{1}\)</span>.</li>
+</ul>
+<p></p>
+</div>
+<div id="references-17" class="section level2" number="87.2">
+<h2>
+<span class="header-section-number">87.2</span> References<a class="anchor" aria-label="anchor" href="#references-17"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Hassani, S. <em>Mathematical Physics</em>, 2nd ed. Springer. — tensor field <span class="math inline">\(T:U\to T^{r}_{s}(M)\)</span>; electromagnetic field strength <span class="math inline">\(F\)</span>.</li>
+<li>Frankel, T. <em>The Geometry of Physics</em>, 3rd ed. Cambridge University Press. — metric tensor field in spherical coordinates; <span class="math inline">\(ds^{2}=dr^{2}+r^{2}d\theta^{2}+r^{2}\sin^{2}\theta\,d\phi^{2}\)</span>.</li>
+<li>Carroll, S. <em>Spacetime and Geometry: An Introduction to General Relativity</em>. Cambridge University Press, 2021. — electromagnetic field strength tensor <span class="math inline">\(F_{\mu\nu}\)</span>.</li>
+<li>Arfken, G. B., Weber, H. J., &amp; Harris, F. E. <em>Mathematical Methods for Physicists</em>, 7th ed. Elsevier / Academic Press, 2013. — tensor fields via component transformation laws.</li>
+</ol>
+<div class="topic-index">
+<ul>
+<li><a href="alternating-function.html">Alternating Function</a></li>
+<li><a href="alternating-k-linear-function.html">Alternating k-linear function</a></li>
+<li><a href="bundle.html">Bundle</a></li>
+<li><a href="cartesian-product.html">Cartesian Product</a></li>
+<li><a href="constant-metric-tensor.html">Constant Metric Tensor</a></li>
+<li><a href="contravariant-rank.html">Contravariant Rank</a></li>
+<li><a href="covariant-rank.html">Covariant Rank</a></li>
+<li><a href="covariant-contravariant-and-coordinate-systems.html">Covariant, Contravariant, and Coordinate Systems</a></li>
+<li><a href="differential-forms.html">Differential Forms</a></li>
+<li><a href="differential-k-form.html">Differential k-Form</a></li>
+<li><a href="exterior-algebra-and-exterior-derivatives.html">Exterior Algebra and Exterior Derivatives</a></li>
+<li><a href="forms.html">Forms</a></li>
+<li><a href="functions.html">Functions</a></li>
+<li><a href="inverse-metric.html">Inverse Metric</a></li>
+<li><a href="k-covector.html">k-Covector</a></li>
+<li><a href="k-covector-field.html">k-Covector Field</a></li>
+<li><a href="k-fold-product.html">k-Fold Product</a></li>
+<li><a href="k-form.html">k-form</a></li>
+<li><a href="k-tensor.html">k-Tensor</a></li>
+<li><a href="linear-functional.html">Linear Functional</a></li>
+<li><a href="lorentzian-manifold.html">Lorentzian Manifold</a></li>
+<li><a href="metric-tensor.html">Metric Tensor</a></li>
+<li><a href="multilinear-function.html">Multilinear Function</a></li>
+<li><a href="nondegenerate.html">Nondegenerate</a></li>
+<li><a href="nondegenerate-bilinear-form.html">Nondegenerate Bilinear Form</a></li>
+<li><a href="one-form.html">One-Form</a></li>
+<li><a href="smooth.html">Smooth</a></li>
+<li><a href="smooth-assignment.html">Smooth Assignment</a></li>
+<li><a href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html">Stoke’s Theorem and the Fundamental Theorem of Calculus</a></li>
+<li><a href="symmetric-array.html">Symmetric Array</a></li>
+<li><a href="tangent-space.html">Tangent Space</a></li>
+<li><a href="tensor-field.html">Tensor Field</a></li>
+<li><a href="tensors.html">Tensors</a></li>
+<li><a href="two-form.html">Two-Form</a></li>
+<li><a href="type-0-2-tensor-field.html">Type-(0,2) Tensor Field</a></li>
+<li><a href="type-q-r-tensor.html">Type-(q,r) Tensor</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+<script>
+  (function () {
+    var MOON =
+      '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    var SUN =
+      '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.5" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22.5"/><line x1="3.5" y1="3.5" x2="5.3" y2="5.3"/><line x1="18.7" y1="18.7" x2="20.5" y2="20.5"/><line x1="1.5" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22.5" y2="12"/><line x1="3.5" y1="20.5" x2="5.3" y2="18.7"/><line x1="18.7" y1="5.3" x2="20.5" y2="3.5"/></svg>';
+
+    var FONT_MIN = 13;
+    var FONT_MAX = 28;
+    var FONT_STEP = 1.6;
+    var FONT_BASE = 17;
+    var fontSize = FONT_BASE;
+
+    function initClassicLayout() {
+      if (document.getElementById("page")) return;
+
+      var root = document.documentElement;
+      document.body.classList.add("masthead-fixed", "grid");
+
+      var container = document.querySelector(".container-fluid");
+      var header = document.querySelector("header.sidebar-book");
+      var main = document.querySelector("main#content");
+      var chapterSidebar = document.querySelector(".sidebar-chapter");
+      var oldFooter = document.querySelector("footer.bg-primary, footer");
+
+      if (!container || !header || !main) return;
+
+      var titleLink = header.querySelector("h1 a");
+      var bookTitle = titleLink ? titleLink.textContent.trim() : "Mathematics for Physics";
+      var tagline = "";
+
+      var page = document.createElement("div");
+      page.id = "page";
+      page.className = "hfeed site";
+
+      var masthead = document.createElement("header");
+      masthead.id = "masthead";
+      masthead.className = "site-header";
+      masthead.setAttribute("role", "banner");
+
+      var headerMain = document.createElement("div");
+      headerMain.className = "header-main";
+
+      var bookButton = document.createElement("a");
+      bookButton.href = "index.html";
+      bookButton.className = "book-button";
+      bookButton.innerHTML = "<button type=\"button\">Book</button>";
+
+      var siteTitle = document.createElement("h1");
+      siteTitle.className = "site-title";
+      siteTitle.innerHTML =
+        '<a href="index.html" rel="home">' +
+        bookTitle +
+        '<span class="site-tagline">' +
+        tagline +
+        "</span></a>";
+
+      var primaryNav = document.createElement("nav");
+      primaryNav.id = "primary-navigation";
+      primaryNav.className = "site-navigation primary-navigation";
+      primaryNav.setAttribute("role", "navigation");
+
+      var menuToggle = document.createElement("button");
+      menuToggle.className = "menu-toggle";
+      menuToggle.type = "button";
+      menuToggle.textContent = "Primary Menu";
+
+      var skipLink = document.createElement("a");
+      skipLink.className = "screen-reader-text skip-link";
+      skipLink.href = "#content";
+      skipLink.textContent = "Skip to content";
+
+      var primaryMenu = document.createElement("div");
+      primaryMenu.id = "primary-menu";
+      primaryMenu.className = "nav-menu";
+
+      var primaryList = document.createElement("ul");
+      header.querySelectorAll(".book-toc > .book-toc-topic").forEach(function (topic) {
+        var link = topic.querySelector(".book-toc-topic-header > a");
+        if (!link) return;
+
+        var li = document.createElement("li");
+        li.className = "page_item";
+        li.appendChild(link.cloneNode(true));
+
+        var section = topic.querySelector(".book-toc-section");
+        if (section && section.children.length) {
+          li.classList.add("page_item_has_children");
+          var childUl = document.createElement("ul");
+          childUl.className = "children";
+          section.querySelectorAll("li > a").forEach(function (subLink) {
+            var childLi = document.createElement("li");
+            childLi.className = "page_item";
+            childLi.appendChild(subLink.cloneNode(true));
+            childUl.appendChild(childLi);
+          });
+          li.appendChild(childUl);
+        }
+        primaryList.appendChild(li);
+      });
+      primaryMenu.appendChild(primaryList);
+
+      primaryNav.appendChild(menuToggle);
+      primaryNav.appendChild(skipLink);
+      primaryNav.appendChild(primaryMenu);
+
+      menuToggle.addEventListener("click", function () {
+        primaryNav.classList.toggle("toggled-on");
+        menuToggle.setAttribute(
+          "aria-expanded",
+          primaryNav.classList.contains("toggled-on") ? "true" : "false"
+        );
+      });
+
+      headerMain.appendChild(bookButton);
+      headerMain.appendChild(siteTitle);
+      headerMain.appendChild(primaryNav);
+      masthead.appendChild(headerMain);
+
+      var siteMain = document.createElement("div");
+      siteMain.id = "main";
+      siteMain.className = "site-main";
+
+      var mainContent = document.createElement("div");
+      mainContent.id = "main-content";
+      mainContent.className = "main-content";
+
+      var contentArea = document.createElement("div");
+      contentArea.id = "primary";
+      contentArea.className = "content-area";
+
+      var siteContent = document.createElement("div");
+      siteContent.id = "content";
+      siteContent.className = "site-content";
+      siteContent.setAttribute("role", "main");
+
+      var article = document.createElement("article");
+      article.className = "hentry page type-page status-publish";
+
+      var entryHeader = document.createElement("header");
+      entryHeader.className = "entry-header";
+
+      var breadcrumbData = document.getElementById("page-breadcrumbs");
+      if (breadcrumbData) {
+        try {
+          var trail = JSON.parse(breadcrumbData.textContent || "[]");
+          if (Array.isArray(trail) && trail.length) {
+            var breadcrumbs = document.createElement("nav");
+            breadcrumbs.className = "breadcrumbs";
+            breadcrumbs.setAttribute("aria-label", "Breadcrumb");
+            trail.forEach(function (item, index) {
+              if (index > 0) {
+                var sep = document.createElement("span");
+                sep.className = "breadcrumb-sep";
+                sep.textContent = " > ";
+                breadcrumbs.appendChild(sep);
+              }
+              if (item.current || index === trail.length - 1) {
+                var current = document.createElement("span");
+                current.className = "breadcrumb-current";
+                current.textContent = item.title;
+                current.setAttribute("aria-current", "page");
+                breadcrumbs.appendChild(current);
+              } else {
+                var crumb = document.createElement("a");
+                crumb.href = item.href;
+                crumb.textContent = item.title;
+                breadcrumbs.appendChild(crumb);
+              }
+            });
+            entryHeader.appendChild(breadcrumbs);
+          }
+        } catch (e) {}
+      }
+
+      var pageHeading = main.querySelector("h1");
+      if (pageHeading) {
+        var entryTitle = document.createElement("h1");
+        entryTitle.className = "entry-title";
+        var headingClone = pageHeading.cloneNode(true);
+        headingClone.querySelectorAll(".header-section-number, .anchor").forEach(function (n) {
+          n.remove();
+        });
+        entryTitle.textContent = headingClone.textContent.trim();
+        entryHeader.appendChild(entryTitle);
+      }
+
+      var entryContent = document.createElement("div");
+      entryContent.className = "entry-content";
+
+      Array.from(main.childNodes).forEach(function (node) {
+        if (node.nodeType !== 1) return;
+        if (node.matches("script")) return;
+        if (node.classList.contains("chapter-nav")) return;
+        if (node.matches("h1")) return;
+        entryContent.appendChild(node);
+      });
+
+      entryContent.querySelectorAll("h1").forEach(function (h) {
+        h.remove();
+      });
+
+      var chapterNav = main.querySelector(".chapter-nav");
+      if (chapterNav) {
+        chapterNav.remove();
+      }
+
+      article.appendChild(entryHeader);
+      article.appendChild(entryContent);
+      siteContent.appendChild(article);
+      contentArea.appendChild(siteContent);
+
+      var contentSidebar = document.createElement("div");
+      contentSidebar.id = "content-sidebar";
+      contentSidebar.className = "content-sidebar widget-area";
+      contentSidebar.setAttribute("role", "complementary");
+
+      var searchWidget = document.createElement("aside");
+      searchWidget.id = "search-6";
+      searchWidget.className = "widget widget_search";
+
+      var existingForm = header.querySelector('form[role="search"]');
+      if (existingForm) {
+        existingForm.classList.add("search-form");
+        var searchInput = existingForm.querySelector("#search");
+        if (searchInput) {
+          searchInput.classList.remove("form-control");
+          searchInput.classList.add("search-field");
+          searchInput.placeholder = "Search \u2026";
+          if (!existingForm.querySelector("label")) {
+            var searchLabel = document.createElement("label");
+            searchLabel.innerHTML =
+              '<span class="screen-reader-text">Search for:</span>';
+            searchLabel.appendChild(searchInput);
+            existingForm.insertBefore(searchLabel, existingForm.firstChild);
+          }
+        }
+        if (!existingForm.querySelector(".search-submit")) {
+          var submit = document.createElement("input");
+          submit.type = "submit";
+          submit.className = "search-submit";
+          submit.value = "Search";
+          existingForm.appendChild(submit);
+        }
+        searchWidget.appendChild(existingForm);
+      } else {
+        var searchForm = document.createElement("form");
+        searchForm.setAttribute("role", "search");
+        searchForm.className = "search-form";
+        searchForm.innerHTML =
+          '<label><span class="screen-reader-text">Search for:</span>' +
+          '<input type="search" class="search-field" id="search" placeholder="Search &hellip;" aria-label="Search"></label>' +
+          '<input type="submit" class="search-submit" value="Search">';
+        searchWidget.appendChild(searchForm);
+      }
+
+      var locationWidget = document.createElement("aside");
+      locationWidget.id = "flexipages-4";
+      locationWidget.className = "widget widget_pages widget_flexipages flexipages_widget";
+
+      var locationTitle = document.createElement("h1");
+      locationTitle.className = "widget-title";
+      locationTitle.textContent = "Location";
+
+      var locationNav = header.querySelector('nav[aria-label="Table of contents"]');
+      if (locationNav) {
+        var locationList = locationNav.querySelector(".book-toc");
+        if (locationList) {
+          locationList.classList.add("location-list");
+          locationList.querySelectorAll(".book-toc-toggle").forEach(function (toggle) {
+            toggle.remove();
+          });
+          locationList.querySelectorAll(".book-toc-section").forEach(function (section) {
+            section.classList.add("children");
+          });
+          locationList.querySelectorAll(".book-toc-topic").forEach(function (topic) {
+            topic.classList.add("page_item");
+            if (topic.querySelector(".book-toc-section")) {
+              topic.classList.add("page_item_has_children");
+            }
+            var header = topic.querySelector(".book-toc-topic-header");
+            var link = topic.querySelector(".book-toc-topic-header > a");
+            if (header && link) {
+              topic.insertBefore(link, topic.firstChild);
+              header.remove();
+            }
+            if (topic.querySelector(".active, .active-parent")) {
+              topic.classList.add("current_page_item");
+            }
+          });
+        }
+        locationWidget.appendChild(locationTitle);
+        if (locationList) {
+          locationWidget.appendChild(locationList);
+        }
+      }
+
+      var controlsWidget = document.createElement("aside");
+      controlsWidget.id = "zeno_fr_widget-3";
+      controlsWidget.className = "widget widget_controls Zeno_FR_Widget";
+
+      var controlsRow = document.createElement("div");
+      controlsRow.className = "sidebar-controls-row";
+
+      var fontWidget = document.createElement("div");
+      fontWidget.className = "zeno_font_resizer_container";
+      fontWidget.innerHTML =
+        '<p class="zeno_font_resizer">' +
+        '<span>' +
+        '<a href="#" class="zeno_font_resizer_minus" title="Decrease font size">A<span class="screen-reader-text"> Decrease font size.</span></a> ' +
+        '<a href="#" class="zeno_font_resizer_reset" title="Reset font size">A<span class="screen-reader-text"> Reset font size.</span></a> ' +
+        '<a href="#" class="zeno_font_resizer_add" title="Increase font size">A<span class="screen-reader-text"> Increase font size.</span></a>' +
+        "</span></p>";
+
+      var themeBtn = document.createElement("button");
+      themeBtn.id = "theme-toggle";
+      themeBtn.className = "theme-toggle";
+      themeBtn.type = "button";
+      themeBtn.setAttribute("aria-label", "Toggle dark and light mode");
+
+      controlsRow.appendChild(fontWidget);
+      controlsRow.appendChild(themeBtn);
+      controlsWidget.appendChild(controlsRow);
+
+      contentSidebar.appendChild(searchWidget);
+      contentSidebar.appendChild(locationWidget);
+      contentSidebar.appendChild(controlsWidget);
+
+      mainContent.appendChild(contentArea);
+      mainContent.appendChild(contentSidebar);
+      siteMain.appendChild(mainContent);
+
+      var secondary = document.createElement("div");
+      secondary.id = "secondary";
+      secondary.innerHTML = '<h2 class="site-description"></h2>';
+
+      var siteFooter = document.createElement("footer");
+      siteFooter.id = "colophon";
+      siteFooter.className = "site-footer";
+      siteFooter.setAttribute("role", "contentinfo");
+      siteFooter.innerHTML =
+        '<div class="site-info"><em>' +
+        bookTitle +
+        "</em> — built with <a href=\"https://bookdown.org\">bookdown</a></div>";
+
+      page.appendChild(masthead);
+      page.appendChild(siteMain);
+      page.appendChild(secondary);
+      page.appendChild(siteFooter);
+
+      container.parentNode.insertBefore(page, container);
+      container.remove();
+      if (chapterSidebar) chapterSidebar.remove();
+      if (oldFooter) oldFooter.remove();
+
+      function currentTheme() {
+        return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      }
+
+      function renderTheme(theme) {
+        themeBtn.innerHTML = theme === "dark" ? SUN : MOON;
+        themeBtn.setAttribute(
+          "title",
+          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+        );
+      }
+
+      function applyFontSize(size) {
+        fontSize = Math.max(FONT_MIN, Math.min(FONT_MAX, size));
+        root.style.fontSize = fontSize + "px";
+        try {
+          localStorage.setItem("book-font-size", String(fontSize));
+        } catch (e) {}
+      }
+
+      try {
+        var storedFont = localStorage.getItem("book-font-size");
+        if (storedFont !== null) {
+          fontSize = parseFloat(storedFont);
+        }
+      } catch (e) {}
+      applyFontSize(fontSize);
+      renderTheme(currentTheme());
+
+      themeBtn.addEventListener("click", function () {
+        var next = currentTheme() === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try {
+          localStorage.setItem("book-theme", next);
+        } catch (e) {}
+        renderTheme(next);
+      });
+
+      fontWidget.querySelector(".zeno_font_resizer_minus").addEventListener("click", function (e) {
+        e.preventDefault();
+        applyFontSize(fontSize - FONT_STEP);
+      });
+      fontWidget.querySelector(".zeno_font_resizer_reset").addEventListener("click", function (e) {
+        e.preventDefault();
+        applyFontSize(FONT_BASE);
+      });
+      fontWidget.querySelector(".zeno_font_resizer_add").addEventListener("click", function (e) {
+        e.preventDefault();
+        applyFontSize(fontSize + FONT_STEP);
+      });
+
+      primaryNav.querySelectorAll(".page_item_has_children").forEach(function (item) {
+        item.addEventListener("mouseenter", function () {
+          item.classList.add("focus");
+        });
+        item.addEventListener("mouseleave", function () {
+          item.classList.remove("focus");
+        });
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initClassicLayout);
+    } else {
+      initClassicLayout();
+    }
+  })();
+</script><div class="chapter-nav">
+<div class="prev"><a href="tangent-space.html"><span class="header-section-number">86</span> Tangent Space</a></div>
+<div class="next"><a href="tensors.html"><span class="header-section-number">88</span> Tensors</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#tensor-field"><span class="header-section-number">87</span> Tensor Field</a></li>
+<li><a class="nav-link" href="#examples"><span class="header-section-number">87.1</span> Examples</a></li>
+<li><a class="nav-link" href="#references-17"><span class="header-section-number">87.2</span> References</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Mathematics for Physics</strong>" was written by bignumber-material. </p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

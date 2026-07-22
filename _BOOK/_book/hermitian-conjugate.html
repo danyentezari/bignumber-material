@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>104 Hermitian Conjugate | Mathematics for Physics</title>
+<title>119 Hermitian Conjugate | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="definition [d] (Hermitian Conjugate = Adjoint = Conjugate Transpose = Hermitian Transpose) The matrix or operator \(A^{\dagger}\) obtained from \(A\) by transposition together with complex...">
+<meta name="description" content="definition [d] (Hermitian Conjugate = Adjoint = Conjugate Transpose = Hermitian Transpose) The matrix \(A^{\dagger}\) obtained from \(A\) by transposition together with complex conjugation:...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="104 Hermitian Conjugate | Mathematics for Physics">
+<meta property="og:title" content="119 Hermitian Conjugate | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="definition [d] (Hermitian Conjugate = Adjoint = Conjugate Transpose = Hermitian Transpose) The matrix or operator \(A^{\dagger}\) obtained from \(A\) by transposition together with complex...">
+<meta property="og:description" content="definition [d] (Hermitian Conjugate = Adjoint = Conjugate Transpose = Hermitian Transpose) The matrix \(A^{\dagger}\) obtained from \(A\) by transposition together with complex conjugation:...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="104 Hermitian Conjugate | Mathematics for Physics">
-<meta name="twitter:description" content="definition [d] (Hermitian Conjugate = Adjoint = Conjugate Transpose = Hermitian Transpose) The matrix or operator \(A^{\dagger}\) obtained from \(A\) by transposition together with complex...">
+<meta name="twitter:title" content="119 Hermitian Conjugate | Mathematics for Physics">
+<meta name="twitter:description" content="definition [d] (Hermitian Conjugate = Adjoint = Conjugate Transpose = Hermitian Transpose) The matrix \(A^{\dagger}\) obtained from \(A\) by transposition together with complex conjugation:...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -160,12 +160,12 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="hermitian-conjugate" class="section level1" number="104">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="hermitian-conjugate" class="section level1" number="119">
 <h1>
-<span class="header-section-number">104</span> Hermitian Conjugate<a class="anchor" aria-label="anchor" href="#hermitian-conjugate"><i class="fas fa-link"></i></a>
+<span class="header-section-number">119</span> Hermitian Conjugate<a class="anchor" aria-label="anchor" href="#hermitian-conjugate"><i class="fas fa-link"></i></a>
 </h1>
 <p><i></i></p>
-<p><strong>definition [d]</strong> (<em>Hermitian Conjugate = Adjoint = Conjugate Transpose = Hermitian Transpose</em>) The matrix or operator <span class="math inline">\(A^{\dagger}\)</span> obtained from <span class="math inline">\(A\)</span> by transposition together with complex conjugation:</p>
+<p><strong>definition [d]</strong> (<em>Hermitian Conjugate = Adjoint = Conjugate Transpose = Hermitian Transpose</em>) The matrix <span class="math inline">\(A^{\dagger}\)</span> obtained from <span class="math inline">\(A\)</span> by transposition together with complex conjugation:</p>
 <ul>
 <li>(Matrix) <span class="math inline">\((A^{\dagger})_{ij} = \overline{a_{ji}}\)</span> .</li>
 <li>(Operator) <span class="math inline">\(\langle A\mathbf{a},\, \mathbf{b} \rangle = \langle \mathbf{a},\, A^{\dagger}\mathbf{b} \rangle\)</span> for all <span class="math inline">\(\mathbf{a}, \mathbf{b}\)</span>.</li>
@@ -173,18 +173,30 @@
 <p>where</p>
 <ul>
 <li>
-<span class="math inline">\(A\)</span> is a matrix or linear operator on a complex Hilbert space.</li>
+<span class="math inline">\(A\)</span> is a matrix on a complex Hilbert space.</li>
 <li>
-<span class="math inline">\(a_{ij}\)</span> are the entries of <span class="math inline">\(A\)</span>; <span class="math inline">\(\overline{\,\cdot\,}\)</span> denotes the complex conjugate.</li>
+<span class="math inline">\(A^{\dagger}\)</span> is the Hermitian conjugate of <span class="math inline">\(A\)</span>.</li>
+<li>
+<span class="math inline">\(a_{ij}\)</span> are the entries of <span class="math inline">\(A\)</span>.</li>
+<li>
+<span class="math inline">\(\overline{\,\cdot\,}\)</span> denotes the complex conjugate.</li>
 <li>
 <span class="math inline">\(\langle \cdot,\, \cdot \rangle\)</span> is the inner product.</li>
 <li>
-<span class="math inline">\(A^{\dagger}\)</span> (also written <span class="math inline">\(A^{*}\)</span> or <span class="math inline">\(A^{H}\)</span>) is the Hermitian conjugate.</li>
+<span class="math inline">\(\mathbf{a}, \mathbf{b}\)</span> are vectors in the Hilbert space.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>the same definition applies when <span class="math inline">\(A\)</span> is a linear operator.</li>
+<li>
+<span class="math inline">\(A^{\dagger}\)</span> is also written <span class="math inline">\(A^{*}\)</span>.</li>
+<li>
+<span class="math inline">\(A^{\dagger}\)</span> is also written <span class="math inline">\(A^{H}\)</span>.</li>
 </ul>
 <p></p>
-<div id="references-24" class="section level2" number="104.1">
+<div id="references-40" class="section level2" number="119.1">
 <h2>
-<span class="header-section-number">104.1</span> References<a class="anchor" aria-label="anchor" href="#references-24"><i class="fas fa-link"></i></a>
+<span class="header-section-number">119.1</span> References<a class="anchor" aria-label="anchor" href="#references-40"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
 <li>Arfken, G. B., Weber, H. J., &amp; Harris, F. E. <em>Mathematical Methods for Physicists</em>, 7th ed. Elsevier / Academic Press, 2013. — matrix condition (2.53); operator adjoint (§5.3).</li>
@@ -633,13 +645,13 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="dual-space.html"><span class="header-section-number">103</span> Dual Space</a></div>
-<div class="next"><a href="inner-product.html"><span class="header-section-number">105</span> Inner Product</a></div>
+<div class="prev"><a href="dual-space.html"><span class="header-section-number">118</span> Dual Space</a></div>
+<div class="next"><a href="inner-product.html"><span class="header-section-number">120</span> Inner Product</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#hermitian-conjugate"><span class="header-section-number">104</span> Hermitian Conjugate</a></li>
-<li><a class="nav-link" href="#references-24"><span class="header-section-number">104.1</span> References</a></li>
+<li><a class="nav-link" href="#hermitian-conjugate"><span class="header-section-number">119</span> Hermitian Conjugate</a></li>
+<li><a class="nav-link" href="#references-40"><span class="header-section-number">119.1</span> References</a></li>
 </ul>
 
       <div class="book-extra">

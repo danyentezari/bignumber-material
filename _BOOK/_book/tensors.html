@@ -4,15 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>75 Tensors | Mathematics for Physics</title>
+<title>88 Tensors | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
 <meta name="description" content="definition [d] (Tensor = Multilinear Map) A multilinear, real-valued function of type \((r,s)\) on a vector space \(V\) and its dual \(V^{*}\): \(T : \underbrace{V^{*} \times \cdots \times...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="75 Tensors | Mathematics for Physics">
+<meta property="og:title" content="88 Tensors | Mathematics for Physics">
 <meta property="og:type" content="book">
 <meta property="og:description" content="definition [d] (Tensor = Multilinear Map) A multilinear, real-valued function of type \((r,s)\) on a vector space \(V\) and its dual \(V^{*}\): \(T : \underbrace{V^{*} \times \cdots \times...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="75 Tensors | Mathematics for Physics">
+<meta name="twitter:title" content="88 Tensors | Mathematics for Physics">
 <meta name="twitter:description" content="definition [d] (Tensor = Multilinear Map) A multilinear, real-valued function of type \((r,s)\) on a vector space \(V\) and its dual \(V^{*}\): \(T : \underbrace{V^{*} \times \cdots \times...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -160,9 +160,9 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="tensors" class="section level1" number="75">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="tensors" class="section level1" number="88">
 <h1>
-<span class="header-section-number">75</span> Tensors<a class="anchor" aria-label="anchor" href="#tensors"><i class="fas fa-link"></i></a>
+<span class="header-section-number">88</span> Tensors<a class="anchor" aria-label="anchor" href="#tensors"><i class="fas fa-link"></i></a>
 </h1>
 <p><i></i></p>
 <p><strong>definition [d]</strong> (<em>Tensor = Multilinear Map</em>) A multilinear, real-valued function of type <span class="math inline">\((r,s)\)</span> on a vector space <span class="math inline">\(V\)</span> and its dual <span class="math inline">\(V^{*}\)</span>:</p>
@@ -173,20 +173,29 @@
 <p>where</p>
 <ul>
 <li>
-<span class="math inline">\(V\)</span> is a vector space over <span class="math inline">\(\mathbb{R}\)</span> (or <span class="math inline">\(\mathbb{C}\)</span>).</li>
+<span class="math inline">\(T\)</span> is the tensor.</li>
+<li>
+<span class="math inline">\(V\)</span> is a vector space over <span class="math inline">\(\mathbb{R}\)</span>.</li>
 <li>
 <span class="math inline">\(V^{*}\)</span> is the dual space of <span class="math inline">\(V\)</span>.</li>
 <li>
-<span class="math inline">\(r\)</span> is the contravariant rank (number of covector arguments).</li>
+<span class="math inline">\(r\)</span> is the contravariant rank.</li>
 <li>
-<span class="math inline">\(s\)</span> is the covariant rank (number of vector arguments).</li>
+<span class="math inline">\(s\)</span> is the covariant rank.</li>
+<li>
+<span class="math inline">\(\mathbb{R}\)</span> is the set of real numbers.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>
+<span class="math inline">\(V\)</span> may equally be a vector space over <span class="math inline">\(\mathbb{C}\)</span>.</li>
 <li>
 <span class="math inline">\(T\)</span> is linear in each argument independently.</li>
 <li>a scalar is type <span class="math inline">\((0,0)\)</span>; a vector is type <span class="math inline">\((1,0)\)</span>; a covector is type <span class="math inline">\((0,1)\)</span>.</li>
 </ul>
 <p></p>
 <p><i></i></p>
-<p><strong>definition [d]</strong> (<strong>Tensor</strong>) An array of components <span class="math inline">\(T^{i_1\ldots i_p}_{\ j_1\ldots j_q}\)</span> labeled by <span class="math inline">\(p\)</span> contravariant (upper) and <span class="math inline">\(q\)</span> covariant (lower) indices, whose components transform linearly under a coordinate change <span class="math inline">\(x \mapsto x'\)</span>:</p>
+<p><strong>definition [d]</strong> (<strong>Tensor</strong>) An array of components <span class="math inline">\(T^{i_1\ldots i_p}_{\ j_1\ldots j_q}\)</span> labeled by <span class="math inline">\(p\)</span> contravariant upper and <span class="math inline">\(q\)</span> covariant lower indices, whose components transform linearly under a coordinate change <span class="math inline">\(x \mapsto x'\)</span>:</p>
 <ul>
 <li>(Contravariant) <span class="math inline">\((T')^{i} = \displaystyle \sum_{j} \frac{\partial x^{j}}{\partial (x')^{i}}\, T^{j}\)</span> .</li>
 <li>(Covariant) <span class="math inline">\((T')_{i} = \displaystyle \sum_{j} \frac{\partial (x')^{i}}{\partial x^{j}}\, T_{j}\)</span> .</li>
@@ -195,14 +204,28 @@
 <p>where</p>
 <ul>
 <li>
-<span class="math inline">\(p + q\)</span> is the rank; in <span class="math inline">\(d\)</span> dimensions a rank-<span class="math inline">\(n\)</span> tensor has <span class="math inline">\(d^{n}\)</span> components.</li>
+<span class="math inline">\(T^{i_1\ldots i_p}_{\ j_1\ldots j_q}\)</span> are the components of the tensor.</li>
+<li>
+<span class="math inline">\(p\)</span> is the number of contravariant indices.</li>
+<li>
+<span class="math inline">\(q\)</span> is the number of covariant indices.</li>
+<li>
+<span class="math inline">\(x\)</span> and <span class="math inline">\(x'\)</span> are the old and new coordinates.</li>
+<li>
+<span class="math inline">\(T^{j}\)</span>, <span class="math inline">\(T_{j}\)</span>, <span class="math inline">\(T^{k}_{\ l}\)</span> are components in the old coordinates.</li>
+<li>
+<span class="math inline">\((T')^{i}\)</span>, <span class="math inline">\((T')_{i}\)</span>, <span class="math inline">\((T')^{i}_{\ j}\)</span> are components in the new coordinates.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>the total rank is <span class="math inline">\(p + q\)</span>; in <span class="math inline">\(d\)</span> dimensions a rank-<span class="math inline">\(n\)</span> tensor has <span class="math inline">\(d^{n}\)</span> components.</li>
 <li>upper indices transform with the Jacobian <span class="math inline">\(\partial x^{j}/\partial (x')^{i}\)</span>; lower indices with its inverse <span class="math inline">\(\partial (x')^{i}/\partial x^{j}\)</span>.</li>
 <li>the transformation laws ensure the tensor represents a coordinate-independent geometric object.</li>
 </ul>
 <p></p>
-<div id="references-4" class="section level2" number="75.1">
+<div id="references-18" class="section level2" number="88.1">
 <h2>
-<span class="header-section-number">75.1</span> References<a class="anchor" aria-label="anchor" href="#references-4"><i class="fas fa-link"></i></a>
+<span class="header-section-number">88.1</span> References<a class="anchor" aria-label="anchor" href="#references-18"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
 <li>Nash, C., &amp; Sen, S. <em>Topology and Geometry for Physicists</em>. Academic Press, 1983. — tensor as multilinear map.</li>
@@ -215,13 +238,18 @@
 <ul>
 <li><a href="alternating-function.html">Alternating Function</a></li>
 <li><a href="alternating-k-linear-function.html">Alternating k-linear function</a></li>
+<li><a href="bundle.html">Bundle</a></li>
 <li><a href="cartesian-product.html">Cartesian Product</a></li>
+<li><a href="constant-metric-tensor.html">Constant Metric Tensor</a></li>
+<li><a href="contravariant-rank.html">Contravariant Rank</a></li>
+<li><a href="covariant-rank.html">Covariant Rank</a></li>
 <li><a href="covariant-contravariant-and-coordinate-systems.html">Covariant, Contravariant, and Coordinate Systems</a></li>
 <li><a href="differential-forms.html">Differential Forms</a></li>
 <li><a href="differential-k-form.html">Differential k-Form</a></li>
 <li><a href="exterior-algebra-and-exterior-derivatives.html">Exterior Algebra and Exterior Derivatives</a></li>
 <li><a href="forms.html">Forms</a></li>
 <li><a href="functions.html">Functions</a></li>
+<li><a href="inverse-metric.html">Inverse Metric</a></li>
 <li><a href="k-covector.html">k-Covector</a></li>
 <li><a href="k-covector-field.html">k-Covector Field</a></li>
 <li><a href="k-fold-product.html">k-Fold Product</a></li>
@@ -229,11 +257,21 @@
 <li><a href="k-tensor.html">k-Tensor</a></li>
 <li><a href="linear-functional.html">Linear Functional</a></li>
 <li><a href="lorentzian-manifold.html">Lorentzian Manifold</a></li>
+<li><a href="metric-tensor.html">Metric Tensor</a></li>
 <li><a href="multilinear-function.html">Multilinear Function</a></li>
+<li><a href="nondegenerate.html">Nondegenerate</a></li>
+<li><a href="nondegenerate-bilinear-form.html">Nondegenerate Bilinear Form</a></li>
 <li><a href="one-form.html">One-Form</a></li>
+<li><a href="smooth.html">Smooth</a></li>
+<li><a href="smooth-assignment.html">Smooth Assignment</a></li>
 <li><a href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html">Stoke’s Theorem and the Fundamental Theorem of Calculus</a></li>
+<li><a href="symmetric-array.html">Symmetric Array</a></li>
+<li><a href="tangent-space.html">Tangent Space</a></li>
+<li><a href="tensor-field.html">Tensor Field</a></li>
 <li><a href="tensors.html">Tensors</a></li>
 <li><a href="two-form.html">Two-Form</a></li>
+<li><a href="type-0-2-tensor-field.html">Type-(0,2) Tensor Field</a></li>
+<li><a href="type-q-r-tensor.html">Type-(q,r) Tensor</a></li>
 </ul>
 </div>
 
@@ -662,13 +700,13 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html"><span class="header-section-number">74</span> Stoke’s Theorem and the Fundamental Theorem of Calculus</a></div>
-<div class="next"><a href="two-form.html"><span class="header-section-number">76</span> Two-Form</a></div>
+<div class="prev"><a href="tensor-field.html"><span class="header-section-number">87</span> Tensor Field</a></div>
+<div class="next"><a href="two-form.html"><span class="header-section-number">89</span> Two-Form</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#tensors"><span class="header-section-number">75</span> Tensors</a></li>
-<li><a class="nav-link" href="#references-4"><span class="header-section-number">75.1</span> References</a></li>
+<li><a class="nav-link" href="#tensors"><span class="header-section-number">88</span> Tensors</a></li>
+<li><a class="nav-link" href="#references-18"><span class="header-section-number">88.1</span> References</a></li>
 </ul>
 
       <div class="book-extra">

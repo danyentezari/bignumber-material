@@ -4,15 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>59 Covariant, Contravariant, and Coordinate Systems | Mathematics for Physics</title>
+<title>63 Covariant, Contravariant, and Coordinate Systems | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
 <meta name="description" content="The context if this section is the following. In physics and mathematics, points exist independently of the coordinates used to represent them. First, we begin a discussion on covariant and...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="59 Covariant, Contravariant, and Coordinate Systems | Mathematics for Physics">
+<meta property="og:title" content="63 Covariant, Contravariant, and Coordinate Systems | Mathematics for Physics">
 <meta property="og:type" content="book">
 <meta property="og:description" content="The context if this section is the following. In physics and mathematics, points exist independently of the coordinates used to represent them. First, we begin a discussion on covariant and...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="59 Covariant, Contravariant, and Coordinate Systems | Mathematics for Physics">
+<meta name="twitter:title" content="63 Covariant, Contravariant, and Coordinate Systems | Mathematics for Physics">
 <meta name="twitter:description" content="The context if this section is the following. In physics and mathematics, points exist independently of the coordinates used to represent them. First, we begin a discussion on covariant and...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -160,9 +160,9 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="covariant-contravariant-and-coordinate-systems" class="section level1" number="59">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="covariant-contravariant-and-coordinate-systems" class="section level1" number="63">
 <h1>
-<span class="header-section-number">59</span> Covariant, Contravariant, and Coordinate Systems<a class="anchor" aria-label="anchor" href="#covariant-contravariant-and-coordinate-systems"><i class="fas fa-link"></i></a>
+<span class="header-section-number">63</span> Covariant, Contravariant, and Coordinate Systems<a class="anchor" aria-label="anchor" href="#covariant-contravariant-and-coordinate-systems"><i class="fas fa-link"></i></a>
 </h1>
 <p>The context if this section is the following. In physics and mathematics, points exist independently of the coordinates used to represent them.</p>
 <p>First, we begin a discussion on covariant and contravariant vectors.</p>
@@ -185,11 +185,11 @@
 </ul>
 <p></p>
 <p><i></i></p>
-<p><strong>definition</strong> (<em>k-Covector</em>) An alternating <span class="math inline">\(k\)</span>-linear function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(T: V^k \rightarrow \mathbb{R}\)</span>, where</p>
+<p><strong>definition</strong> (<em>k-Covector</em>) An alternating <span class="math inline">\(k\)</span>-linear function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(T: V^k \rightarrow \mathbb{R}\)</span>, where the following conditions apply:</p>
 <ul>
-<li><p>the following conditions apply:</p></li>
-<li><p>The function <span class="math inline">\(T\)</span> is linear in each of its <span class="math inline">\(k\)</span> arguments.</p></li>
-<li><p><span class="math inline">\(T(v_{\sigma(1)}, \dots, v_{\sigma(k)}) = (\text{sgn } \sigma) T(v_1, \dots, v_k)\)</span> for every permutation <span class="math inline">\(\sigma \in S_k\)</span>.</p></li>
+<li>The function <span class="math inline">\(T\)</span> is linear in each of its <span class="math inline">\(k\)</span> arguments.</li>
+<li>
+<span class="math inline">\(T(v_{\sigma(1)}, \dots, v_{\sigma(k)}) = (\text{sgn } \sigma) T(v_1, \dots, v_k)\)</span> for every permutation <span class="math inline">\(\sigma \in S_k\)</span>.</li>
 </ul>
 <p>where</p>
 <ul>
@@ -200,17 +200,22 @@
 <li>
 <span class="math inline">\(v_1, \dots, v_k \in V\)</span> are vectors.</li>
 <li>
-<span class="math inline">\(A^k(V)\)</span> (or <span class="math inline">\(\Lambda^k(V^*)\)</span>) is the vector space of all <span class="math inline">\(k\)</span>-covectors on <span class="math inline">\(V\)</span>.</li>
+<span class="math inline">\(A^k(V)\)</span> is the vector space of all <span class="math inline">\(k\)</span>-covectors on <span class="math inline">\(V\)</span>.</li>
 <li>
 <span class="math inline">\(\text{sgn } \sigma\)</span> is the sign of the permutation.</li>
-<li>A <span class="math inline">\(k\)</span>-covector is also called a multicovector of degree k or an alternating k-tensor.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>
+<span class="math inline">\(A^k(V)\)</span> is also written <span class="math inline">\(\Lambda^k(V^*)\)</span>.</li>
+<li>A <span class="math inline">\(k\)</span>-covector is also called a multicovector of degree <span class="math inline">\(k\)</span>.</li>
+<li>A <span class="math inline">\(k\)</span>-covector is also called an alternating <span class="math inline">\(k\)</span>-tensor.</li>
 </ul>
 <p></p>
 <p><i></i></p>
-<p><strong>definition</strong> (<em>k-Covector Field</em>) A function assigning a <span class="math inline">\(k\)</span>-covector to each point of a manifold, <span class="math inline">\(\omega: M \rightarrow \Lambda^k(T^*M)\)</span>, where</p>
+<p><strong>definition</strong> (<em>k-Covector Field</em>) A function assigning a <span class="math inline">\(k\)</span>-covector to each point of a manifold, <span class="math inline">\(\omega: M \rightarrow \Lambda^k(T^*M)\)</span>, where the following condition applies:</p>
 <ul>
-<li><p>the following condition applies:</p></li>
-<li><p>For each point <span class="math inline">\(p\)</span> in <span class="math inline">\(M\)</span>, <span class="math inline">\(\omega(p)\)</span> is an alternating <span class="math inline">\(k\)</span>-linear function on the tangent space <span class="math inline">\(T_pM\)</span>.</p></li>
+<li>For each point <span class="math inline">\(p\)</span> in <span class="math inline">\(M\)</span>, <span class="math inline">\(\omega(p)\)</span> is an alternating <span class="math inline">\(k\)</span>-linear function on the tangent space <span class="math inline">\(T_pM\)</span>.</li>
 </ul>
 <p>where</p>
 <ul>
@@ -223,9 +228,14 @@
 <li>
 <span class="math inline">\(T^*_pM\)</span> is the cotangent space of <span class="math inline">\(M\)</span> at <span class="math inline">\(p\)</span>.</li>
 <li>
-<span class="math inline">\(\Lambda^k(T^*_pM)\)</span> (or <span class="math inline">\(A^k(T_pM)\)</span>) is the space of all alternating <span class="math inline">\(k\)</span>-tensors on the tangent space <span class="math inline">\(T_pM\)</span>.</li>
+<span class="math inline">\(\Lambda^k(T^*_pM)\)</span> is the space of all alternating <span class="math inline">\(k\)</span>-tensors on the tangent space <span class="math inline">\(T_pM\)</span>.</li>
 <li>
 <span class="math inline">\(\Lambda^k(T^*M)\)</span> is the <span class="math inline">\(k\)</span>-th exterior power of the cotangent bundle.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>
+<span class="math inline">\(\Lambda^k(T^*_pM)\)</span> is also written <span class="math inline">\(A^k(T_pM)\)</span>.</li>
 <li>A <span class="math inline">\(k\)</span>-covector field is also called a differential <span class="math inline">\(k\)</span>-form.</li>
 </ul>
 <p></p>
@@ -280,13 +290,18 @@ T(v_2,v_1)
 <ul>
 <li><a href="alternating-function.html">Alternating Function</a></li>
 <li><a href="alternating-k-linear-function.html">Alternating k-linear function</a></li>
+<li><a href="bundle.html">Bundle</a></li>
 <li><a href="cartesian-product.html">Cartesian Product</a></li>
+<li><a href="constant-metric-tensor.html">Constant Metric Tensor</a></li>
+<li><a href="contravariant-rank.html">Contravariant Rank</a></li>
+<li><a href="covariant-rank.html">Covariant Rank</a></li>
 <li><a href="covariant-contravariant-and-coordinate-systems.html">Covariant, Contravariant, and Coordinate Systems</a></li>
 <li><a href="differential-forms.html">Differential Forms</a></li>
 <li><a href="differential-k-form.html">Differential k-Form</a></li>
 <li><a href="exterior-algebra-and-exterior-derivatives.html">Exterior Algebra and Exterior Derivatives</a></li>
 <li><a href="forms.html">Forms</a></li>
 <li><a href="functions.html">Functions</a></li>
+<li><a href="inverse-metric.html">Inverse Metric</a></li>
 <li><a href="k-covector.html">k-Covector</a></li>
 <li><a href="k-covector-field.html">k-Covector Field</a></li>
 <li><a href="k-fold-product.html">k-Fold Product</a></li>
@@ -294,11 +309,21 @@ T(v_2,v_1)
 <li><a href="k-tensor.html">k-Tensor</a></li>
 <li><a href="linear-functional.html">Linear Functional</a></li>
 <li><a href="lorentzian-manifold.html">Lorentzian Manifold</a></li>
+<li><a href="metric-tensor.html">Metric Tensor</a></li>
 <li><a href="multilinear-function.html">Multilinear Function</a></li>
+<li><a href="nondegenerate.html">Nondegenerate</a></li>
+<li><a href="nondegenerate-bilinear-form.html">Nondegenerate Bilinear Form</a></li>
 <li><a href="one-form.html">One-Form</a></li>
+<li><a href="smooth.html">Smooth</a></li>
+<li><a href="smooth-assignment.html">Smooth Assignment</a></li>
 <li><a href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html">Stoke’s Theorem and the Fundamental Theorem of Calculus</a></li>
+<li><a href="symmetric-array.html">Symmetric Array</a></li>
+<li><a href="tangent-space.html">Tangent Space</a></li>
+<li><a href="tensor-field.html">Tensor Field</a></li>
 <li><a href="tensors.html">Tensors</a></li>
 <li><a href="two-form.html">Two-Form</a></li>
+<li><a href="type-0-2-tensor-field.html">Type-(0,2) Tensor Field</a></li>
+<li><a href="type-q-r-tensor.html">Type-(q,r) Tensor</a></li>
 </ul>
 </div>
 
@@ -726,11 +751,11 @@ T(v_2,v_1)
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="cartesian-product.html"><span class="header-section-number">58</span> Cartesian Product</a></div>
-<div class="next"><a href="differential-forms.html"><span class="header-section-number">60</span> Differential Forms</a></div>
+<div class="prev"><a href="covariant-rank.html"><span class="header-section-number">62</span> Covariant Rank</a></div>
+<div class="next"><a href="differential-forms.html"><span class="header-section-number">64</span> Differential Forms</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#covariant-contravariant-and-coordinate-systems"><span class="header-section-number">59</span> Covariant, Contravariant, and Coordinate Systems</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#covariant-contravariant-and-coordinate-systems"><span class="header-section-number">63</span> Covariant, Contravariant, and Coordinate Systems</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

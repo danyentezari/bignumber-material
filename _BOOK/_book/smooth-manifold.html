@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>51 Smooth Manifold | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="Definition (Smooth Manifold)  Bijective Continuity Hausdorff Space Hilbert Space Homeomorphism Injective Inverse Function Manifolds Neighborhood Open Set Open Sets Preimage Preimages and Inverse...">
+<meta name="description" content="definition [d] (Smooth Manifold = Differentiable Manifold = \(C^{\infty}\) Manifold) An \(n\)-dimensional Hausdorff, second-countable topological space covered by charts \(\{U, \phi_{U}\}\) whose...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="51 Smooth Manifold | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Definition (Smooth Manifold)  Bijective Continuity Hausdorff Space Hilbert Space Homeomorphism Injective Inverse Function Manifolds Neighborhood Open Set Open Sets Preimage Preimages and Inverse...">
+<meta property="og:description" content="definition [d] (Smooth Manifold = Differentiable Manifold = \(C^{\infty}\) Manifold) An \(n\)-dimensional Hausdorff, second-countable topological space covered by charts \(\{U, \phi_{U}\}\) whose...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="51 Smooth Manifold | Mathematics for Physics">
-<meta name="twitter:description" content="Definition (Smooth Manifold)  Bijective Continuity Hausdorff Space Hilbert Space Homeomorphism Injective Inverse Function Manifolds Neighborhood Open Set Open Sets Preimage Preimages and Inverse...">
+<meta name="twitter:description" content="definition [d] (Smooth Manifold = Differentiable Manifold = \(C^{\infty}\) Manifold) An \(n\)-dimensional Hausdorff, second-countable topological space covered by charts \(\{U, \phi_{U}\}\) whose...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -165,8 +165,68 @@
 <span class="header-section-number">51</span> Smooth Manifold<a class="anchor" aria-label="anchor" href="#smooth-manifold"><i class="fas fa-link"></i></a>
 </h1>
 <p><i></i></p>
-<p><strong>Definition</strong> (<em>Smooth Manifold</em>)</p>
+<p><strong>definition [d]</strong> (<em>Smooth Manifold = Differentiable Manifold = <span class="math inline">\(C^{\infty}\)</span> Manifold</em>) An <span class="math inline">\(n\)</span>-dimensional Hausdorff, second-countable topological space covered by charts <span class="math inline">\(\{U, \phi_{U}\}\)</span> whose overlap transition maps are <span class="math inline">\(C^{\infty}\)</span>:</p>
+<ul>
+<li>
+<span class="math inline">\(M^{n}\)</span> with atlas whose <span class="math inline">\(f_{VU}\)</span> are infinitely differentiable .</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(M^{n}\)</span> is the manifold of dimension <span class="math inline">\(n\)</span>.</li>
+<li>
+<span class="math inline">\(\{U, \phi_{U}\}\)</span> is a collection of coordinate charts.</li>
+<li>
+<span class="math inline">\(U\)</span> is an open set in <span class="math inline">\(M\)</span>.</li>
+<li>
+<span class="math inline">\(\phi_{U}\)</span> is the coordinate map on <span class="math inline">\(U\)</span>.</li>
+<li>
+<span class="math inline">\(f_{VU}\)</span> is the transition map between overlapping charts.</li>
+<li>
+<span class="math inline">\(C^{\infty}\)</span> means infinitely differentiable.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>locally each point has a neighborhood looking like an open set in <span class="math inline">\(\mathbb{R}^{n}\)</span>.</li>
+<li>equivalently, points are connected smoothly so each neighborhood looks like <span class="math inline">\(m\)</span>-dimensional Cartesian space.</li>
+</ul>
 <p></p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em>Smooth Manifold = Differentiable Manifold = <span class="math inline">\(C^{\infty}\)</span> Manifold</em>) A topological manifold <span class="math inline">\(M\)</span> with an atlas <span class="math inline">\(\{(U_{\alpha}, \phi_{\alpha})\}\)</span> such that every transition map</p>
+<ul>
+<li><span class="math inline">\(\phi_{\beta} \circ \phi_{\alpha}^{-1} : \phi_{\alpha}(U_{\alpha} \cap U_{\beta}) \rightarrow \phi_{\beta}(U_{\alpha} \cap U_{\beta})\)</span></li>
+</ul>
+<p>is of class <span class="math inline">\(C^{\infty}\)</span>.</p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(M\)</span> is the manifold.</li>
+<li>
+<span class="math inline">\((U_{\alpha}, \phi_{\alpha})\)</span> is a coordinate chart.</li>
+<li>
+<span class="math inline">\(\phi_{\alpha}: U_{\alpha} \rightarrow \mathbb{R}^{n}\)</span> maps an open set of <span class="math inline">\(M\)</span> into Euclidean space.</li>
+<li>
+<span class="math inline">\(\phi_{\beta} \circ \phi_{\alpha}^{-1}\)</span> is the transition map on the overlap.</li>
+<li>
+<span class="math inline">\(C^{\infty}\)</span> means infinitely differentiable.</li>
+<li>
+<span class="math inline">\(\mathbb{R}^{n}\)</span> is <span class="math inline">\(n\)</span>-dimensional Euclidean space.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>
+<span class="math inline">\(C^{\infty}\)</span> transitions make derivatives of functions and tensors chart-independent.</li>
+</ul>
+<p></p>
+<div id="references-3" class="section level2" number="51.1">
+<h2>
+<span class="header-section-number">51.1</span> References<a class="anchor" aria-label="anchor" href="#references-3"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Frankel, T. <em>The Geometry of Physics</em>, 3rd ed. Cambridge University Press. — <span class="math inline">\(C^{\infty}\)</span> manifold; Hausdorff, second-countable; smooth transition maps <span class="math inline">\(f_{VU}\)</span>.</li>
+<li>Hassani, S. <em>Mathematical Physics</em>, 2nd ed. Springer. — differentiable manifold; local Euclidean neighborhoods.</li>
+<li>Arfken, G. B., Weber, H. J., &amp; Harris, F. E. <em>Mathematical Methods for Physicists</em>, 7th ed. Elsevier / Academic Press, 2013. — manifolds and curvilinear coordinate patches in applications.</li>
+</ol>
 <div class="topic-index">
 <ul>
 <li><a href="bijective.html">Bijective</a></li>
@@ -190,6 +250,7 @@
 </ul>
 </div>
 
+</div>
 </div>
 <script>
   (function () {
@@ -618,7 +679,10 @@
 <div class="next"><a href="surjective.html"><span class="header-section-number">52</span> Surjective</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#smooth-manifold"><span class="header-section-number">51</span> Smooth Manifold</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#smooth-manifold"><span class="header-section-number">51</span> Smooth Manifold</a></li>
+<li><a class="nav-link" href="#references-3"><span class="header-section-number">51.1</span> References</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

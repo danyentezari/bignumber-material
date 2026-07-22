@@ -4,15 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>80 Improper Integral | Mathematics for Physics</title>
+<title>95 Improper Integral | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
 <meta name="description" content="definition [d] (Improper Integral — infinite interval) A definite integral over an infinite interval, defined as a limit: \(\displaystyle \int_{a}^{\infty} f(x)\, dx = \lim_{t \to \infty}...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="80 Improper Integral | Mathematics for Physics">
+<meta property="og:title" content="95 Improper Integral | Mathematics for Physics">
 <meta property="og:type" content="book">
 <meta property="og:description" content="definition [d] (Improper Integral — infinite interval) A definite integral over an infinite interval, defined as a limit: \(\displaystyle \int_{a}^{\infty} f(x)\, dx = \lim_{t \to \infty}...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="80 Improper Integral | Mathematics for Physics">
+<meta name="twitter:title" content="95 Improper Integral | Mathematics for Physics">
 <meta name="twitter:description" content="definition [d] (Improper Integral — infinite interval) A definite integral over an infinite interval, defined as a limit: \(\displaystyle \int_{a}^{\infty} f(x)\, dx = \lim_{t \to \infty}...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -160,9 +160,9 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="improper-integral" class="section level1" number="80">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="improper-integral" class="section level1" number="95">
 <h1>
-<span class="header-section-number">80</span> Improper Integral<a class="anchor" aria-label="anchor" href="#improper-integral"><i class="fas fa-link"></i></a>
+<span class="header-section-number">95</span> Improper Integral<a class="anchor" aria-label="anchor" href="#improper-integral"><i class="fas fa-link"></i></a>
 </h1>
 <p><i></i></p>
 <p><strong>definition [d]</strong> (<strong>Improper Integral</strong> — infinite interval) A definite integral over an infinite interval, defined as a limit:</p>
@@ -180,8 +180,19 @@
 <p>where</p>
 <ul>
 <li>
+<span class="math inline">\(f\)</span> is the integrand.</li>
+<li>
+<span class="math inline">\(a, b\)</span> are finite endpoints.</li>
+<li>
+<span class="math inline">\(x\)</span> is the variable of integration.</li>
+<li>
+<span class="math inline">\(t\)</span> is the truncation variable in the limiting process.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>
 <span class="math inline">\(f\)</span> is continuous on the finite part of the interval of integration.</li>
-<li>the improper integral <strong>converges</strong> if the limit exists as a finite number; otherwise it <strong>diverges</strong>.</li>
+<li>the improper integral converges if the limit exists as a finite number; otherwise it diverges.</li>
 </ul>
 <p></p>
 <p><i></i></p>
@@ -190,20 +201,31 @@
 <li>(discontinuity at <span class="math inline">\(b\)</span>) <span class="math inline">\(\displaystyle \int_{a}^{b} f(x)\, dx = \lim_{t \to b^{-}} \int_{a}^{t} f(x)\, dx\)</span> .</li>
 <li>(discontinuity at <span class="math inline">\(a\)</span>) <span class="math inline">\(\displaystyle \int_{a}^{b} f(x)\, dx = \lim_{t \to a^{+}} \int_{t}^{b} f(x)\, dx\)</span> .</li>
 </ul>
-<p>If the discontinuity is at an interior point <span class="math inline">\(c\)</span> (<span class="math inline">\(a &lt; c &lt; b\)</span>), the integral is the sum of the improper integrals from <span class="math inline">\(a\)</span> to <span class="math inline">\(c\)</span> and <span class="math inline">\(c\)</span> to <span class="math inline">\(b\)</span>, provided both converge.</p>
+<p>If the discontinuity is at an interior point <span class="math inline">\(c\)</span> with <span class="math inline">\(a &lt; c &lt; b\)</span>, the integral is the sum of the improper integrals from <span class="math inline">\(a\)</span> to <span class="math inline">\(c\)</span> and <span class="math inline">\(c\)</span> to <span class="math inline">\(b\)</span>, provided both converge.</p>
 <p>where</p>
 <ul>
 <li>
+<span class="math inline">\(f\)</span> is the integrand.</li>
+<li>
+<span class="math inline">\(a, b\)</span> are the endpoints of the interval.</li>
+<li>
+<span class="math inline">\(c\)</span> is an interior point of discontinuity.</li>
+<li>
+<span class="math inline">\(t\)</span> is the truncation variable in the one-sided limit.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>
 <span class="math inline">\(f\)</span> is continuous on each proper subinterval used in the limits.</li>
-<li>the improper integral <strong>converges</strong> if the limit(s) exist as finite numbers; otherwise it <strong>diverges</strong>.</li>
+<li>the improper integral converges if the limits exist as finite numbers; otherwise it diverges.</li>
 </ul>
 <p></p>
-<div id="references-7" class="section level2" number="80.1">
+<div id="references-23" class="section level2" number="95.1">
 <h2>
-<span class="header-section-number">80.1</span> References<a class="anchor" aria-label="anchor" href="#references-7"><i class="fas fa-link"></i></a>
+<span class="header-section-number">95.1</span> References<a class="anchor" aria-label="anchor" href="#references-23"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li>Stewart, J. <em>Calculus</em>. — improper integrals of Type 1 (infinite intervals) and Type 2 (discontinuous integrands); convergence / divergence.</li>
+<li>Stewart, J. <em>Calculus</em>. — improper integrals of Type 1 infinite intervals and Type 2 discontinuous integrands; convergence and divergence.</li>
 </ol>
 <div class="topic-index">
 <ul>
@@ -650,13 +672,13 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="general-functions.html"><span class="header-section-number">79</span> General Functions</a></div>
-<div class="next"><a href="indefinite-integral.html"><span class="header-section-number">81</span> Indefinite Integral</a></div>
+<div class="prev"><a href="general-functions.html"><span class="header-section-number">94</span> General Functions</a></div>
+<div class="next"><a href="indefinite-integral.html"><span class="header-section-number">96</span> Indefinite Integral</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#improper-integral"><span class="header-section-number">80</span> Improper Integral</a></li>
-<li><a class="nav-link" href="#references-7"><span class="header-section-number">80.1</span> References</a></li>
+<li><a class="nav-link" href="#improper-integral"><span class="header-section-number">95</span> Improper Integral</a></li>
+<li><a class="nav-link" href="#references-23"><span class="header-section-number">95.1</span> References</a></li>
 </ul>
 
       <div class="book-extra">
