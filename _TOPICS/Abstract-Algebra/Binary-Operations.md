@@ -2,7 +2,7 @@
 
 <i>
 
-**definition** (*Binary Operations*) Mathematical operations that can be applied to elements in a set.
+**definition** (*Binary Operations*) Operations that take two elements of a set as input.
 
 - Operators $+$ and $\times$ are both binary operators.
 

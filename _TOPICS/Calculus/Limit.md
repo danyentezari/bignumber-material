@@ -2,7 +2,7 @@
 
 <i>
 
-**definition [d]** (**Limit**) We write $\lim_{x \to a} f(x) = L$ if the values of $f(x)$ can be made arbitrarily close to $L$ by taking $x$ sufficiently close to $a$ on either side, but not equal to $a$.
+**definition [d]** (**Limit**) A real number $L$ such that the values of $f(x)$ can be made arbitrarily close to $L$ by taking $x$ sufficiently close to $a$ on either side, but not equal to $a$, written $\lim_{x \to a} f(x) = L$.
 
 where
 
@@ -19,9 +19,11 @@ Note:
 
 <i>
 
-**definition [d]** (**Limit**) Let $f$ be defined on some open interval containing $a$, except possibly at $a$ itself. Then $\lim_{x \to a} f(x) = L$ if for every $\epsilon > 0$ there exists $\delta > 0$ such that
+**definition [d]** (**Limit**) A real number $L$ associated with a function $f$ defined on some open interval containing $a$, except possibly at $a$ itself, such that for every $\epsilon > 0$ there exists $\delta > 0$ with
 
-- if $0 < \lvert x - a \rvert < \delta$, then $\lvert f(x) - L \rvert < \epsilon$ .
+- $0 < \lvert x - a \rvert < \delta$ implies $\lvert f(x) - L \rvert < \epsilon$ ,
+
+written $\lim_{x \to a} f(x) = L$.
 
 where
 

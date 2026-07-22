@@ -2,11 +2,11 @@
 
 <i>
 
-**definition [d]** (**Definite Integral**) If $f$ is defined on $[a, b]$, divide $[a, b]$ into $n$ subintervals of equal width $\Delta x = (b-a)/n$, choose sample points $x_{i}^{*}$ in each, and set
+**definition [d]** (**Definite Integral**) The number obtained from a function $f$ on $[a, b]$ by partitioning $[a, b]$ into $n$ subintervals of equal width $\Delta x = (b-a)/n$, choosing sample points $x_{i}^{*}$ in each, and taking the limit of Riemann sums:
 
 - $\displaystyle \int_{a}^{b} f(x)\, dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_{i}^{*})\, \Delta x$ ,
 
-provided the limit exists (and is independent of the choice of sample points).
+provided the limit exists and is independent of the choice of sample points.
 
 where
 

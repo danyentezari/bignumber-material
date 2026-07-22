@@ -2,7 +2,7 @@
 
 <i>
 
-**definition [d]** (*Covariant Rank = Covariant Degree*) For a type-$(r,s)$ tensor, the integer $s$: the number of vector arguments the multilinear map consumes,
+**definition [d]** (*Covariant Rank = Covariant Degree*) The integer $s$ for a type-$(r,s)$ tensor: the number of vector arguments the multilinear map consumes,
 
 - $T^{r}_{\ s}(\omega^{1},\ldots,\omega^{r},\, \underbrace{v_{1},\ldots,v_{s}}_{s})$ .
 

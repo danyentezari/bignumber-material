@@ -2,7 +2,7 @@
 
 <i>
 
-**definition [d]** (*Line Integral = Path Integral = Curve Integral*) For a continuous vector field $\mathbf{F}$ and a smooth curve $C$ given by $\mathbf{r}(t)$, $a \leq t \leq b$:
+**definition [d]** (*Line Integral = Path Integral = Curve Integral*) The scalar obtained by integrating a continuous vector field $\mathbf{F}$ along a smooth curve $C$ given by $\mathbf{r}(t)$, $a \leq t \leq b$:
 
 - $\displaystyle \int_{C} \mathbf{F} \cdot d\mathbf{r} = \int_{a}^{b} \mathbf{F}\!\bigl(\mathbf{r}(t)\bigr) \cdot \mathbf{r}'(t)\, dt$ .
 
@@ -16,7 +16,7 @@ where
 
 <i>
 
-**definition [d]** (*Line Integral = Path Integral*) For a continuous scalar function $f$ and a smooth curve $C$ given by $\mathbf{r}(t)$, $a \leq t \leq b$:
+**definition [d]** (*Line Integral = Path Integral*) The scalar obtained by integrating a continuous scalar function $f$ with respect to arc length along a smooth curve $C$ given by $\mathbf{r}(t)$, $a \leq t \leq b$:
 
 - $\displaystyle \int_{C} f\, ds = \int_{a}^{b} f\!\bigl(\mathbf{r}(t)\bigr)\, \lvert \mathbf{r}'(t) \rvert\, dt$ .
 

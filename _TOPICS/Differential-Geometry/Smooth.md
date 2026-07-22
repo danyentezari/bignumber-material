@@ -23,7 +23,7 @@ Note:
 
 <i>
 
-**definition [d]** (*Smooth = Infinitely Differentiable = $C^{\infty}$*) In differential geometry:
+**definition [d]** (*Smooth = Infinitely Differentiable = $C^{\infty}$*) A property in differential geometry of manifolds, maps, and functions:
 
 - (Manifold) transition maps $f_{VU}$ are of class $C^{\infty}$ .
 - (Map $f: M \rightarrow N$) for charts $(U,\phi)$ on $M$ and $(V,\mu)$ on $N$, the composite $\mu \circ f \circ \phi^{-1}$ is $C^{\infty}$ wherever defined .

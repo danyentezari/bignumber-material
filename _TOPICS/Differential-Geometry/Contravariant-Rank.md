@@ -2,7 +2,7 @@
 
 <i>
 
-**definition [d]** (*Contravariant Rank = Contravariant Degree*) For a type-$(r,s)$ tensor, the integer $r$: the number of dual-vector arguments the multilinear map consumes,
+**definition [d]** (*Contravariant Rank = Contravariant Degree*) The integer $r$ for a type-$(r,s)$ tensor: the number of dual-vector arguments the multilinear map consumes,
 
 - $T^{r}_{\ s}(\underbrace{\omega^{1},\ldots,\omega^{r}}_{r},\, v_{1},\ldots,v_{s})$ .
 

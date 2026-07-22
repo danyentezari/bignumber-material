@@ -2,7 +2,7 @@
 
 <i>
 
-**definition [d]** (*$\operatorname{diag}$ = Diagonal Matrix Constructor*) For scalars $a_{1},\ldots,a_{n}$, the symbol $\operatorname{diag}(a_{1},\ldots,a_{n})$ denotes the $n\times n$ matrix with those entries on the main diagonal and zeros elsewhere:
+**definition [d]** (*$\operatorname{diag}$ = Diagonal Matrix Constructor*) The $n\times n$ matrix associated with scalars $a_{1},\ldots,a_{n}$, having those entries on the main diagonal and zeros elsewhere:
 
 - $\operatorname{diag}(a_{1},\ldots,a_{n}) =
 \begin{pmatrix}
@@ -27,7 +27,7 @@ Note:
 
 <i>
 
-**definition [d]** (*Diagonal Array*) An array $A_{ij}$ is diagonal when every off-diagonal entry vanishes:
+**definition [d]** (*Diagonal Array*) An array $A_{ij}$ whose off-diagonal entries all vanish:
 
 - $A_{ij} = 0$ whenever $i \neq j$ .
 
