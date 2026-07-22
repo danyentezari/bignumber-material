@@ -10,15 +10,20 @@
   (function () {
     try {
       var stored = localStorage.getItem("book-theme");
-      var theme = stored
+      var mode = stored === "light" || stored === "dark" || stored === "system"
         ? stored
-        : (window.matchMedia &&
+        : "system";
+      var theme = mode === "system"
+        ? (window.matchMedia &&
             window.matchMedia("(prefers-color-scheme: dark)").matches
             ? "dark"
-            : "light");
+            : "light")
+        : mode;
       document.documentElement.setAttribute("data-theme", theme);
+      document.documentElement.setAttribute("data-theme-mode", mode);
     } catch (e) {
       document.documentElement.setAttribute("data-theme", "light");
+      document.documentElement.setAttribute("data-theme-mode", "system");
     }
     document.documentElement.classList.add("theme-classic");
     try {
