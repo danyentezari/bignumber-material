@@ -54,9 +54,10 @@ $(ab)c = a(bc)$
 6. Commutativity (Multiplication) <br/>
 $ab = ba$
 
-7. Unity (or Multiplicative Inverse) <br/>
+7. Unity <br/>
 $a1 = a$
 
+Note: also called Multiplicative Inverse.
 8. Distributivity <br/>
 $a(b+c)=a(b) + a(c)$
 

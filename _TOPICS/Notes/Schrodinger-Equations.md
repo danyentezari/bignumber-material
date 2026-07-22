@@ -28,15 +28,16 @@ where
 
 - $i$ is the imaginary unit
 - $\hbar$ is the reduced Planck constant
-- $\Psi$ is the state-vector or wave function representing the state of the system
+- $\Psi$ is the state-vector representing the state of the system
 - $t$ is time
-- $\hat{H}$ is the Hamiltonian operator, which represents the total energy—kinetic plus potential—of the system.
+- $\hat{H}$ is the Hamiltonian operator representing the total energy of the system.
 
 
 Note:
 
 - $\Psi$ is also written $|\Psi\rangle$.
-
+- $\Psi$ is also called the wave function.
+- the total energy is kinetic energy plus potential energy.
 </i>
 
 
@@ -52,9 +53,15 @@ The **time-independent** version is a specific "eigenvalue equation" used when t
 
 where
 
-- $\hat{H}$ is the Hamiltonian operator representing the total energy of the system
-- $\psi$ (lower-case psi) is the spatial wave function (eigenfunction)
-- $E$ is the energy of the state (eigenvalue).
+- $\hat{H}$ is the Hamiltonian operator representing the total energy of the system.
+- $\psi$ is the spatial wave function.
+- $E$ is the energy of the state.
+
+Note:
+
+- $\psi$ is lower-case psi.
+- $\psi$ is an eigenfunction of $\hat{H}$.
+- $E$ is the corresponding eigenvalue.
 
 </i>
 

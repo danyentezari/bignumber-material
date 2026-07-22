@@ -11,13 +11,14 @@ Symmetry is about invariance to coordinate systems.
 - **(Resolution Property)** Every second-rank tensor can be resolved into a symmetric part, given by $\frac{1}{2}(A_{mn} + A_{nm})$, and an antisymmetric part.
 
 where
-- $A$ is a tensor or matrix.
+- $A$ is a tensor.
 - $m, n$ are indices identifying components.
 - $\tilde{A}$ is the transpose of the matrix.
 
 
 Note:
 
+- $A$ may be a matrix.
 - $\tilde{A}$ is also written $A^T$.
 
 </i>
@@ -32,9 +33,13 @@ Note:
 - **(Dual Association)** In 3-D space, every antisymmetric second-rank tensor $C$ can be associated with a dual pseudovector $\mathbf{C}$.
 
 where
-- $A$ is a tensor or matrix.
+- $A$ is a tensor.
 - $m, n$ are indices identifying components.
 - $C$ is an antisymmetric tensor.
+
+Note:
+
+- $A$ may be a matrix.
 
 </i>
 

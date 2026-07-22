@@ -10,13 +10,16 @@
 where
 
 - $\mathbf{r}(t)$ is the position vector of the curve.
-- $\mathbf{r}'(t)$ is the tangent or velocity vector.
+- $\mathbf{r}'(t)$ is the tangent vector.
 - $I$ is the parameter interval.
 - $\mathbf{0}$ is the zero vector.
 
 Note:
 
-- geometrically there are no sharp corners or cusps; the tangent turns continuously.
+- $\mathbf{r}'(t)$ is also called the velocity vector.
+- geometrically there are no sharp corners.
+- geometrically there are no cusps.
+- the tangent turns continuously.
 
 </i>
 

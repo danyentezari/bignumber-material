@@ -57,10 +57,13 @@ $$\nabla = \frac{\partial}{\partial x} \mathbf{i} + \frac{\partial}{\partial y} 
 
 where
 
-- $\nabla$ is the vector differential operator, commonly referred to as del or nabla.
-
+- $\nabla$ is the vector differential operator.
 - $\dfrac{\partial}{\partial x}, \dfrac{\partial}{\partial y}, \text{ and } \dfrac{\partial}{\partial z}$ are partial derivatives.
 
+Note:
+
+- $\nabla$ is also called del.
+- $\nabla$ is also called nabla.
 - $\mathbf{i}, \mathbf{j}, \text{ and } \mathbf{k}$ are the standard basis unit vectors pointing in the positive directions of the $x, y, \text{ and } z$ axes, respectively
 
 <br/>

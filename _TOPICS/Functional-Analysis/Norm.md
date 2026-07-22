@@ -10,9 +10,16 @@
 
 where
 
-- $V$ is a vector space over $\mathbb{R}$ or $\mathbb{C}$.
-- $x, y \in V$ and $\alpha$ is a scalar.
-- $|\alpha|$ is the absolute value (modulus) of $\alpha$.
+- $V$ is a vector space over a field $K$.
+- $x, y \in V$ are vectors.
+- $\alpha$ is a scalar.
+- $|\alpha|$ is the absolute value of $\alpha$.
+
+Note:
+
+- $K$ is typically $\mathbb{R}$.
+- $K$ is also typically $\mathbb{C}$.
+- $|\alpha|$ is also called the modulus of $\alpha$.
 
 </i>
 

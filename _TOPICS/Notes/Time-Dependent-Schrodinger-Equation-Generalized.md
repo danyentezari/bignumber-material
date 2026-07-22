@@ -8,15 +8,16 @@
 
 where
 
-- $i$ is the imaginary unit
-- $\hbar$ is the reduced Planck constant
-- $\Psi$ is the state-vector or wave function representing the state of the system
-- $t$ is time
-- $\hat{H}$ is the Hamiltonian operator, which represents the total energy - kinetic plus potential - of the system.
-
+- $i$ is the imaginary unit.
+- $\hbar$ is the reduced Planck constant.
+- $\Psi$ is the state-vector representing the state of the system.
+- $t$ is time.
+- $\hat{H}$ is the Hamiltonian operator representing the total energy of the system.
 
 Note:
 
 - $\Psi$ is also written $|\Psi\rangle$.
+- $\Psi$ is also called the wave function.
+- the total energy is kinetic energy plus potential energy.
 
 </i>

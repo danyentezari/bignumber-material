@@ -2,17 +2,25 @@
 
 <i>
 
-**definition [d]** (*Hermitian Conjugate = Adjoint = Conjugate Transpose = Hermitian Transpose*) The matrix or operator $A^{\dagger}$ obtained from $A$ by transposition together with complex conjugation:
+**definition [d]** (*Hermitian Conjugate = Adjoint = Conjugate Transpose = Hermitian Transpose*) The matrix $A^{\dagger}$ obtained from $A$ by transposition together with complex conjugation:
 
 - (Matrix) $(A^{\dagger})_{ij} = \overline{a_{ji}}$ .
 - (Operator) $\langle A\mathbf{a},\, \mathbf{b} \rangle = \langle \mathbf{a},\, A^{\dagger}\mathbf{b} \rangle$ for all $\mathbf{a}, \mathbf{b}$.
 
 where
 
-- $A$ is a matrix or linear operator on a complex Hilbert space.
-- $a_{ij}$ are the entries of $A$; $\overline{\,\cdot\,}$ denotes the complex conjugate.
+- $A$ is a matrix on a complex Hilbert space.
+- $A^{\dagger}$ is the Hermitian conjugate of $A$.
+- $a_{ij}$ are the entries of $A$.
+- $\overline{\,\cdot\,}$ denotes the complex conjugate.
 - $\langle \cdot,\, \cdot \rangle$ is the inner product.
-- $A^{\dagger}$ (also written $A^{*}$ or $A^{H}$) is the Hermitian conjugate.
+- $\mathbf{a}, \mathbf{b}$ are vectors in the Hilbert space.
+
+Note:
+
+- the same definition applies when $A$ is a linear operator.
+- $A^{\dagger}$ is also written $A^{*}$.
+- $A^{\dagger}$ is also written $A^{H}$.
 
 </i>
 

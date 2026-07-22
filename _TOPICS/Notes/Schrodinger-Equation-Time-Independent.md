@@ -8,8 +8,14 @@
 
 where
 
-- $\hat{H}$ is the Hamiltonian operator representing the total energy of the system
-- $\psi$ (lower-case psi) is the spatial wave function (eigenfunction)
-- $E$ is the energy of the state (eigenvalue).
+- $\hat{H}$ is the Hamiltonian operator representing the total energy of the system.
+- $\psi$ is the spatial wave function.
+- $E$ is the energy of the state.
+
+Note:
+
+- $\psi$ is lower-case psi.
+- $\psi$ is an eigenfunction of $\hat{H}$.
+- $E$ is the corresponding eigenvalue.
 
 </i>

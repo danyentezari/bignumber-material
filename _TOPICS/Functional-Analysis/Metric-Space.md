@@ -12,8 +12,12 @@
 where
 
 - $X$ is a set whose elements are called points.
-- $d$ is the metric (distance function).
-- $x, y, z \in X$.
+- $d$ is the metric.
+- $x, y, z \in X$ are points of $X$.
+
+Note:
+
+- $d$ is also called the distance function.
 
 </i>
 

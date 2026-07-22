@@ -10,8 +10,14 @@
 
 where
 
-- $V$ is a vector space over $K = \mathbb{R}$ or $\mathbb{C}$.
-- $\overline{\,\cdot\,}$ denotes the complex conjugate (redundant if $K = \mathbb{R}$).
+- $V$ is a vector space over a field $K$.
+- $\overline{\,\cdot\,}$ denotes the complex conjugate.
+
+Note:
+
+- $K$ is typically $\mathbb{R}$.
+- $K$ is also typically $\mathbb{C}$.
+- the complex conjugate is redundant if $K = \mathbb{R}$.
 
 </i>
 
@@ -25,8 +31,14 @@ where
 
 where
 
-- $V$ is a vector space over $K = \mathbb{R}$ or $\mathbb{C}$.
-- $\overline{\,\cdot\,}$ denotes the complex conjugate (redundant if $K = \mathbb{R}$).
+- $V$ is a vector space over a field $K$.
+- $\overline{\,\cdot\,}$ denotes the complex conjugate.
+
+Note:
+
+- $K$ is typically $\mathbb{R}$.
+- $K$ is also typically $\mathbb{C}$.
+- the complex conjugate is redundant if $K = \mathbb{R}$.
 
 </i>
 

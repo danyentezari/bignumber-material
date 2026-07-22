@@ -44,7 +44,7 @@ where
 Note:
 
 - $f$ is continuous on each proper subinterval used in the limits.
-- the improper integral converges if the limit or limits exist as finite numbers; otherwise it diverges.
+- the improper integral converges if the limits exist as finite numbers; otherwise it diverges.
 
 </i>
 
