@@ -48,10 +48,96 @@ Note:
 
 </i>
 
+## Examples
+
+<i>
+
+**example [d]** (**Euclidean Metric on $\mathbb{R}^{3}$** — Frankel, Arfken) On the fixed vector space $V = \mathbb{R}^{3}$ with the standard basis, the Euclidean inner product is the type-$(0,2)$ tensor
+
+- $g : V \times V \rightarrow \mathbb{R}$ ,
+- $g(u, v) = u \cdot v = \sum_{i,j} \delta_{ij}\, u^{i}\, v^{j}$ ,
+
+with components
+
+- $(g_{ij}) = \operatorname{diag}(1,\, 1,\, 1) = I_{3}$ .
+
+As a multilinear map this is one bilinear form on $V$, not a field of forms on a manifold.
+
+where
+
+- $V = \mathbb{R}^{3}$ is the underlying vector space.
+- $u, v \in V$ are vectors.
+- $u^{i}, v^{j}$ are components of $u$ and $v$ in the standard basis.
+- $\delta_{ij}$ is the Kronecker delta.
+- $I_{3}$ is the $3 \times 3$ identity matrix.
+
+Note:
+
+- this is a single tensor of type $(0,2)$ on $V$.
+- contrast with a metric tensor field, whose components $g_{ij}(x)$ depend on the point.
+
+</i>
+
+<i>
+
+**example [d]** (**Mixed Kronecker Tensor** — Carroll, Arfken) On a finite-dimensional vector space $V$, the identity map $\operatorname{id}_{V} : V \rightarrow V$ is the type-$(1,1)$ tensor $\delta$ with components
+
+- $\delta^{i}_{\ j} = \begin{cases} 1 & \text{if } i = j \\ 0 & \text{if } i \neq j \end{cases}$ ,
+
+so that
+
+- $\delta(v, \omega) = \omega(v)$ ,
+- $\delta^{i}_{\ j}\, v^{j} = v^{i}$ .
+
+where
+
+- $V$ is a finite-dimensional vector space.
+- $\delta^{i}_{\ j}$ are the components of the mixed Kronecker tensor.
+- $v \in V$ is a vector with components $v^{j}$.
+- $\omega \in V^{*}$ is a covector.
+
+Note:
+
+- $\delta^{\mu}_{\ \nu}$ is the identity map on vectors and one-forms.
+- the components are numerical constants, independent of any point on a manifold.
+
+</i>
+
+<i>
+
+**example [d]** (**Minkowski Metric Components** — Griffiths) As an array of components, the flat spacetime metric tensor is
+
+- $(g_{\mu\nu}) =
+\begin{bmatrix}
+-1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{bmatrix}$ .
+
+where
+
+- $g_{\mu\nu}$ are the components of the Minkowski metric tensor.
+- $\mu, \nu$ are spacetime indices running over $0,1,2,3$.
+
+Note:
+
+- this is a type-$(0,2)$ tensor written as a $4 \times 4$ array of components.
+- the same array is often written $\eta_{\mu\nu} = \operatorname{diag}(-1,\, 1,\, 1,\, 1)$.
+
+</i>
+
+## Historical Notes
+
+Tensor calculus was established by Ricci and Levi-Cività in 1901.[8] Einstein adopted tensors for general relativity to ensure physical laws—such as the unified stress-energy-momentum tensor—remain invariant across all coordinate systems.[8]
+
 ## References
 
 1. Nash, C., & Sen, S. *Topology and Geometry for Physicists*. Academic Press, 1983. — tensor as multilinear map.
-2. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — multilinear-map definition.
-3. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — component transformation laws.
+2. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — multilinear-map definition; mixed Kronecker as type $(1,1)$.
+3. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — component transformation laws; Kronecker delta; Euclidean metric components.
 4. Riley, K. F., Hobson, M. P., & Bence, S. J. *Mathematical Methods for Physics and Engineering*. Cambridge University Press, 2006. — component transformation definition.
 5. Cahill, K. *Physical Mathematics*. Cambridge University Press, 2019. — component transformation definition.
+6. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — Euclidean metric as bilinear form.
+7. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — Minkowski metric as component matrix $g_{\mu\nu}$.
+8. Gowers, T., Barrow-Green, J., & Leader, I. (Eds.). *The Princeton Companion to Mathematics*. Princeton University Press, 2008. — Part VIII.7 chronology (p. 1013): Ricci and Levi-Cività, 1901, *Méthodes du Calcul Différentiel Absolut et leurs Applications*; Part IV.13 Dafermos, general covariance and the stress–energy–momentum tensor $T$.

@@ -4,15 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>88 Tensors | Mathematics for Physics</title>
+<title>89 Tensors | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
 <meta name="description" content="definition [d] (Tensor = Multilinear Map) A multilinear, real-valued function of type \((r,s)\) on a vector space \(V\) and its dual \(V^{*}\): \(T : \underbrace{V^{*} \times \cdots \times...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="88 Tensors | Mathematics for Physics">
+<meta property="og:title" content="89 Tensors | Mathematics for Physics">
 <meta property="og:type" content="book">
 <meta property="og:description" content="definition [d] (Tensor = Multilinear Map) A multilinear, real-valued function of type \((r,s)\) on a vector space \(V\) and its dual \(V^{*}\): \(T : \underbrace{V^{*} \times \cdots \times...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="88 Tensors | Mathematics for Physics">
+<meta name="twitter:title" content="89 Tensors | Mathematics for Physics">
 <meta name="twitter:description" content="definition [d] (Tensor = Multilinear Map) A multilinear, real-valued function of type \((r,s)\) on a vector space \(V\) and its dual \(V^{*}\): \(T : \underbrace{V^{*} \times \cdots \times...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -160,9 +160,9 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="tensors" class="section level1" number="88">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="tensors" class="section level1" number="89">
 <h1>
-<span class="header-section-number">88</span> Tensors<a class="anchor" aria-label="anchor" href="#tensors"><i class="fas fa-link"></i></a>
+<span class="header-section-number">89</span> Tensors<a class="anchor" aria-label="anchor" href="#tensors"><i class="fas fa-link"></i></a>
 </h1>
 <p><i></i></p>
 <p><strong>definition [d]</strong> (<em>Tensor = Multilinear Map</em>) A multilinear, real-valued function of type <span class="math inline">\((r,s)\)</span> on a vector space <span class="math inline">\(V\)</span> and its dual <span class="math inline">\(V^{*}\)</span>:</p>
@@ -223,16 +223,119 @@
 <li>the transformation laws ensure the tensor represents a coordinate-independent geometric object.</li>
 </ul>
 <p></p>
-<div id="references-18" class="section level2" number="88.1">
+<div id="examples-1" class="section level2" number="89.1">
 <h2>
-<span class="header-section-number">88.1</span> References<a class="anchor" aria-label="anchor" href="#references-18"><i class="fas fa-link"></i></a>
+<span class="header-section-number">89.1</span> Examples<a class="anchor" aria-label="anchor" href="#examples-1"><i class="fas fa-link"></i></a>
+</h2>
+<p><i></i></p>
+<p><strong>example [d]</strong> (<strong>Euclidean Metric on <span class="math inline">\(\mathbb{R}^{3}\)</span></strong> — Frankel, Arfken) On the fixed vector space <span class="math inline">\(V = \mathbb{R}^{3}\)</span> with the standard basis, the Euclidean inner product is the type-<span class="math inline">\((0,2)\)</span> tensor</p>
+<ul>
+<li>
+<span class="math inline">\(g : V \times V \rightarrow \mathbb{R}\)</span> ,</li>
+<li>
+<span class="math inline">\(g(u, v) = u \cdot v = \sum_{i,j} \delta_{ij}\, u^{i}\, v^{j}\)</span> ,</li>
+</ul>
+<p>with components</p>
+<ul>
+<li>
+<span class="math inline">\((g_{ij}) = \operatorname{diag}(1,\, 1,\, 1) = I_{3}\)</span> .</li>
+</ul>
+<p>As a multilinear map this is one bilinear form on <span class="math inline">\(V\)</span>, not a field of forms on a manifold.</p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(V = \mathbb{R}^{3}\)</span> is the underlying vector space.</li>
+<li>
+<span class="math inline">\(u, v \in V\)</span> are vectors.</li>
+<li>
+<span class="math inline">\(u^{i}, v^{j}\)</span> are components of <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span> in the standard basis.</li>
+<li>
+<span class="math inline">\(\delta_{ij}\)</span> is the Kronecker delta.</li>
+<li>
+<span class="math inline">\(I_{3}\)</span> is the <span class="math inline">\(3 \times 3\)</span> identity matrix.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>this is a single tensor of type <span class="math inline">\((0,2)\)</span> on <span class="math inline">\(V\)</span>.</li>
+<li>contrast with a metric tensor field, whose components <span class="math inline">\(g_{ij}(x)\)</span> depend on the point.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>example [d]</strong> (<strong>Mixed Kronecker Tensor</strong> — Carroll, Arfken) On a finite-dimensional vector space <span class="math inline">\(V\)</span>, the identity map <span class="math inline">\(\operatorname{id}_{V} : V \rightarrow V\)</span> is the type-<span class="math inline">\((1,1)\)</span> tensor <span class="math inline">\(\delta\)</span> with components</p>
+<ul>
+<li>
+<span class="math inline">\(\delta^{i}_{\ j} = \begin{cases} 1 &amp; \text{if } i = j \\ 0 &amp; \text{if } i \neq j \end{cases}\)</span> ,</li>
+</ul>
+<p>so that</p>
+<ul>
+<li>
+<span class="math inline">\(\delta(v, \omega) = \omega(v)\)</span> ,</li>
+<li>
+<span class="math inline">\(\delta^{i}_{\ j}\, v^{j} = v^{i}\)</span> .</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(V\)</span> is a finite-dimensional vector space.</li>
+<li>
+<span class="math inline">\(\delta^{i}_{\ j}\)</span> are the components of the mixed Kronecker tensor.</li>
+<li>
+<span class="math inline">\(v \in V\)</span> is a vector with components <span class="math inline">\(v^{j}\)</span>.</li>
+<li>
+<span class="math inline">\(\omega \in V^{*}\)</span> is a covector.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>
+<span class="math inline">\(\delta^{\mu}_{\ \nu}\)</span> is the identity map on vectors and one-forms.</li>
+<li>the components are numerical constants, independent of any point on a manifold.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>example [d]</strong> (<strong>Minkowski Metric Components</strong> — Griffiths) As an array of components, the flat spacetime metric tensor is</p>
+<ul>
+<li>
+<span class="math inline">\((g_{\mu\nu}) =
+\begin{bmatrix}
+-1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}\)</span> .</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(g_{\mu\nu}\)</span> are the components of the Minkowski metric tensor.</li>
+<li>
+<span class="math inline">\(\mu, \nu\)</span> are spacetime indices running over <span class="math inline">\(0,1,2,3\)</span>.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>this is a type-<span class="math inline">\((0,2)\)</span> tensor written as a <span class="math inline">\(4 \times 4\)</span> array of components.</li>
+<li>the same array is often written <span class="math inline">\(\eta_{\mu\nu} = \operatorname{diag}(-1,\, 1,\, 1,\, 1)\)</span>.</li>
+</ul>
+<p></p>
+</div>
+<div id="historical-notes" class="section level2" number="89.2">
+<h2>
+<span class="header-section-number">89.2</span> Historical Notes<a class="anchor" aria-label="anchor" href="#historical-notes"><i class="fas fa-link"></i></a>
+</h2>
+<p>Tensor calculus was established by Ricci and Levi-Cività in 1901.[8] Einstein adopted tensors for general relativity to ensure physical laws—such as the unified stress-energy-momentum tensor—remain invariant across all coordinate systems.[8]</p>
+</div>
+<div id="references-19" class="section level2" number="89.3">
+<h2>
+<span class="header-section-number">89.3</span> References<a class="anchor" aria-label="anchor" href="#references-19"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
 <li>Nash, C., &amp; Sen, S. <em>Topology and Geometry for Physicists</em>. Academic Press, 1983. — tensor as multilinear map.</li>
-<li>Carroll, S. <em>Spacetime and Geometry: An Introduction to General Relativity</em>. Cambridge University Press, 2021. — multilinear-map definition.</li>
-<li>Arfken, G. B., Weber, H. J., &amp; Harris, F. E. <em>Mathematical Methods for Physicists</em>, 7th ed. Elsevier / Academic Press, 2013. — component transformation laws.</li>
+<li>Carroll, S. <em>Spacetime and Geometry: An Introduction to General Relativity</em>. Cambridge University Press, 2021. — multilinear-map definition; mixed Kronecker as type <span class="math inline">\((1,1)\)</span>.</li>
+<li>Arfken, G. B., Weber, H. J., &amp; Harris, F. E. <em>Mathematical Methods for Physicists</em>, 7th ed. Elsevier / Academic Press, 2013. — component transformation laws; Kronecker delta; Euclidean metric components.</li>
 <li>Riley, K. F., Hobson, M. P., &amp; Bence, S. J. <em>Mathematical Methods for Physics and Engineering</em>. Cambridge University Press, 2006. — component transformation definition.</li>
 <li>Cahill, K. <em>Physical Mathematics</em>. Cambridge University Press, 2019. — component transformation definition.</li>
+<li>Frankel, T. <em>The Geometry of Physics</em>, 3rd ed. Cambridge University Press. — Euclidean metric as bilinear form.</li>
+<li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — Minkowski metric as component matrix <span class="math inline">\(g_{\mu\nu}\)</span>.</li>
+<li>Gowers, T., Barrow-Green, J., &amp; Leader, I. (Eds.). <em>The Princeton Companion to Mathematics</em>. Princeton University Press, 2008. — Part VIII.7 chronology (p. 1013): Ricci and Levi-Cività, 1901, <em>Méthodes du Calcul Différentiel Absolut et leurs Applications</em>; Part IV.13 Dafermos, general covariance and the stress–energy–momentum tensor <span class="math inline">\(T\)</span>.</li>
 </ol>
 <div class="topic-index">
 <ul>
@@ -255,6 +358,7 @@
 <li><a href="k-fold-product.html">k-Fold Product</a></li>
 <li><a href="k-form.html">k-form</a></li>
 <li><a href="k-tensor.html">k-Tensor</a></li>
+<li><a href="line-element.html">Line Element</a></li>
 <li><a href="linear-functional.html">Linear Functional</a></li>
 <li><a href="lorentzian-manifold.html">Lorentzian Manifold</a></li>
 <li><a href="metric-tensor.html">Metric Tensor</a></li>
@@ -700,13 +804,15 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="tensor-field.html"><span class="header-section-number">87</span> Tensor Field</a></div>
-<div class="next"><a href="two-form.html"><span class="header-section-number">89</span> Two-Form</a></div>
+<div class="prev"><a href="tensor-field.html"><span class="header-section-number">88</span> Tensor Field</a></div>
+<div class="next"><a href="two-form.html"><span class="header-section-number">90</span> Two-Form</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#tensors"><span class="header-section-number">88</span> Tensors</a></li>
-<li><a class="nav-link" href="#references-18"><span class="header-section-number">88.1</span> References</a></li>
+<li><a class="nav-link" href="#tensors"><span class="header-section-number">89</span> Tensors</a></li>
+<li><a class="nav-link" href="#examples-1"><span class="header-section-number">89.1</span> Examples</a></li>
+<li><a class="nav-link" href="#historical-notes"><span class="header-section-number">89.2</span> Historical Notes</a></li>
+<li><a class="nav-link" href="#references-19"><span class="header-section-number">89.3</span> References</a></li>
 </ul>
 
       <div class="book-extra">
