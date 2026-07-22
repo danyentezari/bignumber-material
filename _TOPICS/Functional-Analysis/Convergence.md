@@ -12,7 +12,12 @@ where
 - $(x_n)$ is a sequence in $X$.
 - $x \in X$ is the limit.
 - $\epsilon > 0$ is a real number.
-- $N \in \mathbb{N}$ depends on $\epsilon$.
+- $N \in \mathbb{N}$ is a natural number.
+- $d$ is the metric on $X$.
+
+Note:
+
+- $N$ depends on $\epsilon$.
 
 </i>
 

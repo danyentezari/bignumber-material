@@ -13,6 +13,10 @@ where
 - $f$ is the integrand.
 - $F$ is any antiderivative of $f$.
 - $C$ is the constant of integration.
+- $x$ is the independent variable.
+
+Note:
+
 - the indefinite integral denotes a family of functions, not a single number.
 
 </i>
@@ -21,4 +25,4 @@ where
 
 1. Stewart, J. *Calculus*. — indefinite integral as the most general antiderivative $F(x)+C$.
 2. Aleksandrov, A. D., Kolmogorov, A. N., & Lavrent'ev, M. A. *Mathematics: Its Content, Methods and Meaning*. Dover, 1999. — primitive.
-3. Riley, K. F., Hobson, M. P., & Bence, S. J. *Mathematical Methods for Physics and Engineering*. Cambridge University Press, 2006. — primitive / antiderivative.
+3. Riley, K. F., Hobson, M. P., & Bence, S. J. *Mathematical Methods for Physics and Engineering*. Cambridge University Press, 2006. — primitive and antiderivative.

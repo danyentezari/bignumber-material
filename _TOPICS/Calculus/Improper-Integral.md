@@ -13,8 +13,15 @@ If both $\int_{-\infty}^{a} f(x)\, dx$ and $\int_{a}^{\infty} f(x)\, dx$ converg
 
 where
 
+- $f$ is the integrand.
+- $a, b$ are finite endpoints.
+- $x$ is the variable of integration.
+- $t$ is the truncation variable in the limiting process.
+
+Note:
+
 - $f$ is continuous on the finite part of the interval of integration.
-- the improper integral **converges** if the limit exists as a finite number; otherwise it **diverges**.
+- the improper integral converges if the limit exists as a finite number; otherwise it diverges.
 
 </i>
 
@@ -25,15 +32,22 @@ where
 - (discontinuity at $b$) $\displaystyle \int_{a}^{b} f(x)\, dx = \lim_{t \to b^{-}} \int_{a}^{t} f(x)\, dx$ .
 - (discontinuity at $a$) $\displaystyle \int_{a}^{b} f(x)\, dx = \lim_{t \to a^{+}} \int_{t}^{b} f(x)\, dx$ .
 
-If the discontinuity is at an interior point $c$ ($a < c < b$), the integral is the sum of the improper integrals from $a$ to $c$ and $c$ to $b$, provided both converge.
+If the discontinuity is at an interior point $c$ with $a < c < b$, the integral is the sum of the improper integrals from $a$ to $c$ and $c$ to $b$, provided both converge.
 
 where
 
+- $f$ is the integrand.
+- $a, b$ are the endpoints of the interval.
+- $c$ is an interior point of discontinuity.
+- $t$ is the truncation variable in the one-sided limit.
+
+Note:
+
 - $f$ is continuous on each proper subinterval used in the limits.
-- the improper integral **converges** if the limit(s) exist as finite numbers; otherwise it **diverges**.
+- the improper integral converges if the limit or limits exist as finite numbers; otherwise it diverges.
 
 </i>
 
 ## References
 
-1. Stewart, J. *Calculus*. — improper integrals of Type 1 (infinite intervals) and Type 2 (discontinuous integrands); convergence / divergence.
+1. Stewart, J. *Calculus*. — improper integrals of Type 1 infinite intervals and Type 2 discontinuous integrands; convergence and divergence.

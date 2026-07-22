@@ -8,9 +8,15 @@
 
 where
 
+- $\nabla$ is the vector differential operator.
 - $\hat{\mathbf{x}}, \hat{\mathbf{y}}, \hat{\mathbf{z}}$ are the Cartesian unit vectors.
+- $x, y, z$ are Cartesian coordinates.
+- $\partial / \partial x$, $\partial / \partial y$, $\partial / \partial z$ are partial derivative operators.
+
+Note:
+
 - $\nabla$ is not an ordinary vector, but an instruction to differentiate.
-- acting on a scalar $f$: $\nabla f$ (gradient); on a vector $\mathbf{v}$: $\nabla \cdot \mathbf{v}$ (divergence), $\nabla \times \mathbf{v}$ (curl).
+- acting on a scalar $f$ gives $\nabla f$, the gradient; on a vector $\mathbf{v}$ gives $\nabla \cdot \mathbf{v}$, the divergence, and $\nabla \times \mathbf{v}$, the curl.
 
 </i>
 

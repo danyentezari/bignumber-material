@@ -2,12 +2,18 @@
 
 <i>
 
-**definition [d]** (**Limit**) We write $\lim_{x \to a} f(x) = L$ if the values of $f(x)$ can be made arbitrarily close to $L$ by taking $x$ sufficiently close to $a$ (on either side), but not equal to $a$.
+**definition [d]** (**Limit**) We write $\lim_{x \to a} f(x) = L$ if the values of $f(x)$ can be made arbitrarily close to $L$ by taking $x$ sufficiently close to $a$ on either side, but not equal to $a$.
 
 where
 
+- $f$ is a real-valued function.
+- $a$ is the point approached.
+- $L$ is the limit value.
+- $x$ is the independent variable.
+
+Note:
+
 - $f$ need not be defined at $x = a$.
-- $a$ is the point approached; $L$ is the limit value.
 
 </i>
 
@@ -19,11 +25,18 @@ where
 
 where
 
+- $f$ is a real-valued function.
+- $a$ is the point approached.
+- $L$ is the limit value.
 - $\epsilon > 0$ is an arbitrary tolerance on $\lvert f(x) - L \rvert$.
-- $\delta > 0$ is a corresponding restriction on $\lvert x - a \rvert$ (excluding $x = a$).
+- $\delta > 0$ is a corresponding restriction on $\lvert x - a \rvert$.
+
+Note:
+
+- the condition excludes the point $x = a$.
 
 </i>
 
 ## References
 
-1. Stewart, J. *Calculus*. — informal and precise ($\epsilon$-$\delta$) definitions of $\lim_{x\to a} f(x) = L$.
+1. Stewart, J. *Calculus*. — informal and precise $\epsilon$-$\delta$ definitions of $\lim_{x\to a} f(x) = L$.

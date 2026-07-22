@@ -8,8 +8,14 @@
 
 where
 
+- $\mathbf{F}$ is the vector field.
 - $P, Q, R$ are scalar-valued component functions of position.
 - $\mathbf{i}, \mathbf{j}, \mathbf{k}$ are the standard unit basis vectors.
+- $(x,y,z)$ is a point in the domain.
+- $\mathbb{R}^{3}$ is three-dimensional Euclidean space.
+
+Note:
+
 - the vector is visualized as attached at the point $(x,y,z)$.
 
 </i>

@@ -41,6 +41,9 @@ where
 - $v_1, \dots, v_k \in V$ are vectors.
 - $A^k(V)$ (or $\Lambda^k(V^*)$) is the vector space of all $k$-covectors on $V$.
 - $\text{sgn } \sigma$ is the sign of the permutation.
+
+Note:
+
 - A $k$-covector is also called a multicovector of degree k or an alternating k-tensor.
 
 </i>
@@ -62,6 +65,9 @@ where
 - $T^*_pM$ is the cotangent space of $M$ at $p$.
 - $\Lambda^k(T^*_pM)$ (or $A^k(T_pM)$) is the space of all alternating $k$-tensors on the tangent space $T_pM$.
 - $\Lambda^k(T^*M)$ is the $k$-th exterior power of the cotangent bundle.
+
+Note:
+
 - A $k$-covector field is also called a differential $k$-form.
 
 </i>

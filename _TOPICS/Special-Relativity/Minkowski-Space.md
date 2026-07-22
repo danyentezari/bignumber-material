@@ -8,10 +8,18 @@
 
 where
 
-- events are points with coordinates $x^{\mu} = (ct,\, x,\, y,\, z)$.
 - $\eta_{\mu\nu}$ is the Minkowski metric tensor.
-- $c$ is the speed of light (often set to $1$).
-- the Riemann curvature vanishes (flat spacetime).
+- $ds$ is the infinitesimal spacetime interval.
+- $c$ is the speed of light.
+- $t$ is time.
+- $x, y, z$ are Cartesian spatial coordinates.
+- $x^{\mu} = (ct,\, x,\, y,\, z)$ are spacetime coordinates of an event.
+
+Note:
+
+- events are points of the manifold.
+- $c$ is often set to $1$.
+- the Riemann curvature vanishes.
 
 </i>
 
@@ -26,6 +34,10 @@ where
 - $x^{\mu} = (ct,\, x,\, y,\, z)$ are spacetime coordinates.
 - $\eta_{\mu\nu}$ is the Minkowski metric.
 - $c$ is the speed of light.
+- $ds$ is the infinitesimal spacetime interval.
+
+Note:
+
 - the two signatures are a convention, not different geometries.
 
 </i>
@@ -33,5 +45,5 @@ where
 ## References
 
 1. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — Minkowski spacetime; signature $(-+++)$.
-2. Griffiths, D. J. — Minkowski metric / flat spacetime (as cited in notebook).
+2. Griffiths, D. J. — Minkowski metric and flat spacetime as cited in notebook.
 3. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — Minkowski metric conventions.

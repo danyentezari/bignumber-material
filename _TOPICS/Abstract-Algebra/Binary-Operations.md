@@ -8,6 +8,10 @@
 
 where
 
-- The operation takes two elements of a set as input.
+- $+$ and $\times$ are binary operators on a set.
+
+Note:
+
+- the operation takes two elements of a set as input.
 
 </i>

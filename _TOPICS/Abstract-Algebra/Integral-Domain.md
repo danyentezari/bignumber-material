@@ -4,9 +4,9 @@
 
 **definition** (*Integral Domain*) A type of ring with axioms (1) to (8) but not (7).
 
-where
+Note:
 
-- Axioms (1) to (8) are the ring axioms.
-- Axiom (7) is unity (the multiplicative identity).
+- axioms (1) to (8) are the ring axioms.
+- axiom (7) is unity, the multiplicative identity.
 
 </i>

@@ -8,10 +8,15 @@
 
 where
 
-- $V$ is a vector space over $\mathbb{R}$ (or $\mathbb{C}$).
+- $T$ is the tensor.
+- $V$ is a vector space over $\mathbb{R}$ or $\mathbb{C}$.
 - $V^{*}$ is the dual space of $V$.
-- $r$ is the contravariant rank (number of covector arguments).
-- $s$ is the covariant rank (number of vector arguments).
+- $r$ is the contravariant rank.
+- $s$ is the covariant rank.
+- $\mathbb{R}$ is the set of real numbers.
+
+Note:
+
 - $T$ is linear in each argument independently.
 - a scalar is type $(0,0)$; a vector is type $(1,0)$; a covector is type $(0,1)$.
 
@@ -19,7 +24,7 @@ where
 
 <i>
 
-**definition [d]** (**Tensor**) An array of components $T^{i_1\ldots i_p}_{\ j_1\ldots j_q}$ labeled by $p$ contravariant (upper) and $q$ covariant (lower) indices, whose components transform linearly under a coordinate change $x \mapsto x'$:
+**definition [d]** (**Tensor**) An array of components $T^{i_1\ldots i_p}_{\ j_1\ldots j_q}$ labeled by $p$ contravariant upper and $q$ covariant lower indices, whose components transform linearly under a coordinate change $x \mapsto x'$:
 
 - (Contravariant) $(T')^{i} = \displaystyle \sum_{j} \frac{\partial x^{j}}{\partial (x')^{i}}\, T^{j}$ .
 - (Covariant) $(T')_{i} = \displaystyle \sum_{j} \frac{\partial (x')^{i}}{\partial x^{j}}\, T_{j}$ .
@@ -27,7 +32,16 @@ where
 
 where
 
-- $p + q$ is the rank; in $d$ dimensions a rank-$n$ tensor has $d^{n}$ components.
+- $T^{i_1\ldots i_p}_{\ j_1\ldots j_q}$ are the components of the tensor.
+- $p$ is the number of contravariant indices.
+- $q$ is the number of covariant indices.
+- $x$ and $x'$ are the old and new coordinates.
+- $T^{j}$, $T_{j}$, $T^{k}_{\ l}$ are components in the old coordinates.
+- $(T')^{i}$, $(T')_{i}$, $(T')^{i}_{\ j}$ are components in the new coordinates.
+
+Note:
+
+- the total rank is $p + q$; in $d$ dimensions a rank-$n$ tensor has $d^{n}$ components.
 - upper indices transform with the Jacobian $\partial x^{j}/\partial (x')^{i}$; lower indices with its inverse $\partial (x')^{i}/\partial x^{j}$.
 - the transformation laws ensure the tensor represents a coordinate-independent geometric object.
 

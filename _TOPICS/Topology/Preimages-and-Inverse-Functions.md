@@ -98,6 +98,10 @@ where
 
 - $X$ is the domain of $F$.
 - $Y$ is the co-domain of $F$.
+- $x_1, x_2$ are elements of $X$.
+
+Note:
+
 - The condition is logically equivalent to saying that if $x_1 \neq x_2$, then $F(x_1) \neq F(x_2)$.
 - For an injective function, each element of the co-domain is the image of at most one element of the domain.
 

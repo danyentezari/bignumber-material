@@ -8,8 +8,12 @@
 
 where
 
-- Axioms (1) to (8) are the ring axioms.
 - $a$ is a nonzero element of the field.
 - $a^{-1}$ is the multiplicative inverse of $a$.
+- $\cdot$ is the multiplicative operation of the field.
+
+Note:
+
+- axioms (1) to (8) are the ring axioms.
 
 </i>

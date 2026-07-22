@@ -14,8 +14,13 @@ where
 - $V$ is a vector space.
 - $k$ is a positive integer representing the degree of the covector.
 - $v_1, \dots, v_k \in V$ are vectors.
-- $A^k(V)$ (or $\Lambda^k(V^*)$) is the vector space of all $k$-covectors on $V$.
-- $\text{sgn } \sigma$ is the sign of the permutation.
-- A $k$-covector is also called a multicovector of degree k or an alternating k-tensor.
+- $A^k(V)$ or $\Lambda^k(V^*)$ is the vector space of all $k$-covectors on $V$.
+- $\text{sgn } \sigma$ is the sign of the permutation $\sigma$.
+- $S_k$ is the symmetric group on $k$ letters.
+- $\mathbb{R}$ is the set of real numbers.
+
+Note:
+
+- a $k$-covector is also called a multicovector of degree $k$ or an alternating $k$-tensor.
 
 </i>
