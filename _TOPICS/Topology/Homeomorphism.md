@@ -1,5 +1,7 @@
 # Homeomorphism
 
+A homeomorphism is a continuous bijection with continuous inverse, used to identify topologically equivalent spaces.
+
 <i>
 
 **Definition** (_Homeomorphism_) A function between topological spaces $f: \mathbf{U} \to \mathbf{V}$ is called a homeomorphism if the following conditions hold.

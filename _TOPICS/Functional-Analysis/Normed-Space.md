@@ -1,72 +1,32 @@
 # Normed Space
 
-A set of vectors together with a norm. Used to define distance between vectors and to study convergence of a sequence.
+A set of vectors with a norm defined on it is used to measure distance between vectors by the metric induced by the norm.
+
+Note: Also called normed vector space. Also called normed linear space.
 
 <i>
 
-**definition [d]** (*Normed Space = Normed Vector Space = Normed Linear Space*) A vector space with a norm defined on it.
+**definition [d]** (*Normed Space*) From Kreyszig Definition 2.2-1: a normed space $X$ is a vector space with a norm defined on it. A norm on a real or complex vector space $X$ is a real-valued function on $X$ whose value at an $x \in X$ is denoted by $\lVert x \rVert$ and which has the properties
+
+- (N1) $\lVert x \rVert \geq 0$
+- (N2) $\lVert x \rVert = 0$ if and only if $x = 0$
+- (N3) $\lVert \alpha x \rVert = |\alpha|\, \lVert x \rVert$
+- (N4) $\lVert x + y \rVert \leq \lVert x \rVert + \lVert y \rVert$
+
+A norm on $X$ defines a metric $d$ on $X$ by
+
+- $d(x,y) = \lVert x - y \rVert$
+
+called the metric induced by the norm. The normed space is denoted $(X, \lVert\cdot\rVert)$ or simply $X$.
 
 where
 
-- the underlying set is a vector space.
-- the scalar field is typically $\mathbb{R}$.
-- the scalar field is also typically $\mathbb{C}$.
-- the norm is a real-valued function on that vector space satisfying the norm axioms.
-
-Note:
-
-- also called a normed vector space.
-- also called a normed linear space.
-
-</i>
-
-<i>
-
-**definition [d]** (*Normed Space = Normed Vector Space = Normed Linear Space*) A vector space $X$ equipped with a norm $\lVert \cdot \rVert$, inducing the metric
-
-- $d(x, y) = \lVert x - y \rVert$ .
-
-where
-
-- $X$ is the underlying vector space.
-- $\lVert \cdot \rVert$ is the norm on $X$.
+- $X$ is a real or complex vector space.
+- $\lVert\cdot\rVert$ is the norm.
 - $d$ is the metric induced by the norm.
-- $x, y \in X$ are vectors.
-
-Note:
-
-- a Banach space is a normed space that is complete in this metric.
-
-</i>
-
-## Examples
-
-<i>
-
-**example [d]** (**Sequence Space $\ell^{p}$** — Kreyszig) For fixed $p \geq 1$, as a set,
-
-- $\ell^{p} = \left\{ x = (\xi_{j})_{j=1}^{\infty} \;\middle|\; \displaystyle\sum_{j=1}^{\infty} |\xi_{j}|^{p} < \infty \right\}$ ,
-
-with norm
-
-- $\lVert x \rVert_{p} = \left( \displaystyle\sum_{j=1}^{\infty} |\xi_{j}|^{p} \right)^{\dfrac{1}{p}}$ .
-
-This is a normed space. It is in fact a Banach space.
-
-where
-
-- $\ell^{p}$ is the space of $p$-summable sequences.
-- $x = (\xi_{j})$ is a sequence of scalars.
-- $p \geq 1$ is a fixed real number.
-
-Note:
-
-- the scalars may be real.
-- the scalars may be complex.
-- completeness of $\ell^{p}$ under $\lVert \cdot \rVert_{p}$ is shown in Kreyszig §1.5-4.
 
 </i>
 
 ## References
 
-1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — Definition 2.2-1 (normed space); $\ell^{p}$ as set with $\sum|\xi_{j}|^{p}<\infty$.
+1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — Definition 2.2-1 (Normed space, Banach space).

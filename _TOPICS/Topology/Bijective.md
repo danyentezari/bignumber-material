@@ -1,5 +1,7 @@
 # Bijective
 
+A bijective mapping is a function that is both injective and surjective, used to set up a one-to-one correspondence between two sets.
+
 <i>
 
 **Definition** (_Bijective_) A property of a function from a set $X$ to a set $Y$,

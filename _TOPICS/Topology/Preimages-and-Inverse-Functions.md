@@ -1,5 +1,7 @@
 # Preimages and Inverse Functions
 
+A preimage is the set of domain elements sent into a given subset, used together with inverse functions in the study of continuity.
+
 <i>
 
 **Definition** (*Inverse Function*) A function from the codomain of a function to its domain,
@@ -41,8 +43,6 @@ where
 - $Y_{subset} \subseteq Y$.
 
 </i>
-
-
 
 <i>
 

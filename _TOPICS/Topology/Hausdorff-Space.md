@@ -1,5 +1,7 @@
 # Hausdorff Space
 
+A Hausdorff space is a topological space in which any two distinct points have disjoint neighborhoods, used to guarantee uniqueness of limits.
+
 <i>
 
 **Definition** (_Hausdorff Space_) A Hausdorff space is a topological space, $X$, that satisfies the following condition:

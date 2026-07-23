@@ -1,30 +1,26 @@
 # Metric Space
 
-A set of elements together with a metric that assigns a distance between each pair. Used to measure distance and to define convergence of a sequence.
+A set with a metric function is used for calculating the distance between any two elements to study limits and sequences.
+
+Note: Also called distance function for the metric $d$.
 
 <i>
 
-**definition [d]** (**Metric Space**) A pair $(X, d)$ of a set $X$ and a distance function $d: X \times X \rightarrow \mathbb{R}$ satisfying, for all $x, y, z \in X$:
+**definition [d]** (*Metric Space*) From Kreyszig Definition 1.1-1: a metric space is a pair $(X,d)$, where $X$ is a set and $d$ is a metric on $X$, that is, a function defined on $X \times X$ such that for all $x,y,z \in X$ we have:
 
-- (Non-negativity) $d(x, y) \geq 0$ .
-- (Identity of indiscernibles) $d(x, y) = 0 \iff x = y$ .
-- (Symmetry) $d(x, y) = d(y, x)$ .
-- (Triangle inequality) $d(x, z) \leq d(x, y) + d(y, z)$ .
+- (M1) $d$ is real-valued, finite and nonnegative.
+- (M2) $d(x,y) = 0$ if and only if $x = y$.
+- (M3) $d(x,y) = d(y,x)$ (Symmetry).
+- (M4) $d(x,y) \leq d(x,z) + d(z,y)$ (Triangle inequality).
 
 where
 
-- $X$ is a set whose elements are called points.
-- $d$ is the metric.
-- $x, y, z \in X$ are points of $X$.
-
-Note:
-
-- $d$ is also called the distance function.
+- $X$ is a set.
+- $d$ is the metric on $X$.
+- $x, y, z \in X$.
 
 </i>
 
 ## References
 
-1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — Definition 1.1-1 (metric space, metric).
-2. Lee, J. M. *Introduction to Topological Manifolds*, 2nd ed. Springer, 2011. — Appendix B (metric spaces).
-3. Lovett, S. T. *Differential Geometry of Manifolds*. CRC Press, 2020. — Definition A.1.1.
+1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — Definition 1.1-1 (Metric space, metric).

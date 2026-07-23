@@ -1,5 +1,7 @@
 # Manifolds
 
+A manifold is a space that locally resembles Euclidean space, used as the geometric setting for calculus beyond flat space.
+
 There are two main types of manifolds, generally: topological and smooth manifolds. We will start with an informal definition of a topological manifold.
 
 If a surface is a generalization of a curve, then a topological manifold is the generalization of both surfaces and curves.

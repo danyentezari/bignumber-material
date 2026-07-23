@@ -1,5 +1,7 @@
 # Inverse Function
 
+An inverse function is a mapping that reverses another mapping, used to recover inputs from outputs when a function is bijective.
+
 <i>
 
 **Definition** (*Inverse Function*) A function from the codomain of a function to its domain,

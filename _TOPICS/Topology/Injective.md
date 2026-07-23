@@ -1,5 +1,7 @@
 # Injective
 
+An injective mapping is a function that sends distinct elements to distinct values, used to express uniqueness of solutions of mapping equations.
+
 <i>
 
 **Definition** (_Injective_) A property of a function from a set $X$ to a set $Y$,

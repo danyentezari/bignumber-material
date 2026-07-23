@@ -1,5 +1,7 @@
 # Topological Space
 
+A topological space is a set equipped with a topology, used to study continuity of mappings without requiring a metric.
+
 <i>
 
 **Definition** (_Topological Space_) A topological space is a pair $(X, \mathcal{T})$ on $X$, where

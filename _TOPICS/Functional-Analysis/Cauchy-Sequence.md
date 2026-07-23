@@ -1,28 +1,27 @@
 # Cauchy Sequence
 
-A sequence of elements whose mutual distances tend to zero. Used to test convergence without first naming the limit value.
+A sequence of elements whose mutual distances tend to zero is used to test for a limit without first naming that limit.
+
+Note: Also called fundamental sequence.
 
 <i>
 
-**definition [d]** (*Cauchy Sequence = Fundamental Sequence*) A sequence $(x_n)$ in a metric space $(X, d)$ whose terms eventually become arbitrarily close to one another:
+**definition [d]** (*Cauchy Sequence*) From Kreyszig Definition 1.4-3: a sequence $(x_{n})$ in a metric space $X = (X,d)$ is said to be Cauchy if for every $\epsilon > 0$ there is an $N = N(\epsilon)$ such that
 
-- $\forall\, \epsilon > 0,\ \exists\, N \in \mathbb{N}$ such that $d(x_n, x_m) < \epsilon$ for all $m, n \geq N$.
+- $d(x_{m}, x_{n}) < \epsilon$
+
+for every $m, n > N$.
 
 where
 
-- $(X, d)$ is a metric space.
-- $(x_n)$ is a sequence in $X$.
+- $X = (X,d)$ is a metric space.
+- $(x_{n})$ is a sequence in $X$.
 - $\epsilon > 0$ is a real number.
-- $N \in \mathbb{N}$ is a natural number.
+- $N = N(\epsilon)$ is a natural number depending on $\epsilon$.
 - $d$ is the metric on $X$.
-
-Note:
-
-- $N$ depends on $\epsilon$.
 
 </i>
 
 ## References
 
 1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — Definition 1.4-3 (Cauchy sequence, completeness).
-2. Lee, J. M. *Introduction to Topological Manifolds*, 2nd ed. Springer, 2011. — Appendix B (metric spaces).

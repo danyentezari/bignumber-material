@@ -1,30 +1,28 @@
 # Convergence
 
-A property of a sequence under which its terms approach a limit. Used to evaluate series and to describe the outcome of taking limits.
+A sequence that gets closer to a fixed element is used for finding the limit of a function at a real number.
 
 <i>
 
-**definition [d]** (**Convergence**) A sequence $(x_n)$ in a metric space $(X, d)$ converges to a limit $x \in X$ if its terms grow arbitrarily close to $x$:
+**definition [d]** (*Convergence*) From Kreyszig Definition 1.4-1: a sequence $(x_{n})$ in a metric space $X = (X,d)$ is said to converge if there is an $x \in X$ such that
 
-- $\forall\, \epsilon > 0,\ \exists\, N \in \mathbb{N}$ such that $d(x_n, x) < \epsilon$ for all $n \geq N$.
+- $\displaystyle\lim_{n \to \infty} d(x_{n}, x) = 0$ .
+
+The point $x$ is called the limit of $(x_{n})$ and we write
+
+- $\displaystyle\lim_{n \to \infty} x_{n} = x$
+
+or simply $x_{n} \to x$. We say that $(x_{n})$ converges to $x$ or has the limit $x$. If $(x_{n})$ is not convergent, it is said to be divergent.
 
 where
 
-- $(X, d)$ is a metric space.
-- $(x_n)$ is a sequence in $X$.
+- $X = (X,d)$ is a metric space.
+- $(x_{n})$ is a sequence in $X$.
 - $x \in X$ is the limit.
-- $\epsilon > 0$ is a real number.
-- $N \in \mathbb{N}$ is a natural number.
 - $d$ is the metric on $X$.
-
-Note:
-
-- $N$ depends on $\epsilon$.
 
 </i>
 
 ## References
 
-1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — Definition 1.4-1, p. 25 (convergence of a sequence, limit).
-2. Lee, J. M. *Introduction to Topological Manifolds*, 2nd ed. Springer, 2011. — Appendix B, p. 398 (convergent sequences, $x_i \to x$).
-3. Gamelin, T. W., & Greene, R. E. *Introduction to Topology*, 2nd ed. Dover, 1999. — Chapter 1, §1, p. 7.
+1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — Definition 1.4-1 (Convergence of a sequence, limit).
