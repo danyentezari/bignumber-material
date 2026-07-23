@@ -1,5 +1,7 @@
 # Permutational Antisymmetry
 
+A property of a multi-variable function that changes sign when any two variables are swapped. Used to construct the determinant of a matrix.
+
 <i>
 
 **definition** (Permutational Antisymmetry = Fermion Antisymmetry) A property of identical-particle systems, specifically fermions, whose wave functions must change sign under pairwise particle interchanges, satisfying the following conditions:

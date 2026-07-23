@@ -1,5 +1,7 @@
 # Sets 
 
+A collection of mathematical objects such as numbers or vectors. Used as the basic building block for larger constructions.
+
 <i>
 
 **definition** (*Complete Set*) A subset of a normed space whose span is dense in that space, meaning any element in the space can be represented by a linear combination of the set's members. The set must satisfy the following condition:

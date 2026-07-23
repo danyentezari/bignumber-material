@@ -1,5 +1,7 @@
 # Covariant Rank
 
+An integer counting how many lower indices a tensor carries. Used to track how those components change under a change of basis.
+
 <i>
 
 **definition [d]** (*Covariant Rank = Covariant Degree*) The integer $s$ for a type-$(r,s)$ tensor: the number of vector arguments the multilinear map consumes,

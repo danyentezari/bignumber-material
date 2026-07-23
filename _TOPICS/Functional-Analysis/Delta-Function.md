@@ -1,5 +1,7 @@
 # Delta Function
 
+A mapping that is zero away from one point and has a finite integral concentrated there. Used to represent a point source in an integral.
+
 <i>
 
 **definition [d]** (*Dirac Delta Function = Delta Function = Delta Distribution = Generalized Function*) A generalized function $\delta(x)$ characterized informally by

@@ -1,5 +1,7 @@
 # Linear Functional
 
+A linear mapping from a vector space to scalars. Used to define the dual space.
+
 <i>
 
 **definition** (*Linear Functional*) A linear transformation from a vector space $V$ to its associated field of scalars $K$, The mapping $f: V \rightarrow K$ must satisfy the following linearity condition:

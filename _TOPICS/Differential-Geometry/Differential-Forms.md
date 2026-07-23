@@ -1,5 +1,7 @@
 # Differential Forms
 
+A field of alternating multilinear mappings attached to each point. Used to integrate over curved domains.
+
 <i>
 
 **definition** (*Differential k-Form*) A function assigning an alternating k-linear function to each point of a manifold $M$, where the following condition applies:

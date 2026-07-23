@@ -1,5 +1,7 @@
 # Absolute-Value-to-the-p
 
+A function obtained by raising the absolute value of another function to a fixed parameter power. Used to build norms and integrals that measure size.
+
 <i>
 
 **definition [d]** (*$|f|^{p}$*) The nonnegative function obtained by raising the absolute value of $f$ to the power $p$.

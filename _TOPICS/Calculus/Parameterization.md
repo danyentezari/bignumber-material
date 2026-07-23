@@ -1,5 +1,7 @@
 # Parameterization
 
+A function that labels points of a curve by a real parameter. Used to write coordinates along the curve.
+
 <i>
 
 **definition [d]** (*Parameterization = Parametrization = Parametric Representation*) A continuous vector-valued function that traces a curve $C$ as the parameter varies over an interval $I$:

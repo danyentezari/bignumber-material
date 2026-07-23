@@ -1,5 +1,7 @@
 # Metric Space
 
+A set of elements together with a metric that assigns a distance between each pair. Used to measure distance and to define convergence of a sequence.
+
 <i>
 
 **definition [d]** (**Metric Space**) A pair $(X, d)$ of a set $X$ and a distance function $d: X \times X \rightarrow \mathbb{R}$ satisfying, for all $x, y, z \in X$:

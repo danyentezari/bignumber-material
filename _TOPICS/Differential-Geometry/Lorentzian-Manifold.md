@@ -1,5 +1,7 @@
 # Lorentzian Manifold
 
+A smooth domain with a metric of one negative and three positive signature directions. Used to model curved spacetime.
+
 <i>
 
 **definition [d]** (*Lorentzian Manifold = Lorentz Manifold*) A smooth manifold $M$ equipped with a smooth, symmetric, nondegenerate metric tensor field $g$ of Lorentzian signature:

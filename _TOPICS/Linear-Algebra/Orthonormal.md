@@ -1,5 +1,7 @@
 # Orthonormal
 
+A property of a set of vectors of unit norm whose pairwise inner products vanish when the vectors differ. Used to build a convenient basis.
+
 <i>
 
 **definition [D]** (*Orthonormal*) A collection of mutually orthogonal normalized vectors in an inner product space. The set must satisfy the following conditions:

@@ -1,5 +1,7 @@
 # Smooth Assignment
 
+A smooth mapping that attaches a tensor to each point. Used to define smooth tensor fields.
+
 <i>
 
 **definition [d]** (*Smooth Assignment = Smooth Section*) A mapping that attaches a type-$(r,s)$ tensor to each point so the assignment is smooth: for $U \subset M$,

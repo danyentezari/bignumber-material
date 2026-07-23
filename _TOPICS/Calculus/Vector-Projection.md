@@ -1,5 +1,7 @@
 # Vector Projection
 
+A vector along a given direction that is the parallel part of another vector. Used to split a vector into parallel and remaining parts.
+
 <i>
 
 **definition** (*Vector Projection*) The vector representing the "shadow" of a vector $\mathbf{b}$ cast onto the line containing a vector $\mathbf{a}$, denoted by $\text{proj}_{\mathbf{a}} \mathbf{b}$. Geometrically, it is the vector from the common initial point to the foot of the perpendicular dropped from the tip of $\mathbf{b}$ onto the line containing $\mathbf{a}$. It is calculated using the following formula:

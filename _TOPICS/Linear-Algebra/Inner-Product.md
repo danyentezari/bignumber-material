@@ -1,5 +1,7 @@
 # Inner Product
 
+A mapping that assigns a scalar to each ordered pair of vectors. Used to define length through a norm and to compare vectors.
+
 <i>
 
 **definition [d]** (*Inner Product = Scalar Product = Dot Product*) A map $(\cdot,\, \cdot) : V \times V \rightarrow K$ associating a scalar with every ordered pair of vectors, satisfying for all $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ and scalars $\alpha, \beta$:

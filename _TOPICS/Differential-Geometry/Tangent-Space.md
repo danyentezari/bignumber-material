@@ -1,5 +1,7 @@
 # Tangent Space
 
+A vector space of all tangent directions at a point. Used to approximate a curved domain by a flat vector space at that point.
+
 <i>
 
 **definition [d]** (*Tangent Space = Tangent Plane*) The vector space of all vectors tangent to a manifold $M$ at a point $P$:

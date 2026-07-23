@@ -1,5 +1,7 @@
 # Vector Field
 
+A mapping that assigns a vector to each point of a domain. Used to represent force-like quantities that vary with position.
+
 <i>
 
 **definition [d]** (*Vector Field = Vector Function of Position*) A function $\mathbf{F}$ that assigns to each point $(x,y,z)$ in its domain a unique vector $\mathbf{F}(x,y,z)$. In $\mathbb{R}^{3}$:

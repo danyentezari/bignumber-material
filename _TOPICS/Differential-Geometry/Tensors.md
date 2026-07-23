@@ -1,5 +1,7 @@
 # Tensors
 
+A multilinear mapping on vectors and covectors that assigns a scalar. Used to represent quantities whose values transform consistently under a change of basis.
+
 <i>
 
 **definition [d]** (*Tensor = Multilinear Map*) A multilinear, real-valued function of type $(r,s)$ on a vector space $V$ and its dual $V^{*}$:

@@ -1,5 +1,7 @@
 # Minkowski Space
 
+A set of events equipped with the Minkowski metric. Used to represent flat spacetime.
+
 <i>
 
 **definition [d]** (*Minkowski Space = Minkowski Spacetime = Flat Spacetime*) The four-dimensional flat Lorentzian manifold of special relativity, with Minkowski metric $\eta_{\mu\nu} = \operatorname{diag}(-1,1,1,1)$ and line element

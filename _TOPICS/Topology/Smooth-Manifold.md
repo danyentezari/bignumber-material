@@ -1,5 +1,7 @@
 # Smooth Manifold
 
+A set of points that can be covered by mappings to open sets of real numbers of fixed dimension. Used to do calculus on curved domains.
+
 <i>
 
 **definition [d]** (*Smooth Manifold = Differentiable Manifold = $C^{\infty}$ Manifold*) An $n$-dimensional Hausdorff, second-countable topological space covered by charts $\{U, \phi_{U}\}$ whose overlap transition maps are $C^{\infty}$:

@@ -1,5 +1,7 @@
 # Symmetry
 
+A mapping that leaves an equation unchanged. Used to simplify equations.
+
 Symmetry is about invariance to coordinate systems.
 
 <i>

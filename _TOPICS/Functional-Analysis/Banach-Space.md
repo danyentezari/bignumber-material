@@ -1,5 +1,7 @@
 # Banach Space
 
+A set of vectors equipped with a norm in which every sequence that gets arbitrarily close within itself has a limit in the set. Used to solve equations and to study limits of sequences of vectors.
+
 <i>
 
 **definition [d]** (*Banach Space*) A complete normed space, that is, a normed space that is complete in the metric defined by the norm.

@@ -1,5 +1,7 @@
 # Inner Product Space
 
+A set of vectors equipped with an inner product. Used to define distance and length of vectors from that inner product.
+
 <i>
 
 **definition [D]** (*Inner Product Space*) A vector space equipped with an inner product that associates a complex scalar with every ordered pair of vectors, where the following conditions apply:

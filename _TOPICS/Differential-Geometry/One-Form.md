@@ -1,5 +1,7 @@
 # One-Form
 
+A linear functional on a vector space. Used as the integrand of a line integral.
+
 <i>
 
 **definition** (*1-form = linear functional = covector = covariant vector*) A linear, real-valued function of a single vector input, $\boldsymbol{\omega}: \mathbf{V} \rightarrow \mathbb{R}$, which satisfies the following conditions for all vectors and scalars:

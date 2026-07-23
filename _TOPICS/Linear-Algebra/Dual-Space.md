@@ -1,5 +1,7 @@
 # Dual Space
 
+A set of all linear mappings from a vector space to its scalars. Used to measure vector values through linear functions.
+
 <i>
 
 **definition [d]** (*Dual Space = Dual Vector Space = Algebraic Dual Space = Conjugate Space = Adjoint Space*) The vector space $V^{*}$ of all linear functionals on a vector space $V$:

@@ -1,5 +1,7 @@
 # Type-(q,r) Tensor
 
+A multilinear mapping that takes a fixed number of covectors and vectors to a scalar. Used to classify tensors by index type.
+
 <i>
 
 **definition [d]** (*Type-$(q,r)$ Tensor = Type-$(r,s)$ Tensor = Rank $(r,s)$*) A multilinear map taking $r$ covectors and $s$ vectors to a scalar,

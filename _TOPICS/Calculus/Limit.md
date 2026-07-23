@@ -1,5 +1,7 @@
 # Limit
 
+A value that a function approaches as its variable approaches a point. Used to define continuity of a mapping at a point.
+
 <i>
 
 **definition [d]** (**Limit**) A real number $L$ such that the values of $f(x)$ can be made arbitrarily close to $L$ by taking $x$ sufficiently close to $a$ on either side, but not equal to $a$, written $\lim_{x \to a} f(x) = L$.

@@ -1,5 +1,7 @@
 # Two-Form
 
+An antisymmetric multilinear mapping on ordered pairs of vectors. Used to form integrals over two-dimensional domains.
+
 <i>
 
 **definition** (*2-form*) A bilinear, antisymmetric, real-valued function of two vector inputs, $\boldsymbol{\omega}: \mathbf{V} \times \mathbf{V} \rightarrow \mathbb{R}$, which satisfies the following conditions for all vectors and scalars:

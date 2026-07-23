@@ -1,5 +1,7 @@
 # Operator
 
+A linear transformation from a vector space to itself. Used to transform vectors and to solve equations on that space.
+
 <i>
 
 **definition [d]** (*Operator = Linear Operator = Linear Transformation = Linear Map*) A mapping $T: V \rightarrow W$ between vector spaces over the same field that preserves linear combinations:

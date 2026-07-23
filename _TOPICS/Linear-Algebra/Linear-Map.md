@@ -1,5 +1,7 @@
 # Linear Map
 
+A mapping between vector spaces that preserves addition of vectors and multiplication by scalars. Used to transform vectors from one space to another.
+
 <i>
 
 **definition** (*Linear Map*)

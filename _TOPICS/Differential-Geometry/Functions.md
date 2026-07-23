@@ -1,5 +1,7 @@
 # Functions
 
+A mapping that assigns to each element of one set a value in another set. Used to express relations between variables.
+
 <i>
 
 **definition** (*Alternating Function*) A property of a $k$-linear function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where the following conditions apply:

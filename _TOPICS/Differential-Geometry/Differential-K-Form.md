@@ -1,5 +1,7 @@
 # Differential k-Form
 
+A smooth mapping that assigns an alternating k-linear mapping to each point. Used to integrate over k-dimensional domains.
+
 <i>
 
 **definition** (*Differential k-Form*) A function assigning an alternating k-linear function to each point of a manifold $M$, where the following condition applies:

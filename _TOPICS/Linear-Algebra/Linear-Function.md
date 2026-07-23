@@ -1,5 +1,7 @@
 # Linear Function
 
+A mapping that preserves addition of vectors and multiplication by scalars. Used to express linear relations between vectors.
+
 <i>
 
 **definition** (**Linear Function**) A function from a vector space, $f: \mathbf{V} \rightarrow \mathbb{R}$, that satisfies the following conditions for all vectors and scalars:

@@ -1,5 +1,7 @@
 # Alternating Function
 
+A property of a function under which swapping two inputs multiplies the value by minus one. Used to build determinants of matrices.
+
 <i>
 
 **definition** (*Alternating Function*) A property of a $k$-linear function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where the following conditions apply:

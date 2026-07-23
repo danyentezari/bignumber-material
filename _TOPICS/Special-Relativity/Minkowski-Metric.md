@@ -1,5 +1,7 @@
 # Minkowski Metric
 
+A constant metric matrix with one negative and three positive diagonal entries. Used to compute interval distance in flat spacetime.
+
 <i>
 
 **definition [d]** (*Minkowski Metric = Minkowski Metric Tensor = Flat Metric*) The constant metric tensor of Minkowski spacetime,

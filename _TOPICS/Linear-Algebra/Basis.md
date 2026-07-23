@@ -1,5 +1,7 @@
 # Basis
 
+A set of vectors that spans a vector space and represents every vector by unique scalar values. Used to write vectors in coordinates relative to that set.
+
 <i>
 
 **definition [d]** (*Basis = Ordered Basis*) An ordered set of linearly independent vectors that span a vector space $V$.

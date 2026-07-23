@@ -1,5 +1,7 @@
 # Smooth
 
+A property of a function under which derivatives of all degrees exist and are continuous. Used to do calculus with well-behaved functions.
+
 <i>
 
 **definition [d]** (*Smooth = Infinitely Differentiable = $C^{\infty}$ = Class $C^{\infty}$*) A property of a real-valued function: all partial derivatives of all orders exist.

@@ -1,5 +1,7 @@
 # Nondegenerate
 
+A property of a metric under which only the zero vector is orthogonal to every vector. Used to ensure the metric defines a genuine length.
+
 <i>
 
 **definition [d]** (*Nondegenerate = Nonsingular = Invertible*) A property of a bilinear form $g$: the only vector orthogonal to all vectors is zero,

@@ -1,5 +1,7 @@
 # Norm
 
+A function that assigns a nonnegative real number size to each vector. Used to measure the length of a vector.
+
 <i>
 
 **definition [d]** (*Norm = Length = Magnitude = Modulus = Size*) A function $\lVert \cdot \rVert : V \rightarrow \mathbb{R}$ on a vector space $V$ satisfying, for all $x, y \in V$ and scalars $\alpha$:

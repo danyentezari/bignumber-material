@@ -1,5 +1,7 @@
 # Contour Integral
 
+An integral of a complex function along a closed curve. Used to evaluate complex function values through path integrals.
+
 <i>
 
 **definition [d]** (*Contour Integral = Complex Line Integral*) The integral of a complex function $f(z)$ along a contour $C$ in the complex plane, parametrized by $z(t)$ for $a \leq t \leq b$:

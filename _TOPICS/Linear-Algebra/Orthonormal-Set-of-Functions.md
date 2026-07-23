@@ -1,5 +1,7 @@
 # Orthonormal Set of Functions
 
+A set of functions whose pairwise integrals equal one for a matching pair and zero otherwise. Used to expand a function as a series in that set.
+
 <i>
 
 **definition [D]** (*Orthonormal Set of Functions*) A specific system of functions within a function space where each member is normalized to unity and all distinct members are mutually orthogonal. This set applies to functions in a Hilbert space, often defined over a specific interval or domain. The set must satisfy the following condition:

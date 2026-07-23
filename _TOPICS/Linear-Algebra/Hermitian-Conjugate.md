@@ -1,5 +1,7 @@
 # Hermitian Conjugate
 
+A matrix obtained from another matrix by taking the transpose and then the complex conjugate of each entry. Used to define adjoints and to form norms of complex vectors.
+
 <i>
 
 **definition [d]** (*Hermitian Conjugate = Adjoint = Conjugate Transpose = Hermitian Transpose*) The matrix $A^{\dagger}$ obtained from $A$ by transposition together with complex conjugation:

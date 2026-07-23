@@ -1,5 +1,7 @@
 # Normed Space
 
+A set of vectors together with a norm. Used to define distance between vectors and to study convergence of a sequence.
+
 <i>
 
 **definition [d]** (*Normed Space = Normed Vector Space = Normed Linear Space*) A vector space with a norm defined on it.

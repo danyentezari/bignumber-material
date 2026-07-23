@@ -1,5 +1,7 @@
 # Vector Differential Operator
 
+A mapping that forms derivatives of scalar fields and of vector fields. Used to compute the gradient and related operators.
+
 <i>
 
 **definition [d]** (*Vector Differential Operator = Del = Nabla = Gradient Operator*) The symbolic vector operator $\nabla$ that differentiates scalar and vector fields with respect to position. In Cartesian coordinates $(x, y, z)$:

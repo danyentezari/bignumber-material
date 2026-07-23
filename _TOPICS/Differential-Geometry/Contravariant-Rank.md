@@ -1,5 +1,7 @@
 # Contravariant Rank
 
+An integer counting how many upper indices a tensor carries. Used to track how those components change under a change of basis.
+
 <i>
 
 **definition [d]** (*Contravariant Rank = Contravariant Degree*) The integer $r$ for a type-$(r,s)$ tensor: the number of dual-vector arguments the multilinear map consumes,

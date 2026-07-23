@@ -1,5 +1,7 @@
 # Definite Integral
 
+A scalar defined as the limit of a sum of function values on subintervals. Used to measure accumulated size along an interval.
+
 <i>
 
 **definition [d]** (**Definite Integral**) The number obtained from a function $f$ on $[a, b]$ by partitioning $[a, b]$ into $n$ subintervals of equal width $\Delta x = (b-a)/n$, choosing sample points $x_{i}^{*}$ in each, and taking the limit of Riemann sums:

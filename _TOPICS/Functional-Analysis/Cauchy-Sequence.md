@@ -1,5 +1,7 @@
 # Cauchy Sequence
 
+A sequence of elements whose mutual distances tend to zero. Used to test convergence without first naming the limit value.
+
 <i>
 
 **definition [d]** (*Cauchy Sequence = Fundamental Sequence*) A sequence $(x_n)$ in a metric space $(X, d)$ whose terms eventually become arbitrarily close to one another:

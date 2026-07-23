@@ -1,5 +1,7 @@
 # Forms
 
+An alternating mapping on a vector space. Used to produce a scalar from ordered lists of vectors.
+
 Forms are functions that take vectors as input and return scalars. A 1-form takes a single vector as input, a 2-form takes two vectors as input, and so on.
 
 <i>

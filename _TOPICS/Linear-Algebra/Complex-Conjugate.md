@@ -1,5 +1,7 @@
 # Complex Conjugate
 
+A mapping that sends a complex number to its conjugate value. Used to form real norms from complex scalars.
+
 Complex conjugation of complex numbers produces real, non-negative values. This is useful for measuring lengths in complex vector spaces, such as Hilbert spaces. Complex conjugation can be applied to both complex numbers and complex vectors.
 <i>
 

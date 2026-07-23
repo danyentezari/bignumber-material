@@ -1,5 +1,7 @@
 # Field
 
+A set of scalars with addition and multiplication that allow the usual arithmetic of numbers. Used to scale vectors in a vector space.
+
 <i>
 
 **definition** (*Field*) A type of ring with axioms (1) to (8) and the following additional condition:

@@ -1,5 +1,7 @@
 # Kronecker Delta
 
+A function of two integer indices that takes the value one when the indices match and zero otherwise. Used to pick matching components in sums and matrices.
+
 <i>
 
 **definition [d]** (*Kronecker Delta = Kronecker Symbol*) The discrete symbol $\delta_{ij}$ defined by

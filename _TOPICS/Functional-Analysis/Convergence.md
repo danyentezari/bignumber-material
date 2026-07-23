@@ -1,5 +1,7 @@
 # Convergence
 
+A property of a sequence under which its terms approach a limit. Used to evaluate series and to describe the outcome of taking limits.
+
 <i>
 
 **definition [d]** (**Convergence**) A sequence $(x_n)$ in a metric space $(X, d)$ converges to a limit $x \in X$ if its terms grow arbitrarily close to $x$:

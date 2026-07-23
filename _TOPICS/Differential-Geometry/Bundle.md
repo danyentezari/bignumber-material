@@ -1,5 +1,7 @@
 # Bundle
 
+A set that locally looks like a Cartesian product of a base set and a fiber set. Used to represent fields of vectors attached to each point.
+
 <i>
 
 **definition [d]** (*Bundle = Fibre Bundle = Fiber Bundle*) A fiber manifold $F^{k}$, total space $E$, and base $M^{n}$, together with a projection $\pi: E \rightarrow M^{n}$ that is locally trivial: every point of $M$ has a neighborhood $U$ with

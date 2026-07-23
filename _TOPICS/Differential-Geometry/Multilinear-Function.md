@@ -1,5 +1,7 @@
 # Multilinear Function
 
+A mapping of several vectors that is linear in each vector variable separately. Used to define tensors.
+
 <i>
 
 **definition** (*Multilinear Function*) A function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where the following conditions apply for each argument $i$ ($1 \leq i \leq k$):

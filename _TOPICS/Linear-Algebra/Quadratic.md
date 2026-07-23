@@ -1,5 +1,7 @@
 # Quadratic
 
+A polynomial of degree two that is homogeneous of degree two. Used to express quadratic size and energy-type expressions in several variables.
+
 <i>
 
 **definition [d]** (*Quadratic Form*) A homogeneous polynomial of degree $2$ in several variables.

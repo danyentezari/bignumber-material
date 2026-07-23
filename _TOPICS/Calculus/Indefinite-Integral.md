@@ -1,5 +1,7 @@
 # Indefinite Integral
 
+A function that undoes differentiation of another function. Used to solve equations involving derivatives.
+
 <i>
 
 **definition [d]** (*Indefinite Integral = Antiderivative = Primitive*) The most general antiderivative of $f$, written

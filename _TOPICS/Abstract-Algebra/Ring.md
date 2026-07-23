@@ -1,5 +1,7 @@
 # Ring
 
+A set with addition and multiplication linked by the distributive laws. Used to define polynomials.
+
 <i>
 
 **definition** (*Ring*) A set to which the following axioms apply:

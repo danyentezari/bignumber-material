@@ -1,5 +1,7 @@
 # Type-(0,2) Tensor Field
 
+A smooth mapping that assigns a bilinear form on tangent vectors at each point. Used to represent a metric field.
+
 <i>
 
 **definition [d]** (*Type-$(0,2)$ Tensor Field = Covariant Rank-2 Tensor Field = Second-Rank Covariant Tensor Field*) A smooth section of the tensor bundle $T^{0}_{\ 2}(M)$: at each point $P$, a bilinear map

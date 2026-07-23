@@ -1,5 +1,7 @@
 # k-Covector
 
+An alternating multilinear mapping on k vectors. Used to span the set of alternating tensors of that degree.
+
 <i>
 
 **definition** (*k-Covector*) An alternating $k$-linear function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where the following conditions apply:

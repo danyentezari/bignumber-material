@@ -1,5 +1,7 @@
 # Metric Tensor
 
+A mapping that assigns an inner product on the tangent space at each point. Used to compute distance and length on a curved domain.
+
 <i>
 
 **definition [d]** (*Metric Tensor = Riemannian Metric = Metrical Matrix = First Fundamental Form*) A symmetric, covariant second-rank tensor field $G$ giving a bilinear map on tangent vectors,

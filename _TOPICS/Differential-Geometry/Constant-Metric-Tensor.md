@@ -1,5 +1,7 @@
 # Constant Metric Tensor
 
+A metric whose matrix entries do not depend on position. Used to compute distance when the geometry is the same at every point.
+
 <i>
 
 **definition [d]** (*Constant Metric Tensor = Metric with Constant Components*) A metric tensor $g_{\mu\nu}$ whose components do not depend on the coordinates in a given chart:

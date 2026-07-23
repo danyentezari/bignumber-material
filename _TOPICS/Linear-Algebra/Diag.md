@@ -1,5 +1,7 @@
 # Diag
 
+A mapping that builds a matrix with given scalar values on the main diagonal and zeros elsewhere. Used to write diagonal matrices from a sequence of scalars.
+
 <i>
 
 **definition [d]** (*$\operatorname{diag}$ = Diagonal Matrix Constructor*) The $n\times n$ matrix associated with scalars $a_{1},\ldots,a_{n}$, having those entries on the main diagonal and zeros elsewhere:

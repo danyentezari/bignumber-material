@@ -1,5 +1,7 @@
 # Line Integral
 
+A scalar obtained by integrating a field along a curve. Used to measure accumulated value along a path.
+
 <i>
 
 **definition [d]** (*Line Integral = Path Integral = Curve Integral*) The scalar obtained by integrating a continuous vector field $\mathbf{F}$ along a smooth curve $C$ given by $\mathbf{r}(t)$, $a \leq t \leq b$:

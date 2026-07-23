@@ -1,5 +1,7 @@
 # Hilbert Space
 
+A set of vectors with an inner product that induces a norm and in which every Cauchy sequence has a limit in the set. Used to solve equations and to expand vectors in a basis.
+
 <i>
 
 **definition [D]** (*Hilbert Space*) A complete inner product space, representing a linear vector space (finite or infinite-dimensional) where every Cauchy sequence of vectors converges to a limit within the space. It serves as the mathematical foundation for the states of quantum systems. A space is a Hilbert space if:

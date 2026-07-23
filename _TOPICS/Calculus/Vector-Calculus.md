@@ -1,5 +1,7 @@
 # Vector Calculus
 
+A set of derivative and integral operations on vector fields. Used to solve equations involving vectors that vary in space.
+
 ### Stoke's Theorem
 
 Let $S$ be a piecewise smooth oriented surface in space, and let the boundary of $S$ be a piecewise smooth simple closed curve $C$. If $\mathbf{F}(x, y, z)$ is a continuous vector function with continuous first partial derivatives in a domain containing $S$, then:

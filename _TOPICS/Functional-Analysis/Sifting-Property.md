@@ -1,5 +1,7 @@
 # Sifting Property
 
+A property of an integral that picks out the value of a function at one point. Used to simplify equations that involve a concentrated source.
+
 <i>
 
 **definition [d]** (*Sifting Property = Sifting Formula*) The defining property of the Dirac delta function $\delta$: integrating it against a continuous function $f$ sifts out the value of $f$ at the point where the delta is centered:

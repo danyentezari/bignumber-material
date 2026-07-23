@@ -1,5 +1,7 @@
 # k-Fold Product
 
+A Cartesian product of k copies of one set. Used as the domain of a multilinear mapping of k inputs.
+
 <i>
 
 **definition** (*k-Fold Product*) A set constructed by the Cartesian product of $k$ copies of a single set, $X^k$, where the following condition applies:

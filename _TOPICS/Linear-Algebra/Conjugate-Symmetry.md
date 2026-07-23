@@ -1,5 +1,7 @@
 # Conjugate Symmetry
 
+A property of an inner product under which swapping the two vector inputs replaces the scalar value by its complex conjugate. Used to keep the norm of a vector a real number.
+
 <i>
 
 **definition [d]** (*Conjugate Symmetry = Hermitian Symmetry*) A property of a complex inner product $\langle \cdot, \cdot \rangle$ on a vector space $\mathbf{V}$ that satisfies the following condition for all vectors:

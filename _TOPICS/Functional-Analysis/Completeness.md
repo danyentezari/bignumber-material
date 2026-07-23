@@ -1,5 +1,7 @@
 # Completeness
 
+A property of a metric under which every sequence that gets arbitrarily close within itself has a limit in the set. Used to guarantee that limits of sequences stay inside the set.
+
 <i>
 
 **definition [d]** (*Completeness*) A property of a metric space $X = (X, d)$: every Cauchy sequence in $X$ converges to a limit that is an element of $X$.

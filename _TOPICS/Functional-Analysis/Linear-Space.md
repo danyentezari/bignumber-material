@@ -1,5 +1,7 @@
 # Linear Space
 
+A set of vectors closed under addition of vectors and under multiplication by scalars. Used to build domains for functions and for linear transformations.
+
 <i>
 
 **definition [d]** (*Linear Space = Vector Space*) A nonempty set $X$ of elements called vectors, together with vector addition and multiplication by scalars from a field $K$, satisfying the vector-space axioms.

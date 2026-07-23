@@ -1,5 +1,7 @@
 # Bra and Ket
 
+A notation that writes vectors and linear functionals in matching symbols. Used to compute scalar values from vectors and functionals.
+
 <i>
 
 **definition [d]** (**Bra and Ket**) A *ket* $|\psi\rangle$ is an element of a complex Hilbert space $\mathcal{H}$; a *bra* $\langle\phi|$ is an element of its dual space $\mathcal{H}^{*}$ acting on kets:

@@ -1,5 +1,7 @@
 # k-Covector Field
 
+A smooth mapping that assigns a k-covector to each point. Used to define differential forms.
+
 <i>
 
 **definition** (*k-Covector Field*) A function assigning a $k$-covector to each point of a manifold, $\omega: M \rightarrow \Lambda^k(T^*M)$, where the following condition applies:

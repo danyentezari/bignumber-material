@@ -1,5 +1,7 @@
 # Line Element
 
+An expression for an infinitesimal squared distance from the metric. Used to compute length of a path.
+
 <i>
 
 **definition [d]** (*Line Element = Infinitesimal Arc Length Squared*) The quadratic form built from the metric components and the coordinate differentials:

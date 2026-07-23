@@ -1,5 +1,7 @@
 # Group
 
+A set with an associative binary operation that has an identity element and inverses. Used to describe symmetry of equations.
+
 <i>
 
 **definition** (*Group*) A tuple $(G, *)$ to which these axioms apply:

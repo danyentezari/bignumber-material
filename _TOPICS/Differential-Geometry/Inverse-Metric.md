@@ -1,5 +1,7 @@
 # Inverse Metric
 
+A matrix function that is the inverse of the metric matrix. Used to raise indices on tensors.
+
 <i>
 
 **definition [d]** (*Inverse Metric = Contravariant Metric Tensor*) The contravariant metric tensor $g^{ik}$ that is the matrix inverse of the covariant metric $g_{kj}$:

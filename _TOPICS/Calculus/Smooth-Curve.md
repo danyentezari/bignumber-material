@@ -1,5 +1,7 @@
 # Smooth Curve
 
+A curve whose derivative is continuous and never the zero vector. Used to define a unique tangent direction along the path.
+
 <i>
 
 **definition [d]** (*Smooth Curve = Regular Curve*) A curve with a parametrization $\mathbf{r}(t)$ on an interval $I$ such that

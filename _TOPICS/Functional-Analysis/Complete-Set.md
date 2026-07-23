@@ -1,5 +1,7 @@
 # Complete Set
 
+A set of vectors whose linear combinations can approximate every vector in a larger set. Used as a basis-like tool to represent other vectors.
+
 <i>
 
 **definition** (*Complete Set*) A subset of a normed space whose span is dense in that space, meaning any element in the space can be represented by a linear combination of the set's members. The set must satisfy the following condition:

@@ -1,5 +1,7 @@
 # Nondegenerate Bilinear Form
 
+A bilinear mapping on pairs of vectors that is nondegenerate. Used to pair vectors with covectors uniquely.
+
 <i>
 
 **definition [d]** (**Nondegenerate Bilinear Form**) A symmetric bilinear form $g$ on a finite-dimensional vector space $V$ that is invertible: the only vector orthogonal to every vector is zero,

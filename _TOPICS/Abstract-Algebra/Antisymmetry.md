@@ -1,5 +1,7 @@
 # Antisymmetry
 
+A property of a mapping under which swapping two inputs multiplies the output value by minus one. Used to build determinants of matrices.
+
 <i>
 
 **definition [d]** (Antisymmetry) A property of a tensor or matrix where its components change sign when their indices are interchanged, satisfying the following conditions:

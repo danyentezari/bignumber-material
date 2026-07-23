@@ -1,5 +1,7 @@
 # Tensor Field
 
+A mapping that assigns a tensor to each point of a domain. Used to describe geometric quantities that vary from point to point.
+
 <i>
 
 **definition [d]** (*Tensor Field = Section*) A mapping that assigns to each point of a manifold a tensor of fixed type: for $U \subset M$,

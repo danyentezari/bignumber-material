@@ -1,5 +1,7 @@
 # k-form
 
+An alternating multilinear function of k vectors. Used to measure oriented size of a k-dimensional subspace.
+
 <i>
 
 **definition** (*k-form*) A multilinear, completely antisymmetric, real-valued function of $k$ vector inputs, $\boldsymbol{\omega}: \mathbf{V}^k \rightarrow \mathbb{R}$, which satisfies the following conditions for all vectors and scalars:

@@ -1,5 +1,7 @@
 # Alternating k-linear function
 
+A multilinear mapping of several vectors that changes sign when two inputs are swapped. Used to form determinants and alternating tensors.
+
 <i>
 
 **definition** (*Alternating k-linear function*) A multilinear function from the $k$-fold product of a vector space to the real numbers, $f: V^k \rightarrow \mathbb{R}$, where the following conditions apply:

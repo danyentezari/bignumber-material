@@ -1,5 +1,7 @@
 # Binary Operations
 
+A mapping that combines two elements of a set into a third element of the same set. Used to define addition and multiplication.
+
 <i>
 
 **definition** (*Binary Operations*) Operations that take two elements of a set as input.

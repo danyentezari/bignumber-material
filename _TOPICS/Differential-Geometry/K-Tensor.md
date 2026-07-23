@@ -1,5 +1,7 @@
 # k-Tensor
 
+A multilinear function of k vectors. Used to represent quantities independent of a change of basis.
+
 <i>
 
 **definition** (*k-Tensor*) A multilinear function from the $k$-fold product of a vector space to the real numbers, $T: V^k \rightarrow \mathbb{R}$, where the following condition applies:

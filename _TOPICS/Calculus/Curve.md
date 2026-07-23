@@ -1,5 +1,7 @@
 # Curve
 
+A continuous mapping from an interval of real numbers into a space of points. Used to represent a path between points.
+
 <i>
 
 **definition [d]** (*Curve = Parametric Curve*) The set of all points $(x,y,z)$ given by continuous parametric equations on an interval $I$:

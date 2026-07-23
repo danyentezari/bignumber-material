@@ -1,5 +1,7 @@
 # Cartesian Product
 
+A set of all ordered pairs formed from two sets. Used to construct product domains and coordinate sets.
+
 <i>
 
 **definition** (*Cartesian Product*) A set consisting of all possible ordered combinations of elements from a collection of sets, denoted by $X \times Y$ for two sets and by $X_1 \times \dots \times X_n$ for $n$ sets, where the following conditions apply:
