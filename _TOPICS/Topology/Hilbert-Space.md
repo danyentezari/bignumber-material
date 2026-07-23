@@ -33,7 +33,7 @@ With the inner product
 
 and induced norm
 
-- $\lVert x \rVert = (x, x)^{1/2} = \left( \displaystyle\sum_{j=1}^{\infty} |\xi_{j}|^{2} \right)^{1/2}$ ,
+- $\lVert x \rVert = (x, x)^{\dfrac{1}{2}} = \left( \displaystyle\sum_{j=1}^{\infty} |\xi_{j}|^{2} \right)^{\dfrac{1}{2}}$ ,
 
 the space $\ell^{2}$ is a Hilbert space.
 

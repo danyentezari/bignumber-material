@@ -48,7 +48,7 @@ where
 
 **Linear Differential Equation** An $n$-th order ordinary differential equation is linear when it can be written in the form
 
-$$a_{0}(x)\frac{d^{n}y}{dx^{n}} + a_{1}(x)\frac{d^{n-1}y}{dx^{n-1}} + \dots + a_{n}(x)y = f(x), \quad a_{0}(x) \ne 0$$
+$$a_{0}(x)\dfrac{d^{n}y}{dx^{n}} + a_{1}(x)\dfrac{d^{n-1}y}{dx^{n-1}} + \dots + a_{n}(x)y = f(x), \quad a_{0}(x) \ne 0$$
 
 where
 
@@ -88,15 +88,15 @@ There are two aspects about a homogeneous linear differential equations:
 **General Linear Differential Equation**
 
 - **First-order:**
-    $$a_{0}(x)\frac{dy}{dx} + a_{1}(x)y = F(x)$$
+    $$a_{0}(x)\dfrac{dy}{dx} + a_{1}(x)y = F(x)$$
 
 
 - **Second-order:**
-    $$a_{0}(x)\frac{d^2y}{dx^2} + a_{1}(x)\frac{dy}{dx} + a_{2}(x)y = F(x)$$
+    $$a_{0}(x)\dfrac{d^2y}{dx^2} + a_{1}(x)\dfrac{dy}{dx} + a_{2}(x)y = F(x)$$
 
 
 - **$n$th-Order:**
-    $$a_n(x)\frac{d^n y}{dx^n} + a_{n-1}(x)\frac{d^{n-1} y}{dx^{n-1}} + \cdots + a_1(x)\frac{dy}{dx} + a_0(x)y = F(x)$$
+    $$a_n(x)\dfrac{d^n y}{dx^n} + a_{n-1}(x)\dfrac{d^{n-1} y}{dx^{n-1}} + \cdots + a_1(x)\dfrac{dy}{dx} + a_0(x)y = F(x)$$
 
 where
 

@@ -20,7 +20,7 @@ None at the moment.
 ### 6. Example 1:
 In a heat conduction problem, if a metal rod is insulated at both ends, the boundary condition could be that the temperature gradient (heat flux) at the ends is zero. This corresponds to a Neumann boundary condition:
 $$
-\frac{\partial u}{\partial x}(0, t) = \frac{\partial u}{\partial x}(L, t) = 0
+\dfrac{\partial u}{\partial x}(0, t) = \dfrac{\partial u}{\partial x}(L, t) = 0
 $$
 where
 

@@ -53,7 +53,7 @@ There exist double integral with two equivalent notations:
 
 The vector differential operator for expressing the partial differentiation of a vector
 
-$$\nabla = \frac{\partial}{\partial x} \mathbf{i} + \frac{\partial}{\partial y} \mathbf{j} + \frac{\partial}{\partial z} \mathbf{k}$$
+$$\nabla = \dfrac{\partial}{\partial x} \mathbf{i} + \dfrac{\partial}{\partial y} \mathbf{j} + \dfrac{\partial}{\partial z} \mathbf{k}$$
 
 where
 
@@ -71,7 +71,7 @@ Note:
 **Curl**
 
 Let $\mathbf{v}(x, y, z)$ be a differentiable vector function expressed in Cartesian coordinates with components $[v_1, v_2, v_3]$, such that: $$\mathbf{v} = v_1 \mathbf{i} + v_2 \mathbf{j} + v_3 \mathbf{k}$$
-The curl of $\mathbf{v}$ (also denoted as $\nabla \times \mathbf{v}$ or $\text{rot } \mathbf{v}$) is defined by the following symbolic determinant: $$\text{curl } \mathbf{v} = \nabla \times \mathbf{v} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ v_1 & v_2 & v_3 \end{vmatrix}$$
+The curl of $\mathbf{v}$ (also denoted as $\nabla \times \mathbf{v}$ or $\text{rot } \mathbf{v}$) is defined by the following symbolic determinant: $$\text{curl } \mathbf{v} = \nabla \times \mathbf{v} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ \dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\ v_1 & v_2 & v_3 \end{vmatrix}$$
 
 **Divergence**
 
@@ -80,7 +80,7 @@ The curl of $\mathbf{v}$ (also denoted as $\nabla \times \mathbf{v}$ or $\text{r
 
 **Differentiation of Vector**
 
-$$\mathbf{v}'(t) = \lim_{\Delta t \to 0} \frac{\mathbf{v}(t + \Delta t) - \mathbf{v}(t)}{\Delta t}$$ 
+$$\mathbf{v}'(t) = \lim_{\Delta t \to 0} \dfrac{\mathbf{v}(t + \Delta t) - \mathbf{v}(t)}{\Delta t}$$ 
 
 
 <br/>

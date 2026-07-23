@@ -5,7 +5,7 @@ A PDE modeling heat distribution over time.
 The heat equation is a second-order partial differential equation (PDE) that describes the distribution of heat (or temperature) in a given region over time. It is derived from Fourier's law of heat conduction and is commonly expressed as:
 
 $$
-\frac{\partial u}{\partial t} = \alpha \nabla^2 u
+\dfrac{\partial u}{\partial t} = \alpha \nabla^2 u
 $$
 
 where
@@ -29,7 +29,7 @@ None at the moment.
 Consider the heat equation in one dimension:
 
 $$
-\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}
+\dfrac{\partial u}{\partial t} = \alpha \dfrac{\partial^2 u}{\partial x^2}
 $$
 
 Here, \( u(x,t) \) represents the temperature in a thin rod at position \( x \) and time \( t \), and \( \alpha \) is the thermal diffusivity of the material. If the rod is insulated at both ends, boundary conditions would be specified, such as:
@@ -52,7 +52,7 @@ The solution to this equation describes how heat diffuses along the rod over tim
 In two dimensions, the heat equation becomes:
 
 $$
-\frac{\partial u}{\partial t} = \alpha \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} \right)
+\dfrac{\partial u}{\partial t} = \alpha \left( \dfrac{\partial^2 u}{\partial x^2} + \dfrac{\partial^2 u}{\partial y^2} \right)
 $$
 
 This models the distribution of heat over a two-dimensional surface. For example, it can be used to model the temperature distribution on the surface of a metal plate. Similar to the one-dimensional case, boundary conditions and initial conditions are needed to solve the equation. Numerical methods, such as finite difference methods, are often employed for complex geometries and boundary conditions.

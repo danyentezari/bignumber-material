@@ -8,7 +8,7 @@ Symmetry is about invariance to coordinate systems.
 
 - **(Tensor Component Form)** For a second-rank tensor $A$, it is symmetric if $A_{mn} = A_{nm}$ for all $m$ and $n$.
 - **(Matrix Transposition)** A matrix is symmetric if it is unchanged by transposition, such that $\tilde{A} = A$.
-- **(Resolution Property)** Every second-rank tensor can be resolved into a symmetric part, given by $\frac{1}{2}(A_{mn} + A_{nm})$, and an antisymmetric part.
+- **(Resolution Property)** Every second-rank tensor can be resolved into a symmetric part, given by $\dfrac{1}{2}(A_{mn} + A_{nm})$, and an antisymmetric part.
 
 where
 - $A$ is a tensor.

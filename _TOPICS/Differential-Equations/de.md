@@ -94,9 +94,9 @@ $$ (2xy + y^2)dx + (x^2 + 2xy)dy = 0 \enspace (1)$$
 
 We check for exactness by taking the partial derivative of (1) with respect to its variables $x,y$
 
-$\frac{\partial}{\partial y}(2xy + y^2) = 2x + 2y$
+$\dfrac{\partial}{\partial y}(2xy + y^2) = 2x + 2y$
 
-$\frac{\partial}{\partial x}(x^2 + 2xy) = 2x + 2y$
+$\dfrac{\partial}{\partial x}(x^2 + 2xy) = 2x + 2y$
 
             
 ---

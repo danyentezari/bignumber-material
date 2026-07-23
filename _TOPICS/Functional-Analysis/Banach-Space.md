@@ -40,7 +40,7 @@ Note:
 
 - $\ell^{p} = \left\{ x = \{x_{j}\}_{j=1}^{\infty} \;\middle|\; \displaystyle\sum_{j=1}^{\infty} |x_{j}|^{p} < \infty \right\}$ ,
 
-with norm $\lVert x \rVert_{p} = \left( \sum_{j=1}^{\infty} |x_{j}|^{p} \right)^{1/p}$. This is a Banach space.
+with norm $\lVert x \rVert_{p} = \left( \sum_{j=1}^{\infty} |x_{j}|^{p} \right)^{\dfrac{1}{p}}$. This is a Banach space.
 
 where
 

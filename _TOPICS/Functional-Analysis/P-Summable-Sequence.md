@@ -24,7 +24,7 @@ Note:
 
 **definition [d]** (*p-Summable Sequence*) An element of the set $\ell^{p}$ of sequences with finite $p$-norm:
 
-- $\ell^{p} = \left\{ x = \{x_{j}\}_{j=1}^{\infty} \;\middle|\; \lVert x \rVert_{p} = \left( \sum_{j=1}^{\infty} |x_{j}|^{p} \right)^{1/p} < \infty \right\}$ ,
+- $\ell^{p} = \left\{ x = \{x_{j}\}_{j=1}^{\infty} \;\middle|\; \lVert x \rVert_{p} = \left( \sum_{j=1}^{\infty} |x_{j}|^{p} \right)^{\dfrac{1}{p}} < \infty \right\}$ ,
 
 for $1 \leq p < \infty$.
 

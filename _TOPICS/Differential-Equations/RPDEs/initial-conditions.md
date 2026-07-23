@@ -20,7 +20,7 @@ None at the moment.
 In the heat equation problem:
 
 $$
-\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}
+\dfrac{\partial u}{\partial t} = \alpha \dfrac{\partial^2 u}{\partial x^2}
 $$
 
 an initial condition might specify the temperature distribution along a rod at \( t = 0 \), such as:
@@ -37,13 +37,13 @@ where
 In the case of Newton’s second law of motion, the position \( x(t) \) of a moving object satisfies the equation:
 
 $$
-m \frac{d^2 x}{dt^2} = F(x,t)
+m \dfrac{d^2 x}{dt^2} = F(x,t)
 $$
 
 To fully determine the motion of the object, initial conditions for the position and velocity must be provided at \( t = 0 \):
 
 $$
-x(0) = x_0, \quad \frac{dx}{dt}(0) = v_0
+x(0) = x_0, \quad \dfrac{dx}{dt}(0) = v_0
 $$
 
 These initial conditions specify where

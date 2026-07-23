@@ -27,9 +27,9 @@ Note:
 
 **definition [d]** (**Tensor**) An array of components $T^{i_1\ldots i_p}_{\ j_1\ldots j_q}$ labeled by $p$ contravariant upper and $q$ covariant lower indices, whose components transform linearly under a coordinate change $x \mapsto x'$:
 
-- (Contravariant) $(T')^{i} = \displaystyle \sum_{j} \frac{\partial x^{j}}{\partial (x')^{i}}\, T^{j}$ .
-- (Covariant) $(T')_{i} = \displaystyle \sum_{j} \frac{\partial (x')^{i}}{\partial x^{j}}\, T_{j}$ .
-- (Mixed rank 2) $(T')^{i}_{\ j} = \displaystyle \sum_{k,l} \frac{\partial x^{k}}{\partial (x')^{i}}\, \frac{\partial (x')^{j}}{\partial x^{l}}\, T^{k}_{\ l}$ .
+- (Contravariant) $(T')^{i} = \displaystyle \sum_{j} \dfrac{\partial x^{j}}{\partial (x')^{i}}\, T^{j}$ .
+- (Covariant) $(T')_{i} = \displaystyle \sum_{j} \dfrac{\partial (x')^{i}}{\partial x^{j}}\, T_{j}$ .
+- (Mixed rank 2) $(T')^{i}_{\ j} = \displaystyle \sum_{k,l} \dfrac{\partial x^{k}}{\partial (x')^{i}}\, \dfrac{\partial (x')^{j}}{\partial x^{l}}\, T^{k}_{\ l}$ .
 
 where
 

@@ -24,7 +24,7 @@ Note:
 
 **definition [d]** (*p-Summable*) A property of a sequence $x = \{x_{j}\}_{j=1}^{\infty}$: its $p$-norm is finite,
 
-- $\lVert x \rVert_{p} = \left( \displaystyle\sum_{j=1}^{\infty} |x_{j}|^{p} \right)^{1/p} < \infty$ ,
+- $\lVert x \rVert_{p} = \left( \displaystyle\sum_{j=1}^{\infty} |x_{j}|^{p} \right)^{\dfrac{1}{p}} < \infty$ ,
 
 for $1 \leq p < \infty$.
 

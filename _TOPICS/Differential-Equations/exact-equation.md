@@ -11,7 +11,7 @@ $$
 is exact if there exists a function \( \Phi(x, y) \) such that:
 
 $$
-\frac{\partial \Phi}{\partial x} = M \quad \text{and} \quad \frac{\partial \Phi}{\partial y} = N.
+\dfrac{\partial \Phi}{\partial x} = M \quad \text{and} \quad \dfrac{\partial \Phi}{\partial y} = N.
 $$
 
 An inexact equation does not satisfy this criterion and typically requires modification or integration factors to make it exact before solving. Exactness is a crucial property for simplifying the process of finding solutions to differential equations.
@@ -39,10 +39,10 @@ $$
 To verify exactness, check:
 
 $$
-\frac{\partial}{\partial y} (2xy + 3) = 2x
+\dfrac{\partial}{\partial y} (2xy + 3) = 2x
 $$
 $$
-\frac{\partial}{\partial x} (x^2 + 4y) = 2x
+\dfrac{\partial}{\partial x} (x^2 + 4y) = 2x
 $$
 
 Since these partial derivatives are equal, the equation is exact. The solution can be found by integrating \( M \) with respect to \( x \) and \( N \) with respect to \( y \), and then combining them appropriately.
@@ -57,10 +57,10 @@ $$
 To check exactness, compute:
 
 $$
-\frac{\partial}{\partial y} (xy + 1) = x
+\dfrac{\partial}{\partial y} (xy + 1) = x
 $$
 $$
-\frac{\partial}{\partial x} (x^2 + y) = 2x
+\dfrac{\partial}{\partial x} (x^2 + y) = 2x
 $$
 
 Since these partial derivatives are not equal, the equation is inexact. An integrating factor, such as a function of \( x \) or \( y \), may be used to convert it into an exact equation for solving.

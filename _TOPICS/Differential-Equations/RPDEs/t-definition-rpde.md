@@ -39,7 +39,7 @@ Consider a simplified model of heat conduction where
 * the thermal conductivity is uncertain due to material imperfections. The heat equation is given by:
 
 $$
-\frac{\partial u}{\partial t} - k(x, \omega) \Delta u = f(x, t)
+\dfrac{\partial u}{\partial t} - k(x, \omega) \Delta u = f(x, t)
 $$
 
 where
@@ -55,7 +55,7 @@ To solve this Random PDE, one could apply stochastic finite element methods (SFE
 In the context of financial mathematics, Random PDEs can be used to model the pricing of financial derivatives under uncertain market conditions. Consider the Black-Scholes equation with a stochastic volatility model. The governing Random PDE for the option price \( V(S,t,\omega) \) can be written as:
 
 $$
-\frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2(S,\omega) S^2 \frac{\partial^2 V}{\partial S^2} + r S \frac{\partial V}{\partial S} - rV = 0
+\dfrac{\partial V}{\partial t} + \dfrac{1}{2} \sigma^2(S,\omega) S^2 \dfrac{\partial^2 V}{\partial S^2} + r S \dfrac{\partial V}{\partial S} - rV = 0
 $$
 
 where

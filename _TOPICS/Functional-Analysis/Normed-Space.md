@@ -47,7 +47,7 @@ Note:
 
 with norm
 
-- $\lVert x \rVert_{p} = \left( \displaystyle\sum_{j=1}^{\infty} |\xi_{j}|^{p} \right)^{1/p}$ .
+- $\lVert x \rVert_{p} = \left( \displaystyle\sum_{j=1}^{\infty} |\xi_{j}|^{p} \right)^{\dfrac{1}{p}}$ .
 
 This is a normed space. It is in fact a Banach space.
 

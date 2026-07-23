@@ -9,10 +9,10 @@ $$ \nabla \cdot \mathbf{D} = \rho_v $$
 $$ \nabla \cdot \mathbf{B} = 0 $$
 
 3. Faraday’s Law
-$$ \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} $$
+$$ \nabla \times \mathbf{E} = -\dfrac{\partial \mathbf{B}}{\partial t} $$
 
 4. Ampere-Maxwell Law
-$$ \nabla \times \mathbf{H} = \mathbf{J} + \frac{\partial \mathbf{D}}{\partial t} $$
+$$ \nabla \times \mathbf{H} = \mathbf{J} + \dfrac{\partial \mathbf{D}}{\partial t} $$
 
 where
 
@@ -23,6 +23,6 @@ where
 - $\mathbf{H}$ = magnetic field intensity.
 - $\rho_v$ = volume charge density.
 - $\mathbf{J}$ = current density.
-- $\frac{\partial \mathbf{D}}{\partial t}$ = displacement current density.
+- $\dfrac{\partial \mathbf{D}}{\partial t}$ = displacement current density.
 
 <br/>

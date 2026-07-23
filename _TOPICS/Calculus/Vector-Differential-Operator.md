@@ -4,7 +4,7 @@
 
 **definition [d]** (*Vector Differential Operator = Del = Nabla = Gradient Operator*) The symbolic vector operator $\nabla$ that differentiates scalar and vector fields with respect to position. In Cartesian coordinates $(x, y, z)$:
 
-- $\displaystyle \nabla \equiv \hat{\mathbf{x}}\, \frac{\partial}{\partial x} + \hat{\mathbf{y}}\, \frac{\partial}{\partial y} + \hat{\mathbf{z}}\, \frac{\partial}{\partial z}$ .
+- $\displaystyle \nabla \equiv \hat{\mathbf{x}}\, \dfrac{\partial}{\partial x} + \hat{\mathbf{y}}\, \dfrac{\partial}{\partial y} + \hat{\mathbf{z}}\, \dfrac{\partial}{\partial z}$ .
 
 where
 

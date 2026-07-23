@@ -24,7 +24,7 @@ Note:
 
 **definition [d]** (*Tangent Space = Tangent Plane*) The $n$-dimensional vector space $T_{P}M$ spanned by the coordinate basis at $P$:
 
-- $T_{P}M = \operatorname{span}\left\{ \displaystyle \frac{\partial}{\partial x^{1}}\bigg|_{P},\, \ldots,\, \frac{\partial}{\partial x^{n}}\bigg|_{P} \right\}$ .
+- $T_{P}M = \operatorname{span}\left\{ \displaystyle \dfrac{\partial}{\partial x^{1}}\bigg|_{P},\, \ldots,\, \dfrac{\partial}{\partial x^{n}}\bigg|_{P} \right\}$ .
 
 where
 
