@@ -1,5 +1,7 @@
 # P-Summable
 
+A property of a sequence under which the series of absolute values raised to a parameter power converges. Used to decide which sequences belong to the matching set of sequences.
+
 <i>
 
 **definition [d]** (*p-Summable*) A property of a sequence $x = (\xi_{j})$ of scalars: the series of $p$-th powers converges,

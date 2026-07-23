@@ -1,5 +1,7 @@
 # P-Summable Sequence
 
+A sequence whose absolute values raised to a parameter power form a convergent series. Used as an element of that set when measuring size by the matching norm.
+
 <i>
 
 **definition [d]** (*p-Summable Sequence*) A sequence $x = (\xi_{j})$ belonging to the set $\ell^{p}$:

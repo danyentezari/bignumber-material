@@ -1,5 +1,7 @@
 # P
 
+A parameter that is a real number at least one. Used to define a family of norms on sequences and on functions by choosing the power in a sum or integral.
+
 <i>
 
 **definition [d]** (*$p$ = Exponent Parameter*) A fixed real number $p \geq 1$: the power to which absolute values of sequence terms or of function values are raised in forming the $\ell^{p}$ sum or the $L^{p}$ integral, before the outer $\dfrac{1}{p}$ root that defines the $p$-norm.
@@ -57,8 +59,16 @@ Note:
 
 </i>
 
+## Historical Notes
+
+Riesz introduced the parameter $p$ in 1910.
+He replaced the assumption of quadratic integrability by the integrability of $|f|^{p}$.
+Each number $p$ greater than $1$ determines a function class $L^{p}$.
+The letter $p$ names that power in $|f|^{p}$.
+
 ## References
 
 1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — fixed $p\geq 1$ in $\ell^{p}$ and $L^{p}$; conjugate exponents $\dfrac{1}{p} + \dfrac{1}{q}=1$.
 2. Gamelin, T. W., & Greene, R. E. *Introduction to Topology*, 2nd ed. Dover, 1999. — one-parameter family of $p$-norms for $1\leq p<\infty$.
 3. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — $p$-norm on $\mathbb{C}^{n}$; $L^{2}_{w}$ with power $2$.
+4. Pietsch, A. *History of Banach Spaces and Linear Operators*. Birkhäuser, 2007. — Riesz and the introduction of $L^{p}$ via the power $p$ in $|f|^{p}$.

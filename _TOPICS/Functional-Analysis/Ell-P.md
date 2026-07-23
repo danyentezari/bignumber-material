@@ -1,5 +1,7 @@
 # Ell P
 
+A set of sequences whose absolute values raised to a fixed parameter power form a convergent series. Used to study size and convergence of infinite sequences of scalars.
+
 <i>
 
 **definition [d]** (*$\ell^{p}$ = $\ell^{p}$ Space*) The set of all sequences $x = (\xi_{j})$ of scalars for which the series of $p$-th powers converges:
