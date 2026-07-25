@@ -1,6 +1,6 @@
 # Covariant Rank
 
-An integer counting how many lower indices a tensor carries. Used to track how those components change under a change of basis.
+An integer counting how many lower indices a tensor carries that is used to track how those components change under a change of basis.
 
 <i>
 

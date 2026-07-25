@@ -1,6 +1,6 @@
 # Boundary Conditions
 
-An equation that relates a derivative of a function at the edge of a domain to a value of the function is used to find a solution.
+An equation that relates a derivative of a function at the edge of a domain to a value of the function that is used to find a solution.
 
 <i>
 

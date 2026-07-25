@@ -1,6 +1,6 @@
 # k-Covector
 
-An alternating multilinear mapping on k vectors. Used to span the set of alternating tensors of that degree.
+An alternating multilinear mapping on k vectors that is used to span the set of alternating tensors of that degree.
 
 <i>
 

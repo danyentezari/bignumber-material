@@ -1,6 +1,6 @@
 # Convergence
 
-A sequence that gets closer to a fixed element is used for finding the limit of a function at a real number.
+A sequence that gets closer to a fixed element that is used for finding the limit of a function at a real number.
 
 <i>
 

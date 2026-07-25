@@ -1,6 +1,6 @@
 # Tangent Space
 
-A vector space of all tangent directions at a point. Used to approximate a curved domain by a flat vector space at that point.
+A vector space of all tangent directions at a point that is used to approximate a curved domain by a flat vector space at that point.
 
 <i>
 

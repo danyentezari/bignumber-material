@@ -1,6 +1,6 @@
 # Orthonormal
 
-A property of a set of vectors of unit norm whose pairwise inner products vanish when the vectors differ. Used to build a convenient basis.
+A property of a set of vectors of unit norm whose pairwise inner products vanish when the vectors differ that is used to build a convenient basis.
 
 <i>
 

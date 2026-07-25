@@ -1,6 +1,6 @@
 # P-Summable
 
-A property of a sequence under which the series of absolute values raised to a parameter power converges is used to identify members belonging to a matching set of sequences.
+A property of a sequence under which the series of absolute values raised to a parameter power converges that is used to identify members belonging to a matching set of sequences.
 
 <i>
 

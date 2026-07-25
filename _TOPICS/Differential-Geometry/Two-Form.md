@@ -1,6 +1,6 @@
 # Two-Form
 
-An antisymmetric multilinear mapping on ordered pairs of vectors. Used to form integrals over two-dimensional domains.
+An antisymmetric multilinear mapping on ordered pairs of vectors that is used to form integrals over two-dimensional domains.
 
 <i>
 

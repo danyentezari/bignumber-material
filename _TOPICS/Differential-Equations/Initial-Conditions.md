@@ -1,6 +1,6 @@
 # Initial Conditions
 
-A value of a function at a fixed point of its domain is used to determine a unique solution of an equation.
+A value of a function at a fixed point of its domain that is used to determine a unique solution of an equation.
 
 <i>
 

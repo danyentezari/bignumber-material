@@ -1,6 +1,6 @@
 # Topological Manifold
 
-A topological manifold is a Hausdorff space that is locally homeomorphic to Euclidean space of fixed dimension, used to introduce local coordinates.
+A topological manifold is a Hausdorff space that is locally homeomorphic to Euclidean space of fixed dimension that is used to introduce local coordinates.
 
 <i>
 

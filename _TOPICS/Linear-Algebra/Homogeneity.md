@@ -1,6 +1,6 @@
 # Homogeneity
 
-A property that says scaling an input by a scalar scales the value by a matching power of that scalar. Used to measure vector lengths consistently and to track degree under scaling.
+A property that says scaling an input by a scalar scales the value by a matching power of that scalar that is used to measure vector lengths consistently and to track degree under scaling.
 
 <i>
 

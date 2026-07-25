@@ -1,6 +1,6 @@
 # Vector Calculus
 
-A set of derivative and integral operations on vector fields. Used to solve equations involving vectors that vary in space.
+A set of derivative and integral operations on vector fields that is used to solve equations involving vectors that vary in space.
 
 ### Stoke's Theorem
 

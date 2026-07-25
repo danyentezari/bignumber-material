@@ -1,6 +1,6 @@
 # Neighborhood
 
-A neighborhood is an open set containing a given point, used to describe local behavior of a function near that point.
+A neighborhood is an open set containing a given point that is used to describe local behavior of a function near that point.
 
 <i>
 

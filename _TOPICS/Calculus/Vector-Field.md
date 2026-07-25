@@ -1,6 +1,6 @@
 # Vector Field
 
-A mapping that assigns a vector to each point of a domain. Used to represent force-like quantities that vary with position.
+A mapping that assigns a vector to each point of a domain that is used to represent force-like quantities that vary with position.
 
 <i>
 

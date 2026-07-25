@@ -1,6 +1,6 @@
 # Symmetry
 
-A mapping that leaves an equation unchanged. Used to simplify equations.
+A mapping that leaves an equation unchanged that is used to simplify equations.
 
 Symmetry is about invariance to coordinate systems.
 
@@ -17,14 +17,12 @@ where
 - $m, n$ are indices identifying components.
 - $\tilde{A}$ is the transpose of the matrix.
 
-
 Note:
 
 - $A$ may be a matrix.
 - $\tilde{A}$ is also written $A^T$.
 
 </i>
-
 
 <i>
 
@@ -44,7 +42,6 @@ Note:
 - $A$ may be a matrix.
 
 </i>
-
 
 <i>
 

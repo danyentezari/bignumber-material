@@ -1,6 +1,6 @@
 # Divergence
 
-A divergence is a scalar value calculated from the derivative of a mapping of vectors. It is used to calculate the change in a variable value within an open set.
+A divergence is a scalar value calculated from the derivative of a mapping of vectors that is used to calculate the change in a variable value within an open set.
 
 Note: Also written $\operatorname{div} \mathbf{v}$. Also called the divergence of the vector field defined by $\mathbf{v}$.
 

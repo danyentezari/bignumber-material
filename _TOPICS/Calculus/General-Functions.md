@@ -1,3 +1,3 @@
 # General Functions
 
-Delta Function
+Delta Function.

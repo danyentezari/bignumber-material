@@ -1,6 +1,6 @@
 # Indefinite Integral
 
-A function that undoes differentiation of another function. Used to solve equations involving derivatives.
+A function that undoes differentiation of another function that is used to solve equations involving derivatives.
 
 <i>
 

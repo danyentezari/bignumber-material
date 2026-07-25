@@ -1,6 +1,6 @@
 # Linear Transformation
 
-A linear transformation is a mapping of a vector to another vector in a codomain, used to represent a change in a scalar value.
+A linear transformation is a mapping of a vector to another vector in a codomain that is used to represent a change in a scalar value.
 
 Note: Also called linear map.
 

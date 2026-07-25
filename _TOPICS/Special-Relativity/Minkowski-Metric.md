@@ -1,6 +1,6 @@
 # Minkowski Metric
 
-A constant metric matrix with one negative and three positive diagonal entries. Used to compute interval distance in flat spacetime.
+A constant metric matrix with one negative and three positive diagonal entries that is used to compute interval distance in flat spacetime.
 
 <i>
 

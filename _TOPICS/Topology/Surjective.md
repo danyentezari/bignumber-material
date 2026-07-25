@@ -1,6 +1,6 @@
 # Surjective
 
-A surjective mapping is a function that hits every element of its target set, used to express that a mapping covers its codomain.
+A surjective mapping is a function that hits every element of its target set that is used to express that a mapping covers its codomain.
 
 <i>
 

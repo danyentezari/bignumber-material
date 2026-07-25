@@ -1,6 +1,6 @@
 # Bra and Ket
 
-A notation that writes vectors and linear functionals in matching symbols. Used to compute scalar values from vectors and functionals.
+A notation that writes vectors and linear functionals in matching symbols that is used to compute scalar values from vectors and functionals.
 
 <i>
 

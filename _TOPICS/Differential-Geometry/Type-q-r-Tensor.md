@@ -1,6 +1,6 @@
 # Type-(q,r) Tensor
 
-A multilinear mapping that takes a fixed number of covectors and vectors to a scalar. Used to classify tensors by index type.
+A multilinear mapping that takes a fixed number of covectors and vectors to a scalar that is used to classify tensors by index type.
 
 <i>
 

@@ -1,6 +1,6 @@
 # Alternating Function
 
-A property of a function under which swapping two inputs multiplies the value by minus one. Used to build determinants of matrices.
+A property of a function under which swapping two inputs multiplies the value by minus one that is used to build determinants of matrices.
 
 <i>
 

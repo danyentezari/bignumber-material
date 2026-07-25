@@ -1,6 +1,6 @@
 # Delta Function
 
-A mapping that is zero away from one point and has a finite integral concentrated there. Used to represent a point source in an integral.
+A mapping that is zero away from one point and has a finite integral concentrated there that is used to represent a point source in an integral.
 
 <i>
 

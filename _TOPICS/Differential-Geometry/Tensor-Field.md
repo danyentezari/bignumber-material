@@ -1,6 +1,6 @@
 # Tensor Field
 
-A mapping that assigns a tensor to each point of a domain. Used to describe geometric quantities that vary from point to point.
+A mapping that assigns a tensor to each point of a domain that is used to describe geometric quantities that vary from point to point.
 
 <i>
 

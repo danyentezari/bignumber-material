@@ -1,6 +1,6 @@
 # Line Element
 
-An expression for an infinitesimal squared distance from the metric. Used to compute length of a path.
+An expression for an infinitesimal squared distance from the metric that is used to compute length of a path.
 
 <i>
 

@@ -1,6 +1,6 @@
 # Integral Domain
 
-A set with addition and multiplication like the integers, with no nonzero product equal to zero. Used to solve polynomial equations.
+A set with addition and multiplication like the integers, with no nonzero product equal to zero that is used to solve polynomial equations.
 
 <i>
 

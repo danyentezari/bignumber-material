@@ -1,6 +1,6 @@
 # k-Covector Field
 
-A smooth mapping that assigns a k-covector to each point. Used to define differential forms.
+A smooth mapping that assigns a k-covector to each point that is used to define differential forms.
 
 <i>
 

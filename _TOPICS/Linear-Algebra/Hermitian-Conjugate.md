@@ -1,6 +1,6 @@
 # Hermitian Conjugate
 
-A matrix obtained from another matrix by taking the transpose and then the complex conjugate of each entry. Used to define adjoints and to form norms of complex vectors.
+A matrix obtained from another matrix by taking the transpose and then the complex conjugate of each entry that is used to define adjoints and to form norms of complex vectors.
 
 <i>
 

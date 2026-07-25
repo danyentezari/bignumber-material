@@ -1,6 +1,6 @@
 # Scalar Projection
 
-A scalar measuring how much of one vector lies along another. Used to extract the parallel part of a vector.
+A scalar measuring how much of one vector lies along another that is used to extract the parallel part of a vector.
 
 <i>
 

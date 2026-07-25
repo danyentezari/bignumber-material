@@ -1,6 +1,6 @@
 # Contour Integral
 
-An integral of a complex function along a closed curve. Used to evaluate complex function values through path integrals.
+An integral of a complex function along a closed curve that is used to evaluate complex function values through path integrals.
 
 <i>
 

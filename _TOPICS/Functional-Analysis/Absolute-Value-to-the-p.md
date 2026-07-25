@@ -1,6 +1,6 @@
 # Absolute-Value-to-the-p
 
-A function obtained by raising the absolute value of another function to a fixed parameter power. Used to build norms and integrals that measure size.
+A function obtained by raising the absolute value of another function to a fixed parameter power that is used to build norms and integrals that measure size.
 
 <i>
 

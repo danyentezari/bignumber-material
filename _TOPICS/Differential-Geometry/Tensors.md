@@ -1,6 +1,6 @@
 # Tensors
 
-A multilinear mapping on vectors and covectors that assigns a scalar. Used to represent quantities whose values transform consistently under a change of basis.
+A multilinear mapping on vectors and covectors that assigns a scalar that is used to represent quantities whose values transform consistently under a change of basis.
 
 <i>
 

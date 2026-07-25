@@ -1,6 +1,6 @@
 # Alternating k-linear function
 
-A multilinear mapping of several vectors that changes sign when two inputs are swapped. Used to form determinants and alternating tensors.
+A multilinear mapping of several vectors that changes sign when two inputs are swapped that is used to form determinants and alternating tensors.
 
 <i>
 

@@ -1,6 +1,6 @@
 # Topology
 
-A topology is a collection of subsets of a set that contains the empty set and the whole set and is closed under arbitrary unions and finite intersections, used to define open sets and continuity of mappings.
+A topology is a collection of subsets of a set that contains the empty set and the whole set and is closed under arbitrary unions and finite intersections that is used to define open sets and continuity of mappings.
 
 <i>
 

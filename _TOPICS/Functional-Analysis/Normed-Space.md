@@ -1,6 +1,6 @@
 # Normed Space
 
-A set of vectors with a norm defined on it is used to measure distance between vectors by the metric induced by the norm.
+A set of vectors with a norm defined on it that is used to measure distance between vectors by the metric induced by the norm.
 
 Note: Also called normed vector space. Also called normed linear space.
 

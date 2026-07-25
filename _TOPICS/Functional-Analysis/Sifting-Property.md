@@ -1,6 +1,6 @@
 # Sifting Property
 
-A property of an integral that picks out the value of a function at one point. Used to simplify equations that involve a concentrated source.
+A property of an integral that picks out the value of a function at one point that is used to simplify equations that involve a concentrated source.
 
 <i>
 

@@ -1,6 +1,6 @@
 # Metric Tensor
 
-A mapping that assigns an inner product on the tangent space at each point. Used to compute distance and length on a curved domain.
+A mapping that assigns an inner product on the tangent space at each point that is used to compute distance and length on a curved domain.
 
 <i>
 

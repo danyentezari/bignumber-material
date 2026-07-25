@@ -1,6 +1,6 @@
 # Cartesian Product
 
-A set of all ordered pairs formed from two sets. Used to construct product domains and coordinate sets.
+A set of all ordered pairs formed from two sets that is used to construct product domains and coordinate sets.
 
 <i>
 
@@ -20,7 +20,6 @@ where
 - $(x, y)$ is an ordered pair
 - $(x_1, \dots, x_n)$ is an ordered $n$-tuple
 - $A$ is the index set used to label the family of sets
-  
 
 Note:
 

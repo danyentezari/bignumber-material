@@ -1,6 +1,6 @@
 # Definite Integral
 
-A scalar defined as the limit of a sum of function values on subintervals. Used to measure accumulated size along an interval.
+A scalar defined as the limit of a sum of function values on subintervals that is used to measure accumulated size along an interval.
 
 <i>
 

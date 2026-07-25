@@ -1,6 +1,6 @@
 # Multilinear Function
 
-A mapping of several vectors that is linear in each vector variable separately. Used to define tensors.
+A mapping of several vectors that is linear in each vector variable separately that is used to define tensors.
 
 <i>
 
@@ -16,5 +16,5 @@ where
 - $k$ is a positive integer representing the number of arguments, also called the degree of the function.
 - $v_1, \dots, v_k, v_i' \in V$ are vectors.
 - $a \in \mathbb{R}$ is a scalar.
-  
+
 </i>

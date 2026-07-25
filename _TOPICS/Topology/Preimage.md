@@ -1,6 +1,6 @@
 # Preimage
 
-A preimage is the set of domain elements sent into a given subset, used in the open-set definition of continuity.
+A preimage is the set of domain elements sent into a given subset that is used in the open-set definition of continuity.
 
 <i>
 

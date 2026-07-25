@@ -1,6 +1,6 @@
 # Adjoint
 
-A linear transformation paired with another mapping through an inner product is used to move that inner product from one factor to the other in an equation.
+A linear transformation paired with another mapping through an inner product that is used to move that inner product from one factor to the other in an equation.
 
 Note: Also called Hilbert-adjoint operator.
 

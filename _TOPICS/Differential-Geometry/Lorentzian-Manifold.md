@@ -1,6 +1,6 @@
 # Lorentzian Manifold
 
-A smooth domain with a metric of one negative and three positive signature directions. Used to model curved spacetime.
+A smooth domain with a metric of one negative and three positive signature directions that is used to model curved spacetime.
 
 <i>
 

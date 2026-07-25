@@ -1,6 +1,6 @@
 # Line Integral
 
-A scalar obtained by integrating a field along a curve. Used to measure accumulated value along a path.
+A scalar obtained by integrating a field along a curve that is used to measure accumulated value along a path.
 
 <i>
 

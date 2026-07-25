@@ -1,6 +1,6 @@
 # Curl
 
-A curl is a vector calculated from the derivative of a mapping of vectors. It is used to calculate the change in a vector value within a neighborhood.
+A curl is a vector calculated from the derivative of a mapping of vectors that is used to calculate the change in a vector value within a neighborhood.
 
 Note: Also written $\nabla \times \mathbf{v}$. Also written $\operatorname{rot} \mathbf{v}$.
 

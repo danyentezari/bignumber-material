@@ -1,6 +1,6 @@
 # Operator
 
-A linear transformation from a vector space to itself. Used to transform vectors and to solve equations on that space.
+A linear transformation from a vector space to itself that is used to transform vectors and to solve equations on that space.
 
 <i>
 

@@ -2,7 +2,7 @@
 
 ## Differential Equations
 
-An equation relating a function to its derivative is used to calculate the change of a variable over a domain.
+An equation relating a function to its derivative that is used to calculate the change of a variable over a domain.
 
 <i>
 
@@ -39,7 +39,7 @@ where
 
 ## Integral Equations
 
-An equation containing an integral of a function is used to determine a solution of the function over a domain.
+An equation containing an integral of a function that is used to determine a solution of the function over a domain.
 
 <i>
 

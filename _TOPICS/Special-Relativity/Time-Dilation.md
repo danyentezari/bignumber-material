@@ -1,6 +1,6 @@
 # Time Dilation
 
-($\Delta t = \gamma\,\Delta t_0$)
+($\Delta t = \gamma\,\Delta t_0$).
 
 **Moving clocks**
 

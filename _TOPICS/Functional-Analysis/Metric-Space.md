@@ -1,6 +1,6 @@
 # Metric Space
 
-A set with a metric function is used for calculating the distance between any two elements to study limits and sequences.
+A set with a metric function that is used for calculating the distance between any two elements to study limits and sequences.
 
 Note: Also called distance function for the metric $d$.
 

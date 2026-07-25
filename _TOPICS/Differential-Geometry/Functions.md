@@ -1,6 +1,6 @@
 # Functions
 
-A mapping that assigns to each element of one set a value in another set. Used to express relations between variables.
+A mapping that assigns to each element of one set a value in another set that is used to express relations between variables.
 
 <i>
 
@@ -20,7 +20,6 @@ where
 - $k$ is a positive integer representing the degree of the function.
 
 </i>
-
 
 <i>
 

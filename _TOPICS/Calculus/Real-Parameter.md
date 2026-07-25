@@ -1,6 +1,6 @@
 # Real Parameter
 
-A real parameter is a real number variable used to define a family of functions. It is used to select a specific member from a set.
+A real parameter is a real number variable that is used to define a family of functions. It is used to select a specific member from a set.
 
 Note: Also called parameter. Also described as a real number constant in the same role.
 

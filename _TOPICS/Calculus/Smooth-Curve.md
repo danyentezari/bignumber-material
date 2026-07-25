@@ -1,6 +1,6 @@
 # Smooth Curve
 
-A curve whose derivative is continuous and never the zero vector. Used to define a unique tangent direction along the path.
+A curve whose derivative is continuous and never the zero vector that is used to define a unique tangent direction along the path.
 
 <i>
 

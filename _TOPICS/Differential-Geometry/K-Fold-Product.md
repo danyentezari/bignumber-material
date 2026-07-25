@@ -1,6 +1,6 @@
 # k-Fold Product
 
-A Cartesian product of k copies of one set. Used as the domain of a multilinear mapping of k inputs.
+A Cartesian product of k copies of one set that is used as the domain of a multilinear mapping of k inputs.
 
 <i>
 

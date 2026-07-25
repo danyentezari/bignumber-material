@@ -1,6 +1,6 @@
 # Minkowski Space
 
-A set of events equipped with the Minkowski metric. Used to represent flat spacetime.
+A set of events equipped with the Minkowski metric that is used to represent flat spacetime.
 
 <i>
 

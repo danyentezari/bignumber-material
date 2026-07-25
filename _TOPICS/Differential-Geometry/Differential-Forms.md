@@ -1,6 +1,6 @@
 # Differential Forms
 
-A field of alternating multilinear mappings attached to each point. Used to integrate over curved domains.
+A field of alternating multilinear mappings attached to each point that is used to integrate over curved domains.
 
 <i>
 

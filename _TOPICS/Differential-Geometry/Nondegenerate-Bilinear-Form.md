@@ -1,6 +1,6 @@
 # Nondegenerate Bilinear Form
 
-A bilinear mapping on pairs of vectors that is nondegenerate. Used to pair vectors with covectors uniquely.
+A bilinear mapping on pairs of vectors that is nondegenerate that is used to pair vectors with covectors uniquely.
 
 <i>
 

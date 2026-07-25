@@ -1,6 +1,6 @@
 # Abelian Group
 
-A set with a binary operation under which the order of combining two elements does not change the result. Used to define addition of vectors.
+A set with a binary operation under which the order of combining two elements does not change the result that is used to define addition of vectors.
 
 <i>
 

@@ -1,6 +1,6 @@
 # Inner Product
 
-A mapping that assigns a scalar to each ordered pair of vectors. Used to define length through a norm and to compare vectors.
+A mapping that assigns a scalar to each ordered pair of vectors that is used to define length through a norm and to compare vectors.
 
 <i>
 

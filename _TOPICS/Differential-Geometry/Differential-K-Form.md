@@ -1,6 +1,6 @@
 # Differential k-Form
 
-A smooth mapping that assigns an alternating k-linear mapping to each point. Used to integrate over k-dimensional domains.
+A smooth mapping that assigns an alternating k-linear mapping to each point that is used to integrate over k-dimensional domains.
 
 <i>
 

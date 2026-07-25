@@ -1,6 +1,6 @@
 # Length Contraction
 
-($L = \dfrac{L_0}{\gamma}$)
+($L = \dfrac{L_0}{\gamma}$).
 
 **Proper length**
 

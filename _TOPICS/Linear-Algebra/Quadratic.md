@@ -1,6 +1,6 @@
 # Quadratic
 
-A polynomial of degree two that is homogeneous of degree two. Used to express quadratic size and energy-type expressions in several variables.
+A polynomial of degree two that is homogeneous of degree two that is used to express quadratic size and energy-type expressions in several variables.
 
 <i>
 

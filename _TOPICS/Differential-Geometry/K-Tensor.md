@@ -1,6 +1,6 @@
 # k-Tensor
 
-A multilinear function of k vectors. Used to represent quantities independent of a change of basis.
+A multilinear function of k vectors that is used to represent quantities independent of a change of basis.
 
 <i>
 

@@ -1,6 +1,6 @@
 # Linear Space
 
-A set of vectors together with addition of vectors and multiplication by scalars is used to build domains for functions and for linear transformations.
+A set of vectors together with addition of vectors and multiplication by scalars that is used to build domains for functions and for linear transformations.
 
 Note: Also called vector space.
 

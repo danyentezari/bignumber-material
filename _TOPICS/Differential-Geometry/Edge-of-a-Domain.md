@@ -1,6 +1,6 @@
 # Edge of a Domain
 
-A set of elements that surrounds a domain as its lower-dimensional edge is used to evaluate a definite integral of a mapping along that edge.
+A set of elements that surrounds a domain as its lower-dimensional edge that is used to evaluate a definite integral of a mapping along that edge.
 
 Note: Also called boundary. Also called perimeter of a surface.
 

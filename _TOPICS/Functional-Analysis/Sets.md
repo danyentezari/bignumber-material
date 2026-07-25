@@ -1,6 +1,6 @@
 # Sets 
 
-A collection of mathematical objects such as numbers or vectors. Used as the basic building block for larger constructions.
+A collection of mathematical objects such as numbers or vectors that is used as the basic building block for other constructions.
 
 <i>
 

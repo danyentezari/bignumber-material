@@ -1,6 +1,6 @@
 # Type-(0,2) Tensor Field
 
-A smooth mapping that assigns a bilinear form on tangent vectors at each point. Used to represent a metric field.
+A smooth mapping that assigns a bilinear form on tangent vectors at each point that is used to represent a metric field.
 
 <i>
 

@@ -1,6 +1,6 @@
 # Linear Functional
 
-A linear mapping from a vector space to scalars. Used to define the dual space.
+A linear mapping from a vector space to scalars that is used to define the dual space.
 
 <i>
 

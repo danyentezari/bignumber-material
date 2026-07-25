@@ -1,6 +1,6 @@
 # Curve
 
-A continuous mapping from an interval of real numbers into a space of points. Used to represent a path between points.
+A continuous mapping from an interval of real numbers into a space of points that is used to represent a path between points.
 
 <i>
 

@@ -1,11 +1,10 @@
 # Covariant, Contravariant, and Coordinate Systems
 
-The context if this section is the following. In physics and mathematics, points exist independently of the coordinates used to represent them.
+The context if this section is the following. In physics and mathematics, points exist independently of the coordinates that is used to represent them.
 
 First, we begin a discussion on covariant and contravariant vectors.
 
 Covariant vectors are linear functionals.
-
 
 <i>
 
@@ -21,9 +20,6 @@ where
 - $K$ is the field of scalars.
 
 </i>
-
-
-
 
 <i>
 
@@ -48,7 +44,6 @@ Note:
 
 </i>
 
-
 <i>
 
 **definition** (*k-Covector Field*) A function assigning a $k$-covector to each point of a manifold, $\omega: M \rightarrow \Lambda^k(T^*M)$, where the following condition applies:
@@ -70,8 +65,6 @@ Note:
 - A $k$-covector field is also called a differential $k$-form.
 
 </i>
-
-
 
 <i>
 

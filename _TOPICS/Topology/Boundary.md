@@ -1,6 +1,6 @@
 # Boundary
 
-A boundary is a closed set of elements associated with a subset. It is used to define the limit of a neighborhood where a function of a variable has a constant scalar value.
+A boundary is a closed set of elements associated with a subset that is used to define the limit of a neighborhood where a function of a variable has a constant scalar value.
 
 <i>
 

@@ -1,6 +1,6 @@
 # Continuity
 
-A property of a mapping under which small changes in the input produce small changes in the value. Used to ensure limits and calculus behave well.
+A property of a mapping under which small changes in the input produce small changes in the value that is used to ensure limits and calculus behave well.
 
 <i>
 

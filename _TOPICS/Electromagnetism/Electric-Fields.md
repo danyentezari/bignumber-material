@@ -1,6 +1,6 @@
 # Electric Fields
 
-($\nabla \cdot \mathbf{E} = \dfrac{\rho}{\varepsilon_0}$) (Gauss's law)
+($\nabla \cdot \mathbf{E} = \dfrac{\rho}{\varepsilon_0}$) (Gauss's law).
 
 **Electric field**
 

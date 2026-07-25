@@ -1,6 +1,6 @@
 # Bijective
 
-A bijective mapping is a function that is both injective and surjective, used to set up a one-to-one correspondence between two sets.
+A bijective mapping is a function that is both injective and surjective that is used to set up a one-to-one correspondence between two sets.
 
 <i>
 

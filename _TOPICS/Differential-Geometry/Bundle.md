@@ -1,6 +1,6 @@
 # Bundle
 
-A set that locally looks like a Cartesian product of a base set and a fiber set. Used to represent fields of vectors attached to each point.
+A set that locally looks like a Cartesian product of a base set and a fiber set that is used to represent fields of vectors attached to each point.
 
 <i>
 

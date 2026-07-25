@@ -1,6 +1,6 @@
 # Standard Basis
 
-A basis of unit vectors along the coordinate axes of an n-tuple space. Used to write vectors with the simplest coordinate values.
+A basis of unit vectors along the coordinate axes of an n-tuple space that is used to write vectors with the simplest coordinate values.
 
 <i>
 

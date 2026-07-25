@@ -1,6 +1,6 @@
 # Inverse Metric
 
-A matrix function that is the inverse of the metric matrix. Used to raise indices on tensors.
+A matrix function that is the inverse of the metric matrix that is used to raise indices on tensors.
 
 <i>
 

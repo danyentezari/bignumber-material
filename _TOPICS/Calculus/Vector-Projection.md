@@ -1,6 +1,6 @@
 # Vector Projection
 
-A vector along a given direction that is the parallel part of another vector. Used to split a vector into parallel and remaining parts.
+A vector along a given direction that is the parallel part of another vector that is used to split a vector into parallel and remaining parts.
 
 <i>
 

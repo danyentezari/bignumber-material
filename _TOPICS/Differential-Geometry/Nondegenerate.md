@@ -1,6 +1,6 @@
 # Nondegenerate
 
-A property of a metric under which only the zero vector is orthogonal to every vector. Used to ensure the metric defines a genuine length.
+A property of a metric under which only the zero vector is orthogonal to every vector that is used to ensure the metric defines a genuine length.
 
 <i>
 

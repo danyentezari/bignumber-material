@@ -1,6 +1,6 @@
 # Lie Algebra
 
-A set of vectors with a mapping that combines two vectors into a third vector is used to calculate the change of a vector value.
+A set of vectors with a mapping that combines two vectors into a third vector that is used to calculate the change of a vector value.
 
 <i>
 

@@ -1,6 +1,6 @@
 # Hilbert Space
 
-A set of vectors with an inner product that induces a norm and in which every Cauchy sequence has a limit in the set. Used to solve equations and to expand vectors in a basis.
+A set of vectors with an inner product that induces a norm and in which every Cauchy sequence has a limit in the set that is used to solve equations and to expand vectors in a basis.
 
 <i>
 

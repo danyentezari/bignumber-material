@@ -1,6 +1,6 @@
 # Limit
 
-A value that a function approaches as its variable approaches a point. Used to define continuity of a mapping at a point.
+A value that a function approaches as its variable approaches a point that is used to define continuity of a mapping at a point.
 
 <i>
 

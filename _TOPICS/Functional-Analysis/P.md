@@ -1,6 +1,6 @@
 # P
 
-A parameter that is a real number at least one. Used to define a family of norms on sequences and on functions by choosing the power in a sum or integral.
+A parameter that is a real number at least one that is used to define a family of norms on sequences and on functions by choosing the power in a sum or integral.
 
 <i>
 

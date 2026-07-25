@@ -1,6 +1,6 @@
 # Ell P
 
-A set of sequences of values where each sequence has a finite norm defined by a parameter is used to find the distance between sequences.
+A set of sequences of values where each sequence has a finite norm defined by a parameter that is used to find the distance between sequences.
 
 <i>
 

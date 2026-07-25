@@ -1,6 +1,6 @@
 # Open Sets
 
-An open set is a member of a topology on a set, used to define neighborhoods and continuity of mappings.
+An open set is a member of a topology on a set that is used to define neighborhoods and continuity of mappings.
 
 The open set is central to topology, and it is required for definitions. We begin with a definition and then an example.
 

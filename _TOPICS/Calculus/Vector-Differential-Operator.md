@@ -1,6 +1,6 @@
 # Vector Differential Operator
 
-A mapping that forms derivatives of scalar fields and of vector fields. Used to compute the gradient and related operators.
+A mapping that forms derivatives of scalar fields and of vector fields that is used to compute the gradient and related operators.
 
 <i>
 

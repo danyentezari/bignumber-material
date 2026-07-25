@@ -1,6 +1,6 @@
 # Norm
 
-A norm is a function that associates a real number with a vector, and it is used for measuring the distance between vectors.
+A norm is a function that associates a real number with a vector, and it that is used for measuring the distance between vectors.
 
 <i>
 

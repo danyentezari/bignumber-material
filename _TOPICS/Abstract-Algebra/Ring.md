@@ -1,6 +1,6 @@
 # Ring
 
-A set with addition and multiplication linked by the distributive laws. Used to define polynomials.
+A set with addition and multiplication linked by the distributive laws that is used to define polynomials.
 
 <i>
 

@@ -1,6 +1,6 @@
 # One-Form
 
-A linear functional on a vector space. Used as the integrand of a line integral.
+A linear functional on a vector space that is used as the integrand of a line integral.
 
 <i>
 

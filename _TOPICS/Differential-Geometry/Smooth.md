@@ -1,6 +1,6 @@
 # Smooth
 
-A property of a function under which derivatives of all degrees exist and are continuous. Used to do calculus with well-behaved functions.
+A property of a function under which derivatives of all degrees exist and are continuous that is used to do calculus with well-behaved functions.
 
 <i>
 

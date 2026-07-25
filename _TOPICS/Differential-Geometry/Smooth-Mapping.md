@@ -1,6 +1,6 @@
 # Smooth Mapping
 
-A smooth mapping is a mapping of a vector to another vector where every derivative of the mapping satisfies continuity. It is used to calculate a change in a variable value that satisfies continuity.
+A smooth mapping is a mapping of a vector to another vector where every derivative of the mapping satisfies continuity that is used to calculate a change in a variable value that satisfies continuity.
 
 Note: Also called smooth map. Also called $C^{\infty}$ map.
 

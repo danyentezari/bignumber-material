@@ -1,6 +1,6 @@
 # Principle of Relativity
 
-($c = \text{constant in all inertial frames}$)
+($c = \text{constant in all inertial frames}$).
 
 **Inertial reference frames**
 

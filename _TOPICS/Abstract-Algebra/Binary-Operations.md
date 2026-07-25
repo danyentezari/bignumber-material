@@ -1,6 +1,6 @@
 # Binary Operations
 
-A mapping that combines two elements of a set into a third element of the same set. Used to define addition and multiplication.
+A mapping that combines two elements of a set into a third element of the same set that is used to define addition and multiplication.
 
 <i>
 

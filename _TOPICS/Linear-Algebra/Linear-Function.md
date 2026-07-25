@@ -1,6 +1,6 @@
 # Linear Function
 
-A mapping that preserves addition of vectors and multiplication by scalars. Used to express linear relations between vectors.
+A mapping that preserves addition of vectors and multiplication by scalars that is used to express linear relations between vectors.
 
 <i>
 

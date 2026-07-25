@@ -1,6 +1,6 @@
 # P-Norm
 
-A norm defined by a parameter on a set of sequences is used to find the distance between elements of the set.
+A norm defined by a parameter on a set of sequences that is used to find the distance between elements of the set.
 
 <i>
 

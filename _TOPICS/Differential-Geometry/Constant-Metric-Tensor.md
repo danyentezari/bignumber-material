@@ -1,6 +1,6 @@
 # Constant Metric Tensor
 
-A metric whose matrix entries do not depend on position. Used to compute distance when the geometry is the same at every point.
+A metric whose matrix entries do not depend on position that is used to compute distance when the geometry is the same at every point.
 
 <i>
 

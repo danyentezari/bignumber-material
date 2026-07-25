@@ -1,6 +1,6 @@
 # Inverse Function
 
-An inverse function is a mapping that reverses another mapping, used to recover inputs from outputs when a function is bijective.
+An inverse function is a mapping that reverses another mapping that is used to recover inputs from outputs when a function is bijective.
 
 <i>
 

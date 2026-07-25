@@ -1,6 +1,6 @@
 # Banach Space
 
-A set of vectors with a norm where every sequence of elements that get closer to each other has a limit in the set is used to study the continuity of a mapping.
+A set of vectors with a norm where every sequence of elements that get closer to each other has a limit in the set that is used to study the continuity of a mapping.
 
 <i>
 

@@ -1,6 +1,6 @@
 # Gradient
 
-A gradient is a vector of derivatives of a function of several variables. It is used to calculate the change in a scalar value within a neighborhood.
+A gradient is a vector of derivatives of a function of several variables that is used to calculate the change in a scalar value within a neighborhood.
 
 Note: Also written $\operatorname{grad} f$. Also written $\nabla f$. Also read nabla $f$.
 

@@ -1,6 +1,6 @@
 # Completeness
 
-A set where every sequence of elements that get closer to each other has a limit in the set is used for finding the limit of a function.
+A set where every sequence of elements that get closer to each other has a limit in the set that is used for finding the limit of a function.
 
 <i>
 

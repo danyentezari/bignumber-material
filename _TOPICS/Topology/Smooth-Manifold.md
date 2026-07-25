@@ -1,6 +1,6 @@
 # Smooth Manifold
 
-A set of points that can be covered by mappings to open sets of real numbers of fixed dimension. Used to do calculus on curved domains.
+A set of points that can be covered by mappings to open sets of real numbers of fixed dimension that is used to do calculus on curved domains.
 
 <i>
 

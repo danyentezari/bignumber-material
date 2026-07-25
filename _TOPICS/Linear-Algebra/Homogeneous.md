@@ -1,6 +1,6 @@
 # Homogeneous
 
-A property under which scaling by a scalar preserves a single fixed degree for an expression. Used to classify polynomials and to simplify equations of one degree.
+A property under which scaling by a scalar preserves a single fixed degree for an expression that is used to classify polynomials and to simplify equations of one degree.
 
 <i>
 

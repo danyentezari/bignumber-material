@@ -1,6 +1,6 @@
 # Mass-Energy Equivalence
 
-($E = mc^2$)
+($E = mc^2$).
 
 **Rest energy**
 

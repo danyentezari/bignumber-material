@@ -1,6 +1,6 @@
 # Homeomorphism
 
-A homeomorphism is a continuous bijection with continuous inverse, used to identify topologically equivalent spaces.
+A homeomorphism is a continuous bijection with continuous inverse that is used to identify topologically equivalent spaces.
 
 <i>
 

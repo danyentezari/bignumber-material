@@ -1,6 +1,6 @@
 # Complete Set
 
-A set of vectors whose linear combinations can approximate every vector in a larger set. Used as a basis-like tool to represent other vectors.
+A set of vectors whose linear combinations can approximate every vector in a larger set that is used as a basis-like tool to represent other vectors.
 
 <i>
 

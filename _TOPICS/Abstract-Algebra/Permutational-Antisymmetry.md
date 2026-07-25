@@ -1,6 +1,6 @@
 # Permutational Antisymmetry
 
-A property of a multi-variable function that changes sign when any two variables are swapped. Used to construct the determinant of a matrix.
+A property of a multi-variable function that changes sign when any two variables are swapped that is used to construct the determinant of a matrix.
 
 <i>
 

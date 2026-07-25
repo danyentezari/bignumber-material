@@ -1,6 +1,6 @@
 # Parameterization
 
-A function that labels points of a curve by a real parameter. Used to write coordinates along the curve.
+A function that labels points of a curve by a real parameter that is used to write coordinates along the curve.
 
 <i>
 

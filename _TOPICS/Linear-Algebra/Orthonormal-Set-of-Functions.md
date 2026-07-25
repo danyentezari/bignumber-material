@@ -1,6 +1,6 @@
 # Orthonormal Set of Functions
 
-A set of functions whose pairwise integrals equal one for a matching pair and zero otherwise. Used to expand a function as a series in that set.
+A set of functions whose pairwise integrals equal one for a matching pair and zero otherwise that is used to expand a function as a series in that set.
 
 <i>
 
@@ -15,7 +15,6 @@ where
 - $(f, g)$ represents the inner product defined as the integral $\int f^*(x)g(x) dx$ over a fundamental domain.
 - $w(x)$ is an optional positive weight function included in the integral.
 - $Nf$ is the norm of the function, defined as the inner product of the function with itself.
-
 
 Note:
 

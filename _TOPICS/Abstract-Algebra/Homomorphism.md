@@ -1,6 +1,6 @@
 # Homomorphism
 
-A mapping from a domain to a codomain is used to represent elements from one set in another set.
+A mapping from a domain to a codomain that is used to represent elements from one set in another set.
 
 <i>
 

@@ -1,6 +1,6 @@
 # Preimages and Inverse Functions
 
-A preimage is the set of domain elements sent into a given subset, used together with inverse functions in the study of continuity.
+A preimage is the set of domain elements sent into a given subset that is used together with inverse functions in the study of continuity.
 
 <i>
 

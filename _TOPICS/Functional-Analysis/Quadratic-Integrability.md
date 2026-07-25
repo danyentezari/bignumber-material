@@ -1,6 +1,6 @@
 # Quadratic Integrability
 
-A property of a function under which the integral of the square of its absolute value is finite. Used to say the function has finite size under a square integral.
+A property of a function under which the integral of the square of its absolute value is finite that is used to say the function has finite size under a square integral.
 
 <i>
 

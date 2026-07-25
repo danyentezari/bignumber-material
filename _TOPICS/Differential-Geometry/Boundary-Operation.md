@@ -1,6 +1,6 @@
 # Boundary Operation
 
-A mapping that sends a domain to its edge is used to relate a definite integral over a domain to a definite integral on that edge.
+A mapping that sends a domain to its edge that is used to relate a definite integral over a domain to a definite integral on that edge.
 
 Note: Also written $\partial$. Also called boundary operator.
 
@@ -33,7 +33,7 @@ where
 
 </i>
 
-A mapping associates a function with another function. Under this mapping, the definite integral of a derivative over a domain has the same value as the definite integral of the function over the edge of the domain, used to find a solution to an equation.
+A mapping associates a function with another function. Under this mapping, the definite integral of a derivative over a domain has the same value as the definite integral of the function over the edge of the domain that is used to find a solution to an equation.
 
 <i>
 

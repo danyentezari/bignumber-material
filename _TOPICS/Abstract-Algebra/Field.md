@@ -1,6 +1,6 @@
 # Field
 
-A set of scalars with addition and multiplication that allow the usual arithmetic of numbers. Used to scale vectors in a vector space.
+A set of scalars with addition and multiplication that allow the usual arithmetic of numbers that is used to scale vectors in a vector space.
 
 <i>
 

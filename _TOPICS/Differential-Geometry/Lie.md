@@ -1,6 +1,6 @@
 # Lie
 
-A set of matrices with a mapping for products and a mapping for inverses is used to describe continuous change of vectors by linear transformations.
+A set of matrices with a mapping for products and a mapping for inverses that is used to describe continuous change of vectors by linear transformations.
 
 Note: Also called Lie group.
 

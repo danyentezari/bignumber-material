@@ -1,6 +1,6 @@
 # P-Summable Sequence
 
-A sequence of values whose elements determine a finite norm defined by a parameter is used to identify members belonging to a matching set of sequences.
+A sequence of values whose elements determine a finite norm defined by a parameter that is used to identify members belonging to a matching set of sequences.
 
 <i>
 

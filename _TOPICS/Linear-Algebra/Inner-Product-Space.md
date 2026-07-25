@@ -1,6 +1,6 @@
 # Inner Product Space
 
-A set of vectors equipped with an inner product. Used to define distance and length of vectors from that inner product.
+A set of vectors equipped with an inner product that is used to define distance and length of vectors from that inner product.
 
 <i>
 

@@ -1,6 +1,6 @@
 # Kronecker Delta
 
-A function of two integer indices that takes the value one when the indices match and zero otherwise. Used to pick matching components in sums and matrices.
+A function of two integer indices that takes the value one when the indices match and zero otherwise that is used to pick matching components in sums and matrices.
 
 <i>
 

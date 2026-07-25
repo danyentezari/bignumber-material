@@ -1,6 +1,6 @@
 # k-form
 
-An alternating multilinear function of k vectors. Used to measure oriented size of a k-dimensional subspace.
+An alternating multilinear function of k vectors that is used to measure oriented size of a k-dimensional subspace.
 
 <i>
 

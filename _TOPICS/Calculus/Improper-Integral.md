@@ -1,6 +1,6 @@
 # Improper Integral
 
-An integral taken as a limit when an endpoint goes to infinity or the function becomes unbounded. Used to assign a finite value to such integrals when the limit exists.
+An integral taken as a limit when an endpoint goes to infinity or the function becomes unbounded that is used to assign a finite value to such integrals when the limit exists.
 
 <i>
 

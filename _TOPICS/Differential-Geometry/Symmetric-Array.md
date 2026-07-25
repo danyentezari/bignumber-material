@@ -1,6 +1,6 @@
 # Symmetric Array
 
-A matrix whose entries are unchanged when rows and columns are swapped. Used to represent a metric matrix.
+A matrix whose entries are unchanged when rows and columns are swapped that is used to represent a metric matrix.
 
 <i>
 

@@ -1,6 +1,6 @@
 # Relativistic Momentum and Energy
 
-($E^2 = (pc)^2 + (mc^2)^2$)
+($E^2 = (pc)^2 + (mc^2)^2$).
 
 **Relativistic momentum**
 

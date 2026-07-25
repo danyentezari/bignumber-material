@@ -1,6 +1,6 @@
 # Diag
 
-A mapping that builds a matrix with given scalar values on the main diagonal and zeros elsewhere. Used to write diagonal matrices from a sequence of scalars.
+A mapping that builds a matrix with given scalar values on the main diagonal and zeros elsewhere that is used to write diagonal matrices from a sequence of scalars.
 
 <i>
 

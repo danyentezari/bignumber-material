@@ -1,6 +1,6 @@
 # Smooth Assignment
 
-A smooth mapping that attaches a tensor to each point. Used to define smooth tensor fields.
+A smooth mapping that attaches a tensor to each point that is used to define smooth tensor fields.
 
 <i>
 

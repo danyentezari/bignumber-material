@@ -1,6 +1,6 @@
 # Cauchy Sequence
 
-A sequence of elements whose mutual distances tend to zero is used to test for a limit without first naming that limit.
+A sequence of elements whose mutual distances tend to zero that is used to test for a limit without first naming that limit.
 
 Note: Also called fundamental sequence.
 
