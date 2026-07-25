@@ -129,26 +129,80 @@ Note:
 
 </i>
 
-## Historical Notes
-
-Tensor calculus was established by Ricci and Levi-Cività in 1901.[8] Einstein adopted tensors for general relativity to ensure physical laws—such as the unified stress-energy-momentum tensor—remain invariant across all coordinate systems.[8]
-
-
 ## Elementary Example
 
-A type-$(0,2)$ tensor is a bilinear map from pairs of vectors to scalars.
+### Simple
+
+A type-$(0,2)$ tensor returns a scalar from two vectors. On two basis vectors, list the four values.
 
 $$
 T : V \times V \rightarrow \mathbb{R}
 $$
 
 $$
-V = \{ e_{1},\ e_{2},\ e_{3} \}
+V = \{ e_{1},\ e_{2} \}
 $$
 
 $$
-T(e_{1},e_{2}) = 1,\quad T(e_{2},e_{1}) = 1,\quad T(e_{1},e_{1}) = 2
+T(e_{1},e_{1}) = 2,\quad T(e_{1},e_{2}) = 1,\quad T(e_{2},e_{1}) = 1,\quad T(e_{2},e_{2}) = 3
 $$
+
+### General
+
+In three dimensions a type-$(0,2)$ tensor is a $3 \times 3$ matrix of components $T_{ij}$.
+
+$$
+T : \mathbb{R}^{3} \times \mathbb{R}^{3} \rightarrow \mathbb{R}
+$$
+
+$$
+(T_{ij}) = \begin{pmatrix} T_{11} & T_{12} & T_{13} \\ T_{21} & T_{22} & T_{23} \\ T_{31} & T_{32} & T_{33} \end{pmatrix}
+$$
+
+Let $g$ be the Euclidean metric tensor on $\mathbb{R}^{3}$. It is the type-$(0,2)$ tensor whose components form the $3 \times 3$ identity matrix.
+
+$$
+g : \mathbb{R}^{3} \times \mathbb{R}^{3} \rightarrow \mathbb{R}
+$$
+
+$$
+(g_{ij}) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} = I_{3}
+$$
+
+$$
+g(u,v) = \sum_{i,j=1}^{3} g_{ij}\, u^{i}\, v^{j} = u \cdot v
+$$
+
+where
+
+- $g$ is the Euclidean metric tensor.
+- $g_{ij}$ are its components in the standard basis.
+- $u^{i}, v^{j}$ are components of vectors $u, v$ in $\mathbb{R}^{3}$.
+- $I_{3}$ is the $3 \times 3$ identity matrix.
+
+Let $\delta$ be the mixed Kronecker tensor. It is the type-$(1,1)$ tensor for the identity map, with components $\delta^{i}_{\ j}$.
+
+$$
+\delta : (\mathbb{R}^{3})^{*} \times \mathbb{R}^{3} \rightarrow \mathbb{R}
+$$
+
+$$
+(\delta^{i}_{\ j}) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
+$$
+
+$$
+\delta^{i}_{\ j}\, v^{j} = v^{i}
+$$
+
+where
+
+- $\delta$ is the mixed Kronecker tensor.
+- $\delta^{i}_{\ j}$ equals $1$ if $i = j$ and equals $0$ if $i \neq j$.
+- $v^{j}$ are components of a vector $v$ in $\mathbb{R}^{3}$.
+
+## Historical Notes
+
+Tensor calculus was established by Ricci and Levi-Cività in 1901.[8] Einstein adopted tensors for general relativity to ensure physical laws—such as the unified stress-energy-momentum tensor—remain invariant across all coordinate systems.[8]
 
 ## References
 
