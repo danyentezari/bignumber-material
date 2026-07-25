@@ -1,0 +1,29 @@
+**Homogeneous Linear Differential Equation** A type of linear differential equation. There are two aspects about a homogeneous linear differential equations:
+
+The general linear equation (3) is homogeneous if $G=0$ for all $x$ and $y$ in the domain of the equation; otherwise, it is called nonhomogeneous. Of course, if $G$ is a constant, the equation is homogeneous if and only if $G=0$. 
+
+For example,
+
+$$\begin{equation} u_{t}=\alpha^{2}u_{xx} \end{equation}$$
+$$\begin{equation} u_{t}=\alpha^{2}u_{xx}+1 \end{equation}$$
+$$\begin{equation} u_{xx}+xu_{yy}=0 \end{equation}$$
+
+Where $(3)$ and $(5)$ are homogeneous linear equations, and $(4)$ is a nonhomogeneous linear equation.
+
+Since, 
+
+in $(3)$, we have $u_{t} - \alpha^{2} u_{xx} = 0$
+in $(4)$, we have $u_{t} - \alpha^{2} u_{xx} - 1 = 0$, but $-1$ is a constant.
+in $(5)$, we have $u_{xx} + xu_{yy} = 0$
+
+A general system of first-order linear homogeneous ODES with constant coefficients has the form
+
+$$x_{1}^{\prime}=a_{11}x_{1}+a_{12}x_{2}+\cdot\cdot\cdot+a_{1n}x_{n} \\
+x_{2}^{\prime}=a_{21}x_{1}+a_{22}x_{2}+\cdot\cdot\cdot+a_{2n}x_{r} \\
+\vdots \\
+x_{n}^{\prime}=a_{n1}x_{1}+a_{n2}x_{2}+\cdot\cdot\cdot+a_{nn}x_{r}$$
+
+where 
+- $a_{11}, a_{12},...,a_{n}$ are given constants.
+
+Homogeneous means that there are no free terms, that is, terms that don't involve any $x_i$.
