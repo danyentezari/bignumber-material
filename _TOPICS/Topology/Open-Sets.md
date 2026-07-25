@@ -20,7 +20,7 @@ where
 
 <i>
 
-**Example** (_Open Set_) Let
+**Example 1** (_Open Set_) Let
 
 $$
 X = \{1,2,3\}

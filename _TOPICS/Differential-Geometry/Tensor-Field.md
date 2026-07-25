@@ -52,7 +52,7 @@ Note:
 
 <i>
 
-**example [d]** (**Metric Tensor Field** — Frankel) The type-$(0,2)$ metric tensor field on $\mathbb{R}^{3}$ in spherical coordinates $(r, \theta, \phi)$, with line element
+**example 1 [d]** (**Metric Tensor Field** — Frankel) The type-$(0,2)$ metric tensor field on $\mathbb{R}^{3}$ in spherical coordinates $(r, \theta, \phi)$, with line element
 
 - $ds^{2} = dr^{2} + r^{2}\, d\theta^{2} + r^{2}\sin^{2}\theta\, d\phi^{2}$ .
 
@@ -81,7 +81,7 @@ Note:
 
 <i>
 
-**example [d]** (**Electromagnetic Field Strength** — Carroll, Hassani) The antisymmetric type-$(0,2)$ tensor field $F_{\mu\nu}$ on Minkowski spacetime with coordinates $x^{\mu} = (t, x, y, z)$:
+**example 2 [d]** (**Electromagnetic Field Strength** — Carroll, Hassani) The antisymmetric type-$(0,2)$ tensor field $F_{\mu\nu}$ on Minkowski spacetime with coordinates $x^{\mu} = (t, x, y, z)$:
 
 - $F_{\mu\nu} =
 \begin{pmatrix}

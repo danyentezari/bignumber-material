@@ -33,7 +33,7 @@ where
 
 <i>
 
-**example [d]** (**Matrix multiplication** — Shifrin & Adams) The operator $T(\mathbf{x}) = A\mathbf{x}$ with
+**example 1 [d]** (**Matrix multiplication** — Shifrin & Adams) The operator $T(\mathbf{x}) = A\mathbf{x}$ with
 
 - $A = \begin{pmatrix} 1 & 3 \\ 2 & -1 \\ 1 & 1 \end{pmatrix}$, \quad $\mathbf{x} = \begin{pmatrix} 4 \\ -1 \end{pmatrix}$ .
 
@@ -45,7 +45,7 @@ acts as
 
 <i>
 
-**example [d]** (**Matrix multiplication** — Kreyszig) The operator $T(\mathbf{x}) = A\mathbf{x}$ with
+**example 2 [d]** (**Matrix multiplication** — Kreyszig) The operator $T(\mathbf{x}) = A\mathbf{x}$ with
 
 - $A = \begin{pmatrix} 4 & 2 \\ 1 & 8 \end{pmatrix}$, \quad $\mathbf{x} = \begin{pmatrix} 3 \\ 5 \end{pmatrix}$ .
 
@@ -57,7 +57,7 @@ acts as
 
 <i>
 
-**example [d]** (**Differentiation** — Aleksandrov et al.) The operator $D = \dfrac{d}{dx}$ with
+**example 3 [d]** (**Differentiation** — Aleksandrov et al.) The operator $D = \dfrac{d}{dx}$ with
 
 - input $y = x^{2}$ .
 

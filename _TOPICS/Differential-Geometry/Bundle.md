@@ -48,6 +48,34 @@ Note:
 
 </i>
 
+## Elementary Example
+
+Frankel’s local product $\pi^{-1}(U) \cong U \times F$ is here a global product of finite sets. Projection sends each pair to its base point. The fiber over a point is the copy of $F$ at that point.
+
+$$
+\pi : E \rightarrow M
+$$
+
+$$
+M = \{ 1, 2, 3 \}
+$$
+
+$$
+F = \{ a, b \}
+$$
+
+$$
+E = M \times F = \{ (1,a),\ (1,b),\ (2,a),\ (2,b),\ (3,a),\ (3,b) \}
+$$
+
+$$
+\pi(p,v) = p
+$$
+
+$$
+\pi^{-1}(2) = \{ (2,a),\ (2,b) \}
+$$
+
 ## References
 
 1. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — fiber bundles; local triviality; tensor bundles.

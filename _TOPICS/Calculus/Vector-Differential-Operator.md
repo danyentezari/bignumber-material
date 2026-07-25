@@ -26,7 +26,7 @@ Note:
 
 <i>
 
-**example [d]** (**Gradient** — Riley et al.) The operator $\nabla$ with
+**example 1 [d]** (**Gradient** — Riley et al.) The operator $\nabla$ with
 
 - input $\phi = xy^{2}z^{3}$ .
 
@@ -42,7 +42,7 @@ giving
 
 <i>
 
-**example [d]** (**Divergence** — Riley et al.) The operator $\nabla\cdot$ with
+**example 2 [d]** (**Divergence** — Riley et al.) The operator $\nabla\cdot$ with
 
 - input $\mathbf{a} = x^{2}y^{2}\,\hat{\mathbf{i}} + y^{2}z^{2}\,\hat{\mathbf{j}} + x^{2}z^{2}\,\hat{\mathbf{k}}$ .
 
@@ -58,7 +58,7 @@ giving
 
 <i>
 
-**example [d]** (**Curl** — Kreyszig) The operator $\nabla\times$ with
+**example 3 [d]** (**Curl** — Kreyszig) The operator $\nabla\times$ with
 
 - input $\mathbf{F} = [y,\, z,\, x]$ , so $F_{x} = y$, $F_{y} = z$, $F_{z} = x$ .
 

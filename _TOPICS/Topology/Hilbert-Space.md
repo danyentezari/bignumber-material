@@ -25,7 +25,7 @@ Note:
 
 <i>
 
-**example [d]** (**Sequence Space $\ell^{2}$** — Kreyszig, Shifrin and Adams) As a set,
+**example 1 [d]** (**Sequence Space $\ell^{2}$** — Kreyszig, Shifrin and Adams) As a set,
 
 - $\ell^{2} = \left\{ x = (\xi_{j})_{j=1}^{\infty} \;\middle|\; \displaystyle\sum_{j=1}^{\infty} |\xi_{j}|^{2} < \infty \right\}$ .
 
@@ -54,7 +54,7 @@ Note:
 
 <i>
 
-**example [d]** (**Weighted $L^{2}$ Space** — Hassani) As a set, for a strictly positive weight $w$ on $[a,b]$,
+**example 2 [d]** (**Weighted $L^{2}$ Space** — Hassani) As a set, for a strictly positive weight $w$ on $[a,b]$,
 
 - $L^{2}_{w}(a,b) = \left\{ f : [a,b] \rightarrow \mathbb{C} \;\middle|\; \displaystyle\int_{a}^{b} |f(x)|^{2}\, w(x)\, dx < \infty \right\}$ .
 

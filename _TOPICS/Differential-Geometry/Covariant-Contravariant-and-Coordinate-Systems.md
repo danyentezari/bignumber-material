@@ -68,7 +68,7 @@ Note:
 
 <i>
 
-**example** (*k-Covector*) Let
+**example 1** (*k-Covector*) Let
 
 $$
 V = \mathbb{R}^2.

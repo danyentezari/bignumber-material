@@ -54,7 +54,7 @@ Note:
 
 <i>
 
-**example [d]** (**Euclidean Metric on $\mathbb{R}^{3}$** — Frankel, Arfken) On the fixed vector space $V = \mathbb{R}^{3}$ with the standard basis, the Euclidean inner product is the type-$(0,2)$ tensor
+**example 1 [d]** (**Euclidean Metric on $\mathbb{R}^{3}$** — Frankel, Arfken) On the fixed vector space $V = \mathbb{R}^{3}$ with the standard basis, the Euclidean inner product is the type-$(0,2)$ tensor
 
 - $g : V \times V \rightarrow \mathbb{R}$ ,
 - $g(u, v) = u \cdot v = \sum_{i,j} \delta_{ij}\, u^{i}\, v^{j}$ ,
@@ -82,7 +82,7 @@ Note:
 
 <i>
 
-**example [d]** (**Mixed Kronecker Tensor** — Carroll, Arfken) On a finite-dimensional vector space $V$, the identity map $\operatorname{id}_{V} : V \rightarrow V$ is the type-$(1,1)$ tensor $\delta$ with components
+**example 2 [d]** (**Mixed Kronecker Tensor** — Carroll, Arfken) On a finite-dimensional vector space $V$, the identity map $\operatorname{id}_{V} : V \rightarrow V$ is the type-$(1,1)$ tensor $\delta$ with components
 
 - $\delta^{i}_{\ j} = \begin{cases} 1 & \text{if } i = j \\ 0 & \text{if } i \neq j \end{cases}$ ,
 
@@ -107,7 +107,7 @@ Note:
 
 <i>
 
-**example [d]** (**Minkowski Metric Components** — Griffiths) As an array of components, the flat spacetime metric tensor is
+**example 3 [d]** (**Minkowski Metric Components** — Griffiths) As an array of components, the flat spacetime metric tensor is
 
 - $(g_{\mu\nu}) =
 \begin{bmatrix}

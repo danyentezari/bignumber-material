@@ -25,7 +25,7 @@ where
 
 <i>
 
-**example [d]** (**Linear map $\mathbb{R}^{3}\rightarrow\mathbb{R}^{2}$** — Dummit and Foote) Let $V = \mathbb{R}^{3}$ with the standard basis $B = \{(1,0,0),(0,1,0),(0,0,1)\}$ and let $W = \mathbb{R}^{2}$ with the standard basis $E = \{(1,0),(0,1)}$. Let $\phi$ be the linear transformation
+**example 1 [d]** (**Linear map $\mathbb{R}^{3}\rightarrow\mathbb{R}^{2}$** — Dummit and Foote) Let $V = \mathbb{R}^{3}$ with the standard basis $B = \{(1,0,0),(0,1,0),(0,0,1)\}$ and let $W = \mathbb{R}^{2}$ with the standard basis $E = \{(1,0),(0,1)}$. Let $\phi$ be the linear transformation
 
 - $\phi(x,y,z) = (x + 2y,\, x + y + z)$ .
 
@@ -46,7 +46,7 @@ where
 
 <i>
 
-**example [d]** (**Rotation by an angle $\theta$** — Hubbard and Hubbard) The transformation $R$ giving rotation by $\theta$ counterclockwise around the origin is linear, and its matrix is
+**example 2 [d]** (**Rotation by an angle $\theta$** — Hubbard and Hubbard) The transformation $R$ giving rotation by $\theta$ counterclockwise around the origin is linear, and its matrix is
 
 - $[R] = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}$ .
 

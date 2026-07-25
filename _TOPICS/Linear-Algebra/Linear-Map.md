@@ -20,7 +20,7 @@ where
 
 <i>
 
-**example [d]** (**Linear Map $\mathbb{R}^{3}\rightarrow\mathbb{R}^{2}$** — Dummit and Foote) The map $\phi : \mathbb{R}^{3} \rightarrow \mathbb{R}^{2}$ defined by
+**example 1 [d]** (**Linear Map $\mathbb{R}^{3}\rightarrow\mathbb{R}^{2}$** — Dummit and Foote) The map $\phi : \mathbb{R}^{3} \rightarrow \mathbb{R}^{2}$ defined by
 
 - $\phi(x, y, z) = (x + 2y,\, x + y + z)$
 

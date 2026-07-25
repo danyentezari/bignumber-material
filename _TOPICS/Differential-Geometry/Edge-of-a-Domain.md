@@ -46,7 +46,7 @@ where
 
 <i>
 
-**example [d]** (**Upper half-space** — Lee, *Introduction to Smooth Manifolds*) Verbatim from the source: the closed $n$-dimensional upper half-space $\mathbb{H}^{n} \subset \mathbb{R}^{n}$ is defined as
+**example 1 [d]** (**Upper half-space** — Lee, *Introduction to Smooth Manifolds*) Verbatim from the source: the closed $n$-dimensional upper half-space $\mathbb{H}^{n} \subset \mathbb{R}^{n}$ is defined as
 
 - $\mathbb{H}^{n} = \{ (x_{1},\ldots,x_{n}) \in \mathbb{R}^{n} : x_{n} \ge 0 \}$ .
 
@@ -68,7 +68,7 @@ where
 
 <i>
 
-**example [d]** (**Open unit disc** — Rudin, *Real and Complex Analysis*) Verbatim from the source:
+**example 2 [d]** (**Open unit disc** — Rudin, *Real and Complex Analysis*) Verbatim from the source:
 
 - $D(a;r) = \{ z : |z - a| < r \}$ is the open circular disc with center at $a$ and radius $r$.
 - The open unit disc $D(0;1)$ is denoted by $U$.
@@ -85,6 +85,10 @@ where
 - $|z - a|$ is the distance from $z$ to $a$.
 
 </i>
+
+![The interior, exterior, and boundary of a set.](howell-fig-1.29-interior-exterior-boundary.png){#fig:howell-1.29-edge-of-domain}
+
+Figure 1.29 from Howell and Mathews shows a domain as a shaded interior, its edge as the labeled boundary curve, and the complementary exterior of the set.
 
 ## Historical Notes
 
@@ -107,3 +111,4 @@ and that one may view differentiation $\omega \mapsto d\omega$ as the adjoint of
 7. Waters, T. *The Four Corners of Mathematics*. A K Peters / CRC Press, 2024. — Jacobi introduces $\partial$ for partial derivatives in the 1820s; Betti and Poincaré on boundaries.
 8. Gowers, T., Barrow-Green, J., & Leader, I. (eds.). *The Princeton Companion to Mathematics*. Princeton University Press, 2008. — Stokes: differentiation as adjoint of the boundary operation.
 9. Frankel, T. *The Geometry of Physics*. Cambridge University Press. — $\partial^{2}=0$ analogous to $d^{2}=0$.
+10. Howell, R. W., & Mathews, J. H. *Complex Analysis*. https://complexanalysis.org/howell-complex-analysis-web.pdf — Figure 1.29, interior, exterior, and boundary of a set.
