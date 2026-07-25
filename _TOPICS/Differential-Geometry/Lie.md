@@ -47,13 +47,15 @@ $$
 
 where
 
-- $G$ is the group.
+- $G$ is the cyclic group of order three.
+- $e$ is the identity element.
+- $a$ is a generator with $a^{3} = e$.
 - $\mu : G \times G \rightarrow G$ is multiplication.
 - $\iota : G \rightarrow G$ is inversion.
 
 ### General
 
-The four-element circle group under complex multiplication has smooth structure as a Lie group when viewed on the circle; the finite sample is the fourth roots of unity.
+The fourth roots of unity form a four-element group under complex multiplication, with the same maps $\mu$ and $\iota$.
 
 $$
 G = \{ 1,\ i,\ -1,\ -i \}
