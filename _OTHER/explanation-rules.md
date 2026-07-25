@@ -80,7 +80,15 @@ Do not distract the reader by involving other mathematical terms outside of this
 
 ## Elementary Example
 
-For every relevant definition file, add an Elementary Example section with 1–3 finite sets of 3–7 elements that show what kind of set, function, or transformation the concept is. Prefer grounding in Gemini Notebook. Explanation prose must not exceed 40 words.
+For every relevant definition file, add an Elementary Example section with 1–3 finite sets of 3–7 elements that show what kind of set, function, or transformation the concept is. Explanation prose must not exceed 40 words.
+
+### Grounding policy
+
+1. Gemini Notebook first. Ask for the definition and for any finite toy example in the sources.
+2. If GN has the structure but no finite toy, build a small finite instance of that structure yourself. Keep the example faithful to the GN definition. Cite the GN source in References. Bundle.md is the approved pattern for this case.
+3. If still stuck, draft with ChatGPT only as a fallback. The draft must include the finite sets and explicit named sources with page or section. Do not write the example into a topic file until those cites are verified.
+4. Public web notes may suggest ideas. They do not replace GN. If used after verify, cite them as secondary References. Do not treat private course materials as available to scrape.
+5. Never invent a source example that does not exist. Never invent a citation.
 
 Template:
 
