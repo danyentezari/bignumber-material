@@ -23,3 +23,43 @@ Note:
 - $V$ may be regarded as a vector space with an inner product.
 
 </i>
+
+## Elementary Example
+### Simple
+
+An orthonormal set has unit vectors that are pairwise orthogonal.
+
+$$
+B = \{ e_{1},\ e_{2} \}
+$$
+
+$$
+e_{1} = (1,0),\quad e_{2} = (0,1)
+$$
+
+$$
+\langle e_{i}, e_{j} \rangle = \delta_{ij}
+$$
+
+where
+
+- $\langle e_{i}, e_{i} \rangle = 1$.
+- $\langle e_{1}, e_{2} \rangle = 0$.
+- $\delta_{ij}$ is the Kronecker delta.
+
+### General
+
+The standard basis of $\mathbb{R}^{3}$ is orthonormal.
+
+$$
+B = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+\langle e_{i}, e_{j} \rangle = \delta_{ij},\quad i,j \in \{1,2,3\}
+$$
+
+where
+
+- each $\lVert e_{i} \rVert = 1$.
+

@@ -44,6 +44,41 @@ Note:
 
 </i>
 
+## Elementary Example
+### Simple
+
+An inner product assigns a scalar to each ordered pair of vectors. On $\mathbb{R}^{2}$ use the dot product.
+
+$$
+\langle u,v \rangle = u_{1} v_{1} + u_{2} v_{2}
+$$
+
+$$
+u = (1,2),\quad v = (3,4),\quad \langle u,v \rangle = 11
+$$
+
+where
+
+- $\langle \cdot,\cdot \rangle$ is the inner product.
+- $u, v$ are vectors.
+
+### General
+
+On $\mathbb{C}^{3}$, the standard Hermitian inner product conjugates the second factor.
+
+$$
+\langle u,v \rangle = u_{1}\overline{v_{1}} + u_{2}\overline{v_{2}} + u_{3}\overline{v_{3}}
+$$
+
+$$
+\langle u,u \rangle \ge 0,\quad \langle u,u \rangle = 0 \iff u = 0
+$$
+
+where
+
+- $\overline{v_{j}}$ is the complex conjugate of the component $v_{j}$.
+
+
 ## References
 
 1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — inner-product axioms (linearity in the first argument).

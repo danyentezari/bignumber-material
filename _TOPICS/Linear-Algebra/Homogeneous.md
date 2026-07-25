@@ -80,6 +80,41 @@ where
 
 </i>
 
+## Elementary Example
+### Simple
+
+A homogeneous expression keeps a single degree under scaling. The monomial $x^{2}$ is homogeneous of degree $2$.
+
+$$
+f(x) = x^{2}
+$$
+
+$$
+f(tx) = t^{2} f(x)
+$$
+
+where
+
+- $f$ is homogeneous of degree $2$.
+- $t$ is a scalar.
+
+### General
+
+A sum of degree-$2$ terms in three variables is homogeneous of degree $2$.
+
+$$
+f(x,y,z) = x^{2} + 2xy + z^{2}
+$$
+
+$$
+f(tx,ty,tz) = t^{2} f(x,y,z)
+$$
+
+where
+
+- every term has total degree $2$.
+
+
 ## References
 
 1. Dummit, D. S., & Foote, R. M. *Abstract Algebra*. Wiley, 2004. — homogeneous polynomials.

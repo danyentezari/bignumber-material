@@ -38,6 +38,41 @@ Note:
 
 </i>
 
+## Elementary Example
+### Simple
+
+The standard basis of $\mathbb{R}^{2}$ is the pair of unit axis vectors.
+
+$$
+E = \{ e_{1},\ e_{2} \}
+$$
+
+$$
+e_{1} = (1,0),\quad e_{2} = (0,1)
+$$
+
+where
+
+- $E$ is the standard basis.
+- each $e_{i}$ points along a coordinate axis.
+
+### General
+
+In $\mathbb{R}^{n}$, the standard basis has $n$ vectors with a single $1$ in position $i$.
+
+$$
+e_{1} = (1,0,0),\quad e_{2} = (0,1,0),\quad e_{3} = (0,0,1)
+$$
+
+$$
+\text{in }\mathbb{R}^{3}
+$$
+
+where
+
+- $e_{i}$ has a $1$ in the $i$-th place and zeros elsewhere.
+
+
 ## References
 
 1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — standard basis of $\mathbb{C}^{n}$ and of $\mathbb{R}^{n}$.

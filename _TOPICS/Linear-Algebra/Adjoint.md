@@ -33,6 +33,42 @@ where
 
 </i>
 
+## Elementary Example
+### Simple
+
+The adjoint $T^{*}$ moves the inner product from $Tx$ onto $x$. On $\mathbb{R}^{2}$ with the dot product, the adjoint of a matrix is its transpose.
+
+$$
+T = \begin{pmatrix} 1 & 2 \\ 0 & 3 \end{pmatrix},\quad T^{*} = \begin{pmatrix} 1 & 0 \\ 2 & 3 \end{pmatrix}
+$$
+
+$$
+(Tx,y) = (x, T^{*} y)
+$$
+
+where
+
+- $T$ is the operator.
+- $T^{*}$ is the adjoint of $T$.
+- $(\cdot,\cdot)$ is the inner product.
+
+### General
+
+On $\mathbb{C}^{3}$, the adjoint is the conjugate transpose.
+
+$$
+T = \begin{pmatrix} 1 & i & 0 \\ 0 & 2 & 1+i \\ 0 & 0 & 3 \end{pmatrix}
+$$
+
+$$
+T^{*} = \begin{pmatrix} 1 & 0 & 0 \\ -i & 2 & 0 \\ 0 & 1-i & 3 \end{pmatrix}
+$$
+
+where
+
+- $T^{*} = T^{\dagger}$ for matrices on $\mathbb{C}^{n}$.
+
+
 ## References
 
 1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — Hilbert-adjoint operator $T^{*}$ with $(Tx,y)=(x,T^{*}y)$.

@@ -16,3 +16,42 @@ where
 - $k$ is a scalar.
 
 </i>
+
+## Elementary Example
+### Simple
+
+A linear function preserves addition and scalar multiplication.
+
+$$
+f : \mathbb{R}^{2} \rightarrow \mathbb{R}
+$$
+
+$$
+f(x_{1},x_{2}) = 2 x_{1} - x_{2}
+$$
+
+$$
+f(e_{1}) = 2,\quad f(e_{2}) = -1
+$$
+
+where
+
+- $f$ is the linear function.
+- $e_{1} = (1,0)$ and $e_{2} = (0,1)$.
+
+### General
+
+On $\mathbb{R}^{3}$, a linear function is given by three coefficients.
+
+$$
+f(x_{1},x_{2},x_{3}) = a_{1} x_{1} + a_{2} x_{2} + a_{3} x_{3}
+$$
+
+$$
+(a_{1},a_{2},a_{3}) = (1,-2,4)
+$$
+
+where
+
+- $a_{i}$ are fixed scalars.
+

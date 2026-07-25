@@ -49,6 +49,49 @@ Note:
 
 </i>
 
+## Elementary Example
+### Simple
+
+A basis is a linearly independent spanning set. The standard basis of $\mathbb{R}^{2}$ has two vectors.
+
+$$
+B = \{ e_{1},\ e_{2} \}
+$$
+
+$$
+e_{1} = (1,0),\quad e_{2} = (0,1)
+$$
+
+$$
+v = v^{1} e_{1} + v^{2} e_{2}
+$$
+
+where
+
+- $B$ is the basis.
+- $v^{1}, v^{2}$ are the unique coordinates of $v$.
+
+### General
+
+In $\mathbb{R}^{3}$, three independent vectors form a basis and give unique coordinates.
+
+$$
+B = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+e_{1}=(1,0,0),\ e_{2}=(0,1,0),\ e_{3}=(0,0,1)
+$$
+
+$$
+v = v^{1} e_{1} + v^{2} e_{2} + v^{3} e_{3}
+$$
+
+where
+
+- every vector in $\mathbb{R}^{3}$ has a unique expansion in $B$.
+
+
 ## References
 
 1. Dummit, D. S., & Foote, R. M. *Abstract Algebra*. Wiley, 2004. — ordered basis as ordered linearly independent spanning set.

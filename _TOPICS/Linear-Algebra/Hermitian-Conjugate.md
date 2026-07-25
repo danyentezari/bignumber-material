@@ -26,6 +26,41 @@ Note:
 
 </i>
 
+## Elementary Example
+### Simple
+
+The Hermitian conjugate is the conjugate transpose of a matrix.
+
+$$
+A = \begin{pmatrix} 1 & 2+i \\ 0 & 3 \end{pmatrix}
+$$
+
+$$
+A^{\dagger} = \begin{pmatrix} 1 & 0 \\ 2-i & 3 \end{pmatrix}
+$$
+
+where
+
+- $A^{\dagger}$ is the Hermitian conjugate of $A$.
+- $(A^{\dagger})_{ij} = \overline{a_{ji}}$.
+
+### General
+
+For a $3 \times 3$ complex matrix, transpose and then conjugate every entry.
+
+$$
+A = \begin{pmatrix} 1 & i & 0 \\ 2 & 0 & 1+i \\ 0 & 3 & -i \end{pmatrix}
+$$
+
+$$
+A^{\dagger} = \begin{pmatrix} 1 & 2 & 0 \\ -i & 0 & 3 \\ 0 & 1-i & i \end{pmatrix}
+$$
+
+where
+
+- $A^{\dagger}$ is also written $A^{*}$ or $A^{H}$.
+
+
 ## References
 
 1. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — matrix condition (2.53); operator adjoint (§5.3).

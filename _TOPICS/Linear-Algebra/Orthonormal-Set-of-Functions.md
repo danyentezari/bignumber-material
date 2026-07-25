@@ -23,3 +23,42 @@ Note:
 - the orthogonality integral may use another function and the complex conjugate of itself.
 
 </i>
+
+## Elementary Example
+### Simple
+
+An orthonormal set of functions has pairwise integrals equal to $\delta_{mn}$.
+
+$$
+\{ \varphi_{1},\ \varphi_{2} \}
+$$
+
+$$
+\int_{a}^{b} \varphi_{m}(x)\, \overline{\varphi_{n}(x)}\, dx = \delta_{mn}
+$$
+
+$$
+\delta_{11} = 1,\quad \delta_{12} = 0
+$$
+
+where
+
+- $\varphi_{m}, \varphi_{n}$ are functions on $[a,b]$.
+- $\delta_{mn}$ is the Kronecker delta.
+
+### General
+
+On $[0,2\pi]$, the complex exponentials $e^{inx}/\sqrt{2\pi}$ for several integers $n$ form an orthonormal set.
+
+$$
+\varphi_{n}(x) = \dfrac{e^{i n x}}{\sqrt{2\pi}},\quad n \in \{ -1,\ 0,\ 1 \}
+$$
+
+$$
+\int_{0}^{2\pi} \varphi_{m}(x)\, \overline{\varphi_{n}(x)}\, dx = \delta_{mn}
+$$
+
+where
+
+- $n$ labels the functions in the set.
+

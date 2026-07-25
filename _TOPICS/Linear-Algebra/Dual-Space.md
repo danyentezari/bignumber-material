@@ -28,6 +28,46 @@ Note:
 
 </i>
 
+## Elementary Example
+### Simple
+
+The dual space is the set of all linear functionals on $V$. On $\mathbb{R}^{2}$, each functional is a row of two components.
+
+$$
+V = \mathbb{R}^{2}
+$$
+
+$$
+\varphi(x_{1},x_{2}) = 3 x_{1} - x_{2}
+$$
+
+$$
+\varphi \in V^{*}
+$$
+
+where
+
+- $V^{*}$ is the dual space.
+- $\varphi : V \rightarrow \mathbb{R}$ is a linear functional.
+
+### General
+
+If $\dim V = 3$, then $\dim V^{*} = 3$, with dual basis $e^{1}, e^{2}, e^{3}$.
+
+$$
+V = \mathbb{R}^{3},\quad V^{*} = \operatorname{span}\{ e^{1},\ e^{2},\ e^{3} \}
+$$
+
+$$
+e^{i}(e_{j}) = \delta^{i}_{\ j}
+$$
+
+where
+
+- $e^{i}$ are the dual basis functionals.
+- $\delta^{i}_{\ j}$ equals $1$ if $i = j$ and $0$ otherwise.
+
+
 ## References
 
 1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — algebraic dual space; also adjoint space, conjugate space.

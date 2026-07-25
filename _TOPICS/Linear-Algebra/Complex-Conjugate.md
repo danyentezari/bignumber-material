@@ -18,6 +18,46 @@ where
 
 ![Geometric interpretation of the complex conjugate: reflecting a complex number across the real axis in the complex plane.](complex-conjugate-argand.png){#fig:complex-conjugate-argand}
 
+## Elementary Example
+### Simple
+
+Complex conjugation flips the sign of the imaginary part.
+
+$$
+z = a + bi
+$$
+
+$$
+\overline{z} = a - bi
+$$
+
+$$
+z = 2 + 3i,\quad \overline{z} = 2 - 3i
+$$
+
+where
+
+- $a, b$ are real numbers.
+- $i$ is the imaginary unit with $i^{2} = -1$.
+- $\overline{z}$ is the complex conjugate of $z$.
+
+### General
+
+Conjugation acts entrywise on a vector of complex numbers.
+
+$$
+v = (1+i,\ 2-3i,\ -i)
+$$
+
+$$
+\overline{v} = (1-i,\ 2+3i,\ i)
+$$
+
+where
+
+- $\overline{v}$ is the vector of conjugated components.
+
+
 ## References
 
 1. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — definition.

@@ -16,6 +16,41 @@ where
 
 </i>
 
+## Elementary Example
+### Simple
+
+Conjugate symmetry says swapping the two inputs conjugates the inner-product value.
+
+$$
+\langle u,v \rangle = \overline{\langle v,u \rangle}
+$$
+
+$$
+u = (1,0),\quad v = (i,0),\quad \langle u,v \rangle = -i,\quad \langle v,u \rangle = i
+$$
+
+where
+
+- $\langle \cdot,\cdot \rangle$ is the inner product.
+- $\overline{\,\cdot\,}$ is complex conjugation.
+
+### General
+
+On $\mathbb{C}^{3}$ with the standard Hermitian inner product, the same identity holds for every pair.
+
+$$
+\langle u,v \rangle = u_{1}\overline{v_{1}} + u_{2}\overline{v_{2}} + u_{3}\overline{v_{3}}
+$$
+
+$$
+\langle u,v \rangle = \overline{\langle v,u \rangle}
+$$
+
+where
+
+- $u = (u_{1},u_{2},u_{3})$ and $v = (v_{1},v_{2},v_{3})$ are vectors in $\mathbb{C}^{3}$.
+
+
 ## References
 
 1. Griffel, D. H. *Applied Functional Analysis*. Ellis Horwood, 1981. — inner-product axiom (b) (conjugation under order reversal).

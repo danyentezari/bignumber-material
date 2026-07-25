@@ -67,6 +67,42 @@ acts as
 
 </i>
 
+## Elementary Example
+### Simple
+
+An operator is a linear map from a space to itself. On $\mathbb{R}^{2}$, matrix multiplication defines an operator.
+
+$$
+T(\mathbf{x}) = A\mathbf{x},\quad
+A = \begin{pmatrix} 1 & 1 \\ 0 & 2 \end{pmatrix}
+$$
+
+$$
+T(1,0) = (1,0),\quad T(0,1) = (1,2)
+$$
+
+where
+
+- $T : V \rightarrow V$ is the operator.
+- $A$ is the matrix of $T$.
+
+### General
+
+Differentiation on polynomials is an operator on an infinite-dimensional space; on the span of $\{1,x,x^{2}\}$ it acts by
+
+$$
+D(1) = 0,\quad D(x) = 1,\quad D(x^{2}) = 2x
+$$
+
+$$
+D(a + bx + cx^{2}) = b + 2c x
+$$
+
+where
+
+- $D = \dfrac{d}{dx}$ is the differentiation operator.
+
+
 ## References
 
 1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — linear operator axioms; matrix example $A=\begin{pmatrix}4&2\\1&8\end{pmatrix}$, $\mathbf{x}=\begin{pmatrix}3\\5\end{pmatrix}$.

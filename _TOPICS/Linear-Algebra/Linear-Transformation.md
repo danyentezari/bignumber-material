@@ -58,6 +58,45 @@ where
 
 </i>
 
+## Elementary Example
+### Simple
+
+A linear transformation maps vectors to vectors and preserves linear combinations.
+
+$$
+\phi : \mathbb{R}^{2} \rightarrow \mathbb{R}^{2}
+$$
+
+$$
+\phi(x,y) = (2x,\ y)
+$$
+
+$$
+\phi(1,0) = (2,0),\quad \phi(0,1) = (0,1)
+$$
+
+where
+
+- $\phi$ is the linear transformation.
+
+### General
+
+Rotation by an angle $\theta$ in the plane is a linear transformation with a $2 \times 2$ matrix.
+
+$$
+R_{\theta} = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}
+$$
+
+$$
+R_{\theta}(x,y) = (x\cos\theta - y\sin\theta,\ x\sin\theta + y\cos\theta)
+$$
+
+where
+
+- $R_{\theta}$ is the rotation matrix.
+- $\theta$ is a real angle.
+
+
 ## References
 
 1. Hubbard, J. H., & Hubbard, B. B. *Vector Calculus, Linear Algebra, and Differential Forms*, Matrix Editions. — Definition 1.3.2; Example 1.3.9 (rotation by $\theta$).

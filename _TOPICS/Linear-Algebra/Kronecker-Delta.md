@@ -41,6 +41,41 @@ Note:
 
 </i>
 
+## Elementary Example
+### Simple
+
+The Kronecker delta is $1$ when the two indices match and $0$ otherwise.
+
+$$
+\delta_{ij} = \begin{cases} 1 & i = j \\ 0 & i \neq j \end{cases}
+$$
+
+$$
+\delta_{11} = 1,\quad \delta_{12} = 0,\quad \delta_{22} = 1
+$$
+
+where
+
+- $i, j$ are integer indices.
+- $\delta_{ij}$ is the Kronecker delta.
+
+### General
+
+As a $3 \times 3$ matrix of components, $\delta^{i}_{\ j}$ is the identity.
+
+$$
+(\delta^{i}_{\ j}) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
+$$
+
+$$
+\delta^{i}_{\ j}\, v^{j} = v^{i}
+$$
+
+where
+
+- $v^{j}$ are components of a vector $v$.
+
+
 ## References
 
 1. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — Kronecker delta; identity matrix; index replacement.

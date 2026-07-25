@@ -45,6 +45,42 @@ Note:
 
 </i>
 
+## Elementary Example
+### Simple
+
+A linear map preserves linear combinations. Here a map $\mathbb{R}^{2} \rightarrow \mathbb{R}^{2}$.
+
+$$
+T(x_{1},x_{2}) = (x_{1}+x_{2},\ 2 x_{2})
+$$
+
+$$
+T(e_{1}) = (1,0),\quad T(e_{2}) = (1,2)
+$$
+
+where
+
+- $T$ is the linear map.
+- $e_{1}, e_{2}$ are the standard basis vectors of $\mathbb{R}^{2}$.
+
+### General
+
+A linear map $\mathbb{R}^{3} \rightarrow \mathbb{R}^{2}$ is given by a $2 \times 3$ matrix.
+
+$$
+T(\mathbf{x}) = A \mathbf{x},\quad
+A = \begin{pmatrix} 1 & 0 & 2 \\ 0 & 1 & -1 \end{pmatrix}
+$$
+
+$$
+T(1,0,0) = (1,0),\quad T(0,1,0) = (0,1),\quad T(0,0,1) = (2,-1)
+$$
+
+where
+
+- $A$ is the matrix of $T$ in the standard bases.
+
+
 ## References
 
 1. Dummit, D. S., & Foote, R. M. *Abstract Algebra*. Wiley, 2004. — linear map $\phi:\mathbb{R}^{3}\rightarrow\mathbb{R}^{2}$, $\phi(x,y,z)=(x+2y,\,x+y+z)$.

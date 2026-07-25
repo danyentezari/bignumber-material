@@ -45,6 +45,37 @@ Note:
 
 </i>
 
+## Elementary Example
+### Simple
+
+The map $\operatorname{diag}$ places given scalars on the main diagonal.
+
+$$
+\operatorname{diag}(2,5) = \begin{pmatrix} 2 & 0 \\ 0 & 5 \end{pmatrix}
+$$
+
+where
+
+- $2$ and $5$ are the diagonal entries.
+- off-diagonal entries are zero.
+
+### General
+
+In three dimensions, three scalars determine a $3 \times 3$ diagonal matrix.
+
+$$
+\operatorname{diag}(1,2,3) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 3 \end{pmatrix}
+$$
+
+$$
+\operatorname{diag}(-1,1,1,1) = \eta
+$$
+
+where
+
+- $\eta$ illustrates a $4 \times 4$ diagonal array used as a metric matrix.
+
+
 ## References
 
 1. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — $\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)$.

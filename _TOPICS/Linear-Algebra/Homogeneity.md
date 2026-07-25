@@ -69,6 +69,43 @@ where
 
 </i>
 
+## Elementary Example
+### Simple
+
+Homogeneity of degree $k$ means scaling the input by $t$ scales the value by $t^{k}$.
+
+$$
+f(x) = x^{2},\quad k = 2
+$$
+
+$$
+f(tx) = (tx)^{2} = t^{2} f(x)
+$$
+
+where
+
+- $f$ is the function.
+- $k$ is the degree of homogeneity.
+- $t$ is a scalar.
+
+### General
+
+A homogeneous polynomial of degree $2$ in three variables scales by $t^{2}$.
+
+$$
+f(x,y,z) = x^{2} + xy + z^{2}
+$$
+
+$$
+f(tx,ty,tz) = t^{2} f(x,y,z)
+$$
+
+where
+
+- $k = 2$ is the degree.
+- $x,y,z$ are the input variables.
+
+
 ## References
 
 1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — absolute homogeneity of norms; homogeneous linear equations.
