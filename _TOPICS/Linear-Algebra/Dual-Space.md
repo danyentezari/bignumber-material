@@ -1,6 +1,8 @@
 # Dual Space
 
-A set of all linear mappings from a vector space to its scalars. Used to measure vector values through linear functions.
+A set of linear transformations from a domain of vectors to a codomain of scalars that is used to associate each vector with a scalar value.
+
+Note: Also called dual vector space. Also called algebraic dual space. Also called conjugate space. Also called adjoint space.
 
 <i>
 
