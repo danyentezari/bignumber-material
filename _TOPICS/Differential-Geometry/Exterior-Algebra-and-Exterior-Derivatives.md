@@ -10,3 +10,19 @@ Consider [Figure 1](#fig:atlas-charts).
 ![Atlas and charts on a manifold.](atlas-and-charts.png){#fig:atlas-charts}
 
 Exterior dertivatives are differential operators.
+
+## Elementary Example
+
+Exterior algebra builds alternating products of 1-forms. The wedge of two basis covectors is a 2-form.
+
+$$
+\{ e^{1},\ e^{2},\ e^{3} \}
+$$
+
+$$
+e^{1} \wedge e^{2}
+$$
+
+$$
+(e^{1} \wedge e^{2})(e_{1},e_{2}) = 1,\quad (e^{1} \wedge e^{2})(e_{2},e_{1}) = -1
+$$

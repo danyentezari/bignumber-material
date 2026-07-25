@@ -57,6 +57,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+A metric pairs two vectors to a scalar. Here the Euclidean pairing on three basis vectors.
+
+$$
+g : V \times V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+g(e_{i},e_{j}) = \delta_{ij}
+$$
+
 ## References
 
 1. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — metric as symmetric covariant $2$-tensor; $g_{ij}=\langle\partial_{i},\partial_{j}\rangle$; first fundamental form.

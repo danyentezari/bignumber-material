@@ -24,3 +24,19 @@ Note:
 - A $k$-covector field is also called a differential $k$-form.
 
 </i>
+
+## Elementary Example
+
+A k-covector field assigns an alternating k-linear map to each point of a finite base.
+
+$$
+M = \{ p,\ q \}
+$$
+
+$$
+\omega(p)(e_{1},e_{2}) = 3,\quad \omega(q)(e_{1},e_{2}) = -1
+$$
+
+$$
+\{ e_{1},\ e_{2} \}
+$$

@@ -31,6 +31,23 @@ where
 
 </i>
 
+
+## Elementary Example
+
+A discrete Lie group is a finite set closed under multiplication and inverses.
+
+$$
+\mu : G \times G \rightarrow G,\quad \iota : G \rightarrow G
+$$
+
+$$
+G = \{ 1,\ i,\ -1,\ -i \}
+$$
+
+$$
+\mu(i,i) = -1,\quad \iota(i) = -i,\quad \mu(-1,-1) = 1
+$$
+
 ## References
 
 1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — Definition 29.1.1 (Lie group).

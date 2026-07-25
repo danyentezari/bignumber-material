@@ -18,3 +18,19 @@ where
 - $k$ is a scalar.
 
 </i>
+
+## Elementary Example
+
+A one-form is a linear functional on vectors. It returns one scalar per vector.
+
+$$
+\omega : V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+\omega(e_{1}) = 3,\quad \omega(e_{2}) = -1,\quad \omega(e_{3}) = 4
+$$

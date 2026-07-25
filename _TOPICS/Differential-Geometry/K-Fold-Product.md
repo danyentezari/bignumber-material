@@ -23,3 +23,19 @@ Note:
 - $X^k$ is also written $V^k$.
 
 </i>
+
+## Elementary Example
+
+The k-fold product is the Cartesian product of k copies of one set. Here k equals 2.
+
+$$
+V = \{ a,\ b,\ c \}
+$$
+
+$$
+V^{2} = V \times V
+$$
+
+$$
+\{ (a,b),\ (b,a),\ (a,c),\ (c,a),\ (b,c),\ (c,b) \} \subset V^{2}
+$$

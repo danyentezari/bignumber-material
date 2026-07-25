@@ -42,6 +42,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+The tangent space at a point is spanned by a finite list of tangent basis vectors.
+
+$$
+P \in M
+$$
+
+$$
+T_{P}M = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+v = 2 e_{1} - e_{3}
+$$
+
 ## References
 
 1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — tangent space $T_{P}(M)$; tangent bundle $T(M)$.

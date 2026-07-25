@@ -36,6 +36,23 @@ where
 
 </i>
 
+
+## Elementary Example
+
+A Lie algebra pairs vectors by a bracket. On three basis matrices the bracket closes in the same set.
+
+$$
+\mathfrak{g} = \{ X,\ Y,\ Z \}
+$$
+
+$$
+[X,Y] = Z,\quad [Y,Z] = X,\quad [Z,X] = Y
+$$
+
+$$
+[X,X] = 0
+$$
+
 ## References
 
 1. Hall, B. C. *Quantum Theory for Mathematicians*. Springer. — Definition 16.10 (Lie algebra).

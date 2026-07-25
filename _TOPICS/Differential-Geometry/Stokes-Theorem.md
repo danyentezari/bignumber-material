@@ -19,6 +19,23 @@ where
 
 Stoke's Theorem is about manifolds, which are locally Euclidean. The integration applies to differential forms on those local regions. Differential forms are operators that allow applying calculus independent of any specific coordinate system.
 
+
+## Elementary Example
+
+Stokes moves a definite integral from a domain set onto its edge set.
+
+$$
+\int_{A} d\omega = \int_{B} \omega
+$$
+
+$$
+A = \{ a,\ b,\ c,\ d \}
+$$
+
+$$
+B = \partial A = \{ x,\ y,\ z \}
+$$
+
 ## Examples
 
 In set language, Stokes’s theorem is a before-and-after move under the boundary operation. Before: a definite integral lives on a domain set $A$. After: that definite integral lives on the edge set $B = \partial A$.

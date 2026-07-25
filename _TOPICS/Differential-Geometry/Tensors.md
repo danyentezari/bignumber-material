@@ -133,6 +133,23 @@ Note:
 
 Tensor calculus was established by Ricci and Levi-Cività in 1901.[8] Einstein adopted tensors for general relativity to ensure physical laws—such as the unified stress-energy-momentum tensor—remain invariant across all coordinate systems.[8]
 
+
+## Elementary Example
+
+A type-$(0,2)$ tensor is a bilinear map from pairs of vectors to scalars.
+
+$$
+T : V \times V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+T(e_{1},e_{2}) = 1,\quad T(e_{2},e_{1}) = 1,\quad T(e_{1},e_{1}) = 2
+$$
+
 ## References
 
 1. Nash, C., & Sen, S. *Topology and Geometry for Physicists*. Academic Press, 1983. — tensor as multilinear map.

@@ -44,6 +44,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+The inverse metric raises indices. Its matrix is the matrix inverse of the metric matrix.
+
+$$
+g = \operatorname{diag}(2,1,1),\quad g^{-1} = \operatorname{diag}(\tfrac{1}{2},1,1)
+$$
+
+$$
+\{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+g^{ik} g_{kj} = \delta^{i}_{\ j}
+$$
+
 ## References
 
 1. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*, 7th ed. Elsevier / Academic Press, 2013. — contravariant metric $g^{ik}$; $g^{ik}g_{kj}=\delta^{i}_{j}$.

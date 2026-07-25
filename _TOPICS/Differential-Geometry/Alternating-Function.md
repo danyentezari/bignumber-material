@@ -20,3 +20,23 @@ where
 - $k$ is a positive integer representing the degree of the function.
 
 </i>
+
+## Elementary Example
+
+An alternating map on pairs of vectors changes sign when the two inputs swap, and gives zero when the two inputs are equal.
+
+$$
+T : V \times V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2} \}
+$$
+
+$$
+T(e_{1},e_{2}) = 1,\quad T(e_{2},e_{1}) = -1,\quad T(e_{1},e_{1}) = 0,\quad T(e_{2},e_{2}) = 0
+$$
+
+## References
+
+1. Lovett, S. *Differential Geometry of Manifolds*. — alternating: sign change under swap; zero when two arguments are equal.

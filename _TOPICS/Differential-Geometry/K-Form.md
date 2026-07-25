@@ -22,3 +22,19 @@ where
 - $a, b$ are scalars.
 
 </i>
+
+## Elementary Example
+
+A k-form is an alternating multilinear function of k vectors. Here a 2-form on three vectors.
+
+$$
+\omega : V \times V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+\omega(e_{1},e_{2}) = 2,\quad \omega(e_{2},e_{1}) = -2,\quad \omega(e_{1},e_{1}) = 0
+$$

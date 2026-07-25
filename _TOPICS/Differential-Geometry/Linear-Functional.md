@@ -16,3 +16,19 @@ where
 - $K$ is the field of scalars.
 
 </i>
+
+## Elementary Example
+
+A linear functional sends each vector to a scalar and respects addition and scaling.
+
+$$
+f : V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+f(e_{1}) = 1,\quad f(e_{2}) = -2,\quad f(e_{3}) = 0
+$$

@@ -39,6 +39,27 @@ where
 
 </i>
 
+
+## Elementary Example
+
+A smooth mapping sends each domain point to a unique image point. Here a finite sample of the rule.
+
+$$
+f : A \rightarrow B
+$$
+
+$$
+A = \{ 0,\ 1,\ 2,\ 3 \}
+$$
+
+$$
+B = \{ 0,\ 1,\ 4,\ 9 \}
+$$
+
+$$
+f(0) = 0,\quad f(1) = 1,\quad f(2) = 4,\quad f(3) = 9
+$$
+
 ## References
 
 1. Kosinski, A. A. *Differential Manifolds*. — Definition (1.6): smooth maps via $g_{\beta} \circ f \circ h_{\alpha}^{-1}$; diffeomorphism.

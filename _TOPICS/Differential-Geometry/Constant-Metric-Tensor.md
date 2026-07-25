@@ -46,6 +46,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+A constant metric has fixed matrix entries at every point. Here the Euclidean metric on three basis directions.
+
+$$
+g = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
+$$
+
+$$
+\{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+g(e_{i},e_{j}) = \delta_{ij}
+$$
+
 ## References
 
 1. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — flat metrics with constant components; Minkowski and Euclidean cases.

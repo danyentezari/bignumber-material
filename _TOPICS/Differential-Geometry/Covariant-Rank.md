@@ -49,6 +49,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+Covariant rank counts lower indices. This type-$(0,1)$ tensor is a covector with one lower index.
+
+$$
+\omega = \omega_{1}\, e^{1} + \omega_{2}\, e^{2} + \omega_{3}\, e^{3}
+$$
+
+$$
+\{ e^{1},\ e^{2},\ e^{3} \}
+$$
+
+$$
+r = 0,\quad s = 1
+$$
+
 ## References
 
 1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — covariant degree $s$ of a type-$(r,s)$ tensor.

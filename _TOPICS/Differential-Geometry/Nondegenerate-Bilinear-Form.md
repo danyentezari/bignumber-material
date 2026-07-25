@@ -44,6 +44,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+A nondegenerate bilinear form pairs vectors so only the zero vector is orthogonal to every vector.
+
+$$
+B : V \times V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+B(e_{i},e_{j}) = \delta_{ij}
+$$
+
 ## References
 
 1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — nondegenerate and invertible bilinear form; $\det(g_{ij})\neq 0$.

@@ -58,3 +58,23 @@ where
 - $a, b$ are scalars.
 
 </i>
+
+## Elementary Example
+
+A form returns a scalar from an ordered list of vectors. This 2-form changes sign when the two inputs swap.
+
+$$
+\omega : V \times V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+\omega(e_{1},e_{2}) = 1,\quad \omega(e_{2},e_{1}) = -1,\quad \omega(e_{1},e_{1}) = 0
+$$
+
+## References
+
+1. Spivak, M. *Calculus on Manifolds*. — multilinear $k$-tensor; alternating when swap of arguments changes sign.

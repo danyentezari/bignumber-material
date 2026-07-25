@@ -26,3 +26,19 @@ Note:
 - k-covector, multicovector of degree k, and alternating k-tensor are synonyms for an alternating $k$-linear function.
 
 </i>
+
+## Elementary Example
+
+An alternating k-linear map on three labeled vectors changes sign under a swap and vanishes on a repeated pair.
+
+$$
+f : V \times V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+f(e_{1},e_{2}) = 1,\quad f(e_{2},e_{1}) = -1,\quad f(e_{1},e_{1}) = 0
+$$

@@ -44,6 +44,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+A type-$(0,2)$ tensor field assigns a bilinear form to each point.
+
+$$
+U = \{ p,\ q,\ r \}
+$$
+
+$$
+T_{p}(e_{1},e_{2}) = 0,\quad T_{p}(e_{1},e_{1}) = 1
+$$
+
+$$
+\{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
 ## References
 
 1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — type-$(0,2)$ tensor fields as sections of $T^{0}_{2}(M)$.

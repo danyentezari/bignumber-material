@@ -26,3 +26,19 @@ Note:
 - A $k$-covector is also called an alternating $k$-tensor.
 
 </i>
+
+## Elementary Example
+
+A k-covector is an alternating multilinear map on k vectors. Here k equals 2.
+
+$$
+\omega : V \times V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+\omega(e_{1},e_{2}) = 1,\quad \omega(e_{2},e_{1}) = -1
+$$

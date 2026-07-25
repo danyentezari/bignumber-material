@@ -43,6 +43,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+Nondegeneracy means if $g(v,w)=0$ for every $w$, then $v$ is zero. The identity metric has this property.
+
+$$
+g(e_{i},e_{j}) = \delta_{ij}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+g(v,w)=0\ \text{for all } w \implies v = 0
+$$
+
 ## References
 
 1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — nondegenerate means invertible; $\det g \neq 0$.

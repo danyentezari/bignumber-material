@@ -27,3 +27,19 @@ Note:
 - for an indexed family the product is also written $\prod_{\alpha \in A} X_\alpha$.
 
 </i>
+
+## Elementary Example
+
+The Cartesian product is the set of all ordered pairs with first entry from $X$ and second entry from $Y$.
+
+$$
+X = \{ 1,\ 2,\ 3 \}
+$$
+
+$$
+Y = \{ a,\ b \}
+$$
+
+$$
+X \times Y = \{ (1,a),\ (1,b),\ (2,a),\ (2,b),\ (3,a),\ (3,b) \}
+$$

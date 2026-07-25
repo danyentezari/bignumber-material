@@ -52,6 +52,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+A type-$(1,1)$ tensor takes one covector and one vector to a scalar.
+
+$$
+T : V^{*} \times V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \},\quad V^{*} = \{ e^{1},\ e^{2},\ e^{3} \}
+$$
+
+$$
+T(e^{1},e_{1}) = 1,\quad T(e^{2},e_{2}) = 1,\quad T(e^{1},e_{2}) = 0
+$$
+
 ## References
 
 1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — type-$(r,s)$ tensor as multilinear map $V^{*r}\times V^{s}\to\mathbb{R}$.

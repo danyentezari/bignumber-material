@@ -18,3 +18,19 @@ where
 - $a, b$ are scalars.
 
 </i>
+
+## Elementary Example
+
+A two-form is antisymmetric on ordered pairs. Swapping the two inputs multiplies the value by minus one.
+
+$$
+\omega : V \times V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+\omega(e_{1},e_{2}) = 1,\quad \omega(e_{2},e_{1}) = -1,\quad \omega(e_{1},e_{1}) = 0
+$$

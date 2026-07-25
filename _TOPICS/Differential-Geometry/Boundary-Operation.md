@@ -154,6 +154,27 @@ where
 
 </i>
 
+
+## Elementary Example
+
+The boundary operation sends a domain set to its edge set. Applying it twice yields the empty set.
+
+$$
+\partial : A \mapsto B
+$$
+
+$$
+A = \{ a,\ b,\ c,\ d \}
+$$
+
+$$
+B = \partial A = \{ a,\ b \}
+$$
+
+$$
+\partial B = \partial^{2} A = \emptyset
+$$
+
 ## References
 
 1. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — $\partial$ as a nilpotent operator; $\partial^{2}=0$; line segment to endpoints.

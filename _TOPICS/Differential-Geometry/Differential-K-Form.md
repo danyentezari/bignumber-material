@@ -25,3 +25,19 @@ Note:
 - Alternating $k$-tensors are also called multicovectors.
 
 </i>
+
+## Elementary Example
+
+A differential k-form attaches an alternating k-linear map to each point of a finite base set.
+
+$$
+M = \{ p,\ q,\ r \}
+$$
+
+$$
+\omega(p)(e_{1},e_{2}) = 1,\quad \omega(p)(e_{2},e_{1}) = -1
+$$
+
+$$
+\{ e_{1},\ e_{2} \}
+$$

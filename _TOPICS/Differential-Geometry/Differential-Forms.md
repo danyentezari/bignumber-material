@@ -25,3 +25,19 @@ Note:
 - Alternating $k$-tensors are also called multicovectors.
 
 </i>
+
+## Elementary Example
+
+A differential form assigns an alternating map to each point. Here two points each get a 1-form on three directions.
+
+$$
+M = \{ p,\ q \}
+$$
+
+$$
+T_{p}M = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+\omega(p)(e_{1}) = 1,\quad \omega(p)(e_{2}) = 0,\quad \omega(q)(e_{1}) = 2
+$$

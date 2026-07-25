@@ -42,6 +42,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+A Lorentzian metric has signature with one negative direction. Here a constant Minkowski matrix on four axes.
+
+$$
+\eta = \operatorname{diag}(-1,1,1,1)
+$$
+
+$$
+\{ e_{0},\ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+\eta(e_{0},e_{0}) = -1,\quad \eta(e_{1},e_{1}) = 1
+$$
+
 ## References
 
 1. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — Lorentzian manifold and metric signature.

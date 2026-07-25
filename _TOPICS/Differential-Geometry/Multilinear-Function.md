@@ -18,3 +18,19 @@ where
 - $a \in \mathbb{R}$ is a scalar.
 
 </i>
+
+## Elementary Example
+
+A multilinear map is linear in each slot. Here a bilinear map on three labeled vectors.
+
+$$
+T : V \times V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+T(e_{1},e_{2}) = 5,\quad T(e_{2},e_{1}) = 3,\quad T(e_{1},e_{1}) = 2
+$$

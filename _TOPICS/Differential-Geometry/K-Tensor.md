@@ -21,3 +21,19 @@ Note:
 - $\mathcal{L}^k(V)$ is also written $\mathcal{J}^k(V)$.
 
 </i>
+
+## Elementary Example
+
+A k-tensor is a multilinear real-valued map on k vectors. Here k equals 2.
+
+$$
+T : V \times V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+T(e_{1},e_{2}) = 4,\quad T(e_{2},e_{1}) = 1,\quad T(e_{1},e_{1}) = 0
+$$

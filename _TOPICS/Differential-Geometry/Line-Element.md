@@ -42,6 +42,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+The line element is the squared length from the metric on coordinate increments.
+
+$$
+ds^{2} = dx^{2} + dy^{2} + dz^{2}
+$$
+
+$$
+\{ dx,\ dy,\ dz \}
+$$
+
+$$
+g = \operatorname{diag}(1,1,1)
+$$
+
 ## References
 
 1. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — line element from the metric; $ds^{2}=g_{ij}\,dx^{i}\,dx^{j}$.

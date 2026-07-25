@@ -111,6 +111,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+A tensor field assigns one tensor to each point of a finite domain.
+
+$$
+U = \{ p,\ q,\ r \}
+$$
+
+$$
+T(p) = e_{1},\quad T(q) = e_{2},\quad T(r) = 0
+$$
+
+$$
+\{ e_{1},\ e_{2} \}
+$$
+
 ## References
 
 1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — tensor field $T:U\to T^{r}_{s}(M)$; electromagnetic field strength $F$.

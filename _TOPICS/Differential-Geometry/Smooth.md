@@ -45,6 +45,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+Smoothness means derivatives exist at each sample point of a finite domain.
+
+$$
+A = \{ -1,\ 0,\ 1,\ 2 \}
+$$
+
+$$
+f(-1) = 1,\quad f(0) = 0,\quad f(1) = 1,\quad f(2) = 4
+$$
+
+$$
+f'(0) = 0
+$$
+
 ## References
 
 1. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — $C^{\infty}$ manifolds; smooth transition maps; differentiable functions on $M$.

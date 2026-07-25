@@ -45,3 +45,23 @@ Note:
 - k-covector, multicovector of degree k, and alternating k-tensor are synonyms for an alternating $k$-linear function.
 
 </i>
+
+## Elementary Example
+
+A function sends each domain element to exactly one codomain value.
+
+$$
+f : A \rightarrow B
+$$
+
+$$
+A = \{ 1,\ 2,\ 3 \}
+$$
+
+$$
+B = \{ 2,\ 4,\ 9 \}
+$$
+
+$$
+f(1) = 2,\quad f(2) = 4,\quad f(3) = 9
+$$

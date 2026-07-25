@@ -100,6 +100,19 @@ In the setting of Stokes’s theorem, the Princeton Companion records that
 $\int_{S} d\omega = \int_{\partial S} \omega$,
 and that one may view differentiation $\omega \mapsto d\omega$ as the adjoint of the boundary operation. Frankel likewise remarks that $\partial^{2} = 0$ mirrors $d^{2} = 0$ for differential forms. Historically, Betti in the 1870s and Poincaré in *Analysis situs* (1895) developed the systematic use of boundaries to detect holes, leading to the modern boundary operator on chains.
 
+
+## Elementary Example
+
+The edge of a domain is the surrounding lower-dimensional set. Here four interior labels meet a three-point edge.
+
+$$
+D = \{ a,\ b,\ c,\ d \}
+$$
+
+$$
+\partial D = \{ x,\ y,\ z \}
+$$
+
 ## References
 
 1. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — boundary as edge of an open manifold; $\partial M^{n} = M^{n-1}$; why $\partial$ is used as a derivative-like symbol; $\partial^{2}=0$.

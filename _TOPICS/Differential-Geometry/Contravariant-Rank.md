@@ -49,6 +49,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+Contravariant rank counts upper indices. This type-$(1,0)$ tensor is a vector with one upper index.
+
+$$
+T = v^{1} e_{1} + v^{2} e_{2} + v^{3} e_{3}
+$$
+
+$$
+\{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+r = 1,\quad s = 0
+$$
+
 ## References
 
 1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — contravariant degree $r$ of a type-$(r,s)$ tensor.

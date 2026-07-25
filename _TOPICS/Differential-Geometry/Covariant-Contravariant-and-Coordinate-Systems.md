@@ -129,3 +129,19 @@ Furthermore, $T$ is linear in each argument. Hence, $T$ is an alternating $2$-li
 Therefore, $T$ is a $2$-covector on $\mathbb{R}^2$.
 
 </i>
+
+## Elementary Example
+
+A vector has upper indices. A covector has lower indices. Changing basis mixes the listed components.
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+V^{*} = \{ e^{1},\ e^{2},\ e^{3} \}
+$$
+
+$$
+v = v^{1} e_{1} + v^{2} e_{2},\quad \omega = \omega_{1} e^{1} + \omega_{2} e^{2}
+$$

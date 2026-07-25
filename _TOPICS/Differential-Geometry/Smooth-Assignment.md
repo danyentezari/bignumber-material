@@ -55,6 +55,23 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+A smooth assignment attaches a tensor value to each point of a finite base set.
+
+$$
+U = \{ p,\ q,\ r \}
+$$
+
+$$
+T(p) = e_{1},\quad T(q) = e_{2},\quad T(r) = e_{1}+e_{2}
+$$
+
+$$
+\{ e_{1},\ e_{2} \}
+$$
+
 ## References
 
 1. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — tensor field as smooth assignment $T:U\to T^{r}_{s}(M)$.

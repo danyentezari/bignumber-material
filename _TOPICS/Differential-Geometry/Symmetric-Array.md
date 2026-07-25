@@ -44,6 +44,19 @@ Note:
 
 </i>
 
+
+## Elementary Example
+
+A symmetric array equals its transpose. Swapping row and column labels leaves every entry unchanged.
+
+$$
+A = \begin{pmatrix} 2 & 1 & 0 \\ 1 & 3 & 4 \\ 0 & 4 & 5 \end{pmatrix}
+$$
+
+$$
+A_{ij} = A_{ji}
+$$
+
 ## References
 
 1. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — $g_{ij}=\langle\partial_{i},\partial_{j}\rangle$; symmetric array of metric components.
