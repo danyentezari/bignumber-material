@@ -131,8 +131,9 @@ Therefore, $T$ is a $2$-covector on $\mathbb{R}^2$.
 </i>
 
 ## Elementary Example
+### Simple
 
-A vector has upper indices. A covector has lower indices. Changing basis mixes the listed components.
+A vector uses upper indices. A covector uses lower indices.
 
 $$
 V = \{ e_{1},\ e_{2},\ e_{3} \}
@@ -145,3 +146,31 @@ $$
 $$
 v = v^{1} e_{1} + v^{2} e_{2},\quad \omega = \omega_{1} e^{1} + \omega_{2} e^{2}
 $$
+
+where
+
+- $v^{i}$ are contravariant components of the vector $v$.
+- $\omega_{i}$ are covariant components of the covector $\omega$.
+- $V^{*}$ is the dual space of $V$.
+
+### General
+
+Under a change of basis with matrix $A$, vector components transform with $A^{-1}$ and covector components transform with $A$.
+
+$$
+v'^{i} = (A^{-1})^{i}_{\ j}\, v^{j}
+$$
+
+$$
+\omega'_{i} = A^{j}_{\ i}\, \omega_{j}
+$$
+
+$$
+A = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
+$$
+
+where
+
+- $A$ is the change-of-basis matrix.
+- $v'^{i}$ are the new contravariant components.
+- $\omega'_{i}$ are the new covariant components.

@@ -23,17 +23,38 @@ Note:
 </i>
 
 ## Elementary Example
+### Simple
 
-A k-tensor is a multilinear real-valued map on k vectors. Here k equals 2.
+A $2$-tensor is a bilinear real-valued map on two vectors. It need not be alternating.
 
 $$
 T : V \times V \rightarrow \mathbb{R}
 $$
 
 $$
-V = \{ e_{1},\ e_{2},\ e_{3} \}
+V = \{ e_{1},\ e_{2} \}
 $$
 
 $$
 T(e_{1},e_{2}) = 4,\quad T(e_{2},e_{1}) = 1,\quad T(e_{1},e_{1}) = 0
 $$
+
+where
+
+- $T$ is a $k$-tensor with $k = 2$.
+
+### General
+
+On $\mathbb{R}^{3}$, the same $2$-tensor is a general $3 \times 3$ matrix of components $T_{ij}$.
+
+$$
+(T_{ij}) = \begin{pmatrix} 0 & 4 & 0 \\ 1 & 2 & 3 \\ 0 & 5 & 6 \end{pmatrix}
+$$
+
+$$
+T(u,v) = \sum_{i,j=1}^{3} T_{ij}\, u^{i}\, v^{j}
+$$
+
+where
+
+- $T_{ij}$ are the components of $T$ in the standard basis.

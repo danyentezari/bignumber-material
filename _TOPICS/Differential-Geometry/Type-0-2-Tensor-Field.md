@@ -46,6 +46,7 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
 A type-$(0,2)$ tensor field assigns a bilinear form to each point.
 
@@ -54,12 +55,30 @@ U = \{ p,\ q,\ r \}
 $$
 
 $$
-T_{p}(e_{1},e_{2}) = 0,\quad T_{p}(e_{1},e_{1}) = 1
+T_{p}(e_{1},e_{1}) = 1,\quad T_{p}(e_{1},e_{2}) = 0
+$$
+
+where
+
+- $T_{p}$ is the bilinear form at the point $p$.
+- $e_{1}, e_{2}$ are tangent vectors at $p$.
+
+### General
+
+At each point the value is a $3 \times 3$ matrix of components, as for a metric field.
+
+$$
+U = \{ p,\ q \}
 $$
 
 $$
-\{ e_{1},\ e_{2},\ e_{3} \}
+T_{p} = I_{3},\quad T_{q} = \operatorname{diag}(2,1,1)
 $$
+
+where
+
+- $T_{p}$ is the type-$(0,2)$ tensor at $p$.
+- $I_{3}$ is the $3 \times 3$ identity matrix.
 
 ## References
 

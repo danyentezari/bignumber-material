@@ -45,8 +45,9 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
-Nondegeneracy means if $g(v,w)=0$ for every $w$, then $v$ is zero. The identity metric has this property.
+Nondegeneracy of a metric $g$ means: if $g(v,w) = 0$ for every $w$, then $v = 0$.
 
 $$
 g(e_{i},e_{j}) = \delta_{ij}
@@ -56,9 +57,26 @@ $$
 V = \{ e_{1},\ e_{2},\ e_{3} \}
 $$
 
+where
+
+- $g$ is the metric.
+- $\delta_{ij}$ is the Kronecker symbol.
+
+### General
+
+Equivalently, the metric matrix must be invertible. A diagonal Lorentzian matrix is nondegenerate even though it is not positive-definite.
+
 $$
-g(v,w)=0\ \text{for all } w \implies v = 0
+(g_{ij}) = \operatorname{diag}(-1,1,1)
 $$
+
+$$
+\det(g_{ij}) = -1 \neq 0
+$$
+
+where
+
+- $\det(g_{ij}) \neq 0$ is the matrix test for nondegeneracy.
 
 ## References
 

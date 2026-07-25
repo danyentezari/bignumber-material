@@ -29,8 +29,9 @@ Note:
 </i>
 
 ## Elementary Example
+### Simple
 
-The Cartesian product is the set of all ordered pairs with first entry from $X$ and second entry from $Y$.
+The Cartesian product $X \times Y$ is the set of all ordered pairs with first entry from $X$ and second entry from $Y$.
 
 $$
 X = \{ 1,\ 2,\ 3 \}
@@ -43,3 +44,24 @@ $$
 $$
 X \times Y = \{ (1,a),\ (1,b),\ (2,a),\ (2,b),\ (3,a),\ (3,b) \}
 $$
+
+where
+
+- $X$ and $Y$ are the factor sets.
+- $(x,y)$ is an ordered pair.
+
+### General
+
+For three sets the product is the set of ordered triples.
+
+$$
+X = \{ 1,\ 2 \},\quad Y = \{ a,\ b \},\quad Z = \{ p,\ q \}
+$$
+
+$$
+X \times Y \times Z = \{ (1,a,p),\ (1,a,q),\ (1,b,p),\ (1,b,q),\ (2,a,p),\ (2,a,q),\ (2,b,p),\ (2,b,q) \}
+$$
+
+where
+
+- $X \times Y \times Z$ is the three-fold Cartesian product.

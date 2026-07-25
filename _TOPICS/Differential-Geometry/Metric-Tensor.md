@@ -59,20 +59,43 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
-A metric pairs two vectors to a scalar. Here the Euclidean pairing on three basis vectors.
+A metric $g$ pairs two vectors to a scalar. On two basis vectors the values form a $2 \times 2$ matrix.
 
 $$
 g : V \times V \rightarrow \mathbb{R}
 $$
 
 $$
-V = \{ e_{1},\ e_{2},\ e_{3} \}
+V = \{ e_{1},\ e_{2} \}
 $$
 
 $$
-g(e_{i},e_{j}) = \delta_{ij}
+(g_{ij}) = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
 $$
+
+where
+
+- $g$ is the metric tensor.
+- $g_{ij} = g(e_{i},e_{j})$ are its components.
+
+### General
+
+On $\mathbb{R}^{3}$ the Euclidean metric is the $3 \times 3$ identity, and $g(u,v)$ is the ordinary dot product.
+
+$$
+(g_{ij}) = I_{3} = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
+$$
+
+$$
+g(u,v) = \sum_{i,j=1}^{3} g_{ij}\, u^{i}\, v^{j} = u \cdot v
+$$
+
+where
+
+- $I_{3}$ is the $3 \times 3$ identity matrix.
+- $u^{i}, v^{j}$ are components of $u, v$ in $\mathbb{R}^{3}$.
 
 ## References
 

@@ -22,8 +22,9 @@ where
 </i>
 
 ## Elementary Example
+### Simple
 
-An alternating map on pairs of vectors changes sign when the two inputs swap, and gives zero when the two inputs are equal.
+An alternating map on two vectors changes sign under a swap and is zero when the two inputs are equal.
 
 $$
 T : V \times V \rightarrow \mathbb{R}
@@ -36,6 +37,33 @@ $$
 $$
 T(e_{1},e_{2}) = 1,\quad T(e_{2},e_{1}) = -1,\quad T(e_{1},e_{1}) = 0,\quad T(e_{2},e_{2}) = 0
 $$
+
+where
+
+- $T$ is an alternating bilinear map.
+- $V$ is the set of two basis vectors used as inputs.
+- $e_{1}, e_{2}$ are those basis vectors.
+
+### General
+
+In three dimensions the same rule is the determinant pairing of two vectors in $\mathbb{R}^{3}$ via the standard cross-product identity in the plane of the first two axes.
+
+$$
+T : \mathbb{R}^{3} \times \mathbb{R}^{3} \rightarrow \mathbb{R}
+$$
+
+$$
+T(u,v) = u^{1} v^{2} - u^{2} v^{1}
+$$
+
+$$
+T(e_{1},e_{2}) = 1,\quad T(e_{2},e_{1}) = -1,\quad T(e_{1},e_{1}) = 0
+$$
+
+where
+
+- $u = (u^{1},u^{2},u^{3})$ and $v = (v^{1},v^{2},v^{3})$ are vectors in $\mathbb{R}^{3}$.
+- $e_{1}, e_{2}, e_{3}$ are the standard basis vectors of $\mathbb{R}^{3}$.
 
 ## References
 

@@ -47,6 +47,7 @@ Note:
 </i>
 
 ## Elementary Example
+### Simple
 
 A function sends each domain element to exactly one codomain value.
 
@@ -65,3 +66,33 @@ $$
 $$
 f(1) = 2,\quad f(2) = 4,\quad f(3) = 9
 $$
+
+where
+
+- $A$ is the domain.
+- $B$ is the codomain.
+- $f$ is the function.
+
+### General
+
+The same idea on larger finite sets still assigns one value to each input.
+
+$$
+f : A \rightarrow B
+$$
+
+$$
+A = \{ 1,\ 2,\ 3,\ 4,\ 5 \}
+$$
+
+$$
+B = \{ 1,\ 4,\ 9,\ 16,\ 25 \}
+$$
+
+$$
+f(n) = n^{2}\ \text{for each } n \in A
+$$
+
+where
+
+- $n^{2}$ is the square of the integer $n$.

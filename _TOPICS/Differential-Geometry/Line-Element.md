@@ -44,20 +44,44 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
-The line element is the squared length from the metric on coordinate increments.
+The line element $ds^{2}$ is the squared length from the metric on coordinate increments.
+
+$$
+ds^{2} = dx^{2} + dy^{2}
+$$
+
+$$
+g = \operatorname{diag}(1,1)
+$$
+
+where
+
+- $ds^{2}$ is the line element.
+- $dx, dy$ are coordinate increments.
+- $g$ is the metric matrix used to form $ds^{2}$.
+
+### General
+
+In three Euclidean dimensions the line element uses three squared increments.
 
 $$
 ds^{2} = dx^{2} + dy^{2} + dz^{2}
 $$
 
 $$
-\{ dx,\ dy,\ dz \}
+g = \operatorname{diag}(1,1,1)
 $$
 
 $$
-g = \operatorname{diag}(1,1,1)
+ds^{2} = \sum_{i,j=1}^{3} g_{ij}\, dx^{i}\, dx^{j}
 $$
+
+where
+
+- $g_{ij}$ are the metric components.
+- $dx^{1}, dx^{2}, dx^{3}$ may be written $dx, dy, dz$.
 
 ## References
 

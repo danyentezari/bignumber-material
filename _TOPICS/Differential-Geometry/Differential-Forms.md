@@ -27,17 +27,41 @@ Note:
 </i>
 
 ## Elementary Example
+### Simple
 
-A differential form assigns an alternating map to each point. Here two points each get a 1-form on three directions.
+A differential $1$-form assigns a linear functional to each point. Let $\omega$ be such an assignment on two points.
 
 $$
 M = \{ p,\ q \}
 $$
 
 $$
-T_{p}M = \{ e_{1},\ e_{2},\ e_{3} \}
+\omega(p)(e_{1}) = 1,\quad \omega(p)(e_{2}) = 0,\quad \omega(q)(e_{1}) = 2
+$$
+
+where
+
+- $M$ is the base set of points.
+- $\omega(p)$ is the $1$-form at the point $p$.
+- $e_{1}, e_{2}$ are tangent directions at that point.
+
+### General
+
+A differential $2$-form assigns an alternating bilinear map to each point. On three points of a base, values may differ.
+
+$$
+M = \{ p,\ q,\ r \}
 $$
 
 $$
-\omega(p)(e_{1}) = 1,\quad \omega(p)(e_{2}) = 0,\quad \omega(q)(e_{1}) = 2
+\omega(p)(e_{1},e_{2}) = 1,\quad \omega(p)(e_{2},e_{1}) = -1
 $$
+
+$$
+\omega(q)(e_{1},e_{2}) = 0,\quad \omega(r)(e_{1},e_{2}) = 3
+$$
+
+where
+
+- $\omega(p)$ is the alternating $2$-linear map at $p$.
+- $e_{1}, e_{2}$ are tangent vectors at that point.

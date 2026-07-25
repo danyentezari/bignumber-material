@@ -18,8 +18,9 @@ where
 </i>
 
 ## Elementary Example
+### Simple
 
-A linear functional sends each vector to a scalar and respects addition and scaling.
+A linear functional sends each vector to a scalar.
 
 $$
 f : V \rightarrow \mathbb{R}
@@ -32,3 +33,25 @@ $$
 $$
 f(e_{1}) = 1,\quad f(e_{2}) = -2,\quad f(e_{3}) = 0
 $$
+
+where
+
+- $f$ is the linear functional.
+- $V$ is the set of basis vectors used as inputs.
+
+### General
+
+On $\mathbb{R}^{3}$, $f$ is given by a row of components $\omega_{i}$ via the dot product with those components.
+
+$$
+f(v) = \omega_{1} v^{1} + \omega_{2} v^{2} + \omega_{3} v^{3}
+$$
+
+$$
+(\omega_{1},\omega_{2},\omega_{3}) = (1,-2,0)
+$$
+
+where
+
+- $\omega_{i}$ are the components of $f$ in the dual basis.
+- $v^{i}$ are the components of $v$.

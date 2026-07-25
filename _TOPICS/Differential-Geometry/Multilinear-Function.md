@@ -20,8 +20,9 @@ where
 </i>
 
 ## Elementary Example
+### Simple
 
-A multilinear map is linear in each slot. Here a bilinear map on three labeled vectors.
+A bilinear map is linear in each slot separately. Values on two basis vectors need not change sign under a swap.
 
 $$
 T : V \times V \rightarrow \mathbb{R}
@@ -34,3 +35,23 @@ $$
 $$
 T(e_{1},e_{2}) = 5,\quad T(e_{2},e_{1}) = 3,\quad T(e_{1},e_{1}) = 2
 $$
+
+where
+
+- $T$ is a multilinear function with two inputs.
+
+### General
+
+On $\mathbb{R}^{3}$, a bilinear map is a general $3 \times 3$ matrix of components.
+
+$$
+(T_{ij}) = \begin{pmatrix} 2 & 5 & 0 \\ 3 & 1 & 4 \\ 0 & 7 & 6 \end{pmatrix}
+$$
+
+$$
+T(u,v) = \sum_{i,j} T_{ij}\, u^{i}\, v^{j}
+$$
+
+where
+
+- $T_{ij}$ are the components of the bilinear map $T$.

@@ -28,8 +28,9 @@ Note:
 </i>
 
 ## Elementary Example
+### Simple
 
-An alternating k-linear map on three labeled vectors changes sign under a swap and vanishes on a repeated pair.
+An alternating $2$-linear map on three labeled vectors changes sign under a swap and vanishes on a repeated pair.
 
 $$
 f : V \times V \rightarrow \mathbb{R}
@@ -42,3 +43,30 @@ $$
 $$
 f(e_{1},e_{2}) = 1,\quad f(e_{2},e_{1}) = -1,\quad f(e_{1},e_{1}) = 0
 $$
+
+where
+
+- $f$ is an alternating $2$-linear function.
+- $k = 2$ is the number of vector inputs.
+- $V$ is the set of input basis vectors.
+
+### General
+
+For $k = 3$, an alternating $3$-linear map on $\mathbb{R}^{3}$ is the determinant of the matrix with those three vectors as columns.
+
+$$
+f : \mathbb{R}^{3} \times \mathbb{R}^{3} \times \mathbb{R}^{3} \rightarrow \mathbb{R}
+$$
+
+$$
+f(u,v,w) = \det\begin{pmatrix} u^{1} & v^{1} & w^{1} \\ u^{2} & v^{2} & w^{2} \\ u^{3} & v^{3} & w^{3} \end{pmatrix}
+$$
+
+$$
+f(e_{1},e_{2},e_{3}) = 1,\quad f(e_{2},e_{1},e_{3}) = -1
+$$
+
+where
+
+- $f$ is an alternating $3$-linear function.
+- $e_{1}, e_{2}, e_{3}$ are the standard basis vectors of $\mathbb{R}^{3}$.

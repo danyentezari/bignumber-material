@@ -90,6 +90,42 @@ where
 
 Figure 1.29 from Howell and Mathews shows a domain as a shaded interior, its edge as the labeled boundary curve, and the complementary exterior of the set.
 
+## Elementary Example
+### Simple
+
+The edge $\partial D$ is the lower-dimensional set surrounding a domain $D$.
+
+$$
+D = \{ a,\ b,\ c,\ d \}
+$$
+
+$$
+\partial D = \{ x,\ y,\ z \}
+$$
+
+where
+
+- $D$ is the domain.
+- $\partial D$ is the edge of $D$.
+
+### General
+
+For the open unit disc, the domain is the open set of radii less than $1$, and the edge is the unit circle.
+
+$$
+U = \{ z \in \mathbb{C} : |z| < 1 \}
+$$
+
+$$
+T = \partial U = \{ z \in \mathbb{C} : |z| = 1 \}
+$$
+
+where
+
+- $U$ is the open unit disc.
+- $T$ is the unit circle, the edge of $U$.
+- $|z|$ is the modulus of the complex number $z$.
+
 ## Historical Notes
 
 The symbol $\partial$ was introduced by Carl Gustav Jacob Jacobi in the 1820s for partial derivatives, replacing an earlier upright $d$ in that role. The same glyph was later used for the boundary of a domain or manifold, written $\partial D$ or $\partial M$.
@@ -100,18 +136,6 @@ In the setting of Stokes’s theorem, the Princeton Companion records that
 $\int_{S} d\omega = \int_{\partial S} \omega$,
 and that one may view differentiation $\omega \mapsto d\omega$ as the adjoint of the boundary operation. Frankel likewise remarks that $\partial^{2} = 0$ mirrors $d^{2} = 0$ for differential forms. Historically, Betti in the 1870s and Poincaré in *Analysis situs* (1895) developed the systematic use of boundaries to detect holes, leading to the modern boundary operator on chains.
 
-
-## Elementary Example
-
-The edge of a domain is the surrounding lower-dimensional set. Here four interior labels meet a three-point edge.
-
-$$
-D = \{ a,\ b,\ c,\ d \}
-$$
-
-$$
-\partial D = \{ x,\ y,\ z \}
-$$
 
 ## References
 

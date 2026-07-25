@@ -48,20 +48,41 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
-A constant metric has fixed matrix entries at every point. Here the Euclidean metric on three basis directions.
-
-$$
-g = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
-$$
+A constant metric has matrix entries that do not depend on position. Let $g$ be the Euclidean metric on two axes.
 
 $$
-\{ e_{1},\ e_{2},\ e_{3} \}
+g = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
 $$
 
 $$
 g(e_{i},e_{j}) = \delta_{ij}
 $$
+
+where
+
+- $g$ is the constant metric tensor.
+- $e_{1}, e_{2}$ are basis vectors.
+- $\delta_{ij}$ equals $1$ if $i = j$ and equals $0$ if $i \neq j$.
+
+### General
+
+In three dimensions the constant Euclidean metric is the $3 \times 3$ identity matrix at every point.
+
+$$
+(g_{ij}) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} = I_{3}
+$$
+
+$$
+\partial_{\lambda} g_{ij} = 0
+$$
+
+where
+
+- $g_{ij}$ are the constant components of $g$.
+- $I_{3}$ is the $3 \times 3$ identity matrix.
+- $\partial_{\lambda} g_{ij} = 0$ means the components do not depend on the coordinates.
 
 ## References
 

@@ -20,8 +20,9 @@ where
 </i>
 
 ## Elementary Example
+### Simple
 
-A one-form is a linear functional on vectors. It returns one scalar per vector.
+A one-form is a linear functional on vectors.
 
 $$
 \omega : V \rightarrow \mathbb{R}
@@ -34,3 +35,24 @@ $$
 $$
 \omega(e_{1}) = 3,\quad \omega(e_{2}) = -1,\quad \omega(e_{3}) = 4
 $$
+
+where
+
+- $\omega$ is the one-form.
+- $e_{i}$ are basis vectors.
+
+### General
+
+On $\mathbb{R}^{3}$, $\omega$ is a row of components acting by contraction on a column of vector components.
+
+$$
+\omega(v) = \omega_{1} v^{1} + \omega_{2} v^{2} + \omega_{3} v^{3}
+$$
+
+$$
+(\omega_{1},\omega_{2},\omega_{3}) = (3,-1,4)
+$$
+
+where
+
+- $\omega_{i}$ are the components of the one-form.

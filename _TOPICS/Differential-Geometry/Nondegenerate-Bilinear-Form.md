@@ -46,8 +46,9 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
-A nondegenerate bilinear form pairs vectors so only the zero vector is orthogonal to every vector.
+A nondegenerate bilinear form $B$ pairs vectors so only the zero vector is orthogonal to every vector. The identity pairing has this property.
 
 $$
 B : V \times V \rightarrow \mathbb{R}
@@ -60,6 +61,28 @@ $$
 $$
 B(e_{i},e_{j}) = \delta_{ij}
 $$
+
+where
+
+- $B$ is the bilinear form.
+- $\delta_{ij}$ equals $1$ if $i = j$ and $0$ otherwise.
+
+### General
+
+Nondegeneracy means the component matrix is invertible. Any invertible symmetric $3 \times 3$ matrix defines such a form.
+
+$$
+(B_{ij}) = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 3 \end{pmatrix}
+$$
+
+$$
+\det(B_{ij}) = 6 \neq 0
+$$
+
+where
+
+- $B_{ij}$ are the components of $B$.
+- $\det(B_{ij}) \neq 0$ encodes nondegeneracy in finite dimensions.
 
 ## References
 

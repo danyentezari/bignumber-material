@@ -41,8 +41,9 @@ where
 
 
 ## Elementary Example
+### Simple
 
-A smooth mapping sends each domain point to a unique image point. Here a finite sample of the rule.
+A smooth mapping sends each domain point to a unique image. A finite sample of $f(x) = x^{2}$ shows the rule.
 
 $$
 f : A \rightarrow B
@@ -59,6 +60,29 @@ $$
 $$
 f(0) = 0,\quad f(1) = 1,\quad f(2) = 4,\quad f(3) = 9
 $$
+
+where
+
+- $f$ is the mapping.
+- $A$ is the domain sample.
+- $B$ is the image sample.
+
+### General
+
+A smooth map $\mathbb{R}^{2} \rightarrow \mathbb{R}^{2}$ has a Jacobian matrix of first partial derivatives at each point.
+
+$$
+f(x,y) = (x^{2},\, xy)
+$$
+
+$$
+Df = \begin{pmatrix} 2x & 0 \\ y & x \end{pmatrix}
+$$
+
+where
+
+- $Df$ is the Jacobian matrix of $f$.
+- smoothness means all partial derivatives of all orders exist and are continuous.
 
 ## References
 

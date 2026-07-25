@@ -49,19 +49,20 @@ Note:
 </i>
 
 ## Elementary Example
+### Simple
 
-Frankel’s local product $\pi^{-1}(U) \cong U \times F$ is here a global product of finite sets. Projection sends each pair to its base point. The fiber over a point is the copy of $F$ at that point.
+A trivial bundle is the product of a base and a fiber. The projection $\pi$ sends each pair to its base point.
 
 $$
 \pi : E \rightarrow M
 $$
 
 $$
-M = \{ 1, 2, 3 \}
+M = \{ 1,\ 2,\ 3 \}
 $$
 
 $$
-F = \{ a, b \}
+F = \{ a,\ b \}
 $$
 
 $$
@@ -69,12 +70,41 @@ E = M \times F = \{ (1,a),\ (1,b),\ (2,a),\ (2,b),\ (3,a),\ (3,b) \}
 $$
 
 $$
-\pi(p,v) = p
+\pi(p,v) = p,\quad \pi^{-1}(2) = \{ (2,a),\ (2,b) \}
+$$
+
+where
+
+- $M$ is the base set.
+- $F$ is the fiber set.
+- $E$ is the total space.
+- $\pi$ is the projection map.
+- $\pi^{-1}(2)$ is the fiber over the point $2$.
+
+### General
+
+Local triviality means every base point has a neighborhood $U$ with $\pi^{-1}(U) \cong U \times F$. Here two charts cover a four-point base.
+
+$$
+M = \{ 1,\ 2,\ 3,\ 4 \}
 $$
 
 $$
-\pi^{-1}(2) = \{ (2,a),\ (2,b) \}
+U = \{ 1,\ 2 \},\quad W = \{ 3,\ 4 \}
 $$
+
+$$
+F = \{ a,\ b,\ c \}
+$$
+
+$$
+\pi^{-1}(U) = U \times F,\quad \pi^{-1}(W) = W \times F
+$$
+
+where
+
+- $U$ and $W$ are neighborhoods covering $M$.
+- $\pi^{-1}(U) \cong U \times F$ is Frankel’s local product condition.
 
 ## References
 

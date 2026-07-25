@@ -57,8 +57,9 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
-A smooth assignment attaches a tensor value to each point of a finite base set.
+A smooth assignment attaches a tensor value to each point of a finite base.
 
 $$
 U = \{ p,\ q,\ r \}
@@ -68,9 +69,28 @@ $$
 T(p) = e_{1},\quad T(q) = e_{2},\quad T(r) = e_{1}+e_{2}
 $$
 
+where
+
+- $T$ is the assignment.
+- $U$ is the set of points.
+- $e_{1}, e_{2}$ are values in a vector space at those points.
+
+### General
+
+A type-$(0,2)$ assignment can attach a metric matrix at each of several points.
+
 $$
-\{ e_{1},\ e_{2} \}
+U = \{ p,\ q \}
 $$
+
+$$
+T(p) = I_{3},\quad T(q) = \operatorname{diag}(2,1,1)
+$$
+
+where
+
+- $T(p)$ is the type-$(0,2)$ tensor at $p$.
+- $I_{3}$ is the $3 \times 3$ identity matrix.
 
 ## References
 

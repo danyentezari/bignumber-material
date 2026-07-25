@@ -27,11 +27,30 @@ Note:
 </i>
 
 ## Elementary Example
+### Simple
 
-A differential k-form attaches an alternating k-linear map to each point of a finite base set.
+A differential $1$-form assigns a linear functional to each point of a finite base.
 
 $$
 M = \{ p,\ q,\ r \}
+$$
+
+$$
+\omega(p)(e_{1}) = 1,\quad \omega(q)(e_{1}) = 0,\quad \omega(r)(e_{1}) = -2
+$$
+
+where
+
+- $\omega$ is a differential $1$-form.
+- $M$ is the set of sample points.
+- $e_{1}$ is a tangent direction at each point.
+
+### General
+
+A differential $2$-form assigns an alternating bilinear map to each point. Sign reverses when the two tangent inputs swap.
+
+$$
+M = \{ p,\ q \}
 $$
 
 $$
@@ -39,5 +58,10 @@ $$
 $$
 
 $$
-\{ e_{1},\ e_{2} \}
+\omega(q)(e_{1},e_{2}) = 4
 $$
+
+where
+
+- $k = 2$ is the degree of the form.
+- $\omega(p)$ is the $2$-covector at $p$.

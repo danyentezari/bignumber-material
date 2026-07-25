@@ -44,8 +44,26 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
-A Lorentzian metric has signature with one negative direction. Here a constant Minkowski matrix on four axes.
+A Lorentzian metric has one negative direction. Let $\eta$ be the $1+1$ Minkowski metric.
+
+$$
+\eta = \operatorname{diag}(-1,1)
+$$
+
+$$
+\eta(e_{0},e_{0}) = -1,\quad \eta(e_{1},e_{1}) = 1
+$$
+
+where
+
+- $\eta$ is the Minkowski metric tensor.
+- $e_{0}, e_{1}$ are basis vectors in the two signature directions.
+
+### General
+
+In $1+3$ dimensions the flat Lorentzian metric is the $4 \times 4$ diagonal matrix of signature $(-+++)$.
 
 $$
 \eta = \operatorname{diag}(-1,1,1,1)
@@ -56,8 +74,13 @@ $$
 $$
 
 $$
-\eta(e_{0},e_{0}) = -1,\quad \eta(e_{1},e_{1}) = 1
+\eta(e_{0},e_{0}) = -1,\quad \eta(e_{i},e_{i}) = 1\ \text{for } i = 1,2,3
 $$
+
+where
+
+- $(M,\eta)$ with this $\eta$ is flat Minkowski spacetime.
+- signature $(-+++)$ means one negative and three positive diagonal entries.
 
 ## References
 

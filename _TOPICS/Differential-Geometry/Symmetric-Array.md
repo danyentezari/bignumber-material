@@ -46,8 +46,26 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
-A symmetric array equals its transpose. Swapping row and column labels leaves every entry unchanged.
+A symmetric array equals its transpose: $A_{ij} = A_{ji}$.
+
+$$
+A = \begin{pmatrix} 2 & 1 \\ 1 & 3 \end{pmatrix}
+$$
+
+$$
+A_{12} = A_{21} = 1
+$$
+
+where
+
+- $A$ is the symmetric matrix.
+- $A_{ij}$ is the entry in row $i$ and column $j$.
+
+### General
+
+A symmetric $3 \times 3$ metric-style array has six independent entries.
 
 $$
 A = \begin{pmatrix} 2 & 1 & 0 \\ 1 & 3 & 4 \\ 0 & 4 & 5 \end{pmatrix}
@@ -56,6 +74,10 @@ $$
 $$
 A_{ij} = A_{ji}
 $$
+
+where
+
+- symmetry cuts the number of independent entries from $9$ to $6$.
 
 ## References
 

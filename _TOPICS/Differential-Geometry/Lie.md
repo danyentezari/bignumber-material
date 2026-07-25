@@ -33,20 +33,40 @@ where
 
 
 ## Elementary Example
+### Simple
 
-A discrete Lie group is a finite set closed under multiplication and inverses.
+A discrete group closed under multiplication and inverses illustrates the group maps $\mu$ and $\iota$.
 
 $$
-\mu : G \times G \rightarrow G,\quad \iota : G \rightarrow G
+G = \{ e,\ a,\ a^{2} \}
 $$
+
+$$
+\mu(a,a) = a^{2},\quad \mu(a,a^{2}) = e,\quad \iota(a) = a^{2}
+$$
+
+where
+
+- $G$ is the group.
+- $\mu : G \times G \rightarrow G$ is multiplication.
+- $\iota : G \rightarrow G$ is inversion.
+
+### General
+
+The four-element circle group under complex multiplication has smooth structure as a Lie group when viewed on the circle; the finite sample is the fourth roots of unity.
 
 $$
 G = \{ 1,\ i,\ -1,\ -i \}
 $$
 
 $$
-\mu(i,i) = -1,\quad \iota(i) = -i,\quad \mu(-1,-1) = 1
+\mu(i,i) = -1,\quad \iota(i) = -i,\quad \mu(-i,-i) = -1
 $$
+
+where
+
+- $i$ is the imaginary unit with $i^{2} = -1$.
+- $\mu$ and $\iota$ are the group multiplication and inverse maps.
 
 ## References
 

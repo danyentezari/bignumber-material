@@ -60,11 +60,12 @@ where
 </i>
 
 ## Elementary Example
+### Simple
 
-A form returns a scalar from an ordered list of vectors. This 2-form changes sign when the two inputs swap.
+A $1$-form is a linear map from vectors to scalars.
 
 $$
-\omega : V \times V \rightarrow \mathbb{R}
+\omega : V \rightarrow \mathbb{R}
 $$
 
 $$
@@ -72,8 +73,34 @@ V = \{ e_{1},\ e_{2},\ e_{3} \}
 $$
 
 $$
-\omega(e_{1},e_{2}) = 1,\quad \omega(e_{2},e_{1}) = -1,\quad \omega(e_{1},e_{1}) = 0
+\omega(e_{1}) = 2,\quad \omega(e_{2}) = -1,\quad \omega(e_{3}) = 0
 $$
+
+where
+
+- $\omega$ is a $1$-form.
+- $V$ is the set of input basis vectors.
+
+### General
+
+A $2$-form is an antisymmetric bilinear map. In components it is a $3 \times 3$ skew matrix on $\mathbb{R}^{3}$.
+
+$$
+\omega : \mathbb{R}^{3} \times \mathbb{R}^{3} \rightarrow \mathbb{R}
+$$
+
+$$
+(\omega_{ij}) = \begin{pmatrix} 0 & 1 & 0 \\ -1 & 0 & 2 \\ 0 & -2 & 0 \end{pmatrix}
+$$
+
+$$
+\omega(u,v) = \sum_{i,j=1}^{3} \omega_{ij}\, u^{i}\, v^{j},\quad \omega_{ij} = -\omega_{ji}
+$$
+
+where
+
+- $\omega_{ij}$ are the components of the $2$-form.
+- $\omega_{ij} = -\omega_{ji}$ is antisymmetry.
 
 ## References
 

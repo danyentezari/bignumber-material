@@ -80,7 +80,12 @@ Do not distract the reader by involving other mathematical terms outside of this
 
 ## Elementary Example
 
-For every relevant definition file, add an Elementary Example section with 1–3 finite sets of 3–7 elements that show what kind of set, function, or transformation the concept is. Explanation prose must not exceed 40 words.
+For every relevant definition file, add an Elementary Example section with two parts:
+
+1. **Simple** — a small finite instance with 1–3 sets of 3–7 elements, or the lowest-dimensional case that still matches the definition.
+2. **General** — a higher-dimensional, matrix, or multi-point instance of the same definition.
+
+Each part’s prose must not exceed 40 words. Every new symbol must be named before use, with a `where` list when needed. The example must accurately illustrate the file’s definition.
 
 ### Grounding policy
 
@@ -90,12 +95,14 @@ For every relevant definition file, add an Elementary Example section with 1–3
 4. Public web notes may suggest ideas. They do not replace GN. If used after verify, cite them as secondary References. Do not treat private course materials as available to scrape.
 5. Never invent a source example that does not exist. Never invent a citation.
 
-Template:
+### Template
 
 ```
 ## Elementary Example
 
-<at most 40 words naming the sets and the map, tied to the grounded definition>
+### Simple
+
+<at most 40 words>
 
 $$
 f : A \rightarrow B
@@ -110,38 +117,20 @@ B = \{ 2, 4, 9 \}
 $$
 
 $$
-f(1) = 1,\quad f(2) = 4,\quad f(3) = 9
+f(1) = 2,\quad f(2) = 4,\quad f(3) = 9
 $$
+
+### General
+
+<at most 40 words; define every new symbol>
+
+$$
+\ldots
+$$
+
+where
+
+- \ldots
 ```
 
-Approved pattern from Bundle.md: a finite trivial product illustrating Frankel’s local product structure.
-
-```
-## Elementary Example
-
-Frankel’s local product $\pi^{-1}(U) \cong U \times F$ is here a global product of finite sets. Projection sends each pair to its base point. The fiber over a point is the copy of $F$ at that point.
-
-$$
-\pi : E \rightarrow M
-$$
-
-$$
-M = \{ 1, 2, 3 \}
-$$
-
-$$
-F = \{ a, b \}
-$$
-
-$$
-E = M \times F = \{ (1,a),\ (1,b),\ (2,a),\ (2,b),\ (3,a),\ (3,b) \}
-$$
-
-$$
-\pi(p,v) = p
-$$
-
-$$
-\pi^{-1}(2) = \{ (2,a),\ (2,b) \}
-$$
-```
+Approved Simple and General pattern: see `Tensors.md`.

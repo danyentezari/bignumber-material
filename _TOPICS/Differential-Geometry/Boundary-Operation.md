@@ -156,12 +156,9 @@ where
 
 
 ## Elementary Example
+### Simple
 
-The boundary operation sends a domain set to its edge set. Applying it twice yields the empty set.
-
-$$
-\partial : A \mapsto B
-$$
+The boundary operation $\partial$ sends a domain set $A$ to its edge set $B = \partial A$.
 
 $$
 A = \{ a,\ b,\ c,\ d \}
@@ -171,9 +168,33 @@ $$
 B = \partial A = \{ a,\ b \}
 $$
 
+where
+
+- $A$ is the domain set before $\partial$ acts.
+- $B = \partial A$ is the edge set after $\partial$ acts.
+- $\partial$ is the boundary operation.
+
+### General
+
+Nilpotence says the edge of an edge is empty: $\partial^{2} = 0$. A solid ball maps to a sphere, then to the empty set.
+
+$$
+A = D^{3}
+$$
+
+$$
+B = \partial A = S^{2}
+$$
+
 $$
 \partial B = \partial^{2} A = \emptyset
 $$
+
+where
+
+- $D^{3}$ is the solid ball.
+- $S^{2}$ is the sphere, the edge of $D^{3}$.
+- $\emptyset$ is the empty set.
 
 ## References
 

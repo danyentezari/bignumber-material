@@ -28,8 +28,9 @@ Note:
 </i>
 
 ## Elementary Example
+### Simple
 
-A k-covector is an alternating multilinear map on k vectors. Here k equals 2.
+A $2$-covector is an alternating bilinear map on vectors.
 
 $$
 \omega : V \times V \rightarrow \mathbb{R}
@@ -42,3 +43,24 @@ $$
 $$
 \omega(e_{1},e_{2}) = 1,\quad \omega(e_{2},e_{1}) = -1
 $$
+
+where
+
+- $\omega$ is a $k$-covector with $k = 2$.
+- $V$ is the set of input basis vectors.
+
+### General
+
+On $\mathbb{R}^{3}$, a $2$-covector has skew components $\omega_{ij}$ in a $3 \times 3$ matrix.
+
+$$
+(\omega_{ij}) = \begin{pmatrix} 0 & 1 & -1 \\ -1 & 0 & 2 \\ 1 & -2 & 0 \end{pmatrix}
+$$
+
+$$
+\omega(u,v) = \sum_{i,j} \omega_{ij}\, u^{i}\, v^{j}
+$$
+
+where
+
+- $\omega_{ij} = -\omega_{ji}$ are the components of $\omega$.

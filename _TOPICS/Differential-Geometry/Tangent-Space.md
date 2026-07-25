@@ -44,20 +44,39 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
 The tangent space at a point is spanned by a finite list of tangent basis vectors.
 
 $$
-P \in M
+T_{P}M = \{ e_{1},\ e_{2} \}
 $$
 
 $$
-T_{P}M = \{ e_{1},\ e_{2},\ e_{3} \}
+v = 2 e_{1} - e_{2}
+$$
+
+where
+
+- $T_{P}M$ is the tangent space at the point $P$.
+- $v$ is a tangent vector at $P$.
+
+### General
+
+If $\dim M = 3$, then $T_{P}M$ is three-dimensional with coordinate basis $\partial_{i}\big|_{P}$.
+
+$$
+T_{P}M = \operatorname{span}\left\{ \dfrac{\partial}{\partial x^{1}}\Big|_{P},\, \dfrac{\partial}{\partial x^{2}}\Big|_{P},\, \dfrac{\partial}{\partial x^{3}}\Big|_{P} \right\}
 $$
 
 $$
-v = 2 e_{1} - e_{3}
+v = v^{1} \partial_{1}\big|_{P} + v^{2} \partial_{2}\big|_{P} + v^{3} \partial_{3}\big|_{P}
 $$
+
+where
+
+- $\partial_{i}\big|_{P}$ are the coordinate basis vectors at $P$.
+- $v^{i}$ are the components of $v$.
 
 ## References
 

@@ -21,20 +21,41 @@ Stoke's Theorem is about manifolds, which are locally Euclidean. The integration
 
 
 ## Elementary Example
+### Simple
 
-Stokes moves a definite integral from a domain set onto its edge set.
+Stokes equates a definite integral over a domain set $A$ with a definite integral over its edge $B = \partial A$.
 
 $$
 \int_{A} d\omega = \int_{B} \omega
 $$
 
 $$
-A = \{ a,\ b,\ c,\ d \}
+A = \{ a,\ b,\ c,\ d \},\quad B = \partial A = \{ x,\ y,\ z \}
+$$
+
+where
+
+- $A$ is the domain of integration.
+- $B = \partial A$ is the edge of $A$.
+- both integrals are definite integrals.
+
+### General
+
+On the closed unit disc, the domain is the disc and the edge is the unit circle.
+
+$$
+A = \{ z : |z| \le 1 \},\quad B = \partial A = \{ z : |z| = 1 \}
 $$
 
 $$
-B = \partial A = \{ x,\ y,\ z \}
+\int_{A} d\omega = \int_{B} \omega
 $$
+
+where
+
+- $A$ is the closed unit disc.
+- $B$ is the unit circle.
+- $\omega$ is a differential form and $d\omega$ is its exterior derivative.
 
 ## Examples
 

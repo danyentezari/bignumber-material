@@ -38,20 +38,40 @@ where
 
 
 ## Elementary Example
+### Simple
 
-A Lie algebra pairs vectors by a bracket. On three basis matrices the bracket closes in the same set.
+A Lie algebra is a vector space with a bracket $[\ ,\ ]$. On three elements the bracket closes in the set.
 
 $$
 \mathfrak{g} = \{ X,\ Y,\ Z \}
 $$
 
 $$
-[X,Y] = Z,\quad [Y,Z] = X,\quad [Z,X] = Y
+[X,Y] = Z,\quad [Y,Z] = X,\quad [Z,X] = Y,\quad [X,X] = 0
+$$
+
+where
+
+- $\mathfrak{g}$ is the Lie algebra.
+- $[X,Y]$ is the Lie bracket of $X$ and $Y$.
+
+### General
+
+Matrix commutators give a concrete bracket: $[A,B] = AB - BA$ on $2 \times 2$ matrices.
+
+$$
+A = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix},\quad
+B = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}
 $$
 
 $$
-[X,X] = 0
+[A,B] = AB - BA = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
 $$
+
+where
+
+- $A, B$ are matrices in the Lie algebra.
+- $AB - BA$ is the commutator bracket.
 
 ## References
 

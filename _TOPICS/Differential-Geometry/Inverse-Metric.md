@@ -46,20 +46,41 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
-The inverse metric raises indices. Its matrix is the matrix inverse of the metric matrix.
-
-$$
-g = \operatorname{diag}(2,1,1),\quad g^{-1} = \operatorname{diag}(\tfrac{1}{2},1,1)
-$$
+Let $g$ be a diagonal metric matrix. The inverse metric $g^{-1}$ is the matrix inverse of $g$.
 
 $$
-\{ e_{1},\ e_{2},\ e_{3} \}
+g = \begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix},\quad
+g^{-1} = \begin{pmatrix} \tfrac{1}{2} & 0 \\ 0 & 1 \end{pmatrix}
 $$
 
 $$
 g^{ik} g_{kj} = \delta^{i}_{\ j}
 $$
+
+where
+
+- $g_{kj}$ are components of the metric.
+- $g^{ik}$ are components of the inverse metric.
+- $\delta^{i}_{\ j}$ is the Kronecker symbol, equal to $1$ if $i = j$ and $0$ otherwise.
+
+### General
+
+In three dimensions the same rule inverts a diagonal metric with three entries.
+
+$$
+g = \operatorname{diag}(2,1,4),\quad g^{-1} = \operatorname{diag}(\tfrac{1}{2},1,\tfrac{1}{4})
+$$
+
+$$
+g^{ik} g_{kj} = \delta^{i}_{\ j}
+$$
+
+where
+
+- $\operatorname{diag}(a,b,c)$ is the diagonal matrix with those entries.
+- raising an index uses $v^{i} = g^{ij} v_{j}$.
 
 ## References
 

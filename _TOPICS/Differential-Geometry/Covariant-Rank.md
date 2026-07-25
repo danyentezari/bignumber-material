@@ -51,20 +51,43 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
-Covariant rank counts lower indices. This type-$(0,1)$ tensor is a covector with one lower index.
-
-$$
-\omega = \omega_{1}\, e^{1} + \omega_{2}\, e^{2} + \omega_{3}\, e^{3}
-$$
+Covariant rank $s$ counts lower indices. A covector is type $(0,1)$, so $s = 1$.
 
 $$
-\{ e^{1},\ e^{2},\ e^{3} \}
+\omega = \omega_{1}\, e^{1} + \omega_{2}\, e^{2}
 $$
 
 $$
 r = 0,\quad s = 1
 $$
+
+where
+
+- $s$ is the covariant rank.
+- $r$ is the contravariant rank.
+- $\omega_{1}, \omega_{2}$ are the lower-index components of $\omega$.
+
+### General
+
+A type-$(0,2)$ tensor on $\mathbb{R}^{3}$ has covariant rank $s = 2$ and a $3 \times 3$ matrix of components $T_{ij}$.
+
+$$
+T : \mathbb{R}^{3} \times \mathbb{R}^{3} \rightarrow \mathbb{R}
+$$
+
+$$
+(T_{ij}) = \begin{pmatrix} T_{11} & T_{12} & T_{13} \\ T_{21} & T_{22} & T_{23} \\ T_{31} & T_{32} & T_{33} \end{pmatrix}
+$$
+
+$$
+r = 0,\quad s = 2
+$$
+
+where
+
+- $T_{ij}$ are the two lower-index components of $T$.
 
 ## References
 

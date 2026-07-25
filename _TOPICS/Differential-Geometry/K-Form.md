@@ -24,8 +24,9 @@ where
 </i>
 
 ## Elementary Example
+### Simple
 
-A k-form is an alternating multilinear function of k vectors. Here a 2-form on three vectors.
+A $2$-form is an alternating bilinear function of two vectors.
 
 $$
 \omega : V \times V \rightarrow \mathbb{R}
@@ -38,3 +39,23 @@ $$
 $$
 \omega(e_{1},e_{2}) = 2,\quad \omega(e_{2},e_{1}) = -2,\quad \omega(e_{1},e_{1}) = 0
 $$
+
+where
+
+- $\omega$ is a $k$-form with $k = 2$.
+
+### General
+
+On $\mathbb{R}^{3}$, a $2$-form has a skew $3 \times 3$ component matrix.
+
+$$
+(\omega_{ij}) = \begin{pmatrix} 0 & 2 & 0 \\ -2 & 0 & 1 \\ 0 & -1 & 0 \end{pmatrix}
+$$
+
+$$
+\omega(u,v) = \sum_{i,j} \omega_{ij}\, u^{i}\, v^{j}
+$$
+
+where
+
+- $\omega_{ij}$ are the components of the $2$-form $\omega$.

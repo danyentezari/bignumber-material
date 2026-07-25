@@ -25,8 +25,9 @@ Note:
 </i>
 
 ## Elementary Example
+### Simple
 
-The k-fold product is the Cartesian product of k copies of one set. Here k equals 2.
+The $2$-fold product is the Cartesian product of two copies of one set.
 
 $$
 V = \{ a,\ b,\ c \}
@@ -37,5 +38,30 @@ V^{2} = V \times V
 $$
 
 $$
-\{ (a,b),\ (b,a),\ (a,c),\ (c,a),\ (b,c),\ (c,b) \} \subset V^{2}
+(a,b),\ (b,a),\ (a,c) \in V^{2}
 $$
+
+where
+
+- $V^{2}$ is the $2$-fold product.
+- $k = 2$ is the number of factors.
+
+### General
+
+The $3$-fold product $V^{3}$ is the set of ordered triples from $V$.
+
+$$
+V = \{ a,\ b,\ c \}
+$$
+
+$$
+V^{3} = V \times V \times V
+$$
+
+$$
+(a,b,c),\ (c,b,a),\ (a,a,b) \in V^{3}
+$$
+
+where
+
+- $V^{3}$ is the domain of a $3$-linear map on $V$.

@@ -51,20 +51,44 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
-Contravariant rank counts upper indices. This type-$(1,0)$ tensor is a vector with one upper index.
-
-$$
-T = v^{1} e_{1} + v^{2} e_{2} + v^{3} e_{3}
-$$
+Contravariant rank $r$ counts upper indices. A vector is type $(1,0)$, so $r = 1$.
 
 $$
-\{ e_{1},\ e_{2},\ e_{3} \}
+v = v^{1} e_{1} + v^{2} e_{2}
 $$
 
 $$
 r = 1,\quad s = 0
 $$
+
+where
+
+- $r$ is the contravariant rank.
+- $s$ is the covariant rank.
+- $v^{1}, v^{2}$ are the upper-index components of $v$.
+
+### General
+
+A type-$(2,0)$ tensor on $\mathbb{R}^{3}$ has contravariant rank $r = 2$ and nine components $T^{ij}$.
+
+$$
+T = \sum_{i,j=1}^{3} T^{ij}\, e_{i} \otimes e_{j}
+$$
+
+$$
+(T^{ij}) = \begin{pmatrix} T^{11} & T^{12} & T^{13} \\ T^{21} & T^{22} & T^{23} \\ T^{31} & T^{32} & T^{33} \end{pmatrix}
+$$
+
+$$
+r = 2,\quad s = 0
+$$
+
+where
+
+- $T^{ij}$ are the two upper-index components of $T$.
+- $e_{i} \otimes e_{j}$ is the basis tensor with those upper indices.
 
 ## References
 

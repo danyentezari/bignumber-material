@@ -12,11 +12,12 @@ Consider [Figure 1](#fig:atlas-charts).
 Exterior dertivatives are differential operators.
 
 ## Elementary Example
+### Simple
 
-Exterior algebra builds alternating products of 1-forms. The wedge of two basis covectors is a 2-form.
+The exterior product of two basis covectors is a $2$-form that changes sign under a swap of vector inputs.
 
 $$
-\{ e^{1},\ e^{2},\ e^{3} \}
+\{ e^{1},\ e^{2} \}
 $$
 
 $$
@@ -26,3 +27,30 @@ $$
 $$
 (e^{1} \wedge e^{2})(e_{1},e_{2}) = 1,\quad (e^{1} \wedge e^{2})(e_{2},e_{1}) = -1
 $$
+
+where
+
+- $e^{1}, e^{2}$ are basis covectors.
+- $\wedge$ is the exterior product.
+- $e_{1}, e_{2}$ are dual basis vectors.
+
+### General
+
+In three dimensions the exterior algebra includes $1$-forms and $2$-forms among three covectors, and $d$ raises degree by one.
+
+$$
+\{ e^{1},\ e^{2},\ e^{3} \}
+$$
+
+$$
+e^{1} \wedge e^{2},\quad e^{1} \wedge e^{3},\quad e^{2} \wedge e^{3}
+$$
+
+$$
+\text{if } f = x^{1},\quad df = e^{1}
+$$
+
+where
+
+- $df$ is the exterior derivative of the function $f$.
+- $e^{1} \wedge e^{2}$ is a basis $2$-form in $\mathbb{R}^{3}$.

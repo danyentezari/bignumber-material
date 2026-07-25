@@ -47,20 +47,43 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
-Smoothness means derivatives exist at each sample point of a finite domain.
-
-$$
-A = \{ -1,\ 0,\ 1,\ 2 \}
-$$
+Smoothness means derivatives exist at sample points. Here a quadratic polynomial is smooth on a finite sample of the line.
 
 $$
-f(-1) = 1,\quad f(0) = 0,\quad f(1) = 1,\quad f(2) = 4
+A = \{ -1,\ 0,\ 1 \}
+$$
+
+$$
+f(x) = x^{2},\quad f(-1) = 1,\quad f(0) = 0,\quad f(1) = 1
 $$
 
 $$
 f'(0) = 0
 $$
+
+where
+
+- $f$ is the smooth function.
+- $f'$ is its derivative.
+
+### General
+
+All higher derivatives of $f(x) = x^{2}$ exist. On a larger sample the same rule holds.
+
+$$
+A = \{ -2,\ -1,\ 0,\ 1,\ 2 \}
+$$
+
+$$
+f(x) = x^{2},\quad f''(x) = 2,\quad f^{(n)}(x) = 0\ \text{for } n \ge 3
+$$
+
+where
+
+- $f''(x)$ is the second derivative.
+- $f^{(n)}$ is the $n$-th derivative.
 
 ## References
 

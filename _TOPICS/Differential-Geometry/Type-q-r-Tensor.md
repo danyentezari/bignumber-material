@@ -54,20 +54,51 @@ Note:
 
 
 ## Elementary Example
+### Simple
 
-A type-$(1,1)$ tensor takes one covector and one vector to a scalar.
+A type-$(0,1)$ tensor is a covector: one lower index and no upper index.
+
+$$
+T : V \rightarrow \mathbb{R}
+$$
+
+$$
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+T(e_{1}) = 1,\quad T(e_{2}) = 0,\quad T(e_{3}) = -1
+$$
+
+$$
+r = 0,\quad s = 1
+$$
+
+where
+
+- $r$ is the contravariant degree.
+- $s$ is the covariant degree.
+
+### General
+
+A type-$(1,1)$ tensor on $\mathbb{R}^{3}$ is a $3 \times 3$ matrix acting as a linear map on components.
 
 $$
 T : V^{*} \times V \rightarrow \mathbb{R}
 $$
 
 $$
-V = \{ e_{1},\ e_{2},\ e_{3} \},\quad V^{*} = \{ e^{1},\ e^{2},\ e^{3} \}
+(T^{i}_{\ j}) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 3 \end{pmatrix}
 $$
 
 $$
-T(e^{1},e_{1}) = 1,\quad T(e^{2},e_{2}) = 1,\quad T(e^{1},e_{2}) = 0
+T^{i}_{\ j}\, v^{j} = w^{i}
 $$
+
+where
+
+- $T^{i}_{\ j}$ are the mixed components of a type-$(1,1)$ tensor.
+- $r = 1$ and $s = 1$.
 
 ## References
 

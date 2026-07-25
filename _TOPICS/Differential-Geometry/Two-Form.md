@@ -20,8 +20,9 @@ where
 </i>
 
 ## Elementary Example
+### Simple
 
-A two-form is antisymmetric on ordered pairs. Swapping the two inputs multiplies the value by minus one.
+A two-form is antisymmetric on ordered pairs of vectors.
 
 $$
 \omega : V \times V \rightarrow \mathbb{R}
@@ -34,3 +35,23 @@ $$
 $$
 \omega(e_{1},e_{2}) = 1,\quad \omega(e_{2},e_{1}) = -1,\quad \omega(e_{1},e_{1}) = 0
 $$
+
+where
+
+- $\omega$ is the two-form.
+
+### General
+
+On $\mathbb{R}^{3}$, a two-form is a skew-symmetric $3 \times 3$ matrix of components.
+
+$$
+(\omega_{ij}) = \begin{pmatrix} 0 & 1 & 2 \\ -1 & 0 & 3 \\ -2 & -3 & 0 \end{pmatrix}
+$$
+
+$$
+\omega(u,v) = \sum_{i,j} \omega_{ij}\, u^{i}\, v^{j},\quad \omega_{ij} = -\omega_{ji}
+$$
+
+where
+
+- $\omega_{ij}$ are the components of $\omega$.
