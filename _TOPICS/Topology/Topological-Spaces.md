@@ -34,3 +34,42 @@ where
 - $N$ is a subset of $X$.
 - $U$ is an open subset of $X$.
 </i>
+
+## Elementary Example
+### Simple
+
+A topological space is a set with a topology. Here three points and four open sets.
+
+$$
+X = \{ 1,\ 2,\ 3 \}
+$$
+
+$$
+\tau = \{ \emptyset,\ \{1\},\ \{1,2\},\ X \}
+$$
+
+where
+
+- $(X,\tau)$ is the topological space.
+
+### General
+
+Hausdorff separation on a discrete four-point space: distinct points have disjoint open neighborhoods.
+
+$$
+X = \{ a,\ b,\ c,\ d \}
+$$
+
+$$
+\tau = \mathcal{P}(X)
+$$
+
+$$
+U_{a} = \{a\},\quad U_{b} = \{b\},\quad U_{a} \cap U_{b} = \emptyset
+$$
+
+where
+
+- $\mathcal{P}(X)$ is the power set, the discrete topology.
+- $U_{a}, U_{b}$ are disjoint neighborhoods of $a$ and $b$.
+

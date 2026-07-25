@@ -15,3 +15,51 @@ where
 - $N$ is a subset of $X$.
 - $U$ is an open subset of $X$.
 </i>
+
+## Elementary Example
+### Simple
+
+A neighborhood of a point contains an open set that contains that point.
+
+$$
+X = \{ 1,\ 2,\ 3 \}
+$$
+
+$$
+\tau = \{ \emptyset,\ \{1\},\ \{1,2\},\ X \}
+$$
+
+$$
+p = 1,\quad U = \{1\},\quad N = \{1,2\}
+$$
+
+$$
+p \in U \subseteq N,\quad U \in \tau
+$$
+
+where
+
+- $p$ is the point.
+- $U$ is an open set.
+- $N$ is a neighborhood of $p$.
+
+### General
+
+On four points, two different neighborhoods of the same point.
+
+$$
+X = \{ a,\ b,\ c,\ d \}
+$$
+
+$$
+\tau = \{ \emptyset,\ \{a\},\ \{a,b\},\ \{a,b,c\},\ X \}
+$$
+
+$$
+p = a,\quad N_{1} = \{a\},\quad N_{2} = \{a,b,c\}
+$$
+
+where
+
+- both $N_{1}$ and $N_{2}$ are neighborhoods of $a$.
+

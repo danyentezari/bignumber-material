@@ -18,6 +18,50 @@ where
 
 </i>
 
+## Elementary Example
+### Simple
+
+Open sets are the members of a topology. On $X = \{1,2,3\}$, the set $\{1\}$ is open in the listed topology.
+
+$$
+X = \{ 1,\ 2,\ 3 \}
+$$
+
+$$
+\tau = \{ \emptyset,\ \{1\},\ \{1,2\},\ X \}
+$$
+
+$$
+\{1\} \in \tau
+$$
+
+where
+
+- $\tau$ is the topology.
+- $\{1\}$ is an open set.
+
+### General
+
+Unions of open sets are open. On four points, unite two open sets.
+
+$$
+X = \{ 1,\ 2,\ 3,\ 4 \}
+$$
+
+$$
+\tau = \{ \emptyset,\ \{1\},\ \{2\},\ \{1,2\},\ X \}
+$$
+
+$$
+\{1\} \cup \{2\} = \{1,2\} \in \tau
+$$
+
+where
+
+- $\{1\}$ and $\{2\}$ are open.
+- their union is open.
+
+
 <i>
 
 **Example 1** (_Open Set_) Let

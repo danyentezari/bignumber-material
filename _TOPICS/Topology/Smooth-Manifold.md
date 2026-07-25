@@ -47,6 +47,46 @@ Note:
 
 </i>
 
+## Elementary Example
+### Simple
+
+A smooth manifold has charts with $C^{\infty}$ transition maps. The line $\mathbb{R}$ with the identity chart is smooth.
+
+$$
+M = \mathbb{R},\quad n = 1
+$$
+
+$$
+\phi : M \rightarrow \mathbb{R},\quad \phi(x) = x
+$$
+
+where
+
+- $\phi$ is a coordinate chart.
+- the identity transition is $C^{\infty}$.
+
+### General
+
+On $\mathbb{R}^{2}$, two overlapping charts with smooth overlap give a smooth atlas.
+
+$$
+M = \mathbb{R}^{2}
+$$
+
+$$
+\phi(x,y) = (x,y),\quad \psi(x,y) = (x+1,y)
+$$
+
+$$
+\psi \circ \phi^{-1}(u,v) = (u+1,v)
+$$
+
+where
+
+- $\phi, \psi$ are charts.
+- $\psi \circ \phi^{-1}$ is a $C^{\infty}$ transition map.
+
+
 ## References
 
 1. Frankel, T. *The Geometry of Physics*, 3rd ed. Cambridge University Press. — $C^{\infty}$ manifold; Hausdorff, second-countable; smooth transition maps $f_{VU}$.

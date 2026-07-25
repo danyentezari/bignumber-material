@@ -28,3 +28,38 @@ Let's look at a more formal definition of a manifold.
 </i>
 
 **Definition** (_Smooth Manifold_)
+
+## Elementary Example
+### Simple
+
+A curve is a $1$-dimensional manifold: locally it looks like a line.
+
+$$
+n = 1
+$$
+
+$$
+M \text{ locally homeomorphic to open intervals in }\mathbb{R}
+$$
+
+where
+
+- $n$ is the dimension.
+- $M$ is the manifold.
+
+### General
+
+A surface is a $2$-manifold; higher dimensions are $n$-manifolds.
+
+$$
+n = 2:\ \text{surface locally like open sets in }\mathbb{R}^{2}
+$$
+
+$$
+n = 3:\ \text{solid region locally like open sets in }\mathbb{R}^{3}
+$$
+
+where
+
+- a topological manifold is Hausdorff, second countable, and locally Euclidean of dimension $n$.
+

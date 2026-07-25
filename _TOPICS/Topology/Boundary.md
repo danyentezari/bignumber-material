@@ -44,6 +44,48 @@ Note:
 
 </i>
 
+## Elementary Example
+### Simple
+
+The boundary is closure minus interior. For a half-open interval, the boundary is the two endpoints.
+
+$$
+U = [a,b)
+$$
+
+$$
+U^{\circ} = (a,b),\quad \overline{U} = [a,b]
+$$
+
+$$
+b(U) = \overline{U} \setminus U^{\circ} = \{ a,\ b \}
+$$
+
+where
+
+- $U$ is the subset.
+- $U^{\circ}$ is the interior of $U$.
+- $\overline{U}$ is the closure of $U$.
+- $b(U)$ is the boundary of $U$.
+
+### General
+
+Open, closed, and half-open intervals with the same endpoints share the same boundary.
+
+$$
+(a,b),\ [a,b],\ [a,b),\ (a,b]
+$$
+
+$$
+b(U) = \{ a,\ b \}
+$$
+
+where
+
+- $a$ and $b$ are real numbers with $a < b$.
+- $b(U)$ is the common boundary set for each of those intervals $U$.
+
+
 ## References
 
 1. Nash, C., & Sen, S. *Topology and Geometry for Physicists*. Academic Press, 1983. — $b(U') = \overline{U'} \setminus U'^{\circ}$; example $U=[a,b)$ gives $b(U)=\{a,b\}$.

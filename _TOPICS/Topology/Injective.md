@@ -22,3 +22,42 @@ Note:
 - for an injective function, each element of the co-domain is the image of at most one element of the domain.
 
 </i>
+
+## Elementary Example
+### Simple
+
+An injective map sends distinct inputs to distinct outputs.
+
+$$
+F : X \rightarrow Y
+$$
+
+$$
+X = \{ 1,\ 2,\ 3 \},\quad Y = \{ a,\ b,\ c,\ d \}
+$$
+
+$$
+F(1) = a,\quad F(2) = b,\quad F(3) = d
+$$
+
+where
+
+- $F$ is injective because all three values are different.
+- $X$ is the domain and $Y$ is the codomain.
+
+### General
+
+On larger sets, injectivity still means $F(x_{1}) = F(x_{2})$ forces $x_{1} = x_{2}$.
+
+$$
+X = \{ 1,\ 2,\ 3,\ 4 \},\quad Y = \{ 10,\ 20,\ 30,\ 40,\ 50 \}
+$$
+
+$$
+F(n) = 10n
+$$
+
+where
+
+- $F(1), F(2), F(3), F(4)$ are four distinct values.
+

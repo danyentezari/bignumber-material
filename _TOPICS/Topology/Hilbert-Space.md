@@ -73,6 +73,47 @@ Note:
 
 </i>
 
+## Elementary Example
+### Simple
+
+A Hilbert space is a complete inner product space. The plane $\mathbb{R}^{2}$ with the dot product is Hilbert.
+
+$$
+H = \mathbb{R}^{2}
+$$
+
+$$
+\langle (x_{1},x_{2}), (y_{1},y_{2}) \rangle = x_{1} y_{1} + x_{2} y_{2}
+$$
+
+$$
+\lVert v \rVert = \sqrt{\langle v,v \rangle}
+$$
+
+where
+
+- $H$ is the Hilbert space.
+- $\langle \cdot,\cdot \rangle$ is the inner product.
+- $\lVert \cdot \rVert$ is the induced norm.
+
+### General
+
+The space $\ell^{2}$ of square-summable sequences is an infinite-dimensional Hilbert space.
+
+$$
+\ell^{2} = \left\{ x = (\xi_{j}) : \sum_{j=1}^{\infty} |\xi_{j}|^{2} < \infty \right\}
+$$
+
+$$
+\langle x,y \rangle = \sum_{j=1}^{\infty} \xi_{j} \overline{\eta_{j}}
+$$
+
+where
+
+- $x = (\xi_{j})$ and $y = (\eta_{j})$ are sequences in $\ell^{2}$.
+- completeness means every Cauchy sequence in $\ell^{2}$ converges in $\ell^{2}$.
+
+
 ## References
 
 1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — $\ell^{2}$ as sequences with $\sum|\xi_{j}|^{2}<\infty$; completeness §1.5-4.

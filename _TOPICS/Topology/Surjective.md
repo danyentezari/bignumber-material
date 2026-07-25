@@ -21,3 +21,42 @@ Note:
 - $F(X) = Y$ means the range of the function equals its co-domain.
 
 </i>
+
+## Elementary Example
+### Simple
+
+A surjective map hits every element of the codomain.
+
+$$
+F : X \rightarrow Y
+$$
+
+$$
+X = \{ 1,\ 2,\ 3 \},\quad Y = \{ a,\ b \}
+$$
+
+$$
+F(1) = a,\quad F(2) = b,\quad F(3) = a
+$$
+
+where
+
+- every element of $Y$ is $F(x)$ for some $x \in X$.
+- $F(X) = Y$.
+
+### General
+
+A projection from a product onto one factor is surjective.
+
+$$
+X = \{ 1,\ 2,\ 3 \} \times \{ a,\ b \},\quad Y = \{ 1,\ 2,\ 3 \}
+$$
+
+$$
+F(n,y) = n
+$$
+
+where
+
+- $F$ hits each of $1, 2, 3$.
+

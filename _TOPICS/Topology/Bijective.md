@@ -16,3 +16,42 @@ where
 - $Y$ is the co-domain of $F$
 
 </i>
+
+## Elementary Example
+### Simple
+
+A bijective map is injective and surjective: a one-to-one correspondence.
+
+$$
+F : X \rightarrow Y
+$$
+
+$$
+X = \{ 1,\ 2,\ 3 \},\quad Y = \{ a,\ b,\ c \}
+$$
+
+$$
+F(1) = a,\quad F(2) = b,\quad F(3) = c
+$$
+
+where
+
+- $F$ is injective and surjective.
+- $X$ and $Y$ have the same number of elements.
+
+### General
+
+A shift on four labeled points is bijective.
+
+$$
+X = Y = \{ 1,\ 2,\ 3,\ 4 \}
+$$
+
+$$
+F(1) = 2,\quad F(2) = 3,\quad F(3) = 4,\quad F(4) = 1
+$$
+
+where
+
+- $F$ is a bijection from $X$ onto itself.
+

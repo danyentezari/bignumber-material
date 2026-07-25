@@ -114,3 +114,51 @@ where
 - $Y$ is the co-domain of $F$
 
 </i>
+
+## Elementary Example
+### Simple
+
+A preimage collects inputs; an inverse function exists only for a bijection and returns single inputs.
+
+$$
+f : X \rightarrow Y
+$$
+
+$$
+X = \{ 1,\ 2,\ 3 \},\quad Y = \{ a,\ b,\ c \}
+$$
+
+$$
+f(1)=a,\ f(2)=b,\ f(3)=c
+$$
+
+$$
+f^{-1}(\{a,b\}) = \{ 1,\ 2 \},\quad f^{-1}(a) = 1
+$$
+
+where
+
+- $f^{-1}(\{a,b\})$ is a preimage set.
+- $f^{-1}(a)$ is the inverse-function value at $a$.
+
+### General
+
+If $f$ is not injective, preimages of points may have several elements, so no inverse function exists.
+
+$$
+X = \{ 1,\ 2,\ 3,\ 4 \},\quad Y = \{ a,\ b \}
+$$
+
+$$
+f(1)=a,\ f(2)=a,\ f(3)=b,\ f(4)=b
+$$
+
+$$
+f^{-1}(\{a\}) = \{ 1,\ 2 \}
+$$
+
+where
+
+- $f^{-1}(\{a\})$ is a preimage with two elements.
+- $f$ is not bijective, so $f^{-1}$ as a function $Y \rightarrow X$ does not exist.
+
