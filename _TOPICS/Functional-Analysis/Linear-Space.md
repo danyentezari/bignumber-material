@@ -29,6 +29,42 @@ where
 
 </i>
 
+## Elementary Example
+### Simple
+
+A linear space has vector addition and scalar multiplication. On three labeled vectors in $\mathbb{R}$, addition is ordinary.
+
+$$
+X = \{ 0,\ 1,\ -1 \}
+$$
+
+$$
+1 + (-1) = 0,\quad 2 \cdot 1 = 2\ \text{in }\mathbb{R}
+$$
+
+where
+
+- $X$ illustrates elements of a real vector space.
+- the ambient operations are those of $\mathbb{R}$ as a vector space over itself.
+
+### General
+
+The space $\mathbb{R}^{3}$ is a linear space: add componentwise and multiply by scalars.
+
+$$
+X = \mathbb{R}^{3}
+$$
+
+$$
+(1,0,0) + (0,2,0) = (1,2,0),\quad 3(0,1,0) = (0,3,0)
+$$
+
+where
+
+- $X$ is the set of vectors.
+- the scalar field is $K = \mathbb{R}$.
+
+
 ## References
 
 1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — Definition 2.1-1 (Vector space).

@@ -25,3 +25,34 @@ Note:
 - the completeness relation is also called the resolution of the identity.
 
 </i>
+
+## Elementary Example
+### Simple
+
+A set is a collection of elements. Here a three-element set of numbers.
+
+$$
+A = \{ 1,\ 2,\ 3 \}
+$$
+
+where
+
+- $A$ is the set.
+- $1, 2, 3$ are its elements.
+
+### General
+
+Sets of vectors are the building blocks of linear spaces. Here a basis set in $\mathbb{R}^{3}$.
+
+$$
+B = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+e_{1} = (1,0,0),\quad e_{2} = (0,1,0),\quad e_{3} = (0,0,1)
+$$
+
+where
+
+- $B$ is a set of vectors.
+

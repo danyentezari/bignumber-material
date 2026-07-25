@@ -1,6 +1,6 @@
 # Norm
 
-A norm is a function that associates a real number with a vector, and it that is used for measuring the distance between vectors.
+A norm is a function that associates a real number with a vector, that is used for measuring the distance between vectors.
 
 <i>
 
@@ -26,6 +26,45 @@ Note:
 - The normed space is denoted $(X, \lVert\cdot\rVert)$ or simply $X$.
 
 </i>
+
+## Elementary Example
+### Simple
+
+A norm assigns a nonnegative length to each vector. On $\mathbb{R}^{2}$ use the Euclidean length.
+
+$$
+X = \mathbb{R}^{2}
+$$
+
+$$
+\lVert (x_{1},x_{2}) \rVert = \sqrt{x_{1}^{2} + x_{2}^{2}}
+$$
+
+$$
+\lVert (3,4) \rVert = 5,\quad \lVert (0,0) \rVert = 0
+$$
+
+where
+
+- $\lVert x \rVert$ is the norm of the vector $x$.
+- $X$ is the vector space.
+
+### General
+
+On $\mathbb{R}^{3}$ the same Euclidean norm has three squared components, and it induces the metric $d(x,y) = \lVert x - y \rVert$.
+
+$$
+\lVert (x_{1},x_{2},x_{3}) \rVert = \sqrt{x_{1}^{2} + x_{2}^{2} + x_{3}^{2}}
+$$
+
+$$
+d(x,y) = \lVert x - y \rVert
+$$
+
+where
+
+- $d$ is the metric induced by the norm.
+
 
 ## References
 

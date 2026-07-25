@@ -27,6 +27,41 @@ where
 
 </i>
 
+## Elementary Example
+### Simple
+
+A normed space is a vector space with a norm. Take $\mathbb{R}^{2}$ with the Euclidean norm.
+
+$$
+X = \mathbb{R}^{2},\quad \lVert (x_{1},x_{2}) \rVert = \sqrt{x_{1}^{2} + x_{2}^{2}}
+$$
+
+$$
+d(x,y) = \lVert x - y \rVert
+$$
+
+where
+
+- $(X,\lVert\cdot\rVert)$ is the normed space.
+- $d$ is the metric induced by the norm.
+
+### General
+
+The space $\mathbb{R}^{3}$ with the Euclidean norm is a normed space whose induced metric is the usual distance in three dimensions.
+
+$$
+X = \mathbb{R}^{3},\quad \lVert x \rVert = \sqrt{x_{1}^{2} + x_{2}^{2} + x_{3}^{2}}
+$$
+
+$$
+d(x,y) = \lVert x - y \rVert
+$$
+
+where
+
+- $x = (x_{1},x_{2},x_{3})$ is a vector in $X$.
+
+
 ## References
 
 1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — Definition 2.2-1 (Normed space, Banach space).

@@ -26,6 +26,41 @@ where
 
 </i>
 
+## Elementary Example
+### Simple
+
+The space $\ell^{p}$ consists of $p$-summable sequences with the $p$-norm. For $p = 1$, a three-term sequence is an element after zero-padding.
+
+$$
+p = 1,\quad x = (1,-2,3,0,0,\ldots)
+$$
+
+$$
+\lVert x \rVert = |1| + |-2| + |3| = 6
+$$
+
+where
+
+- $\ell^{p}$ is the set of all such sequences.
+- $\lVert x \rVert$ is the $\ell^{p}$ norm.
+
+### General
+
+For $p = 2$, distance between two sequences uses the $\ell^{2}$ metric.
+
+$$
+x = (1,0,0,\ldots),\quad y = (0,1,0,\ldots),\quad p = 2
+$$
+
+$$
+d(x,y) = \bigl(|1-0|^{2} + |0-1|^{2}\bigr)^{1/2} = \sqrt{2}
+$$
+
+where
+
+- $d(x,y) = \lVert x - y \rVert$ is Kreyszig’s metric on $\ell^{p}$.
+
+
 ## References
 
 1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — 1.2-3 Space $\ell^{p}$; 2.2-3 Space $\ell^{p}$ as Banach space with $p$-norm.

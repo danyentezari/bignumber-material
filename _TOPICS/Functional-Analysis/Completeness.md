@@ -17,6 +17,37 @@ Note:
 
 </i>
 
+## Elementary Example
+### Simple
+
+A metric space is complete when every Cauchy sequence converges in the space. The real line is complete.
+
+$$
+X = \mathbb{R},\quad d(x,y) = |x - y|
+$$
+
+$$
+x_{n} = \dfrac{1}{n} \text{ is Cauchy and } x_{n} \to 0 \in \mathbb{R}
+$$
+
+where
+
+- $X$ is the metric space.
+- completeness means every Cauchy sequence has a limit in $X$.
+
+### General
+
+The plane $\mathbb{R}^{2}$ with the Euclidean metric is complete: every Cauchy sequence of points converges to a point of $\mathbb{R}^{2}$.
+
+$$
+X = \mathbb{R}^{2},\quad d(x,y) = \sqrt{(x_{1}-y_{1})^{2} + (x_{2}-y_{2})^{2}}
+$$
+
+where
+
+- Kreyszig records that $\mathbb{R}$ and $\mathbb{C}$ are complete; the same holds for $\mathbb{R}^{n}$.
+
+
 ## References
 
 1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — Definition 1.4-3 (completeness); Theorem 1.4-4 (real line, complex plane).

@@ -66,6 +66,49 @@ He replaced the assumption of quadratic integrability by the integrability of $|
 Each number $p$ greater than $1$ determines a function class $L^{p}$.
 The letter $p$ names that power in $|f|^{p}$.
 
+## Elementary Example
+### Simple
+
+The parameter $p$ is a real number at least $1$. The choice $p = 1$ gives the sum of absolute values.
+
+$$
+p = 1
+$$
+
+$$
+\lVert x \rVert_{1} = |\xi_{1}| + |\xi_{2}| + |\xi_{3}|
+$$
+
+$$
+x = (\xi_{1},\xi_{2},\xi_{3}) = (1,-2,3),\quad \lVert x \rVert_{1} = 6
+$$
+
+where
+
+- $p$ is the exponent parameter.
+- $\lVert x \rVert_{p}$ is the $p$-norm.
+
+### General
+
+For $p = 2$ the same three-term sequence uses squares under a square root.
+
+$$
+p = 2
+$$
+
+$$
+\lVert x \rVert_{2} = \bigl(|\xi_{1}|^{2} + |\xi_{2}|^{2} + |\xi_{3}|^{2}\bigr)^{1/2}
+$$
+
+$$
+x = (1,-2,3),\quad \lVert x \rVert_{2} = \sqrt{14}
+$$
+
+where
+
+- $p \geq 1$ labels the family of $p$-norms.
+
+
 ## References
 
 1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — fixed $p\geq 1$ in $\ell^{p}$ and $L^{p}$; conjugate exponents $\dfrac{1}{p} + \dfrac{1}{q}=1$.

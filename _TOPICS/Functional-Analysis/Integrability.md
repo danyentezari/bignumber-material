@@ -23,6 +23,45 @@ Note:
 
 </i>
 
+## Elementary Example
+### Simple
+
+Integrability means $\int |f|$ is finite. On three sample heights, the discrete stand-in is a finite sum of absolute values.
+
+$$
+A = \{ 1,\ 2,\ 3 \}
+$$
+
+$$
+f(1) = -1,\quad f(2) = 2,\quad f(3) = -3
+$$
+
+$$
+\sum_{a \in A} |f(a)| = 6 < \infty
+$$
+
+where
+
+- $f$ is the function.
+- the sum is a discrete model of $\int |f|$.
+
+### General
+
+On an interval, absolute integrability is finiteness of the integral of $|f|$.
+
+$$
+f(x) = e^{-|x|}\ \text{on }\mathbb{R}
+$$
+
+$$
+\int_{-\infty}^{\infty} |f(x)|\, dx = 2 < \infty
+$$
+
+where
+
+- $\lVert f \rVert_{1} = \int |f|\, ds$ is the $L^{1}$-norm.
+
+
 ## References
 
 1. Pietsch, A. *History of Banach Spaces and Linear Operators*. Birkhäuser, 2007. — integrability conditions underlying $L^{p}$ via integrals of powers of $|f|$.

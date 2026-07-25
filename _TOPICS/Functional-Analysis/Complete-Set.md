@@ -25,3 +25,42 @@ Note:
 - the completeness relation is also called the resolution of the identity.
 
 </i>
+
+## Elementary Example
+### Simple
+
+A complete set spans a dense subspace. In $\mathbb{R}^{2}$, the two standard basis vectors form a complete set.
+
+$$
+M = \{ e_{1},\ e_{2} \}
+$$
+
+$$
+e_{1} = (1,0),\quad e_{2} = (0,1)
+$$
+
+$$
+\operatorname{span} M = \mathbb{R}^{2}
+$$
+
+where
+
+- $M$ is the set being tested for completeness.
+- $\operatorname{span} M$ is the set of finite linear combinations of members of $M$.
+
+### General
+
+In $\mathbb{R}^{3}$, the three standard basis vectors form a complete set: only the zero vector is orthogonal to all three.
+
+$$
+M = \{ e_{1},\ e_{2},\ e_{3} \}
+$$
+
+$$
+\operatorname{span} M = \mathbb{R}^{3}
+$$
+
+where
+
+- if $\langle v, e_{i} \rangle = 0$ for $i = 1,2,3$, then $v = 0$.
+

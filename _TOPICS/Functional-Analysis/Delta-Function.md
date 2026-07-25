@@ -20,6 +20,42 @@ where
 
 </i>
 
+## Elementary Example
+### Simple
+
+The delta distribution is concentrated at one point. Informally, it vanishes off $0$ and has total integral $1$.
+
+$$
+\delta(x) = 0\ \text{for } x \neq 0
+$$
+
+$$
+\int_{-\infty}^{\infty} \delta(x)\, dx = 1
+$$
+
+where
+
+- $\delta$ is the Dirac delta.
+- $x$ is the real variable.
+
+### General
+
+Against a continuous test function, delta sifts out the value at the center point $a$.
+
+$$
+\int_{-\infty}^{\infty} f(x)\, \delta(x - a)\, dx = f(a)
+$$
+
+$$
+a = 2,\quad f(x) = x^{2},\quad \int f(x)\, \delta(x-2)\, dx = 4
+$$
+
+where
+
+- $f$ is a continuous test function.
+- $a$ is the point where $\delta$ is centered.
+
+
 ## References
 
 1. Griffel, D. H. *Applied Functional Analysis*. Ellis Horwood, 1981. — Example 1.24 (sifting property; $\delta$ as a distribution).
