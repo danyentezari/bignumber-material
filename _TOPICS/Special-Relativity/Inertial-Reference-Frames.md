@@ -1,6 +1,8 @@
 # Inertial Reference Frames
 
-A coordinate system in which a free particle with no external forces stays at rest or moves in a straight line at constant speed.
+A reference frame in which Newton’s first law holds that is used to state the laws of mechanics without fictitious forces from acceleration of the axes.
+
+Note: Also called an inertial frame. See [Inertial Frame](Inertial-Frame.md).
 
 ## References
 

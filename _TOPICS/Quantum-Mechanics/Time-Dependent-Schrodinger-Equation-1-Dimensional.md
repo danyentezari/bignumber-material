@@ -1,5 +1,7 @@
 # Time Dependent Schrodinger Equation 1-Dimensional
 
+The linear partial differential equation that is used to calculate the spatial and temporal evolution of a particle's wavefunction along a single axis.
+
 <i>
 
 **definition** (*Time Dependent Schrodinger Equation 1-Dimensional*) The specific case of the fundamental law of quantum mechanics tailored for a single particle of mass $m$ constrained to move in one dimension along the $x$-axis. It serves as a direct quantum analog to Newton’s second law, determining the particle's wave function $\Psi(x, t)$ for all future time given the potential energy $V(x, t)$ and initial conditions. It is expressed as:
@@ -17,3 +19,7 @@ where
 - $t$ is time.
 
 </i>
+
+## References
+
+1. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — one-dimensional time-dependent Schrödinger equation. — source for the heading explanation.

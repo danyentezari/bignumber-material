@@ -1,5 +1,14 @@
 # Schrodinger Equations
 
+The family of linear differential equations that is used to describe the wave-particle behavior and probability densities of non-relativistic particles.
+
+Related definitions:
+
+- [Schrodinger Equation Time-Independent](Schrodinger-Equation-Time-Independent.md)
+- [Time Dependent Schrodinger Equation 1-Dimensional](Time-Dependent-Schrodinger-Equation-1-Dimensional.md)
+- [Time Dependent Schrodinger Equation Generalized](Time-Dependent-Schrodinger-Equation-Generalized.md)
+
+
 <i>
 
 **definition** (*Time Dependent Schrödinger Equation 1-Dimensional*) The specific case of the fundamental law of quantum mechanics tailored for a single particle of mass $m$ constrained to move in one dimension along the $x$-axis. It serves as a direct quantum analog to Newton’s second law, determining the particle's wave function $\Psi(x, t)$ for all future time given the potential energy $V(x, t)$ and initial conditions. It is expressed as:
@@ -68,3 +77,7 @@ Note:
 In one dimension, this is explicitly written as:
 
 - $-\dfrac{\hbar^2}{2m} \dfrac{d^2\psi}{dx^2} + V\psi = E\psi$.
+
+## References
+
+1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — Schrödinger equations as the non-relativistic quantum dynamical law. — source for the heading explanation.

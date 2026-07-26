@@ -1,5 +1,7 @@
 # Time Dependent Schrodinger Equation Generalized
 
+The fundamental state-space equation that is used to describe how any quantum system's state vector evolves over time under a Hamiltonian operator.
+
 <i>
 
 **definition** (*Time Dependent Schrodinger Equation  -  Generalized*) The coordinate-independent and dimension-independent form of the fundamental law of quantum mechanics. This abstract version represents the general principle that a quantum state changes continuously and unitarily over time, governing the evolution of any quantum system - including those with multiple particles or non-spatial degrees of freedom. The general time-dependent form is:
@@ -21,3 +23,7 @@ Note:
 - the total energy is kinetic energy plus potential energy.
 
 </i>
+
+## References
+
+1. Das, T. K. *Quantum Mechanics: Axiomatic Approach and Understanding Through Mathematics*. Springer, 2023. — Hilbert-space time-dependent Schrödinger equation. — source for the heading explanation.
