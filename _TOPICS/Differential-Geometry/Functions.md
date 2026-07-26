@@ -49,7 +49,7 @@ Note:
 ## Elementary Example
 ### Simple
 
-A function sends each domain element to exactly one codomain value.
+A function maps each domain element to exactly one codomain value.
 
 $$
 f : A \rightarrow B

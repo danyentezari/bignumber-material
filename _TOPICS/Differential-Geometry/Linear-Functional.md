@@ -20,7 +20,7 @@ where
 ## Elementary Example
 ### Simple
 
-A linear functional sends each vector to a scalar.
+A linear functional maps each vector to a scalar.
 
 $$
 f : V \rightarrow \mathbb{R}

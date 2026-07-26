@@ -1,0 +1,3 @@
+# Planck Relation
+
+($E = hf$).

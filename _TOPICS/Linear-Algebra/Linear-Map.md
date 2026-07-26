@@ -40,7 +40,7 @@ where
 
 Note:
 
-- $\phi$ sends a vector in $\mathbb{R}^{3}$ to a vector in $\mathbb{R}^{2}$.
+- $\phi$ maps a vector in $\mathbb{R}^{3}$ to a vector in $\mathbb{R}^{2}$.
 - matrix multiplication by $A$ implements $\phi$ on column vectors.
 
 </i>

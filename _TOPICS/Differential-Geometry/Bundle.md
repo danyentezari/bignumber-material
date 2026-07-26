@@ -30,7 +30,7 @@ Note:
 
 - $T^{r}_{\ s}(M) = \bigcup_{P \in M} T^{r}_{\ s,P}(M)$ ,
 
-with projection sending each tensor to its base point $P$.
+with projection mapping each tensor to its base point $P$.
 
 where
 
@@ -51,7 +51,7 @@ Note:
 ## Elementary Example
 ### Simple
 
-A trivial bundle is the product of a base and a fiber. The projection $\pi$ sends each pair to its base point.
+A trivial bundle is the product of a base and a fiber. The projection $\pi$ maps each pair to its base point.
 
 $$
 \pi : E \rightarrow M

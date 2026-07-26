@@ -1,5 +1,6 @@
 # Wave-Particle Duality
 
-**de Broglie wavelength**
+Related definitions:
 
-**Photon Momentum** ($p = h/\lambda$)
+- [de Broglie Wavelength](De-Broglie-Wavelength.md)
+- [Photon Momentum](Photon-Momentum.md)

@@ -1,9 +1,8 @@
-# Quantum States (Schrodinger Equation)
+# Quantum States
 
-**Bohr Radius**
+Related definitions:
 
-**Hydrogen Energy Levels**
-
-**atomic orbitals**
-
-**wavefunctions**
+- [Bohr Radius](Bohr-Radius.md)
+- [Hydrogen Energy Levels](Hydrogen-Energy-Levels.md)
+- [Atomic Orbitals](Atomic-Orbitals.md)
+- [Wavefunctions](Wavefunctions.md)

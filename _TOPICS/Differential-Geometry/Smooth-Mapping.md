@@ -43,7 +43,7 @@ where
 ## Elementary Example
 ### Simple
 
-A smooth mapping sends each domain point to a unique image. A finite sample of $f(x) = x^{2}$ shows the rule.
+A smooth mapping maps each domain point to a unique image. A finite sample of $f(x) = x^{2}$ shows the rule.
 
 $$
 f : A \rightarrow B

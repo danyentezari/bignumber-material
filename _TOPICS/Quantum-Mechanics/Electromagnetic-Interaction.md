@@ -1,15 +1,11 @@
 # Electromagnetic Interaction
 
-**Dipole Selection Rules**
+Related definitions:
 
-**Einstein Coefficients**
-
-**Fermi's Golden Rule**
-
-**absorption**
-
-**spontaneous emission**
-
-**stimulated emission**
-
-**electromagnetic radiation**
+- [Dipole Selection Rules](Dipole-Selection-Rules.md)
+- [Einstein Coefficients](Einstein-Coefficients.md)
+- [Fermi's Golden Rule](Fermis-Golden-Rule.md)
+- [Absorption](Absorption.md)
+- [Spontaneous Emission](Spontaneous-Emission.md)
+- [Stimulated Emission](Stimulated-Emission.md)
+- [Electromagnetic Radiation](Electromagnetic-Radiation.md)

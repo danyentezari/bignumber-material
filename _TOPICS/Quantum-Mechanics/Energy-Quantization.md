@@ -1,7 +1,7 @@
 # Energy Quantization
 
-**Planck Relation** ($E = hf$)
+Related definitions:
 
-**Conservation of Energy Transition Law** ($E_{\text{photon}} = \Delta E_{\text{atom}}$)
-
-**Rydberg Formula**
+- [Planck Relation](Planck-Relation.md)
+- [Conservation of Energy Transition Law](Conservation-of-Energy-Transition-Law.md)
+- [Rydberg Formula](Rydberg-Formula.md)

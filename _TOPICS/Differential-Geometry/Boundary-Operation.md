@@ -1,6 +1,6 @@
 # Boundary Operation
 
-A mapping that sends a domain to its edge that is used to relate a definite integral over a domain to a definite integral on that edge.
+A mapping that maps a domain to its edge that is used to relate a definite integral over a domain to a definite integral on that edge.
 
 Note: Also written $\partial$. Also called boundary operator.
 
@@ -62,7 +62,7 @@ Before the boundary operation acts, one has a domain set $A$. After the boundary
 
 - $A = [a,b] = \{ x \in \mathbb{R} : a \le x \le b \}$ .
 
-After: the boundary operation sends $A$ to the edge set of endpoints
+After: the boundary operation maps $A$ to the edge set of endpoints
 
 - $B = \partial A = \{ a, b \}$ .
 
@@ -82,7 +82,7 @@ where
 
 - $A = \overline{B}^{2} = \{ x \in \mathbb{R}^{2} : |x| \le 1 \}$ .
 
-After: the boundary operation sends $A$ to the unit circle
+After: the boundary operation maps $A$ to the unit circle
 
 - $B = \partial A = S^{1} = \{ x \in \mathbb{R}^{2} : |x| = 1 \}$ .
 
@@ -102,7 +102,7 @@ where
 
 - $A = \mathbb{H}^{n} = \{ (x_{1},\ldots,x_{n}) \in \mathbb{R}^{n} : x_{n} \ge 0 \}$ .
 
-After: the boundary operation sends $A$ to
+After: the boundary operation maps $A$ to
 
 - $B = \partial A = \partial \mathbb{H}^{n} = \{ (x_{1},\ldots,x_{n}) \in \mathbb{R}^{n} : x_{n} = 0 \}$ .
 
@@ -158,7 +158,7 @@ where
 ## Elementary Example
 ### Simple
 
-The boundary operation $\partial$ sends a domain set $A$ to its edge set $B = \partial A$.
+The boundary operation $\partial$ maps a domain set $A$ to its edge set $B = \partial A$.
 
 $$
 A = \{ a,\ b,\ c,\ d \}

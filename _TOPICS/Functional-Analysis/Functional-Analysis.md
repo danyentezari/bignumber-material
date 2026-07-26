@@ -22,7 +22,7 @@ where
 
 ### General
 
-Operators act on those points. A linear operator $T$ can send each sample function to another function.
+Operators act on those points. A linear operator $T$ can map each sample function to another function.
 
 $$
 T : X \rightarrow Y

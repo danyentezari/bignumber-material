@@ -1,9 +1,7 @@
 # Relativistic Electrodynamics
 
-($\mathbf{F} = q(\mathbf{E} + \mathbf{v} \times \mathbf{B})$) (Lorentz force).
+Related definitions:
 
-**Electromagnetic field transformations**
-
-**magnetism as a relativistic effect**
-
-**field tensor**
+- [Electromagnetic Field Transformations](Electromagnetic-Field-Transformations.md)
+- [Magnetism as a Relativistic Effect](Magnetism-as-a-Relativistic-Effect.md)
+- [Field Tensor](Field-Tensor.md)

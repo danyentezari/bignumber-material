@@ -1,6 +1,6 @@
 # Injective
 
-An injective mapping is a function that sends distinct elements to distinct values that is used to express uniqueness of solutions of mapping equations.
+An injective mapping is a function that maps distinct elements to distinct values that is used to express uniqueness of solutions of mapping equations.
 
 <i>
 
@@ -26,7 +26,7 @@ Note:
 ## Elementary Example
 ### Simple
 
-An injective map sends distinct inputs to distinct outputs.
+An injective map maps distinct inputs to distinct outputs.
 
 $$
 F : X \rightarrow Y

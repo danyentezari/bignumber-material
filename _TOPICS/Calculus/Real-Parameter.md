@@ -10,7 +10,7 @@ Note: Also called parameter. Also described as a real number constant in the sam
 
 - $\boldsymbol{\alpha}: I \rightarrow \mathbb{R}^{3}$
 
-of an open interval $I = (a,b)$ of the real line $\mathbb{R}$ into $\mathbb{R}^{3}$. Differentiable means that each $t \in I$ is sent to a point
+of an open interval $I = (a,b)$ of the real line $\mathbb{R}$ into $\mathbb{R}^{3}$. Differentiable means that each $t \in I$ is mapped to a point
 
 - $\boldsymbol{\alpha}(t) = \bigl(x(t),\, y(t),\, z(t)\bigr)$
 
