@@ -1,3 +1,3 @@
 # Special Relativity
 
-reference frames inertial reference frame lorentz transformation minkowski spaxe.
+The theory of space and time for inertial frames at constant relative velocity, featuring time dilation, length contraction, and mass-energy equivalence.
