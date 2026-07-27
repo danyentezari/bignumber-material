@@ -77,6 +77,7 @@ rmd_files:
   - "../_BOOK/generated/Quantum-Mechanics/Electromagnetic-Radiation.md"
   - "../_BOOK/generated/Quantum-Mechanics/Electron-Configurations.md"
   - "../_BOOK/generated/Quantum-Mechanics/Energy-Quantization.md"
+  - "../_BOOK/generated/Quantum-Mechanics/Expectation-Values.md"
   - "../_BOOK/generated/Quantum-Mechanics/Fermis-Golden-Rule.md"
   - "../_BOOK/generated/Quantum-Mechanics/Hunds-Rule.md"
   - "../_BOOK/generated/Quantum-Mechanics/Hydrogen-Energy-Levels.md"
