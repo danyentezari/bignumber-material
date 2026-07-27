@@ -107,6 +107,7 @@ rmd_files:
   - "../_BOOK/generated/Special-Relativity/Events.md"
   - "../_BOOK/generated/Special-Relativity/Field-Tensor.md"
   - "../_BOOK/generated/Special-Relativity/Four-Momentum.md"
+  - "../_BOOK/generated/Special-Relativity/Four-Potential.md"
   - "../_BOOK/generated/Special-Relativity/Frame.md"
   - "../_BOOK/generated/Special-Relativity/Gravitational-Potential-Energy-Formula-Derivation.md"
   - "../_BOOK/generated/Special-Relativity/Inertial-Frame.md"
