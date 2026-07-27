@@ -131,6 +131,7 @@ rmd_files:
   - "../_BOOK/generated/Special-Relativity/Principle-of-Relativity.md"
   - "../_BOOK/generated/Special-Relativity/Proper-Length.md"
   - "../_BOOK/generated/Special-Relativity/Proper-Time.md"
+  - "../_BOOK/generated/Special-Relativity/Rapidity.md"
   - "../_BOOK/generated/Special-Relativity/Reference-Frames.md"
   - "../_BOOK/generated/Special-Relativity/Relativistic-Electrodynamics.md"
   - "../_BOOK/generated/Special-Relativity/Relativistic-Kinetic-Energy-Formula-Derivation.md"
