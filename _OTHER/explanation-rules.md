@@ -143,7 +143,8 @@ Always write fractions with `\dfrac{...}{...}`. Do not use `\frac`, `\tfrac`, or
 
 Use Leibniz notation for all derivative and integration transformations throughout this project.
 
-- Derivatives: write $\dfrac{dy}{dx}$, $\dfrac{d}{dx}[f(x)]$, $\dfrac{\partial f}{\partial x}$, and higher-order forms such as $\dfrac{d^{2}y}{dx^{2}}$. Do not use prime notation such as $f'$, $y'$, $x''$, or dot notation such as $\dot{x}$ for derivative transformations.
+- Derivatives: write $\dfrac{dy}{dx}$, $\dfrac{d}{dx}[f(x)]$, $\dfrac{\partial f}{\partial x}$, and higher-order forms such as $\dfrac{d^{2}y}{dx^{2}}$ or $\dfrac{d^{n}f}{dx^{n}}$. Do not use prime notation such as $f'$, $y'$, $x''$, Newton dots such as $\dot{x}$, or Cauchy $f^{(n)}$ notation for derivative transformations.
 - Integrals: write $\displaystyle\int f(x)\, dx$, definite integrals $\displaystyle\int_{a}^{b} f(x)\, dx$, and indefinite integrals with the differential explicit. Keep the differential ($dx$, $dt$, $du$, and so on) visible in every integral.
 - Prefer explicit dependent and independent variables in Leibniz form so the quantity being differentiated or integrated is clear.
 - When a source quote uses prime or dot notation, rewrite the displayed mathematics into Leibniz form while preserving the source’s meaning, and keep the citation.
+- Do not rewrite non-derivative primes: primed inertial-frame coordinates such as $(x',t')$, gauge-transformed fields such as $V'$ or $\mathbf{A}'$, duals, and matrix or operator adjoints keep their conventional primes.

@@ -8,9 +8,9 @@ Note: Also called the composite function rule.
 
 **definition [d]** (*Chain Rule*) From Stewart: if $g$ is differentiable at $x$ and $f$ is differentiable at $g(x)$, then the composite $F = f \circ g$ defined by $F(x) = f(g(x))$ is differentiable at $x$ and
 
-- $F'(x) = f'(g(x))\, g'(x)$ .
+- $\dfrac{dF}{dx} = \dfrac{df}{du}\bigg|_{u=g(x)}\, \dfrac{dg}{dx}$ .
 
-In Leibniz notation, if $y = f(u)$ and $u = g(x)$, then
+Equivalently, if $y = f(u)$ and $u = g(x)$, then
 
 - $\dfrac{dy}{dx} = \dfrac{dy}{du}\, \dfrac{du}{dx}$ .
 
@@ -22,9 +22,9 @@ where
 - $x$ is the independent variable.
 - $u = g(x)$ is the intermediate variable.
 - $y = f(u)$ is the dependent variable.
-- $F'(x)$ is the derivative of $F$ with respect to $x$.
-- $f'(g(x))$ is the derivative of $f$ evaluated at $g(x)$.
-- $g'(x)$ is the derivative of $g$ with respect to $x$.
+- $\dfrac{dF}{dx}$ is the derivative of $F$ with respect to $x$.
+- $\dfrac{df}{du}\bigg|_{u=g(x)}$ is the derivative of $f$ with respect to $u$, evaluated at $u = g(x)$.
+- $\dfrac{dg}{dx}$ is the derivative of $g$ with respect to $x$.
 - $\dfrac{dy}{dx}$ is the derivative of $y$ with respect to $x$.
 - $\dfrac{dy}{du}$ is the derivative of $y$ with respect to $u$.
 - $\dfrac{du}{dx}$ is the derivative of $u$ with respect to $x$.
@@ -68,22 +68,22 @@ where
 
 ### General
 
-For $T = \dfrac{1}{2}m(x')^{2}$ with $x = x(t)$, the chain rule gives
+For $T = \dfrac{1}{2}m\left(\dfrac{dx}{dt}\right)^{2}$ with $x = x(t)$, the chain rule gives
 
 $$
-\dfrac{dT}{dt} = m\, x'\, x'' = mx'x''
+\dfrac{dT}{dt} = m\, \dfrac{dx}{dt}\, \dfrac{d^{2}x}{dt^{2}}
 $$
 
 where
 
 - $t$ is time.
 - $x(t)$ is the displacement.
-- $x'$ is the velocity $\dfrac{dx}{dt}$.
-- $x''$ is the acceleration $\dfrac{d^{2}x}{dt^{2}}$.
+- $\dfrac{dx}{dt}$ is the velocity.
+- $\dfrac{d^{2}x}{dt^{2}}$ is the acceleration.
 - $m$ is the mass.
 - $T$ is the kinetic energy.
 - $\dfrac{dT}{dt}$ is the time derivative of $T$.
 
 ## References
 
-1. Stewart, J. *Calculus*. — chain rule $F'(x)=f'(g(x))g'(x)$; Leibniz form $\dfrac{dy}{dx}=\dfrac{dy}{du}\dfrac{du}{dx}$; power form $\dfrac{d}{dx}[u^{n}]=nu^{n-1}\dfrac{du}{dx}$.
+1. Stewart, J. *Calculus*. — chain rule $\dfrac{dF}{dx}=\dfrac{df}{du}\dfrac{dg}{dx}$; Leibniz form $\dfrac{dy}{dx}=\dfrac{dy}{du}\dfrac{du}{dx}$; power form $\dfrac{d}{dx}[u^{n}]=nu^{n-1}\dfrac{du}{dx}$.

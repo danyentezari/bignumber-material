@@ -60,13 +60,13 @@ f(x) = x^{2},\quad f(-1) = 1,\quad f(0) = 0,\quad f(1) = 1
 $$
 
 $$
-f'(0) = 0
+\dfrac{df}{dx}(0) = 0
 $$
 
 where
 
 - $f$ is the smooth function.
-- $f'$ is its derivative.
+- $\dfrac{df}{dx}$ is its derivative.
 
 ### General
 
@@ -77,13 +77,13 @@ A = \{ -2,\ -1,\ 0,\ 1,\ 2 \}
 $$
 
 $$
-f(x) = x^{2},\quad f''(x) = 2,\quad f^{(n)}(x) = 0\ \text{for } n \ge 3
+f(x) = x^{2},\quad \dfrac{d^{2}f}{dx^{2}}(x) = 2,\quad \dfrac{d^{n}f}{dx^{n}}(x) = 0\ \text{for } n \ge 3
 $$
 
 where
 
-- $f''(x)$ is the second derivative.
-- $f^{(n)}$ is the $n$-th derivative.
+- $\dfrac{d^{2}f}{dx^{2}}(x)$ is the second derivative.
+- $\dfrac{d^{n}f}{dx^{n}}$ is the $n$-th derivative.
 
 ## References
 

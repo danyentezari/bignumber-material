@@ -29,11 +29,11 @@ T : X \rightarrow Y
 $$
 
 $$
-T(f) = f',\quad \text{on differentiable functions}
+T(f) = \dfrac{df}{dt},\quad \text{on differentiable functions}
 $$
 
 where
 
 - $T$ is an operator on a function space.
-- $f'$ is the derivative of $f$.
+- $\dfrac{df}{dt}$ is the derivative of $f$.
 

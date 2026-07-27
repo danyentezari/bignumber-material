@@ -8,12 +8,13 @@ A function that undoes differentiation of another function that is used to solve
 
 - $\displaystyle \int f(x)\, dx = F(x) + C$ ,
 
-where $F'(x) = f(x)$ and $C$ is an arbitrary constant of integration.
+where $\dfrac{dF}{dx} = f(x)$ and $C$ is an arbitrary constant of integration.
 
 where
 
 - $f$ is the integrand.
 - $F$ is any antiderivative of $f$.
+- $\dfrac{dF}{dx}$ is the derivative of $F$ with respect to $x$.
 - $C$ is the constant of integration.
 - $x$ is the independent variable.
 

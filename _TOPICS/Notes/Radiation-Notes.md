@@ -29,6 +29,6 @@ The following equations, formulas, and laws govern radiation, photon interaction
 
 *   **Einstein Coefficients ($A = \dfrac{8\pi h \nu^3}{c^3} B$):** Relates the probabilities of spontaneous emission, stimulated emission, and photon absorption in a system.
 
-*   **Fermi’s Golden Rule ($\dot{P}_b = \dfrac{2\pi}{\hbar} |\langle b|H^{(1)}|a\rangle|^2 \rho(E_a)$):** Calculates the transition rate between quantum states under the influence of an electromagnetic perturbation.
+*   **Fermi’s Golden Rule ($\dfrac{dP_b}{dt} = \dfrac{2\pi}{\hbar} |\langle b|H^{(1)}|a\rangle|^2 \rho(E_a)$):** Calculates the transition rate between quantum states under the influence of an electromagnetic perturbation.
 
 *   **Bohr Radius ($a_0 = \dfrac{4\pi\epsilon_0\hbar^2}{me^2}$):** Establishes the physical distance scale characterizing the innermost electron orbit of the hydrogen atom.

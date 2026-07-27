@@ -6,12 +6,12 @@ A set of derivative and integral operations on vector fields that is used to sol
 
 Let $S$ be a piecewise smooth oriented surface in space, and let the boundary of $S$ be a piecewise smooth simple closed curve $C$. If $\mathbf{F}(x, y, z)$ is a continuous vector function with continuous first partial derivatives in a domain containing $S$, then:
 
-$$\iint_S (\text{curl } \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$
+$$\iint_S (\text{curl } \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \dfrac{d\mathbf{r}}{ds}(s) \, ds$$
 
 In this formula:
 
 *   $\mathbf{n}$ is the unit normal vector of $S$.
-*   $\mathbf{r}'(s)$ is the unit tangent vector of $C$.
+*   $\dfrac{d\mathbf{r}}{ds}(s)$ is the unit tangent vector of $C$.
 *   $s$ is the arc length of $C$.
 *   The integration around $C$ is performed in a sense consistent with the orientation of the normal vector $\mathbf{n}$, following the right-hand rule.
 

@@ -6,19 +6,20 @@ A curve whose derivative is continuous and never the zero vector that is used to
 
 **definition [d]** (*Smooth Curve = Regular Curve*) A curve with a parametrization $\mathbf{r}(t)$ on an interval $I$ such that
 
-- $\mathbf{r}'$ is continuous on $I$ .
-- $\mathbf{r}'(t) \neq \mathbf{0}$ for all $t \in I$ except possibly at the endpoints.
+- $\dfrac{d\mathbf{r}}{dt}$ is continuous on $I$ .
+- $\dfrac{d\mathbf{r}}{dt}(t) \neq \mathbf{0}$ for all $t \in I$ except possibly at the endpoints.
 
 where
 
 - $\mathbf{r}(t)$ is the position vector of the curve.
-- $\mathbf{r}'(t)$ is the tangent vector.
+- $\dfrac{d\mathbf{r}}{dt}(t)$ is the tangent vector.
+- $t$ is the parameter.
 - $I$ is the parameter interval.
 - $\mathbf{0}$ is the zero vector.
 
 Note:
 
-- $\mathbf{r}'(t)$ is also called the velocity vector.
+- $\dfrac{d\mathbf{r}}{dt}(t)$ is also called the velocity vector.
 - geometrically there are no sharp corners.
 - geometrically there are no cusps.
 - the tangent turns continuously.
@@ -27,5 +28,5 @@ Note:
 
 ## References
 
-1. Stewart, J. *Calculus*. — smooth parametrization: $\mathbf{r}'$ continuous and $\mathbf{r}'(t)\neq\mathbf{0}$.
-2. do Carmo, M. P. *Differential Geometry of Curves and Surfaces*. — regular curve with $\alpha'(t)\neq 0$.
+1. Stewart, J. *Calculus*. — smooth parametrization: $\dfrac{d\mathbf{r}}{dt}$ continuous and $\dfrac{d\mathbf{r}}{dt}(t)\neq\mathbf{0}$.
+2. do Carmo, M. P. *Differential Geometry of Curves and Surfaces*. — regular curve with $\dfrac{d\alpha}{dt}(t)\neq 0$.

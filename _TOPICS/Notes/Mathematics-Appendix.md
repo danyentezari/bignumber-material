@@ -5,16 +5,16 @@
 
 Let $S$ be a piecewise smooth oriented surface in space, and let the boundary of $S$ be a piecewise smooth simple closed curve $C$. If  with continuous first partial derivatives in a domain containing $S$, then:
 
-$$\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$
+$$\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \dfrac{d\mathbf{r}}{ds}(s) \, ds$$
 
 Or,
 
-$$\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds$$
+$$\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \dfrac{d\mathbf{r}}{ds}(s) \, ds$$
 
 In this formula
 
 * $\mathbf{n}$ is the unit normal vector of $S$.
-* $\mathbf{r}'(s)$ is the unit tangent vector of $C$.
+* $\dfrac{d\mathbf{r}}{ds}(s)$ is the unit tangent vector of $C$.
 * $s$ is the arc length of $C$.
 * $\mathbf{F}(x, y, z)$ is a continuous vector function
   

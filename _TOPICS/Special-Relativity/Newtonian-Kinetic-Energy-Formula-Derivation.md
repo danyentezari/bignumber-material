@@ -40,31 +40,31 @@ where
 
 **definition [d]** (*Newtonian Kinetic Energy Formula Derivation*) From Logan: begin with the damped oscillator equation
 
-- $mx'' + \gamma x' + kx = 0$ .
+- $m\dfrac{d^{2}x}{dt^{2}} + \gamma\dfrac{dx}{dt} + kx = 0$ .
 
-Multiply by the velocity $x'$:
+Multiply by the velocity $\dfrac{dx}{dt}$:
 
-- $mx'x'' + \gamma (x')^{2} + kxx' = 0$ .
+- $m\dfrac{dx}{dt}\dfrac{d^{2}x}{dt^{2}} + \gamma\left(\dfrac{dx}{dt}\right)^{2} + kx\dfrac{dx}{dt} = 0$ .
 
 By the [chain rule](Chain-Rule.md),
 
-- $mx'x'' = \dfrac{d}{dt}\left(\dfrac{1}{2}m(x')^{2}\right)$ ,
-- $kxx' = \dfrac{d}{dt}\left(\dfrac{1}{2}kx^{2}\right)$ ,
+- $m\dfrac{dx}{dt}\dfrac{d^{2}x}{dt^{2}} = \dfrac{d}{dt}\left(\dfrac{1}{2}m\left(\dfrac{dx}{dt}\right)^{2}\right)$ ,
+- $kx\dfrac{dx}{dt} = \dfrac{d}{dt}\left(\dfrac{1}{2}kx^{2}\right)$ ,
 
 so
 
-- $\dfrac{d}{dt}\left[\dfrac{1}{2}m(x')^{2} + \dfrac{1}{2}kx^{2}\right] = -\gamma(x')^{2}$ .
+- $\dfrac{d}{dt}\left[\dfrac{1}{2}m\left(\dfrac{dx}{dt}\right)^{2} + \dfrac{1}{2}kx^{2}\right] = -\gamma\left(\dfrac{dx}{dt}\right)^{2}$ .
 
 The kinetic energy term identified in the bracket is
 
-- $T = \dfrac{1}{2}m(x')^{2}$ .
+- $T = \dfrac{1}{2}m\left(\dfrac{dx}{dt}\right)^{2}$ .
 
 where
 
 - $x$ is the displacement.
 - $x(t)$ is the displacement as a function of time.
-- $x'$ is the velocity.
-- $x''$ is the acceleration.
+- $\dfrac{dx}{dt}$ is the velocity.
+- $\dfrac{d^{2}x}{dt^{2}}$ is the acceleration.
 - $m$ is the mass.
 - $\gamma$ is the damping constant.
 - $k$ is the spring constant.
@@ -116,4 +116,4 @@ where
 ## References
 
 1. Shankar, R. *Fundamentals of Physics I*. Yale University Press, 2019. — from $v_{2}^{2}=v_{1}^{2}+2\left(\dfrac{F}{m}\right)d$ to $K_{2}-K_{1}=W$ with $K=\dfrac{1}{2}mv^{2}$.
-2. Logan, J. D. *A First Course in Differential Equations*. Springer, 2015. — multiply $mx''+\gamma x'+kx=0$ by $x'$ to identify $T=\dfrac{1}{2}m(x')^{2}$.
+2. Logan, J. D. *A First Course in Differential Equations*. Springer, 2015. — multiply $m\dfrac{d^{2}x}{dt^{2}}+\gamma\dfrac{dx}{dt}+kx=0$ by $\dfrac{dx}{dt}$ to identify $T=\dfrac{1}{2}m\left(\dfrac{dx}{dt}\right)^{2}$.
