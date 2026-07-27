@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>14 Site Index | Mathematics for Physics</title>
+<title>16 Site Index | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="\(C^{\infty}\) = Smooth = Infinitely Differentiable = Class \(C^{\infty}\) \(C^{\infty}\) Manifold = Smooth Manifold = Differentiable Manifold 1-form = linear functional = covector = covariant...">
+<meta name="description" content="\(\nabla \times \mathbf{v}\) = Curl = curl = rot \(\nabla f\) = Gradient = grad \(\partial D\) = Edge of a Domain = Boundary \(\partial\) = Boundary Operation = Boundary Operator \(C^{\infty}\) =...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="14 Site Index | Mathematics for Physics">
+<meta property="og:title" content="16 Site Index | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="\(C^{\infty}\) = Smooth = Infinitely Differentiable = Class \(C^{\infty}\) \(C^{\infty}\) Manifold = Smooth Manifold = Differentiable Manifold 1-form = linear functional = covector = covariant...">
+<meta property="og:description" content="\(\nabla \times \mathbf{v}\) = Curl = curl = rot \(\nabla f\) = Gradient = grad \(\partial D\) = Edge of a Domain = Boundary \(\partial\) = Boundary Operation = Boundary Operator \(C^{\infty}\) =...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="14 Site Index | Mathematics for Physics">
-<meta name="twitter:description" content="\(C^{\infty}\) = Smooth = Infinitely Differentiable = Class \(C^{\infty}\) \(C^{\infty}\) Manifold = Smooth Manifold = Differentiable Manifold 1-form = linear functional = covector = covariant...">
+<meta name="twitter:title" content="16 Site Index | Mathematics for Physics">
+<meta name="twitter:description" content="\(\nabla \times \mathbf{v}\) = Curl = curl = rot \(\nabla f\) = Gradient = grad \(\partial D\) = Edge of a Domain = Boundary \(\partial\) = Boundary Operation = Boundary Operator \(C^{\infty}\) =...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -24,15 +24,20 @@
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
-          var theme = stored
+          var mode = stored === "light" || stored === "dark" || stored === "system"
             ? stored
-            : (window.matchMedia &&
+            : "system";
+          var theme = mode === "system"
+            ? (window.matchMedia &&
                 window.matchMedia("(prefers-color-scheme: dark)").matches
                 ? "dark"
-                : "light");
+                : "light")
+            : mode;
           document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.setAttribute("data-theme-mode", mode);
         } catch (e) {
           document.documentElement.setAttribute("data-theme", "light");
+          document.documentElement.setAttribute("data-theme-mode", "system");
         }
         document.documentElement.classList.add("theme-classic");
         try {
@@ -132,25 +137,37 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="notes.html"><span class="header-section-number">11</span> Notes</a>
+<a class="" href="differential-equations.html"><span class="header-section-number">11</span> Differential Equations</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary.html"><span class="header-section-number">12</span> Glossary</a>
+<a class="" href="notes.html"><span class="header-section-number">12</span> Notes</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="symbols.html"><span class="header-section-number">13</span> Symbols</a>
+<a class="" href="glossary.html"><span class="header-section-number">13</span> Glossary</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active" href="site-index.html"><span class="header-section-number">14</span> Index</a>
+<a class="" href="symbols.html"><span class="header-section-number">14</span> Symbols</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="constants.html"><span class="header-section-number">15</span> Constants</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="active" href="site-index.html"><span class="header-section-number">16</span> Index</a>
 </div>
 </li>
 </ul>
@@ -160,116 +177,217 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="site-index" class="section level1" number="14">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="site-index" class="section level1" number="16">
 <h1>
-<span class="header-section-number">14</span> Site Index<a class="anchor" aria-label="anchor" href="#site-index"><i class="fas fa-link"></i></a>
+<span class="header-section-number">16</span> Site Index<a class="anchor" aria-label="anchor" href="#site-index"><i class="fas fa-link"></i></a>
 </h1>
 <div class="topic-index">
 <ul>
+<li><a href="curl.html"><span class="math inline">\(\nabla \times \mathbf{v}\)</span> = Curl = curl = rot</a></li>
+<li><a href="gradient.html"><span class="math inline">\(\nabla f\)</span> = Gradient = grad</a></li>
+<li><a href="edge-of-a-domain.html"><span class="math inline">\(\partial D\)</span> = Edge of a Domain = Boundary</a></li>
+<li><a href="boundary-operation.html"><span class="math inline">\(\partial\)</span> = Boundary Operation = Boundary Operator</a></li>
 <li><a href="smooth.html"><span class="math inline">\(C^{\infty}\)</span> = Smooth = Infinitely Differentiable = Class <span class="math inline">\(C^{\infty}\)</span></a></li>
 <li><a href="smooth-manifold.html"><span class="math inline">\(C^{\infty}\)</span> Manifold = Smooth Manifold = Differentiable Manifold</a></li>
+<li><a href="p.html"><span class="math inline">\(p\)</span> = Exponent Parameter</a></li>
 <li><a href="one-form.html">1-form = linear functional = covector = covariant vector</a></li>
 <li><a href="abelian-group.html">Abelian Group</a></li>
+<li><a href="absolute-value-to-the-p.html">Absolute-Value-to-the-p</a></li>
+<li><a href="absorption.html">Absorption</a></li>
+<li><a href="adjoint.html">Adjoint = Hilbert-Adjoint Operator</a></li>
 <li><a href="hermitian-conjugate.html">Adjoint = Hermitian Conjugate = Conjugate Transpose = Hermitian Transpose</a></li>
 <li><a href="dual-space.html">Adjoint Space = Dual Space = Dual Vector Space = Algebraic Dual Space = Conjugate Space</a></li>
 <li><a href="dual-space.html">Algebraic Dual Space = Dual Space = Dual Vector Space = Conjugate Space = Adjoint Space</a></li>
 <li><a href="alternating-function.html">Alternating Function</a></li>
 <li><a href="alternating-k-linear-function.html">Alternating k-linear function</a></li>
+<li><a href="amperes-law.html">Ampere’s Law</a></li>
+<li><a href="annihilation.html">Annihilation</a></li>
 <li><a href="indefinite-integral.html">Antiderivative = Indefinite Integral = Primitive</a></li>
 <li><a href="antisymmetry.html">Antisymmetry</a></li>
+<li><a href="atomic-orbitals.html">Atomic Orbitals</a></li>
+<li><a href="aufbau-principle.html">Aufbau Principle</a></li>
+<li><a href="banach-space.html">Banach Space</a></li>
+<li><a href="basis.html">Basis = Ordered Basis</a></li>
 <li><a href="bijective.html">Bijective</a></li>
 <li><a href="binary-operations.html">Binary Operations</a></li>
+<li><a href="biot-savart-law.html">Biot-Savart Law</a></li>
+<li><a href="bohr-radius.html">Bohr Radius</a></li>
+<li><a href="boundary.html">Boundary = Topological Boundary</a></li>
+<li><a href="edge-of-a-domain.html">Boundary = Edge of a Domain = <span class="math inline">\(\partial D\)</span></a></li>
+<li><a href="boundary-conditions.html">Boundary Conditions</a></li>
+<li><a href="boundary-operation.html">Boundary Operation = Boundary Operator = <span class="math inline">\(\partial\)</span></a></li>
+<li><a href="boundary-operation.html">Boundary Operator = Boundary Operation = <span class="math inline">\(\partial\)</span></a></li>
 <li><a href="bra-and-ket.html">Bra and Ket</a></li>
 <li><a href="bundle.html">Bundle = Fibre Bundle = Fiber Bundle</a></li>
+<li><a href="capacitance.html">Capacitance</a></li>
 <li><a href="cartesian-product.html">Cartesian Product</a></li>
-<li><a href="cauchy-sequence.html">Cauchy Sequence = Fundamental Sequence</a></li>
+<li><a href="cauchy-sequence.html">Cauchy Sequence</a></li>
+<li><a href="chain-rule.html">Chain Rule</a></li>
+<li><a href="characteristic-polynomial.html">Characteristic Polynomial</a></li>
+<li><a href="charge-density.html">Charge Density</a></li>
 <li><a href="smooth.html">Class <span class="math inline">\(C^{\infty}\)</span> = Smooth = Infinitely Differentiable = <span class="math inline">\(C^{\infty}\)</span></a></li>
 <li><a href="complete-set.html">Complete Set</a></li>
+<li><a href="completeness.html">Completeness</a></li>
 <li><a href="complex-analysis.html">Complex Analysis</a></li>
 <li><a href="complex-conjugate.html">Complex Conjugate = Conjugate</a></li>
 <li><a href="complex-conjugate-1.html">Complex Conjugate</a></li>
 <li><a href="complex-conjugate.html">Conjugate = Complex Conjugate</a></li>
 <li><a href="dual-space.html">Conjugate Space = Dual Space = Dual Vector Space = Algebraic Dual Space = Adjoint Space</a></li>
 <li><a href="conjugate-symmetry.html">Conjugate Symmetry = Hermitian Symmetry</a></li>
+<li><a href="conjugate-transpose.html">Conjugate Transpose</a></li>
 <li><a href="hermitian-conjugate.html">Conjugate Transpose = Hermitian Conjugate = Adjoint = Hermitian Transpose</a></li>
 <li><a href="conservation-laws.html">Conservation Laws</a></li>
+<li><a href="conservation-of-angular-momentum.html">Conservation of Angular Momentum</a></li>
+<li><a href="conservation-of-charge.html">Conservation of Charge</a></li>
+<li><a href="conservation-of-energy.html">Conservation of Energy</a></li>
+<li><a href="conservation-of-energy-transition-law.html">Conservation of Energy Transition Law</a></li>
+<li><a href="conservation-of-momentum.html">Conservation of Momentum</a></li>
+<li><a href="constancy-of-the-speed-of-light.html">Constancy of the Speed of Light</a></li>
 <li><a href="constant-metric-tensor.html">Constant Metric Tensor = Metric with Constant Components</a></li>
 <li><a href="continuity.html">Continuity</a></li>
+<li><a href="contracted-length.html">Contracted Length</a></li>
 <li><a href="contravariant-rank.html">Contravariant Degree = Contravariant Rank</a></li>
 <li><a href="inverse-metric.html">Contravariant Metric Tensor = Inverse Metric</a></li>
 <li><a href="contravariant-rank.html">Contravariant Rank = Contravariant Degree</a></li>
 <li><a href="convergence.html">Convergence</a></li>
+<li><a href="coordinate-transformations.html">Coordinate Transformations</a></li>
+<li><a href="coulomb-force.html">Coulomb Force</a></li>
 <li><a href="covariant-rank.html">Covariant Degree = Covariant Rank</a></li>
 <li><a href="covariant-rank.html">Covariant Rank = Covariant Degree</a></li>
 <li><a href="type-0-2-tensor-field.html">Covariant Rank-2 Tensor Field = Type-<span class="math inline">\((0,2)\)</span> Tensor Field = Second-Rank Covariant Tensor Field</a></li>
 <li><a href="one-form.html">covariant vector = 1-form = linear functional = covector</a></li>
 <li><a href="covariant-contravariant-and-coordinate-systems.html">Covariant, Contravariant, and Coordinate Systems</a></li>
 <li><a href="one-form.html">covector = 1-form = linear functional = covariant vector</a></li>
+<li><a href="curl.html">Curl = curl = rot = <span class="math inline">\(\nabla \times \mathbf{v}\)</span></a></li>
+<li><a href="curl.html">curl = Curl = rot = <span class="math inline">\(\nabla \times \mathbf{v}\)</span></a></li>
+<li><a href="current.html">Current = Electric Current</a></li>
+<li><a href="gauge-field.html">Curvature = Gauge Field = Field Tensor</a></li>
 <li><a href="curve.html">Curve = Parametric Curve</a></li>
 <li><a href="line-integral.html">Curve Integral = Line Integral = Path Integral</a></li>
+<li><a href="cyclotron-motion.html">Cyclotron Motion</a></li>
+<li><a href="de-broglie-wavelength.html">de Broglie Wavelength</a></li>
 <li><a href="definite-integral.html">Definite Integral</a></li>
 <li><a href="vector-differential-operator.html">Del = Vector Differential Operator = Nabla = Gradient Operator</a></li>
 <li><a href="delta-function.html">Delta Distribution = Dirac Delta Function = Delta Function = Generalized Function</a></li>
 <li><a href="delta-function.html">Delta Function = Dirac Delta Function = Delta Distribution = Generalized Function</a></li>
+<li><a href="determinant.html">Determinant</a></li>
 <li><a href="diag.html">Diag</a></li>
+<li><a href="eigendecomposition.html">Diagonalization = Eigendecomposition</a></li>
+<li><a href="dielectrics.html">Dielectrics</a></li>
 <li><a href="smooth-manifold.html">Differentiable Manifold = Smooth Manifold = <span class="math inline">\(C^{\infty}\)</span> Manifold</a></li>
+<li><a href="differential-equations-and-integral-equations.html">Differential Equations and Integral Equations</a></li>
 <li><a href="differential-forms.html">Differential Forms</a></li>
 <li><a href="differential-k-form.html">Differential k-Form</a></li>
+<li><a href="dipole-selection-rules.html">Dipole Selection Rules</a></li>
 <li><a href="delta-function.html">Dirac Delta Function = Delta Function = Delta Distribution = Generalized Function</a></li>
+<li><a href="standard-basis.html">Distinguished Basis = Standard Basis</a></li>
+<li><a href="divergence.html">div = Divergence</a></li>
+<li><a href="divergence.html">Divergence = div</a></li>
 <li><a href="inner-product.html">Dot Product = Inner Product = Scalar Product</a></li>
 <li><a href="dual-space.html">Dual Space = Dual Vector Space = Algebraic Dual Space = Conjugate Space = Adjoint Space</a></li>
 <li><a href="dual-space.html">Dual Vector Space = Dual Space = Algebraic Dual Space = Conjugate Space = Adjoint Space</a></li>
+<li><a href="edge-of-a-domain.html">Edge of a Domain = Boundary = <span class="math inline">\(\partial D\)</span></a></li>
+<li><a href="eigendecomposition.html">Eigendecomposition = Diagonalization</a></li>
+<li><a href="eigenvalue.html">Eigenvalue</a></li>
+<li><a href="eigenvector.html">Eigenvector</a></li>
+<li><a href="einstein-coefficients.html">Einstein Coefficients</a></li>
+<li><a href="elastic-potential-energy-formula-derivation.html">Elastic Potential Energy Formula Derivation</a></li>
 <li><a href="electric-charge.html">Electric Charge</a></li>
+<li><a href="current.html">Electric Current = Current</a></li>
+<li><a href="electric-currents.html">Electric Currents</a></li>
+<li><a href="electric-field.html">Electric Field</a></li>
 <li><a href="electric-fields.html">Electric Fields</a></li>
+<li><a href="electric-potential.html">Electric Potential</a></li>
+<li><a href="electromagnetic-field-transformations.html">Electromagnetic Field Transformations</a></li>
 <li><a href="electromagnetic-induction.html">Electromagnetic Induction</a></li>
 <li><a href="electromagnetic-interaction.html">Electromagnetic Interaction</a></li>
 <li><a href="electromagnetic-interaction-1.html">Electromagnetic Interaction</a></li>
+<li><a href="electromagnetic-radiation.html">Electromagnetic Radiation</a></li>
 <li><a href="electromagnetic-waves.html">Electromagnetic Waves</a></li>
 <li><a href="electromagnetism-1.html">Electromagnetism</a></li>
+<li><a href="electron-configurations.html">Electron Configurations</a></li>
+<li><a href="spin.html">Electron Spin = Spin Angular Momentum = Intrinsic Angular Momentum</a></li>
+<li><a href="electrostatics.html">Electrostatics</a></li>
+<li><a href="ell-p.html">Ell P</a></li>
 <li><a href="energy-quantization.html">Energy Quantization</a></li>
+<li><a href="p.html">Exponent Parameter = <span class="math inline">\(p\)</span></a></li>
 <li><a href="exterior-algebra-and-exterior-derivatives.html">Exterior Algebra and Exterior Derivatives</a></li>
+<li><a href="fermis-golden-rule.html">Fermi’s Golden Rule</a></li>
 <li><a href="permutational-antisymmetry.html">Fermion Antisymmetry = Permutational Antisymmetry</a></li>
 <li><a href="bundle.html">Fiber Bundle = Bundle = Fibre Bundle</a></li>
 <li><a href="bundle.html">Fibre Bundle = Bundle = Fiber Bundle</a></li>
 <li><a href="field.html">Field</a></li>
+<li><a href="gauge-field.html">Field Tensor = Gauge Field = Curvature</a></li>
+<li><a href="field-tensor.html">Field Tensor</a></li>
 <li><a href="metric-tensor.html">First Fundamental Form = Metric Tensor = Riemannian Metric = Metrical Matrix</a></li>
 <li><a href="minkowski-metric.html">Flat Metric = Minkowski Metric = Minkowski Metric Tensor</a></li>
 <li><a href="minkowski-space.html">Flat Spacetime = Minkowski Space = Minkowski Spacetime</a></li>
 <li><a href="forms.html">Forms</a></li>
 <li><a href="fourier-transform.html">Fourier Transform</a></li>
+<li><a href="frame.html">Frame = Reference Frame = Frame of Reference</a></li>
+<li><a href="frame.html">Frame of Reference = Frame = Reference Frame</a></li>
+<li><a href="functional.html">Functional</a></li>
 <li><a href="functions.html">Functions</a></li>
-<li><a href="cauchy-sequence.html">Fundamental Sequence = Cauchy Sequence</a></li>
+<li><a href="gauge.html">Gauge</a></li>
+<li><a href="gauge-field.html">Gauge Field = Field Tensor = Curvature</a></li>
+<li><a href="gauge-theory.html">Gauge Theory</a></li>
 <li><a href="general-functions.html">General Functions</a></li>
 <li><a href="delta-function.html">Generalized Function = Dirac Delta Function = Delta Function = Delta Distribution</a></li>
+<li><a href="gradient.html">grad = Gradient = <span class="math inline">\(\nabla f\)</span></a></li>
+<li><a href="gradient.html">Gradient = grad = <span class="math inline">\(\nabla f\)</span></a></li>
 <li><a href="vector-differential-operator.html">Gradient Operator = Vector Differential Operator = Del = Nabla</a></li>
+<li><a href="gravitational-potential-energy-formula-derivation.html">Gravitational Potential Energy Formula Derivation</a></li>
 <li><a href="group.html">Group</a></li>
 <li><a href="group-theory.html">Group Theory</a></li>
+<li><a href="hall-effect.html">Hall Effect</a></li>
 <li><a href="hausdorff-space.html">Hausdorff Space</a></li>
+<li><a href="hermitian.html">Hermitian = Hermitian Matrix</a></li>
 <li><a href="hermitian-conjugate.html">Hermitian Conjugate = Adjoint = Conjugate Transpose = Hermitian Transpose</a></li>
+<li><a href="hermitian.html">Hermitian Matrix = Hermitian</a></li>
 <li><a href="conjugate-symmetry.html">Hermitian Symmetry = Conjugate Symmetry</a></li>
 <li><a href="hermitian-conjugate.html">Hermitian Transpose = Hermitian Conjugate = Adjoint = Conjugate Transpose</a></li>
 <li><a href="hilbert-space.html">Hilbert Space</a></li>
+<li><a href="adjoint.html">Hilbert-Adjoint Operator = Adjoint</a></li>
 <li><a href="homeomorphism.html">Homeomorphism</a></li>
+<li><a href="homogeneity.html">Homogeneity</a></li>
+<li><a href="homogeneous.html">Homogeneous</a></li>
+<li><a href="homomorphism.html">Homomorphism</a></li>
+<li><a href="hunds-rule.html">Hund’s Rule</a></li>
+<li><a href="hydrogen-energy-levels.html">Hydrogen Energy Levels</a></li>
 <li><a href="improper-integral.html">Improper Integral</a></li>
 <li><a href="indefinite-integral.html">Indefinite Integral = Antiderivative = Primitive</a></li>
+<li><a href="induced-emf.html">Induced Emf</a></li>
+<li><a href="inductance.html">Inductance</a></li>
+<li><a href="induction.html">Induction</a></li>
+<li><a href="inertial-frame.html">Inertial Frame = Inertial Reference Frame</a></li>
+<li><a href="inertial-frame.html">Inertial Reference Frame = Inertial Frame</a></li>
+<li><a href="inertial-reference-frames.html">Inertial Reference Frames</a></li>
 <li><a href="smooth.html">Infinitely Differentiable = Smooth = <span class="math inline">\(C^{\infty}\)</span> = Class <span class="math inline">\(C^{\infty}\)</span></a></li>
 <li><a href="line-element.html">Infinitesimal Arc Length Squared = Line Element</a></li>
+<li><a href="initial-conditions.html">Initial Conditions</a></li>
 <li><a href="injective.html">Injective</a></li>
 <li><a href="inner-product.html">Inner Product = Scalar Product = Dot Product</a></li>
 <li><a href="inner-product-space.html">Inner Product Space</a></li>
+<li><a href="integrability.html">Integrability</a></li>
 <li><a href="integral-domain.html">Integral Domain</a></li>
+<li><a href="spin.html">Intrinsic Angular Momentum = Electron Spin = Spin Angular Momentum</a></li>
 <li><a href="inverse-function.html">Inverse Function</a></li>
 <li><a href="inverse-metric.html">Inverse Metric = Contravariant Metric Tensor</a></li>
 <li><a href="nondegenerate.html">Invertible = Nondegenerate = Nonsingular</a></li>
+<li><a href="ionization.html">Ionization</a></li>
 <li><a href="k-covector.html">k-Covector</a></li>
 <li><a href="k-covector-field.html">k-Covector Field</a></li>
 <li><a href="k-fold-product.html">k-Fold Product</a></li>
 <li><a href="k-form.html">k-form</a></li>
 <li><a href="k-tensor.html">k-Tensor</a></li>
+<li><a href="kinetic-energy.html">Kinetic Energy</a></li>
+<li><a href="kinetic-energy-formula-derivation.html">Kinetic Energy Formula Derivation</a></li>
 <li><a href="kronecker-delta.html">Kronecker Delta = Kronecker Symbol</a></li>
 <li><a href="kronecker-delta.html">Kronecker Symbol = Kronecker Delta</a></li>
-<li><a href="norm.html">Length = Norm = Magnitude = Modulus = Size</a></li>
 <li><a href="length-contraction.html">Length Contraction</a></li>
+<li><a href="lie.html">Lie = Lie Group</a></li>
+<li><a href="lie-algebra.html">Lie Algebra</a></li>
+<li><a href="lie.html">Lie Group = Lie</a></li>
 <li><a href="limit.html">Limit</a></li>
 <li><a href="line-element.html">Line Element = Infinitesimal Arc Length Squared</a></li>
 <li><a href="line-integral.html">Line Integral = Path Integral = Curve Integral</a></li>
@@ -277,19 +395,28 @@
 <li><a href="linear-functional.html">Linear Functional</a></li>
 <li><a href="one-form.html">linear functional = 1-form = covector = covariant vector</a></li>
 <li><a href="linear-map.html">Linear Map</a></li>
+<li><a href="linear-transformation.html">Linear Map = Linear Transformation</a></li>
 <li><a href="operator.html">Linear Map = Operator = Linear Operator = Linear Transformation</a></li>
 <li><a href="operator.html">Linear Operator = Operator = Linear Transformation = Linear Map</a></li>
+<li><a href="linear-space.html">Linear Space = Vector Space</a></li>
+<li><a href="linear-transformation.html">Linear Transformation = Linear Map</a></li>
 <li><a href="operator.html">Linear Transformation = Operator = Linear Operator = Linear Map</a></li>
+<li><a href="lorentz-factor.html">Lorentz Factor</a></li>
 <li><a href="lorentz-force-law.html">Lorentz Force Law</a></li>
 <li><a href="lorentzian-manifold.html">Lorentz Manifold = Lorentzian Manifold</a></li>
 <li><a href="lorentz-transformations.html">Lorentz Transformations</a></li>
 <li><a href="lorentzian-manifold.html">Lorentzian Manifold = Lorentz Manifold</a></li>
+<li><a href="magnetic-field.html">Magnetic Field</a></li>
 <li><a href="magnetic-fields.html">Magnetic Fields</a></li>
-<li><a href="norm.html">Magnitude = Norm = Length = Modulus = Size</a></li>
+<li><a href="magnetic-materials.html">Magnetic Materials</a></li>
+<li><a href="magnetic-moment.html">Magnetic Moment</a></li>
+<li><a href="magnetism-as-a-relativistic-effect.html">Magnetism as a Relativistic Effect</a></li>
 <li><a href="manifolds.html">Manifolds</a></li>
 <li><a href="mass-energy-equivalence.html">Mass-Energy Equivalence</a></li>
+<li><a href="massless-particles.html">Massless Particles</a></li>
 <li><a href="mathematics-appendix.html">Mathematics Appendix</a></li>
 <li><a href="maxwells-equations.html">Maxwell’s Equations</a></li>
+<li><a href="maxwells-equations-1.html">Maxwell’s Equations</a></li>
 <li><a href="metric-space.html">Metric Space</a></li>
 <li><a href="metric-tensor.html">Metric Tensor = Riemannian Metric = Metrical Matrix = First Fundamental Form</a></li>
 <li><a href="constant-metric-tensor.html">Metric with Constant Components = Constant Metric Tensor</a></li>
@@ -298,63 +425,109 @@
 <li><a href="minkowski-metric.html">Minkowski Metric Tensor = Minkowski Metric = Flat Metric</a></li>
 <li><a href="minkowski-space.html">Minkowski Space = Minkowski Spacetime = Flat Spacetime</a></li>
 <li><a href="minkowski-space.html">Minkowski Spacetime = Minkowski Space = Flat Spacetime</a></li>
-<li><a href="norm.html">Modulus = Norm = Length = Magnitude = Size</a></li>
+<li><a href="momentum-of-light.html">Momentum of Light</a></li>
+<li><a href="motion-of-charges.html">Motion of Charges</a></li>
+<li><a href="moving-clocks.html">Moving Clocks</a></li>
 <li><a href="multilinear-function.html">Multilinear Function</a></li>
 <li><a href="tensors.html">Multilinear Map = Tensor</a></li>
 <li><a href="vector-differential-operator.html">Nabla = Vector Differential Operator = Del = Gradient Operator</a></li>
 <li><a href="neighborhood.html">Neighborhood</a></li>
+<li><a href="newtonian-kinetic-energy-formula-derivation.html">Newtonian Kinetic Energy Formula Derivation</a></li>
 <li><a href="nondegenerate.html">Nondegenerate = Nonsingular = Invertible</a></li>
 <li><a href="nondegenerate-bilinear-form.html">Nondegenerate Bilinear Form</a></li>
 <li><a href="nondegenerate.html">Nonsingular = Nondegenerate = Invertible</a></li>
-<li><a href="norm.html">Norm = Length = Magnitude = Modulus = Size</a></li>
+<li><a href="norm.html">Norm</a></li>
+<li><a href="normed-space.html">Normed Space</a></li>
 <li><a href="notes-1.html">Notes</a></li>
+<li><a href="nuclear-energy.html">Nuclear Energy</a></li>
 <li><a href="open-set.html">Open Set</a></li>
 <li><a href="open-sets.html">Open Sets</a></li>
 <li><a href="operator.html">Operator = Linear Operator = Linear Transformation = Linear Map</a></li>
 <li><a href="operators.html">Operators</a></li>
+<li><a href="basis.html">Ordered Basis = Basis</a></li>
 <li><a href="orthonormal.html">Orthonormal</a></li>
 <li><a href="orthonormal-set-of-functions.html">Orthonormal Set of Functions</a></li>
+<li><a href="p-norm.html">P-Norm</a></li>
+<li><a href="p-summable.html">P-Summable</a></li>
+<li><a href="p-summable-sequence.html">P-Summable Sequence</a></li>
+<li><a href="real-parameter.html">Parameter = Real Parameter</a></li>
 <li><a href="parameterization.html">Parameterization = Parametrization = Parametric Representation</a></li>
 <li><a href="curve.html">Parametric Curve = Curve</a></li>
 <li><a href="parameterization.html">Parametric Representation = Parameterization = Parametrization</a></li>
 <li><a href="parameterization.html">Parametrization = Parameterization = Parametric Representation</a></li>
+<li><a href="particle-creation.html">Particle Creation</a></li>
 <li><a href="line-integral.html">Path Integral = Line Integral = Curve Integral</a></li>
 <li><a href="pauli-exclusion-principle.html">Pauli Exclusion Principle</a></li>
 <li><a href="permutational-antisymmetry.html">Permutational Antisymmetry = Fermion Antisymmetry</a></li>
+<li><a href="photon-energy.html">Photon Energy</a></li>
+<li><a href="photon-momentum.html">Photon Momentum</a></li>
 <li><a href="physics-glossary.html">Physics Glossary</a></li>
 <li><a href="physics-mathematical-appendix.html">Physics Mathematical Appendix</a></li>
+<li><a href="planck-relation.html">Planck Relation</a></li>
+<li><a href="polarization.html">Polarization</a></li>
+<li><a href="voltage.html">Potential Difference = Voltage</a></li>
+<li><a href="potential-energy.html">Potential Energy</a></li>
+<li><a href="potential-energy-formula-derivation.html">Potential Energy Formula Derivation</a></li>
+<li><a href="poynting-vector.html">Poynting Vector</a></li>
 <li><a href="preimage.html">Preimage</a></li>
 <li><a href="preimages-and-inverse-functions.html">Preimages and Inverse Functions</a></li>
 <li><a href="indefinite-integral.html">Primitive = Indefinite Integral = Antiderivative</a></li>
 <li><a href="principle-of-relativity.html">Principle of Relativity</a></li>
-<li><a href="quantum-states-schrodinger-equation.html">Quantum States (Schrodinger Equation)</a></li>
+<li><a href="projection-map.html">Projection Map</a></li>
+<li><a href="proper-length.html">Proper Length</a></li>
+<li><a href="proper-time.html">Proper Time</a></li>
+<li><a href="quadratic.html">Quadratic</a></li>
+<li><a href="quadratic-integrability.html">Quadratic Integrability = Square Integrability</a></li>
+<li><a href="quantum-states.html">Quantum States</a></li>
 <li><a href="radiation.html">Radiation</a></li>
+<li><a href="radiation-1.html">Radiation</a></li>
 <li><a href="type-q-r-tensor.html">Rank <span class="math inline">\((r,s)\)</span> = Type-<span class="math inline">\((q,r)\)</span> Tensor = Type-<span class="math inline">\((r,s)\)</span> Tensor</a></li>
+<li><a href="real-parameter.html">Real Parameter = Parameter</a></li>
+<li><a href="frame.html">Reference Frame = Frame = Frame of Reference</a></li>
+<li><a href="reference-frames.html">Reference Frames</a></li>
+<li><a href="reflection.html">Reflection</a></li>
+<li><a href="refraction.html">Refraction</a></li>
 <li><a href="smooth-curve.html">Regular Curve = Smooth Curve</a></li>
 <li><a href="relativistic-electrodynamics.html">Relativistic Electrodynamics</a></li>
+<li><a href="relativistic-kinetic-energy-formula-derivation.html">Relativistic Kinetic Energy Formula Derivation</a></li>
+<li><a href="relativistic-momentum.html">Relativistic Momentum</a></li>
 <li><a href="relativistic-momentum-and-energy.html">Relativistic Momentum and Energy</a></li>
+<li><a href="relativity-principle.html">Relativity Principle</a></li>
+<li><a href="resistance.html">Resistance</a></li>
+<li><a href="rest-energy.html">Rest Energy</a></li>
 <li><a href="metric-tensor.html">Riemannian Metric = Metric Tensor = Metrical Matrix = First Fundamental Form</a></li>
 <li><a href="ring.html">Ring</a></li>
+<li><a href="curl.html">rot = Curl = curl = <span class="math inline">\(\nabla \times \mathbf{v}\)</span></a></li>
+<li><a href="rydberg-formula.html">Rydberg Formula</a></li>
 <li><a href="inner-product.html">Scalar Product = Inner Product = Dot Product</a></li>
 <li><a href="scalar-projection.html">Scalar Projection</a></li>
 <li><a href="schrodinger-equation-time-independent.html">Schrodinger Equation Time-Independent</a></li>
 <li><a href="schrodinger-equations.html">Schrodinger Equations</a></li>
 <li><a href="type-0-2-tensor-field.html">Second-Rank Covariant Tensor Field = Type-<span class="math inline">\((0,2)\)</span> Tensor Field = Covariant Rank-2 Tensor Field</a></li>
 <li><a href="tensor-field.html">Section = Tensor Field</a></li>
+<li><a href="selection-rules.html">Selection Rules</a></li>
 <li><a href="sets.html">Sets</a></li>
 <li><a href="sifting-property.html">Sifting Formula = Sifting Property</a></li>
 <li><a href="sifting-property.html">Sifting Property = Sifting Formula</a></li>
-<li><a href="norm.html">Size = Norm = Length = Magnitude = Modulus</a></li>
+<li><a href="simultaneity.html">Simultaneity</a></li>
 <li><a href="smooth.html">Smooth = Infinitely Differentiable = <span class="math inline">\(C^{\infty}\)</span> = Class <span class="math inline">\(C^{\infty}\)</span></a></li>
 <li><a href="smooth-assignment.html">Smooth Assignment = Smooth Section</a></li>
 <li><a href="smooth-curve.html">Smooth Curve = Regular Curve</a></li>
 <li><a href="smooth-manifold.html">Smooth Manifold = Differentiable Manifold = <span class="math inline">\(C^{\infty}\)</span> Manifold</a></li>
+<li><a href="smooth-mapping.html">Smooth Map = Smooth Mapping</a></li>
+<li><a href="smooth-mapping.html">Smooth Mapping = Smooth Map</a></li>
 <li><a href="smooth-assignment.html">Smooth Section = Smooth Assignment</a></li>
 <li><a href="special-relativity-and-electric-fields.html">Special Relativity and Electric Fields</a></li>
-<li><a href="spin.html">Spin</a></li>
+<li><a href="spin.html">Spin Angular Momentum = Electron Spin = Intrinsic Angular Momentum</a></li>
+<li><a href="spin-orbit-coupling.html">Spin-Orbit Coupling</a></li>
+<li><a href="spontaneous-emission.html">Spontaneous Emission</a></li>
+<li><a href="quadratic-integrability.html">Square Integrability = Quadratic Integrability</a></li>
+<li><a href="standard-basis.html">Standard Basis = Distinguished Basis</a></li>
+<li><a href="stimulated-emission.html">Stimulated Emission</a></li>
 <li><a href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html">Stoke’s Theorem and the Fundamental Theorem of Calculus</a></li>
 <li><a href="stokes-theorem-for-flux-integral.html">Stokes’ Theorem for Flux Integral</a></li>
 <li><a href="stokes-theorem-physics.html">Stokes’ Theorem Physics</a></li>
+<li><a href="superposition.html">Superposition</a></li>
 <li><a href="surjective.html">Surjective</a></li>
 <li><a href="symmetric-array.html">Symmetric Array = Symmetric Matrix</a></li>
 <li><a href="symmetric-array.html">Symmetric Matrix = Symmetric Array</a></li>
@@ -366,9 +539,12 @@
 <li><a href="time-dependent-schrodinger-equation-1-dimensional.html">Time Dependent Schrodinger Equation 1-Dimensional</a></li>
 <li><a href="time-dependent-schrodinger-equation-generalized.html">Time Dependent Schrodinger Equation Generalized</a></li>
 <li><a href="time-dilation.html">Time Dilation</a></li>
+<li><a href="boundary.html">Topological Boundary = Boundary</a></li>
 <li><a href="topological-manifold.html">Topological Manifold</a></li>
 <li><a href="topological-space.html">Topological Space</a></li>
 <li><a href="topological-spaces.html">Topological Spaces</a></li>
+<li><a href="transformers.html">Transformers</a></li>
+<li><a href="twin-paradox.html">Twin Paradox</a></li>
 <li><a href="two-form.html">Two-Form</a></li>
 <li><a href="type-0-2-tensor-field.html">Type-<span class="math inline">\((0,2)\)</span> Tensor Field = Covariant Rank-2 Tensor Field = Second-Rank Covariant Tensor Field</a></li>
 <li><a href="type-q-r-tensor.html">Type-<span class="math inline">\((q,r)\)</span> Tensor = Type-<span class="math inline">\((r,s)\)</span> Tensor = Rank <span class="math inline">\((r,s)\)</span></a></li>
@@ -378,7 +554,10 @@
 <li><a href="vector-field.html">Vector Field = Vector Function of Position</a></li>
 <li><a href="vector-field.html">Vector Function of Position = Vector Field</a></li>
 <li><a href="vector-projection.html">Vector Projection</a></li>
+<li><a href="linear-space.html">Vector Space = Linear Space</a></li>
+<li><a href="voltage.html">Voltage = Potential Difference</a></li>
 <li><a href="wave-particle-duality.html">Wave-Particle Duality</a></li>
+<li><a href="wavefunctions.html">Wavefunctions</a></li>
 </ul>
 </div>
 
@@ -389,12 +568,15 @@
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
     var SUN =
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.5" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22.5"/><line x1="3.5" y1="3.5" x2="5.3" y2="5.3"/><line x1="18.7" y1="18.7" x2="20.5" y2="20.5"/><line x1="1.5" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22.5" y2="12"/><line x1="3.5" y1="20.5" x2="5.3" y2="18.7"/><line x1="18.7" y1="5.3" x2="20.5" y2="3.5"/></svg>';
+    var DEVICE =
+      '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>';
 
     var FONT_MIN = 13;
     var FONT_MAX = 28;
     var FONT_STEP = 1.6;
     var FONT_BASE = 17;
     var fontSize = FONT_BASE;
+    var THEME_ORDER = ["light", "dark", "system"];
 
     function initClassicLayout() {
       if (document.getElementById("page")) return;
@@ -738,16 +920,62 @@
       if (chapterSidebar) chapterSidebar.remove();
       if (oldFooter) oldFooter.remove();
 
-      function currentTheme() {
-        return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      function systemTheme() {
+        return window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
       }
 
-      function renderTheme(theme) {
-        themeBtn.innerHTML = theme === "dark" ? SUN : MOON;
-        themeBtn.setAttribute(
-          "title",
-          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-        );
+      function readThemeMode() {
+        try {
+          var stored = localStorage.getItem("book-theme");
+          if (stored === "light" || stored === "dark" || stored === "system") {
+            return stored;
+          }
+        } catch (e) {}
+        return "system";
+      }
+
+      function resolveTheme(mode) {
+        return mode === "system" ? systemTheme() : mode;
+      }
+
+      function currentThemeMode() {
+        var mode = root.getAttribute("data-theme-mode");
+        if (mode === "light" || mode === "dark" || mode === "system") {
+          return mode;
+        }
+        return readThemeMode();
+      }
+
+      function renderTheme(mode) {
+        var resolved = resolveTheme(mode);
+        if (mode === "system") {
+          themeBtn.innerHTML = DEVICE;
+          themeBtn.setAttribute("title", "Using device theme (click for light)");
+          themeBtn.setAttribute("aria-label", "Theme: device. Click to switch to light mode");
+        } else if (mode === "dark") {
+          themeBtn.innerHTML = SUN;
+          themeBtn.setAttribute("title", "Dark mode (click for device theme)");
+          themeBtn.setAttribute("aria-label", "Theme: dark. Click to switch to device theme");
+        } else {
+          themeBtn.innerHTML = MOON;
+          themeBtn.setAttribute("title", "Light mode (click for dark)");
+          themeBtn.setAttribute("aria-label", "Theme: light. Click to switch to dark mode");
+        }
+        themeBtn.setAttribute("data-theme-mode", mode);
+        themeBtn.setAttribute("data-theme-resolved", resolved);
+      }
+
+      function applyThemeMode(mode) {
+        var resolved = resolveTheme(mode);
+        root.setAttribute("data-theme", resolved);
+        root.setAttribute("data-theme-mode", mode);
+        try {
+          localStorage.setItem("book-theme", mode);
+        } catch (e) {}
+        renderTheme(mode);
       }
 
       function applyFontSize(size) {
@@ -765,15 +993,27 @@
         }
       } catch (e) {}
       applyFontSize(fontSize);
-      renderTheme(currentTheme());
+      applyThemeMode(readThemeMode());
+
+      if (window.matchMedia) {
+        var colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        var onSchemeChange = function () {
+          if (currentThemeMode() === "system") {
+            applyThemeMode("system");
+          }
+        };
+        if (colorSchemeQuery.addEventListener) {
+          colorSchemeQuery.addEventListener("change", onSchemeChange);
+        } else if (colorSchemeQuery.addListener) {
+          colorSchemeQuery.addListener(onSchemeChange);
+        }
+      }
 
       themeBtn.addEventListener("click", function () {
-        var next = currentTheme() === "dark" ? "light" : "dark";
-        root.setAttribute("data-theme", next);
-        try {
-          localStorage.setItem("book-theme", next);
-        } catch (e) {}
-        renderTheme(next);
+        var mode = currentThemeMode();
+        var index = THEME_ORDER.indexOf(mode);
+        var next = THEME_ORDER[(index + 1) % THEME_ORDER.length];
+        applyThemeMode(next);
       });
 
       fontWidget.querySelector(".zeno_font_resizer_minus").addEventListener("click", function (e) {
@@ -806,11 +1046,11 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="symbols.html"><span class="header-section-number">13</span> Symbols</a></div>
-<div class="next"><a href="electric-charge.html"><span class="header-section-number">15</span> Electric Charge</a></div>
+<div class="prev"><a href="constants.html"><span class="header-section-number">15</span> Constants</a></div>
+<div class="next"><a href="amperes-law.html"><span class="header-section-number">17</span> Ampere’s Law</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#site-index"><span class="header-section-number">14</span> Site Index</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#site-index"><span class="header-section-number">16</span> Site Index</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

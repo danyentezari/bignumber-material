@@ -4,15 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>142 Mathematics Appendix | Mathematics for Physics</title>
+<title>285 Mathematics Appendix | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
 <meta name="description" content="Stokes’ Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If with continuous first partial...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="142 Mathematics Appendix | Mathematics for Physics">
+<meta property="og:title" content="285 Mathematics Appendix | Mathematics for Physics">
 <meta property="og:type" content="book">
 <meta property="og:description" content="Stokes’ Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If with continuous first partial...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="142 Mathematics Appendix | Mathematics for Physics">
+<meta name="twitter:title" content="285 Mathematics Appendix | Mathematics for Physics">
 <meta name="twitter:description" content="Stokes’ Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If with continuous first partial...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -24,15 +24,20 @@
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
-          var theme = stored
+          var mode = stored === "light" || stored === "dark" || stored === "system"
             ? stored
-            : (window.matchMedia &&
+            : "system";
+          var theme = mode === "system"
+            ? (window.matchMedia &&
                 window.matchMedia("(prefers-color-scheme: dark)").matches
                 ? "dark"
-                : "light");
+                : "light")
+            : mode;
           document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.setAttribute("data-theme-mode", mode);
         } catch (e) {
           document.documentElement.setAttribute("data-theme", "light");
+          document.documentElement.setAttribute("data-theme-mode", "system");
         }
         document.documentElement.classList.add("theme-classic");
         try {
@@ -132,25 +137,37 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active-parent" href="notes.html"><span class="header-section-number">11</span> Notes</a>
+<a class="" href="differential-equations.html"><span class="header-section-number">11</span> Differential Equations</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary.html"><span class="header-section-number">12</span> Glossary</a>
+<a class="active-parent" href="notes.html"><span class="header-section-number">12</span> Notes</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="symbols.html"><span class="header-section-number">13</span> Symbols</a>
+<a class="" href="glossary.html"><span class="header-section-number">13</span> Glossary</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="site-index.html"><span class="header-section-number">14</span> Index</a>
+<a class="" href="symbols.html"><span class="header-section-number">14</span> Symbols</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="constants.html"><span class="header-section-number">15</span> Constants</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="site-index.html"><span class="header-section-number">16</span> Index</a>
 </div>
 </li>
 </ul>
@@ -160,21 +177,21 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="mathematics-appendix" class="section level1" number="142">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="mathematics-appendix" class="section level1" number="285">
 <h1>
-<span class="header-section-number">142</span> Mathematics Appendix<a class="anchor" aria-label="anchor" href="#mathematics-appendix"><i class="fas fa-link"></i></a>
+<span class="header-section-number">285</span> Mathematics Appendix<a class="anchor" aria-label="anchor" href="#mathematics-appendix"><i class="fas fa-link"></i></a>
 </h1>
 <p><strong>Stokes’ Theorem</strong></p>
 <p>Let <span class="math inline">\(S\)</span> be a piecewise smooth oriented surface in space, and let the boundary of <span class="math inline">\(S\)</span> be a piecewise smooth simple closed curve <span class="math inline">\(C\)</span>. If with continuous first partial derivatives in a domain containing <span class="math inline">\(S\)</span>, then:</p>
-<p><span class="math display">\[\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span></p>
+<p><span class="math display">\[\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \dfrac{d\mathbf{r}}{ds}(s) \, ds\]</span></p>
 <p>Or,</p>
-<p><span class="math display">\[\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span></p>
+<p><span class="math display">\[\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \dfrac{d\mathbf{r}}{ds}(s) \, ds\]</span></p>
 <p>In this formula</p>
 <ul>
 <li>
 <span class="math inline">\(\mathbf{n}\)</span> is the unit normal vector of <span class="math inline">\(S\)</span>.</li>
 <li>
-<span class="math inline">\(\mathbf{r}'(s)\)</span> is the unit tangent vector of <span class="math inline">\(C\)</span>.</li>
+<span class="math inline">\(\dfrac{d\mathbf{r}}{ds}(s)\)</span> is the unit tangent vector of <span class="math inline">\(C\)</span>.</li>
 <li>
 <span class="math inline">\(s\)</span> is the arc length of <span class="math inline">\(C\)</span>.</li>
 <li>
@@ -207,7 +224,7 @@
 <p><br></p>
 <p><strong>Vector Differential Operator</strong></p>
 <p>The vector differential operator for expressing the partial differentiation of a vector</p>
-<p><span class="math display">\[\nabla = \frac{\partial}{\partial x} \mathbf{i} + \frac{\partial}{\partial y} \mathbf{j} + \frac{\partial}{\partial z} \mathbf{k}\]</span></p>
+<p><span class="math display">\[\nabla = \dfrac{\partial}{\partial x} \mathbf{i} + \dfrac{\partial}{\partial y} \mathbf{j} + \dfrac{\partial}{\partial z} \mathbf{k}\]</span></p>
 <p>where</p>
 <ul>
 <li>
@@ -227,11 +244,11 @@
 <p><br></p>
 <p><strong>Curl</strong></p>
 <p>Let <span class="math inline">\(\mathbf{v}(x, y, z)\)</span> be a differentiable vector function expressed in Cartesian coordinates with components <span class="math inline">\([v_1, v_2, v_3]\)</span>, such that: <span class="math display">\[\mathbf{v} = v_1 \mathbf{i} + v_2 \mathbf{j} + v_3 \mathbf{k}\]</span>
-The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <span class="math inline">\(\nabla \times \mathbf{v}\)</span> or <span class="math inline">\(\text{rot } \mathbf{v}\)</span>) is defined by the following symbolic determinant: <span class="math display">\[\text{curl } \mathbf{v} = \nabla \times \mathbf{v} = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z} \\ v_1 &amp; v_2 &amp; v_3 \end{vmatrix}\]</span></p>
+The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <span class="math inline">\(\nabla \times \mathbf{v}\)</span> or <span class="math inline">\(\text{rot } \mathbf{v}\)</span>) is defined by the following symbolic determinant: <span class="math display">\[\text{curl } \mathbf{v} = \nabla \times \mathbf{v} = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \dfrac{\partial}{\partial x} &amp; \dfrac{\partial}{\partial y} &amp; \dfrac{\partial}{\partial z} \\ v_1 &amp; v_2 &amp; v_3 \end{vmatrix}\]</span></p>
 <p><strong>Divergence</strong></p>
 <p><br></p>
 <p><strong>Differentiation of Vector</strong></p>
-<p><span class="math display">\[\mathbf{v}'(t) = \lim_{\Delta t \to 0} \frac{\mathbf{v}(t + \Delta t) - \mathbf{v}(t)}{\Delta t}\]</span></p>
+<p><span class="math display">\[\mathbf{v}'(t) = \lim_{\Delta t \to 0} \dfrac{\mathbf{v}(t + \Delta t) - \mathbf{v}(t)}{\Delta t}\]</span></p>
 <p><br></p>
 <p><strong>Vector Function</strong></p>
 <p><span class="math display">\[\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle = f(t)\mathbf{i} + g(t)\mathbf{j} + h(t)\mathbf{k}\]</span></p>
@@ -253,13 +270,9 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
 <li><a href="operators.html">Operators</a></li>
 <li><a href="physics-mathematical-appendix.html">Physics Mathematical Appendix</a></li>
 <li><a href="radiation.html">Radiation</a></li>
-<li><a href="schrodinger-equation-time-independent.html">Schrodinger Equation Time-Independent</a></li>
-<li><a href="schrodinger-equations.html">Schrodinger Equations</a></li>
 <li><a href="special-relativity-and-electric-fields.html">Special Relativity and Electric Fields</a></li>
 <li><a href="stokes-theorem-for-flux-integral.html">Stokes’ Theorem for Flux Integral</a></li>
 <li><a href="stokes-theorem-physics.html">Stokes’ Theorem Physics</a></li>
-<li><a href="time-dependent-schrodinger-equation-1-dimensional.html">Time Dependent Schrodinger Equation 1-Dimensional</a></li>
-<li><a href="time-dependent-schrodinger-equation-generalized.html">Time Dependent Schrodinger Equation Generalized</a></li>
 </ul>
 </div>
 
@@ -270,12 +283,15 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
     var SUN =
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.5" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22.5"/><line x1="3.5" y1="3.5" x2="5.3" y2="5.3"/><line x1="18.7" y1="18.7" x2="20.5" y2="20.5"/><line x1="1.5" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22.5" y2="12"/><line x1="3.5" y1="20.5" x2="5.3" y2="18.7"/><line x1="18.7" y1="5.3" x2="20.5" y2="3.5"/></svg>';
+    var DEVICE =
+      '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>';
 
     var FONT_MIN = 13;
     var FONT_MAX = 28;
     var FONT_STEP = 1.6;
     var FONT_BASE = 17;
     var fontSize = FONT_BASE;
+    var THEME_ORDER = ["light", "dark", "system"];
 
     function initClassicLayout() {
       if (document.getElementById("page")) return;
@@ -619,16 +635,62 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
       if (chapterSidebar) chapterSidebar.remove();
       if (oldFooter) oldFooter.remove();
 
-      function currentTheme() {
-        return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      function systemTheme() {
+        return window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
       }
 
-      function renderTheme(theme) {
-        themeBtn.innerHTML = theme === "dark" ? SUN : MOON;
-        themeBtn.setAttribute(
-          "title",
-          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-        );
+      function readThemeMode() {
+        try {
+          var stored = localStorage.getItem("book-theme");
+          if (stored === "light" || stored === "dark" || stored === "system") {
+            return stored;
+          }
+        } catch (e) {}
+        return "system";
+      }
+
+      function resolveTheme(mode) {
+        return mode === "system" ? systemTheme() : mode;
+      }
+
+      function currentThemeMode() {
+        var mode = root.getAttribute("data-theme-mode");
+        if (mode === "light" || mode === "dark" || mode === "system") {
+          return mode;
+        }
+        return readThemeMode();
+      }
+
+      function renderTheme(mode) {
+        var resolved = resolveTheme(mode);
+        if (mode === "system") {
+          themeBtn.innerHTML = DEVICE;
+          themeBtn.setAttribute("title", "Using device theme (click for light)");
+          themeBtn.setAttribute("aria-label", "Theme: device. Click to switch to light mode");
+        } else if (mode === "dark") {
+          themeBtn.innerHTML = SUN;
+          themeBtn.setAttribute("title", "Dark mode (click for device theme)");
+          themeBtn.setAttribute("aria-label", "Theme: dark. Click to switch to device theme");
+        } else {
+          themeBtn.innerHTML = MOON;
+          themeBtn.setAttribute("title", "Light mode (click for dark)");
+          themeBtn.setAttribute("aria-label", "Theme: light. Click to switch to dark mode");
+        }
+        themeBtn.setAttribute("data-theme-mode", mode);
+        themeBtn.setAttribute("data-theme-resolved", resolved);
+      }
+
+      function applyThemeMode(mode) {
+        var resolved = resolveTheme(mode);
+        root.setAttribute("data-theme", resolved);
+        root.setAttribute("data-theme-mode", mode);
+        try {
+          localStorage.setItem("book-theme", mode);
+        } catch (e) {}
+        renderTheme(mode);
       }
 
       function applyFontSize(size) {
@@ -646,15 +708,27 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
         }
       } catch (e) {}
       applyFontSize(fontSize);
-      renderTheme(currentTheme());
+      applyThemeMode(readThemeMode());
+
+      if (window.matchMedia) {
+        var colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        var onSchemeChange = function () {
+          if (currentThemeMode() === "system") {
+            applyThemeMode("system");
+          }
+        };
+        if (colorSchemeQuery.addEventListener) {
+          colorSchemeQuery.addEventListener("change", onSchemeChange);
+        } else if (colorSchemeQuery.addListener) {
+          colorSchemeQuery.addListener(onSchemeChange);
+        }
+      }
 
       themeBtn.addEventListener("click", function () {
-        var next = currentTheme() === "dark" ? "light" : "dark";
-        root.setAttribute("data-theme", next);
-        try {
-          localStorage.setItem("book-theme", next);
-        } catch (e) {}
-        renderTheme(next);
+        var mode = currentThemeMode();
+        var index = THEME_ORDER.indexOf(mode);
+        var next = THEME_ORDER[(index + 1) % THEME_ORDER.length];
+        applyThemeMode(next);
       });
 
       fontWidget.querySelector(".zeno_font_resizer_minus").addEventListener("click", function (e) {
@@ -687,11 +761,11 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="lorentz-force-law.html"><span class="header-section-number">141</span> Lorentz Force Law</a></div>
-<div class="next"><a href="maxwells-equations.html"><span class="header-section-number">143</span> Maxwell’s Equations</a></div>
+<div class="prev"><a href="lorentz-force-law.html"><span class="header-section-number">284</span> Lorentz Force Law</a></div>
+<div class="next"><a href="maxwells-equations-1.html"><span class="header-section-number">286</span> Maxwell’s Equations</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#mathematics-appendix"><span class="header-section-number">142</span> Mathematics Appendix</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#mathematics-appendix"><span class="header-section-number">285</span> Mathematics Appendix</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

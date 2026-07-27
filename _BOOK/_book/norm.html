@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>113 Norm | Mathematics for Physics</title>
+<title>230 Norm | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="definition [d] (Norm = Length = Magnitude = Modulus = Size) A function \(\lVert \cdot \rVert : V \rightarrow \mathbb{R}\) on a vector space \(V\) satisfying, for all \(x, y \in V\) and scalars...">
+<meta name="description" content="A norm is a function that associates a real number with a vector, that is used for measuring the distance between vectors. definition [d] (Norm) From Kreyszig: a norm on a real or complex vector...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="113 Norm | Mathematics for Physics">
+<meta property="og:title" content="230 Norm | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="definition [d] (Norm = Length = Magnitude = Modulus = Size) A function \(\lVert \cdot \rVert : V \rightarrow \mathbb{R}\) on a vector space \(V\) satisfying, for all \(x, y \in V\) and scalars...">
+<meta property="og:description" content="A norm is a function that associates a real number with a vector, that is used for measuring the distance between vectors. definition [d] (Norm) From Kreyszig: a norm on a real or complex vector...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="113 Norm | Mathematics for Physics">
-<meta name="twitter:description" content="definition [d] (Norm = Length = Magnitude = Modulus = Size) A function \(\lVert \cdot \rVert : V \rightarrow \mathbb{R}\) on a vector space \(V\) satisfying, for all \(x, y \in V\) and scalars...">
+<meta name="twitter:title" content="230 Norm | Mathematics for Physics">
+<meta name="twitter:description" content="A norm is a function that associates a real number with a vector, that is used for measuring the distance between vectors. definition [d] (Norm) From Kreyszig: a norm on a real or complex vector...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -24,15 +24,20 @@
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
-          var theme = stored
+          var mode = stored === "light" || stored === "dark" || stored === "system"
             ? stored
-            : (window.matchMedia &&
+            : "system";
+          var theme = mode === "system"
+            ? (window.matchMedia &&
                 window.matchMedia("(prefers-color-scheme: dark)").matches
                 ? "dark"
-                : "light");
+                : "light")
+            : mode;
           document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.setAttribute("data-theme-mode", mode);
         } catch (e) {
           document.documentElement.setAttribute("data-theme", "light");
+          document.documentElement.setAttribute("data-theme-mode", "system");
         }
         document.documentElement.classList.add("theme-classic");
         try {
@@ -132,25 +137,37 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="notes.html"><span class="header-section-number">11</span> Notes</a>
+<a class="" href="differential-equations.html"><span class="header-section-number">11</span> Differential Equations</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary.html"><span class="header-section-number">12</span> Glossary</a>
+<a class="" href="notes.html"><span class="header-section-number">12</span> Notes</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="symbols.html"><span class="header-section-number">13</span> Symbols</a>
+<a class="" href="glossary.html"><span class="header-section-number">13</span> Glossary</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="site-index.html"><span class="header-section-number">14</span> Index</a>
+<a class="" href="symbols.html"><span class="header-section-number">14</span> Symbols</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="constants.html"><span class="header-section-number">15</span> Constants</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="site-index.html"><span class="header-section-number">16</span> Index</a>
 </div>
 </li>
 </ul>
@@ -160,23 +177,29 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="norm" class="section level1" number="113">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="norm" class="section level1" number="230">
 <h1>
-<span class="header-section-number">113</span> Norm<a class="anchor" aria-label="anchor" href="#norm"><i class="fas fa-link"></i></a>
+<span class="header-section-number">230</span> Norm<a class="anchor" aria-label="anchor" href="#norm"><i class="fas fa-link"></i></a>
 </h1>
+<p>A norm is a function that associates a real number with a vector, that is used for measuring the distance between vectors.</p>
 <p><i></i></p>
-<p><strong>definition [d]</strong> (<em>Norm = Length = Magnitude = Modulus = Size</em>) A function <span class="math inline">\(\lVert \cdot \rVert : V \rightarrow \mathbb{R}\)</span> on a vector space <span class="math inline">\(V\)</span> satisfying, for all <span class="math inline">\(x, y \in V\)</span> and scalars <span class="math inline">\(\alpha\)</span>:</p>
+<p><strong>definition [d]</strong> (<em>Norm</em>) From Kreyszig: a norm on a real or complex vector space <span class="math inline">\(X\)</span> is a real-valued function on <span class="math inline">\(X\)</span> whose value at an <span class="math inline">\(x \in X\)</span> is denoted by <span class="math inline">\(\lVert x \rVert\)</span> and which has the properties</p>
 <ul>
-<li>(Positive definiteness) <span class="math inline">\(\lVert x \rVert \geq 0\)</span>, with <span class="math inline">\(\lVert x \rVert = 0 \iff x = 0\)</span> .</li>
-<li>(Absolute homogeneity) <span class="math inline">\(\lVert \alpha x \rVert = |\alpha|\, \lVert x \rVert\)</span> .</li>
-<li>(Triangle inequality) <span class="math inline">\(\lVert x + y \rVert \leq \lVert x \rVert + \lVert y \rVert\)</span> .</li>
+<li>(N1) <span class="math inline">\(\lVert x \rVert \geq 0\)</span>
+</li>
+<li>(N2) <span class="math inline">\(\lVert x \rVert = 0\)</span> if and only if <span class="math inline">\(x = 0\)</span>
+</li>
+<li>(N3) <span class="math inline">\(\lVert \alpha x \rVert = |\alpha|\, \lVert x \rVert\)</span>
+</li>
+<li>(N4) <span class="math inline">\(\lVert x + y \rVert \leq \lVert x \rVert + \lVert y \rVert\)</span> (Triangle inequality)</li>
 </ul>
+<p>here <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are arbitrary vectors in <span class="math inline">\(X\)</span> and <span class="math inline">\(\alpha\)</span> is any scalar.</p>
 <p>where</p>
 <ul>
 <li>
-<span class="math inline">\(V\)</span> is a vector space over a field <span class="math inline">\(K\)</span>.</li>
+<span class="math inline">\(X\)</span> is a real or complex vector space.</li>
 <li>
-<span class="math inline">\(x, y \in V\)</span> are vectors.</li>
+<span class="math inline">\(\lVert x \rVert\)</span> is the norm of <span class="math inline">\(x\)</span>.</li>
 <li>
 <span class="math inline">\(\alpha\)</span> is a scalar.</li>
 <li>
@@ -184,32 +207,83 @@
 </ul>
 <p>Note:</p>
 <ul>
-<li>
-<span class="math inline">\(K\)</span> is typically <span class="math inline">\(\mathbb{R}\)</span>.</li>
-<li>
-<span class="math inline">\(K\)</span> is also typically <span class="math inline">\(\mathbb{C}\)</span>.</li>
-<li>
-<span class="math inline">\(|\alpha|\)</span> is also called the modulus of <span class="math inline">\(\alpha\)</span>.</li>
+<li>Kreyszig: a norm on <span class="math inline">\(X\)</span> defines a metric <span class="math inline">\(d\)</span> on <span class="math inline">\(X\)</span> by <span class="math inline">\(d(x,y) = \lVert x - y \rVert\)</span>, called the metric induced by the norm.</li>
+<li>The normed space is denoted <span class="math inline">\((X, \lVert\cdot\rVert)\)</span> or simply <span class="math inline">\(X\)</span>.</li>
 </ul>
 <p></p>
-<div id="references-35" class="section level2" number="113.1">
+<div id="elementary-example-104" class="section level2" number="230.1">
 <h2>
-<span class="header-section-number">113.1</span> References<a class="anchor" aria-label="anchor" href="#references-35"><i class="fas fa-link"></i></a>
+<span class="header-section-number">230.1</span> Elementary Example<a class="anchor" aria-label="anchor" href="#elementary-example-104"><i class="fas fa-link"></i></a>
+</h2>
+<div id="simple-104" class="section level3" number="230.1.1">
+<h3>
+<span class="header-section-number">230.1.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple-104"><i class="fas fa-link"></i></a>
+</h3>
+<p>A norm assigns a nonnegative length to each vector. On <span class="math inline">\(\mathbb{R}^{2}\)</span> use the Euclidean length.</p>
+<p><span class="math display">\[
+X = \mathbb{R}^{2}
+\]</span></p>
+<p><span class="math display">\[
+\lVert (x_{1},x_{2}) \rVert = \sqrt{x_{1}^{2} + x_{2}^{2}}
+\]</span></p>
+<p><span class="math display">\[
+\lVert (3,4) \rVert = 5,\quad \lVert (0,0) \rVert = 0
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\lVert x \rVert\)</span> is the norm of the vector <span class="math inline">\(x\)</span>.</li>
+<li>
+<span class="math inline">\(X\)</span> is the vector space.</li>
+</ul>
+</div>
+<div id="general-104" class="section level3" number="230.1.2">
+<h3>
+<span class="header-section-number">230.1.2</span> General<a class="anchor" aria-label="anchor" href="#general-104"><i class="fas fa-link"></i></a>
+</h3>
+<p>On <span class="math inline">\(\mathbb{R}^{3}\)</span> the same Euclidean norm has three squared components, and it induces the metric <span class="math inline">\(d(x,y) = \lVert x - y \rVert\)</span>.</p>
+<p><span class="math display">\[
+\lVert (x_{1},x_{2},x_{3}) \rVert = \sqrt{x_{1}^{2} + x_{2}^{2} + x_{3}^{2}}
+\]</span></p>
+<p><span class="math display">\[
+d(x,y) = \lVert x - y \rVert
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(d\)</span> is the metric induced by the norm.</li>
+</ul>
+</div>
+</div>
+<div id="references-171" class="section level2" number="230.2">
+<h2>
+<span class="header-section-number">230.2</span> References<a class="anchor" aria-label="anchor" href="#references-171"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li>Kreyszig, E. <em>Introductory Functional Analysis with Applications</em>. Wiley, 1989. — Norm axioms (7.1)–(7.3).</li>
-<li>Gamelin, T. W., &amp; Greene, R. E. <em>Introduction to Topology</em>, 2nd ed. Dover, 1999. — Norm conditions (7.1)–(7.3).</li>
-<li>Lee, J. M. <em>Introduction to Topological Manifolds</em>, 2nd ed. Springer, 2011. — Problem 4-21 (norm on a vector space).</li>
+<li>Kreyszig, E. <em>Introductory Functional Analysis with Applications</em>. Wiley, 1989. — Norm axioms (N1)–(N4); metric induced by the norm <span class="math inline">\(d(x,y)=\lVert x-y\rVert\)</span>.</li>
 </ol>
 <div class="topic-index">
 <ul>
+<li><a href="absolute-value-to-the-p.html">Absolute-Value-to-the-p</a></li>
+<li><a href="banach-space.html">Banach Space</a></li>
 <li><a href="cauchy-sequence.html">Cauchy Sequence</a></li>
 <li><a href="complete-set.html">Complete Set</a></li>
+<li><a href="completeness.html">Completeness</a></li>
 <li><a href="convergence.html">Convergence</a></li>
 <li><a href="delta-function.html">Delta Function</a></li>
+<li><a href="ell-p.html">Ell P</a></li>
 <li><a href="fourier-transform.html">Fourier Transform</a></li>
+<li><a href="functional.html">Functional</a></li>
+<li><a href="integrability.html">Integrability</a></li>
+<li><a href="linear-space.html">Linear Space</a></li>
 <li><a href="metric-space.html">Metric Space</a></li>
 <li><a href="norm.html">Norm</a></li>
+<li><a href="normed-space.html">Normed Space</a></li>
+<li><a href="p.html">P</a></li>
+<li><a href="p-norm.html">P-Norm</a></li>
+<li><a href="p-summable.html">P-Summable</a></li>
+<li><a href="p-summable-sequence.html">P-Summable Sequence</a></li>
+<li><a href="quadratic-integrability.html">Quadratic Integrability</a></li>
 <li><a href="sets.html">Sets</a></li>
 <li><a href="sifting-property.html">Sifting Property</a></li>
 </ul>
@@ -223,12 +297,15 @@
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
     var SUN =
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.5" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22.5"/><line x1="3.5" y1="3.5" x2="5.3" y2="5.3"/><line x1="18.7" y1="18.7" x2="20.5" y2="20.5"/><line x1="1.5" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22.5" y2="12"/><line x1="3.5" y1="20.5" x2="5.3" y2="18.7"/><line x1="18.7" y1="5.3" x2="20.5" y2="3.5"/></svg>';
+    var DEVICE =
+      '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>';
 
     var FONT_MIN = 13;
     var FONT_MAX = 28;
     var FONT_STEP = 1.6;
     var FONT_BASE = 17;
     var fontSize = FONT_BASE;
+    var THEME_ORDER = ["light", "dark", "system"];
 
     function initClassicLayout() {
       if (document.getElementById("page")) return;
@@ -572,16 +649,62 @@
       if (chapterSidebar) chapterSidebar.remove();
       if (oldFooter) oldFooter.remove();
 
-      function currentTheme() {
-        return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      function systemTheme() {
+        return window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
       }
 
-      function renderTheme(theme) {
-        themeBtn.innerHTML = theme === "dark" ? SUN : MOON;
-        themeBtn.setAttribute(
-          "title",
-          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-        );
+      function readThemeMode() {
+        try {
+          var stored = localStorage.getItem("book-theme");
+          if (stored === "light" || stored === "dark" || stored === "system") {
+            return stored;
+          }
+        } catch (e) {}
+        return "system";
+      }
+
+      function resolveTheme(mode) {
+        return mode === "system" ? systemTheme() : mode;
+      }
+
+      function currentThemeMode() {
+        var mode = root.getAttribute("data-theme-mode");
+        if (mode === "light" || mode === "dark" || mode === "system") {
+          return mode;
+        }
+        return readThemeMode();
+      }
+
+      function renderTheme(mode) {
+        var resolved = resolveTheme(mode);
+        if (mode === "system") {
+          themeBtn.innerHTML = DEVICE;
+          themeBtn.setAttribute("title", "Using device theme (click for light)");
+          themeBtn.setAttribute("aria-label", "Theme: device. Click to switch to light mode");
+        } else if (mode === "dark") {
+          themeBtn.innerHTML = SUN;
+          themeBtn.setAttribute("title", "Dark mode (click for device theme)");
+          themeBtn.setAttribute("aria-label", "Theme: dark. Click to switch to device theme");
+        } else {
+          themeBtn.innerHTML = MOON;
+          themeBtn.setAttribute("title", "Light mode (click for dark)");
+          themeBtn.setAttribute("aria-label", "Theme: light. Click to switch to dark mode");
+        }
+        themeBtn.setAttribute("data-theme-mode", mode);
+        themeBtn.setAttribute("data-theme-resolved", resolved);
+      }
+
+      function applyThemeMode(mode) {
+        var resolved = resolveTheme(mode);
+        root.setAttribute("data-theme", resolved);
+        root.setAttribute("data-theme-mode", mode);
+        try {
+          localStorage.setItem("book-theme", mode);
+        } catch (e) {}
+        renderTheme(mode);
       }
 
       function applyFontSize(size) {
@@ -599,15 +722,27 @@
         }
       } catch (e) {}
       applyFontSize(fontSize);
-      renderTheme(currentTheme());
+      applyThemeMode(readThemeMode());
+
+      if (window.matchMedia) {
+        var colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        var onSchemeChange = function () {
+          if (currentThemeMode() === "system") {
+            applyThemeMode("system");
+          }
+        };
+        if (colorSchemeQuery.addEventListener) {
+          colorSchemeQuery.addEventListener("change", onSchemeChange);
+        } else if (colorSchemeQuery.addListener) {
+          colorSchemeQuery.addListener(onSchemeChange);
+        }
+      }
 
       themeBtn.addEventListener("click", function () {
-        var next = currentTheme() === "dark" ? "light" : "dark";
-        root.setAttribute("data-theme", next);
-        try {
-          localStorage.setItem("book-theme", next);
-        } catch (e) {}
-        renderTheme(next);
+        var mode = currentThemeMode();
+        var index = THEME_ORDER.indexOf(mode);
+        var next = THEME_ORDER[(index + 1) % THEME_ORDER.length];
+        applyThemeMode(next);
       });
 
       fontWidget.querySelector(".zeno_font_resizer_minus").addEventListener("click", function (e) {
@@ -640,13 +775,19 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="metric-space.html"><span class="header-section-number">112</span> Metric Space</a></div>
-<div class="next"><a href="sets.html"><span class="header-section-number">114</span> Sets</a></div>
+<div class="prev"><a href="metric-space.html"><span class="header-section-number">229</span> Metric Space</a></div>
+<div class="next"><a href="normed-space.html"><span class="header-section-number">231</span> Normed Space</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#norm"><span class="header-section-number">113</span> Norm</a></li>
-<li><a class="nav-link" href="#references-35"><span class="header-section-number">113.1</span> References</a></li>
+<li><a class="nav-link" href="#norm"><span class="header-section-number">230</span> Norm</a></li>
+<li>
+<a class="nav-link" href="#elementary-example-104"><span class="header-section-number">230.1</span> Elementary Example</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#simple-104"><span class="header-section-number">230.1.1</span> Simple</a></li>
+<li><a class="nav-link" href="#general-104"><span class="header-section-number">230.1.2</span> General</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#references-171"><span class="header-section-number">230.2</span> References</a></li>
 </ul>
 
       <div class="book-extra">

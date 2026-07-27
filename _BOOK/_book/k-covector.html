@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>70 k-Covector | Mathematics for Physics</title>
+<title>171 k-Covector | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="definition (k-Covector) An alternating \(k\)-linear function from the \(k\)-fold product of a vector space to the real numbers, \(T: V^k \rightarrow \mathbb{R}\), where the following conditions...">
+<meta name="description" content="An alternating multilinear mapping on k vectors that is used to span the set of alternating tensors of that degree. definition (k-Covector) An alternating \(k\)-linear function from the \(k\)-fold...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="70 k-Covector | Mathematics for Physics">
+<meta property="og:title" content="171 k-Covector | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="definition (k-Covector) An alternating \(k\)-linear function from the \(k\)-fold product of a vector space to the real numbers, \(T: V^k \rightarrow \mathbb{R}\), where the following conditions...">
+<meta property="og:description" content="An alternating multilinear mapping on k vectors that is used to span the set of alternating tensors of that degree. definition (k-Covector) An alternating \(k\)-linear function from the \(k\)-fold...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="70 k-Covector | Mathematics for Physics">
-<meta name="twitter:description" content="definition (k-Covector) An alternating \(k\)-linear function from the \(k\)-fold product of a vector space to the real numbers, \(T: V^k \rightarrow \mathbb{R}\), where the following conditions...">
+<meta name="twitter:title" content="171 k-Covector | Mathematics for Physics">
+<meta name="twitter:description" content="An alternating multilinear mapping on k vectors that is used to span the set of alternating tensors of that degree. definition (k-Covector) An alternating \(k\)-linear function from the \(k\)-fold...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -24,15 +24,20 @@
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
-          var theme = stored
+          var mode = stored === "light" || stored === "dark" || stored === "system"
             ? stored
-            : (window.matchMedia &&
+            : "system";
+          var theme = mode === "system"
+            ? (window.matchMedia &&
                 window.matchMedia("(prefers-color-scheme: dark)").matches
                 ? "dark"
-                : "light");
+                : "light")
+            : mode;
           document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.setAttribute("data-theme-mode", mode);
         } catch (e) {
           document.documentElement.setAttribute("data-theme", "light");
+          document.documentElement.setAttribute("data-theme-mode", "system");
         }
         document.documentElement.classList.add("theme-classic");
         try {
@@ -132,25 +137,37 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="notes.html"><span class="header-section-number">11</span> Notes</a>
+<a class="" href="differential-equations.html"><span class="header-section-number">11</span> Differential Equations</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary.html"><span class="header-section-number">12</span> Glossary</a>
+<a class="" href="notes.html"><span class="header-section-number">12</span> Notes</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="symbols.html"><span class="header-section-number">13</span> Symbols</a>
+<a class="" href="glossary.html"><span class="header-section-number">13</span> Glossary</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="site-index.html"><span class="header-section-number">14</span> Index</a>
+<a class="" href="symbols.html"><span class="header-section-number">14</span> Symbols</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="constants.html"><span class="header-section-number">15</span> Constants</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="site-index.html"><span class="header-section-number">16</span> Index</a>
 </div>
 </li>
 </ul>
@@ -160,10 +177,11 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="k-covector" class="section level1" number="70">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="k-covector" class="section level1" number="171">
 <h1>
-<span class="header-section-number">70</span> k-Covector<a class="anchor" aria-label="anchor" href="#k-covector"><i class="fas fa-link"></i></a>
+<span class="header-section-number">171</span> k-Covector<a class="anchor" aria-label="anchor" href="#k-covector"><i class="fas fa-link"></i></a>
 </h1>
+<p>An alternating multilinear mapping on k vectors that is used to span the set of alternating tensors of that degree.</p>
 <p><i></i></p>
 <p><strong>definition</strong> (<em>k-Covector</em>) An alternating <span class="math inline">\(k\)</span>-linear function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers, <span class="math inline">\(T: V^k \rightarrow \mathbb{R}\)</span>, where the following conditions apply:</p>
 <ul>
@@ -196,10 +214,53 @@
 <li>A <span class="math inline">\(k\)</span>-covector is also called an alternating <span class="math inline">\(k\)</span>-tensor.</li>
 </ul>
 <p></p>
+<div id="elementary-example-64" class="section level2" number="171.1">
+<h2>
+<span class="header-section-number">171.1</span> Elementary Example<a class="anchor" aria-label="anchor" href="#elementary-example-64"><i class="fas fa-link"></i></a>
+</h2>
+<div id="simple-64" class="section level3" number="171.1.1">
+<h3>
+<span class="header-section-number">171.1.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple-64"><i class="fas fa-link"></i></a>
+</h3>
+<p>A <span class="math inline">\(2\)</span>-covector is an alternating bilinear map on vectors.</p>
+<p><span class="math display">\[
+\omega : V \times V \rightarrow \mathbb{R}
+\]</span></p>
+<p><span class="math display">\[
+V = \{ e_{1},\ e_{2},\ e_{3} \}
+\]</span></p>
+<p><span class="math display">\[
+\omega(e_{1},e_{2}) = 1,\quad \omega(e_{2},e_{1}) = -1
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\omega\)</span> is a <span class="math inline">\(k\)</span>-covector with <span class="math inline">\(k = 2\)</span>.</li>
+<li>
+<span class="math inline">\(V\)</span> is the set of input basis vectors.</li>
+</ul>
+</div>
+<div id="general-64" class="section level3" number="171.1.2">
+<h3>
+<span class="header-section-number">171.1.2</span> General<a class="anchor" aria-label="anchor" href="#general-64"><i class="fas fa-link"></i></a>
+</h3>
+<p>On <span class="math inline">\(\mathbb{R}^{3}\)</span>, a <span class="math inline">\(2\)</span>-covector has skew components <span class="math inline">\(\omega_{ij}\)</span> in a <span class="math inline">\(3 \times 3\)</span> matrix.</p>
+<p><span class="math display">\[
+(\omega_{ij}) = \begin{pmatrix} 0 &amp; 1 &amp; -1 \\ -1 &amp; 0 &amp; 2 \\ 1 &amp; -2 &amp; 0 \end{pmatrix}
+\]</span></p>
+<p><span class="math display">\[
+\omega(u,v) = \sum_{i,j} \omega_{ij}\, u^{i}\, v^{j}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\omega_{ij} = -\omega_{ji}\)</span> are the components of <span class="math inline">\(\omega\)</span>.</li>
+</ul>
 <div class="topic-index">
 <ul>
 <li><a href="alternating-function.html">Alternating Function</a></li>
 <li><a href="alternating-k-linear-function.html">Alternating k-linear function</a></li>
+<li><a href="boundary-operation.html">Boundary Operation</a></li>
 <li><a href="bundle.html">Bundle</a></li>
 <li><a href="cartesian-product.html">Cartesian Product</a></li>
 <li><a href="constant-metric-tensor.html">Constant Metric Tensor</a></li>
@@ -208,6 +269,7 @@
 <li><a href="covariant-contravariant-and-coordinate-systems.html">Covariant, Contravariant, and Coordinate Systems</a></li>
 <li><a href="differential-forms.html">Differential Forms</a></li>
 <li><a href="differential-k-form.html">Differential k-Form</a></li>
+<li><a href="edge-of-a-domain.html">Edge of a Domain</a></li>
 <li><a href="exterior-algebra-and-exterior-derivatives.html">Exterior Algebra and Exterior Derivatives</a></li>
 <li><a href="forms.html">Forms</a></li>
 <li><a href="functions.html">Functions</a></li>
@@ -217,6 +279,9 @@
 <li><a href="k-fold-product.html">k-Fold Product</a></li>
 <li><a href="k-form.html">k-form</a></li>
 <li><a href="k-tensor.html">k-Tensor</a></li>
+<li><a href="lie.html">Lie</a></li>
+<li><a href="lie-algebra.html">Lie Algebra</a></li>
+<li><a href="line-element.html">Line Element</a></li>
 <li><a href="linear-functional.html">Linear Functional</a></li>
 <li><a href="lorentzian-manifold.html">Lorentzian Manifold</a></li>
 <li><a href="metric-tensor.html">Metric Tensor</a></li>
@@ -226,6 +291,7 @@
 <li><a href="one-form.html">One-Form</a></li>
 <li><a href="smooth.html">Smooth</a></li>
 <li><a href="smooth-assignment.html">Smooth Assignment</a></li>
+<li><a href="smooth-mapping.html">Smooth Mapping</a></li>
 <li><a href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html">Stoke’s Theorem and the Fundamental Theorem of Calculus</a></li>
 <li><a href="symmetric-array.html">Symmetric Array</a></li>
 <li><a href="tangent-space.html">Tangent Space</a></li>
@@ -238,18 +304,23 @@
 </div>
 
 </div>
+</div>
+</div>
 <script>
   (function () {
     var MOON =
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
     var SUN =
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.5" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22.5"/><line x1="3.5" y1="3.5" x2="5.3" y2="5.3"/><line x1="18.7" y1="18.7" x2="20.5" y2="20.5"/><line x1="1.5" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22.5" y2="12"/><line x1="3.5" y1="20.5" x2="5.3" y2="18.7"/><line x1="18.7" y1="5.3" x2="20.5" y2="3.5"/></svg>';
+    var DEVICE =
+      '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>';
 
     var FONT_MIN = 13;
     var FONT_MAX = 28;
     var FONT_STEP = 1.6;
     var FONT_BASE = 17;
     var fontSize = FONT_BASE;
+    var THEME_ORDER = ["light", "dark", "system"];
 
     function initClassicLayout() {
       if (document.getElementById("page")) return;
@@ -593,16 +664,62 @@
       if (chapterSidebar) chapterSidebar.remove();
       if (oldFooter) oldFooter.remove();
 
-      function currentTheme() {
-        return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      function systemTheme() {
+        return window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
       }
 
-      function renderTheme(theme) {
-        themeBtn.innerHTML = theme === "dark" ? SUN : MOON;
-        themeBtn.setAttribute(
-          "title",
-          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-        );
+      function readThemeMode() {
+        try {
+          var stored = localStorage.getItem("book-theme");
+          if (stored === "light" || stored === "dark" || stored === "system") {
+            return stored;
+          }
+        } catch (e) {}
+        return "system";
+      }
+
+      function resolveTheme(mode) {
+        return mode === "system" ? systemTheme() : mode;
+      }
+
+      function currentThemeMode() {
+        var mode = root.getAttribute("data-theme-mode");
+        if (mode === "light" || mode === "dark" || mode === "system") {
+          return mode;
+        }
+        return readThemeMode();
+      }
+
+      function renderTheme(mode) {
+        var resolved = resolveTheme(mode);
+        if (mode === "system") {
+          themeBtn.innerHTML = DEVICE;
+          themeBtn.setAttribute("title", "Using device theme (click for light)");
+          themeBtn.setAttribute("aria-label", "Theme: device. Click to switch to light mode");
+        } else if (mode === "dark") {
+          themeBtn.innerHTML = SUN;
+          themeBtn.setAttribute("title", "Dark mode (click for device theme)");
+          themeBtn.setAttribute("aria-label", "Theme: dark. Click to switch to device theme");
+        } else {
+          themeBtn.innerHTML = MOON;
+          themeBtn.setAttribute("title", "Light mode (click for dark)");
+          themeBtn.setAttribute("aria-label", "Theme: light. Click to switch to dark mode");
+        }
+        themeBtn.setAttribute("data-theme-mode", mode);
+        themeBtn.setAttribute("data-theme-resolved", resolved);
+      }
+
+      function applyThemeMode(mode) {
+        var resolved = resolveTheme(mode);
+        root.setAttribute("data-theme", resolved);
+        root.setAttribute("data-theme-mode", mode);
+        try {
+          localStorage.setItem("book-theme", mode);
+        } catch (e) {}
+        renderTheme(mode);
       }
 
       function applyFontSize(size) {
@@ -620,15 +737,27 @@
         }
       } catch (e) {}
       applyFontSize(fontSize);
-      renderTheme(currentTheme());
+      applyThemeMode(readThemeMode());
+
+      if (window.matchMedia) {
+        var colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        var onSchemeChange = function () {
+          if (currentThemeMode() === "system") {
+            applyThemeMode("system");
+          }
+        };
+        if (colorSchemeQuery.addEventListener) {
+          colorSchemeQuery.addEventListener("change", onSchemeChange);
+        } else if (colorSchemeQuery.addListener) {
+          colorSchemeQuery.addListener(onSchemeChange);
+        }
+      }
 
       themeBtn.addEventListener("click", function () {
-        var next = currentTheme() === "dark" ? "light" : "dark";
-        root.setAttribute("data-theme", next);
-        try {
-          localStorage.setItem("book-theme", next);
-        } catch (e) {}
-        renderTheme(next);
+        var mode = currentThemeMode();
+        var index = THEME_ORDER.indexOf(mode);
+        var next = THEME_ORDER[(index + 1) % THEME_ORDER.length];
+        applyThemeMode(next);
       });
 
       fontWidget.querySelector(".zeno_font_resizer_minus").addEventListener("click", function (e) {
@@ -661,11 +790,19 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="inverse-metric.html"><span class="header-section-number">69</span> Inverse Metric</a></div>
-<div class="next"><a href="k-covector-field.html"><span class="header-section-number">71</span> k-Covector Field</a></div>
+<div class="prev"><a href="inverse-metric.html"><span class="header-section-number">170</span> Inverse Metric</a></div>
+<div class="next"><a href="k-covector-field.html"><span class="header-section-number">172</span> k-Covector Field</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#k-covector"><span class="header-section-number">70</span> k-Covector</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#k-covector"><span class="header-section-number">171</span> k-Covector</a></li>
+<li>
+<a class="nav-link" href="#elementary-example-64"><span class="header-section-number">171.1</span> Elementary Example</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#simple-64"><span class="header-section-number">171.1.1</span> Simple</a></li>
+<li><a class="nav-link" href="#general-64"><span class="header-section-number">171.1.2</span> General</a></li>
+</ul>
+</li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

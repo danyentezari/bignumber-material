@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>2 Electromagnetism | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="Electric Charge Electric Fields Electromagnetic Induction Electromagnetic Interaction Electromagnetic Waves Magnetic Fields    (function () {   var MOON =    '&lt;svg class=&quot;theme-toggle-icon&quot;...">
+<meta name="description" content="Electromagnetism is the phenomenon of electric and magnetic fields, both of them being the same thing but made different by how charges move. Electromagnetism is also fundamentally related to...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="2 Electromagnetism | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Electric Charge Electric Fields Electromagnetic Induction Electromagnetic Interaction Electromagnetic Waves Magnetic Fields    (function () {   var MOON =    '&lt;svg class=&quot;theme-toggle-icon&quot;...">
+<meta property="og:description" content="Electromagnetism is the phenomenon of electric and magnetic fields, both of them being the same thing but made different by how charges move. Electromagnetism is also fundamentally related to...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2 Electromagnetism | Mathematics for Physics">
-<meta name="twitter:description" content="Electric Charge Electric Fields Electromagnetic Induction Electromagnetic Interaction Electromagnetic Waves Magnetic Fields    (function () {   var MOON =    '&lt;svg class=&quot;theme-toggle-icon&quot;...">
+<meta name="twitter:description" content="Electromagnetism is the phenomenon of electric and magnetic fields, both of them being the same thing but made different by how charges move. Electromagnetism is also fundamentally related to...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -24,15 +24,20 @@
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
-          var theme = stored
+          var mode = stored === "light" || stored === "dark" || stored === "system"
             ? stored
-            : (window.matchMedia &&
+            : "system";
+          var theme = mode === "system"
+            ? (window.matchMedia &&
                 window.matchMedia("(prefers-color-scheme: dark)").matches
                 ? "dark"
-                : "light");
+                : "light")
+            : mode;
           document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.setAttribute("data-theme-mode", mode);
         } catch (e) {
           document.documentElement.setAttribute("data-theme", "light");
+          document.documentElement.setAttribute("data-theme-mode", "system");
         }
         document.documentElement.classList.add("theme-classic");
         try {
@@ -132,25 +137,37 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="notes.html"><span class="header-section-number">11</span> Notes</a>
+<a class="" href="differential-equations.html"><span class="header-section-number">11</span> Differential Equations</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary.html"><span class="header-section-number">12</span> Glossary</a>
+<a class="" href="notes.html"><span class="header-section-number">12</span> Notes</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="symbols.html"><span class="header-section-number">13</span> Symbols</a>
+<a class="" href="glossary.html"><span class="header-section-number">13</span> Glossary</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="site-index.html"><span class="header-section-number">14</span> Index</a>
+<a class="" href="symbols.html"><span class="header-section-number">14</span> Symbols</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="constants.html"><span class="header-section-number">15</span> Constants</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="site-index.html"><span class="header-section-number">16</span> Index</a>
 </div>
 </li>
 </ul>
@@ -164,17 +181,162 @@
 <h1>
 <span class="header-section-number">2</span> Electromagnetism<a class="anchor" aria-label="anchor" href="#electromagnetism"><i class="fas fa-link"></i></a>
 </h1>
+<p>Electromagnetism is the phenomenon of electric and magnetic fields, both of them being the same thing but made different by how charges move.</p>
+<p>Electromagnetism is also fundamentally related to special relativity because it is independent of the reference frame.</p>
+<p>Some immediate applications of the study of electromagnetism are in electronics, optics, and spectroscopy and, mathematically, in vector calculus, differential equations, and differential geometry.</p>
+<div id="topics" class="section level2" number="2.1">
+<h2>
+<span class="header-section-number">2.1</span> Topics<a class="anchor" aria-label="anchor" href="#topics"><i class="fas fa-link"></i></a>
+</h2>
+<p>Ordered from more general to more specific:</p>
+<ol style="list-style-type: decimal">
+<li>
+<a href="gauge-theory.html">Gauge Theory</a>
+<ol style="list-style-type: decimal">
+<li>
+<a href="maxwells-equations.html">Maxwell’s Equations</a>
+<ol style="list-style-type: decimal">
+<li>
+<a href="gauge-field.html">Gauge Field</a>
+<ol style="list-style-type: decimal">
+<li><a href="gauge.html">Gauge</a></li>
+</ol>
+</li>
+<li><a href="superposition.html">Superposition</a></li>
+<li>
+<a href="electrostatics.html">Electrostatics</a>
+<ol style="list-style-type: decimal">
+<li>
+<a href="electric-charge.html">Electric Charge</a>
+<ol style="list-style-type: decimal">
+<li><a href="ionization.html">Ionization</a></li>
+<li><a href="charge-density.html">Charge Density</a></li>
+<li><a href="coulomb-force.html">Coulomb Force</a></li>
+</ol>
+</li>
+<li>
+<a href="electric-field.html">Electric Field</a>
+<ol style="list-style-type: decimal">
+<li><a href="electric-fields.html">Electric Fields</a></li>
+<li>
+<a href="electric-potential.html">Electric Potential</a>
+<ol style="list-style-type: decimal">
+<li><a href="voltage.html">Voltage</a></li>
+<li><a href="capacitance.html">Capacitance</a></li>
+<li><a href="dielectrics.html">Dielectrics</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<a href="electromagnetic-interaction.html">Electromagnetic Interaction</a>
+<ol style="list-style-type: decimal">
+<li>
+<a href="current.html">Current</a>
+<ol style="list-style-type: decimal">
+<li><a href="electric-currents.html">Electric Currents</a></li>
+<li><a href="resistance.html">Resistance</a></li>
+<li><a href="motion-of-charges.html">Motion of Charges</a></li>
+</ol>
+</li>
+<li>
+<a href="magnetic-field.html">Magnetic Field</a>
+<ol style="list-style-type: decimal">
+<li><a href="magnetic-fields.html">Magnetic Fields</a></li>
+<li><a href="biot-savart-law.html">Biot-Savart Law</a></li>
+<li><a href="amperes-law.html">Ampere’s Law</a></li>
+<li><a href="magnetic-materials.html">Magnetic Materials</a></li>
+</ol>
+</li>
+<li><a href="cyclotron-motion.html">Cyclotron Motion</a></li>
+<li><a href="hall-effect.html">Hall Effect</a></li>
+</ol>
+</li>
+<li>
+<a href="induction.html">Induction</a>
+<ol style="list-style-type: decimal">
+<li>
+<a href="electromagnetic-induction.html">Electromagnetic Induction</a>
+<ol style="list-style-type: decimal">
+<li><a href="induced-emf.html">Induced Emf</a></li>
+<li>
+<a href="inductance.html">Inductance</a>
+<ol style="list-style-type: decimal">
+<li><a href="transformers.html">Transformers</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<a href="electromagnetic-waves.html">Electromagnetic Waves</a>
+<ol style="list-style-type: decimal">
+<li>
+<a href="radiation.html">Radiation</a>
+<ol style="list-style-type: decimal">
+<li><a href="poynting-vector.html">Poynting Vector</a></li>
+<li><a href="momentum-of-light.html">Momentum of Light</a></li>
+</ol>
+</li>
+<li><a href="polarization.html">Polarization</a></li>
+<li><a href="reflection.html">Reflection</a></li>
+<li><a href="refraction.html">Refraction</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 <div class="topic-index">
 <ul>
+<li><a href="amperes-law.html">Ampere’s Law</a></li>
+<li><a href="biot-savart-law.html">Biot-Savart Law</a></li>
+<li><a href="capacitance.html">Capacitance</a></li>
+<li><a href="charge-density.html">Charge Density</a></li>
+<li><a href="coulomb-force.html">Coulomb Force</a></li>
+<li><a href="current.html">Current</a></li>
+<li><a href="cyclotron-motion.html">Cyclotron Motion</a></li>
+<li><a href="dielectrics.html">Dielectrics</a></li>
 <li><a href="electric-charge.html">Electric Charge</a></li>
+<li><a href="electric-currents.html">Electric Currents</a></li>
+<li><a href="electric-field.html">Electric Field</a></li>
 <li><a href="electric-fields.html">Electric Fields</a></li>
+<li><a href="electric-potential.html">Electric Potential</a></li>
 <li><a href="electromagnetic-induction.html">Electromagnetic Induction</a></li>
 <li><a href="electromagnetic-interaction.html">Electromagnetic Interaction</a></li>
 <li><a href="electromagnetic-waves.html">Electromagnetic Waves</a></li>
+<li><a href="electrostatics.html">Electrostatics</a></li>
+<li><a href="gauge.html">Gauge</a></li>
+<li><a href="gauge-field.html">Gauge Field</a></li>
+<li><a href="gauge-theory.html">Gauge Theory</a></li>
+<li><a href="hall-effect.html">Hall Effect</a></li>
+<li><a href="induced-emf.html">Induced Emf</a></li>
+<li><a href="inductance.html">Inductance</a></li>
+<li><a href="induction.html">Induction</a></li>
+<li><a href="ionization.html">Ionization</a></li>
+<li><a href="magnetic-field.html">Magnetic Field</a></li>
 <li><a href="magnetic-fields.html">Magnetic Fields</a></li>
+<li><a href="magnetic-materials.html">Magnetic Materials</a></li>
+<li><a href="maxwells-equations.html">Maxwell’s Equations</a></li>
+<li><a href="momentum-of-light.html">Momentum of Light</a></li>
+<li><a href="motion-of-charges.html">Motion of Charges</a></li>
+<li><a href="polarization.html">Polarization</a></li>
+<li><a href="poynting-vector.html">Poynting Vector</a></li>
+<li><a href="radiation.html">Radiation</a></li>
+<li><a href="reflection.html">Reflection</a></li>
+<li><a href="refraction.html">Refraction</a></li>
+<li><a href="resistance.html">Resistance</a></li>
+<li><a href="superposition.html">Superposition</a></li>
+<li><a href="transformers.html">Transformers</a></li>
+<li><a href="voltage.html">Voltage</a></li>
 </ul>
 </div>
 
+</div>
 </div>
 <script>
   (function () {
@@ -182,12 +344,15 @@
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
     var SUN =
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.5" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22.5"/><line x1="3.5" y1="3.5" x2="5.3" y2="5.3"/><line x1="18.7" y1="18.7" x2="20.5" y2="20.5"/><line x1="1.5" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22.5" y2="12"/><line x1="3.5" y1="20.5" x2="5.3" y2="18.7"/><line x1="18.7" y1="5.3" x2="20.5" y2="3.5"/></svg>';
+    var DEVICE =
+      '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>';
 
     var FONT_MIN = 13;
     var FONT_MAX = 28;
     var FONT_STEP = 1.6;
     var FONT_BASE = 17;
     var fontSize = FONT_BASE;
+    var THEME_ORDER = ["light", "dark", "system"];
 
     function initClassicLayout() {
       if (document.getElementById("page")) return;
@@ -531,16 +696,62 @@
       if (chapterSidebar) chapterSidebar.remove();
       if (oldFooter) oldFooter.remove();
 
-      function currentTheme() {
-        return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      function systemTheme() {
+        return window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
       }
 
-      function renderTheme(theme) {
-        themeBtn.innerHTML = theme === "dark" ? SUN : MOON;
-        themeBtn.setAttribute(
-          "title",
-          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-        );
+      function readThemeMode() {
+        try {
+          var stored = localStorage.getItem("book-theme");
+          if (stored === "light" || stored === "dark" || stored === "system") {
+            return stored;
+          }
+        } catch (e) {}
+        return "system";
+      }
+
+      function resolveTheme(mode) {
+        return mode === "system" ? systemTheme() : mode;
+      }
+
+      function currentThemeMode() {
+        var mode = root.getAttribute("data-theme-mode");
+        if (mode === "light" || mode === "dark" || mode === "system") {
+          return mode;
+        }
+        return readThemeMode();
+      }
+
+      function renderTheme(mode) {
+        var resolved = resolveTheme(mode);
+        if (mode === "system") {
+          themeBtn.innerHTML = DEVICE;
+          themeBtn.setAttribute("title", "Using device theme (click for light)");
+          themeBtn.setAttribute("aria-label", "Theme: device. Click to switch to light mode");
+        } else if (mode === "dark") {
+          themeBtn.innerHTML = SUN;
+          themeBtn.setAttribute("title", "Dark mode (click for device theme)");
+          themeBtn.setAttribute("aria-label", "Theme: dark. Click to switch to device theme");
+        } else {
+          themeBtn.innerHTML = MOON;
+          themeBtn.setAttribute("title", "Light mode (click for dark)");
+          themeBtn.setAttribute("aria-label", "Theme: light. Click to switch to dark mode");
+        }
+        themeBtn.setAttribute("data-theme-mode", mode);
+        themeBtn.setAttribute("data-theme-resolved", resolved);
+      }
+
+      function applyThemeMode(mode) {
+        var resolved = resolveTheme(mode);
+        root.setAttribute("data-theme", resolved);
+        root.setAttribute("data-theme-mode", mode);
+        try {
+          localStorage.setItem("book-theme", mode);
+        } catch (e) {}
+        renderTheme(mode);
       }
 
       function applyFontSize(size) {
@@ -558,15 +769,27 @@
         }
       } catch (e) {}
       applyFontSize(fontSize);
-      renderTheme(currentTheme());
+      applyThemeMode(readThemeMode());
+
+      if (window.matchMedia) {
+        var colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        var onSchemeChange = function () {
+          if (currentThemeMode() === "system") {
+            applyThemeMode("system");
+          }
+        };
+        if (colorSchemeQuery.addEventListener) {
+          colorSchemeQuery.addEventListener("change", onSchemeChange);
+        } else if (colorSchemeQuery.addListener) {
+          colorSchemeQuery.addListener(onSchemeChange);
+        }
+      }
 
       themeBtn.addEventListener("click", function () {
-        var next = currentTheme() === "dark" ? "light" : "dark";
-        root.setAttribute("data-theme", next);
-        try {
-          localStorage.setItem("book-theme", next);
-        } catch (e) {}
-        renderTheme(next);
+        var mode = currentThemeMode();
+        var index = THEME_ORDER.indexOf(mode);
+        var next = THEME_ORDER[(index + 1) % THEME_ORDER.length];
+        applyThemeMode(next);
       });
 
       fontWidget.querySelector(".zeno_font_resizer_minus").addEventListener("click", function (e) {
@@ -603,7 +826,10 @@
 <div class="next"><a href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#electromagnetism"><span class="header-section-number">2</span> Electromagnetism</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#electromagnetism"><span class="header-section-number">2</span> Electromagnetism</a></li>
+<li><a class="nav-link" href="#topics"><span class="header-section-number">2.1</span> Topics</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

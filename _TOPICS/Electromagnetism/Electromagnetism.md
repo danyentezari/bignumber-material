@@ -34,7 +34,7 @@ Ordered from more general to more specific:
             2. [Magnetic Field](magnetic-field.html)
                 1. [Magnetic Fields](magnetic-fields.html)
                 2. [Biot-Savart Law](biot-savart-law.html)
-                3. [Ampère's Law](ampères-law.html)
+                3. [Ampere's Law](amperes-law.html)
                 4. [Magnetic Materials](magnetic-materials.html)
             3. [Cyclotron Motion](cyclotron-motion.html)
             4. [Hall Effect](hall-effect.html)

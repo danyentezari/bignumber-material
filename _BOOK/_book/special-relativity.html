@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>4 Special Relativity | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="reference frames inertial reference frame lorentz transformation minkowski spaxe Length Contraction Lorentz Transformations Mass-Energy Equivalence Minkowski Metric Minkowski Space Principle of...">
+<meta name="description" content="The theory of space and time for inertial frames at constant relative velocity, featuring time dilation, length contraction, and mass-energy equivalence.  4.1 Topics Ordered from more general to...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="4 Special Relativity | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="reference frames inertial reference frame lorentz transformation minkowski spaxe Length Contraction Lorentz Transformations Mass-Energy Equivalence Minkowski Metric Minkowski Space Principle of...">
+<meta property="og:description" content="The theory of space and time for inertial frames at constant relative velocity, featuring time dilation, length contraction, and mass-energy equivalence.  4.1 Topics Ordered from more general to...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="4 Special Relativity | Mathematics for Physics">
-<meta name="twitter:description" content="reference frames inertial reference frame lorentz transformation minkowski spaxe Length Contraction Lorentz Transformations Mass-Energy Equivalence Minkowski Metric Minkowski Space Principle of...">
+<meta name="twitter:description" content="The theory of space and time for inertial frames at constant relative velocity, featuring time dilation, length contraction, and mass-energy equivalence.  4.1 Topics Ordered from more general to...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -24,15 +24,20 @@
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
-          var theme = stored
+          var mode = stored === "light" || stored === "dark" || stored === "system"
             ? stored
-            : (window.matchMedia &&
+            : "system";
+          var theme = mode === "system"
+            ? (window.matchMedia &&
                 window.matchMedia("(prefers-color-scheme: dark)").matches
                 ? "dark"
-                : "light");
+                : "light")
+            : mode;
           document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.setAttribute("data-theme-mode", mode);
         } catch (e) {
           document.documentElement.setAttribute("data-theme", "light");
+          document.documentElement.setAttribute("data-theme-mode", "system");
         }
         document.documentElement.classList.add("theme-classic");
         try {
@@ -132,25 +137,37 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="notes.html"><span class="header-section-number">11</span> Notes</a>
+<a class="" href="differential-equations.html"><span class="header-section-number">11</span> Differential Equations</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary.html"><span class="header-section-number">12</span> Glossary</a>
+<a class="" href="notes.html"><span class="header-section-number">12</span> Notes</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="symbols.html"><span class="header-section-number">13</span> Symbols</a>
+<a class="" href="glossary.html"><span class="header-section-number">13</span> Glossary</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="site-index.html"><span class="header-section-number">14</span> Index</a>
+<a class="" href="symbols.html"><span class="header-section-number">14</span> Symbols</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="constants.html"><span class="header-section-number">15</span> Constants</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="site-index.html"><span class="header-section-number">16</span> Index</a>
 </div>
 </li>
 </ul>
@@ -164,24 +181,166 @@
 <h1>
 <span class="header-section-number">4</span> Special Relativity<a class="anchor" aria-label="anchor" href="#special-relativity"><i class="fas fa-link"></i></a>
 </h1>
-<p>reference frames
-inertial reference frame
-lorentz transformation
-minkowski spaxe</p>
+<p>The theory of space and time for inertial frames at constant relative velocity, featuring time dilation, length contraction, and mass-energy equivalence.</p>
+<div id="topics-2" class="section level2" number="4.1">
+<h2>
+<span class="header-section-number">4.1</span> Topics<a class="anchor" aria-label="anchor" href="#topics-2"><i class="fas fa-link"></i></a>
+</h2>
+<p>Ordered from more general to more specific:</p>
+<ol style="list-style-type: decimal">
+<li>
+<a href="principle-of-relativity.html">Principle of Relativity</a>
+<ol style="list-style-type: decimal">
+<li><a href="relativity-principle.html">Relativity Principle</a></li>
+<li><a href="constancy-of-the-speed-of-light.html">Constancy of the Speed of Light</a></li>
+<li>
+<a href="reference-frames.html">Reference Frames</a>
+<ol style="list-style-type: decimal">
+<li><a href="frame.html">Frame</a></li>
+<li>
+<a href="inertial-frame.html">Inertial Frame</a>
+<ol style="list-style-type: decimal">
+<li><a href="inertial-reference-frames.html">Inertial Reference Frames</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<a href="minkowski-space.html">Minkowski Space</a>
+<ol style="list-style-type: decimal">
+<li><a href="minkowski-metric.html">Minkowski Metric</a></li>
+</ol>
+</li>
+<li>
+<a href="lorentz-transformations.html">Lorentz Transformations</a>
+<ol style="list-style-type: decimal">
+<li><a href="lorentz-factor.html">Lorentz Factor</a></li>
+<li><a href="coordinate-transformations.html">Coordinate Transformations</a></li>
+<li><a href="simultaneity.html">Simultaneity</a></li>
+</ol>
+</li>
+<li>
+<a href="time-dilation.html">Time Dilation</a>
+<ol style="list-style-type: decimal">
+<li><a href="proper-time.html">Proper Time</a></li>
+<li><a href="moving-clocks.html">Moving Clocks</a></li>
+<li><a href="twin-paradox.html">Twin Paradox</a></li>
+</ol>
+</li>
+<li>
+<a href="length-contraction.html">Length Contraction</a>
+<ol style="list-style-type: decimal">
+<li><a href="proper-length.html">Proper Length</a></li>
+<li><a href="contracted-length.html">Contracted Length</a></li>
+</ol>
+</li>
+<li>
+<a href="relativistic-momentum-and-energy.html">Relativistic Momentum and Energy</a>
+<ol style="list-style-type: decimal">
+<li><a href="relativistic-momentum.html">Relativistic Momentum</a></li>
+<li>
+<a href="kinetic-energy.html">Kinetic Energy</a>
+<ol style="list-style-type: decimal">
+<li>
+<a href="kinetic-energy-formula-derivation.html">Kinetic Energy Formula Derivation</a>
+<ol style="list-style-type: decimal">
+<li><a href="newtonian-kinetic-energy-formula-derivation.html">Newtonian Kinetic Energy Formula Derivation</a></li>
+<li><a href="relativistic-kinetic-energy-formula-derivation.html">Relativistic Kinetic Energy Formula Derivation</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<a href="potential-energy.html">Potential Energy</a>
+<ol style="list-style-type: decimal">
+<li>
+<a href="potential-energy-formula-derivation.html">Potential Energy Formula Derivation</a>
+<ol style="list-style-type: decimal">
+<li><a href="gravitational-potential-energy-formula-derivation.html">Gravitational Potential Energy Formula Derivation</a></li>
+<li><a href="elastic-potential-energy-formula-derivation.html">Elastic Potential Energy Formula Derivation</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="massless-particles.html">Massless Particles</a></li>
+<li><a href="photon-energy.html">Photon Energy</a></li>
+</ol>
+</li>
+<li>
+<a href="mass-energy-equivalence.html">Mass-Energy Equivalence</a>
+<ol style="list-style-type: decimal">
+<li><a href="rest-energy.html">Rest Energy</a></li>
+<li><a href="particle-creation.html">Particle Creation</a></li>
+<li><a href="annihilation.html">Annihilation</a></li>
+<li><a href="nuclear-energy.html">Nuclear Energy</a></li>
+</ol>
+</li>
+<li>
+<a href="relativistic-electrodynamics.html">Relativistic Electrodynamics</a>
+<ol style="list-style-type: decimal">
+<li><a href="electromagnetic-field-transformations.html">Electromagnetic Field Transformations</a></li>
+<li><a href="magnetism-as-a-relativistic-effect.html">Magnetism as a Relativistic Effect</a></li>
+<li><a href="field-tensor.html">Field Tensor</a></li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="references-1" class="section level2" number="4.2">
+<h2>
+<span class="header-section-number">4.2</span> References<a class="anchor" aria-label="anchor" href="#references-1"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Knight, R. D. <em>Physics for Scientists and Engineers: A Strategic Approach with Modern Physics</em>. Pearson, 2023. — source for the heading explanation.</li>
+</ol>
 <div class="topic-index">
 <ul>
+<li><a href="annihilation.html">Annihilation</a></li>
+<li><a href="constancy-of-the-speed-of-light.html">Constancy of the Speed of Light</a></li>
+<li><a href="contracted-length.html">Contracted Length</a></li>
+<li><a href="coordinate-transformations.html">Coordinate Transformations</a></li>
+<li><a href="elastic-potential-energy-formula-derivation.html">Elastic Potential Energy Formula Derivation</a></li>
+<li><a href="electromagnetic-field-transformations.html">Electromagnetic Field Transformations</a></li>
+<li><a href="field-tensor.html">Field Tensor</a></li>
+<li><a href="frame.html">Frame</a></li>
+<li><a href="gravitational-potential-energy-formula-derivation.html">Gravitational Potential Energy Formula Derivation</a></li>
+<li><a href="inertial-frame.html">Inertial Frame</a></li>
+<li><a href="inertial-reference-frames.html">Inertial Reference Frames</a></li>
+<li><a href="kinetic-energy.html">Kinetic Energy</a></li>
+<li><a href="kinetic-energy-formula-derivation.html">Kinetic Energy Formula Derivation</a></li>
 <li><a href="length-contraction.html">Length Contraction</a></li>
+<li><a href="lorentz-factor.html">Lorentz Factor</a></li>
 <li><a href="lorentz-transformations.html">Lorentz Transformations</a></li>
+<li><a href="magnetism-as-a-relativistic-effect.html">Magnetism as a Relativistic Effect</a></li>
 <li><a href="mass-energy-equivalence.html">Mass-Energy Equivalence</a></li>
+<li><a href="massless-particles.html">Massless Particles</a></li>
 <li><a href="minkowski-metric.html">Minkowski Metric</a></li>
 <li><a href="minkowski-space.html">Minkowski Space</a></li>
+<li><a href="moving-clocks.html">Moving Clocks</a></li>
+<li><a href="newtonian-kinetic-energy-formula-derivation.html">Newtonian Kinetic Energy Formula Derivation</a></li>
+<li><a href="nuclear-energy.html">Nuclear Energy</a></li>
+<li><a href="particle-creation.html">Particle Creation</a></li>
+<li><a href="photon-energy.html">Photon Energy</a></li>
+<li><a href="potential-energy.html">Potential Energy</a></li>
+<li><a href="potential-energy-formula-derivation.html">Potential Energy Formula Derivation</a></li>
 <li><a href="principle-of-relativity.html">Principle of Relativity</a></li>
+<li><a href="proper-length.html">Proper Length</a></li>
+<li><a href="proper-time.html">Proper Time</a></li>
+<li><a href="reference-frames.html">Reference Frames</a></li>
 <li><a href="relativistic-electrodynamics.html">Relativistic Electrodynamics</a></li>
+<li><a href="relativistic-kinetic-energy-formula-derivation.html">Relativistic Kinetic Energy Formula Derivation</a></li>
+<li><a href="relativistic-momentum.html">Relativistic Momentum</a></li>
 <li><a href="relativistic-momentum-and-energy.html">Relativistic Momentum and Energy</a></li>
+<li><a href="relativity-principle.html">Relativity Principle</a></li>
+<li><a href="rest-energy.html">Rest Energy</a></li>
+<li><a href="simultaneity.html">Simultaneity</a></li>
 <li><a href="time-dilation.html">Time Dilation</a></li>
+<li><a href="twin-paradox.html">Twin Paradox</a></li>
 </ul>
 </div>
 
+</div>
 </div>
 <script>
   (function () {
@@ -189,12 +348,15 @@ minkowski spaxe</p>
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
     var SUN =
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.5" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22.5"/><line x1="3.5" y1="3.5" x2="5.3" y2="5.3"/><line x1="18.7" y1="18.7" x2="20.5" y2="20.5"/><line x1="1.5" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22.5" y2="12"/><line x1="3.5" y1="20.5" x2="5.3" y2="18.7"/><line x1="18.7" y1="5.3" x2="20.5" y2="3.5"/></svg>';
+    var DEVICE =
+      '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>';
 
     var FONT_MIN = 13;
     var FONT_MAX = 28;
     var FONT_STEP = 1.6;
     var FONT_BASE = 17;
     var fontSize = FONT_BASE;
+    var THEME_ORDER = ["light", "dark", "system"];
 
     function initClassicLayout() {
       if (document.getElementById("page")) return;
@@ -538,16 +700,62 @@ minkowski spaxe</p>
       if (chapterSidebar) chapterSidebar.remove();
       if (oldFooter) oldFooter.remove();
 
-      function currentTheme() {
-        return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      function systemTheme() {
+        return window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
       }
 
-      function renderTheme(theme) {
-        themeBtn.innerHTML = theme === "dark" ? SUN : MOON;
-        themeBtn.setAttribute(
-          "title",
-          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-        );
+      function readThemeMode() {
+        try {
+          var stored = localStorage.getItem("book-theme");
+          if (stored === "light" || stored === "dark" || stored === "system") {
+            return stored;
+          }
+        } catch (e) {}
+        return "system";
+      }
+
+      function resolveTheme(mode) {
+        return mode === "system" ? systemTheme() : mode;
+      }
+
+      function currentThemeMode() {
+        var mode = root.getAttribute("data-theme-mode");
+        if (mode === "light" || mode === "dark" || mode === "system") {
+          return mode;
+        }
+        return readThemeMode();
+      }
+
+      function renderTheme(mode) {
+        var resolved = resolveTheme(mode);
+        if (mode === "system") {
+          themeBtn.innerHTML = DEVICE;
+          themeBtn.setAttribute("title", "Using device theme (click for light)");
+          themeBtn.setAttribute("aria-label", "Theme: device. Click to switch to light mode");
+        } else if (mode === "dark") {
+          themeBtn.innerHTML = SUN;
+          themeBtn.setAttribute("title", "Dark mode (click for device theme)");
+          themeBtn.setAttribute("aria-label", "Theme: dark. Click to switch to device theme");
+        } else {
+          themeBtn.innerHTML = MOON;
+          themeBtn.setAttribute("title", "Light mode (click for dark)");
+          themeBtn.setAttribute("aria-label", "Theme: light. Click to switch to dark mode");
+        }
+        themeBtn.setAttribute("data-theme-mode", mode);
+        themeBtn.setAttribute("data-theme-resolved", resolved);
+      }
+
+      function applyThemeMode(mode) {
+        var resolved = resolveTheme(mode);
+        root.setAttribute("data-theme", resolved);
+        root.setAttribute("data-theme-mode", mode);
+        try {
+          localStorage.setItem("book-theme", mode);
+        } catch (e) {}
+        renderTheme(mode);
       }
 
       function applyFontSize(size) {
@@ -565,15 +773,27 @@ minkowski spaxe</p>
         }
       } catch (e) {}
       applyFontSize(fontSize);
-      renderTheme(currentTheme());
+      applyThemeMode(readThemeMode());
+
+      if (window.matchMedia) {
+        var colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        var onSchemeChange = function () {
+          if (currentThemeMode() === "system") {
+            applyThemeMode("system");
+          }
+        };
+        if (colorSchemeQuery.addEventListener) {
+          colorSchemeQuery.addEventListener("change", onSchemeChange);
+        } else if (colorSchemeQuery.addListener) {
+          colorSchemeQuery.addListener(onSchemeChange);
+        }
+      }
 
       themeBtn.addEventListener("click", function () {
-        var next = currentTheme() === "dark" ? "light" : "dark";
-        root.setAttribute("data-theme", next);
-        try {
-          localStorage.setItem("book-theme", next);
-        } catch (e) {}
-        renderTheme(next);
+        var mode = currentThemeMode();
+        var index = THEME_ORDER.indexOf(mode);
+        var next = THEME_ORDER[(index + 1) % THEME_ORDER.length];
+        applyThemeMode(next);
       });
 
       fontWidget.querySelector(".zeno_font_resizer_minus").addEventListener("click", function (e) {
@@ -610,7 +830,11 @@ minkowski spaxe</p>
 <div class="next"><a href="topology.html"><span class="header-section-number">5</span> Topology</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#special-relativity"><span class="header-section-number">4</span> Special Relativity</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#special-relativity"><span class="header-section-number">4</span> Special Relativity</a></li>
+<li><a class="nav-link" href="#topics-2"><span class="header-section-number">4.1</span> Topics</a></li>
+<li><a class="nav-link" href="#references-1"><span class="header-section-number">4.2</span> References</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

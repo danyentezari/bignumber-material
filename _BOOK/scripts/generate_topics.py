@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 
@@ -19,7 +20,10 @@ SIDEBAR_TXT = BOOK_DIR / "sidebar.txt"
 
 
 def slugify_text(text: str) -> str:
-    normalized = text.lower().replace("'", "")
+    # Strip accents so bookdown HTML filenames stay ASCII-safe.
+    normalized = unicodedata.normalize("NFKD", text)
+    normalized = "".join(ch for ch in normalized if not unicodedata.combining(ch))
+    normalized = normalized.lower().replace("'", "")
     return re.sub(r"[^a-z0-9]+", "-", normalized).strip("-")
 
 
