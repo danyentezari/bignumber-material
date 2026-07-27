@@ -142,6 +142,7 @@ rmd_files:
   - "../_BOOK/generated/Special-Relativity/Spacetime-Interval.md"
   - "../_BOOK/generated/Special-Relativity/Time-Dilation.md"
   - "../_BOOK/generated/Special-Relativity/Twin-Paradox.md"
+  - "../_BOOK/generated/Special-Relativity/Velocity-Addition.md"
   - "../_BOOK/generated/Special-Relativity/Worldlines.md"
   - "../_BOOK/generated/Topology/Bijective.md"
   - "../_BOOK/generated/Topology/Boundary.md"
