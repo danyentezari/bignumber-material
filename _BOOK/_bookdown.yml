@@ -82,6 +82,7 @@ rmd_files:
   - "../_BOOK/generated/Quantum-Mechanics/Hunds-Rule.md"
   - "../_BOOK/generated/Quantum-Mechanics/Hydrogen-Energy-Levels.md"
   - "../_BOOK/generated/Quantum-Mechanics/Magnetic-Moment.md"
+  - "../_BOOK/generated/Quantum-Mechanics/Measurement.md"
   - "../_BOOK/generated/Quantum-Mechanics/Normalization.md"
   - "../_BOOK/generated/Quantum-Mechanics/Pauli-Exclusion-Principle.md"
   - "../_BOOK/generated/Quantum-Mechanics/Photon-Momentum.md"
