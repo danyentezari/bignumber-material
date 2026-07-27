@@ -13,7 +13,9 @@ where
 - $F(x)$ is the spring restoring force.
 - $k$ is the spring constant.
 - $x$ is the displacement from equilibrium.
+- $dx$ is the displacement differential.
 - $V(x)$ is the elastic potential energy.
+- $\displaystyle\int (-kx)\, dx$ is the integral of the spring force.
 
 </i>
 
@@ -35,10 +37,12 @@ where
 - $s$ is the position along the spring coordinate.
 - $s_{\mathrm{eq}}$ is the equilibrium length coordinate.
 - $s_{i}$ and $s_{f}$ are the initial and final positions.
+- $ds$ is the spring-coordinate differential.
 - $\Delta s_{i}$ and $\Delta s_{f}$ are the initial and final displacements from equilibrium.
 - $W$ is the work done by the spring force.
 - $\Delta U_{\mathrm{Sp}}$ is the change in elastic potential energy.
 - $U_{\mathrm{Sp}}$ is the elastic potential energy.
+- $\displaystyle\int_{s_{i}}^{s_{f}}\bigl[-k(s - s_{\mathrm{eq}})\bigr]\, ds$ is the work integral of the spring force.
 
 </i>
 
@@ -54,6 +58,8 @@ $$
 
 where
 
+- $k$ is the spring constant.
+- $\Delta s$ is the displacement from equilibrium.
 - $U_{\mathrm{Sp}}$ is the elastic potential energy.
 
 ### General
@@ -66,6 +72,9 @@ $$
 
 where
 
+- $k$ is the spring constant.
+- $\Delta s_{i}$ is the initial displacement from equilibrium.
+- $\Delta s_{f}$ is the final displacement from equilibrium.
 - $\Delta U_{\mathrm{Sp}}$ is the change in elastic potential energy.
 
 ## References

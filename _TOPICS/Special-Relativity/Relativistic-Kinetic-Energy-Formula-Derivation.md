@@ -33,13 +33,17 @@ At low speed, the binomial approximation $\gamma \approx 1 + \dfrac{1}{2}\left(\
 where
 
 - $\mathbf{F}$ is the force.
+- $F$ is the one-dimensional force component.
 - $\mathbf{p}$ is the relativistic momentum.
 - $t$ is time.
+- $dt$ is the time differential.
 - $m$ is the rest mass.
 - $\gamma$ is the Lorentz factor.
 - $\mathbf{u}$ is the velocity.
 - $u$ is the particle speed.
 - $c$ is the speed of light in vacuum.
+- $dx$ is the displacement differential.
+- $du$ is the speed differential.
 - $K$ is the work integral equal to the gained kinetic energy.
 - $K_{\mathrm{rel}}$ is the relativistic kinetic energy.
 - $K_{\mathrm{class}}$ is the Newtonian kinetic energy.
@@ -59,7 +63,11 @@ $$
 
 where
 
-- a particle at rest has zero relativistic kinetic energy.
+- $u$ is the particle speed.
+- $\gamma$ is the Lorentz factor.
+- $K_{\mathrm{rel}}$ is the relativistic kinetic energy.
+- $m$ is the rest mass.
+- $c$ is the speed of light in vacuum.
 
 ### General
 
@@ -71,8 +79,11 @@ $$
 
 where
 
+- $u$ is the electron speed.
+- $c$ is the speed of light in vacuum.
+- $\gamma$ is the Lorentz factor.
 - $m$ is the electron rest mass.
-- $K_{\mathrm{rel}}$ is the relativistic kinetic energy from the work integral.
+- $K_{\mathrm{rel}}$ is the relativistic kinetic energy.
 
 ## References
 

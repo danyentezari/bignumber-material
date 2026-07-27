@@ -47,6 +47,7 @@ where
 - $\dfrac{dv}{dt}$ is the acceleration.
 - $F(x)$ is a position-dependent force.
 - $x$ is the position.
+- $dx$ is the position differential.
 - $\dfrac{dx}{dt}$ is the velocity written as a derivative of position.
 - $t_{1}$ and $t_{2}$ are the initial and final times.
 - $x_{1}$ and $x_{2}$ are the initial and final positions.
@@ -59,6 +60,8 @@ where
 - $U(x_{1})$ and $U(x_{2})$ are the same potential energies written as functions of position.
 - $\dfrac{dU}{dx}$ is the derivative of $U$ with respect to $x$.
 - $\displaystyle\int_{x_{1}}^{x_{2}} F(x)\, dx$ is the work done by $F$ from $x_{1}$ to $x_{2}$.
+- $W = \displaystyle\int_{x_{1}}^{x_{2}} F(x)\, dx$ is that work.
+- $\Delta U = -W$ is the change in potential energy.
 
 </i>
 
@@ -74,7 +77,14 @@ $$
 
 where
 
-- the negative sign follows from $\Delta U = -W$.
+- $F$ is the constant force.
+- $x_{1}$ is the initial position.
+- $x_{2}$ is the final position.
+- $dx$ is the position differential.
+- $U(x_{1})$ is the initial potential energy.
+- $U(x_{2})$ is the final potential energy.
+- $W = \displaystyle\int_{x_{1}}^{x_{2}} F\, dx$ is the work done by $F$.
+- $\Delta U = -W$ is the change in potential energy.
 
 ### General
 
@@ -86,7 +96,15 @@ $$
 
 where
 
-- $U(x)$ changes by the negative of the work of $F$.
+- $F(x)$ is the position-dependent force.
+- $x$ is the position.
+- $x_{1}$ is the initial position.
+- $x_{2}$ is the final position.
+- $dx$ is the position differential.
+- $U(1)$ is the potential energy at $x = 1$.
+- $U(2)$ is the potential energy at $x = 2$.
+- $W = \displaystyle\int_{1}^{2} F(x)\, dx$ is the work done by $F$.
+- $\Delta U = -W$ is the change in potential energy.
 
 ## References
 

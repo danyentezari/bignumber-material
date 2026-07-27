@@ -24,6 +24,7 @@ Defining $K = \dfrac{1}{2}mv^{2}$ and $W = Fd$ yields the work-energy theorem
 
 where
 
+- $v$ is the speed.
 - $v_{1}$ and $v_{2}$ are the initial and final speeds.
 - $a$ is the acceleration.
 - $d$ is the distance traveled.
@@ -45,7 +46,7 @@ Multiply by the velocity $x'$:
 
 - $mx'x'' + \gamma (x')^{2} + kxx' = 0$ .
 
-By the chain rule,
+By the [chain rule](Chain-Rule.md),
 
 - $mx'x'' = \dfrac{d}{dt}\left(\dfrac{1}{2}m(x')^{2}\right)$ ,
 - $kxx' = \dfrac{d}{dt}\left(\dfrac{1}{2}kx^{2}\right)$ ,
@@ -60,13 +61,15 @@ The kinetic energy term identified in the bracket is
 
 where
 
-- $x(t)$ is the displacement.
+- $x$ is the displacement.
+- $x(t)$ is the displacement as a function of time.
 - $x'$ is the velocity.
 - $x''$ is the acceleration.
 - $m$ is the mass.
 - $\gamma$ is the damping constant.
 - $k$ is the spring constant.
 - $t$ is time.
+- $\dfrac{d}{dt}$ is the time derivative.
 - $T$ is the kinetic energy.
 - $\dfrac{1}{2}kx^{2}$ is the elastic potential energy in the oscillator.
 
@@ -88,8 +91,13 @@ $$
 
 where
 
-- $K_{1} = 0$ at rest.
+- $F$ is the constant force.
+- $d$ is the distance traveled.
+- $m$ is the mass.
 - $W$ is the work done by $F$.
+- $K_{1}$ is the initial kinetic energy, equal to zero at rest.
+- $K_{2}$ is the final kinetic energy.
+- $v_{2}$ is the final speed.
 
 ### General
 
@@ -101,6 +109,8 @@ $$
 
 where
 
+- $m$ is the mass.
+- $v$ is the speed.
 - $K$ is the Newtonian kinetic energy.
 
 ## References

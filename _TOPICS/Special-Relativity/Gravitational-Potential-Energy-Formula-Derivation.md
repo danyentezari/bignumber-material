@@ -46,7 +46,15 @@ $$
 
 where
 
-- $U_{G} = mgy$ follows from $\Delta U_{G} = -W_{G}$.
+- $m$ is the mass.
+- $g$ is the gravitational acceleration.
+- $y_{i}$ is the initial height.
+- $y_{f}$ is the final height.
+- $U_{i}$ is the initial gravitational potential energy.
+- $U_{f}$ is the final gravitational potential energy.
+- $U_{G} = mgy$ is the gravitational potential energy formula.
+- $W_{G}$ is the work done by gravity.
+- $\Delta U_{G} = -W_{G}$ relates potential change to work.
 
 ### General
 
@@ -58,7 +66,11 @@ $$
 
 where
 
-- $\Delta U_{G}$ depends only on the height change.
+- $m$ is the mass.
+- $g$ is the gravitational acceleration.
+- $y_{i}$ is the initial height.
+- $y_{f}$ is the final height.
+- $\Delta U_{G}$ is the change in gravitational potential energy.
 
 ## References
 
