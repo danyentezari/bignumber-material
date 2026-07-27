@@ -1,7 +1,7 @@
 # Reorder these lines, then rebuild (_BOOK/build.sh).
 # One _TOPICS folder name per line. Lines starting with # are ignored.
 # Introduction always stays first.
-# Index is always appended last (after Glossary / Symbols).
+# Index is always appended last (after Glossary / Symbols / Constants).
 
 Electromagnetism
 Quantum-Mechanics
@@ -12,7 +12,9 @@ Calculus
 Functional-Analysis
 Linear-Algebra
 Abstract-Algebra
+Differential-Equations
 Notes
 Glossary
 Symbols
+Constants
 

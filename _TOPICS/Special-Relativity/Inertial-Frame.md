@@ -69,6 +69,7 @@ where
 
 ## References
 
-1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — inertial reference frame as one where Newton’s first law is valid.
-2. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — inertial frame as one in which Newton’s first law holds.
-3. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — inertial frames as constant-velocity axes preserving Newton’s law.
+1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — source for the heading explanation.
+2. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — inertial reference frame as one where Newton’s first law is valid.
+3. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — inertial frame as one in which Newton’s first law holds.
+4. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — inertial frames as constant-velocity axes preserving Newton’s law.

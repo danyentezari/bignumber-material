@@ -134,3 +134,7 @@ where
 ```
 
 Approved Simple and General pattern: see `Tensors.md`.
+
+## Fractions
+
+Always write fractions with `\dfrac{...}{...}`. Do not use `\frac`, `\tfrac`, or inline slash fractions such as `a/b` inside math.

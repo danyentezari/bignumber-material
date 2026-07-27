@@ -1,6 +1,6 @@
 # Length Contraction
 
-The relativistic effect that an object's length along its direction of motion is shorter for a moving observer than in the object's rest frame that is used to relate proper length to length in a moving frame.
+The relativistic effect that an object's length along its direction of motion is shorter for a moving observer than in the object's rest frame, that is used to relate proper length to length in a moving frame.
 
 ($L = \dfrac{L_0}{\gamma}$).
 

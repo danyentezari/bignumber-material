@@ -46,6 +46,7 @@ Note:
 
 ## References
 
-1. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — Minkowski spacetime; signature $(-+++)$.
-2. Griffiths, D. J. — Minkowski metric and flat spacetime as cited in notebook.
-3. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — Minkowski metric conventions.
+1. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — source for the heading explanation.
+2. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — Minkowski spacetime; signature $(-+++)$.
+3. Griffiths, D. J. — Minkowski metric and flat spacetime as cited in notebook.
+4. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — Minkowski metric conventions.

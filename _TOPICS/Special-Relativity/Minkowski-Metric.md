@@ -55,6 +55,7 @@ Note:
 
 ## References
 
-1. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — Minkowski metric $\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)$.
-2. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — Minkowski metric signature conventions.
-3. Griffiths, D. J. — Minkowski and flat spacetime metric as cited in notebook.
+1. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — source for the heading explanation.
+2. Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity*. Cambridge University Press, 2021. — Minkowski metric $\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)$.
+3. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — Minkowski metric signature conventions.
+4. Griffiths, D. J. — Minkowski and flat spacetime metric as cited in notebook.

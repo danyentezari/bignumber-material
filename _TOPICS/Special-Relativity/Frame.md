@@ -69,7 +69,8 @@ where
 
 ## References
 
-1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — reference frame as a coordinate system for event measurements.
-2. Kosinski, A. A. *Differential Manifolds*. 2008. — $n$-frame as an ordered basis.
-3. Frankel, T. *The Geometry of Physics: An Introduction*. Cambridge University Press, 2012. — frame of vector fields.
-4. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — frame of reference as another word for coordinate system.
+1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — source for the heading explanation.
+2. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — reference frame as a coordinate system for event measurements.
+3. Kosinski, A. A. *Differential Manifolds*. 2008. — $n$-frame as an ordered basis.
+4. Frankel, T. *The Geometry of Physics: An Introduction*. Cambridge University Press, 2012. — frame of vector fields.
+5. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — frame of reference as another word for coordinate system.
