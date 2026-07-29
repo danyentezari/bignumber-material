@@ -29,6 +29,8 @@ Ordered from more general to more specific:
         4. [Dielectrics](dielectrics.html)
     4. [Boundary Conditions](boundary-conditions.html)
     5. [Multipole Expansion](multipole-expansion.html)
+        1. [Moments](moments.html)
+        2. [Dipole](dipole.html)
     6. [Laplace Equation](laplace-equation.html)
     7. [Poisson Equation](poisson-equation.html)
 4. [Magnetostatics](magnetostatics.html)
