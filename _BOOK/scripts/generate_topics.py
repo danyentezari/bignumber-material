@@ -158,11 +158,18 @@ def index_sort_key(entry: tuple[str, str]) -> str:
     return primary.lower()
 
 
-def topic_index_for_siblings(sibling_files: list[Path]) -> str:
-    entries = [
-        (extract_title(path), f"{slugify_text(extract_title(path))}.html")
-        for path in sibling_files
-    ]
+def topic_index_for_siblings(
+    sibling_files: list[Path],
+    href_by_path: dict[Path, str] | None = None,
+) -> str:
+    entries = []
+    for path in sibling_files:
+        title = extract_title(path)
+        if href_by_path is not None and path in href_by_path:
+            href = href_by_path[path]
+        else:
+            href = f"{slugify_text(title)}.html"
+        entries.append((title, href))
     return build_topic_index(entries)
 
 
@@ -182,9 +189,10 @@ def write_generated_main_topic(
     folder: Path,
     main_file: Path,
     sibling_files: list[Path],
+    href_by_path: dict[Path, str] | None = None,
 ) -> tuple[Path, str]:
     title, body = split_main_topic(main_file, folder)
-    topic_index = topic_index_for_siblings(sibling_files)
+    topic_index = topic_index_for_siblings(sibling_files, href_by_path)
 
     generated_path = GENERATED_DIR / folder.name / main_file.name
     generated_path.parent.mkdir(parents=True, exist_ok=True)
@@ -342,14 +350,14 @@ def write_sidebar_pages(topics: list[dict[str, object]]) -> None:
 
 
 def generate() -> None:
-    main_chapters: list[str] = []
-    sub_chapters: list[str] = []
+    # Pass 1: discover folders and collect titles in bookdown order so href
+    # collisions (e.g. algebra Field vs physics Field → field-1.html) are known
+    # before topic-index links are written.
+    folder_jobs: list[dict[str, object]] = []
     main_titles: list[str] = []
     sub_titles: list[str] = []
     sub_index_labels: list[str] = []
-    sidebar_topics: list[dict[str, object]] = [
-        {"title": "Introduction", "href": "index.html", "children": []}
-    ]
+    sub_paths: list[Path] = []
 
     for folder in discover_topic_folders():
         main_file = folder / f"{folder.name}.md"
@@ -367,48 +375,72 @@ def generate() -> None:
             print(f"warning: skipping empty main topic with no entries: {main_file}")
             continue
 
-        generated_main, title = write_generated_main_topic(
-            folder, main_file, sibling_files
+        folder_jobs.append(
+            {
+                "folder": folder,
+                "main_file": main_file,
+                "sibling_files": sibling_files,
+                "title": title,
+            }
         )
-        main_chapters.append(relative_bookdown_path(generated_main))
         main_titles.append(title)
+        for path in sibling_files:
+            sub_paths.append(path)
+            sub_titles.append(extract_title(path))
+            sub_index_labels.append(extract_synonym_chain(path) or extract_title(path))
+
+    # Chapter order in the book: Introduction, mains, Index, then all subtopics.
+    main_titles_with_index = [*main_titles, "Site Index"]
+    all_titles = ["Introduction", *main_titles_with_index, *sub_titles]
+    all_hrefs = assign_chapter_hrefs(all_titles)
+    main_hrefs = all_hrefs[1 : 1 + len(main_titles_with_index)]
+    sub_start = 1 + len(main_titles_with_index)
+    sub_hrefs = all_hrefs[sub_start:]
+    href_by_path = dict(zip(sub_paths, sub_hrefs))
+
+    # Pass 2: write generated pages with collision-aware topic-index links.
+    main_chapters: list[str] = []
+    sub_chapters: list[str] = []
+    sidebar_topics: list[dict[str, object]] = [
+        {"title": "Introduction", "href": "index.html", "children": []}
+    ]
+
+    for job, main_href in zip(folder_jobs, main_hrefs[:-1]):
+        folder = job["folder"]
+        main_file = job["main_file"]
+        sibling_files = job["sibling_files"]
+        assert isinstance(folder, Path)
+        assert isinstance(main_file, Path)
+        assert isinstance(sibling_files, list)
+
+        topic_index = topic_index_for_siblings(sibling_files, href_by_path)
+        generated_main, title = write_generated_main_topic(
+            folder, main_file, sibling_files, href_by_path
+        )
+
+        main_chapters.append(relative_bookdown_path(generated_main))
         sidebar_topics.append(
             {
                 "title": title,
-                "href": f"{slugify_text(title)}.html",
+                "href": main_href,
                 "children": [
                     {"title": extract_title(path)} for path in sibling_files
                 ],
             }
         )
 
-        topic_index = topic_index_for_siblings(sibling_files)
         for path in sibling_files:
             generated_sub = write_generated_page(folder, path, topic_index)
             sub_chapters.append(relative_bookdown_path(generated_sub))
-            # H1 titles drive bookdown HTML filenames; synonym chains are index labels only.
-            sub_titles.append(extract_title(path))
-            sub_index_labels.append(extract_synonym_chain(path) or extract_title(path))
 
-    # Chapter order in the book: Introduction, mains, Index, then all subtopics.
-    # Index is a root sidebar page listing every subtopic alphabetically.
-    index_path = write_site_index([])  # placeholder; filled after href assignment
+    index_path = write_site_index(list(zip(sub_index_labels, sub_hrefs)))
     main_chapters.append(relative_bookdown_path(index_path))
-    main_titles.append("Site Index")
 
-    all_titles = ["Introduction", *main_titles, *sub_titles]
-    all_hrefs = assign_chapter_hrefs(all_titles)
-    # Subtopic hrefs start after Introduction + all main titles (including Site Index).
-    sub_start = 1 + len(main_titles)
-    sub_entries = list(zip(sub_index_labels, all_hrefs[sub_start:]))
-    write_site_index(sub_entries)
-
-    index_href = all_hrefs[1 + len(main_titles) - 1]
     sidebar_topics.append(
         {
             "title": "Site Index",
             "label": "Index",
-            "href": index_href,
+            "href": main_hrefs[-1],
             "children": [],
         }
     )

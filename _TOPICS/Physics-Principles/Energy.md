@@ -1,6 +1,6 @@
 # Energy
 
-Energy is the measure of a system's capacity to produce physical change.
+Energy is the measure of a system's capacity to produce change. It is the most universal measurement in all of physics.
 
 Note: Also denoted $E$. Mechanical energy is often written $E = K + U$.
 
