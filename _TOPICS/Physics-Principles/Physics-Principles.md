@@ -11,6 +11,7 @@ Power
 Momentum
 Mass
 Charge
+System
 
 A field describes how an influence is spread through space.
 A potential measures that influence at a point.
@@ -23,3 +24,4 @@ Power measures how quickly energy is transferred or transformed.
 Momentum measures the motion of an object.
 Mass measures how strongly an object resists changes in its motion.
 Charge measures how strongly an object takes part in electromagnetic interactions.
+A system is the chosen object or collection under study, separated from its surroundings by a boundary.
