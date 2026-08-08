@@ -33,6 +33,7 @@ Ordered from more general to more specific:
     1. [Position Operator](position-operator.html)
     2. [Momentum Operator](momentum-operator.html)
     3. [Hamiltonian](hamiltonian.html)
+        1. [Derivation of Hamiltonian](derivation-of-hamiltonian.html)
     4. [Eigenvalues](eigenvalue.html)
     5. [Eigenvectors](eigenvector.html)
     6. [Commutators](commutators.html)

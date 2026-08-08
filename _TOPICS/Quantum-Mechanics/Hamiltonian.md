@@ -4,6 +4,19 @@ An operator that is used to represent the total energy of a quantum system.
 
 Note: Also denoted $H$. Also denoted $\hat{H}$.
 
+## Applications
+
+1. Analyzes aberration in geometrical optics.
+2. Governs the time evolution of quantum states through the Schrödinger equation.
+3. Determines allowed discrete energy eigenvalues and stationary states.
+4. Builds partition functions for macroscopic thermodynamic properties in statistical mechanics.
+5. Evaluates quantum transition amplitudes over histories in the path-integral formulation.
+6. Describes the relativistic motion of a charged particle in an electromagnetic field.
+7. Models orbital dynamics and conserved energy in Schwarzschild spacetime.
+8. Frames the dynamics of quantum field theory and gauge theories.
+9. Studies long-term stability of perturbed conservative systems through KAM theory.
+10. Proves topological and geometric results using supersymmetric quantum mechanics.
+
 <i>
 
 **definition [d]** (*Hamiltonian*) From Shankar: the Hamiltonian is
@@ -77,6 +90,10 @@ where
 
 ## References
 
-1. Shankar, R. *Fundamentals of Physics II*. Yale University Press, 2020. — $H=\dfrac{P^{2}}{2m}+V(X)$.
-2. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — self-adjoint operator associated to a classical observable; energy yields the Hamiltonian.
+1. Shankar, R. *Fundamentals of Physics II*. Yale University Press, 2020. — $H=\dfrac{P^{2}}{2m}+V(X)$; field theory framework.
+2. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — energy observable; Schrödinger evolution.
 3. Das, T. K. *Quantum Mechanics: Axiomatic Approach and Understanding Through Mathematics*. Springer, 2023. — $i\hbar\dfrac{\partial\Psi}{\partial t}=\hat{H}\Psi$.
+4. Sakurai, J. J., & Napolitano, J. *Modern Quantum Mechanics*. Cambridge University Press, 2021. — time evolution; path integrals.
+5. Jaffe, R. L., & Taylor, W. *The Physics of Energy*. Cambridge University Press, 2018. — statistical mechanics partition functions.
+6. Susskind, L., & Cabannes, A. *General Relativity: The Theoretical Minimum*. Penguin Books, 2023. — Schwarzschild orbital energy.
+7. Gowers, T., et al. (Eds.). *The Princeton Companion to Mathematics*. Princeton University Press, 2008. — KAM stability.
