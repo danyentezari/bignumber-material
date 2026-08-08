@@ -1,85 +1,24 @@
 # Power
 
-Power is the measure of the rate at which energy is transferred or transformed.
+A measure of how quickly energy is transferred or transformed that is used to compare fast and slow energy changes.
 
-Note: Also denoted $P$.
+Note: A large energy change done slowly can have small power. A small energy change done quickly can have large power.
 
-<i>
-
-**definition [d]** (*Power*) From Knight: the rate at which energy is transferred or transformed is called the power $P$, and it is defined as
-
-- $P = \dfrac{dE_{\mathrm{sys}}}{dt}$ .
-
-where
-
-- $P$ is the power.
-- $E_{\mathrm{sys}}$ is the energy of the system.
-- $t$ is time.
-
-</i>
-
-<i>
-
-**definition [d]** (*Power*) From Shankar: then if you divide both sides of Eqn. 5.4 by $\Delta t$ and take all the usual limits
-
-- $\dfrac{dK}{dt} = F\dfrac{dx}{dt} = Fv \equiv P$ ,
-
-where $P$ is defined as the power. So power is the rate at which work is done.
-
-where
-
-- $P$ is the power.
-- $K$ is the kinetic energy.
-- $F$ is the force.
-- $v$ is the velocity.
-
-</i>
-
-<i>
-
-**definition [d]** (*Power*) From Griffiths: since the work done per unit charge is $V$ and the charge flowing per unit time is $I$, the power delivered is
-
-- $P = VI = I^{2}R$ .
-
-This is the Joule heating law.
-
-where
-
-- $P$ is the power.
-- $V$ is the voltage.
-- $I$ is the current.
-- $R$ is the resistance.
-
-</i>
-
-## Elementary Example
-
-### Simple
-
-For $E_{\mathrm{sys}}$ increasing by $60$ in time $1$,
-
-$$
-P = \dfrac{dE_{\mathrm{sys}}}{dt} = 60
-$$
-
-where
-
-- power is the rate of energy change.
-
-### General
-
-For $F = 5$ and $v = 4$,
-
-$$
-P = Fv = 20
-$$
-
-where
-
-- power is force times velocity.
+1. Is the rate of change of work with respect to time.
+2. Equals the scalar product of force and velocity.
+3. Is measured in watts, one joule per second.
+4. For rotation equals the product of torque and angular velocity.
+5. Is the rate at which energy is used, transferred, or transformed.
+6. In circuits equals the product of current and voltage drop.
+7. For unrestricted fluid flow can scale with the cube of the fluid speed.
+8. Forms the time component of the relativistic four-force.
+9. Is dissipated by damping at a rate that can scale with velocity squared.
+10. Averages to zero over a cycle for ideal capacitors and inductors in AC circuits.
 
 ## References
 
-1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — $P=\dfrac{dE_{\mathrm{sys}}}{dt}$.
-2. Shankar, R. *Fundamentals of Physics I*. Yale University Press, 2019. — $P=Fv$.
-3. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — $P=VI=I^{2}R$.
+1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — force times velocity; AC averages.
+2. Shankar, R. *Fundamentals of Physics*. Yale University Press. — watt; relativistic four-force.
+3. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — electrical power VI.
+4. Jaffe, R. L., & Taylor, W. *The Physics of Energy*. Cambridge University Press, 2018. — energy rate; fluid flow scaling.
+5. Feynman, R. P., Leighton, R. B., & Sands, M. *The Feynman Lectures on Physics*. — rotational power.

@@ -1,82 +1,25 @@
 # Force
 
-A force is the interaction that changes the motion of an object.
+An interaction that is used to change the motion of an object.
 
-Note: Also denoted $F$. Also denoted $\mathbf{F}$.
+Note: A push or a pull is the everyday name for a force.
 
-<i>
-
-**definition [d]** (*Force*) From Susskind and Friedman: the potential energy function is denoted by $V(x)$. In classical mechanics it is related to the force on a particle by the equation
-
-- $F(x) = -\dfrac{\partial V}{\partial x}$ .
-
-where
-
-- $F(x)$ is the force.
-- $V(x)$ is the potential energy function.
-- $x$ is the position.
-
-</i>
-
-<i>
-
-**definition [d]** (*Force*) From Knight: we can rewrite Newton’s second law in the form $F_{\mathrm{net}} = ma$, which is how you’ll see it presented in many textbooks.
-
-- $F_{\mathrm{net}} = ma$ .
-
-where
-
-- $F_{\mathrm{net}}$ is the net force.
-- $m$ is the mass.
-- $a$ is the acceleration.
-
-</i>
-
-<i>
-
-**definition [d]** (*Force*) From Hall: under these assumptions, Newton’s second law ($F = ma$) takes the form
-
-- $F\bigl(x(t)\bigr) = ma = m\dfrac{d^{2}x}{dt^{2}}$ ,
-
-where $m$ is the mass of the particle, which is assumed to be positive.
-
-where
-
-- $F$ is the force as a function of position.
-- $m$ is the mass.
-- $x(t)$ is the position as a function of time.
-- $a$ is the acceleration.
-
-</i>
-
-## Elementary Example
-
-### Simple
-
-For $m = 2$ and $a = 3$,
-
-$$
-F_{\mathrm{net}} = ma = 6
-$$
-
-where
-
-- the net force equals mass times acceleration.
-
-### General
-
-For $V(x) = \dfrac{1}{2}kx^{2}$ with $k = 2$ at $x = 1$,
-
-$$
-F(1) = -\dfrac{\partial V}{\partial x}\Big|_{x=1} = -2
-$$
-
-where
-
-- the force is minus the derivative of the potential.
+1. Is a push or a pull acting on an object.
+2. Requires a specific, identifiable agent that exerts it.
+3. Can transform energy from one form to another when it acts on matter.
+4. Has a material origin and needs a physical body as its source.
+5. Obeys superposition: forces add as vectors to set the net acceleration.
+6. Acts at the present instant and carries no memory of past forces.
+7. Causes acceleration proportional to the force and inversely proportional to the mass.
+8. Always occurs in equal and opposite action-reaction pairs between interacting bodies.
+9. For a conservative interaction equals the negative derivative of potential energy with position.
+10. In general relativity is replaced by the curvature of spacetime itself.
 
 ## References
 
-1. Susskind, L., & Friedman, A. *Quantum Mechanics: The Theoretical Minimum*. Basic Books, 2014. — $F(x)=-\dfrac{\partial V}{\partial x}$.
-2. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — $F_{\mathrm{net}}=ma$.
-3. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — $F(x(t))=m\dfrac{d^{2}x}{dt^{2}}$.
+1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — push or pull; agent; superposition; instantaneous action.
+2. Feynman, R. P., Leighton, R. B., & Sands, M. *The Feynman Lectures on Physics*, Vol. I. — material origin; action-reaction pairs.
+3. Logan, J. D. *A First Course in Differential Equations*. Springer, 2015. — acceleration law.
+4. Jaffe, R. L., & Taylor, W. *The Physics of Energy*. Cambridge University Press, 2018. — energy transformation.
+5. Susskind, L., & Friedman, A. *Quantum Mechanics: The Theoretical Minimum*. Basic Books, 2014. — force from potential.
+6. Carroll, S. M. *Spacetime and Geometry*. Cambridge University Press, 2019. — gravity as curvature.

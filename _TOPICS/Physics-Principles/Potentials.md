@@ -1,78 +1,25 @@
 # Potential
 
-A potential is the measure of the influence at a point in space.
+A measure of influence at a point in space that is used to compare how strongly a force field acts from place to place.
 
-Note: Also called a potential energy function when it determines a force. Also called a scalar potential when it determines a field.
+Note: Also called a potential energy function when it tells how much stored energy is available. Also called a scalar potential when a field can be read from it.
 
-<i>
-
-**definition [d]** (*Potential = Potential Energy Function*) From Susskind and Friedman: the potential energy function is denoted by $V(x)$. In classical mechanics it is related to the force on a particle by the equation
-
-- $F(x) = -\dfrac{\partial V}{\partial x}$ .
-
-where
-
-- $V(x)$ is the potential energy function.
-- $F(x)$ is the force.
-- $x$ is the position.
-
-</i>
-
-<i>
-
-**definition [d]** (*Potential = Scalar Potential*) From Griffiths: Equation 2.23 is the differential version of Eq. 2.21; it says that the electric field is the gradient of a scalar potential, which is what we set out to prove:
-
-- $\mathbf{E} = -\nabla V$ .
-
-where
-
-- $V$ is the scalar potential.
-- $\mathbf{E}$ is the electric field.
-
-</i>
-
-<i>
-
-**definition [d]** (*Potential = Electric Potential*) From Knight: in analogy with the electric field, we will define the electric potential $V$ (or, for brevity, just the potential) as
-
-- $V = \dfrac{U_{q+\mathrm{sources}}}{q}$ .
-
-where
-
-- $V$ is the electric potential.
-- $U_{q+\mathrm{sources}}$ is the electric potential energy of charge $q$ with the sources.
-- $q$ is the probe charge.
-
-</i>
-
-## Elementary Example
-
-### Simple
-
-For $V(x) = \dfrac{1}{2}kx^{2}$ with $k = 2$ at $x = 1$,
-
-$$
-F(1) = -\dfrac{\partial V}{\partial x}\Big|_{x=1} = -2
-$$
-
-where
-
-- the force is minus the derivative of the potential.
-
-### General
-
-For the Coulomb potential $V(r) = \dfrac{kQ}{r}$,
-
-$$
-\mathbf{E} = -\nabla V = \dfrac{kQ}{r^{2}}\,\hat{\mathbf{r}}
-$$
-
-where
-
-- the electric field is minus the gradient of the potential.
+1. Is defined only up to an arbitrary additive constant.
+2. Yields a conservative force as its negative gradient.
+3. Is a scalar, so potentials add by ordinary sums rather than vector addition.
+4. Obeys superposition: potentials from many sources add linearly.
+5. Satisfies Laplace's equation in regions with no sources.
+6. Makes potential difference equal to work per unit charge or mass between two points.
+7. Has stable equilibrium at local potential-energy minima.
+8. Represents stored interaction energy of a configuration of charges or masses.
+9. In quantum mechanics, enters as a position-dependent multiplicative operator that shapes allowed energies.
+10. Belongs to the sources themselves, whether or not a test particle is present.
 
 ## References
 
-1. Susskind, L., & Friedman, A. *Quantum Mechanics: The Theoretical Minimum*. Basic Books, 2014. — $F(x)=-\dfrac{\partial V}{\partial x}$.
-2. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — $\mathbf{E}=-\nabla V$.
-3. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — $V=\dfrac{U_{q+\mathrm{sources}}}{q}$.
+1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — additive constant; scalar character; superposition; work per unit charge.
+2. Arfken, G. B., Weber, H. J., & Harris, F. E. *Mathematical Methods for Physicists*. Academic Press, 2013. — force as negative gradient; quantum multiplicative potential.
+3. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — stored interaction energy; source property; equilibrium.
+4. Shankar, R. *Fundamentals of Physics II*. Yale University Press, 2020. — superposition; work interpretation.
+5. Jaffe, R. L., & Taylor, W. *The Physics of Energy*. Cambridge University Press, 2018. — energy stored in potential.
+6. Sakurai, J. J., & Napolitano, J. *Modern Quantum Mechanics*. Cambridge University Press, 2021. — potential operator in quantum mechanics.

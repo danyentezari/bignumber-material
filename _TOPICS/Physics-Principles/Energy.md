@@ -1,85 +1,24 @@
 # Energy
 
-Energy is the measure of a system's capacity to produce change. It is the most universal measurement in all of physics.
+A measure of a system's capacity to produce change that is used throughout physics to keep track of what can happen.
 
-Note: Also denoted $E$. Mechanical energy is often written $E = K + U$.
+Note: Mechanical energy is often split into motion energy and stored energy.
 
-<i>
-
-**definition [d]** (*Energy*) From Susskind: it tells us that when the velocity of an object is zero, its energy is
-
-- $E = mc^{2}$ .
-
-where
-
-- $E$ is the energy.
-- $m$ is the mass.
-- $c$ is the speed of light.
-
-</i>
-
-<i>
-
-**definition [d]** (*Energy = Mechanical Energy*) From Knight: thus the mechanical energy of an object oscillating on a spring is
-
-- $E = K + U = \dfrac{1}{2}mv^{2} + \dfrac{1}{2}kx^{2}$ .
-
-where
-
-- $E$ is the mechanical energy.
-- $K$ is the kinetic energy.
-- $U$ is the potential energy.
-- $m$ is the mass.
-- $v$ is the speed.
-- $k$ is the spring constant.
-- $x$ is the displacement.
-
-</i>
-
-<i>
-
-**definition [d]** (*Energy = Total Energy*) From Hall: the total energy $E$ of the system is then
-
-- $E(x, v) = \dfrac{1}{2}mv^{2} + V(x)$ .
-
-where
-
-- $E(x, v)$ is the total energy.
-- $m$ is the mass.
-- $v$ is the velocity.
-- $V(x)$ is the potential energy.
-- $x$ is the position.
-
-</i>
-
-## Elementary Example
-
-### Simple
-
-For $m = 2$, $v = 0$, and $c = 1$ in natural units,
-
-$$
-E = mc^{2} = 2
-$$
-
-where
-
-- the rest energy is $mc^{2}$.
-
-### General
-
-For $m = 2$, $v = 3$, and $V(x) = 4$,
-
-$$
-E = \dfrac{1}{2}mv^{2} + V(x) = 9 + 4 = 13
-$$
-
-where
-
-- total energy is kinetic plus potential.
+1. Is conserved over time in any closed or isolated system.
+2. Exists in many forms that can convert into one another.
+3. Crosses system boundaries through work and heat.
+4. Is equivalent to mass itself as rest energy.
+5. Comes in discrete allowed values on the quantum scale.
+6. Combines with momentum into a relativistic four-vector.
+7. Can reside locally in electric, magnetic, and gravitational fields.
+8. Can propagate independently through empty space as radiation.
+9. In field theories does not obey simple superposition the way linear fields do.
+10. Tends to degrade into less useful thermal forms as entropy rises.
 
 ## References
 
-1. Susskind, L. *Special Relativity and Classical Field Theory: The Theoretical Minimum*. Basic Books, 2017. — $E=mc^{2}$ at zero velocity.
-2. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — $E=K+U$.
-3. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — $E(x,v)=\dfrac{1}{2}mv^{2}+V(x)$.
+1. Jaffe, R. L., & Taylor, W. *The Physics of Energy*. Cambridge University Press, 2018. — conservation; forms; quantization; degradation.
+2. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — transfer by work and heat.
+3. Susskind, L., & Friedman, A. *Special Relativity and Classical Field Theory: The Theoretical Minimum*. Basic Books, 2017. — mass-energy; four-momentum.
+4. Feynman, R. P., Leighton, R. B., & Sands, M. *The Feynman Lectures on Physics*. — energy in fields.
+5. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — radiation; field energy.
