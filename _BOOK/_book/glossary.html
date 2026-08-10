@@ -167,7 +167,13 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="site-index.html"><span class="header-section-number">16</span> Index</a>
+<a class="" href="physics-principles.html"><span class="header-section-number">16</span> Physics Principles</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="site-index.html"><span class="header-section-number">17</span> Index</a>
 </div>
 </li>
 </ul>
@@ -273,11 +279,6 @@
       var headerMain = document.createElement("div");
       headerMain.className = "header-main";
 
-      var bookButton = document.createElement("a");
-      bookButton.href = "index.html";
-      bookButton.className = "book-button";
-      bookButton.innerHTML = "<button type=\"button\">Book</button>";
-
       var siteTitle = document.createElement("h1");
       siteTitle.className = "site-title";
       siteTitle.innerHTML =
@@ -344,7 +345,6 @@
         );
       });
 
-      headerMain.appendChild(bookButton);
       headerMain.appendChild(siteTitle);
       headerMain.appendChild(primaryNav);
       masthead.appendChild(headerMain);

@@ -4,13 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>12 Differential Form | Mathematics for Physics</title>
+<title>27 Differential Form | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
+<meta name="description" content="A local differential statement of Maxwell’s equations that is used to relate the fields pointwise to charge and current densities. Note: Also called the differential form of Maxwell’s equations....">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="12 Differential Form | Mathematics for Physics">
+<meta property="og:title" content="27 Differential Form | Mathematics for Physics">
 <meta property="og:type" content="book">
+<meta property="og:description" content="A local differential statement of Maxwell’s equations that is used to relate the fields pointwise to charge and current densities. Note: Also called the differential form of Maxwell’s equations....">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="12 Differential Form | Mathematics for Physics">
+<meta name="twitter:title" content="27 Differential Form | Mathematics for Physics">
+<meta name="twitter:description" content="A local differential statement of Maxwell’s equations that is used to relate the fields pointwise to charge and current densities. Note: Also called the differential form of Maxwell’s equations....">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -21,15 +24,20 @@
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
-          var theme = stored
+          var mode = stored === "light" || stored === "dark" || stored === "system"
             ? stored
-            : (window.matchMedia &&
+            : "system";
+          var theme = mode === "system"
+            ? (window.matchMedia &&
                 window.matchMedia("(prefers-color-scheme: dark)").matches
                 ? "dark"
-                : "light");
+                : "light")
+            : mode;
           document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.setAttribute("data-theme-mode", mode);
         } catch (e) {
           document.documentElement.setAttribute("data-theme", "light");
+          document.documentElement.setAttribute("data-theme-mode", "system");
         }
         document.documentElement.classList.add("theme-classic");
         try {
@@ -44,9 +52,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<meta name="description" content="definition (Differential k-Form) A function assigning an alternating k-linear function to each point of a manifold \(M\), where the following condition applies: For each point \(p \in M\),...">
-<meta property="og:description" content="definition (Differential k-Form) A function assigning an alternating k-linear function to each point of a manifold \(M\), where the following condition applies: For each point \(p \in M\),...">
-<meta name="twitter:description" content="definition (Differential k-Form) A function assigning an alternating k-linear function to each point of a manifold \(M\), where the following condition applies: For each point \(p \in M\),...">
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Electromagnetism", "href": "electromagnetism.html", "current": false}, {"title": "Differential Form", "href": "differential-form.html", "current": true}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -74,85 +80,100 @@
 <a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
 </div>
 </li>
-<li class="book-toc-topic">
-<div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="differential-geometry.html"><span class="header-section-number">2</span> Differential Geometry</a>
-</div>
-<ul class="book-toc-section">
-<li><a class="" href="appendix.html"><span class="header-section-number">10</span> Appendix</a></li>
-<li><a class="" href="covariant-contravariant-and-coordinate-systems.html"><span class="header-section-number">11</span> Covariant, Contravariant, and Coordinate Systems</a></li>
-<li><a class="" href="exterior-algebra-and-exterior-derivatives.html"><span class="header-section-number">13</span> Exterior Algebra and Exterior Derivatives</a></li>
-<li><a class="" href="forms.html"><span class="header-section-number">14</span> Forms</a></li>
-<li><a class="" href="functions.html"><span class="header-section-number">15</span> Functions</a></li>
-<li><a class="" href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html"><span class="header-section-number">16</span> Stoke’s Theorem and the Fundamental Theorem of Calculus</a></li>
-<li><a class="" href="tensors.html"><span class="header-section-number">17</span> Tensors</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="book-toc-topic">
-<div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="electromagnetism.html"><span class="header-section-number">3</span> Electromagnetism</a>
-</div>
-<ul class="book-toc-section">
-<li><a class="" href="mathemarics-appendix.html"><span class="header-section-number">18</span> Mathemarics Appendix</a></li>
-<li><a class="" href="maxwells-equations.html"><span class="header-section-number">19</span> Maxwell’s Equations</a></li>
-<li><a class="" href="physics-mathematical-appendix.html"><span class="header-section-number">20</span> Physics Mathematical Appendix</a></li>
-<li><a class="" href="references.html"><span class="header-section-number">21</span> References</a></li>
-<li><a class="" href="special-relativity-and-electric-fields.html"><span class="header-section-number">22</span> Special Relativity and Electric Fields</a></li>
-<li><a class="" href="stokes-theorem-for-flux-integral.html"><span class="header-section-number">23</span> Stokes’ Theorem for Flux Integral</a></li>
-<li><a class="" href="stokes-theorem-physics.html"><span class="header-section-number">24</span> Stokes’ Theorem Physics</a></li>
-</ul>
-</li>
-<li class="book-toc-topic">
-<div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="functional-analysis.html"><span class="header-section-number">4</span> Functional Analysis</a>
-</div>
-<ul class="book-toc-section">
-<li><a class="" href="fourier-transform.html"><span class="header-section-number">25</span> Fourier Transform</a></li>
-</ul>
-</li>
-<li class="book-toc-topic">
-<div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="group-theory.html"><span class="header-section-number">5</span> Group Theory</a>
-</div>
-<ul class="book-toc-section">
-<li><a class="" href="symmetry.html"><span class="header-section-number">26</span> Symmetry</a></li>
-</ul>
-</li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="linear-algebra.html"><span class="header-section-number">6</span> Linear Algebra</a>
-</div>
-</li>
-<li class="book-toc-topic">
-<div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="topology.html"><span class="header-section-number">7</span> Topology</a>
-</div>
-<ul class="book-toc-section">
-<li><a class="" href="homeomorphism.html"><span class="header-section-number">27</span> Homeomorphism</a></li>
-<li><a class="" href="manifolds.html"><span class="header-section-number">28</span> Manifolds</a></li>
-<li><a class="" href="open-sets.html"><span class="header-section-number">29</span> Open Sets</a></li>
-<li><a class="" href="preimages-and-inverse-functions.html"><span class="header-section-number">30</span> Preimages and Inverse Functions</a></li>
-<li><a class="" href="topological-spaces.html"><span class="header-section-number">31</span> Topological Spaces</a></li>
-</ul>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="vector-calculus.html"><span class="header-section-number">8</span> Vector Calculus</a>
+<a class="active-parent" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary-1.html"><span class="header-section-number">9</span> Glossary</a>
+<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="topology.html"><span class="header-section-number">5</span> Topology</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="differential-geometry.html"><span class="header-section-number">6</span> Differential Geometry</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="calculus.html"><span class="header-section-number">7</span> Calculus</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="functional-analysis.html"><span class="header-section-number">8</span> Functional Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="linear-algebra.html"><span class="header-section-number">9</span> Linear Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="abstract-algebra.html"><span class="header-section-number">10</span> Abstract Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="differential-equations.html"><span class="header-section-number">11</span> Differential Equations</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="notes.html"><span class="header-section-number">12</span> Notes</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="glossary.html"><span class="header-section-number">13</span> Glossary</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="symbols.html"><span class="header-section-number">14</span> Symbols</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="constants.html"><span class="header-section-number">15</span> Constants</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="physics-principles.html"><span class="header-section-number">16</span> Physics Principles</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="site-index.html"><span class="header-section-number">17</span> Index</a>
 </div>
 </li>
 </ul>
@@ -162,33 +183,156 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="differential-form" class="section level1" number="12">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="differential-form" class="section level1" number="27">
 <h1>
-<span class="header-section-number">12</span> Differential Form<a class="anchor" aria-label="anchor" href="#differential-form"><i class="fas fa-link"></i></a>
+<span class="header-section-number">27</span> Differential Form<a class="anchor" aria-label="anchor" href="#differential-form"><i class="fas fa-link"></i></a>
 </h1>
+<p>A local differential statement of Maxwell’s equations that is used to relate the fields pointwise to charge and current densities.</p>
+<p>Note: Also called the differential form of Maxwell’s equations.</p>
 <p><i></i></p>
-<p><strong>definition</strong> (<em>Differential k-Form</em>) A function assigning an alternating k-linear function to each point of a manifold <span class="math inline">\(M\)</span>, where</p>
+<p><strong>definition [d]</strong> (<em>Differential Form</em>) From Griffiths: Maxwell’s equations in differential form are</p>
 <ul>
-<li><p>the following condition applies:</p></li>
-<li><p>For each point <span class="math inline">\(p \in M\)</span>, <span class="math inline">\(\omega(p)\)</span> is a <span class="math inline">\(k\)</span>-covector on the tangent space <span class="math inline">\(T_pM\)</span>.</p></li>
+<li>
+<span class="math inline">\(\nabla\cdot\mathbf{E} = \dfrac{\rho}{\epsilon_{0}}\)</span> ,</li>
+<li>
+<span class="math inline">\(\nabla\cdot\mathbf{B} = 0\)</span> ,</li>
+<li>
+<span class="math inline">\(\nabla\times\mathbf{E} = -\dfrac{\partial\mathbf{B}}{\partial t}\)</span> ,</li>
+<li>
+<span class="math inline">\(\nabla\times\mathbf{B} = \mu_{0}\mathbf{J} + \mu_{0}\epsilon_{0}\dfrac{\partial\mathbf{E}}{\partial t}\)</span> .</li>
 </ul>
 <p>where</p>
 <ul>
 <li>
-<span class="math inline">\(M\)</span> is a smooth manifold.</li>
+<span class="math inline">\(\rho\)</span> is the charge density.</li>
 <li>
-<span class="math inline">\(k\)</span> is a non-negative integer representing the degree of the form.</li>
+<span class="math inline">\(\mathbf{J}\)</span> is the current density.</li>
 <li>
-<span class="math inline">\(T_pM\)</span> is the tangent space to <span class="math inline">\(M\)</span> at <span class="math inline">\(p\)</span>.</li>
-<li>
-<span class="math inline">\(T^*_p M\)</span> (or <span class="math inline">\(T^*_p(M)\)</span>) is the cotangent space at <span class="math inline">\(p\)</span>, defined as the dual space of the tangent space <span class="math inline">\(T_pM\)</span>.</li>
-<li>
-<span class="math inline">\(\Lambda^k(T^*_p M)\)</span> (or <span class="math inline">\(A^k(T_pM)\)</span>) is the vector space of all alternating <span class="math inline">\(k\)</span>-tensors (also called <span class="math inline">\(k\)</span>-covectors or multicovectors) on <span class="math inline">\(T_pM\)</span>.</li>
-<li>
-<span class="math inline">\(\omega\)</span> is a smooth section of the vector bundle <span class="math inline">\(\Lambda^k(T^*M)\)</span>, the <span class="math inline">\(k\)</span>-th exterior power of the cotangent bundle.</li>
+<span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span> are the electric and magnetic fields.</li>
 </ul>
 <p></p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em>Differential Form</em>) From Knight: the differential forms follow from the integral laws by the divergence and Stokes theorems, yielding local relations between fields and sources.</p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\rho\)</span> and <span class="math inline">\(\mathbf{J}\)</span> are the local sources.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em>Differential Form</em>) From Susskind and Friedman: the differential Maxwell equations express how the divergence and curl of the fields are determined by charge density, current density, and the time derivatives of the fields.</p>
+<p>where</p>
+<ul>
+<li>the equations hold at each spacetime point.</li>
+</ul>
+<p></p>
+<div id="elementary-example-6" class="section level2" number="27.1">
+<h2>
+<span class="header-section-number">27.1</span> Elementary Example<a class="anchor" aria-label="anchor" href="#elementary-example-6"><i class="fas fa-link"></i></a>
+</h2>
+<div id="simple-6" class="section level3" number="27.1.1">
+<h3>
+<span class="header-section-number">27.1.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple-6"><i class="fas fa-link"></i></a>
+</h3>
+<p>In empty space with no charges or currents,</p>
+<p><span class="math display">\[
+\nabla\cdot\mathbf{E} = 0,\quad \nabla\cdot\mathbf{B} = 0
+\]</span></p>
+<p>where</p>
+<ul>
+<li>both fields are divergenceless.</li>
+</ul>
+</div>
+<div id="general-6" class="section level3" number="27.1.2">
+<h3>
+<span class="header-section-number">27.1.2</span> General<a class="anchor" aria-label="anchor" href="#general-6"><i class="fas fa-link"></i></a>
+</h3>
+<p>With sources <span class="math inline">\(\rho\)</span> and <span class="math inline">\(\mathbf{J}\)</span>,</p>
+<p><span class="math display">\[
+\nabla\cdot\mathbf{E} = \dfrac{\rho}{\epsilon_{0}},\quad \nabla\times\mathbf{B} = \mu_{0}\mathbf{J} + \mu_{0}\epsilon_{0}\dfrac{\partial\mathbf{E}}{\partial t}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>the electric field and magnetic field couple to the sources.</li>
+</ul>
+</div>
+</div>
+<div id="references-13" class="section level2" number="27.2">
+<h2>
+<span class="header-section-number">27.2</span> References<a class="anchor" aria-label="anchor" href="#references-13"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — differential Maxwell equations.</li>
+<li>Knight, R. D. <em>Physics for Scientists and Engineers</em>. Pearson, 2023. — differential form via divergence and Stokes theorems.</li>
+<li>Susskind, L., &amp; Friedman, A. <em>Special Relativity and Classical Field Theory</em>. Basic Books, 2017. — differential Maxwell equations.</li>
+</ol>
+<div class="topic-index">
+<ul>
+<li><a href="amperes-law.html">Ampere’s Law</a></li>
+<li><a href="biot-savart-law.html">Biot-Savart Law</a></li>
+<li><a href="capacitance.html">Capacitance</a></li>
+<li><a href="charge-density.html">Charge Density</a></li>
+<li><a href="continuity-equation.html">Continuity Equation</a></li>
+<li><a href="coulomb-force.html">Coulomb Force</a></li>
+<li><a href="current.html">Current</a></li>
+<li><a href="cyclotron-motion.html">Cyclotron Motion</a></li>
+<li><a href="dielectrics.html">Dielectrics</a></li>
+<li><a href="differential-form.html">Differential Form</a></li>
+<li><a href="dipole.html">Dipole</a></li>
+<li><a href="dipole-radiation.html">Dipole Radiation</a></li>
+<li><a href="electric-charge.html">Electric Charge</a></li>
+<li><a href="electric-currents.html">Electric Currents</a></li>
+<li><a href="electric-field.html">Electric Field</a></li>
+<li><a href="electric-fields.html">Electric Fields</a></li>
+<li><a href="electric-potential.html">Electric Potential</a></li>
+<li><a href="electromagnetic-energy.html">Electromagnetic Energy</a></li>
+<li><a href="electromagnetic-induction.html">Electromagnetic Induction</a></li>
+<li><a href="electromagnetic-interaction.html">Electromagnetic Interaction</a></li>
+<li><a href="electromagnetic-momentum.html">Electromagnetic Momentum</a></li>
+<li><a href="electromagnetic-waves.html">Electromagnetic Waves</a></li>
+<li><a href="electrostatics.html">Electrostatics</a></li>
+<li><a href="gauge.html">Gauge</a></li>
+<li><a href="gauge-field.html">Gauge Field</a></li>
+<li><a href="gauge-symmetry.html">Gauge Symmetry</a></li>
+<li><a href="gauge-theory.html">Gauge Theory</a></li>
+<li><a href="gauge-transformations.html">Gauge Transformations</a></li>
+<li><a href="hall-effect.html">Hall Effect</a></li>
+<li><a href="induced-emf.html">Induced Emf</a></li>
+<li><a href="inductance.html">Inductance</a></li>
+<li><a href="induction.html">Induction</a></li>
+<li><a href="integral-form.html">Integral Form</a></li>
+<li><a href="ionization.html">Ionization</a></li>
+<li><a href="laplace-equation.html">Laplace Equation</a></li>
+<li><a href="lorentz-force.html">Lorentz Force</a></li>
+<li><a href="magnetic-field.html">Magnetic Field</a></li>
+<li><a href="magnetic-fields.html">Magnetic Fields</a></li>
+<li><a href="magnetic-materials.html">Magnetic Materials</a></li>
+<li><a href="magnetostatics.html">Magnetostatics</a></li>
+<li><a href="maxwells-equations.html">Maxwell’s Equations</a></li>
+<li><a href="moments.html">Moments</a></li>
+<li><a href="momentum-of-light.html">Momentum of Light</a></li>
+<li><a href="motion-of-charges.html">Motion of Charges</a></li>
+<li><a href="multipole-expansion.html">Multipole Expansion</a></li>
+<li><a href="poisson-equation.html">Poisson Equation</a></li>
+<li><a href="polarization.html">Polarization</a></li>
+<li><a href="potentials.html">Potentials</a></li>
+<li><a href="poynting-vector.html">Poynting Vector</a></li>
+<li><a href="radiation.html">Radiation</a></li>
+<li><a href="reflection.html">Reflection</a></li>
+<li><a href="refraction.html">Refraction</a></li>
+<li><a href="relativistic-electromagnetism.html">Relativistic Electromagnetism</a></li>
+<li><a href="resistance.html">Resistance</a></li>
+<li><a href="retarded-potentials.html">Retarded Potentials</a></li>
+<li><a href="scalar-potential.html">Scalar Potential</a></li>
+<li><a href="superposition.html">Superposition</a></li>
+<li><a href="transformers.html">Transformers</a></li>
+<li><a href="u-1-gauge-theory.html">U(1) Gauge Theory</a></li>
+<li><a href="vector-potential.html">Vector Potential</a></li>
+<li><a href="voltage.html">Voltage</a></li>
+</ul>
+</div>
 
+</div>
 </div>
 <script>
   (function () {
@@ -196,12 +340,15 @@
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
     var SUN =
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.5" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22.5"/><line x1="3.5" y1="3.5" x2="5.3" y2="5.3"/><line x1="18.7" y1="18.7" x2="20.5" y2="20.5"/><line x1="1.5" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22.5" y2="12"/><line x1="3.5" y1="20.5" x2="5.3" y2="18.7"/><line x1="18.7" y1="5.3" x2="20.5" y2="3.5"/></svg>';
+    var DEVICE =
+      '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>';
 
     var FONT_MIN = 13;
     var FONT_MAX = 28;
     var FONT_STEP = 1.6;
     var FONT_BASE = 17;
     var fontSize = FONT_BASE;
+    var THEME_ORDER = ["light", "dark", "system"];
 
     function initClassicLayout() {
       if (document.getElementById("page")) return;
@@ -232,11 +379,6 @@
 
       var headerMain = document.createElement("div");
       headerMain.className = "header-main";
-
-      var bookButton = document.createElement("a");
-      bookButton.href = "index.html";
-      bookButton.className = "book-button";
-      bookButton.innerHTML = "<button type=\"button\">Book</button>";
 
       var siteTitle = document.createElement("h1");
       siteTitle.className = "site-title";
@@ -304,7 +446,6 @@
         );
       });
 
-      headerMain.appendChild(bookButton);
       headerMain.appendChild(siteTitle);
       headerMain.appendChild(primaryNav);
       masthead.appendChild(headerMain);
@@ -331,6 +472,39 @@
 
       var entryHeader = document.createElement("header");
       entryHeader.className = "entry-header";
+
+      var breadcrumbData = document.getElementById("page-breadcrumbs");
+      if (breadcrumbData) {
+        try {
+          var trail = JSON.parse(breadcrumbData.textContent || "[]");
+          if (Array.isArray(trail) && trail.length) {
+            var breadcrumbs = document.createElement("nav");
+            breadcrumbs.className = "breadcrumbs";
+            breadcrumbs.setAttribute("aria-label", "Breadcrumb");
+            trail.forEach(function (item, index) {
+              if (index > 0) {
+                var sep = document.createElement("span");
+                sep.className = "breadcrumb-sep";
+                sep.textContent = " > ";
+                breadcrumbs.appendChild(sep);
+              }
+              if (item.current || index === trail.length - 1) {
+                var current = document.createElement("span");
+                current.className = "breadcrumb-current";
+                current.textContent = item.title;
+                current.setAttribute("aria-current", "page");
+                breadcrumbs.appendChild(current);
+              } else {
+                var crumb = document.createElement("a");
+                crumb.href = item.href;
+                crumb.textContent = item.title;
+                breadcrumbs.appendChild(crumb);
+              }
+            });
+            entryHeader.appendChild(breadcrumbs);
+          }
+        } catch (e) {}
+      }
 
       var pageHeading = main.querySelector("h1");
       if (pageHeading) {
@@ -512,16 +686,62 @@
       if (chapterSidebar) chapterSidebar.remove();
       if (oldFooter) oldFooter.remove();
 
-      function currentTheme() {
-        return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      function systemTheme() {
+        return window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
       }
 
-      function renderTheme(theme) {
-        themeBtn.innerHTML = theme === "dark" ? SUN : MOON;
-        themeBtn.setAttribute(
-          "title",
-          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-        );
+      function readThemeMode() {
+        try {
+          var stored = localStorage.getItem("book-theme");
+          if (stored === "light" || stored === "dark" || stored === "system") {
+            return stored;
+          }
+        } catch (e) {}
+        return "system";
+      }
+
+      function resolveTheme(mode) {
+        return mode === "system" ? systemTheme() : mode;
+      }
+
+      function currentThemeMode() {
+        var mode = root.getAttribute("data-theme-mode");
+        if (mode === "light" || mode === "dark" || mode === "system") {
+          return mode;
+        }
+        return readThemeMode();
+      }
+
+      function renderTheme(mode) {
+        var resolved = resolveTheme(mode);
+        if (mode === "system") {
+          themeBtn.innerHTML = DEVICE;
+          themeBtn.setAttribute("title", "Using device theme (click for light)");
+          themeBtn.setAttribute("aria-label", "Theme: device. Click to switch to light mode");
+        } else if (mode === "dark") {
+          themeBtn.innerHTML = SUN;
+          themeBtn.setAttribute("title", "Dark mode (click for device theme)");
+          themeBtn.setAttribute("aria-label", "Theme: dark. Click to switch to device theme");
+        } else {
+          themeBtn.innerHTML = MOON;
+          themeBtn.setAttribute("title", "Light mode (click for dark)");
+          themeBtn.setAttribute("aria-label", "Theme: light. Click to switch to dark mode");
+        }
+        themeBtn.setAttribute("data-theme-mode", mode);
+        themeBtn.setAttribute("data-theme-resolved", resolved);
+      }
+
+      function applyThemeMode(mode) {
+        var resolved = resolveTheme(mode);
+        root.setAttribute("data-theme", resolved);
+        root.setAttribute("data-theme-mode", mode);
+        try {
+          localStorage.setItem("book-theme", mode);
+        } catch (e) {}
+        renderTheme(mode);
       }
 
       function applyFontSize(size) {
@@ -539,15 +759,27 @@
         }
       } catch (e) {}
       applyFontSize(fontSize);
-      renderTheme(currentTheme());
+      applyThemeMode(readThemeMode());
+
+      if (window.matchMedia) {
+        var colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        var onSchemeChange = function () {
+          if (currentThemeMode() === "system") {
+            applyThemeMode("system");
+          }
+        };
+        if (colorSchemeQuery.addEventListener) {
+          colorSchemeQuery.addEventListener("change", onSchemeChange);
+        } else if (colorSchemeQuery.addListener) {
+          colorSchemeQuery.addListener(onSchemeChange);
+        }
+      }
 
       themeBtn.addEventListener("click", function () {
-        var next = currentTheme() === "dark" ? "light" : "dark";
-        root.setAttribute("data-theme", next);
-        try {
-          localStorage.setItem("book-theme", next);
-        } catch (e) {}
-        renderTheme(next);
+        var mode = currentThemeMode();
+        var index = THEME_ORDER.indexOf(mode);
+        var next = THEME_ORDER[(index + 1) % THEME_ORDER.length];
+        applyThemeMode(next);
       });
 
       fontWidget.querySelector(".zeno_font_resizer_minus").addEventListener("click", function (e) {
@@ -580,11 +812,20 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="covariant-contravariant-and-coordinate-systems.html"><span class="header-section-number">11</span> Covariant, Contravariant, and Coordinate Systems</a></div>
-<div class="next"><a href="exterior-algebra-and-exterior-derivatives.html"><span class="header-section-number">13</span> Exterior Algebra and Exterior Derivatives</a></div>
+<div class="prev"><a href="dielectrics.html"><span class="header-section-number">26</span> Dielectrics</a></div>
+<div class="next"><a href="dipole.html"><span class="header-section-number">28</span> Dipole</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#differential-form"><span class="header-section-number">12</span> Differential Form</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#differential-form"><span class="header-section-number">27</span> Differential Form</a></li>
+<li>
+<a class="nav-link" href="#elementary-example-6"><span class="header-section-number">27.1</span> Elementary Example</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#simple-6"><span class="header-section-number">27.1.1</span> Simple</a></li>
+<li><a class="nav-link" href="#general-6"><span class="header-section-number">27.1.2</span> General</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#references-13"><span class="header-section-number">27.2</span> References</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

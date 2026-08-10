@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>287 Operators | Mathematics for Physics</title>
+<title>112 Operators | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="Complex Analysis Complex Conjugate Electromagnetism Lorentz Force Law Mathematics Appendix Maxwell’s Equations Operators Physics Mathematical Appendix Radiation Special Relativity and Electric...">
+<meta name="description" content="A linear mapping on a Hilbert space that is used to represent a physical observable acting on quantum states. Note: Also called quantum operators. Observables of interest are represented by...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="287 Operators | Mathematics for Physics">
+<meta property="og:title" content="112 Operators | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Complex Analysis Complex Conjugate Electromagnetism Lorentz Force Law Mathematics Appendix Maxwell’s Equations Operators Physics Mathematical Appendix Radiation Special Relativity and Electric...">
+<meta property="og:description" content="A linear mapping on a Hilbert space that is used to represent a physical observable acting on quantum states. Note: Also called quantum operators. Observables of interest are represented by...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="287 Operators | Mathematics for Physics">
-<meta name="twitter:description" content="Complex Analysis Complex Conjugate Electromagnetism Lorentz Force Law Mathematics Appendix Maxwell’s Equations Operators Physics Mathematical Appendix Radiation Special Relativity and Electric...">
+<meta name="twitter:title" content="112 Operators | Mathematics for Physics">
+<meta name="twitter:description" content="A linear mapping on a Hilbert space that is used to represent a physical observable acting on quantum states. Note: Also called quantum operators. Observables of interest are represented by...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -52,7 +52,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Notes", "href": "notes.html", "current": false}, {"title": "Operators", "href": "operators.html", "current": true}]</script>
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Quantum Mechanics", "href": "quantum-mechanics.html", "current": false}, {"title": "Operators", "href": "operators.html", "current": true}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -89,7 +89,7 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
+<a class="active-parent" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
@@ -143,7 +143,7 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active-parent" href="notes.html"><span class="header-section-number">12</span> Notes</a>
+<a class="" href="notes.html"><span class="header-section-number">12</span> Notes</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
@@ -167,7 +167,13 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="site-index.html"><span class="header-section-number">16</span> Index</a>
+<a class="" href="physics-principles.html"><span class="header-section-number">16</span> Physics Principles</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="site-index.html"><span class="header-section-number">17</span> Index</a>
 </div>
 </li>
 </ul>
@@ -177,27 +183,142 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="operators" class="section level1" number="287">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="operators" class="section level1" number="112">
 <h1>
-<span class="header-section-number">287</span> Operators<a class="anchor" aria-label="anchor" href="#operators"><i class="fas fa-link"></i></a>
+<span class="header-section-number">112</span> Operators<a class="anchor" aria-label="anchor" href="#operators"><i class="fas fa-link"></i></a>
 </h1>
+<p>A linear mapping on a Hilbert space that is used to represent a physical observable acting on quantum states.</p>
+<p>Note: Also called quantum operators. Observables of interest are represented by Hermitian operators.</p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em>Operators</em>) From Hall: to each real-valued function <span class="math inline">\(f\)</span> on the classical phase space there is associated a self-adjoint operator <span class="math inline">\(\hat{f}\)</span> on the quantum Hilbert space.</p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(f\)</span> is a classical observable as a real-valued function on phase space.</li>
+<li>
+<span class="math inline">\(\hat{f}\)</span> is the corresponding self-adjoint operator.</li>
+<li>the quantum Hilbert space is the space of states.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em>Operators</em>) From Sakurai: observables like momentum and spin components are to be represented by operators that can act on kets. We can consider a more general class of operators that act on kets; they will be denoted by <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span>, and so forth, while <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, and so on will be used for a restrictive class of operators that correspond to observables. Let us consider the eigenkets and eigenvalues of a Hermitian operator <span class="math inline">\(A\)</span>. We use the symbol <span class="math inline">\(A\)</span>, reserved earlier for an observable, because in quantum mechanics Hermitian operators of interest quite often turn out to be the operators representing some physical observables. We expect on physical grounds that an observable has real eigenvalues. The theorem just proved guarantees the reality of eigenvalues whenever the operator is Hermitian. That is why we talk about Hermitian observables in quantum mechanics.</p>
+<p>where</p>
+<ul>
+<li>an operator acts on kets.</li>
+<li>
+<span class="math inline">\(A\)</span> denotes an operator corresponding to an observable.</li>
+<li>a Hermitian operator has real eigenvalues.</li>
+</ul>
+<p></p>
+<div id="elementary-example-46" class="section level2" number="112.1">
+<h2>
+<span class="header-section-number">112.1</span> Elementary Example<a class="anchor" aria-label="anchor" href="#elementary-example-46"><i class="fas fa-link"></i></a>
+</h2>
+<div id="simple-46" class="section level3" number="112.1.1">
+<h3>
+<span class="header-section-number">112.1.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple-46"><i class="fas fa-link"></i></a>
+</h3>
+<p>The position operator multiplies by <span class="math inline">\(x\)</span> in the position representation:</p>
+<p><span class="math display">\[
+(\hat{x}\psi)(x) = x\psi(x)
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\psi\)</span> is a wavefunction.</li>
+<li>
+<span class="math inline">\(\hat{x}\)</span> is the position operator.</li>
+</ul>
+</div>
+<div id="general-46" class="section level3" number="112.1.2">
+<h3>
+<span class="header-section-number">112.1.2</span> General<a class="anchor" aria-label="anchor" href="#general-46"><i class="fas fa-link"></i></a>
+</h3>
+<p>A general observable <span class="math inline">\(A\)</span> acts on a state ket <span class="math inline">\(|\alpha\rangle\)</span> to produce another ket <span class="math inline">\(A|\alpha\rangle\)</span>, and its expectation value is</p>
+<p><span class="math display">\[
+\langle A\rangle = \langle\alpha|A|\alpha\rangle
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(|\alpha\rangle\)</span> is a normalized state.</li>
+</ul>
+</div>
+</div>
+<div id="references-95" class="section level2" number="112.2">
+<h2>
+<span class="header-section-number">112.2</span> References<a class="anchor" aria-label="anchor" href="#references-95"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Hall, B. C. <em>Quantum Theory for Mathematicians</em>. Springer, 2013. — Axiom 2: classical <span class="math inline">\(f\)</span> associated with self-adjoint <span class="math inline">\(\hat{f}\)</span>.</li>
+<li>Sakurai, J. J., &amp; Napolitano, J. <em>Modern Quantum Mechanics</em>. Cambridge University Press, 2021. — observables represented by Hermitian operators on kets.</li>
+</ol>
 <div class="topic-index">
 <ul>
-<li><a href="complex-analysis.html">Complex Analysis</a></li>
-<li><a href="complex-conjugate.html">Complex Conjugate</a></li>
-<li><a href="electromagnetism.html">Electromagnetism</a></li>
-<li><a href="lorentz-force-law.html">Lorentz Force Law</a></li>
-<li><a href="mathematics-appendix.html">Mathematics Appendix</a></li>
-<li><a href="maxwells-equations.html">Maxwell’s Equations</a></li>
+<li><a href="absorption.html">Absorption</a></li>
+<li><a href="angular-momentum.html">Angular Momentum</a></li>
+<li><a href="atomic-orbitals.html">Atomic Orbitals</a></li>
+<li><a href="aufbau-principle.html">Aufbau Principle</a></li>
+<li><a href="bohr-radius.html">Bohr Radius</a></li>
+<li><a href="bra-and-ket.html">Bra and Ket</a></li>
+<li><a href="commutators.html">Commutators</a></li>
+<li><a href="conjugate-variable.html">Conjugate Variable</a></li>
+<li><a href="conservation-laws.html">Conservation Laws</a></li>
+<li><a href="conservation-of-angular-momentum.html">Conservation of Angular Momentum</a></li>
+<li><a href="conservation-of-charge.html">Conservation of Charge</a></li>
+<li><a href="conservation-of-energy.html">Conservation of Energy</a></li>
+<li><a href="conservation-of-energy-transition-law.html">Conservation of Energy Transition Law</a></li>
+<li><a href="conservation-of-momentum.html">Conservation of Momentum</a></li>
+<li><a href="de-broglie-wavelength.html">de Broglie Wavelength</a></li>
+<li><a href="derivation-of-hamiltonian.html">Derivation of Hamiltonian</a></li>
+<li><a href="dipole-selection-rules.html">Dipole Selection Rules</a></li>
+<li><a href="einstein-coefficients.html">Einstein Coefficients</a></li>
+<li><a href="electromagnetic-interaction-1.html">Electromagnetic Interaction</a></li>
+<li><a href="electromagnetic-interaction-2.html">Electromagnetic Interaction</a></li>
+<li><a href="electromagnetic-radiation.html">Electromagnetic Radiation</a></li>
+<li><a href="electron-configurations.html">Electron Configurations</a></li>
+<li><a href="energy-quantization.html">Energy Quantization</a></li>
+<li><a href="expectation-values.html">Expectation Values</a></li>
+<li><a href="fermis-golden-rule.html">Fermi’s Golden Rule</a></li>
+<li><a href="hamiltonian.html">Hamiltonian</a></li>
+<li><a href="hunds-rule.html">Hund’s Rule</a></li>
+<li><a href="hydrogen-energy-levels.html">Hydrogen Energy Levels</a></li>
+<li><a href="lagrangian.html">Lagrangian</a></li>
+<li><a href="magnetic-moment.html">Magnetic Moment</a></li>
+<li><a href="measurement.html">Measurement</a></li>
+<li><a href="momentum-operator.html">Momentum Operator</a></li>
+<li><a href="normalization.html">Normalization</a></li>
 <li><a href="operators.html">Operators</a></li>
-<li><a href="physics-mathematical-appendix.html">Physics Mathematical Appendix</a></li>
-<li><a href="radiation.html">Radiation</a></li>
-<li><a href="special-relativity-and-electric-fields.html">Special Relativity and Electric Fields</a></li>
-<li><a href="stokes-theorem-for-flux-integral.html">Stokes’ Theorem for Flux Integral</a></li>
-<li><a href="stokes-theorem-physics.html">Stokes’ Theorem Physics</a></li>
+<li><a href="orbital-angular-momentum.html">Orbital Angular Momentum</a></li>
+<li><a href="pauli-exclusion-principle.html">Pauli Exclusion Principle</a></li>
+<li><a href="photon-momentum.html">Photon Momentum</a></li>
+<li><a href="planck-relation.html">Planck Relation</a></li>
+<li><a href="position-operator.html">Position Operator</a></li>
+<li><a href="potential-wells.html">Potential Wells</a></li>
+<li><a href="probability-current.html">Probability Current</a></li>
+<li><a href="probability-density.html">Probability Density</a></li>
+<li><a href="quantum-harmonic-oscillator.html">Quantum Harmonic Oscillator</a></li>
+<li><a href="quantum-states.html">Quantum States</a></li>
+<li><a href="quantum-tunneling.html">Quantum Tunneling</a></li>
+<li><a href="rydberg-formula.html">Rydberg Formula</a></li>
+<li><a href="scattering-theory.html">Scattering Theory</a></li>
+<li><a href="schrodinger-equation-time-independent.html">Schrodinger Equation Time-Independent</a></li>
+<li><a href="schrodinger-equations.html">Schrodinger Equations</a></li>
+<li><a href="selection-rules.html">Selection Rules</a></li>
+<li><a href="spin.html">Spin</a></li>
+<li><a href="spin-orbit-coupling.html">Spin-Orbit Coupling</a></li>
+<li><a href="spontaneous-emission.html">Spontaneous Emission</a></li>
+<li><a href="stimulated-emission.html">Stimulated Emission</a></li>
+<li><a href="time-dependent-schrodinger-equation-1-dimensional.html">Time Dependent Schrodinger Equation 1-Dimensional</a></li>
+<li><a href="time-dependent-schrodinger-equation-generalized.html">Time Dependent Schrodinger Equation Generalized</a></li>
+<li><a href="total-angular-momentum.html">Total Angular Momentum</a></li>
+<li><a href="uncertainty-principle.html">Uncertainty Principle</a></li>
+<li><a href="wave-particle-duality.html">Wave-Particle Duality</a></li>
+<li><a href="wavefunctions.html">Wavefunctions</a></li>
 </ul>
 </div>
 
+</div>
 </div>
 <script>
   (function () {
@@ -244,11 +365,6 @@
 
       var headerMain = document.createElement("div");
       headerMain.className = "header-main";
-
-      var bookButton = document.createElement("a");
-      bookButton.href = "index.html";
-      bookButton.className = "book-button";
-      bookButton.innerHTML = "<button type=\"button\">Book</button>";
 
       var siteTitle = document.createElement("h1");
       siteTitle.className = "site-title";
@@ -316,7 +432,6 @@
         );
       });
 
-      headerMain.appendChild(bookButton);
       headerMain.appendChild(siteTitle);
       headerMain.appendChild(primaryNav);
       masthead.appendChild(headerMain);
@@ -683,11 +798,20 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="maxwells-equations-1.html"><span class="header-section-number">286</span> Maxwell’s Equations</a></div>
-<div class="next"><a href="physics-mathematical-appendix.html"><span class="header-section-number">288</span> Physics Mathematical Appendix</a></div>
+<div class="prev"><a href="normalization.html"><span class="header-section-number">111</span> Normalization</a></div>
+<div class="next"><a href="orbital-angular-momentum.html"><span class="header-section-number">113</span> Orbital Angular Momentum</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#operators"><span class="header-section-number">287</span> Operators</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#operators"><span class="header-section-number">112</span> Operators</a></li>
+<li>
+<a class="nav-link" href="#elementary-example-46"><span class="header-section-number">112.1</span> Elementary Example</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#simple-46"><span class="header-section-number">112.1.1</span> Simple</a></li>
+<li><a class="nav-link" href="#general-46"><span class="header-section-number">112.1.2</span> General</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#references-95"><span class="header-section-number">112.2</span> References</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
