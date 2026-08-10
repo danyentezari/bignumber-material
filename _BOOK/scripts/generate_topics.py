@@ -17,6 +17,8 @@ GENERATED_DIR = BOOK_DIR / "generated"
 BOOKDOWN_YML = BOOK_DIR / "_bookdown.yml"
 SIDEBAR_PAGES_JSON = GENERATED_DIR / "sidebar-pages.json"
 SIDEBAR_TXT = BOOK_DIR / "sidebar.txt"
+BIBLIOGRAPHY_DIR = TOPICS_DIR / "Bibliography"
+RESERVED_TOPIC_FOLDERS = frozenset({"Bibliography"})
 
 
 def slugify_text(text: str) -> str:
@@ -240,7 +242,9 @@ def discover_topic_folders() -> list[Path]:
         raise RuntimeError(f"Topics directory not found: {TOPICS_DIR}")
 
     folders_by_name = {
-        path.name: path for path in TOPICS_DIR.iterdir() if path.is_dir()
+        path.name: path
+        for path in TOPICS_DIR.iterdir()
+        if path.is_dir() and path.name not in RESERVED_TOPIC_FOLDERS
     }
 
     order = load_sidebar_order()
@@ -324,6 +328,20 @@ def assign_chapter_hrefs(titles: list[str]) -> list[str]:
     return hrefs
 
 
+def load_bibliography_source() -> tuple[Path, list[Path]]:
+    """Return the Bibliography main page and optional entry pages."""
+    main_file = BIBLIOGRAPHY_DIR / "Bibliography.md"
+    if not main_file.is_file() or not is_bookdown_safe_filename(main_file):
+        raise RuntimeError(f"Missing bibliography source: {main_file}")
+
+    markdown_files = collect_markdown_files(BIBLIOGRAPHY_DIR)
+    if main_file not in markdown_files:
+        raise RuntimeError(f"Bibliography main page not found in {BIBLIOGRAPHY_DIR}")
+
+    sibling_files = [path for path in markdown_files if path != main_file]
+    return main_file, sibling_files
+
+
 def write_site_index(entries: list[tuple[str, str]]) -> Path:
     """Write alphabetical site-wide subtopic index page."""
     expanded: list[tuple[str, str]] = []
@@ -389,14 +407,24 @@ def generate() -> None:
             sub_titles.append(extract_title(path))
             sub_index_labels.append(extract_synonym_chain(path) or extract_title(path))
 
-    # Chapter order in the book: Introduction, mains, Index, then all subtopics.
-    main_titles_with_index = [*main_titles, "Site Index"]
-    all_titles = ["Introduction", *main_titles_with_index, *sub_titles]
+    bib_main_file, bib_sibling_files = load_bibliography_source()
+    bib_sub_titles = [extract_title(path) for path in bib_sibling_files]
+
+    # Chapter order: Introduction, mains, Index, Bibliography, subtopics, bib entries.
+    main_titles_with_index = [*main_titles, "Site Index", "Bibliography"]
+    all_titles = [
+        "Introduction",
+        *main_titles_with_index,
+        *sub_titles,
+        *bib_sub_titles,
+    ]
     all_hrefs = assign_chapter_hrefs(all_titles)
     main_hrefs = all_hrefs[1 : 1 + len(main_titles_with_index)]
     sub_start = 1 + len(main_titles_with_index)
-    sub_hrefs = all_hrefs[sub_start:]
+    sub_hrefs = all_hrefs[sub_start : sub_start + len(sub_titles)]
+    bib_sub_hrefs = all_hrefs[sub_start + len(sub_titles) :]
     href_by_path = dict(zip(sub_paths, sub_hrefs))
+    bib_href_by_path = dict(zip(bib_sibling_files, bib_sub_hrefs))
 
     # Pass 2: write generated pages with collision-aware topic-index links.
     main_chapters: list[str] = []
@@ -436,12 +464,38 @@ def generate() -> None:
     index_path = write_site_index(list(zip(sub_index_labels, sub_hrefs)))
     main_chapters.append(relative_bookdown_path(index_path))
 
+    bib_topic_index = topic_index_for_siblings(bib_sibling_files, bib_href_by_path)
+    bibliography_main, _ = write_generated_main_topic(
+        BIBLIOGRAPHY_DIR,
+        bib_main_file,
+        bib_sibling_files,
+        bib_href_by_path,
+    )
+    main_chapters.append(relative_bookdown_path(bibliography_main))
+
+    for path in bib_sibling_files:
+        generated_bib_entry = write_generated_page(
+            BIBLIOGRAPHY_DIR,
+            path,
+            bib_topic_index,
+        )
+        sub_chapters.append(relative_bookdown_path(generated_bib_entry))
+
     sidebar_topics.append(
         {
             "title": "Site Index",
             "label": "Index",
-            "href": main_hrefs[-1],
+            "href": main_hrefs[-2],
             "children": [],
+        }
+    )
+    sidebar_topics.append(
+        {
+            "title": "Bibliography",
+            "href": main_hrefs[-1],
+            "children": [
+                {"title": extract_title(path)} for path in bib_sibling_files
+            ],
         }
     )
 

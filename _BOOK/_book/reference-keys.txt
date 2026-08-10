@@ -38,6 +38,7 @@ special-relativity-1
 quantum-mechanics-1
 physics-principles
 site-index
+bibliography
 amperes-law
 references-4
 biot-savart-law
