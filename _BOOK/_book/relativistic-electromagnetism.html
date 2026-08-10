@@ -385,7 +385,7 @@
       var menuToggle = document.createElement("button");
       menuToggle.className = "menu-toggle";
       menuToggle.type = "button";
-      menuToggle.textContent = "Primary Menu";
+      menuToggle.textContent = "Menu";
 
       var skipLink = document.createElement("a");
       skipLink.className = "screen-reader-text skip-link";
@@ -404,20 +404,6 @@
         var li = document.createElement("li");
         li.className = "page_item";
         li.appendChild(link.cloneNode(true));
-
-        var section = topic.querySelector(".book-toc-section");
-        if (section && section.children.length) {
-          li.classList.add("page_item_has_children");
-          var childUl = document.createElement("ul");
-          childUl.className = "children";
-          section.querySelectorAll("li > a").forEach(function (subLink) {
-            var childLi = document.createElement("li");
-            childLi.className = "page_item";
-            childLi.appendChild(subLink.cloneNode(true));
-            childUl.appendChild(childLi);
-          });
-          li.appendChild(childUl);
-        }
         primaryList.appendChild(li);
       });
       primaryMenu.appendChild(primaryList);

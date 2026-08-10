@@ -1044,7 +1044,7 @@ html.theme-classic .menu-toggle {
 html.theme-classic .primary-navigation {
   box-sizing: border-box;
   font-size: 14px;
-  padding-top: 24px;
+  padding-top: 0;
 }
 
 html.theme-classic .primary-navigation .nav-menu {
@@ -1053,7 +1053,7 @@ html.theme-classic .primary-navigation .nav-menu {
 }
 
 html.theme-classic .primary-navigation.toggled-on {
-  padding: 72px 0 36px;
+  padding: 0;
 }
 
 html.theme-classic .primary-navigation.toggled-on .nav-menu {
@@ -1495,6 +1495,45 @@ html.theme-classic .site-info a:hover {
 @media screen and (max-width: 540px) {
   html.theme-classic .site-tagline {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1149px) {
+  html.theme-classic .header-main {
+    position: relative;
+  }
+
+  html.theme-classic .site-title {
+    max-width: calc(100% - 4.5rem);
+    padding-right: 0.25rem;
+  }
+
+  html.theme-classic .menu-toggle {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 1;
+  }
+
+  html.theme-classic .primary-navigation.toggled-on {
+    padding: 0;
+  }
+
+  html.theme-classic .primary-navigation.toggled-on .nav-menu {
+    position: fixed;
+    top: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1260px;
+    max-height: calc(100dvh - 48px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: var(--text);
+    padding: 8px 10px 16px;
+    box-sizing: border-box;
+    z-index: 1001;
+    border-bottom: 1px solid color-mix(in srgb, var(--bg) 20%, transparent);
   }
 }
 
