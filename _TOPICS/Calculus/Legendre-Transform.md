@@ -1,8 +1,6 @@
 # Legendre Transform
 
-A mapping that is used to replace a variable in a function by the derivative of that function with respect to the variable.
-
-Note: Also called Legendre transformation.
+A mapping that is used to replace a variable in a function by the derivative of that function with respect to the variable. The Legendre transform is a non-integral transformation, unlike, for example, the Laplace and Fourier transforms.
 
 ## Applications
 

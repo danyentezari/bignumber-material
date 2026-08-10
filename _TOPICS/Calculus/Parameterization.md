@@ -2,6 +2,21 @@
 
 A function that labels points of a curve by a real parameter that is used to write coordinates along the curve.
 
+
+An implicit equation gives a constraint on points; parameterization instead gives a rule that generates each point on the curve.
+
+For example:
+
+$$
+x^2+y^2=1
+$$
+
+versus
+$$
+x=\cos t,\qquad y=\sin t.$$
+
+The first describes which points belong to the circle. The second tells you how to move through those points.
+
 <i>
 
 **definition [d]** (*Parameterization = Parametrization = Parametric Representation*) A continuous vector-valued function that traces a curve $C$ as the parameter varies over an interval $I$:
@@ -89,6 +104,12 @@ $$
 \phi(0) = \langle 1,\ 0 \rangle,\quad \phi\!\left(\dfrac{\pi}{2}\right) = \langle 0,\ 1 \rangle,\quad \phi(\pi) = \langle -1,\ 0 \rangle
 $$
 
+![Unit circle under $\phi$ at $t=0$.](parameterization-phi-t0.png)
+
+![Unit circle under $\phi$ at $t=\pi/2$.](parameterization-phi-t-pi-2.png)
+
+![Unit circle under $\phi$ at $t=\pi$.](parameterization-phi-t-pi.png)
+
 The same circle admits another parameterization that traverses it twice as fast. Every point on the unit circle still has the form $\langle \cos\theta,\ \sin\theta \rangle$ for some angle $\theta$.
 
 $$
@@ -101,7 +122,9 @@ $$
 \psi(t) = \langle \cos 2t,\ \sin 2t \rangle
 $$
 
-so $\phi$ and $\psi$ share the same image while differing in speed.
+so $\phi$ and $\psi$ share the same image while differing in speed. At the same parameter value $t=\pi/4$, the point $\psi(t)$ has already advanced farther around the circle than $\phi(t)$.
+
+![Comparison of $\phi$ and $\psi$ at $t=\pi/4$.](parameterization-phi-psi-t-pi-4.png)
 
 where
 
