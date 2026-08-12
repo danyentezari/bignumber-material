@@ -6,6 +6,7 @@
 Electromagnetism
 Quantum-Mechanics
 Special-Relativity
+Classical-Mechanics
 Topology
 Differential-Geometry
 Calculus

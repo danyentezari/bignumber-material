@@ -462,3 +462,100 @@
     }
   })();
 </script>
+<script>
+  /* Prefer heading matches in book search (e.g. "Lagrangian" page over References). */
+  (function () {
+    var WEIGHTED_FUSE_OPTIONS = {
+      keys: [
+        { name: "heading", weight: 0.7 },
+        { name: "text", weight: 0.25 },
+        { name: "code", weight: 0.05 },
+      ],
+      ignoreLocation: true,
+      ignoreFieldNorm: true,
+      threshold: 0.1,
+      includeMatches: true,
+      includeScore: true,
+    };
+
+    function bindWeightedAutocomplete($, weightedFuse) {
+      var $old = $("#search");
+      if (!$old.length || typeof $.fn.autocomplete !== "function") return;
+
+      /* Replace the input (and Algolia wrapper, if present) so bookdown handlers are dropped. */
+      var $search = $old.clone(false).val($old.val());
+      var $wrap = $old.closest(".algolia-autocomplete");
+      if ($wrap.length) {
+        $wrap.replaceWith($search);
+      } else {
+        $old.replaceWith($search);
+      }
+
+      $search
+        .autocomplete(
+          {
+            autoselect: true,
+            debug: true,
+            hint: false,
+            minLength: 2,
+          },
+          [
+            {
+              name: "content",
+              source: function (query, callback) {
+                q = query;
+                var results = weightedFuse.search(query, { limit: 20 });
+                callback(
+                  results
+                    .filter(function (x) {
+                      return x.score <= 0.75;
+                    })
+                    .map(function (x) {
+                      return x.item;
+                    })
+                );
+              },
+              templates: {
+                suggestion: function (s) {
+                  if (s.chapter == s.heading) {
+                    return s.chapter;
+                  }
+                  return s.chapter + " /<br> " + s.heading;
+                },
+              },
+            },
+          ]
+        )
+        .on("autocomplete:selected", function (event, s) {
+          window.location.href = s.path + "?q=" + q + "#" + s.id;
+        });
+    }
+
+    function installWeightedSearch() {
+      if (typeof Fuse === "undefined" || typeof jQuery === "undefined") return;
+
+      fetch("search.json")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          var weightedFuse = new Fuse(data, WEIGHTED_FUSE_OPTIONS);
+          /* Keep global fuse in sync so any leftover bookdown code uses weights too. */
+          fuse = weightedFuse;
+          bindWeightedAutocomplete(jQuery, weightedFuse);
+        })
+        .catch(function () {});
+    }
+
+    function start() {
+      /* After classic layout moves #search into the sidebar. */
+      setTimeout(installWeightedSearch, 0);
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", start);
+    } else {
+      start();
+    }
+  })();
+</script>

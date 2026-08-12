@@ -46,7 +46,7 @@ Ordered from more general to more specific:
     3. [Conservation of Angular Momentum](conservation-of-angular-momentum.html)
     4. [Conservation of Charge](conservation-of-charge.html)
     5. [Selection Rules](selection-rules.html)
-8. [Angular Momentum](angular-momentum.html)
+8. [Angular Momentum](angular-momentum-1.html)
     1. [Orbital Angular Momentum](orbital-angular-momentum.html)
     2. [Total Angular Momentum](total-angular-momentum.html)
 9. [Spin](spin.html)
