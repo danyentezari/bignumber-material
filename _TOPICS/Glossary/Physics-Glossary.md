@@ -23,3 +23,5 @@
 <img src="https://www.researchgate.net/profile/Irene-Van-De-Vijver/publication/336862739/figure/fig2/AS:839368331784194@1577132413781/A-Oscillations-are-characterized-by-their-frequency-the-number-of-cycles-per-time.ppm" width="300"/>
 
 **Radiation** The propagation of electromagnetic waves through space.
+
+**Hamiltonian:** The total energy of a system expressed in terms of position and momentum coordinates.

@@ -1,20 +1,20 @@
 # Glossary
 
-**Smooth Manifold:** -
+**Smooth Manifold:** A topological manifold equipped with a maximal smooth atlas.
 
-**Locally:** -
+**Locally:** A description that every point has a neighborhood homeomorphic to a Euclidean open set.
 
 **Homeomorphic:** A description of two spaces that have the same topological structure.
 
-**Genus**
+**Genus:** The maximum number of cuts along nonintersecting closed loops possible without disconnecting a surface.
 
 **Holes:** An informal synonym for genus.
 
 **Tori:** A surface that looks like a donut. It has one hole.
 
-**Topological Structure:** -
+**Topological Structure:** A collection of subsets, called open sets, closed under arbitrary unions and finite intersections.
 
-**Continuous Function:** -
+**Continuous Function:** A function whose limit as it approaches any number equals its value there.
 
 **Differential Form:** A function assigning an alternating k-linear function to each point of an open set or manifold.
 
@@ -26,7 +26,7 @@
 
 **Smooth Surface:** A 2-dimensional manifold equipped with a differentiable structure, allowing for calculus and well-defined tangent spaces.
 
-**Surface Normal:**
+**Surface Normal:** A vector perpendicular to the tangent plane of a surface.
 
 **Piecewise Smooth Simple Closed Curve:** A non-self-intersecting closed path consisting of finitely many differentiable segments joined end-to-end.
 
@@ -34,9 +34,9 @@
 
 **Open Set (Expanded):** A subset of a topological space that contains a neighborhood around every one of its points.
 
-**Differentiable Function:** -
+**Differentiable Function:** A mapping that can be locally approximated at a point by a linear transformation.
 
-**Smooth Function:** -
+**Smooth Function:** A function that is infinitely differentiable in all combinations of its variables.
 
 **k-Covector:** An alternating $k$-linear function on a vector space, also known as a multicovector of degree $k$.
 
@@ -52,16 +52,13 @@
 
 **Bijection:** A function that is both injective and surjective, also referred to as a one-to-one correspondence.
 
-**Hausdorff Space:** A topological space where
-
-* any two distinct points can be separated by disjoint open neighborhoods.
+**Hausdorff Space:** A topological space where any two distinct points can be separated by disjoint open neighborhoods.
 
 **Onto:** A synonym for surjective function.
 
 **One-to-One:** A synonym for an injective function.
 
-**Covariant Vector = Covector = 1-Form:**
-
+**Covariant Vector = Covector = 1-Form:** A linear, real-valued function of a single vector input.
 
 **Gradient:** $\nabla V$ Operating on a scalar function $V$ produces a vector field.
 
@@ -71,6 +68,10 @@
 
 **Laplacian:** $\nabla^2 V$ This operator represents the divergence of the gradient ($\nabla \cdot \nabla V$).
 
+**Legendre Transform:** A mathematical operation that changes independent variables to construct a new function.
+
+**Linear Map = Linear Transformation:** A mapping that preserves addition of vectors and multiplication by scalars that is used to transform vectors from one space to another.
+
 **Linear Operation** A synonym for linear map.
 
-**Linear Transformation** A synonym for linear map.
+**Hermitian:** A linear transformation that is used to represent physical quantities with real number eigenvalues.
