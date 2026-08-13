@@ -199,6 +199,7 @@ rmd_files:
   - "../_BOOK/generated/Special-Relativity/Worldlines.md"
   - "../_BOOK/generated/Classical-Mechanics/Acceleration.md"
   - "../_BOOK/generated/Classical-Mechanics/Angular-Momentum.md"
+  - "../_BOOK/generated/Classical-Mechanics/Derivation-of-Lagrangian.md"
   - "../_BOOK/generated/Classical-Mechanics/Position.md"
   - "../_BOOK/generated/Classical-Mechanics/Space.md"
   - "../_BOOK/generated/Classical-Mechanics/Time.md"

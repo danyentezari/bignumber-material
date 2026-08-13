@@ -15,3 +15,4 @@ Ordered from more general to more specific:
 5. [Acceleration](acceleration.html)
 6. [Angular Momentum](angular-momentum.html)
 7. [Torque](torque.html)
+8. [Derivation of Lagrangian](derivation-of-lagrangian.html)
