@@ -38,11 +38,13 @@
 
 **Smooth Function:** A function that is infinitely differentiable in all combinations of its variables.
 
-**k-Covector:** An alternating $k$-linear function on a vector space, also known as a multicovector of degree $k$.
+**Alternating Function:** A function that changes sign whenever any two of its arguments are switched.
 
-**k-Covector Field = k-Form:** A function assigning a $k$-covector to each point of a manifold, also called a differential $k$-form.
+**k-Covector:** An alternating function of $k$ vectors that is linear in each vector.
 
-**k-Tensor:** A multilinear function from the $k$-fold product of a vector space to the real numbers.
+**k-Covector Field = k-Form:** An assignment of a $k$-covector to each point of a manifold.
+
+**k-Tensor:** A function of $k$ vectors that is linear in each vector.
 
 **k-Fold:** A term denoting the repetition of a set or space $k$ times, typically within a Cartesian product.
 
