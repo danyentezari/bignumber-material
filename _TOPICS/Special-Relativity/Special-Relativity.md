@@ -16,6 +16,7 @@ Ordered from more general to more specific:
         3. [Non-Inertial Frames](non-inertial-frames.html)
 2. [Minkowski Space](minkowski-space.html)
     1. [Spacetime](spacetime.html)
+        1. [Visualization of Spacetime](visualization-of-spacetime.html)
     2. [Events](events.html)
     3. [Spacetime Interval](spacetime-interval.html)
     4. [Minkowski Metric](minkowski-metric.html)

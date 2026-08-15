@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>20 Mathemarics Appendix | Mathematics for Physics</title>
+<title>6 Condensed Matter | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="Stokes’ Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If with continuous first partial...">
+<meta name="description" content="Condensed matter physics is the field of physics that deals with the macroscopic and microscopic physical properties of matter, specifically the condensed phases that arise when the number of...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="20 Mathemarics Appendix | Mathematics for Physics">
+<meta property="og:title" content="6 Condensed Matter | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Stokes’ Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If with continuous first partial...">
+<meta property="og:description" content="Condensed matter physics is the field of physics that deals with the macroscopic and microscopic physical properties of matter, specifically the condensed phases that arise when the number of...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="20 Mathemarics Appendix | Mathematics for Physics">
-<meta name="twitter:description" content="Stokes’ Theorem Let \(S\) be a piecewise smooth oriented surface in space, and let the boundary of \(S\) be a piecewise smooth simple closed curve \(C\). If with continuous first partial...">
+<meta name="twitter:title" content="6 Condensed Matter | Mathematics for Physics">
+<meta name="twitter:description" content="Condensed matter physics is the field of physics that deals with the macroscopic and microscopic physical properties of matter, specifically the condensed phases that arise when the number of...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -24,15 +24,20 @@
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
-          var theme = stored
+          var mode = stored === "light" || stored === "dark" || stored === "system"
             ? stored
-            : (window.matchMedia &&
+            : "system";
+          var theme = mode === "system"
+            ? (window.matchMedia &&
                 window.matchMedia("(prefers-color-scheme: dark)").matches
                 ? "dark"
-                : "light");
+                : "light")
+            : mode;
           document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.setAttribute("data-theme-mode", mode);
         } catch (e) {
           document.documentElement.setAttribute("data-theme", "light");
+          document.documentElement.setAttribute("data-theme-mode", "system");
         }
         document.documentElement.classList.add("theme-classic");
         try {
@@ -47,6 +52,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Condensed Matter", "href": "condensed-matter.html", "current": true}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -74,85 +80,136 @@
 <a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
 </div>
 </li>
-<li class="book-toc-topic">
+<li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="abstract-algebra.html"><span class="header-section-number">2</span> Abstract Algebra</a>
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
 </div>
-<ul class="book-toc-section">
-<li><a class="" href="group-theory.html"><span class="header-section-number">10</span> Group Theory</a></li>
-<li><a class="" href="symmetry.html"><span class="header-section-number">11</span> Symmetry</a></li>
-</ul>
-</li>
-<li class="book-toc-topic">
-<div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="differential-geometry.html"><span class="header-section-number">3</span> Differential Geometry</a>
-</div>
-<ul class="book-toc-section">
-<li><a class="" href="covariant-contravariant-and-coordinate-systems.html"><span class="header-section-number">12</span> Covariant, Contravariant, and Coordinate Systems</a></li>
-<li><a class="" href="differential-forms.html"><span class="header-section-number">13</span> Differential Forms</a></li>
-<li><a class="" href="exterior-algebra-and-exterior-derivatives.html"><span class="header-section-number">14</span> Exterior Algebra and Exterior Derivatives</a></li>
-<li><a class="" href="forms.html"><span class="header-section-number">15</span> Forms</a></li>
-<li><a class="" href="functions.html"><span class="header-section-number">16</span> Functions</a></li>
-<li><a class="" href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html"><span class="header-section-number">17</span> Stoke’s Theorem and the Fundamental Theorem of Calculus</a></li>
-<li><a class="" href="tensors.html"><span class="header-section-number">18</span> Tensors</a></li>
-</ul>
-</li>
-<li class="book-toc-topic is-open">
-<div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="true" aria-label="Toggle subtopics"></button>
-<a class="active-parent" href="electromagnetism.html"><span class="header-section-number">4</span> Electromagnetism</a>
-</div>
-<ul class="book-toc-section">
-<li><a class="" href="lorentz-force-law.html"><span class="header-section-number">19</span> Lorentz Force Law</a></li>
-<li><a class="active" href="mathemarics-appendix.html"><span class="header-section-number">20</span> Mathemarics Appendix</a></li>
-<li><a class="" href="maxwells-equations.html"><span class="header-section-number">21</span> Maxwell’s Equations</a></li>
-<li><a class="" href="physics-mathematical-appendix.html"><span class="header-section-number">22</span> Physics Mathematical Appendix</a></li>
-<li><a class="" href="references.html"><span class="header-section-number">23</span> References</a></li>
-<li><a class="" href="special-relativity-and-electric-fields.html"><span class="header-section-number">24</span> Special Relativity and Electric Fields</a></li>
-<li><a class="" href="stokes-theorem-for-flux-integral.html"><span class="header-section-number">25</span> Stokes’ Theorem for Flux Integral</a></li>
-<li><a class="" href="stokes-theorem-physics.html"><span class="header-section-number">26</span> Stokes’ Theorem Physics</a></li>
-</ul>
-</li>
-<li class="book-toc-topic">
-<div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="functional-analysis.html"><span class="header-section-number">5</span> Functional Analysis</a>
-</div>
-<ul class="book-toc-section">
-<li><a class="" href="fourier-transform.html"><span class="header-section-number">27</span> Fourier Transform</a></li>
-</ul>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="linear-algebra.html"><span class="header-section-number">6</span> Linear Algebra</a>
+<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
 </div>
 </li>
-<li class="book-toc-topic">
+<li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="classical-mechanics.html"><span class="header-section-number">5</span> Classical Mechanics</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="active" href="condensed-matter.html"><span class="header-section-number">6</span> Condensed Matter</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
 <a class="" href="topology.html"><span class="header-section-number">7</span> Topology</a>
 </div>
-<ul class="book-toc-section">
-<li><a class="" href="homeomorphism.html"><span class="header-section-number">28</span> Homeomorphism</a></li>
-<li><a class="" href="manifolds.html"><span class="header-section-number">29</span> Manifolds</a></li>
-<li><a class="" href="open-sets.html"><span class="header-section-number">30</span> Open Sets</a></li>
-<li><a class="" href="preimages-and-inverse-functions.html"><span class="header-section-number">31</span> Preimages and Inverse Functions</a></li>
-<li><a class="" href="topological-spaces.html"><span class="header-section-number">32</span> Topological Spaces</a></li>
-</ul>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="vector-calculus.html"><span class="header-section-number">8</span> Vector Calculus</a>
+<a class="" href="differential-geometry.html"><span class="header-section-number">8</span> Differential Geometry</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary.html"><span class="header-section-number">9</span> Glossary</a>
+<a class="" href="calculus.html"><span class="header-section-number">9</span> Calculus</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="functional-analysis.html"><span class="header-section-number">10</span> Functional Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="linear-algebra.html"><span class="header-section-number">11</span> Linear Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="abstract-algebra.html"><span class="header-section-number">12</span> Abstract Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="differential-equations.html"><span class="header-section-number">13</span> Differential Equations</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="notes.html"><span class="header-section-number">14</span> Notes</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="glossary.html"><span class="header-section-number">15</span> Glossary</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="symbols.html"><span class="header-section-number">16</span> Symbols</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="constants.html"><span class="header-section-number">17</span> Constants</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="complex-analysis.html"><span class="header-section-number">18</span> Complex Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="physical-chemistry.html"><span class="header-section-number">19</span> Physical Chemistry</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="physics-principles.html"><span class="header-section-number">20</span> Physics Principles</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="real-analysis.html"><span class="header-section-number">21</span> Real Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="site-index.html"><span class="header-section-number">22</span> Index</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="bibliography.html"><span class="header-section-number">23</span> Bibliography</a>
 </div>
 </li>
 </ul>
@@ -162,79 +219,54 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="mathemarics-appendix" class="section level1" number="20">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="condensed-matter" class="section level1" number="6">
 <h1>
-<span class="header-section-number">20</span> Mathemarics Appendix<a class="anchor" aria-label="anchor" href="#mathemarics-appendix"><i class="fas fa-link"></i></a>
+<span class="header-section-number">6</span> Condensed Matter<a class="anchor" aria-label="anchor" href="#condensed-matter"><i class="fas fa-link"></i></a>
 </h1>
-<p><strong>Stokes’ Theorem</strong></p>
-<p>Let <span class="math inline">\(S\)</span> be a piecewise smooth oriented surface in space, and let the boundary of <span class="math inline">\(S\)</span> be a piecewise smooth simple closed curve <span class="math inline">\(C\)</span>. If with continuous first partial derivatives in a domain containing <span class="math inline">\(S\)</span>, then:</p>
-<p><span class="math display">\[\iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span></p>
-<p>Or,</p>
-<p><span class="math display">\[\iint_S (\text{curl} \times \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \mathbf{r}'(s) \, ds\]</span></p>
-<p>In this formula</p>
+<p>Condensed matter physics is the field of physics that deals with the macroscopic and microscopic physical properties of matter, specifically the condensed phases that arise when the number of constituents is extremely large and the interactions between them are strong. The most familiar examples are solids and liquids.</p>
+<p>Solid-state physics is the part of condensed matter that tries to understand the behavior of bulk matter in terms of the laws of atomic behavior.</p>
+<p>We have this section as a foundation for materials, semiconductors, and many-body quantum systems, and for its close ties to quantum mechanics, statistical mechanics, and electromagnetism.</p>
+<div id="topics-4" class="section level2" number="6.1">
+<h2>
+<span class="header-section-number">6.1</span> Topics<a class="anchor" aria-label="anchor" href="#topics-4"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li><a href="matter.html">Matter</a></li>
+<li><a href="radial-distribution-function.html">Radial Distribution Function</a></li>
+<li><a href="crystal.html">Crystal</a></li>
+<li><a href="lattice.html">Lattice</a></li>
+<li><a href="unit-cell.html">Unit Cell</a></li>
+<li><a href="band.html">Band</a></li>
+<li><a href="energy-gap.html">Energy Gap</a></li>
+<li><a href="fermi-level.html">Fermi Level</a></li>
+<li><a href="phonon.html">Phonon</a></li>
+<li><a href="quasiparticle.html">Quasiparticle</a></li>
+<li><a href="phase-transition.html">Phase Transition</a></li>
+<li><a href="order-parameter.html">Order Parameter</a></li>
+<li><a href="defect.html">Defect</a></li>
+<li><a href="superconductivity.html">Superconductivity</a></li>
+<li><a href="magnetism.html">Magnetism</a></li>
+<li><a href="semiconductor.html">Semiconductor</a></li>
+</ol>
+</div>
+<div id="references-3" class="section level2" number="6.2">
+<h2>
+<span class="header-section-number">6.2</span> References<a class="anchor" aria-label="anchor" href="#references-3"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Simon, S. H. <em>The Oxford Solid State Basics</em>. Oxford University Press, 2013. §1.1 — source for the heading explanation.</li>
+<li>Feynman, R. P., Leighton, R. B., &amp; Sands, M. <em>The Feynman Lectures on Physics</em>, Vol. II. — solid-state physics as bulk matter from atomic laws.</li>
+<li>Kittel, C. <em>Introduction to Solid State Physics</em>. Wiley — crystals, phonons, bands, magnetism, and superconductivity outline.</li>
+</ol>
+<div class="topic-index">
 <ul>
-<li>
-<span class="math inline">\(\mathbf{n}\)</span> is the unit normal vector of <span class="math inline">\(S\)</span>.</li>
-<li>
-<span class="math inline">\(\mathbf{r}'(s)\)</span> is the unit tangent vector of <span class="math inline">\(C\)</span>.</li>
-<li>
-<span class="math inline">\(s\)</span> is the arc length of <span class="math inline">\(C\)</span>.</li>
-<li>
-<span class="math inline">\(\mathbf{F}(x, y, z)\)</span> is a continuous vector function</li>
+<li><a href="matter.html">Matter</a></li>
+<li><a href="radial-distribution-function.html">Radial Distribution Function</a></li>
+<li><a href="semiconductor.html">Semiconductor</a></li>
 </ul>
-<p><strong>Flux:</strong> Total amount of a field or fluid passing through a surface.</p>
-<p><strong>Double Integral</strong></p>
-<p>The double integral is defined by the following identity:
-<span class="math display">\[\iint_R f(x, y) \, dA = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*) \Delta A\]</span></p>
-<p>where</p>
-<ul>
-<li>
-<span class="math inline">\(R\)</span> is a closed bounded region in the <span class="math inline">\(xy\)</span>-plane over which the function is integrated [1, 2].</li>
-<li>
-<span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are the number of subrectangles into which the region <span class="math inline">\(R\)</span> is partitioned [3, 4].</li>
-<li>
-<span class="math inline">\(R_{ij}\)</span> are the smaller subrectangles resulting from dividing <span class="math inline">\(R\)</span> using a grid of lines parallel to the axes [4, 5].</li>
-<li>
-<span class="math inline">\(\Delta A\)</span> represents the area of each subrectangle <span class="math inline">\(R_{ij}\)</span> [4, 6].</li>
-<li>
-<span class="math inline">\((x_{ij}^*, y_{ij}^*)\)</span> is an arbitrary sample point chosen within the subrectangle <span class="math inline">\(R_{ij}\)</span> [4, 6].</li>
-<li>The limit is taken as <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> approach infinity such that the maximum diameter (the greatest distance between any two points within a subregion) approaches zero [3, 7].</li>
-<li>The function <span class="math inline">\(f(x, y)\)</span>, the integrand, is typically assumed to be continuous on <span class="math inline">\(R\)</span> to ensure the limit exists and is independent of the choice of sample points [7, 8].</li>
-</ul>
-<p><br></p>
-<p><strong>Double Integral Notational Variations</strong></p>
-<p>There exist double integral with two equivalent notations:
-* Differential Area Form: <span class="math inline">\(\displaystyle \iint_R f(x, y) \, dA\)</span>.
-* Coordinate Form: <span class="math inline">\(\displaystyle \iint_R f(x, y) \, dx \, dy\)</span>.</p>
-<p><br></p>
-<p><strong>Vector Differential Operator</strong></p>
-<p>The vector differential operator for expressing the partial differentiation of a vector</p>
-<p><span class="math display">\[\nabla = \frac{\partial}{\partial x} \mathbf{i} + \frac{\partial}{\partial y} \mathbf{j} + \frac{\partial}{\partial z} \mathbf{k}\]</span></p>
-<p>where</p>
-<ul>
-<li><p><span class="math inline">\(\nabla\)</span> is the vector differential operator, commonly referred to as del or nabla.</p></li>
-<li><p><span class="math inline">\(\dfrac{\partial}{\partial x}, \dfrac{\partial}{\partial y}, \text{ and } \dfrac{\partial}{\partial z}\)</span> are partial derivatives.</p></li>
-<li><p><span class="math inline">\(\mathbf{i}, \mathbf{j}, \text{ and } \mathbf{k}\)</span> are the standard basis unit vectors pointing in the positive directions of the <span class="math inline">\(x, y, \text{ and } z\)</span> axes, respectively</p></li>
-</ul>
-<p><br></p>
-<p><strong>Curl</strong></p>
-<p>Let <span class="math inline">\(\mathbf{v}(x, y, z)\)</span> be a differentiable vector function expressed in Cartesian coordinates with components <span class="math inline">\([v_1, v_2, v_3]\)</span>, such that: <span class="math display">\[\mathbf{v} = v_1 \mathbf{i} + v_2 \mathbf{j} + v_3 \mathbf{k}\]</span>
-The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <span class="math inline">\(\nabla \times \mathbf{v}\)</span> or <span class="math inline">\(\text{rot } \mathbf{v}\)</span>) is defined by the following symbolic determinant: <span class="math display">\[\text{curl } \mathbf{v} = \nabla \times \mathbf{v} = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z} \\ v_1 &amp; v_2 &amp; v_3 \end{vmatrix}\]</span></p>
-<p><strong>Divergence</strong></p>
-<p><br></p>
-<p><strong>Differentiation of Vector</strong></p>
-<p><span class="math display">\[\mathbf{v}'(t) = \lim_{\Delta t \to 0} \frac{\mathbf{v}(t + \Delta t) - \mathbf{v}(t)}{\Delta t}\]</span></p>
-<p><br></p>
-<p><strong>Vector Function</strong></p>
-<p><span class="math display">\[\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle = f(t)\mathbf{i} + g(t)\mathbf{j} + h(t)\mathbf{k}\]</span></p>
-<p>where</p>
-<ul>
-<li>
-<span class="math inline">\(f, g, h\)</span> are components of the <span class="math inline">\(\mathbf{r}(t)\)</span>
-</li>
-</ul>
-<p><br></p>
+</div>
 
+</div>
 </div>
 <script>
   (function () {
@@ -242,12 +274,15 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
     var SUN =
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.5" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22.5"/><line x1="3.5" y1="3.5" x2="5.3" y2="5.3"/><line x1="18.7" y1="18.7" x2="20.5" y2="20.5"/><line x1="1.5" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22.5" y2="12"/><line x1="3.5" y1="20.5" x2="5.3" y2="18.7"/><line x1="18.7" y1="5.3" x2="20.5" y2="3.5"/></svg>';
+    var DEVICE =
+      '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>';
 
     var FONT_MIN = 13;
     var FONT_MAX = 28;
     var FONT_STEP = 1.6;
     var FONT_BASE = 17;
     var fontSize = FONT_BASE;
+    var THEME_ORDER = ["light", "dark", "system"];
 
     function initClassicLayout() {
       if (document.getElementById("page")) return;
@@ -279,11 +314,6 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
       var headerMain = document.createElement("div");
       headerMain.className = "header-main";
 
-      var bookButton = document.createElement("a");
-      bookButton.href = "index.html";
-      bookButton.className = "book-button";
-      bookButton.innerHTML = "<button type=\"button\">Book</button>";
-
       var siteTitle = document.createElement("h1");
       siteTitle.className = "site-title";
       siteTitle.innerHTML =
@@ -301,7 +331,7 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
       var menuToggle = document.createElement("button");
       menuToggle.className = "menu-toggle";
       menuToggle.type = "button";
-      menuToggle.textContent = "Primary Menu";
+      menuToggle.textContent = "Menu";
 
       var skipLink = document.createElement("a");
       skipLink.className = "screen-reader-text skip-link";
@@ -320,20 +350,6 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
         var li = document.createElement("li");
         li.className = "page_item";
         li.appendChild(link.cloneNode(true));
-
-        var section = topic.querySelector(".book-toc-section");
-        if (section && section.children.length) {
-          li.classList.add("page_item_has_children");
-          var childUl = document.createElement("ul");
-          childUl.className = "children";
-          section.querySelectorAll("li > a").forEach(function (subLink) {
-            var childLi = document.createElement("li");
-            childLi.className = "page_item";
-            childLi.appendChild(subLink.cloneNode(true));
-            childUl.appendChild(childLi);
-          });
-          li.appendChild(childUl);
-        }
         primaryList.appendChild(li);
       });
       primaryMenu.appendChild(primaryList);
@@ -350,7 +366,6 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
         );
       });
 
-      headerMain.appendChild(bookButton);
       headerMain.appendChild(siteTitle);
       headerMain.appendChild(primaryNav);
       masthead.appendChild(headerMain);
@@ -377,6 +392,39 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
 
       var entryHeader = document.createElement("header");
       entryHeader.className = "entry-header";
+
+      var breadcrumbData = document.getElementById("page-breadcrumbs");
+      if (breadcrumbData) {
+        try {
+          var trail = JSON.parse(breadcrumbData.textContent || "[]");
+          if (Array.isArray(trail) && trail.length) {
+            var breadcrumbs = document.createElement("nav");
+            breadcrumbs.className = "breadcrumbs";
+            breadcrumbs.setAttribute("aria-label", "Breadcrumb");
+            trail.forEach(function (item, index) {
+              if (index > 0) {
+                var sep = document.createElement("span");
+                sep.className = "breadcrumb-sep";
+                sep.textContent = " > ";
+                breadcrumbs.appendChild(sep);
+              }
+              if (item.current || index === trail.length - 1) {
+                var current = document.createElement("span");
+                current.className = "breadcrumb-current";
+                current.textContent = item.title;
+                current.setAttribute("aria-current", "page");
+                breadcrumbs.appendChild(current);
+              } else {
+                var crumb = document.createElement("a");
+                crumb.href = item.href;
+                crumb.textContent = item.title;
+                breadcrumbs.appendChild(crumb);
+              }
+            });
+            entryHeader.appendChild(breadcrumbs);
+          }
+        } catch (e) {}
+      }
 
       var pageHeading = main.querySelector("h1");
       if (pageHeading) {
@@ -558,16 +606,62 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
       if (chapterSidebar) chapterSidebar.remove();
       if (oldFooter) oldFooter.remove();
 
-      function currentTheme() {
-        return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      function systemTheme() {
+        return window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
       }
 
-      function renderTheme(theme) {
-        themeBtn.innerHTML = theme === "dark" ? SUN : MOON;
-        themeBtn.setAttribute(
-          "title",
-          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-        );
+      function readThemeMode() {
+        try {
+          var stored = localStorage.getItem("book-theme");
+          if (stored === "light" || stored === "dark" || stored === "system") {
+            return stored;
+          }
+        } catch (e) {}
+        return "system";
+      }
+
+      function resolveTheme(mode) {
+        return mode === "system" ? systemTheme() : mode;
+      }
+
+      function currentThemeMode() {
+        var mode = root.getAttribute("data-theme-mode");
+        if (mode === "light" || mode === "dark" || mode === "system") {
+          return mode;
+        }
+        return readThemeMode();
+      }
+
+      function renderTheme(mode) {
+        var resolved = resolveTheme(mode);
+        if (mode === "system") {
+          themeBtn.innerHTML = DEVICE;
+          themeBtn.setAttribute("title", "Using device theme (click for light)");
+          themeBtn.setAttribute("aria-label", "Theme: device. Click to switch to light mode");
+        } else if (mode === "dark") {
+          themeBtn.innerHTML = SUN;
+          themeBtn.setAttribute("title", "Dark mode (click for device theme)");
+          themeBtn.setAttribute("aria-label", "Theme: dark. Click to switch to device theme");
+        } else {
+          themeBtn.innerHTML = MOON;
+          themeBtn.setAttribute("title", "Light mode (click for dark)");
+          themeBtn.setAttribute("aria-label", "Theme: light. Click to switch to dark mode");
+        }
+        themeBtn.setAttribute("data-theme-mode", mode);
+        themeBtn.setAttribute("data-theme-resolved", resolved);
+      }
+
+      function applyThemeMode(mode) {
+        var resolved = resolveTheme(mode);
+        root.setAttribute("data-theme", resolved);
+        root.setAttribute("data-theme-mode", mode);
+        try {
+          localStorage.setItem("book-theme", mode);
+        } catch (e) {}
+        renderTheme(mode);
       }
 
       function applyFontSize(size) {
@@ -585,15 +679,27 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
         }
       } catch (e) {}
       applyFontSize(fontSize);
-      renderTheme(currentTheme());
+      applyThemeMode(readThemeMode());
+
+      if (window.matchMedia) {
+        var colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        var onSchemeChange = function () {
+          if (currentThemeMode() === "system") {
+            applyThemeMode("system");
+          }
+        };
+        if (colorSchemeQuery.addEventListener) {
+          colorSchemeQuery.addEventListener("change", onSchemeChange);
+        } else if (colorSchemeQuery.addListener) {
+          colorSchemeQuery.addListener(onSchemeChange);
+        }
+      }
 
       themeBtn.addEventListener("click", function () {
-        var next = currentTheme() === "dark" ? "light" : "dark";
-        root.setAttribute("data-theme", next);
-        try {
-          localStorage.setItem("book-theme", next);
-        } catch (e) {}
-        renderTheme(next);
+        var mode = currentThemeMode();
+        var index = THEME_ORDER.indexOf(mode);
+        var next = THEME_ORDER[(index + 1) % THEME_ORDER.length];
+        applyThemeMode(next);
       });
 
       fontWidget.querySelector(".zeno_font_resizer_minus").addEventListener("click", function (e) {
@@ -625,12 +731,112 @@ The curl of <span class="math inline">\(\mathbf{v}\)</span> (also denoted as <sp
       initClassicLayout();
     }
   })();
+</script><script>
+  /* Prefer heading matches in book search (e.g. "Lagrangian" page over References). */
+  (function () {
+    var WEIGHTED_FUSE_OPTIONS = {
+      keys: [
+        { name: "heading", weight: 0.7 },
+        { name: "text", weight: 0.25 },
+        { name: "code", weight: 0.05 },
+      ],
+      ignoreLocation: true,
+      ignoreFieldNorm: true,
+      threshold: 0.1,
+      includeMatches: true,
+      includeScore: true,
+    };
+
+    function bindWeightedAutocomplete($, weightedFuse) {
+      var $old = $("#search");
+      if (!$old.length || typeof $.fn.autocomplete !== "function") return;
+
+      /* Replace the input (and Algolia wrapper, if present) so bookdown handlers are dropped. */
+      var $search = $old.clone(false).val($old.val());
+      var $wrap = $old.closest(".algolia-autocomplete");
+      if ($wrap.length) {
+        $wrap.replaceWith($search);
+      } else {
+        $old.replaceWith($search);
+      }
+
+      $search
+        .autocomplete(
+          {
+            autoselect: true,
+            debug: true,
+            hint: false,
+            minLength: 2,
+          },
+          [
+            {
+              name: "content",
+              source: function (query, callback) {
+                q = query;
+                var results = weightedFuse.search(query, { limit: 20 });
+                callback(
+                  results
+                    .filter(function (x) {
+                      return x.score <= 0.75;
+                    })
+                    .map(function (x) {
+                      return x.item;
+                    })
+                );
+              },
+              templates: {
+                suggestion: function (s) {
+                  if (s.chapter == s.heading) {
+                    return s.chapter;
+                  }
+                  return s.chapter + " /<br> " + s.heading;
+                },
+              },
+            },
+          ]
+        )
+        .on("autocomplete:selected", function (event, s) {
+          window.location.href = s.path + "?q=" + q + "#" + s.id;
+        });
+    }
+
+    function installWeightedSearch() {
+      if (typeof Fuse === "undefined" || typeof jQuery === "undefined") return;
+
+      fetch("search.json")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          var weightedFuse = new Fuse(data, WEIGHTED_FUSE_OPTIONS);
+          /* Keep global fuse in sync so any leftover bookdown code uses weights too. */
+          fuse = weightedFuse;
+          bindWeightedAutocomplete(jQuery, weightedFuse);
+        })
+        .catch(function () {});
+    }
+
+    function start() {
+      /* After classic layout moves #search into the sidebar. */
+      setTimeout(installWeightedSearch, 0);
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", start);
+    } else {
+      start();
+    }
+  })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="lorentz-force-law.html"><span class="header-section-number">19</span> Lorentz Force Law</a></div>
-<div class="next"><a href="maxwells-equations.html"><span class="header-section-number">21</span> Maxwell’s Equations</a></div>
+<div class="prev"><a href="classical-mechanics.html"><span class="header-section-number">5</span> Classical Mechanics</a></div>
+<div class="next"><a href="topology.html"><span class="header-section-number">7</span> Topology</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#mathemarics-appendix"><span class="header-section-number">20</span> Mathemarics Appendix</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#condensed-matter"><span class="header-section-number">6</span> Condensed Matter</a></li>
+<li><a class="nav-link" href="#topics-4"><span class="header-section-number">6.1</span> Topics</a></li>
+<li><a class="nav-link" href="#references-3"><span class="header-section-number">6.2</span> References</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

@@ -1,0 +1,1 @@
+Drive the already-open Chrome via browser-use CDP only—never NotebookLM MCP or a new browser. `switch_tab` to Gemini Notebook (notebook …/6c86f7f7…) and ChatGPT; ask one GN query at a time in Query box→Submit; poll briefly; click Allow remote debugging if prompted.

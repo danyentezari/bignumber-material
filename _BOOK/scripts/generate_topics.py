@@ -26,6 +26,8 @@ def slugify_text(text: str) -> str:
     normalized = unicodedata.normalize("NFKD", text)
     normalized = "".join(ch for ch in normalized if not unicodedata.combining(ch))
     normalized = normalized.lower().replace("'", "")
+    # Match bookdown/pandoc: drop (), commas so U(1) → u1 and Type-(0,2) → type-02.
+    normalized = re.sub(r"[(),]", "", normalized)
     return re.sub(r"[^a-z0-9]+", "-", normalized).strip("-")
 
 
@@ -189,14 +191,21 @@ def write_generated_page(folder: Path, source: Path, topic_index: str) -> Path:
 
 def write_generated_main_topic(
     folder: Path,
-    main_file: Path,
+    main_file: Path | None,
     sibling_files: list[Path],
     href_by_path: dict[Path, str] | None = None,
 ) -> tuple[Path, str]:
-    title, body = split_main_topic(main_file, folder)
+    if main_file is not None:
+        title, body = split_main_topic(main_file, folder)
+        out_name = main_file.name
+    else:
+        title = folder.name.replace("-", " ")
+        body = ""
+        out_name = f"{folder.name}.md"
+
     topic_index = topic_index_for_siblings(sibling_files, href_by_path)
 
-    generated_path = GENERATED_DIR / folder.name / main_file.name
+    generated_path = GENERATED_DIR / folder.name / out_name
     generated_path.parent.mkdir(parents=True, exist_ok=True)
     content = f"# {title}\n\n"
     if body:
@@ -205,6 +214,19 @@ def write_generated_main_topic(
         content += topic_index
     generated_path.write_text(content, encoding="utf-8")
     return generated_path, title
+
+
+def collect_all_topic_markdown_files() -> list[Path]:
+    """Every topic .md that should become a book chapter (including Bibliography)."""
+    if not TOPICS_DIR.is_dir():
+        return []
+
+    files: list[Path] = []
+    for folder in sorted(TOPICS_DIR.iterdir(), key=lambda p: p.name.lower()):
+        if not folder.is_dir():
+            continue
+        files.extend(collect_markdown_files(folder))
+    return files
 
 
 def load_sidebar_order() -> list[str] | None:
@@ -376,27 +398,39 @@ def generate() -> None:
     sub_titles: list[str] = []
     sub_index_labels: list[str] = []
     sub_paths: list[Path] = []
+    skipped: list[str] = []
 
     for folder in discover_topic_folders():
-        main_file = folder / f"{folder.name}.md"
-        if not main_file.is_file() or not is_bookdown_safe_filename(main_file):
-            continue
-
         markdown_files = collect_markdown_files(folder)
-        if main_file not in markdown_files:
+        if not markdown_files:
             continue
 
-        sibling_files = [path for path in markdown_files if path != main_file]
-        title, body = split_main_topic(main_file, folder)
-
-        if not sibling_files and not body:
-            print(f"warning: skipping empty main topic with no entries: {main_file}")
-            continue
+        main_file = folder / f"{folder.name}.md"
+        has_main = main_file.is_file() and main_file in markdown_files
+        if has_main:
+            sibling_files = [path for path in markdown_files if path != main_file]
+            title, body = split_main_topic(main_file, folder)
+            source_main: Path | None = main_file
+            if not sibling_files and not body:
+                print(
+                    f"warning: empty topic stub included with no entries yet: "
+                    f"{main_file.relative_to(REPO_ROOT)}"
+                )
+        else:
+            # Folder has .md pages but no Folder.md — still include every page.
+            sibling_files = list(markdown_files)
+            title = folder.name.replace("-", " ")
+            body = ""
+            source_main = None
+            print(
+                f"warning: missing {main_file.name}; synthesizing topic page "
+                f"so {len(sibling_files)} markdown file(s) are included"
+            )
 
         folder_jobs.append(
             {
                 "folder": folder,
-                "main_file": main_file,
+                "main_file": source_main,
                 "sibling_files": sibling_files,
                 "title": title,
             }
@@ -432,13 +466,15 @@ def generate() -> None:
     sidebar_topics: list[dict[str, object]] = [
         {"title": "Introduction", "href": "index.html", "children": []}
     ]
+    # Site Index includes every topic/subtopic page (not just subtopics).
+    site_index_entries: list[tuple[str, str]] = []
 
-    for job, main_href in zip(folder_jobs, main_hrefs[:-1]):
+    for job, main_href in zip(folder_jobs, main_hrefs[:-2]):
         folder = job["folder"]
         main_file = job["main_file"]
         sibling_files = job["sibling_files"]
         assert isinstance(folder, Path)
-        assert isinstance(main_file, Path)
+        assert main_file is None or isinstance(main_file, Path)
         assert isinstance(sibling_files, list)
 
         topic_index = topic_index_for_siblings(sibling_files, href_by_path)
@@ -447,6 +483,7 @@ def generate() -> None:
         )
 
         main_chapters.append(relative_bookdown_path(generated_main))
+        site_index_entries.append((title, main_href))
         sidebar_topics.append(
             {
                 "title": title,
@@ -461,17 +498,20 @@ def generate() -> None:
             generated_sub = write_generated_page(folder, path, topic_index)
             sub_chapters.append(relative_bookdown_path(generated_sub))
 
-    index_path = write_site_index(list(zip(sub_index_labels, sub_hrefs)))
+    site_index_entries.extend(zip(sub_index_labels, sub_hrefs))
+
+    index_path = write_site_index(site_index_entries)
     main_chapters.append(relative_bookdown_path(index_path))
 
     bib_topic_index = topic_index_for_siblings(bib_sibling_files, bib_href_by_path)
-    bibliography_main, _ = write_generated_main_topic(
+    bibliography_main, bib_title = write_generated_main_topic(
         BIBLIOGRAPHY_DIR,
         bib_main_file,
         bib_sibling_files,
         bib_href_by_path,
     )
     main_chapters.append(relative_bookdown_path(bibliography_main))
+    site_index_entries.append((bib_title, main_hrefs[-1]))
 
     for path in bib_sibling_files:
         generated_bib_entry = write_generated_page(
@@ -480,6 +520,13 @@ def generate() -> None:
             bib_topic_index,
         )
         sub_chapters.append(relative_bookdown_path(generated_bib_entry))
+    site_index_entries.extend(
+        (extract_title(path), href)
+        for path, href in zip(bib_sibling_files, bib_sub_hrefs)
+    )
+
+    # Rewrite Site Index once bibliography entries are known.
+    write_site_index(site_index_entries)
 
     sidebar_topics.append(
         {
@@ -501,6 +548,30 @@ def generate() -> None:
 
     write_bookdown_yml(main_chapters, sub_chapters)
     write_sidebar_pages(sidebar_topics)
+
+    # Fail loudly if any topic markdown file was left out of the book.
+    expected_sources = {
+        path.resolve() for path in collect_all_topic_markdown_files()
+    }
+    included_sources: set[Path] = set()
+    for job in folder_jobs:
+        main_file = job["main_file"]
+        if isinstance(main_file, Path):
+            included_sources.add(main_file.resolve())
+        for path in job["sibling_files"]:  # type: ignore[union-attr]
+            included_sources.add(Path(path).resolve())
+    included_sources.add(bib_main_file.resolve())
+    for path in bib_sibling_files:
+        included_sources.add(path.resolve())
+
+    missing = sorted(expected_sources - included_sources, key=lambda p: str(p))
+    if missing:
+        for path in missing:
+            skipped.append(str(path.relative_to(REPO_ROOT)))
+        raise RuntimeError(
+            "These markdown files were not included in the book:\n  - "
+            + "\n  - ".join(skipped)
+        )
 
     print(
         f"Generated {len(main_chapters)} sidebar topics and "

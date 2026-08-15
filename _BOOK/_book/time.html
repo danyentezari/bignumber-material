@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>9 Quantum Mechanics for Electromagnetism | Mathematics for Physics</title>
+<title>205 Time | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="Energy Quantization Conservation Laws Electromagnetic Interaction Energy Quantization Pauli Exclusion Principle Quantum States (Schrodinger Equation) Spin Wave-Particle Duality    (function () {  ...">
+<meta name="description" content="An absolute parameter that is used to order events and mark how long motion lasts in classical physics. Note: Also called absolute time. Also called Newtonian time. Is treated as absolute and...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="9 Quantum Mechanics for Electromagnetism | Mathematics for Physics">
+<meta property="og:title" content="205 Time | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Energy Quantization Conservation Laws Electromagnetic Interaction Energy Quantization Pauli Exclusion Principle Quantum States (Schrodinger Equation) Spin Wave-Particle Duality    (function () {  ...">
+<meta property="og:description" content="An absolute parameter that is used to order events and mark how long motion lasts in classical physics. Note: Also called absolute time. Also called Newtonian time. Is treated as absolute and...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="9 Quantum Mechanics for Electromagnetism | Mathematics for Physics">
-<meta name="twitter:description" content="Energy Quantization Conservation Laws Electromagnetic Interaction Energy Quantization Pauli Exclusion Principle Quantum States (Schrodinger Equation) Spin Wave-Particle Duality    (function () {  ...">
+<meta name="twitter:title" content="205 Time | Mathematics for Physics">
+<meta name="twitter:description" content="An absolute parameter that is used to order events and mark how long motion lasts in classical physics. Note: Also called absolute time. Also called Newtonian time. Is treated as absolute and...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -24,15 +24,20 @@
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
-          var theme = stored
+          var mode = stored === "light" || stored === "dark" || stored === "system"
             ? stored
-            : (window.matchMedia &&
+            : "system";
+          var theme = mode === "system"
+            ? (window.matchMedia &&
                 window.matchMedia("(prefers-color-scheme: dark)").matches
                 ? "dark"
-                : "light");
+                : "light")
+            : mode;
           document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.setAttribute("data-theme-mode", mode);
         } catch (e) {
           document.documentElement.setAttribute("data-theme", "light");
+          document.documentElement.setAttribute("data-theme-mode", "system");
         }
         document.documentElement.classList.add("theme-classic");
         try {
@@ -47,7 +52,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html"}]</script>
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Classical Mechanics", "href": "classical-mechanics.html", "current": false}, {"title": "Time", "href": "time.html", "current": true}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -78,55 +83,133 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="abstract-algebra.html"><span class="header-section-number">2</span> Abstract Algebra</a>
+<a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="calculus.html"><span class="header-section-number">3</span> Calculus</a>
+<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="differential-geometry.html"><span class="header-section-number">4</span> Differential Geometry</a>
+<a class="" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="electromagnetism.html"><span class="header-section-number">5</span> Electromagnetism</a>
+<a class="active-parent" href="classical-mechanics.html"><span class="header-section-number">5</span> Classical Mechanics</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="functional-analysis.html"><span class="header-section-number">6</span> Functional Analysis</a>
+<a class="" href="condensed-matter.html"><span class="header-section-number">6</span> Condensed Matter</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="linear-algebra.html"><span class="header-section-number">7</span> Linear Algebra</a>
+<a class="" href="topology.html"><span class="header-section-number">7</span> Topology</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="notes.html"><span class="header-section-number">8</span> Notes</a>
+<a class="" href="differential-geometry.html"><span class="header-section-number">8</span> Differential Geometry</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="topology.html"><span class="header-section-number">10</span> Topology</a>
+<a class="" href="calculus.html"><span class="header-section-number">9</span> Calculus</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary.html"><span class="header-section-number">11</span> Glossary</a>
+<a class="" href="functional-analysis.html"><span class="header-section-number">10</span> Functional Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="linear-algebra.html"><span class="header-section-number">11</span> Linear Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="abstract-algebra.html"><span class="header-section-number">12</span> Abstract Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="differential-equations.html"><span class="header-section-number">13</span> Differential Equations</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="notes.html"><span class="header-section-number">14</span> Notes</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="glossary.html"><span class="header-section-number">15</span> Glossary</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="symbols.html"><span class="header-section-number">16</span> Symbols</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="constants.html"><span class="header-section-number">17</span> Constants</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="complex-analysis.html"><span class="header-section-number">18</span> Complex Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="physical-chemistry.html"><span class="header-section-number">19</span> Physical Chemistry</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="physics-principles.html"><span class="header-section-number">20</span> Physics Principles</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="real-analysis.html"><span class="header-section-number">21</span> Real Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="site-index.html"><span class="header-section-number">22</span> Index</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="bibliography.html"><span class="header-section-number">23</span> Bibliography</a>
 </div>
 </li>
 </ul>
@@ -136,23 +219,43 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="quantum-mechanics-for-electromagnetism" class="section level1" number="9">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="time" class="section level1" number="205">
 <h1>
-<span class="header-section-number">9</span> Quantum Mechanics for Electromagnetism<a class="anchor" aria-label="anchor" href="#quantum-mechanics-for-electromagnetism"><i class="fas fa-link"></i></a>
+<span class="header-section-number">205</span> Time<a class="anchor" aria-label="anchor" href="#time"><i class="fas fa-link"></i></a>
 </h1>
-<p>Energy Quantization</p>
+<p>An absolute parameter that is used to order events and mark how long motion lasts in classical physics.</p>
+<p>Note: Also called absolute time. Also called Newtonian time.</p>
+<ol style="list-style-type: decimal">
+<li>Is treated as absolute and independent of any reference frame.</li>
+<li>Is the same for all observers in Newtonian mechanics.</li>
+<li>Is measured the same by all experimenters independent of their motion.</li>
+<li>Runs as a single shared clock for every classical frame.</li>
+<li>Enters classical laws as the independent variable of motion.</li>
+<li>Is kept separate from the three dimensions of space.</li>
+</ol>
+<div id="references-181" class="section level2" number="205.1">
+<h2>
+<span class="header-section-number">205.1</span> References<a class="anchor" aria-label="anchor" href="#references-181"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Lovett, S. T. <em>Differential Geometry of Manifolds</em>. CRC Press, 2020. — classical mechanics treats time as absolute and independent of any frame.</li>
+<li>Shankar, R. <em>Fundamentals of Physics I</em>. Yale University Press, 2019. — in Newtonian mechanics there is one time for all observers.</li>
+<li>Knight, R. D. <em>Physics for Scientists and Engineers: A Strategic Approach with Modern Physics</em>. Pearson, 2023. — only one kind of time in classical physics, measured the same independent of motion.</li>
+</ol>
 <div class="topic-index">
 <ul>
-<li><a href="conservation-laws.html">Conservation Laws</a></li>
-<li><a href="electromagnetic-interaction.html">Electromagnetic Interaction</a></li>
-<li><a href="energy-quantization.html">Energy Quantization</a></li>
-<li><a href="pauli-exclusion-principle.html">Pauli Exclusion Principle</a></li>
-<li><a href="quantum-states-schrodinger-equation.html">Quantum States (Schrodinger Equation)</a></li>
-<li><a href="spin.html">Spin</a></li>
-<li><a href="wave-particle-duality.html">Wave-Particle Duality</a></li>
+<li><a href="acceleration.html">Acceleration</a></li>
+<li><a href="angular-momentum-1.html">Angular Momentum</a></li>
+<li><a href="derivation-of-lagrangian.html">Derivation of Lagrangian</a></li>
+<li><a href="position.html">Position</a></li>
+<li><a href="space.html">Space</a></li>
+<li><a href="time.html">Time</a></li>
+<li><a href="torque.html">Torque</a></li>
+<li><a href="velocity.html">Velocity</a></li>
 </ul>
 </div>
 
+</div>
 </div>
 <script>
   (function () {
@@ -160,12 +263,15 @@
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
     var SUN =
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.5" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22.5"/><line x1="3.5" y1="3.5" x2="5.3" y2="5.3"/><line x1="18.7" y1="18.7" x2="20.5" y2="20.5"/><line x1="1.5" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22.5" y2="12"/><line x1="3.5" y1="20.5" x2="5.3" y2="18.7"/><line x1="18.7" y1="5.3" x2="20.5" y2="3.5"/></svg>';
+    var DEVICE =
+      '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>';
 
     var FONT_MIN = 13;
     var FONT_MAX = 28;
     var FONT_STEP = 1.6;
     var FONT_BASE = 17;
     var fontSize = FONT_BASE;
+    var THEME_ORDER = ["light", "dark", "system"];
 
     function initClassicLayout() {
       if (document.getElementById("page")) return;
@@ -197,11 +303,6 @@
       var headerMain = document.createElement("div");
       headerMain.className = "header-main";
 
-      var bookButton = document.createElement("a");
-      bookButton.href = "index.html";
-      bookButton.className = "book-button";
-      bookButton.innerHTML = "<button type=\"button\">Book</button>";
-
       var siteTitle = document.createElement("h1");
       siteTitle.className = "site-title";
       siteTitle.innerHTML =
@@ -219,7 +320,7 @@
       var menuToggle = document.createElement("button");
       menuToggle.className = "menu-toggle";
       menuToggle.type = "button";
-      menuToggle.textContent = "Primary Menu";
+      menuToggle.textContent = "Menu";
 
       var skipLink = document.createElement("a");
       skipLink.className = "screen-reader-text skip-link";
@@ -238,20 +339,6 @@
         var li = document.createElement("li");
         li.className = "page_item";
         li.appendChild(link.cloneNode(true));
-
-        var section = topic.querySelector(".book-toc-section");
-        if (section && section.children.length) {
-          li.classList.add("page_item_has_children");
-          var childUl = document.createElement("ul");
-          childUl.className = "children";
-          section.querySelectorAll("li > a").forEach(function (subLink) {
-            var childLi = document.createElement("li");
-            childLi.className = "page_item";
-            childLi.appendChild(subLink.cloneNode(true));
-            childUl.appendChild(childLi);
-          });
-          li.appendChild(childUl);
-        }
         primaryList.appendChild(li);
       });
       primaryMenu.appendChild(primaryList);
@@ -268,7 +355,6 @@
         );
       });
 
-      headerMain.appendChild(bookButton);
       headerMain.appendChild(siteTitle);
       headerMain.appendChild(primaryNav);
       masthead.appendChild(headerMain);
@@ -311,15 +397,19 @@
                 sep.textContent = " > ";
                 breadcrumbs.appendChild(sep);
               }
-              var crumb = document.createElement("a");
-              crumb.href = item.href;
-              crumb.textContent = item.title;
-              breadcrumbs.appendChild(crumb);
+              if (item.current || index === trail.length - 1) {
+                var current = document.createElement("span");
+                current.className = "breadcrumb-current";
+                current.textContent = item.title;
+                current.setAttribute("aria-current", "page");
+                breadcrumbs.appendChild(current);
+              } else {
+                var crumb = document.createElement("a");
+                crumb.href = item.href;
+                crumb.textContent = item.title;
+                breadcrumbs.appendChild(crumb);
+              }
             });
-            var trailing = document.createElement("span");
-            trailing.className = "breadcrumb-sep";
-            trailing.textContent = " >";
-            breadcrumbs.appendChild(trailing);
             entryHeader.appendChild(breadcrumbs);
           }
         } catch (e) {}
@@ -505,16 +595,62 @@
       if (chapterSidebar) chapterSidebar.remove();
       if (oldFooter) oldFooter.remove();
 
-      function currentTheme() {
-        return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      function systemTheme() {
+        return window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
       }
 
-      function renderTheme(theme) {
-        themeBtn.innerHTML = theme === "dark" ? SUN : MOON;
-        themeBtn.setAttribute(
-          "title",
-          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-        );
+      function readThemeMode() {
+        try {
+          var stored = localStorage.getItem("book-theme");
+          if (stored === "light" || stored === "dark" || stored === "system") {
+            return stored;
+          }
+        } catch (e) {}
+        return "system";
+      }
+
+      function resolveTheme(mode) {
+        return mode === "system" ? systemTheme() : mode;
+      }
+
+      function currentThemeMode() {
+        var mode = root.getAttribute("data-theme-mode");
+        if (mode === "light" || mode === "dark" || mode === "system") {
+          return mode;
+        }
+        return readThemeMode();
+      }
+
+      function renderTheme(mode) {
+        var resolved = resolveTheme(mode);
+        if (mode === "system") {
+          themeBtn.innerHTML = DEVICE;
+          themeBtn.setAttribute("title", "Using device theme (click for light)");
+          themeBtn.setAttribute("aria-label", "Theme: device. Click to switch to light mode");
+        } else if (mode === "dark") {
+          themeBtn.innerHTML = SUN;
+          themeBtn.setAttribute("title", "Dark mode (click for device theme)");
+          themeBtn.setAttribute("aria-label", "Theme: dark. Click to switch to device theme");
+        } else {
+          themeBtn.innerHTML = MOON;
+          themeBtn.setAttribute("title", "Light mode (click for dark)");
+          themeBtn.setAttribute("aria-label", "Theme: light. Click to switch to dark mode");
+        }
+        themeBtn.setAttribute("data-theme-mode", mode);
+        themeBtn.setAttribute("data-theme-resolved", resolved);
+      }
+
+      function applyThemeMode(mode) {
+        var resolved = resolveTheme(mode);
+        root.setAttribute("data-theme", resolved);
+        root.setAttribute("data-theme-mode", mode);
+        try {
+          localStorage.setItem("book-theme", mode);
+        } catch (e) {}
+        renderTheme(mode);
       }
 
       function applyFontSize(size) {
@@ -532,15 +668,27 @@
         }
       } catch (e) {}
       applyFontSize(fontSize);
-      renderTheme(currentTheme());
+      applyThemeMode(readThemeMode());
+
+      if (window.matchMedia) {
+        var colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        var onSchemeChange = function () {
+          if (currentThemeMode() === "system") {
+            applyThemeMode("system");
+          }
+        };
+        if (colorSchemeQuery.addEventListener) {
+          colorSchemeQuery.addEventListener("change", onSchemeChange);
+        } else if (colorSchemeQuery.addListener) {
+          colorSchemeQuery.addListener(onSchemeChange);
+        }
+      }
 
       themeBtn.addEventListener("click", function () {
-        var next = currentTheme() === "dark" ? "light" : "dark";
-        root.setAttribute("data-theme", next);
-        try {
-          localStorage.setItem("book-theme", next);
-        } catch (e) {}
-        renderTheme(next);
+        var mode = currentThemeMode();
+        var index = THEME_ORDER.indexOf(mode);
+        var next = THEME_ORDER[(index + 1) % THEME_ORDER.length];
+        applyThemeMode(next);
       });
 
       fontWidget.querySelector(".zeno_font_resizer_minus").addEventListener("click", function (e) {
@@ -572,12 +720,111 @@
       initClassicLayout();
     }
   })();
+</script><script>
+  /* Prefer heading matches in book search (e.g. "Lagrangian" page over References). */
+  (function () {
+    var WEIGHTED_FUSE_OPTIONS = {
+      keys: [
+        { name: "heading", weight: 0.7 },
+        { name: "text", weight: 0.25 },
+        { name: "code", weight: 0.05 },
+      ],
+      ignoreLocation: true,
+      ignoreFieldNorm: true,
+      threshold: 0.1,
+      includeMatches: true,
+      includeScore: true,
+    };
+
+    function bindWeightedAutocomplete($, weightedFuse) {
+      var $old = $("#search");
+      if (!$old.length || typeof $.fn.autocomplete !== "function") return;
+
+      /* Replace the input (and Algolia wrapper, if present) so bookdown handlers are dropped. */
+      var $search = $old.clone(false).val($old.val());
+      var $wrap = $old.closest(".algolia-autocomplete");
+      if ($wrap.length) {
+        $wrap.replaceWith($search);
+      } else {
+        $old.replaceWith($search);
+      }
+
+      $search
+        .autocomplete(
+          {
+            autoselect: true,
+            debug: true,
+            hint: false,
+            minLength: 2,
+          },
+          [
+            {
+              name: "content",
+              source: function (query, callback) {
+                q = query;
+                var results = weightedFuse.search(query, { limit: 20 });
+                callback(
+                  results
+                    .filter(function (x) {
+                      return x.score <= 0.75;
+                    })
+                    .map(function (x) {
+                      return x.item;
+                    })
+                );
+              },
+              templates: {
+                suggestion: function (s) {
+                  if (s.chapter == s.heading) {
+                    return s.chapter;
+                  }
+                  return s.chapter + " /<br> " + s.heading;
+                },
+              },
+            },
+          ]
+        )
+        .on("autocomplete:selected", function (event, s) {
+          window.location.href = s.path + "?q=" + q + "#" + s.id;
+        });
+    }
+
+    function installWeightedSearch() {
+      if (typeof Fuse === "undefined" || typeof jQuery === "undefined") return;
+
+      fetch("search.json")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          var weightedFuse = new Fuse(data, WEIGHTED_FUSE_OPTIONS);
+          /* Keep global fuse in sync so any leftover bookdown code uses weights too. */
+          fuse = weightedFuse;
+          bindWeightedAutocomplete(jQuery, weightedFuse);
+        })
+        .catch(function () {});
+    }
+
+    function start() {
+      /* After classic layout moves #search into the sidebar. */
+      setTimeout(installWeightedSearch, 0);
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", start);
+    } else {
+      start();
+    }
+  })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="notes.html"><span class="header-section-number">8</span> Notes</a></div>
-<div class="next"><a href="topology.html"><span class="header-section-number">10</span> Topology</a></div>
+<div class="prev"><a href="space.html"><span class="header-section-number">204</span> Space</a></div>
+<div class="next"><a href="torque.html"><span class="header-section-number">206</span> Torque</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#quantum-mechanics-for-electromagnetism"><span class="header-section-number">9</span> Quantum Mechanics for Electromagnetism</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#time"><span class="header-section-number">205</span> Time</a></li>
+<li><a class="nav-link" href="#references-181"><span class="header-section-number">205.1</span> References</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

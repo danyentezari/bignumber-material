@@ -4,13 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>9 Glossary | Mathematics for Physics</title>
+<title>371 Contour Integral | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
+<meta name="description" content="An integral of a complex function along a closed curve that is used to evaluate complex function values through path integrals. definition [d] (Contour Integral = Complex Line Integral) The...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="9 Glossary | Mathematics for Physics">
+<meta property="og:title" content="371 Contour Integral | Mathematics for Physics">
 <meta property="og:type" content="book">
+<meta property="og:description" content="An integral of a complex function along a closed curve that is used to evaluate complex function values through path integrals. definition [d] (Contour Integral = Complex Line Integral) The...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="9 Glossary | Mathematics for Physics">
+<meta name="twitter:title" content="371 Contour Integral | Mathematics for Physics">
+<meta name="twitter:description" content="An integral of a complex function along a closed curve that is used to evaluate complex function values through path integrals. definition [d] (Contour Integral = Complex Line Integral) The...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -21,15 +24,20 @@
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
-          var theme = stored
+          var mode = stored === "light" || stored === "dark" || stored === "system"
             ? stored
-            : (window.matchMedia &&
+            : "system";
+          var theme = mode === "system"
+            ? (window.matchMedia &&
                 window.matchMedia("(prefers-color-scheme: dark)").matches
                 ? "dark"
-                : "light");
+                : "light")
+            : mode;
           document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.setAttribute("data-theme-mode", mode);
         } catch (e) {
           document.documentElement.setAttribute("data-theme", "light");
+          document.documentElement.setAttribute("data-theme-mode", "system");
         }
         document.documentElement.classList.add("theme-classic");
         try {
@@ -44,9 +52,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<meta name="description" content="Smooth Manifold: - Locally: - Homeomorphic: A description of two spaces that have the same topological structure. Genus Holes: An informal synonym for genus. Tori: A surface that looks like a...">
-<meta property="og:description" content="Smooth Manifold: - Locally: - Homeomorphic: A description of two spaces that have the same topological structure. Genus Holes: An informal synonym for genus. Tori: A surface that looks like a...">
-<meta name="twitter:description" content="Smooth Manifold: - Locally: - Homeomorphic: A description of two spaces that have the same topological structure. Genus Holes: An informal synonym for genus. Tori: A surface that looks like a...">
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Complex Analysis", "href": "complex-analysis.html", "current": false}, {"title": "Contour Integral", "href": "contour-integral.html", "current": true}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -74,83 +80,136 @@
 <a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
 </div>
 </li>
-<li class="book-toc-topic">
+<li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="differential-geometry.html"><span class="header-section-number">2</span> Differential Geometry</a>
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
 </div>
-<ul class="book-toc-section">
-<li><a class="" href="covariant-contravariant-and-coordinate-systems.html"><span class="header-section-number">10</span> Covariant, Contravariant, and Coordinate Systems</a></li>
-<li><a class="" href="differential-forms.html"><span class="header-section-number">11</span> Differential Forms</a></li>
-<li><a class="" href="exterior-algebra-and-exterior-derivatives.html"><span class="header-section-number">12</span> Exterior Algebra and Exterior Derivatives</a></li>
-<li><a class="" href="forms.html"><span class="header-section-number">13</span> Forms</a></li>
-<li><a class="" href="functions.html"><span class="header-section-number">14</span> Functions</a></li>
-<li><a class="" href="stokes-theorem-and-the-fundamental-theorem-of-calculus.html"><span class="header-section-number">15</span> Stoke’s Theorem and the Fundamental Theorem of Calculus</a></li>
-<li><a class="" href="tensors.html"><span class="header-section-number">16</span> Tensors</a></li>
-</ul>
-</li>
-<li class="book-toc-topic">
-<div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="electromagnetism.html"><span class="header-section-number">3</span> Electromagnetism</a>
-</div>
-<ul class="book-toc-section">
-<li><a class="" href="mathemarics-appendix.html"><span class="header-section-number">17</span> Mathemarics Appendix</a></li>
-<li><a class="" href="maxwells-equations.html"><span class="header-section-number">18</span> Maxwell’s Equations</a></li>
-<li><a class="" href="physics-mathematical-appendix.html"><span class="header-section-number">19</span> Physics Mathematical Appendix</a></li>
-<li><a class="" href="references.html"><span class="header-section-number">20</span> References</a></li>
-<li><a class="" href="special-relativity-and-electric-fields.html"><span class="header-section-number">21</span> Special Relativity and Electric Fields</a></li>
-<li><a class="" href="stokes-theorem-for-flux-integral.html"><span class="header-section-number">22</span> Stokes’ Theorem for Flux Integral</a></li>
-<li><a class="" href="stokes-theorem-physics.html"><span class="header-section-number">23</span> Stokes’ Theorem Physics</a></li>
-</ul>
-</li>
-<li class="book-toc-topic">
-<div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="functional-analysis.html"><span class="header-section-number">4</span> Functional Analysis</a>
-</div>
-<ul class="book-toc-section">
-<li><a class="" href="fourier-transform.html"><span class="header-section-number">24</span> Fourier Transform</a></li>
-</ul>
-</li>
-<li class="book-toc-topic">
-<div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
-<a class="" href="group-theory.html"><span class="header-section-number">5</span> Group Theory</a>
-</div>
-<ul class="book-toc-section">
-<li><a class="" href="symmetry.html"><span class="header-section-number">25</span> Symmetry</a></li>
-</ul>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="linear-algebra.html"><span class="header-section-number">6</span> Linear Algebra</a>
+<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
 </div>
 </li>
-<li class="book-toc-topic">
+<li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
-<button type="button" class="book-toc-toggle" aria-expanded="false" aria-label="Toggle subtopics"></button>
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="classical-mechanics.html"><span class="header-section-number">5</span> Classical Mechanics</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="condensed-matter.html"><span class="header-section-number">6</span> Condensed Matter</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
 <a class="" href="topology.html"><span class="header-section-number">7</span> Topology</a>
 </div>
-<ul class="book-toc-section">
-<li><a class="" href="homeomorphism.html"><span class="header-section-number">26</span> Homeomorphism</a></li>
-<li><a class="" href="manifolds.html"><span class="header-section-number">27</span> Manifolds</a></li>
-<li><a class="" href="open-sets.html"><span class="header-section-number">28</span> Open Sets</a></li>
-<li><a class="" href="preimages-and-inverse-functions.html"><span class="header-section-number">29</span> Preimages and Inverse Functions</a></li>
-<li><a class="" href="topological-spaces.html"><span class="header-section-number">30</span> Topological Spaces</a></li>
-</ul>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="vector-calculus.html"><span class="header-section-number">8</span> Vector Calculus</a>
+<a class="" href="differential-geometry.html"><span class="header-section-number">8</span> Differential Geometry</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active" href="glossary-1.html"><span class="header-section-number">9</span> Glossary</a>
+<a class="" href="calculus.html"><span class="header-section-number">9</span> Calculus</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="functional-analysis.html"><span class="header-section-number">10</span> Functional Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="linear-algebra.html"><span class="header-section-number">11</span> Linear Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="abstract-algebra.html"><span class="header-section-number">12</span> Abstract Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="differential-equations.html"><span class="header-section-number">13</span> Differential Equations</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="notes.html"><span class="header-section-number">14</span> Notes</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="glossary.html"><span class="header-section-number">15</span> Glossary</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="symbols.html"><span class="header-section-number">16</span> Symbols</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="constants.html"><span class="header-section-number">17</span> Constants</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="active-parent" href="complex-analysis.html"><span class="header-section-number">18</span> Complex Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="physical-chemistry.html"><span class="header-section-number">19</span> Physical Chemistry</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="physics-principles.html"><span class="header-section-number">20</span> Physics Principles</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="real-analysis.html"><span class="header-section-number">21</span> Real Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="site-index.html"><span class="header-section-number">22</span> Index</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="bibliography.html"><span class="header-section-number">23</span> Bibliography</a>
 </div>
 </li>
 </ul>
@@ -160,62 +219,80 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="glossary-1" class="section level1" number="9">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="contour-integral" class="section level1" number="371">
 <h1>
-<span class="header-section-number">9</span> Glossary<a class="anchor" aria-label="anchor" href="#glossary-1"><i class="fas fa-link"></i></a>
+<span class="header-section-number">371</span> Contour Integral<a class="anchor" aria-label="anchor" href="#contour-integral"><i class="fas fa-link"></i></a>
 </h1>
-<p><strong>Smooth Manifold:</strong> -</p>
-<p><strong>Locally:</strong> -</p>
-<p><strong>Homeomorphic:</strong> A description of two spaces that have the same topological structure.</p>
-<p><strong>Genus</strong></p>
-<p><strong>Holes:</strong> An informal synonym for genus.</p>
-<p><strong>Tori:</strong> A surface that looks like a donut. It has one hole.</p>
-<p><strong>Topological Structure:</strong> -</p>
-<p><strong>Continuous Function:</strong> -</p>
-<p><strong>Differential Form:</strong> A function assigning an alternating k-linear function to each point of an open set or manifold.</p>
-<p><strong>Surface:</strong> A 2-dimensional manifold, an object modeled locally on <span class="math inline">\(\mathbb{R}^2\)</span>, specifying points with two independent parameters.</p>
-<p><strong>Piecewise Smooth:</strong> A property of curves or surfaces composed of finitely many smooth segments meeting at corners or edges.</p>
-<p><strong>Oriented Surface:</strong> A surface with a consistent choice of orientation at each point, typically specified by a nowhere-vanishing 2-form.</p>
-<p><strong>Smooth Surface:</strong> A 2-dimensional manifold equipped with a differentiable structure, allowing for calculus and well-defined tangent spaces.</p>
-<p><strong>Surface Normal:</strong></p>
-<p><strong>Piecewise Smooth Simple Closed Curve:</strong> A non-self-intersecting closed path consisting of finitely many differentiable segments joined end-to-end.</p>
-<p><strong>Open Set:</strong> A set that is open in a topological space.</p>
-<p><strong>Open Set (Expanded):</strong> A subset of a topological space that contains a neighborhood around every one of its points.</p>
-<p><strong>Differentiable Function:</strong> -</p>
-<p><strong>Smooth Function:</strong> -</p>
-<p><strong>k-Covector:</strong> An alternating <span class="math inline">\(k\)</span>-linear function on a vector space, also known as a multicovector of degree <span class="math inline">\(k\)</span>.</p>
-<p><strong>k-Covector Field = k-Form:</strong> A function assigning a <span class="math inline">\(k\)</span>-covector to each point of a manifold, also called a differential <span class="math inline">\(k\)</span>-form.</p>
-<p><strong>k-Tensor:</strong> A multilinear function from the <span class="math inline">\(k\)</span>-fold product of a vector space to the real numbers.</p>
-<p><strong>k-Fold:</strong> A term denoting the repetition of a set or space <span class="math inline">\(k\)</span> times, typically within a Cartesian product.</p>
-<p><strong>k-Linear:</strong> A synonym for multilinear function.</p>
-<p><strong>k-Fold Product:</strong> The Cartesian product of <span class="math inline">\(k\)</span> copies of a set <span class="math inline">\(X\)</span>, often denoted simply as <span class="math inline">\(X^k\)</span>.</p>
-<p><strong>Bijection:</strong> A function that is both injective and surjective, also referred to as a one-to-one correspondence.</p>
-<p><strong>Hausdorff Space:</strong> A topological space where</p>
+<p>An integral of a complex function along a closed curve that is used to evaluate complex function values through path integrals.</p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em>Contour Integral = Complex Line Integral</em>) The integral of a complex function <span class="math inline">\(f(z)\)</span> along a contour <span class="math inline">\(C\)</span> in the complex plane, parametrized by <span class="math inline">\(z(t)\)</span> for <span class="math inline">\(a \leq t \leq b\)</span>:</p>
 <ul>
-<li>any two distinct points can be separated by disjoint open neighborhoods.</li>
+<li>
+<span class="math inline">\(\displaystyle \int_{C} f(z)\, dz = \int_{a}^{b} f\!\bigl(z(t)\bigr)\, z'(t)\, dt\)</span> .</li>
 </ul>
-<p><strong>Onto:</strong> A synonym for surjective function.</p>
-<p><strong>One-to-One:</strong> A synonym for an injective function.</p>
-<p><strong>Covariant Vector = Covector = 1-Form:</strong></p>
-<p><strong>Principle of Superposition</strong></p>
-<p>See Mathemarics Appendix.</p>
-<p><strong>Electromagnetism:</strong> The phenomena of interactions between charges at rest and in motion.</p>
-<p><strong>Electromagnetic Waves:</strong> Oscillations of electric and magnetic fields that propagate through space without the need for charges or currents.</p>
-<p><strong>Reference Frame:</strong> A coordinate system where</p>
+<p>where</p>
 <ul>
-<li>measurements can be made about the time and position about objects.</li>
+<li>
+<span class="math inline">\(C\)</span> is a contour.</li>
+<li>
+<span class="math inline">\(f\)</span> is a complex-valued function.</li>
+<li>
+<span class="math inline">\(z(t)\)</span> is a parametrization of <span class="math inline">\(C\)</span>.</li>
+<li>
+<span class="math inline">\(z'(t) = dz/dt\)</span>.</li>
 </ul>
-<p><strong>Inertial Reference Frame:</strong> A reference frame based on Newton’s First Law, where</p>
+<p>Note:</p>
 <ul>
-<li>all objects are at rest or in motion unless influenced by external force.</li>
+<li>a contour is a path in the complex plane.</li>
+<li>
+<span class="math inline">\(C\)</span> is also written <span class="math inline">\(\Gamma\)</span>.</li>
 </ul>
-<p><strong>Phase</strong></p>
-<div class="inline-figure"><img src="https://www.researchgate.net/profile/Irene-Van-De-Vijver/publication/336862739/figure/fig2/AS:839368331784194@1577132413781/A-Oscillations-are-characterized-by-their-frequency-the-number-of-cycles-per-time.ppm" width="300"></div>
-<p><strong>Gradient:</strong> <span class="math inline">\(\nabla V\)</span> Operating on a scalar function <span class="math inline">\(V\)</span> produces a vector field.</p>
-<p><strong>Divergence:</strong> <span class="math inline">\(\nabla \cdot \mathbf{A}\)</span> The dot product of the operator with a vector field <span class="math inline">\(\mathbf{A}\)</span> yields a scalar field.</p>
-<p><strong>Curl:</strong> <span class="math inline">\(\nabla \times \mathbf{A}\)</span> The cross product of the operator with a vector field <span class="math inline">\(\mathbf{A}\)</span> results in another vector field.</p>
-<p><strong>Laplacian:</strong> <span class="math inline">\(\nabla^2 V\)</span> This operator represents the divergence of the gradient (<span class="math inline">\(\nabla \cdot \nabla V\)</span>).</p>
+<p></p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em>Contour Integral = Complex Line Integral</em>) The limit of Riemann sums of a complex function <span class="math inline">\(f\)</span> along a contour <span class="math inline">\(C\)</span> partitioned by points <span class="math inline">\(z_{0},\ldots,z_{n}\)</span> with sample points <span class="math inline">\(\zeta_{j}\)</span> on each arc:</p>
+<ul>
+<li>
+<span class="math inline">\(\displaystyle \int_{C} f(z)\, dz = \lim \sum_{j=1}^{n} f(\zeta_{j})\,(z_{j} - z_{j-1})\)</span> ,</li>
+</ul>
+<p>where the limit is taken as the mesh of the partition tends to zero.</p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(C\)</span> is a contour in the complex plane.</li>
+<li>
+<span class="math inline">\(f\)</span> is a complex-valued function defined on <span class="math inline">\(C\)</span>.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em>Contour Integral = Complex Line Integral</em>) The integral of a complex function along a path <span class="math inline">\(C\)</span> in the complex plane:</p>
+<ul>
+<li>
+<span class="math inline">\(\displaystyle \int_{C} f(z)\, dz = \int_{a}^{b} f\!\bigl(z(t)\bigr)\, z'(t)\, dt\)</span> .</li>
+</ul>
+<p>For a closed contour, the integral is often written <span class="math inline">\(\displaystyle \oint_{C} f(z)\, dz\)</span>.</p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(C\)</span> is a contour; <span class="math inline">\(z(t)\)</span> for <span class="math inline">\(a \leq t \leq b\)</span> parametrizes <span class="math inline">\(C\)</span>.</li>
+<li>
+<span class="math inline">\(f\)</span> is a complex-valued function.</li>
+</ul>
+<p></p>
+<div id="references-280" class="section level2" number="371.1">
+<h2>
+<span class="header-section-number">371.1</span> References<a class="anchor" aria-label="anchor" href="#references-280"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Complex-analysis sources in the notebook (e.g. Arfken; Riley–Hobson–Bence). — parametric and Riemann-sum definitions of the contour / complex line integral.</li>
+<li>Stewart, J. <em>Calculus</em>. — does not use the term “contour integral”; closest notion is the line / path integral (see Line Integral).</li>
+</ol>
+<div class="topic-index">
+<ul>
+<li><a href="contour-integral.html">Contour Integral</a></li>
+</ul>
+</div>
 
+</div>
 </div>
 <script>
   (function () {
@@ -223,12 +300,15 @@
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
     var SUN =
       '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.5" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22.5"/><line x1="3.5" y1="3.5" x2="5.3" y2="5.3"/><line x1="18.7" y1="18.7" x2="20.5" y2="20.5"/><line x1="1.5" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22.5" y2="12"/><line x1="3.5" y1="20.5" x2="5.3" y2="18.7"/><line x1="18.7" y1="5.3" x2="20.5" y2="3.5"/></svg>';
+    var DEVICE =
+      '<svg class="theme-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>';
 
     var FONT_MIN = 13;
     var FONT_MAX = 28;
     var FONT_STEP = 1.6;
     var FONT_BASE = 17;
     var fontSize = FONT_BASE;
+    var THEME_ORDER = ["light", "dark", "system"];
 
     function initClassicLayout() {
       if (document.getElementById("page")) return;
@@ -260,11 +340,6 @@
       var headerMain = document.createElement("div");
       headerMain.className = "header-main";
 
-      var bookButton = document.createElement("a");
-      bookButton.href = "index.html";
-      bookButton.className = "book-button";
-      bookButton.innerHTML = "<button type=\"button\">Book</button>";
-
       var siteTitle = document.createElement("h1");
       siteTitle.className = "site-title";
       siteTitle.innerHTML =
@@ -282,7 +357,7 @@
       var menuToggle = document.createElement("button");
       menuToggle.className = "menu-toggle";
       menuToggle.type = "button";
-      menuToggle.textContent = "Primary Menu";
+      menuToggle.textContent = "Menu";
 
       var skipLink = document.createElement("a");
       skipLink.className = "screen-reader-text skip-link";
@@ -301,20 +376,6 @@
         var li = document.createElement("li");
         li.className = "page_item";
         li.appendChild(link.cloneNode(true));
-
-        var section = topic.querySelector(".book-toc-section");
-        if (section && section.children.length) {
-          li.classList.add("page_item_has_children");
-          var childUl = document.createElement("ul");
-          childUl.className = "children";
-          section.querySelectorAll("li > a").forEach(function (subLink) {
-            var childLi = document.createElement("li");
-            childLi.className = "page_item";
-            childLi.appendChild(subLink.cloneNode(true));
-            childUl.appendChild(childLi);
-          });
-          li.appendChild(childUl);
-        }
         primaryList.appendChild(li);
       });
       primaryMenu.appendChild(primaryList);
@@ -331,7 +392,6 @@
         );
       });
 
-      headerMain.appendChild(bookButton);
       headerMain.appendChild(siteTitle);
       headerMain.appendChild(primaryNav);
       masthead.appendChild(headerMain);
@@ -358,6 +418,39 @@
 
       var entryHeader = document.createElement("header");
       entryHeader.className = "entry-header";
+
+      var breadcrumbData = document.getElementById("page-breadcrumbs");
+      if (breadcrumbData) {
+        try {
+          var trail = JSON.parse(breadcrumbData.textContent || "[]");
+          if (Array.isArray(trail) && trail.length) {
+            var breadcrumbs = document.createElement("nav");
+            breadcrumbs.className = "breadcrumbs";
+            breadcrumbs.setAttribute("aria-label", "Breadcrumb");
+            trail.forEach(function (item, index) {
+              if (index > 0) {
+                var sep = document.createElement("span");
+                sep.className = "breadcrumb-sep";
+                sep.textContent = " > ";
+                breadcrumbs.appendChild(sep);
+              }
+              if (item.current || index === trail.length - 1) {
+                var current = document.createElement("span");
+                current.className = "breadcrumb-current";
+                current.textContent = item.title;
+                current.setAttribute("aria-current", "page");
+                breadcrumbs.appendChild(current);
+              } else {
+                var crumb = document.createElement("a");
+                crumb.href = item.href;
+                crumb.textContent = item.title;
+                breadcrumbs.appendChild(crumb);
+              }
+            });
+            entryHeader.appendChild(breadcrumbs);
+          }
+        } catch (e) {}
+      }
 
       var pageHeading = main.querySelector("h1");
       if (pageHeading) {
@@ -539,16 +632,62 @@
       if (chapterSidebar) chapterSidebar.remove();
       if (oldFooter) oldFooter.remove();
 
-      function currentTheme() {
-        return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      function systemTheme() {
+        return window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
       }
 
-      function renderTheme(theme) {
-        themeBtn.innerHTML = theme === "dark" ? SUN : MOON;
-        themeBtn.setAttribute(
-          "title",
-          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-        );
+      function readThemeMode() {
+        try {
+          var stored = localStorage.getItem("book-theme");
+          if (stored === "light" || stored === "dark" || stored === "system") {
+            return stored;
+          }
+        } catch (e) {}
+        return "system";
+      }
+
+      function resolveTheme(mode) {
+        return mode === "system" ? systemTheme() : mode;
+      }
+
+      function currentThemeMode() {
+        var mode = root.getAttribute("data-theme-mode");
+        if (mode === "light" || mode === "dark" || mode === "system") {
+          return mode;
+        }
+        return readThemeMode();
+      }
+
+      function renderTheme(mode) {
+        var resolved = resolveTheme(mode);
+        if (mode === "system") {
+          themeBtn.innerHTML = DEVICE;
+          themeBtn.setAttribute("title", "Using device theme (click for light)");
+          themeBtn.setAttribute("aria-label", "Theme: device. Click to switch to light mode");
+        } else if (mode === "dark") {
+          themeBtn.innerHTML = SUN;
+          themeBtn.setAttribute("title", "Dark mode (click for device theme)");
+          themeBtn.setAttribute("aria-label", "Theme: dark. Click to switch to device theme");
+        } else {
+          themeBtn.innerHTML = MOON;
+          themeBtn.setAttribute("title", "Light mode (click for dark)");
+          themeBtn.setAttribute("aria-label", "Theme: light. Click to switch to dark mode");
+        }
+        themeBtn.setAttribute("data-theme-mode", mode);
+        themeBtn.setAttribute("data-theme-resolved", resolved);
+      }
+
+      function applyThemeMode(mode) {
+        var resolved = resolveTheme(mode);
+        root.setAttribute("data-theme", resolved);
+        root.setAttribute("data-theme-mode", mode);
+        try {
+          localStorage.setItem("book-theme", mode);
+        } catch (e) {}
+        renderTheme(mode);
       }
 
       function applyFontSize(size) {
@@ -566,15 +705,27 @@
         }
       } catch (e) {}
       applyFontSize(fontSize);
-      renderTheme(currentTheme());
+      applyThemeMode(readThemeMode());
+
+      if (window.matchMedia) {
+        var colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        var onSchemeChange = function () {
+          if (currentThemeMode() === "system") {
+            applyThemeMode("system");
+          }
+        };
+        if (colorSchemeQuery.addEventListener) {
+          colorSchemeQuery.addEventListener("change", onSchemeChange);
+        } else if (colorSchemeQuery.addListener) {
+          colorSchemeQuery.addListener(onSchemeChange);
+        }
+      }
 
       themeBtn.addEventListener("click", function () {
-        var next = currentTheme() === "dark" ? "light" : "dark";
-        root.setAttribute("data-theme", next);
-        try {
-          localStorage.setItem("book-theme", next);
-        } catch (e) {}
-        renderTheme(next);
+        var mode = currentThemeMode();
+        var index = THEME_ORDER.indexOf(mode);
+        var next = THEME_ORDER[(index + 1) % THEME_ORDER.length];
+        applyThemeMode(next);
       });
 
       fontWidget.querySelector(".zeno_font_resizer_minus").addEventListener("click", function (e) {
@@ -606,12 +757,111 @@
       initClassicLayout();
     }
   })();
+</script><script>
+  /* Prefer heading matches in book search (e.g. "Lagrangian" page over References). */
+  (function () {
+    var WEIGHTED_FUSE_OPTIONS = {
+      keys: [
+        { name: "heading", weight: 0.7 },
+        { name: "text", weight: 0.25 },
+        { name: "code", weight: 0.05 },
+      ],
+      ignoreLocation: true,
+      ignoreFieldNorm: true,
+      threshold: 0.1,
+      includeMatches: true,
+      includeScore: true,
+    };
+
+    function bindWeightedAutocomplete($, weightedFuse) {
+      var $old = $("#search");
+      if (!$old.length || typeof $.fn.autocomplete !== "function") return;
+
+      /* Replace the input (and Algolia wrapper, if present) so bookdown handlers are dropped. */
+      var $search = $old.clone(false).val($old.val());
+      var $wrap = $old.closest(".algolia-autocomplete");
+      if ($wrap.length) {
+        $wrap.replaceWith($search);
+      } else {
+        $old.replaceWith($search);
+      }
+
+      $search
+        .autocomplete(
+          {
+            autoselect: true,
+            debug: true,
+            hint: false,
+            minLength: 2,
+          },
+          [
+            {
+              name: "content",
+              source: function (query, callback) {
+                q = query;
+                var results = weightedFuse.search(query, { limit: 20 });
+                callback(
+                  results
+                    .filter(function (x) {
+                      return x.score <= 0.75;
+                    })
+                    .map(function (x) {
+                      return x.item;
+                    })
+                );
+              },
+              templates: {
+                suggestion: function (s) {
+                  if (s.chapter == s.heading) {
+                    return s.chapter;
+                  }
+                  return s.chapter + " /<br> " + s.heading;
+                },
+              },
+            },
+          ]
+        )
+        .on("autocomplete:selected", function (event, s) {
+          window.location.href = s.path + "?q=" + q + "#" + s.id;
+        });
+    }
+
+    function installWeightedSearch() {
+      if (typeof Fuse === "undefined" || typeof jQuery === "undefined") return;
+
+      fetch("search.json")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          var weightedFuse = new Fuse(data, WEIGHTED_FUSE_OPTIONS);
+          /* Keep global fuse in sync so any leftover bookdown code uses weights too. */
+          fuse = weightedFuse;
+          bindWeightedAutocomplete(jQuery, weightedFuse);
+        })
+        .catch(function () {});
+    }
+
+    function start() {
+      /* After classic layout moves #search into the sidebar. */
+      setTimeout(installWeightedSearch, 0);
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", start);
+    } else {
+      start();
+    }
+  })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="vector-calculus.html"><span class="header-section-number">8</span> Vector Calculus</a></div>
-<div class="next"><a href="covariant-contravariant-and-coordinate-systems.html"><span class="header-section-number">10</span> Covariant, Contravariant, and Coordinate Systems</a></div>
+<div class="prev"><a href="physics-glossary.html"><span class="header-section-number">370</span> Physics Glossary</a></div>
+<div class="next"><a href="charge.html"><span class="header-section-number">372</span> Charge</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#glossary-1"><span class="header-section-number">9</span> Glossary</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#contour-integral"><span class="header-section-number">371</span> Contour Integral</a></li>
+<li><a class="nav-link" href="#references-280"><span class="header-section-number">371.1</span> References</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

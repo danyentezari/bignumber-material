@@ -8,4 +8,8 @@ documentclass: book
 
 # Introduction
 
-This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism.
+This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those centered around and related to electromagnetism.
+
+Currently, this book is split into two parts: the principles of physics and the relevant methods of mathematics in physics.
+
+This book is organised and written with the objective to do two things: First, to bridge the mathematics for theoretical physics with mathematical fundamentals, and second, to explain physics from first principles.
