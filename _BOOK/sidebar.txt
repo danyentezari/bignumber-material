@@ -8,6 +8,7 @@ Quantum-Mechanics
 Special-Relativity
 Classical-Mechanics
 Condensed-Matter
+Physical-Chemistry
 Topology
 Differential-Geometry
 Calculus
