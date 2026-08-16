@@ -1,50 +1,58 @@
 # Dipole
 
-A charge arrangement with equal and opposite charges separated in space, or its moment $\mathbf{p}$, that is used as the leading multipole when the total charge vanishes.
+A localized pair of equal opposite charges, characterized by its dipole moment $\mathbf{p}$, that is used as the leading multipole when the total charge vanishes.
 
-Note: Also called an electric dipole. Also denoted $\mathbf{p}$. Magnetic dipoles are the magnetic analog.
+Note: Also called an electric dipole.
 
-<i>
+1\. The electric dipole moment is a vector that measures the strength, separation, and direction of opposite charges in a small localized distribution. A localized distribution is a charge collection confined to a bounded region. This principle is used to replace many neutral charges by one vector when computing distant electrostatic effects.
 
-**definition [d]** (*Dipole = Electric Dipole Moment*) From Griffiths: the electric dipole moment of a charge distribution is
+$$
+\mathbf{p} = q\mathbf{d}
+$$
 
-- $\mathbf{p} = \displaystyle\int\mathbf{r}'\rho(\mathbf{r}')\,d\tau'$ .
+$$
+\mathbf{p} = \displaystyle\int\mathbf{r}'\rho(\mathbf{r}')\,d\tau'
+$$
 
-For two point charges $+q$ and $-q$ separated by $\mathbf{d}$ from the negative to the positive charge,
+where $\mathbf{d}$ points from $-q$ to $+q$, and $\rho$ is the charge density.
 
-- $\mathbf{p} = q\mathbf{d}$ .
+2\. Far from a neutral charge distribution the electrostatic potential is dominated by a term that falls as $1/r^{2}$ and varies with angle from the dipole axis. Electrostatic potential is potential energy per unit charge. This principle is used to approximate the potential of polar molecules at large distance.
 
-where
+$$
+V_{\mathrm{dip}}(\mathbf{r}) = \dfrac{1}{4\pi\epsilon_{0}}\dfrac{\mathbf{p}\cdot\hat{\mathbf{r}}}{r^{2}}
+$$
 
-- $\rho$ is the charge density.
-- $\mathbf{p}$ is the electric dipole moment.
-- $q$ is the magnitude of each charge.
-- $\mathbf{d}$ is the separation vector.
+3\. The electric field of a dipole falls as $1/r^{3}$ and is twice as strong along the dipole axis as in the midplane perpendicular to the axis. This principle is used to compute forces exerted by polar molecules on nearby objects.
 
-</i>
+$$
+\mathbf{E}_{\mathrm{dip}}(\mathbf{r}) = \dfrac{1}{4\pi\epsilon_{0}r^{3}}\bigl[3(\mathbf{p}\cdot\hat{\mathbf{r}})\hat{\mathbf{r}} - \mathbf{p}\bigr]
+$$
 
-<i>
+4\. In a uniform external electric field the net force on a dipole vanishes, yet a torque twists the dipole into alignment with the field. A uniform field has the same strength and direction everywhere. Torque is the rotational analog of force. This principle is used to predict how polar molecules rotate into an applied field.
 
-**definition [d]** (*Dipole*) From Knight: an electric dipole consists of two equal and opposite charges separated by a small distance; its dipole moment points from the negative charge toward the positive charge.
+$$
+\mathbf{N} = \mathbf{p}\times\mathbf{E}
+$$
 
-where
+5\. In a nonuniform electric field the forces on the two ends do not cancel, so a net force pulls the dipole toward stronger field. A nonuniform field changes from point to point. This principle is used to compute how polar molecules move toward regions of high field.
 
-- $\mathbf{p}$ characterizes the strength and orientation of the dipole.
+$$
+\mathbf{F} = (\mathbf{p}\cdot\nabla)\mathbf{E}
+$$
 
-</i>
+6\. Work is required to rotate a dipole away from alignment with the field, so the dipole has potential energy lowest when aligned with the field and highest when anti-aligned. This principle is used to compute the work of reorientation and the thermal alignment of dipoles.
 
-<i>
+$$
+U = -\mathbf{p}\cdot\mathbf{E}
+$$
 
-**definition [d]** (*Dipole Potential*) From Griffiths: the potential of a pure dipole at large distance is
+7\. An external field can pull a nucleus and electron cloud apart in an otherwise nonpolar atom, creating a temporary induced dipole proportional to the field. Atomic polarizability $\alpha$ measures how easily that cloud deforms. This principle is used to model polarization of nonpolar matter in dielectrics.
 
-- $V_{\mathrm{dip}}(\mathbf{r}) = \dfrac{1}{4\pi\epsilon_{0}}\dfrac{\mathbf{p}\cdot\hat{\mathbf{r}}}{r^{2}}$ .
+$$
+\mathbf{p}_{\mathrm{ind}} = \alpha\mathbf{E}
+$$
 
-where
-
-- $r$ is the distance from the dipole.
-- $\epsilon_{0}$ is the vacuum permittivity.
-
-</i>
+Note: These principles are the electric dipole moment, the electrostatic dipole potential, the electric field of a dipole, the torque on a dipole, the force on a dipole in a nonuniform field, the potential energy of a dipole, and induced dipoles with polarizability.
 
 ## Elementary Example
 
@@ -74,6 +82,4 @@ where
 
 ## References
 
-1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — $\mathbf{p}=\int\mathbf{r}'\rho\,d\tau'$; $\mathbf{p}=q\mathbf{d}$.
-2. Knight, R. D. *Physics for Scientists and Engineers*. Pearson, 2023. — equal and opposite charges as a dipole.
-3. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — $V_{\mathrm{dip}}=\dfrac{1}{4\pi\epsilon_{0}}\dfrac{\mathbf{p}\cdot\hat{\mathbf{r}}}{r^{2}}$.
+1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. §3.4.1, §3.4.4 — dipole moment, potential, and field. §4.1.1–4.1.3 — torque, force, and energy. Ch. 4 — induced dipoles and polarizability.
