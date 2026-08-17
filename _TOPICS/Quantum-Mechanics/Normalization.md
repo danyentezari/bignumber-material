@@ -2,49 +2,43 @@
 
 A condition that the integral of $|\psi|^{2}$ equals one that is used to make the total probability of finding the particle somewhere equal to unity.
 
-Note: Also called the normalization condition.
+1\. The particle has to be somewhere, so all position probabilities add to one. This principle is used to fix the overall scale of the wavefunction.
 
-<i>
+The normalization condition is
 
-**definition [d]** (*Normalization*) From Shankar: the statement that the particle has to be somewhere, namely, that all the probabilities add up to $1$, becomes the normalization condition
-
-- $\displaystyle\int_{-\infty}^{\infty} |\psi(x)|^{2}\, dx = \displaystyle\int_{-\infty}^{\infty} P(x)\, dx = 1$ .
-
-Of this family of physically equivalent functions, we are now going to pick one that is normalized, i.e., obeys
-
-- $\displaystyle\int_{-\infty}^{\infty} |\psi(x)|^{2}\, dx = 1$ .
+$$
+\displaystyle\int_{-\infty}^{\infty}\lvert\psi(x)\rvert^{2}\,dx = 1
+$$
 
 where
 
 - $\psi(x)$ is the wavefunction.
-- $P(x) = |\psi(x)|^{2}$ is the probability density.
 
-</i>
+2\. In Dirac notation the same statement is that the state ket has unit norm. This principle is used to normalize abstract states as well as wavefunctions.
 
-<i>
+The ket normalization is
 
-**definition [d]** (*Normalization*) From Hall: for any unit vector $\psi \in L^{2}(\mathbb{R})$,
-
-- $\displaystyle\int_{-\infty}^{\infty} |\psi(x)|^{2}\, dx = 1$ .
-
-where
-
-- $\psi$ is a square-integrable wave function of unit norm.
-
-</i>
-
-<i>
-
-**definition [d]** (*Normalization*) From Sakurai: the probability of recording the particle somewhere between $-\infty$ and $\infty$ is normalized to unity if $|\alpha\rangle$ is normalized:
-
-- $\langle\alpha|\alpha\rangle = 1 \implies \displaystyle\int_{-\infty}^{\infty} dx'\, |\langle x'|\alpha\rangle|^{2} = 1$ .
+$$
+\langle\alpha|\alpha\rangle = 1
+$$
 
 where
 
-- $|\alpha\rangle$ is a normalized state ket.
-- $\langle x'|\alpha\rangle$ is the position-space wavefunction.
+- $|\alpha\rangle$ is the state ket.
 
-</i>
+3\. If a wavefunction is not yet normalized, dividing by the square root of its squared norm produces a normalized wavefunction. This principle is used to convert any square-integrable solution into a physical state.
+
+The normalized wavefunction is
+
+$$
+\psi_{\mathrm{norm}} = \dfrac{\psi}{\sqrt{N}},\qquad N = \displaystyle\int\lvert\psi\rvert^{2}\,dx
+$$
+
+where
+
+- $N$ is the squared $L^{2}$ norm of $\psi$.
+
+Note: These principles are the integral normalization condition, ket normalization, and rescaling to unit norm. Also called the normalization condition.
 
 ## Elementary Example
 

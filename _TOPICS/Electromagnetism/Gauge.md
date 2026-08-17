@@ -2,38 +2,53 @@
 
 A choice of potentials for the electromagnetic field that is used to fix unphysical freedom while leaving the physical fields unchanged.
 
-Note: Also called a gauge choice. Also called working in a gauge.
+1\. The potentials $V$ and $\mathbf{A}$ are not unique. For any scalar function $\lambda$ one may shift the potentials together without changing $\mathbf{E}$ and $\mathbf{B}$. This principle is used to impose an extra condition that simplifies the equations.
 
-<i>
+A gauge transformation of the potentials is
 
-**definition [d]** (*Gauge Freedom = Gauge Transformation*) From Griffiths: Eqs. for the potentials do not uniquely define $V$ and $\mathbf{A}$; we are free to impose extra conditions on $V$ and $\mathbf{A}$, as long as nothing happens to $\mathbf{E}$ and $\mathbf{B}$. For any scalar function $\lambda(\mathbf{r}, t)$, we can add $\nabla\lambda$ to $\mathbf{A}$, provided we simultaneously subtract $\partial\lambda/\partial t$ from $V$. This will not affect the physical quantities $\mathbf{E}$ and $\mathbf{B}$. Such changes in $V$ and $\mathbf{A}$ are called gauge transformations:
+$$
+\mathbf{A}' = \mathbf{A} + \nabla\lambda
+$$
 
-- $\mathbf{A}' = \mathbf{A} + \nabla\lambda$ ,
-- $V' = V - \dfrac{\partial\lambda}{\partial t}$ .
+$$
+V' = V - \dfrac{\partial\lambda}{\partial t}
+$$
 
 where
 
 - $V$ is the electric scalar potential.
 - $\mathbf{A}$ is the magnetic vector potential.
 - $\lambda$ is an arbitrary scalar function of position and time.
-- $\mathbf{E}$ and $\mathbf{B}$ are the physical electric and magnetic fields.
+- $t$ is time.
 
-</i>
+2\. The Coulomb gauge sets the divergence of $\mathbf{A}$ to zero. This principle is used in magnetostatics and in instantaneous Coulomb problems.
 
-<i>
+The Coulomb gauge condition is
 
-**definition [d]** (*Gauge Transformation*) From Frankel: a local change of basis, such as
-
-- $e_{V} = e_{U}\, c_{UV}$ ,
-
-is called in physics a gauge transformation. Gauge transformations are simply changes of frames in the fibers of the bundle.
+$$
+\nabla\cdot\mathbf{A} = 0
+$$
 
 where
 
-- $e_{U}$ and $e_{V}$ are local frames on overlapping regions.
-- $c_{UV}$ is the transition function relating those frames.
+- $\mathbf{A}$ is the vector potential.
 
-</i>
+3\. The Lorenz gauge relates $V$ and $\mathbf{A}$ so that both potentials obey wave equations. This principle is used in radiation problems.
+
+The Lorenz gauge condition is
+
+$$
+\nabla\cdot\mathbf{A} + \dfrac{1}{c^{2}}\dfrac{\partial V}{\partial t} = 0
+$$
+
+where
+
+- $\mathbf{A}$ is the vector potential.
+- $V$ is the scalar potential.
+- $c$ is the speed of light.
+- $t$ is time.
+
+Note: These principles are gauge freedom of the potentials, the Coulomb gauge, and the Lorenz gauge. Also called a gauge choice. Also called working in a gauge.
 
 ## Elementary Example
 

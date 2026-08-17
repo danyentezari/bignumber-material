@@ -1,42 +1,38 @@
 # Poisson Equation
 
-A partial differential equation relating the Laplacian of the potential to charge density that is used to determine electrostatic potentials from sources.
+A partial differential equation relating the Laplacian of the potential to charge density that is used to determine electrostatic potentials from sources, where the Laplacian is the divergence of the gradient.
 
-Note: Also written $\nabla^{2}V=-\rho/\epsilon_{0}$.
+1\. Combining $\mathbf{E} = -\nabla V$ with Gauss's law yields Poisson's equation. This principle is used to compute the potential of a known charge density.
 
-<i>
+Poisson's equation is
 
-**definition [d]** (*Poisson Equation*) From Griffiths: combining $\mathbf{E} = -\nabla V$ with Gauss's law yields Poisson's equation
-
-- $\nabla^{2}V = -\dfrac{\rho}{\epsilon_{0}}$ .
+$$
+\nabla^{2}V = -\dfrac{\rho}{\epsilon_{0}}
+$$
 
 where
 
+- $\nabla^{2}$ is the Laplacian.
 - $V$ is the electric potential.
 - $\rho$ is the charge density.
-- $\epsilon_{0}$ is the vacuum permittivity.
+- $\epsilon_{0}$ is the permittivity of free space.
 
-</i>
+2\. When the charge density vanishes, Poisson's equation reduces to Laplace's equation. This principle is used to treat empty regions as a special case of the sourced problem.
 
-<i>
+Laplace's equation is
 
-**definition [d]** (*Poisson Equation*) From Knight: the electrostatic potential is related to the charge density by Poisson's equation, reducing to Laplace's equation when $\rho = 0$.
-
-where
-
-- $\rho$ is the source of $V$.
-
-</i>
-
-<i>
-
-**definition [d]** (*Poisson Equation*) From Susskind and Cabannes: in Newtonian gravity an analogous Poisson equation relates the gravitational potential to mass density; in electrostatics the same structure relates $V$ to $\rho$.
+$$
+\nabla^{2}V = 0
+$$
 
 where
 
-- the Laplacian of the potential is proportional to the source density.
+- $\nabla^{2}$ is the Laplacian.
+- $V$ is the electric potential.
 
-</i>
+3\. The charge density sets the curvature of the potential. This principle is used to solve for $V$ inside a uniformly charged region subject to boundary values.
+
+Note: These principles are Poisson's equation, its reduction to Laplace's equation, and the source as curvature of $V$. Also written $\nabla^{2}V=-\rho/\epsilon_{0}$.
 
 ## Elementary Example
 

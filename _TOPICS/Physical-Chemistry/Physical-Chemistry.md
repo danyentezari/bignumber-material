@@ -1,14 +1,14 @@
 # Physical Chemistry
 
-Physical chemistry is the study of the underlying physical principles that govern the properties and behavior of chemical systems.
+Physical chemistry is the phenomenon of microscopic molecular behavior and macroscopic thermodynamic properties.
 
-Physical chemistry unifies macroscopic laws with quantum mechanics: statistical mechanics is the bridge that explains bulk behavior through atomic and molecular properties.
+A molecule is, fundamentally, a microscopic entity composed of electrons and nuclei whose motions are governed by the laws of quantum mechanics.
 
-Physical chemistry grounds thermodynamics, chemical equilibrium, reaction kinetics, molecular structure, spectroscopy, bonding, electrochemistry, and surface chemistry.
+Physical chemistry is also fundamentally related to classical thermodynamics because macroscopic properties are independent of which molecules compose the system, which path connects the thermodynamic states, and which reference frame is used.
+
+Some immediate applications of the study of physical chemistry are in industrial synthesis, molecular spectroscopy, and heterogeneous catalysis and, mathematically, in differential calculus, integral calculus, linear algebra, group theory, and probability.
 
 ## Topics
-
-Ordered from more general to more specific:
 
 1. [Thermodynamics](thermodynamics.html)
 2. [Statistical Mechanics](statistical-mechanics.html)
@@ -23,5 +23,6 @@ Ordered from more general to more specific:
 
 ## References
 
-1. Levine, I. N. *Physical Chemistry*. — source for the heading explanation.
-2. Atkins, P., de Paula, J., & Keeler, J. *Atkins’ Physical Chemistry*. — source for the heading explanation.
+1. Levine, I. N. *Physical Chemistry*. — thermodynamics, statistical mechanics, kinetics, and molecular electronic structure.
+2. Atkins, P., de Paula, J., & Keeler, J. *Atkins’ Physical Chemistry*. — equilibrium, spectroscopy, electrochemistry, and surfaces.
+3. McQuarrie, D. A., & Simon, J. D. *Physical Chemistry: A Molecular Approach*. — molecules as electrons and nuclei, and the mathematical methods of the subject.

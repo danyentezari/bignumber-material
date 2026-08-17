@@ -1,35 +1,29 @@
 # Scattering Theory
 
-A framework for collisions that is used to relate incoming free-particle states to outgoing amplitudes and cross sections.
+A framework for collisions that is used to relate incoming free-particle states to outgoing amplitudes and cross sections, where a cross section is an effective area that measures the likelihood of a scattering event.
 
-Note: Also called quantum scattering. Central quantities include the scattering amplitude and the cross section.
+1\. An incident beam interacting with a short-range target produces an outgoing wave. In the far region the wavefunction is an incident plane wave plus a scattered spherical wave. This principle is used to define the scattering amplitude $f$.
 
-<i>
+The asymptotic scattered wave is
 
-**definition [d]** (*Scattering Theory*) From Sakurai: scattering theory describes how an incident beam interacts with a target potential and produces an outgoing wave. In the asymptotic region the wavefunction has the form of an incident plane wave plus a scattered spherical wave, with amplitude $f(\theta,\phi)$.
+$$
+\psi(\mathbf{r}) \sim e^{ikz} + f(\theta,\phi)\dfrac{e^{ikr}}{r}
+$$
 
 where
 
 - $f$ is the scattering amplitude.
 - $\theta$ and $\phi$ are scattering angles.
+- $k$ is the wave number.
+- $r$ is the distance from the target.
 
-</i>
+2\. The differential cross section is the squared modulus of the scattering amplitude. This principle is used to convert $f$ into a measured angular distribution.
 
-<i>
+The differential cross section is
 
-**definition [d]** (*Scattering Theory*) From Hall: for a short-range potential, solutions of the Schrödinger equation at fixed energy $E > 0$ describe scattering states, characterized by transmission and reflection in one dimension or by partial-wave phase shifts in three dimensions.
-
-where
-
-- $E$ is the energy of the incident particle.
-
-</i>
-
-<i>
-
-**definition [d]** (*Differential Cross Section*) From Shankar: the differential cross section is related to the scattering amplitude by
-
-- $\dfrac{d\sigma}{d\Omega} = |f(\theta,\phi)|^{2}$ .
+$$
+\dfrac{d\sigma}{d\Omega} = \lvert f(\theta,\phi)\rvert^{2}
+$$
 
 where
 
@@ -37,7 +31,9 @@ where
 - $\Omega$ is solid angle.
 - $f$ is the scattering amplitude.
 
-</i>
+3\. In one dimension the same problem is stated as reflection and transmission amplitudes. This principle is used to analyze barriers and wells on the line.
+
+Note: These principles are the incident-plus-scattered wave, the differential cross section, and one-dimensional reflection and transmission. Also called quantum scattering.
 
 ## Elementary Example
 

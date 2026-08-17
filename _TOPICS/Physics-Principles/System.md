@@ -2,18 +2,31 @@
 
 A chosen object or collection of objects that is used to mark what is under study and what counts as its surroundings.
 
-Note: Also called a physical system. The boundary that separates the system from its surroundings is chosen by the observer.
+1\. The observer chooses the system by drawing a boundary. Everything outside that boundary is the surroundings. This principle is used to decide which forces and energy transfers count as external.
 
-1. Is defined arbitrarily by the observer; the boundary choice decides what is external.
-2. Has history-independent properties fixed by how it is made, such as mass and charge.
-3. Has history-dependent properties that make up its physical state.
-4. Is represented completely in quantum mechanics by its wavefunction.
-5. Has a total energy whose value can depend on how the boundary is drawn.
-6. Conserves its total energy when no work is done on it by external forces.
-7. Can be redrawn so that interacting forces sit inside rather than outside.
-8. Is characterized by fixed parameters such as capacitance, length, or mass.
-9. Can be described by a Lagrangian from which its theory is derived.
-10. Can consist of many particles subject to geometric constraints.
+2\. Some properties, such as mass and charge, are fixed by how the system is made. Other properties make up the physical state and can change. This principle is used to separate parameters from variables.
+
+3\. In quantum mechanics the state is represented completely by a wavefunction. This principle is used to compute every measurement probability from one object.
+
+4\. The total energy of the system is conserved when no work is done on it by external forces and no heat crosses the boundary. This principle is used to write an energy balance after the boundary is chosen.
+
+The isolated-system energy balance is
+
+$$
+W_{\mathrm{ext}} = 0 \quad\mathrm{and}\quad q = 0 \implies \Delta E_{\mathrm{sys}} = 0
+$$
+
+where
+
+- $W_{\mathrm{ext}}$ is the work of external forces.
+- $q$ is the heat absorbed by the system.
+- $E_{\mathrm{sys}}$ is the total energy of the system.
+
+5\. The same collection can be redrawn so that interacting forces sit inside rather than outside. This principle is used to convert an external pair into an internal pair that cancels in the net force.
+
+6\. A system can be described by a Lagrangian from which the equations of motion are derived. This principle is used to treat particles, fields, and constrained collections in one formalism.
+
+Note: These principles are the chosen boundary, parameters versus state, the quantum wavefunction, energy balance, redrawing the boundary, and the Lagrangian description. Also called a physical system. The boundary that separates the system from its surroundings is chosen by the observer.
 
 ## References
 

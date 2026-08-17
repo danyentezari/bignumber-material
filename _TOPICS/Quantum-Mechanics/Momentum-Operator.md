@@ -2,67 +2,48 @@
 
 An operator equal to $-i\hbar$ times differentiation that is used to represent the momentum observable in the position representation.
 
-Note: Also denoted $P$. Also denoted $\hat{p}$. Also denoted $p$.
+1\. In the position representation the momentum operator is $-i\hbar$ times the derivative. This principle is used to compute $\langle p\rangle$ and kinetic energy $p^{2}/2m$.
 
-<i>
+The momentum operator is
 
-**definition [d]** (*Momentum Operator*) From Hall: define the momentum operator $P$ by
-
-- $P = -i\hbar\dfrac{d}{dx}$ .
-
-For a particle moving in $\mathbb{R}^{1}$, let the quantum Hilbert space be $L^{2}(\mathbb{R})$ and define the position and momentum operators $X$ and $P$ by
-
-- $(X\psi)(x) = x\psi(x)$ ,
-- $(P\psi)(x) = -i\hbar\dfrac{d\psi}{dx}$ .
+$$
+P = -i\hbar\dfrac{d}{dx}
+$$
 
 where
 
-- $\psi$ is a wave function.
-- $x$ is the position coordinate.
 - $P$ is the momentum operator.
-- $\hbar$ is a reduced Planck constant that is used as the quantum of action.
+- $\hbar$ is the reduced Planck constant.
+- $x$ is the position coordinate.
 
-</i>
+2\. Plane waves are eigenfunctions of $P$. This principle is used to identify states of definite momentum.
 
-<i>
+The momentum eigenvalue equation is
 
-**definition [d]** (*Momentum Operator*) From Sakurai: with this identification the infinitesimal translation operator $\mathcal{J}(dx')$ reads
-
-- $\mathcal{J}(dx') = 1 - \dfrac{i}{\hbar}\,p\,dx'$ ,
-
-where $p$ is the momentum operator. Comparison of both sides yields
-
-- $\langle x'|p|\alpha\rangle = -i\hbar\dfrac{\partial}{\partial x'}\langle x'|\alpha\rangle$ .
-
-where
-
-- $p$ is the momentum operator.
-- $|x'\rangle$ is a position eigenket.
-- $|\alpha\rangle$ is a state ket.
-- $\hbar$ is a reduced Planck constant that is used as the quantum of action.
-
-</i>
-
-<i>
-
-**definition [d]** (*Momentum Operator*) From Shankar: in this language we may say that the states of definite momentum $\psi_{p}(x)$ are eigenfunctions of the operator
-
-- $P = -i\hbar D$ ,
-
-called the momentum operator in quantum theory, and therefore the solutions to
-
-- $P\bigl[\psi_{p}(x)\bigr] \equiv -i\hbar\dfrac{d\psi_{p}}{dx} = p\,\psi_{p}(x)$ ,
-
-where $D = \dfrac{d}{dx}$.
+$$
+-i\hbar\dfrac{d\psi_{p}}{dx} = p\,\psi_{p}(x)
+$$
 
 where
 
 - $\psi_{p}(x)$ is a momentum eigenfunction.
-- $P$ is the momentum operator.
-- $p$ is the corresponding momentum eigenvalue.
-- $\hbar$ is a reduced Planck constant that is used as the quantum of action.
+- $p$ is the momentum eigenvalue.
 
-</i>
+3\. Momentum generates translations. This principle is used to write an infinitesimal shift as $1-(i/\hbar)p\,dx$.
+
+The infinitesimal translation operator is
+
+$$
+\mathcal{J}(dx') = 1 - \dfrac{i}{\hbar}\,p\,dx'
+$$
+
+where
+
+- $\mathcal{J}(dx')$ is the translation by $dx'$.
+- $p$ is the momentum operator.
+- $\hbar$ is the reduced Planck constant.
+
+Note: These principles are $P=-i\hbar d/dx$, momentum eigenfunctions, and momentum as the generator of translations. Also denoted $P$. Also denoted $\hat{p}$. Also denoted $p$.
 
 ## Elementary Example
 

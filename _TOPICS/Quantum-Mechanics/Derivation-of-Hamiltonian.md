@@ -1,55 +1,76 @@
 # Derivation of Hamiltonian
 
-A derivation of the Hamiltonian that is used to obtain $H(p,q)=\displaystyle\sum_{i}p_{i}\dfrac{dq_{i}}{dt}-L$ from the Lagrangian by a Legendre transform.
+A derivation of the Hamiltonian that is used to obtain $H(p,q)=\displaystyle\sum_{i}p_{i}\dfrac{dq_{i}}{dt}-L$ from the Lagrangian by a Legendre transform, where a Legendre transform is a change from velocity variables to momentum variables.
 
-<i>
+1\. Start from a Lagrangian that depends on position and velocity. This principle is used to treat $H$ as the Legendre transform of $L$.
 
-**definition [d]** (*Derivation of Hamiltonian*) From MIT OpenCourseWare 8.223 Classical Mechanics II, Lecture 15:
+The Lagrangian is
 
-1. Start from a Lagrangian function of position and velocity, since $H$ is the Legendre transform of $L$.
-   - $L = L\left(q,\dfrac{dq}{dt}\right)$ .
-
-2. Treat velocity as the variable to replace, since the goal is a description in position and momentum.
-
-3. Define conjugate momentum as the slope of $L$ in velocity, since a Legendre transform uses that derivative as the new independent variable.
-   - $p = \dfrac{\partial L}{\partial \left(\dfrac{dq}{dt}\right)}$ .
-
-4. Form $H = p\dfrac{dq}{dt}-L$, which keeps the same information while switching the independent variable.
-   - $H(p,q) = p\,\dfrac{dq}{dt}(p) - L\left(q,\dfrac{dq}{dt}(p)\right)$ .
-
-5. Solve for velocity in terms of $p$ and substitute, so that $H$ is a function of $p$ and $q$ alone.
-   For the simple Lagrangian
-   - $L = \dfrac{1}{2}m\left(\dfrac{dq}{dt}\right)^{2} - U(q)$ ,
-   one has $p = m\dfrac{dq}{dt}$, so $\dfrac{dq}{dt} = \dfrac{p}{m}$ and
-   - $H(p,q) = \dfrac{p^{2}}{2m} + U(q)$ .
-   In this case $H = T + U$.
-
-6. For $N$ degrees of freedom, sum over each pair, since each velocity has its own conjugate momentum.
-   - $H(p,q) = \displaystyle\sum_{i} p_{i}\dfrac{dq_{i}}{dt}(p) - L\left(q,\dfrac{dq}{dt}(p)\right)$ .
-
-7. Expand $dL$ with Euler–Lagrange and rearrange to $dH$, so matching coefficients yields the first-order equations of motion.
-   - $dH = -\displaystyle\sum_{i}\dfrac{dp_{i}}{dt}\,dq_{i} + \displaystyle\sum_{i}\dfrac{dq_{i}}{dt}\,dp_{i}$ ,
-   hence
-   - $\dfrac{dq_{i}}{dt} = \dfrac{\partial H}{\partial p_{i}}$ , $\qquad \dfrac{dp_{i}}{dt} = -\dfrac{\partial H}{\partial q_{i}}$ .
+$$
+L = L\left(q,\dfrac{dq}{dt}\right)
+$$
 
 where
 
 - $L$ is the Lagrangian.
 - $q$ is a generalized coordinate.
 - $\dfrac{dq}{dt}$ is the generalized velocity.
+
+2\. The conjugate momentum is the slope of $L$ in velocity. This principle is used to introduce $p$ as the new independent variable.
+
+The conjugate momentum is
+
+$$
+p = \dfrac{\partial L}{\partial \left(\dfrac{dq}{dt}\right)}
+$$
+
+where
+
 - $p$ is the conjugate momentum.
-- $\dfrac{\partial L}{\partial \left(\dfrac{dq}{dt}\right)}$ is the partial derivative of $L$ with respect to velocity.
+- $L$ is the Lagrangian.
+
+3\. The Hamiltonian is $p$ times velocity minus $L$, with velocity expressed in terms of $p$. This principle is used to write $H$ as a function of $p$ and $q$ alone.
+
+The Hamiltonian is
+
+$$
+H(p,q) = p\,\dfrac{dq}{dt}(p) - L\left(q,\dfrac{dq}{dt}(p)\right)
+$$
+
+where
+
 - $H$ is the Hamiltonian.
+- $p$ is the conjugate momentum.
+- $L$ is the Lagrangian.
+
+4\. For $L=\dfrac{1}{2}m(\mathrm{d}q/\mathrm{d}t)^{2}-U(q)$ one obtains $H=p^{2}/2m+U(q)$. This principle is used to recover the energy $T+U$ and the quantum operator $P^{2}/2m+V(X)$.
+
+The simple Hamiltonian is
+
+$$
+H(p,q) = \dfrac{p^{2}}{2m} + U(q)
+$$
+
+where
+
 - $m$ is the mass.
 - $U(q)$ is the potential energy.
-- $T$ is the kinetic energy.
-- $N$ is the number of degrees of freedom.
-- $q_{i}$ and $p_{i}$ are the $i$-th coordinate and conjugate momentum.
-- $\dfrac{dq_{i}}{dt}$ and $\dfrac{dp_{i}}{dt}$ are their time derivatives.
-- $dL$ and $dH$ are the differentials of $L$ and $H$.
-- $\dfrac{\partial H}{\partial p_{i}}$ and $\dfrac{\partial H}{\partial q_{i}}$ are the partial derivatives of $H$.
 
-</i>
+5\. Matching the differential of $H$ yields Hamilton's equations. This principle is used to write first-order equations for $q$ and $p$.
+
+Hamilton's equations are
+
+$$
+\dfrac{dq_{i}}{dt} = \dfrac{\partial H}{\partial p_{i}},\qquad \dfrac{dp_{i}}{dt} = -\dfrac{\partial H}{\partial q_{i}}
+$$
+
+where
+
+- $q_{i}$ is a generalized coordinate.
+- $p_{i}$ is the conjugate momentum.
+- $H$ is the Hamiltonian.
+
+Note: These principles are the Lagrangian starting point, conjugate momentum, the Legendre transform, $H=T+U$ for a standard kinetic term, and Hamilton's equations.
 
 ## Elementary Example
 
@@ -90,4 +111,4 @@ where
 
 ## References
 
-1. MIT OpenCourseWare. *8.223 Classical Mechanics II*, Lecture 15: Introduction to Hamiltonian Mechanics (IAP 2017). [PDF](https://ocw.mit.edu/courses/8-223-classical-mechanics-ii-january-iap-2017/09ab68ae8e7987debc025892e00c0f1f_MIT8_223IAP17_Lec15.pdf) — Legendre transform $H = p\dot{q}-L$, simple case $H=T+U$, and Hamilton’s equations.
+1. MIT OpenCourseWare. *8.223 Classical Mechanics II*, Lecture 15: Introduction to Hamiltonian Mechanics (IAP 2017). — Legendre transform $H = p\dot{q}-L$, simple case $H=T+U$, and Hamilton’s equations.

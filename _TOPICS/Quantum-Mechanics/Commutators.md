@@ -2,26 +2,26 @@
 
 An operator built from a product difference that is used to measure whether two operators can be applied in either order without change.
 
-Note: Also called a commutation relation when set equal to a specific value. Also denoted $[A,B]$.
+1\. The commutator of two operators is $AB-BA$. This principle is used to test whether the product order matters.
 
-<i>
+The commutator is
 
-**definition [d]** (*Commutator*) From Hall: the commutator of two operators $A$ and $B$ is defined by
-
-- $[A,B] = AB - BA$ .
+$$
+[A,B] = AB - BA
+$$
 
 where
 
 - $A$ and $B$ are operators.
 - $[A,B]$ is their commutator.
 
-</i>
+2\. Position and momentum do not commute. This principle is used to write the canonical commutation relation and to derive the uncertainty principle.
 
-<i>
+The position-momentum commutator is
 
-**definition [d]** (*Position-Momentum Commutator*) From Hall: the position and momentum operators satisfy
-
-- $[X,P] = i\hbar$ .
+$$
+[X,P] = i\hbar
+$$
 
 where
 
@@ -29,26 +29,11 @@ where
 - $P$ is the momentum operator.
 - $\hbar$ is the reduced Planck constant.
 
-</i>
+3\. If $[A,H]=0$, then $A$ is conserved. This principle is used to identify constants of the motion.
 
-<i>
+4\. If $[A,B]=0$, the operators share a common eigenbasis. This principle is used to measure $A$ and $B$ together.
 
-**definition [d]** (*Commutator*) From Sakurai: for two operators $A$ and $B$,
-
-- $[A,B] = AB - BA$ ,
-
-and the fundamental position-momentum relation is
-
-- $[x,p_{x}] = i\hbar$ .
-
-where
-
-- $A$ and $B$ are operators.
-- $x$ is the position operator.
-- $p_{x}$ is the corresponding momentum operator.
-- $\hbar$ is the reduced Planck constant.
-
-</i>
+Note: These principles are the definition of the commutator, the canonical relation $[X,P]=i\hbar$, conservation when $[A,H]=0$, and simultaneous eigenbases. Also called a commutation relation when set equal to a specific value. Also denoted $[A,B]$.
 
 ## Elementary Example
 
@@ -80,4 +65,3 @@ where
 
 1. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — $[A,B]=AB-BA$; $[X,P]=i\hbar$.
 2. Sakurai, J. J., & Napolitano, J. *Modern Quantum Mechanics*. Cambridge University Press, 2021. — $[A,B]=AB-BA$; $[x,p_{x}]=i\hbar$.
-3. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — used with the uncertainty principle for $X$ and $P$.

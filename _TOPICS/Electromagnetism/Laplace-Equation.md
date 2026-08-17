@@ -1,41 +1,36 @@
 # Laplace Equation
 
-A partial differential equation for the potential in charge-free regions that is used to solve electrostatic boundary-value problems.
+A partial differential equation for the potential in charge-free regions that is used to solve electrostatic boundary-value problems, where a boundary-value problem is a differential equation whose solution is fixed by values on the edge of the region.
 
-Note: Also written $\nabla^{2}V=0$.
+1\. In a region with no charge the electrostatic potential satisfies Laplace's equation. This principle is used to determine $V$ between conductors from the values of $V$ on the boundaries.
 
-<i>
+Laplace's equation is
 
-**definition [d]** (*Laplace Equation*) From Griffiths: in a region where $\rho = 0$, Poisson's equation reduces to Laplace's equation
+$$
+\nabla^{2}V = 0
+$$
 
-- $\nabla^{2}V = 0$ .
+where
+
+- $\nabla^{2}$ is the Laplacian.
+- $V$ is the electric potential.
+
+2\. Solutions of Laplace's equation are harmonic functions. A harmonic function is a function whose Laplacian vanishes. This principle is used to import the uniqueness and mean-value properties of potential theory into electrostatics.
+
+The one-dimensional Laplace equation is
+
+$$
+\dfrac{d^{2}V}{dx^{2}} = 0
+$$
 
 where
 
 - $V$ is the electric potential.
-- $\rho$ is the charge density.
+- $x$ is the Cartesian coordinate.
 
-</i>
+3\. Uniqueness theorems fix the solution once the potential or its normal derivative is specified on the boundary. This principle is used to guarantee that a guessed potential that matches the boundaries is the physical potential.
 
-<i>
-
-**definition [d]** (*Laplace Equation*) From Knight: when there is no charge in a region, the electrostatic potential satisfies Laplace's equation, and uniqueness theorems determine $V$ from boundary values.
-
-where
-
-- boundary conditions fix the solution.
-
-</i>
-
-<i>
-
-**definition [d]** (*Laplace Equation*) From Arfken, Weber, and Harris: Laplace's equation $\nabla^{2}\psi = 0$ is the classic equation of potential theory for harmonic functions.
-
-where
-
-- solutions are harmonic functions.
-
-</i>
+Note: These principles are Laplace's equation in charge-free regions, harmonic functions, and uniqueness from boundary values. Also written $\nabla^{2}V=0$.
 
 ## Elementary Example
 

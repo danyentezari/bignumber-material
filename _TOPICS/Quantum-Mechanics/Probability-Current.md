@@ -2,27 +2,38 @@
 
 A vector field built from a wavefunction that is used to express the flow of probability density through space.
 
-Note: Also called probability flux. Also called probability current density.
+1\. Probability is locally conserved: any decrease of $\rho$ in a volume equals the outward flux of the probability current. This principle is used to write a continuity equation for $|\Psi|^{2}$.
 
-<i>
+The continuity equation is
 
-**definition [d]** (*Probability Flux = Probability Current*) From Sakurai: using Schrödinger’s time-dependent wave equation, it is straightforward to derive the continuity equation
-
-- $\dfrac{\partial\rho}{\partial t} + \nabla\cdot\mathbf{j} = 0$ ,
-
-where $\rho(x,t)$ stands for $|\psi|^{2}$ as before, and $\mathbf{j}(x,t)$, known as the probability flux, is given by
-
-- $\mathbf{j}(x,t) = -\dfrac{i\hbar}{2m}\bigl[\psi^{*}\nabla\psi - (\nabla\psi^{*})\psi\bigr] = \dfrac{\hbar}{m}\operatorname{Im}(\psi^{*}\nabla\psi)$ .
+$$
+\dfrac{\partial\rho}{\partial t} + \nabla\cdot\mathbf{j} = 0
+$$
 
 where
 
-- $\rho = |\psi|^{2}$ is the probability density.
-- $\psi$ is the wavefunction.
-- $\mathbf{j}$ is the probability flux.
+- $\rho = \lvert\Psi\rvert^{2}$ is the probability density.
+- $\mathbf{j}$ is the probability current.
+- $t$ is time.
+
+2\. The probability current is built from $\Psi$ and its gradient. This principle is used to compute the flow from a known wavefunction.
+
+The probability current is
+
+$$
+\mathbf{j} = \dfrac{\hbar}{m}\operatorname{Im}\bigl(\Psi^{*}\nabla\Psi\bigr)
+$$
+
+where
+
+- $\mathbf{j}$ is the probability current.
+- $\Psi$ is the wavefunction.
 - $m$ is the particle mass.
 - $\hbar$ is the reduced Planck constant.
 
-</i>
+3\. A purely real stationary wavefunction has vanishing current. This principle is used to identify bound standing waves with no net flow.
+
+Note: These principles are the continuity equation, the formula for $\mathbf{j}$, and vanishing current for a real wavefunction. Also called probability flux. Also called probability current density.
 
 ## Elementary Example
 

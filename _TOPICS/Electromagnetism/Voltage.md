@@ -2,32 +2,35 @@
 
 A potential difference between two points that is used to measure the work per unit charge needed to move charge from one point to the other.
 
-Note: Also called electric potential difference.
+1\. The voltage between two points is the work per unit charge to carry a charge from one point to the other. This principle is used to assign a single number to a pair of terminals.
 
-<i>
+The voltage as work per unit charge is
 
-**definition [d]** (*Voltage = Potential Difference*) From Griffiths: the potential difference between points $a$ and $b$ is equal to the work it takes, per unit charge, to carry a particle from $a$ to $b$:
-
-- $V(b) - V(a) = \dfrac{W}{Q}$ .
+$$
+V(b) - V(a) = \dfrac{W}{Q}
+$$
 
 where
 
-- $V(a)$ and $V(b)$ are the electric potentials at points $a$ and $b$.
-- $W$ is the work done to move charge $Q$ from $a$ to $b$.
+- $V(a)$ and $V(b)$ are the potentials at the two points.
+- $W$ is the work to move charge $Q$ from $a$ to $b$.
 - $Q$ is the test charge.
 
-</i>
+2\. In a static field the same voltage is obtained along every path between the two points. This principle is used to treat voltage as a property of the pair of points, not of the path.
 
-<i>
+The line-integral form of the voltage is
 
-**definition [d]** (*Voltage*) From Knight: it is customary to say that the particle moves through a potential difference $\Delta V = V_{f} - V_{i}$. The potential difference between two points is often called the voltage.
+$$
+V(b) - V(a) = -\displaystyle\int_{a}^{b}\mathbf{E}\cdot d\mathbf{l}
+$$
 
 where
 
-- $\Delta V$ is the potential difference.
-- $V_{i}$ and $V_{f}$ are the initial and final potentials.
+- $V$ is the electric potential.
+- $\mathbf{E}$ is the electric field.
+- $d\mathbf{l}$ is a displacement along the path.
 
-</i>
+Note: These principles are voltage as work per unit charge and path independence in electrostatics. Also called electric potential difference.
 
 ## Elementary Example
 

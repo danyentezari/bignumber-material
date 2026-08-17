@@ -1,19 +1,20 @@
 # Four Fundamental Forces
 
-A set of four basic interactions that is used to classify how matter and fields influence one another: gravity, electromagnetism, the weak nuclear force, and the strong nuclear force.
+A set of four basic interactions that is used to classify how matter and fields influence one another.
 
-Note: Also called the four basic forces. Also called the four fundamental interactions.
+1\. The four interactions are gravity, electromagnetism, the weak nuclear force, and the strong nuclear force. Together they account for the observed phenomena of ordinary and nuclear matter. This principle is used to name every known force by one of these four.
 
-1. Together account for essentially all observed physical phenomena.
-2. Rank in decreasing strength as strong, electromagnetic, weak, then gravitational.
-3. Include two infinite-range forces and two extremely short-range forces.
-4. Contribute collectively to how energy appears and concentrates on Earth.
-5. Transform energy from one form to another when they act on matter.
-6. Are mediated at the quantum level by exchange of massless or massive force carriers.
-7. Are described by gauge theories, with gravity the usual exception.
-8. For electromagnetism, the weak force, and the strong force, are mediated by spin-1 vector bosons.
-9. Require particles to carry the matching kind of charge to feel each interaction.
-10. Differ hugely in strength, with gravity far feebler than the other three.
+2\. In decreasing strength the order is strong, electromagnetic, weak, then gravitational. Gravity is far feebler than the other three. This principle is used to decide which interaction dominates a given process.
+
+3\. Electromagnetism and gravity have infinite range. The weak and strong nuclear forces have extremely short range. Range is the distance over which the interaction remains appreciable. This principle is used to explain why nuclei bind at femtometer distances while gravity and electromagnetism act across the solar system.
+
+4\. At the quantum level each interaction is mediated by the exchange of a force carrier. A force carrier is a boson exchanged between charged particles. This principle is used to identify the photon, the $W$ and $Z$ bosons, the gluon, and the graviton as the mediators.
+
+5\. A particle feels an interaction only if it carries the matching charge: mass for gravity, electric charge for electromagnetism, weak isospin for the weak force, and color for the strong force. This principle is used to decide which particles participate in which interaction.
+
+6\. Electromagnetism, the weak force, and the strong force are described by gauge theories. A gauge theory is a field theory whose interactions follow from a local symmetry. This principle is used to write the Standard Model. Gravity is the usual exception and is described by general relativity.
+
+Note: These principles are the four interactions, the strength ordering, the two ranges, mediation by force carriers, charge matching, and the gauge-theory description. Also called the four basic forces. Also called the four fundamental interactions.
 
 ## References
 

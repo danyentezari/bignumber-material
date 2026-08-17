@@ -2,18 +2,45 @@
 
 A measure of an object's participation in electromagnetic interactions that is used to tell how strongly it attracts or repels other charges.
 
-Note: Also called electric charge.
+1\. Charge comes in two kinds, called positive and negative. Like charges repel and unlike charges attract. This principle is used to determine the direction of the Coulomb force.
 
-1. Comes in two kinds, positive and negative, whose effects cancel when equal amounts meet.
-2. Is quantized: it appears only in discrete multiples of a basic unit.
-3. Is conserved globally and locally in physical processes.
-4. Is relativistically invariant: its value does not change with the motion of the carrier.
-5. Makes like charges repel and opposite charges attract.
-6. Is an intrinsic property of fundamental particles such as electrons and protons.
-7. Can be transferred between ordinary objects by contact.
-8. Can polarize neutral matter and thereby produce an attractive polarization force.
-9. Produces an electrostatic force that falls off with the square of separation.
-10. Is immensely stronger, charge for charge, than gravity between the same particles.
+2\. Charge is quantized: it appears only in integer multiples of the elementary charge $e$. This principle is used to write $q=Ne$ for ordinary matter.
+
+The quantization of charge is
+
+$$
+q = Ne
+$$
+
+where
+
+- $q$ is the charge.
+- $N$ is an integer.
+- $e$ is the elementary charge.
+
+3\. Charge is conserved: the total charge of an isolated system does not change. This principle is used to balance charge in every process.
+
+4\. Charge is a Lorentz scalar: its value does not change with the motion of the carrier. This principle is used to treat $q$ as an intrinsic property of a particle.
+
+5\. The electrostatic force between two point charges falls as the inverse square of their separation. This principle is used to compute the force of one charge on another.
+
+Coulomb's law is
+
+$$
+\mathbf{F} = \dfrac{1}{4\pi\epsilon_{0}}\dfrac{q_{1}q_{2}}{r^{2}}\hat{\mathbf{r}}
+$$
+
+where
+
+- $\mathbf{F}$ is the force on $q_{2}$.
+- $q_{1}$ and $q_{2}$ are the point charges.
+- $r$ is the separation.
+- $\hat{\mathbf{r}}$ is the unit vector from $q_{1}$ to $q_{2}$.
+- $\epsilon_{0}$ is the permittivity of free space.
+
+6\. Charge can be transferred by contact and can polarize neutral matter. Polarization is a separation of positive and negative charge inside a neutral body. This principle is used to explain attraction of a charged rod to an uncharged scrap of paper.
+
+Note: These principles are two kinds of charge, quantization, conservation, Lorentz invariance, Coulomb's law, and transfer and polarization. Also called electric charge. Charge for charge, the electrostatic force is immensely stronger than gravity between the same particles.
 
 ## References
 

@@ -1,53 +1,48 @@
 # Expectation Values
 
-A weighted average of an observable in a quantum state that is used to predict the mean outcome of many measurements of that observable.
+A weighted average of an observable in a quantum state that is used to predict the mean outcome of many measurements of that observable, where an observable is a measurable quantity represented by a Hermitian operator.
 
-Note: Also called the expectation value. Also called the mean value.
+1\. The expectation value of an operator $A$ in a normalized state is the sandwich $\langle\psi|A|\psi\rangle$. This principle is used to compute the mean of many repeated measurements.
 
-<i>
+The expectation value is
 
-**definition [d]** (*Expectation Value*) From Sakurai: we define the expectation value of $A$ taken with respect to state $|\alpha\rangle$ as
-
-- $\langle A\rangle \equiv \langle\alpha|A|\alpha\rangle$ .
+$$
+\langle A\rangle = \langle\psi|A|\psi\rangle
+$$
 
 where
 
 - $A$ is an observable operator.
-- $|\alpha\rangle$ is the state ket.
+- $|\psi\rangle$ is the normalized state.
 - $\langle A\rangle$ is the expectation value.
 
-</i>
+2\. The expectation value of position is the first moment of the probability density. This principle is used to compute the mean position from $\Psi(x)$.
 
-<i>
+The expectation value of position is
 
-**definition [d]** (*Expectation Value of Position*) From Hall: if $|\psi(x)|^{2}$ is the probability density for the position of a particle, then according to the standard definitions of probability theory, the expectation value of the position will be
-
-- $E(x) = \displaystyle\int_{\mathbb{R}} x\, |\psi(x)|^{2}\, dx$ .
-
-We use the following notation for the expectation value of the operator $X$ in the state $\psi$:
-
-- $\langle X\rangle_{\psi} := \langle\psi, X\psi\rangle$ .
+$$
+\langle x\rangle = \displaystyle\int x\,\lvert\psi(x)\rvert^{2}\,dx
+$$
 
 where
 
-- $\psi$ is the wave function.
-- $X$ is the position operator.
-- $E(x)$ is the mean position.
+- $\langle x\rangle$ is the mean position.
+- $\psi(x)$ is the wavefunction.
 
-</i>
+3\. The uncertainty of an observable is the root-mean-square deviation from the expectation value. This principle is used to compute $\Delta A$ for the uncertainty principle.
 
-<i>
+The uncertainty is
 
-**definition [d]** (*Expectation Value*) From Shankar: in the context of quantum theory $P(x)=|\psi(x)|^{2}$, $\langle x\rangle$ is called the expectation value, with
-
-- $\langle x\rangle = \displaystyle\int P(x)\, x\, dx$ .
+$$
+\Delta A = \sqrt{\langle A^{2}\rangle - \langle A\rangle^{2}}
+$$
 
 where
 
-- $P(x)$ is the probability density.
-- $\langle x\rangle$ is the expectation value of position.
+- $\Delta A$ is the uncertainty of $A$.
+- $\langle A\rangle$ is the expectation value of $A$.
 
-</i>
+Note: These principles are the Dirac sandwich, the position mean, and the definition of uncertainty. Also called the mean value.
 
 ## Elementary Example
 

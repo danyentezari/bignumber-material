@@ -2,13 +2,13 @@
 
 A quantum system with a quadratic potential that is used as the standard model of small oscillations and of photonlike modes.
 
-Note: Also called the harmonic oscillator. Also denoted with potential $V(x)=\dfrac{1}{2}m\omega^{2}x^{2}$.
+1\. The Hamiltonian is kinetic energy plus a quadratic potential. This principle is used to write the oscillator as the unique quadratic bound-state problem.
 
-<i>
+The oscillator Hamiltonian is
 
-**definition [d]** (*Quantum Harmonic Oscillator*) From Hall: the quantum harmonic oscillator has Hamiltonian
-
-- $H = \dfrac{P^{2}}{2m} + \dfrac{1}{2}m\omega^{2}X^{2}$ .
+$$
+H = \dfrac{P^{2}}{2m} + \dfrac{1}{2}m\omega^{2}X^{2}
+$$
 
 where
 
@@ -16,13 +16,13 @@ where
 - $\omega$ is the angular frequency.
 - $X$ and $P$ are the position and momentum operators.
 
-</i>
+2\. The allowed energies are equally spaced and start at $\dfrac{1}{2}\hbar\omega$. This principle is used to write the spectrum of a mode or of a vibrational level.
 
-<i>
+The oscillator energies are
 
-**definition [d]** (*Quantum Harmonic Oscillator*) From Shankar: the energy eigenvalues are
-
-- $E_{n} = \hbar\omega\bigl(n+\dfrac{1}{2}\bigr),\quad n = 0, 1, 2, \ldots$ .
+$$
+E_{n} = \hbar\omega\bigl(n+\dfrac{1}{2}\bigr),\quad n = 0, 1, 2, \ldots
+$$
 
 where
 
@@ -30,19 +30,21 @@ where
 - $\hbar$ is the reduced Planck constant.
 - $\omega$ is the oscillator frequency.
 
-</i>
+3\. The same Hamiltonian is $\hbar\omega(a^{\dagger}a+\dfrac{1}{2})$ in terms of raising and lowering operators. This principle is used to climb the ladder of states without solving a differential equation.
 
-<i>
+The number-operator form is
 
-**definition [d]** (*Quantum Harmonic Oscillator*) From Sakurai: the harmonic oscillator is solved using raising and lowering operators $a^{\dagger}$ and $a$, with
-
-- $H = \hbar\omega\bigl(a^{\dagger}a+\dfrac{1}{2}\bigr)$ .
+$$
+H = \hbar\omega\bigl(a^{\dagger}a+\dfrac{1}{2}\bigr)
+$$
 
 where
 
+- $a^{\dagger}$ is the raising operator.
+- $a$ is the lowering operator.
 - $a^{\dagger}a$ is the number operator.
 
-</i>
+Note: These principles are the quadratic Hamiltonian, the equidistant spectrum, and the raising-lowering operator solution. Also called the harmonic oscillator.
 
 ## Elementary Example
 

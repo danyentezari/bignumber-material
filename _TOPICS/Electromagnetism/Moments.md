@@ -1,48 +1,46 @@
 # Moments
 
-Integral quantities of a charge or current distribution that is used to characterize successive terms in a multipole expansion.
+Integral quantities of a charge distribution that are used to characterize successive terms in a multipole expansion, where a multipole expansion is a series that organizes a distant potential by inverse powers of distance.
 
-Note: Also called multipole moments. Examples include the monopole, dipole, and quadrupole moments.
+1\. The monopole moment is the total charge of the distribution. This principle is used to write the leading term of the potential when the net charge is not zero.
 
-<i>
+The monopole moment is
 
-**definition [d]** (*Moments = Multipole Moments*) From Griffiths: the multipole expansion of the potential of a localized charge distribution is organized by moments of the charge density. The monopole moment is the total charge
-
-- $Q = \displaystyle\int\rho(\mathbf{r}')\,d\tau'$ ,
-
-the dipole moment is
-
-- $\mathbf{p} = \displaystyle\int\mathbf{r}'\rho(\mathbf{r}')\,d\tau'$ ,
-
-and higher moments (quadrupole, octupole, and so on) involve higher powers of $\mathbf{r}'$.
+$$
+Q = \displaystyle\int\rho(\mathbf{r}')\,d\tau'
+$$
 
 where
 
-- $\rho$ is the charge density.
 - $Q$ is the monopole moment.
-- $\mathbf{p}$ is the dipole moment.
+- $\rho$ is the charge density.
+- $d\tau'$ is the volume element.
 
-</i>
+2\. The dipole moment is the first moment of the charge density. This principle is used to write the leading term of the potential of a neutral charge collection.
 
-<i>
+The dipole moment is
 
-**definition [d]** (*Moments*) From Knight: from far away, a compact charge distribution is described by its total charge and by successive multipole moments whose effects fall off faster with distance.
-
-where
-
-- the lowest nonvanishing moment dominates at large $r$.
-
-</i>
-
-<i>
-
-**definition [d]** (*Moments*) From Susskind and Friedman: moments of a source distribution are the coefficients that appear when the potential or field is expanded in inverse powers of distance from a localized source.
+$$
+\mathbf{p} = \displaystyle\int\mathbf{r}'\rho(\mathbf{r}')\,d\tau'
+$$
 
 where
 
-- each order in the expansion corresponds to a multipole moment.
+- $\mathbf{p}$ is the electric dipole moment.
+- $\mathbf{r}'$ is the source-point position.
+- $\rho$ is the charge density.
+- $d\tau'$ is the volume element.
 
-</i>
+3\. Higher moments involve higher powers of the source coordinate. This principle is used to continue the expansion when the monopole and dipole both vanish.
+
+The quadrupole and higher moments enter the potential through powers $(r')^{n}$ with $n\geq 2$.
+
+where
+
+- $r'$ is the distance of a source element from the origin.
+- $n$ is the order of the multipole.
+
+Note: These principles are the monopole moment, the dipole moment, and the higher multipole moments. Also called multipole moments.
 
 ## Elementary Example
 

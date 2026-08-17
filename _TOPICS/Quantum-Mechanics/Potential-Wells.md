@@ -1,43 +1,27 @@
 # Potential Wells
 
-A potential that confines a particle to a region that is used to model bound states in one or more dimensions.
+A potential that confines a particle to a region that is used to model bound states in one or more dimensions, where a bound state is a state with discrete energy localized in the well.
 
-Note: Also called a potential well. Examples include the infinite square well and the finite square well.
+1\. A potential well is a region where $V$ is lower than in the surroundings. For energies between the bottom and the top of the walls, bound states can form. This principle is used to model electrons in boxes and nuclei in finite wells.
 
-<i>
+2\. The infinite square well sets $V=0$ inside an interval and $V=\infty$ outside, so the wavefunction vanishes at the walls. This principle is used to obtain a complete discrete spectrum.
 
-**definition [d]** (*Potential Wells*) From Shankar: a potential well is a region where $V$ is lower than in the surroundings, so that for energies between the bottom of the well and the top of the walls, bound states can form. The infinite square well sets $V = 0$ inside an interval and $V = \infty$ outside.
+The infinite-well energies are
 
-where
-
-- $V$ is the potential.
-- bound states exist for appropriate energies.
-
-</i>
-
-<i>
-
-**definition [d]** (*Infinite Square Well*) From Hall: for the infinite square well on $(0, a)$ with $V = 0$ inside and infinite outside, the energy eigenvalues are
-
-- $E_{n} = \dfrac{n^{2}\pi^{2}\hbar^{2}}{2ma^{2}},\quad n = 1, 2, 3, \ldots$ .
+$$
+E_{n} = \dfrac{n^{2}\pi^{2}\hbar^{2}}{2ma^{2}},\quad n = 1, 2, 3, \ldots
+$$
 
 where
 
 - $a$ is the well width.
 - $m$ is the mass.
 - $n$ is the quantum number.
+- $\hbar$ is the reduced Planck constant.
 
-</i>
+3\. A finite well supports only a finite number of bound states. This principle is used to contrast the infinite well, which supports infinitely many discrete energies.
 
-<i>
-
-**definition [d]** (*Potential Wells*) From Sakurai: finite wells support a finite number of bound states, while the infinite well supports infinitely many discrete energies with wavefunctions vanishing at the walls.
-
-where
-
-- the depth and width of the well control the spectrum.
-
-</i>
+Note: These principles are the definition of a well, the infinite-square-well spectrum, and the finite number of bound states in a finite well. Also called a potential well.
 
 ## Elementary Example
 

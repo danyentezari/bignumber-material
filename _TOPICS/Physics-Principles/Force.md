@@ -2,18 +2,63 @@
 
 An interaction that is used to change the motion of an object.
 
-Note: A push or a pull is the everyday name for a force.
+1\. A force is a push or a pull exerted by an identifiable agent. This principle is used to name the source of every force in a free-body diagram.
 
-1. Is a push or a pull acting on an object.
-2. Requires a specific, identifiable agent that exerts it.
-3. Can transform energy from one form to another when it acts on matter.
-4. Has a material origin and needs a physical body as its source.
-5. Obeys superposition: forces add as vectors to set the net acceleration.
-6. Acts at the present instant and carries no memory of past forces.
-7. Causes acceleration proportional to the force and inversely proportional to the mass.
-8. Always occurs in equal and opposite action-reaction pairs between interacting bodies.
-9. For a conservative interaction equals the negative derivative of potential energy with position.
-10. In general relativity is replaced by the curvature of spacetime itself.
+2\. Independent forces on one body add as vectors. This principle is used to replace a many-force problem by one net force.
+
+The superposition of forces is
+
+$$
+\mathbf{F}_{\mathrm{net}} = \sum_{i}\mathbf{F}_{i}
+$$
+
+where
+
+- $\mathbf{F}_{\mathrm{net}}$ is the net force.
+- $\mathbf{F}_{i}$ is an individual force.
+
+3\. The net force equals mass times acceleration. This principle is used to compute how a known force changes the motion.
+
+Newton's second law is
+
+$$
+\mathbf{F}_{\mathrm{net}} = m\mathbf{a}
+$$
+
+where
+
+- $\mathbf{F}_{\mathrm{net}}$ is the net force.
+- $m$ is the mass.
+- $\mathbf{a}$ is the acceleration.
+
+4\. Forces occur in equal and opposite pairs between two bodies. This principle is used to cancel internal forces in a system.
+
+Newton's third law is
+
+$$
+\mathbf{F}_{12} = -\mathbf{F}_{21}
+$$
+
+where
+
+- $\mathbf{F}_{12}$ is the force on body 1 by body 2.
+- $\mathbf{F}_{21}$ is the force on body 2 by body 1.
+
+5\. A conservative force is minus the derivative of potential energy with position. This principle is used to obtain $\mathbf{F}$ from $U$.
+
+The conservative-force relation is
+
+$$
+\mathbf{F} = -\dfrac{dU}{d\mathbf{r}}
+$$
+
+where
+
+- $\mathbf{F}$ is the force.
+- $U$ is the potential energy.
+- $\mathbf{r}$ is the position.
+
+Note: These principles are force as a push or pull, superposition, Newton's second law, Newton's third law, and force from a potential. A push or a pull is the everyday name for a force. In general relativity, gravity is described as the curvature of spacetime rather than as a force in the Newtonian sense.
 
 ## References
 

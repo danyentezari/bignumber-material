@@ -1,38 +1,38 @@
 # Measurement
 
-A process that yields an eigenvalue of an observable and updates the state that is used to connect a quantum state to a definite laboratory outcome.
+A process that yields an eigenvalue of an observable and updates the state that is used to connect a quantum state to a definite laboratory outcome, where an eigenvalue is an allowed measured value of that observable.
 
-Note: Also called the collapse of the wave function when the post-measurement state is emphasized.
+1\. A measurement of an observable $A$ yields one of the eigenvalues of $A$. This principle is used to list the possible laboratory outcomes.
 
-<i>
+2\. If the result is the eigenvalue $a'$, the state immediately afterward is the corresponding eigenstate. This principle is used to update the state after a measurement.
 
-**definition [d]** (*Measurement*) From Hall: suppose a quantum system is initially in a state $\psi$ and that a measurement of an observable $f$ is performed. If the result of the measurement is the number $\lambda \in \mathbb{R}$, then immediately after the measurement, the system will be in a state $\psi'$ that satisfies
+The collapse to an eigenstate is
 
-- $\hat{f}\psi' = \lambda\psi'$ .
-
-The passage from $\psi$ to $\psi'$ is called the collapse of the wave function. Here $\hat{f}$ is the self-adjoint operator associated with $f$.
-
-where
-
-- $\psi$ is the state before measurement.
-- $f$ is the observable being measured.
-- $\lambda$ is the measured value.
-- $\psi'$ is the state immediately after measurement.
-- $\hat{f}$ is the self-adjoint operator for $f$.
-
-</i>
-
-<i>
-
-**definition [d]** (*Measurement*) From Sakurai: when the measurement causes $|\alpha\rangle$ to change into $|a'\rangle$, it is said that $A$ is measured to be $a'$. It is in this sense that the result of a measurement yields one of the eigenvalues of the observable being measured.
+$$
+\hat{A}|\psi'\rangle = a'|\psi'\rangle
+$$
 
 where
 
-- $|\alpha\rangle$ is the state before measurement.
-- $|a'\rangle$ is an eigenket of the observable $A$.
-- $a'$ is the corresponding eigenvalue.
+- $\hat{A}$ is the operator for the observable.
+- $a'$ is the measured eigenvalue.
+- $|\psi'\rangle$ is the state immediately after the measurement.
 
-</i>
+3\. If the state before measurement is $\sum c_{n}|a_{n}\rangle$, the probability of result $a_{n}$ is $|c_{n}|^{2}$. This principle is used to compute the statistics of repeated measurements.
+
+The Born rule for a discrete spectrum is
+
+$$
+P(a_{n}) = \lvert\langle a_{n}|\psi\rangle\rvert^{2}
+$$
+
+where
+
+- $P(a_{n})$ is the probability of eigenvalue $a_{n}$.
+- $|\psi\rangle$ is the state before measurement.
+- $|a_{n}\rangle$ is the corresponding eigenket.
+
+Note: These principles are the eigenvalue-outcome rule, collapse to an eigenstate, and the Born probability rule. Also called the collapse of the wave function when the post-measurement state is emphasized.
 
 ## Elementary Example
 

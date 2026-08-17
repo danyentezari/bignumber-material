@@ -1,28 +1,38 @@
 # Conservation of Energy Transition Law
 
-The energy-conservation rule that when an atom transitions between two energy levels, it must emit or absorb a photon whose energy equals the difference between those states, that is used to match photon energy to an atomic energy difference.
+An energy-conservation rule that is used to match photon energy to an atomic energy difference when an atom jumps between two levels.
 
-($E_{\text{photon}} = \Delta E_{\text{atom}}$).
+1\. When an atom jumps from energy $E_{i}$ to energy $E_{f}$, it emits or absorbs a photon whose energy equals the gap. This principle is used to compute the frequency of the spectral line.
 
-<i>
+The transition energy rule is
 
-**definition [d]** (*Conservation of Energy Transition Law*) From Knight: according to Einstein, a photon of frequency $f$ has energy $E_{\mathrm{photon}} = hf$. If an atom jumps from an initial state with energy $E_{i}$ to a final state with energy $E_{f}$, energy will be conserved if the atom emits or absorbs a photon with
-
-- $E_{\mathrm{photon}} = \Delta E_{\mathrm{atom}} = |E_{f} - E_{i}|$ .
-
-When an atom is excited to a higher energy level by absorbing a photon, the photon vanishes. Thus energy conservation requires
-
-- $E_{\mathrm{photon}} = \Delta E_{\mathrm{atom}}$ .
+$$
+E_{\mathrm{photon}} = \Delta E_{\mathrm{atom}} = \lvert E_{f} - E_{i}\rvert
+$$
 
 where
 
 - $E_{\mathrm{photon}}$ is the energy of the photon.
 - $\Delta E_{\mathrm{atom}}$ is the change in atomic energy.
 - $E_{i}$ and $E_{f}$ are the initial and final atomic energies.
-- $f$ is the photon frequency.
-- $h$ is Planck’s constant.
 
-</i>
+2\. Absorption raises the atom and the photon vanishes. Emission lowers the atom and a photon is created. This principle is used to decide the direction of the jump from whether light is taken in or given out.
+
+3\. Combined with $E=hf$, the same rule fixes the frequency of the line. This principle is used to convert a level diagram into a spectrum.
+
+The Bohr frequency condition is
+
+$$
+hf = \lvert E_{f} - E_{i}\rvert
+$$
+
+where
+
+- $h$ is Planck's constant.
+- $f$ is the photon frequency.
+- $E_{i}$ and $E_{f}$ are the atomic energies.
+
+Note: These principles are the transition energy rule, absorption versus emission, and the Bohr frequency condition.
 
 ## Elementary Example
 
@@ -47,7 +57,7 @@ where
 Three downward jumps each emit a photon equal to the level gap.
 
 $$
-\Delta E_{1} = |E_{3}-E_{2}|,\quad \Delta E_{2} = |E_{4}-E_{2}|,\quad \Delta E_{3} = |E_{5}-E_{2}|
+\Delta E_{1} = \lvert E_{3}-E_{2}\rvert,\quad \Delta E_{2} = \lvert E_{4}-E_{2}\rvert,\quad \Delta E_{3} = \lvert E_{5}-E_{2}\rvert
 $$
 
 $$

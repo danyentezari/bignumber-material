@@ -2,18 +2,65 @@
 
 A comparison of potential between two points that is used to tell how much influence changes from one place to another.
 
-Note: Also called voltage when the influence is electric.
+1\. The potential difference between two points is the work per unit charge to carry a test charge from one point to the other. This principle is used to assign a single number to a pair of points.
 
-1. Is a scalar fixed by its magnitude between two points.
-2. Equals the work required per unit charge to move a charge between those points.
-3. Does not depend on where the zero of potential is chosen.
-4. Has direct physical meaning and observable effects, unlike an absolute potential alone.
-5. Equals the negative line integral of the electric field along a path joining the points.
-6. Sets how a charge speeds up or slows down and how its kinetic energy changes.
-7. Drives electric current through a resistive path.
-8. For a pair of conductors, scales with the charge stored on them.
-9. Across a battery equals the closed-loop contribution of the chemical motive force inside.
-10. Can force continuous phase change and oscillating currents at a Josephson junction.
+The potential difference as work per unit charge is
+
+$$
+V(b) - V(a) = \dfrac{W}{q}
+$$
+
+where
+
+- $V(a)$ and $V(b)$ are the potentials at the two points.
+- $W$ is the work to move charge $q$ from $a$ to $b$.
+- $q$ is the test charge.
+
+2\. The same difference is minus the line integral of the electric field. This principle is used to compute voltage from a known $\mathbf{E}$.
+
+The line-integral form is
+
+$$
+V(b) - V(a) = -\displaystyle\int_{a}^{b}\mathbf{E}\cdot d\mathbf{l}
+$$
+
+where
+
+- $V$ is the electric potential.
+- $\mathbf{E}$ is the electric field.
+- $d\mathbf{l}$ is a displacement along the path.
+
+3\. The value does not depend on where the zero of potential is chosen. This principle is used to treat only differences as physically meaningful.
+
+4\. A potential difference drives current through a resistive path and changes the kinetic energy of a charge that moves between the points. This principle is used to analyze circuits and particle accelerators.
+
+Ohm's law is
+
+$$
+I = \dfrac{\Delta V}{R}
+$$
+
+where
+
+- $I$ is the current.
+- $\Delta V$ is the potential difference.
+- $R$ is the resistance.
+
+5\. For a pair of conductors the stored charge is proportional to the potential difference. This principle is used to define capacitance.
+
+The capacitor relation is
+
+$$
+Q = C\,\Delta V
+$$
+
+where
+
+- $Q$ is the magnitude of the charge on each conductor.
+- $C$ is the capacitance.
+- $\Delta V$ is the potential difference.
+
+Note: These principles are work per unit charge, the line integral of $\mathbf{E}$, independence of the zero, current and kinetic energy, and capacitance. Also called voltage when the influence is electric.
 
 ## References
 

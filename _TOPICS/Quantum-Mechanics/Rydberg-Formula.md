@@ -1,16 +1,14 @@
 # Rydberg Formula
 
-The formula that predicts the wavelengths of light emitted or absorbed when an electron transitions between energy shells in hydrogen-like atoms that is used to compute those wavelengths from integer shell indices.
+A formula that is used to compute the wavelengths of light emitted or absorbed when an electron jumps between shells in hydrogen-like atoms, where a shell is a set of states sharing the same principal quantum number.
 
-Note: Also called the Rydberg–Balmer formula.
+1\. The inverse wavelength of a hydrogen line is the Rydberg constant times the difference of inverse squares of two integers. This principle is used to predict the Balmer, Lyman, and other series.
 
-<i>
+The Rydberg formula is
 
-**definition [d]** (*Rydberg Formula*) From Gowers, Barrow-Green, and Leader:
-
-- $\dfrac{1}{\lambda} = R\left(\dfrac{1}{n_{1}^{2}} - \dfrac{1}{n_{2}^{2}}\right)$ ,
-
-where $n_{1}$ and $n_{2}$ are integers, $n_{1} < n_{2}$, and $R$ is known as the Rydberg constant.
+$$
+\dfrac{1}{\lambda} = R\left(\dfrac{1}{n_{1}^{2}} - \dfrac{1}{n_{2}^{2}}\right)
+$$
 
 where
 
@@ -19,7 +17,11 @@ where
 - $n_{2}$ is the upper principal index.
 - $R$ is the Rydberg constant.
 
-</i>
+2\. The integers must satisfy $n_{2} > n_{1}$. This principle is used to label each series by its lower index: Lyman $n_{1}=1$, Balmer $n_{1}=2$, Paschen $n_{1}=3$.
+
+3\. The same formula follows from the hydrogen energies $E_{n}\propto -1/n^{2}$ together with $hf=\lvert E_{i}-E_{f}\rvert$. This principle is used to derive the Rydberg formula from energy quantization.
+
+Note: These principles are the Rydberg formula, the series labels, and the derivation from hydrogen levels. Also called the Rydberg–Balmer formula.
 
 ## Elementary Example
 

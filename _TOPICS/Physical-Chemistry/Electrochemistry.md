@@ -2,11 +2,61 @@
 
 A science of chemical changes and electric charges that is used to interconvert chemical energy and electrical energy.
 
-1. Many reactions move electric charge: electrons or ions pass from one substance to another.
-2. Electrochemistry separates the electron-losing step from the electron-gaining step so electrons travel through an external wire.
-3. A galvanic cell turns a spontaneous reaction into electrical work, as in a battery.
-4. An electrolytic cell uses an outside current to force a reaction that would not run on its own.
-5. The subject tracks the electric potential difference that appears where phases meet, such as a metal electrode and a liquid electrolyte.
+1\. Many reactions move electric charge: electrons or ions pass from one substance to another. Oxidation is the electron-losing step. Reduction is the electron-gaining step. This principle is used to write a redox reaction as two half-reactions.
+
+2\. Electrochemistry separates those half-reactions so electrons travel through an external wire. This principle is used to turn a chemical change into a current, or a current into a chemical change.
+
+3\. A galvanic cell turns a spontaneous reaction into electrical work. A galvanic cell is an electrochemical cell that produces current from a reaction that runs on its own. This principle is used to describe batteries.
+
+The electrical work of a cell is
+
+$$
+w_{\mathrm{el}} = -nFE
+$$
+
+where
+
+- $w_{\mathrm{el}}$ is the electrical work done on the system.
+- $n$ is the number of moles of electrons transferred.
+- $F$ is the Faraday constant.
+- $E$ is the cell potential.
+
+4\. The cell potential is fixed by the standard potential and by the composition. This principle is used to compute the voltage of a cell that is not in its standard state.
+
+The Nernst equation is
+
+$$
+E = E^{\circ} - \dfrac{RT}{nF}\ln Q
+$$
+
+where
+
+- $E$ is the cell potential.
+- $E^{\circ}$ is the standard cell potential.
+- $R$ is the gas constant.
+- $T$ is the absolute temperature.
+- $n$ is the number of moles of electrons transferred.
+- $F$ is the Faraday constant.
+- $Q$ is the reaction quotient.
+
+5\. The standard cell potential is proportional to the standard Gibbs energy of the cell reaction. This principle is used to obtain equilibrium constants from measured voltages.
+
+The standard Gibbs energy of the cell reaction is
+
+$$
+\Delta_{r}G^{\circ} = -nFE^{\circ}
+$$
+
+where
+
+- $\Delta_{r}G^{\circ}$ is the standard Gibbs energy of reaction.
+- $n$ is the number of moles of electrons transferred.
+- $F$ is the Faraday constant.
+- $E^{\circ}$ is the standard cell potential.
+
+6\. An electrolytic cell uses an outside current to force a reaction that would not run on its own. This principle is used to describe electrolysis and electroplating.
+
+Note: These principles are redox half-reactions, the separated-electrode cell, the galvanic cell and electrical work, the Nernst equation, the relation of $E^{\circ}$ to $\Delta_{r}G^{\circ}$, and the electrolytic cell.
 
 ## References
 

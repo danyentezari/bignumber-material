@@ -2,26 +2,13 @@
 
 An operator that is used to represent the total energy of a quantum system.
 
-Note: Also denoted $H$. Also denoted $\hat{H}$.
+1\. For one particle the Hamiltonian is kinetic energy plus potential energy, written with the operators $P$ and $X$. This principle is used to build $\hat{H}$ from a classical energy function.
 
-## Applications
+The Hamiltonian operator is
 
-1. Analyzes aberration in geometrical optics.
-2. Governs the time evolution of quantum states through the Schrödinger equation.
-3. Determines allowed discrete energy eigenvalues and stationary states.
-4. Builds partition functions for macroscopic thermodynamic properties in statistical mechanics.
-5. Evaluates quantum transition amplitudes over histories in the path-integral formulation.
-6. Describes the relativistic motion of a charged particle in an electromagnetic field.
-7. Models orbital dynamics and conserved energy in Schwarzschild spacetime.
-8. Frames the dynamics of quantum field theory and gauge theories.
-9. Studies long-term stability of perturbed conservative systems through KAM theory.
-10. Proves topological and geometric results using supersymmetric quantum mechanics.
-
-<i>
-
-**definition [d]** (*Hamiltonian*) From Shankar: the Hamiltonian is
-
-- $H = \dfrac{P^{2}}{2m} + V(X)$ .
+$$
+H = \dfrac{P^{2}}{2m} + V(X)
+$$
 
 where
 
@@ -31,36 +18,35 @@ where
 - $V(X)$ is the potential energy as a function of the position operator.
 - $X$ is the position operator.
 
-</i>
+2\. The Hamiltonian generates time evolution through the Schrödinger equation. This principle is used to compute the state at a later time.
 
-<i>
+The Schrödinger equation is
 
-**definition [d]** (*Hamiltonian as Energy Observable*) From Hall: to each real-valued function $f$ on the classical phase space there is associated a self-adjoint operator $\hat{f}$ on the quantum Hilbert space.
-
-where
-
-- $f$ is a classical observable as a real-valued function on phase space.
-- $\hat{f}$ is the corresponding self-adjoint operator.
-- when $f$ is the classical energy, $\hat{f}$ is the Hamiltonian.
-
-</i>
-
-<i>
-
-**definition [d]** (*Hamiltonian*) From Das: the general time-dependent form is
-
-- $i\hbar\dfrac{\partial\Psi}{\partial t} = \hat{H}\Psi$ ,
-
-where $\hat{H}$ is the Hamiltonian operator representing the total energy of the system.
+$$
+i\hbar\dfrac{\partial\Psi}{\partial t} = \hat{H}\Psi
+$$
 
 where
 
 - $\hat{H}$ is the Hamiltonian.
-- $\Psi$ is the state of the system.
+- $\Psi$ is the state.
 - $t$ is time.
 - $\hbar$ is the reduced Planck constant.
 
-</i>
+3\. The eigenvalues of $\hat{H}$ are the allowed energies. This principle is used to find stationary states and discrete spectra.
+
+The energy eigenvalue equation is
+
+$$
+\hat{H}\psi = E\psi
+$$
+
+where
+
+- $\psi$ is an energy eigenfunction.
+- $E$ is the energy eigenvalue.
+
+Note: These principles are $H=P^{2}/2m+V(X)$, Hamiltonian time evolution, and energy eigenvalues. Also denoted $H$. Also denoted $\hat{H}$.
 
 ## Elementary Example
 
@@ -90,10 +76,6 @@ where
 
 ## References
 
-1. Shankar, R. *Fundamentals of Physics II*. Yale University Press, 2020. — $H=\dfrac{P^{2}}{2m}+V(X)$; field theory framework.
+1. Shankar, R. *Fundamentals of Physics II*. Yale University Press, 2020. — $H=\dfrac{P^{2}}{2m}+V(X)$.
 2. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — energy observable; Schrödinger evolution.
 3. Das, T. K. *Quantum Mechanics: Axiomatic Approach and Understanding Through Mathematics*. Springer, 2023. — $i\hbar\dfrac{\partial\Psi}{\partial t}=\hat{H}\Psi$.
-4. Sakurai, J. J., & Napolitano, J. *Modern Quantum Mechanics*. Cambridge University Press, 2021. — time evolution; path integrals.
-5. Jaffe, R. L., & Taylor, W. *The Physics of Energy*. Cambridge University Press, 2018. — statistical mechanics partition functions.
-6. Susskind, L., & Cabannes, A. *General Relativity: The Theoretical Minimum*. Penguin Books, 2023. — Schwarzschild orbital energy.
-7. Gowers, T., et al. (Eds.). *The Princeton Companion to Mathematics*. Princeton University Press, 2008. — KAM stability.

@@ -1,83 +1,72 @@
 # Schrodinger Equations
 
-The family of linear differential equations that is used to describe the wave-particle behavior and probability densities of non-relativistic particles.
+A family of linear differential equations that is used to describe the evolution and the allowed energies of a non-relativistic quantum system, where a non-relativistic system is a system whose speeds are much smaller than the speed of light.
 
-Related definitions:
+1\. The state of any quantum system evolves according to the Hamiltonian. This principle is used to predict the state at a later time from the state now.
 
-- [Schrodinger Equation Time-Independent](Schrodinger-Equation-Time-Independent.md)
-- [Time Dependent Schrodinger Equation 1-Dimensional](Time-Dependent-Schrodinger-Equation-1-Dimensional.md)
-- [Time Dependent Schrodinger Equation Generalized](Time-Dependent-Schrodinger-Equation-Generalized.md)
+The generalized time-dependent Schrödinger equation is
 
-
-<i>
-
-**definition** (*Time Dependent Schrödinger Equation 1-Dimensional*) The specific case of the fundamental law of quantum mechanics tailored for a single particle of mass $m$ constrained to move in one dimension along the $x$-axis. It serves as a direct quantum analog to Newton’s second law, determining the particle's wave function $\Psi(x, t)$ for all future time given the potential energy $V(x, t)$ and initial conditions. It is expressed as:
-
-- $i\hbar \dfrac{\partial \Psi}{\partial t} = -\dfrac{\hbar^2}{2m} \dfrac{\partial^2 \Psi}{\partial x^2} + V\Psi$
+$$
+i\hbar\dfrac{\partial\Psi}{\partial t} = \hat{H}\Psi
+$$
 
 where
 
-- $i$ is the imaginary unit
-- $\hbar$ is the reduced Planck constant
-- $\Psi$ is the wave function, which depends on position $x$ and time $t$
-- $m$ is the mass of the particle
-- $V$ is the potential energy function
-- $x$ is the position coordinate
+- $i$ is the imaginary unit.
+- $\hbar$ is the reduced Planck constant.
+- $\Psi$ is the state.
+- $t$ is time.
+- $\hat{H}$ is the Hamiltonian operator.
+
+2\. For one particle in one dimension the Hamiltonian is kinetic energy plus potential energy. This principle is used to write an explicit partial differential equation for $\Psi(x,t)$.
+
+The one-dimensional time-dependent Schrödinger equation is
+
+$$
+i\hbar\dfrac{\partial\Psi}{\partial t} = -\dfrac{\hbar^{2}}{2m}\dfrac{\partial^{2}\Psi}{\partial x^{2}} + V\Psi
+$$
+
+where
+
+- $\Psi$ is the wavefunction.
+- $m$ is the mass.
+- $V$ is the potential energy.
+- $x$ is the position.
 - $t$ is time.
 
-</i>
+3\. When $V$ does not depend on time, stationary states satisfy an eigenvalue equation. A stationary state is a state whose probability density does not change with time. This principle is used to find the allowed energies.
 
-<i>
+The time-independent Schrödinger equation is
 
-**definition** (*Time Dependent Schrödinger Equation — Generalized*) The coordinate-independent and dimension-independent form of the fundamental law of quantum mechanics. This abstract version represents the general principle that a quantum state changes continuously and unitarily over time, governing the evolution of any quantum system—including those with multiple particles or non-spatial degrees of freedom. The general time-dependent form is:
-
-- $i\hbar \dfrac{\partial \Psi}{\partial t} = \hat{H}\Psi$
-
-where
-
-- $i$ is the imaginary unit
-- $\hbar$ is the reduced Planck constant
-- $\Psi$ is the state-vector representing the state of the system
-- $t$ is time
-- $\hat{H}$ is the Hamiltonian operator representing the total energy of the system.
-
-
-Note:
-
-- $\Psi$ is also written $|\Psi\rangle$.
-- $\Psi$ is also called the wave function.
-- the total energy is kinetic energy plus potential energy.
-</i>
-
-
-
-The **time-independent** version is a specific "eigenvalue equation" used when the potential energy $V$ does not change with time. It is used to find **permitted energy levels** and **stationary states**—states where the probability density remains constant even though the wave function carries a "time-dependent wiggle factor".
-
-
-<i>
-
-**definition** (*Schrödinger Equation — Time-Independent*) An eigenvalue equation used to determine the stationary states and quantized energy levels of a quantum system when the potential energy is independent of time. It determines the spatial part of the wave function $\psi$ and the allowed energy values $E$ that the system can possess. The generalized form is:
-
-- $\hat{H}\psi = E\psi$
+$$
+\hat{H}\psi = E\psi
+$$
 
 where
 
-- $\hat{H}$ is the Hamiltonian operator representing the total energy of the system.
-- $\psi$ is the spatial wave function.
-- $E$ is the energy of the state.
+- $\hat{H}$ is the Hamiltonian operator.
+- $\psi$ is the spatial wavefunction.
+- $E$ is the energy eigenvalue.
 
-Note:
+4\. In one dimension that eigenvalue equation is a second-order ordinary differential equation. This principle is used to solve wells, barriers, and the harmonic oscillator.
 
-- $\psi$ is lower-case psi.
-- $\psi$ is an eigenfunction of $\hat{H}$.
-- $E$ is the corresponding eigenvalue.
+The one-dimensional time-independent Schrödinger equation is
 
-</i>
+$$
+-\dfrac{\hbar^{2}}{2m}\dfrac{d^{2}\psi}{dx^{2}} + V\psi = E\psi
+$$
 
-In one dimension, this is explicitly written as:
+where
 
-- $-\dfrac{\hbar^2}{2m} \dfrac{d^2\psi}{dx^2} + V\psi = E\psi$.
+- $\psi$ is the spatial wavefunction.
+- $V$ is the potential energy.
+- $E$ is the energy.
+- $m$ is the mass.
+- $x$ is the position.
+
+Note: These principles are the generalized time-dependent Schrödinger equation, the one-dimensional time-dependent equation, the time-independent eigenvalue equation, and its one-dimensional form. $\Psi$ is also written $|\Psi\rangle$.
 
 ## References
 
-1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — Schrödinger equations as the non-relativistic quantum dynamical law. — source for the heading explanation.
+1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — Schrödinger equations as the non-relativistic quantum dynamical law.
+2. Griffiths, D. J. *Introduction to Quantum Mechanics*. Cambridge University Press, 2018. §1.2, §2.1 — time-dependent and time-independent Schrödinger equations.

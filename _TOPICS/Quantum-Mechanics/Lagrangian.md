@@ -1,24 +1,14 @@
 # Lagrangian
 
-A function that is used to encode the difference between kinetic energy and potential energy for the equations of motion.
+A function that is used to encode the difference between kinetic energy and potential energy for the equations of motion and for the phase of a quantum path.
 
-Note: Also denoted $L$.
+1\. The Lagrangian is kinetic energy minus potential energy. This principle is used to write $L$ for a particle in a potential.
 
-## Applications
+The Lagrangian is
 
-1. Supplies the integrand of the action in the principle of least action.
-2. Yields the Euler–Lagrange equations for generalized coordinates.
-3. Builds the Hamiltonian by a Legendre transform in the velocities.
-4. Enters the phase of the path integral in quantum mechanics.
-5. Extends to relativistic and field theories through generalized Lagrangians.
-
-<i>
-
-**definition [d]** (*Lagrangian*) From Park: the Lagrangian is
-
-- $L = T - V$ ,
-
-where $T$ is the kinetic energy and $V$ is the potential energy of the whole system.
+$$
+L = T - V
+$$
 
 where
 
@@ -26,42 +16,37 @@ where
 - $T$ is the kinetic energy.
 - $V$ is the potential energy.
 
-</i>
+2\. In generalized coordinates, $L$ is a function of the coordinates, the velocities, and possibly time. This principle is used to write the Euler-Lagrange equations.
 
-<i>
+The Lagrangian in generalized coordinates is
 
-**definition [d]** (*Lagrangian*) From Simmons: the function $L = T - V$ is called the Lagrangian, and in terms of generalized coordinates it has the form
-
-- $L = L\left(t,\, q_{1},\ldots,q_{m},\, \dfrac{dq_{1}}{dt},\ldots,\dfrac{dq_{m}}{dt}\right)$ .
+$$
+L = L\Bigl(t,\, q_{1},\ldots,q_{m},\, \dfrac{dq_{1}}{dt},\ldots,\dfrac{dq_{m}}{dt}\Bigr)
+$$
 
 where
 
-- $L$ is the Lagrangian.
-- $T$ is the kinetic energy.
-- $V$ is the potential energy.
-- $t$ is time.
 - $q_{1},\ldots,q_{m}$ are generalized coordinates.
-- $\dfrac{dq_{1}}{dt},\ldots,\dfrac{dq_{m}}{dt}$ are generalized velocities.
-- $m$ is the number of generalized coordinates.
+- $\dfrac{dq_{i}}{dt}$ are generalized velocities.
+- $t$ is time.
 
-</i>
+3\. The action is the time integral of $L$, and the classical path makes the action stationary. This principle is used to derive the equations of motion.
 
-<i>
+The action is
 
-**definition [d]** (*Lagrangian*) From Emam: the non-relativistic Lagrangian function is
-
-- $L\left(q_{a},\, \dfrac{dq_{a}}{dt};\, t\right) = T - V$ .
+$$
+S = \displaystyle\int_{t_{i}}^{t_{f}} L\,dt
+$$
 
 where
 
+- $S$ is the action.
 - $L$ is the Lagrangian.
-- $q_{a}$ are generalized coordinates.
-- $\dfrac{dq_{a}}{dt}$ are generalized velocities.
 - $t$ is time.
-- $T$ is the kinetic energy.
-- $V$ is the potential energy.
 
-</i>
+4\. In the path-integral formulation, each path contributes a phase $e^{iS/\hbar}$. This principle is used to compute quantum amplitudes from the same $L$ that governs classical motion.
+
+Note: These principles are $L=T-V$, the generalized-coordinate Lagrangian, stationary action, and the path-integral phase. Also denoted $L$.
 
 ## Elementary Example
 

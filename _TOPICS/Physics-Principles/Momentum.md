@@ -2,18 +2,65 @@
 
 A measure of an object's motion that is used to describe how hard it is to stop or redirect that object.
 
-Note: Heavier objects and faster objects both carry more momentum.
+1\. Linear momentum is the product of mass and velocity. It is a vector in the direction of the velocity. This principle is used to assign a single motion quantity to a body.
 
-1. Is the product of an object's mass and its velocity.
-2. Is a vector pointing in the same direction as the velocity.
-3. Changes when an impulse from a force is delivered.
-4. Is conserved globally for any isolated physical system.
-5. Relates to nonrelativistic kinetic energy through the combination of momentum and mass.
-6. Combines with energy into a relativistic four-vector.
-7. Can reside in electromagnetic fields and in propagating light.
-8. Is conserved because the laws of physics are the same under spatial translation.
-9. Is represented in quantum mechanics by a Hermitian differential operator.
-10. Corresponds in wave mechanics to how rapidly the wavefunction oscillates in space.
+The linear momentum is
+
+$$
+\mathbf{p} = m\mathbf{v}
+$$
+
+where
+
+- $\mathbf{p}$ is the momentum.
+- $m$ is the mass.
+- $\mathbf{v}$ is the velocity.
+
+2\. A force delivers an impulse equal to the change of momentum. This principle is used to compute a velocity change from a known force history.
+
+The impulse-momentum theorem is
+
+$$
+\mathbf{J} = \displaystyle\int\mathbf{F}\,dt = \Delta\mathbf{p}
+$$
+
+where
+
+- $\mathbf{J}$ is the impulse.
+- $\mathbf{F}$ is the force.
+- $t$ is time.
+- $\mathbf{p}$ is the momentum.
+
+3\. The total momentum of an isolated system is constant. An isolated system feels no net external force. This principle is used to analyze collisions.
+
+Conservation of momentum is
+
+$$
+\mathbf{F}_{\mathrm{ext}} = 0 \implies \sum_{i}\mathbf{p}_{i} = \mathrm{constant}
+$$
+
+where
+
+- $\mathbf{F}_{\mathrm{ext}}$ is the net external force.
+- $\mathbf{p}_{i}$ is the momentum of particle $i$.
+
+4\. Momentum is conserved because the laws of physics do not depend on where an experiment is done. This principle is used to identify momentum with spatial-translation symmetry.
+
+5\. In quantum mechanics momentum is represented by the operator $-i\hbar\nabla$. This principle is used to compute $\langle p\rangle$ from a wavefunction.
+
+The momentum operator is
+
+$$
+\hat{\mathbf{p}} = -i\hbar\nabla
+$$
+
+where
+
+- $\hat{\mathbf{p}}$ is the momentum operator.
+- $\hbar$ is the reduced Planck constant.
+- $\nabla$ is the gradient.
+
+Note: These principles are $\mathbf{p}=m\mathbf{v}$, the impulse-momentum theorem, conservation in an isolated system, translation symmetry, and the quantum momentum operator. Heavier objects and faster objects both carry more momentum. Electromagnetic fields and light also carry momentum. Energy and momentum combine into a relativistic four-vector.
 
 ## References
 

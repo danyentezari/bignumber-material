@@ -1,14 +1,12 @@
 # Electromagnetism
 
-Electromagnetism is the phenomenon of electric and magnetic fields, both of them being the same thing but made different by how charges move.
+Electromagnetism is the phenomenon of electric and magnetic fields, both of them being the same thing but made different by how charges move. A field is, fundamentally, a physical influence that exists throughout space.
 
 Electromagnetism is also fundamentally related to special relativity because it is independent of the reference frame.
 
 Some immediate applications of the study of electromagnetism are in electronics, optics, and spectroscopy and, mathematically, in vector calculus, differential equations, and differential geometry.
 
 ## Topics
-
-Ordered from more general to more specific:
 
 1. [Maxwell's Equations](maxwells-equations.html)
     1. [Integral Form](integral-form.html)
@@ -81,4 +79,5 @@ Ordered from more general to more specific:
 
 ## References
 
-1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — source for the heading explanation.
+1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — Maxwell's equations, Lorentz force, induction, waves, conservation, potentials, and relativistic formulation.
+2. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — electromagnetism as electric and magnetic fields of moving charges.

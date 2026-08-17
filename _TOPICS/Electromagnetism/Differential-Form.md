@@ -1,45 +1,69 @@
 # Differential Form
 
-A local differential statement of Maxwell's equations that is used to relate the fields pointwise to charge and current densities.
+A local differential statement of Maxwell's equations that is used to relate the fields pointwise to charge and current densities, where a local statement is an equation that holds at each point in space.
 
-Note: Also called the differential form of Maxwell's equations.
+1\. The divergence of the electric field at a point is proportional to the charge density at that point. Divergence is a measure of how much a vector field spreads from a point. Charge density is charge per unit volume. This principle is used to find the electric field of a given charge distribution.
 
-<i>
+The differential form of Gauss's law is
 
-**definition [d]** (*Differential Form*) From Griffiths: Maxwell's equations in differential form are
-
-- $\nabla\cdot\mathbf{E} = \dfrac{\rho}{\epsilon_{0}}$ ,
-- $\nabla\cdot\mathbf{B} = 0$ ,
-- $\nabla\times\mathbf{E} = -\dfrac{\partial\mathbf{B}}{\partial t}$ ,
-- $\nabla\times\mathbf{B} = \mu_{0}\mathbf{J} + \mu_{0}\epsilon_{0}\dfrac{\partial\mathbf{E}}{\partial t}$ .
+$$
+\nabla\cdot\mathbf{E} = \dfrac{\rho}{\epsilon_{0}}
+$$
 
 where
 
-- $\rho$ is the charge density.
-- $\mathbf{J}$ is the current density.
-- $\mathbf{E}$ and $\mathbf{B}$ are the electric and magnetic fields.
+- $\nabla\cdot$ is the divergence.
+- $\mathbf{E}$ is the electric field.
+- $\rho$ is the volume charge density.
+- $\epsilon_{0}$ is the permittivity of free space.
 
-</i>
+2\. The divergence of the magnetic field is zero at every point. This principle is used to constrain magnetic fields so they never begin or end at a point source.
 
-<i>
+The differential form of Gauss's law for magnetism is
 
-**definition [d]** (*Differential Form*) From Knight: the differential forms follow from the integral laws by the divergence and Stokes theorems, yielding local relations between fields and sources.
-
-where
-
-- $\rho$ and $\mathbf{J}$ are the local sources.
-
-</i>
-
-<i>
-
-**definition [d]** (*Differential Form*) From Susskind and Friedman: the differential Maxwell equations express how the divergence and curl of the fields are determined by charge density, current density, and the time derivatives of the fields.
+$$
+\nabla\cdot\mathbf{B} = 0
+$$
 
 where
 
-- the equations hold at each spacetime point.
+- $\nabla\cdot$ is the divergence.
+- $\mathbf{B}$ is the magnetic field.
 
-</i>
+3\. The curl of the electric field equals the negative time derivative of the magnetic field. Curl is a measure of the local swirl of a vector field. This principle is used to compute the electric field induced by a changing magnetic field.
+
+The differential form of Faraday's law is
+
+$$
+\nabla\times\mathbf{E} = -\dfrac{\partial\mathbf{B}}{\partial t}
+$$
+
+where
+
+- $\nabla\times$ is the curl.
+- $\mathbf{E}$ is the electric field.
+- $\mathbf{B}$ is the magnetic field.
+- $t$ is time.
+
+4\. The curl of the magnetic field is sourced by current density and by a changing electric field. Current density is charge flow per unit area. This principle is used to compute magnetic fields of currents and of changing electric fields.
+
+The differential form of the Ampère-Maxwell law is
+
+$$
+\nabla\times\mathbf{B} = \mu_{0}\mathbf{J} + \mu_{0}\epsilon_{0}\dfrac{\partial\mathbf{E}}{\partial t}
+$$
+
+where
+
+- $\nabla\times$ is the curl.
+- $\mathbf{B}$ is the magnetic field.
+- $\mu_{0}$ is the permeability of free space.
+- $\mathbf{J}$ is the volume current density.
+- $\epsilon_{0}$ is the permittivity of free space.
+- $\mathbf{E}$ is the electric field.
+- $t$ is time.
+
+Note: These principles are the differential form of Gauss's law, Gauss's law for magnetism, Faraday's law, and the Ampère-Maxwell law. Also called the differential form of Maxwell's equations.
 
 ## Elementary Example
 
@@ -69,6 +93,6 @@ where
 
 ## References
 
-1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — differential Maxwell equations.
+1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. §2.2.4, §5.3.2, §7.2.1, §7.3.3 — differential Maxwell equations.
 2. Knight, R. D. *Physics for Scientists and Engineers*. Pearson, 2023. — differential form via divergence and Stokes theorems.
 3. Susskind, L., & Friedman, A. *Special Relativity and Classical Field Theory*. Basic Books, 2017. — differential Maxwell equations.

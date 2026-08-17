@@ -2,42 +2,52 @@
 
 The momentum carried by electromagnetic fields that is used to account for mechanical momentum changes when fields interact with matter.
 
-Note: Also related to the Poynting vector through momentum density $\epsilon_{0}\mathbf{E}\times\mathbf{B}$.
+1\. The electromagnetic momentum density is proportional to $\mathbf{E}\times\mathbf{B}$. This principle is used to assign a local momentum to the fields.
 
-<i>
+The electromagnetic momentum density is
 
-**definition [d]** (*Electromagnetic Momentum*) From Griffiths: the electromagnetic momentum density is
-
-- $\mathbf{g} = \epsilon_{0}\mathbf{E}\times\mathbf{B} = \dfrac{1}{c^{2}}\mathbf{S}$ ,
-
-where $\mathbf{S}$ is the Poynting vector.
+$$
+\mathbf{g} = \epsilon_{0}\mathbf{E}\times\mathbf{B} = \dfrac{1}{c^{2}}\mathbf{S}
+$$
 
 where
 
 - $\mathbf{g}$ is the field momentum density.
-- $\mathbf{S}$ is the energy flux.
+- $\mathbf{E}$ is the electric field.
+- $\mathbf{B}$ is the magnetic field.
+- $\mathbf{S}$ is the Poynting vector.
+- $\epsilon_{0}$ is the permittivity of free space.
+- $c$ is the speed of light.
 
-</i>
+2\. The total field momentum is the integral of $\mathbf{g}$ over space. This principle is used to include field momentum in the conservation law for an isolated system.
 
-<i>
+The total field momentum is
 
-**definition [d]** (*Electromagnetic Momentum*) From Knight: light and electromagnetic fields carry momentum as well as energy, so radiation can exert pressure on absorbers and reflectors.
-
-where
-
-- radiation pressure is momentum transfer per unit time per unit area.
-
-</i>
-
-<i>
-
-**definition [d]** (*Electromagnetic Momentum*) From Susskind and Friedman: the electromagnetic field contributes to the total momentum of a system through its field momentum, consistent with conservation when matter and fields exchange momentum.
+$$
+\mathbf{P}_{\mathrm{field}} = \displaystyle\int\mathbf{g}\,d\tau
+$$
 
 where
 
-- mechanical plus field momentum is conserved in isolated systems.
+- $\mathbf{P}_{\mathrm{field}}$ is the total electromagnetic momentum.
+- $\mathbf{g}$ is the momentum density.
+- $d\tau$ is the volume element.
 
-</i>
+3\. Radiation pressure is the momentum delivered per unit time per unit area. This principle is used to compute the force of a wave on an absorber or reflector.
+
+The radiation pressure on a perfect absorber is
+
+$$
+P_{\mathrm{rad}} = \dfrac{S}{c}
+$$
+
+where
+
+- $P_{\mathrm{rad}}$ is the radiation pressure.
+- $S$ is the magnitude of the Poynting vector.
+- $c$ is the speed of light.
+
+Note: These principles are the electromagnetic momentum density, the total field momentum, and radiation pressure.
 
 ## Elementary Example
 

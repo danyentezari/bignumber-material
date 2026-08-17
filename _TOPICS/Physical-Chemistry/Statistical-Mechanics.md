@@ -2,11 +2,69 @@
 
 A mathematical bridge that is used to deduce the macroscopic properties of bulk matter from the microscopic quantum properties of its individual molecules.
 
-1. Everyday samples of matter hold enormous numbers of atoms or molecules.
-2. Tracking every particle's path is impossible, so the subject does not try to follow individuals.
-3. Bulk properties such as temperature and pressure are averages over the whole molecular crowd.
-4. Entropy is tied to multiplicity: how many different microscopic arrangements share the same overall state.
-5. Statistical mechanics explains why the macroscopic laws of thermodynamics hold by linking molecular energy levels to bulk measurements.
+1\. Everyday samples hold so many molecules that individual paths cannot be followed. A macroscopic property is then an average over the crowd of molecular states. This principle is used to replace an impossible mechanical description by a probability description.
+
+2\. In thermal equilibrium the probability of a molecular state falls exponentially with its energy. The Boltzmann factor is that exponential weight. This principle is used to compute the fraction of molecules in each energy level.
+
+The Boltzmann distribution is
+
+$$
+p_{i} = \dfrac{e^{-E_{i}/kT}}{Z}
+$$
+
+where
+
+- $p_{i}$ is the probability of state $i$.
+- $E_{i}$ is the energy of state $i$.
+- $k$ is Boltzmann's constant.
+- $T$ is the absolute temperature.
+- $Z$ is the partition function.
+
+3\. The partition function is the sum of the Boltzmann factors of all states. This principle is used to generate the thermodynamic functions from one molecular sum.
+
+The molecular partition function is
+
+$$
+Z = \sum_{i} e^{-E_{i}/kT}
+$$
+
+where
+
+- $Z$ is the partition function.
+- $E_{i}$ is the energy of state $i$.
+- $k$ is Boltzmann's constant.
+- $T$ is the absolute temperature.
+
+4\. Entropy measures how many microscopic arrangements share the same overall state. Multiplicity is that number of arrangements. This principle is used to give entropy a molecular meaning and to recover the Second Law.
+
+The Boltzmann entropy is
+
+$$
+S = k\ln W
+$$
+
+where
+
+- $S$ is the entropy.
+- $k$ is Boltzmann's constant.
+- $W$ is the multiplicity of the macroscopic state.
+
+5\. The Helmholtz energy of a canonical system is determined by the partition function. A canonical system is a closed system in contact with a heat bath at fixed temperature. This principle is used to compute free energies and equilibrium constants from molecular levels.
+
+The Helmholtz energy is
+
+$$
+F = -kT\ln Z
+$$
+
+where
+
+- $F$ is the Helmholtz energy.
+- $k$ is Boltzmann's constant.
+- $T$ is the absolute temperature.
+- $Z$ is the partition function.
+
+Note: These principles are the ensemble average, the Boltzmann distribution, the partition function, the Boltzmann entropy, and the Helmholtz energy from $Z$.
 
 ## References
 

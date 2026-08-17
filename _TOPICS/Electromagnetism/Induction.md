@@ -1,37 +1,54 @@
 # Induction
 
-A process in which a changing magnetic flux through a loop produces an electromotive force that is used to generate electric current from magnetic change.
+A process in which a changing magnetic flux through a loop produces an electromotive force that is used to generate electric current from magnetic change, where magnetic flux is the surface integral of $\mathbf{B}$.
 
-Note: Also called electromagnetic induction. Also called Faraday induction.
+1\. The electromotive force around a loop equals minus the rate of change of magnetic flux through any surface bounded by the loop. This principle is used to compute the induced emf from a known flux history.
 
-<i>
+Faraday's law in integral form is
 
-**definition [d]** (*Electromagnetic Induction = Faraday’s Law*) From Needham: if the surface $S$ spans a loop of wire $\partial S$, and the field lines of a varying magnetic field pass through it, then an electromotive force is induced in the loop that is equal to the negative of the rate of change of the magnetic flux through $S$:
-
-- $\displaystyle \oint_{\partial S} \mathbf{E}\cdot d\mathbf{r} = -\dfrac{\partial}{\partial t}\iint_{S} \mathbf{B}\cdot\hat{\mathbf{n}}\, dA$ .
+$$
+\oint_{\partial S} \mathbf{E}\cdot d\mathbf{r} = -\dfrac{\partial}{\partial t}\displaystyle\iint_{S} \mathbf{B}\cdot\hat{\mathbf{n}}\, dA
+$$
 
 where
 
-- $S$ is a surface spanning the wire loop $\partial S$.
+- $S$ is a surface spanning the loop $\partial S$.
 - $\mathbf{E}$ is the electric field along the loop.
 - $\mathbf{B}$ is the magnetic field.
 - $\hat{\mathbf{n}}$ is the unit normal to $S$.
+- $t$ is time.
 
-</i>
+2\. In differential form a changing magnetic field produces a circulating electric field. This principle is used to write Faraday's law as a local Maxwell equation.
 
-<i>
+Faraday's law in differential form is
 
-**definition [d]** (*Faraday’s Law*) From Griffiths: converted to differential form by Stokes’s theorem,
-
-- $\nabla \times \mathbf{E} = -\dfrac{\partial\mathbf{B}}{\partial t}$ .
+$$
+\nabla \times \mathbf{E} = -\dfrac{\partial\mathbf{B}}{\partial t}
+$$
 
 where
 
+- $\nabla\times$ is the curl.
 - $\mathbf{E}$ is the electric field.
 - $\mathbf{B}$ is the magnetic field.
 - $t$ is time.
 
-</i>
+3\. For a loop of fixed area in a uniform field the emf is minus the area times the rate of change of $B$. This principle is used to compute the emf of a loop in a ramping laboratory field.
+
+The emf of a fixed loop in a uniform field is
+
+$$
+\mathcal{E} = -A\dfrac{dB}{dt}
+$$
+
+where
+
+- $\mathcal{E}$ is the induced emf.
+- $A$ is the area of the loop.
+- $B$ is the magnetic field through the loop.
+- $t$ is time.
+
+Note: These principles are Faraday's law in integral and differential form and the emf of a fixed loop. Also called electromagnetic induction. Also called Faraday induction.
 
 ## Elementary Example
 

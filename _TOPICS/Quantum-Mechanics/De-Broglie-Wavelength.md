@@ -1,26 +1,28 @@
 # de Broglie Wavelength
 
-The wavelength associated with a moving material particle, equal to Planck's constant divided by the particle's momentum, that is used to assign a wavelength to a particle from its momentum.
+A wavelength associated with a moving material particle that is used to assign a wave to a particle from its momentum.
 
-Note: Also called the de Broglie relation.
+1\. The de Broglie wavelength is Planck's constant divided by the momentum. This principle is used to compute the wavelength of an electron or any other massive particle.
 
-<i>
+The de Broglie relation is
 
-**definition [d]** (*de Broglie Wavelength*) From Knight: if a material particle of momentum $p = mv$ has a wave-like nature, then its wavelength must be given by
-
-- $\lambda = \dfrac{h}{p} = \dfrac{h}{mv}$ ,
-
-where $h$ is Planck’s constant. This is called the de Broglie wavelength.
+$$
+\lambda = \dfrac{h}{p} = \dfrac{h}{mv}
+$$
 
 where
 
 - $\lambda$ is the de Broglie wavelength.
+- $h$ is Planck's constant.
 - $p$ is the momentum of the particle.
 - $m$ is the mass of the particle.
 - $v$ is the speed of the particle.
-- $h$ is Planck’s constant.
 
-</i>
+2\. Larger momentum gives a shorter wavelength. This principle is used to explain why everyday objects show no wave behavior: their wavelengths are far smaller than any slit.
+
+3\. When $\lambda$ is comparable to the size of an aperture, the particle diffracts. This principle is used to design electron diffraction and neutron-interference experiments.
+
+Note: These principles are the de Broglie relation, the inverse relation of wavelength to momentum, and the condition for observable diffraction. Also called the de Broglie relation.
 
 ## Elementary Example
 

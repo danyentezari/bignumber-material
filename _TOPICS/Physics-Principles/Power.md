@@ -2,18 +2,65 @@
 
 A measure of how quickly energy is transferred or transformed that is used to compare fast and slow energy changes.
 
-Note: A large energy change done slowly can have small power. A small energy change done quickly can have large power.
+1\. Power is the time rate of work. This principle is used to convert a work interval into an instantaneous rate.
 
-1. Is the rate of change of work with respect to time.
-2. Equals the scalar product of force and velocity.
-3. Is measured in watts, one joule per second.
-4. For rotation equals the product of torque and angular velocity.
-5. Is the rate at which energy is used, transferred, or transformed.
-6. In circuits equals the product of current and voltage drop.
-7. For unrestricted fluid flow can scale with the cube of the fluid speed.
-8. Forms the time component of the relativistic four-force.
-9. Is dissipated by damping at a rate that can scale with velocity squared.
-10. Averages to zero over a cycle for ideal capacitors and inductors in AC circuits.
+The definition of power is
+
+$$
+P = \dfrac{dW}{dt}
+$$
+
+where
+
+- $P$ is the power.
+- $W$ is the work.
+- $t$ is time.
+
+2\. Instantaneous mechanical power is the scalar product of force and velocity. This principle is used to compute the power delivered by a known force.
+
+The mechanical power is
+
+$$
+P = \mathbf{F}\cdot\mathbf{v}
+$$
+
+where
+
+- $P$ is the power.
+- $\mathbf{F}$ is the force.
+- $\mathbf{v}$ is the velocity.
+
+3\. The SI unit of power is the watt, one joule per second. This principle is used to report laboratory and engineering rates.
+
+4\. For rotation the power is torque times angular velocity. This principle is used to compute the power of a shaft or a motor.
+
+The rotational power is
+
+$$
+P = \boldsymbol{\tau}\cdot\boldsymbol{\omega}
+$$
+
+where
+
+- $P$ is the power.
+- $\boldsymbol{\tau}$ is the torque.
+- $\boldsymbol{\omega}$ is the angular velocity.
+
+5\. In a circuit the electrical power is the product of current and voltage drop. This principle is used to compute heating in a resistor.
+
+The electrical power is
+
+$$
+P = IV
+$$
+
+where
+
+- $P$ is the power.
+- $I$ is the current.
+- $V$ is the voltage drop.
+
+Note: These principles are power as $dW/dt$, $\mathbf{F}\cdot\mathbf{v}$, the watt, rotational power, and electrical power $IV$. A large energy change done slowly can have small power. A small energy change done quickly can have large power. Ideal capacitors and inductors average zero power over an AC cycle.
 
 ## References
 

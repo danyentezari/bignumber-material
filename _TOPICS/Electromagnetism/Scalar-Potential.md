@@ -2,58 +2,67 @@
 
 A scalar field that is used to express the electric field by differentiation, alone in electrostatics and together with the vector potential in electrodynamics.
 
-Note: Also called the electric potential. Also denoted $V$. Also denoted $\phi$.
+1\. The electrostatic potential at a point is minus the line integral of the electric field from a chosen reference point. This principle is used to assign a number $V$ that depends only on the field point.
 
-<i>
+The electrostatic potential is
 
-**definition [d]** (*Scalar Potential = Electric Potential*) From Griffiths: here $O$ is some standard reference point on which we have agreed beforehand; $V$ then depends only on the point $\mathbf{r}$. It is called the electric potential.
-
-- $V(\mathbf{r}) = -\displaystyle\int_{O}^{\mathbf{r}}\mathbf{E}\cdot d\mathbf{l}$ .
-
-In the static case this implies
-
-- $\mathbf{E} = -\nabla V$ .
-
-In the time-dependent case, with vector potential $\mathbf{A}$,
-
-- $\mathbf{E} = -\nabla V - \dfrac{\partial\mathbf{A}}{\partial t}$ .
+$$
+V(\mathbf{r}) = -\displaystyle\int_{O}^{\mathbf{r}}\mathbf{E}\cdot d\mathbf{l}
+$$
 
 where
 
 - $V$ is the electric scalar potential.
+- $O$ is the reference point.
+- $\mathbf{r}$ is the field point.
 - $\mathbf{E}$ is the electric field.
-- $O$ is a chosen reference point.
-- $\mathbf{A}$ is the magnetic vector potential.
+- $d\mathbf{l}$ is a displacement along the path.
 
-</i>
+2\. In the static case the electric field is minus the gradient of the scalar potential. This principle is used to recover $\mathbf{E}$ from $V$.
 
-<i>
+The static field from the potential is
 
-**definition [d]** (*Scalar Potential*) From Emam: the potentials $V$ and $\mathbf{A}$ can be viewed as components of the potential $4$-vector
-
-- $A^{\alpha} = \left(\dfrac{V}{c},\, \mathbf{A}\right)$ ,
-
-so the time component is the electric scalar potential $V$.
+$$
+\mathbf{E} = -\nabla V
+$$
 
 where
 
+- $\mathbf{E}$ is the electric field.
+- $\nabla$ is the gradient.
+- $V$ is the electric scalar potential.
+
+3\. In the time-dependent case the electric field also includes minus the time derivative of the vector potential. This principle is used to reconstruct $\mathbf{E}$ from both potentials.
+
+The electrodynamic field from the potentials is
+
+$$
+\mathbf{E} = -\nabla V - \dfrac{\partial\mathbf{A}}{\partial t}
+$$
+
+where
+
+- $\mathbf{E}$ is the electric field.
 - $V$ is the electric scalar potential.
 - $\mathbf{A}$ is the magnetic vector potential.
-- $A^{\alpha}$ is the potential $4$-vector.
+- $t$ is time.
+
+4\. The scalar potential is the time part of the electromagnetic four-potential. This principle is used to write $V$ and $\mathbf{A}$ as one spacetime vector.
+
+The four-potential is
+
+$$
+A^{\alpha} = \Bigl(\dfrac{V}{c},\,\mathbf{A}\Bigr)
+$$
+
+where
+
+- $A^{\alpha}$ is the four-potential.
+- $V$ is the electric scalar potential.
+- $\mathbf{A}$ is the magnetic vector potential.
 - $c$ is the speed of light.
 
-</i>
-
-<i>
-
-**definition [d]** (*Scalar Function in Gauge Freedom*) From Susskind and Friedman: gauge invariance has to do with changes that you can make to the vector potential without affecting the physics. Gauge invariance makes a bold claim: dream up any scalar function you like, add its gradient to the vector potential, and the equations of motion stay exactly the same.
-
-where
-
-- the scalar function is an arbitrary gauge function.
-- its gradient may be added to the vector potential without changing the physics.
-
-</i>
+Note: These principles are the line-integral definition of $V$, the static gradient relation, the electrodynamic reconstruction of $\mathbf{E}$, and the four-potential. Also called the electric potential. Also denoted $\phi$.
 
 ## Elementary Example
 

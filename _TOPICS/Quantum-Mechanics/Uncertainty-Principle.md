@@ -2,43 +2,13 @@
 
 An inequality relating position and momentum spreads that is used to bound how sharply both can be known in the same quantum state.
 
-Note: Also called the Heisenberg uncertainty principle. Also called the position-momentum uncertainty relation.
+1\. It is impossible to prepare a particle in a state in which position and momentum along one axis are both exactly known. This principle is used to replace a classical phase-space point by a minimum product of spreads.
 
-<i>
+The Heisenberg uncertainty relation is
 
-**definition [d]** (*Uncertainty Principle*) From Hall: the famous Heisenberg uncertainty principle states that
-
-- $(\Delta_{\psi} X)(\Delta_{\psi} P) \geq \dfrac{\hbar}{2}$ ,
-
-for all $\psi$ for which $\Delta_{\psi} X$ and $\Delta_{\psi} P$ are defined.
-
-where
-
-- $\Delta_{\psi} X$ is the uncertainty in position in the state $\psi$.
-- $\Delta_{\psi} P$ is the uncertainty in momentum in the state $\psi$.
-- $\hbar$ is the reduced Planck constant.
-
-</i>
-
-<i>
-
-**definition [d]** (*Position-Momentum Uncertainty Relation*) From Sakurai: the general formalism can be applied here to obtain the position-momentum uncertainty relation of W. Heisenberg:
-
-- $\langle(\Delta x)^{2}\rangle\langle(\Delta p_{x})^{2}\rangle \geq \dfrac{\hbar^{2}}{4}$ .
-
-where
-
-- $\langle(\Delta x)^{2}\rangle$ is the mean-square deviation in position.
-- $\langle(\Delta p_{x})^{2}\rangle$ is the mean-square deviation in $x$-momentum.
-- $\hbar$ is the reduced Planck constant.
-
-</i>
-
-<i>
-
-**definition [d]** (*Uncertainty Principle*) From Shankar: it is impossible to prepare a particle in a state in which its momentum and position along one axis are exactly known. If $\Delta x$ and $\Delta p$ are the precisely defined uncertainties,
-
-- $\Delta x\, \Delta p \geq \dfrac{\hbar}{2}$ .
+$$
+\Delta x\,\Delta p \geq \dfrac{\hbar}{2}
+$$
 
 where
 
@@ -46,7 +16,24 @@ where
 - $\Delta p$ is the uncertainty in momentum.
 - $\hbar$ is the reduced Planck constant.
 
-</i>
+2\. The same bound is written in terms of mean-square deviations. This principle is used to compute the product of variances from expectation values.
+
+The variance form of the uncertainty relation is
+
+$$
+\langle(\Delta x)^{2}\rangle\langle(\Delta p_{x})^{2}\rangle \geq \dfrac{\hbar^{2}}{4}
+$$
+
+where
+
+- $\langle(\Delta x)^{2}\rangle$ is the mean-square deviation in position.
+- $\langle(\Delta p_{x})^{2}\rangle$ is the mean-square deviation in $x$-momentum.
+
+3\. A Gaussian wave packet saturates the bound. This principle is used to identify the minimum-uncertainty state.
+
+4\. A tighter localization in $x$ forces a larger spread in $p$. This principle is used to explain diffraction of a tightly collimated beam.
+
+Note: These principles are the Heisenberg relation, the variance form, the Gaussian minimum-uncertainty packet, and the tradeoff of localization. Also called the Heisenberg uncertainty principle. Also called the position-momentum uncertainty relation.
 
 ## Elementary Example
 

@@ -1,32 +1,38 @@
 # Operators
 
-A linear mapping on a Hilbert space that is used to represent a physical observable acting on quantum states.
+A linear mapping on a Hilbert space that is used to represent a physical observable acting on quantum states, where a Hilbert space is a complete inner-product space of states.
 
-Note: Also called quantum operators. Observables of interest are represented by Hermitian operators.
+1\. Each classical real function on phase space is associated with a self-adjoint operator on the quantum Hilbert space. A self-adjoint operator is an operator equal to its adjoint. This principle is used to promote $x$ and $p$ to $\hat{x}$ and $\hat{p}$.
 
-<i>
+2\. Observables act on kets. A Hermitian operator has real eigenvalues. This principle is used to identify measured values with those eigenvalues.
 
-**definition [d]** (*Operators*) From Hall: to each real-valued function $f$ on the classical phase space there is associated a self-adjoint operator $\hat{f}$ on the quantum Hilbert space.
+3\. The expectation value of an operator $A$ in a normalized state is $\langle A\rangle=\langle\alpha|A|\alpha\rangle$. This principle is used to compute the mean of many measurements.
 
-where
+The expectation value is
 
-- $f$ is a classical observable as a real-valued function on phase space.
-- $\hat{f}$ is the corresponding self-adjoint operator.
-- the quantum Hilbert space is the space of states.
-
-</i>
-
-<i>
-
-**definition [d]** (*Operators*) From Sakurai: observables like momentum and spin components are to be represented by operators that can act on kets. We can consider a more general class of operators that act on kets; they will be denoted by $X$, $Y$, and so forth, while $A$, $B$, and so on will be used for a restrictive class of operators that correspond to observables. Let us consider the eigenkets and eigenvalues of a Hermitian operator $A$. We use the symbol $A$, reserved earlier for an observable, because in quantum mechanics Hermitian operators of interest quite often turn out to be the operators representing some physical observables. We expect on physical grounds that an observable has real eigenvalues. The theorem just proved guarantees the reality of eigenvalues whenever the operator is Hermitian. That is why we talk about Hermitian observables in quantum mechanics.
+$$
+\langle A\rangle = \langle\alpha|A|\alpha\rangle
+$$
 
 where
 
-- an operator acts on kets.
-- $A$ denotes an operator corresponding to an observable.
-- a Hermitian operator has real eigenvalues.
+- $A$ is an observable operator.
+- $|\alpha\rangle$ is a normalized state.
 
-</i>
+4\. In the position representation the position operator multiplies by $x$ and the momentum operator differentiates. This principle is used to write explicit operators on wavefunctions.
+
+The position and momentum operators are
+
+$$
+(\hat{x}\psi)(x) = x\psi(x),\qquad (\hat{p}\psi)(x) = -i\hbar\dfrac{d\psi}{dx}
+$$
+
+where
+
+- $\psi$ is a wavefunction.
+- $\hbar$ is the reduced Planck constant.
+
+Note: These principles are the quantization map to self-adjoint operators, Hermitian observables, expectation values, and the position-representation operators. Also called quantum operators.
 
 ## Elementary Example
 

@@ -2,43 +2,41 @@
 
 A change of the electromagnetic potentials that leaves the physical fields unchanged that is used to exploit freedom in choosing $V$ and $\mathbf{A}$.
 
-Note: Also called a gauge transformation of the potentials. Closely related to [Gauge](gauge.html).
+1\. Adding the gradient of a scalar to $\mathbf{A}$ and subtracting the time derivative of that scalar from $V$ leaves $\mathbf{E}$ and $\mathbf{B}$ unchanged. This principle is used to pass from one allowed pair of potentials to another.
 
-<i>
+A gauge transformation is
 
-**definition [d]** (*Gauge Transformations*) From Griffiths: for any scalar function $\lambda(\mathbf{r}, t)$,
+$$
+\mathbf{A}' = \mathbf{A} + \nabla\lambda
+$$
 
-- $\mathbf{A}' = \mathbf{A} + \nabla\lambda$ ,
-- $V' = V - \dfrac{\partial\lambda}{\partial t}$
-
-are gauge transformations; $\mathbf{E}$ and $\mathbf{B}$ are unchanged.
-
-where
-
-- $\lambda$ is an arbitrary scalar function.
-- $V$ and $\mathbf{A}$ are the potentials.
-
-</i>
-
-<i>
-
-**definition [d]** (*Gauge Transformations*) From Susskind and Friedman: gauge invariance has to do with changes that you can make to the vector potential without affecting the physics. Dream up any scalar function you like, add its gradient to the vector potential, and the equations of motion stay exactly the same.
+$$
+V' = V - \dfrac{\partial\lambda}{\partial t}
+$$
 
 where
 
-- the scalar function is the gauge function.
+- $\lambda$ is an arbitrary scalar function of position and time.
+- $V$ and $\mathbf{A}$ are the original potentials.
+- $V'$ and $\mathbf{A}'$ are the new potentials.
+- $t$ is time.
 
-</i>
+2\. In magnetostatics the curl of a gradient vanishes, so $\mathbf{B}$ is automatically invariant. This principle is used to check the transformation on $\mathbf{B}$ alone.
 
-<i>
+The invariance of $\mathbf{B}$ is
 
-**definition [d]** (*Gauge Transformations*) From Frankel: a local change of frame in the fibers of a bundle is called in physics a gauge transformation.
+$$
+\mathbf{B}' = \nabla\times\mathbf{A}' = \nabla\times\mathbf{A} = \mathbf{B}
+$$
 
 where
 
-- gauge transformations change potentials without changing field strengths.
+- $\mathbf{B}$ is the magnetic field.
+- $\mathbf{A}$ is the vector potential.
 
-</i>
+3\. The same freedom is a local change of frame in the fibers of a bundle. A bundle is a space that assigns an internal space to each point of spacetime. This principle is used to identify the electromagnetic gauge transformation with the geometric one.
+
+Note: These principles are the gauge transformation of $V$ and $\mathbf{A}$, the invariance of $\mathbf{B}$, and the geometric reading as a change of fiber frame. Also called a gauge transformation of the potentials.
 
 ## Elementary Example
 

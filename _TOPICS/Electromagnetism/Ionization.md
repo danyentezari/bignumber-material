@@ -1,21 +1,37 @@
 # Ionization
 
-A process of removing an electron from an atom that is used to create a positively charged ion from a previously neutral atom.
+A process of removing an electron from an atom that is used to create a positively charged ion from a previously neutral atom, where an ion is an atom that carries a net charge.
 
-<i>
+1\. Removing one electron of charge $-e$ from a neutral atom leaves a positive ion of charge $+e$. The elementary charge is the magnitude of the charge of the electron. This principle is used to assign the charge of a singly ionized atom.
 
-**definition [d]** (*Ionization*) From Knight: the process of removing an electron from the electron cloud of an atom is called ionization. The resulting ion has charge
+The charge after one-electron ionization is
 
-- $q = +e$
-
-when one electron of charge $-e$ is removed from a neutral atom.
+$$
+q = +e
+$$
 
 where
 
+- $q$ is the charge of the positive ion.
 - $e$ is the elementary charge.
-- $q$ is the charge of the positive ion after removal of one electron.
 
-</i>
+2\. Removing $n$ electrons from a neutral atom yields charge $+ne$. This principle is used to describe multiply ionized atoms.
+
+The charge after removing $n$ electrons is
+
+$$
+q = +ne
+$$
+
+where
+
+- $q$ is the charge of the ion.
+- $n$ is the number of electrons removed.
+- $e$ is the elementary charge.
+
+3\. The removed electron carries charge $-e$ and is free of the atom. This principle is used to count both the ion and the free electron in a charge balance.
+
+Note: These principles are single ionization, multiple ionization, and charge balance of the freed electron.
 
 ## Elementary Example
 

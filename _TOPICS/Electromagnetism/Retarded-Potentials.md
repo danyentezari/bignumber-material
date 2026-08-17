@@ -1,44 +1,53 @@
 # Retarded Potentials
 
-Potentials evaluated at the retarded time that is used to express the electromagnetic response of sources at the earlier time when signals left them.
+Potentials evaluated at the retarded time that are used to express the electromagnetic response of sources at the earlier time when signals left them, where retarded time is the emission time at a source point.
 
-Note: Also called retarded potentials for $V$ and $\mathbf{A}$.
+1\. Electromagnetic influences propagate at the speed of light, so the potentials at a field point depend on the sources at earlier times. This principle is used to build causality into the solution of Maxwell's equations.
 
-<i>
+The retarded time is
 
-**definition [d]** (*Retarded Potentials*) From Griffiths: the retarded potentials are
-
-- $V(\mathbf{r}, t) = \dfrac{1}{4\pi\epsilon_{0}}\displaystyle\int\dfrac{\rho(\mathbf{r}', t_{r})}{|\mathbf{r}-\mathbf{r}'|}\,d\tau'$ ,
-- $\mathbf{A}(\mathbf{r}, t) = \dfrac{\mu_{0}}{4\pi}\displaystyle\int\dfrac{\mathbf{J}(\mathbf{r}', t_{r})}{|\mathbf{r}-\mathbf{r}'|}\,d\tau'$ ,
-
-where the retarded time is $t_{r} = t - |\mathbf{r}-\mathbf{r}'|/c$.
+$$
+t_{r} = t - \dfrac{|\mathbf{r}-\mathbf{r}'|}{c}
+$$
 
 where
 
-- $\rho$ and $\mathbf{J}$ are evaluated at $t_{r}$.
+- $t_{r}$ is the retarded time.
+- $t$ is the observation time.
+- $\mathbf{r}$ is the field point.
+- $\mathbf{r}'$ is the source point.
 - $c$ is the speed of light.
 
-</i>
+2\. The retarded scalar potential is the Coulomb integral of the charge density at the retarded time. This principle is used to compute $V$ of a time-dependent charge distribution.
 
-<i>
+The retarded scalar potential is
 
-**definition [d]** (*Retarded Time*) From Griffiths: the retarded time is the time at which a signal traveling at speed $c$ from the source point must have left in order to arrive at the field point at time $t$.
-
-where
-
-- $t_{r} = t - R/c$ with $R = |\mathbf{r}-\mathbf{r}'|$.
-
-</i>
-
-<i>
-
-**definition [d]** (*Retarded Potentials*) From Knight: electromagnetic influences propagate at the speed of light, so potentials at a point depend on the sources at earlier retarded times.
+$$
+V(\mathbf{r}, t) = \dfrac{1}{4\pi\epsilon_{0}}\displaystyle\int\dfrac{\rho(\mathbf{r}', t_{r})}{|\mathbf{r}-\mathbf{r}'|}\,d\tau'
+$$
 
 where
 
-- causality is built into the retarded solution.
+- $V$ is the scalar potential.
+- $\rho$ is the charge density evaluated at $t_{r}$.
+- $\epsilon_{0}$ is the permittivity of free space.
+- $d\tau'$ is the volume element.
 
-</i>
+3\. The retarded vector potential is the corresponding integral of the current density. This principle is used to compute $\mathbf{A}$ of a time-dependent current.
+
+The retarded vector potential is
+
+$$
+\mathbf{A}(\mathbf{r}, t) = \dfrac{\mu_{0}}{4\pi}\displaystyle\int\dfrac{\mathbf{J}(\mathbf{r}', t_{r})}{|\mathbf{r}-\mathbf{r}'|}\,d\tau'
+$$
+
+where
+
+- $\mathbf{A}$ is the vector potential.
+- $\mathbf{J}$ is the current density evaluated at $t_{r}$.
+- $\mu_{0}$ is the permeability of free space.
+
+Note: These principles are retarded time, the retarded scalar potential, and the retarded vector potential. Also called retarded potentials for $V$ and $\mathbf{A}$.
 
 ## Elementary Example
 

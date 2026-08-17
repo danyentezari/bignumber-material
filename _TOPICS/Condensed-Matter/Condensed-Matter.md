@@ -1,10 +1,12 @@
 # Condensed Matter
 
-Condensed matter physics is the field of physics that deals with the macroscopic and microscopic physical properties of matter, specifically the condensed phases that arise when the number of constituents is extremely large and the interactions between them are strong. The most familiar examples are solids and liquids.
+Condensed matter physics is the phenomenon of macroscopic and microscopic physical properties of matter that emerge from the strong interactions of an extremely large number of constituents.
 
-Solid-state physics is the part of condensed matter that tries to understand the behavior of bulk matter in terms of the laws of atomic behavior.
+A constituent is a particle of matter: an atom or an electron.
 
-We have this section as a foundation for materials, semiconductors, and many-body quantum systems, and for its close ties to quantum mechanics, statistical mechanics, and electromagnetism.
+Condensed matter physics is related to statistical mechanics and quantum mechanics because the macroscopic properties of a condensed system are independent of the detailed microscopic trajectories of each individual constituent.
+
+Some immediate applications of the study of condensed matter physics are in semiconductor devices, high-temperature superconductors, and magnetic storage materials and, mathematically, in Fourier analysis, group theory, and topology.
 
 ## Topics
 
@@ -27,6 +29,7 @@ We have this section as a foundation for materials, semiconductors, and many-bod
 
 ## References
 
-1. Simon, S. H. *The Oxford Solid State Basics*. Oxford University Press, 2013. §1.1 — source for the heading explanation.
-2. Feynman, R. P., Leighton, R. B., & Sands, M. *The Feynman Lectures on Physics*, Vol. II. — solid-state physics as bulk matter from atomic laws.
-3. Kittel, C. *Introduction to Solid State Physics*. Wiley — crystals, phonons, bands, magnetism, and superconductivity outline.
+1. Simon, S. H. *The Oxford Solid State Basics*. Oxford University Press, 2013. §1.1 — condensed phases of many strongly interacting constituents.
+2. Kittel, C. *Introduction to Solid State Physics*. Wiley — atoms and electrons as the constituents of solids, semiconductors, magnetism, and superconductivity.
+3. Kittel, C. *Quantum Theory of Solids*. Wiley — collective behavior and quantized excitations.
+4. Feynman, R. P., Leighton, R. B., & Sands, M. *The Feynman Lectures on Physics*, Vol. II. — solid-state physics as bulk matter from atomic laws.

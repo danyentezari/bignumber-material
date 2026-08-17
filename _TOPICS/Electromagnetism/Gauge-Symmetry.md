@@ -2,38 +2,54 @@
 
 A local symmetry of the potentials that is used to leave physical electromagnetic fields and observables unchanged.
 
-Note: Also called gauge invariance. Closely related to [Gauge Transformations](gauge-transformations.html).
+1\. Many different potentials give the same $\mathbf{E}$ and $\mathbf{B}$. This principle is used to treat the physical content of electrodynamics as gauge-invariant.
 
-<i>
+The physical fields from the potentials are
 
-**definition [d]** (*Gauge Symmetry*) From Emam: field theories in physics are sometimes referred to as gauge theories. The reason is that they all, including electrodynamics, have certain symmetries, known for historical reasons as gauge symmetries.
+$$
+\mathbf{B} = \nabla\times\mathbf{A}
+$$
 
-where
-
-- a gauge symmetry is a local symmetry of the potentials.
-- electrodynamics has an abelian gauge symmetry.
-
-</i>
-
-<i>
-
-**definition [d]** (*Gauge Symmetry*) From Susskind and Friedman: gauge invariance has to do with changes that you can make to the vector potential without affecting the physics. The equations of motion stay the same under such changes.
+$$
+\mathbf{E} = -\nabla V - \dfrac{\partial\mathbf{A}}{\partial t}
+$$
 
 where
 
-- the physical content is gauge-invariant.
+- $\mathbf{E}$ is the electric field.
+- $\mathbf{B}$ is the magnetic field.
+- $V$ is the scalar potential.
+- $\mathbf{A}$ is the vector potential.
+- $t$ is time.
 
-</i>
+2\. The symmetry acts by shifting the potentials with an arbitrary scalar function. This principle is used to generate the gauge transformations that leave the equations of motion unchanged.
 
-<i>
+The gauge symmetry acts as
 
-**definition [d]** (*Gauge Symmetry*) From Griffiths: the potentials are not unique; gauge freedom means many potentials give the same $\mathbf{E}$ and $\mathbf{B}$, which is the practical expression of gauge symmetry in classical electrodynamics.
+$$
+\mathbf{A}\mapsto\mathbf{A}+\nabla\lambda,\quad V\mapsto V-\dfrac{\partial\lambda}{\partial t}
+$$
 
 where
 
-- $\mathbf{E}$ and $\mathbf{B}$ are the physical fields.
+- $\lambda$ is the gauge function.
+- $V$ and $\mathbf{A}$ are the potentials.
+- $t$ is time.
 
-</i>
+3\. In magnetostatics the same symmetry is the invariance of $\mathbf{B}$ under $\mathbf{A}\mapsto\mathbf{A}+\nabla\lambda$. This principle is used to check gauge symmetry on $\mathbf{B}$ alone.
+
+The magnetostatic invariance is
+
+$$
+\nabla\times\bigl(\mathbf{A}+\nabla\lambda\bigr) = \nabla\times\mathbf{A}
+$$
+
+where
+
+- $\mathbf{A}$ is the vector potential.
+- $\lambda$ is the gauge function.
+
+Note: These principles are gauge invariance of $\mathbf{E}$ and $\mathbf{B}$, the action of the symmetry on the potentials, and the magnetostatic special case. Also called gauge invariance.
 
 ## Elementary Example
 

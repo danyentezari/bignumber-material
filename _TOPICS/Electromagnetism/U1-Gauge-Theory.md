@@ -1,39 +1,49 @@
 # U(1) Gauge Theory
 
-An abelian gauge theory with symmetry group $U(1)$ that is used to describe classical and quantum electrodynamics.
+An abelian gauge theory with symmetry group $U(1)$ that is used to describe classical and quantum electrodynamics, where $U(1)$ is the circle group of phase factors, and where an abelian group is a group whose elements commute.
 
-Note: Also called abelian gauge theory. Electromagnetism is the classic $U(1)$ example.
+1\. Electrodynamics is defined by a rank-one potential, the four-potential, whose field strength is the electromagnetic field. This principle is used to write Maxwell theory as a $U(1)$ gauge theory.
 
-<i>
+The electromagnetic field strength is
 
-**definition [d]** (*U(1) Gauge Theory*) From Emam: electrodynamics is defined by the rank-$1$ potential, the $4$-potential; the electromagnetic field is the field strength built from that potential. The gauge symmetry is the abelian group $U(1)$.
-
-where
-
-- $U(1)$ is the circle group of phase factors.
-- the potential is $A^{\mu}$.
-
-</i>
-
-<i>
-
-**definition [d]** (*U(1) Gauge Theory*) From Susskind and Friedman: electromagnetism is a gauge theory whose gauge invariance lets one change the potential by a gradient without changing the physics; the corresponding symmetry group is $U(1)$.
+$$
+F_{\mu\nu} = \partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}
+$$
 
 where
 
-- abelian means gauge transformations commute.
+- $F_{\mu\nu}$ is the electromagnetic field tensor.
+- $A_{\mu}$ is the four-potential.
+- $\partial_{\mu}$ is the spacetime derivative.
 
-</i>
+2\. A $U(1)$ gauge transformation shifts the potential by a gradient and leaves $F_{\mu\nu}$ invariant. This principle is used to change $A_{\mu}$ without changing the physical fields.
 
-<i>
+The $U(1)$ gauge transformation is
 
-**definition [d]** (*U(1) Gauge Theory*) From Nash and Sen: the gauge potential is a connection, and for electromagnetism the structure group is $U(1)$, so the curvature is the ordinary electromagnetic field strength.
+$$
+A_{\mu}\mapsto A_{\mu}+\partial_{\mu}\lambda
+$$
 
 where
 
-- the connection is $A$ and the curvature is $F=dA$ in the abelian case.
+- $A_{\mu}$ is the four-potential.
+- $\lambda$ is the gauge function.
 
-</i>
+3\. In the geometric language the potential is a $U(1)$ connection and the field strength is its curvature $F=dA$. This principle is used to identify electromagnetism with the abelian case of a general gauge theory.
+
+The abelian curvature is
+
+$$
+F = dA
+$$
+
+where
+
+- $A$ is the $U(1)$ connection.
+- $F$ is the curvature.
+- $d$ is the exterior derivative.
+
+Note: These principles are electrodynamics as a $U(1)$ gauge theory, invariance of $F_{\mu\nu}$, and the abelian curvature $F=dA$. Also called abelian gauge theory.
 
 ## Elementary Example
 

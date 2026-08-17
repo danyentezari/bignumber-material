@@ -2,39 +2,39 @@
 
 A process in which a particle has nonzero probability to appear beyond a classically forbidden barrier that is used to explain barrier penetration in quantum mechanics.
 
-Note: Also called barrier penetration. Also called tunneling.
+1\. In a region where $E<V$, a classical particle cannot enter, but the Schrödinger wavefunction decays exponentially rather than vanishing. This principle is used to assign a nonzero finding probability inside the barrier.
 
-<i>
+The decay constant in the forbidden region is
 
-**definition [d]** (*Quantum Tunneling*) From Shankar: in a region where the total energy $E$ is less than the potential $V$, the classical particle cannot enter, but the Schrödinger wavefunction is exponentially decaying rather than zero, so there is a nonzero probability to find the particle in the forbidden region. Transmission through a barrier of finite width is called tunneling.
+$$
+\kappa = \dfrac{\sqrt{2m(V-E)}}{\hbar}
+$$
 
 where
 
-- $E$ is the energy.
+- $\kappa$ is the decay constant.
+- $m$ is the mass.
 - $V$ is the potential height.
-- the wavefunction decays but does not vanish inside the barrier.
+- $E$ is the energy.
+- $\hbar$ is the reduced Planck constant.
 
-</i>
+2\. A wave incident on a barrier of finite width yields a nonzero transmitted amplitude on the other side. This principle is used to define tunneling as transmission with $E<V$.
 
-<i>
+3\. The transmission probability of a wide barrier falls exponentially with width and with $\kappa$. This principle is used to estimate tunneling rates.
 
-**definition [d]** (*Quantum Tunneling*) From Hall: for a potential barrier with $E < V$ on a finite interval, the time-independent Schrödinger equation still has solutions, and a wave incident from one side yields a nonzero transmitted amplitude on the other side.
+The wide-barrier transmission is
 
-where
-
-- transmission with $E < V$ is tunneling.
-
-</i>
-
-<i>
-
-**definition [d]** (*Quantum Tunneling*) From Sakurai: barrier penetration occurs when the energy is insufficient for classical transit, yet the wavefunction connects incident and transmitted regions through the barrier.
+$$
+T \sim e^{-2\kappa L}
+$$
 
 where
 
-- the transmitted intensity is typically exponentially small in barrier width and height.
+- $T$ is the transmission probability.
+- $L$ is the barrier width.
+- $\kappa$ is the decay constant.
 
-</i>
+Note: These principles are exponential decay in the forbidden region, transmission with $E<V$, and the exponential dependence of $T$ on width. Also called barrier penetration. Also called tunneling.
 
 ## Elementary Example
 

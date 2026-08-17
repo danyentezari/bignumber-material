@@ -1,46 +1,58 @@
 # Multipole Expansion
 
-A series expansion of the potential or field of a localized charge distribution that is used to organize contributions by monopole, dipole, quadrupole, and higher moments.
+A series expansion of the potential of a localized charge distribution that is used to organize contributions by monopole, dipole, quadrupole, and higher moments, where a localized charge distribution is a charge collection confined to a finite region.
 
-Note: Also called the multipole expansion of the potential.
+1\. Far from a localized charge distribution the potential can be expanded in inverse powers of distance. This principle is used to replace a complicated source by a sequence of simpler terms that fall off faster and faster.
 
-<i>
+The multipole expansion of the potential is
 
-**definition [d]** (*Multipole Expansion*) From Griffiths: for a localized charge distribution, the potential far away can be expanded as
-
-- $V(\mathbf{r}) = \dfrac{1}{4\pi\epsilon_{0}}\sum_{n=0}^{\infty}\dfrac{1}{r^{n+1}}\int (r')^{n}P_{n}(\cos\alpha)\,\rho(\mathbf{r}')\,d\tau'$ ,
-
-which begins with the monopole term, then dipole, quadrupole, and so on.
+$$
+V(\mathbf{r}) = \dfrac{1}{4\pi\epsilon_{0}}\sum_{n=0}^{\infty}\dfrac{1}{r^{n+1}}\displaystyle\int (r')^{n}P_{n}(\cos\alpha)\,\rho(\mathbf{r}')\,d\tau'
+$$
 
 where
 
+- $V$ is the electric potential.
 - $r$ is the distance to the field point.
+- $r'$ is the distance of a source element from the origin.
+- $P_{n}$ is the $n$th Legendre polynomial.
+- $\alpha$ is the angle between $\mathbf{r}$ and $\mathbf{r}'$.
 - $\rho$ is the charge density.
-- $P_{n}$ are Legendre polynomials.
+- $d\tau'$ is the volume element.
+- $\epsilon_{0}$ is the permittivity of free space.
 
-</i>
+2\. The first term is the monopole potential of the total charge. This principle is used to treat a distant charge collection as a point charge when the net charge is not zero.
 
-<i>
+The monopole term is
 
-**definition [d]** (*Dipole Term*) From Griffiths: the leading correction after the total charge is the dipole term involving
-
-- $\mathbf{p} = \displaystyle\int\mathbf{r}'\rho(\mathbf{r}')\,d\tau'$ .
+$$
+V_{\mathrm{mon}}(\mathbf{r}) = \dfrac{1}{4\pi\epsilon_{0}}\dfrac{Q}{r}
+$$
 
 where
 
+- $V_{\mathrm{mon}}$ is the monopole potential.
+- $Q$ is the total charge.
+- $r$ is the distance to the field point.
+- $\epsilon_{0}$ is the permittivity of free space.
+
+3\. The next term is the dipole potential of the dipole moment. This principle is used to describe a neutral charge collection whose opposite charges are slightly separated.
+
+The dipole term is
+
+$$
+V_{\mathrm{dip}}(\mathbf{r}) = \dfrac{1}{4\pi\epsilon_{0}}\dfrac{\mathbf{p}\cdot\hat{\mathbf{r}}}{r^{2}}
+$$
+
+where
+
+- $V_{\mathrm{dip}}$ is the dipole potential.
 - $\mathbf{p}$ is the electric dipole moment.
+- $\hat{\mathbf{r}}$ is the unit vector toward the field point.
+- $r$ is the distance to the field point.
+- $\epsilon_{0}$ is the permittivity of free space.
 
-</i>
-
-<i>
-
-**definition [d]** (*Multipole Expansion*) From Knight: a compact charge distribution looks, from far away, like a point charge plus dipole and higher corrections whose importance falls with distance.
-
-where
-
-- distant observers see the lowest nonvanishing multipole first.
-
-</i>
+Note: These principles are the multipole expansion of the potential, the monopole term, and the dipole term.
 
 ## Elementary Example
 

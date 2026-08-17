@@ -2,13 +2,13 @@
 
 An interaction between charged matter and the electromagnetic field that is used to describe absorption and emission of radiation by quantum systems.
 
-Note: Linked from the Quantum Mechanics index as electromagnetic-interaction-1.
+1\. Coupling to the electromagnetic field is achieved by replacing $\mathbf{p}$ with $\mathbf{p}-q\mathbf{A}$ and adding $qV$. This principle is used to write the Hamiltonian of a charged particle in a field.
 
-<i>
+The minimally coupled Hamiltonian is
 
-**definition [d]** (*Electromagnetic Interaction*) From Sakurai: the interaction of a charged particle with the electromagnetic field is introduced through the potentials in the Hamiltonian, replacing $\mathbf{p}$ by $\mathbf{p}-q\mathbf{A}$ and adding $qV$, so that the interaction is encoded in
-
-- $H = \dfrac{1}{2m}\bigl(\mathbf{p}-q\mathbf{A}\bigr)^{2} + qV$ .
+$$
+H = \dfrac{1}{2m}\bigl(\mathbf{p}-q\mathbf{A}\bigr)^{2} + qV
+$$
 
 where
 
@@ -16,37 +16,26 @@ where
 - $\mathbf{A}$ is the vector potential.
 - $V$ is the scalar potential.
 - $m$ is the mass.
+- $\mathbf{p}$ is the momentum operator.
 
-</i>
+2\. The classical counterpart is the Lorentz force. This principle is used to recover the force on a charge from the same potentials.
 
-<i>
+The Lorentz force is
 
-**definition [d]** (*Electromagnetic Interaction*) From Shankar: coupling to the electromagnetic field is achieved by minimal substitution
-
-- $\mathbf{p} \mapsto \mathbf{p}-q\mathbf{A}$
-
-in the free Hamiltonian, together with the potential energy $qV$.
-
-where
-
-- $\mathbf{A}$ and $V$ are the electromagnetic potentials.
-
-</i>
-
-<i>
-
-**definition [d]** (*Electromagnetic Interaction*) From Griffiths: charged particles interact via electric and magnetic fields, and the force on a charge $q$ is the Lorentz force
-
-- $\mathbf{F} = q\bigl(\mathbf{E}+\mathbf{v}\times\mathbf{B}\bigr)$ ,
-
-which is the classical counterpart of the quantum electromagnetic interaction.
+$$
+\mathbf{F} = q\bigl(\mathbf{E}+\mathbf{v}\times\mathbf{B}\bigr)
+$$
 
 where
 
-- $\mathbf{E}$ and $\mathbf{B}$ are the electric and magnetic fields.
+- $\mathbf{F}$ is the force.
+- $\mathbf{E}$ is the electric field.
+- $\mathbf{B}$ is the magnetic field.
 - $\mathbf{v}$ is the velocity.
 
-</i>
+3\. A time-dependent field induces transitions between energy eigenstates. This principle is used to compute absorption, emission, and Fermi's golden rule.
+
+Note: These principles are minimal coupling, the Lorentz force, and field-induced transitions. Linked from the Quantum Mechanics index as electromagnetic-interaction-1.
 
 ## Elementary Example
 

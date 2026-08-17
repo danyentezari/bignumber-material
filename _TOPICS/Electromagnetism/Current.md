@@ -2,13 +2,13 @@
 
 A rate of electric charge flow past a point that is used to measure how much charge passes through a wire or region per unit time.
 
-Note: Also called electric current.
+1\. Current is the rate at which charge passes a point. This principle is used to assign a single number $I$ to the flow in a wire.
 
-<i>
+The definition of current is
 
-**definition [d]** (*Current = Electric Current*) From Knight: if $Q$ is the total amount of charge that has moved past a point in the wire, we define the current $I$ in the wire to be the rate of charge flow:
-
-- $I \equiv \dfrac{dQ}{dt}$ .
+$$
+I = \dfrac{dQ}{dt}
+$$
 
 where
 
@@ -16,7 +16,21 @@ where
 - $Q$ is the charge that has passed the point.
 - $t$ is time.
 
-</i>
+2\. A steady current moves a charge proportional to the elapsed time. This principle is used to compute the total charge delivered by a constant current.
+
+The charge delivered by a steady current is
+
+$$
+Q(t) = It
+$$
+
+where
+
+- $Q(t)$ is the charge that has passed by time $t$.
+- $I$ is the steady current.
+- $t$ is time.
+
+Note: These principles are the definition of current and the charge delivered by a steady current. Also called electric current.
 
 ## Elementary Example
 

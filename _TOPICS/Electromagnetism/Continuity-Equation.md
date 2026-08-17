@@ -2,40 +2,47 @@
 
 A local conservation law relating the time derivative of charge density to the divergence of current that is used to express conservation of charge.
 
-Note: Also written $\dfrac{\partial\rho}{\partial t}+\nabla\cdot\mathbf{J}=0$.
+1\. Charge is conserved locally: any decrease of charge in a volume equals the net current flowing out. This principle is used to write charge conservation as a differential equation.
 
-<i>
+The continuity equation is
 
-**definition [d]** (*Continuity Equation*) From Griffiths: conservation of charge requires
-
-- $\dfrac{\partial\rho}{\partial t} + \nabla\cdot\mathbf{J} = 0$ .
+$$
+\dfrac{\partial\rho}{\partial t} + \nabla\cdot\mathbf{J} = 0
+$$
 
 where
 
 - $\rho$ is the charge density.
 - $\mathbf{J}$ is the current density.
+- $t$ is time.
+- $\nabla\cdot$ is the divergence.
 
-</i>
+2\. If there is no current, the charge density is static. This principle is used to recover electrostatics as the case $\mathbf{J}=\mathbf{0}$.
 
-<i>
+The static-density condition is
 
-**definition [d]** (*Continuity Equation*) From Knight: charge is conserved, so any decrease of charge in a volume equals the net current flowing out, which is the integral form of the continuity equation.
-
-where
-
-- the differential form is $\dfrac{\partial\rho}{\partial t}+\nabla\cdot\mathbf{J}=0$.
-
-</i>
-
-<i>
-
-**definition [d]** (*Continuity Equation*) From Susskind and Cabannes: conservation of a density such as charge is expressed by a continuity equation relating the time derivative of the density to the divergence of its flow.
+$$
+\dfrac{\partial\rho}{\partial t} = 0
+$$
 
 where
 
-- the same pattern applies to charge, mass, and other conserved densities.
+- $\rho$ is the charge density.
+- $t$ is time.
 
-</i>
+3\. In a steady state the current is divergenceless. This principle is used to treat magnetostatics, where charge density does not change with time.
+
+The steady-current condition is
+
+$$
+\nabla\cdot\mathbf{J} = 0
+$$
+
+where
+
+- $\mathbf{J}$ is the current density.
+
+Note: These principles are the continuity equation, static charge density, and divergenceless steady current. Also written $\dfrac{\partial\rho}{\partial t}+\nabla\cdot\mathbf{J}=0$.
 
 ## Elementary Example
 

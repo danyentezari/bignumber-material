@@ -2,18 +2,43 @@
 
 A quantity assigned throughout space that is used to describe how an influence is spread through the surroundings.
 
-Note: Also called a field. A scalar field assigns a number at each point. A vector field assigns a direction and strength at each point.
+1\. A field defines a physical quantity at every point of a region. A scalar field assigns a number at each point. A vector field assigns a direction and a strength at each point. This principle is used to replace a list of particle-to-particle forces by a function on space.
 
-1. Defines a physical quantity continuously at points across a region of space.
-2. Can store and localize energy, momentum, and power in space.
-3. Mediates interactions so influence need not be instantaneous action at a distance.
-4. Has its own physical reality and can propagate dynamically as radiation.
-5. Carries a history of past sources because influence travels at finite speed.
-6. Determines the force and acceleration on a test particle placed in it.
-7. Transforms under coordinate change as a scalar, vector, or tensor field.
-8. Obeys local field equations that link the field to local sources.
-9. Can be pictured with field lines whose density tracks local strength.
-10. Upon quantization, behaves as oscillators whose excitations are particles.
+2\. A field can store energy and momentum in space. This principle is used to localize field energy even where no matter is present.
+
+The electromagnetic energy density is
+
+$$
+u = \dfrac{1}{2}\left(\epsilon_{0}E^{2} + \dfrac{1}{\mu_{0}}B^{2}\right)
+$$
+
+where
+
+- $u$ is the energy density.
+- $E$ is the electric field magnitude.
+- $B$ is the magnetic field magnitude.
+- $\epsilon_{0}$ is the permittivity of free space.
+- $\mu_{0}$ is the permeability of free space.
+
+3\. A field mediates interactions so that influence need not be instantaneous action at a distance. This principle is used to write local field equations that link the field to nearby sources.
+
+4\. A changing field can propagate as radiation and carry a history of past sources, because influence travels at finite speed. This principle is used to treat light as a free electromagnetic field.
+
+5\. The field at a point determines the force on a test particle placed there. A test particle is a small charge or mass used to probe the field. This principle is used to compute acceleration from $\mathbf{F}=q\mathbf{E}$ or $\mathbf{F}=m\mathbf{g}$.
+
+The electric force on a test charge is
+
+$$
+\mathbf{F} = q\mathbf{E}
+$$
+
+where
+
+- $\mathbf{F}$ is the force.
+- $q$ is the test charge.
+- $\mathbf{E}$ is the electric field.
+
+Note: These principles are the assignment of a quantity through space, field energy, local mediation, radiation at finite speed, and the force on a test particle. Also called a field. Upon quantization the field behaves as oscillators whose excitations are particles.
 
 ## References
 

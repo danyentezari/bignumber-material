@@ -2,15 +2,13 @@
 
 An angular momentum associated with spatial motion that is used to describe rotation of a particle about an origin in position space.
 
-Note: Also denoted $\mathbf{L}$. Also called orbital angular momentum to distinguish it from spin.
+1\. Orbital angular momentum is built from the position and momentum operators. This principle is used to distinguish $\mathbf{L}$ from spin.
 
-<i>
+The orbital angular momentum is
 
-**definition [d]** (*Orbital Angular Momentum*) From Sakurai: the orbital angular momentum is
-
-- $\mathbf{L} = \mathbf{r}\times\mathbf{p}$ ,
-
-constructed from the position and momentum operators in ordinary space.
+$$
+\mathbf{L} = \mathbf{r}\times\mathbf{p}
+$$
 
 where
 
@@ -18,40 +16,37 @@ where
 - $\mathbf{r}$ is the position operator.
 - $\mathbf{p}$ is the momentum operator.
 
-</i>
+2\. The squared operator is the sum of the squares of the components. This principle is used to write $L^{2}$ in the radial Schrödinger equation.
 
-<i>
+The squared orbital angular momentum is
 
-**definition [d]** (*Orbital Angular Momentum*) From Hall: the operators
-
-- $L_{x}$, $L_{y}$, $L_{z}$
-
-obtained from $\mathbf{L} = \mathbf{r}\times\mathbf{p}$ are the components of orbital angular momentum, and
-
-- $L^{2} = L_{x}^{2} + L_{y}^{2} + L_{z}^{2}$
-
-is the squared orbital angular momentum.
+$$
+L^{2} = L_{x}^{2} + L_{y}^{2} + L_{z}^{2}
+$$
 
 where
 
-- $L^{2}$ is the square of the orbital angular momentum operator.
+- $L_{x}$, $L_{y}$, and $L_{z}$ are the Cartesian components.
 
-</i>
+3\. Simultaneous eigenstates of $L^{2}$ and $L_{z}$ are labeled by integers $\ell$ and $m$. This principle is used to name $s$, $p$, $d$, and $f$ orbitals.
 
-<i>
+The orbital eigenvalue equations are
 
-**definition [d]** (*Orbital Angular Momentum*) From Shankar: orbital angular momentum refers to
+$$
+L^{2}|\ell,m\rangle = \hbar^{2}\ell(\ell+1)|\ell,m\rangle
+$$
 
-- $\mathbf{L} = \mathbf{r}\times\mathbf{p}$
-
-as opposed to spin, which is an intrinsic angular momentum not built from $\mathbf{r}$ and $\mathbf{p}$.
+$$
+L_{z}|\ell,m\rangle = m\hbar|\ell,m\rangle
+$$
 
 where
 
-- $\mathbf{L}$ is orbital.
-- spin is denoted separately, often by $\mathbf{S}$.
+- $\ell$ is the orbital quantum number.
+- $m$ is the magnetic quantum number.
+- $\hbar$ is the reduced Planck constant.
 
-</i>
+Note: These principles are $\mathbf{L}=\mathbf{r}\times\mathbf{p}$, the definition of $L^{2}$, and the $(\ell,m)$ spectrum. Also denoted $\mathbf{L}$. Also called orbital angular momentum to distinguish it from spin.
 
 ## Elementary Example
 
@@ -74,16 +69,16 @@ where
 Simultaneous eigenstates of $L^{2}$ and $L_{z}$ satisfy
 
 $$
-L^{2}|l,m\rangle = \hbar^{2}l(l+1)|l,m\rangle
+L^{2}|\ell,m\rangle = \hbar^{2}\ell(\ell+1)|\ell,m\rangle
 $$
 
 $$
-L_{z}|l,m\rangle = m\hbar|l,m\rangle
+L_{z}|\ell,m\rangle = m\hbar|\ell,m\rangle
 $$
 
 where
 
-- $l$ is the orbital angular momentum quantum number.
+- $\ell$ is the orbital angular momentum quantum number.
 
 ## References
 

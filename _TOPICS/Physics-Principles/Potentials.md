@@ -2,18 +2,42 @@
 
 A measure of influence at a point in space that is used to compare how strongly a force field acts from place to place.
 
-Note: Also called a potential energy function when it tells how much stored energy is available. Also called a scalar potential when a field can be read from it.
+1\. A potential is defined only up to an additive constant. This principle is used to choose a convenient zero, such as infinity or a grounded conductor.
 
-1. Is defined only up to an arbitrary additive constant.
-2. Yields a conservative force as its negative gradient.
-3. Is a scalar, so potentials add by ordinary sums rather than vector addition.
-4. Obeys superposition: potentials from many sources add linearly.
-5. Satisfies Laplace's equation in regions with no sources.
-6. Makes potential difference equal to work per unit charge or mass between two points.
-7. Has stable equilibrium at local potential-energy minima.
-8. Represents stored interaction energy of a configuration of charges or masses.
-9. In quantum mechanics, enters as a position-dependent multiplicative operator that shapes allowed energies.
-10. Belongs to the sources themselves, whether or not a test particle is present.
+2\. A conservative force is minus the gradient of the potential. A conservative force is a force whose work around every closed path vanishes. This principle is used to recover $\mathbf{F}$ from a single scalar function.
+
+The force from a potential is
+
+$$
+\mathbf{F} = -\nabla U
+$$
+
+where
+
+- $\mathbf{F}$ is the force.
+- $\nabla$ is the gradient.
+- $U$ is the potential energy.
+
+3\. Potentials are scalars and add by ordinary sums. This principle is used to superpose the potentials of many sources.
+
+4\. In a source-free region the electrostatic potential satisfies Laplace's equation. This principle is used to solve boundary-value problems between conductors.
+
+Laplace's equation is
+
+$$
+\nabla^{2}V = 0
+$$
+
+where
+
+- $\nabla^{2}$ is the Laplacian.
+- $V$ is the electric potential.
+
+5\. The potential difference between two points is the work per unit charge or mass along a path joining them. This principle is used to compute kinetic-energy changes without following the force vector.
+
+6\. Stable equilibrium occurs at a local minimum of potential energy. This principle is used to locate rest points of a conservative system.
+
+Note: These principles are the additive constant, the gradient relation, superposition of scalars, Laplace's equation, work per unit charge, and equilibrium at a minimum. Also called a potential energy function when it tells how much stored energy is available. Also called a scalar potential when a field can be read from it. In quantum mechanics the potential enters as a position-dependent multiplicative operator.
 
 ## References
 

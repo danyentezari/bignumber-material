@@ -2,15 +2,13 @@
 
 An angular momentum equal to the sum of orbital and spin parts that is used to describe the full rotational properties of a quantum system.
 
-Note: Also denoted $\mathbf{J}$. Also called total angular momentum.
+1\. The total angular momentum is the vector sum of orbital and spin angular momentum. This principle is used to couple $\mathbf{L}$ and $\mathbf{S}$ in atoms.
 
-<i>
+The total angular momentum is
 
-**definition [d]** (*Total Angular Momentum*) From Sakurai: the total angular momentum is
-
-- $\mathbf{J} = \mathbf{L} + \mathbf{S}$ ,
-
-where $\mathbf{L}$ is orbital angular momentum and $\mathbf{S}$ is spin.
+$$
+\mathbf{J} = \mathbf{L} + \mathbf{S}
+$$
 
 where
 
@@ -18,40 +16,41 @@ where
 - $\mathbf{L}$ is the orbital angular momentum.
 - $\mathbf{S}$ is the spin angular momentum.
 
-</i>
+2\. The components of $\mathbf{J}$ obey the same commutation relations as $\mathbf{L}$. This principle is used to label states by $j$ and $m_{j}$.
 
-<i>
+The total-angular-momentum commutation relations are
 
-**definition [d]** (*Total Angular Momentum*) From Hall: the total angular momentum operators satisfy the same commutation relations as orbital angular momentum,
-
-- $[J_{i}, J_{j}] = i\hbar\sum_{k}\epsilon_{ijk}J_{k}$ ,
-
-whether $\mathbf{J}$ is $\mathbf{L}$, $\mathbf{S}$, or $\mathbf{L}+\mathbf{S}$.
+$$
+[J_{i}, J_{j}] = i\hbar\sum_{k}\epsilon_{ijk}J_{k}
+$$
 
 where
 
-- $J_{i}$ are the components of total angular momentum.
+- $J_{i}$ are the components of $\mathbf{J}$.
 - $\hbar$ is the reduced Planck constant.
 
-</i>
+3\. For one electron with orbital quantum number $\ell$ and spin $1/2$, the allowed $j$ values are $\ell\pm 1/2$. This principle is used to write fine-structure doublets.
 
-<i>
+The allowed $j$ values are
 
-**definition [d]** (*Total Angular Momentum*) From Shankar: when both orbital and spin angular momentum are present, the conserved quantity in a rotationally invariant system is often
-
-- $\mathbf{J} = \mathbf{L} + \mathbf{S}$ .
+$$
+j = \ell \pm \dfrac{1}{2}
+$$
 
 where
 
-- $\mathbf{J}$ is the total angular momentum.
+- $j$ labels eigenvalues of $J^{2}$.
+- $\ell$ is the orbital quantum number.
 
-</i>
+4\. In a rotationally invariant system, $\mathbf{J}$ is often the conserved angular momentum. This principle is used to replace separate conservation of $\mathbf{L}$ and $\mathbf{S}$ when they are coupled.
+
+Note: These principles are $\mathbf{J}=\mathbf{L}+\mathbf{S}$, the $\mathbf{J}$ algebra, the $j=\ell\pm 1/2$ values, and conservation of $\mathbf{J}$. Also denoted $\mathbf{J}$.
 
 ## Elementary Example
 
 ### Simple
 
-For $l = 0$ and spin $\dfrac{1}{2}$,
+For $\ell = 0$ and spin $\dfrac{1}{2}$,
 
 $$
 \mathbf{J} = \mathbf{S}
@@ -63,10 +62,10 @@ where
 
 ### General
 
-For one electron with orbital $l$ and spin $s = \dfrac{1}{2}$,
+For one electron with orbital $\ell$ and spin $s = \dfrac{1}{2}$,
 
 $$
-j = l \pm \dfrac{1}{2}
+j = \ell \pm \dfrac{1}{2}
 $$
 
 where

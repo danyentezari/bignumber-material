@@ -2,42 +2,53 @@
 
 The energy stored in electric and magnetic fields that is used to account for work done by electromagnetic forces and for energy carried by waves.
 
-Note: Also called field energy. Energy density involves $\epsilon_{0}E^{2}$ and $B^{2}/\mu_{0}$.
+1\. The energy stored in electromagnetic fields has a local density built from $E^{2}$ and $B^{2}$. This principle is used to compute the field energy in a region by integration.
 
-<i>
+The electromagnetic energy density is
 
-**definition [d]** (*Electromagnetic Energy*) From Griffiths: the energy stored in electromagnetic fields has density
-
-- $u = \dfrac{1}{2}\left(\epsilon_{0}E^{2} + \dfrac{1}{\mu_{0}}B^{2}\right)$ ,
-
-and the total field energy is the integral of $u$ over space.
+$$
+u = \dfrac{1}{2}\left(\epsilon_{0}E^{2} + \dfrac{1}{\mu_{0}}B^{2}\right)
+$$
 
 where
 
-- $E$ and $B$ are the field magnitudes.
-- $\epsilon_{0}$ and $\mu_{0}$ are the vacuum constants.
+- $u$ is the energy density.
+- $E$ is the magnitude of the electric field.
+- $B$ is the magnitude of the magnetic field.
+- $\epsilon_{0}$ is the permittivity of free space.
+- $\mu_{0}$ is the permeability of free space.
 
-</i>
+2\. The total field energy is the integral of that density over space. This principle is used to assign a single energy to a field configuration.
 
-<i>
+The total field energy is
 
-**definition [d]** (*Electromagnetic Energy*) From Knight: electric and magnetic fields store energy, with electric energy density $\dfrac{1}{2}\epsilon_{0}E^{2}$ and magnetic energy density $\dfrac{B^{2}}{2\mu_{0}}$.
-
-where
-
-- capacitors and inductors store electric and magnetic energy respectively.
-
-</i>
-
-<i>
-
-**definition [d]** (*Electromagnetic Energy*) From Susskind and Friedman: the electromagnetic field carries energy as part of the field's stress-energy content, consistent with energy in $\mathbf{E}$ and $\mathbf{B}$.
+$$
+U = \displaystyle\int u\,d\tau
+$$
 
 where
 
-- field energy is localizable through the energy density.
+- $U$ is the total electromagnetic energy.
+- $u$ is the energy density.
+- $d\tau$ is the volume element.
 
-</i>
+3\. Energy leaves a volume as the flux of the Poynting vector. This principle is used to write local conservation of electromagnetic energy.
+
+Poynting's theorem is
+
+$$
+\dfrac{\partial u}{\partial t} + \nabla\cdot\mathbf{S} = -\mathbf{J}\cdot\mathbf{E}
+$$
+
+where
+
+- $u$ is the energy density.
+- $\mathbf{S}$ is the Poynting vector.
+- $\mathbf{J}$ is the current density.
+- $\mathbf{E}$ is the electric field.
+- $t$ is time.
+
+Note: These principles are the electromagnetic energy density, the total field energy, and Poynting's theorem. Also called field energy.
 
 ## Elementary Example
 

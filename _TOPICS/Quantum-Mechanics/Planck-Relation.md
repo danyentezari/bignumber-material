@@ -1,26 +1,38 @@
 # Planck Relation
 
-The relation that the energy of a photon is directly proportional to its frequency, given by the product of Planck's constant and that frequency, that is used to compute the energy of a light quantum from its frequency.
+A relation that is used to compute the energy of a light quantum from its frequency, where a light quantum is a discrete packet of electromagnetic energy.
 
-($E = hf$).
+1\. The energy of one photon is Planck's constant times the frequency. This principle is used to convert a measured frequency into a photon energy.
 
-Note: Also called Planck's relation. Also called the Einstein light-quantum energy relation.
+The Planck relation is
 
-<i>
-
-**definition [d]** (*Planck Relation*) From Knight: Einstein called each packet of energy a light quantum, and he postulated that the energy of one light quantum is directly proportional to the frequency of the light. That is, each quantum of light has energy
-
-- $E = hf$ ,
-
-where $h$ is Planck’s constant and $f$ is the frequency of the light.
+$$
+E = hf
+$$
 
 where
 
 - $E$ is the energy of one light quantum.
-- $h$ is Planck’s constant.
+- $h$ is Planck's constant.
 - $f$ is the frequency of the light.
 
-</i>
+2\. The same energy is $\hbar\omega$ in angular frequency. Angular frequency is $2\pi$ times the ordinary frequency. This principle is used to write photon energy in the notation of wave mechanics.
+
+The angular form of the Planck relation is
+
+$$
+E = \hbar\omega
+$$
+
+where
+
+- $E$ is the photon energy.
+- $\hbar$ is the reduced Planck constant.
+- $\omega$ is the angular frequency.
+
+3\. Energy scales linearly with frequency. This principle is used to compare photons across the electromagnetic spectrum.
+
+Note: These principles are the Planck relation $E=hf$, the angular form $E=\hbar\omega$, and the linear scaling of energy with frequency. Also called Planck's relation. Also called the Einstein light-quantum energy relation.
 
 ## Elementary Example
 

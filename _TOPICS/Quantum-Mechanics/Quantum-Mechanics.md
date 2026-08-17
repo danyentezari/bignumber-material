@@ -1,10 +1,10 @@
 # Quantum Mechanics
 
-The branch of physics that describes the behavior of matter and light at microscopic scales, where quantities such as energy are quantized.
+Quantum mechanics is the phenomenon of wave and particle behaviors. A wavefunction is, fundamentally, a complex-valued function of position and time that completely represents the physical state of a system.
+
+Quantum mechanics is also fundamentally related to classical mechanics because the physical state of a system is independent of whether it is represented by position or by momentum, and Newtonian trajectories are recovered in the macroscopic limit.
 
 ## Topics
-
-Ordered from more general to more specific:
 
 1. [Wave-Particle Duality](wave-particle-duality.html)
     1. [de Broglie Wavelength](de-broglie-wavelength.html)
@@ -72,4 +72,7 @@ Ordered from more general to more specific:
 
 ## References
 
-1. Sakurai, J. J., & Napolitano, J. *Modern Quantum Mechanics*. Cambridge University Press, 2021. — source for the heading explanation.
+1. Sakurai, J. J., & Napolitano, J. *Modern Quantum Mechanics*. Cambridge University Press, 2021. — the same state in position or momentum, and the macroscopic classical limit.
+2. Griffiths, D. J. *Introduction to Quantum Mechanics*. Cambridge University Press, 2018. — wavefunctions, the Schrödinger equation, and bound states.
+3. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — wave-particle behavior, electronics, and spectroscopy.
+4. Feynman, R. P., Leighton, R. B., & Sands, M. *The Feynman Lectures on Physics*. — Newtonian trajectories recovered in the macroscopic limit.

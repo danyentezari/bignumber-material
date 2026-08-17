@@ -1,24 +1,40 @@
 # Photon Momentum
 
-The momentum carried by a photon, equal to Planck's constant divided by its wavelength, that is used to compute the momentum of a light quantum from its wavelength.
+A momentum carried by a photon that is used to compute the momentum of a light quantum from its wavelength, where a photon is a discrete packet of light.
 
-($p = h/\lambda$).
+1\. The momentum of a photon is Planck's constant divided by its wavelength. This principle is used to compute radiation pressure and Compton scattering.
 
-<i>
+The photon momentum is
 
-**definition [d]** (*Photon Momentum*) From Emam: quantum mechanics teaches us that the momentum of the photon is
-
-- $p_{\mathrm{ph}} = \dfrac{h}{\lambda}$ ,
-
-where $h = 6.626 \times 10^{-34}\,\mathrm{J\cdot s}$ is Planck’s constant and $\lambda$ is the photon’s wavelength.
+$$
+p_{\mathrm{ph}} = \dfrac{h}{\lambda}
+$$
 
 where
 
 - $p_{\mathrm{ph}}$ is the photon momentum.
-- $h$ is Planck’s constant.
+- $h$ is Planck's constant.
 - $\lambda$ is the photon wavelength.
 
-</i>
+2\. The same momentum is the photon energy divided by the speed of light. This principle is used to write $p = E/c$ for a massless quantum.
+
+The energy-momentum relation of a photon is
+
+$$
+p = \dfrac{E}{c} = \dfrac{hf}{c}
+$$
+
+where
+
+- $p$ is the photon momentum.
+- $E$ is the photon energy.
+- $c$ is the speed of light.
+- $h$ is Planck's constant.
+- $f$ is the frequency.
+
+3\. Shorter wavelengths carry larger photon momentum. This principle is used to compare ultraviolet, visible, and infrared photons.
+
+Note: These principles are the de Broglie momentum of a photon, the relation $p=E/c$, and the inverse relation of momentum to wavelength.
 
 ## Elementary Example
 

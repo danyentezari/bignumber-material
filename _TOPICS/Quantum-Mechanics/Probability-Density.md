@@ -2,50 +2,35 @@
 
 A nonnegative function built from a wavefunction that is used to give the probability of finding a particle in a region of space.
 
-Note: Also called the position probability density.
+1\. The probability density is the squared modulus of the wavefunction. This principle is used to convert $\Psi$ into a finding probability per unit volume.
 
-<i>
+The probability density is
 
-**definition [d]** (*Probability Density*) From Sakurai: the quantity $\rho(x', t)$ defined by
-
-- $\rho(x', t) = |\psi(x', t)|^{2} = |\langle x'|\alpha, t_{0}; t\rangle|^{2}$
-
-is therefore regarded as the probability density in wave mechanics. Specifically, when we use a detector that ascertains the presence of the particle within a small volume element $d^{3}x'$ around $x'$, the probability of recording a positive result at time $t$ is given by $\rho(x', t)\, d^{3}x'$.
+$$
+\rho(x,t) = \lvert\Psi(x,t)\rvert^{2}
+$$
 
 where
 
-- $\psi(x', t)$ is the wavefunction in the position representation.
-- $\rho(x', t)$ is the probability density.
-- $d^{3}x'$ is a small volume element about $x'$.
+- $\rho$ is the probability density.
+- $\Psi$ is the wavefunction.
 
-</i>
+2\. The probability that the particle lies in a set $E$ is the integral of $\rho$ over $E$. This principle is used to compute finite-interval probabilities.
 
-<i>
+The finding probability is
 
-**definition [d]** (*Probability Density*) From Hall: the function $|\psi(x)|^{2}$ is supposed to be the probability density for the position of the particle. This means that the probability that the position of the particle belongs to some set $E \subset \mathbb{R}$ is
-
-- $\displaystyle\int_{E} |\psi(x)|^{2}\, dx$ .
-
-where
-
-- $\psi : \mathbb{R} \rightarrow \mathbb{C}$ is the wave function.
-- $E$ is a subset of the real line.
-
-</i>
-
-<i>
-
-**definition [d]** (*Probability Density*) From Shankar: we introduce the notion of a probability density $P(x)$ defined as follows:
-
-- $|\psi(x)|^{2}\, dx \equiv P(x)\, dx =$ the probability the particle is found between $x$ and $x + dx$ .
+$$
+P(E) = \displaystyle\int_{E}\lvert\Psi(x)\rvert^{2}\,dx
+$$
 
 where
 
-- $\psi(x)$ is the wavefunction.
-- $P(x) = |\psi(x)|^{2}$ is the probability density.
-- $dx$ is an infinitesimal interval.
+- $P(E)$ is the probability that the position lies in $E$.
+- $\Psi$ is the wavefunction.
 
-</i>
+3\. In three dimensions the same rule uses a volume element $d^{3}x$. This principle is used to interpret $|\Psi|^{2}$ as a probability per unit volume.
+
+Note: These principles are the definition of $\rho=|\Psi|^{2}$, the integral rule for a region, and the three-dimensional volume form. Also called the position probability density.
 
 ## Elementary Example
 
