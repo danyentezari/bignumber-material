@@ -49,32 +49,6 @@ where
 
 Note: These principles are the electromagnetic momentum density, the total field momentum, and radiation pressure.
 
-## Elementary Example
-
-### Simple
-
-If $\mathbf{B} = \mathbf{0}$, then
-
-$$
-\mathbf{g} = \mathbf{0}
-$$
-
-where
-
-- there is no electromagnetic momentum density.
-
-### General
-
-With perpendicular $\mathbf{E}$ and $\mathbf{B}$,
-
-$$
-\mathbf{g} = \epsilon_{0}\mathbf{E}\times\mathbf{B}
-$$
-
-where
-
-- momentum density points along $\mathbf{E}\times\mathbf{B}$.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — $\mathbf{g}=\epsilon_{0}\mathbf{E}\times\mathbf{B}$.

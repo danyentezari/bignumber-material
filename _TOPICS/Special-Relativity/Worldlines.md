@@ -49,32 +49,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-A particle at rest at $x = 0$ has a vertical worldline in the $(x,t)$ diagram:
-
-$$
-x(t) = 0,\quad t \in \{0, 1, 2\}
-$$
-
-where
-
-- each $(0,t)$ is an event on the worldline.
-
-### General
-
-A particle moving at constant speed $v$ has a straight worldline
-
-$$
-x(t) = vt
-$$
-
-where
-
-- the slope $\dfrac{dt}{dx} = \dfrac{1}{v}$ exceeds $\dfrac{1}{c}$ for a timelike particle.
-
 ## References
 
 1. Carroll, S. M. *Spacetime and Geometry*. Cambridge University Press. — worldline as a parameterized one-dimensional set of events.

@@ -126,32 +126,6 @@ where
 
 Note: These principles are the electric dipole moment, the electrostatic dipole potential, the electric field of a dipole, the torque on a dipole in a uniform field, the force on a dipole in a nonuniform field, the potential energy of a dipole, and the induced dipole moment with polarizability. Also called an electric dipole.
 
-## Elementary Example
-
-### Simple
-
-Charges $+2$ and $-2$ separated by $\mathbf{d} = (1, 0, 0)$ give
-
-$$
-\mathbf{p} = 2\,\hat{\mathbf{x}}
-$$
-
-where
-
-- $\mathbf{p}$ points from $-$ to $+$.
-
-### General
-
-A continuous distribution with density $\rho$ has
-
-$$
-\mathbf{p} = \displaystyle\int\mathbf{r}'\rho(\mathbf{r}')\,d\tau'
-$$
-
-where
-
-- $\mathbf{p}$ is the first moment of $\rho$.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. §3.4.1, §3.4.4 — dipole moment, potential, and field. §4.1.1–4.1.3 — torque, force, and energy. Ch. 4 — induced dipoles and polarizability.

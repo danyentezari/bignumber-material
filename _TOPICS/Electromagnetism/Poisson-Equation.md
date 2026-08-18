@@ -34,34 +34,6 @@ where
 
 Note: These principles are Poisson's equation, its reduction to Laplace's equation, and the source as curvature of $V$. Also written $\nabla^{2}V=-\rho/\epsilon_{0}$.
 
-## Elementary Example
-
-### Simple
-
-If $\rho = 0$, Poisson's equation becomes
-
-$$
-\nabla^{2}V = 0
-$$
-
-where
-
-- this is Laplace's equation.
-
-### General
-
-For uniform $\rho$ in a region, one solves
-
-$$
-\nabla^{2}V = -\dfrac{\rho}{\epsilon_{0}}
-$$
-
-subject to boundary conditions on $V$.
-
-where
-
-- $\rho/\epsilon_{0}$ sets the curvature of $V$.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — $\nabla^{2}V=-\rho/\epsilon_{0}$.

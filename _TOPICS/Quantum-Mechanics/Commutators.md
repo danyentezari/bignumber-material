@@ -35,32 +35,6 @@ where
 
 Note: These principles are the definition of the commutator, the canonical relation $[X,P]=i\hbar$, conservation when $[A,H]=0$, and simultaneous eigenbases. Also called a commutation relation when set equal to a specific value. Also denoted $[A,B]$.
 
-## Elementary Example
-
-### Simple
-
-If $A$ and $B$ commute, then
-
-$$
-[A,B] = 0
-$$
-
-where
-
-- the product order does not matter.
-
-### General
-
-On the position representation with $\hbar = 1$, acting on a wavefunction $\psi$,
-
-$$
-[X,P]\psi = i\psi
-$$
-
-where
-
-- $X$ multiplies by $x$ and $P = -i\dfrac{d}{dx}$.
-
 ## References
 
 1. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — $[A,B]=AB-BA$; $[X,P]=i\hbar$.

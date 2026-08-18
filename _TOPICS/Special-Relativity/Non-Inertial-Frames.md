@@ -50,33 +50,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-A train accelerating forward at $a = 2\,\mathrm{m/s}^{2}$ is a non-inertial frame: a free ball on the floor appears to accelerate backward.
-
-$$
-\mathbf{a}_{\mathrm{ball}}^{\mathrm{(train)}} = -\mathbf{a}_{\mathrm{train}}
-$$
-
-where
-
-- $\mathbf{a}_{\mathrm{train}}$ is the train’s acceleration relative to the ground.
-
-### General
-
-On a platform rotating with angular speed $\omega$, a rider of mass $m$ at radius $R$ attributes the outward push to a centrifugal force
-
-$$
-F_{\mathrm{cent}} = \dfrac{mv^{2}}{R} = m\omega^{2} R
-$$
-
-where
-
-- $F_{\mathrm{cent}}$ is the fictitious force in the rotating frame.
-- $v = \omega R$ is the tangential speed.
-
 ## References
 
 1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — accelerating frames are not inertial; centrifugal force as fictitious in a noninertial frame.

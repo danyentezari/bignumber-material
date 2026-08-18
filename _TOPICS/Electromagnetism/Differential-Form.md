@@ -65,32 +65,6 @@ where
 
 Note: These principles are the differential form of Gauss's law, Gauss's law for magnetism, Faraday's law, and the Ampère-Maxwell law. Also called the differential form of Maxwell's equations.
 
-## Elementary Example
-
-### Simple
-
-In empty space with no charges or currents,
-
-$$
-\nabla\cdot\mathbf{E} = 0,\quad \nabla\cdot\mathbf{B} = 0
-$$
-
-where
-
-- both fields are divergenceless.
-
-### General
-
-With sources $\rho$ and $\mathbf{J}$,
-
-$$
-\nabla\cdot\mathbf{E} = \dfrac{\rho}{\epsilon_{0}},\quad \nabla\times\mathbf{B} = \mu_{0}\mathbf{J} + \mu_{0}\epsilon_{0}\dfrac{\partial\mathbf{E}}{\partial t}
-$$
-
-where
-
-- the electric field and magnetic field couple to the sources.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. §2.2.4, §5.3.2, §7.2.1, §7.3.3 — differential Maxwell equations.

@@ -33,36 +33,6 @@ where
 
 Note: These principles are the geometric formula for resistance and Ohm's law.
 
-## Elementary Example
-
-### Simple
-
-A resistor with $R = 10\,\Omega$ across $\Delta V = 5\,\mathrm{V}$ carries
-
-$$
-I = \dfrac{\Delta V}{R} = 0.5\,\mathrm{A}
-$$
-
-where
-
-- $I$ is the current through the resistor.
-
-### General
-
-For fixed $\rho$ and $A$, tripling the length triples $R$.
-
-$$
-R_{i} = \dfrac{\rho L_{i}}{A},\quad L_{i} \in \{L,2L,3L\}
-$$
-
-$$
-I_{i} = \dfrac{\Delta V}{R_{i}}
-$$
-
-where
-
-- longer conductors give smaller current at the same $\Delta V$.
-
 ## References
 
 1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — $R=\rho L/A$ and Ohm’s law $I=\Delta V/R$.

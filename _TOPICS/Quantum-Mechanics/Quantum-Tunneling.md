@@ -36,34 +36,6 @@ where
 
 Note: These principles are exponential decay in the forbidden region, transmission with $E<V$, and the exponential dependence of $T$ on width. Also called barrier penetration. Also called tunneling.
 
-## Elementary Example
-
-### Simple
-
-For a barrier of height $V = 2$ and energy $E = 1$ on an interval of width $1$, the wavefunction inside behaves like
-
-$$
-\psi(x) \propto e^{-\kappa x},\quad \kappa = \sqrt{2m(V-E)}
-$$
-
-with $\hbar = 1$.
-
-where
-
-- $\kappa$ sets the decay rate in the forbidden region.
-
-### General
-
-The transmission probability for a wide barrier scales roughly as
-
-$$
-T \sim e^{-2\kappa L}
-$$
-
-where
-
-- $L$ is the barrier width.
-
 ## References
 
 1. Shankar, R. *Fundamentals of Physics II*. Yale University Press, 2020. — tunneling as transmission with $E<V$.

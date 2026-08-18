@@ -44,32 +44,6 @@ where
 
 Note: These principles are the continuity equation, static charge density, and divergenceless steady current. Also written $\dfrac{\partial\rho}{\partial t}+\nabla\cdot\mathbf{J}=0$.
 
-## Elementary Example
-
-### Simple
-
-If $\mathbf{J} = \mathbf{0}$, then
-
-$$
-\dfrac{\partial\rho}{\partial t} = 0
-$$
-
-where
-
-- the charge density is static.
-
-### General
-
-For a steady state $\dfrac{\partial\rho}{\partial t} = 0$,
-
-$$
-\nabla\cdot\mathbf{J} = 0
-$$
-
-where
-
-- current is divergenceless.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — $\dfrac{\partial\rho}{\partial t}+\nabla\cdot\mathbf{J}=0$.

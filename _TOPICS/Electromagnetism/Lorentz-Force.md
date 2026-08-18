@@ -114,32 +114,6 @@ where
 
 Note: These principles are the Lorentz force law, the electric force, the magnetic force, the magnetic zero-work theorem, the force on a current-carrying wire, the force on a current distribution, and the electromagnetic equation of motion. Also called the Lorentz force law.
 
-## Elementary Example
-
-### Simple
-
-With $\mathbf{B} = \mathbf{0}$ and $\mathbf{E} = E\hat{\mathbf{x}}$,
-
-$$
-\mathbf{F} = qE\hat{\mathbf{x}}
-$$
-
-where
-
-- only the electric field acts.
-
-### General
-
-With both fields nonzero,
-
-$$
-\mathbf{F} = q\mathbf{E} + q\mathbf{v}\times\mathbf{B}
-$$
-
-where
-
-- the magnetic term depends on velocity.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. §5.1.1–5.1.3 — Lorentz force, magnetic work, force on a wire, and force on a current distribution.

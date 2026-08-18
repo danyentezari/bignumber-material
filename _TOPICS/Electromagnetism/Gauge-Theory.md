@@ -105,37 +105,6 @@ where
 
 Note: These principles are the gauge principle, gauge symmetry, the gauge potential, the gauge field as curvature, gauge transformations, the covariant derivative with minimal coupling, and $U(1)$ gauge theory. Also called a gauge field theory.
 
-## Elementary Example
-
-### Simple
-
-Classical electrodynamics is an abelian gauge theory with potentials $(V,\mathbf{A})$ and physical fields $(\mathbf{E},\mathbf{B})$.
-
-$$
-\mathbf{B} = \nabla \times \mathbf{A}
-$$
-
-$$
-\mathbf{E} = -\nabla V - \dfrac{\partial\mathbf{A}}{\partial t}
-$$
-
-where
-
-- gauge changes of $(V,\mathbf{A})$ leave $\mathbf{E}$ and $\mathbf{B}$ fixed.
-
-### General
-
-A nonabelian gauge theory uses a matrix-valued potential $A$ and field strength
-
-$$
-F = dA + A \wedge A
-$$
-
-where
-
-- $A$ takes values in a Lie algebra.
-- $F$ is the gauge field of the theory.
-
 ## References
 
 1. Nakahara, M. *Geometry, Topology and Physics*. Institute of Physics Publishing, 2003. §1.8, Ch. 10 — gauge principle, connection, and curvature.

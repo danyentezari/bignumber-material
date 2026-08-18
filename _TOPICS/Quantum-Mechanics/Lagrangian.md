@@ -48,41 +48,6 @@ where
 
 Note: These principles are $L=T-V$, the generalized-coordinate Lagrangian, stationary action, and the path-integral phase. Also denoted $L$.
 
-## Elementary Example
-
-### Simple
-
-For a particle of mass $m = 2$ with $V(q) = 3q^{2}$,
-
-$$
-L = \dfrac{1}{2}m\left(\dfrac{dq}{dt}\right)^{2} - V(q) = \left(\dfrac{dq}{dt}\right)^{2} - 3q^{2}
-$$
-
-where
-
-- $L$ is the Lagrangian.
-- $m$ is the mass.
-- $q$ is the coordinate.
-- $\dfrac{dq}{dt}$ is the velocity.
-- $V(q)$ is the potential energy.
-
-### General
-
-For $N$ degrees of freedom with kinetic energy $T\left(q,\dfrac{dq}{dt}\right)$ and potential energy $V(q)$,
-
-$$
-L\left(q,\, \dfrac{dq}{dt},\, t\right) = T\left(q,\, \dfrac{dq}{dt}\right) - V(q)
-$$
-
-where
-
-- $N$ is the number of degrees of freedom.
-- $L$ is the Lagrangian.
-- $T$ is the kinetic energy.
-- $V$ is the potential energy.
-- $q$ and $\dfrac{dq}{dt}$ are the coordinates and velocities.
-- $t$ is time.
-
 ## References
 
 1. Park, D. *Introduction to the Quantum Theory*. Dover, 2005. — $L=T-V$ with $T$ kinetic and $V$ potential energy of the whole system.

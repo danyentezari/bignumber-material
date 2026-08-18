@@ -23,32 +23,6 @@ where
 
 Note: These principles are the definition of a well, the infinite-square-well spectrum, and the finite number of bound states in a finite well. Also called a potential well.
 
-## Elementary Example
-
-### Simple
-
-For $n = 1$ in an infinite well of width $a$,
-
-$$
-E_{1} = \dfrac{\pi^{2}\hbar^{2}}{2ma^{2}}
-$$
-
-where
-
-- this is the ground state.
-
-### General
-
-The first three infinite-well energies are
-
-$$
-E_{n} = \dfrac{n^{2}\pi^{2}\hbar^{2}}{2ma^{2}},\quad n \in \{1, 2, 3\}
-$$
-
-where
-
-- energies scale as $n^{2}$.
-
 ## References
 
 1. Shankar, R. *Fundamentals of Physics II*. Yale University Press, 2020. — potential well and infinite square well.

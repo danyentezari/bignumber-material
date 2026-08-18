@@ -32,34 +32,6 @@ where
 
 Note: These principles are Laplace's equation in charge-free regions, harmonic functions, and uniqueness from boundary values. Also written $\nabla^{2}V=0$.
 
-## Elementary Example
-
-### Simple
-
-In one dimension, $\dfrac{d^{2}V}{dx^{2}} = 0$ has solutions
-
-$$
-V(x) = ax + b
-$$
-
-where
-
-- $a$ and $b$ are constants.
-
-### General
-
-In empty space between conductors, $V$ is determined by solving
-
-$$
-\nabla^{2}V = 0
-$$
-
-with $V$ specified on the boundaries.
-
-where
-
-- the solution is unique under standard boundary conditions.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — $\nabla^{2}V=0$ when $\rho=0$.

@@ -60,32 +60,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-A firecracker explodes at one place and one time. In a lab frame its spacetime coordinates are
-
-$$
-(x, y, z, t) = (2\,\mathrm{m},\, 0,\, 0,\, 1\,\mathrm{s})
-$$
-
-where
-
-- this single tuple is one event.
-
-### General
-
-The same event measured in two inertial frames has coordinates $(x,y,z,t)$ in $S$ and $(x',y',z',t')$ in $S'$.
-
-$$
-(x,y,z,t)\quad\text{and}\quad (x',y',z',t')
-$$
-
-where
-
-- both label the same physical occurrence.
-
 ## References
 
 1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — event as activity at a definite point and instant; spacetime coordinates $(x,y,z,t)$.

@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>341 P | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="A parameter that is a real number at least one that is used to define a family of norms on sequences and on functions by choosing the power in a sum or integ...">
+<meta name="description" content="A parameter that is a real number at least one that is used to define a family of norms on sequences and on functions by choosing the power in a sum or integral. More plainly, this parameter...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="341 P | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="A parameter that is a real number at least one that is used to define a family of norms on sequences and on functions by choosing the power in a sum or integ...">
+<meta property="og:description" content="A parameter that is a real number at least one that is used to define a family of norms on sequences and on functions by choosing the power in a sum or integral. More plainly, this parameter...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="341 P | Mathematics for Physics">
-<meta name="twitter:description" content="A parameter that is a real number at least one that is used to define a family of norms on sequences and on functions by choosing the power in a sum or integ...">
+<meta name="twitter:description" content="A parameter that is a real number at least one that is used to define a family of norms on sequences and on functions by choosing the power in a sum or integral. More plainly, this parameter...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -223,220 +223,136 @@
 <h1>
 <span class="header-section-number">341</span> P<a class="anchor" aria-label="anchor" href="#p"><i class="fas fa-link"></i></a>
 </h1>
-<p>A parameter that is a real number at least one that is used to define
-a family of norms on sequences and on functions by choosing the power in
-a sum or integral. More plainly, this parameter represents how large
-values contribute to a norm.</p>
-<p>The letter <span class="math inline"><em>p</em></span> is Riesz’s
-name for that power, who wrote <span
-class="math inline"><em>L</em><sup><em>p</em></sup></span> for the class
-of functions whose <span class="math inline"><em>p</em></span>-th power
-is integrable, according to the The Princeton Companion to
-Mathematics.</p>
-<p><i></p>
-<p><strong>definition [d]</strong> (<em><span
-class="math inline"><em>p</em></span> = Exponent Parameter</em>) A fixed
-real number <span class="math inline"><em>p</em> ≥ 1</span>: the power
-to which absolute values of sequence terms or of function values are
-raised in forming the <span
-class="math inline"><em>ℓ</em><sup><em>p</em></sup></span> sum or the
-<span class="math inline"><em>L</em><sup><em>p</em></sup></span>
-integral, before the outer <span
-class="math inline">$\dfrac{1}{p}$</span> root that defines the <span
-class="math inline"><em>p</em></span>-norm.</p>
+<p>A parameter that is a real number at least one that is used to define a family of norms on sequences and on functions by choosing the power in a sum or integral. More plainly, this parameter represents how large values contribute to a norm.</p>
+<p>The letter <span class="math inline">\(p\)</span> is Riesz’s name for that power, who wrote <span class="math inline">\(L^{p}\)</span> for the class of functions whose <span class="math inline">\(p\)</span>-th power is integrable, according to the The Princeton Companion to Mathematics.</p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em><span class="math inline">\(p\)</span> = Exponent Parameter</em>) A fixed real number <span class="math inline">\(p \geq 1\)</span>: the power to which absolute values of sequence terms or of function values are raised in forming the <span class="math inline">\(\ell^{p}\)</span> sum or the <span class="math inline">\(L^{p}\)</span> integral, before the outer <span class="math inline">\(\dfrac{1}{p}\)</span> root that defines the <span class="math inline">\(p\)</span>-norm.</p>
 <p>where</p>
 <ul>
-<li><span class="math inline"><em>p</em></span> is the exponent
-parameter.</li>
-<li><span class="math inline"><em>ℓ</em><sup><em>p</em></sup></span> is
-the space of <span class="math inline"><em>p</em></span>-summable
-sequences.</li>
-<li><span class="math inline"><em>L</em><sup><em>p</em></sup></span> is
-the corresponding Banach space of <span
-class="math inline"><em>p</em></span>-integrable functions.</li>
-<li>the <span class="math inline"><em>p</em></span>-norm of a sequence
-<span
-class="math inline"><em>x</em> = (<em>ξ</em><sub><em>j</em></sub>)</span>
-is <span class="math inline">$\lVert x \rVert_{p} =
-\bigl(\sum_{j}|\xi_{j}|^{p}\bigr)^{\dfrac{1}{p}}$</span>.</li>
+<li>
+<span class="math inline">\(p\)</span> is the exponent parameter.</li>
+<li>
+<span class="math inline">\(\ell^{p}\)</span> is the space of <span class="math inline">\(p\)</span>-summable sequences.</li>
+<li>
+<span class="math inline">\(L^{p}\)</span> is the corresponding Banach space of <span class="math inline">\(p\)</span>-integrable functions.</li>
+<li>the <span class="math inline">\(p\)</span>-norm of a sequence <span class="math inline">\(x = (\xi_{j})\)</span> is <span class="math inline">\(\lVert x \rVert_{p} = \bigl(\sum_{j}|\xi_{j}|^{p}\bigr)^{\dfrac{1}{p}}\)</span>.</li>
 </ul>
 <p>Note:</p>
 <ul>
-<li>Kreyszig introduces <span class="math inline"><em>p</em></span> with
-the phrase “let <span class="math inline"><em>p</em> ≥ 1</span> be a
-fixed real number.”</li>
-<li>for <span class="math inline"><em>p</em> &gt; 1</span>, the
-companion <span class="math inline"><em>q</em></span> defined by <span
-class="math inline">$\dfrac{1}{p} + \dfrac{1}{q} = 1$</span> is the
-conjugate exponent.</li>
+<li>Kreyszig introduces <span class="math inline">\(p\)</span> with the phrase “let <span class="math inline">\(p \geq 1\)</span> be a fixed real number.”</li>
+<li>for <span class="math inline">\(p &gt; 1\)</span>, the companion <span class="math inline">\(q\)</span> defined by <span class="math inline">\(\dfrac{1}{p} + \dfrac{1}{q} = 1\)</span> is the conjugate exponent.</li>
 </ul>
-<p></i></p>
-<p><i></p>
-<p><strong>definition [d]</strong> (<em><span
-class="math inline"><em>p</em></span> = Norm Family Parameter</em>) A
-real parameter in the range <span
-class="math inline">1 ≤ <em>p</em> &lt; ∞</span> that labels the
-one-parameter family of <span
-class="math inline"><em>p</em></span>-norms <span
-class="math inline">‖ ⋅ ‖<sub><em>p</em></sub></span> on sequence spaces
-and on spaces of continuous functions.</p>
+<p></p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em><span class="math inline">\(p\)</span> = Norm Family Parameter</em>) A real parameter in the range <span class="math inline">\(1 \leq p &lt; \infty\)</span> that labels the one-parameter family of <span class="math inline">\(p\)</span>-norms <span class="math inline">\(\lVert\,\cdot\,\rVert_{p}\)</span> on sequence spaces and on spaces of continuous functions.</p>
 <p>where</p>
 <ul>
-<li><span class="math inline"><em>p</em></span> is the parameter of the
-norm family.</li>
-<li><span class="math inline">$\lVert x \rVert_{p} =
-\bigl(\sum_{j}|x_{j}|^{p}\bigr)^{\dfrac{1}{p}}$</span> on <span
-class="math inline"><em>ℓ</em><sup><em>p</em></sup></span>.</li>
-<li><span class="math inline">$\lVert f \rVert_{p} = \bigl(\int
-|f|^{p}\, ds\bigr)^{\dfrac{1}{p}}$</span> on suitable function
-spaces.</li>
+<li>
+<span class="math inline">\(p\)</span> is the parameter of the norm family.</li>
+<li>
+<span class="math inline">\(\lVert x \rVert_{p} = \bigl(\sum_{j}|x_{j}|^{p}\bigr)^{\dfrac{1}{p}}\)</span> on <span class="math inline">\(\ell^{p}\)</span>.</li>
+<li>
+<span class="math inline">\(\lVert f \rVert_{p} = \bigl(\int |f|^{p}\, ds\bigr)^{\dfrac{1}{p}}\)</span> on suitable function spaces.</li>
 </ul>
 <p>Note:</p>
 <ul>
-<li>as <span class="math inline"><em>p</em> → ∞</span>, <span
-class="math inline">‖ ⋅ ‖<sub><em>p</em></sub></span> tends to the
-supremum norm <span class="math inline">‖ ⋅ ‖<sub>∞</sub></span>.</li>
-<li>the case <span class="math inline"><em>p</em> = 2</span> recovers
-the Euclidean and Hilbert norms associated with an inner product.</li>
+<li>as <span class="math inline">\(p \to \infty\)</span>, <span class="math inline">\(\lVert\,\cdot\,\rVert_{p}\)</span> tends to the supremum norm <span class="math inline">\(\lVert\,\cdot\,\rVert_{\infty}\)</span>.</li>
+<li>the case <span class="math inline">\(p = 2\)</span> recovers the Euclidean and Hilbert norms associated with an inner product.</li>
 </ul>
-<p></i></p>
-<p><i></p>
-<p><strong>definition [d]</strong> (<em><span
-class="math inline"><em>p</em></span> in Mathematical Physics</em>) A
-positive integer appearing in the finite-dimensional <span
-class="math inline"><em>p</em></span>-norm on <span
-class="math inline">ℂ<sup><em>n</em></sup></span>,</p>
+<p></p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em><span class="math inline">\(p\)</span> in Mathematical Physics</em>) A positive integer appearing in the finite-dimensional <span class="math inline">\(p\)</span>-norm on <span class="math inline">\(\mathbb{C}^{n}\)</span>,</p>
 <ul>
-<li><span class="math inline">$\lVert a \rVert_{p} \equiv \left(
-\displaystyle\sum_{i=1}^{n} |\alpha_{i}|^{p}
-\right)^{\dfrac{1}{p}}$</span> ,</li>
+<li>
+<span class="math inline">\(\lVert a \rVert_{p} \equiv \left( \displaystyle\sum_{i=1}^{n} |\alpha_{i}|^{p} \right)^{\dfrac{1}{p}}\)</span> ,</li>
 </ul>
-<p>and, in the infinite-dimensional setting of square-integrable
-functions, the special value <span
-class="math inline"><em>p</em> = 2</span> that is the power in the
-integrability condition defining <span
-class="math inline"><em>L</em><sub><em>w</em></sub><sup>2</sup>(<em>a</em>, <em>b</em>)</span>.</p>
+<p>and, in the infinite-dimensional setting of square-integrable functions, the special value <span class="math inline">\(p = 2\)</span> that is the power in the integrability condition defining <span class="math inline">\(L^{2}_{w}(a,b)\)</span>.</p>
 <p>where</p>
 <ul>
-<li><span
-class="math inline"><em>a</em> = {<em>α</em><sub><em>i</em></sub>}</span>
-is a vector in <span
-class="math inline">ℂ<sup><em>n</em></sup></span>.</li>
-<li><span class="math inline"><em>p</em></span> is a positive integer in
-the finite-dimensional formula.</li>
-<li><span
-class="math inline"><em>L</em><sub><em>w</em></sub><sup>2</sup>(<em>a</em>, <em>b</em>)</span>
-is the weighted space of square-integrable functions on <span
-class="math inline">[<em>a</em>, <em>b</em>]</span>.</li>
-<li>the superscript <span class="math inline">2</span> in <span
-class="math inline"><em>L</em><sup>2</sup></span> is this power <span
-class="math inline"><em>p</em> = 2</span>.</li>
+<li>
+<span class="math inline">\(a = \{\alpha_{i}\}\)</span> is a vector in <span class="math inline">\(\mathbb{C}^{n}\)</span>.</li>
+<li>
+<span class="math inline">\(p\)</span> is a positive integer in the finite-dimensional formula.</li>
+<li>
+<span class="math inline">\(L^{2}_{w}(a,b)\)</span> is the weighted space of square-integrable functions on <span class="math inline">\([a,b]\)</span>.</li>
+<li>the superscript <span class="math inline">\(2\)</span> in <span class="math inline">\(L^{2}\)</span> is this power <span class="math inline">\(p = 2\)</span>.</li>
 </ul>
 <p>Note:</p>
 <ul>
-<li>Hassani’s infinite-dimensional development focuses on the Hilbert
-case <span class="math inline"><em>p</em> = 2</span>.</li>
-<li>Arfken likewise works primarily with square-integrable functions
-rather than general <span
-class="math inline"><em>L</em><sup><em>p</em></sup></span>.</li>
+<li>Hassani’s infinite-dimensional development focuses on the Hilbert case <span class="math inline">\(p = 2\)</span>.</li>
+<li>Arfken likewise works primarily with square-integrable functions rather than general <span class="math inline">\(L^{p}\)</span>.</li>
 </ul>
-<p></i></p>
-<div id="historical-notes" class="section level2" number="341.1">
+<p></p>
+<div id="historical-notes-2" class="section level2" number="341.1">
 <h2>
-<span class="header-section-number">341.1</span> Historical Notes<a class="anchor" aria-label="anchor" href="#historical-notes"><i class="fas fa-link"></i></a>
+<span class="header-section-number">341.1</span> Historical Notes<a class="anchor" aria-label="anchor" href="#historical-notes-2"><i class="fas fa-link"></i></a>
 </h2>
-<p>Riesz introduced the parameter <span
-class="math inline"><em>p</em></span> in 1910. He replaced the
-assumption of quadratic integrability by the integrability of <span
-class="math inline">|<em>f</em>|<sup><em>p</em></sup></span>. Each
-number <span class="math inline"><em>p</em></span> greater than <span
-class="math inline">1</span> determines a function class <span
-class="math inline"><em>L</em><sup><em>p</em></sup></span>. The letter
-<span class="math inline"><em>p</em></span> names that power in <span
-class="math inline">|<em>f</em>|<sup><em>p</em></sup></span>.</p>
+<p>Riesz introduced the parameter <span class="math inline">\(p\)</span> in 1910.
+He replaced the assumption of quadratic integrability by the integrability of <span class="math inline">\(|f|^{p}\)</span>.
+Each number <span class="math inline">\(p\)</span> greater than <span class="math inline">\(1\)</span> determines a function class <span class="math inline">\(L^{p}\)</span>.
+The letter <span class="math inline">\(p\)</span> names that power in <span class="math inline">\(|f|^{p}\)</span>.</p>
 </div>
-<div id="elementary-example" class="section level2" number="341.2">
+<div id="elementary-example-85" class="section level2" number="341.2">
 <h2>
-<span class="header-section-number">341.2</span> Elementary Example<a class="anchor" aria-label="anchor" href="#elementary-example"><i class="fas fa-link"></i></a>
+<span class="header-section-number">341.2</span> Elementary Example<a class="anchor" aria-label="anchor" href="#elementary-example-85"><i class="fas fa-link"></i></a>
 </h2>
-<div id="simple" class="section level3" number="341.2.1">
+<div id="simple-85" class="section level3" number="341.2.1">
 <h3>
-<span class="header-section-number">341.2.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple"><i class="fas fa-link"></i></a>
+<span class="header-section-number">341.2.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple-85"><i class="fas fa-link"></i></a>
 </h3>
-<p>The parameter <span class="math inline"><em>p</em></span> is a real
-number at least <span class="math inline">1</span>. The choice <span
-class="math inline"><em>p</em> = 1</span> gives the sum of absolute
-values.</p>
-<p><span class="math display"><em>p</em> = 1</span></p>
-<p><span
-class="math display">‖<em>x</em>‖<sub>1</sub> = |<em>ξ</em><sub>1</sub>|+|<em>ξ</em><sub>2</sub>|+|<em>ξ</em><sub>3</sub>|</span></p>
-<p><span
-class="math display"><em>x</em> = (<em>ξ</em><sub>1</sub>, <em>ξ</em><sub>2</sub>, <em>ξ</em><sub>3</sub>) = (1, −2, 3),  ‖<em>x</em>‖<sub>1</sub> = 6</span></p>
+<p>The parameter <span class="math inline">\(p\)</span> is a real number at least <span class="math inline">\(1\)</span>. The choice <span class="math inline">\(p = 1\)</span> gives the sum of absolute values.</p>
+<p><span class="math display">\[
+p = 1
+\]</span></p>
+<p><span class="math display">\[
+\lVert x \rVert_{1} = |\xi_{1}| + |\xi_{2}| + |\xi_{3}|
+\]</span></p>
+<p><span class="math display">\[
+x = (\xi_{1},\xi_{2},\xi_{3}) = (1,-2,3),\quad \lVert x \rVert_{1} = 6
+\]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline"><em>p</em></span> is the exponent
-parameter.</li>
-<li><span class="math inline">‖<em>x</em>‖<sub><em>p</em></sub></span>
-is the <span class="math inline"><em>p</em></span>-norm.</li>
+<li>
+<span class="math inline">\(p\)</span> is the exponent parameter.</li>
+<li>
+<span class="math inline">\(\lVert x \rVert_{p}\)</span> is the <span class="math inline">\(p\)</span>-norm.</li>
 </ul>
 </div>
-<div id="general" class="section level3" number="341.2.2">
+<div id="general-85" class="section level3" number="341.2.2">
 <h3>
-<span class="header-section-number">341.2.2</span> General<a class="anchor" aria-label="anchor" href="#general"><i class="fas fa-link"></i></a>
+<span class="header-section-number">341.2.2</span> General<a class="anchor" aria-label="anchor" href="#general-85"><i class="fas fa-link"></i></a>
 </h3>
-<p>For <span class="math inline"><em>p</em> = 2</span> the same
-three-term sequence uses squares under a square root.</p>
-<p><span class="math display"><em>p</em> = 2</span></p>
-<p><span
-class="math display">‖<em>x</em>‖<sub>2</sub> = (|<em>ξ</em><sub>1</sub>|<sup>2</sup> + |<em>ξ</em><sub>2</sub>|<sup>2</sup> + |<em>ξ</em><sub>3</sub>|<sup>2</sup>)<sup>1/2</sup></span></p>
-<p><span class="math display">$$
+<p>For <span class="math inline">\(p = 2\)</span> the same three-term sequence uses squares under a square root.</p>
+<p><span class="math display">\[
+p = 2
+\]</span></p>
+<p><span class="math display">\[
+\lVert x \rVert_{2} = \bigl(|\xi_{1}|^{2} + |\xi_{2}|^{2} + |\xi_{3}|^{2}\bigr)^{1/2}
+\]</span></p>
+<p><span class="math display">\[
 x = (1,-2,3),\quad \lVert x \rVert_{2} = \sqrt{14}
-$$</span></p>
+\]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline"><em>p</em> ≥ 1</span> labels the family of
-<span class="math inline"><em>p</em></span>-norms.</li>
+<li>
+<span class="math inline">\(p \geq 1\)</span> labels the family of <span class="math inline">\(p\)</span>-norms.</li>
 </ul>
 </div>
 </div>
-<div id="references" class="section level2" number="341.3">
+<div id="references-290" class="section level2" number="341.3">
 <h2>
-<span class="header-section-number">341.3</span> References<a class="anchor" aria-label="anchor" href="#references"><i class="fas fa-link"></i></a>
+<span class="header-section-number">341.3</span> References<a class="anchor" aria-label="anchor" href="#references-290"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li>Gowers, T., Barrow-Green, J., &amp; Leader, I., eds. <em>The
-Princeton Companion to Mathematics</em>. Princeton University Press. —
-Riesz and <span
-class="math inline"><em>L</em><sup><em>p</em></sup></span> as functions
-whose <span class="math inline"><em>p</em></span>-th power is
-integrable; dual <span
-class="math inline"><em>L</em><sup><em>q</em></sup></span>.</li>
-<li>Kreyszig, E. <em>Introductory Functional Analysis with
-Applications</em>. Wiley, 1989. — fixed <span
-class="math inline"><em>p</em> ≥ 1</span> in <span
-class="math inline"><em>ℓ</em><sup><em>p</em></sup></span> and <span
-class="math inline"><em>L</em><sup><em>p</em></sup></span>; conjugate
-exponents <span class="math inline">$\dfrac{1}{p} +
-\dfrac{1}{q}=1$</span>.</li>
-<li>Gamelin, T. W., &amp; Greene, R. E. <em>Introduction to
-Topology</em>, 2nd ed. Dover, 1999. — one-parameter family of <span
-class="math inline"><em>p</em></span>-norms for <span
-class="math inline">1 ≤ <em>p</em> &lt; ∞</span>.</li>
-<li>Hassani, S. <em>Mathematical Physics</em>, 2nd ed. Springer. — <span
-class="math inline"><em>p</em></span>-norm on <span
-class="math inline">ℂ<sup><em>n</em></sup></span>; <span
-class="math inline"><em>L</em><sub><em>w</em></sub><sup>2</sup></span>
-with power <span class="math inline">2</span>.</li>
-<li>Pietsch, A. <em>History of Banach Spaces and Linear Operators</em>.
-Birkhäuser, 2007. — Riesz and the introduction of <span
-class="math inline"><em>L</em><sup><em>p</em></sup></span> via the power
-<span class="math inline"><em>p</em></span> in <span
-class="math inline">|<em>f</em>|<sup><em>p</em></sup></span>.</li>
+<li>Gowers, T., Barrow-Green, J., &amp; Leader, I., eds. <em>The Princeton Companion to Mathematics</em>. Princeton University Press. — Riesz and <span class="math inline">\(L^{p}\)</span> as functions whose <span class="math inline">\(p\)</span>-th power is integrable; dual <span class="math inline">\(L^{q}\)</span>.</li>
+<li>Kreyszig, E. <em>Introductory Functional Analysis with Applications</em>. Wiley, 1989. — fixed <span class="math inline">\(p\geq 1\)</span> in <span class="math inline">\(\ell^{p}\)</span> and <span class="math inline">\(L^{p}\)</span>; conjugate exponents <span class="math inline">\(\dfrac{1}{p} + \dfrac{1}{q}=1\)</span>.</li>
+<li>Gamelin, T. W., &amp; Greene, R. E. <em>Introduction to Topology</em>, 2nd ed. Dover, 1999. — one-parameter family of <span class="math inline">\(p\)</span>-norms for <span class="math inline">\(1\leq p&lt;\infty\)</span>.</li>
+<li>Hassani, S. <em>Mathematical Physics</em>, 2nd ed. Springer. — <span class="math inline">\(p\)</span>-norm on <span class="math inline">\(\mathbb{C}^{n}\)</span>; <span class="math inline">\(L^{2}_{w}\)</span> with power <span class="math inline">\(2\)</span>.</li>
+<li>Pietsch, A. <em>History of Banach Spaces and Linear Operators</em>. Birkhäuser, 2007. — Riesz and the introduction of <span class="math inline">\(L^{p}\)</span> via the power <span class="math inline">\(p\)</span> in <span class="math inline">\(|f|^{p}\)</span>.</li>
 </ol>
 <div class="topic-index">
 <ul>
-<li><a
-href="absolute-value-to-the-p.html">Absolute-Value-to-the-p</a></li>
+<li><a href="absolute-value-to-the-p.html">Absolute-Value-to-the-p</a></li>
 <li><a href="banach-space.html">Banach Space</a></li>
 <li><a href="cauchy-sequence.html">Cauchy Sequence</a></li>
 <li><a href="complete-set.html">Complete Set</a></li>
@@ -455,20 +371,14 @@ href="absolute-value-to-the-p.html">Absolute-Value-to-the-p</a></li>
 <li><a href="p-norm.html">P-Norm</a></li>
 <li><a href="p-summable.html">P-Summable</a></li>
 <li><a href="p-summable-sequence.html">P-Summable Sequence</a></li>
-<li><a href="quadratic-integrability.html">Quadratic
-Integrability</a></li>
+<li><a href="quadratic-integrability.html">Quadratic Integrability</a></li>
 <li><a href="sets.html">Sets</a></li>
 <li><a href="sifting-property.html">Sifting Property</a></li>
 </ul>
 </div>
+
 </div>
 </div>
-
-
-
-
-
-
 <script>
   (function () {
     var MOON =
@@ -1037,9 +947,9 @@ Integrability</a></li>
 <li><a class="nav-link" href="#p"><span class="header-section-number">341</span> P</a></li>
 <li><a class="nav-link" href="#historical-notes-2"><span class="header-section-number">341.1</span> Historical Notes</a></li>
 <li>
-<a class="nav-link" href="#elementary-example-169"><span class="header-section-number">341.2</span> Elementary Example</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#simple-169"><span class="header-section-number">341.2.1</span> Simple</a></li>
-<li><a class="nav-link" href="#general-169"><span class="header-section-number">341.2.2</span> General</a></li>
+<a class="nav-link" href="#elementary-example-85"><span class="header-section-number">341.2</span> Elementary Example</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#simple-85"><span class="header-section-number">341.2.1</span> Simple</a></li>
+<li><a class="nav-link" href="#general-85"><span class="header-section-number">341.2.2</span> General</a></li>
 </ul>
 </li>
 <li><a class="nav-link" href="#references-290"><span class="header-section-number">341.3</span> References</a></li>

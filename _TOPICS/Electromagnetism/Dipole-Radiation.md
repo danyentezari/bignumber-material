@@ -90,24 +90,6 @@ where
 
 Note: These principles are the radiation criterion, the radiation-zone approximation, the radiation-zone field equations, the dipole radiation pattern, the $\omega^{4}$ dipole power law, the Larmor formula, and electric-dipole dominance in the multipole expansion. Also called electric dipole radiation.
 
-## Elementary Example
-
-### Simple
-
-A dipole oscillating as $p(t) = p_{0}\cos(\omega t)$ radiates at frequency $\omega$.
-
-where
-
-- $\omega$ is the angular frequency.
-
-### General
-
-In the radiation zone, $|\mathbf{E}|$ and $|\mathbf{B}|$ scale as $1/r$, so intensity scales as $1/r^{2}$.
-
-where
-
-- energy flux falls with distance squared.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. §11.1.1–11.1.4, §11.2.1 — radiation criterion, radiation zone, dipole fields and power, Larmor formula.

@@ -50,40 +50,6 @@ where
 
 Note: These principles are gauge freedom of the potentials, the Coulomb gauge, and the Lorenz gauge. Also called a gauge choice. Also called working in a gauge.
 
-## Elementary Example
-
-### Simple
-
-In magnetostatics, the Coulomb gauge is the choice $\nabla\cdot\mathbf{A} = 0$.
-
-$$
-\mathbf{A}' = \mathbf{A} + \nabla\lambda,\quad \nabla\cdot\mathbf{A}' = 0
-$$
-
-where
-
-- $\lambda$ is chosen so that the new vector potential is divergenceless.
-
-### General
-
-A full electrodynamic gauge change shifts both potentials together.
-
-$$
-\mathbf{A}' = \mathbf{A} + \nabla\lambda
-$$
-
-$$
-V' = V - \dfrac{\partial\lambda}{\partial t}
-$$
-
-$$
-\mathbf{E}' = \mathbf{E},\quad \mathbf{B}' = \mathbf{B}
-$$
-
-where
-
-- the physical fields are unchanged by the gauge choice.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — gauge freedom and gauge transformations of $V$ and $\mathbf{A}$.

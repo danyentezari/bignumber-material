@@ -50,32 +50,6 @@ where
 
 Note: These principles are the electromagnetic energy density, the total field energy, and Poynting's theorem. Also called field energy.
 
-## Elementary Example
-
-### Simple
-
-In a region with $\mathbf{B} = \mathbf{0}$ and uniform $E$,
-
-$$
-u = \dfrac{1}{2}\epsilon_{0}E^{2}
-$$
-
-where
-
-- only electric energy density appears.
-
-### General
-
-With both fields,
-
-$$
-u = \dfrac{1}{2}\epsilon_{0}E^{2} + \dfrac{1}{2\mu_{0}}B^{2}
-$$
-
-where
-
-- both contributions add.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — $u=\dfrac{1}{2}(\epsilon_{0}E^{2}+B^{2}/\mu_{0})$.

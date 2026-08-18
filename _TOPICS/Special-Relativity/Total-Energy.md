@@ -35,32 +35,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-At rest, $\gamma = 1$, so
-
-$$
-E = mc^{2}
-$$
-
-where
-
-- $E$ equals the rest energy alone.
-
-### General
-
-At $u = 0.6c$, $\gamma = 1.25$, so
-
-$$
-E = 1.25\, mc^{2}
-$$
-
-where
-
-- $E$ exceeds the rest energy by the kinetic energy $0.25\, mc^{2}$.
-
 ## References
 
 1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — $E=\gamma mc^{2}=E_{0}+K$.

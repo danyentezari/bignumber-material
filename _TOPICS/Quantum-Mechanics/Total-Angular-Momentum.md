@@ -46,32 +46,6 @@ where
 
 Note: These principles are $\mathbf{J}=\mathbf{L}+\mathbf{S}$, the $\mathbf{J}$ algebra, the $j=\ell\pm 1/2$ values, and conservation of $\mathbf{J}$. Also denoted $\mathbf{J}$.
 
-## Elementary Example
-
-### Simple
-
-For $\ell = 0$ and spin $\dfrac{1}{2}$,
-
-$$
-\mathbf{J} = \mathbf{S}
-$$
-
-where
-
-- there is no orbital contribution.
-
-### General
-
-For one electron with orbital $\ell$ and spin $s = \dfrac{1}{2}$,
-
-$$
-j = \ell \pm \dfrac{1}{2}
-$$
-
-where
-
-- $j$ labels eigenvalues of $J^{2}$.
-
 ## References
 
 1. Sakurai, J. J., & Napolitano, J. *Modern Quantum Mechanics*. Cambridge University Press, 2021. — $\mathbf{J}=\mathbf{L}+\mathbf{S}$.

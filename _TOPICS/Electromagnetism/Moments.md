@@ -42,34 +42,6 @@ where
 
 Note: These principles are the monopole moment, the dipole moment, and the higher multipole moments. Also called multipole moments.
 
-## Elementary Example
-
-### Simple
-
-A single point charge $q$ at the origin has monopole moment
-
-$$
-Q = q
-$$
-
-and vanishing dipole moment $\mathbf{p} = \mathbf{0}$.
-
-where
-
-- only the monopole survives.
-
-### General
-
-Two charges $+q$ and $-q$ separated by vector $\mathbf{d}$ have
-
-$$
-Q = 0,\quad \mathbf{p} = q\mathbf{d}
-$$
-
-where
-
-- the monopole vanishes and the dipole is the leading moment.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — multipole moments $Q$, $\mathbf{p}$, and higher.

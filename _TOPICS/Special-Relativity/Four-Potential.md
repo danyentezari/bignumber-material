@@ -34,32 +34,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-In the Coulomb gauge for electrostatics, $\mathbf{A} = \mathbf{0}$ and
-
-$$
-A^{\mu} = \left(\dfrac{V}{c},\, 0,\, 0,\, 0\right)
-$$
-
-where
-
-- $V$ is the electrostatic potential.
-
-### General
-
-A general configuration has both scalar and vector parts,
-
-$$
-A^{\mu} = \left(\dfrac{V}{c},\, \mathbf{A}\right)
-$$
-
-where
-
-- $V$ and $\mathbf{A}$ together make the four-potential.
-
 ## References
 
 1. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — potential $4$-vector $A^{\alpha}=(V/c,\mathbf{A})$.

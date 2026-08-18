@@ -27,24 +27,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-A firecracker that explodes at $(x, t) = (1, 2)$ is one event with spacetime coordinates in one spatial dimension plus time.
-
-where
-
-- two numbers locate the event.
-
-### General
-
-An event in three spatial dimensions has spacetime coordinates $(x, y, z, t)$.
-
-where
-
-- four numbers locate the event.
-
 ## References
 
 1. Carroll, S. M. *Spacetime and Geometry*. Cambridge University Press, 2021. — spacetime as a four-dimensional set of events.

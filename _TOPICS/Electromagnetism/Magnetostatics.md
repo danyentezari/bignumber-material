@@ -107,32 +107,6 @@ where
 
 Note: These principles are the Biot-Savart law, Ampère's law, Gauss's law for magnetism, the magnetic vector potential, the magnetic dipole moment, and the stored energy of a magnetic field. Also called steady-state magnetism.
 
-## Elementary Example
-
-### Simple
-
-A long straight wire with current $I$ produces
-
-$$
-B = \dfrac{\mu_{0}I}{2\pi r}
-$$
-
-where
-
-- $r$ is the perpendicular distance from the wire.
-
-### General
-
-Steady $\mathbf{J}$ determines $\mathbf{B}$ via
-
-$$
-\nabla\times\mathbf{B} = \mu_{0}\mathbf{J},\quad \nabla\cdot\mathbf{B} = 0
-$$
-
-where
-
-- these are the magnetostatic Maxwell equations.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. §5.2–5.4, §8.2.4 — Biot-Savart law, Ampère's law, vector potential, magnetic dipole, and magnetic energy.

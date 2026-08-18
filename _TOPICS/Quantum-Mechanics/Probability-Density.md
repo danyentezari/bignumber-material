@@ -32,36 +32,6 @@ where
 
 Note: These principles are the definition of $\rho=|\Psi|^{2}$, the integral rule for a region, and the three-dimensional volume form. Also called the position probability density.
 
-## Elementary Example
-
-### Simple
-
-For a normalized wavefunction constant on $[0,2]$ and zero elsewhere,
-
-$$
-\psi(x) = \dfrac{1}{\sqrt{2}},\quad x \in [0,2]
-$$
-
-$$
-P(x) = |\psi(x)|^{2} = \dfrac{1}{2}
-$$
-
-where
-
-- $P(x)$ is the probability density on that interval.
-
-### General
-
-The probability that the particle lies in $[0,1]$ is
-
-$$
-\int_{0}^{1} P(x)\, dx = \dfrac{1}{2}
-$$
-
-where
-
-- the integral of $P$ over a set is the finding probability.
-
 ## References
 
 1. Sakurai, J. J., & Napolitano, J. *Modern Quantum Mechanics*. Cambridge University Press, 2021. — $\rho=|\psi|^{2}$ as probability density.

@@ -50,32 +50,6 @@ where
 
 Note: These principles are Faraday's law in integral and differential form and the emf of a fixed loop. Also called electromagnetic induction. Also called Faraday induction.
 
-## Elementary Example
-
-### Simple
-
-A loop of area $A$ in a uniform field $B(t)$ has flux $\Phi = BA$.
-
-$$
-\mathcal{E} = -\dfrac{d\Phi}{dt} = -A\dfrac{dB}{dt}
-$$
-
-where
-
-- $\mathcal{E}$ is the induced emf around the loop.
-
-### General
-
-For three loops with the same area but different $dB/dt$, the induced emf scales with that rate.
-
-$$
-\mathcal{E}_{i} = -A\dfrac{dB_{i}}{dt},\quad i \in \{1,2,3\}
-$$
-
-where
-
-- each $\mathcal{E}_{i}$ is the emf for the corresponding field ramp.
-
 ## References
 
 1. Needham, T. *Visual Differential Geometry and Forms*. Princeton University Press, 2021. — Faraday’s law of electromagnetic induction in integral form.

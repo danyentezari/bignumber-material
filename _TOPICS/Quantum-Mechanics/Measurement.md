@@ -34,32 +34,6 @@ where
 
 Note: These principles are the eigenvalue-outcome rule, collapse to an eigenstate, and the Born probability rule. Also called the collapse of the wave function when the post-measurement state is emphasized.
 
-## Elementary Example
-
-### Simple
-
-Measuring $S_{z}$ on a spin-up eigenstate $|+\rangle$ yields $+\hbar/2$ and leaves the state $|+\rangle$.
-
-$$
-\hat{S}_{z}|+\rangle = \dfrac{\hbar}{2}|+\rangle
-$$
-
-where
-
-- the post-measurement state is already an eigenstate.
-
-### General
-
-If $|\psi\rangle = c_{+}|+\rangle + c_{-}|-\rangle$, a measurement of $S_{z}$ yields $+\hbar/2$ or $-\hbar/2$ and collapses to $|+\rangle$ or $|-\rangle$ accordingly.
-
-$$
-P(+) = |c_{+}|^{2},\quad P(-) = |c_{-}|^{2}
-$$
-
-where
-
-- $c_{\pm}$ are the expansion coefficients.
-
 ## References
 
 1. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — Axiom 4: measurement result $\lambda$ and collapse to an eigenstate of $\hat{f}$.

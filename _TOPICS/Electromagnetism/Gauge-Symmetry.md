@@ -51,34 +51,6 @@ where
 
 Note: These principles are gauge invariance of $\mathbf{E}$ and $\mathbf{B}$, the action of the symmetry on the potentials, and the magnetostatic special case. Also called gauge invariance.
 
-## Elementary Example
-
-### Simple
-
-Replacing $\mathbf{A}$ by $\mathbf{A}+\nabla\lambda$ leaves
-
-$$
-\mathbf{B} = \nabla\times\mathbf{A}
-$$
-
-unchanged.
-
-where
-
-- this is a magnetostatic gauge symmetry.
-
-### General
-
-Full electrodynamic gauge symmetry acts as
-
-$$
-\mathbf{A}\mapsto\mathbf{A}+\nabla\lambda,\quad V\mapsto V-\dfrac{\partial\lambda}{\partial t}
-$$
-
-where
-
-- both potentials change while $\mathbf{E}$ and $\mathbf{B}$ do not.
-
 ## References
 
 1. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — gauge symmetries in field theories.

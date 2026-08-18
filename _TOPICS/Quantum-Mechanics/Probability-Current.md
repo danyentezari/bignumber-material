@@ -35,33 +35,6 @@ where
 
 Note: These principles are the continuity equation, the formula for $\mathbf{j}$, and vanishing current for a real wavefunction. Also called probability flux. Also called probability current density.
 
-## Elementary Example
-
-### Simple
-
-For a real stationary wavefunction $\psi(x) = \psi^{*}(x)$, one has $\nabla\psi^{*} = \nabla\psi$, so
-
-$$
-\mathbf{j} = \mathbf{0}
-$$
-
-where
-
-- there is no probability flux for a purely real $\psi$.
-
-### General
-
-For a plane wave $\psi = Ae^{ikx}$,
-
-$$
-j = \dfrac{\hbar k}{m}|A|^{2}
-$$
-
-where
-
-- $j$ is the probability current in one dimension.
-- $k$ is the wave number.
-
 ## References
 
 1. Sakurai, J. J., & Napolitano, J. *Modern Quantum Mechanics*. Cambridge University Press, 2021. — probability flux $\mathbf{j}$ and continuity equation $\partial\rho/\partial t+\nabla\cdot\mathbf{j}=0$.

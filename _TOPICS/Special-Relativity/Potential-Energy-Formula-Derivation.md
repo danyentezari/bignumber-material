@@ -65,47 +65,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-For a constant force $F = 4\,\mathrm{N}$ from $x_{1} = 0$ to $x_{2} = 3\,\mathrm{m}$,
-
-$$
-U(x_{2}) - U(x_{1}) = -\int_{0}^{3} 4\, dx = -12\,\mathrm{J}
-$$
-
-where
-
-- $F$ is the constant force.
-- $x_{1}$ is the initial position.
-- $x_{2}$ is the final position.
-- $dx$ is the position differential.
-- $U(x_{1})$ is the initial potential energy.
-- $U(x_{2})$ is the final potential energy.
-- $W = \displaystyle\int_{x_{1}}^{x_{2}} F\, dx$ is the work done by $F$.
-- $\Delta U = -W$ is the change in potential energy.
-
-### General
-
-For $F(x) = -6x$ from $x_{1} = 1$ to $x_{2} = 2$,
-
-$$
-U(2) - U(1) = -\int_{1}^{2} (-6x)\, dx = 9\,\mathrm{J}
-$$
-
-where
-
-- $F(x)$ is the position-dependent force.
-- $x$ is the position.
-- $x_{1}$ is the initial position.
-- $x_{2}$ is the final position.
-- $dx$ is the position differential.
-- $U(1)$ is the potential energy at $x = 1$.
-- $U(2)$ is the potential energy at $x = 2$.
-- $W = \displaystyle\int_{1}^{2} F(x)\, dx$ is the work done by $F$.
-- $\Delta U = -W$ is the change in potential energy.
-
 ## References
 
 1. Shankar, R. *Fundamentals of Physics II*. Yale University Press, 2020. — from $\dfrac{dK}{dt} = F\,\dfrac{dx}{dt}$ to $U(x_{2})-U(x_{1})=-\int F\,dx$.

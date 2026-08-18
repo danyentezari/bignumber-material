@@ -40,33 +40,6 @@ where
 
 Note: These principles are the integral normalization condition, ket normalization, and rescaling to unit norm. Also called the normalization condition.
 
-## Elementary Example
-
-### Simple
-
-For $\psi(x) = A$ on $[0,L]$ and zero elsewhere, normalization requires
-
-$$
-\int_{0}^{L} |A|^{2}\, dx = 1 \implies |A| = \dfrac{1}{\sqrt{L}}
-$$
-
-where
-
-- $A$ is the constant amplitude.
-- $L$ is the length of the interval.
-
-### General
-
-If $\psi$ is not normalized but $\displaystyle\int |\psi|^{2} = N > 0$, the normalized wavefunction is
-
-$$
-\psi_{\mathrm{norm}} = \dfrac{\psi}{\sqrt{N}}
-$$
-
-where
-
-- $N$ is the squared $L^{2}$ norm of $\psi$.
-
 ## References
 
 1. Shankar, R. *Fundamentals of Physics II*. Yale University Press, 2020. — $\int|\psi|^{2}dx=1$.

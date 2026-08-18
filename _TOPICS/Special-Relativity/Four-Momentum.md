@@ -78,32 +78,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-A particle at rest has $\mathbf{p} = \mathbf{0}$ and $E = mc^{2}$, so
-
-$$
-P^{\mu} = \left(mc,\, \mathbf{0}\right)
-$$
-
-where
-
-- $P^{\mu}$ reduces to the rest-energy component.
-
-### General
-
-For speed $u$ with $\gamma = \dfrac{1}{\sqrt{1-\dfrac{u^{2}}{c^{2}}}}$,
-
-$$
-P^{\mu} = \left(m\gamma c,\, m\gamma\mathbf{u}\right)
-$$
-
-where
-
-- $\mathbf{u}$ is the three-velocity.
-
 ## References
 
 1. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — $P^{\mu}=mU^{\mu}$ and $P^{\mu}=(E/c,\mathbf{p})$.

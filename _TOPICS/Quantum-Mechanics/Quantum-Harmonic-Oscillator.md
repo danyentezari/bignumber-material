@@ -46,32 +46,6 @@ where
 
 Note: These principles are the quadratic Hamiltonian, the equidistant spectrum, and the raising-lowering operator solution. Also called the harmonic oscillator.
 
-## Elementary Example
-
-### Simple
-
-The ground-state energy is
-
-$$
-E_{0} = \dfrac{1}{2}\hbar\omega
-$$
-
-where
-
-- $n = 0$.
-
-### General
-
-The first three levels are
-
-$$
-E_{n} = \hbar\omega\bigl(n+\dfrac{1}{2}\bigr),\quad n \in \{0, 1, 2\}
-$$
-
-where
-
-- levels are spaced by $\hbar\omega$.
-
 ## References
 
 1. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — $H=\dfrac{P^{2}}{2m}+\dfrac{1}{2}m\omega^{2}X^{2}$.

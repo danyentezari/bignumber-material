@@ -69,32 +69,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-A mass $m = 2\,\mathrm{kg}$ raised by $y = 3\,\mathrm{m}$ near Earth has
-
-$$
-U_{G} = mgy = (2)(9.8)(3) = 58.8\,\mathrm{J}
-$$
-
-where
-
-- $U_{G}$ is the gravitational potential energy.
-
-### General
-
-A spring with $k = 200\,\mathrm{N/m}$ stretched by $\Delta s = 0.10\,\mathrm{m}$ stores
-
-$$
-U_{\mathrm{Sp}} = \dfrac{1}{2}(200)(0.10)^{2} = 1\,\mathrm{J}
-$$
-
-where
-
-- $U_{\mathrm{Sp}}$ is the elastic potential energy.
-
 ## References
 
 1. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — $V(x)=-\int F(x)\,dx$ and $F=-dV/dx$.

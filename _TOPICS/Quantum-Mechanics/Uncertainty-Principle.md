@@ -35,32 +35,6 @@ where
 
 Note: These principles are the Heisenberg relation, the variance form, the Gaussian minimum-uncertainty packet, and the tradeoff of localization. Also called the Heisenberg uncertainty principle. Also called the position-momentum uncertainty relation.
 
-## Elementary Example
-
-### Simple
-
-A minimum-uncertainty packet saturates the bound:
-
-$$
-\Delta x\, \Delta p = \dfrac{\hbar}{2}
-$$
-
-where
-
-- equality holds for an appropriate Gaussian wave packet.
-
-### General
-
-If $\Delta x = 10^{-10}\,\mathrm{m}$, then
-
-$$
-\Delta p \geq \dfrac{\hbar}{2\Delta x}
-$$
-
-where
-
-- a tighter position localization forces a larger momentum spread.
-
 ## References
 
 1. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — $(\Delta_{\psi}X)(\Delta_{\psi}P)\geq\hbar/2$.

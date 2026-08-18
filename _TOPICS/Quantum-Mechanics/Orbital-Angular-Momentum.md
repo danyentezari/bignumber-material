@@ -48,38 +48,6 @@ where
 
 Note: These principles are $\mathbf{L}=\mathbf{r}\times\mathbf{p}$, the definition of $L^{2}$, and the $(\ell,m)$ spectrum. Also denoted $\mathbf{L}$. Also called orbital angular momentum to distinguish it from spin.
 
-## Elementary Example
-
-### Simple
-
-Eigenvalues of $L_{z}$ are
-
-$$
-L_{z} = m\hbar,\quad m \in \{0, \pm 1\}
-$$
-
-for the lowest nontrivial orbital cases.
-
-where
-
-- $m$ is the magnetic quantum number.
-
-### General
-
-Simultaneous eigenstates of $L^{2}$ and $L_{z}$ satisfy
-
-$$
-L^{2}|\ell,m\rangle = \hbar^{2}\ell(\ell+1)|\ell,m\rangle
-$$
-
-$$
-L_{z}|\ell,m\rangle = m\hbar|\ell,m\rangle
-$$
-
-where
-
-- $\ell$ is the orbital angular momentum quantum number.
-
 ## References
 
 1. Sakurai, J. J., & Napolitano, J. *Modern Quantum Mechanics*. Cambridge University Press, 2021. — $\mathbf{L}=\mathbf{r}\times\mathbf{p}$.

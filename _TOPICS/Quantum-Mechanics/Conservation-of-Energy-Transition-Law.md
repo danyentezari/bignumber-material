@@ -34,40 +34,6 @@ where
 
 Note: These principles are the transition energy rule, absorption versus emission, and the Bohr frequency condition.
 
-## Elementary Example
-
-### Simple
-
-An atom drops from $E_{i} = -1.5\,\mathrm{eV}$ to $E_{f} = -3.4\,\mathrm{eV}$.
-
-$$
-\Delta E_{\mathrm{atom}} = 1.9\,\mathrm{eV}
-$$
-
-$$
-E_{\mathrm{photon}} = 1.9\,\mathrm{eV}
-$$
-
-where
-
-- the emitted photon carries exactly $\Delta E_{\mathrm{atom}}$.
-
-### General
-
-Three downward jumps each emit a photon equal to the level gap.
-
-$$
-\Delta E_{1} = \lvert E_{3}-E_{2}\rvert,\quad \Delta E_{2} = \lvert E_{4}-E_{2}\rvert,\quad \Delta E_{3} = \lvert E_{5}-E_{2}\rvert
-$$
-
-$$
-E_{\mathrm{photon},k} = \Delta E_{k}
-$$
-
-where
-
-- each $E_{\mathrm{photon},k}$ matches the corresponding atomic gap.
-
 ## References
 
 1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — source for the heading explanation and the definition.

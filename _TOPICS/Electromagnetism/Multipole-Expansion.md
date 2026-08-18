@@ -54,32 +54,6 @@ where
 
 Note: These principles are the multipole expansion of the potential, the monopole term, and the dipole term.
 
-## Elementary Example
-
-### Simple
-
-A pure point charge $Q$ has only the monopole term
-
-$$
-V(r) = \dfrac{1}{4\pi\epsilon_{0}}\dfrac{Q}{r}
-$$
-
-where
-
-- all higher multipoles vanish.
-
-### General
-
-A neutral dipole with moment $\mathbf{p}$ has
-
-$$
-V(\mathbf{r}) = \dfrac{1}{4\pi\epsilon_{0}}\dfrac{\mathbf{p}\cdot\hat{\mathbf{r}}}{r^{2}}
-$$
-
-where
-
-- the monopole term is absent.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — multipole expansion of $V$.

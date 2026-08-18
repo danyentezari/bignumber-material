@@ -52,38 +52,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-For a relative speed $v = 0.6c$, the Lorentz factor is
-
-$$
-\gamma = \dfrac{1}{\sqrt{1 - 0.36}} = 1.25
-$$
-
-$$
-x' = 1.25(x - 0.6ct)
-$$
-
-where
-
-- $\gamma$ stretches both space and time mixing terms.
-
-### General
-
-An event at the origin of the moving frame, $x' = 0$, satisfies $x = vt$ in the lab frame, and the lab time and moving time are related by
-
-$$
-t' = \gamma\left(t - \dfrac{vx}{c^{2}}\right) = \dfrac{t}{\gamma}
-$$
-
-when $x = vt$.
-
-where
-
-- this is the time-dilation relation for a clock at rest in the primed frame.
-
 ## References
 
 1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — Lorentz transformations and $\gamma = \dfrac{1}{\sqrt{1-\dfrac{v^{2}}{c^{2}}}}$.

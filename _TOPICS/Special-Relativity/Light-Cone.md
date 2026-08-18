@@ -38,32 +38,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-From the origin event $(0,0)$ in the $(x,t)$ plane, light rays satisfy $|x| = ct$:
-
-$$
-x = ct,\quad x = -ct
-$$
-
-where
-
-- these two lines are the light-cone generators in $1{+}1$ dimensions.
-
-### General
-
-All events connected to a fixed event $E$ by light form the cone of lightlike separations,
-
-$$
-(\Delta s)^{2} = 0
-$$
-
-where
-
-- $(\Delta s)^{2}$ is the spacetime interval from $E$.
-
 ## References
 
 1. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — lightlike world lines form the light cone of unit slope.

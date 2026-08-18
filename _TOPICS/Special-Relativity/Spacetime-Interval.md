@@ -69,32 +69,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-Two events at the same place with $\Delta t = 2\,\mathrm{s}$ and $\Delta x = 0$ have, in Carroll’s signature,
-
-$$
-(\Delta s)^{2} = -c^{2}(2)^{2} = -4c^{2}
-$$
-
-where
-
-- $(\Delta s)^{2} < 0$ is a timelike separation.
-
-### General
-
-A light signal with $d = c\, t$ has invariant interval zero in Griffiths’s form:
-
-$$
-I = -c^{2}t^{2} + d^{2} = 0
-$$
-
-where
-
-- $I = 0$ is a null separation.
-
 ## References
 
 1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — $s^{2}=c^{2}(\Delta t)^{2}-(\Delta x)^{2}$ as an invariant.

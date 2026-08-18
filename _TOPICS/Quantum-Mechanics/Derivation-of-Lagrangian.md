@@ -51,37 +51,6 @@ where
 
 Note: These principles are the relativistic Lagrangian, the slow-motion expansion, $L=T-V$, and the path-integral phase.
 
-## Elementary Example
-
-### Simple
-
-For $V(x) = 0$ and $\dfrac{dx}{dt} \ll c$, the expansion gives
-
-$$
-L = \dfrac{1}{2}m\left(\dfrac{dx}{dt}\right)^{2}
-$$
-
-where
-
-- $L$ is the non-relativistic Lagrangian.
-- $m$ is the mass.
-- $\dfrac{dx}{dt}$ is the velocity.
-
-### General
-
-For a nonzero potential $V(x)$ in the same slow-motion limit,
-
-$$
-L = \dfrac{1}{2}m\left(\dfrac{dx}{dt}\right)^{2} - V(x)
-$$
-
-where
-
-- $L$ is the non-relativistic Lagrangian.
-- $m$ is the mass.
-- $\dfrac{dx}{dt}$ is the velocity.
-- $V(x)$ is the potential energy.
-
 ## References
 
 1. Schwichtenberg, J. *Physics from Symmetry*. Springer, 2018. — from $L_{\mathrm{rel}}$ to $L=T-V$.

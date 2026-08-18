@@ -45,30 +45,6 @@ where
 
 Note: These principles are electrodynamics as a $U(1)$ gauge theory, invariance of $F_{\mu\nu}$, and the abelian curvature $F=dA$. Also called abelian gauge theory.
 
-## Elementary Example
-
-### Simple
-
-A $U(1)$ gauge transformation multiplies a charged wavefunction by a phase $e^{iq\lambda/\hbar}$.
-
-where
-
-- $\lambda$ is the gauge function.
-
-### General
-
-The field strength
-
-$$
-F_{\mu\nu} = \partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}
-$$
-
-is invariant under $A_{\mu}\mapsto A_{\mu}+\partial_{\mu}\lambda$.
-
-where
-
-- this is the abelian curvature.
-
 ## References
 
 1. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — electrodynamics as $U(1)$ gauge theory.

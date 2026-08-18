@@ -49,32 +49,6 @@ where
 
 Note: These principles are retarded time, the retarded scalar potential, and the retarded vector potential. Also called retarded potentials for $V$ and $\mathbf{A}$.
 
-## Elementary Example
-
-### Simple
-
-For a static point charge, $t_{r}$ dependence drops out and
-
-$$
-V = \dfrac{1}{4\pi\epsilon_{0}}\dfrac{q}{r}
-$$
-
-where
-
-- the Coulomb potential is recovered.
-
-### General
-
-For time-dependent $\rho$ and $\mathbf{J}$, both integrals use
-
-$$
-t_{r} = t - \dfrac{|\mathbf{r}-\mathbf{r}'|}{c}
-$$
-
-where
-
-- each source point has its own retarded time.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — retarded $V$ and $\mathbf{A}$.

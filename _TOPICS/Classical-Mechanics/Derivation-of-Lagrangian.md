@@ -81,37 +81,6 @@ where
 
 Note: These principles are the relativistic free-particle Lagrangian with a potential, the slow-motion expansion, the identification of kinetic energy, the irrelevance of an additive constant in the Lagrangian, and the recovery of Newton's second law from the Euler-Lagrange equation.
 
-## Elementary Example
-
-### Simple
-
-For $V(x) = 0$ and $\dfrac{dx}{dt} \ll c$, the expansion gives
-
-$$
-L = \dfrac{1}{2}m\left(\dfrac{dx}{dt}\right)^{2}
-$$
-
-where
-
-- $L$ is the non-relativistic Lagrangian.
-- $m$ is the mass.
-- $\dfrac{dx}{dt}$ is the velocity.
-
-### General
-
-For a nonzero potential $V(x)$ in the same slow-motion limit,
-
-$$
-L = \dfrac{1}{2}m\left(\dfrac{dx}{dt}\right)^{2} - V(x)
-$$
-
-where
-
-- $L$ is the non-relativistic Lagrangian.
-- $m$ is the mass.
-- $\dfrac{dx}{dt}$ is the velocity.
-- $V(x)$ is the potential energy.
-
 ## References
 
 1. Schwichtenberg, J. *Physics from Symmetry*. Springer, 2018. — from $L_{\mathrm{rel}}=-mc^{2}\sqrt{1-(\mathrm{d}x/\mathrm{d}t)^{2}/c^{2}}-V(x)$ to $L=\dfrac{1}{2}m(\mathrm{d}x/\mathrm{d}t)^{2}-V(x)$.

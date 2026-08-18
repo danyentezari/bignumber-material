@@ -35,32 +35,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-If $v = 0.6c$ and $u' = 0.6c$, then
-
-$$
-u = \dfrac{0.6c + 0.6c}{1 + (0.6)(0.6)} = \dfrac{1.2c}{1.36} \approx 0.88c
-$$
-
-where
-
-- $u$ stays below $c$.
-
-### General
-
-If $u' = c$, then
-
-$$
-u = \dfrac{c + v}{1 + \dfrac{v}{c}} = c
-$$
-
-where
-
-- light has speed $c$ in every inertial frame.
-
 ## References
 
 1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — Lorentz velocity transformations $u'=(u-v)/(1-uv/c^{2})$ and inverse.

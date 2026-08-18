@@ -46,37 +46,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-For $k = 200\,\mathrm{N/m}$ and stretch $\Delta s = 0.10\,\mathrm{m}$,
-
-$$
-U_{\mathrm{Sp}} = \dfrac{1}{2}k(\Delta s)^{2} = 1\,\mathrm{J}
-$$
-
-where
-
-- $k$ is the spring constant.
-- $\Delta s$ is the displacement from equilibrium.
-- $U_{\mathrm{Sp}}$ is the elastic potential energy.
-
-### General
-
-Stretching from $\Delta s_{i} = 0$ to $\Delta s_{f} = 0.20\,\mathrm{m}$ with the same $k$ gives
-
-$$
-\Delta U_{\mathrm{Sp}} = \dfrac{1}{2}k(\Delta s_{f})^{2} - \dfrac{1}{2}k(\Delta s_{i})^{2} = 4\,\mathrm{J}
-$$
-
-where
-
-- $k$ is the spring constant.
-- $\Delta s_{i}$ is the initial displacement from equilibrium.
-- $\Delta s_{f}$ is the final displacement from equilibrium.
-- $\Delta U_{\mathrm{Sp}}$ is the change in elastic potential energy.
-
 ## References
 
 1. Logan, J. D. *A First Course in Differential Equations*. Springer, 2015. — $V(x)=-\int(-kx)\,dx=\dfrac{1}{2}kx^{2}$.

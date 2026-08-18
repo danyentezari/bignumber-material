@@ -65,34 +65,6 @@ where
 
 Note: These principles are the integral form of Gauss's law, Gauss's law for magnetism, Faraday's law, and the Ampère-Maxwell law. Also called the integral form of Maxwell's equations.
 
-## Elementary Example
-
-### Simple
-
-For a point charge $Q$ at the center of a sphere of radius $R$,
-
-$$
-\oint\mathbf{E}\cdot d\mathbf{a} = \dfrac{Q}{\epsilon_{0}}
-$$
-
-where
-
-- symmetry makes $|\mathbf{E}|$ constant on the sphere.
-
-### General
-
-For a long wire carrying current $I$, Ampère's law gives
-
-$$
-\oint\mathbf{B}\cdot d\mathbf{l} = \mu_{0}I
-$$
-
-on a circle centered on the wire in magnetostatics.
-
-where
-
-- $I$ is the enclosed current.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. §2.2.1, §5.3.2, §7.2.1, §7.3.3 — integral Maxwell equations.

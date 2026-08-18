@@ -44,32 +44,6 @@ where
 
 Note: These principles are the Dirac sandwich, the position mean, and the definition of uncertainty. Also called the mean value.
 
-## Elementary Example
-
-### Simple
-
-For $P(x) = \dfrac{1}{2}$ on $[0,2]$,
-
-$$
-\langle x\rangle = \int_{0}^{2} x\cdot\dfrac{1}{2}\, dx = 1
-$$
-
-where
-
-- $\langle x\rangle$ is the mean position.
-
-### General
-
-For a general observable $A$ in state $|\psi\rangle$,
-
-$$
-\langle A\rangle = \langle\psi|A|\psi\rangle
-$$
-
-where
-
-- $|\psi\rangle$ is normalized.
-
 ## References
 
 1. Sakurai, J. J., & Napolitano, J. *Modern Quantum Mechanics*. Cambridge University Press, 2021. — $\langle A\rangle=\langle\alpha|A|\alpha\rangle$.

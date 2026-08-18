@@ -112,24 +112,6 @@ where
 
 Note: These principles are the Lorentz transformation of the electromagnetic field, the electromagnetic field tensor, the electromagnetic four-potential, the electromagnetic four-current, the covariant Maxwell equations, and the covariant Lorentz force law. Also called covariant electrodynamics. The field tensor is also called the Faraday tensor.
 
-## Elementary Example
-
-### Simple
-
-A pure electric field in one frame can yield both $\mathbf{E}'$ and $\mathbf{B}'$ in a boosted frame.
-
-where
-
-- electric and magnetic fields mix under boosts.
-
-### General
-
-Maxwell's equations are written covariantly as equations for $F^{\mu\nu}$ and $J^{\mu}$.
-
-where
-
-- the same physics holds in every inertial frame.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. §12.3 — field transformations, field tensor, four-potential, four-current, and covariant Maxwell and Lorentz laws.

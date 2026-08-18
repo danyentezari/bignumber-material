@@ -51,32 +51,6 @@ where
 
 Note: These principles are $\mathbf{L}=\mathbf{r}\times\mathbf{p}$, the commutation relations, simultaneous eigenstates of $L^{2}$ and $L_{z}$, and the general $\mathbf{J}$ algebra. Also denoted $\mathbf{L}$. Also denoted $\hat{\mathbf{L}}$. Spin is an intrinsic angular momentum not built from $\mathbf{r}$ and $\mathbf{p}$.
 
-## Elementary Example
-
-### Simple
-
-For motion in the $xy$-plane with $z$-component only,
-
-$$
-L_{z} = xp_{y} - yp_{x}
-$$
-
-where
-
-- $L_{z}$ is the angular momentum about the $z$-axis.
-
-### General
-
-The three components obey
-
-$$
-[L_{x}, L_{y}] = i\hbar L_{z}
-$$
-
-where
-
-- cyclic permutations give the other relations.
-
 ## References
 
 1. Sakurai, J. J., & Napolitano, J. *Modern Quantum Mechanics*. Cambridge University Press, 2021. — generators and commutation relations.

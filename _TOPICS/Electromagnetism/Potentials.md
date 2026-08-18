@@ -102,36 +102,6 @@ where
 
 Note: These principles are the magnetic vector potential, reconstruction of the fields from the potentials, gauge freedom, gauge transformations, the Coulomb gauge, and the Lorenz gauge. Also called the electromagnetic potentials.
 
-## Elementary Example
-
-### Simple
-
-In electrostatics with $\mathbf{A} = \mathbf{0}$,
-
-$$
-\mathbf{E} = -\nabla V
-$$
-
-where
-
-- the electric field is minus the gradient of the scalar potential.
-
-### General
-
-With both potentials nonzero,
-
-$$
-\mathbf{E} = -\nabla V - \dfrac{\partial\mathbf{A}}{\partial t}
-$$
-
-$$
-\mathbf{B} = \nabla\times\mathbf{A}
-$$
-
-where
-
-- $\mathbf{E}$ and $\mathbf{B}$ are recovered from $V$ and $\mathbf{A}$.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. §10.1 — potentials, gauge freedom, Coulomb gauge, and Lorenz gauge.

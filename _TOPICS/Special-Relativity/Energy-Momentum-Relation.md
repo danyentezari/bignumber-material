@@ -36,33 +36,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-At rest, $p = 0$, so
-
-$$
-E^{2} = m^{2}c^{4} \implies E = mc^{2}
-$$
-
-where
-
-- $E$ is the rest energy.
-
-### General
-
-For a massless particle, $m = 0$, so
-
-$$
-E = pc
-$$
-
-where
-
-- $p$ is the momentum magnitude.
-- $E$ is the energy of the massless particle.
-
 ## References
 
 1. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — $E^{2}=m^{2}c^{4}+p^{2}c^{2}$.

@@ -32,32 +32,6 @@ where
 
 Note: These principles are voltage as work per unit charge and path independence in electrostatics. Also called electric potential difference.
 
-## Elementary Example
-
-### Simple
-
-Moving charge $Q = 2\,\mathrm{C}$ through work $W = 12\,\mathrm{J}$ gives
-
-$$
-\Delta V = \dfrac{W}{Q} = 6\,\mathrm{V}
-$$
-
-where
-
-- $\Delta V$ is the voltage between the endpoints.
-
-### General
-
-Three paths from $a$ to $b$ in a static field give the same $\Delta V$.
-
-$$
-V(b) - V(a) = -\int_{a}^{b}\mathbf{E}\cdot d\mathbf{l}
-$$
-
-where
-
-- the line integral is path-independent for electrostatic $\mathbf{E}$.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — $V(b)-V(a)=W/Q$.

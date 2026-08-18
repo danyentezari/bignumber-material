@@ -35,45 +35,6 @@ where
 
 Note: These principles are the definition of conjugate momentum, conjugate pairs, and the canonical commutation relation. Also called a canonically conjugate variable. Also called conjugate momentum when paired with a coordinate.
 
-## Elementary Example
-
-### Simple
-
-For $L = \dfrac{1}{2}m\left(\dfrac{dq}{dt}\right)^{2} - U(q)$ with $m = 2$,
-
-$$
-p = \dfrac{\partial L}{\partial\!\left(\dfrac{dq}{dt}\right)} = 2\dfrac{dq}{dt}
-$$
-
-so $q$ and $p$ are conjugate variables.
-
-where
-
-- $L$ is the Lagrangian.
-- $m$ is the mass.
-- $q$ is the coordinate.
-- $\dfrac{dq}{dt}$ is the velocity.
-- $U(q)$ is the potential energy.
-- $p$ is the conjugate momentum.
-
-### General
-
-For $N$ coordinates with Lagrangian $L\left(q,\dfrac{dq}{dt}\right)$,
-
-$$
-p_{i} = \dfrac{\partial L}{\partial\!\left(\dfrac{dq_{i}}{dt}\right)} ,\qquad i = 1,\ldots,N
-$$
-
-and each pair $(q_{i},p_{i})$ is a conjugate pair.
-
-where
-
-- $N$ is the number of degrees of freedom.
-- $L$ is the Lagrangian.
-- $q_{i}$ is the $i$-th coordinate.
-- $\dfrac{dq_{i}}{dt}$ is the $i$-th velocity.
-- $p_{i}$ is the momentum conjugate to $q_{i}$.
-
 ## References
 
 1. Cahill, K. *Physical Mathematics*. Cambridge University Press, 2019. — $p_{i}=\partial L/\partial(\mathrm{d}q_{i}/\mathrm{d}t)$ as momentum canonically conjugate to $q_{i}$.

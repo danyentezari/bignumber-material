@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>16 Complex Analysis | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="Complex analysis is the study of complex-differentiable functions of a complex variable, where a complex-differentiable function is a function whose derivati...">
+<meta name="description" content="Complex analysis is the study of complex-differentiable functions of a complex variable, where a complex-differentiable function is a function whose derivative is the same from every direction....">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="16 Complex Analysis | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Complex analysis is the study of complex-differentiable functions of a complex variable, where a complex-differentiable function is a function whose derivati...">
+<meta property="og:description" content="Complex analysis is the study of complex-differentiable functions of a complex variable, where a complex-differentiable function is a function whose derivative is the same from every direction....">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="16 Complex Analysis | Mathematics for Physics">
-<meta name="twitter:description" content="Complex analysis is the study of complex-differentiable functions of a complex variable, where a complex-differentiable function is a function whose derivati...">
+<meta name="twitter:description" content="Complex analysis is the study of complex-differentiable functions of a complex variable, where a complex-differentiable function is a function whose derivative is the same from every direction....">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -52,7 +52,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Notes", "href": "notes.html", "current": false}, {"title": "Complex Analysis", "href": "complex-analysis.html", "current": true}]</script>
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Complex Analysis", "href": "complex-analysis.html", "current": true}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -179,7 +179,7 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active-parent" href="notes.html"><span class="header-section-number">18</span> Notes</a>
+<a class="" href="notes.html"><span class="header-section-number">18</span> Notes</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
@@ -223,116 +223,97 @@
 <h1>
 <span class="header-section-number">16</span> Complex Analysis<a class="anchor" aria-label="anchor" href="#complex-analysis"><i class="fas fa-link"></i></a>
 </h1>
-<p>Complex analysis is the study of complex-differentiable functions of
-a complex variable, where a complex-differentiable function is a
-function whose derivative is the same from every direction.</p>
-<p>Here, again, we identifty the ideas that are fundamental to the study
-of complex analysis.</p>
-<p>Complex differentiability. Complex differentiability is a property:
-the derivative is the same from every direction. Locally the function is
-a uniform scaling and a rotation.</p>
-<p>Cauchy’s theorem. Cauchy’s theorem is a theorem: the integral of a
-holomorphic function around a closed loop in a simply connected region
-is zero. A simply connected region is a region with no holes.</p>
-<p>Analyticity. Analyticity is a property: a holomorphic function is
-infinitely differentiable and equals a power series in a neighborhood of
-each point. A power series is an infinite sum of increasing integer
-powers.</p>
-<p><i></p>
+<p>Complex analysis is the study of complex-differentiable functions of a complex variable, where a complex-differentiable function is a function whose derivative is the same from every direction.</p>
+<p>Here, again, we identifty the ideas that are fundamental to the study of complex analysis.</p>
+<p>Complex differentiability. Complex differentiability is a property: the derivative is the same from every direction. Locally the function is a uniform scaling and a rotation.</p>
+<p>Cauchy’s theorem. Cauchy’s theorem is a theorem: the integral of a holomorphic function around a closed loop in a simply connected region is zero. A simply connected region is a region with no holes.</p>
+<p>Analyticity. Analyticity is a property: a holomorphic function is infinitely differentiable and equals a power series in a neighborhood of each point. A power series is an infinite sum of increasing integer powers.</p>
+<p><i></i></p>
 <p><strong>definition [d]</strong></p>
-<p>A <strong>holomorphic function</strong> on an open set <span
-class="math inline"><em>U</em></span> in the complex plane is a function
-<span class="math inline"><em>f</em> : <em>U</em> → ℂ</span> that is
-complex-differentiable at every point of <span
-class="math inline"><em>U</em></span>.</p>
-<p>The complex derivative at <span
-class="math inline"><em>z</em><sub>0</sub></span> is</p>
-<p><span class="math display">$$
+<p>A <strong>holomorphic function</strong> on an open set <span class="math inline">\(U\)</span> in the complex plane is a function <span class="math inline">\(f: U \to \mathbb{C}\)</span> that is complex-differentiable at every point of <span class="math inline">\(U\)</span>.</p>
+<p>The complex derivative at <span class="math inline">\(z_{0}\)</span> is</p>
+<p><span class="math display">\[
 f'(z_{0}) = \lim_{z \to z_{0}} \dfrac{f(z)-f(z_{0})}{z-z_{0}}
-$$</span></p>
+\]</span></p>
 <p><em>where</em></p>
 <ul>
-<li><span class="math inline"><em>U</em></span> is an open set in the
-complex plane</li>
-<li><span class="math inline"><em>f</em></span> is a complex-valued
-function</li>
-<li><span class="math inline"><em>z</em><sub>0</sub></span> is a point
-of <span class="math inline"><em>U</em></span></li>
+<li>
+<span class="math inline">\(U\)</span> is an open set in the complex plane</li>
+<li>
+<span class="math inline">\(f\)</span> is a complex-valued function</li>
+<li>
+<span class="math inline">\(z_{0}\)</span> is a point of <span class="math inline">\(U\)</span>
+</li>
 </ul>
 <p><strong>Note:</strong></p>
 <ul>
-<li>The limit must exist and be the same along every path to <span
-class="math inline"><em>z</em><sub>0</sub></span>.</li>
+<li>The limit must exist and be the same along every path to <span class="math inline">\(z_{0}\)</span>.</li>
 </ul>
-<p></i></p>
-<div id="elementary-example" class="section level2" number="16.1">
+<p></p>
+<div id="elementary-example-3" class="section level2" number="16.1">
 <h2>
-<span class="header-section-number">16.1</span> Elementary Example<a class="anchor" aria-label="anchor" href="#elementary-example"><i class="fas fa-link"></i></a>
+<span class="header-section-number">16.1</span> Elementary Example<a class="anchor" aria-label="anchor" href="#elementary-example-3"><i class="fas fa-link"></i></a>
 </h2>
-<div id="simple" class="section level3" number="16.1.1">
+<div id="simple-3" class="section level3" number="16.1.1">
 <h3>
-<span class="header-section-number">16.1.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple"><i class="fas fa-link"></i></a>
+<span class="header-section-number">16.1.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple-3"><i class="fas fa-link"></i></a>
 </h3>
 <p>The square function is holomorphic on the whole plane.</p>
-<p><span
-class="math display"><em>f</em>(<em>z</em>) = <em>z</em><sup>2</sup></span></p>
+<p><span class="math display">\[
+f(z) = z^{2}
+\]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline"><em>z</em></span> is a complex
-variable.</li>
-<li><span class="math inline"><em>f</em></span> is holomorphic on <span
-class="math inline">ℂ</span>.</li>
+<li>
+<span class="math inline">\(z\)</span> is a complex variable.</li>
+<li>
+<span class="math inline">\(f\)</span> is holomorphic on <span class="math inline">\(\mathbb{C}\)</span>.</li>
 </ul>
 </div>
-<div id="general" class="section level3" number="16.1.2">
+<div id="general-3" class="section level3" number="16.1.2">
 <h3>
-<span class="header-section-number">16.1.2</span> General<a class="anchor" aria-label="anchor" href="#general"><i class="fas fa-link"></i></a>
+<span class="header-section-number">16.1.2</span> General<a class="anchor" aria-label="anchor" href="#general-3"><i class="fas fa-link"></i></a>
 </h3>
 <p>An affine function is holomorphic on the whole plane.</p>
-<p><span
-class="math display"><em>f</em>(<em>z</em>) = <em>a</em><em>z</em> + <em>b</em></span></p>
+<p><span class="math display">\[
+f(z) = az + b
+\]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline"><em>z</em></span> is a complex
-variable.</li>
-<li><span class="math inline"><em>a</em></span> is a complex
-scalar.</li>
-<li><span class="math inline"><em>b</em></span> is a complex
-constant.</li>
+<li>
+<span class="math inline">\(z\)</span> is a complex variable.</li>
+<li>
+<span class="math inline">\(a\)</span> is a complex scalar.</li>
+<li>
+<span class="math inline">\(b\)</span> is a complex constant.</li>
 </ul>
 </div>
 </div>
-<div id="topics" class="section level2" number="16.2">
+<div id="topics-10" class="section level2" number="16.2">
 <h2>
-<span class="header-section-number">16.2</span> Topics<a class="anchor" aria-label="anchor" href="#topics"><i class="fas fa-link"></i></a>
+<span class="header-section-number">16.2</span> Topics<a class="anchor" aria-label="anchor" href="#topics-10"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
 <li><a href="contour-integral.html">Contour Integral</a></li>
 </ol>
 </div>
-<div id="references" class="section level2" number="16.3">
+<div id="references-12" class="section level2" number="16.3">
 <h2>
-<span class="header-section-number">16.3</span> References<a class="anchor" aria-label="anchor" href="#references"><i class="fas fa-link"></i></a>
+<span class="header-section-number">16.3</span> References<a class="anchor" aria-label="anchor" href="#references-12"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li>Needham, T. <em>Visual Complex Analysis</em>. Oxford University
-Press. — complex differentiability as the same derivative in every
-direction, Cauchy’s theorem, and analyticity.</li>
-<li>Waleffe, F. <em>Vector and Complex Calculus</em>. — path
-independence of integrals of holomorphic functions.</li>
-<li>Howell, K. B. notes on complex analysis. — the definition of a
-holomorphic function by the complex derivative.</li>
+<li>Needham, T. <em>Visual Complex Analysis</em>. Oxford University Press. — complex differentiability as the same derivative in every direction, Cauchy’s theorem, and analyticity.</li>
+<li>Waleffe, F. <em>Vector and Complex Calculus</em>. — path independence of integrals of holomorphic functions.</li>
+<li>Howell, K. B. notes on complex analysis. — the definition of a holomorphic function by the complex derivative.</li>
 </ol>
 <div class="topic-index">
 <ul>
 <li><a href="contour-integral.html">Contour Integral</a></li>
 </ul>
 </div>
+
 </div>
 </div>
-
-
-
 <script>
   (function () {
     var MOON =

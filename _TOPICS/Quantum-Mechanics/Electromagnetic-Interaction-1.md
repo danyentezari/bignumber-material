@@ -37,32 +37,6 @@ where
 
 Note: These principles are minimal coupling, the Lorentz force, and field-induced transitions. Linked from the Quantum Mechanics index as electromagnetic-interaction-1.
 
-## Elementary Example
-
-### Simple
-
-In electrostatics with $\mathbf{A} = \mathbf{0}$,
-
-$$
-H = \dfrac{p^{2}}{2m} + qV
-$$
-
-where
-
-- the interaction is only through the scalar potential.
-
-### General
-
-With both potentials,
-
-$$
-H = \dfrac{1}{2m}\bigl(\mathbf{p}-q\mathbf{A}\bigr)^{2} + qV
-$$
-
-where
-
-- the vector potential enters the kinetic term.
-
 ## References
 
 1. Sakurai, J. J., & Napolitano, J. *Modern Quantum Mechanics*. Cambridge University Press, 2021. — minimal coupling Hamiltonian.

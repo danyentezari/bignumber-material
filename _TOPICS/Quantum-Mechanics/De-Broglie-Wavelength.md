@@ -24,41 +24,6 @@ where
 
 Note: These principles are the de Broglie relation, the inverse relation of wavelength to momentum, and the condition for observable diffraction. Also called the de Broglie relation.
 
-## Elementary Example
-
-### Simple
-
-An electron with momentum $p$ has de Broglie wavelength $\lambda = h/p$.
-
-$$
-p = 1.0 \times 10^{-24}\,\mathrm{kg\cdot m/s}
-$$
-
-$$
-\lambda = \dfrac{6.626 \times 10^{-34}}{1.0 \times 10^{-24}} = 6.626 \times 10^{-10}\,\mathrm{m}
-$$
-
-where
-
-- $\lambda$ is the de Broglie wavelength.
-- $p$ is the particle momentum.
-
-### General
-
-For three momenta, wavelength falls as momentum rises.
-
-$$
-p_{1} = 1 \times 10^{-24},\quad p_{2} = 2 \times 10^{-24},\quad p_{3} = 3 \times 10^{-24}\,\mathrm{kg\cdot m/s}
-$$
-
-$$
-\lambda_{i} = \dfrac{h}{p_{i}}
-$$
-
-where
-
-- each $\lambda_{i}$ is the de Broglie wavelength for momentum $p_{i}$.
-
 ## References
 
 1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — source for the heading explanation and the definition.

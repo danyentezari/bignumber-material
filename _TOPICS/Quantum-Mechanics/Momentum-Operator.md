@@ -45,32 +45,6 @@ where
 
 Note: These principles are $P=-i\hbar d/dx$, momentum eigenfunctions, and momentum as the generator of translations. Also denoted $P$. Also denoted $\hat{p}$. Also denoted $p$.
 
-## Elementary Example
-
-### Simple
-
-Acting on $\psi(x) = e^{ikx}$ with $k = 1$ and $\hbar = 1$ gives
-
-$$
-(P\psi)(x) = -i\dfrac{d}{dx}\bigl[e^{ix}\bigr] = e^{ix}
-$$
-
-where
-
-- $P$ maps a plane wave to a constant multiple of itself.
-
-### General
-
-On a set of wave numbers $k \in \{1, 2, 3\}$ with $\psi_{k}(x) = e^{ikx}$ and $\hbar = 1$,
-
-$$
-(P\psi_{k})(x) = k\,e^{ikx}
-$$
-
-where
-
-- each plane wave is an eigenvector of $P$ with eigenvalue $k$.
-
 ## References
 
 1. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — Proposition 3.6, Definition 3.7: $(P\psi)(x)=-i\hbar\dfrac{d\psi}{dx}$.

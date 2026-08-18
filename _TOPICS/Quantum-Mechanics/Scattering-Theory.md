@@ -35,34 +35,6 @@ where
 
 Note: These principles are the incident-plus-scattered wave, the differential cross section, and one-dimensional reflection and transmission. Also called quantum scattering.
 
-## Elementary Example
-
-### Simple
-
-In one dimension, an incident wave $e^{ikx}$ on a barrier yields reflection and transmission amplitudes $R$ and $T$ with
-
-$$
-|R|^{2} + |T|^{2} = 1
-$$
-
-for a real potential without absorption.
-
-where
-
-- probability is conserved.
-
-### General
-
-In three dimensions,
-
-$$
-\dfrac{d\sigma}{d\Omega} = |f(\theta,\phi)|^{2}
-$$
-
-where
-
-- the differential cross section is the squared amplitude.
-
 ## References
 
 1. Sakurai, J. J., & Napolitano, J. *Modern Quantum Mechanics*. Cambridge University Press, 2021. — incident plus scattered wave; amplitude $f$.

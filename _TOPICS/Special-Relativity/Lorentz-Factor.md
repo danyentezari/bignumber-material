@@ -50,32 +50,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-For $v = 0.6c$,
-
-$$
-\beta = 0.6,\qquad \gamma = \dfrac{1}{\sqrt{1 - 0.36}} = 1.25
-$$
-
-where
-
-- $\gamma > 1$ whenever $v > 0$.
-
-### General
-
-As $v$ approaches $c$, $\gamma$ grows without bound.
-
-$$
-\lim_{v\to c^{-}}\gamma = +\infty
-$$
-
-where
-
-- at $v = 0$, $\gamma = 1$ and relativistic corrections vanish.
-
 ## References
 
 1. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — boost vector $\boldsymbol{\beta}=\dfrac{\mathbf{v}}{c}$ and Lorentz factor $\gamma=\dfrac{1}{\sqrt{1-\beta^{2}}}$.

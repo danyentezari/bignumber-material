@@ -59,32 +59,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-For $v = 0.6c$, one has $\beta = 0.6$ and
-
-$$
-\theta = \tanh^{-1}(0.6) \approx 0.693
-$$
-
-where
-
-- $\theta$ is the rapidity.
-
-### General
-
-Two successive boosts with rapidities $\theta_{1}$ and $\theta_{2}$ compose to rapidity
-
-$$
-\theta = \theta_{1} + \theta_{2}
-$$
-
-where
-
-- rapidities add while ordinary velocities do not.
-
 ## References
 
 1. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — $\cosh\psi=\gamma$, $\sinh\psi=\beta\gamma$, $\tanh\psi=\beta$ with $\psi$ the rapidity.

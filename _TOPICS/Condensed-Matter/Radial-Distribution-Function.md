@@ -9,29 +9,6 @@ Note: Also called the pair-correlation function.
 3. In a dilute gas, $g(r)$ is $0$ below the collision diameter and is flat near $1$ beyond that distance, with no secondary shells.
 4. At very short distances inside a dense fluid, $g(r)$ falls to $0$ because molecules cannot overlap.
 
-## Elementary Example
-
-### Simple
-
-Sample $g(r)$ at three distances for a dilute gas with collision diameter $1$.
-
-$$
-g(0.5) = 0,\quad g(1.5) = 1,\quad g(3) = 1
-$$
-
-### General
-
-Sample values that mimic liquid short-range shells that fade, with $g(r)$ tending to $1$.
-
-$$
-g(1) = 2.5,\quad g(2) = 1.3,\quad g(3) = 1.05,\quad g(10) = 1
-$$
-
-where
-
-- the larger early values mark neighbor shells
-- the late value $1$ marks loss of long-range order
-
 ## References
 
 1. Atkins, P., de Paula, J., & Keeler, J. *Atkins’ Physical Chemistry*. — crystal $g(r)$ as sharp spikes; liquid short-range order with decaying oscillations.

@@ -41,32 +41,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-The laboratory axes $(x,y,z)$ with synchronized clocks form a reference frame for measuring a ball’s position at successive times.
-
-$$
-(x,y,z,t) = (1\,\mathrm{m},\, 0,\, 0,\, 0),\quad (2\,\mathrm{m},\, 0,\, 0,\, 1\,\mathrm{s})
-$$
-
-where
-
-- each tuple is an event measured in that frame.
-
-### General
-
-At a point of $\mathbb{R}^{3}$, the standard basis is a $3$-frame.
-
-$$
-e_{1} = (1,0,0),\quad e_{2} = (0,1,0),\quad e_{3} = (0,0,1)
-$$
-
-where
-
-- $\{e_{1},e_{2},e_{3}\}$ is an ordered basis of $\mathbb{R}^{3}$.
-
 ## References
 
 1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — source for the heading explanation.

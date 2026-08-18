@@ -75,44 +75,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-A constant force $F = 6\,\mathrm{N}$ acts through $d = 2\,\mathrm{m}$ on $m = 3\,\mathrm{kg}$ starting from rest.
-
-$$
-W = Fd = 12\,\mathrm{J}
-$$
-
-$$
-K_{2} = W = \dfrac{1}{2}(3)v_{2}^{2} = 12\,\mathrm{J}
-$$
-
-where
-
-- $F$ is the constant force.
-- $d$ is the distance traveled.
-- $m$ is the mass.
-- $W$ is the work done by $F$.
-- $K_{1}$ is the initial kinetic energy, equal to zero at rest.
-- $K_{2}$ is the final kinetic energy.
-- $v_{2}$ is the final speed.
-
-### General
-
-For $m = 2\,\mathrm{kg}$ and $v = 4\,\mathrm{m/s}$,
-
-$$
-K = \dfrac{1}{2}mv^{2} = 16\,\mathrm{J}
-$$
-
-where
-
-- $m$ is the mass.
-- $v$ is the speed.
-- $K$ is the Newtonian kinetic energy.
-
 ## References
 
 1. Shankar, R. *Fundamentals of Physics I*. Yale University Press, 2019. — from $v_{2}^{2}=v_{1}^{2}+2\left(\dfrac{F}{m}\right)d$ to $K_{2}-K_{1}=W$ with $K=\dfrac{1}{2}mv^{2}$.

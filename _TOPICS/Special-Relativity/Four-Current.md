@@ -41,32 +41,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-For static charge with $\mathbf{J} = \mathbf{0}$,
-
-$$
-J^{\mu} = (c\rho,\, 0,\, 0,\, 0)
-$$
-
-where
-
-- $\rho$ is the charge density.
-
-### General
-
-For charge density $\rho_{0}$ moving at $4$-velocity $\eta^{\mu}$,
-
-$$
-J^{\mu} = \rho_{0}\eta^{\mu} = (c\rho,\, \mathbf{J})
-$$
-
-where
-
-- $\mathbf{J}$ is the three-current density.
-
 ## References
 
 1. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — current $4$-vector $J^{\alpha}=(c\rho,\mathbf{J})$.

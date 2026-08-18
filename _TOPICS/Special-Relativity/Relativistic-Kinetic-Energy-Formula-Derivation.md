@@ -51,40 +51,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-At $u = 0$, one has $\gamma = 1$, so
-
-$$
-K_{\mathrm{rel}} = (1 - 1)mc^{2} = 0
-$$
-
-where
-
-- $u$ is the particle speed.
-- $\gamma$ is the Lorentz factor.
-- $K_{\mathrm{rel}}$ is the relativistic kinetic energy.
-- $m$ is the rest mass.
-- $c$ is the speed of light in vacuum.
-
-### General
-
-An electron with speed $u = 0.990c$ has $\gamma = 7.0888$, so
-
-$$
-K_{\mathrm{rel}} = (\gamma - 1)mc^{2} = 3.12\,\mathrm{MeV}
-$$
-
-where
-
-- $u$ is the electron speed.
-- $c$ is the speed of light in vacuum.
-- $\gamma$ is the Lorentz factor.
-- $m$ is the electron rest mass.
-- $K_{\mathrm{rel}}$ is the relativistic kinetic energy.
-
 ## References
 
 1. OpenStax. *University Physics Volume 3*, §5.9 Relativistic Energy. — $K=\int F\,dx$ with $F=\dfrac{dp}{dt}$ yields $K_{\mathrm{rel}}=(\gamma-1)mc^{2}$; electron example at $u=0.990c$. https://openstax.org/books/university-physics-volume-3/pages/5-9-relativistic-energy

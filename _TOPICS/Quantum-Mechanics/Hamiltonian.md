@@ -48,32 +48,6 @@ where
 
 Note: These principles are $H=P^{2}/2m+V(X)$, Hamiltonian time evolution, and energy eigenvalues. Also denoted $H$. Also denoted $\hat{H}$.
 
-## Elementary Example
-
-### Simple
-
-For a free particle with $V(X) = 0$,
-
-$$
-H = \dfrac{P^{2}}{2m}
-$$
-
-where
-
-- the Hamiltonian is purely kinetic.
-
-### General
-
-For $V(X) = \dfrac{1}{2}kX^{2}$,
-
-$$
-H = \dfrac{P^{2}}{2m} + \dfrac{1}{2}kX^{2}
-$$
-
-where
-
-- the Hamiltonian is kinetic plus harmonic potential.
-
 ## References
 
 1. Shankar, R. *Fundamentals of Physics II*. Yale University Press, 2020. — $H=\dfrac{P^{2}}{2m}+V(X)$.

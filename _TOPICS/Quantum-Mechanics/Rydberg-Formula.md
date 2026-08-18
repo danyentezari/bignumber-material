@@ -23,33 +23,6 @@ where
 
 Note: These principles are the Rydberg formula, the series labels, and the derivation from hydrogen levels. Also called the Rydberg–Balmer formula.
 
-## Elementary Example
-
-### Simple
-
-The Balmer line with $n_{1} = 2$ and $n_{2} = 3$ has
-
-$$
-\dfrac{1}{\lambda} = R\left(\dfrac{1}{4} - \dfrac{1}{9}\right) = R\cdot\dfrac{5}{36}
-$$
-
-where
-
-- $\lambda$ is the emitted wavelength.
-- $R$ is the Rydberg constant.
-
-### General
-
-Three Balmer lines use $n_{1} = 2$ with $n_{2} = 3,4,5$.
-
-$$
-\dfrac{1}{\lambda_{n_{2}}} = R\left(\dfrac{1}{4} - \dfrac{1}{n_{2}^{2}}\right),\quad n_{2} \in \{3,4,5\}
-$$
-
-where
-
-- each $\lambda_{n_{2}}$ is a Balmer wavelength.
-
 ## References
 
 1. Gowers, T., Barrow-Green, J., & Leader, I. (Eds.). *The Princeton Companion to Mathematics*. Princeton University Press, 2008. — source for the heading explanation and the definition.

@@ -34,32 +34,6 @@ where
 
 Note: These principles are multiplication by $x$, the position eigenkets, and the wavefunction as a position-basis coefficient. Also denoted $X$. Also denoted $\hat{x}$. Also denoted $x$.
 
-## Elementary Example
-
-### Simple
-
-Acting on $\psi(x) = e^{-x^{2}}$ at $x = 1$ gives
-
-$$
-(X\psi)(1) = 1\cdot e^{-1}
-$$
-
-where
-
-- $X$ multiplies by the coordinate value.
-
-### General
-
-On a set of sample points $x \in \{0, 1, 2\}$,
-
-$$
-(X\psi)(x) = x\psi(x)
-$$
-
-where
-
-- each value of $\psi$ is scaled by its position.
-
 ## References
 
 1. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — $(X\psi)(x)=x\psi(x)$.

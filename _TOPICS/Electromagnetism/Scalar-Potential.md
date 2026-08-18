@@ -64,32 +64,6 @@ where
 
 Note: These principles are the line-integral definition of $V$, the static gradient relation, the electrodynamic reconstruction of $\mathbf{E}$, and the four-potential. Also called the electric potential. Also denoted $\phi$.
 
-## Elementary Example
-
-### Simple
-
-In electrostatics with $\mathbf{A} = \mathbf{0}$ and $V(x) = -Ex$ for constant $E$,
-
-$$
-\mathbf{E} = -\nabla V = E\,\hat{\mathbf{x}}
-$$
-
-where
-
-- $V$ is linear and $\mathbf{E}$ is uniform.
-
-### General
-
-With $V(\mathbf{r}) = \dfrac{kQ}{r}$ for a point charge at the origin,
-
-$$
-\mathbf{E} = -\nabla V = \dfrac{kQ}{r^{2}}\,\hat{\mathbf{r}}
-$$
-
-where
-
-- $V$ is the Coulomb scalar potential.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — $V(\mathbf{r})=-\int_{O}^{\mathbf{r}}\mathbf{E}\cdot d\mathbf{l}$; $\mathbf{E}=-\nabla V-\dfrac{\partial\mathbf{A}}{\partial t}$.

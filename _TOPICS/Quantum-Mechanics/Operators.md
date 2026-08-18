@@ -34,33 +34,6 @@ where
 
 Note: These principles are the quantization map to self-adjoint operators, Hermitian observables, expectation values, and the position-representation operators. Also called quantum operators.
 
-## Elementary Example
-
-### Simple
-
-The position operator multiplies by $x$ in the position representation:
-
-$$
-(\hat{x}\psi)(x) = x\psi(x)
-$$
-
-where
-
-- $\psi$ is a wavefunction.
-- $\hat{x}$ is the position operator.
-
-### General
-
-A general observable $A$ acts on a state ket $|\alpha\rangle$ to produce another ket $A|\alpha\rangle$, and its expectation value is
-
-$$
-\langle A\rangle = \langle\alpha|A|\alpha\rangle
-$$
-
-where
-
-- $|\alpha\rangle$ is a normalized state.
-
 ## References
 
 1. Hall, B. C. *Quantum Theory for Mathematicians*. Springer, 2013. — Axiom 2: classical $f$ associated with self-adjoint $\hat{f}$.

@@ -62,33 +62,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-For $m = 2\,\mathrm{kg}$ and $v = 3\,\mathrm{m/s}$, the Newtonian kinetic energy is
-
-$$
-K = \dfrac{1}{2}(2)(3)^{2} = 9\,\mathrm{J}
-$$
-
-where
-
-- $K$ is the kinetic energy.
-
-### General
-
-At relative speed $v = 0.6c$, one has $\gamma = 1.25$, so
-
-$$
-K = (1.25 - 1)mc^{2} = 0.25\, mc^{2}
-$$
-
-where
-
-- $K$ is the relativistic kinetic energy.
-- $mc^{2}$ is the rest energy.
-
 ## References
 
 1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — $K=(\gamma-1)mc^{2}=E-E_{0}$; Newtonian $K=\dfrac{1}{2}mv^{2}$.

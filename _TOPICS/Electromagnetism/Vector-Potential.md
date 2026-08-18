@@ -48,32 +48,6 @@ where
 
 Note: These principles are $\mathbf{B}=\nabla\times\mathbf{A}$, the Coulomb-gauge Poisson equation, and the four-potential. Also denoted $\mathbf{A}$. Also called the magnetic vector potential.
 
-## Elementary Example
-
-### Simple
-
-For uniform $\mathbf{B} = B\hat{\mathbf{z}}$, one choice is
-
-$$
-\mathbf{A} = \dfrac{1}{2}\mathbf{B}\times\mathbf{r}
-$$
-
-where
-
-- $\nabla\times\mathbf{A} = \mathbf{B}$.
-
-### General
-
-In magnetostatics with the Coulomb gauge $\nabla\cdot\mathbf{A} = 0$,
-
-$$
-\nabla^{2}\mathbf{A} = -\mu_{0}\mathbf{J}
-$$
-
-where
-
-- $\mathbf{J}$ is the steady current density.
-
 ## References
 
 1. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — $\mathbf{B}=\nabla\times\mathbf{A}$.

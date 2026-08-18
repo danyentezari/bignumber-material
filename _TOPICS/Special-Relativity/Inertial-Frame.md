@@ -36,37 +36,6 @@ where
 
 </i>
 
-## Elementary Example
-
-### Simple
-
-A frame fixed to the ground, treating Earth as non-accelerating for a short lab experiment, is treated as inertial: a puck on ice moves at constant velocity when no horizontal force acts.
-
-$$
-\mathbf{F} = \mathbf{0} \implies \mathbf{v} = \text{constant}
-$$
-
-where
-
-- $\mathbf{v}$ is the velocity measured in that frame.
-
-### General
-
-Two frames related by a constant relative velocity $\mathbf{u}$ are both inertial if one is.
-
-$$
-\mathbf{x}' = \mathbf{x} - \mathbf{u}t,\quad t' = t
-$$
-
-$$
-\mathbf{a}' = \mathbf{a}
-$$
-
-where
-
-- $\mathbf{a}$ is acceleration, unchanged by the constant boost.
-- Newton’s second law keeps the same form in both frames.
-
 ## References
 
 1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — source for the heading explanation.
