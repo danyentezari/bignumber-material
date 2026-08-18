@@ -6,8 +6,8 @@ Usage:
   python3 scripts/incremental_build.py --seed-cache
   python3 scripts/incremental_build.py --changed path1 [path2 ...]
 
-Content-only topic edits: generate_topics → preview_chapter → sidebar/assets
-→ Site Index + search refresh.
+Content-only topic edits: generate_topics → pandoc inplace splice →
+sidebar/assets → Site Index + search refresh.
 
 Structural changes (new/deleted pages, H1 renames, sidebar/chrome/scripts):
 fall back to ./build.sh.
@@ -313,9 +313,24 @@ def extract_search_entries_from_html(html_path: Path) -> list[dict[str, str]]:
     return entries
 
 
+def rebuild_search_json() -> int:
+    """Rebuild search.json from every rendered chapter HTML page."""
+    entries: list[dict] = []
+    for path in sorted(BOOK_OUT.glob("*.html")):
+        if path.name in {"404.html"}:
+            continue
+        entries.extend(extract_search_entries_from_html(path))
+    SEARCH_JSON.write_text(json.dumps(entries, ensure_ascii=False), encoding="utf-8")
+    print(f"Rebuilt search.json ({len(entries)} entries).", flush=True)
+    return len(entries)
+
+
 def patch_search_json(html_names: list[str]) -> None:
     if not SEARCH_JSON.is_file():
-        raise RuntimeError(f"Missing {SEARCH_JSON}; run a full build first")
+        # preview_chapter / a wiped _book can leave HTML without search.json.
+        rebuild_search_json()
+        return
+
     data = json.loads(SEARCH_JSON.read_text(encoding="utf-8"))
     if not isinstance(data, list):
         raise RuntimeError("search.json is not a list")
@@ -354,6 +369,178 @@ def href_for_generated_md(generated_rel: str) -> str | None:
     return None
 
 
+def _close_div_offset(html: str, start: int) -> int:
+    """Return index just past the matching </div> for the div that starts at start."""
+    if not html.startswith("<div", start):
+        raise RuntimeError("expected <div at section start")
+    depth = 0
+    i = start
+    while i < len(html):
+        next_open = html.find("<div", i)
+        next_close = html.find("</div>", i)
+        if next_close < 0:
+            raise RuntimeError("unclosed section div")
+        if next_open >= 0 and next_open < next_close:
+            depth += 1
+            i = next_open + 4
+            continue
+        depth -= 1
+        i = next_close + len("</div>")
+        if depth == 0:
+            return i
+    raise RuntimeError("unclosed section div")
+
+
+def _decorate_pandoc_section(fragment: str, chapter_num: int) -> str:
+    """Add bookdown-like section numbers / anchors to a pandoc section-divs fragment."""
+    counters = [chapter_num]
+
+    def next_number(level: int) -> str:
+        nonlocal counters
+        if level <= 1:
+            counters = [chapter_num]
+            return str(chapter_num)
+        if len(counters) < level:
+            counters = counters + [0] * (level - len(counters))
+        else:
+            counters = counters[:level]
+        counters[level - 1] += 1
+        return ".".join(str(n) for n in counters)
+
+    out: list[str] = []
+    pos = 0
+    for match in re.finditer(
+        r'<div\s+id="([^"]+)"\s+class="section level(\d+)"[^>]*>\s*'
+        r"<h(\d)>(.*?)</h\3>",
+        fragment,
+        re.IGNORECASE | re.DOTALL,
+    ):
+        level = int(match.group(2))
+        heading_level = int(match.group(3))
+        sec_id = match.group(1)
+        heading_inner = match.group(4).strip()
+        number = next_number(level)
+        out.append(fragment[pos : match.start()])
+        out.append(
+            f'<div id="{sec_id}" class="section level{level}" number="{number}">\n'
+            f"<h{heading_level}>\n"
+            f'<span class="header-section-number">{number}</span> {heading_inner}'
+            f'<a class="anchor" aria-label="anchor" href="#{sec_id}">'
+            f'<i class="fas fa-link"></i></a>\n'
+            f"</h{heading_level}>"
+        )
+        pos = match.end()
+    out.append(fragment[pos:])
+    return "".join(out)
+
+
+def pandoc_chapter_fragment(generated_md: Path) -> str:
+    result = subprocess.run(
+        [
+            "pandoc",
+            str(generated_md),
+            "-f",
+            "markdown+autolink_bare_uris+tex_math_single_backslash",
+            "-t",
+            "html4",
+            "--section-divs",
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return result.stdout
+
+
+def first_paragraph_text(fragment: str) -> str:
+    match = re.search(r"<p>(.*?)</p>", fragment, re.IGNORECASE | re.DOTALL)
+    if not match:
+        return ""
+    return strip_html_text(match.group(1))
+
+
+def resolve_generated_md(generated_rel: str) -> Path:
+    if generated_rel.startswith("../_BOOK/"):
+        path = BOOK_DIR / generated_rel[len("../_BOOK/") :]
+    else:
+        path = BOOK_DIR / generated_rel
+    path = path.resolve()
+    if not path.is_file():
+        raise RuntimeError(f"Missing generated markdown: {generated_rel}")
+    return path
+
+
+def render_chapter_inplace(generated_rel: str, html_name: str) -> None:
+    """
+    Replace the level-1 section body inside an existing chapter HTML.
+
+    bookdown::preview_chapter does not update per-chapter HTML in this merged
+    TOPICS.Rmd / bs4_book setup (it only refreshes index.html), so we splice a
+    pandoc render into the existing page shell.
+    """
+    html_path = BOOK_OUT / html_name
+    if not html_path.is_file():
+        raise RuntimeError(f"Missing chapter HTML for inplace render: {html_name}")
+
+    generated_md = resolve_generated_md(generated_rel)
+    existing = html_path.read_text(encoding="utf-8")
+    title_match = TITLE_RE.search(existing[:4000])
+    if not title_match:
+        raise RuntimeError(f"Cannot read chapter number from {html_name}")
+    chapter_num = int(title_match.group(1))
+    page_title = html_lib.unescape(title_match.group(2)).strip()
+
+    fragment = pandoc_chapter_fragment(generated_md)
+    fragment = _decorate_pandoc_section(fragment, chapter_num)
+
+    sec_match = re.search(
+        r'<div\s+id="[^"]+"\s+class="section level1"[^>]*>',
+        existing,
+    )
+    if not sec_match:
+        raise RuntimeError(f"No level-1 section in {html_name}")
+    sec_end = _close_div_offset(existing, sec_match.start())
+    updated = existing[: sec_match.start()] + fragment.rstrip() + "\n" + existing[sec_end:]
+
+    # Refresh meta descriptions from the new lead paragraph.
+    blurb = first_paragraph_text(fragment)
+    if blurb:
+        short = blurb if len(blurb) < 160 else blurb[:157].rstrip() + "..."
+        escaped = html_lib.escape(short, quote=True)
+        updated = re.sub(
+            r'(<meta name="description" content=")(.*?)(">)',
+            rf"\1{escaped}\3",
+            updated,
+            count=1,
+            flags=re.DOTALL,
+        )
+        updated = re.sub(
+            r'(<meta property="og:description" content=")(.*?)(">)',
+            rf"\1{escaped}\3",
+            updated,
+            count=1,
+            flags=re.DOTALL,
+        )
+        updated = re.sub(
+            r'(<meta name="twitter:description" content=")(.*?)(">)',
+            rf"\1{escaped}\3",
+            updated,
+            count=1,
+            flags=re.DOTALL,
+        )
+
+    updated = re.sub(
+        r"<title>.*?</title>",
+        f"<title>{chapter_num} {html_lib.escape(page_title)} | Mathematics for Physics</title>",
+        updated,
+        count=1,
+        flags=re.DOTALL,
+    )
+
+    html_path.write_text(updated, encoding="utf-8")
+    print(f"Updated {html_name} in place from {generated_rel}", flush=True)
+
+
 def content_build(topic_paths: list[Path], asset_only: bool) -> int:
     run(["python3", "scripts/generate_topics.py"], cwd=BOOK_DIR)
 
@@ -377,29 +564,22 @@ def content_build(topic_paths: list[Path], asset_only: bool) -> int:
                 unique.append(rel)
                 seen.add(rel)
 
-        r_paths = ", ".join(json.dumps(p) for p in unique)
-        r_expr = (
-            "bookdown::preview_chapter("
-            f"c({r_paths}), "
-            'output_format = "bookdown::bs4_book"'
-            ")"
-        )
-        run(["Rscript", "-e", r_expr], cwd=BOOK_DIR)
-
-        # preview_chapter does not run post-render.R
-        run(["python3", "scripts/filter_sidebar.py"], cwd=BOOK_DIR)
-        run(["python3", "scripts/copy_topic_assets.py"], cwd=BOOK_DIR)
-
         html_names: list[str] = []
         for rel in unique:
             href = href_for_generated_md(rel)
             if href is None:
-                return full_build(f"missing HTML after preview for {rel}")
+                return full_build(f"missing HTML for {rel}; run a full build first")
+            render_chapter_inplace(rel, href)
             html_names.append(href)
+
+        run(["python3", "scripts/filter_sidebar.py"], cwd=BOOK_DIR)
+        run(["python3", "scripts/copy_topic_assets.py"], cwd=BOOK_DIR)
+
+        # Search must exist before coverage checks (full bookdown creates it).
+        patch_search_json(html_names)
 
         # Site Index + coverage (also rebuilds index links).
         run(["python3", "scripts/verify_book_coverage.py"], cwd=BOOK_DIR)
-        patch_search_json(html_names)
 
         # Ensure changed pages remain searchable.
         search_paths = {
@@ -414,6 +594,20 @@ def content_build(topic_paths: list[Path], asset_only: bool) -> int:
                 + ", ".join(missing)
                 + ". Run ./build.sh"
             )
+
+        # Verify HTML body actually contains fresh generated lead text.
+        for rel, href in zip(unique, html_names):
+            gen_path = BOOK_DIR / rel[len("../_BOOK/") :] if rel.startswith("../_BOOK/") else BOOK_DIR / rel
+            if not gen_path.is_file():
+                gen_path = (BOOK_DIR / "generated" / Path(rel).parts[-2] / Path(rel).name)
+            lead = first_paragraph_text(pandoc_chapter_fragment(gen_path))
+            html_text = (BOOK_OUT / href).read_text(encoding="utf-8", errors="ignore")
+            if lead and lead[:60] not in strip_html_text(html_text):
+                raise RuntimeError(
+                    f"{href} does not contain updated content from {rel}. "
+                    "Run ./build.sh"
+                )
+
         print(f"Incremental build OK: {', '.join(html_names)}", flush=True)
     else:
         run(["python3", "scripts/copy_topic_assets.py"], cwd=BOOK_DIR)

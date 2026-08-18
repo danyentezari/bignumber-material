@@ -1,10 +1,12 @@
 # Special Relativity
 
-The theory of space and time for inertial frames at constant relative velocity, featuring time dilation, length contraction, and mass-energy equivalence.
+Special relativity is the phenomenon of physical events in space and time as measured by observers in uniform relative motion.
+
+An event is an occurrence at a definite place and time. An observer is a system of clocks and rulers that records when and where events happen.
+
+Special relativity is related to electromagnetism because the speed of light in vacuum is independent of which inertial frame is used.
 
 ## Topics
-
-Ordered from more general to more specific:
 
 1. [Principle of Relativity](principle-of-relativity.html)
     1. [Relativity Principle](relativity-principle.html)
@@ -66,4 +68,5 @@ Ordered from more general to more specific:
 
 ## References
 
-1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — source for the heading explanation.
+1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — events, observers, and the invariance of the speed of light.
+2. Feynman, R. P., Leighton, R. B., & Sands, M. *The Feynman Lectures on Physics*, Vol. I. — uniform relative motion and the same speed of light in every inertial frame.

@@ -1,8 +1,6 @@
 # Condensed Matter
 
-Condensed matter physics is the phenomenon of macroscopic and microscopic physical properties of matter that emerge from the strong interactions of an extremely large number of constituents.
-
-A constituent is a particle of matter: an atom or an electron.
+Condensed matter physics is the phenomenon of macroscopic and microscopic physical properties of matter that emerge from the strong interactions of an extremely large number of constituents; for example, an atom or an electron.
 
 Condensed matter physics is related to statistical mechanics and quantum mechanics because the macroscopic properties of a condensed system are independent of the detailed microscopic trajectories of each individual constituent.
 

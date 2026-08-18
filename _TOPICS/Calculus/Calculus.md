@@ -4,7 +4,7 @@ The study of limits, derivatives, and integrals of functions of one or several v
 
 ## Topics
 
-Ordered from more general to more specific:
+
 
 1. [Limit](limit.html)
 2. [Chain Rule](chain-rule.html)

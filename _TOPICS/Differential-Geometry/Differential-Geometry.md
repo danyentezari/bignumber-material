@@ -1,6 +1,12 @@
 # Differential Geometry
 
-In differential geometry, it is convention to generalize tangent vectors as to a differential operator.
+Differential geometry is the study of shape, distance, and curvature on curves, surfaces, and smooth spaces.
+
+A smooth space is a space: a collection of points that locally looks flat. Curvature is a property of a smooth space: how sharply it bends away from being flat.
+
+Differential geometry is related to calculus and topology because the shape of a smooth space is independent of which coordinates are used to describe it.
+
+Some immediate applications of the study of differential geometry are in general relativity, gauge theory, and cartography and, mathematically, in multivariable calculus, linear algebra, and topology.
 
 ## Elementary Example
 ### Simple
@@ -37,3 +43,9 @@ where
 
 - $\dim T_{P}M = 3$.
 - $e_{i}$ may be written $\partial / \partial x^{i}\big|_{P}$ in local coordinates.
+
+## References
+
+1. Lovett, S. T. *Differential Geometry of Manifolds*. CRC Press, 2020. — shape, distance, and curvature of smooth spaces, independent of coordinates.
+2. Tu, L. W. *An Introduction to Manifolds*. Springer, 2011. — a smooth space as a collection of points that locally looks flat.
+3. do Carmo, M. P. *Differential Geometry of Curves and Surfaces*. — curvature as bending away from the flat case.

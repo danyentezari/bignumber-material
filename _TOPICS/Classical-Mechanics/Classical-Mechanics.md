@@ -8,7 +8,7 @@ Classical mechanics is related to special relativity and quantum mechanics becau
 
 ## Topics
 
-Ordered from more general to more specific:
+
 
 1. [Space](space.html)
 2. [Time](time.html)

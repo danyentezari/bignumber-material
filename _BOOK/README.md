@@ -3,14 +3,14 @@
 ## Quick Commands
 
 ```bash
+# serve the book (from repo root after a build)
+python3 -m http.server 8000 --directory _BOOK/_book
+
 # full build
 ./_BOOK/build.sh
 
-# watch and rebuild on change (needs fswatch: brew install fswatch)
+# watch and rebuild on changes
 ./_BOOK/watch-build.sh
-
-# serve the book (from repo root after a build)
-python3 -m http.server 8000 --directory _BOOK/_book
 ```
 
 This folder contains the Bookdown project for the `_TOPICS` content.
