@@ -1,16 +1,37 @@
 # TOPICS Book
 
+## Quick Commands
+
+```bash
+# full build
+./_BOOK/build.sh
+
+# watch and rebuild on change (needs fswatch: brew install fswatch)
+./_BOOK/watch-build.sh
+
+# serve the book (from repo root after a build)
+python3 -m http.server 8000 --directory _BOOK/_book
+```
+
 This folder contains the Bookdown project for the `_TOPICS` content.
 
 ## Build
 
-From `_BOOK`:
+From the repo root:
 
 ```sh
 ./_BOOK/build.sh
 ```
 
 If `Rscript` is not available, install R and ensure it is on your shell `PATH`.
+
+### Watch / incremental build
+
+```sh
+./_BOOK/watch-build.sh
+```
+
+Watches `_TOPICS` and book chrome. Content edits to existing pages rebuild only those chapters (plus Site Index, sidebar, and search). New/deleted pages, H1 renames, `sidebar.txt`, and chrome/script changes trigger a full build. Requires [fswatch](https://github.com/emcrisostomo/fswatch) (`brew install fswatch`).
 
 ## Theme
 
@@ -39,7 +60,7 @@ python3 -m http.server 8000
 Or, without cd'ing into `_book`:
 
 ```bash
-python3 -m http.server 8000 --directory _book
+python3 -m http.server 8000 --directory _BOOK/_book
 ```
 
 
