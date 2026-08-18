@@ -1,6 +1,8 @@
 # P
 
-A parameter that is a real number at least one that is used to define a family of norms on sequences and on functions by choosing the power in a sum or integral.
+A parameter that is a real number at least one that is used to define a family of norms on sequences and on functions by choosing the power in a sum or integral. More plainly, this parameter represents how large values contribute to a norm. 
+
+The letter $p$ is Riesz's name for that power, who wrote $L^{p}$ for the class of functions whose $p$-th power is integrable, according to the The Princeton Companion to Mathematics.
 
 <i>
 
@@ -111,7 +113,8 @@ where
 
 ## References
 
-1. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — fixed $p\geq 1$ in $\ell^{p}$ and $L^{p}$; conjugate exponents $\dfrac{1}{p} + \dfrac{1}{q}=1$.
-2. Gamelin, T. W., & Greene, R. E. *Introduction to Topology*, 2nd ed. Dover, 1999. — one-parameter family of $p$-norms for $1\leq p<\infty$.
-3. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — $p$-norm on $\mathbb{C}^{n}$; $L^{2}_{w}$ with power $2$.
-4. Pietsch, A. *History of Banach Spaces and Linear Operators*. Birkhäuser, 2007. — Riesz and the introduction of $L^{p}$ via the power $p$ in $|f|^{p}$.
+1. Gowers, T., Barrow-Green, J., & Leader, I., eds. *The Princeton Companion to Mathematics*. Princeton University Press. — Riesz and $L^{p}$ as functions whose $p$-th power is integrable; dual $L^{q}$.
+2. Kreyszig, E. *Introductory Functional Analysis with Applications*. Wiley, 1989. — fixed $p\geq 1$ in $\ell^{p}$ and $L^{p}$; conjugate exponents $\dfrac{1}{p} + \dfrac{1}{q}=1$.
+3. Gamelin, T. W., & Greene, R. E. *Introduction to Topology*, 2nd ed. Dover, 1999. — one-parameter family of $p$-norms for $1\leq p<\infty$.
+4. Hassani, S. *Mathematical Physics*, 2nd ed. Springer. — $p$-norm on $\mathbb{C}^{n}$; $L^{2}_{w}$ with power $2$.
+5. Pietsch, A. *History of Banach Spaces and Linear Operators*. Birkhäuser, 2007. — Riesz and the introduction of $L^{p}$ via the power $p$ in $|f|^{p}$.
