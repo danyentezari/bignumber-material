@@ -2,56 +2,29 @@
 
 A reference frame that accelerates relative to an inertial frame that is used to describe measurements when Newton’s first law does not hold in its simple form.
 
-Note: Also called a noninertial reference frame. Also called an accelerating reference frame.
+1\. A non-inertial frame is a coordinate system that is accelerating. Acceleration is the rate of change of velocity with time. This principle is used to describe physics from the viewpoint of an observer whose motion is changing.
 
-<i>
+2\. An observer in a non-inertial frame measures free objects accelerating and must introduce fictitious forces. A fictitious force is an apparent force that arises only from acceleration of the frame. This principle is used to explain the outward shove felt in a turning car.
 
-**definition [d]** (*Non-Inertial Frame*) From Knight: accelerating reference frames are not inertial reference frames.
+The centrifugal force in a rotating frame is
 
-where
-
-- an inertial reference frame is one in which Newton’s first law is valid.
-- acceleration of the frame is relative to an inertial frame.
-
-</i>
-
-<i>
-
-**definition [d]** (*Non-Inertial Frame*) From Shankar: that’s why an accelerating train is a non-inertial frame.
+$$
+F_{\mathrm{cent}} = \dfrac{m v^{2}}{R}
+$$
 
 where
 
-- the train’s acceleration relative to the ground makes the cabin a non-inertial frame.
-- observers in that frame see free objects fail to move at constant velocity.
-
-</i>
-
-<i>
-
-**definition [d]** (*Non-Inertial Observer*) From Emam: to better understand the invariance of the laws of mechanics under the Galilean transformations, let us consider the situation where the velocity $v$ of $O'$ is no longer a constant. This would be the curious case of the non-inertial observer.
-
-where
-
-- $O'$ is an observer whose frame moves with velocity $v$ relative to another frame.
-- $v$ is not constant when the observer is non-inertial.
-
-</i>
-
-<i>
-
-**definition [d]** (*Fictitious Force in a Non-Inertial Frame*) From Knight: in essence, $\dfrac{mv^{2}}{R}$ is the centrifugal force, a fictitious force trying—from our perspective in a noninertial reference frame—to “throw” us off the rotating platform.
-
-where
-
+- $F_{\mathrm{cent}}$ is the centrifugal force.
 - $m$ is the mass.
 - $v$ is the speed on the rotating platform.
 - $R$ is the radius of the circular path.
-- the centrifugal force is fictitious in the sense that it appears only in the noninertial frame.
 
-</i>
+3\. The effects felt in a uniformly accelerating frame match those in a uniform gravitational field. A uniform gravitational field is a region where the gravitational force is the same at every point. This principle is used to extend relativity from inertial observers to accelerating observers.
+
+Note: These principles are the definition of a non-inertial frame, the appearance of fictitious forces, and the equivalence of uniform acceleration with uniform gravity. Also called a noninertial reference frame. Also called an accelerating reference frame.
 
 ## References
 
 1. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — accelerating frames are not inertial; centrifugal force as fictitious in a noninertial frame.
 2. Shankar, R. *Fundamentals of Physics I*. Yale University Press, 2019. — accelerating train as a non-inertial frame.
-3. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — non-inertial observer when $v$ of $O'$ is not constant.
+3. Susskind, L., & Friedman, A. *Special Relativity and Classical Field Theory*. Basic Books, 2017. — uniform acceleration indistinguishable from uniform gravity.

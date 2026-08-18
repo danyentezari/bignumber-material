@@ -2,39 +2,15 @@
 
 A reference frame in which Newton’s first law holds that is used to state the laws of mechanics without fictitious forces from acceleration of the axes.
 
-Note: Also called an inertial reference frame.
+1\. An inertial frame is a frame in which Newton’s first law holds. Newton’s first law is the statement that a body with no net force keeps constant velocity. This principle is used to test whether a given coordinate system is inertial.
 
-<i>
+2\. A frame that moves at constant velocity relative to an inertial frame is itself inertial. Constant velocity is a speed and direction that do not change with time. This principle is used to generate the family of frames in which the laws of mechanics keep the same form.
 
-**definition [d]** (*Inertial Frame = Inertial Reference Frame*) From Knight: we define an inertial reference frame as a reference frame in which Newton’s first law is valid.
+3\. In an inertial frame every acceleration comes from a real force. A real force is a push or pull from an identifiable contact or field. This principle is used to apply Newton’s second law with no extra correction terms.
 
-where
+4\. Clocks at different locations in an inertial frame can be synchronized with light signals. Synchronization is the procedure that sets distant clocks to a common time. This principle is used to define one coordinate time throughout the frame.
 
-- a reference frame is a coordinate system for position and time measurements.
-- Newton’s first law is the law of inertia for free particles.
-
-</i>
-
-<i>
-
-**definition [d]** (*Inertial Frame*) From Griffiths: to avoid this trap, we define an inertial frame formally as one in which Newton’s first law holds.
-
-where
-
-- the frame is inertial precisely when free particles move with constant velocity in that frame.
-
-</i>
-
-<i>
-
-**definition [d]** (*Inertial Frame of Reference*) From Emam: coordinate axes moving with constant velocities are called inertial frames of reference. Another way of defining inertial frames of reference is that they are those frames that preserve the form of Newton’s law.
-
-where
-
-- constant-velocity motion of the axes is relative to other inertial frames.
-- Newton’s second law keeps the same form in every such frame.
-
-</i>
+Note: These principles are the law of inertia as a frame test, closure under constant-velocity boosts, the absence of fictitious forces, and Einstein synchronization. Also called an inertial reference frame.
 
 ## References
 
@@ -42,3 +18,4 @@ where
 2. Knight, R. D. *Physics for Scientists and Engineers: A Strategic Approach with Modern Physics*. Pearson, 2023. — inertial reference frame as one where Newton’s first law is valid.
 3. Griffiths, D. J. *Introduction to Electrodynamics*. Cambridge University Press, 2024. — inertial frame as one in which Newton’s first law holds.
 4. Emam, M. H. *Covariant Physics*. Oxford University Press, 2021. — inertial frames as constant-velocity axes preserving Newton’s law.
+5. Carroll, S. M. *Spacetime and Geometry*. Cambridge University Press, 2021. — synchronization of clocks in an inertial frame.

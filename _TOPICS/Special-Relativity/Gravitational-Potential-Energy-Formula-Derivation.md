@@ -2,37 +2,27 @@
 
 A derivation of the gravitational potential energy formula that is used to obtain $U_{G} = mgy$ from the work done by gravity.
 
-<i>
+The work done by gravity is
 
-**definition [d]** (*Gravitational Potential Energy Formula Derivation*) From Knight: the work done by the constant gravitational force $F_{G} = -mg$ through a vertical displacement is
+$$
+W_{G} = mg(y_{i} - y_{f})
+$$
 
-- $W_{G} = mg(y_{i} - y_{f}) = mgy_{i} - mgy_{f}$ .
+The gravitational potential energy is
 
-With $\Delta U_{G} = -W_{G}$,
-
-- $U_{f} - U_{i} = -(mgy_{i} - mgy_{f}) = mgy_{f} - mgy_{i}$ ,
-
-so
-
-- $U_{G} = mgy$
-
-when $U_{G} = 0$ is chosen at $y = 0$.
+$$
+U_{G} = mgy
+$$
 
 where
 
-- $F_{G}$ is the gravitational force.
+- $W_{G}$ is the work done by gravity.
 - $m$ is the mass.
 - $g$ is the gravitational acceleration.
 - $y$ is the height.
 - $y_{i}$ is the initial height.
 - $y_{f}$ is the final height.
-- $W_{G}$ is the work done by gravity.
-- $\Delta U_{G}$ is the change in gravitational potential energy.
-- $U_{i}$ is the initial gravitational potential energy.
-- $U_{f}$ is the final gravitational potential energy.
 - $U_{G}$ is the gravitational potential energy.
-
-</i>
 
 ## References
 

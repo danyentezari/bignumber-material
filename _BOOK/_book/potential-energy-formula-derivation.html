@@ -229,91 +229,27 @@
 <li><a href="Gravitational-Potential-Energy-Formula-Derivation.md">Gravitational Potential Energy Formula Derivation</a></li>
 <li><a href="Elastic-Potential-Energy-Formula-Derivation.md">Elastic Potential Energy Formula Derivation</a></li>
 </ul>
-<p><i></i></p>
-<p><strong>definition [d]</strong> (<em>Potential Energy Formula Derivation</em>) From Shankar: start from the rate of change of kinetic energy</p>
-<ul>
-<li>
-<span class="math inline">\(\dfrac{dK}{dt} = \dfrac{d}{dt}\left(\dfrac{1}{2}mv^{2}\right) = m\dfrac{dv}{dt}\, v\)</span> .</li>
-</ul>
-<p>With <span class="math inline">\(F(x) = m\,\dfrac{dv}{dt}\)</span> and <span class="math inline">\(v = \dfrac{dx}{dt}\)</span>,</p>
-<ul>
-<li>
-<span class="math inline">\(\dfrac{dK}{dt} = F(x)\dfrac{dx}{dt}\)</span> .</li>
-</ul>
-<p>Integrating from <span class="math inline">\(t_{1}\)</span> to <span class="math inline">\(t_{2}\)</span> gives the work-energy theorem</p>
-<ul>
-<li>
-<span class="math inline">\(K(t_{2}) - K(t_{1}) = \displaystyle\int_{x_{1}}^{x_{2}} F(x)\, dx\)</span> .</li>
-</ul>
-<p>Writing the integral via an antiderivative <span class="math inline">\(G\)</span> with <span class="math inline">\(\dfrac{dG}{dx} = F(x)\)</span>,</p>
-<ul>
-<li>
-<span class="math inline">\(K_{2} - K_{1} = G(x_{2}) - G(x_{1})\)</span> ,</li>
-</ul>
-<p>hence</p>
-<ul>
-<li>
-<span class="math inline">\(K_{2} - G(x_{2}) = K_{1} - G(x_{1})\)</span> .</li>
-</ul>
-<p>Setting <span class="math inline">\(U(x) = -G(x)\)</span> so that <span class="math inline">\(F(x) = -\dfrac{dU}{dx}\)</span> yields conservation</p>
-<ul>
-<li><span class="math inline">\(K_{2} + U_{2} = K_{1} + U_{1}\)</span></li>
-</ul>
-<p>and the potential-energy change</p>
-<ul>
-<li>
-<span class="math inline">\(U(x_{2}) - U(x_{1}) = -\displaystyle\int_{x_{1}}^{x_{2}} F(x)\, dx\)</span> .</li>
-</ul>
+<p>The work-energy theorem is</p>
+<p><span class="math display">\[
+K(t_{2}) - K(t_{1}) = \displaystyle\int_{x_{1}}^{x_{2}} F(x)\, dx
+\]</span></p>
+<p>The potential-energy change is</p>
+<p><span class="math display">\[
+U(x_{2}) - U(x_{1}) = -\displaystyle\int_{x_{1}}^{x_{2}} F(x)\, dx
+\]</span></p>
 <p>where</p>
 <ul>
 <li>
 <span class="math inline">\(K\)</span> is the kinetic energy.</li>
 <li>
-<span class="math inline">\(\dfrac{dK}{dt}\)</span> is the rate of change of kinetic energy.</li>
-<li>
-<span class="math inline">\(t\)</span> is time.</li>
-<li>
-<span class="math inline">\(m\)</span> is the mass.</li>
-<li>
-<span class="math inline">\(v\)</span> is the velocity.</li>
-<li>
-<span class="math inline">\(\dfrac{dv}{dt}\)</span> is the acceleration.</li>
+<span class="math inline">\(t_{1}\)</span> and <span class="math inline">\(t_{2}\)</span> are the initial and final times.</li>
 <li>
 <span class="math inline">\(F(x)\)</span> is a position-dependent force.</li>
 <li>
-<span class="math inline">\(x\)</span> is the position.</li>
-<li>
-<span class="math inline">\(dx\)</span> is the position differential.</li>
-<li>
-<span class="math inline">\(\dfrac{dx}{dt}\)</span> is the velocity written as a derivative of position.</li>
-<li>
-<span class="math inline">\(t_{1}\)</span> and <span class="math inline">\(t_{2}\)</span> are the initial and final times.</li>
-<li>
 <span class="math inline">\(x_{1}\)</span> and <span class="math inline">\(x_{2}\)</span> are the initial and final positions.</li>
 <li>
-<span class="math inline">\(K(t_{1})\)</span> and <span class="math inline">\(K(t_{2})\)</span> are the kinetic energies at those times.</li>
-<li>
-<span class="math inline">\(K_{1}\)</span> and <span class="math inline">\(K_{2}\)</span> are the same kinetic energies at <span class="math inline">\(x_{1}\)</span> and <span class="math inline">\(x_{2}\)</span>.</li>
-<li>
-<span class="math inline">\(G(x)\)</span> is an antiderivative of <span class="math inline">\(F\)</span>.</li>
-<li>
-<span class="math inline">\(\dfrac{dG}{dx}\)</span> is the derivative of <span class="math inline">\(G\)</span> with respect to <span class="math inline">\(x\)</span>.</li>
-<li>
 <span class="math inline">\(U(x)\)</span> is the potential energy.</li>
-<li>
-<span class="math inline">\(U_{1}\)</span> and <span class="math inline">\(U_{2}\)</span> are the potential energies at <span class="math inline">\(x_{1}\)</span> and <span class="math inline">\(x_{2}\)</span>.</li>
-<li>
-<span class="math inline">\(U(x_{1})\)</span> and <span class="math inline">\(U(x_{2})\)</span> are the same potential energies written as functions of position.</li>
-<li>
-<span class="math inline">\(\dfrac{dU}{dx}\)</span> is the derivative of <span class="math inline">\(U\)</span> with respect to <span class="math inline">\(x\)</span>.</li>
-<li>
-<span class="math inline">\(\displaystyle\int_{x_{1}}^{x_{2}} F(x)\, dx\)</span> is the work done by <span class="math inline">\(F\)</span> from <span class="math inline">\(x_{1}\)</span> to <span class="math inline">\(x_{2}\)</span>.</li>
-<li>
-<span class="math inline">\(W = \displaystyle\int_{x_{1}}^{x_{2}} F(x)\, dx\)</span> is that work.</li>
-<li>
-<span class="math inline">\(\Delta U = -W\)</span> is the change in potential energy.</li>
 </ul>
-<p></p>
 <div id="references-177" class="section level2" number="188.1">
 <h2>
 <span class="header-section-number">188.1</span> References<a class="anchor" aria-label="anchor" href="#references-177"><i class="fas fa-link"></i></a>

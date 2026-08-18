@@ -4,6 +4,19 @@ A set of events equipped with the Minkowski metric that is used to represent fla
 
 Note: Also called Minkowski spacetime. Also called flat spacetime.
 
+The line element is
+
+$$
+ds^{2} = -c^{2}\, dt^{2} + dx^{2} + dy^{2} + dz^{2}
+$$
+
+where
+
+- $ds$ is the infinitesimal spacetime interval.
+- $c$ is the speed of light.
+- $t$ is time.
+- $x, y, z$ are Cartesian spatial coordinates.
+
 **Traits**
 
 1. Represents a flat, four-dimensional spacetime continuum where gravity is neglected.
@@ -29,48 +42,6 @@ Note: Also called Minkowski spacetime. Also called flat spacetime.
 8. Underlies accelerating-frame quantum field analyses such as the Rindler vacuum and Unruh effect.
 9. Supports conformal Penrose diagrams that compactify causal boundaries onto a finite chart.
 10. Connects to twistor methods that complexify the arena for solving field equations.
-
-<i>
-
-**definition [d]** (*Minkowski Space = Minkowski Spacetime = Flat Spacetime*) The four-dimensional flat Lorentzian manifold of special relativity, with Minkowski metric $\eta_{\mu\nu} = \operatorname{diag}(-1,1,1,1)$ and line element
-
-- $ds^{2} = -c^{2}\, dt^{2} + dx^{2} + dy^{2} + dz^{2}$ .
-
-where
-
-- $\eta_{\mu\nu}$ is the Minkowski metric tensor.
-- $ds$ is the infinitesimal spacetime interval.
-- $c$ is the speed of light.
-- $t$ is time.
-- $x, y, z$ are Cartesian spatial coordinates.
-- $x^{\mu} = (ct,\, x,\, y,\, z)$ are spacetime coordinates of an event.
-
-Note:
-
-- events are points of the manifold.
-- $c$ is often set to $1$.
-- the Riemann curvature vanishes.
-
-</i>
-
-<i>
-
-**definition [d]** (*Minkowski Space = Minkowski Spacetime*) The same flat spacetime with the opposite metric signature $\eta_{\mu\nu} = \operatorname{diag}(1,-1,-1,-1)$ and line element
-
-- $ds^{2} = (c\, dt)^{2} - dx^{2} - dy^{2} - dz^{2}$ .
-
-where
-
-- $x^{\mu} = (ct,\, x,\, y,\, z)$ are spacetime coordinates.
-- $\eta_{\mu\nu}$ is the Minkowski metric.
-- $c$ is the speed of light.
-- $ds$ is the infinitesimal spacetime interval.
-
-Note:
-
-- the two signatures are a convention, not different geometries.
-
-</i>
 
 ## References
 

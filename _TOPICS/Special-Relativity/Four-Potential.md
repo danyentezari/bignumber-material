@@ -4,35 +4,18 @@ A four-vector whose time and space parts are the scalar and vector potentials th
 
 Note: Also called the potential $4$-vector. Also called the $4$-vector potential.
 
-<i>
+The four-potential is
 
-**definition [d]** (*Four-Potential = Potential $4$-Vector*) From Emam: it turns out that the potentials $V$ and $\mathbf{A}$ can be viewed as components of the potential $4$-vector
-
-- $A^{\alpha} = \left(\dfrac{V}{c},\, \mathbf{A}\right)$ .
+$$
+A^{\mu} = \left(\dfrac{V}{c},\, \mathbf{A}\right)
+$$
 
 where
 
-- $A^{\alpha}$ is the potential $4$-vector.
+- $A^{\mu}$ is the four-potential.
 - $V$ is the electric scalar potential.
 - $\mathbf{A}$ is the magnetic vector potential.
 - $c$ is the speed of light.
-
-</i>
-
-<i>
-
-**definition [d]** (*Four-Potential = $4$-Vector Potential*) From Griffiths: as you might guess, $V$ and $\mathbf{A}$ together constitute a $4$-vector:
-
-- $A^{\mu} = \left(\dfrac{V}{c},\, A_{x},\, A_{y},\, A_{z}\right)$ .
-
-where
-
-- $A^{\mu}$ is the $4$-vector potential.
-- $V$ is the scalar potential.
-- $A_{x}, A_{y}, A_{z}$ are the components of the vector potential.
-- $c$ is the speed of light.
-
-</i>
 
 ## References
 

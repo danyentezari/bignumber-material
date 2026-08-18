@@ -4,79 +4,20 @@ A four-vector formed from energy and momentum that is used to package the relati
 
 Note: Also called the energy-momentum four-vector. Also called the momentum four-vector.
 
-<i>
+The four-momentum is
 
-**definition [d]** (*Four-Momentum*) From Emam: we define the $4$-momentum of a massive particle in exactly the same way that $3$-momentum is defined: the product of mass with velocity:
-
-- $P^{\mu} = m U^{\mu}$ .
-
-Based on all this, we can now write the $4$-momentum as it truly is without approximation:
-
-- $P^{\mu} = \left(\dfrac{E}{c},\, \mathbf{p}\right)$ ,
-
-where the total energy of a free particle is $E = m\gamma c^{2}$.
+$$
+P^{\mu} = m U^{\mu} = \left(\dfrac{E}{c},\, \mathbf{p}\right)
+$$
 
 where
 
-- $P^{\mu}$ is the $4$-momentum.
+- $P^{\mu}$ is the four-momentum.
 - $m$ is the rest mass.
-- $U^{\mu}$ is the $4$-velocity.
-- $E$ is the total energy.
-- $\mathbf{p}$ is the relativistic $3$-momentum.
-- $c$ is the speed of light.
-- $\gamma$ is the Lorentz factor.
-
-</i>
-
-<i>
-
-**definition [d]** (*Energy-Momentum $4$-Vector*) From Griffiths: relativistic momentum is the spatial part of a $4$-vector,
-
-- $p^{\mu} \equiv m\eta^{\mu}$ ,
-
-and Einstein identified $p^{0}c$ as relativistic energy,
-
-- $E \equiv \dfrac{mc^{2}}{\sqrt{1 - \dfrac{u^{2}}{c^{2}}}}$ ;
-
-$p^{\mu}$ is called the energy–momentum $4$-vector.
-
-where
-
-- $\eta^{\mu}$ is the $4$-velocity.
-- $u$ is the ordinary velocity.
-- $m$ is the rest mass.
-- $p^{\mu}$ is the energy-momentum $4$-vector.
-
-</i>
-
-<i>
-
-**definition [d]** (*Momentum Four-Vector*) From Carroll: a related vector is the momentum four-vector, defined by
-
-- $p^{\mu} = m U^{\mu}$ ,
-
-where $m$ is the mass of the particle.
-
-where
-
 - $U^{\mu}$ is the four-velocity.
-- $m$ is the rest mass.
-
-</i>
-
-<i>
-
-**definition [d]** (*Energy-Momentum Four-Vector*) From Shankar: $P$ is the energy-momentum four-vector
-
-- $P = \left(\dfrac{E}{c},\, \mathbf{p}\right)$ .
-
-where
-
-- $E$ is the energy.
-- $\mathbf{p}$ is the three-momentum.
+- $E$ is the total energy.
+- $\mathbf{p}$ is the relativistic three-momentum.
 - $c$ is the speed of light.
-
-</i>
 
 ## References
 

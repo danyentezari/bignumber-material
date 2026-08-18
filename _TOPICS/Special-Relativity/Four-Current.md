@@ -4,42 +4,18 @@ A four-vector formed from charge density and current density that is used to pac
 
 Note: Also called the current $4$-vector. Also called the current density $4$-vector.
 
-<i>
+The four-current is
 
-**definition [d]** (*Four-Current = Current $4$-Vector*) From Emam: the charge and current densities also define components of a current $4$-vector:
-
-- $J^{\alpha} = (c\rho,\, \mathbf{J})$ .
+$$
+J^{\mu} = (c\rho,\, \mathbf{J})
+$$
 
 where
 
-- $J^{\alpha}$ is the current $4$-vector.
+- $J^{\mu}$ is the four-current.
 - $\rho$ is the charge density.
 - $\mathbf{J}$ is the current density.
 - $c$ is the speed of light.
-
-</i>
-
-<i>
-
-**definition [d]** (*Current Density $4$-Vector*) From Griffiths: evidently, charge density and current density go together to make a $4$-vector:
-
-- $J^{\mu} = \rho_{0}\eta^{\mu}$ ,
-
-whose components are
-
-- $J^{\mu} = (c\rho,\, J_{x},\, J_{y},\, J_{z})$ .
-
-We’ll call it the current density $4$-vector.
-
-where
-
-- $\rho_{0}$ is the proper charge density.
-- $\eta^{\mu}$ is the $4$-velocity of the charge distribution.
-- $\rho$ is the charge density in the lab frame.
-- $J_{x}, J_{y}, J_{z}$ are the components of the current density.
-- $c$ is the speed of light.
-
-</i>
 
 ## References
 

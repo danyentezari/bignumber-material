@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>183 Non-Inertial Frames | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="A reference frame that accelerates relative to an inertial frame that is used to describe measurements when Newton’s first law does not hold in its simple form. Note: Also called a noninertial...">
+<meta name="description" content="A reference frame that accelerates relative to an inertial frame that is used to describe measurements when Newton’s first law does not hold in its simple form. 1. A non-inertial frame is a...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="183 Non-Inertial Frames | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="A reference frame that accelerates relative to an inertial frame that is used to describe measurements when Newton’s first law does not hold in its simple form. Note: Also called a noninertial...">
+<meta property="og:description" content="A reference frame that accelerates relative to an inertial frame that is used to describe measurements when Newton’s first law does not hold in its simple form. 1. A non-inertial frame is a...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="183 Non-Inertial Frames | Mathematics for Physics">
-<meta name="twitter:description" content="A reference frame that accelerates relative to an inertial frame that is used to describe measurements when Newton’s first law does not hold in its simple form. Note: Also called a noninertial...">
+<meta name="twitter:description" content="A reference frame that accelerates relative to an inertial frame that is used to describe measurements when Newton’s first law does not hold in its simple form. 1. A non-inertial frame is a...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -224,46 +224,25 @@
 <span class="header-section-number">183</span> Non-Inertial Frames<a class="anchor" aria-label="anchor" href="#non-inertial-frames"><i class="fas fa-link"></i></a>
 </h1>
 <p>A reference frame that accelerates relative to an inertial frame that is used to describe measurements when Newton’s first law does not hold in its simple form.</p>
-<p>Note: Also called a noninertial reference frame. Also called an accelerating reference frame.</p>
-<p><i></i></p>
-<p><strong>definition [d]</strong> (<em>Non-Inertial Frame</em>) From Knight: accelerating reference frames are not inertial reference frames.</p>
-<p>where</p>
-<ul>
-<li>an inertial reference frame is one in which Newton’s first law is valid.</li>
-<li>acceleration of the frame is relative to an inertial frame.</li>
-</ul>
-<p></p>
-<p><i></i></p>
-<p><strong>definition [d]</strong> (<em>Non-Inertial Frame</em>) From Shankar: that’s why an accelerating train is a non-inertial frame.</p>
-<p>where</p>
-<ul>
-<li>the train’s acceleration relative to the ground makes the cabin a non-inertial frame.</li>
-<li>observers in that frame see free objects fail to move at constant velocity.</li>
-</ul>
-<p></p>
-<p><i></i></p>
-<p><strong>definition [d]</strong> (<em>Non-Inertial Observer</em>) From Emam: to better understand the invariance of the laws of mechanics under the Galilean transformations, let us consider the situation where the velocity <span class="math inline">\(v\)</span> of <span class="math inline">\(O'\)</span> is no longer a constant. This would be the curious case of the non-inertial observer.</p>
+<p>1. A non-inertial frame is a coordinate system that is accelerating. Acceleration is the rate of change of velocity with time. This principle is used to describe physics from the viewpoint of an observer whose motion is changing.</p>
+<p>2. An observer in a non-inertial frame measures free objects accelerating and must introduce fictitious forces. A fictitious force is an apparent force that arises only from acceleration of the frame. This principle is used to explain the outward shove felt in a turning car.</p>
+<p>The centrifugal force in a rotating frame is</p>
+<p><span class="math display">\[
+F_{\mathrm{cent}} = \dfrac{m v^{2}}{R}
+\]</span></p>
 <p>where</p>
 <ul>
 <li>
-<span class="math inline">\(O'\)</span> is an observer whose frame moves with velocity <span class="math inline">\(v\)</span> relative to another frame.</li>
-<li>
-<span class="math inline">\(v\)</span> is not constant when the observer is non-inertial.</li>
-</ul>
-<p></p>
-<p><i></i></p>
-<p><strong>definition [d]</strong> (<em>Fictitious Force in a Non-Inertial Frame</em>) From Knight: in essence, <span class="math inline">\(\dfrac{mv^{2}}{R}\)</span> is the centrifugal force, a fictitious force trying—from our perspective in a noninertial reference frame—to “throw” us off the rotating platform.</p>
-<p>where</p>
-<ul>
+<span class="math inline">\(F_{\mathrm{cent}}\)</span> is the centrifugal force.</li>
 <li>
 <span class="math inline">\(m\)</span> is the mass.</li>
 <li>
 <span class="math inline">\(v\)</span> is the speed on the rotating platform.</li>
 <li>
 <span class="math inline">\(R\)</span> is the radius of the circular path.</li>
-<li>the centrifugal force is fictitious in the sense that it appears only in the noninertial frame.</li>
 </ul>
-<p></p>
+<p>3. The effects felt in a uniformly accelerating frame match those in a uniform gravitational field. A uniform gravitational field is a region where the gravitational force is the same at every point. This principle is used to extend relativity from inertial observers to accelerating observers.</p>
+<p>Note: These principles are the definition of a non-inertial frame, the appearance of fictitious forces, and the equivalence of uniform acceleration with uniform gravity. Also called a noninertial reference frame. Also called an accelerating reference frame.</p>
 <div id="references-172" class="section level2" number="183.1">
 <h2>
 <span class="header-section-number">183.1</span> References<a class="anchor" aria-label="anchor" href="#references-172"><i class="fas fa-link"></i></a>
@@ -271,7 +250,7 @@
 <ol style="list-style-type: decimal">
 <li>Knight, R. D. <em>Physics for Scientists and Engineers: A Strategic Approach with Modern Physics</em>. Pearson, 2023. — accelerating frames are not inertial; centrifugal force as fictitious in a noninertial frame.</li>
 <li>Shankar, R. <em>Fundamentals of Physics I</em>. Yale University Press, 2019. — accelerating train as a non-inertial frame.</li>
-<li>Emam, M. H. <em>Covariant Physics</em>. Oxford University Press, 2021. — non-inertial observer when <span class="math inline">\(v\)</span> of <span class="math inline">\(O'\)</span> is not constant.</li>
+<li>Susskind, L., &amp; Friedman, A. <em>Special Relativity and Classical Field Theory</em>. Basic Books, 2017. — uniform acceleration indistinguishable from uniform gravity.</li>
 </ol>
 <div class="topic-index">
 <ul>

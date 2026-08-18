@@ -4,63 +4,27 @@ An energy associated with motion that is used to measure how much of a particleâ
 
 Note: Also called $K$. Also called $T$. At low speed it reduces to the Newtonian kinetic energy.
 
-<i>
+The relativistic kinetic energy is
 
-**definition [d]** (*Kinetic Energy*) From Knight: a relativistic expression for the kinetic energy is
+$$
+K = (\gamma - 1)mc^{2} = E - E_{0}
+$$
 
-- $K = (\gamma - 1)mc^{2} = \gamma mc^{2} - mc^{2} = E - E_{0}$ ,
+The Newtonian kinetic energy is
+
+$$
+K = \dfrac{1}{2}mv^{2}
+$$
 
 where
 
+- $K$ is the kinetic energy.
 - $\gamma$ is the Lorentz factor of the particle.
 - $m$ is the rest mass.
 - $c$ is the speed of light in vacuum.
 - $E = \gamma mc^{2}$ is the total energy.
 - $E_{0} = mc^{2}$ is the rest energy.
-
-</i>
-
-<i>
-
-**definition [d]** (*Kinetic Energy*) From Griffiths: the remainder attributable to the motion is kinetic energy,
-
-- $E_{\mathrm{kin}} = E - mc^{2} = mc^{2}\left(\dfrac{1}{\sqrt{1 - \dfrac{u^{2}}{c^{2}}}} - 1\right)$ .
-
-where
-
-- $E$ is the total energy.
-- $u$ is the particle speed.
-- $m$ is the rest mass.
-- $c$ is the speed of light in vacuum.
-
-</i>
-
-<i>
-
-**definition [d]** (*Kinetic Energy*) From Emam: relativistically the kinetic energy is total energy minus rest energy,
-
-- $\mathrm{K.E.} = E - E_{\mathrm{rest}} = m\gamma c^{2} - mc^{2} = (\gamma - 1)mc^{2}$ .
-
-where
-
-- $E = m\gamma c^{2}$ is the total energy.
-- $E_{\mathrm{rest}} = mc^{2}$ is the rest energy.
-- $\gamma$ is the Lorentz factor.
-
-</i>
-
-<i>
-
-**definition [d]** (*Kinetic Energy*) From Knight: the Newtonian kinetic energy of a particle is
-
-- $K = \dfrac{1}{2}mv^{2}$ .
-
-where
-
-- $m$ is the mass.
 - $v$ is the speed.
-
-</i>
 
 ## References
 

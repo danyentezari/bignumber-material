@@ -4,70 +4,17 @@ An energy associated with position that is used to compute the work done by a co
 
 Note: Also called $U$. Also called $V$.
 
-<i>
+The change in potential energy is
 
-**definition [d]** (*Potential Energy*) From Hall: the potential energy of the system is the function
-
-- $V(x) = -\displaystyle\int F(x)\, dx$ ,
-
-so that
-
-- $F(x) = -\dfrac{dV}{dx}$ .
-
-where
-
-- $V(x)$ is the potential energy.
-- $F(x)$ is the force.
-- $x$ is the position.
-
-</i>
-
-<i>
-
-**definition [d]** (*Potential Energy*) From Shankar: introducing $U(x)$ with $F(x) = -dU/dx$, the change in potential energy is
-
-- $U(x_{2}) - U(x_{1}) = -\displaystyle\int_{x_{1}}^{x_{2}} F(x)\, dx$ .
+$$
+U(x_{2}) - U(x_{1}) = -\displaystyle\int_{x_{1}}^{x_{2}} F(x)\, dx
+$$
 
 where
 
 - $U(x)$ is the potential energy.
 - $F(x)$ is the force.
 - $x_{1}$ and $x_{2}$ are the initial and final positions.
-
-</i>
-
-<i>
-
-**definition [d]** (*Gravitational Potential Energy*) From Knight: near Earth’s surface,
-
-- $U_{G} = mgy$ ,
-
-and for two point masses,
-
-- $U_{G} = -\dfrac{GMm}{r}$ .
-
-where
-
-- $m$ and $M$ are masses.
-- $g$ is the gravitational acceleration near Earth.
-- $y$ is the height.
-- $r$ is the separation.
-- $G$ is Newton’s gravitational constant.
-
-</i>
-
-<i>
-
-**definition [d]** (*Elastic Potential Energy*) From Knight: the elastic potential energy is
-
-- $U_{\mathrm{Sp}} = \dfrac{1}{2}k(\Delta s)^{2}$ ,
-
-where
-
-- $k$ is the spring constant.
-- $\Delta s$ is the displacement of the spring from its equilibrium length.
-
-</i>
 
 ## References
 

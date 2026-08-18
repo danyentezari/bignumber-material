@@ -4,18 +4,19 @@ A hyperbolic parameter for a boost that is used to rewrite Lorentz transformatio
 
 Note: Also denoted $\psi$. Also denoted $\theta$. Also denoted $\phi$.
 
-<i>
+The rapidity $\psi$ satisfies
 
-**definition [d]** (*Rapidity*) From Emam: comparing with the inverse of the boost matrix leads to
+$$
+\tanh\psi = \beta
+$$
 
-- $\cosh\psi = \gamma$ ,
-- $\sinh\psi = \beta\gamma$ ,
+$$
+\cosh\psi = \gamma
+$$
 
-or equivalently
-
-- $\tanh\psi = \beta$ ,
-
-where $\psi$ is usually referred to as the rapidity.
+$$
+\sinh\psi = \beta\gamma
+$$
 
 where
 
@@ -24,40 +25,6 @@ where
 - $\beta = \dfrac{v}{c}$ is the relative speed in units of $c$.
 - $v$ is the boost speed.
 - $c$ is the speed of light.
-
-</i>
-
-<i>
-
-**definition [d]** (*Rapidity*) From Griffiths: the parallel between rotations and Lorentz transformations is even more striking if we introduce the rapidity:
-
-- $\theta \equiv \tanh^{-1}\!\left(\dfrac{v}{c}\right)$ .
-
-where
-
-- $\theta$ is the rapidity.
-- $v$ is the relative speed of the frames.
-- $c$ is the speed of light.
-
-</i>
-
-<i>
-
-**definition [d]** (*Boost Parameter*) From Carroll: a boost may be written with a hyperbolic parameter $\phi$ by
-
-- $t' = t\cosh\phi - x\sinh\phi$ ,
-- $x' = -t\sinh\phi + x\cosh\phi$ ,
-
-with
-
-- $v = \tanh\phi$ .
-
-where
-
-- $\phi$ is the hyperbolic boost parameter.
-- $v$ is the relative speed of the frames.
-
-</i>
 
 ## References
 

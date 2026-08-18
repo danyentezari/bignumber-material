@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>195 Relativistic Kinetic Energy Formula Derivation | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="A derivation of the relativistic kinetic energy formula that is used to obtain \(K_{\mathrm{rel}} = (\gamma - 1)mc^{2}\) from the work done by a force. definition [d] (Relativistic Kinetic Energy...">
+<meta name="description" content="A derivation of the relativistic kinetic energy formula that is used to obtain \(K_{\mathrm{rel}} = (\gamma - 1)mc^{2}\) from the work done by a force. The relativistic kinetic energy is \[...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="195 Relativistic Kinetic Energy Formula Derivation | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="A derivation of the relativistic kinetic energy formula that is used to obtain \(K_{\mathrm{rel}} = (\gamma - 1)mc^{2}\) from the work done by a force. definition [d] (Relativistic Kinetic Energy...">
+<meta property="og:description" content="A derivation of the relativistic kinetic energy formula that is used to obtain \(K_{\mathrm{rel}} = (\gamma - 1)mc^{2}\) from the work done by a force. The relativistic kinetic energy is \[...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="195 Relativistic Kinetic Energy Formula Derivation | Mathematics for Physics">
-<meta name="twitter:description" content="A derivation of the relativistic kinetic energy formula that is used to obtain \(K_{\mathrm{rel}} = (\gamma - 1)mc^{2}\) from the work done by a force. definition [d] (Relativistic Kinetic Energy...">
+<meta name="twitter:description" content="A derivation of the relativistic kinetic energy formula that is used to obtain \(K_{\mathrm{rel}} = (\gamma - 1)mc^{2}\) from the work done by a force. The relativistic kinetic energy is \[...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -224,77 +224,27 @@
 <span class="header-section-number">195</span> Relativistic Kinetic Energy Formula Derivation<a class="anchor" aria-label="anchor" href="#relativistic-kinetic-energy-formula-derivation"><i class="fas fa-link"></i></a>
 </h1>
 <p>A derivation of the relativistic kinetic energy formula that is used to obtain <span class="math inline">\(K_{\mathrm{rel}} = (\gamma - 1)mc^{2}\)</span> from the work done by a force.</p>
-<p><i></i></p>
-<p><strong>definition [d]</strong> (<em>Relativistic Kinetic Energy Formula Derivation</em>) From OpenStax: the relativistic kinetic energy follows from the work-energy theorem. With force</p>
-<ul>
-<li>
-<span class="math inline">\(\mathbf{F} = \dfrac{d\mathbf{p}}{dt} = m\dfrac{d(\gamma\mathbf{u})}{dt}\)</span> ,</li>
-</ul>
-<p>the work that accelerates a particle from rest to final speed <span class="math inline">\(u\)</span> is, in one dimension,</p>
-<ul>
-<li>
-<span class="math inline">\(K = \displaystyle\int F\, dx = m\displaystyle\int u\,\dfrac{d}{dt}\!\left(\dfrac{u}{\sqrt{1-\left(\dfrac{u}{c}\right)^{2}}}\right) dt\)</span> .</li>
-</ul>
-<p>Integrating by parts from rest to speed <span class="math inline">\(u\)</span> gives</p>
-<ul>
-<li>
-<span class="math inline">\(K = \dfrac{mu^{2}}{\sqrt{1-\left(\dfrac{u}{c}\right)^{2}}} - m\displaystyle\int\dfrac{u}{\sqrt{1-\left(\dfrac{u}{c}\right)^{2}}}\, du\)</span> ,</li>
-<li>
-<span class="math inline">\(K = \dfrac{mu^{2}}{\sqrt{1-\left(\dfrac{u}{c}\right)^{2}}} + mc^{2}\sqrt{1-\left(\dfrac{u}{c}\right)^{2}}\Big|_{0}^{u}\)</span> ,</li>
-<li>
-<span class="math inline">\(K = \dfrac{mc^{2}}{\sqrt{1-\left(\dfrac{u}{c}\right)^{2}}} - mc^{2}\)</span> ,</li>
-</ul>
-<p>hence</p>
-<ul>
-<li>
-<span class="math inline">\(K_{\mathrm{rel}} = (\gamma - 1)mc^{2}\)</span> ,</li>
-</ul>
+<p>The relativistic kinetic energy is</p>
+<p><span class="math display">\[
+K_{\mathrm{rel}} = (\gamma - 1)mc^{2}
+\]</span></p>
 <p>with</p>
-<ul>
-<li>
-<span class="math inline">\(\gamma = \dfrac{1}{\sqrt{1-\dfrac{u^{2}}{c^{2}}}}\)</span> .</li>
-</ul>
-<p>At low speed, the binomial approximation <span class="math inline">\(\gamma \approx 1 + \dfrac{1}{2}\left(\dfrac{u^{2}}{c^{2}}\right)\)</span> yields</p>
-<ul>
-<li>
-<span class="math inline">\(K_{\mathrm{rel}} \approx \dfrac{1}{2}mu^{2} = K_{\mathrm{class}}\)</span> .</li>
-</ul>
+<p><span class="math display">\[
+\gamma = \dfrac{1}{\sqrt{1-\dfrac{u^{2}}{c^{2}}}}
+\]</span></p>
 <p>where</p>
 <ul>
 <li>
-<span class="math inline">\(\mathbf{F}\)</span> is the force.</li>
-<li>
-<span class="math inline">\(F\)</span> is the one-dimensional force component.</li>
-<li>
-<span class="math inline">\(\mathbf{p}\)</span> is the relativistic momentum.</li>
-<li>
-<span class="math inline">\(t\)</span> is time.</li>
-<li>
-<span class="math inline">\(dt\)</span> is the time differential.</li>
-<li>
-<span class="math inline">\(m\)</span> is the rest mass.</li>
+<span class="math inline">\(K_{\mathrm{rel}}\)</span> is the relativistic kinetic energy.</li>
 <li>
 <span class="math inline">\(\gamma\)</span> is the Lorentz factor.</li>
 <li>
-<span class="math inline">\(\mathbf{u}\)</span> is the velocity.</li>
-<li>
-<span class="math inline">\(u\)</span> is the particle speed.</li>
+<span class="math inline">\(m\)</span> is the rest mass.</li>
 <li>
 <span class="math inline">\(c\)</span> is the speed of light in vacuum.</li>
 <li>
-<span class="math inline">\(dx\)</span> is the displacement differential.</li>
-<li>
-<span class="math inline">\(du\)</span> is the speed differential.</li>
-<li>
-<span class="math inline">\(K\)</span> is the work integral equal to the gained kinetic energy.</li>
-<li>
-<span class="math inline">\(K_{\mathrm{rel}}\)</span> is the relativistic kinetic energy.</li>
-<li>
-<span class="math inline">\(K_{\mathrm{class}}\)</span> is the Newtonian kinetic energy.</li>
-<li>
-<span class="math inline">\(\displaystyle\int F\, dx\)</span> is the work done by the force.</li>
+<span class="math inline">\(u\)</span> is the particle speed.</li>
 </ul>
-<p></p>
 <div id="references-184" class="section level2" number="195.1">
 <h2>
 <span class="header-section-number">195.1</span> References<a class="anchor" aria-label="anchor" href="#references-184"><i class="fas fa-link"></i></a>

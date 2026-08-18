@@ -4,51 +4,18 @@ A scalar factor that is used to convert classical expressions for time, length, 
 
 Note: Also called gamma. Also called the relativistic factor.
 
-<i>
+The Lorentz factor is
 
-**definition [d]** (*Lorentz Factor*) From Emam: the ratio $\dfrac{v}{c}$ as well as the factor with the square root appears frequently in many of the subsequent equations, so for brevity’s sake it is conventional to define the so-called boost vector (a 3-vector)
-
-- $\boldsymbol{\beta} = \dfrac{\mathbf{v}}{c}$
-
-and the Lorentz factor
-
-- $\gamma = \dfrac{1}{\sqrt{1 - \beta^{2}}}$ ,
+$$
+\gamma = \dfrac{1}{\sqrt{1 - \dfrac{v^{2}}{c^{2}}}} = \dfrac{1}{\sqrt{1 - \beta^{2}}}
+$$
 
 where
 
-- $\beta^{2} = \boldsymbol{\beta}\cdot\boldsymbol{\beta} = \dfrac{v^{2}}{c^{2}}$ .
-- $\mathbf{v}$ is the relative 3-velocity.
-- $c$ is the speed of light in vacuum.
 - $\gamma$ is the Lorentz factor.
-
-</i>
-
-<i>
-
-**definition [d]** (*Lorentz Factor*) From Griffiths: the Lorentz factor is defined by
-
-- $\gamma \equiv \dfrac{1}{\sqrt{1 - \dfrac{v^{2}}{c^{2}}}}$ .
-
-where
-
-- $v$ is the relative speed of the frames.
-- $c$ is the speed of light in vacuum.
-
-</i>
-
-<i>
-
-**definition [d]** (*Lorentz Factor*) From Knight: the Lorentz factor is
-
-- $\gamma = \dfrac{1}{\sqrt{1 - \dfrac{v^{2}}{c^{2}}}} = \dfrac{1}{\sqrt{1 - \beta^{2}}}$ ,
-
-where
-
-- $\beta = \dfrac{v}{c}$ .
 - $v$ is the relative speed.
 - $c$ is the speed of light in vacuum.
-
-</i>
+- $\beta = \dfrac{v}{c}$ is the relative speed in units of $c$.
 
 ## References
 

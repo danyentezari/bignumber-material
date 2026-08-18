@@ -4,36 +4,20 @@ A relativistic energy equal to the Lorentz factor times rest energy that is used
 
 Note: Also called relativistic energy.
 
-<i>
+The total energy is
 
-**definition [d]** (*Total Energy*) From Knight: let’s define the total energy $E$ of a particle to be
-
-- $E = \gamma mc^{2} = E_{0} + K = \text{rest energy} + \text{kinetic energy}$ .
+$$
+E = \gamma mc^{2} = E_{0} + K
+$$
 
 where
 
+- $E$ is the total energy.
 - $\gamma$ is the Lorentz factor of the particle.
 - $m$ is the rest mass.
 - $c$ is the speed of light.
 - $E_{0} = mc^{2}$ is the rest energy.
 - $K$ is the kinetic energy.
-
-</i>
-
-<i>
-
-**definition [d]** (*Relativistic Energy*) From Griffiths: Einstein identified $p^{0}c$ as relativistic energy:
-
-- $E = \dfrac{mc^{2}}{\sqrt{1 - \dfrac{u^{2}}{c^{2}}}}$ .
-
-where
-
-- $m$ is the rest mass.
-- $u$ is the particle speed.
-- $c$ is the speed of light.
-- $p^{0}$ is the time component of the energy-momentum $4$-vector.
-
-</i>
 
 ## References
 
