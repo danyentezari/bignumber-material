@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>387 Boundary Conditions | Mathematics for Physics</title>
+<title>51 Field Theory | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="An equation that relates a derivative of a function at the edge of a domain to a value of the function that is used to find a solution. definition [d] (Boundary Conditions) From Riley, Hobson, and...">
+<meta name="description" content="A continuum description of electromagnetism that is used to obtain the field equations from a local action, where a field is a physical quantity assigned at every spacetime point, and where an...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="387 Boundary Conditions | Mathematics for Physics">
+<meta property="og:title" content="51 Field Theory | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="An equation that relates a derivative of a function at the edge of a domain to a value of the function that is used to find a solution. definition [d] (Boundary Conditions) From Riley, Hobson, and...">
+<meta property="og:description" content="A continuum description of electromagnetism that is used to obtain the field equations from a local action, where a field is a physical quantity assigned at every spacetime point, and where an...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="387 Boundary Conditions | Mathematics for Physics">
-<meta name="twitter:description" content="An equation that relates a derivative of a function at the edge of a domain to a value of the function that is used to find a solution. definition [d] (Boundary Conditions) From Riley, Hobson, and...">
+<meta name="twitter:title" content="51 Field Theory | Mathematics for Physics">
+<meta name="twitter:description" content="A continuum description of electromagnetism that is used to obtain the field equations from a local action, where a field is a physical quantity assigned at every spacetime point, and where an...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -52,7 +52,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Differential Equations", "href": "differential-equations.html", "current": false}, {"title": "Boundary Conditions", "href": "boundary-conditions-1.html", "current": true}]</script>
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Electromagnetism", "href": "electromagnetism.html", "current": false}, {"title": "Field Theory", "href": "field-theory.html", "current": true}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -161,7 +161,7 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active-parent" href="differential-equations.html"><span class="header-section-number">15</span> Differential Equations</a>
+<a class="" href="differential-equations.html"><span class="header-section-number">15</span> Differential Equations</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
@@ -219,49 +219,154 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="boundary-conditions-1" class="section level1" number="387">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="field-theory" class="section level1" number="51">
 <h1>
-<span class="header-section-number">387</span> Boundary Conditions<a class="anchor" aria-label="anchor" href="#boundary-conditions-1"><i class="fas fa-link"></i></a>
+<span class="header-section-number">51</span> Field Theory<a class="anchor" aria-label="anchor" href="#field-theory"><i class="fas fa-link"></i></a>
 </h1>
-<p>An equation that relates a derivative of a function at the edge of a domain to a value of the function that is used to find a solution.</p>
-<p><i></i></p>
-<p><strong>definition [d]</strong> (<em>Boundary Conditions</em>) From Riley, Hobson, and Bence: requirements that the general solution <span class="math inline">\(y(x)\)</span> obeys at specified points of the domain. For homogeneous boundary conditions, in which <span class="math inline">\(y(x)\)</span> and its derivatives are required to be zero at specified points, this may be arranged by demanding that a Green’s function <span class="math inline">\(G(x,z)\)</span> itself obeys the boundary conditions when considered as a function of <span class="math inline">\(x\)</span> alone. For example, if we require <span class="math inline">\(y(a) = y(b) = 0\)</span>, then we also demand <span class="math inline">\(G(a,z) = G(b,z) = 0\)</span>.</p>
+<p>A continuum description of electromagnetism that is used to obtain the field equations from a local action, where a field is a physical quantity assigned at every spacetime point, and where an action is the spacetime integral of a Lagrangian density.</p>
+<p>Hamilton’s principle of stationary action. The actual history of a field makes the action stationary. Stationary means the first variation of the action vanishes. This principle is used to derive the equations of motion of the field.</p>
+<p>The action is</p>
+<p><span class="math display">\[
+S = \displaystyle\int \mathcal{L}\, d^{4}x
+\]</span></p>
 <p>where</p>
 <ul>
 <li>
-<span class="math inline">\(y\)</span> is the unknown solution function.</li>
+<span class="math inline">\(S\)</span> is the action.</li>
 <li>
-<span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are endpoints of the range.</li>
+<span class="math inline">\(\mathcal{L}\)</span> is the Lagrangian density.</li>
 <li>
-<span class="math inline">\(G(x,z)\)</span> is a Green’s function.</li>
+<span class="math inline">\(d^{4}x\)</span> is the spacetime volume element.</li>
 </ul>
-<p>Note:</p>
-<ul>
-<li>Riley et al.: one boundary condition must be specified at each end of the range in the standard Sturm–Liouville setting they discuss.</li>
-</ul>
-<p></p>
-<p><i></i></p>
-<p><strong>definition [d]</strong> (<em>Boundary Conditions</em>) From Kreyszig: data given on the boundary of a region for a partial differential equation problem. In Neumann and mixed problems there are boundary points at which the outer normal derivative of the solution is given, while the solution <span class="math inline">\(u\)</span> itself is not given at those points.</p>
+<p>The Lagrangian density. Because a field is spread through space and time, its dynamics are described by a Lagrangian per unit spacetime volume. A Lagrangian density is that local Lagrangian. This principle is used to write an action that treats space and time on the same footing.</p>
+<p>The Euler–Lagrange field equations. The field equations are the Euler–Lagrange equations of the Lagrangian density. This principle is used to convert a Lagrangian description into explicit differential equations for the potential.</p>
+<p>The Euler–Lagrange equation for the potential is</p>
+<p><span class="math display">\[
+\dfrac{\partial\mathcal{L}}{\partial A_{\mu}} - \partial_{\nu}\left(\dfrac{\partial\mathcal{L}}{\partial(\partial_{\nu}A_{\mu})}\right) = 0
+\]</span></p>
 <p>where</p>
 <ul>
 <li>
-<span class="math inline">\(u\)</span> is the unknown solution.</li>
-<li>Neumann data prescribe a normal derivative on the boundary.</li>
+<span class="math inline">\(\mathcal{L}\)</span> is the Lagrangian density.</li>
+<li>
+<span class="math inline">\(A_{\mu}\)</span> is the electromagnetic potential.</li>
+<li>
+<span class="math inline">\(\partial_{\nu}\)</span> is the spacetime derivative.</li>
 </ul>
-<p></p>
-<div id="references-321" class="section level2" number="387.1">
+<p>The Maxwell Lagrangian. The dynamics of the electromagnetic field and its coupling to current are encoded in one Lorentz-invariant Lagrangian density. This principle is used to recover the inhomogeneous Maxwell equations as Euler–Lagrange equations.</p>
+<p>The Maxwell Lagrangian density is</p>
+<p><span class="math display">\[
+\mathcal{L} = -\dfrac{1}{4\mu_{0}} F_{\mu\nu}F^{\mu\nu} - A_{\mu}J^{\mu}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\mathcal{L}\)</span> is the Lagrangian density.</li>
+<li>
+<span class="math inline">\(F_{\mu\nu}\)</span> is the electromagnetic field tensor.</li>
+<li>
+<span class="math inline">\(A_{\mu}\)</span> is the electromagnetic potential.</li>
+<li>
+<span class="math inline">\(J^{\mu}\)</span> is the four-current.</li>
+<li>
+<span class="math inline">\(\mu_{0}\)</span> is the permeability of free space.</li>
+</ul>
+<p>Locality of interactions. A charge interacts with the electromagnetic field only at its own location. Disturbances in the field travel at a finite speed. This principle is used to replace instantaneous action at a distance by local field equations.</p>
+<p>Noether’s theorem. Every continuous symmetry of the action yields a conserved current. A conserved current is a four-vector whose spacetime divergence vanishes. This principle is used to obtain conservation of charge from global gauge symmetry.</p>
+<p>The energy-momentum tensor. The energy and momentum of the field are the components of a symmetric tensor <span class="math inline">\(T_{\mu\nu}\)</span>. The component <span class="math inline">\(T_{00}\)</span> is the energy density. This principle is used to compute the energy and momentum stored and carried by the field.</p>
+<p>Gauge invariance of the action. A shift of the potential by a gradient leaves the action unchanged. This principle is used to keep only gauge-invariant field quantities in the dynamics. See <a href="gauge-theory.html">Gauge Theory</a>.</p>
+<p>The electromagnetic gauge transformation is</p>
+<p><span class="math display">\[
+A_{\mu} \rightarrow A_{\mu} + \partial_{\mu}\Lambda
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(A_{\mu}\)</span> is the electromagnetic potential.</li>
+<li>
+<span class="math inline">\(\Lambda\)</span> is the gauge function.</li>
+</ul>
+<p>Note: Also called classical field theory.</p>
+<div id="references-40" class="section level2" number="51.1">
 <h2>
-<span class="header-section-number">387.1</span> References<a class="anchor" aria-label="anchor" href="#references-321"><i class="fas fa-link"></i></a>
+<span class="header-section-number">51.1</span> References<a class="anchor" aria-label="anchor" href="#references-40"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li>Riley, K. F., Hobson, M. P., &amp; Bence, S. J. <em>Mathematical Methods for Physics and Engineering</em>. Cambridge University Press, 2006. — boundary conditions; homogeneous cases <span class="math inline">\(y(a)=y(b)=0\)</span>.</li>
-<li>Kreyszig, E. <em>Advanced Engineering Mathematics</em>, 10th ed. Wiley, 2011. — Neumann and mixed boundary problems.</li>
+<li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — Maxwell Lagrangian and electromagnetic gauge invariance.</li>
+<li>Emam, M. H. <em>Covariant Physics: From Classical Mechanics to General Relativity and Beyond</em>. Oxford University Press, 2021. — stationary action, Lagrangian density, Euler–Lagrange field equations, energy-momentum tensor.</li>
+<li>Carroll, S. M. <em>Spacetime and Geometry</em>. Cambridge University Press, 2019. — action for fields and the stress-energy tensor.</li>
+<li>Susskind, L., &amp; Friedman, A. <em>Quantum Mechanics: The Theoretical Minimum</em>. Basic Books, 2014. — Lagrangian density and locality of field interactions.</li>
+<li>Nakahara, M. <em>Geometry, Topology and Physics</em>. Institute of Physics Publishing, 2003. — Euler–Lagrange equations for gauge potentials.</li>
 </ol>
 <div class="topic-index">
 <ul>
-<li><a href="boundary-conditions-1.html">Boundary Conditions</a></li>
-<li><a href="differential-equations-and-integral-equations.html">Differential Equations and Integral Equations</a></li>
-<li><a href="initial-conditions.html">Initial Conditions</a></li>
+<li><a href="amperes-law.html">Ampere’s Law</a></li>
+<li><a href="biot-savart-law.html">Biot-Savart Law</a></li>
+<li><a href="boundary-conditions-in-electromagnetism.html">Boundary Conditions in Electromagnetism</a></li>
+<li><a href="capacitance.html">Capacitance</a></li>
+<li><a href="charge-density.html">Charge Density</a></li>
+<li><a href="conservation-laws.html">Conservation Laws</a></li>
+<li><a href="conservation-of-charge.html">Conservation of Charge</a></li>
+<li><a href="continuity-equation.html">Continuity Equation</a></li>
+<li><a href="coulomb-force.html">Coulomb Force</a></li>
+<li><a href="current.html">Current</a></li>
+<li><a href="cyclotron-motion.html">Cyclotron Motion</a></li>
+<li><a href="dielectrics.html">Dielectrics</a></li>
+<li><a href="differential-form.html">Differential Form</a></li>
+<li><a href="dipole.html">Dipole</a></li>
+<li><a href="dipole-radiation.html">Dipole Radiation</a></li>
+<li><a href="electric-charge.html">Electric Charge</a></li>
+<li><a href="electric-currents.html">Electric Currents</a></li>
+<li><a href="electric-field.html">Electric Field</a></li>
+<li><a href="electric-fields.html">Electric Fields</a></li>
+<li><a href="electric-potential.html">Electric Potential</a></li>
+<li><a href="electromagnetic-energy.html">Electromagnetic Energy</a></li>
+<li><a href="electromagnetic-induction.html">Electromagnetic Induction</a></li>
+<li><a href="electromagnetic-interaction.html">Electromagnetic Interaction</a></li>
+<li><a href="electromagnetic-momentum.html">Electromagnetic Momentum</a></li>
+<li><a href="electromagnetic-waves.html">Electromagnetic Waves</a></li>
+<li><a href="electrostatics.html">Electrostatics</a></li>
+<li><a href="field-tensor.html">Field Tensor</a></li>
+<li><a href="field-theory.html">Field Theory</a></li>
+<li><a href="gauge.html">Gauge</a></li>
+<li><a href="gauge-field.html">Gauge Field</a></li>
+<li><a href="gauge-symmetry.html">Gauge Symmetry</a></li>
+<li><a href="gauge-theory.html">Gauge Theory</a></li>
+<li><a href="gauge-transformations.html">Gauge Transformations</a></li>
+<li><a href="hall-effect.html">Hall Effect</a></li>
+<li><a href="induced-emf.html">Induced Emf</a></li>
+<li><a href="inductance.html">Inductance</a></li>
+<li><a href="induction.html">Induction</a></li>
+<li><a href="integral-form.html">Integral Form</a></li>
+<li><a href="ionization.html">Ionization</a></li>
+<li><a href="laplace-equation.html">Laplace Equation</a></li>
+<li><a href="lorentz-force.html">Lorentz Force</a></li>
+<li><a href="lorentz-transformations.html">Lorentz Transformations</a></li>
+<li><a href="magnetic-field.html">Magnetic Field</a></li>
+<li><a href="magnetic-fields.html">Magnetic Fields</a></li>
+<li><a href="magnetic-materials.html">Magnetic Materials</a></li>
+<li><a href="magnetostatics.html">Magnetostatics</a></li>
+<li><a href="maxwells-equations.html">Maxwell’s Equations</a></li>
+<li><a href="moments.html">Moments</a></li>
+<li><a href="momentum-of-light.html">Momentum of Light</a></li>
+<li><a href="motion-of-charges.html">Motion of Charges</a></li>
+<li><a href="multipole-expansion.html">Multipole Expansion</a></li>
+<li><a href="poisson-equation.html">Poisson Equation</a></li>
+<li><a href="polarization.html">Polarization</a></li>
+<li><a href="potentials.html">Potentials</a></li>
+<li><a href="poynting-vector.html">Poynting Vector</a></li>
+<li><a href="radiation.html">Radiation</a></li>
+<li><a href="reflection.html">Reflection</a></li>
+<li><a href="refraction.html">Refraction</a></li>
+<li><a href="relativistic-electromagnetism.html">Relativistic Electromagnetism</a></li>
+<li><a href="resistance.html">Resistance</a></li>
+<li><a href="retarded-potentials.html">Retarded Potentials</a></li>
+<li><a href="scalar-potential.html">Scalar Potential</a></li>
+<li><a href="superposition.html">Superposition</a></li>
+<li><a href="transformers.html">Transformers</a></li>
+<li><a href="u1-gauge-theory.html">U(1) Gauge Theory</a></li>
+<li><a href="vector-potential.html">Vector Potential</a></li>
+<li><a href="voltage.html">Voltage</a></li>
 </ul>
 </div>
 
@@ -827,13 +932,13 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="symmetry.html"><span class="header-section-number">386</span> Symmetry</a></div>
-<div class="next"><a href="differential-equations-and-integral-equations.html"><span class="header-section-number">388</span> Differential Equations and Integral Equations</a></div>
+<div class="prev"><a href="field-tensor.html"><span class="header-section-number">50</span> Field Tensor</a></div>
+<div class="next"><a href="gauge.html"><span class="header-section-number">52</span> Gauge</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#boundary-conditions-1"><span class="header-section-number">387</span> Boundary Conditions</a></li>
-<li><a class="nav-link" href="#references-321"><span class="header-section-number">387.1</span> References</a></li>
+<li><a class="nav-link" href="#field-theory"><span class="header-section-number">51</span> Field Theory</a></li>
+<li><a class="nav-link" href="#references-40"><span class="header-section-number">51.1</span> References</a></li>
 </ul>
 
       <div class="book-extra">

@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>26 Boundary Conditions | Mathematics for Physics</title>
+<title>388 Boundary Conditions | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="Matching rules for the electromagnetic fields at an interface that are used to join the solutions on either side of a surface, where an interface is the surface separating two media. The normal...">
+<meta name="description" content="A constraint on a solution at the edge of a domain that is used to select a unique solution of a differential equation, where a domain is a region on which the unknown function is defined. The...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="26 Boundary Conditions | Mathematics for Physics">
+<meta property="og:title" content="388 Boundary Conditions | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Matching rules for the electromagnetic fields at an interface that are used to join the solutions on either side of a surface, where an interface is the surface separating two media. The normal...">
+<meta property="og:description" content="A constraint on a solution at the edge of a domain that is used to select a unique solution of a differential equation, where a domain is a region on which the unknown function is defined. The...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="26 Boundary Conditions | Mathematics for Physics">
-<meta name="twitter:description" content="Matching rules for the electromagnetic fields at an interface that are used to join the solutions on either side of a surface, where an interface is the surface separating two media. The normal...">
+<meta name="twitter:title" content="388 Boundary Conditions | Mathematics for Physics">
+<meta name="twitter:description" content="A constraint on a solution at the edge of a domain that is used to select a unique solution of a differential equation, where a domain is a region on which the unknown function is defined. The...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -52,7 +52,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Boundary Conditions", "href": "boundary-conditions.html", "current": true}]</script>
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Differential Equations", "href": "differential-equations.html", "current": false}, {"title": "Boundary Conditions", "href": "boundary-conditions.html", "current": true}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -161,7 +161,7 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="differential-equations.html"><span class="header-section-number">15</span> Differential Equations</a>
+<a class="active-parent" href="differential-equations.html"><span class="header-section-number">15</span> Differential Equations</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
@@ -219,134 +219,43 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="boundary-conditions" class="section level1" number="26">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="boundary-conditions" class="section level1" number="388">
 <h1>
-<span class="header-section-number">26</span> Boundary Conditions<a class="anchor" aria-label="anchor" href="#boundary-conditions"><i class="fas fa-link"></i></a>
+<span class="header-section-number">388</span> Boundary Conditions<a class="anchor" aria-label="anchor" href="#boundary-conditions"><i class="fas fa-link"></i></a>
 </h1>
-<p>Matching rules for the electromagnetic fields at an interface that are used to join the solutions on either side of a surface, where an interface is the surface separating two media.</p>
-<p>The normal boundary condition on <span class="math inline">\(\mathbf{D}\)</span>. The discontinuity in the normal component of <span class="math inline">\(\mathbf{D}\)</span> equals the free surface charge density. This principle is used to relate the jump in the electric field to charge sitting on the boundary.</p>
-<p>The normal boundary condition on <span class="math inline">\(\mathbf{D}\)</span> is</p>
+<p>A constraint on a solution at the edge of a domain that is used to select a unique solution of a differential equation, where a domain is a region on which the unknown function is defined.</p>
+<p>The boundary-value problem. A boundary-value problem is a differential equation together with constraints specified at the boundary of the domain. A boundary is the edge of the domain. This principle is used to model steady processes whose data are given on that edge.</p>
+<p>The Dirichlet boundary condition. A Dirichlet condition specifies the exact value that the unknown solution must take on the boundary. A homogeneous Dirichlet condition forces the solution to vanish at the endpoints. This principle is used to model systems with fixed edges.</p>
+<p>A homogeneous Dirichlet condition is</p>
 <p><span class="math display">\[
-\mathbf{D}_{2}^{\perp} - \mathbf{D}_{1}^{\perp} = \sigma_{f}
+y(a) = y(b) = 0
 \]</span></p>
 <p>where</p>
 <ul>
 <li>
-<span class="math inline">\(\mathbf{D}\)</span> is the electric displacement.</li>
+<span class="math inline">\(y\)</span> is the unknown solution.</li>
 <li>
-<span class="math inline">\(\sigma_{f}\)</span> is the free surface charge density.</li>
-<li>the superscript <span class="math inline">\(\perp\)</span> marks the component normal to the surface, from side 1 toward side 2.</li>
+<span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are endpoints of the interval.</li>
 </ul>
-<p>The tangential boundary condition on <span class="math inline">\(\mathbf{E}\)</span>. The tangential component of <span class="math inline">\(\mathbf{E}\)</span> is continuous if the surface holds no changing magnetic flux in an infinitely thin layer. This principle is used to match the electric field along the interface.</p>
-<p>The tangential boundary condition on <span class="math inline">\(\mathbf{E}\)</span> is</p>
-<p><span class="math display">\[
-\mathbf{E}_{2}^{\parallel} - \mathbf{E}_{1}^{\parallel} = 0
-\]</span></p>
-<p>where</p>
-<ul>
-<li>
-<span class="math inline">\(\mathbf{E}\)</span> is the electric field.</li>
-<li>the superscript <span class="math inline">\(\parallel\)</span> marks the component tangent to the surface.</li>
-</ul>
-<p>The normal boundary condition on <span class="math inline">\(\mathbf{B}\)</span>. The normal component of <span class="math inline">\(\mathbf{B}\)</span> is continuous. This principle is used to match the magnetic field across any interface.</p>
-<p>The normal boundary condition on <span class="math inline">\(\mathbf{B}\)</span> is</p>
-<p><span class="math display">\[
-\mathbf{B}_{2}^{\perp} - \mathbf{B}_{1}^{\perp} = 0
-\]</span></p>
-<p>where</p>
-<ul>
-<li>
-<span class="math inline">\(\mathbf{B}\)</span> is the magnetic field.</li>
-</ul>
-<p>The tangential boundary condition on <span class="math inline">\(\mathbf{H}\)</span>. The discontinuity in the tangential component of <span class="math inline">\(\mathbf{H}\)</span> equals the free surface current. This principle is used to relate the jump in the magnetic field to current on the boundary.</p>
-<p>The tangential boundary condition on <span class="math inline">\(\mathbf{H}\)</span> is</p>
-<p><span class="math display">\[
-\mathbf{H}_{2}^{\parallel} - \mathbf{H}_{1}^{\parallel} = \mathbf{K}_{f}\times\hat{\mathbf{n}}
-\]</span></p>
-<p>where</p>
-<ul>
-<li>
-<span class="math inline">\(\mathbf{H}\)</span> is the auxiliary magnetic field.</li>
-<li>
-<span class="math inline">\(\mathbf{K}_{f}\)</span> is the free surface current density.</li>
-<li>
-<span class="math inline">\(\hat{\mathbf{n}}\)</span> is the unit normal from side 1 toward side 2.</li>
-</ul>
-<div id="references-15" class="section level2" number="26.1">
+<p>The Neumann boundary condition. A Neumann condition specifies the derivative of the solution perpendicular to the boundary. A normal derivative is that perpendicular rate of change. This principle is used to model a specified flux through a wall.</p>
+<p>The mixed boundary condition. A mixed condition applies a Dirichlet constraint on one part of the boundary and a Neumann constraint on another part. This principle is used to model a body whose edges are not all of one kind.</p>
+<p>The Sturm–Liouville problem. A Sturm–Liouville problem is a homogeneous second-order linear equation with homogeneous boundary conditions. It yields a complete set of orthogonal eigenfunctions. This principle is used to expand solutions of the wave equation and the diffusion equation.</p>
+<p>The Green’s function method. A Green’s function <span class="math inline">\(G(x,z)\)</span> is the response to a concentrated source that already obeys the homogeneous boundary conditions. For <span class="math inline">\(y(a)=y(b)=0\)</span> one also demands <span class="math inline">\(G(a,z)=G(b,z)=0\)</span>. This principle is used to write the solution of an inhomogeneous problem as an integral against <span class="math inline">\(G\)</span>.</p>
+<p>Note: Also called a boundary-value problem when the differential equation and the boundary data are taken together. A Dirichlet condition is also called the first boundary-value problem. A Neumann condition is also called the second boundary-value problem.</p>
+<div id="references-322" class="section level2" number="388.1">
 <h2>
-<span class="header-section-number">26.1</span> References<a class="anchor" aria-label="anchor" href="#references-15"><i class="fas fa-link"></i></a>
+<span class="header-section-number">388.1</span> References<a class="anchor" aria-label="anchor" href="#references-322"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. §7.3.5 — boundary conditions on electromagnetic fields.</li>
+<li>Riley, K. F., Hobson, M. P., &amp; Bence, S. J. <em>Mathematical Methods for Physics and Engineering</em>. Cambridge University Press, 2006. — boundary conditions; homogeneous cases <span class="math inline">\(y(a)=y(b)=0\)</span>; Green’s function.</li>
+<li>Kreyszig, E. <em>Advanced Engineering Mathematics</em>, 10th ed. Wiley, 2011. — Neumann and mixed boundary problems.</li>
+<li>Hassani, S. <em>Mathematical Physics</em>, 2nd ed. Springer. — Dirichlet, Neumann, and Sturm–Liouville problems.</li>
 </ol>
 <div class="topic-index">
 <ul>
-<li><a href="amperes-law.html">Ampere’s Law</a></li>
-<li><a href="biot-savart-law.html">Biot-Savart Law</a></li>
 <li><a href="boundary-conditions.html">Boundary Conditions</a></li>
-<li><a href="capacitance.html">Capacitance</a></li>
-<li><a href="charge-density.html">Charge Density</a></li>
-<li><a href="conservation-laws.html">Conservation Laws</a></li>
-<li><a href="conservation-of-charge.html">Conservation of Charge</a></li>
-<li><a href="continuity-equation.html">Continuity Equation</a></li>
-<li><a href="coulomb-force.html">Coulomb Force</a></li>
-<li><a href="current.html">Current</a></li>
-<li><a href="cyclotron-motion.html">Cyclotron Motion</a></li>
-<li><a href="dielectrics.html">Dielectrics</a></li>
-<li><a href="differential-form.html">Differential Form</a></li>
-<li><a href="dipole.html">Dipole</a></li>
-<li><a href="dipole-radiation.html">Dipole Radiation</a></li>
-<li><a href="electric-charge.html">Electric Charge</a></li>
-<li><a href="electric-currents.html">Electric Currents</a></li>
-<li><a href="electric-field.html">Electric Field</a></li>
-<li><a href="electric-fields.html">Electric Fields</a></li>
-<li><a href="electric-potential.html">Electric Potential</a></li>
-<li><a href="electromagnetic-energy.html">Electromagnetic Energy</a></li>
-<li><a href="electromagnetic-induction.html">Electromagnetic Induction</a></li>
-<li><a href="electromagnetic-interaction.html">Electromagnetic Interaction</a></li>
-<li><a href="electromagnetic-momentum.html">Electromagnetic Momentum</a></li>
-<li><a href="electromagnetic-waves.html">Electromagnetic Waves</a></li>
-<li><a href="electrostatics.html">Electrostatics</a></li>
-<li><a href="field-tensor.html">Field Tensor</a></li>
-<li><a href="gauge.html">Gauge</a></li>
-<li><a href="gauge-field.html">Gauge Field</a></li>
-<li><a href="gauge-symmetry.html">Gauge Symmetry</a></li>
-<li><a href="gauge-theory.html">Gauge Theory</a></li>
-<li><a href="gauge-transformations.html">Gauge Transformations</a></li>
-<li><a href="hall-effect.html">Hall Effect</a></li>
-<li><a href="induced-emf.html">Induced Emf</a></li>
-<li><a href="inductance.html">Inductance</a></li>
-<li><a href="induction.html">Induction</a></li>
-<li><a href="integral-form.html">Integral Form</a></li>
-<li><a href="ionization.html">Ionization</a></li>
-<li><a href="laplace-equation.html">Laplace Equation</a></li>
-<li><a href="lorentz-force.html">Lorentz Force</a></li>
-<li><a href="lorentz-transformations.html">Lorentz Transformations</a></li>
-<li><a href="magnetic-field.html">Magnetic Field</a></li>
-<li><a href="magnetic-fields.html">Magnetic Fields</a></li>
-<li><a href="magnetic-materials.html">Magnetic Materials</a></li>
-<li><a href="magnetostatics.html">Magnetostatics</a></li>
-<li><a href="maxwells-equations.html">Maxwell’s Equations</a></li>
-<li><a href="moments.html">Moments</a></li>
-<li><a href="momentum-of-light.html">Momentum of Light</a></li>
-<li><a href="motion-of-charges.html">Motion of Charges</a></li>
-<li><a href="multipole-expansion.html">Multipole Expansion</a></li>
-<li><a href="poisson-equation.html">Poisson Equation</a></li>
-<li><a href="polarization.html">Polarization</a></li>
-<li><a href="potentials.html">Potentials</a></li>
-<li><a href="poynting-vector.html">Poynting Vector</a></li>
-<li><a href="radiation.html">Radiation</a></li>
-<li><a href="reflection.html">Reflection</a></li>
-<li><a href="refraction.html">Refraction</a></li>
-<li><a href="relativistic-electromagnetism.html">Relativistic Electromagnetism</a></li>
-<li><a href="resistance.html">Resistance</a></li>
-<li><a href="retarded-potentials.html">Retarded Potentials</a></li>
-<li><a href="scalar-potential.html">Scalar Potential</a></li>
-<li><a href="superposition.html">Superposition</a></li>
-<li><a href="transformers.html">Transformers</a></li>
-<li><a href="u1-gauge-theory.html">U(1) Gauge Theory</a></li>
-<li><a href="vector-potential.html">Vector Potential</a></li>
-<li><a href="voltage.html">Voltage</a></li>
+<li><a href="differential-equations-and-integral-equations.html">Differential Equations and Integral Equations</a></li>
+<li><a href="initial-conditions.html">Initial Conditions</a></li>
 </ul>
 </div>
 
@@ -912,13 +821,13 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="biot-savart-law.html"><span class="header-section-number">25</span> Biot-Savart Law</a></div>
-<div class="next"><a href="capacitance.html"><span class="header-section-number">27</span> Capacitance</a></div>
+<div class="prev"><a href="symmetry.html"><span class="header-section-number">387</span> Symmetry</a></div>
+<div class="next"><a href="differential-equations-and-integral-equations.html"><span class="header-section-number">389</span> Differential Equations and Integral Equations</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#boundary-conditions"><span class="header-section-number">26</span> Boundary Conditions</a></li>
-<li><a class="nav-link" href="#references-15"><span class="header-section-number">26.1</span> References</a></li>
+<li><a class="nav-link" href="#boundary-conditions"><span class="header-section-number">388</span> Boundary Conditions</a></li>
+<li><a class="nav-link" href="#references-322"><span class="header-section-number">388.1</span> References</a></li>
 </ul>
 
       <div class="book-extra">

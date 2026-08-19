@@ -2,76 +2,88 @@
 
 ## Differential Equations
 
-An equation relating a function to its derivative that is used to calculate the change of a variable over a domain.
+An equation relating a function to its derivatives that is used to calculate the change of a variable over a domain.
 
-<i>
+The ordinary differential equation. An ordinary differential equation relates one independent variable, one unknown function, and derivatives of that function. This principle is used to write how a state changes with a single parameter such as time.
 
-**definition [d]** (*Differential Equation*) From Stewart: an equation that contains an unknown function and one or more of its derivatives.
+The general ordinary differential equation is
 
-</i>
-
-<i>
-
-**definition [d]** (*Ordinary Differential Equation = ODE*) From Kreyszig: an equation that contains one or several derivatives of an unknown function, which we usually call $y(x)$ (or $y(t)$ if the independent variable is time $t$). The equation may also contain $y$ itself, known functions of $x$ (or $t$), and constants.
-
-where
-
-- $y$ is the unknown function.
-- $x$ (or $t$) is the independent variable.
-
-</i>
-
-<i>
-
-**definition [d]** (*Ordinary Differential Equation = ODE*) From Hassani: the most general ODE can be expressed as
-
-- $\displaystyle G\left(x,\, y,\, \dfrac{dy}{dx},\, \dfrac{d^{2}y}{dx^{2}},\, \ldots,\, \dfrac{d^{n}y}{dx^{n}}\right) = 0$
-
-in which $G: \mathbb{R}^{n+2} \rightarrow \mathbb{R}$ is a real-valued function of $n+2$ real variables. When $G$ depends explicitly and nontrivially on $\dfrac{d^{n}y}{dx^{n}}$, the equation is called an $n$th-order ODE.
+$$
+G\left(x,\, y,\, \dfrac{dy}{dx},\, \dfrac{d^{2}y}{dx^{2}},\, \ldots,\, \dfrac{d^{n}y}{dx^{n}}\right) = 0
+$$
 
 where
 
 - $y$ is the unknown function of $x$.
-- $n$ is the order of the ODE.
+- $n$ is the order of the equation.
 - $G$ is a real-valued function of the listed arguments.
 
-</i>
+Order of an ODE. When $G$ depends on the $n$th derivative, the equation is an $n$th-order ordinary differential equation. The order is that highest derivative that appears. This principle is used to count how many extra conditions are needed to fix a unique solution.
+
+The linear ordinary differential equation. A linear equation contains the unknown and its derivatives only to the first power, and never as products of those quantities. This principle is used to split a hard problem into a sum of simpler solutions.
+
+A linear ordinary differential equation of order $n$ is
+
+$$
+p_{0}(x)y + p_{1}(x)\dfrac{dy}{dx} + \cdots + p_{n}(x)\dfrac{d^{n}y}{dx^{n}} = q(x)
+$$
+
+where
+
+- $y$ is the unknown function.
+- $p_{0},\ldots,p_{n}$ are coefficient functions of $x$.
+- $q$ is a given forcing term.
+
+Superposition for linear equations. A sum of solutions of a linear homogeneous equation, scaled by constants, is again a solution. A homogeneous linear equation is a linear equation with zero forcing term. This principle is used to build the general solution from a basic set of solutions.
+
+The nonlinear ordinary differential equation. A nonlinear equation is any differential equation that cannot be written in linear form. This principle is used to model systems whose response is not proportional to the unknown.
 
 ## Integral Equations
 
-An equation containing an integral of a function that is used to determine a solution of the function over a domain.
+An equation containing an integral of an unknown function that is used to determine that function over a domain.
 
-<i>
+The integral equation. An integral equation is an equation in which the unknown function appears under an integral sign. This principle is used to state a problem by accumulating contributions rather than by writing a derivative.
 
-**definition [d]** (*Integral Equation*) From Stewart: an equation that contains an unknown function $y(x)$ and an integral that involves $y(x)$.
+First kind and second kind. In an equation of the first kind the unknown appears only inside the integral. In an equation of the second kind the unknown appears both outside the integral and inside it. This principle is used to classify integral equations by where the unknown sits.
 
-</i>
+The Volterra integral equation. A Volterra equation integrates from a fixed start to a variable upper limit. This principle is used to describe a causal accumulation of past influence up to the present value of the independent variable.
 
-<i>
+The Fredholm integral equation. A Fredholm equation integrates over a fixed interval. This principle is used to describe a global coupling across the whole domain.
 
-**definition [d]** (*Integral Equation*) From Griffel: an equation in which the unknown function appears under an integral sign.
+The kernel. In all four standard kinds, $K(x,t)$ is the kernel of the integral equation. A kernel is the given weighting function inside the integral. This principle is used to encode how the value at $x$ depends on the unknown at $t$.
 
-</i>
+The Volterra equation of the first kind is
 
-<i>
+$$
+\int_{a}^{x} K(x,t)\, u(t)\, dt = v(x)
+$$
 
-**definition [d]** (*Integral Equation*) From Hassani: if the unknown function appears only inside the integral, the integral equation is said to be of the first kind. Integral equations having the unknown function outside the integral as well as inside are said to be of the second kind. The four kinds can be written as follows:
+The Fredholm equation of the first kind is
 
-- $\displaystyle \int_{a}^{x} K(x,t)\, u(t)\, dt = v(x)$ \quad (Volterra equation of the 1st kind)
-- $\displaystyle \int_{a}^{b} K(x,t)\, u(t)\, dt = v(x)$ \quad (Fredholm equation of the 1st kind)
-- $\displaystyle u(x) = v(x) + \int_{a}^{x} K(x,t)\, u(t)\, dt$ \quad (Volterra equation of the 2nd kind)
-- $\displaystyle u(x) = v(x) + \int_{a}^{b} K(x,t)\, u(t)\, dt$ \quad (Fredholm equation of the 2nd kind)
+$$
+\int_{a}^{b} K(x,t)\, u(t)\, dt = v(x)
+$$
 
-In all these equations, $K(x,t)$ is called the kernel of the integral equation.
+The Volterra equation of the second kind is
+
+$$
+u(x) = v(x) + \int_{a}^{x} K(x,t)\, u(t)\, dt
+$$
+
+The Fredholm equation of the second kind is
+
+$$
+u(x) = v(x) + \int_{a}^{b} K(x,t)\, u(t)\, dt
+$$
 
 where
 
 - $u$ is the unknown function.
 - $v$ is a given function.
 - $K$ is the kernel.
-- $a$, $b$, $x$, $t$ are real variables in the stated ranges.
+- $a$, $b$, $x$, and $t$ are real variables in the stated ranges.
 
-</i>
+Note: Also called an ODE when there is a single independent variable.
 
 ## References
 

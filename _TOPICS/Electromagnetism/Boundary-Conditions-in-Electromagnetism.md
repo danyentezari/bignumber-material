@@ -1,4 +1,4 @@
-# Boundary Conditions
+# Boundary Conditions in Electromagnetism
 
 Matching rules for the electromagnetic fields at an interface that are used to join the solutions on either side of a surface, where an interface is the surface separating two media.
 

@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>15 Differential Equations | Mathematics for Physics</title>
+<title>26 Boundary Conditions in Electromagnetism | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="Differential equations is the study of equations that relate an unknown function to its derivatives. A derivative is a rate: the rate of change of one variable with respect to another. An unknown...">
+<meta name="description" content="Matching rules for the electromagnetic fields at an interface that are used to join the solutions on either side of a surface, where an interface is the surface separating two media. The normal...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="15 Differential Equations | Mathematics for Physics">
+<meta property="og:title" content="26 Boundary Conditions in Electromagnetism | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Differential equations is the study of equations that relate an unknown function to its derivatives. A derivative is a rate: the rate of change of one variable with respect to another. An unknown...">
+<meta property="og:description" content="Matching rules for the electromagnetic fields at an interface that are used to join the solutions on either side of a surface, where an interface is the surface separating two media. The normal...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="15 Differential Equations | Mathematics for Physics">
-<meta name="twitter:description" content="Differential equations is the study of equations that relate an unknown function to its derivatives. A derivative is a rate: the rate of change of one variable with respect to another. An unknown...">
+<meta name="twitter:title" content="26 Boundary Conditions in Electromagnetism | Mathematics for Physics">
+<meta name="twitter:description" content="Matching rules for the electromagnetic fields at an interface that are used to join the solutions on either side of a surface, where an interface is the surface separating two media. The normal...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -52,7 +52,7 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Differential Equations", "href": "differential-equations.html", "current": true}]</script>
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Electromagnetism", "href": "electromagnetism.html", "current": false}, {"title": "Boundary Conditions in Electromagnetism", "href": "boundary-conditions-in-electromagnetism.html", "current": true}]</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -83,7 +83,7 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
+<a class="active-parent" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
@@ -161,7 +161,7 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active" href="differential-equations.html"><span class="header-section-number">15</span> Differential Equations</a>
+<a class="" href="differential-equations.html"><span class="header-section-number">15</span> Differential Equations</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
@@ -219,42 +219,135 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="differential-equations" class="section level1" number="15">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="boundary-conditions-in-electromagnetism" class="section level1" number="26">
 <h1>
-<span class="header-section-number">15</span> Differential Equations<a class="anchor" aria-label="anchor" href="#differential-equations"><i class="fas fa-link"></i></a>
+<span class="header-section-number">26</span> Boundary Conditions in Electromagnetism<a class="anchor" aria-label="anchor" href="#boundary-conditions-in-electromagnetism"><i class="fas fa-link"></i></a>
 </h1>
-<p>Differential equations is the study of equations that relate an unknown function to its derivatives.</p>
-<p>A derivative is a rate: the rate of change of one variable with respect to another. An unknown is a function: the quantity whose formula is found by solving the equation.</p>
-<p>Differential equations is related to calculus because the law relating a quantity to its rate of change is independent of how the unknown function is named and of which coordinates describe the same change.</p>
-<p>Here are the ideas that are fundamental to study of differential equations.</p>
-<p>Existence and uniqueness of solutions. Given a starting value and a continuity requirement, a differential equation has exactly one solution. A continuity requirement is a smoothness condition. A solution is a function that satisfies the equation.</p>
-<p>Superposition for linear equations. For a linear differential equation, a sum of solutions scaled by constants is again a solution. A linear differential equation is an equation in which the unknown and its derivatives appear to the first power.</p>
-<p>Initial and boundary conditions. A differential equation has a family of solutions. Initial conditions and boundary conditions select one solution. An initial condition is a starting value. A boundary condition is a value at an edge of the domain.</p>
-<div id="topics-9" class="section level2" number="15.1">
+<p>Matching rules for the electromagnetic fields at an interface that are used to join the solutions on either side of a surface, where an interface is the surface separating two media.</p>
+<p>The normal boundary condition on <span class="math inline">\(\mathbf{D}\)</span>. The discontinuity in the normal component of <span class="math inline">\(\mathbf{D}\)</span> equals the free surface charge density. This principle is used to relate the jump in the electric field to charge sitting on the boundary.</p>
+<p>The normal boundary condition on <span class="math inline">\(\mathbf{D}\)</span> is</p>
+<p><span class="math display">\[
+\mathbf{D}_{2}^{\perp} - \mathbf{D}_{1}^{\perp} = \sigma_{f}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\mathbf{D}\)</span> is the electric displacement.</li>
+<li>
+<span class="math inline">\(\sigma_{f}\)</span> is the free surface charge density.</li>
+<li>the superscript <span class="math inline">\(\perp\)</span> marks the component normal to the surface, from side 1 toward side 2.</li>
+</ul>
+<p>The tangential boundary condition on <span class="math inline">\(\mathbf{E}\)</span>. The tangential component of <span class="math inline">\(\mathbf{E}\)</span> is continuous if the surface holds no changing magnetic flux in an infinitely thin layer. This principle is used to match the electric field along the interface.</p>
+<p>The tangential boundary condition on <span class="math inline">\(\mathbf{E}\)</span> is</p>
+<p><span class="math display">\[
+\mathbf{E}_{2}^{\parallel} - \mathbf{E}_{1}^{\parallel} = 0
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\mathbf{E}\)</span> is the electric field.</li>
+<li>the superscript <span class="math inline">\(\parallel\)</span> marks the component tangent to the surface.</li>
+</ul>
+<p>The normal boundary condition on <span class="math inline">\(\mathbf{B}\)</span>. The normal component of <span class="math inline">\(\mathbf{B}\)</span> is continuous. This principle is used to match the magnetic field across any interface.</p>
+<p>The normal boundary condition on <span class="math inline">\(\mathbf{B}\)</span> is</p>
+<p><span class="math display">\[
+\mathbf{B}_{2}^{\perp} - \mathbf{B}_{1}^{\perp} = 0
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\mathbf{B}\)</span> is the magnetic field.</li>
+</ul>
+<p>The tangential boundary condition on <span class="math inline">\(\mathbf{H}\)</span>. The discontinuity in the tangential component of <span class="math inline">\(\mathbf{H}\)</span> equals the free surface current. This principle is used to relate the jump in the magnetic field to current on the boundary.</p>
+<p>The tangential boundary condition on <span class="math inline">\(\mathbf{H}\)</span> is</p>
+<p><span class="math display">\[
+\mathbf{H}_{2}^{\parallel} - \mathbf{H}_{1}^{\parallel} = \mathbf{K}_{f}\times\hat{\mathbf{n}}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\mathbf{H}\)</span> is the auxiliary magnetic field.</li>
+<li>
+<span class="math inline">\(\mathbf{K}_{f}\)</span> is the free surface current density.</li>
+<li>
+<span class="math inline">\(\hat{\mathbf{n}}\)</span> is the unit normal from side 1 toward side 2.</li>
+</ul>
+<div id="references-15" class="section level2" number="26.1">
 <h2>
-<span class="header-section-number">15.1</span> Topics<a class="anchor" aria-label="anchor" href="#topics-9"><i class="fas fa-link"></i></a>
+<span class="header-section-number">26.1</span> References<a class="anchor" aria-label="anchor" href="#references-15"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li><a href="differential-equations-and-integral-equations.html">Differential Equations and Integral Equations</a></li>
-<li><a href="initial-conditions.html">Initial Conditions</a></li>
-<li><a href="boundary-conditions.html">Boundary Conditions</a></li>
-</ol>
-</div>
-<div id="references-11" class="section level2" number="15.2">
-<h2>
-<span class="header-section-number">15.2</span> References<a class="anchor" aria-label="anchor" href="#references-11"><i class="fas fa-link"></i></a>
-</h2>
-<ol style="list-style-type: decimal">
-<li>Simmons, G. F. <em>Differential Equations with Applications and Historical Notes</em>. — existence and uniqueness under a continuity requirement.</li>
-<li>Farlow, S. J. <em>An Introduction to Differential Equations and Their Applications</em>. — superposition for linear equations, and applications to growth, heat, and waves.</li>
-<li>Stewart, J. <em>Calculus: Early Transcendentals</em>. — a differential equation as a relation among a function and its derivatives.</li>
-<li>Logan, J. D. <em>A First Course in Differential Equations</em>. — the unknown as a function, and initial and boundary conditions.</li>
+<li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. §7.3.5 — boundary conditions on electromagnetic fields.</li>
 </ol>
 <div class="topic-index">
 <ul>
-<li><a href="boundary-conditions.html">Boundary Conditions</a></li>
-<li><a href="differential-equations-and-integral-equations.html">Differential Equations and Integral Equations</a></li>
-<li><a href="initial-conditions.html">Initial Conditions</a></li>
+<li><a href="amperes-law.html">Ampere’s Law</a></li>
+<li><a href="biot-savart-law.html">Biot-Savart Law</a></li>
+<li><a href="boundary-conditions-in-electromagnetism.html">Boundary Conditions in Electromagnetism</a></li>
+<li><a href="capacitance.html">Capacitance</a></li>
+<li><a href="charge-density.html">Charge Density</a></li>
+<li><a href="conservation-laws.html">Conservation Laws</a></li>
+<li><a href="conservation-of-charge.html">Conservation of Charge</a></li>
+<li><a href="continuity-equation.html">Continuity Equation</a></li>
+<li><a href="coulomb-force.html">Coulomb Force</a></li>
+<li><a href="current.html">Current</a></li>
+<li><a href="cyclotron-motion.html">Cyclotron Motion</a></li>
+<li><a href="dielectrics.html">Dielectrics</a></li>
+<li><a href="differential-form.html">Differential Form</a></li>
+<li><a href="dipole.html">Dipole</a></li>
+<li><a href="dipole-radiation.html">Dipole Radiation</a></li>
+<li><a href="electric-charge.html">Electric Charge</a></li>
+<li><a href="electric-currents.html">Electric Currents</a></li>
+<li><a href="electric-field.html">Electric Field</a></li>
+<li><a href="electric-fields.html">Electric Fields</a></li>
+<li><a href="electric-potential.html">Electric Potential</a></li>
+<li><a href="electromagnetic-energy.html">Electromagnetic Energy</a></li>
+<li><a href="electromagnetic-induction.html">Electromagnetic Induction</a></li>
+<li><a href="electromagnetic-interaction.html">Electromagnetic Interaction</a></li>
+<li><a href="electromagnetic-momentum.html">Electromagnetic Momentum</a></li>
+<li><a href="electromagnetic-waves.html">Electromagnetic Waves</a></li>
+<li><a href="electrostatics.html">Electrostatics</a></li>
+<li><a href="field-tensor.html">Field Tensor</a></li>
+<li><a href="field-theory.html">Field Theory</a></li>
+<li><a href="gauge.html">Gauge</a></li>
+<li><a href="gauge-field.html">Gauge Field</a></li>
+<li><a href="gauge-symmetry.html">Gauge Symmetry</a></li>
+<li><a href="gauge-theory.html">Gauge Theory</a></li>
+<li><a href="gauge-transformations.html">Gauge Transformations</a></li>
+<li><a href="hall-effect.html">Hall Effect</a></li>
+<li><a href="induced-emf.html">Induced Emf</a></li>
+<li><a href="inductance.html">Inductance</a></li>
+<li><a href="induction.html">Induction</a></li>
+<li><a href="integral-form.html">Integral Form</a></li>
+<li><a href="ionization.html">Ionization</a></li>
+<li><a href="laplace-equation.html">Laplace Equation</a></li>
+<li><a href="lorentz-force.html">Lorentz Force</a></li>
+<li><a href="lorentz-transformations.html">Lorentz Transformations</a></li>
+<li><a href="magnetic-field.html">Magnetic Field</a></li>
+<li><a href="magnetic-fields.html">Magnetic Fields</a></li>
+<li><a href="magnetic-materials.html">Magnetic Materials</a></li>
+<li><a href="magnetostatics.html">Magnetostatics</a></li>
+<li><a href="maxwells-equations.html">Maxwell’s Equations</a></li>
+<li><a href="moments.html">Moments</a></li>
+<li><a href="momentum-of-light.html">Momentum of Light</a></li>
+<li><a href="motion-of-charges.html">Motion of Charges</a></li>
+<li><a href="multipole-expansion.html">Multipole Expansion</a></li>
+<li><a href="poisson-equation.html">Poisson Equation</a></li>
+<li><a href="polarization.html">Polarization</a></li>
+<li><a href="potentials.html">Potentials</a></li>
+<li><a href="poynting-vector.html">Poynting Vector</a></li>
+<li><a href="radiation.html">Radiation</a></li>
+<li><a href="reflection.html">Reflection</a></li>
+<li><a href="refraction.html">Refraction</a></li>
+<li><a href="relativistic-electromagnetism.html">Relativistic Electromagnetism</a></li>
+<li><a href="resistance.html">Resistance</a></li>
+<li><a href="retarded-potentials.html">Retarded Potentials</a></li>
+<li><a href="scalar-potential.html">Scalar Potential</a></li>
+<li><a href="superposition.html">Superposition</a></li>
+<li><a href="transformers.html">Transformers</a></li>
+<li><a href="u1-gauge-theory.html">U(1) Gauge Theory</a></li>
+<li><a href="vector-potential.html">Vector Potential</a></li>
+<li><a href="voltage.html">Voltage</a></li>
 </ul>
 </div>
 
@@ -820,14 +913,13 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="abstract-algebra.html"><span class="header-section-number">14</span> Abstract Algebra</a></div>
-<div class="next"><a href="complex-analysis.html"><span class="header-section-number">16</span> Complex Analysis</a></div>
+<div class="prev"><a href="biot-savart-law.html"><span class="header-section-number">25</span> Biot-Savart Law</a></div>
+<div class="next"><a href="capacitance.html"><span class="header-section-number">27</span> Capacitance</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#differential-equations"><span class="header-section-number">15</span> Differential Equations</a></li>
-<li><a class="nav-link" href="#topics-9"><span class="header-section-number">15.1</span> Topics</a></li>
-<li><a class="nav-link" href="#references-11"><span class="header-section-number">15.2</span> References</a></li>
+<li><a class="nav-link" href="#boundary-conditions-in-electromagnetism"><span class="header-section-number">26</span> Boundary Conditions in Electromagnetism</a></li>
+<li><a class="nav-link" href="#references-15"><span class="header-section-number">26.1</span> References</a></li>
 </ul>
 
       <div class="book-extra">

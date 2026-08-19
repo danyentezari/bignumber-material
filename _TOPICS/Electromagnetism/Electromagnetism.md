@@ -25,7 +25,7 @@ Some immediate applications of the study of electromagnetism are in electronics,
         2. [Voltage](voltage.html)
         3. [Capacitance](capacitance.html)
         4. [Dielectrics](dielectrics.html)
-    4. [Boundary Conditions](boundary-conditions.html)
+    4. [Boundary Conditions in Electromagnetism](boundary-conditions-in-electromagnetism.html)
     5. [Multipole Expansion](multipole-expansion.html)
         1. [Moments](moments.html)
         2. [Dipole](dipole.html)
@@ -73,7 +73,8 @@ Some immediate applications of the study of electromagnetism are in electronics,
 9. [Relativistic Electromagnetism](relativistic-electromagnetism.html)
     1. [Lorentz Transformations](lorentz-transformations.html)
     2. [Electromagnetic Field Tensor](field-tensor.html)
-10. [Gauge Theory](gauge-theory.html)
+10. [Field Theory](field-theory.html)
+11. [Gauge Theory](gauge-theory.html)
     1. [U(1) Gauge Theory](u1-gauge-theory.html)
     2. [Gauge Symmetry](gauge-symmetry.html)
 
