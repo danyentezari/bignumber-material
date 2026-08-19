@@ -36,6 +36,7 @@ Some immediate applications of the study of electromagnetism are in electronics,
         1. [Electric Currents](electric-currents.html)
         2. [Resistance](resistance.html)
         3. [Motion of Charges](motion-of-charges.html)
+        4. [Charge Carrier](charge-carrier.html)
     2. [Magnetic Field](magnetic-field.html)
         1. [Magnetic Fields](magnetic-fields.html)
         2. [Vector Potential](vector-potential.html)
