@@ -224,13 +224,54 @@
 <span class="header-section-number">218</span> Radial Distribution Function<a class="anchor" aria-label="anchor" href="#radial-distribution-function"><i class="fas fa-link"></i></a>
 </h1>
 <p>A function <span class="math inline">\(g(r)\)</span> that is used to say how the local density of molecules varies with distance <span class="math inline">\(r\)</span> from a chosen molecule, so that the solid, liquid, and gas phases can be told apart by the peaks and long-distance behavior of <span class="math inline">\(g(r)\)</span>.</p>
+<p>The pair-correlation function. The radial distribution function <span class="math inline">\(g(r)\)</span> is the local density of molecules at distance <span class="math inline">\(r\)</span> from a chosen molecule, divided by the bulk density. This principle is used to map where neighbors are favored to sit.</p>
+<p>The pair-correlation function is</p>
+<p><span class="math display">\[
+g(r) = \dfrac{\rho(r)}{\rho_{\mathrm{bulk}}}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(g(r)\)</span> is the radial distribution function.</li>
+<li>
+<span class="math inline">\(\rho(r)\)</span> is the local number density at distance <span class="math inline">\(r\)</span>.</li>
+<li>
+<span class="math inline">\(\rho_{\mathrm{bulk}}\)</span> is the average number density of the sample.</li>
+</ul>
+<p>Long-range order. A crystal has lasting long-range order, so <span class="math inline">\(g(r)\)</span> is a periodic array of sharp spikes at lattice spacings. Long-range order is repeating atomic arrangement that extends through the sample. This principle is used to recognize a crystal from its <span class="math inline">\(g(r)\)</span>.</p>
+<p>Short-range order. A liquid has only short-range order: a strong first peak near the nearest-neighbor distance, then weaker peaks that die out, and <span class="math inline">\(g(r)\)</span> tends to <span class="math inline">\(1\)</span> at large <span class="math inline">\(r\)</span>. This principle is used to recognize a liquid from its <span class="math inline">\(g(r)\)</span>.</p>
+<p>The liquid large-distance limit is</p>
+<p><span class="math display">\[
+\lim_{r\to\infty} g(r) = 1
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(r\)</span> is the distance from a chosen molecule.</li>
+<li>
+<span class="math inline">\(g(r)\)</span> is the radial distribution function.</li>
+</ul>
+<p>Gas pair correlation. In a dilute gas, <span class="math inline">\(g(r)\)</span> is <span class="math inline">\(0\)</span> below the collision diameter and is flat near <span class="math inline">\(1\)</span> beyond that distance, with no secondary shells. This principle is used to recognize a gas from its <span class="math inline">\(g(r)\)</span>.</p>
+<p>Excluded volume. At very short distances inside a dense fluid, <span class="math inline">\(g(r)\)</span> falls to <span class="math inline">\(0\)</span> because molecules cannot overlap. This principle is used to encode the finite size of molecules.</p>
+<p>The coordination number. The first peak of <span class="math inline">\(g(r)\)</span> sits at the nearest-neighbor distance. The area under that peak is the coordination number, the number of immediate neighbors. This principle is used to count how tightly atoms pack in the first shell.</p>
+<p>The coordination number is</p>
+<p><span class="math display">\[
+\mathrm{CN} = \int_{0}^{r_{\mathrm{shell}}} 4\pi\rho_{0}\,g(r)\,r^{2}\,dr
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\mathrm{CN}\)</span> is the coordination number.</li>
+<li>
+<span class="math inline">\(r_{\mathrm{shell}}\)</span> is the outer radius of the first peak.</li>
+<li>
+<span class="math inline">\(\rho_{0}\)</span> is the average number density.</li>
+<li>
+<span class="math inline">\(g(r)\)</span> is the radial distribution function.</li>
+<li>
+<span class="math inline">\(r\)</span> is the distance from a chosen molecule.</li>
+</ul>
 <p>Note: Also called the pair-correlation function.</p>
-<ol style="list-style-type: decimal">
-<li>In a crystal, <span class="math inline">\(g(r)\)</span> is a periodic array of sharp spikes at lattice spacings, which shows lasting long-range order.</li>
-<li>In a liquid, <span class="math inline">\(g(r)\)</span> has a strong first peak near the nearest-neighbor distance, then weaker broader peaks that die out, and <span class="math inline">\(g(r)\)</span> tends to <span class="math inline">\(1\)</span> at large <span class="math inline">\(r\)</span>, which shows only short-range order.</li>
-<li>In a dilute gas, <span class="math inline">\(g(r)\)</span> is <span class="math inline">\(0\)</span> below the collision diameter and is flat near <span class="math inline">\(1\)</span> beyond that distance, with no secondary shells.</li>
-<li>At very short distances inside a dense fluid, <span class="math inline">\(g(r)\)</span> falls to <span class="math inline">\(0\)</span> because molecules cannot overlap.</li>
-</ol>
 <div id="references-207" class="section level2" number="218.1">
 <h2>
 <span class="header-section-number">218.1</span> References<a class="anchor" aria-label="anchor" href="#references-207"><i class="fas fa-link"></i></a>

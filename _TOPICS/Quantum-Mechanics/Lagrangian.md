@@ -2,7 +2,7 @@
 
 A function that is used to encode the difference between kinetic energy and potential energy for the equations of motion and for the phase of a quantum path.
 
-1\. The Lagrangian is kinetic energy minus potential energy. This principle is used to write $L$ for a particle in a potential.
+$L=T-V$. The Lagrangian is kinetic energy minus potential energy. This principle is used to write $L$ for a particle in a potential.
 
 The Lagrangian is
 
@@ -16,7 +16,7 @@ where
 - $T$ is the kinetic energy.
 - $V$ is the potential energy.
 
-2\. In generalized coordinates, $L$ is a function of the coordinates, the velocities, and possibly time. This principle is used to write the Euler-Lagrange equations.
+The generalized-coordinate Lagrangian. In generalized coordinates, $L$ is a function of the coordinates, the velocities, and possibly time. This principle is used to write the Euler-Lagrange equations.
 
 The Lagrangian in generalized coordinates is
 
@@ -30,7 +30,7 @@ where
 - $\dfrac{dq_{i}}{dt}$ are generalized velocities.
 - $t$ is time.
 
-3\. The action is the time integral of $L$, and the classical path makes the action stationary. This principle is used to derive the equations of motion.
+Stationary action. The action is the time integral of $L$, and the classical path makes the action stationary. This principle is used to derive the equations of motion.
 
 The action is
 
@@ -44,9 +44,9 @@ where
 - $L$ is the Lagrangian.
 - $t$ is time.
 
-4\. In the path-integral formulation, each path contributes a phase $e^{iS/\hbar}$. This principle is used to compute quantum amplitudes from the same $L$ that governs classical motion.
+The path-integral phase. In the path-integral formulation, each path contributes a phase $e^{iS/\hbar}$. This principle is used to compute quantum amplitudes from the same $L$ that governs classical motion.
 
-Note: These principles are $L=T-V$, the generalized-coordinate Lagrangian, stationary action, and the path-integral phase. Also denoted $L$.
+Note: Also denoted $L$.
 
 ## References
 

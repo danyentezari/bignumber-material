@@ -2,7 +2,7 @@
 
 A stationary eigenvalue equation that is used to find the allowed energies and the corresponding spatial wavefunctions of a quantum system.
 
-1\. When the potential does not depend on time, a stationary state factors into a spatial wavefunction times a time-dependent phase. This principle is used to reduce the time-dependent equation to an eigenvalue problem.
+The time-independent Schrödinger equation. When the potential does not depend on time, a stationary state factors into a spatial wavefunction times a time-dependent phase. This principle is used to reduce the time-dependent equation to an eigenvalue problem.
 
 The time-independent Schrödinger equation is
 
@@ -16,7 +16,7 @@ where
 - $\psi$ is the spatial wavefunction.
 - $E$ is the energy of the state.
 
-2\. In one dimension the same equation is a second-order ordinary differential equation. This principle is used to solve bound states and scattering states on the line.
+Its one-dimensional form. In one dimension the same equation is a second-order ordinary differential equation. This principle is used to solve bound states and scattering states on the line.
 
 The one-dimensional time-independent Schrödinger equation is
 
@@ -32,11 +32,11 @@ where
 - $m$ is the mass.
 - $x$ is the position.
 
-3\. The allowed values of $E$ are the eigenvalues of $\hat{H}$. This principle is used to obtain the discrete spectrum of a bound system.
+Energy eigenvalues. The allowed values of $E$ are the eigenvalues of $\hat{H}$. This principle is used to obtain the discrete spectrum of a bound system.
 
-4\. The full wavefunction of a stationary state is $\Psi(x,t)=\psi(x)e^{-iEt/\hbar}$. This principle is used to recover a time-dependent solution whose probability density is constant.
+The stationary-state time factor. The full wavefunction of a stationary state is $\Psi(x,t)=\psi(x)e^{-iEt/\hbar}$. This principle is used to recover a time-dependent solution whose probability density is constant.
 
-Note: These principles are the time-independent Schrödinger equation, its one-dimensional form, energy eigenvalues, and the stationary-state time factor. $\psi$ is an eigenfunction of $\hat{H}$.
+Note: $\psi$ is an eigenfunction of $\hat{H}$.
 
 ## References
 

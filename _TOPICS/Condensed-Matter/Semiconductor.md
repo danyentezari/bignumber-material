@@ -2,14 +2,36 @@
 
 A solid with a small band gap. At room temperature a few electrons can be thermally excited into the conduction band and then move freely, carrying some current.
 
-Note: Also called a small-gap insulator. Also called a band insulator with a small band gap.
+The band theory of solids. When atomic orbitals overlap in a crystal, they split into bands of allowed energies separated by forbidden gaps. A band gap is a range of energy with no electron states. This principle is used to classify a crystal from its band occupancy at zero temperature.
 
-1. Has a filled valence band and an empty conduction band separated by a band gap.
-2. Has a band gap small enough, typically below about $4\,\mathrm{eV}$, that room-temperature thermal energy promotes some electrons across the gap.
-3. Conducts weakly at room temperature and behaves as an insulator near absolute zero.
-4. Differs from a metal, which has one or more partially filled bands and needs no thermal jump to carry current.
-5. Differs from an ordinary insulator, whose larger gap, such as about $6$ to $7\,\mathrm{eV}$ in diamond, keeps thermal promotion negligible at room temperature.
-6. Includes elemental examples such as silicon, with gap about $1.1\,\mathrm{eV}$, and germanium, with gap about $0.7\,\mathrm{eV}$.
+The band gap. If the forbidden gap is below about $4\,\mathrm{eV}$, the crystal is a semiconductor rather than a diamond-like insulator. This principle is used to separate semiconductors from ordinary insulators by gap size.
+
+Valence band and conduction band. The valence band is the highest occupied band at zero temperature. The conduction band is the lowest empty band at zero temperature. They are separated by the band gap. This principle is used to name the two bands that control conduction.
+
+Intrinsic carrier excitation. At absolute zero every electron is locked in the valence band, so a pure semiconductor is an insulator. Finite temperature promotes a few electrons into the conduction band and leaves holes behind. A hole is a vacant positively charged state. This principle is used to explain room-temperature conduction.
+
+The intrinsic carrier density satisfies
+
+$$
+n_{i} \propto \exp\left(-\dfrac{E_{\mathrm{gap}}}{2k_{\mathrm{B}}T}\right)
+$$
+
+where
+
+- $n_{i}$ is the intrinsic carrier density.
+- $E_{\mathrm{gap}}$ is the band gap.
+- $k_{\mathrm{B}}$ is Boltzmann's constant.
+- $T$ is the temperature.
+
+Distinction from a metal. A metal has at least one partially filled band and needs no thermal jump to carry current. This principle is used to tell a metal from a semiconductor.
+
+Distinction from an ordinary insulator. An ordinary insulator has a larger gap, such as about $5.4\,\mathrm{eV}$ in diamond, so thermal promotion is negligible at room temperature. This principle is used to tell a semiconductor from a wide-gap insulator.
+
+Elemental examples. Silicon has a gap of about $1.1\,\mathrm{eV}$. Germanium has a gap of about $0.67\,\mathrm{eV}$. This principle is used to identify common elemental semiconductors.
+
+Doping. Doping is the deliberate addition of impurity atoms that supply extra carriers. An extrinsic semiconductor is a doped crystal whose conduction is dominated by those impurities. This principle is used to control conductivity far beyond the pure-crystal value.
+
+Note: Also called a small-gap insulator. Also called a band insulator with a small band gap.
 
 ## References
 

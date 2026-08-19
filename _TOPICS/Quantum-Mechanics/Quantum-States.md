@@ -2,13 +2,13 @@
 
 A complete description of a quantum system that is used to compute the probabilities of every measurement, where a complete description is a wavefunction or a ket that determines all expectation values.
 
-1\. The state of a system is a vector in a Hilbert space. A Hilbert space is a complete inner-product space of possible states. This principle is used to add states and to compute inner products.
+The Hilbert-space state. The state of a system is a vector in a Hilbert space. A Hilbert space is a complete inner-product space of possible states. This principle is used to add states and to compute inner products.
 
-2\. Two kets that differ by a nonzero complex factor represent the same physical state. This principle is used to work with normalized representatives.
+Ray equivalence. Two kets that differ by a nonzero complex factor represent the same physical state. This principle is used to work with normalized representatives.
 
-3\. The wavefunction $\Psi(x,t)$ is the position representation of the state. This principle is used to compute position probabilities from $|\Psi|^{2}$.
+The position-space wavefunction. The wavefunction $\Psi(x,t)$ is the position representation of the state. This principle is used to compute position probabilities from $|\Psi|^{2}$.
 
-4\. A general state is a superposition of basis states. A superposition is a linear combination of allowed states. This principle is used to expand a state in the energy basis or the spin basis.
+Superposition. A general state is a superposition of basis states. A superposition is a linear combination of allowed states. This principle is used to expand a state in the energy basis or the spin basis.
 
 A general expansion is
 
@@ -22,9 +22,7 @@ where
 - $|n\rangle$ are basis states.
 - $c_{n}$ are complex coefficients.
 
-5\. A measurement of an observable yields one eigenvalue and leaves the system in the corresponding eigenstate. This principle is used to connect the abstract state to a laboratory outcome.
-
-Note: These principles are the Hilbert-space state, ray equivalence, the position-space wavefunction, superposition, and the measurement update.
+The measurement update. A measurement of an observable yields one eigenvalue and leaves the system in the corresponding eigenstate. This principle is used to connect the abstract state to a laboratory outcome.
 
 ## References
 

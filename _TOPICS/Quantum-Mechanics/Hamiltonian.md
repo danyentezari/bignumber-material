@@ -2,7 +2,7 @@
 
 An operator that is used to represent the total energy of a quantum system.
 
-1\. For one particle the Hamiltonian is kinetic energy plus potential energy, written with the operators $P$ and $X$. This principle is used to build $\hat{H}$ from a classical energy function.
+$H=P^{2}/2m+V(X)$. For one particle the Hamiltonian is kinetic energy plus potential energy, written with the operators $P$ and $X$. This principle is used to build $\hat{H}$ from a classical energy function.
 
 The Hamiltonian operator is
 
@@ -18,7 +18,7 @@ where
 - $V(X)$ is the potential energy as a function of the position operator.
 - $X$ is the position operator.
 
-2\. The Hamiltonian generates time evolution through the Schrödinger equation. This principle is used to compute the state at a later time.
+Hamiltonian time evolution. The Hamiltonian generates time evolution through the Schrödinger equation. This principle is used to compute the state at a later time.
 
 The Schrödinger equation is
 
@@ -33,7 +33,7 @@ where
 - $t$ is time.
 - $\hbar$ is the reduced Planck constant.
 
-3\. The eigenvalues of $\hat{H}$ are the allowed energies. This principle is used to find stationary states and discrete spectra.
+Energy eigenvalues. The eigenvalues of $\hat{H}$ are the allowed energies. This principle is used to find stationary states and discrete spectra.
 
 The energy eigenvalue equation is
 
@@ -46,7 +46,7 @@ where
 - $\psi$ is an energy eigenfunction.
 - $E$ is the energy eigenvalue.
 
-Note: These principles are $H=P^{2}/2m+V(X)$, Hamiltonian time evolution, and energy eigenvalues. Also denoted $H$. Also denoted $\hat{H}$.
+Note: Also denoted $H$. Also denoted $\hat{H}$.
 
 ## References
 

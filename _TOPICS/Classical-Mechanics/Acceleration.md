@@ -2,7 +2,7 @@
 
 A rate of change of velocity that is used to describe how quickly an object's motion changes, where a rate of change is a derivative with respect to time.
 
-1\. Average acceleration is the change of velocity divided by the elapsed time. This principle is used to describe the overall change of motion over a finite interval.
+Average acceleration. Average acceleration is the change of velocity divided by the elapsed time. This principle is used to describe the overall change of motion over a finite interval.
 
 The average acceleration is
 
@@ -16,7 +16,7 @@ where
 - $\Delta\mathbf{v}$ is the change of velocity.
 - $\Delta t$ is the elapsed time.
 
-2\. Instantaneous acceleration is the limit of the average acceleration as the time interval shrinks to zero. This principle is used to give the change of velocity at one moment.
+Instantaneous acceleration. Instantaneous acceleration is the limit of the average acceleration as the time interval shrinks to zero. This principle is used to give the change of velocity at one moment.
 
 The instantaneous acceleration is
 
@@ -30,7 +30,7 @@ where
 - $\Delta\mathbf{v}$ is the change of velocity.
 - $\Delta t$ is the elapsed time.
 
-3\. Acceleration is the time derivative of velocity and the second time derivative of position. This principle is used to compute acceleration from a known path.
+Acceleration as the derivative of velocity. Acceleration is the time derivative of velocity and the second time derivative of position. This principle is used to compute acceleration from a known path.
 
 The acceleration as a derivative is
 
@@ -45,7 +45,7 @@ where
 - $\mathbf{r}$ is the position vector.
 - $t$ is time.
 
-4\. Acceleration vanishes when velocity is constant. This principle is used to identify uniform motion.
+Vanishing acceleration in uniform motion. Acceleration vanishes when velocity is constant. This principle is used to identify uniform motion.
 
 Vanishing acceleration is
 
@@ -58,7 +58,7 @@ where
 - $\mathbf{v}$ is the velocity.
 - $\mathbf{a}$ is the acceleration.
 
-5\. Newton's second law identifies net force with mass times acceleration. This principle is used to predict how a known force changes the motion.
+Newton's second law. Newton's second law identifies net force with mass times acceleration. This principle is used to predict how a known force changes the motion.
 
 Newton's second law is
 
@@ -72,7 +72,7 @@ where
 - $m$ is the mass.
 - $\mathbf{a}$ is the acceleration.
 
-Note: These principles are average acceleration, instantaneous acceleration, acceleration as the derivative of velocity, vanishing acceleration in uniform motion, and Newton's second law. Also called the acceleration vector. Also written as the second derivative of position.
+Note: Also called the acceleration vector. Also written as the second derivative of position.
 
 ## References
 

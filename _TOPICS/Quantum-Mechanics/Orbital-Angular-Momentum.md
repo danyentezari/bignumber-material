@@ -2,7 +2,7 @@
 
 An angular momentum associated with spatial motion that is used to describe rotation of a particle about an origin in position space.
 
-1\. Orbital angular momentum is built from the position and momentum operators. This principle is used to distinguish $\mathbf{L}$ from spin.
+$\mathbf{L}=\mathbf{r}\times\mathbf{p}$. Orbital angular momentum is built from the position and momentum operators. This principle is used to distinguish $\mathbf{L}$ from spin.
 
 The orbital angular momentum is
 
@@ -16,7 +16,7 @@ where
 - $\mathbf{r}$ is the position operator.
 - $\mathbf{p}$ is the momentum operator.
 
-2\. The squared operator is the sum of the squares of the components. This principle is used to write $L^{2}$ in the radial Schrödinger equation.
+The definition of $L^{2}$. The squared operator is the sum of the squares of the components. This principle is used to write $L^{2}$ in the radial Schrödinger equation.
 
 The squared orbital angular momentum is
 
@@ -28,7 +28,7 @@ where
 
 - $L_{x}$, $L_{y}$, and $L_{z}$ are the Cartesian components.
 
-3\. Simultaneous eigenstates of $L^{2}$ and $L_{z}$ are labeled by integers $\ell$ and $m$. This principle is used to name $s$, $p$, $d$, and $f$ orbitals.
+The $(\ell,m)$ spectrum. Simultaneous eigenstates of $L^{2}$ and $L_{z}$ are labeled by integers $\ell$ and $m$. This principle is used to name $s$, $p$, $d$, and $f$ orbitals.
 
 The orbital eigenvalue equations are
 
@@ -46,7 +46,7 @@ where
 - $m$ is the magnetic quantum number.
 - $\hbar$ is the reduced Planck constant.
 
-Note: These principles are $\mathbf{L}=\mathbf{r}\times\mathbf{p}$, the definition of $L^{2}$, and the $(\ell,m)$ spectrum. Also denoted $\mathbf{L}$. Also called orbital angular momentum to distinguish it from spin.
+Note: Also denoted $\mathbf{L}$. Also called orbital angular momentum to distinguish it from spin.
 
 ## References
 

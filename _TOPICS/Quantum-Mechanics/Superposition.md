@@ -2,7 +2,7 @@
 
 A linearity principle that is used to write a quantum state as a sum of allowed states, where a linear combination is a sum with complex coefficients.
 
-1\. If $|\psi\rangle$ and $|\phi\rangle$ are allowed states, then $a|\psi\rangle+b|\phi\rangle$ is an allowed state. This principle is used to build interference and to expand a state in a basis.
+Linear combination of states. If $|\psi\rangle$ and $|\phi\rangle$ are allowed states, then $a|\psi\rangle+b|\phi\rangle$ is an allowed state. This principle is used to build interference and to expand a state in a basis.
 
 The superposition of two states is
 
@@ -16,9 +16,9 @@ where
 - $a$ and $b$ are complex coefficients.
 - $|\psi\rangle$ and $|\phi\rangle$ are the component states.
 
-2\. The Schrödinger equation is linear, so a sum of solutions is a solution. This principle is used to write the general time-dependent solution as a sum of stationary states.
+Linearity of the Schrödinger equation. The Schrödinger equation is linear, so a sum of solutions is a solution. This principle is used to write the general time-dependent solution as a sum of stationary states.
 
-3\. The probability of an outcome is the squared modulus of the corresponding coefficient, not the sum of the separate probabilities, when the components can interfere. This principle is used to compute two-slit and spin-superposition probabilities.
+Born probabilities of expansion coefficients. The probability of an outcome is the squared modulus of the corresponding coefficient, not the sum of the separate probabilities, when the components can interfere. This principle is used to compute two-slit and spin-superposition probabilities.
 
 The Born probability of a basis outcome is
 
@@ -30,8 +30,6 @@ where
 
 - $P(n)$ is the probability of outcome $n$.
 - $c_{n}$ is the coefficient of $|n\rangle$.
-
-Note: These principles are linear combination of states, linearity of the Schrödinger equation, and Born probabilities of expansion coefficients.
 
 ## References
 

@@ -2,7 +2,7 @@
 
 A quantum system with a quadratic potential that is used as the standard model of small oscillations and of photonlike modes.
 
-1\. The Hamiltonian is kinetic energy plus a quadratic potential. This principle is used to write the oscillator as the unique quadratic bound-state problem.
+The quadratic Hamiltonian. The Hamiltonian is kinetic energy plus a quadratic potential. This principle is used to write the oscillator as the unique quadratic bound-state problem.
 
 The oscillator Hamiltonian is
 
@@ -16,7 +16,7 @@ where
 - $\omega$ is the angular frequency.
 - $X$ and $P$ are the position and momentum operators.
 
-2\. The allowed energies are equally spaced and start at $\dfrac{1}{2}\hbar\omega$. This principle is used to write the spectrum of a mode or of a vibrational level.
+The equidistant spectrum. The allowed energies are equally spaced and start at $\dfrac{1}{2}\hbar\omega$. This principle is used to write the spectrum of a mode or of a vibrational level.
 
 The oscillator energies are
 
@@ -30,7 +30,7 @@ where
 - $\hbar$ is the reduced Planck constant.
 - $\omega$ is the oscillator frequency.
 
-3\. The same Hamiltonian is $\hbar\omega(a^{\dagger}a+\dfrac{1}{2})$ in terms of raising and lowering operators. This principle is used to climb the ladder of states without solving a differential equation.
+The raising-lowering operator solution. The same Hamiltonian is $\hbar\omega(a^{\dagger}a+\dfrac{1}{2})$ in terms of raising and lowering operators. This principle is used to climb the ladder of states without solving a differential equation.
 
 The number-operator form is
 
@@ -44,7 +44,7 @@ where
 - $a$ is the lowering operator.
 - $a^{\dagger}a$ is the number operator.
 
-Note: These principles are the quadratic Hamiltonian, the equidistant spectrum, and the raising-lowering operator solution. Also called the harmonic oscillator.
+Note: Also called the harmonic oscillator.
 
 ## References
 

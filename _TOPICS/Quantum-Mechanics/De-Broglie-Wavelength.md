@@ -2,7 +2,7 @@
 
 A wavelength associated with a moving material particle that is used to assign a wave to a particle from its momentum.
 
-1\. The de Broglie wavelength is Planck's constant divided by the momentum. This principle is used to compute the wavelength of an electron or any other massive particle.
+The de Broglie relation. The de Broglie wavelength is Planck's constant divided by the momentum. This principle is used to compute the wavelength of an electron or any other massive particle.
 
 The de Broglie relation is
 
@@ -18,11 +18,11 @@ where
 - $m$ is the mass of the particle.
 - $v$ is the speed of the particle.
 
-2\. Larger momentum gives a shorter wavelength. This principle is used to explain why everyday objects show no wave behavior: their wavelengths are far smaller than any slit.
+The inverse relation of wavelength to momentum. Larger momentum gives a shorter wavelength. This principle is used to explain why everyday objects show no wave behavior: their wavelengths are far smaller than any slit.
 
-3\. When $\lambda$ is comparable to the size of an aperture, the particle diffracts. This principle is used to design electron diffraction and neutron-interference experiments.
+The condition for observable diffraction. When $\lambda$ is comparable to the size of an aperture, the particle diffracts. This principle is used to design electron diffraction and neutron-interference experiments.
 
-Note: These principles are the de Broglie relation, the inverse relation of wavelength to momentum, and the condition for observable diffraction. Also called the de Broglie relation.
+Note: Also called the de Broglie relation.
 
 ## References
 

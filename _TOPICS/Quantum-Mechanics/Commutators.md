@@ -2,7 +2,7 @@
 
 An operator built from a product difference that is used to measure whether two operators can be applied in either order without change.
 
-1\. The commutator of two operators is $AB-BA$. This principle is used to test whether the product order matters.
+The definition of the commutator. The commutator of two operators is $AB-BA$. This principle is used to test whether the product order matters.
 
 The commutator is
 
@@ -15,7 +15,7 @@ where
 - $A$ and $B$ are operators.
 - $[A,B]$ is their commutator.
 
-2\. Position and momentum do not commute. This principle is used to write the canonical commutation relation and to derive the uncertainty principle.
+The canonical relation $[X,P]=i\hbar$. Position and momentum do not commute. This principle is used to write the canonical commutation relation and to derive the uncertainty principle.
 
 The position-momentum commutator is
 
@@ -29,11 +29,11 @@ where
 - $P$ is the momentum operator.
 - $\hbar$ is the reduced Planck constant.
 
-3\. If $[A,H]=0$, then $A$ is conserved. This principle is used to identify constants of the motion.
+Conservation when $[A,H]=0$. If $[A,H]=0$, then $A$ is conserved. This principle is used to identify constants of the motion.
 
-4\. If $[A,B]=0$, the operators share a common eigenbasis. This principle is used to measure $A$ and $B$ together.
+Simultaneous eigenbases. If $[A,B]=0$, the operators share a common eigenbasis. This principle is used to measure $A$ and $B$ together.
 
-Note: These principles are the definition of the commutator, the canonical relation $[X,P]=i\hbar$, conservation when $[A,H]=0$, and simultaneous eigenbases. Also called a commutation relation when set equal to a specific value. Also denoted $[A,B]$.
+Note: Also called a commutation relation when set equal to a specific value. Also denoted $[A,B]$.
 
 ## References
 

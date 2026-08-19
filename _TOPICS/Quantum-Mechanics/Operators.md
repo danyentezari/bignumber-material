@@ -2,11 +2,11 @@
 
 A linear mapping on a Hilbert space that is used to represent a physical observable acting on quantum states, where a Hilbert space is a complete inner-product space of states.
 
-1\. Each classical real function on phase space is associated with a self-adjoint operator on the quantum Hilbert space. A self-adjoint operator is an operator equal to its adjoint. This principle is used to promote $x$ and $p$ to $\hat{x}$ and $\hat{p}$.
+The quantization map to self-adjoint operators. Each classical real function on phase space is associated with a self-adjoint operator on the quantum Hilbert space. A self-adjoint operator is an operator equal to its adjoint. This principle is used to promote $x$ and $p$ to $\hat{x}$ and $\hat{p}$.
 
-2\. Observables act on kets. A Hermitian operator has real eigenvalues. This principle is used to identify measured values with those eigenvalues.
+Hermitian observables. Observables act on kets. A Hermitian operator has real eigenvalues. This principle is used to identify measured values with those eigenvalues.
 
-3\. The expectation value of an operator $A$ in a normalized state is $\langle A\rangle=\langle\alpha|A|\alpha\rangle$. This principle is used to compute the mean of many measurements.
+Expectation values. The expectation value of an operator $A$ in a normalized state is $\langle A\rangle=\langle\alpha|A|\alpha\rangle$. This principle is used to compute the mean of many measurements.
 
 The expectation value is
 
@@ -19,7 +19,7 @@ where
 - $A$ is an observable operator.
 - $|\alpha\rangle$ is a normalized state.
 
-4\. In the position representation the position operator multiplies by $x$ and the momentum operator differentiates. This principle is used to write explicit operators on wavefunctions.
+The position-representation operators. In the position representation the position operator multiplies by $x$ and the momentum operator differentiates. This principle is used to write explicit operators on wavefunctions.
 
 The position and momentum operators are
 
@@ -32,7 +32,7 @@ where
 - $\psi$ is a wavefunction.
 - $\hbar$ is the reduced Planck constant.
 
-Note: These principles are the quantization map to self-adjoint operators, Hermitian observables, expectation values, and the position-representation operators. Also called quantum operators.
+Note: Also called quantum operators.
 
 ## References
 

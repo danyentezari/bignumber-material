@@ -2,9 +2,9 @@
 
 A three-dimensional spatial arrangement of a molecule's atoms that is used to predict its physical stability, chemical reactivity, and interactions with other systems.
 
-1\. Molecules have definite shapes set by bond lengths and bond angles, not flat drawings. A bond length is the equilibrium distance between two bonded nuclei. A bond angle is the angle formed by three nuclei. This principle is used to specify the geometry that spectroscopy and calculation must recover.
+Definite molecular geometry. Molecules have definite shapes set by bond lengths and bond angles, not flat drawings. A bond length is the equilibrium distance between two bonded nuclei. A bond angle is the angle formed by three nuclei. This principle is used to specify the geometry that spectroscopy and calculation must recover.
 
-2\. The natural shape is the arrangement of nuclei where the electronic energy is lowest. This principle is used to find the equilibrium geometry by minimizing $E_{\mathrm{el}}(R)$.
+The energy-minimum shape. The natural shape is the arrangement of nuclei where the electronic energy is lowest. This principle is used to find the equilibrium geometry by minimizing $E_{\mathrm{el}}(R)$.
 
 The equilibrium geometry condition is
 
@@ -17,11 +17,11 @@ where
 - $E_{\mathrm{el}}$ is the electronic energy including nuclear repulsion.
 - $R$ is a nuclear coordinate.
 
-3\. The shape is held by a balance of forces: atoms attract as they share electrons at longer range and push apart if pressed too close. This principle is used to explain why each bond has a preferred length.
+The balance of attractive and repulsive forces. The shape is held by a balance of forces: atoms attract as they share electrons at longer range and push apart if pressed too close. This principle is used to explain why each bond has a preferred length.
 
-4\. That shape controls bulk behavior such as melting and how receptors recognize a molecule. This principle is used to relate molecular geometry to physical and biological function.
+Structure-function control. That shape controls bulk behavior such as melting and how receptors recognize a molecule. This principle is used to relate molecular geometry to physical and biological function.
 
-5\. Shapes are too small to see directly, so rotation and vibration spectra recover bond lengths and angles. The rotational constant of a linear molecule falls as the inverse of the moment of inertia. This principle is used to extract internuclear distances from microwave spectra.
+Spectroscopic determination of geometry. Shapes are too small to see directly, so rotation and vibration spectra recover bond lengths and angles. The rotational constant of a linear molecule falls as the inverse of the moment of inertia. This principle is used to extract internuclear distances from microwave spectra.
 
 The rotational constant is
 
@@ -35,8 +35,6 @@ where
 - $h$ is Planck's constant.
 - $c$ is the speed of light.
 - $I$ is the moment of inertia about the rotation axis.
-
-Note: These principles are definite molecular geometry, the energy-minimum shape, the balance of attractive and repulsive forces, structure-function control, and spectroscopic determination of geometry.
 
 ## References
 

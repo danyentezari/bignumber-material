@@ -2,7 +2,7 @@
 
 A quantum transition in which a system takes energy from an electromagnetic field that is used to raise the system from a lower level to a higher level, where a photon is a discrete packet of light that disappears in the process.
 
-1\. Absorption occurs when a photon of energy $hf$ matches the gap $E_{f}-E_{i}$ with $E_{f}>E_{i}$. This principle is used to compute the frequency of an absorption line.
+The absorption frequency condition. Absorption occurs when a photon of energy $hf$ matches the gap $E_{f}-E_{i}$ with $E_{f}>E_{i}$. This principle is used to compute the frequency of an absorption line.
 
 The absorption condition is
 
@@ -16,7 +16,7 @@ where
 - $f$ is the frequency of the photon.
 - $E_{i}$ and $E_{f}$ are the lower and upper energies.
 
-2\. The absorption rate is proportional to the energy density of the radiation and to the Einstein $B$ coefficient. This principle is used to write the number of absorptions per unit time.
+The Einstein $B$ rate. The absorption rate is proportional to the energy density of the radiation and to the Einstein $B$ coefficient. This principle is used to write the number of absorptions per unit time.
 
 The absorption rate is
 
@@ -30,9 +30,7 @@ where
 - $B_{if}$ is the Einstein $B$ coefficient.
 - $\rho(f)$ is the radiation energy density at frequency $f$.
 
-3\. The same matrix element that governs absorption governs stimulated emission. This principle is used to relate $B_{if}$ and $B_{fi}$.
-
-Note: These principles are the absorption frequency condition, the Einstein $B$ rate, and the link to stimulated emission.
+The link to stimulated emission. The same matrix element that governs absorption governs stimulated emission. This principle is used to relate $B_{if}$ and $B_{fi}$.
 
 ## References
 

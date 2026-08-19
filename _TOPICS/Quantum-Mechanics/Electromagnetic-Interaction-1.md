@@ -2,7 +2,7 @@
 
 An interaction between charged matter and the electromagnetic field that is used to describe absorption and emission of radiation by quantum systems.
 
-1\. Coupling to the electromagnetic field is achieved by replacing $\mathbf{p}$ with $\mathbf{p}-q\mathbf{A}$ and adding $qV$. This principle is used to write the Hamiltonian of a charged particle in a field.
+Minimal coupling. Coupling to the electromagnetic field is achieved by replacing $\mathbf{p}$ with $\mathbf{p}-q\mathbf{A}$ and adding $qV$. This principle is used to write the Hamiltonian of a charged particle in a field.
 
 The minimally coupled Hamiltonian is
 
@@ -18,7 +18,7 @@ where
 - $m$ is the mass.
 - $\mathbf{p}$ is the momentum operator.
 
-2\. The classical counterpart is the Lorentz force. This principle is used to recover the force on a charge from the same potentials.
+The Lorentz force. The classical counterpart is the Lorentz force. This principle is used to recover the force on a charge from the same potentials.
 
 The Lorentz force is
 
@@ -33,9 +33,9 @@ where
 - $\mathbf{B}$ is the magnetic field.
 - $\mathbf{v}$ is the velocity.
 
-3\. A time-dependent field induces transitions between energy eigenstates. This principle is used to compute absorption, emission, and Fermi's golden rule.
+Field-induced transitions. A time-dependent field induces transitions between energy eigenstates. This principle is used to compute absorption, emission, and Fermi's golden rule.
 
-Note: These principles are minimal coupling, the Lorentz force, and field-induced transitions. Linked from the Quantum Mechanics index as electromagnetic-interaction-1.
+Note: Linked from the Quantum Mechanics index as electromagnetic-interaction-1.
 
 ## References
 

@@ -2,7 +2,7 @@
 
 An interaction between a particle's orbital angular momentum and its spin that is used to split levels that share the same $n$ and $\ell$, where spin is the particle's intrinsic angular momentum.
 
-1\. The spin-orbit energy is proportional to $\mathbf{L}\cdot\mathbf{S}$. This principle is used to write the fine-structure perturbation.
+The $\mathbf{L}\cdot\mathbf{S}$ Hamiltonian. The spin-orbit energy is proportional to $\mathbf{L}\cdot\mathbf{S}$. This principle is used to write the fine-structure perturbation.
 
 The spin-orbit Hamiltonian is
 
@@ -17,7 +17,7 @@ where
 - $\mathbf{L}$ is the orbital angular momentum.
 - $\mathbf{S}$ is the spin.
 
-2\. The product $\mathbf{L}\cdot\mathbf{S}$ is diagonal in the $|j,m_{j}\rangle$ basis. This principle is used to replace $\mathbf{L}\cdot\mathbf{S}$ by a combination of $J^{2}$, $L^{2}$, and $S^{2}$.
+The $J^{2}$ identity. The product $\mathbf{L}\cdot\mathbf{S}$ is diagonal in the $|j,m_{j}\rangle$ basis. This principle is used to replace $\mathbf{L}\cdot\mathbf{S}$ by a combination of $J^{2}$, $L^{2}$, and $S^{2}$.
 
 The identity for $\mathbf{L}\cdot\mathbf{S}$ is
 
@@ -29,9 +29,7 @@ where
 
 - $\mathbf{J}=\mathbf{L}+\mathbf{S}$ is the total angular momentum.
 
-3\. For one electron the two $j$ values $\ell\pm 1/2$ are split by the spin-orbit term. This principle is used to explain fine-structure doublets.
-
-Note: These principles are the $\mathbf{L}\cdot\mathbf{S}$ Hamiltonian, the $J^{2}$ identity, and the fine-structure splitting.
+The fine-structure splitting. For one electron the two $j$ values $\ell\pm 1/2$ are split by the spin-orbit term. This principle is used to explain fine-structure doublets.
 
 ## References
 

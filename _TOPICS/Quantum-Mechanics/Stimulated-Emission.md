@@ -2,7 +2,7 @@
 
 A radiative transition in which an incoming photon induces an excited atom to decay that is used to release a second photon of the same frequency, phase, and direction.
 
-1\. An applied field of frequency $f$ can force an atom from $E_{i}$ to $E_{f}$ with $E_{i}>E_{f}$, creating a photon. This principle is used to amplify light in a laser.
+The stimulated frequency condition. An applied field of frequency $f$ can force an atom from $E_{i}$ to $E_{f}$ with $E_{i}>E_{f}$, creating a photon. This principle is used to amplify light in a laser.
 
 The stimulated-emission condition is
 
@@ -16,7 +16,7 @@ where
 - $f$ is the frequency of the photon.
 - $E_{i}$ and $E_{f}$ are the upper and lower energies.
 
-2\. The stimulated-emission rate is proportional to the radiation energy density and to the Einstein $B$ coefficient. This principle is used to write the downward rate induced by the field.
+The Einstein $B$ rate. The stimulated-emission rate is proportional to the radiation energy density and to the Einstein $B$ coefficient. This principle is used to write the downward rate induced by the field.
 
 The stimulated-emission rate is
 
@@ -30,9 +30,7 @@ where
 - $B_{fi}$ is the Einstein $B$ coefficient for emission.
 - $\rho(f)$ is the radiation energy density.
 
-3\. The emitted photon matches the incoming photon in frequency, phase, and direction. This principle is used to produce coherent amplification.
-
-Note: These principles are the stimulated frequency condition, the Einstein $B$ rate, and coherence of the emitted photon.
+Coherence of the emitted photon. The emitted photon matches the incoming photon in frequency, phase, and direction. This principle is used to produce coherent amplification.
 
 ## References
 

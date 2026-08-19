@@ -2,13 +2,13 @@
 
 A chosen object or collection of objects that is used to mark what is under study and what counts as its surroundings.
 
-1\. The observer chooses the system by drawing a boundary. Everything outside that boundary is the surroundings. This principle is used to decide which forces and energy transfers count as external.
+The chosen boundary. The observer chooses the system by drawing a boundary. Everything outside that boundary is the surroundings. This principle is used to decide which forces and energy transfers count as external.
 
-2\. Some properties, such as mass and charge, are fixed by how the system is made. Other properties make up the physical state and can change. This principle is used to separate parameters from variables.
+Parameters versus state. Some properties, such as mass and charge, are fixed by how the system is made. Other properties make up the physical state and can change. This principle is used to separate parameters from variables.
 
-3\. In quantum mechanics the state is represented completely by a wavefunction. This principle is used to compute every measurement probability from one object.
+The quantum wavefunction. In quantum mechanics the state is represented completely by a wavefunction. This principle is used to compute every measurement probability from one object.
 
-4\. The total energy of the system is conserved when no work is done on it by external forces and no heat crosses the boundary. This principle is used to write an energy balance after the boundary is chosen.
+Energy balance. The total energy of the system is conserved when no work is done on it by external forces and no heat crosses the boundary. This principle is used to write an energy balance after the boundary is chosen.
 
 The isolated-system energy balance is
 
@@ -22,11 +22,11 @@ where
 - $q$ is the heat absorbed by the system.
 - $E_{\mathrm{sys}}$ is the total energy of the system.
 
-5\. The same collection can be redrawn so that interacting forces sit inside rather than outside. This principle is used to convert an external pair into an internal pair that cancels in the net force.
+Redrawing the boundary. The same collection can be redrawn so that interacting forces sit inside rather than outside. This principle is used to convert an external pair into an internal pair that cancels in the net force.
 
-6\. A system can be described by a Lagrangian from which the equations of motion are derived. This principle is used to treat particles, fields, and constrained collections in one formalism.
+The Lagrangian description. A system can be described by a Lagrangian from which the equations of motion are derived. This principle is used to treat particles, fields, and constrained collections in one formalism.
 
-Note: These principles are the chosen boundary, parameters versus state, the quantum wavefunction, energy balance, redrawing the boundary, and the Lagrangian description. Also called a physical system. The boundary that separates the system from its surroundings is chosen by the observer.
+Note: Also called a physical system. The boundary that separates the system from its surroundings is chosen by the observer.
 
 ## References
 

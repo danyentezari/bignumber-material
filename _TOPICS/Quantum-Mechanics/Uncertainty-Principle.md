@@ -2,7 +2,7 @@
 
 An inequality relating position and momentum spreads that is used to bound how sharply both can be known in the same quantum state.
 
-1\. It is impossible to prepare a particle in a state in which position and momentum along one axis are both exactly known. This principle is used to replace a classical phase-space point by a minimum product of spreads.
+The Heisenberg relation. It is impossible to prepare a particle in a state in which position and momentum along one axis are both exactly known. This principle is used to replace a classical phase-space point by a minimum product of spreads.
 
 The Heisenberg uncertainty relation is
 
@@ -16,7 +16,7 @@ where
 - $\Delta p$ is the uncertainty in momentum.
 - $\hbar$ is the reduced Planck constant.
 
-2\. The same bound is written in terms of mean-square deviations. This principle is used to compute the product of variances from expectation values.
+The variance form. The same bound is written in terms of mean-square deviations. This principle is used to compute the product of variances from expectation values.
 
 The variance form of the uncertainty relation is
 
@@ -29,11 +29,11 @@ where
 - $\langle(\Delta x)^{2}\rangle$ is the mean-square deviation in position.
 - $\langle(\Delta p_{x})^{2}\rangle$ is the mean-square deviation in $x$-momentum.
 
-3\. A Gaussian wave packet saturates the bound. This principle is used to identify the minimum-uncertainty state.
+The Gaussian minimum-uncertainty packet. A Gaussian wave packet saturates the bound. This principle is used to identify the minimum-uncertainty state.
 
-4\. A tighter localization in $x$ forces a larger spread in $p$. This principle is used to explain diffraction of a tightly collimated beam.
+The tradeoff of localization. A tighter localization in $x$ forces a larger spread in $p$. This principle is used to explain diffraction of a tightly collimated beam.
 
-Note: These principles are the Heisenberg relation, the variance form, the Gaussian minimum-uncertainty packet, and the tradeoff of localization. Also called the Heisenberg uncertainty principle. Also called the position-momentum uncertainty relation.
+Note: Also called the Heisenberg uncertainty principle. Also called the position-momentum uncertainty relation.
 
 ## References
 

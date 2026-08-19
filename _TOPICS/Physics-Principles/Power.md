@@ -2,7 +2,7 @@
 
 A measure of how quickly energy is transferred or transformed that is used to compare fast and slow energy changes.
 
-1\. Power is the time rate of work. This principle is used to convert a work interval into an instantaneous rate.
+Power as $dW/dt$. Power is the time rate of work. This principle is used to convert a work interval into an instantaneous rate.
 
 The definition of power is
 
@@ -16,7 +16,7 @@ where
 - $W$ is the work.
 - $t$ is time.
 
-2\. Instantaneous mechanical power is the scalar product of force and velocity. This principle is used to compute the power delivered by a known force.
+$\mathbf{F}\cdot\mathbf{v}$. Instantaneous mechanical power is the scalar product of force and velocity. This principle is used to compute the power delivered by a known force.
 
 The mechanical power is
 
@@ -30,9 +30,9 @@ where
 - $\mathbf{F}$ is the force.
 - $\mathbf{v}$ is the velocity.
 
-3\. The SI unit of power is the watt, one joule per second. This principle is used to report laboratory and engineering rates.
+The watt. The SI unit of power is the watt, one joule per second. This principle is used to report laboratory and engineering rates.
 
-4\. For rotation the power is torque times angular velocity. This principle is used to compute the power of a shaft or a motor.
+Rotational power. For rotation the power is torque times angular velocity. This principle is used to compute the power of a shaft or a motor.
 
 The rotational power is
 
@@ -46,7 +46,7 @@ where
 - $\boldsymbol{\tau}$ is the torque.
 - $\boldsymbol{\omega}$ is the angular velocity.
 
-5\. In a circuit the electrical power is the product of current and voltage drop. This principle is used to compute heating in a resistor.
+Electrical power $IV$. In a circuit the electrical power is the product of current and voltage drop. This principle is used to compute heating in a resistor.
 
 The electrical power is
 
@@ -60,7 +60,7 @@ where
 - $I$ is the current.
 - $V$ is the voltage drop.
 
-Note: These principles are power as $dW/dt$, $\mathbf{F}\cdot\mathbf{v}$, the watt, rotational power, and electrical power $IV$. A large energy change done slowly can have small power. A small energy change done quickly can have large power. Ideal capacitors and inductors average zero power over an AC cycle.
+Note: A large energy change done slowly can have small power. A small energy change done quickly can have large power. Ideal capacitors and inductors average zero power over an AC cycle.
 
 ## References
 

@@ -2,7 +2,7 @@
 
 An interaction between charged matter and the electromagnetic field that is used to describe absorption and emission of radiation by quantum systems.
 
-1\. A charged particle couples to the electromagnetic potentials through the Hamiltonian. This principle is used to replace the free kinetic term by the minimally coupled kinetic term.
+Minimal coupling. A charged particle couples to the electromagnetic potentials through the Hamiltonian. This principle is used to replace the free kinetic term by the minimally coupled kinetic term.
 
 The minimally coupled Hamiltonian is
 
@@ -18,7 +18,7 @@ where
 - $m$ is the mass.
 - $\mathbf{p}$ is the momentum.
 
-2\. An oscillating field can raise or lower the energy of a bound system by one photon. This principle is used to describe absorption and emission.
+The Bohr frequency condition. An oscillating field can raise or lower the energy of a bound system by one photon. This principle is used to describe absorption and emission.
 
 The Bohr frequency condition is
 
@@ -32,9 +32,7 @@ where
 - $f$ is the frequency of the photon.
 - $E_{i}$ and $E_{f}$ are the initial and final energies.
 
-3\. The rate of a weak transition is given by Fermi's golden rule. This principle is used to compute Einstein coefficients and selection rules.
-
-Note: These principles are minimal coupling, the Bohr frequency condition, and Fermi's golden rule for radiative rates.
+Fermi's golden rule for radiative rates. The rate of a weak transition is given by Fermi's golden rule. This principle is used to compute Einstein coefficients and selection rules.
 
 ## References
 

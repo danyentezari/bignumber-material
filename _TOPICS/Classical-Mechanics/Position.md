@@ -2,7 +2,7 @@
 
 A location of an object relative to a chosen coordinate system that is used to say where the object is in space, where a coordinate system is a choice of origin and axes.
 
-1\. A position vector is the directed segment from a fixed origin to the location of the object. An origin is the chosen reference point of the coordinate system. This principle is used to write location in a form that can be differentiated to give velocity.
+The position vector. A position vector is the directed segment from a fixed origin to the location of the object. An origin is the chosen reference point of the coordinate system. This principle is used to write location in a form that can be differentiated to give velocity.
 
 The position vector is
 
@@ -16,7 +16,7 @@ where
 - $x$, $y$, and $z$ are the Cartesian coordinates.
 - $\hat{\mathbf{i}}$, $\hat{\mathbf{j}}$, and $\hat{\mathbf{k}}$ are the unit vectors along the axes.
 
-2\. Cartesian coordinates locate a point by signed perpendicular distances along mutually perpendicular axes that meet at the origin. This principle is used to turn a geometric location into three numbers.
+Cartesian coordinates. Cartesian coordinates locate a point by signed perpendicular distances along mutually perpendicular axes that meet at the origin. This principle is used to turn a geometric location into three numbers.
 
 The Cartesian coordinates of a point are
 
@@ -29,9 +29,9 @@ where
 - $P$ is the point.
 - $x$, $y$, and $z$ are the signed distances from the origin along the axes.
 
-3\. A reference frame is a physical coordinate system with measuring rods and synchronized clocks. An inertial frame is a frame that is not accelerating. This principle is used to say which observer is making the position measurement.
+The reference frame. A reference frame is a physical coordinate system with measuring rods and synchronized clocks. An inertial frame is a frame that is not accelerating. This principle is used to say which observer is making the position measurement.
 
-4\. The relative position of one object with respect to another is the difference of their position vectors from a common origin. This principle is used to locate one body as seen from another.
+Relative position. The relative position of one object with respect to another is the difference of their position vectors from a common origin. This principle is used to locate one body as seen from another.
 
 The relative position is
 
@@ -45,7 +45,7 @@ where
 - $\mathbf{r}_{CB}$ is the position of $C$ from $B$.
 - $\mathbf{r}_{AB}$ is the position of $B$ from $A$.
 
-5\. The Euclidean distance between two points is the length of the straight segment that joins them. This principle is used to compute how far apart two locations are.
+Euclidean distance. The Euclidean distance between two points is the length of the straight segment that joins them. This principle is used to compute how far apart two locations are.
 
 The Euclidean distance is
 
@@ -58,7 +58,7 @@ where
 - $r$ is the distance between the two points.
 - $(x_{1},y_{1},z_{1})$ and $(x_{2},y_{2},z_{2})$ are the Cartesian coordinates of the points.
 
-Note: These principles are the position vector, Cartesian coordinates, the reference frame, relative position, and Euclidean distance. Also described by a position vector. Also called the radius vector from a reference point.
+Note: Also described by a position vector. Also called the radius vector from a reference point.
 
 ## References
 

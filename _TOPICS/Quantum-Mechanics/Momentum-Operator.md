@@ -2,7 +2,7 @@
 
 An operator equal to $-i\hbar$ times differentiation that is used to represent the momentum observable in the position representation.
 
-1\. In the position representation the momentum operator is $-i\hbar$ times the derivative. This principle is used to compute $\langle p\rangle$ and kinetic energy $p^{2}/2m$.
+$P=-i\hbar d/dx$. In the position representation the momentum operator is $-i\hbar$ times the derivative. This principle is used to compute $\langle p\rangle$ and kinetic energy $p^{2}/2m$.
 
 The momentum operator is
 
@@ -16,7 +16,7 @@ where
 - $\hbar$ is the reduced Planck constant.
 - $x$ is the position coordinate.
 
-2\. Plane waves are eigenfunctions of $P$. This principle is used to identify states of definite momentum.
+Momentum eigenfunctions. Plane waves are eigenfunctions of $P$. This principle is used to identify states of definite momentum.
 
 The momentum eigenvalue equation is
 
@@ -29,7 +29,7 @@ where
 - $\psi_{p}(x)$ is a momentum eigenfunction.
 - $p$ is the momentum eigenvalue.
 
-3\. Momentum generates translations. This principle is used to write an infinitesimal shift as $1-(i/\hbar)p\,dx$.
+Momentum as the generator of translations. Momentum generates translations. This principle is used to write an infinitesimal shift as $1-(i/\hbar)p\,dx$.
 
 The infinitesimal translation operator is
 
@@ -43,7 +43,7 @@ where
 - $p$ is the momentum operator.
 - $\hbar$ is the reduced Planck constant.
 
-Note: These principles are $P=-i\hbar d/dx$, momentum eigenfunctions, and momentum as the generator of translations. Also denoted $P$. Also denoted $\hat{p}$. Also denoted $p$.
+Note: Also denoted $P$. Also denoted $\hat{p}$. Also denoted $p$.
 
 ## References
 

@@ -2,9 +2,9 @@
 
 A measure of an object's participation in electromagnetic interactions that is used to tell how strongly it attracts or repels other charges.
 
-1\. Charge comes in two kinds, called positive and negative. Like charges repel and unlike charges attract. This principle is used to determine the direction of the Coulomb force.
+Two kinds of charge. Charge comes in two kinds, called positive and negative. Like charges repel and unlike charges attract. This principle is used to determine the direction of the Coulomb force.
 
-2\. Charge is quantized: it appears only in integer multiples of the elementary charge $e$. This principle is used to write $q=Ne$ for ordinary matter.
+Quantization. Charge is quantized: it appears only in integer multiples of the elementary charge $e$. This principle is used to write $q=Ne$ for ordinary matter.
 
 The quantization of charge is
 
@@ -18,11 +18,11 @@ where
 - $N$ is an integer.
 - $e$ is the elementary charge.
 
-3\. Charge is conserved: the total charge of an isolated system does not change. This principle is used to balance charge in every process.
+Conservation. Charge is conserved: the total charge of an isolated system does not change. This principle is used to balance charge in every process.
 
-4\. Charge is a Lorentz scalar: its value does not change with the motion of the carrier. This principle is used to treat $q$ as an intrinsic property of a particle.
+Lorentz invariance. Charge is a Lorentz scalar: its value does not change with the motion of the carrier. This principle is used to treat $q$ as an intrinsic property of a particle.
 
-5\. The electrostatic force between two point charges falls as the inverse square of their separation. This principle is used to compute the force of one charge on another.
+Coulomb's law. The electrostatic force between two point charges falls as the inverse square of their separation. This principle is used to compute the force of one charge on another.
 
 Coulomb's law is
 
@@ -38,9 +38,9 @@ where
 - $\hat{\mathbf{r}}$ is the unit vector from $q_{1}$ to $q_{2}$.
 - $\epsilon_{0}$ is the permittivity of free space.
 
-6\. Charge can be transferred by contact and can polarize neutral matter. Polarization is a separation of positive and negative charge inside a neutral body. This principle is used to explain attraction of a charged rod to an uncharged scrap of paper.
+Transfer and polarization. Charge can be transferred by contact and can polarize neutral matter. Polarization is a separation of positive and negative charge inside a neutral body. This principle is used to explain attraction of a charged rod to an uncharged scrap of paper.
 
-Note: These principles are two kinds of charge, quantization, conservation, Lorentz invariance, Coulomb's law, and transfer and polarization. Also called electric charge. Charge for charge, the electrostatic force is immensely stronger than gravity between the same particles.
+Note: Also called electric charge. Charge for charge, the electrostatic force is immensely stronger than gravity between the same particles.
 
 ## References
 

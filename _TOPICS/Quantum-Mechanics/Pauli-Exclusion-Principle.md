@@ -2,13 +2,11 @@
 
 A quantum-mechanical rule that is used to forbid two identical fermions from occupying the same quantum state, where a fermion is a particle with half-integer spin, and where a quantum state is a complete set of quantum numbers for one particle.
 
-1\. No two electrons can occupy the same state. This principle is used to fill orbitals with at most two electrons of opposite spin.
+The exclusion rule. No two electrons can occupy the same state. This principle is used to fill orbitals with at most two electrons of opposite spin.
 
-2\. The many-electron wavefunction must be antisymmetric under exchange of any two electrons. An antisymmetric wavefunction changes sign when two particle labels are swapped. This principle is used to write Slater determinants.
+Antisymmetry of the fermion wavefunction. The many-electron wavefunction must be antisymmetric under exchange of any two electrons. An antisymmetric wavefunction changes sign when two particle labels are swapped. This principle is used to write Slater determinants.
 
-3\. A complete one-electron label is $(n,\ell,m_{\ell},m_{s})$. This principle is used to count how many electrons fit in a subshell.
-
-Note: These principles are the exclusion rule, antisymmetry of the fermion wavefunction, and the four one-electron quantum numbers.
+The four one-electron quantum numbers. A complete one-electron label is $(n,\ell,m_{\ell},m_{s})$. This principle is used to count how many electrons fit in a subshell.
 
 ## References
 

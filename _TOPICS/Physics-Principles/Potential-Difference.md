@@ -2,7 +2,7 @@
 
 A comparison of potential between two points that is used to tell how much influence changes from one place to another.
 
-1\. The potential difference between two points is the work per unit charge to carry a test charge from one point to the other. This principle is used to assign a single number to a pair of points.
+Work per unit charge. The potential difference between two points is the work per unit charge to carry a test charge from one point to the other. This principle is used to assign a single number to a pair of points.
 
 The potential difference as work per unit charge is
 
@@ -16,7 +16,7 @@ where
 - $W$ is the work to move charge $q$ from $a$ to $b$.
 - $q$ is the test charge.
 
-2\. The same difference is minus the line integral of the electric field. This principle is used to compute voltage from a known $\mathbf{E}$.
+The line integral of $\mathbf{E}$. The same difference is minus the line integral of the electric field. This principle is used to compute voltage from a known $\mathbf{E}$.
 
 The line-integral form is
 
@@ -30,9 +30,9 @@ where
 - $\mathbf{E}$ is the electric field.
 - $d\mathbf{l}$ is a displacement along the path.
 
-3\. The value does not depend on where the zero of potential is chosen. This principle is used to treat only differences as physically meaningful.
+Independence of the zero. The value does not depend on where the zero of potential is chosen. This principle is used to treat only differences as physically meaningful.
 
-4\. A potential difference drives current through a resistive path and changes the kinetic energy of a charge that moves between the points. This principle is used to analyze circuits and particle accelerators.
+Current and kinetic energy. A potential difference drives current through a resistive path and changes the kinetic energy of a charge that moves between the points. This principle is used to analyze circuits and particle accelerators.
 
 Ohm's law is
 
@@ -46,7 +46,7 @@ where
 - $\Delta V$ is the potential difference.
 - $R$ is the resistance.
 
-5\. For a pair of conductors the stored charge is proportional to the potential difference. This principle is used to define capacitance.
+Capacitance. For a pair of conductors the stored charge is proportional to the potential difference. This principle is used to define capacitance.
 
 The capacitor relation is
 
@@ -60,7 +60,7 @@ where
 - $C$ is the capacitance.
 - $\Delta V$ is the potential difference.
 
-Note: These principles are work per unit charge, the line integral of $\mathbf{E}$, independence of the zero, current and kinetic energy, and capacitance. Also called voltage when the influence is electric.
+Note: Also called voltage when the influence is electric.
 
 ## References
 

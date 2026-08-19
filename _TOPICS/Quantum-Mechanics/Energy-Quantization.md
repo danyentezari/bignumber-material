@@ -2,9 +2,9 @@
 
 A restriction of bound-system energies to a discrete set that is used to compute the allowed energies and the photons exchanged between them, where a bound system is a system confined by a potential.
 
-1\. A bound quantum system has only discrete allowed energies. This principle is used to replace a continuous classical energy by a spectrum of levels $E_{n}$.
+Discrete bound energies. A bound quantum system has only discrete allowed energies. This principle is used to replace a continuous classical energy by a spectrum of levels $E_{n}$.
 
-2\. A photon exchanged in a jump between two levels carries the energy difference. This principle is used to match spectral lines to level gaps.
+The Bohr frequency condition. A photon exchanged in a jump between two levels carries the energy difference. This principle is used to match spectral lines to level gaps.
 
 The Bohr frequency condition is
 
@@ -18,7 +18,7 @@ where
 - $f$ is the frequency of the photon.
 - $E_{i}$ and $E_{f}$ are the initial and final energies.
 
-3\. The energy of one photon is $hf$. This principle is used to convert a measured frequency into a photon energy.
+The Planck relation. The energy of one photon is $hf$. This principle is used to convert a measured frequency into a photon energy.
 
 The Planck relation is
 
@@ -32,7 +32,7 @@ where
 - $h$ is Planck's constant.
 - $f$ is the frequency.
 
-4\. The hydrogen energies fall as the inverse square of the principal quantum number. This principle is used to compute the hydrogen spectrum and the Rydberg formula.
+The hydrogen $1/n^{2}$ spectrum. The hydrogen energies fall as the inverse square of the principal quantum number. This principle is used to compute the hydrogen spectrum and the Rydberg formula.
 
 The hydrogen energy levels are
 
@@ -44,8 +44,6 @@ where
 
 - $E_{n}$ is the energy of level $n$.
 - $n$ is the principal quantum number.
-
-Note: These principles are discrete bound energies, the Bohr frequency condition, the Planck relation, and the hydrogen $1/n^{2}$ spectrum.
 
 ## References
 

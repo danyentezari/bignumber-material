@@ -2,7 +2,7 @@
 
 A process in which a particle has nonzero probability to appear beyond a classically forbidden barrier that is used to explain barrier penetration in quantum mechanics.
 
-1\. In a region where $E<V$, a classical particle cannot enter, but the Schrödinger wavefunction decays exponentially rather than vanishing. This principle is used to assign a nonzero finding probability inside the barrier.
+Exponential decay in the forbidden region. In a region where $E<V$, a classical particle cannot enter, but the Schrödinger wavefunction decays exponentially rather than vanishing. This principle is used to assign a nonzero finding probability inside the barrier.
 
 The decay constant in the forbidden region is
 
@@ -18,9 +18,9 @@ where
 - $E$ is the energy.
 - $\hbar$ is the reduced Planck constant.
 
-2\. A wave incident on a barrier of finite width yields a nonzero transmitted amplitude on the other side. This principle is used to define tunneling as transmission with $E<V$.
+Transmission with $E<V$. A wave incident on a barrier of finite width yields a nonzero transmitted amplitude on the other side. This principle is used to define tunneling as transmission with $E<V$.
 
-3\. The transmission probability of a wide barrier falls exponentially with width and with $\kappa$. This principle is used to estimate tunneling rates.
+The exponential dependence of $T$ on width. The transmission probability of a wide barrier falls exponentially with width and with $\kappa$. This principle is used to estimate tunneling rates.
 
 The wide-barrier transmission is
 
@@ -34,7 +34,7 @@ where
 - $L$ is the barrier width.
 - $\kappa$ is the decay constant.
 
-Note: These principles are exponential decay in the forbidden region, transmission with $E<V$, and the exponential dependence of $T$ on width. Also called barrier penetration. Also called tunneling.
+Note: Also called barrier penetration. Also called tunneling.
 
 ## References
 

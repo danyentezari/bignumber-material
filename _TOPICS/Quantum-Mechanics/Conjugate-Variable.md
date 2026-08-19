@@ -2,7 +2,7 @@
 
 A variable paired with another variable through a derivative that is used to replace that other variable in a Legendre transform, where a Legendre transform is a change from velocity variables to momentum variables.
 
-1\. The momentum conjugate to a coordinate $q_{i}$ is the derivative of the Lagrangian with respect to the corresponding velocity. This principle is used to define $p_{i}$ from $L$.
+The definition of conjugate momentum. The momentum conjugate to a coordinate $q_{i}$ is the derivative of the Lagrangian with respect to the corresponding velocity. This principle is used to define $p_{i}$ from $L$.
 
 The conjugate momentum is
 
@@ -17,9 +17,9 @@ where
 - $\dfrac{dq_{i}}{dt}$ is the $i$-th generalized velocity.
 - $p_{i}$ is the momentum conjugate to $q_{i}$.
 
-2\. A coordinate and its conjugate momentum form a conjugate pair. Position and momentum are the standard example. This principle is used to label phase-space coordinates $(q,p)$.
+Conjugate pairs. A coordinate and its conjugate momentum form a conjugate pair. Position and momentum are the standard example. This principle is used to label phase-space coordinates $(q,p)$.
 
-3\. In quantum mechanics a conjugate pair does not commute. This principle is used to write the canonical commutation relation and the uncertainty principle.
+The canonical commutation relation. In quantum mechanics a conjugate pair does not commute. This principle is used to write the canonical commutation relation and the uncertainty principle.
 
 The canonical commutation relation is
 
@@ -33,7 +33,7 @@ where
 - $\hat{p}$ is the momentum operator.
 - $\hbar$ is the reduced Planck constant.
 
-Note: These principles are the definition of conjugate momentum, conjugate pairs, and the canonical commutation relation. Also called a canonically conjugate variable. Also called conjugate momentum when paired with a coordinate.
+Note: Also called a canonically conjugate variable. Also called conjugate momentum when paired with a coordinate.
 
 ## References
 

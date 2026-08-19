@@ -2,9 +2,9 @@
 
 A notation that writes vectors and linear functionals in matching symbols that is used to compute inner products and matrix elements, where a linear functional is a map from states to complex numbers.
 
-1\. A ket $|\psi\rangle$ is a vector in a complex Hilbert space. A Hilbert space is a complete inner-product space of states. This principle is used to write quantum states as kets.
+The ket as a state vector. A ket $|\psi\rangle$ is a vector in a complex Hilbert space. A Hilbert space is a complete inner-product space of states. This principle is used to write quantum states as kets.
 
-2\. A bra $\langle\phi|$ is the linear functional that maps a ket to the inner product $\langle\phi|\psi\rangle$. This principle is used to compute amplitudes.
+The bra as a linear functional. A bra $\langle\phi|$ is the linear functional that maps a ket to the inner product $\langle\phi|\psi\rangle$. This principle is used to compute amplitudes.
 
 The action of a bra on a ket is
 
@@ -17,7 +17,7 @@ where
 - $\mathcal{H}$ is the Hilbert space.
 - $\langle\phi|\psi\rangle$ is the inner product.
 
-3\. The bra is the Hermitian conjugate of the corresponding ket. This principle is used to pass from $|\phi\rangle$ to $\langle\phi|$.
+The dagger relation. The bra is the Hermitian conjugate of the corresponding ket. This principle is used to pass from $|\phi\rangle$ to $\langle\phi|$.
 
 The bra-ket relation is
 
@@ -29,9 +29,9 @@ where
 
 - $\dagger$ is the Hermitian conjugate.
 
-4\. The matrix element of an operator is $\langle\phi|A|\psi\rangle$. This principle is used to compute amplitudes and expectation values.
+Dirac matrix elements. The matrix element of an operator is $\langle\phi|A|\psi\rangle$. This principle is used to compute amplitudes and expectation values.
 
-Note: These principles are the ket as a state vector, the bra as a linear functional, the dagger relation, and Dirac matrix elements. Also called Dirac notation.
+Note: Also called Dirac notation.
 
 ## References
 

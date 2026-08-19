@@ -2,9 +2,9 @@
 
 A measure of influence at a point in space that is used to compare how strongly a force field acts from place to place.
 
-1\. A potential is defined only up to an additive constant. This principle is used to choose a convenient zero, such as infinity or a grounded conductor.
+The additive constant. A potential is defined only up to an additive constant. This principle is used to choose a convenient zero, such as infinity or a grounded conductor.
 
-2\. A conservative force is minus the gradient of the potential. A conservative force is a force whose work around every closed path vanishes. This principle is used to recover $\mathbf{F}$ from a single scalar function.
+The gradient relation. A conservative force is minus the gradient of the potential. A conservative force is a force whose work around every closed path vanishes. This principle is used to recover $\mathbf{F}$ from a single scalar function.
 
 The force from a potential is
 
@@ -18,9 +18,9 @@ where
 - $\nabla$ is the gradient.
 - $U$ is the potential energy.
 
-3\. Potentials are scalars and add by ordinary sums. This principle is used to superpose the potentials of many sources.
+Superposition of scalars. Potentials are scalars and add by ordinary sums. This principle is used to superpose the potentials of many sources.
 
-4\. In a source-free region the electrostatic potential satisfies Laplace's equation. This principle is used to solve boundary-value problems between conductors.
+Laplace's equation. In a source-free region the electrostatic potential satisfies Laplace's equation. This principle is used to solve boundary-value problems between conductors.
 
 Laplace's equation is
 
@@ -33,11 +33,11 @@ where
 - $\nabla^{2}$ is the Laplacian.
 - $V$ is the electric potential.
 
-5\. The potential difference between two points is the work per unit charge or mass along a path joining them. This principle is used to compute kinetic-energy changes without following the force vector.
+Work per unit charge. The potential difference between two points is the work per unit charge or mass along a path joining them. This principle is used to compute kinetic-energy changes without following the force vector.
 
-6\. Stable equilibrium occurs at a local minimum of potential energy. This principle is used to locate rest points of a conservative system.
+Equilibrium at a minimum. Stable equilibrium occurs at a local minimum of potential energy. This principle is used to locate rest points of a conservative system.
 
-Note: These principles are the additive constant, the gradient relation, superposition of scalars, Laplace's equation, work per unit charge, and equilibrium at a minimum. Also called a potential energy function when it tells how much stored energy is available. Also called a scalar potential when a field can be read from it. In quantum mechanics the potential enters as a position-dependent multiplicative operator.
+Note: Also called a potential energy function when it tells how much stored energy is available. Also called a scalar potential when a field can be read from it. In quantum mechanics the potential enters as a position-dependent multiplicative operator.
 
 ## References
 

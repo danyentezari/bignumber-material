@@ -2,7 +2,7 @@
 
 A measure of a system's capacity to produce change that is used throughout physics to keep track of what can happen.
 
-1\. The total energy of an isolated system stays constant. An isolated system exchanges neither matter nor energy with its surroundings. This principle is used to balance energy for allowed changes.
+Conservation of energy. The total energy of an isolated system stays constant. An isolated system exchanges neither matter nor energy with its surroundings. This principle is used to balance energy for allowed changes.
 
 Conservation of energy is
 
@@ -14,9 +14,9 @@ where
 
 - $E_{\mathrm{sys}}$ is the total energy of the isolated system.
 
-2\. Energy exists in many forms that convert into one another. Mechanical energy is often split into kinetic energy of motion and potential energy of configuration. This principle is used to follow a conversion such as falling, heating, or radiation.
+Conversion of forms. Energy exists in many forms that convert into one another. Mechanical energy is often split into kinetic energy of motion and potential energy of configuration. This principle is used to follow a conversion such as falling, heating, or radiation.
 
-3\. Energy crosses a system boundary as work and as heat. Work is transfer through organized motion. Heat is transfer driven by a temperature difference. This principle is used to write the First Law.
+The First Law. Energy crosses a system boundary as work and as heat. Work is transfer through organized motion. Heat is transfer driven by a temperature difference. This principle is used to write the First Law.
 
 The First Law is
 
@@ -30,7 +30,7 @@ where
 - $q$ is the heat absorbed by the system.
 - $w$ is the work done on the system.
 
-4\. Rest energy is equivalent to mass. This principle is used to convert a mass defect into a nuclear energy release.
+Mass-energy equivalence. Rest energy is equivalent to mass. This principle is used to convert a mass defect into a nuclear energy release.
 
 The mass-energy relation is
 
@@ -44,11 +44,11 @@ where
 - $m$ is the rest mass.
 - $c$ is the speed of light.
 
-5\. On the quantum scale, bound systems have discrete allowed energies. This principle is used to compute spectral lines from level differences.
+Energy quantization. On the quantum scale, bound systems have discrete allowed energies. This principle is used to compute spectral lines from level differences.
 
-6\. Energy can reside in fields and can travel through empty space as radiation. This principle is used to account for sunlight and radio waves.
+Field and radiation energy. Energy can reside in fields and can travel through empty space as radiation. This principle is used to account for sunlight and radio waves.
 
-Note: These principles are conservation of energy, conversion of forms, the First Law, mass-energy equivalence, energy quantization, and field and radiation energy. Mechanical energy is often split into motion energy and stored energy. As entropy rises, energy tends to degrade into less useful thermal forms.
+Note: Mechanical energy is often split into motion energy and stored energy. As entropy rises, energy tends to degrade into less useful thermal forms.
 
 ## References
 

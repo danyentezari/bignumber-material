@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>219 Semiconductor | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="A solid with a small band gap. At room temperature a few electrons can be thermally excited into the conduction band and then move freely, carrying some current. Note: Also called a small-gap...">
+<meta name="description" content="A solid with a small band gap. At room temperature a few electrons can be thermally excited into the conduction band and then move freely, carrying some current. The band theory of solids. When...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="219 Semiconductor | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="A solid with a small band gap. At room temperature a few electrons can be thermally excited into the conduction band and then move freely, carrying some current. Note: Also called a small-gap...">
+<meta property="og:description" content="A solid with a small band gap. At room temperature a few electrons can be thermally excited into the conduction band and then move freely, carrying some current. The band theory of solids. When...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="219 Semiconductor | Mathematics for Physics">
-<meta name="twitter:description" content="A solid with a small band gap. At room temperature a few electrons can be thermally excited into the conduction band and then move freely, carrying some current. Note: Also called a small-gap...">
+<meta name="twitter:description" content="A solid with a small band gap. At room temperature a few electrons can be thermally excited into the conduction band and then move freely, carrying some current. The band theory of solids. When...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -224,15 +224,30 @@
 <span class="header-section-number">219</span> Semiconductor<a class="anchor" aria-label="anchor" href="#semiconductor"><i class="fas fa-link"></i></a>
 </h1>
 <p>A solid with a small band gap. At room temperature a few electrons can be thermally excited into the conduction band and then move freely, carrying some current.</p>
+<p>The band theory of solids. When atomic orbitals overlap in a crystal, they split into bands of allowed energies separated by forbidden gaps. A band gap is a range of energy with no electron states. This principle is used to classify a crystal from its band occupancy at zero temperature.</p>
+<p>The band gap. If the forbidden gap is below about <span class="math inline">\(4\,\mathrm{eV}\)</span>, the crystal is a semiconductor rather than a diamond-like insulator. This principle is used to separate semiconductors from ordinary insulators by gap size.</p>
+<p>Valence band and conduction band. The valence band is the highest occupied band at zero temperature. The conduction band is the lowest empty band at zero temperature. They are separated by the band gap. This principle is used to name the two bands that control conduction.</p>
+<p>Intrinsic carrier excitation. At absolute zero every electron is locked in the valence band, so a pure semiconductor is an insulator. Finite temperature promotes a few electrons into the conduction band and leaves holes behind. A hole is a vacant positively charged state. This principle is used to explain room-temperature conduction.</p>
+<p>The intrinsic carrier density satisfies</p>
+<p><span class="math display">\[
+n_{i} \propto \exp\left(-\dfrac{E_{\mathrm{gap}}}{2k_{\mathrm{B}}T}\right)
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(n_{i}\)</span> is the intrinsic carrier density.</li>
+<li>
+<span class="math inline">\(E_{\mathrm{gap}}\)</span> is the band gap.</li>
+<li>
+<span class="math inline">\(k_{\mathrm{B}}\)</span> is Boltzmann’s constant.</li>
+<li>
+<span class="math inline">\(T\)</span> is the temperature.</li>
+</ul>
+<p>Distinction from a metal. A metal has at least one partially filled band and needs no thermal jump to carry current. This principle is used to tell a metal from a semiconductor.</p>
+<p>Distinction from an ordinary insulator. An ordinary insulator has a larger gap, such as about <span class="math inline">\(5.4\,\mathrm{eV}\)</span> in diamond, so thermal promotion is negligible at room temperature. This principle is used to tell a semiconductor from a wide-gap insulator.</p>
+<p>Elemental examples. Silicon has a gap of about <span class="math inline">\(1.1\,\mathrm{eV}\)</span>. Germanium has a gap of about <span class="math inline">\(0.67\,\mathrm{eV}\)</span>. This principle is used to identify common elemental semiconductors.</p>
+<p>Doping. Doping is the deliberate addition of impurity atoms that supply extra carriers. An extrinsic semiconductor is a doped crystal whose conduction is dominated by those impurities. This principle is used to control conductivity far beyond the pure-crystal value.</p>
 <p>Note: Also called a small-gap insulator. Also called a band insulator with a small band gap.</p>
-<ol style="list-style-type: decimal">
-<li>Has a filled valence band and an empty conduction band separated by a band gap.</li>
-<li>Has a band gap small enough, typically below about <span class="math inline">\(4\,\mathrm{eV}\)</span>, that room-temperature thermal energy promotes some electrons across the gap.</li>
-<li>Conducts weakly at room temperature and behaves as an insulator near absolute zero.</li>
-<li>Differs from a metal, which has one or more partially filled bands and needs no thermal jump to carry current.</li>
-<li>Differs from an ordinary insulator, whose larger gap, such as about <span class="math inline">\(6\)</span> to <span class="math inline">\(7\,\mathrm{eV}\)</span> in diamond, keeps thermal promotion negligible at room temperature.</li>
-<li>Includes elemental examples such as silicon, with gap about <span class="math inline">\(1.1\,\mathrm{eV}\)</span>, and germanium, with gap about <span class="math inline">\(0.7\,\mathrm{eV}\)</span>.</li>
-</ol>
 <div id="references-208" class="section level2" number="219.1">
 <h2>
 <span class="header-section-number">219.1</span> References<a class="anchor" aria-label="anchor" href="#references-208"><i class="fas fa-link"></i></a>

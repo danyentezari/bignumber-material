@@ -2,7 +2,7 @@
 
 A vector rate of change of position that is used to describe how fast and in which direction an object moves, where a rate of change is a derivative with respect to time.
 
-1\. Average velocity is the net displacement divided by the elapsed time. Displacement is the change of position from start to finish. This principle is used to describe overall progress over a finite interval.
+Average velocity. Average velocity is the net displacement divided by the elapsed time. Displacement is the change of position from start to finish. This principle is used to describe overall progress over a finite interval.
 
 The average velocity is
 
@@ -16,7 +16,7 @@ where
 - $\Delta\mathbf{r}$ is the displacement.
 - $\Delta t$ is the elapsed time.
 
-2\. Instantaneous velocity is the limit of the average velocity as the time interval shrinks to zero. This principle is used to give the speed and direction at one moment.
+Instantaneous velocity. Instantaneous velocity is the limit of the average velocity as the time interval shrinks to zero. This principle is used to give the speed and direction at one moment.
 
 The instantaneous velocity is
 
@@ -30,7 +30,7 @@ where
 - $\Delta\mathbf{r}$ is the displacement.
 - $\Delta t$ is the elapsed time.
 
-3\. Velocity is the time derivative of the position vector and points along the path of motion. This principle is used to read the three components of motion from the coordinates.
+Velocity as the time derivative of position. Velocity is the time derivative of the position vector and points along the path of motion. This principle is used to read the three components of motion from the coordinates.
 
 The velocity as a derivative is
 
@@ -51,7 +51,7 @@ where
 - $t$ is time.
 - $x$, $y$, and $z$ are the Cartesian coordinates.
 
-4\. The relative velocity of one object with respect to another is the difference of their velocities. This principle is used to describe motion as seen from a moving observer.
+Relative velocity. The relative velocity of one object with respect to another is the difference of their velocities. This principle is used to describe motion as seen from a moving observer.
 
 The relative velocity is
 
@@ -65,7 +65,7 @@ where
 - $\mathbf{v}_{C}$ is the velocity of $C$.
 - $\mathbf{v}_{A}$ is the velocity of $A$.
 
-5\. Uniform motion is motion at constant velocity. This principle is used to identify the case of vanishing acceleration and vanishing net force.
+Uniform motion. Uniform motion is motion at constant velocity. This principle is used to identify the case of vanishing acceleration and vanishing net force.
 
 Uniform motion is
 
@@ -78,7 +78,7 @@ where
 - $\mathbf{v}$ is the velocity.
 - $\mathbf{a}$ is the acceleration.
 
-Note: These principles are average velocity, instantaneous velocity, velocity as the time derivative of position, relative velocity, and uniform motion. Also called the velocity vector.
+Note: Also called the velocity vector.
 
 ## References
 

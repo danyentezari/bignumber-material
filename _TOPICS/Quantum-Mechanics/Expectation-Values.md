@@ -2,7 +2,7 @@
 
 A weighted average of an observable in a quantum state that is used to predict the mean outcome of many measurements of that observable, where an observable is a measurable quantity represented by a Hermitian operator.
 
-1\. The expectation value of an operator $A$ in a normalized state is the sandwich $\langle\psi|A|\psi\rangle$. This principle is used to compute the mean of many repeated measurements.
+The Dirac sandwich. The expectation value of an operator $A$ in a normalized state is the sandwich $\langle\psi|A|\psi\rangle$. This principle is used to compute the mean of many repeated measurements.
 
 The expectation value is
 
@@ -16,7 +16,7 @@ where
 - $|\psi\rangle$ is the normalized state.
 - $\langle A\rangle$ is the expectation value.
 
-2\. The expectation value of position is the first moment of the probability density. This principle is used to compute the mean position from $\Psi(x)$.
+The position mean. The expectation value of position is the first moment of the probability density. This principle is used to compute the mean position from $\Psi(x)$.
 
 The expectation value of position is
 
@@ -29,7 +29,7 @@ where
 - $\langle x\rangle$ is the mean position.
 - $\psi(x)$ is the wavefunction.
 
-3\. The uncertainty of an observable is the root-mean-square deviation from the expectation value. This principle is used to compute $\Delta A$ for the uncertainty principle.
+The definition of uncertainty. The uncertainty of an observable is the root-mean-square deviation from the expectation value. This principle is used to compute $\Delta A$ for the uncertainty principle.
 
 The uncertainty is
 
@@ -42,7 +42,7 @@ where
 - $\Delta A$ is the uncertainty of $A$.
 - $\langle A\rangle$ is the expectation value of $A$.
 
-Note: These principles are the Dirac sandwich, the position mean, and the definition of uncertainty. Also called the mean value.
+Note: Also called the mean value.
 
 ## References
 

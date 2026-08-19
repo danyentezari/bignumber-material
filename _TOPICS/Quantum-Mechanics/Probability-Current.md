@@ -2,7 +2,7 @@
 
 A vector field built from a wavefunction that is used to express the flow of probability density through space.
 
-1\. Probability is locally conserved: any decrease of $\rho$ in a volume equals the outward flux of the probability current. This principle is used to write a continuity equation for $|\Psi|^{2}$.
+The continuity equation. Probability is locally conserved: any decrease of $\rho$ in a volume equals the outward flux of the probability current. This principle is used to write a continuity equation for $|\Psi|^{2}$.
 
 The continuity equation is
 
@@ -16,7 +16,7 @@ where
 - $\mathbf{j}$ is the probability current.
 - $t$ is time.
 
-2\. The probability current is built from $\Psi$ and its gradient. This principle is used to compute the flow from a known wavefunction.
+The formula for $\mathbf{j}$. The probability current is built from $\Psi$ and its gradient. This principle is used to compute the flow from a known wavefunction.
 
 The probability current is
 
@@ -31,9 +31,9 @@ where
 - $m$ is the particle mass.
 - $\hbar$ is the reduced Planck constant.
 
-3\. A purely real stationary wavefunction has vanishing current. This principle is used to identify bound standing waves with no net flow.
+Vanishing current for a real wavefunction. A purely real stationary wavefunction has vanishing current. This principle is used to identify bound standing waves with no net flow.
 
-Note: These principles are the continuity equation, the formula for $\mathbf{j}$, and vanishing current for a real wavefunction. Also called probability flux. Also called probability current density.
+Note: Also called probability flux. Also called probability current density.
 
 ## References
 

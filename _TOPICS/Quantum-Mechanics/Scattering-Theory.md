@@ -2,7 +2,7 @@
 
 A framework for collisions that is used to relate incoming free-particle states to outgoing amplitudes and cross sections, where a cross section is an effective area that measures the likelihood of a scattering event.
 
-1\. An incident beam interacting with a short-range target produces an outgoing wave. In the far region the wavefunction is an incident plane wave plus a scattered spherical wave. This principle is used to define the scattering amplitude $f$.
+The incident-plus-scattered wave. An incident beam interacting with a short-range target produces an outgoing wave. In the far region the wavefunction is an incident plane wave plus a scattered spherical wave. This principle is used to define the scattering amplitude $f$.
 
 The asymptotic scattered wave is
 
@@ -17,7 +17,7 @@ where
 - $k$ is the wave number.
 - $r$ is the distance from the target.
 
-2\. The differential cross section is the squared modulus of the scattering amplitude. This principle is used to convert $f$ into a measured angular distribution.
+The differential cross section. The differential cross section is the squared modulus of the scattering amplitude. This principle is used to convert $f$ into a measured angular distribution.
 
 The differential cross section is
 
@@ -31,9 +31,9 @@ where
 - $\Omega$ is solid angle.
 - $f$ is the scattering amplitude.
 
-3\. In one dimension the same problem is stated as reflection and transmission amplitudes. This principle is used to analyze barriers and wells on the line.
+One-dimensional reflection and transmission. In one dimension the same problem is stated as reflection and transmission amplitudes. This principle is used to analyze barriers and wells on the line.
 
-Note: These principles are the incident-plus-scattered wave, the differential cross section, and one-dimensional reflection and transmission. Also called quantum scattering.
+Note: Also called quantum scattering.
 
 ## References
 

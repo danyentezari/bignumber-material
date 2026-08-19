@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>227 Statistical Mechanics | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="A mathematical bridge that is used to deduce the macroscopic properties of bulk matter from the microscopic quantum properties of its individual molecules. 1. Everyday samples hold so many...">
+<meta name="description" content="A mathematical bridge that is used to deduce the macroscopic properties of bulk matter from the microscopic quantum properties of its individual molecules. The ensemble average. Everyday samples...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="227 Statistical Mechanics | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="A mathematical bridge that is used to deduce the macroscopic properties of bulk matter from the microscopic quantum properties of its individual molecules. 1. Everyday samples hold so many...">
+<meta property="og:description" content="A mathematical bridge that is used to deduce the macroscopic properties of bulk matter from the microscopic quantum properties of its individual molecules. The ensemble average. Everyday samples...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="227 Statistical Mechanics | Mathematics for Physics">
-<meta name="twitter:description" content="A mathematical bridge that is used to deduce the macroscopic properties of bulk matter from the microscopic quantum properties of its individual molecules. 1. Everyday samples hold so many...">
+<meta name="twitter:description" content="A mathematical bridge that is used to deduce the macroscopic properties of bulk matter from the microscopic quantum properties of its individual molecules. The ensemble average. Everyday samples...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -224,8 +224,8 @@
 <span class="header-section-number">227</span> Statistical Mechanics<a class="anchor" aria-label="anchor" href="#statistical-mechanics"><i class="fas fa-link"></i></a>
 </h1>
 <p>A mathematical bridge that is used to deduce the macroscopic properties of bulk matter from the microscopic quantum properties of its individual molecules.</p>
-<p>1. Everyday samples hold so many molecules that individual paths cannot be followed. A macroscopic property is then an average over the crowd of molecular states. This principle is used to replace an impossible mechanical description by a probability description.</p>
-<p>2. In thermal equilibrium the probability of a molecular state falls exponentially with its energy. The Boltzmann factor is that exponential weight. This principle is used to compute the fraction of molecules in each energy level.</p>
+<p>The ensemble average. Everyday samples hold so many molecules that individual paths cannot be followed. A macroscopic property is then an average over the crowd of molecular states. This principle is used to replace an impossible mechanical description by a probability description.</p>
+<p>The Boltzmann distribution. In thermal equilibrium the probability of a molecular state falls exponentially with its energy. The Boltzmann factor is that exponential weight. This principle is used to compute the fraction of molecules in each energy level.</p>
 <p>The Boltzmann distribution is</p>
 <p><span class="math display">\[
 p_{i} = \dfrac{e^{-E_{i}/kT}}{Z}
@@ -243,7 +243,7 @@ p_{i} = \dfrac{e^{-E_{i}/kT}}{Z}
 <li>
 <span class="math inline">\(Z\)</span> is the partition function.</li>
 </ul>
-<p>3. The partition function is the sum of the Boltzmann factors of all states. This principle is used to generate the thermodynamic functions from one molecular sum.</p>
+<p>The partition function. The partition function is the sum of the Boltzmann factors of all states. This principle is used to generate the thermodynamic functions from one molecular sum.</p>
 <p>The molecular partition function is</p>
 <p><span class="math display">\[
 Z = \sum_{i} e^{-E_{i}/kT}
@@ -259,7 +259,7 @@ Z = \sum_{i} e^{-E_{i}/kT}
 <li>
 <span class="math inline">\(T\)</span> is the absolute temperature.</li>
 </ul>
-<p>4. Entropy measures how many microscopic arrangements share the same overall state. Multiplicity is that number of arrangements. This principle is used to give entropy a molecular meaning and to recover the Second Law.</p>
+<p>The Boltzmann entropy. Entropy measures how many microscopic arrangements share the same overall state. Multiplicity is that number of arrangements. This principle is used to give entropy a molecular meaning and to recover the Second Law.</p>
 <p>The Boltzmann entropy is</p>
 <p><span class="math display">\[
 S = k\ln W
@@ -273,7 +273,7 @@ S = k\ln W
 <li>
 <span class="math inline">\(W\)</span> is the multiplicity of the macroscopic state.</li>
 </ul>
-<p>5. The Helmholtz energy of a canonical system is determined by the partition function. A canonical system is a closed system in contact with a heat bath at fixed temperature. This principle is used to compute free energies and equilibrium constants from molecular levels.</p>
+<p>The Helmholtz energy from <span class="math inline">\(Z\)</span>. The Helmholtz energy of a canonical system is determined by the partition function. A canonical system is a closed system in contact with a heat bath at fixed temperature. This principle is used to compute free energies and equilibrium constants from molecular levels.</p>
 <p>The Helmholtz energy is</p>
 <p><span class="math display">\[
 F = -kT\ln Z
@@ -289,7 +289,6 @@ F = -kT\ln Z
 <li>
 <span class="math inline">\(Z\)</span> is the partition function.</li>
 </ul>
-<p>Note: These principles are the ensemble average, the Boltzmann distribution, the partition function, the Boltzmann entropy, and the Helmholtz energy from <span class="math inline">\(Z\)</span>.</p>
 <div id="references-216" class="section level2" number="227.1">
 <h2>
 <span class="header-section-number">227.1</span> References<a class="anchor" aria-label="anchor" href="#references-216"><i class="fas fa-link"></i></a>

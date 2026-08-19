@@ -2,7 +2,7 @@
 
 A vector property that is used to describe how strongly a particle or current loop couples to a magnetic field, where a magnetic dipole is a localized circulating current or a spin.
 
-1\. A magnetic moment $\boldsymbol{\mu}$ in a field $\mathbf{B}$ has energy $-\boldsymbol{\mu}\cdot\mathbf{B}$. This principle is used to compute the Zeeman shift of a level.
+The magnetic energy. A magnetic moment $\boldsymbol{\mu}$ in a field $\mathbf{B}$ has energy $-\boldsymbol{\mu}\cdot\mathbf{B}$. This principle is used to compute the Zeeman shift of a level.
 
 The magnetic energy is
 
@@ -16,7 +16,7 @@ where
 - $\boldsymbol{\mu}$ is the magnetic moment.
 - $\mathbf{B}$ is the magnetic field.
 
-2\. Orbital motion produces a moment proportional to $\mathbf{L}$. This principle is used to write the orbital magneton coupling.
+The orbital moment. Orbital motion produces a moment proportional to $\mathbf{L}$. This principle is used to write the orbital magneton coupling.
 
 The orbital magnetic moment is
 
@@ -31,7 +31,7 @@ where
 - $m_{e}$ is the electron mass.
 - $\mathbf{L}$ is the orbital angular momentum.
 
-3\. Spin produces a moment with a $g$-factor near $2$. The $g$-factor is the dimensionless factor that converts spin to magnetic moment. This principle is used to write the spin magnetic moment.
+The spin moment. Spin produces a moment with a $g$-factor near $2$. The $g$-factor is the dimensionless factor that converts spin to magnetic moment. This principle is used to write the spin magnetic moment.
 
 The spin magnetic moment is
 
@@ -44,8 +44,6 @@ where
 - $\boldsymbol{\mu}_{S}$ is the spin magnetic moment.
 - $g_{s}$ is the electron spin $g$-factor.
 - $\mathbf{S}$ is the spin.
-
-Note: These principles are the magnetic energy, the orbital moment, and the spin moment.
 
 ## References
 

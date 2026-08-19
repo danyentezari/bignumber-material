@@ -2,7 +2,7 @@
 
 A measure of an object's resistance to changes in its motion that is used to tell how stubbornly it keeps its current velocity.
 
-1\. Inertial mass quantifies resistance to acceleration under a net force. This principle is used to write Newton's second law as $\mathbf{F}=m\mathbf{a}$.
+Inertial mass. Inertial mass quantifies resistance to acceleration under a net force. This principle is used to write Newton's second law as $\mathbf{F}=m\mathbf{a}$.
 
 Newton's second law is
 
@@ -16,7 +16,7 @@ where
 - $\mathbf{F}_{\mathrm{net}}$ is the net force.
 - $m$ is the inertial mass.
 
-2\. Gravitational mass sets the strength of mutual attraction between bodies. This principle is used to write Newton's law of gravitation.
+Gravitational mass. Gravitational mass sets the strength of mutual attraction between bodies. This principle is used to write Newton's law of gravitation.
 
 Newton's law of gravitation is
 
@@ -31,9 +31,9 @@ where
 - $m_{1}$ and $m_{2}$ are the gravitational masses.
 - $r$ is the separation.
 
-3\. The equivalence principle identifies inertial mass with gravitational mass. This principle is used to treat a gravitational field as locally equivalent to an acceleration.
+The equivalence principle. The equivalence principle identifies inertial mass with gravitational mass. This principle is used to treat a gravitational field as locally equivalent to an acceleration.
 
-4\. Rest energy is mass times $c^{2}$. This principle is used to convert a mass defect into energy.
+$E_{0}=mc^{2}$. Rest energy is mass times $c^{2}$. This principle is used to convert a mass defect into energy.
 
 The mass-energy relation is
 
@@ -47,11 +47,11 @@ where
 - $m$ is the rest mass.
 - $c$ is the speed of light.
 
-5\. Rest mass is a Lorentz scalar: its value is the same in every inertial frame. A Lorentz scalar is a number unchanged by a change of inertial frame. This principle is used to treat $m$ as an intrinsic property of a particle.
+Lorentz invariance of rest mass. Rest mass is a Lorentz scalar: its value is the same in every inertial frame. A Lorentz scalar is a number unchanged by a change of inertial frame. This principle is used to treat $m$ as an intrinsic property of a particle.
 
-6\. Photons have exactly zero rest mass and always move at the speed of light. This principle is used to distinguish massive particles from massless radiation.
+Massless photons. Photons have exactly zero rest mass and always move at the speed of light. This principle is used to distinguish massive particles from massless radiation.
 
-Note: These principles are inertial mass, gravitational mass, the equivalence principle, $E_{0}=mc^{2}$, Lorentz invariance of rest mass, and massless photons. In everyday language mass is often mixed up with weight. Weight is the gravitational pull on an object. Mass is a property of the object itself. Rest mass is not conserved in relativity: rest mass and kinetic energy can convert. In general relativity, mass is a source of spacetime curvature.
+Note: In everyday language mass is often mixed up with weight. Weight is the gravitational pull on an object. Mass is a property of the object itself. Rest mass is not conserved in relativity: rest mass and kinetic energy can convert. In general relativity, mass is a source of spacetime curvature.
 
 ## References
 

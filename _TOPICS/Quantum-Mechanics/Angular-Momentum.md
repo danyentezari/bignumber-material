@@ -2,7 +2,7 @@
 
 An operator that is used to represent rotational motion of a quantum system, equal to the cross product of position and momentum in the orbital case.
 
-1\. Orbital angular momentum is the operator $\mathbf{r}\times\mathbf{p}$. This principle is used to assign a rotational observable to spatial motion.
+$\mathbf{L}=\mathbf{r}\times\mathbf{p}$. Orbital angular momentum is the operator $\mathbf{r}\times\mathbf{p}$. This principle is used to assign a rotational observable to spatial motion.
 
 The orbital angular momentum is
 
@@ -16,7 +16,7 @@ where
 - $\mathbf{r}$ is the position operator.
 - $\mathbf{p}$ is the momentum operator.
 
-2\. The Cartesian components do not commute. This principle is used to explain why $L_{x}$, $L_{y}$, and $L_{z}$ cannot all have sharp values at once.
+The commutation relations. The Cartesian components do not commute. This principle is used to explain why $L_{x}$, $L_{y}$, and $L_{z}$ cannot all have sharp values at once.
 
 The angular-momentum commutation relations are
 
@@ -30,7 +30,7 @@ where
 - $\epsilon_{ijk}$ is the Levi-Civita symbol.
 - $\hbar$ is the reduced Planck constant.
 
-3\. $L^{2}$ commutes with each component, so $L^{2}$ and $L_{z}$ can be sharp together. This principle is used to label states by $\ell$ and $m$.
+Simultaneous eigenstates of $L^{2}$ and $L_{z}$. $L^{2}$ commutes with each component, so $L^{2}$ and $L_{z}$ can be sharp together. This principle is used to label states by $\ell$ and $m$.
 
 The simultaneous eigenvalue equations are
 
@@ -47,9 +47,9 @@ where
 - $\ell$ is the angular-momentum quantum number.
 - $m$ is the projection quantum number.
 
-4\. The same commutation relations hold for any angular momentum $\mathbf{J}$, including spin. This principle is used to treat $\mathbf{L}$, $\mathbf{S}$, and $\mathbf{J}$ with one algebra.
+The general $\mathbf{J}$ algebra. The same commutation relations hold for any angular momentum $\mathbf{J}$, including spin. This principle is used to treat $\mathbf{L}$, $\mathbf{S}$, and $\mathbf{J}$ with one algebra.
 
-Note: These principles are $\mathbf{L}=\mathbf{r}\times\mathbf{p}$, the commutation relations, simultaneous eigenstates of $L^{2}$ and $L_{z}$, and the general $\mathbf{J}$ algebra. Also denoted $\mathbf{L}$. Also denoted $\hat{\mathbf{L}}$. Spin is an intrinsic angular momentum not built from $\mathbf{r}$ and $\mathbf{p}$.
+Note: Also denoted $\mathbf{L}$. Also denoted $\hat{\mathbf{L}}$. Spin is an intrinsic angular momentum not built from $\mathbf{r}$ and $\mathbf{p}$.
 
 ## References
 

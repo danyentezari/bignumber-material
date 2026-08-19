@@ -2,7 +2,7 @@
 
 A family of linear differential equations that is used to describe the evolution and the allowed energies of a non-relativistic quantum system, where a non-relativistic system is a system whose speeds are much smaller than the speed of light.
 
-1\. The state of any quantum system evolves according to the Hamiltonian. This principle is used to predict the state at a later time from the state now.
+The generalized time-dependent Schrödinger equation. The state of any quantum system evolves according to the Hamiltonian. This principle is used to predict the state at a later time from the state now.
 
 The generalized time-dependent Schrödinger equation is
 
@@ -18,7 +18,7 @@ where
 - $t$ is time.
 - $\hat{H}$ is the Hamiltonian operator.
 
-2\. For one particle in one dimension the Hamiltonian is kinetic energy plus potential energy. This principle is used to write an explicit partial differential equation for $\Psi(x,t)$.
+The one-dimensional time-dependent equation. For one particle in one dimension the Hamiltonian is kinetic energy plus potential energy. This principle is used to write an explicit partial differential equation for $\Psi(x,t)$.
 
 The one-dimensional time-dependent Schrödinger equation is
 
@@ -34,7 +34,7 @@ where
 - $x$ is the position.
 - $t$ is time.
 
-3\. When $V$ does not depend on time, stationary states satisfy an eigenvalue equation. A stationary state is a state whose probability density does not change with time. This principle is used to find the allowed energies.
+The time-independent eigenvalue equation. When $V$ does not depend on time, stationary states satisfy an eigenvalue equation. A stationary state is a state whose probability density does not change with time. This principle is used to find the allowed energies.
 
 The time-independent Schrödinger equation is
 
@@ -48,7 +48,7 @@ where
 - $\psi$ is the spatial wavefunction.
 - $E$ is the energy eigenvalue.
 
-4\. In one dimension that eigenvalue equation is a second-order ordinary differential equation. This principle is used to solve wells, barriers, and the harmonic oscillator.
+Its one-dimensional form. In one dimension that eigenvalue equation is a second-order ordinary differential equation. This principle is used to solve wells, barriers, and the harmonic oscillator.
 
 The one-dimensional time-independent Schrödinger equation is
 
@@ -64,7 +64,7 @@ where
 - $m$ is the mass.
 - $x$ is the position.
 
-Note: These principles are the generalized time-dependent Schrödinger equation, the one-dimensional time-dependent equation, the time-independent eigenvalue equation, and its one-dimensional form. $\Psi$ is also written $|\Psi\rangle$.
+Note: $\Psi$ is also written $|\Psi\rangle$.
 
 ## References
 
