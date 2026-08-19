@@ -2,7 +2,7 @@
 
 The momentum carried by electromagnetic fields that is used to account for mechanical momentum changes when fields interact with matter.
 
-1\. The electromagnetic momentum density is proportional to $\mathbf{E}\times\mathbf{B}$. This principle is used to assign a local momentum to the fields.
+The electromagnetic momentum density. The electromagnetic momentum density is proportional to $\mathbf{E}\times\mathbf{B}$. This principle is used to assign a local momentum to the fields.
 
 The electromagnetic momentum density is
 
@@ -19,7 +19,7 @@ where
 - $\epsilon_{0}$ is the permittivity of free space.
 - $c$ is the speed of light.
 
-2\. The total field momentum is the integral of $\mathbf{g}$ over space. This principle is used to include field momentum in the conservation law for an isolated system.
+The total field momentum. The total field momentum is the integral of $\mathbf{g}$ over space. This principle is used to include field momentum in the conservation law for an isolated system.
 
 The total field momentum is
 
@@ -33,7 +33,7 @@ where
 - $\mathbf{g}$ is the momentum density.
 - $d\tau$ is the volume element.
 
-3\. Radiation pressure is the momentum delivered per unit time per unit area. This principle is used to compute the force of a wave on an absorber or reflector.
+Radiation pressure. Radiation pressure is the momentum delivered per unit time per unit area. This principle is used to compute the force of a wave on an absorber or reflector.
 
 The radiation pressure on a perfect absorber is
 
@@ -46,8 +46,6 @@ where
 - $P_{\mathrm{rad}}$ is the radiation pressure.
 - $S$ is the magnitude of the Poynting vector.
 - $c$ is the speed of light.
-
-Note: These principles are the electromagnetic momentum density, the total field momentum, and radiation pressure.
 
 ## References
 

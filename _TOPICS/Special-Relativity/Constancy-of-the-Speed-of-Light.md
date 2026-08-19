@@ -2,15 +2,15 @@
 
 The postulate that light in vacuum always travels at the same speed, independent of the motion of the source or the observer, that is used to fix the invariant speed of light in vacuum.
 
-1\. The speed of light in vacuum does not depend on the motion of the source that emitted the light. The speed of light is the unique speed at which electromagnetic waves travel in vacuum. This principle is used to predict the same vacuum speed for light from a moving star and from a lamp at rest.
+Independence of the source. The speed of light in vacuum does not depend on the motion of the source that emitted the light. The speed of light is the unique speed at which electromagnetic waves travel in vacuum. This principle is used to predict the same vacuum speed for light from a moving star and from a lamp at rest.
 
-2\. Every inertial observer measures the same vacuum speed of light. An inertial observer is an experimenter at rest in an inertial frame. This principle is used to replace Galilean addition of velocities for light.
+Independence of the observer. Every inertial observer measures the same vacuum speed of light. An inertial observer is an experimenter at rest in an inertial frame. This principle is used to replace Galilean addition of velocities for light.
 
-3\. The spacetime interval between emission and detection of a light signal is zero. A spacetime interval is the invariant four-dimensional separation of two events. This principle is used to draw the light cone that bounds causal influence.
+The null interval for light. The spacetime interval between emission and detection of a light signal is zero. A spacetime interval is the invariant four-dimensional separation of two events. This principle is used to draw the light cone that bounds causal influence.
 
-4\. Light travels through empty space with no supporting medium. The ether was a hypothetical substance once imagined as an absolute rest medium for electromagnetic waves. This principle is used to reject an absolute rest frame for light.
+The absence of a luminiferous ether. Light travels through empty space with no supporting medium. The ether was a hypothetical substance once imagined as an absolute rest medium for electromagnetic waves. This principle is used to reject an absolute rest frame for light.
 
-Note: These principles are independence of the source, independence of the observer, the null interval for light, and the absence of a luminiferous ether. Also called the second postulate of special relativity. Also called the invariance of the speed of light.
+Note: Also called the second postulate of special relativity. Also called the invariance of the speed of light.
 
 ## References
 

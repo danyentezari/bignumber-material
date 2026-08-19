@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>165 Four-Potential | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="A four-vector whose time and space parts are the scalar and vector potentials that is used to package the electromagnetic potentials into one Lorentz-covariant object. Note: Also called the...">
+<meta name="description" content="A four-vector whose time and space parts are the scalar and vector potentials that is used to package the electromagnetic potentials into one Lorentz-covariant object. Relativistic unification of...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="165 Four-Potential | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="A four-vector whose time and space parts are the scalar and vector potentials that is used to package the electromagnetic potentials into one Lorentz-covariant object. Note: Also called the...">
+<meta property="og:description" content="A four-vector whose time and space parts are the scalar and vector potentials that is used to package the electromagnetic potentials into one Lorentz-covariant object. Relativistic unification of...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="165 Four-Potential | Mathematics for Physics">
-<meta name="twitter:description" content="A four-vector whose time and space parts are the scalar and vector potentials that is used to package the electromagnetic potentials into one Lorentz-covariant object. Note: Also called the...">
+<meta name="twitter:description" content="A four-vector whose time and space parts are the scalar and vector potentials that is used to package the electromagnetic potentials into one Lorentz-covariant object. Relativistic unification of...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -224,7 +224,7 @@
 <span class="header-section-number">165</span> Four-Potential<a class="anchor" aria-label="anchor" href="#four-potential"><i class="fas fa-link"></i></a>
 </h1>
 <p>A four-vector whose time and space parts are the scalar and vector potentials that is used to package the electromagnetic potentials into one Lorentz-covariant object.</p>
-<p>Note: Also called the potential <span class="math inline">\(4\)</span>-vector. Also called the <span class="math inline">\(4\)</span>-vector potential.</p>
+<p>Relativistic unification of the potentials. The electric scalar potential and the magnetic vector potential form one four-vector. A four-vector is a four-component object that transforms as spacetime coordinates do under a Lorentz transformation. This principle is used to treat the potentials as one spacetime quantity.</p>
 <p>The four-potential is</p>
 <p><span class="math display">\[
 A^{\mu} = \left(\dfrac{V}{c},\, \mathbf{A}\right)
@@ -240,13 +240,43 @@ A^{\mu} = \left(\dfrac{V}{c},\, \mathbf{A}\right)
 <li>
 <span class="math inline">\(c\)</span> is the speed of light.</li>
 </ul>
+<p>Local gauge invariance. Adding the spacetime derivative of a scalar function to <span class="math inline">\(A^{\mu}\)</span> leaves <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span> unchanged. Gauge invariance is that redundancy of the potential. This principle is used to choose the Lorenz gauge <span class="math inline">\(\partial_{\mu}A^{\mu}=0\)</span> and simplify the equations.</p>
+<p>Generation of the field tensor. The field tensor is the four-dimensional curl of the four-potential. The electromagnetic field tensor is the antisymmetric <span class="math inline">\(4\times 4\)</span> array of <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span>. This principle is used to obtain Faraday’s law and the absence of magnetic monopoles as identities.</p>
+<p>The field tensor from the four-potential is</p>
+<p><span class="math display">\[
+F_{\mu\nu} = \partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(F_{\mu\nu}\)</span> is the covariant field tensor.</li>
+<li>
+<span class="math inline">\(\partial_{\mu}\)</span> is the spacetime derivative.</li>
+</ul>
+<p>The sourced wave equation. In the Lorenz gauge, the four-potential obeys a wave equation sourced by the four-current. The four-current is the four-vector of charge density and current density. This principle is used to compute radiation from accelerating charges.</p>
+<p>The potential wave equation is</p>
+<p><span class="math display">\[
+\square A^{\mu} = -\mu_{0} J^{\mu}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\square\)</span> is the d’Alembertian.</li>
+<li>
+<span class="math inline">\(\mu_{0}\)</span> is the permeability of free space.</li>
+<li>
+<span class="math inline">\(J^{\mu}\)</span> is the four-current.</li>
+</ul>
+<p>Note: Also called the potential <span class="math inline">\(4\)</span>-vector. Also called the <span class="math inline">\(4\)</span>-vector potential.</p>
 <div id="references-154" class="section level2" number="165.1">
 <h2>
 <span class="header-section-number">165.1</span> References<a class="anchor" aria-label="anchor" href="#references-154"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li>Emam, M. H. <em>Covariant Physics</em>. Oxford University Press, 2021. — potential <span class="math inline">\(4\)</span>-vector <span class="math inline">\(A^{\alpha}=(V/c,\mathbf{A})\)</span>.</li>
-<li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — <span class="math inline">\(A^{\mu}=(V/c,A_{x},A_{y},A_{z})\)</span>.</li>
+<li>Emam, M. H. <em>Covariant Physics</em>. Oxford University Press, 2021. — potential <span class="math inline">\(4\)</span>-vector <span class="math inline">\(A^{\alpha}=\left(\dfrac{V}{c},\mathbf{A}\right)\)</span>; gauge invariance; <span class="math inline">\(F_{\mu\nu}=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}\)</span>.</li>
+<li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — <span class="math inline">\(A^{\mu}=\left(\dfrac{V}{c},A_{x},A_{y},A_{z}\right)\)</span>; Lorenz gauge; wave equation.</li>
+<li>Carroll, S. M. <em>Spacetime and Geometry</em>. Cambridge University Press. — four-potential; <span class="math inline">\(F=dA\)</span>; gauge transformations.</li>
+<li>Shankar, R. <em>Fundamentals of Physics II</em>. Yale University Press, 2020. — four-potential; field tensor from <span class="math inline">\(A^{\mu}\)</span>.</li>
 </ol>
 <div class="topic-index">
 <ul>

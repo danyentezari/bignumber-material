@@ -2,7 +2,7 @@
 
 A law that is used to compute the magnetic field of a current element, where a current element is a short segment of wire carrying current.
 
-1\. The magnetic field of a steady line current is the integral of the Biot–Savart contribution of each length element. This principle is used to compute $\mathbf{B}$ for wires, loops, and solenoids of known shape.
+The Biot–Savart law for a line current. The magnetic field of a steady line current is the integral of the Biot–Savart contribution of each length element. This principle is used to compute $\mathbf{B}$ for wires, loops, and solenoids of known shape.
 
 The Biot–Savart law for a line current is
 
@@ -19,7 +19,7 @@ where
 - $\hat{\mathbf{r}}$ is the unit vector from the current element to the field point.
 - $\mu_{0}$ is the permeability of free space.
 
-2\. The same law for a volume current replaces $I\,d\mathbf{l}'$ by $\mathbf{J}\,d\tau'$. This principle is used to compute $\mathbf{B}$ of a distributed current.
+The volume-current form. The same law for a volume current replaces $I\,d\mathbf{l}'$ by $\mathbf{J}\,d\tau'$. This principle is used to compute $\mathbf{B}$ of a distributed current.
 
 The Biot–Savart law for a volume current is
 
@@ -32,7 +32,7 @@ where
 - $\mathbf{J}$ is the volume current density.
 - $d\tau'$ is the volume element.
 
-3\. The field of a long straight wire falls as the inverse of the perpendicular distance. This principle is used to recover the standard result for an infinite wire.
+The field of a long straight wire. The field of a long straight wire falls as the inverse of the perpendicular distance. This principle is used to recover the standard result for an infinite wire.
 
 The magnetic field of a long straight wire is
 
@@ -46,8 +46,6 @@ where
 - $I$ is the current.
 - $s$ is the perpendicular distance from the wire.
 - $\mu_{0}$ is the permeability of free space.
-
-Note: These principles are the Biot–Savart law for a line current, the volume-current form, and the field of a long straight wire.
 
 ## References
 

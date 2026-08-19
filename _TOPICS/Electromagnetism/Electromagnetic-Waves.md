@@ -2,7 +2,7 @@
 
 A self-sustaining transverse wave of oscillating electric and magnetic fields that travels at the speed of light and carries energy and momentum, where a self-sustaining wave is a free electromagnetic disturbance that needs no material medium, and where a transverse wave is a wave whose oscillations stand perpendicular to the direction of travel.
 
-1\. In empty space with no charges and no currents, a changing electric field induces a changing magnetic field and the reverse, so each field obeys the electromagnetic wave equation. A wave equation is a second-order differential equation that a propagating field must satisfy. This principle is used to prove electromagnetic fields can travel through vacuum without a supporting medium.
+The electromagnetic wave equation. In empty space with no charges and no currents, a changing electric field induces a changing magnetic field and the reverse, so each field obeys the electromagnetic wave equation. A wave equation is a second-order differential equation that a propagating field must satisfy. This principle is used to prove electromagnetic fields can travel through vacuum without a supporting medium.
 
 The electromagnetic wave equation is
 
@@ -23,7 +23,7 @@ where
 - $\epsilon_{0}$ is the permittivity of free space.
 - $t$ is time.
 
-2\. The speed of an electromagnetic wave in empty space is a universal constant fixed by the electric and magnetic constants of vacuum. The permittivity of free space is the electric constant of vacuum. The permeability of free space is the magnetic constant of vacuum. This principle is used to identify light as an electromagnetic wave.
+The universal speed of light. The speed of an electromagnetic wave in empty space is a universal constant fixed by the electric and magnetic constants of vacuum. The permittivity of free space is the electric constant of vacuum. The permeability of free space is the magnetic constant of vacuum. This principle is used to identify light as an electromagnetic wave.
 
 The speed of light in vacuum is
 
@@ -37,7 +37,7 @@ where
 - $\mu_{0}$ is the permeability of free space.
 - $\epsilon_{0}$ is the permittivity of free space.
 
-3\. The oscillating fields are perpendicular to the travel direction, stay in phase, stay perpendicular to each other, and keep a fixed amplitude ratio. Polarization is the direction of the electric field in the plane perpendicular to travel. This principle is used to set the geometry of the wave and how it couples to antennas and polarizers.
+Transversality and field coupling that define polarization. The oscillating fields are perpendicular to the travel direction, stay in phase, stay perpendicular to each other, and keep a fixed amplitude ratio. Polarization is the direction of the electric field in the plane perpendicular to travel. This principle is used to set the geometry of the wave and how it couples to antennas and polarizers.
 
 The transversality conditions are
 
@@ -62,7 +62,7 @@ where
 - $\mathbf{B}$ is the magnetic field.
 - $c$ is the speed of light in vacuum.
 
-4\. A traveling wave stores energy equally in its electric and magnetic fields. Energy density is the electromagnetic energy contained in a unit volume. Equipartition is the equal split of that energy between the two fields. This principle is used to compute the energy in a region filled with radiation.
+Equipartition of electromagnetic energy density. A traveling wave stores energy equally in its electric and magnetic fields. Energy density is the electromagnetic energy contained in a unit volume. Equipartition is the equal split of that energy between the two fields. This principle is used to compute the energy in a region filled with radiation.
 
 The electromagnetic energy density is
 
@@ -86,7 +86,7 @@ where
 - $\epsilon_{0}$ is the permittivity of free space.
 - $\mu_{0}$ is the permeability of free space.
 
-5\. Waves transport energy in the travel direction. The Poynting vector is the energy flux of the electromagnetic field. Intensity is the time-averaged energy flux of the wave. This principle is used to measure power delivered to detectors, antennas, and absorbers.
+The Poynting flux and wave intensity. Waves transport energy in the travel direction. The Poynting vector is the energy flux of the electromagnetic field. Intensity is the time-averaged energy flux of the wave. This principle is used to measure power delivered to detectors, antennas, and absorbers.
 
 The Poynting vector is
 
@@ -112,7 +112,7 @@ where
 - $\epsilon_{0}$ is the permittivity of free space.
 - $E_{0}$ is the electric-field amplitude.
 
-6\. Traveling waves carry linear momentum as well as energy. When a wave hits a surface it transfers momentum and exerts radiation pressure. Momentum density is the linear momentum of the fields in a unit volume. Radiation pressure is the force per unit area delivered by the wave to a surface. This principle is used to compute mechanical forces from light.
+Electromagnetic momentum with radiation pressure. Traveling waves carry linear momentum as well as energy. When a wave hits a surface it transfers momentum and exerts radiation pressure. Momentum density is the linear momentum of the fields in a unit volume. Radiation pressure is the force per unit area delivered by the wave to a surface. This principle is used to compute mechanical forces from light.
 
 The electromagnetic momentum density is
 
@@ -136,8 +136,6 @@ where
 - $c$ is the speed of light in vacuum.
 - $P_{\mathrm{rad}}$ is the radiation pressure.
 - $I$ is the intensity.
-
-Note: These principles are the electromagnetic wave equation, the universal speed of light, transversality and field coupling that define polarization, equipartition of electromagnetic energy density, the Poynting flux and wave intensity, and electromagnetic momentum with radiation pressure.
 
 ## References
 

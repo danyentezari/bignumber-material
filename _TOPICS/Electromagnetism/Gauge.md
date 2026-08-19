@@ -2,7 +2,7 @@
 
 A choice of potentials for the electromagnetic field that is used to fix unphysical freedom while leaving the physical fields unchanged.
 
-1\. The potentials $V$ and $\mathbf{A}$ are not unique. For any scalar function $\lambda$ one may shift the potentials together without changing $\mathbf{E}$ and $\mathbf{B}$. This principle is used to impose an extra condition that simplifies the equations.
+Gauge freedom of the potentials. The potentials $V$ and $\mathbf{A}$ are not unique. For any scalar function $\lambda$ one may shift the potentials together without changing $\mathbf{E}$ and $\mathbf{B}$. This principle is used to impose an extra condition that simplifies the equations.
 
 A gauge transformation of the potentials is
 
@@ -21,7 +21,7 @@ where
 - $\lambda$ is an arbitrary scalar function of position and time.
 - $t$ is time.
 
-2\. The Coulomb gauge sets the divergence of $\mathbf{A}$ to zero. This principle is used in magnetostatics and in instantaneous Coulomb problems.
+The Coulomb gauge. The Coulomb gauge sets the divergence of $\mathbf{A}$ to zero. This principle is used in magnetostatics and in instantaneous Coulomb problems.
 
 The Coulomb gauge condition is
 
@@ -33,7 +33,7 @@ where
 
 - $\mathbf{A}$ is the vector potential.
 
-3\. The Lorenz gauge relates $V$ and $\mathbf{A}$ so that both potentials obey wave equations. This principle is used in radiation problems.
+The Lorenz gauge. The Lorenz gauge relates $V$ and $\mathbf{A}$ so that both potentials obey wave equations. This principle is used in radiation problems.
 
 The Lorenz gauge condition is
 
@@ -48,7 +48,7 @@ where
 - $c$ is the speed of light.
 - $t$ is time.
 
-Note: These principles are gauge freedom of the potentials, the Coulomb gauge, and the Lorenz gauge. Also called a gauge choice. Also called working in a gauge.
+Note: Also called a gauge choice. Also called working in a gauge.
 
 ## References
 

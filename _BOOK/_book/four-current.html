@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>163 Four-Current | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="A four-vector formed from charge density and current density that is used to package the sources of the electromagnetic field into one Lorentz-covariant object. Note: Also called the current...">
+<meta name="description" content="A four-vector formed from charge density and current density that is used to package the sources of the electromagnetic field into one Lorentz-covariant object. Unified charge-current...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="163 Four-Current | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="A four-vector formed from charge density and current density that is used to package the sources of the electromagnetic field into one Lorentz-covariant object. Note: Also called the current...">
+<meta property="og:description" content="A four-vector formed from charge density and current density that is used to package the sources of the electromagnetic field into one Lorentz-covariant object. Unified charge-current...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="163 Four-Current | Mathematics for Physics">
-<meta name="twitter:description" content="A four-vector formed from charge density and current density that is used to package the sources of the electromagnetic field into one Lorentz-covariant object. Note: Also called the current...">
+<meta name="twitter:description" content="A four-vector formed from charge density and current density that is used to package the sources of the electromagnetic field into one Lorentz-covariant object. Unified charge-current...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -224,7 +224,7 @@
 <span class="header-section-number">163</span> Four-Current<a class="anchor" aria-label="anchor" href="#four-current"><i class="fas fa-link"></i></a>
 </h1>
 <p>A four-vector formed from charge density and current density that is used to package the sources of the electromagnetic field into one Lorentz-covariant object.</p>
-<p>Note: Also called the current <span class="math inline">\(4\)</span>-vector. Also called the current density <span class="math inline">\(4\)</span>-vector.</p>
+<p>Unified charge-current representation. Charge density and current density form one four-vector. A four-vector is a four-component object that transforms as spacetime coordinates do under a Lorentz transformation. This principle is used to keep charge and current transforming together between inertial frames.</p>
 <p>The four-current is</p>
 <p><span class="math display">\[
 J^{\mu} = (c\rho,\, \mathbf{J})
@@ -240,13 +240,52 @@ J^{\mu} = (c\rho,\, \mathbf{J})
 <li>
 <span class="math inline">\(c\)</span> is the speed of light.</li>
 </ul>
+<p>Covariant conservation of charge. Local conservation of charge is the vanishing four-divergence of the four-current. The continuity equation is that conservation law written as a spacetime derivative. This principle is used to keep charge conserved in every inertial frame.</p>
+<p>The covariant continuity equation is</p>
+<p><span class="math display">\[
+\partial_{\mu} J^{\mu} = 0
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\partial_{\mu}\)</span> is the spacetime derivative.</li>
+</ul>
+<p>Proper-velocity scaling. The four-current of a moving charge distribution is proper charge density times four-velocity. Proper charge density is the charge density in the rest frame of the charges. Four-velocity is the rate of change of spacetime position with proper time. This principle is used to show that ordinary <span class="math inline">\(\rho\)</span> rises because moving volumes contract.</p>
+<p>The proper-density form is</p>
+<p><span class="math display">\[
+J^{\mu} = \rho_{0} U^{\mu}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\rho_{0}\)</span> is the proper charge density.</li>
+<li>
+<span class="math inline">\(U^{\mu}\)</span> is the four-velocity.</li>
+</ul>
+<p>The four-current as the wave source. The four-current is the source of the four-potential wave. The d’Alembertian is the Lorentz-invariant wave operator. This principle is used to compute radiation from accelerating charges.</p>
+<p>The potential wave equation is</p>
+<p><span class="math display">\[
+\square A^{\mu} = -\mu_{0} J^{\mu}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\square\)</span> is the d’Alembertian.</li>
+<li>
+<span class="math inline">\(A^{\mu}\)</span> is the four-potential.</li>
+<li>
+<span class="math inline">\(\mu_{0}\)</span> is the permeability of free space.</li>
+</ul>
+<p>Note: Also called the current <span class="math inline">\(4\)</span>-vector. Also called the current density <span class="math inline">\(4\)</span>-vector.</p>
 <div id="references-152" class="section level2" number="163.1">
 <h2>
 <span class="header-section-number">163.1</span> References<a class="anchor" aria-label="anchor" href="#references-152"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li>Emam, M. H. <em>Covariant Physics</em>. Oxford University Press, 2021. — current <span class="math inline">\(4\)</span>-vector <span class="math inline">\(J^{\alpha}=(c\rho,\mathbf{J})\)</span>.</li>
-<li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — <span class="math inline">\(J^{\mu}=(c\rho,J_{x},J_{y},J_{z})\)</span>.</li>
+<li>Emam, M. H. <em>Covariant Physics</em>. Oxford University Press, 2021. — current <span class="math inline">\(4\)</span>-vector <span class="math inline">\(J^{\alpha}=(c\rho,\mathbf{J})\)</span>; <span class="math inline">\(\partial_{\mu}J^{\mu}=0\)</span>; <span class="math inline">\(\square A^{\mu}=-\mu_{0}J^{\mu}\)</span>.</li>
+<li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — <span class="math inline">\(J^{\mu}=(c\rho,J_{x},J_{y},J_{z})\)</span>; continuity equation; <span class="math inline">\(J^{\mu}=\rho_{0}U^{\mu}\)</span>.</li>
+<li>Carroll, S. M. <em>Spacetime and Geometry</em>. Cambridge University Press. — four-current; charge conservation; wave equation.</li>
+<li>Shankar, R. <em>Fundamentals of Physics II</em>. Yale University Press, 2020. — four-current; proper charge density.</li>
 </ol>
 <div class="topic-index">
 <ul>

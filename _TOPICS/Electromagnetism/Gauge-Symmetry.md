@@ -2,7 +2,7 @@
 
 A local symmetry of the potentials that is used to leave physical electromagnetic fields and observables unchanged.
 
-1\. Many different potentials give the same $\mathbf{E}$ and $\mathbf{B}$. This principle is used to treat the physical content of electrodynamics as gauge-invariant.
+Gauge invariance of $\mathbf{E}$ and $\mathbf{B}$. Many different potentials give the same $\mathbf{E}$ and $\mathbf{B}$. This principle is used to treat the physical content of electrodynamics as gauge-invariant.
 
 The physical fields from the potentials are
 
@@ -22,7 +22,7 @@ where
 - $\mathbf{A}$ is the vector potential.
 - $t$ is time.
 
-2\. The symmetry acts by shifting the potentials with an arbitrary scalar function. This principle is used to generate the gauge transformations that leave the equations of motion unchanged.
+The action of the symmetry on the potentials. The symmetry acts by shifting the potentials with an arbitrary scalar function. This principle is used to generate the gauge transformations that leave the equations of motion unchanged.
 
 The gauge symmetry acts as
 
@@ -36,7 +36,7 @@ where
 - $V$ and $\mathbf{A}$ are the potentials.
 - $t$ is time.
 
-3\. In magnetostatics the same symmetry is the invariance of $\mathbf{B}$ under $\mathbf{A}\mapsto\mathbf{A}+\nabla\lambda$. This principle is used to check gauge symmetry on $\mathbf{B}$ alone.
+The magnetostatic special case. In magnetostatics the same symmetry is the invariance of $\mathbf{B}$ under $\mathbf{A}\mapsto\mathbf{A}+\nabla\lambda$. This principle is used to check gauge symmetry on $\mathbf{B}$ alone.
 
 The magnetostatic invariance is
 
@@ -49,7 +49,7 @@ where
 - $\mathbf{A}$ is the vector potential.
 - $\lambda$ is the gauge function.
 
-Note: These principles are gauge invariance of $\mathbf{E}$ and $\mathbf{B}$, the action of the symmetry on the potentials, and the magnetostatic special case. Also called gauge invariance.
+Note: Also called gauge invariance.
 
 ## References
 

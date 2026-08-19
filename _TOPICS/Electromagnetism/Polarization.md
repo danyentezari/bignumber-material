@@ -2,7 +2,7 @@
 
 A property of a transverse electromagnetic wave that is used to describe the orientation of its oscillating electric field in the plane perpendicular to travel, where a transverse wave is a wave whose oscillations stand perpendicular to the direction of travel.
 
-1\. Linear polarization is a fixed direction of $\mathbf{E}$ in the transverse plane. This principle is used to describe light that has passed a linear polarizer.
+Linear polarization. Linear polarization is a fixed direction of $\mathbf{E}$ in the transverse plane. This principle is used to describe light that has passed a linear polarizer.
 
 A linearly polarized plane wave is
 
@@ -19,7 +19,7 @@ where
 - $z$ is the travel coordinate.
 - $t$ is time.
 
-2\. Circular polarization is a field whose tip traces a circle at the wave frequency. This principle is used to describe waves with equal perpendicular amplitudes a quarter cycle out of phase.
+Circular polarization. Circular polarization is a field whose tip traces a circle at the wave frequency. This principle is used to describe waves with equal perpendicular amplitudes a quarter cycle out of phase.
 
 A circularly polarized wave has
 
@@ -32,11 +32,9 @@ where
 - the two signs distinguish the two senses of rotation.
 - $\hat{\mathbf{x}}$ and $\hat{\mathbf{y}}$ are unit vectors in the transverse plane.
 
-3\. Elliptical polarization is the general case of two perpendicular components with an arbitrary amplitude ratio and phase difference. This principle is used to treat every fully polarized monochromatic wave as one case.
+Elliptical polarization. Elliptical polarization is the general case of two perpendicular components with an arbitrary amplitude ratio and phase difference. This principle is used to treat every fully polarized monochromatic wave as one case.
 
-4\. Unpolarized light is a rapid, random superposition of polarization states. This principle is used to describe ordinary thermal radiation before it meets a polarizer.
-
-Note: These principles are linear polarization, circular polarization, elliptical polarization, and unpolarized light.
+Unpolarized light. Unpolarized light is a rapid, random superposition of polarization states. This principle is used to describe ordinary thermal radiation before it meets a polarizer.
 
 ## References
 

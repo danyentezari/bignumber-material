@@ -2,7 +2,7 @@
 
 A property of a conductor or circuit that is used to oppose changes in current by generating an induced electromotive force.
 
-1\. Self-inductance is the flux linkage per unit current in a single circuit. This principle is used to relate the flux through a coil to the current that produces it.
+Self-inductance. Self-inductance is the flux linkage per unit current in a single circuit. This principle is used to relate the flux through a coil to the current that produces it.
 
 The definition of self-inductance is
 
@@ -16,7 +16,7 @@ where
 - $L$ is the self-inductance.
 - $I$ is the current.
 
-2\. A changing current induces an emf proportional to the inductance. This principle is used to write the circuit equation of an inductor.
+The self-induced emf. A changing current induces an emf proportional to the inductance. This principle is used to write the circuit equation of an inductor.
 
 The self-induced emf is
 
@@ -31,7 +31,7 @@ where
 - $I$ is the current.
 - $t$ is time.
 
-3\. Mutual inductance is the flux in one circuit per unit current in another. This principle is used to couple two loops or coils.
+Mutual inductance. Mutual inductance is the flux in one circuit per unit current in another. This principle is used to couple two loops or coils.
 
 The definition of mutual inductance is
 
@@ -45,7 +45,7 @@ where
 - $M$ is the mutual inductance.
 - $I_{1}$ is the current in circuit 1.
 
-4\. The energy stored in an inductor is $\dfrac{1}{2}LI^{2}$. This principle is used to compute the work required to establish the current.
+Inductor energy. The energy stored in an inductor is $\dfrac{1}{2}LI^{2}$. This principle is used to compute the work required to establish the current.
 
 The inductor energy is
 
@@ -58,8 +58,6 @@ where
 - $U$ is the stored energy.
 - $L$ is the self-inductance.
 - $I$ is the current.
-
-Note: These principles are self-inductance, the self-induced emf, mutual inductance, and inductor energy.
 
 ## References
 

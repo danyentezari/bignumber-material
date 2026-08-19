@@ -2,7 +2,7 @@
 
 A series expansion of the potential of a localized charge distribution that is used to organize contributions by monopole, dipole, quadrupole, and higher moments, where a localized charge distribution is a charge collection confined to a finite region.
 
-1\. Far from a localized charge distribution the potential can be expanded in inverse powers of distance. This principle is used to replace a complicated source by a sequence of simpler terms that fall off faster and faster.
+The multipole expansion of the potential. Far from a localized charge distribution the potential can be expanded in inverse powers of distance. This principle is used to replace a complicated source by a sequence of simpler terms that fall off faster and faster.
 
 The multipole expansion of the potential is
 
@@ -21,7 +21,7 @@ where
 - $d\tau'$ is the volume element.
 - $\epsilon_{0}$ is the permittivity of free space.
 
-2\. The first term is the monopole potential of the total charge. This principle is used to treat a distant charge collection as a point charge when the net charge is not zero.
+The monopole term. The first term is the monopole potential of the total charge. This principle is used to treat a distant charge collection as a point charge when the net charge is not zero.
 
 The monopole term is
 
@@ -36,7 +36,7 @@ where
 - $r$ is the distance to the field point.
 - $\epsilon_{0}$ is the permittivity of free space.
 
-3\. The next term is the dipole potential of the dipole moment. This principle is used to describe a neutral charge collection whose opposite charges are slightly separated.
+The dipole term. The next term is the dipole potential of the dipole moment. This principle is used to describe a neutral charge collection whose opposite charges are slightly separated.
 
 The dipole term is
 
@@ -51,8 +51,6 @@ where
 - $\hat{\mathbf{r}}$ is the unit vector toward the field point.
 - $r$ is the distance to the field point.
 - $\epsilon_{0}$ is the permittivity of free space.
-
-Note: These principles are the multipole expansion of the potential, the monopole term, and the dipole term.
 
 ## References
 

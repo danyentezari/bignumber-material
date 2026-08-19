@@ -2,7 +2,7 @@
 
 A force on a charged particle in electric and magnetic fields that is used to determine how the particle accelerates, where a charged particle is a particle that carries electric charge.
 
-1\. The total electromagnetic force on a charged particle is the sum of an electric force along the electric field and a magnetic force that depends on velocity. This principle is used to compute the net force on a charge that travels through both fields.
+The Lorentz force law. The total electromagnetic force on a charged particle is the sum of an electric force along the electric field and a magnetic force that depends on velocity. This principle is used to compute the net force on a charge that travels through both fields.
 
 The Lorentz force law is
 
@@ -18,7 +18,7 @@ where
 - $\mathbf{v}$ is the velocity of the particle.
 - $\mathbf{B}$ is the magnetic field.
 
-2\. A charged particle in an electric field feels a force proportional to its charge and to the local field, whether the particle is at rest or in motion. This principle is used to find the acceleration of charges in capacitors and other static electric fields.
+The electric force. A charged particle in an electric field feels a force proportional to its charge and to the local field, whether the particle is at rest or in motion. This principle is used to find the acceleration of charges in capacitors and other static electric fields.
 
 The electric force is
 
@@ -32,7 +32,7 @@ where
 - $q$ is the electric charge.
 - $\mathbf{E}$ is the electric field.
 
-3\. A charged particle moving through a magnetic field feels a sideways force proportional to its speed and perpendicular to both its velocity and the field. This principle is used to compute the magnetic deflection of moving charges.
+The magnetic force. A charged particle moving through a magnetic field feels a sideways force proportional to its speed and perpendicular to both its velocity and the field. This principle is used to compute the magnetic deflection of moving charges.
 
 The magnetic force is
 
@@ -47,7 +47,7 @@ where
 - $\mathbf{v}$ is the velocity of the particle.
 - $\mathbf{B}$ is the magnetic field.
 
-4\. The magnetic force is always perpendicular to the instantaneous velocity, so it does no work. Work is energy transferred when a force acts through a displacement. This principle is used to prove that a magnetic field alone cannot change the speed of a charged particle.
+The magnetic zero-work theorem. The magnetic force is always perpendicular to the instantaneous velocity, so it does no work. Work is energy transferred when a force acts through a displacement. This principle is used to prove that a magnetic field alone cannot change the speed of a charged particle.
 
 The magnetic work is
 
@@ -65,7 +65,7 @@ where
 - $\mathbf{B}$ is the magnetic field.
 - $t$ is time.
 
-5\. A wire that carries current in a magnetic field feels a mechanical force equal to the sum of the magnetic forces on the moving charges inside the wire. Current is charge flow per unit time. This principle is used to compute forces in motors and between current-carrying wires.
+The force on a current-carrying wire. A wire that carries current in a magnetic field feels a mechanical force equal to the sum of the magnetic forces on the moving charges inside the wire. Current is charge flow per unit time. This principle is used to compute forces in motors and between current-carrying wires.
 
 The force on a current-carrying wire is
 
@@ -80,7 +80,7 @@ where
 - $d\mathbf{l}$ is a directed element of the wire.
 - $\mathbf{B}$ is the magnetic field.
 
-6\. The same magnetic force, written with current density, applies to charge flow on a surface or through a volume. Surface current density is current per unit width. Volume current density is current per unit area. This principle is used to compute forces on bulk conductors and current sheets.
+The force on a current distribution. The same magnetic force, written with current density, applies to charge flow on a surface or through a volume. Surface current density is current per unit width. Volume current density is current per unit area. This principle is used to compute forces on bulk conductors and current sheets.
 
 The force on a volume current is
 
@@ -95,7 +95,7 @@ where
 - $\mathbf{B}$ is the magnetic field.
 - $d\tau$ is the volume element.
 
-7\. The trajectory of a charged particle follows Newton's second law with the Lorentz force as the force. An equation of motion is a differential equation for position and velocity in time. This principle is used to solve the path of a charge in a given electromagnetic field.
+The electromagnetic equation of motion. The trajectory of a charged particle follows Newton's second law with the Lorentz force as the force. An equation of motion is a differential equation for position and velocity in time. This principle is used to solve the path of a charge in a given electromagnetic field.
 
 The electromagnetic equation of motion is
 
@@ -112,7 +112,7 @@ where
 - $\mathbf{E}$ is the electric field.
 - $\mathbf{B}$ is the magnetic field.
 
-Note: These principles are the Lorentz force law, the electric force, the magnetic force, the magnetic zero-work theorem, the force on a current-carrying wire, the force on a current distribution, and the electromagnetic equation of motion. Also called the Lorentz force law.
+Note: Also called the Lorentz force law.
 
 ## References
 

@@ -2,7 +2,7 @@
 
 A vector field produced by moving charges or currents that is used to give the magnetic force on other moving charges or currents, where a vector field is an assignment of a vector to each point in space.
 
-1\. The magnetic force on a charge is perpendicular to both the velocity and the field. This principle is used to define $\mathbf{B}$ from the force on a moving test charge.
+The magnetic force that defines $\mathbf{B}$. The magnetic force on a charge is perpendicular to both the velocity and the field. This principle is used to define $\mathbf{B}$ from the force on a moving test charge.
 
 The magnetic force is
 
@@ -17,7 +17,7 @@ where
 - $\mathbf{v}$ is the velocity.
 - $\mathbf{B}$ is the magnetic field.
 
-2\. A steady current distribution produces a magnetic field given by the Biot–Savart law. This principle is used to map the magnetostatic field of a known current.
+The Biot–Savart field of a current. A steady current distribution produces a magnetic field given by the Biot–Savart law. This principle is used to map the magnetostatic field of a known current.
 
 The Biot–Savart law is
 
@@ -34,7 +34,7 @@ where
 - $d\tau'$ is the volume element.
 - $\mu_{0}$ is the permeability of free space.
 
-3\. There are no magnetic monopoles, so the magnetic field is divergenceless. This principle is used to write $\mathbf{B}$ as the curl of a vector potential.
+The absence of magnetic monopoles. There are no magnetic monopoles, so the magnetic field is divergenceless. This principle is used to write $\mathbf{B}$ as the curl of a vector potential.
 
 Gauss's law for magnetism is
 
@@ -46,8 +46,6 @@ where
 
 - $\nabla\cdot$ is the divergence.
 - $\mathbf{B}$ is the magnetic field.
-
-Note: These principles are the magnetic force that defines $\mathbf{B}$, the Biot–Savart field of a current, and the absence of magnetic monopoles.
 
 ## References
 

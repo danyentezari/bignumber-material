@@ -2,9 +2,9 @@
 
 An intrinsic property of matter that is used as the source of electrostatic forces and fields, where an intrinsic property is a property a particle carries independently of its motion.
 
-1\. Charge comes in two kinds, called positive and negative. Like charges repel and unlike charges attract. This principle is used to determine the direction of the Coulomb force.
+The two kinds of charge. Charge comes in two kinds, called positive and negative. Like charges repel and unlike charges attract. This principle is used to determine the direction of the Coulomb force.
 
-2\. Charge is quantized in integer multiples of the elementary charge. Quantization is the restriction of a quantity to discrete values. This principle is used to assign the charge of ions and of elementary particles.
+Quantization of charge. Charge is quantized in integer multiples of the elementary charge. Quantization is the restriction of a quantity to discrete values. This principle is used to assign the charge of ions and of elementary particles.
 
 The quantization of charge is
 
@@ -18,7 +18,7 @@ where
 - $N$ is an integer.
 - $e$ is the elementary charge.
 
-3\. The force between two stationary point charges is proportional to the product of the charges and falls as the inverse square of their separation. A point charge is a charge treated as concentrated at a single location. This principle is used to compute the electrostatic force between two charges at rest.
+Coulomb's law. The force between two stationary point charges is proportional to the product of the charges and falls as the inverse square of their separation. A point charge is a charge treated as concentrated at a single location. This principle is used to compute the electrostatic force between two charges at rest.
 
 Coulomb's law is
 
@@ -34,9 +34,7 @@ where
 - $\hat{\mathbf{r}}$ is the unit vector from $q_{1}$ toward $q_{2}$.
 - $\epsilon_{0}$ is the permittivity of free space.
 
-4\. Electric charge is never created and never destroyed. This principle is used to balance charge in ionization and in circuits.
-
-Note: These principles are the two kinds of charge, quantization of charge, Coulomb's law, and conservation of charge.
+Conservation of charge. Electric charge is never created and never destroyed. This principle is used to balance charge in ionization and in circuits.
 
 ## References
 

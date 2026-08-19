@@ -2,7 +2,7 @@
 
 A vector field produced by electric charges or changing magnetic fields that is used to give the electric force on a charge placed in it, where a vector field is an assignment of a vector to each point in space.
 
-1\. The electric field is the electric force per unit charge on a test charge. A test charge is a small charge used to probe the field. This principle is used to define $\mathbf{E}$ independently of which charge feels the force.
+The definition of the electric field. The electric field is the electric force per unit charge on a test charge. A test charge is a small charge used to probe the field. This principle is used to define $\mathbf{E}$ independently of which charge feels the force.
 
 The electric field from a force is
 
@@ -16,7 +16,7 @@ where
 - $\mathbf{F}$ is the electric force.
 - $q$ is the test charge.
 
-2\. A stationary charge distribution produces an electric field given by Coulomb's law integrated over the sources. This principle is used to map the electrostatic field of a known charge collection.
+The Coulomb field of a charge distribution. A stationary charge distribution produces an electric field given by Coulomb's law integrated over the sources. This principle is used to map the electrostatic field of a known charge collection.
 
 The electric field of a charge distribution is
 
@@ -33,7 +33,7 @@ where
 - $d\tau'$ is the volume element.
 - $\epsilon_{0}$ is the permittivity of free space.
 
-3\. A changing magnetic field produces a circulating electric field. This principle is used to compute induced electric fields.
+The induced electric field of Faraday's law. A changing magnetic field produces a circulating electric field. This principle is used to compute induced electric fields.
 
 Faraday's law is
 
@@ -47,8 +47,6 @@ where
 - $\mathbf{E}$ is the electric field.
 - $\mathbf{B}$ is the magnetic field.
 - $t$ is time.
-
-Note: These principles are the definition of the electric field, the Coulomb field of a charge distribution, and the induced electric field of Faraday's law.
 
 ## References
 

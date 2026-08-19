@@ -2,7 +2,7 @@
 
 A local differential statement of Maxwell's equations that is used to relate the fields pointwise to charge and current densities, where a local statement is an equation that holds at each point in space.
 
-1\. The divergence of the electric field at a point is proportional to the charge density at that point. Divergence is a measure of how much a vector field spreads from a point. Charge density is charge per unit volume. This principle is used to find the electric field of a given charge distribution.
+The differential form of Gauss's law. The divergence of the electric field at a point is proportional to the charge density at that point. Divergence is a measure of how much a vector field spreads from a point. Charge density is charge per unit volume. This principle is used to find the electric field of a given charge distribution.
 
 The differential form of Gauss's law is
 
@@ -17,7 +17,7 @@ where
 - $\rho$ is the volume charge density.
 - $\epsilon_{0}$ is the permittivity of free space.
 
-2\. The divergence of the magnetic field is zero at every point. This principle is used to constrain magnetic fields so they never begin or end at a point source.
+Gauss's law for magnetism. The divergence of the magnetic field is zero at every point. This principle is used to constrain magnetic fields so they never begin or end at a point source.
 
 The differential form of Gauss's law for magnetism is
 
@@ -30,7 +30,7 @@ where
 - $\nabla\cdot$ is the divergence.
 - $\mathbf{B}$ is the magnetic field.
 
-3\. The curl of the electric field equals the negative time derivative of the magnetic field. Curl is a measure of the local swirl of a vector field. This principle is used to compute the electric field induced by a changing magnetic field.
+Faraday's law. The curl of the electric field equals the negative time derivative of the magnetic field. Curl is a measure of the local swirl of a vector field. This principle is used to compute the electric field induced by a changing magnetic field.
 
 The differential form of Faraday's law is
 
@@ -45,7 +45,7 @@ where
 - $\mathbf{B}$ is the magnetic field.
 - $t$ is time.
 
-4\. The curl of the magnetic field is sourced by current density and by a changing electric field. Current density is charge flow per unit area. This principle is used to compute magnetic fields of currents and of changing electric fields.
+The Ampère-Maxwell law. The curl of the magnetic field is sourced by current density and by a changing electric field. Current density is charge flow per unit area. This principle is used to compute magnetic fields of currents and of changing electric fields.
 
 The differential form of the Ampère-Maxwell law is
 
@@ -63,7 +63,7 @@ where
 - $\mathbf{E}$ is the electric field.
 - $t$ is time.
 
-Note: These principles are the differential form of Gauss's law, Gauss's law for magnetism, Faraday's law, and the Ampère-Maxwell law. Also called the differential form of Maxwell's equations.
+Note: Also called the differential form of Maxwell's equations.
 
 ## References
 

@@ -2,7 +2,7 @@
 
 A scalar field that is used to express the electric field by differentiation, alone in electrostatics and together with the vector potential in electrodynamics.
 
-1\. The electrostatic potential at a point is minus the line integral of the electric field from a chosen reference point. This principle is used to assign a number $V$ that depends only on the field point.
+The line-integral definition of $V$. The electrostatic potential at a point is minus the line integral of the electric field from a chosen reference point. This principle is used to assign a number $V$ that depends only on the field point.
 
 The electrostatic potential is
 
@@ -18,7 +18,7 @@ where
 - $\mathbf{E}$ is the electric field.
 - $d\mathbf{l}$ is a displacement along the path.
 
-2\. In the static case the electric field is minus the gradient of the scalar potential. This principle is used to recover $\mathbf{E}$ from $V$.
+The static gradient relation. In the static case the electric field is minus the gradient of the scalar potential. This principle is used to recover $\mathbf{E}$ from $V$.
 
 The static field from the potential is
 
@@ -32,7 +32,7 @@ where
 - $\nabla$ is the gradient.
 - $V$ is the electric scalar potential.
 
-3\. In the time-dependent case the electric field also includes minus the time derivative of the vector potential. This principle is used to reconstruct $\mathbf{E}$ from both potentials.
+The electrodynamic reconstruction of $\mathbf{E}$. In the time-dependent case the electric field also includes minus the time derivative of the vector potential. This principle is used to reconstruct $\mathbf{E}$ from both potentials.
 
 The electrodynamic field from the potentials is
 
@@ -47,7 +47,7 @@ where
 - $\mathbf{A}$ is the magnetic vector potential.
 - $t$ is time.
 
-4\. The scalar potential is the time part of the electromagnetic four-potential. This principle is used to write $V$ and $\mathbf{A}$ as one spacetime vector.
+The four-potential. The scalar potential is the time part of the electromagnetic four-potential. This principle is used to write $V$ and $\mathbf{A}$ as one spacetime vector.
 
 The four-potential is
 
@@ -62,7 +62,7 @@ where
 - $\mathbf{A}$ is the magnetic vector potential.
 - $c$ is the speed of light.
 
-Note: These principles are the line-integral definition of $V$, the static gradient relation, the electrodynamic reconstruction of $\mathbf{E}$, and the four-potential. Also called the electric potential. Also denoted $\phi$.
+Note: Also called the electric potential. Also denoted $\phi$.
 
 ## References
 

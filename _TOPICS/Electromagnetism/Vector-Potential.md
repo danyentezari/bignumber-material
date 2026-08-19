@@ -2,7 +2,7 @@
 
 A vector field whose curl is the magnetic field that is used, with the scalar potential, to express electromagnetic fields.
 
-1\. Because the magnetic field is divergenceless, it is the curl of a vector potential. This principle is used to replace $\mathbf{B}$ by $\mathbf{A}$ in calculations.
+$\mathbf{B}=\nabla\times\mathbf{A}$. Because the magnetic field is divergenceless, it is the curl of a vector potential. This principle is used to replace $\mathbf{B}$ by $\mathbf{A}$ in calculations.
 
 The magnetic field from the vector potential is
 
@@ -16,7 +16,7 @@ where
 - $\mathbf{A}$ is the vector potential.
 - $\nabla\times$ is the curl.
 
-2\. In magnetostatics with the Coulomb gauge the vector potential obeys a Poisson equation sourced by the current. The Coulomb gauge is the condition $\nabla\cdot\mathbf{A}=0$. This principle is used to compute $\mathbf{A}$ from a known steady current.
+The Coulomb-gauge Poisson equation. In magnetostatics with the Coulomb gauge the vector potential obeys a Poisson equation sourced by the current. The Coulomb gauge is the condition $\nabla\cdot\mathbf{A}=0$. This principle is used to compute $\mathbf{A}$ from a known steady current.
 
 The magnetostatic Poisson equation for $\mathbf{A}$ is
 
@@ -31,7 +31,7 @@ where
 - $\mathbf{J}$ is the volume current density.
 - $\mu_{0}$ is the permeability of free space.
 
-3\. The vector potential is the spatial part of the electromagnetic four-potential. This principle is used to write $V$ and $\mathbf{A}$ as one spacetime vector.
+The four-potential. The vector potential is the spatial part of the electromagnetic four-potential. This principle is used to write $V$ and $\mathbf{A}$ as one spacetime vector.
 
 The four-potential is
 
@@ -46,7 +46,7 @@ where
 - $\mathbf{A}$ is the magnetic vector potential.
 - $c$ is the speed of light.
 
-Note: These principles are $\mathbf{B}=\nabla\times\mathbf{A}$, the Coulomb-gauge Poisson equation, and the four-potential. Also denoted $\mathbf{A}$. Also called the magnetic vector potential.
+Note: Also denoted $\mathbf{A}$. Also called the magnetic vector potential.
 
 ## References
 

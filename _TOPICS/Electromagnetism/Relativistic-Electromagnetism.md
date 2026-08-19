@@ -2,7 +2,7 @@
 
 A formulation of electromagnetism in spacetime that is used to treat electric and magnetic fields as parts of one Lorentz-covariant field, where spacetime is the four-dimensional arena of special relativity, and where a Lorentz-covariant field is a field that transforms so that the same physics holds in every inertial frame.
 
-1\. Under a change of inertial frame, electric and magnetic fields mix. A field that is purely electric in one frame has both electric and magnetic parts in a frame in relative motion. This principle is used to transform fields from one inertial frame to another.
+The Lorentz transformation of the electromagnetic field. Under a change of inertial frame, electric and magnetic fields mix. A field that is purely electric in one frame has both electric and magnetic parts in a frame in relative motion. This principle is used to transform fields from one inertial frame to another.
 
 The field transformation for a boost along $x$ is
 
@@ -22,7 +22,7 @@ where
 - $\gamma$ is the Lorentz factor.
 - $c$ is the speed of light.
 
-2\. The six field components are entries of one antisymmetric second-rank tensor in spacetime. An antisymmetric tensor is a two-index object that changes sign when its indices are swapped. This principle is used to write electrodynamics as a single spacetime field.
+The electromagnetic field tensor. The six field components are entries of one antisymmetric second-rank tensor in spacetime. An antisymmetric tensor is a two-index object that changes sign when its indices are swapped. This principle is used to write electrodynamics as a single spacetime field.
 
 The electromagnetic field tensor is
 
@@ -43,7 +43,7 @@ where
 - $B_{x}$, $B_{y}$, $B_{z}$ are the magnetic-field components.
 - $c$ is the speed of light.
 
-3\. The scalar potential and the vector potential are the time and space parts of one four-vector. A four-vector is a four-component spacetime quantity that transforms as a displacement in spacetime. This principle is used to solve both potentials together.
+The electromagnetic four-potential. The scalar potential and the vector potential are the time and space parts of one four-vector. A four-vector is a four-component spacetime quantity that transforms as a displacement in spacetime. This principle is used to solve both potentials together.
 
 The electromagnetic four-potential is
 
@@ -58,7 +58,7 @@ where
 - $A_{x}$, $A_{y}$, $A_{z}$ are the components of the vector potential.
 - $c$ is the speed of light.
 
-4\. Charge density and current density are the time and space parts of one four-vector. This principle is used to write the source of the electromagnetic field in spacetime form.
+The electromagnetic four-current. Charge density and current density are the time and space parts of one four-vector. This principle is used to write the source of the electromagnetic field in spacetime form.
 
 The electromagnetic four-current is
 
@@ -73,7 +73,7 @@ where
 - $J_{x}$, $J_{y}$, $J_{z}$ are the components of the current density.
 - $c$ is the speed of light.
 
-5\. The four Maxwell equations become two tensor equations in spacetime. Manifest covariance is the property that both sides of an equation are tensors, so Lorentz invariance is visible. This principle is used to write Maxwell's equations so they hold in every inertial frame.
+The covariant Maxwell equations. The four Maxwell equations become two tensor equations in spacetime. Manifest covariance is the property that both sides of an equation are tensors, so Lorentz invariance is visible. This principle is used to write Maxwell's equations so they hold in every inertial frame.
 
 The inhomogeneous Maxwell equation is
 
@@ -94,7 +94,7 @@ where
 - $\mu_{0}$ is the permeability of free space.
 - $x^{\nu}$ are the spacetime coordinates.
 
-6\. The force on a charge is the contraction of the field tensor with the four-velocity. Proper time is the time read by a clock that travels with the particle. This principle is used to compute the relativistic trajectory of a charged particle.
+The covariant Lorentz force law. The force on a charge is the contraction of the field tensor with the four-velocity. Proper time is the time read by a clock that travels with the particle. This principle is used to compute the relativistic trajectory of a charged particle.
 
 The covariant Lorentz force law is
 
@@ -110,7 +110,7 @@ where
 - $F^{\mu\nu}$ is the electromagnetic field tensor.
 - $\eta_{\nu}$ is the covariant four-velocity.
 
-Note: These principles are the Lorentz transformation of the electromagnetic field, the electromagnetic field tensor, the electromagnetic four-potential, the electromagnetic four-current, the covariant Maxwell equations, and the covariant Lorentz force law. Also called covariant electrodynamics. The field tensor is also called the Faraday tensor.
+Note: Also called covariant electrodynamics. The field tensor is also called the Faraday tensor.
 
 ## References
 

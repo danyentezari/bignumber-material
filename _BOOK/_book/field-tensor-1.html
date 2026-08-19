@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>162 Field Tensor | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="The antisymmetric spacetime tensor that packages electric and magnetic field components into one covariant object in relativistic electrodynamics.  162.1 References Griffiths, D. J. Introduction...">
+<meta name="description" content="The antisymmetric spacetime tensor that packages electric and magnetic field components into one covariant object in relativistic electrodynamics. Unified geometrical representation of...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="162 Field Tensor | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="The antisymmetric spacetime tensor that packages electric and magnetic field components into one covariant object in relativistic electrodynamics.  162.1 References Griffiths, D. J. Introduction...">
+<meta property="og:description" content="The antisymmetric spacetime tensor that packages electric and magnetic field components into one covariant object in relativistic electrodynamics. Unified geometrical representation of...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="162 Field Tensor | Mathematics for Physics">
-<meta name="twitter:description" content="The antisymmetric spacetime tensor that packages electric and magnetic field components into one covariant object in relativistic electrodynamics.  162.1 References Griffiths, D. J. Introduction...">
+<meta name="twitter:description" content="The antisymmetric spacetime tensor that packages electric and magnetic field components into one covariant object in relativistic electrodynamics. Unified geometrical representation of...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -224,12 +224,88 @@
 <span class="header-section-number">162</span> Field Tensor<a class="anchor" aria-label="anchor" href="#field-tensor-1"><i class="fas fa-link"></i></a>
 </h1>
 <p>The antisymmetric spacetime tensor that packages electric and magnetic field components into one covariant object in relativistic electrodynamics.</p>
+<p>Unified geometrical representation of <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span>. Electric and magnetic fields form one antisymmetric second-rank tensor in spacetime. An antisymmetric tensor is a two-index object that changes sign when its indices are swapped. This principle is used to treat <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span> as frame-dependent parts of one field.</p>
+<p>The electromagnetic field tensor is</p>
+<p><span class="math display">\[
+F^{\mu\nu} =
+\begin{pmatrix}
+0 &amp; \dfrac{E_{x}}{c} &amp; \dfrac{E_{y}}{c} &amp; \dfrac{E_{z}}{c} \\
+-\dfrac{E_{x}}{c} &amp; 0 &amp; B_{z} &amp; -B_{y} \\
+-\dfrac{E_{y}}{c} &amp; -B_{z} &amp; 0 &amp; B_{x} \\
+-\dfrac{E_{z}}{c} &amp; B_{y} &amp; -B_{x} &amp; 0
+\end{pmatrix}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(F^{\mu\nu}\)</span> is the electromagnetic field tensor.</li>
+<li>
+<span class="math inline">\(E_{x}\)</span>, <span class="math inline">\(E_{y}\)</span>, <span class="math inline">\(E_{z}\)</span> are the electric-field components.</li>
+<li>
+<span class="math inline">\(B_{x}\)</span>, <span class="math inline">\(B_{y}\)</span>, <span class="math inline">\(B_{z}\)</span> are the magnetic-field components.</li>
+<li>
+<span class="math inline">\(c\)</span> is the speed of light.</li>
+</ul>
+<p>Definition from the four-potential. The field tensor is the four-dimensional curl of the four-potential. The four-potential is the four-vector <span class="math inline">\(\left(\dfrac{V}{c},\,\mathbf{A}\right)\)</span>. This principle is used to obtain <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span> from derivatives of <span class="math inline">\(A^{\mu}\)</span>.</p>
+<p>The field tensor from the four-potential is</p>
+<p><span class="math display">\[
+F_{\mu\nu} = \partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(F_{\mu\nu}\)</span> is the covariant field tensor.</li>
+<li>
+<span class="math inline">\(A_{\mu}\)</span> is the four-potential.</li>
+<li>
+<span class="math inline">\(\partial_{\mu}\)</span> is the spacetime derivative.</li>
+</ul>
+<p>Covariant Maxwell equations. Maxwell’s four vector equations reduce to two tensor equations. Manifest covariance is the property that an equation written in tensors keeps its form under Lorentz transformations. The four-current is the four-vector <span class="math inline">\((c\rho,\,\mathbf{J})\)</span>. This principle is used to write electrodynamics so that it holds in every inertial frame.</p>
+<p>The inhomogeneous Maxwell equation is</p>
+<p><span class="math display">\[
+\partial_{\mu}F^{\mu\nu} = \mu_{0}J^{\nu}
+\]</span></p>
+<p>The homogeneous Maxwell equation is</p>
+<p><span class="math display">\[
+\partial_{\lambda}F_{\mu\nu} + \partial_{\mu}F_{\nu\lambda} + \partial_{\nu}F_{\lambda\mu} = 0
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(J^{\nu}\)</span> is the four-current.</li>
+<li>
+<span class="math inline">\(\mu_{0}\)</span> is the permeability of free space.</li>
+</ul>
+<p>The relativistic Lorentz force. The four-force on a charge is the contraction of the field tensor with the four-velocity. Four-velocity is the rate of change of spacetime position with proper time. This principle is used to write electric and magnetic forces as one equation.</p>
+<p>The Minkowski force is</p>
+<p><span class="math display">\[
+f^{\mu} = q F^{\mu}{}_{\nu} U^{\nu}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(f^{\mu}\)</span> is the four-force.</li>
+<li>
+<span class="math inline">\(q\)</span> is the charge.</li>
+<li>
+<span class="math inline">\(U^{\nu}\)</span> is the four-velocity.</li>
+</ul>
+<p>Frame-invariant field scalars. Some combinations of <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span> built from the field tensor are the same in every inertial frame. A spacetime invariant is a scalar unchanged by a Lorentz transformation. This principle is used to recognize a radiation field as a field with <span class="math inline">\(E^{2}-c^{2}B^{2}=0\)</span> in every frame.</p>
+<p>The field invariant is</p>
+<p><span class="math display">\[
+F_{\mu\nu}F^{\mu\nu} = 2\left(B^{2} - \dfrac{E^{2}}{c^{2}}\right)
+\]</span></p>
+<p>Note: Also called the Faraday tensor. Also called the electromagnetic field tensor.</p>
 <div id="references-151" class="section level2" number="162.1">
 <h2>
 <span class="header-section-number">162.1</span> References<a class="anchor" aria-label="anchor" href="#references-151"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
 <li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. — source for the heading explanation.</li>
+<li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — <span class="math inline">\(F^{\mu\nu}\)</span> matrix; <span class="math inline">\(F_{\mu\nu}=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}\)</span>; covariant Maxwell equations; <span class="math inline">\(f^{\mu}=qF^{\mu}{}_{\nu}U^{\nu}\)</span>.</li>
+<li>Shankar, R. <em>Fundamentals of Physics II</em>. Yale University Press, 2020. — field-tensor components; four-potential.</li>
+<li>Emam, M. H. <em>Covariant Physics</em>. Oxford University Press, 2021. — <span class="math inline">\(F_{\mu\nu}\)</span>; Maxwell tensor equations; field invariants.</li>
+<li>Carroll, S. M. <em>Spacetime and Geometry</em>. Cambridge University Press. — Faraday tensor; <span class="math inline">\(f^{\mu}=qF^{\mu}{}_{\nu}U^{\nu}\)</span>; <span class="math inline">\(F_{\mu\nu}F^{\mu\nu}\)</span>.</li>
 </ol>
 <div class="topic-index">
 <ul>

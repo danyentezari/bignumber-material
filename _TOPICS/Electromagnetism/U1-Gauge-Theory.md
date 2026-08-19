@@ -2,7 +2,7 @@
 
 An abelian gauge theory with symmetry group $U(1)$ that is used to describe classical and quantum electrodynamics, where $U(1)$ is the circle group of phase factors, and where an abelian group is a group whose elements commute.
 
-1\. Electrodynamics is defined by a rank-one potential, the four-potential, whose field strength is the electromagnetic field. This principle is used to write Maxwell theory as a $U(1)$ gauge theory.
+Electrodynamics as a $U(1)$ gauge theory. Electrodynamics is defined by a rank-one potential, the four-potential, whose field strength is the electromagnetic field. This principle is used to write Maxwell theory as a $U(1)$ gauge theory.
 
 The electromagnetic field strength is
 
@@ -16,7 +16,7 @@ where
 - $A_{\mu}$ is the four-potential.
 - $\partial_{\mu}$ is the spacetime derivative.
 
-2\. A $U(1)$ gauge transformation shifts the potential by a gradient and leaves $F_{\mu\nu}$ invariant. This principle is used to change $A_{\mu}$ without changing the physical fields.
+Invariance of $F_{\mu\nu}$. A $U(1)$ gauge transformation shifts the potential by a gradient and leaves $F_{\mu\nu}$ invariant. This principle is used to change $A_{\mu}$ without changing the physical fields.
 
 The $U(1)$ gauge transformation is
 
@@ -29,7 +29,7 @@ where
 - $A_{\mu}$ is the four-potential.
 - $\lambda$ is the gauge function.
 
-3\. In the geometric language the potential is a $U(1)$ connection and the field strength is its curvature $F=dA$. This principle is used to identify electromagnetism with the abelian case of a general gauge theory.
+The abelian curvature $F=dA$. In the geometric language the potential is a $U(1)$ connection and the field strength is its curvature $F=dA$. This principle is used to identify electromagnetism with the abelian case of a general gauge theory.
 
 The abelian curvature is
 
@@ -43,7 +43,7 @@ where
 - $F$ is the curvature.
 - $d$ is the exterior derivative.
 
-Note: These principles are electrodynamics as a $U(1)$ gauge theory, invariance of $F_{\mu\nu}$, and the abelian curvature $F=dA$. Also called abelian gauge theory.
+Note: Also called abelian gauge theory.
 
 ## References
 

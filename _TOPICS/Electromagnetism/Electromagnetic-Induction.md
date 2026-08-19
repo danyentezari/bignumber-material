@@ -2,7 +2,7 @@
 
 A process that is used to generate electromotive force from a changing magnetic flux, where electromotive force is the work per unit charge around a closed loop, and where magnetic flux is the amount of magnetic field through a surface.
 
-1\. Magnetic flux measures how much magnetic field crosses a chosen surface. This principle is used to quantify the field threading a circuit, whose change drives induction.
+Magnetic flux. Magnetic flux measures how much magnetic field crosses a chosen surface. This principle is used to quantify the field threading a circuit, whose change drives induction.
 
 The magnetic flux is
 
@@ -16,7 +16,7 @@ where
 - $\mathbf{B}$ is the magnetic field.
 - $d\mathbf{a}$ is an area element of the surface.
 
-2\. Electromotive force is the net work per unit charge around a closed loop. This principle is used to compute the driving influence that maintains current in a circuit.
+Electromotive force. Electromotive force is the net work per unit charge around a closed loop. This principle is used to compute the driving influence that maintains current in a circuit.
 
 The electromotive force is
 
@@ -30,7 +30,7 @@ where
 - $\mathbf{f}$ is the force per unit charge.
 - $d\mathbf{l}$ is a directed element of the loop.
 
-3\. When a conductor moves through a magnetic field, charges in the conductor feel a magnetic force that drives them along the wire. This principle is used to analyze generators that convert motion into current.
+Motional electromotive force. When a conductor moves through a magnetic field, charges in the conductor feel a magnetic force that drives them along the wire. This principle is used to analyze generators that convert motion into current.
 
 The motional electromotive force is
 
@@ -45,7 +45,7 @@ where
 - $\mathbf{B}$ is the magnetic field.
 - $d\mathbf{l}$ is a directed element of the wire.
 
-4\. A changing magnetic flux through a loop produces a circulating electric field whose line integral equals the negative rate of change of that flux. This principle is used to compute induced fields in transformers, inductors, and generators.
+Faraday's law of induction. A changing magnetic flux through a loop produces a circulating electric field whose line integral equals the negative rate of change of that flux. This principle is used to compute induced fields in transformers, inductors, and generators.
 
 The integral form of Faraday's law is
 
@@ -68,7 +68,7 @@ where
 - $\nabla\times$ is the curl.
 - $\mathbf{B}$ is the magnetic field.
 
-5\. An induced current produces a magnetic field that opposes the change of flux that created it. This principle is used to determine the direction of induced currents and the forces they exert.
+Lenz's law. An induced current produces a magnetic field that opposes the change of flux that created it. This principle is used to determine the direction of induced currents and the forces they exert.
 
 Lenz's law is the minus sign in Faraday's law
 
@@ -82,7 +82,7 @@ where
 - $\Phi$ is the magnetic flux.
 - $t$ is time.
 
-6\. A time-varying magnetic field produces a nonconservative electric field that curls around the changing flux and is not sourced by charge. A nonconservative field is a field whose work around a closed path need not vanish. This principle is used to compute forces on charges in induction motors and betatrons.
+The induced electric field. A time-varying magnetic field produces a nonconservative electric field that curls around the changing flux and is not sourced by charge. A nonconservative field is a field whose work around a closed path need not vanish. This principle is used to compute forces on charges in induction motors and betatrons.
 
 The induced electric field around a loop is
 
@@ -97,7 +97,7 @@ where
 - $\Phi$ is the magnetic flux.
 - $t$ is time.
 
-7\. A changing current induces electromotive force in its own circuit and in neighboring circuits. Self-inductance is the coupling of a circuit to its own changing current. Mutual inductance is the coupling of one circuit to the changing current of another. This principle is used to design inductors and transformers.
+Self-inductance with mutual inductance. A changing current induces electromotive force in its own circuit and in neighboring circuits. Self-inductance is the coupling of a circuit to its own changing current. Mutual inductance is the coupling of one circuit to the changing current of another. This principle is used to design inductors and transformers.
 
 The self-inductance relation is
 
@@ -121,7 +121,7 @@ where
 - $I_{1}$ is the current in the first circuit.
 - $t$ is time.
 
-Note: These principles are magnetic flux, electromotive force, motional electromotive force, Faraday's law of induction, Lenz's law, the induced electric field, and self-inductance with mutual inductance. Also called induction.
+Note: Also called induction.
 
 ## References
 

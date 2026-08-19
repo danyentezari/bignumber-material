@@ -2,7 +2,7 @@
 
 The momentum carried by electromagnetic radiation that is used to count field momentum together with mechanical momentum so that total momentum is conserved.
 
-1\. A plane electromagnetic wave carries momentum in the direction of travel. This principle is used to treat a light beam as a stream of momentum as well as energy.
+The momentum density of a light wave. A plane electromagnetic wave carries momentum in the direction of travel. This principle is used to treat a light beam as a stream of momentum as well as energy.
 
 The momentum density of a plane wave is
 
@@ -16,7 +16,7 @@ where
 - $\mathbf{S}$ is the Poynting vector.
 - $c$ is the speed of light.
 
-2\. The momentum delivered to a perfect absorber equals the absorbed energy divided by $c$. This principle is used to compute the force of a light beam on a black surface.
+The momentum of absorbed energy. The momentum delivered to a perfect absorber equals the absorbed energy divided by $c$. This principle is used to compute the force of a light beam on a black surface.
 
 The momentum of an absorbed energy $U$ is
 
@@ -30,7 +30,7 @@ where
 - $U$ is the absorbed energy.
 - $c$ is the speed of light.
 
-3\. A perfect reflector receives twice that momentum. This principle is used to compute radiation pressure on a mirror.
+The radiation pressure on a reflector. A perfect reflector receives twice that momentum. This principle is used to compute radiation pressure on a mirror.
 
 The radiation pressure on a perfect reflector is
 
@@ -43,8 +43,6 @@ where
 - $P_{\mathrm{rad}}$ is the radiation pressure.
 - $S$ is the magnitude of the incident Poynting vector.
 - $c$ is the speed of light.
-
-Note: These principles are the momentum density of a light wave, the momentum of absorbed energy, and the radiation pressure on a reflector.
 
 ## References
 

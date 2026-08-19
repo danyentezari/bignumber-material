@@ -2,7 +2,7 @@
 
 A branch of electromagnetism that is used to describe fields and forces of electric charges that are at rest, where a stationary charge is a charge whose position does not change in time.
 
-1\. The force between two stationary point charges is proportional to the product of the charges and falls as the inverse square of their separation. A point charge is a charge treated as concentrated at a single location. This principle is used to compute the mechanical force between two isolated charges at rest.
+Coulomb's law. The force between two stationary point charges is proportional to the product of the charges and falls as the inverse square of their separation. A point charge is a charge treated as concentrated at a single location. This principle is used to compute the mechanical force between two isolated charges at rest.
 
 Coulomb's law is
 
@@ -19,7 +19,7 @@ where
 - $\hat{\mathbf{r}}$ is the unit vector from $q$ toward $Q$.
 - $\epsilon_{0}$ is the permittivity of free space.
 
-2\. The net electric field of many stationary charges is the vector sum of the fields that each charge would produce alone. A vector sum is an addition that accounts for both magnitude and direction. This principle is used to build the field of a complicated charge collection from simpler pieces.
+Superposition. The net electric field of many stationary charges is the vector sum of the fields that each charge would produce alone. A vector sum is an addition that accounts for both magnitude and direction. This principle is used to build the field of a complicated charge collection from simpler pieces.
 
 The superposition of electric fields is
 
@@ -33,7 +33,7 @@ where
 - $\mathbf{E}_{i}$ is the electric field of source charge $i$.
 - $n$ is the number of source charges.
 
-3\. A stationary charge distribution produces a vector field throughout space that exerts a local force on any other charge. A vector field is an assignment of a vector to each point in space. This principle is used to map electrostatic force without treating action at a distance.
+The electric field. A stationary charge distribution produces a vector field throughout space that exerts a local force on any other charge. A vector field is an assignment of a vector to each point in space. This principle is used to map electrostatic force without treating action at a distance.
 
 The electric field of a charge distribution is
 
@@ -51,7 +51,7 @@ where
 - $d\tau'$ is the volume element.
 - $\epsilon_{0}$ is the permittivity of free space.
 
-4\. The net outward flux of the electric field through a closed surface is proportional to the charge enclosed by that surface. Flux is the amount of a vector field that crosses a surface. This principle is used to find electric fields of highly symmetric charge distributions.
+Gauss's law. The net outward flux of the electric field through a closed surface is proportional to the charge enclosed by that surface. Flux is the amount of a vector field that crosses a surface. This principle is used to find electric fields of highly symmetric charge distributions.
 
 The integral form of Gauss's law is
 
@@ -74,7 +74,7 @@ where
 - $\rho$ is the volume charge density.
 - $\epsilon_{0}$ is the permittivity of free space.
 
-5\. A static electric field is conservative, so it is minus the gradient of a scalar potential. A conservative field is a field for which the work around every closed path vanishes. This principle is used to replace a three-component field problem by a single scalar function.
+The electrostatic potential. A static electric field is conservative, so it is minus the gradient of a scalar potential. A conservative field is a field for which the work around every closed path vanishes. This principle is used to replace a three-component field problem by a single scalar function.
 
 The electrostatic potential difference is
 
@@ -95,7 +95,7 @@ where
 - $d\mathbf{l}$ is a displacement along the path.
 - $\nabla$ is the gradient.
 
-6\. The electrostatic potential energy of a static charge collection is the work required to assemble those charges from infinite separation. This principle is used to compute the energy stored in a charge distribution and in its field.
+Electrostatic potential energy. The electrostatic potential energy of a static charge collection is the work required to assemble those charges from infinite separation. This principle is used to compute the energy stored in a charge distribution and in its field.
 
 The electrostatic energy of discrete charges is
 
@@ -118,7 +118,7 @@ where
 - $d\tau$ is the volume element.
 - $\epsilon_{0}$ is the permittivity of free space.
 
-7\. In a conductor at electrostatic equilibrium the interior electric field vanishes, excess charge resides on the surface, and the potential is constant throughout the conductor. A conductor is a material whose charges are free to move. This principle is used to design electrostatic shielding and to set boundary values on conducting surfaces.
+The electrostatic properties of conductors. In a conductor at electrostatic equilibrium the interior electric field vanishes, excess charge resides on the surface, and the potential is constant throughout the conductor. A conductor is a material whose charges are free to move. This principle is used to design electrostatic shielding and to set boundary values on conducting surfaces.
 
 The conductor conditions are
 
@@ -131,8 +131,6 @@ where
 - $\mathbf{E}_{\mathrm{inside}}$ is the electric field in the bulk of the conductor.
 - $\rho_{\mathrm{inside}}$ is the volume charge density in the bulk of the conductor.
 - $V$ is the electric potential.
-
-Note: These principles are Coulomb's law, superposition, the electric field, Gauss's law, the electrostatic potential, electrostatic potential energy, and the electrostatic properties of conductors.
 
 ## References
 

@@ -2,7 +2,7 @@
 
 A potential difference generated in a conducting loop by changing magnetic flux that is used to measure the work per unit charge done by the induced electric field, where electromotive force is that work per unit charge around the loop.
 
-1\. The induced emf is the line integral of the electric field around the loop. This principle is used to convert Faraday's law into a circuit quantity.
+The definition of emf. The induced emf is the line integral of the electric field around the loop. This principle is used to convert Faraday's law into a circuit quantity.
 
 The definition of emf is
 
@@ -16,7 +16,7 @@ where
 - $\mathbf{E}$ is the electric field.
 - $d\mathbf{l}$ is a displacement along the loop.
 
-2\. Faraday's law equates that emf to minus the rate of change of magnetic flux. This principle is used to compute the induced emf from $\Phi_{B}$.
+Faraday's flux rule. Faraday's law equates that emf to minus the rate of change of magnetic flux. This principle is used to compute the induced emf from $\Phi_{B}$.
 
 Faraday's flux rule is
 
@@ -30,7 +30,7 @@ where
 - $\Phi_{B}$ is the magnetic flux through the loop.
 - $t$ is time.
 
-3\. A conductor moving in a magnetic field develops a motional emf. This principle is used to compute the emf of a sliding bar on rails.
+Motional emf. A conductor moving in a magnetic field develops a motional emf. This principle is used to compute the emf of a sliding bar on rails.
 
 The motional emf is
 
@@ -43,8 +43,6 @@ where
 - $\mathbf{v}$ is the velocity of a length element of the conductor.
 - $\mathbf{B}$ is the magnetic field.
 - $d\mathbf{l}$ is a displacement along the conductor.
-
-Note: These principles are the definition of emf, Faraday's flux rule, and motional emf.
 
 ## References
 

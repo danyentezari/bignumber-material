@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>159 Electromagnetic Field Transformations | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="The rules for how electric and magnetic fields transform between inertial frames, so a pure electric field in one frame can appear mixed with a magnetic field in another. (\(\mathbf{F} =...">
+<meta name="description" content="The rules for how electric and magnetic fields transform between inertial frames, so a pure electric field in one frame can appear mixed with a magnetic field in another. Relativistic mixing of...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="159 Electromagnetic Field Transformations | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="The rules for how electric and magnetic fields transform between inertial frames, so a pure electric field in one frame can appear mixed with a magnetic field in another. (\(\mathbf{F} =...">
+<meta property="og:description" content="The rules for how electric and magnetic fields transform between inertial frames, so a pure electric field in one frame can appear mixed with a magnetic field in another. Relativistic mixing of...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="159 Electromagnetic Field Transformations | Mathematics for Physics">
-<meta name="twitter:description" content="The rules for how electric and magnetic fields transform between inertial frames, so a pure electric field in one frame can appear mixed with a magnetic field in another. (\(\mathbf{F} =...">
+<meta name="twitter:description" content="The rules for how electric and magnetic fields transform between inertial frames, so a pure electric field in one frame can appear mixed with a magnetic field in another. Relativistic mixing of...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -224,13 +224,61 @@
 <span class="header-section-number">159</span> Electromagnetic Field Transformations<a class="anchor" aria-label="anchor" href="#electromagnetic-field-transformations"><i class="fas fa-link"></i></a>
 </h1>
 <p>The rules for how electric and magnetic fields transform between inertial frames, so a pure electric field in one frame can appear mixed with a magnetic field in another.</p>
-<p>(<span class="math inline">\(\mathbf{F} = q(\mathbf{E} + \mathbf{v} \times \mathbf{B})\)</span>) (Lorentz force).</p>
+<p>Relativistic mixing of <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span>. An electric field in one inertial frame is a mixture of electric and magnetic fields in a relatively moving frame. Field mixing is that exchange of <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span> under a boost. This principle is used to treat electricity and magnetism as one electromagnetic field.</p>
+<p>Longitudinal invariance and transverse mixing. Components of <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span> parallel to the relative motion are unchanged. Transverse components mix and scale with the Lorentz factor. A longitudinal component is a field part along the boost. A transverse component is a field part perpendicular to the boost. This principle is used to compute moving-frame fields from rest-frame fields.</p>
+<p>The field transformations for a boost along <span class="math inline">\(x\)</span> are</p>
+<p><span class="math display">\[
+E'_{x} = E_{x},\qquad B'_{x} = B_{x}
+\]</span></p>
+<p><span class="math display">\[
+E'_{y} = \gamma\left(E_{y} - v B_{z}\right),\qquad E'_{z} = \gamma\left(E_{z} + v B_{y}\right)
+\]</span></p>
+<p><span class="math display">\[
+B'_{y} = \gamma\left(B_{y} + \dfrac{v}{c^{2}} E_{z}\right),\qquad B'_{z} = \gamma\left(B_{z} - \dfrac{v}{c^{2}} E_{y}\right)
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span> are the fields in the first inertial frame.</li>
+<li>
+<span class="math inline">\(\mathbf{E}'\)</span> and <span class="math inline">\(\mathbf{B}'\)</span> are the fields in the second inertial frame.</li>
+<li>
+<span class="math inline">\(v\)</span> is the relative speed of the primed frame along <span class="math inline">\(x\)</span>.</li>
+<li>
+<span class="math inline">\(c\)</span> is the speed of light.</li>
+<li>
+<span class="math inline">\(\gamma\)</span> is the Lorentz factor.</li>
+</ul>
+<p>The unified field tensor. The six independent field components form one antisymmetric field tensor. The electromagnetic field tensor is a <span class="math inline">\(4\times 4\)</span> array whose entries are those components. This principle is used to write the transformations as a Lorentz transformation of <span class="math inline">\(F^{\mu\nu}\)</span>.</p>
+<p>Frame-invariance of the total force. All inertial observers agree on the deflection of a moving charge, while they split that force into different mixtures of <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span>. The Lorentz force is the net electromagnetic force on a moving charge. This principle is used to keep the physical trajectory the same while the field mix changes.</p>
+<p>The Lorentz force is</p>
+<p><span class="math display">\[
+\mathbf{F} = q(\mathbf{E} + \mathbf{v} \times \mathbf{B})
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\mathbf{F}\)</span> is the force.</li>
+<li>
+<span class="math inline">\(q\)</span> is the charge.</li>
+<li>
+<span class="math inline">\(\mathbf{v}\)</span> is the velocity of the charge.</li>
+<li>
+<span class="math inline">\(\mathbf{E}\)</span> is the electric field.</li>
+<li>
+<span class="math inline">\(\mathbf{B}\)</span> is the magnetic field.</li>
+</ul>
 <div id="references-148" class="section level2" number="159.1">
 <h2>
 <span class="header-section-number">159.1</span> References<a class="anchor" aria-label="anchor" href="#references-148"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
 <li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. — source for the heading explanation.</li>
+<li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — <span class="math inline">\(E'_{\parallel}=E_{\parallel}\)</span>; transverse mixing; <span class="math inline">\(\mathbf{F}=q(\mathbf{E}+\mathbf{v}\times\mathbf{B})\)</span>; <span class="math inline">\(F^{\mu\nu}\)</span>.</li>
+<li>Knight, R. D. <em>Physics for Scientists and Engineers: A Strategic Approach with Modern Physics</em>. Pearson, 2023. — electric and magnetic fields mix between frames; Lorentz force.</li>
+<li>Shankar, R. <em>Fundamentals of Physics II</em>. Yale University Press, 2020. — direction-dependent field transformations.</li>
+<li>Carroll, S. M. <em>Spacetime and Geometry</em>. Cambridge University Press. — unified electromagnetic field; <span class="math inline">\(F_{\mu\nu}\)</span>.</li>
+<li>Emam, M. H. <em>Covariant Physics</em>. Oxford University Press, 2021. — electromagnetic field tensor.</li>
 </ol>
 <div class="topic-index">
 <ul>

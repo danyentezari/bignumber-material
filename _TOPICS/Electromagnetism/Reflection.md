@@ -2,7 +2,7 @@
 
 A phenomenon in which an electromagnetic wave bounces at a boundary between media that is used to continue the wave in the original medium with a changed direction.
 
-1\. The angle of incidence equals the angle of reflection. This principle is used to aim a reflected ray from a known incoming ray.
+The law of reflection. The angle of incidence equals the angle of reflection. This principle is used to aim a reflected ray from a known incoming ray.
 
 The law of reflection is
 
@@ -15,9 +15,9 @@ where
 - $\theta_{i}$ is the angle of incidence measured from the normal.
 - $\theta_{r}$ is the angle of reflection measured from the normal.
 
-2\. The incident, reflected, and transmitted wave vectors lie in one plane with the surface normal. This principle is used to set the geometry of the boundary-value problem.
+Coplanarity of the rays. The incident, reflected, and transmitted wave vectors lie in one plane with the surface normal. This principle is used to set the geometry of the boundary-value problem.
 
-3\. The amplitude of the reflected wave is fixed by the Fresnel coefficients. A Fresnel coefficient is the ratio of a reflected or transmitted field amplitude to the incident amplitude. This principle is used to compute how much of the wave is reflected at a dielectric interface.
+The Fresnel reflection coefficients. The amplitude of the reflected wave is fixed by the Fresnel coefficients. A Fresnel coefficient is the ratio of a reflected or transmitted field amplitude to the incident amplitude. This principle is used to compute how much of the wave is reflected at a dielectric interface.
 
 The Fresnel coefficient for $\mathbf{E}$ perpendicular to the plane of incidence is
 
@@ -31,8 +31,6 @@ where
 - $n_{1}$ and $n_{2}$ are the indices of refraction of the two media.
 - $\theta_{i}$ is the angle of incidence.
 - $\theta_{t}$ is the angle of transmission.
-
-Note: These principles are the law of reflection, coplanarity of the rays, and the Fresnel reflection coefficients.
 
 ## References
 

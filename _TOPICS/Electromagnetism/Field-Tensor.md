@@ -2,7 +2,7 @@
 
 An antisymmetric spacetime tensor that is used to package the electric and magnetic fields into one Lorentz-covariant object, where an antisymmetric tensor is a two-index object that changes sign when its indices are swapped.
 
-1\. The six independent components of $F^{\mu\nu}$ are the three electric and three magnetic field components. This principle is used to treat $\mathbf{E}$ and $\mathbf{B}$ as parts of one spacetime field.
+The component identification of $F^{\mu\nu}$. The six independent components of $F^{\mu\nu}$ are the three electric and three magnetic field components. This principle is used to treat $\mathbf{E}$ and $\mathbf{B}$ as parts of one spacetime field.
 
 The electromagnetic field tensor is
 
@@ -23,7 +23,7 @@ where
 - $B_{x}$, $B_{y}$, $B_{z}$ are the magnetic-field components.
 - $c$ is the speed of light.
 
-2\. The field tensor is the curl of the four-potential. This principle is used to obtain $F^{\mu\nu}$ from $A^{\mu}$.
+The potential formula $F=dA$. The field tensor is the curl of the four-potential. This principle is used to obtain $F^{\mu\nu}$ from $A^{\mu}$.
 
 The field tensor from the four-potential is
 
@@ -37,7 +37,7 @@ where
 - $A_{\mu}$ is the four-potential.
 - $\partial_{\mu}$ is the spacetime derivative.
 
-3\. Maxwell's equations are two tensor equations for $F^{\mu\nu}$. This principle is used to write electrodynamics in every inertial frame at once.
+The covariant Maxwell equations. Maxwell's equations are two tensor equations for $F^{\mu\nu}$. This principle is used to write electrodynamics in every inertial frame at once.
 
 The inhomogeneous Maxwell equation is
 
@@ -58,7 +58,7 @@ where
 - $\mu_{0}$ is the permeability of free space.
 - $x^{\nu}$ are the spacetime coordinates.
 
-Note: These principles are the component identification of $F^{\mu\nu}$, the potential formula $F=dA$, and the covariant Maxwell equations. Also called the Faraday tensor. Also called the electromagnetic field tensor.
+Note: Also called the Faraday tensor. Also called the electromagnetic field tensor.
 
 ## References
 

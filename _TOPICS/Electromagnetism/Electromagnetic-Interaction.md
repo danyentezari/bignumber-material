@@ -2,7 +2,7 @@
 
 A force between charged particles that is used to combine the electric-field force with the velocity-dependent magnetic force.
 
-1\. The electromagnetic force on a point charge is the Lorentz force. This principle is used to compute the mechanical force felt by a charge in given fields.
+The Lorentz force. The electromagnetic force on a point charge is the Lorentz force. This principle is used to compute the mechanical force felt by a charge in given fields.
 
 The Lorentz force is
 
@@ -18,7 +18,7 @@ where
 - $\mathbf{v}$ is the velocity.
 - $\mathbf{B}$ is the magnetic field.
 
-2\. The electric part is independent of velocity. This principle is used to recover the electrostatic force on a charge at rest.
+The electric part. The electric part is independent of velocity. This principle is used to recover the electrostatic force on a charge at rest.
 
 The electric force is
 
@@ -32,7 +32,7 @@ where
 - $q$ is the charge.
 - $\mathbf{E}$ is the electric field.
 
-3\. The magnetic part is perpendicular to the velocity and does no work. This principle is used to change the direction of a moving charge without changing its kinetic energy.
+The magnetic part of the electromagnetic interaction. The magnetic part is perpendicular to the velocity and does no work. This principle is used to change the direction of a moving charge without changing its kinetic energy.
 
 The magnetic force is
 
@@ -46,8 +46,6 @@ where
 - $q$ is the charge.
 - $\mathbf{v}$ is the velocity.
 - $\mathbf{B}$ is the magnetic field.
-
-Note: These principles are the Lorentz force, the electric part, and the magnetic part of the electromagnetic interaction.
 
 ## References
 

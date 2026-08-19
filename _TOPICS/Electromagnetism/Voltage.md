@@ -2,7 +2,7 @@
 
 A potential difference between two points that is used to measure the work per unit charge needed to move charge from one point to the other.
 
-1\. The voltage between two points is the work per unit charge to carry a charge from one point to the other. This principle is used to assign a single number to a pair of terminals.
+Voltage as work per unit charge. The voltage between two points is the work per unit charge to carry a charge from one point to the other. This principle is used to assign a single number to a pair of terminals.
 
 The voltage as work per unit charge is
 
@@ -16,7 +16,7 @@ where
 - $W$ is the work to move charge $Q$ from $a$ to $b$.
 - $Q$ is the test charge.
 
-2\. In a static field the same voltage is obtained along every path between the two points. This principle is used to treat voltage as a property of the pair of points, not of the path.
+Path independence in electrostatics. In a static field the same voltage is obtained along every path between the two points. This principle is used to treat voltage as a property of the pair of points, not of the path.
 
 The line-integral form of the voltage is
 
@@ -30,7 +30,7 @@ where
 - $\mathbf{E}$ is the electric field.
 - $d\mathbf{l}$ is a displacement along the path.
 
-Note: These principles are voltage as work per unit charge and path independence in electrostatics. Also called electric potential difference.
+Note: Also called electric potential difference.
 
 ## References
 

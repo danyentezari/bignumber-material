@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>157 Coordinate Transformations | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="A set of equations that translate spatial and temporal measurements of events from one reference frame’s coordinates into another’s.  157.1 References Knight, R. D. Physics for Scientists and...">
+<meta name="description" content="A set of equations that translate spatial and temporal measurements of events from one reference frame’s coordinates into another’s. Event mapping between frames. A coordinate transformation maps...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="157 Coordinate Transformations | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="A set of equations that translate spatial and temporal measurements of events from one reference frame’s coordinates into another’s.  157.1 References Knight, R. D. Physics for Scientists and...">
+<meta property="og:description" content="A set of equations that translate spatial and temporal measurements of events from one reference frame’s coordinates into another’s. Event mapping between frames. A coordinate transformation maps...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="157 Coordinate Transformations | Mathematics for Physics">
-<meta name="twitter:description" content="A set of equations that translate spatial and temporal measurements of events from one reference frame’s coordinates into another’s.  157.1 References Knight, R. D. Physics for Scientists and...">
+<meta name="twitter:description" content="A set of equations that translate spatial and temporal measurements of events from one reference frame’s coordinates into another’s. Event mapping between frames. A coordinate transformation maps...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -224,12 +224,63 @@
 <span class="header-section-number">157</span> Coordinate Transformations<a class="anchor" aria-label="anchor" href="#coordinate-transformations"><i class="fas fa-link"></i></a>
 </h1>
 <p>A set of equations that translate spatial and temporal measurements of events from one reference frame’s coordinates into another’s.</p>
+<p>Event mapping between frames. A coordinate transformation maps the space and time labels of an event from one frame to another. A coordinate label is a set of four numbers giving position and time. A linear mapping is a rule in which those coordinates enter only to the first power. This principle is used to convert laboratory measurements into a moving frame.</p>
+<p>Galilean versus Lorentz time. Galilean transformations treat time as the same in every frame. Lorentz transformations mix time with position. Absolute time is a time all observers assign the same value. Frame-dependent time is a time that changes with the observer’s velocity. This principle is used to explain why simultaneous events in one frame need not be simultaneous in another.</p>
+<p>The Galilean transformations are</p>
+<p><span class="math display">\[
+x' = x - vt
+\]</span></p>
+<p><span class="math display">\[
+y' = y
+\]</span></p>
+<p><span class="math display">\[
+z' = z
+\]</span></p>
+<p><span class="math display">\[
+t' = t
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\((x,y,z,t)\)</span> are spacetime coordinates in the first inertial frame.</li>
+<li>
+<span class="math inline">\((x',y',z',t')\)</span> are spacetime coordinates in the second inertial frame.</li>
+<li>
+<span class="math inline">\(v\)</span> is the constant relative velocity of the primed frame along <span class="math inline">\(x\)</span>.</li>
+</ul>
+<p>The Lorentz transformations are</p>
+<p><span class="math display">\[
+x' = \gamma(x - vt)
+\]</span></p>
+<p><span class="math display">\[
+y' = y
+\]</span></p>
+<p><span class="math display">\[
+z' = z
+\]</span></p>
+<p><span class="math display">\[
+t' = \gamma\left(t - \dfrac{vx}{c^{2}}\right)
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(c\)</span> is the speed of light in vacuum.</li>
+<li>
+<span class="math inline">\(\gamma = \dfrac{1}{\sqrt{1 - \dfrac{v^{2}}{c^{2}}}}\)</span> is the Lorentz factor.</li>
+</ul>
+<p>Preservation of the spacetime interval. Lorentz transformations are the linear maps that leave the spacetime interval unchanged. A spacetime interval is the invariant four-dimensional squared separation of two events. This principle is used to keep the speed of light the same in every inertial frame.</p>
+<p>Low-speed Galilean correspondence. When the relative speed is much smaller than the speed of light, Lorentz transformations reduce to Galilean transformations. This principle is used to recover everyday classical coordinate changes.</p>
 <div id="references-146" class="section level2" number="157.1">
 <h2>
 <span class="header-section-number">157.1</span> References<a class="anchor" aria-label="anchor" href="#references-146"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
 <li>Knight, R. D. <em>Physics for Scientists and Engineers: A Strategic Approach with Modern Physics</em>. Pearson, 2023. — source for the heading explanation.</li>
+<li>Knight, R. D. <em>Physics for Scientists and Engineers: A Strategic Approach with Modern Physics</em>. Pearson, 2023. — Lorentz transformations; low-speed Galilean limit.</li>
+<li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — Galilean transformations; Lorentz boosts; frame-dependent time.</li>
+<li>Emam, M. H. <em>Covariant Physics</em>. Oxford University Press, 2021. — Lorentz versus Galilean time.</li>
+<li>Carroll, S. M. <em>Spacetime and Geometry</em>. Cambridge University Press. — linear maps that preserve the interval.</li>
+<li>Shankar, R. <em>Fundamentals of Physics I</em>. Yale University Press, 2019. — event mapping; interval preservation; Galilean limit.</li>
 </ol>
 <div class="topic-index">
 <ul>

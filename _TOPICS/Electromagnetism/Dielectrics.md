@@ -2,7 +2,7 @@
 
 An insulating material that is used to weaken the net electric field inside a capacitor by becoming polarized, where an insulator is a material whose charges are not free to travel through the bulk.
 
-1\. An external field induces a dipole moment in the molecules of a dielectric. Polarization is the dipole moment per unit volume. This principle is used to describe how the material responds to the applied field.
+Polarization of a linear dielectric. An external field induces a dipole moment in the molecules of a dielectric. Polarization is the dipole moment per unit volume. This principle is used to describe how the material responds to the applied field.
 
 The polarization is
 
@@ -17,7 +17,7 @@ where
 - $\chi_{e}$ is the electric susceptibility.
 - $\mathbf{E}$ is the electric field in the material.
 
-2\. The net field inside a linear dielectric is the applied field reduced by the factor $\kappa$. The dielectric constant is that reduction factor. This principle is used to compute the field and capacitance when a dielectric fills the gap.
+The dielectric constant. The net field inside a linear dielectric is the applied field reduced by the factor $\kappa$. The dielectric constant is that reduction factor. This principle is used to compute the field and capacitance when a dielectric fills the gap.
 
 The dielectric constant is
 
@@ -30,7 +30,7 @@ where
 - $\kappa$ is the dielectric constant.
 - $\chi_{e}$ is the electric susceptibility.
 
-3\. The displacement field includes both the electric field and the polarization. This principle is used to write Gauss's law in the presence of linear dielectrics.
+The electric displacement. The displacement field includes both the electric field and the polarization. This principle is used to write Gauss's law in the presence of linear dielectrics.
 
 The displacement field is
 
@@ -45,7 +45,7 @@ where
 - $\mathbf{P}$ is the polarization.
 - $\epsilon_{0}$ is the permittivity of free space.
 
-Note: These principles are polarization of a linear dielectric, the dielectric constant, and the electric displacement. Also called insulating materials in electrostatics.
+Note: Also called insulating materials in electrostatics.
 
 ## References
 

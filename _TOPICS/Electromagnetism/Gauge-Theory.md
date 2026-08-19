@@ -2,7 +2,7 @@
 
 A field theory with gauge symmetries that is used to describe fundamental interactions so that physics does not depend on the descriptive choice of local frames, where a gauge symmetry is a local symmetry of the potentials, and where a local frame is a descriptive choice of phase or internal coordinates at each point.
 
-1\. The laws of physics stay the same when the phase of a matter field is changed independently at each point. A matter field is a field that describes charged matter. This principle is used to introduce the force field that restores that local invariance.
+The gauge principle. The laws of physics stay the same when the phase of a matter field is changed independently at each point. A matter field is a field that describes charged matter. This principle is used to introduce the force field that restores that local invariance.
 
 The local phase transformation is
 
@@ -16,7 +16,7 @@ where
 - $e$ is the coupling constant.
 - $\alpha(x)$ is a spacetime-dependent phase.
 
-2\. Physical observables cannot depend on the local choice of phase. An observable is a quantity that can be measured. This principle is used to keep charge conservation and to require that the Lagrangian be unchanged by a gauge transformation.
+Gauge symmetry. Physical observables cannot depend on the local choice of phase. An observable is a quantity that can be measured. This principle is used to keep charge conservation and to require that the Lagrangian be unchanged by a gauge transformation.
 
 Gauge invariance of the Lagrangian is
 
@@ -31,7 +31,7 @@ where
 - $D_{\mu}$ is the covariant derivative.
 - $F_{\mu\nu}$ is the gauge field strength.
 
-3\. Local invariance requires a compensating vector field, the gauge potential, that tracks how the internal frame turns from point to point. This principle is used to define parallel transport of charged fields.
+The gauge potential. Local invariance requires a compensating vector field, the gauge potential, that tracks how the internal frame turns from point to point. This principle is used to define parallel transport of charged fields.
 
 The connection one-form is
 
@@ -46,7 +46,7 @@ where
 - $A_{\mu}$ is the gauge potential.
 - $dx^{\mu}$ are the coordinate differentials.
 
-4\. The physical field strength is the curvature of that connection. Curvature is the failure of parallel transport around a closed loop to return the same internal frame. This principle is used to compute the force field from the potential.
+The gauge field as curvature. The physical field strength is the curvature of that connection. Curvature is the failure of parallel transport around a closed loop to return the same internal frame. This principle is used to compute the force field from the potential.
 
 The curvature is related to the potential by
 
@@ -61,7 +61,7 @@ where
 - $d$ is the exterior derivative.
 - $\wedge$ is the wedge product of forms.
 
-5\. A gauge transformation changes the potential without changing the curvature. This principle is used to pass between equivalent potentials that describe the same physical field.
+Gauge transformations. A gauge transformation changes the potential without changing the curvature. This principle is used to pass between equivalent potentials that describe the same physical field.
 
 The electromagnetic gauge transformation is
 
@@ -75,7 +75,7 @@ where
 - $A_{\mu}$ is the original potential.
 - $\alpha$ is the gauge function.
 
-6\. Ordinary derivatives of a charged field pick up extra phase terms, so they are replaced by a covariant derivative that includes the potential. Minimal coupling is that replacement. This principle is used to introduce the interaction of matter with the gauge field.
+The covariant derivative with minimal coupling. Ordinary derivatives of a charged field pick up extra phase terms, so they are replaced by a covariant derivative that includes the potential. Minimal coupling is that replacement. This principle is used to introduce the interaction of matter with the gauge field.
 
 The covariant derivative is
 
@@ -90,7 +90,7 @@ where
 - $e$ is the coupling constant.
 - $A_{\mu}$ is the gauge potential.
 
-7\. Electromagnetism is the gauge theory of the group $U(1)$. An abelian group is a group whose operations commute, so the photon does not carry charge. This principle is used to recover the electromagnetic potentials and fields as the $U(1)$ connection and curvature.
+$U(1)$ gauge theory. Electromagnetism is the gauge theory of the group $U(1)$. An abelian group is a group whose operations commute, so the photon does not carry charge. This principle is used to recover the electromagnetic potentials and fields as the $U(1)$ connection and curvature.
 
 The abelian field strength is
 
@@ -103,7 +103,7 @@ where
 - $F_{\mu\nu}$ is the electromagnetic field tensor.
 - $A_{\mu}$ is the electromagnetic potential.
 
-Note: These principles are the gauge principle, gauge symmetry, the gauge potential, the gauge field as curvature, gauge transformations, the covariant derivative with minimal coupling, and $U(1)$ gauge theory. Also called a gauge field theory.
+Note: Also called a gauge field theory.
 
 ## References
 

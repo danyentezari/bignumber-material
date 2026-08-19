@@ -2,9 +2,9 @@
 
 A reference frame that accelerates relative to an inertial frame that is used to describe measurements when Newton’s first law does not hold in its simple form.
 
-1\. A non-inertial frame is a coordinate system that is accelerating. Acceleration is the rate of change of velocity with time. This principle is used to describe physics from the viewpoint of an observer whose motion is changing.
+The definition of a non-inertial frame. A non-inertial frame is a coordinate system that is accelerating. Acceleration is the rate of change of velocity with time. This principle is used to describe physics from the viewpoint of an observer whose motion is changing.
 
-2\. An observer in a non-inertial frame measures free objects accelerating and must introduce fictitious forces. A fictitious force is an apparent force that arises only from acceleration of the frame. This principle is used to explain the outward shove felt in a turning car.
+The appearance of fictitious forces. An observer in a non-inertial frame measures free objects accelerating and must introduce fictitious forces. A fictitious force is an apparent force that arises only from acceleration of the frame. This principle is used to explain the outward shove felt in a turning car.
 
 The centrifugal force in a rotating frame is
 
@@ -19,9 +19,9 @@ where
 - $v$ is the speed on the rotating platform.
 - $R$ is the radius of the circular path.
 
-3\. The effects felt in a uniformly accelerating frame match those in a uniform gravitational field. A uniform gravitational field is a region where the gravitational force is the same at every point. This principle is used to extend relativity from inertial observers to accelerating observers.
+The equivalence of uniform acceleration with uniform gravity. The effects felt in a uniformly accelerating frame match those in a uniform gravitational field. A uniform gravitational field is a region where the gravitational force is the same at every point. This principle is used to extend relativity from inertial observers to accelerating observers.
 
-Note: These principles are the definition of a non-inertial frame, the appearance of fictitious forces, and the equivalence of uniform acceleration with uniform gravity. Also called a noninertial reference frame. Also called an accelerating reference frame.
+Note: Also called a noninertial reference frame. Also called an accelerating reference frame.
 
 ## References
 

@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>175 Lorentz Transformations | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="The coordinate transformation that is used to convert spacetime coordinates between inertial frames moving at constant relative velocity. Note: Also called a Lorentz boost when the frames differ...">
+<meta name="description" content="The coordinate transformation that is used to convert spacetime coordinates between inertial frames moving at constant relative velocity. Coordinate mixing of space and time. A Lorentz...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="175 Lorentz Transformations | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="The coordinate transformation that is used to convert spacetime coordinates between inertial frames moving at constant relative velocity. Note: Also called a Lorentz boost when the frames differ...">
+<meta property="og:description" content="The coordinate transformation that is used to convert spacetime coordinates between inertial frames moving at constant relative velocity. Coordinate mixing of space and time. A Lorentz...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="175 Lorentz Transformations | Mathematics for Physics">
-<meta name="twitter:description" content="The coordinate transformation that is used to convert spacetime coordinates between inertial frames moving at constant relative velocity. Note: Also called a Lorentz boost when the frames differ...">
+<meta name="twitter:description" content="The coordinate transformation that is used to convert spacetime coordinates between inertial frames moving at constant relative velocity. Coordinate mixing of space and time. A Lorentz...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -224,7 +224,7 @@
 <span class="header-section-number">175</span> Lorentz Transformations<a class="anchor" aria-label="anchor" href="#lorentz-transformations-1"><i class="fas fa-link"></i></a>
 </h1>
 <p>The coordinate transformation that is used to convert spacetime coordinates between inertial frames moving at constant relative velocity.</p>
-<p>Note: Also called a Lorentz boost when the frames differ by a constant velocity along one axis.</p>
+<p>Coordinate mixing of space and time. A Lorentz transformation mixes space and time coordinates of an event when changing from one inertial frame to another. Coordinate mixing is the rewriting of space and time into new linear combinations. This principle is used to compute an event’s coordinates in a frame that moves at constant relative velocity.</p>
 <p>The Lorentz transformations are</p>
 <p><span class="math display">\[
 x' = \gamma(x - vt)
@@ -251,14 +251,20 @@ t' = \gamma\left(t - \dfrac{vx}{c^{2}}\right)
 <li>
 <span class="math inline">\(\gamma = \dfrac{1}{\sqrt{1 - \dfrac{v^{2}}{c^{2}}}}\)</span> is the Lorentz factor.</li>
 </ul>
+<p>Invariance of the spacetime interval. Individual space and time coordinates change under a boost, while the spacetime interval between events is unchanged. A boost is a Lorentz transformation for a constant relative velocity. An invariant is a quantity that all inertial observers assign the same value. This principle is used to keep the geometry of spacetime independent of the frame.</p>
+<p>Invariance of transverse coordinates. Coordinates perpendicular to the relative motion are unchanged. Transverse coordinates are the axes at right angles to the relative velocity. This principle is used to leave lengths perpendicular to the motion uncontracted.</p>
+<p>Low-speed Galilean correspondence. When the relative speed is much smaller than the speed of light, the Lorentz transformations reduce to the Galilean transformations. Galilean transformations are the classical coordinate rules that treat time as the same in every frame. This principle is used to recover Newtonian kinematics at everyday speeds.</p>
+<p>Note: Also called a Lorentz boost when the frames differ by a constant velocity along one axis.</p>
 <div id="references-164" class="section level2" number="175.1">
 <h2>
 <span class="header-section-number">175.1</span> References<a class="anchor" aria-label="anchor" href="#references-164"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
 <li>Knight, R. D. <em>Physics for Scientists and Engineers: A Strategic Approach with Modern Physics</em>. Pearson, 2023. — Lorentz transformations and <span class="math inline">\(\gamma = \dfrac{1}{\sqrt{1-\dfrac{v^{2}}{c^{2}}}}\)</span>.</li>
-<li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — Lorentz boost with factor <span class="math inline">\(\gamma\)</span>.</li>
-<li>Emam, M. H. <em>Covariant Physics</em>. Oxford University Press, 2021. — Lorentz transformations in terms of <span class="math inline">\(\beta\)</span> and <span class="math inline">\(\gamma\)</span>.</li>
+<li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — Lorentz boost with factor <span class="math inline">\(\gamma\)</span>; unchanged transverse coordinates.</li>
+<li>Emam, M. H. <em>Covariant Physics</em>. Oxford University Press, 2021. — Lorentz transformations in terms of <span class="math inline">\(\beta\)</span> and <span class="math inline">\(\gamma\)</span>; low-speed Galilean limit.</li>
+<li>Carroll, S. M. <em>Spacetime and Geometry</em>. Cambridge University Press. — boosts mix space and time; interval invariance.</li>
+<li>Shankar, R. <em>Fundamentals of Physics I</em>. Yale University Press, 2019. — interval invariance; transverse invariance; Galilean limit.</li>
 </ol>
 <div class="topic-index">
 <ul>

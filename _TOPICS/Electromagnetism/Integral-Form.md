@@ -2,7 +2,7 @@
 
 An integral statement of Maxwell's equations that is used to relate fluxes and circulations of the fields to enclosed charge and current, where a flux is the amount of a field that crosses a surface, and where a circulation is the line integral of a field around a loop.
 
-1\. The net outward electric flux through a closed surface is proportional to the charge enclosed by that surface. A closed surface is a boundary that separates an inside from an outside. This principle is used to compute electric fields of highly symmetric charge distributions.
+The integral form of Gauss's law. The net outward electric flux through a closed surface is proportional to the charge enclosed by that surface. A closed surface is a boundary that separates an inside from an outside. This principle is used to compute electric fields of highly symmetric charge distributions.
 
 The integral form of Gauss's law is
 
@@ -17,7 +17,7 @@ where
 - $Q_{\mathrm{enc}}$ is the enclosed charge.
 - $\epsilon_{0}$ is the permittivity of free space.
 
-2\. The net outward magnetic flux through every closed surface is zero. This principle is used to require that magnetic field lines form closed loops.
+Gauss's law for magnetism. The net outward magnetic flux through every closed surface is zero. This principle is used to require that magnetic field lines form closed loops.
 
 The integral form of Gauss's law for magnetism is
 
@@ -30,7 +30,7 @@ where
 - $\mathbf{B}$ is the magnetic field.
 - $d\mathbf{a}$ is an outward area element of the closed surface.
 
-3\. The circulation of the electric field around a closed loop equals the negative rate of change of magnetic flux through any surface bounded by that loop. This principle is used to compute induced voltages in generators and transformers.
+Faraday's law. The circulation of the electric field around a closed loop equals the negative rate of change of magnetic flux through any surface bounded by that loop. This principle is used to compute induced voltages in generators and transformers.
 
 The integral form of Faraday's law is
 
@@ -45,7 +45,7 @@ where
 - $\Phi_{B}$ is the magnetic flux.
 - $t$ is time.
 
-4\. The circulation of the magnetic field around a closed loop is proportional to the enclosed current plus the rate of change of electric flux through a surface bounded by the loop. This principle is used to compute magnetic fields of currents and of changing electric fields.
+The Ampère-Maxwell law. The circulation of the magnetic field around a closed loop is proportional to the enclosed current plus the rate of change of electric flux through a surface bounded by the loop. This principle is used to compute magnetic fields of currents and of changing electric fields.
 
 The integral form of the Ampère-Maxwell law is
 
@@ -63,7 +63,7 @@ where
 - $\Phi_{E}$ is the electric flux.
 - $t$ is time.
 
-Note: These principles are the integral form of Gauss's law, Gauss's law for magnetism, Faraday's law, and the Ampère-Maxwell law. Also called the integral form of Maxwell's equations.
+Note: Also called the integral form of Maxwell's equations.
 
 ## References
 

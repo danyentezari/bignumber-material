@@ -2,7 +2,7 @@
 
 A rate of electric charge flow past a point that is used to measure how much charge passes through a wire or region per unit time.
 
-1\. Current is the rate at which charge passes a point. This principle is used to assign a single number $I$ to the flow in a wire.
+The definition of current. Current is the rate at which charge passes a point. This principle is used to assign a single number $I$ to the flow in a wire.
 
 The definition of current is
 
@@ -16,7 +16,7 @@ where
 - $Q$ is the charge that has passed the point.
 - $t$ is time.
 
-2\. A steady current moves a charge proportional to the elapsed time. This principle is used to compute the total charge delivered by a constant current.
+The charge delivered by a steady current. A steady current moves a charge proportional to the elapsed time. This principle is used to compute the total charge delivered by a constant current.
 
 The charge delivered by a steady current is
 
@@ -30,7 +30,7 @@ where
 - $I$ is the steady current.
 - $t$ is time.
 
-Note: These principles are the definition of current and the charge delivered by a steady current. Also called electric current.
+Note: Also called electric current.
 
 ## References
 

@@ -2,7 +2,7 @@
 
 Integral quantities of a charge distribution that are used to characterize successive terms in a multipole expansion, where a multipole expansion is a series that organizes a distant potential by inverse powers of distance.
 
-1\. The monopole moment is the total charge of the distribution. This principle is used to write the leading term of the potential when the net charge is not zero.
+The monopole moment. The monopole moment is the total charge of the distribution. This principle is used to write the leading term of the potential when the net charge is not zero.
 
 The monopole moment is
 
@@ -16,7 +16,7 @@ where
 - $\rho$ is the charge density.
 - $d\tau'$ is the volume element.
 
-2\. The dipole moment is the first moment of the charge density. This principle is used to write the leading term of the potential of a neutral charge collection.
+The dipole moment. The dipole moment is the first moment of the charge density. This principle is used to write the leading term of the potential of a neutral charge collection.
 
 The dipole moment is
 
@@ -31,7 +31,7 @@ where
 - $\rho$ is the charge density.
 - $d\tau'$ is the volume element.
 
-3\. Higher moments involve higher powers of the source coordinate. This principle is used to continue the expansion when the monopole and dipole both vanish.
+The higher multipole moments. Higher moments involve higher powers of the source coordinate. This principle is used to continue the expansion when the monopole and dipole both vanish.
 
 The quadrupole and higher moments enter the potential through powers $(r')^{n}$ with $n\geq 2$.
 
@@ -40,7 +40,7 @@ where
 - $r'$ is the distance of a source element from the origin.
 - $n$ is the order of the multipole.
 
-Note: These principles are the monopole moment, the dipole moment, and the higher multipole moments. Also called multipole moments.
+Note: Also called multipole moments.
 
 ## References
 

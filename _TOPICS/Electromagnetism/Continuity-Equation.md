@@ -2,7 +2,7 @@
 
 A local conservation law relating the time derivative of charge density to the divergence of current that is used to express conservation of charge.
 
-1\. Charge is conserved locally: any decrease of charge in a volume equals the net current flowing out. This principle is used to write charge conservation as a differential equation.
+The continuity equation. Charge is conserved locally: any decrease of charge in a volume equals the net current flowing out. This principle is used to write charge conservation as a differential equation.
 
 The continuity equation is
 
@@ -17,7 +17,7 @@ where
 - $t$ is time.
 - $\nabla\cdot$ is the divergence.
 
-2\. If there is no current, the charge density is static. This principle is used to recover electrostatics as the case $\mathbf{J}=\mathbf{0}$.
+Static charge density. If there is no current, the charge density is static. This principle is used to recover electrostatics as the case $\mathbf{J}=\mathbf{0}$.
 
 The static-density condition is
 
@@ -30,7 +30,7 @@ where
 - $\rho$ is the charge density.
 - $t$ is time.
 
-3\. In a steady state the current is divergenceless. This principle is used to treat magnetostatics, where charge density does not change with time.
+Divergenceless steady current. In a steady state the current is divergenceless. This principle is used to treat magnetostatics, where charge density does not change with time.
 
 The steady-current condition is
 
@@ -42,7 +42,7 @@ where
 
 - $\mathbf{J}$ is the current density.
 
-Note: These principles are the continuity equation, static charge density, and divergenceless steady current. Also written $\dfrac{\partial\rho}{\partial t}+\nabla\cdot\mathbf{J}=0$.
+Note: Also written $\dfrac{\partial\rho}{\partial t}+\nabla\cdot\mathbf{J}=0$.
 
 ## References
 

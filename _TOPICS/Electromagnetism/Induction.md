@@ -2,7 +2,7 @@
 
 A process in which a changing magnetic flux through a loop produces an electromotive force that is used to generate electric current from magnetic change, where magnetic flux is the surface integral of $\mathbf{B}$.
 
-1\. The electromotive force around a loop equals minus the rate of change of magnetic flux through any surface bounded by the loop. This principle is used to compute the induced emf from a known flux history.
+Faraday's law in integral form. The electromotive force around a loop equals minus the rate of change of magnetic flux through any surface bounded by the loop. This principle is used to compute the induced emf from a known flux history.
 
 Faraday's law in integral form is
 
@@ -18,7 +18,7 @@ where
 - $\hat{\mathbf{n}}$ is the unit normal to $S$.
 - $t$ is time.
 
-2\. In differential form a changing magnetic field produces a circulating electric field. This principle is used to write Faraday's law as a local Maxwell equation.
+Faraday's law in differential form. In differential form a changing magnetic field produces a circulating electric field. This principle is used to write Faraday's law as a local Maxwell equation.
 
 Faraday's law in differential form is
 
@@ -33,7 +33,7 @@ where
 - $\mathbf{B}$ is the magnetic field.
 - $t$ is time.
 
-3\. For a loop of fixed area in a uniform field the emf is minus the area times the rate of change of $B$. This principle is used to compute the emf of a loop in a ramping laboratory field.
+The emf of a fixed loop. For a loop of fixed area in a uniform field the emf is minus the area times the rate of change of $B$. This principle is used to compute the emf of a loop in a ramping laboratory field.
 
 The emf of a fixed loop in a uniform field is
 
@@ -48,7 +48,7 @@ where
 - $B$ is the magnetic field through the loop.
 - $t$ is time.
 
-Note: These principles are Faraday's law in integral and differential form and the emf of a fixed loop. Also called electromagnetic induction. Also called Faraday induction.
+Note: Also called electromagnetic induction. Also called Faraday induction.
 
 ## References
 

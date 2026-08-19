@@ -2,7 +2,7 @@
 
 A partial differential equation for the potential in charge-free regions that is used to solve electrostatic boundary-value problems, where a boundary-value problem is a differential equation whose solution is fixed by values on the edge of the region.
 
-1\. In a region with no charge the electrostatic potential satisfies Laplace's equation. This principle is used to determine $V$ between conductors from the values of $V$ on the boundaries.
+Laplace's equation in charge-free regions. In a region with no charge the electrostatic potential satisfies Laplace's equation. This principle is used to determine $V$ between conductors from the values of $V$ on the boundaries.
 
 Laplace's equation is
 
@@ -15,7 +15,7 @@ where
 - $\nabla^{2}$ is the Laplacian.
 - $V$ is the electric potential.
 
-2\. Solutions of Laplace's equation are harmonic functions. A harmonic function is a function whose Laplacian vanishes. This principle is used to import the uniqueness and mean-value properties of potential theory into electrostatics.
+Harmonic functions. Solutions of Laplace's equation are harmonic functions. A harmonic function is a function whose Laplacian vanishes. This principle is used to import the uniqueness and mean-value properties of potential theory into electrostatics.
 
 The one-dimensional Laplace equation is
 
@@ -28,9 +28,9 @@ where
 - $V$ is the electric potential.
 - $x$ is the Cartesian coordinate.
 
-3\. Uniqueness theorems fix the solution once the potential or its normal derivative is specified on the boundary. This principle is used to guarantee that a guessed potential that matches the boundaries is the physical potential.
+Uniqueness from boundary values. Uniqueness theorems fix the solution once the potential or its normal derivative is specified on the boundary. This principle is used to guarantee that a guessed potential that matches the boundaries is the physical potential.
 
-Note: These principles are Laplace's equation in charge-free regions, harmonic functions, and uniqueness from boundary values. Also written $\nabla^{2}V=0$.
+Note: Also written $\nabla^{2}V=0$.
 
 ## References
 

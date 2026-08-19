@@ -2,7 +2,7 @@
 
 The energy stored in electric and magnetic fields that is used to account for work done by electromagnetic forces and for energy carried by waves.
 
-1\. The energy stored in electromagnetic fields has a local density built from $E^{2}$ and $B^{2}$. This principle is used to compute the field energy in a region by integration.
+The electromagnetic energy density. The energy stored in electromagnetic fields has a local density built from $E^{2}$ and $B^{2}$. This principle is used to compute the field energy in a region by integration.
 
 The electromagnetic energy density is
 
@@ -18,7 +18,7 @@ where
 - $\epsilon_{0}$ is the permittivity of free space.
 - $\mu_{0}$ is the permeability of free space.
 
-2\. The total field energy is the integral of that density over space. This principle is used to assign a single energy to a field configuration.
+The total field energy. The total field energy is the integral of that density over space. This principle is used to assign a single energy to a field configuration.
 
 The total field energy is
 
@@ -32,7 +32,7 @@ where
 - $u$ is the energy density.
 - $d\tau$ is the volume element.
 
-3\. Energy leaves a volume as the flux of the Poynting vector. This principle is used to write local conservation of electromagnetic energy.
+Poynting's theorem. Energy leaves a volume as the flux of the Poynting vector. This principle is used to write local conservation of electromagnetic energy.
 
 Poynting's theorem is
 
@@ -48,7 +48,7 @@ where
 - $\mathbf{E}$ is the electric field.
 - $t$ is time.
 
-Note: These principles are the electromagnetic energy density, the total field energy, and Poynting's theorem. Also called field energy.
+Note: Also called field energy.
 
 ## References
 

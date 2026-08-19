@@ -2,7 +2,7 @@
 
 A physical displacement of electric charge carriers that is used to produce current and magnetic fields, where a charge carrier is a particle that carries electric charge.
 
-1\. A stream of charges with number density $n$, charge $q$, and drift velocity $\mathbf{v}_{d}$ constitutes a current density. Drift velocity is the average velocity of the carriers along the conductor. This principle is used to relate microscopic motion to the macroscopic current.
+Current density from drift. A stream of charges with number density $n$, charge $q$, and drift velocity $\mathbf{v}_{d}$ constitutes a current density. Drift velocity is the average velocity of the carriers along the conductor. This principle is used to relate microscopic motion to the macroscopic current.
 
 The current density of drifting charges is
 
@@ -17,7 +17,7 @@ where
 - $q$ is the charge of one carrier.
 - $\mathbf{v}_{d}$ is the drift velocity.
 
-2\. A moving charge produces a magnetic field. This principle is used to treat current as the source of magnetostatics.
+The magnetic field of a moving charge. A moving charge produces a magnetic field. This principle is used to treat current as the source of magnetostatics.
 
 The Biot–Savart field of a moving point charge is
 
@@ -34,7 +34,7 @@ where
 - $r$ is the distance from the charge to the field point.
 - $\mu_{0}$ is the permeability of free space.
 
-3\. A charge in electric and magnetic fields obeys the Lorentz force law. This principle is used to compute the trajectory of the carrier.
+The Lorentz force on a moving charge. A charge in electric and magnetic fields obeys the Lorentz force law. This principle is used to compute the trajectory of the carrier.
 
 The Lorentz force is
 
@@ -49,8 +49,6 @@ where
 - $\mathbf{E}$ is the electric field.
 - $\mathbf{v}$ is the velocity.
 - $\mathbf{B}$ is the magnetic field.
-
-Note: These principles are current density from drift, the magnetic field of a moving charge, and the Lorentz force on a moving charge.
 
 ## References
 
