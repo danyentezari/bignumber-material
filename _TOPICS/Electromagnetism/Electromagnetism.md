@@ -4,8 +4,6 @@ Electromagnetism is the phenomenon of electric and magnetic fields, both of them
 
 Electromagnetism is also fundamentally related to special relativity because it is independent of the reference frame.
 
-Some immediate applications of the study of electromagnetism are in electronics, optics, and spectroscopy and, mathematically, in vector calculus, differential equations, and differential geometry.
-
 ## Topics
 
 1. [Maxwell's Equations](maxwells-equations.html)

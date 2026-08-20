@@ -6,8 +6,6 @@ A molecule is, fundamentally, a microscopic entity composed of electrons and nuc
 
 Physical chemistry is also fundamentally related to classical thermodynamics because macroscopic properties are independent of which molecules compose the system, which path connects the thermodynamic states, and which reference frame is used.
 
-Some immediate applications of the study of physical chemistry are in industrial synthesis, molecular spectroscopy, and heterogeneous catalysis and, mathematically, in differential calculus, integral calculus, linear algebra, group theory, and probability.
-
 ## Topics
 
 1. [Thermodynamics](thermodynamics.html)

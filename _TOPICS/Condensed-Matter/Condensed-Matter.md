@@ -4,8 +4,6 @@ Condensed matter physics is the phenomenon of macroscopic and microscopic physic
 
 Condensed matter physics is related to statistical mechanics and quantum mechanics because the macroscopic properties of a condensed system are independent of the detailed microscopic trajectories of each individual constituent.
 
-Some immediate applications of the study of condensed matter physics are in semiconductor devices, high-temperature superconductors, and magnetic storage materials and, mathematically, in Fourier analysis, group theory, and topology.
-
 ## Topics
 
 1. [Matter](matter.html)
