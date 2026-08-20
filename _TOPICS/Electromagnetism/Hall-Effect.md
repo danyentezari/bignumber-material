@@ -4,6 +4,16 @@ A transverse voltage across a current-carrying conductor in a magnetic field tha
 
 The Hall force balance. A magnetic field deflects drifting carriers to one side of the conductor until the resulting electric field balances the magnetic force. This principle is used to explain the appearance of a transverse Hall voltage.
 
+The hall effect works as follows.
+
+1. An electric field pushes electric charges along a conducting material while a magnetic field crosses their path.
+2. The magnetic field pushes the moving charges sideways.
+3. Charges build up on one side, leaving the opposite side with the opposite charge.
+4. This separation creates an electric field across the material and a voltage called the Hall voltage.
+5. Eventually, the electric force exactly balances the magnetic force, so the charges stop moving sideways.
+
+![Hall effect in a conducting strip. Current flows to the right, the magnetic field points out of the page, and the Hall voltage is measured across the width.](hall-effect.png){#fig:hall-effect}
+
 The balance of electric and magnetic forces is
 
 $$

@@ -9,8 +9,8 @@ Usage:
 Content-only topic edits: generate_topics → pandoc inplace splice →
 sidebar/assets → Site Index + search refresh.
 
-Structural changes (new/deleted pages, H1 renames, sidebar/chrome/scripts):
-fall back to ./build.sh.
+Structural changes (new/deleted pages, H1 renames, sidebar/chrome/scripts,
+or any listed chapter missing HTML): fall back to ./build.sh.
 """
 
 from __future__ import annotations
@@ -21,6 +21,7 @@ import json
 import re
 import subprocess
 import sys
+import unicodedata
 from pathlib import Path
 
 
@@ -77,6 +78,24 @@ def extract_title(path: Path) -> str:
         if stripped.startswith("# "):
             return stripped[2:].strip()
     return path.stem.replace("-", " ")
+
+
+def slugify_text(text: str) -> str:
+    """Match generate_topics / bookdown ASCII-safe chapter filenames."""
+    normalized = unicodedata.normalize("NFKD", text)
+    normalized = "".join(ch for ch in normalized if not unicodedata.combining(ch))
+    normalized = (
+        normalized.lower()
+        .replace("'", "")
+        .replace("\u2018", "")
+        .replace("\u2019", "")
+    )
+    normalized = re.sub(r"[(),]", "", normalized)
+    return re.sub(r"[^a-z0-9]+", "-", normalized).strip("-")
+
+
+def normalize_title_key(text: str) -> str:
+    return slugify_text(text)
 
 
 def is_safe_md(path: Path) -> bool:
@@ -350,23 +369,55 @@ def patch_search_json(html_names: list[str]) -> None:
     print(f"Patched search.json for {len(html_names)} page(s) ({added} entries).", flush=True)
 
 
-def href_for_generated_md(generated_rel: str) -> str | None:
-    """Find rendered HTML filename for a generated md via chapter number order."""
+def expected_chapter_number(generated_rel: str) -> int | None:
     listed = bookdown_generated_rel_paths()
     try:
-        index = listed.index(generated_rel)
+        return listed.index(generated_rel) + 2
     except ValueError:
         return None
-    # Chapter numbers: 1 = Introduction, then generated files starting at 2.
-    chapter_number = index + 2
+
+
+def href_for_generated_md(generated_rel: str) -> str | None:
+    """
+    Find rendered HTML for a generated md by slug / title — never by chapter
+    number. Numbers drift whenever a page is inserted before a full rebuild;
+    matching by number previously overwrote the wrong chapter.
+    """
+    try:
+        md = resolve_generated_md(generated_rel)
+    except RuntimeError:
+        return None
+
+    candidates = [
+        f"{slugify_text(md.stem)}.html",
+        f"{slugify_text(extract_title(md))}.html",
+    ]
+    seen: set[str] = set()
+    for name in candidates:
+        if name in seen:
+            continue
+        seen.add(name)
+        if (BOOK_OUT / name).is_file():
+            return name
+
+    want = normalize_title_key(extract_title(md))
     for path in BOOK_OUT.glob("*.html"):
-        if path.name == "404.html":
+        if path.name in {"404.html", "index.html"}:
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")[:4000]
         match = TITLE_RE.search(text)
-        if match and int(match.group(1)) == chapter_number:
+        if match and normalize_title_key(html_lib.unescape(match.group(2))) == want:
             return path.name
     return None
+
+
+def missing_rendered_chapters() -> list[str]:
+    """Listed generated chapters that have no matching HTML yet."""
+    missing: list[str] = []
+    for rel in bookdown_generated_rel_paths():
+        if href_for_generated_md(rel) is None:
+            missing.append(rel)
+    return missing
 
 
 def _close_div_offset(html: str, start: int) -> int:
@@ -487,8 +538,9 @@ def render_chapter_inplace(generated_rel: str, html_name: str) -> None:
     title_match = TITLE_RE.search(existing[:4000])
     if not title_match:
         raise RuntimeError(f"Cannot read chapter number from {html_name}")
-    chapter_num = int(title_match.group(1))
-    page_title = html_lib.unescape(title_match.group(2)).strip()
+    # Prefer current bookdown order; fall back to the shell's stale number.
+    chapter_num = expected_chapter_number(generated_rel) or int(title_match.group(1))
+    page_title = extract_title(generated_md)
 
     fragment = pandoc_chapter_fragment(generated_md)
     fragment = _decorate_pandoc_section(fragment, chapter_num)
@@ -544,6 +596,13 @@ def render_chapter_inplace(generated_rel: str, html_name: str) -> None:
 def content_build(topic_paths: list[Path], asset_only: bool) -> int:
     run(["python3", "scripts/generate_topics.py"], cwd=BOOK_DIR)
 
+    missing = missing_rendered_chapters()
+    if missing:
+        sample = ", ".join(Path(rel).name for rel in missing[:5])
+        return full_build(
+            f"{len(missing)} chapter(s) listed but not rendered yet ({sample})"
+        )
+
     generated_rels: list[str] = []
     for path in topic_paths:
         rel = topic_to_generated_rel(path)
@@ -568,7 +627,7 @@ def content_build(topic_paths: list[Path], asset_only: bool) -> int:
         for rel in unique:
             href = href_for_generated_md(rel)
             if href is None:
-                return full_build(f"missing HTML for {rel}; run a full build first")
+                return full_build(f"missing HTML for {rel}")
             render_chapter_inplace(rel, href)
             html_names.append(href)
 
