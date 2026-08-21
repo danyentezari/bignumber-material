@@ -12,6 +12,8 @@ Write the principles of [SUBJECT] in the following style and structure:
 * After introducing any specialized or potentially unfamiliar term, immediately define it in plain language as what the term is.
 * Do not assume the reader already knows subject-specific jargon.
 * Explain what each principle is used for in a sentence beginning with “This principle is used to...” where appropriate.
+* In any derivation file, do not use “This principle is used to...”.
+* In any derivation file, reduce the principle-paragraph word count by 50 percent: each principle paragraph must not exceed 30 words. Named formulas and `where` lists do not count toward that limit.
 * If a formula appears, name the formula first, then display it, then define every symbol in a `where` list:
 
 ```

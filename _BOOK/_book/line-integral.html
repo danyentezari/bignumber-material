@@ -4,15 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>318 Line Integral | Mathematics for Physics</title>
+<title>322 Line Integral | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
 <meta name="description" content="A scalar obtained by integrating a field along a curve that is used to measure accumulated value along a path. definition [d] (Line Integral = Path Integral = Curve Integral) The scalar obtained...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="318 Line Integral | Mathematics for Physics">
+<meta property="og:title" content="322 Line Integral | Mathematics for Physics">
 <meta property="og:type" content="book">
 <meta property="og:description" content="A scalar obtained by integrating a field along a curve that is used to measure accumulated value along a path. definition [d] (Line Integral = Path Integral = Curve Integral) The scalar obtained...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="318 Line Integral | Mathematics for Physics">
+<meta name="twitter:title" content="322 Line Integral | Mathematics for Physics">
 <meta name="twitter:description" content="A scalar obtained by integrating a field along a curve that is used to measure accumulated value along a path. definition [d] (Line Integral = Path Integral = Curve Integral) The scalar obtained...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -219,9 +219,9 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="line-integral" class="section level1" number="318">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="line-integral" class="section level1" number="322">
 <h1>
-<span class="header-section-number">318</span> Line Integral<a class="anchor" aria-label="anchor" href="#line-integral"><i class="fas fa-link"></i></a>
+<span class="header-section-number">322</span> Line Integral<a class="anchor" aria-label="anchor" href="#line-integral"><i class="fas fa-link"></i></a>
 </h1>
 <p>A scalar obtained by integrating a field along a curve that is used to measure accumulated value along a path.</p>
 <p><i></i></p>
@@ -248,6 +248,30 @@
 <span class="math inline">\(\dfrac{d\mathbf{r}}{dt}(t)\)</span> is the tangent vector along <span class="math inline">\(C\)</span>.</li>
 </ul>
 <p></p>
+<div class="float" id="fig:line-integral">
+<img src="line-integral.png" alt="Vector field \mathbf{F} along a smooth curve C from A to B. At a point P on C, the field \mathbf{F} and the differential displacement d\mathbf{r} are shown in the direction of integration."><div class="figcaption">Vector field <span class="math inline">\(\mathbf{F}\)</span> along a smooth curve <span class="math inline">\(C\)</span> from <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span>. At a point <span class="math inline">\(P\)</span> on <span class="math inline">\(C\)</span>, the field <span class="math inline">\(\mathbf{F}\)</span> and the differential displacement <span class="math inline">\(d\mathbf{r}\)</span> are shown in the direction of integration.</div>
+</div>
+<p>The Riemann-sum breakdown of the line integral is</p>
+<p><span class="math display">\[
+\int_{C} \mathbf{F}\cdot d\mathbf{r}
+=
+\lim_{n\to\infty}
+\sum_{i=1}^{n}
+\mathbf{F}(\mathbf{r}_{i})\cdot\Delta\mathbf{r}_{i}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(C\)</span> is the path of integration.</li>
+<li>
+<span class="math inline">\(\mathbf{F}\)</span> is a vector field.</li>
+<li>
+<span class="math inline">\(n\)</span> is the number of segments of <span class="math inline">\(C\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{r}_{i}\)</span> is a sample point on the <span class="math inline">\(i\)</span>th segment.</li>
+<li>
+<span class="math inline">\(\Delta\mathbf{r}_{i}\)</span> is the displacement along the <span class="math inline">\(i\)</span>th segment.</li>
+</ul>
 <p><i></i></p>
 <p><strong>definition [d]</strong> (<em>Line Integral = Path Integral</em>) The scalar obtained by integrating a continuous scalar function <span class="math inline">\(f\)</span> with respect to arc length along a smooth curve <span class="math inline">\(C\)</span> given by <span class="math inline">\(\mathbf{r}(t)\)</span>, <span class="math inline">\(a \leq t \leq b\)</span>:</p>
 <ul>
@@ -272,9 +296,9 @@
 <span class="math inline">\(\dfrac{d\mathbf{r}}{dt}(t)\)</span> is the tangent vector along <span class="math inline">\(C\)</span>.</li>
 </ul>
 <p></p>
-<div id="references-273" class="section level2" number="318.1">
+<div id="references-277" class="section level2" number="322.1">
 <h2>
-<span class="header-section-number">318.1</span> References<a class="anchor" aria-label="anchor" href="#references-273"><i class="fas fa-link"></i></a>
+<span class="header-section-number">322.1</span> References<a class="anchor" aria-label="anchor" href="#references-277"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
 <li>Stewart, J. <em>Calculus</em>. — arc length <span class="math inline">\(L = \int_{a}^{b} \left\lvert \dfrac{d\mathbf{r}}{dt}(t) \right\rvert\, dt\)</span>; line / path integrals (closest indexed material; dedicated line-integral chapter not fully excerpted in the notebook).</li>
@@ -284,10 +308,14 @@
 <div class="topic-index">
 <ul>
 <li><a href="chain-rule.html">Chain Rule</a></li>
+<li><a href="cross-product.html">Cross Product</a></li>
 <li><a href="curl.html">Curl</a></li>
 <li><a href="curve.html">Curve</a></li>
 <li><a href="definite-integral.html">Definite Integral</a></li>
+<li><a href="derivation-of-curl.html">Derivation of Curl</a></li>
+<li><a href="derivation-of-taylor-expansion.html">Derivation of Taylor Expansion</a></li>
 <li><a href="divergence.html">Divergence</a></li>
+<li><a href="dot-product.html">Dot Product</a></li>
 <li><a href="envelope-of-tangent-lines.html">Envelope of Tangent Lines</a></li>
 <li><a href="general-functions.html">General Functions</a></li>
 <li><a href="gradient.html">Gradient</a></li>
@@ -871,13 +899,13 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="limit.html"><span class="header-section-number">317</span> Limit</a></div>
-<div class="next"><a href="notes-1.html"><span class="header-section-number">319</span> Notes</a></div>
+<div class="prev"><a href="limit.html"><span class="header-section-number">321</span> Limit</a></div>
+<div class="next"><a href="notes-1.html"><span class="header-section-number">323</span> Notes</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#line-integral"><span class="header-section-number">318</span> Line Integral</a></li>
-<li><a class="nav-link" href="#references-273"><span class="header-section-number">318.1</span> References</a></li>
+<li><a class="nav-link" href="#line-integral"><span class="header-section-number">322</span> Line Integral</a></li>
+<li><a class="nav-link" href="#references-277"><span class="header-section-number">322.1</span> References</a></li>
 </ul>
 
       <div class="book-extra">

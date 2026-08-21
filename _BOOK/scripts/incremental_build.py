@@ -369,6 +369,31 @@ def patch_search_json(html_names: list[str]) -> None:
     print(f"Patched search.json for {len(html_names)} page(s) ({added} entries).", flush=True)
 
 
+def assign_chapter_hrefs(titles: list[str]) -> list[str]:
+    """Match bookdown's slug collision scheme: foo.html, foo-1.html, foo-2.html, ..."""
+    counts: dict[str, int] = {"index": 1}
+    hrefs: list[str] = []
+    for index, title in enumerate(titles):
+        if index == 0:
+            hrefs.append("index.html")
+            continue
+        base = slugify_text(title)
+        n = counts.get(base, 0)
+        counts[base] = n + 1
+        hrefs.append(f"{base}.html" if n == 0 else f"{base}-{n}.html")
+    return hrefs
+
+
+def chapter_href_by_generated_rel() -> dict[str, str]:
+    """Map each generated md path to its collision-aware HTML filename."""
+    listed = bookdown_generated_rel_paths()
+    titles = ["Introduction"]
+    for rel in listed:
+        titles.append(extract_title(resolve_generated_md(rel)))
+    hrefs = assign_chapter_hrefs(titles)
+    return {rel: hrefs[index + 1] for index, rel in enumerate(listed)}
+
+
 def expected_chapter_number(generated_rel: str) -> int | None:
     listed = bookdown_generated_rel_paths()
     try:
@@ -377,45 +402,59 @@ def expected_chapter_number(generated_rel: str) -> int | None:
         return None
 
 
+def _slug_family_names(base: str) -> list[Path]:
+    """Return base.html / base-N.html paths that exist in the book output."""
+    paths: list[Path] = []
+    primary = BOOK_OUT / f"{base}.html"
+    if primary.is_file():
+        paths.append(primary)
+    for path in sorted(BOOK_OUT.glob(f"{base}-*.html")):
+        if re.fullmatch(rf"{re.escape(base)}-\d+\.html", path.name):
+            paths.append(path)
+    return paths
+
+
 def href_for_generated_md(generated_rel: str) -> str | None:
     """
-    Find rendered HTML for a generated md by slug / title — never by chapter
-    number. Numbers drift whenever a page is inserted before a full rebuild;
-    matching by number previously overwrote the wrong chapter.
+    Find rendered HTML for a generated md using bookdown title-collision hrefs.
+
+    Never use bare slug matching alone: duplicate titles (e.g. topic + Notes
+    both named Electromagnetism) must resolve to electromagnetism.html vs
+    electromagnetism-1.html, not the same file.
     """
+    mapping = chapter_href_by_generated_rel()
+    expected = mapping.get(generated_rel)
+    if expected and (BOOK_OUT / expected).is_file():
+        return expected
+
+    chapter_num = expected_chapter_number(generated_rel)
+    if chapter_num is None:
+        return expected
+
     try:
         md = resolve_generated_md(generated_rel)
     except RuntimeError:
-        return None
+        return expected
 
-    candidates = [
-        f"{slugify_text(md.stem)}.html",
-        f"{slugify_text(extract_title(md))}.html",
-    ]
-    seen: set[str] = set()
-    for name in candidates:
-        if name in seen:
-            continue
-        seen.add(name)
-        if (BOOK_OUT / name).is_file():
-            return name
-
-    want = normalize_title_key(extract_title(md))
-    for path in BOOK_OUT.glob("*.html"):
-        if path.name in {"404.html", "index.html"}:
+    base = slugify_text(extract_title(md))
+    claimed = {href for rel, href in mapping.items() if rel != generated_rel}
+    for path in _slug_family_names(base):
+        if path.name in claimed:
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")[:4000]
         match = TITLE_RE.search(text)
-        if match and normalize_title_key(html_lib.unescape(match.group(2))) == want:
+        if match and int(match.group(1)) == chapter_num:
             return path.name
-    return None
+
+    return expected
 
 
 def missing_rendered_chapters() -> list[str]:
     """Listed generated chapters that have no matching HTML yet."""
     missing: list[str] = []
     for rel in bookdown_generated_rel_paths():
-        if href_for_generated_md(rel) is None:
+        href = href_for_generated_md(rel)
+        if href is None or not (BOOK_OUT / href).is_file():
             missing.append(rel)
     return missing
 
@@ -495,6 +534,7 @@ def pandoc_chapter_fragment(generated_md: Path) -> str:
             "-t",
             "html4",
             "--section-divs",
+            "--mathjax",
         ],
         check=True,
         capture_output=True,
@@ -626,10 +666,18 @@ def content_build(topic_paths: list[Path], asset_only: bool) -> int:
         html_names: list[str] = []
         for rel in unique:
             href = href_for_generated_md(rel)
-            if href is None:
+            if href is None or not (BOOK_OUT / href).is_file():
                 return full_build(f"missing HTML for {rel}")
-            render_chapter_inplace(rel, href)
             html_names.append(href)
+
+        if len(html_names) != len(set(html_names)):
+            return full_build(
+                "duplicate HTML targets for changed chapters "
+                f"({', '.join(html_names)}); slug collision needs a full build"
+            )
+
+        for rel, href in zip(unique, html_names):
+            render_chapter_inplace(rel, href)
 
         run(["python3", "scripts/filter_sidebar.py"], cwd=BOOK_DIR)
         run(["python3", "scripts/copy_topic_assets.py"], cwd=BOOK_DIR)

@@ -20,6 +20,26 @@ where
 
 </i>
 
+![Vector field $\mathbf{F}$ along a smooth curve $C$ from $A$ to $B$. At a point $P$ on $C$, the field $\mathbf{F}$ and the differential displacement $d\mathbf{r}$ are shown in the direction of integration.](line-integral.png){#fig:line-integral}
+
+The Riemann-sum breakdown of the line integral is
+
+$$
+\int_{C} \mathbf{F}\cdot d\mathbf{r}
+=
+\lim_{n\to\infty}
+\sum_{i=1}^{n}
+\mathbf{F}(\mathbf{r}_{i})\cdot\Delta\mathbf{r}_{i}
+$$
+
+where
+
+- $C$ is the path of integration.
+- $\mathbf{F}$ is a vector field.
+- $n$ is the number of segments of $C$.
+- $\mathbf{r}_{i}$ is a sample point on the $i$th segment.
+- $\Delta\mathbf{r}_{i}$ is the displacement along the $i$th segment.
+
 <i>
 
 **definition [d]** (*Line Integral = Path Integral*) The scalar obtained by integrating a continuous scalar function $f$ with respect to arc length along a smooth curve $C$ given by $\mathbf{r}(t)$, $a \leq t \leq b$:
