@@ -98,7 +98,13 @@ def normalize_title_key(text: str) -> str:
     return slugify_text(text)
 
 
+def is_draft_md(path: Path) -> bool:
+    return path.name.endswith(".draft.md")
+
+
 def is_safe_md(path: Path) -> bool:
+    if is_draft_md(path):
+        return False
     return path.suffix.lower() == ".md" and re.fullmatch(
         r"[A-Za-z0-9._-]+\.md", path.name
     )
@@ -194,6 +200,8 @@ def classify_change(
         return "structural"
 
     if is_under(path, TOPICS_DIR):
+        if is_draft_md(path):
+            return "ignore"
         if path.suffix.lower() in {".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp"}:
             return "content"
         if not is_safe_md(path):

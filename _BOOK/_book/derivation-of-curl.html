@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>310 Derivation of Curl | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="A derivation that is used to obtain the Cartesian determinant form of curl from circulation around a vanishing rectangle, where a circulation is the line int...">
+<meta name="description" content="Curl is obtained from circulation per unit area around a vanishing rectangular loop.">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="310 Derivation of Curl | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="A derivation that is used to obtain the Cartesian determinant form of curl from circulation around a vanishing rectangle, where a circulation is the line int...">
+<meta property="og:description" content="Curl is obtained from circulation per unit area around a vanishing rectangular loop.">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="310 Derivation of Curl | Mathematics for Physics">
-<meta name="twitter:description" content="A derivation that is used to obtain the Cartesian determinant form of curl from circulation around a vanishing rectangle, where a circulation is the line int...">
+<meta name="twitter:description" content="Curl is obtained from circulation per unit area around a vanishing rectangular loop.">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -223,21 +223,18 @@
 <h1>
 <span class="header-section-number">310</span> Derivation of Curl<a class="anchor" aria-label="anchor" href="#derivation-of-curl"><i class="fas fa-link"></i></a>
 </h1>
-<p>A derivation that is used to obtain the Cartesian determinant form of
-curl from circulation around a vanishing rectangle, where a circulation
-is the line integral of a field around a closed curve, and where a
-vanishing rectangle is a rectangular loop whose enclosed area tends to
-zero.</p>
-<p>Circulation per unit area. The component of curl along a unit normal
-is the limit of circulation per unit area. A unit normal is a vector of
-length one perpendicular to the enclosed area.</p>
-<p>The circulation definition is</p>
+<p>Curl is obtained from circulation per unit area around a vanishing
+rectangular loop.</p>
+<p>For a vector field <span
+class="math inline">\(\mathbf{F}\)</span>,</p>
 <p><span class="math display">\[
+\begin{aligned}
 (\nabla\times\mathbf{F})\cdot\hat{\mathbf{n}}
-=
+&amp;=
 \lim_{A\to 0}
 \dfrac{1}{A}
-\oint_{C}\mathbf{F}\cdot d\mathbf{s}
+\oint_{C}\mathbf{F}\cdot d\mathbf{s}.
+\end{aligned}
 \]</span></p>
 <p>where</p>
 <ul>
@@ -252,36 +249,34 @@ normal.</li>
 <li><span class="math inline">\(d\mathbf{s}\)</span> is the displacement
 along <span class="math inline">\(C\)</span>.</li>
 </ul>
-<p>Rectangular loop. A rectangle in the <span
+<p>Rectangular Loop. Consider a rectangle in the <span
 class="math inline">\(xy\)</span>-plane with normal <span
-class="math inline">\(\mathbf{k}\)</span> has sides <span
+class="math inline">\(\mathbf{k}\)</span> and sides <span
 class="math inline">\(\Delta x\)</span> and <span
-class="math inline">\(\Delta y\)</span>. First-order Taylor expansions
-give the four side integrals.</p>
-<p>The side contributions are</p>
+class="math inline">\(\Delta y\)</span>.</p>
 <p><span class="math display">\[
+\begin{aligned}
 \int_{a}^{b}\mathbf{F}\cdot d\mathbf{s}
-\simeq
-\left(F_{x}-\dfrac{\Delta y}{2}\dfrac{\partial F_{x}}{\partial
-y}\right)\Delta x
-\]</span></p>
-<p><span class="math display">\[
+&amp;\simeq
+\left(
+F_{x}-\dfrac{\Delta y}{2}\dfrac{\partial F_{x}}{\partial y}
+\right)\Delta x \\[4pt]
 \int_{b}^{c}\mathbf{F}\cdot d\mathbf{s}
-\simeq
-\left(F_{y}+\dfrac{\Delta x}{2}\dfrac{\partial F_{y}}{\partial
-x}\right)\Delta y
-\]</span></p>
-<p><span class="math display">\[
+&amp;\simeq
+\left(
+F_{y}+\dfrac{\Delta x}{2}\dfrac{\partial F_{y}}{\partial x}
+\right)\Delta y \\[4pt]
 \int_{c}^{d}\mathbf{F}\cdot d\mathbf{s}
-\simeq
--\left(F_{x}+\dfrac{\Delta y}{2}\dfrac{\partial F_{x}}{\partial
-y}\right)\Delta x
-\]</span></p>
-<p><span class="math display">\[
+&amp;\simeq
+-\left(
+F_{x}+\dfrac{\Delta y}{2}\dfrac{\partial F_{x}}{\partial y}
+\right)\Delta x \\[4pt]
 \int_{d}^{a}\mathbf{F}\cdot d\mathbf{s}
-\simeq
--\left(F_{y}-\dfrac{\Delta x}{2}\dfrac{\partial F_{y}}{\partial
-x}\right)\Delta y
+&amp;\simeq
+-\left(
+F_{y}-\dfrac{\Delta x}{2}\dfrac{\partial F_{y}}{\partial x}
+\right)\Delta y.
+\end{aligned}
 \]</span></p>
 <p>where</p>
 <ul>
@@ -299,167 +294,162 @@ class="math inline">\(b\)</span>, <span
 class="math inline">\(c\)</span>, <span class="math inline">\(d\)</span>
 are the vertices of the rectangle.</li>
 </ul>
-<p>First-order Taylor expansion. The value of <span
-class="math inline">\(F_{y}\)</span> on the right side comes from
-expanding about the rectangle’s center.</p>
-<p>At the center,</p>
+<p>First-Order Taylor Expansion. For the right side of the
+rectangle,</p>
 <p><span class="math display">\[
-F_{y} = F_{y}(x,y,z).
-\]</span></p>
-<p>At the right side,</p>
-<p><span class="math display">\[
-x \to x+\dfrac{\Delta x}{2}.
-\]</span></p>
-<p>Therefore</p>
-<p><span class="math display">\[
-F_{y}\left(x+\dfrac{\Delta x}{2},y,z\right)
-\]</span></p>
-<p>is expanded about <span class="math inline">\(x\)</span>:</p>
-<p><span class="math display">\[
+\begin{aligned}
 F_{y}(x+h,y,z)
-\simeq
+&amp;\simeq
 F_{y}(x,y,z)
 +
-h\dfrac{\partial F_{y}}{\partial x}.
-\]</span></p>
-<p>Set</p>
-<p><span class="math display">\[
-h=\dfrac{\Delta x}{2}.
-\]</span></p>
-<p>Then</p>
-<p><span class="math display">\[
+h\dfrac{\partial F_{y}}{\partial x} \\[4pt]
+h
+&amp;=
+\dfrac{\Delta x}{2} \\[4pt]
 F_{y}\left(x+\dfrac{\Delta x}{2},y,z\right)
-\simeq
+&amp;\simeq
 F_{y}(x,y,z)
 +
 \dfrac{\Delta x}{2}
+\dfrac{\partial F_{y}}{\partial x} \\[4pt]
+&amp;=
+F_{y}
++
+\dfrac{\Delta x}{2}
 \dfrac{\partial F_{y}}{\partial x}.
+\end{aligned}
 \]</span></p>
-<p>Abbreviating <span class="math inline">\(F_{y}(x,y,z)\)</span> as
-<span class="math inline">\(F_{y}\)</span> gives</p>
+<p>Similarly, the other three sides give the expressions above.</p>
+<p>Circulation. Summing the four sides,</p>
 <p><span class="math display">\[
-F_{y}+\dfrac{\Delta x}{2}\dfrac{\partial F_{y}}{\partial x}.
-\]</span></p>
-<p>The circulation around the rectangle is</p>
-<p><span class="math display">\[
+\begin{aligned}
 \oint_{abcd}\mathbf{F}\cdot d\mathbf{s}
-\simeq
-\left(\dfrac{\partial F_{y}}{\partial x}-\dfrac{\partial F_{x}}{\partial
-y}\right)\Delta x\,\Delta y
-\]</span></p>
-<p><span class="math inline">\(z\)</span>-component. Dividing by the
-enclosed area and taking the vanishing limit gives the third Cartesian
-component.</p>
-<p>The <span class="math inline">\(z\)</span>-component is</p>
-<p><span class="math display">\[
-(\nabla\times\mathbf{F})\cdot\mathbf{k}
-=
+&amp;\simeq
+\left(
 \dfrac{\partial F_{y}}{\partial x}
 -
 \dfrac{\partial F_{x}}{\partial y}
+\right)
+\Delta x\,\Delta y.
+\end{aligned}
 \]</span></p>
-<p>where</p>
-<ul>
-<li><span class="math inline">\(\mathbf{k}\)</span> is the Cartesian
-unit vector along <span class="math inline">\(z\)</span>.</li>
-</ul>
-<p>Cyclic permutation. Cycling the coordinates and the components gives
-the remaining two Cartesian components.</p>
-<p>The <span class="math inline">\(x\)</span>-component is</p>
+<p>Since</p>
 <p><span class="math display">\[
+A=\Delta x\,\Delta y,
+\]</span></p>
+<p>divide by the area and take the vanishing limit:</p>
+<p><span class="math display">\[
+\begin{aligned}
+(\nabla\times\mathbf{F})\cdot\mathbf{k}
+&amp;=
+\dfrac{\partial F_{y}}{\partial x}
+-
+\dfrac{\partial F_{x}}{\partial y}.
+\end{aligned}
+\]</span></p>
+<p>where <span class="math inline">\(\mathbf{k}\)</span> is the
+Cartesian unit vector along <span class="math inline">\(z\)</span>.</p>
+<p>Cyclic Permutation. Cycling the coordinates gives</p>
+<p><span class="math display">\[
+\begin{aligned}
 (\nabla\times\mathbf{F})\cdot\mathbf{i}
-=
+&amp;=
+\dfrac{\partial F_{z}}{\partial y}
+-
+\dfrac{\partial F_{y}}{\partial z} \\[4pt]
+(\nabla\times\mathbf{F})\cdot\mathbf{j}
+&amp;=
+\dfrac{\partial F_{x}}{\partial z}
+-
+\dfrac{\partial F_{z}}{\partial x} \\[4pt]
+(\nabla\times\mathbf{F})\cdot\mathbf{k}
+&amp;=
+\dfrac{\partial F_{y}}{\partial x}
+-
+\dfrac{\partial F_{x}}{\partial y}.
+\end{aligned}
+\]</span></p>
+<p>where <span class="math inline">\(\mathbf{i}\)</span>, <span
+class="math inline">\(\mathbf{j}\)</span>, and <span
+class="math inline">\(\mathbf{k}\)</span> are the Cartesian unit vectors
+along <span class="math inline">\(x\)</span>, <span
+class="math inline">\(y\)</span>, and <span
+class="math inline">\(z\)</span>.</p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+\begin{aligned}
+\nabla\times\mathbf{F}
+&amp;=
+\left(
 \dfrac{\partial F_{z}}{\partial y}
 -
 \dfrac{\partial F_{y}}{\partial z}
-\]</span></p>
-<p>The <span class="math inline">\(y\)</span>-component is</p>
-<p><span class="math display">\[
-(\nabla\times\mathbf{F})\cdot\mathbf{j}
-=
+\right)\mathbf{i}
++
+\left(
 \dfrac{\partial F_{x}}{\partial z}
 -
 \dfrac{\partial F_{z}}{\partial x}
-\]</span></p>
-<p>where</p>
-<ul>
-<li><span class="math inline">\(\mathbf{i}\)</span> is the Cartesian
-unit vector along <span class="math inline">\(x\)</span>.</li>
-<li><span class="math inline">\(\mathbf{j}\)</span> is the Cartesian
-unit vector along <span class="math inline">\(y\)</span>.</li>
-</ul>
-<p>Component form. The three components assemble into a single vector in
-the Cartesian basis.</p>
-<p>The component form is</p>
-<p><span class="math display">\[
-\nabla\times\mathbf{F}
-=
-\left(\dfrac{\partial F_{z}}{\partial y}-\dfrac{\partial F_{y}}{\partial
-z}\right)\mathbf{i}
+\right)\mathbf{j}
 +
-\left(\dfrac{\partial F_{x}}{\partial z}-\dfrac{\partial F_{z}}{\partial
-x}\right)\mathbf{j}
-+
-\left(\dfrac{\partial F_{y}}{\partial x}-\dfrac{\partial F_{x}}{\partial
-y}\right)\mathbf{k}
+\left(
+\dfrac{\partial F_{y}}{\partial x}
+-
+\dfrac{\partial F_{x}}{\partial y}
+\right)\mathbf{k}.
+\end{aligned}
 \]</span></p>
-<p>Cross-product expansion. The ordinary cross product of two vectors
-expands by the same cofactor rule.</p>
-<p>The cross product is</p>
+<p>Determinant Form. The ordinary cross product expands as</p>
 <p><span class="math display">\[
+\begin{aligned}
 \mathbf{a}\times\mathbf{b}
-=
+&amp;=
 \begin{vmatrix}
 \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
 a_{1} &amp; a_{2} &amp; a_{3} \\
 b_{1} &amp; b_{2} &amp; b_{3}
-\end{vmatrix}
-\]</span></p>
-<p>which equals</p>
-<p><span class="math display">\[
-\mathbf{a}\times\mathbf{b}
-=
+\end{vmatrix} \\[4pt]
+&amp;=
 (a_{2}b_{3}-a_{3}b_{2})\mathbf{i}
 +
 (a_{3}b_{1}-a_{1}b_{3})\mathbf{j}
 +
-(a_{1}b_{2}-a_{2}b_{1})\mathbf{k}
+(a_{1}b_{2}-a_{2}b_{1})\mathbf{k}.
+\end{aligned}
 \]</span></p>
-<p>where</p>
-<ul>
-<li><span class="math inline">\(\mathbf{a}\)</span> is the first
-vector.</li>
-<li><span class="math inline">\(\mathbf{b}\)</span> is the second
-vector.</li>
-<li><span class="math inline">\(a_{1}\)</span>, <span
-class="math inline">\(a_{2}\)</span>, <span
-class="math inline">\(a_{3}\)</span> are the Cartesian components of
-<span class="math inline">\(\mathbf{a}\)</span>.</li>
-<li><span class="math inline">\(b_{1}\)</span>, <span
-class="math inline">\(b_{2}\)</span>, <span
-class="math inline">\(b_{3}\)</span> are the Cartesian components of
-<span class="math inline">\(\mathbf{b}\)</span>.</li>
-</ul>
-<p>Symbolic determinant. Replacing the first factor by <span
-class="math inline">\(\nabla\)</span> yields the determinant form of
-curl. The operators in the second row act on the components in the third
-row.</p>
-<p>The determinant form is</p>
+<p>Replacing the first vector by</p>
 <p><span class="math display">\[
+\nabla
+=
+\mathbf{i}\dfrac{\partial}{\partial x}
++
+\mathbf{j}\dfrac{\partial}{\partial y}
++
+\mathbf{k}\dfrac{\partial}{\partial z},
+\]</span></p>
+<p>gives</p>
+<p><span class="math display">\[
+\begin{aligned}
 \operatorname{curl}\mathbf{F}
-=
-\nabla\times\mathbf{F}
-=
+&amp;=
+\nabla\times\mathbf{F} \\[4pt]
+&amp;=
 \begin{vmatrix}
 \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
-\dfrac{\partial}{\partial x} &amp; \dfrac{\partial}{\partial y} &amp;
+\dfrac{\partial}{\partial x}
+&amp;
+\dfrac{\partial}{\partial y}
+&amp;
 \dfrac{\partial}{\partial z} \\
 F_{x} &amp; F_{y} &amp; F_{z}
-\end{vmatrix}
+\end{vmatrix}.
+\end{aligned}
 \]</span></p>
-<p>Note: Also written <span
-class="math inline">\(\operatorname{rot}\mathbf{F}\)</span>. Also called
-the symbolic determinant.</p>
+<p>The differential operators in the second row act on the components in
+the third row.</p>
+<p>Curl is also written <span
+class="math inline">\(\operatorname{rot}\mathbf{F}\)</span>. The
+determinant above is a symbolic determinant.</p>
 <div class="float" id="fig:closed-curve-vector-field">
 <img src="closed-curve-vector-field.png"
 alt="A closed curve C bounding an area A. The unit normal \hat{\mathbf{n}} stands perpendicular to A. At a point of C the field \mathbf{F} and the displacement d\mathbf{s} are shown." />
@@ -543,19 +533,6 @@ Operator</a></li>
 </div>
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1129,10 +1106,7 @@ Operator</a></li>
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#derivation-of-curl"><span class="header-section-number">310</span> Derivation of Curl</a></li>
-<li><a class="nav-link" href="#derivation-of-the-x-component"><span class="header-section-number">310.1</span> Derivation of the \(x\)-component</a></li>
-<li><a class="nav-link" href="#remaining-components"><span class="header-section-number">310.2</span> Remaining components</a></li>
-<li><a class="nav-link" href="#role-of-the-unit-normal"><span class="header-section-number">310.3</span> Role of the unit normal</a></li>
-<li><a class="nav-link" href="#references-266"><span class="header-section-number">310.4</span> References</a></li>
+<li><a class="nav-link" href="#references-266"><span class="header-section-number">310.1</span> References</a></li>
 </ul>
 
       <div class="book-extra">

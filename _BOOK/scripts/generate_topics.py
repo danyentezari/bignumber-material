@@ -293,7 +293,13 @@ def discover_topic_folders() -> list[Path]:
     return sorted(folders_by_name.values(), key=sort_key)
 
 
+def is_draft_md(path: Path) -> bool:
+    return path.name.endswith(".draft.md")
+
+
 def is_bookdown_safe_filename(path: Path) -> bool:
+    if is_draft_md(path):
+        return False
     return re.fullmatch(r"[A-Za-z0-9._-]+\.md", path.name) is not None
 
 
@@ -302,7 +308,7 @@ def collect_markdown_files(folder: Path) -> list[Path]:
         (
             path
             for path in folder.iterdir()
-            if path.is_file() and path.suffix.lower() == ".md"
+            if path.is_file() and path.suffix.lower() == ".md" and not is_draft_md(path)
         ),
         key=lambda path: extract_title(path).lower(),
     )

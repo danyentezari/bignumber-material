@@ -120,7 +120,13 @@ def extract_title(path: Path) -> str:
     return path.stem.replace("-", " ")
 
 
+def is_draft_md(path: Path) -> bool:
+    return path.name.endswith(".draft.md")
+
+
 def is_safe(path: Path) -> bool:
+    if is_draft_md(path):
+        return False
     return re.fullmatch(r"[A-Za-z0-9._-]+\.md", path.name) is not None
 
 

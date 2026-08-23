@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>311 Derivation of Taylor Expansion | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="A derivation that is used to obtain a polynomial approximation and exact remainder, where a remainder is the difference between the function and polynomial.">
+<meta name="description" content="A derivation that is used to obtain a polynomial approximation and exact remainder, where a remainder is the difference between the function and polynomial. Taylor’s theorem. If a function is...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="311 Derivation of Taylor Expansion | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="A derivation that is used to obtain a polynomial approximation and exact remainder, where a remainder is the difference between the function and polynomial.">
+<meta property="og:description" content="A derivation that is used to obtain a polynomial approximation and exact remainder, where a remainder is the difference between the function and polynomial. Taylor’s theorem. If a function is...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="311 Derivation of Taylor Expansion | Mathematics for Physics">
-<meta name="twitter:description" content="A derivation that is used to obtain a polynomial approximation and exact remainder, where a remainder is the difference between the function and polynomial.">
+<meta name="twitter:description" content="A derivation that is used to obtain a polynomial approximation and exact remainder, where a remainder is the difference between the function and polynomial. Taylor’s theorem. If a function is...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -223,42 +223,35 @@
 <h1>
 <span class="header-section-number">311</span> Derivation of Taylor Expansion<a class="anchor" aria-label="anchor" href="#derivation-of-taylor-expansion"><i class="fas fa-link"></i></a>
 </h1>
-<p>A derivation that is used to obtain a polynomial approximation and
-exact remainder, where a remainder is the difference between the
-function and polynomial.</p>
-<p>Taylor’s theorem. If a function is differentiable <span
-class="math inline">\(n+1\)</span> times near <span
-class="math inline">\(a\)</span>, then it equals its Taylor polynomial
-plus a remainder.</p>
+<p>A derivation that is used to obtain a polynomial approximation and exact remainder, where a remainder is the difference between the function and polynomial.</p>
+<p>Taylor’s theorem. If a function is differentiable <span class="math inline">\(n+1\)</span> times near <span class="math inline">\(a\)</span>, then it equals its Taylor polynomial plus a remainder.</p>
 <p>The splitting into polynomial and remainder is</p>
 <p><span class="math display">\[
 f(x) = P_{n}(x) + R_{n+1}(x)
 \]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(f\)</span> is the function being
-expanded.</li>
-<li><span class="math inline">\(a\)</span> is the expansion point.</li>
-<li><span class="math inline">\(x\)</span> is a nearby evaluation
-point.</li>
-<li><span class="math inline">\(P_{n}(x)\)</span> is the Taylor
-polynomial of degree <span class="math inline">\(n\)</span>.</li>
-<li><span class="math inline">\(R_{n+1}(x)\)</span> is the
-remainder.</li>
+<li>
+<span class="math inline">\(f\)</span> is the function being expanded.</li>
+<li>
+<span class="math inline">\(a\)</span> is the expansion point.</li>
+<li>
+<span class="math inline">\(x\)</span> is a nearby evaluation point.</li>
+<li>
+<span class="math inline">\(P_{n}(x)\)</span> is the Taylor polynomial of degree <span class="math inline">\(n\)</span>.</li>
+<li>
+<span class="math inline">\(R_{n+1}(x)\)</span> is the remainder.</li>
 </ul>
-<p>Taylor polynomial. A polynomial whose value and first <span
-class="math inline">\(n\)</span> derivatives at <span
-class="math inline">\(a\)</span> match those of <span
-class="math inline">\(f\)</span>.</p>
+<p>Taylor polynomial. A polynomial whose value and first <span class="math inline">\(n\)</span> derivatives at <span class="math inline">\(a\)</span> match those of <span class="math inline">\(f\)</span>.</p>
 <p>The Taylor polynomial is</p>
 <p><span class="math display">\[
 P_{n}(x)
 =
 f(a)
 +
-f&#39;(a)(x-a)
+f'(a)(x-a)
 +
-\dfrac{f&#39;&#39;(a)}{2!}(x-a)^{2}
+\dfrac{f''(a)}{2!}(x-a)^{2}
 +
 \cdots
 +
@@ -266,27 +259,22 @@ f&#39;(a)(x-a)
 \]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(f^{(k)}(a)\)</span> is the <span
-class="math inline">\(k\)</span>th derivative of <span
-class="math inline">\(f\)</span> at <span
-class="math inline">\(a\)</span>.</li>
-<li><span class="math inline">\(k!\)</span> is the factorial of <span
-class="math inline">\(k\)</span>.</li>
+<li>
+<span class="math inline">\(f^{(k)}(a)\)</span> is the <span class="math inline">\(k\)</span>th derivative of <span class="math inline">\(f\)</span> at <span class="math inline">\(a\)</span>.</li>
+<li>
+<span class="math inline">\(k!\)</span> is the factorial of <span class="math inline">\(k\)</span>.</li>
 </ul>
-<p>Remainder. The difference <span
-class="math inline">\(f(x)-P_{n}(x)\)</span>.</p>
-<p>Auxiliary functions. Helper functions of a running point <span
-class="math inline">\(u\)</span> that recast the remainder as a ratio of
-changes.</p>
+<p>Remainder. The difference <span class="math inline">\(f(x)-P_{n}(x)\)</span>.</p>
+<p>Auxiliary functions. Helper functions of a running point <span class="math inline">\(u\)</span> that recast the remainder as a ratio of changes.</p>
 <p>The auxiliary functions are</p>
 <p><span class="math display">\[
 \phi(u)
 =
 f(u)
 +
-f&#39;(u)(x-u)
+f'(u)(x-u)
 +
-\dfrac{f&#39;&#39;(u)}{2!}(x-u)^{2}
+\dfrac{f''(u)}{2!}(x-u)^{2}
 +
 \cdots
 +
@@ -297,60 +285,45 @@ f&#39;(u)(x-u)
 \]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(u\)</span> is a running point between
-<span class="math inline">\(a\)</span> and <span
-class="math inline">\(x\)</span>.</li>
-<li><span class="math inline">\(\phi(u)\)</span> interpolates <span
-class="math inline">\(f\)</span> from <span
-class="math inline">\(u\)</span> toward <span
-class="math inline">\(x\)</span>.</li>
-<li><span class="math inline">\(\psi(u)\)</span> is the <span
-class="math inline">\((n+1)\)</span>st power of the remaining
-distance.</li>
+<li>
+<span class="math inline">\(u\)</span> is a running point between <span class="math inline">\(a\)</span> and <span class="math inline">\(x\)</span>.</li>
+<li>
+<span class="math inline">\(\phi(u)\)</span> interpolates <span class="math inline">\(f\)</span> from <span class="math inline">\(u\)</span> toward <span class="math inline">\(x\)</span>.</li>
+<li>
+<span class="math inline">\(\psi(u)\)</span> is the <span class="math inline">\((n+1)\)</span>st power of the remaining distance.</li>
 </ul>
-<p>At the endpoints these helpers satisfy <span
-class="math inline">\(\phi(x)=f(x)\)</span>, <span
-class="math inline">\(\psi(x)=0\)</span>, <span
-class="math inline">\(\phi(a)=P_{n}(x)\)</span>, and <span
-class="math inline">\(\psi(a)=(x-a)^{n+1}\)</span>.</p>
-<p>Cauchy’s mean-value theorem. The ratio of changes equals the ratio of
-derivatives at an interior point.</p>
+<p>At the endpoints these helpers satisfy <span class="math inline">\(\phi(x)=f(x)\)</span>, <span class="math inline">\(\psi(x)=0\)</span>, <span class="math inline">\(\phi(a)=P_{n}(x)\)</span>, and <span class="math inline">\(\psi(a)=(x-a)^{n+1}\)</span>.</p>
+<p>Cauchy’s mean-value theorem. The ratio of changes equals the ratio of derivatives at an interior point.</p>
 <p>The Cauchy mean-value identity is</p>
 <p><span class="math display">\[
 \dfrac{\phi(x)-\phi(a)}{\psi(x)-\psi(a)}
 =
-\dfrac{\phi&#39;(\xi)}{\psi&#39;(\xi)}
+\dfrac{\phi'(\xi)}{\psi'(\xi)}
 \]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\xi\)</span> is a point strictly between
-<span class="math inline">\(a\)</span> and <span
-class="math inline">\(x\)</span>.</li>
-<li><span class="math inline">\(\phi&#39;\)</span> and <span
-class="math inline">\(\psi&#39;\)</span> are the derivatives of the
-auxiliary functions.</li>
+<li>
+<span class="math inline">\(\xi\)</span> is a point strictly between <span class="math inline">\(a\)</span> and <span class="math inline">\(x\)</span>.</li>
+<li>
+<span class="math inline">\(\phi'\)</span> and <span class="math inline">\(\psi'\)</span> are the derivatives of the auxiliary functions.</li>
 </ul>
-<p>Telescoping derivative. A derivative calculation that cancels all but
-the highest derivative term.</p>
+<p>Telescoping derivative. A derivative calculation that cancels all but the highest derivative term.</p>
 <p>The derivatives of the auxiliary functions are</p>
 <p><span class="math display">\[
-\phi&#39;(u)
+\phi'(u)
 =
 \dfrac{f^{(n+1)}(u)}{n!}(x-u)^{n}
 \qquad
-\psi&#39;(u)
+\psi'(u)
 =
 -(n+1)(x-u)^{n}
 \]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(f^{(n+1)}(u)\)</span> is the <span
-class="math inline">\((n+1)\)</span>st derivative of <span
-class="math inline">\(f\)</span> at <span
-class="math inline">\(u\)</span>.</li>
+<li>
+<span class="math inline">\(f^{(n+1)}(u)\)</span> is the <span class="math inline">\((n+1)\)</span>st derivative of <span class="math inline">\(f\)</span> at <span class="math inline">\(u\)</span>.</li>
 </ul>
-<p>Lagrange remainder. The error expressed using the next derivative at
-an unknown interior point.</p>
+<p>Lagrange remainder. The error expressed using the next derivative at an unknown interior point.</p>
 <p>The Lagrange remainder is</p>
 <p><span class="math display">\[
 R_{n+1}(x)
@@ -359,29 +332,20 @@ R_{n+1}(x)
 \]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\xi\)</span> is a point strictly between
-<span class="math inline">\(a\)</span> and <span
-class="math inline">\(x\)</span>.</li>
-<li><span class="math inline">\(R_{n+1}(x)\)</span> is the remainder
-after <span class="math inline">\(n\)</span> Taylor terms.</li>
+<li>
+<span class="math inline">\(\xi\)</span> is a point strictly between <span class="math inline">\(a\)</span> and <span class="math inline">\(x\)</span>.</li>
+<li>
+<span class="math inline">\(R_{n+1}(x)\)</span> is the remainder after <span class="math inline">\(n\)</span> Taylor terms.</li>
 </ul>
-<p>Note: Also called Taylor’s formula. Also called Taylor’s theorem with
-remainder.</p>
-<div id="references" class="section level2" number="311.1">
+<p>Note: Also called Taylor’s formula. Also called Taylor’s theorem with remainder.</p>
+<div id="references-267" class="section level2" number="311.1">
 <h2>
-<span class="header-section-number">311.1</span> References<a class="anchor" aria-label="anchor" href="#references"><i class="fas fa-link"></i></a>
+<span class="header-section-number">311.1</span> References<a class="anchor" aria-label="anchor" href="#references-267"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li>Aleksandrov, A. D., Kolmogorov, A. N., &amp; Lavrent’ev, M. A.
-<em>Mathematics: Its Content, Methods and Meaning</em>. Vol. 1. Dover,
-1999. Chapter II, Section 9 — Taylor’s formula via Cauchy’s generalized
-mean-value theorem; Lagrange remainder.</li>
-<li>Hubbard, J. H., &amp; Hubbard, B. B. <em>Vector Calculus, Linear
-Algebra, and Differential Forms: A Unified Approach</em>. 5th ed. Matrix
-Editions, 2015. Appendix A12 — Taylor’s theorem with remainder.</li>
-<li>Arfken, G. B., Weber, H. J., &amp; Harris, F. E. <em>Mathematical
-Methods for Physicists</em>. 7th ed. Academic Press, 2013. Section 1.2 —
-Taylor’s expansion.</li>
+<li>Aleksandrov, A. D., Kolmogorov, A. N., &amp; Lavrent’ev, M. A. <em>Mathematics: Its Content, Methods and Meaning</em>. Vol. 1. Dover, 1999. Chapter II, Section 9 — Taylor’s formula via Cauchy’s generalized mean-value theorem; Lagrange remainder.</li>
+<li>Hubbard, J. H., &amp; Hubbard, B. B. <em>Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach</em>. 5th ed. Matrix Editions, 2015. Appendix A12 — Taylor’s theorem with remainder.</li>
+<li>Arfken, G. B., Weber, H. J., &amp; Harris, F. E. <em>Mathematical Methods for Physicists</em>. 7th ed. Academic Press, 2013. Section 1.2 — Taylor’s expansion.</li>
 </ol>
 <div class="topic-index">
 <ul>
@@ -391,19 +355,16 @@ Taylor’s expansion.</li>
 <li><a href="curve.html">Curve</a></li>
 <li><a href="definite-integral.html">Definite Integral</a></li>
 <li><a href="derivation-of-curl.html">Derivation of Curl</a></li>
-<li><a href="derivation-of-taylor-expansion.html">Derivation of Taylor
-Expansion</a></li>
+<li><a href="derivation-of-taylor-expansion.html">Derivation of Taylor Expansion</a></li>
 <li><a href="divergence.html">Divergence</a></li>
 <li><a href="dot-product.html">Dot Product</a></li>
-<li><a href="envelope-of-tangent-lines.html">Envelope of Tangent
-Lines</a></li>
+<li><a href="envelope-of-tangent-lines.html">Envelope of Tangent Lines</a></li>
 <li><a href="general-functions.html">General Functions</a></li>
 <li><a href="gradient.html">Gradient</a></li>
 <li><a href="improper-integral.html">Improper Integral</a></li>
 <li><a href="indefinite-integral.html">Indefinite Integral</a></li>
 <li><a href="legendre-transform.html">Legendre Transform</a></li>
-<li><a href="legendre-transform-derivation.html">Legendre Transform
-Derivation</a></li>
+<li><a href="legendre-transform-derivation.html">Legendre Transform Derivation</a></li>
 <li><a href="limit.html">Limit</a></li>
 <li><a href="line-integral.html">Line Integral</a></li>
 <li><a href="notes-1.html">Notes</a></li>
@@ -412,15 +373,14 @@ Derivation</a></li>
 <li><a href="scalar-projection.html">Scalar Projection</a></li>
 <li><a href="smooth-curve.html">Smooth Curve</a></li>
 <li><a href="vector-calculus.html">Vector Calculus</a></li>
-<li><a href="vector-differential-operator.html">Vector Differential
-Operator</a></li>
+<li><a href="vector-differential-operator.html">Vector Differential Operator</a></li>
 <li><a href="vector-field.html">Vector Field</a></li>
 <li><a href="vector-projection.html">Vector Projection</a></li>
 </ul>
 </div>
-</div>
-</div>
 
+</div>
+</div>
 <script>
   (function () {
     var MOON =

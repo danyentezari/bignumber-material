@@ -1,17 +1,17 @@
 # Derivation of Curl
 
-A derivation that is used to obtain the Cartesian determinant form of curl from circulation around a vanishing rectangle, where a circulation is the line integral of a field around a closed curve, and where a vanishing rectangle is a rectangular loop whose enclosed area tends to zero.
+Curl is obtained from circulation per unit area around a vanishing rectangular loop.
 
-Circulation per unit area. The component of curl along a unit normal is the limit of circulation per unit area. A unit normal is a vector of length one perpendicular to the enclosed area.
-
-The circulation definition is
+For a vector field $\mathbf{F}$,
 
 $$
+\begin{aligned}
 (\nabla\times\mathbf{F})\cdot\hat{\mathbf{n}}
-=
+&=
 \lim_{A\to 0}
 \dfrac{1}{A}
-\oint_{C}\mathbf{F}\cdot d\mathbf{s}
+\oint_{C}\mathbf{F}\cdot d\mathbf{s}.
+\end{aligned}
 $$
 
 where
@@ -23,32 +23,31 @@ where
 - $C$ is the closed curve.
 - $d\mathbf{s}$ is the displacement along $C$.
 
-Rectangular loop. A rectangle in the $xy$-plane with normal $\mathbf{k}$ has sides $\Delta x$ and $\Delta y$. First-order Taylor expansions give the four side integrals.
-
-The side contributions are
+Rectangular Loop. Consider a rectangle in the $xy$-plane with normal $\mathbf{k}$ and sides $\Delta x$ and $\Delta y$.
 
 $$
+\begin{aligned}
 \int_{a}^{b}\mathbf{F}\cdot d\mathbf{s}
-\simeq
-\left(F_{x}-\dfrac{\Delta y}{2}\dfrac{\partial F_{x}}{\partial y}\right)\Delta x
-$$
-
-$$
+&\simeq
+\left(
+F_{x}-\dfrac{\Delta y}{2}\dfrac{\partial F_{x}}{\partial y}
+\right)\Delta x \\[4pt]
 \int_{b}^{c}\mathbf{F}\cdot d\mathbf{s}
-\simeq
-\left(F_{y}+\dfrac{\Delta x}{2}\dfrac{\partial F_{y}}{\partial x}\right)\Delta y
-$$
-
-$$
+&\simeq
+\left(
+F_{y}+\dfrac{\Delta x}{2}\dfrac{\partial F_{y}}{\partial x}
+\right)\Delta y \\[4pt]
 \int_{c}^{d}\mathbf{F}\cdot d\mathbf{s}
-\simeq
--\left(F_{x}+\dfrac{\Delta y}{2}\dfrac{\partial F_{x}}{\partial y}\right)\Delta x
-$$
-
-$$
+&\simeq
+-\left(
+F_{x}+\dfrac{\Delta y}{2}\dfrac{\partial F_{x}}{\partial y}
+\right)\Delta x \\[4pt]
 \int_{d}^{a}\mathbf{F}\cdot d\mathbf{s}
-\simeq
--\left(F_{y}-\dfrac{\Delta x}{2}\dfrac{\partial F_{y}}{\partial x}\right)\Delta y
+&\simeq
+-\left(
+F_{y}-\dfrac{\Delta x}{2}\dfrac{\partial F_{y}}{\partial x}
+\right)\Delta y.
+\end{aligned}
 $$
 
 where
@@ -58,180 +57,178 @@ where
 - $\Delta x$ and $\Delta y$ are the side lengths.
 - $a$, $b$, $c$, $d$ are the vertices of the rectangle.
 
-First-order Taylor expansion. The value of $F_{y}$ on the right side comes from expanding about the rectangle’s center.
-
-At the center,
+First-Order Taylor Expansion. For the right side of the rectangle,
 
 $$
-F_{y} = F_{y}(x,y,z).
-$$
-
-At the right side,
-
-$$
-x \to x+\dfrac{\Delta x}{2}.
-$$
-
-Therefore
-
-$$
-F_{y}\left(x+\dfrac{\Delta x}{2},y,z\right)
-$$
-
-is expanded about $x$:
-
-$$
+\begin{aligned}
 F_{y}(x+h,y,z)
-\simeq
+&\simeq
 F_{y}(x,y,z)
 +
-h\dfrac{\partial F_{y}}{\partial x}.
-$$
-
-Set
-
-$$
-h=\dfrac{\Delta x}{2}.
-$$
-
-Then
-
-$$
+h\dfrac{\partial F_{y}}{\partial x} \\[4pt]
+h
+&=
+\dfrac{\Delta x}{2} \\[4pt]
 F_{y}\left(x+\dfrac{\Delta x}{2},y,z\right)
-\simeq
+&\simeq
 F_{y}(x,y,z)
 +
 \dfrac{\Delta x}{2}
+\dfrac{\partial F_{y}}{\partial x} \\[4pt]
+&=
+F_{y}
++
+\dfrac{\Delta x}{2}
 \dfrac{\partial F_{y}}{\partial x}.
+\end{aligned}
 $$
 
-Abbreviating $F_{y}(x,y,z)$ as $F_{y}$ gives
+Similarly, the other three sides give the expressions above.
+
+Circulation. Summing the four sides,
 
 $$
-F_{y}+\dfrac{\Delta x}{2}\dfrac{\partial F_{y}}{\partial x}.
-$$
-
-The circulation around the rectangle is
-
-$$
+\begin{aligned}
 \oint_{abcd}\mathbf{F}\cdot d\mathbf{s}
-\simeq
-\left(\dfrac{\partial F_{y}}{\partial x}-\dfrac{\partial F_{x}}{\partial y}\right)\Delta x\,\Delta y
-$$
-
-$z$-component. Dividing by the enclosed area and taking the vanishing limit gives the third Cartesian component.
-
-The $z$-component is
-
-$$
-(\nabla\times\mathbf{F})\cdot\mathbf{k}
-=
+&\simeq
+\left(
 \dfrac{\partial F_{y}}{\partial x}
 -
 \dfrac{\partial F_{x}}{\partial y}
+\right)
+\Delta x\,\Delta y.
+\end{aligned}
 $$
 
-where
-
-- $\mathbf{k}$ is the Cartesian unit vector along $z$.
-
-Cyclic permutation. Cycling the coordinates and the components gives the remaining two Cartesian components.
-
-The $x$-component is
+Since
 
 $$
+A=\Delta x\,\Delta y,
+$$
+
+divide by the area and take the vanishing limit:
+
+$$
+\begin{aligned}
+(\nabla\times\mathbf{F})\cdot\mathbf{k}
+&=
+\dfrac{\partial F_{y}}{\partial x}
+-
+\dfrac{\partial F_{x}}{\partial y}.
+\end{aligned}
+$$
+
+where $\mathbf{k}$ is the Cartesian unit vector along $z$.
+
+Cyclic Permutation. Cycling the coordinates gives
+
+$$
+\begin{aligned}
 (\nabla\times\mathbf{F})\cdot\mathbf{i}
-=
+&=
+\dfrac{\partial F_{z}}{\partial y}
+-
+\dfrac{\partial F_{y}}{\partial z} \\[4pt]
+(\nabla\times\mathbf{F})\cdot\mathbf{j}
+&=
+\dfrac{\partial F_{x}}{\partial z}
+-
+\dfrac{\partial F_{z}}{\partial x} \\[4pt]
+(\nabla\times\mathbf{F})\cdot\mathbf{k}
+&=
+\dfrac{\partial F_{y}}{\partial x}
+-
+\dfrac{\partial F_{x}}{\partial y}.
+\end{aligned}
+$$
+
+where $\mathbf{i}$, $\mathbf{j}$, and $\mathbf{k}$ are the Cartesian unit vectors along $x$, $y$, and $z$.
+
+Therefore,
+
+$$
+\begin{aligned}
+\nabla\times\mathbf{F}
+&=
+\left(
 \dfrac{\partial F_{z}}{\partial y}
 -
 \dfrac{\partial F_{y}}{\partial z}
-$$
-
-The $y$-component is
-
-$$
-(\nabla\times\mathbf{F})\cdot\mathbf{j}
-=
+\right)\mathbf{i}
++
+\left(
 \dfrac{\partial F_{x}}{\partial z}
 -
 \dfrac{\partial F_{z}}{\partial x}
-$$
-
-where
-
-- $\mathbf{i}$ is the Cartesian unit vector along $x$.
-- $\mathbf{j}$ is the Cartesian unit vector along $y$.
-
-Component form. The three components assemble into a single vector in the Cartesian basis.
-
-The component form is
-
-$$
-\nabla\times\mathbf{F}
-=
-\left(\dfrac{\partial F_{z}}{\partial y}-\dfrac{\partial F_{y}}{\partial z}\right)\mathbf{i}
+\right)\mathbf{j}
 +
-\left(\dfrac{\partial F_{x}}{\partial z}-\dfrac{\partial F_{z}}{\partial x}\right)\mathbf{j}
-+
-\left(\dfrac{\partial F_{y}}{\partial x}-\dfrac{\partial F_{x}}{\partial y}\right)\mathbf{k}
+\left(
+\dfrac{\partial F_{y}}{\partial x}
+-
+\dfrac{\partial F_{x}}{\partial y}
+\right)\mathbf{k}.
+\end{aligned}
 $$
 
-Cross-product expansion. The ordinary cross product of two vectors expands by the same cofactor rule.
-
-The cross product is
+Determinant Form. The ordinary cross product expands as
 
 $$
+\begin{aligned}
 \mathbf{a}\times\mathbf{b}
-=
+&=
 \begin{vmatrix}
 \mathbf{i} & \mathbf{j} & \mathbf{k} \\
 a_{1} & a_{2} & a_{3} \\
 b_{1} & b_{2} & b_{3}
-\end{vmatrix}
-$$
-
-which equals
-
-$$
-\mathbf{a}\times\mathbf{b}
-=
+\end{vmatrix} \\[4pt]
+&=
 (a_{2}b_{3}-a_{3}b_{2})\mathbf{i}
 +
 (a_{3}b_{1}-a_{1}b_{3})\mathbf{j}
 +
-(a_{1}b_{2}-a_{2}b_{1})\mathbf{k}
+(a_{1}b_{2}-a_{2}b_{1})\mathbf{k}.
+\end{aligned}
 $$
 
-where
-
-- $\mathbf{a}$ is the first vector.
-- $\mathbf{b}$ is the second vector.
-- $a_{1}$, $a_{2}$, $a_{3}$ are the Cartesian components of $\mathbf{a}$.
-- $b_{1}$, $b_{2}$, $b_{3}$ are the Cartesian components of $\mathbf{b}$.
-
-Symbolic determinant. Replacing the first factor by $\nabla$ yields the determinant form of curl. The operators in the second row act on the components in the third row.
-
-The determinant form is
+Replacing the first vector by
 
 $$
+\nabla
+=
+\mathbf{i}\dfrac{\partial}{\partial x}
++
+\mathbf{j}\dfrac{\partial}{\partial y}
++
+\mathbf{k}\dfrac{\partial}{\partial z},
+$$
+
+gives
+
+$$
+\begin{aligned}
 \operatorname{curl}\mathbf{F}
-=
-\nabla\times\mathbf{F}
-=
+&=
+\nabla\times\mathbf{F} \\[4pt]
+&=
 \begin{vmatrix}
 \mathbf{i} & \mathbf{j} & \mathbf{k} \\
-\dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\
+\dfrac{\partial}{\partial x}
+&
+\dfrac{\partial}{\partial y}
+&
+\dfrac{\partial}{\partial z} \\
 F_{x} & F_{y} & F_{z}
-\end{vmatrix}
+\end{vmatrix}.
+\end{aligned}
 $$
 
-Note: Also written $\operatorname{rot}\mathbf{F}$. Also called the symbolic determinant.
+The differential operators in the second row act on the components in the third row.
 
+Curl is also written $\operatorname{rot}\mathbf{F}$. The determinant above is a symbolic determinant.
 
 ![A closed curve $C$ bounding an area $A$. The unit normal $\hat{\mathbf{n}}$ stands perpendicular to $A$. At a point of $C$ the field $\mathbf{F}$ and the displacement $d\mathbf{s}$ are shown.](closed-curve-vector-field.png){#fig:closed-curve-vector-field}
 
 ![Decomposition of $\mathbf{F}$ at a point of $C$ into a part parallel to $d\mathbf{s}$ and a part perpendicular to $d\mathbf{s}$. The included angle is $\theta$.](vector-decomposition-along-curved-path.png){#fig:vector-decomposition-along-curved-path}
-
 
 ## References
 

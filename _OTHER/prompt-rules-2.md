@@ -52,3 +52,41 @@ where
 * Do not use “or” to introduce alternative terminology.
 * Do not use slashes.
 * Do not use bold formatting.
+* When writing mathematical derivations or proofs in Markdown files, use the following formats.
+* For derivations, use compact aligned LaTeX:
+
+```
+$$
+\begin{aligned}
+A
+&= B \\
+&= C \\
+&= D
+\end{aligned}
+$$
+```
+
+* Each line should represent one clear mathematical step. Add only brief explanations when necessary.
+* For proofs, use:
+
+```
+### Proof
+
+Assume $P$.
+
+Then,
+
+$$
+P \implies Q \implies R \implies S.
+$$
+
+Therefore,
+
+$$
+S.
+$$
+
+$\square$
+```
+
+* Keep proofs and derivations concise, linear, and conventional. Use `$...$` for inline mathematics and `$$...$$` for displayed mathematics. Avoid unnecessary prose.
