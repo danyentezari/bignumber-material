@@ -481,6 +481,43 @@ def _close_div_offset(html: str, start: int) -> int:
     raise RuntimeError("unclosed section div")
 
 
+def _content_splice_span(html: str) -> tuple[int, int]:
+    """Span of the chapter body to replace (level-1 section, else main content)."""
+    sec_match = re.search(
+        r'<div\s+[^>]*class="section level1"[^>]*>',
+        html,
+        re.IGNORECASE,
+    )
+    if sec_match:
+        return sec_match.start(), _close_div_offset(html, sec_match.start())
+
+    main_match = re.search(
+        r'<main[^>]*id="content"[^>]*>',
+        html,
+        re.IGNORECASE,
+    )
+    if not main_match:
+        raise RuntimeError("No level-1 section or main content container")
+    rest = html[main_match.end() :]
+    nav_match = re.search(r'<div class="chapter-nav">', rest)
+    if nav_match:
+        return main_match.end(), main_match.end() + nav_match.start()
+    close_main = rest.lower().find("</main>")
+    if close_main < 0:
+        raise RuntimeError("unclosed main content container")
+    return main_match.end(), main_match.end() + close_main
+
+
+def _ensure_level1_section(fragment: str, html_name: str, chapter_num: int) -> str:
+    if re.search(r'class="section level1"', fragment, re.IGNORECASE):
+        return fragment
+    sec_id = Path(html_name).stem
+    return (
+        f'<div id="{sec_id}" class="section level1" number="{chapter_num}">\n'
+        f"{fragment.rstrip()}\n</div>\n"
+    )
+
+
 def _decorate_pandoc_section(fragment: str, chapter_num: int) -> str:
     """Add bookdown-like section numbers / anchors to a pandoc section-divs fragment."""
     counters = [chapter_num]
@@ -500,15 +537,16 @@ def _decorate_pandoc_section(fragment: str, chapter_num: int) -> str:
     out: list[str] = []
     pos = 0
     for match in re.finditer(
-        r'<div\s+id="([^"]+)"\s+class="section level(\d+)"[^>]*>\s*'
-        r"<h(\d)>(.*?)</h\3>",
+        r'<div\s+(?:id="([^"]+)"\s+class="section level(\d+)"|'
+        r'class="section level(\d+)"[^>]*\sid="([^"]+)")[^>]*>\s*'
+        r"<h(\d)>(.*?)</h\5>",
         fragment,
         re.IGNORECASE | re.DOTALL,
     ):
-        level = int(match.group(2))
-        heading_level = int(match.group(3))
-        sec_id = match.group(1)
-        heading_inner = match.group(4).strip()
+        sec_id = match.group(1) or match.group(4)
+        level = int(match.group(2) or match.group(3))
+        heading_level = int(match.group(5))
+        heading_inner = match.group(6).strip()
         number = next_number(level)
         out.append(fragment[pos : match.start()])
         out.append(
@@ -584,46 +622,53 @@ def render_chapter_inplace(generated_rel: str, html_name: str) -> None:
 
     fragment = pandoc_chapter_fragment(generated_md)
     fragment = _decorate_pandoc_section(fragment, chapter_num)
+    fragment = _ensure_level1_section(fragment, html_name, chapter_num)
 
-    sec_match = re.search(
-        r'<div\s+id="[^"]+"\s+class="section level1"[^>]*>',
-        existing,
-    )
-    if not sec_match:
-        raise RuntimeError(f"No level-1 section in {html_name}")
-    sec_end = _close_div_offset(existing, sec_match.start())
-    updated = existing[: sec_match.start()] + fragment.rstrip() + "\n" + existing[sec_end:]
+    try:
+        start, end = _content_splice_span(existing)
+    except RuntimeError as exc:
+        raise RuntimeError(f"{exc} in {html_name}") from exc
+    updated = existing[:start] + fragment.rstrip() + "\n" + existing[end:]
 
     # Refresh meta descriptions from the new lead paragraph.
+    # Use a function replacement so TeX backslashes are not regex escapes.
     blurb = first_paragraph_text(fragment)
     if blurb:
         short = blurb if len(blurb) < 160 else blurb[:157].rstrip() + "..."
         escaped = html_lib.escape(short, quote=True)
+
+        def _meta_repl(match: re.Match[str], _text: str = escaped) -> str:
+            return match.group(1) + _text + match.group(3)
+
         updated = re.sub(
             r'(<meta name="description" content=")(.*?)(">)',
-            rf"\1{escaped}\3",
+            _meta_repl,
             updated,
             count=1,
             flags=re.DOTALL,
         )
         updated = re.sub(
             r'(<meta property="og:description" content=")(.*?)(">)',
-            rf"\1{escaped}\3",
+            _meta_repl,
             updated,
             count=1,
             flags=re.DOTALL,
         )
         updated = re.sub(
             r'(<meta name="twitter:description" content=")(.*?)(">)',
-            rf"\1{escaped}\3",
+            _meta_repl,
             updated,
             count=1,
             flags=re.DOTALL,
         )
 
+    title_html = (
+        f"<title>{chapter_num} {html_lib.escape(page_title)} | "
+        "Mathematics for Physics</title>"
+    )
     updated = re.sub(
         r"<title>.*?</title>",
-        f"<title>{chapter_num} {html_lib.escape(page_title)} | Mathematics for Physics</title>",
+        lambda _match: title_html,
         updated,
         count=1,
         flags=re.DOTALL,
@@ -687,6 +732,7 @@ def content_build(topic_paths: list[Path], asset_only: bool) -> int:
 
         # Site Index + coverage (also rebuilds index links).
         run(["python3", "scripts/verify_book_coverage.py"], cwd=BOOK_DIR)
+        run(["python3", "scripts/latest_updates.py"], cwd=BOOK_DIR)
 
         # Ensure changed pages remain searchable.
         search_paths = {
@@ -718,6 +764,7 @@ def content_build(topic_paths: list[Path], asset_only: bool) -> int:
         print(f"Incremental build OK: {', '.join(html_names)}", flush=True)
     else:
         run(["python3", "scripts/copy_topic_assets.py"], cwd=BOOK_DIR)
+        run(["python3", "scripts/latest_updates.py"], cwd=BOOK_DIR)
         print("Assets copied (no markdown preview).", flush=True)
 
     save_title_cache(list_topic_markdown())
