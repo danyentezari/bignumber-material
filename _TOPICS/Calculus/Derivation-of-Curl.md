@@ -58,6 +58,59 @@ where
 - $\Delta x$ and $\Delta y$ are the side lengths.
 - $a$, $b$, $c$, $d$ are the vertices of the rectangle.
 
+First-order Taylor expansion. The value of $F_{y}$ on the right side comes from expanding about the rectangle’s center.
+
+At the center,
+
+$$
+F_{y} = F_{y}(x,y,z).
+$$
+
+At the right side,
+
+$$
+x \to x+\dfrac{\Delta x}{2}.
+$$
+
+Therefore
+
+$$
+F_{y}\left(x+\dfrac{\Delta x}{2},y,z\right)
+$$
+
+is expanded about $x$:
+
+$$
+F_{y}(x+h,y,z)
+\simeq
+F_{y}(x,y,z)
++
+h\dfrac{\partial F_{y}}{\partial x}.
+$$
+
+Set
+
+$$
+h=\dfrac{\Delta x}{2}.
+$$
+
+Then
+
+$$
+F_{y}\left(x+\dfrac{\Delta x}{2},y,z\right)
+\simeq
+F_{y}(x,y,z)
++
+\dfrac{\Delta x}{2}
+\dfrac{\partial F_{y}}{\partial x}.
+$$
+
+Abbreviating $F_{y}(x,y,z)$ as $F_{y}$ gives
+
+$$
+F_{y}+\dfrac{\Delta x}{2}\dfrac{\partial F_{y}}{\partial x}.
+$$
+
 The circulation around the rectangle is
 
 $$

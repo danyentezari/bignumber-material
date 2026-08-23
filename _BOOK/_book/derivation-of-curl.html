@@ -299,6 +299,47 @@ class="math inline">\(b\)</span>, <span
 class="math inline">\(c\)</span>, <span class="math inline">\(d\)</span>
 are the vertices of the rectangle.</li>
 </ul>
+<p>First-order Taylor expansion. The value of <span
+class="math inline">\(F_{y}\)</span> on the right side comes from
+expanding about the rectangle’s center.</p>
+<p>At the center,</p>
+<p><span class="math display">\[
+F_{y} = F_{y}(x,y,z).
+\]</span></p>
+<p>At the right side,</p>
+<p><span class="math display">\[
+x \to x+\dfrac{\Delta x}{2}.
+\]</span></p>
+<p>Therefore</p>
+<p><span class="math display">\[
+F_{y}\left(x+\dfrac{\Delta x}{2},y,z\right)
+\]</span></p>
+<p>is expanded about <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+F_{y}(x+h,y,z)
+\simeq
+F_{y}(x,y,z)
++
+h\dfrac{\partial F_{y}}{\partial x}.
+\]</span></p>
+<p>Set</p>
+<p><span class="math display">\[
+h=\dfrac{\Delta x}{2}.
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+F_{y}\left(x+\dfrac{\Delta x}{2},y,z\right)
+\simeq
+F_{y}(x,y,z)
++
+\dfrac{\Delta x}{2}
+\dfrac{\partial F_{y}}{\partial x}.
+\]</span></p>
+<p>Abbreviating <span class="math inline">\(F_{y}(x,y,z)\)</span> as
+<span class="math inline">\(F_{y}\)</span> gives</p>
+<p><span class="math display">\[
+F_{y}+\dfrac{\Delta x}{2}\dfrac{\partial F_{y}}{\partial x}.
+\]</span></p>
 <p>The circulation around the rectangle is</p>
 <p><span class="math display">\[
 \oint_{abcd}\mathbf{F}\cdot d\mathbf{s}
@@ -502,6 +543,8 @@ Operator</a></li>
 </div>
 </div>
 </div>
+
+
 
 
 

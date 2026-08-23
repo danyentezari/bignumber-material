@@ -2,7 +2,7 @@
 
 A derivation that is used to obtain a polynomial approximation and exact remainder, where a remainder is the difference between the function and polynomial.
 
-Taylor's theorem. If a function is differentiable $n+1$ times near $a$, then it equals its Taylor polynomial plus a remainder. This principle is used to express a function as a polynomial plus error.
+Taylor's theorem. If a function is differentiable $n+1$ times near $a$, then it equals its Taylor polynomial plus a remainder.
 
 The splitting into polynomial and remainder is
 
@@ -18,7 +18,7 @@ where
 - $P_{n}(x)$ is the Taylor polynomial of degree $n$.
 - $R_{n+1}(x)$ is the remainder.
 
-Taylor polynomial. A polynomial whose value and first $n$ derivatives at $a$ match those of $f$. This principle is used to write the degree-$n$ match to $f$ at $a$.
+Taylor polynomial. A polynomial whose value and first $n$ derivatives at $a$ match those of $f$.
 
 The Taylor polynomial is
 
@@ -41,9 +41,9 @@ where
 - $f^{(k)}(a)$ is the $k$th derivative of $f$ at $a$.
 - $k!$ is the factorial of $k$.
 
-Remainder. The difference $f(x)-P_{n}(x)$. This principle is used to isolate the approximation error.
+Remainder. The difference $f(x)-P_{n}(x)$.
 
-Auxiliary functions. Helper functions of a running point $u$ that are used to apply a theorem to the remainder. This principle is used to recast the remainder as a ratio of changes.
+Auxiliary functions. Helper functions of a running point $u$ that recast the remainder as a ratio of changes.
 
 The auxiliary functions are
 
@@ -73,7 +73,7 @@ where
 
 At the endpoints these helpers satisfy $\phi(x)=f(x)$, $\psi(x)=0$, $\phi(a)=P_{n}(x)$, and $\psi(a)=(x-a)^{n+1}$.
 
-Cauchy's mean-value theorem. The ratio of changes equals the ratio of derivatives at an interior point. This principle is used to replace the remainder ratio by a derivative ratio.
+Cauchy's mean-value theorem. The ratio of changes equals the ratio of derivatives at an interior point.
 
 The Cauchy mean-value identity is
 
@@ -88,7 +88,7 @@ where
 - $\xi$ is a point strictly between $a$ and $x$.
 - $\phi'$ and $\psi'$ are the derivatives of the auxiliary functions.
 
-Telescoping derivative. A derivative calculation that cancels all but the highest derivative term. This principle is used to evaluate the derivative ratio at the interior point.
+Telescoping derivative. A derivative calculation that cancels all but the highest derivative term.
 
 The derivatives of the auxiliary functions are
 
@@ -106,7 +106,7 @@ where
 
 - $f^{(n+1)}(u)$ is the $(n+1)$st derivative of $f$ at $u$.
 
-Lagrange remainder. The error expressed using the next derivative at an unknown interior point. This principle is used to write an exact formula for the error.
+Lagrange remainder. The error expressed using the next derivative at an unknown interior point.
 
 The Lagrange remainder is
 
