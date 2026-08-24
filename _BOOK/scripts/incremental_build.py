@@ -741,6 +741,7 @@ def content_build(topic_paths: list[Path], asset_only: bool) -> int:
         # Site Index + coverage (also rebuilds index links).
         run(["python3", "scripts/verify_book_coverage.py"], cwd=BOOK_DIR)
         run(["python3", "scripts/latest_updates.py"], cwd=BOOK_DIR)
+        run(["python3", "scripts/seo_site_files.py"], cwd=BOOK_DIR)
 
         # Ensure changed pages remain searchable.
         search_paths = {
@@ -773,6 +774,7 @@ def content_build(topic_paths: list[Path], asset_only: bool) -> int:
     else:
         run(["python3", "scripts/copy_topic_assets.py"], cwd=BOOK_DIR)
         run(["python3", "scripts/latest_updates.py"], cwd=BOOK_DIR)
+        run(["python3", "scripts/seo_site_files.py"], cwd=BOOK_DIR)
         print("Assets copied (no markdown preview).", flush=True)
 
     save_title_cache(list_topic_markdown())

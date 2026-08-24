@@ -49,6 +49,23 @@ Colors are driven by CSS variables on `[data-theme]`, so tweak the `:root` / `[d
 
 The rendered HTML book will be placed into `_BOOK/_book` by default.
 
+Post-render also writes SEO files into `_BOOK/_book`:
+
+- `robots.txt` — allows crawling and points at the sitemap
+- `sitemap.xml` — absolute HTTPS URLs for every chapter
+- `CNAME` — `book.danyentezari.com`
+- `rel=canonical` and `og:url` on each HTML page
+
+## SEO / Google indexing
+
+After deploying to GitHub Pages:
+
+1. In the repo **Settings → Pages**, enable **Enforce HTTPS** for `book.danyentezari.com`. Confirm `http://book.danyentezari.com` redirects to `https://`, and that `https://danyentezari.github.io/bignumber-material/` redirects to the HTTPS custom domain.
+2. In [Google Search Console](https://search.google.com/search-console), add a Domain property for `book.danyentezari.com` (DNS TXT) or a URL-prefix property and verify.
+3. Submit the sitemap: `https://book.danyentezari.com/sitemap.xml`.
+4. Use URL Inspection on the home page, Site Index, and one deep chapter; watch Coverage for soft-404s or http/https duplicates.
+
+Optional: submit the same sitemap in Bing Webmaster Tools.
 
 ## Run
 
@@ -67,3 +84,4 @@ python3 -m http.server 8000 --directory _BOOK/_book
 ## Notes
 
 - Source markdown files remain in `../_TOPICS`.
+- Topic drafts named `*.draft.md` are excluded from the book.

@@ -1,243 +1,141 @@
+MacCullagh’s 1839 starting point was not circulation: he introduced three differential combinations of the displacement components and proved that they transform as vector components under rotations. His signs are opposite to the modern right-handed curl convention. ([Trinity College Dublin][1])
+
 # Derivation of Curl
 
-Let $\mathbf{F}$ be a continuously differentiable vector field, and let $C=\partial S$ be the boundary of a surface $S$ with unit normal $\hat{\mathbf{n}}$. By Stokes' theorem,
+MacCullagh's Starting Point. Let
 
 $$
-\oint_C \mathbf{F}\cdot d\mathbf{s}
-=
-\iint_S (\nabla\times\mathbf{F})\cdot\hat{\mathbf{n}}\,dA.
-$$
+\mathbf{u}
+==========
 
-Dividing by the area $A$ of $S$,
-
-$$
-\frac{1}{A}\oint_C \mathbf{F}\cdot d\mathbf{s}
-=
-\frac{1}{A}\iint_S (\nabla\times\mathbf{F})\cdot\hat{\mathbf{n}}\,dA.
-$$
-
-As $A\to0$,
-
-$$
-(\nabla\times\mathbf{F})\cdot\hat{\mathbf{n}}
-=
-\lim_{A\to0}
-\frac{1}{A}
-\oint_C \mathbf{F}\cdot d\mathbf{s}.
-$$
-
-Rectangular Loop. Consider a rectangle in the $xy$-plane centered at $(x,y,z)$, with side lengths $\Delta x$ and $\Delta y$ and unit normal
-
-$$
-\hat{\mathbf{n}}=\mathbf{k}.
-$$
-
-Let its boundary be traversed as
-
-$$
-a\to b\to c\to d\to a.
-$$
-
-All field components and derivatives below are evaluated at $(x,y,z)$.
-
-For $a\to b$,
-
-$$
-F_x\left(x,y-\frac{\Delta y}{2},z\right)
-\simeq
-F_x-\frac{\Delta y}{2}\frac{\partial F_x}{\partial y}.
-$$
-
-Hence,
-
-$$
-\int_a^b\mathbf{F}\cdot d\mathbf{s}
-\simeq
-\left(
-F_x-\frac{\Delta y}{2}\frac{\partial F_x}{\partial y}
-\right)\Delta x.
-$$
-
-For $b\to c$,
-
-$$
-F_y\left(x+\frac{\Delta x}{2},y,z\right)
-\simeq
-F_y+\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}.
-$$
-
-Hence,
-
-$$
-\int_b^c\mathbf{F}\cdot d\mathbf{s}
-\simeq
-\left(
-F_y+\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}
-\right)\Delta y.
-$$
-
-For $c\to d$,
-
-$$
-F_x\left(x,y+\frac{\Delta y}{2},z\right)
-\simeq
-F_x+\frac{\Delta y}{2}\frac{\partial F_x}{\partial y}.
-$$
-
-Hence,
-
-$$
-\int_c^d\mathbf{F}\cdot d\mathbf{s}
-\simeq
--\left(
-F_x+\frac{\Delta y}{2}\frac{\partial F_x}{\partial y}
-\right)\Delta x.
-$$
-
-For $d\to a$,
-
-$$
-F_y\left(x-\frac{\Delta x}{2},y,z\right)
-\simeq
-F_y-\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}.
-$$
-
-Hence,
-
-$$
-\int_d^a\mathbf{F}\cdot d\mathbf{s}
-\simeq
--\left(
-F_y-\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}
-\right)\Delta y.
-$$
-
-First-Order Taylor Expansion. For example, the value of $F_y$ on the right side follows from
-
-$$
-F_y(x+h,y,z)
-\simeq
-F_y(x,y,z)
+\xi,\mathbf{i}
 +
-h\frac{\partial F_y}{\partial x},
+\eta,\mathbf{j}
++
+\zeta,\mathbf{k}
 $$
 
-with
+be a displacement field with Cartesian components $\xi$, $\eta$, and $\zeta$.
+
+MacCullagh introduced the three quantities
 
 $$
-h=\frac{\Delta x}{2}.
+X_M
+===
+
+## \frac{\partial\eta}{\partial z}
+
+\frac{\partial\zeta}{\partial y},
+$$
+
+$$
+Y_M
+===
+
+## \frac{\partial\zeta}{\partial x}
+
+\frac{\partial\xi}{\partial z},
+$$
+
+and
+
+$$
+Z_M
+===
+
+## \frac{\partial\xi}{\partial y}
+
+\frac{\partial\eta}{\partial x}.
+$$
+
+He showed that under a rotation of Cartesian coordinates,
+
+$$
+\begin{pmatrix}
+X_M\
+Y_M\
+Z_M
+\end{pmatrix}
+$$
+
+transforms in the same manner as the components of a vector.
+
+Modern Sign Convention. With the modern right-handed convention for curl,
+
+$$
+\nabla\times\mathbf{u}
+======================
+
+*
+
+\begin{pmatrix}
+X_M\
+Y_M\
+Z_M
+\end{pmatrix}.
 $$
 
 Therefore,
 
 $$
-F_y\left(x+\frac{\Delta x}{2},y,z\right)
-\simeq
-F_y(x,y,z)
+(\nabla\times\mathbf{u})_x
+==========================
+
+## \frac{\partial\zeta}{\partial y}
+
+\frac{\partial\eta}{\partial z},
+$$
+
+$$
+(\nabla\times\mathbf{u})_y
+==========================
+
+## \frac{\partial\xi}{\partial z}
+
+\frac{\partial\zeta}{\partial x},
+$$
+
+and
+
+$$
+(\nabla\times\mathbf{u})_z
+==========================
+
+## \frac{\partial\eta}{\partial x}
+
+\frac{\partial\xi}{\partial y}.
+$$
+
+General Vector Field. Replace the displacement field by
+
+$$
+\mathbf{F}
+==========
+
+F_x\mathbf{i}
 +
-\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}.
+F_y\mathbf{j}
++
+F_z\mathbf{k}.
 $$
 
-Thus,
-
-$$
-F_y\left(x+\frac{\Delta x}{2},y,z\right)
-\simeq
-F_y+\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}.
-$$
-
-Circulation. Summing the four sides,
-
-$$
-\begin{aligned}
-\oint_{abcd}\mathbf{F}\cdot d\mathbf{s}
-\simeq {}&
-\left(
-F_x-\frac{\Delta y}{2}\frac{\partial F_x}{\partial y}
-\right)\Delta x
-\\
-&+
-\left(
-F_y+\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}
-\right)\Delta y
-\\
-&-
-\left(
-F_x+\frac{\Delta y}{2}\frac{\partial F_x}{\partial y}
-\right)\Delta x
-\\
-&-
-\left(
-F_y-\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}
-\right)\Delta y.
-\end{aligned}
-$$
-
-The $F_x$ and $F_y$ terms cancel, giving
-
-$$
-\oint_{abcd}\mathbf{F}\cdot d\mathbf{s}
-\simeq
-\left(
-\frac{\partial F_y}{\partial x}
--
-\frac{\partial F_x}{\partial y}
-\right)
-\Delta x\,\Delta y.
-$$
-
-Since
-
-$$
-A=\Delta x\,\Delta y,
-$$
-
-we obtain
-
-$$
-\frac{1}{A}
-\oint_{abcd}\mathbf{F}\cdot d\mathbf{s}
-\simeq
-\frac{\partial F_y}{\partial x}
--
-\frac{\partial F_x}{\partial y}.
-$$
-
-Taking $\Delta x,\Delta y\to0$,
-
-$$
-(\nabla\times\mathbf{F})\cdot\mathbf{k}
-=
-\frac{\partial F_y}{\partial x}
--
-\frac{\partial F_x}{\partial y}.
-$$
-
-Therefore,
-
-$$
-(\nabla\times\mathbf{F})_z
-=
-\frac{\partial F_y}{\partial x}
--
-\frac{\partial F_x}{\partial y}.
-$$
-
-Cyclic Permutation. Cycling the coordinates gives
+Then
 
 $$
 (\nabla\times\mathbf{F})_x
-=
-\frac{\partial F_z}{\partial y}
--
+==========================
+
+## \frac{\partial F_z}{\partial y}
+
 \frac{\partial F_y}{\partial z},
 $$
 
 $$
 (\nabla\times\mathbf{F})_y
-=
-\frac{\partial F_x}{\partial z}
--
+==========================
+
+## \frac{\partial F_x}{\partial z}
+
 \frac{\partial F_z}{\partial x},
 $$
 
@@ -245,41 +143,86 @@ and
 
 $$
 (\nabla\times\mathbf{F})_z
-=
-\frac{\partial F_y}{\partial x}
--
+==========================
+
+## \frac{\partial F_y}{\partial x}
+
 \frac{\partial F_x}{\partial y}.
 $$
 
-Component Form. Therefore,
+Component Form. Combining the three components,
 
 $$
 \nabla\times\mathbf{F}
-=
+======================
+
 \left(
 \frac{\partial F_z}{\partial y}
--
+-------------------------------
+
 \frac{\partial F_y}{\partial z}
 \right)\mathbf{i}
 +
 \left(
 \frac{\partial F_x}{\partial z}
--
+-------------------------------
+
 \frac{\partial F_z}{\partial x}
 \right)\mathbf{j}
 +
 \left(
 \frac{\partial F_y}{\partial x}
--
+-------------------------------
+
 \frac{\partial F_x}{\partial y}
 \right)\mathbf{k}.
 $$
 
-Determinant Form. The vector differential operator is
+Cross-Product Form. For two vectors,
+
+$$
+\mathbf{a}
+==========
+
+a_1\mathbf{i}
++
+a_2\mathbf{j}
++
+a_3\mathbf{k},
+$$
+
+and
+
+$$
+\mathbf{b}
+==========
+
+b_1\mathbf{i}
++
+b_2\mathbf{j}
++
+b_3\mathbf{k},
+$$
+
+their cross product is
+
+$$
+\mathbf{a}\times\mathbf{b}
+==========================
+
+(a_2b_3-a_3b_2)\mathbf{i}
++
+(a_3b_1-a_1b_3)\mathbf{j}
++
+(a_1b_2-a_2b_1)\mathbf{k}.
+$$
+
+The vector differential operator is
 
 $$
 \nabla
-=
+======
+
 \mathbf{i}\frac{\partial}{\partial x}
 +
 \mathbf{j}\frac{\partial}{\partial y}
@@ -287,67 +230,76 @@ $$
 \mathbf{k}\frac{\partial}{\partial z}.
 $$
 
-The component form of curl can therefore be represented by the symbolic determinant
+Replacing $\mathbf{a}$ by $\nabla$ and $\mathbf{b}$ by $\mathbf{F}$ gives
+
+$$
+\begin{aligned}
+\nabla\times\mathbf{F}
+&=
+\mathbf{i}
+\left(
+\frac{\partial F_z}{\partial y}
+-------------------------------
+
+\frac{\partial F_y}{\partial z}
+\right)
+\
+&\quad+
+\mathbf{j}
+\left(
+\frac{\partial F_x}{\partial z}
+-------------------------------
+
+\frac{\partial F_z}{\partial x}
+\right)
+\
+&\quad+
+\mathbf{k}
+\left(
+\frac{\partial F_y}{\partial x}
+-------------------------------
+
+\frac{\partial F_x}{\partial y}
+\right).
+\end{aligned}
+$$
+
+Determinant Form. The same cofactor expansion is represented symbolically by
 
 $$
 \nabla\times\mathbf{F}
-=
+======================
+
 \begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\
-\dfrac{\partial}{\partial x} &
-\dfrac{\partial}{\partial y} &
-\dfrac{\partial}{\partial z} \\
+\mathbf{i} & \mathbf{j} & \mathbf{k} \
+\dfrac{\partial}{\partial x}
+&
+\dfrac{\partial}{\partial y}
+&
+\dfrac{\partial}{\partial z} \
 F_x & F_y & F_z
 \end{vmatrix}.
 $$
 
-Expanding,
-
-$$
-\nabla\times\mathbf{F}
-=
-\mathbf{i}
-\left(
-\frac{\partial F_z}{\partial y}
--
-\frac{\partial F_y}{\partial z}
-\right)
--
-\mathbf{j}
-\left(
-\frac{\partial F_z}{\partial x}
--
-\frac{\partial F_x}{\partial z}
-\right)
-+
-\mathbf{k}
-\left(
-\frac{\partial F_y}{\partial x}
--
-\frac{\partial F_x}{\partial y}
-\right).
-$$
-
-Equivalently,
+Thus,
 
 $$
 \operatorname{curl}\mathbf{F}
-=
+=============================
+
 \nabla\times\mathbf{F}.
 $$
 
-Curl is also written $\operatorname{rot}\mathbf{F}$. The determinant above is a symbolic determinant.
-
-![A closed curve $C$ bounding an area $A$. The unit normal $\hat{\mathbf{n}}$ is perpendicular to the enclosed surface. At a point of $C$, the field $\mathbf{F}$ and displacement $d\mathbf{s}$ are shown.](closed-curve-vector-field.png){#fig:closed-curve-vector-field}
-
-![Decomposition of $\mathbf{F}$ at a point of $C$ into a component parallel to $d\mathbf{s}$ and a component perpendicular to $d\mathbf{s}$. The included angle is $\theta$.](vector-decomposition-along-curved-path.png){#fig:vector-decomposition-along-curved-path}
+The determinant is symbolic because the second row contains differential operators.
 
 ## References
 
-1. Kreyszig, E. *Advanced Engineering Mathematics*, 10th ed. Wiley, 2011. — curl as circulation per unit area; symbolic determinant $\nabla\times\mathbf{F}$; Cartesian expansion.
+1. MacCullagh, J. *An Essay towards a Dynamical Theory of Crystalline Reflexion and Refraction*. Transactions of the Royal Irish Academy, Vol. XXI. Read 9 December 1839; published 1846. — original differential combinations of the displacement components and their transformation under rotation.
 
-2. Boas, M. L. *Mathematical Methods in the Physical Sciences*. — normal component of curl as the limit of circulation per unit area.
+2. Lunney, J. G. *James MacCullagh*. Trinity College Dublin, 2015. — historical account of MacCullagh's rotational theory and the differential operator later called curl.
 
-3. Feynman, R. P., Leighton, R. B., & Sands, M. *The Feynman Lectures on Physics*, Vol. II. — circulation around a square of sides $\Delta x$ and $\Delta y$ in the $xy$-plane; identification with $(\nabla\times\mathbf{C})\cdot\hat{\mathbf{n}}\,\Delta a$.
+3. Kreyszig, E. *Advanced Engineering Mathematics*, 10th ed. Wiley, 2011. — modern Cartesian component and determinant forms of curl.
 
-4. Riley, K. F., Hobson, M. P., & Bence, S. J. *Mathematical Methods for Physics and Engineering*. — determinantal form; the partial derivatives in the second row act on the components in the third row.
+4. Riley, K. F., Hobson, M. P., & Bence, S. J. *Mathematical Methods for Physics and Engineering*. — modern vector differential operators and determinant notation.
+
+[1]: https://www.tcd.ie/media/tcd/secretary/pdfs/discourses/2015_J-G-Lunney-on-James-MacCullagh.pdf?utm_source=chatgpt.com "Microsoft Word - 2015_J G Lunney on James MacCullagh.docx"
