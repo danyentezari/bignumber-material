@@ -1,103 +1,189 @@
 # Derivation of Curl
 
-Curl is obtained from circulation per unit area around a vanishing rectangular loop.
-
-For a vector field $\mathbf{F}$,
+Let $\mathbf{F}$ be a continuously differentiable vector field, and let $C=\partial S$ be the boundary of a surface $S$ with unit normal $\hat{\mathbf{n}}$. By Stokes' theorem,
 
 $$
-\begin{aligned}
+\oint_C \mathbf{F}\cdot d\mathbf{s}
+=
+\iint_S (\nabla\times\mathbf{F})\cdot\hat{\mathbf{n}}\,dA.
+$$
+
+Dividing by the area $A$ of $S$,
+
+$$
+\frac{1}{A}\oint_C \mathbf{F}\cdot d\mathbf{s}
+=
+\frac{1}{A}\iint_S (\nabla\times\mathbf{F})\cdot\hat{\mathbf{n}}\,dA.
+$$
+
+As $A\to0$,
+
+$$
 (\nabla\times\mathbf{F})\cdot\hat{\mathbf{n}}
-&=
-\lim_{A\to 0}
-\dfrac{1}{A}
-\oint_{C}\mathbf{F}\cdot d\mathbf{s}.
-\end{aligned}
+=
+\lim_{A\to0}
+\frac{1}{A}
+\oint_C \mathbf{F}\cdot d\mathbf{s}.
 $$
 
-where
-
-- $\nabla$ is the vector differential operator.
-- $\mathbf{F}$ is a vector field.
-- $\hat{\mathbf{n}}$ is the unit normal.
-- $A$ is the enclosed area.
-- $C$ is the closed curve.
-- $d\mathbf{s}$ is the displacement along $C$.
-
-Rectangular Loop. Consider a rectangle in the $xy$-plane with normal $\mathbf{k}$ and sides $\Delta x$ and $\Delta y$.
+Rectangular Loop. Consider a rectangle in the $xy$-plane centered at $(x,y,z)$, with side lengths $\Delta x$ and $\Delta y$ and unit normal
 
 $$
-\begin{aligned}
-\int_{a}^{b}\mathbf{F}\cdot d\mathbf{s}
-&\simeq
+\hat{\mathbf{n}}=\mathbf{k}.
+$$
+
+Let its boundary be traversed as
+
+$$
+a\to b\to c\to d\to a.
+$$
+
+All field components and derivatives below are evaluated at $(x,y,z)$.
+
+For $a\to b$,
+
+$$
+F_x\left(x,y-\frac{\Delta y}{2},z\right)
+\simeq
+F_x-\frac{\Delta y}{2}\frac{\partial F_x}{\partial y}.
+$$
+
+Hence,
+
+$$
+\int_a^b\mathbf{F}\cdot d\mathbf{s}
+\simeq
 \left(
-F_{x}-\dfrac{\Delta y}{2}\dfrac{\partial F_{x}}{\partial y}
-\right)\Delta x \\[4pt]
-\int_{b}^{c}\mathbf{F}\cdot d\mathbf{s}
-&\simeq
+F_x-\frac{\Delta y}{2}\frac{\partial F_x}{\partial y}
+\right)\Delta x.
+$$
+
+For $b\to c$,
+
+$$
+F_y\left(x+\frac{\Delta x}{2},y,z\right)
+\simeq
+F_y+\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}.
+$$
+
+Hence,
+
+$$
+\int_b^c\mathbf{F}\cdot d\mathbf{s}
+\simeq
 \left(
-F_{y}+\dfrac{\Delta x}{2}\dfrac{\partial F_{y}}{\partial x}
-\right)\Delta y \\[4pt]
-\int_{c}^{d}\mathbf{F}\cdot d\mathbf{s}
-&\simeq
--\left(
-F_{x}+\dfrac{\Delta y}{2}\dfrac{\partial F_{x}}{\partial y}
-\right)\Delta x \\[4pt]
-\int_{d}^{a}\mathbf{F}\cdot d\mathbf{s}
-&\simeq
--\left(
-F_{y}-\dfrac{\Delta x}{2}\dfrac{\partial F_{y}}{\partial x}
+F_y+\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}
 \right)\Delta y.
-\end{aligned}
 $$
 
-where
-
-- $F_{x}$, $F_{y}$, $F_{z}$ are the Cartesian components of $\mathbf{F}$.
-- $x$, $y$, $z$ are Cartesian coordinates.
-- $\Delta x$ and $\Delta y$ are the side lengths.
-- $a$, $b$, $c$, $d$ are the vertices of the rectangle.
-
-First-Order Taylor Expansion. For the right side of the rectangle,
+For $c\to d$,
 
 $$
-\begin{aligned}
-F_{y}(x+h,y,z)
-&\simeq
-F_{y}(x,y,z)
-+
-h\dfrac{\partial F_{y}}{\partial x} \\[4pt]
-h
-&=
-\dfrac{\Delta x}{2} \\[4pt]
-F_{y}\left(x+\dfrac{\Delta x}{2},y,z\right)
-&\simeq
-F_{y}(x,y,z)
-+
-\dfrac{\Delta x}{2}
-\dfrac{\partial F_{y}}{\partial x} \\[4pt]
-&=
-F_{y}
-+
-\dfrac{\Delta x}{2}
-\dfrac{\partial F_{y}}{\partial x}.
-\end{aligned}
+F_x\left(x,y+\frac{\Delta y}{2},z\right)
+\simeq
+F_x+\frac{\Delta y}{2}\frac{\partial F_x}{\partial y}.
 $$
 
-Similarly, the other three sides give the expressions above.
+Hence,
+
+$$
+\int_c^d\mathbf{F}\cdot d\mathbf{s}
+\simeq
+-\left(
+F_x+\frac{\Delta y}{2}\frac{\partial F_x}{\partial y}
+\right)\Delta x.
+$$
+
+For $d\to a$,
+
+$$
+F_y\left(x-\frac{\Delta x}{2},y,z\right)
+\simeq
+F_y-\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}.
+$$
+
+Hence,
+
+$$
+\int_d^a\mathbf{F}\cdot d\mathbf{s}
+\simeq
+-\left(
+F_y-\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}
+\right)\Delta y.
+$$
+
+First-Order Taylor Expansion. For example, the value of $F_y$ on the right side follows from
+
+$$
+F_y(x+h,y,z)
+\simeq
+F_y(x,y,z)
++
+h\frac{\partial F_y}{\partial x},
+$$
+
+with
+
+$$
+h=\frac{\Delta x}{2}.
+$$
+
+Therefore,
+
+$$
+F_y\left(x+\frac{\Delta x}{2},y,z\right)
+\simeq
+F_y(x,y,z)
++
+\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}.
+$$
+
+Thus,
+
+$$
+F_y\left(x+\frac{\Delta x}{2},y,z\right)
+\simeq
+F_y+\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}.
+$$
 
 Circulation. Summing the four sides,
 
 $$
 \begin{aligned}
 \oint_{abcd}\mathbf{F}\cdot d\mathbf{s}
-&\simeq
+\simeq {}&
 \left(
-\dfrac{\partial F_{y}}{\partial x}
+F_x-\frac{\Delta y}{2}\frac{\partial F_x}{\partial y}
+\right)\Delta x
+\\
+&+
+\left(
+F_y+\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}
+\right)\Delta y
+\\
+&-
+\left(
+F_x+\frac{\Delta y}{2}\frac{\partial F_x}{\partial y}
+\right)\Delta x
+\\
+&-
+\left(
+F_y-\frac{\Delta x}{2}\frac{\partial F_y}{\partial x}
+\right)\Delta y.
+\end{aligned}
+$$
+
+The $F_x$ and $F_y$ terms cancel, giving
+
+$$
+\oint_{abcd}\mathbf{F}\cdot d\mathbf{s}
+\simeq
+\left(
+\frac{\partial F_y}{\partial x}
 -
-\dfrac{\partial F_{x}}{\partial y}
+\frac{\partial F_x}{\partial y}
 \right)
 \Delta x\,\Delta y.
-\end{aligned}
 $$
 
 Since
@@ -106,133 +192,162 @@ $$
 A=\Delta x\,\Delta y,
 $$
 
-divide by the area and take the vanishing limit:
+we obtain
 
 $$
-\begin{aligned}
+\frac{1}{A}
+\oint_{abcd}\mathbf{F}\cdot d\mathbf{s}
+\simeq
+\frac{\partial F_y}{\partial x}
+-
+\frac{\partial F_x}{\partial y}.
+$$
+
+Taking $\Delta x,\Delta y\to0$,
+
+$$
 (\nabla\times\mathbf{F})\cdot\mathbf{k}
-&=
-\dfrac{\partial F_{y}}{\partial x}
+=
+\frac{\partial F_y}{\partial x}
 -
-\dfrac{\partial F_{x}}{\partial y}.
-\end{aligned}
+\frac{\partial F_x}{\partial y}.
 $$
-
-where $\mathbf{k}$ is the Cartesian unit vector along $z$.
-
-Cyclic Permutation. Cycling the coordinates gives
-
-$$
-\begin{aligned}
-(\nabla\times\mathbf{F})\cdot\mathbf{i}
-&=
-\dfrac{\partial F_{z}}{\partial y}
--
-\dfrac{\partial F_{y}}{\partial z} \\[4pt]
-(\nabla\times\mathbf{F})\cdot\mathbf{j}
-&=
-\dfrac{\partial F_{x}}{\partial z}
--
-\dfrac{\partial F_{z}}{\partial x} \\[4pt]
-(\nabla\times\mathbf{F})\cdot\mathbf{k}
-&=
-\dfrac{\partial F_{y}}{\partial x}
--
-\dfrac{\partial F_{x}}{\partial y}.
-\end{aligned}
-$$
-
-where $\mathbf{i}$, $\mathbf{j}$, and $\mathbf{k}$ are the Cartesian unit vectors along $x$, $y$, and $z$.
 
 Therefore,
 
 $$
-\begin{aligned}
-\nabla\times\mathbf{F}
-&=
-\left(
-\dfrac{\partial F_{z}}{\partial y}
+(\nabla\times\mathbf{F})_z
+=
+\frac{\partial F_y}{\partial x}
 -
-\dfrac{\partial F_{y}}{\partial z}
+\frac{\partial F_x}{\partial y}.
+$$
+
+Cyclic Permutation. Cycling the coordinates gives
+
+$$
+(\nabla\times\mathbf{F})_x
+=
+\frac{\partial F_z}{\partial y}
+-
+\frac{\partial F_y}{\partial z},
+$$
+
+$$
+(\nabla\times\mathbf{F})_y
+=
+\frac{\partial F_x}{\partial z}
+-
+\frac{\partial F_z}{\partial x},
+$$
+
+and
+
+$$
+(\nabla\times\mathbf{F})_z
+=
+\frac{\partial F_y}{\partial x}
+-
+\frac{\partial F_x}{\partial y}.
+$$
+
+Component Form. Therefore,
+
+$$
+\nabla\times\mathbf{F}
+=
+\left(
+\frac{\partial F_z}{\partial y}
+-
+\frac{\partial F_y}{\partial z}
 \right)\mathbf{i}
 +
 \left(
-\dfrac{\partial F_{x}}{\partial z}
+\frac{\partial F_x}{\partial z}
 -
-\dfrac{\partial F_{z}}{\partial x}
+\frac{\partial F_z}{\partial x}
 \right)\mathbf{j}
 +
 \left(
-\dfrac{\partial F_{y}}{\partial x}
+\frac{\partial F_y}{\partial x}
 -
-\dfrac{\partial F_{x}}{\partial y}
+\frac{\partial F_x}{\partial y}
 \right)\mathbf{k}.
-\end{aligned}
 $$
 
-Determinant Form. The ordinary cross product expands as
-
-$$
-\begin{aligned}
-\mathbf{a}\times\mathbf{b}
-&=
-\begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\
-a_{1} & a_{2} & a_{3} \\
-b_{1} & b_{2} & b_{3}
-\end{vmatrix} \\[4pt]
-&=
-(a_{2}b_{3}-a_{3}b_{2})\mathbf{i}
-+
-(a_{3}b_{1}-a_{1}b_{3})\mathbf{j}
-+
-(a_{1}b_{2}-a_{2}b_{1})\mathbf{k}.
-\end{aligned}
-$$
-
-Replacing the first vector by
+Determinant Form. The vector differential operator is
 
 $$
 \nabla
 =
-\mathbf{i}\dfrac{\partial}{\partial x}
+\mathbf{i}\frac{\partial}{\partial x}
 +
-\mathbf{j}\dfrac{\partial}{\partial y}
+\mathbf{j}\frac{\partial}{\partial y}
 +
-\mathbf{k}\dfrac{\partial}{\partial z},
+\mathbf{k}\frac{\partial}{\partial z}.
 $$
 
-gives
+The component form of curl can therefore be represented by the symbolic determinant
 
 $$
-\begin{aligned}
-\operatorname{curl}\mathbf{F}
-&=
-\nabla\times\mathbf{F} \\[4pt]
-&=
+\nabla\times\mathbf{F}
+=
 \begin{vmatrix}
 \mathbf{i} & \mathbf{j} & \mathbf{k} \\
-\dfrac{\partial}{\partial x}
-&
-\dfrac{\partial}{\partial y}
-&
+\dfrac{\partial}{\partial x} &
+\dfrac{\partial}{\partial y} &
 \dfrac{\partial}{\partial z} \\
-F_{x} & F_{y} & F_{z}
+F_x & F_y & F_z
 \end{vmatrix}.
-\end{aligned}
 $$
 
-The differential operators in the second row act on the components in the third row.
+Expanding,
+
+$$
+\nabla\times\mathbf{F}
+=
+\mathbf{i}
+\left(
+\frac{\partial F_z}{\partial y}
+-
+\frac{\partial F_y}{\partial z}
+\right)
+-
+\mathbf{j}
+\left(
+\frac{\partial F_z}{\partial x}
+-
+\frac{\partial F_x}{\partial z}
+\right)
++
+\mathbf{k}
+\left(
+\frac{\partial F_y}{\partial x}
+-
+\frac{\partial F_x}{\partial y}
+\right).
+$$
+
+Equivalently,
+
+$$
+\operatorname{curl}\mathbf{F}
+=
+\nabla\times\mathbf{F}.
+$$
 
 Curl is also written $\operatorname{rot}\mathbf{F}$. The determinant above is a symbolic determinant.
 
-![A closed curve $C$ bounding an area $A$. The unit normal $\hat{\mathbf{n}}$ stands perpendicular to $A$. At a point of $C$ the field $\mathbf{F}$ and the displacement $d\mathbf{s}$ are shown.](closed-curve-vector-field.png){#fig:closed-curve-vector-field}
+![A closed curve $C$ bounding an area $A$. The unit normal $\hat{\mathbf{n}}$ is perpendicular to the enclosed surface. At a point of $C$, the field $\mathbf{F}$ and displacement $d\mathbf{s}$ are shown.](closed-curve-vector-field.png){#fig:closed-curve-vector-field}
 
-![Decomposition of $\mathbf{F}$ at a point of $C$ into a part parallel to $d\mathbf{s}$ and a part perpendicular to $d\mathbf{s}$. The included angle is $\theta$.](vector-decomposition-along-curved-path.png){#fig:vector-decomposition-along-curved-path}
+![Decomposition of $\mathbf{F}$ at a point of $C$ into a component parallel to $d\mathbf{s}$ and a component perpendicular to $d\mathbf{s}$. The included angle is $\theta$.](vector-decomposition-along-curved-path.png){#fig:vector-decomposition-along-curved-path}
 
 ## References
 
 1. Kreyszig, E. *Advanced Engineering Mathematics*, 10th ed. Wiley, 2011. — curl as circulation per unit area; symbolic determinant $\nabla\times\mathbf{F}$; Cartesian expansion.
+
 2. Boas, M. L. *Mathematical Methods in the Physical Sciences*. — normal component of curl as the limit of circulation per unit area.
+
 3. Feynman, R. P., Leighton, R. B., & Sands, M. *The Feynman Lectures on Physics*, Vol. II. — circulation around a square of sides $\Delta x$ and $\Delta y$ in the $xy$-plane; identification with $(\nabla\times\mathbf{C})\cdot\hat{\mathbf{n}}\,\Delta a$.
+
 4. Riley, K. F., Hobson, M. P., & Bence, S. J. *Mathematical Methods for Physics and Engineering*. — determinantal form; the partial derivatives in the second row act on the components in the third row.
