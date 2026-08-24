@@ -28,8 +28,12 @@ def style_from_spec(spec: Spec) -> Style:
         axes=bool(raw.get("axes", True)),
         labels=bool(raw.get("labels", True)),
         line_thickness_pt=float(thickness),
+        axis_thickness_pt=float(raw.get("axis_thickness_pt", 0.4)),
         unitsize_cm=float(raw.get("unitsize_cm", 1.0)),
         hatch=bool(raw.get("hatch", True)),
+        label_pt=float(raw.get("label_pt", 11.0)),
+        png_width_px=raw.get("png_width_px"),
+        png_height_px=raw.get("png_height_px"),
     )
 
 

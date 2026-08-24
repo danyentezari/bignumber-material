@@ -46,8 +46,12 @@ class Style:
     axes: bool = True
     labels: bool = True
     line_thickness_pt: float = 0.4
+    axis_thickness_pt: float = 0.4
     unitsize_cm: float = 1.0
     hatch: bool = True
+    label_pt: float = 11.0
+    png_width_px: int | None = None
+    png_height_px: int | None = None
 
 
 @dataclass(frozen=True)
@@ -116,6 +120,7 @@ class Circle:
     center: Vec2
     radius: float
     dashed: bool = False
+    thickness: float | None = None
 
 
 @dataclass(frozen=True)
@@ -131,6 +136,7 @@ class Axis:
     start: Vec2
     end: Vec2
     label: str | None = None
+    thickness: float | None = None
 
 
 @dataclass(frozen=True)
@@ -139,6 +145,7 @@ class Label:
     xy: Vec2
     anchor: Anchor = "NE"
     name: str = ""
+    size: float | None = None
 
 
 @dataclass(frozen=True)
@@ -148,6 +155,7 @@ class Vector:
     label: str | None = None
     name: str = ""
     label_anchor: Anchor | None = None
+    thickness: float | None = None
 
     @property
     def end(self) -> Vec2:

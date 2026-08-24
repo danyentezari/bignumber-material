@@ -59,6 +59,10 @@ def _pen(style: Style, thickness: float | None = None, dashed: bool = False) -> 
     return "+".join(parts)
 
 
+def _axis_pen(style: Style) -> str:
+    return _pen(style, style.axis_thickness_pt)
+
+
 def _join_path(points: tuple[Vec2, ...], *, closed: bool, smooth: bool) -> str:
     op = ".." if smooth else "--"
     body = op.join(fmt_pair(p) for p in points)
@@ -120,7 +124,7 @@ def _axis_anchor(item: Axis) -> str:
 
 def _emit_axis(item: Axis, style: Style) -> list[str]:
     lines = [
-        f"draw({fmt_pair(item.start)}--{fmt_pair(item.end)}, {_pen(style)}, Arrow(SimpleHead));"
+        f"draw({fmt_pair(item.start)}--{fmt_pair(item.end)}, {_axis_pen(style)}, Arrow(SimpleHead));"
     ]
     if style.labels and item.label:
         lines.append(

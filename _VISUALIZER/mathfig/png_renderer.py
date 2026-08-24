@@ -46,7 +46,18 @@ def _mathtext(text: str) -> str:
 
 def _linewidth(style: Style, thickness: float | None = None) -> float:
     pt = style.line_thickness_pt if thickness is None else thickness
-    return max(0.8, pt * 2.0)
+    return max(0.12, pt * 2.0)
+
+
+def _axis_linewidth(style: Style, thickness: float | None = None) -> float:
+    """Axes use the original default stroke; they are not scaled up."""
+    pt = style.axis_thickness_pt if thickness is None else thickness
+    return max(0.4, pt * 2.0)
+
+
+def _object_linewidth(style: Style, thickness: float | None = None) -> float:
+    """Object strokes stay strictly thinner than the axes."""
+    return min(_linewidth(style, thickness), _axis_linewidth(style) * 0.45)
 
 
 def _collect_xy(scene: Scene) -> list[Vec2]:
@@ -77,11 +88,19 @@ def _limits(scene: Scene) -> tuple[float, float, float, float]:
         return (-1.0, 1.0, -1.0, 1.0)
     xs = [p[0] for p in coords]
     ys = [p[1] for p in coords]
-    pad = 0.45
+    pad = 0.25
     return (min(xs) - pad, max(xs) + pad, min(ys) - pad, max(ys) + pad)
 
 
-def _draw_segment(ax, start: Vec2, end: Vec2, lw: float, dashed: bool, arrow: bool) -> None:
+def _draw_segment(
+    ax,
+    start: Vec2,
+    end: Vec2,
+    lw: float,
+    dashed: bool,
+    arrow: bool,
+    mutation_scale: float = 11,
+) -> None:
     if arrow:
         from matplotlib.patches import FancyArrowPatch
 
@@ -89,7 +108,7 @@ def _draw_segment(ax, start: Vec2, end: Vec2, lw: float, dashed: bool, arrow: bo
             start,
             end,
             arrowstyle="-|>",
-            mutation_scale=11,
+            mutation_scale=mutation_scale,
             linewidth=lw,
             color="black",
             linestyle=(0, (3, 2)) if dashed else "solid",
@@ -109,7 +128,14 @@ def _draw_segment(ax, start: Vec2, end: Vec2, lw: float, dashed: bool, arrow: bo
     )
 
 
-def _draw_label(ax, text: str, xy: Vec2, anchor: str, style: Style) -> None:
+def _draw_label(
+    ax,
+    text: str,
+    xy: Vec2,
+    anchor: str,
+    style: Style,
+    size: float | None = None,
+) -> None:
     if not style.labels:
         return
     ha, va, offset = _ANCHOR.get(anchor, _ANCHOR["NE"])
@@ -121,7 +147,7 @@ def _draw_label(ax, text: str, xy: Vec2, anchor: str, style: Style) -> None:
         ha=ha,
         va=va,
         color="black",
-        fontsize=11,
+        fontsize=style.label_pt if size is None else size,
         annotation_clip=False,
     )
 
@@ -139,16 +165,27 @@ def scene_to_png(scene: Scene, path: Path | str, *, dpi: int = 220) -> Path:
     path.parent.mkdir(parents=True, exist_ok=True)
     style = scene.style
     xmin, xmax, ymin, ymax = _limits(scene)
-    width = (xmax - xmin) * style.unitsize_cm / 2.54
-    height = (ymax - ymin) * style.unitsize_cm / 2.54
-    fig, ax = plt.subplots(figsize=(max(width, 1.0), max(height, 1.0)))
+    if style.png_width_px:
+        w_in = style.png_width_px / dpi
+        h_px = style.png_height_px or style.png_width_px
+        h_in = h_px / dpi
+        fig, ax = plt.subplots(figsize=(w_in, h_in))
+        tight = False
+    else:
+        width = (xmax - xmin) * style.unitsize_cm / 2.54
+        height = (ymax - ymin) * style.unitsize_cm / 2.54
+        fig, ax = plt.subplots(figsize=(max(width, 1.0), max(height, 1.0)))
+        tight = True
     fig.patch.set_facecolor("white")
     ax.set_facecolor("white")
-    ax.set_aspect("equal")
+    ax.set_aspect("equal", adjustable="box")
     ax.axis("off")
     ax.set_xlim(xmin, xmax)
     ax.set_ylim(ymin, ymax)
-    lw = _linewidth(style)
+    if not tight:
+        fig.subplots_adjust(left=0.03, right=0.97, top=0.90, bottom=0.06)
+    axis_lw = _axis_linewidth(style)
+    obj_lw = _object_linewidth(style)
 
     items = list(scene.items)
     if not style.axes:
@@ -172,11 +209,18 @@ def scene_to_png(scene: Scene, path: Path | str, *, dpi: int = 220) -> Path:
                 [sw[0], se[0], ne[0], nw[0], sw[0]],
                 [sw[1], se[1], ne[1], nw[1], sw[1]],
                 color="black",
-                linewidth=lw,
+                linewidth=obj_lw,
                 zorder=2,
             )
         elif isinstance(item, Axis):
-            _draw_segment(ax, item.start, item.end, lw, dashed=False, arrow=True)
+            _draw_segment(
+                ax,
+                item.start,
+                item.end,
+                _axis_linewidth(style, item.thickness),
+                dashed=False,
+                arrow=True,
+            )
             if item.label:
                 dx = item.end[0] - item.start[0]
                 dy = item.end[1] - item.start[1]
@@ -190,7 +234,7 @@ def scene_to_png(scene: Scene, path: Path | str, *, dpi: int = 220) -> Path:
                 item.xy[1],
                 "o",
                 color="black",
-                markersize=3.2,
+                markersize=2.4,
                 zorder=4,
             )
         elif isinstance(item, Line):
@@ -198,7 +242,7 @@ def scene_to_png(scene: Scene, path: Path | str, *, dpi: int = 220) -> Path:
                 ax,
                 item.start,
                 item.end,
-                _linewidth(style, item.thickness),
+                _object_linewidth(style, item.thickness),
                 item.dashed,
                 arrow=False,
             )
@@ -207,12 +251,21 @@ def scene_to_png(scene: Scene, path: Path | str, *, dpi: int = 220) -> Path:
                 ax,
                 item.start,
                 item.end,
-                _linewidth(style, item.thickness),
+                _object_linewidth(style, item.thickness),
                 item.dashed,
                 arrow=True,
+                mutation_scale=8,
             )
         elif isinstance(item, Vector):
-            _draw_segment(ax, item.origin, item.end, lw, dashed=False, arrow=True)
+            _draw_segment(
+                ax,
+                item.origin,
+                item.end,
+                _object_linewidth(style, item.thickness),
+                dashed=False,
+                arrow=True,
+                mutation_scale=8,
+            )
             if item.label:
                 dx, dy = item.components
                 if item.label_anchor is not None:
@@ -223,14 +276,14 @@ def scene_to_png(scene: Scene, path: Path | str, *, dpi: int = 220) -> Path:
                     anchor = "N" if dy >= 0 else "S"
                 _draw_label(ax, item.label, item.end, anchor, style)
         elif isinstance(item, Label):
-            _draw_label(ax, item.text, item.xy, item.anchor, style)
+            _draw_label(ax, item.text, item.xy, item.anchor, style, size=item.size)
         elif isinstance(item, Circle):
             circ = MplCircle(
                 item.center,
                 item.radius,
                 fill=False,
                 edgecolor="black",
-                linewidth=lw,
+                linewidth=_object_linewidth(style, item.thickness),
                 linestyle=(0, (3, 2)) if item.dashed else "solid",
             )
             ax.add_patch(circ)
@@ -244,7 +297,7 @@ def scene_to_png(scene: Scene, path: Path | str, *, dpi: int = 220) -> Path:
                 xs,
                 ys,
                 color="black",
-                linewidth=lw,
+                linewidth=obj_lw,
                 linestyle=(0, (3, 2)) if item.dashed else "solid",
                 solid_capstyle="round",
             )
@@ -254,8 +307,8 @@ def scene_to_png(scene: Scene, path: Path | str, *, dpi: int = 220) -> Path:
         dpi=dpi,
         facecolor="white",
         edgecolor="none",
-        bbox_inches="tight",
-        pad_inches=0.08,
+        bbox_inches="tight" if tight else None,
+        pad_inches=0.06 if tight else 0.0,
     )
     plt.close(fig)
     return path

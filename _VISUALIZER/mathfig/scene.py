@@ -122,12 +122,14 @@ class Scene:
         start: Vec2 | Sequence[float],
         end: Vec2 | Sequence[float],
         label: str | None = None,
+        thickness: float | None = None,
     ) -> Scene:
         item = Axis(
             name=name,
             start=as_vec2(start),
             end=as_vec2(end),
             label=name if label is None else label,
+            thickness=thickness,
         )
         self._store(item, name)
         return self
@@ -192,6 +194,7 @@ class Scene:
         label: str | None = None,
         name: str = "",
         label_anchor: Anchor | None = None,
+        thickness: float | None = None,
     ) -> Scene:
         item = Vector(
             origin=as_vec2(origin),
@@ -199,6 +202,7 @@ class Scene:
             label=label,
             name=name,
             label_anchor=label_anchor,
+            thickness=thickness,
         )
         self._store(item, name)
         return self
@@ -240,12 +244,14 @@ class Scene:
         center: Vec2 | Sequence[float],
         radius: float,
         dashed: bool = False,
+        thickness: float | None = None,
     ) -> Scene:
         item = Circle(
             name=name,
             center=as_vec2(center),
             radius=float(radius),
             dashed=dashed,
+            thickness=thickness,
         )
         self._store(item, name)
         return self
@@ -277,6 +283,7 @@ class Scene:
         xy: Vec2 | Sequence[float],
         anchor: Anchor | None = None,
         name: str = "",
+        size: float | None = None,
     ) -> Scene:
         pos = as_vec2(xy)
         item = Label(
@@ -284,6 +291,7 @@ class Scene:
             xy=pos,
             anchor=anchor if anchor is not None else auto_anchor(pos),
             name=name,
+            size=size,
         )
         self._store(item, name)
         return self
