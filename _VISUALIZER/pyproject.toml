@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mathfig"
+version = "0.1.0"
+description = "Textbook-style 2D mathematical figures via a scene graph and Asymptote"
+requires-python = ">=3.11"
+dependencies = [
+    "pyyaml",
+    "sympy",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+mathfig = "mathfig.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mathfig*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = [
+    "integration: optional tests that invoke Asymptote",
+]

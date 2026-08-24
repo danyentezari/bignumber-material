@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+dist/
+build/
+.mypy_cache/
+*.pdf
+*.svg
+*.png
+!examples/*.png
+/curl_x.asy

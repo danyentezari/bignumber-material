@@ -1,0 +1,20 @@
+type: curl_component
+
+component: x
+
+expression: '\frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z}'
+
+plane:
+  horizontal: y
+  vertical: z
+
+region:
+  type: rectangle
+  center: [0, 0]
+  width: 2
+  height: 2
+
+style:
+  monochrome: true
+  axes: true
+  labels: true
