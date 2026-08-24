@@ -53,6 +53,15 @@
   </style>
 <link rel="stylesheet" href="style.css">
 <script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Calculus", "href": "calculus.html", "current": false}, {"title": "Dot Product", "href": "dot-product.html", "current": true}]</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RCDW3GHNMP');
+</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -672,6 +681,10 @@ a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}
       siteFooter.className = "site-footer";
       siteFooter.setAttribute("role", "contentinfo");
       siteFooter.innerHTML =
+        '<div class="latest-updates">' +
+        '<h2 class="latest-updates-title">Latest Updates</h2>' +
+        '<ul class="latest-updates-list"></ul>' +
+        "</div>" +
         '<div class="site-info"><em>' +
         bookTitle +
         "</em> — built with <a href=\"https://bookdown.org\">bookdown</a></div>";
@@ -968,5 +981,6 @@ for (let popover of popovers) {
   }
 }
 </script>
+<script src="latest-updates.js"></script>
 </body>
 </html>

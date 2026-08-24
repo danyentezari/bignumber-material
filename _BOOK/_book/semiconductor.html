@@ -53,6 +53,15 @@
   </style>
 <link rel="stylesheet" href="style.css">
 <script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Condensed Matter", "href": "condensed-matter.html", "current": false}, {"title": "Semiconductor", "href": "semiconductor.html", "current": true}]</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RCDW3GHNMP');
+</script>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -592,6 +601,10 @@ n_{i} \propto \exp\left(-\dfrac{E_{\mathrm{gap}}}{2k_{\mathrm{B}}T}\right)
       siteFooter.className = "site-footer";
       siteFooter.setAttribute("role", "contentinfo");
       siteFooter.innerHTML =
+        '<div class="latest-updates">' +
+        '<h2 class="latest-updates-title">Latest Updates</h2>' +
+        '<ul class="latest-updates-list"></ul>' +
+        "</div>" +
         '<div class="site-info"><em>' +
         bookTitle +
         "</em> — built with <a href=\"https://bookdown.org\">bookdown</a></div>";
@@ -888,5 +901,6 @@ for (let popover of popovers) {
   }
 }
 </script>
+<script src="latest-updates.js"></script>
 </body>
 </html>
