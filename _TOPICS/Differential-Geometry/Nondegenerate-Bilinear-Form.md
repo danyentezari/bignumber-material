@@ -45,7 +45,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 A nondegenerate bilinear form $B$ pairs vectors so only the zero vector is orthogonal to every vector. The identity pairing has this property.

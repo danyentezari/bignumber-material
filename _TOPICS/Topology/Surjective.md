@@ -22,7 +22,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A surjective map hits every element of the codomain.

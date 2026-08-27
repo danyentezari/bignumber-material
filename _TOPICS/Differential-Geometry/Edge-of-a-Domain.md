@@ -90,7 +90,7 @@ where
 
 Figure 1.29 from Howell and Mathews shows a domain as a shaded interior, its edge as the labeled boundary curve, and the complementary exterior of the set.
 
-## Elementary Example
+## Examples
 ### Simple
 
 The edge $\partial D$ is the lower-dimensional set surrounding a domain $D$.

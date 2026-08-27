@@ -17,7 +17,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A bijective map is injective and surjective: a one-to-one correspondence.

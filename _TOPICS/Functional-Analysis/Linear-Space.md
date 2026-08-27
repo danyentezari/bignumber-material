@@ -29,7 +29,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A linear space has vector addition and scalar multiplication. On three labeled vectors in $\mathbb{R}$, addition is ordinary.

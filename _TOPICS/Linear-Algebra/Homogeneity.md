@@ -69,7 +69,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 Homogeneity of degree $k$ means scaling the input by $t$ scales the value by $t^{k}$.

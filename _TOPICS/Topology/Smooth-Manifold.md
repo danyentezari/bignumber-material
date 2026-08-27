@@ -47,7 +47,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A smooth manifold has charts with $C^{\infty}$ transition maps. The line $\mathbb{R}$ with the identity chart is smooth.

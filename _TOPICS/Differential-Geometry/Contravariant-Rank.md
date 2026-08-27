@@ -50,7 +50,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 Contravariant rank $r$ counts upper indices. A vector is type $(1,0)$, so $r = 1$.

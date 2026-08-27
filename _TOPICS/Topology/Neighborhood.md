@@ -16,7 +16,7 @@ where
 - $U$ is an open subset of $X$.
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A neighborhood of a point contains an open set that contains that point.

@@ -58,7 +58,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A linear transformation maps vectors to vectors and preserves linear combinations.

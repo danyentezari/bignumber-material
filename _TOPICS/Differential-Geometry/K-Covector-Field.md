@@ -25,7 +25,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A $k$-covector field assigns a $k$-covector to each point. Here $k = 1$ on three points.

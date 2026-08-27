@@ -16,7 +16,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A homeomorphism is a continuous bijection with continuous inverse.

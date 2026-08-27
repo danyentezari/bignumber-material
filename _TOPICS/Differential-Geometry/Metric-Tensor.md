@@ -58,7 +58,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 A metric $g$ pairs two vectors to a scalar. On two basis vectors the values form a $2 \times 2$ matrix.

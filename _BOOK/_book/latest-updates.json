@@ -1,27 +1,27 @@
 [
   {
+    "title": "Derivation of Grad",
+    "href": "derivation-of-grad.html",
+    "date": "27/08/2026"
+  },
+  {
+    "title": "Derivation of Divergence",
+    "href": "derivation-of-divergence.html",
+    "date": "27/08/2026"
+  },
+  {
     "title": "Derivation of Curl",
     "href": "derivation-of-curl.html",
-    "date": "24/08/2026"
-  },
-  {
-    "title": "Derivation of Taylor Expansion",
-    "href": "derivation-of-taylor-expansion.html",
-    "date": "24/08/2026"
-  },
-  {
-    "title": "Curl",
-    "href": "curl.html",
-    "date": "23/08/2026"
+    "date": "27/08/2026"
   },
   {
     "title": "Calculus",
     "href": "calculus.html",
-    "date": "21/08/2026"
+    "date": "27/08/2026"
   },
   {
-    "title": "Cross Product",
-    "href": "cross-product.html",
-    "date": "21/08/2026"
+    "title": "P",
+    "href": "p.html",
+    "date": "26/08/2026"
   }
 ]

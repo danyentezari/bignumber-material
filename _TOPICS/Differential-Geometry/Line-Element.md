@@ -43,7 +43,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 The line element $ds^{2}$ is the squared length from the metric on coordinate increments.

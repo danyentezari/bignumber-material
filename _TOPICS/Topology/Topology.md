@@ -35,7 +35,7 @@ A **topology** on a set $X$ is a collection $\tau$ of subsets of $X$ such that
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A topology on a three-point set lists which subsets are open. It must contain $\emptyset$ and $X$.

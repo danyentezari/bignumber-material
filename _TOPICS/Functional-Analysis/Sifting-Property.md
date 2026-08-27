@@ -21,7 +21,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The sifting property picks out $f(a)$ from an integral against $\delta(x-a)$.

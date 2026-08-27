@@ -15,7 +15,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A $p$-summable sequence is a sequence with $\sum |\xi_{j}|^{p} < \infty$. For $p = 1$ take three terms.

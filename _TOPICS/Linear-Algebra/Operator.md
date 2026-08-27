@@ -67,7 +67,7 @@ acts as
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 An operator is a linear map from a space to itself. On $\mathbb{R}^{2}$, matrix multiplication defines an operator.

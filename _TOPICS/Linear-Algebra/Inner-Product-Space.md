@@ -27,7 +27,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 An inner product space is a vector space with an inner product. Take $\mathbb{R}^{2}$ with the dot product.

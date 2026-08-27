@@ -37,7 +37,7 @@ where
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 A Lie algebra is a vector space with a bracket $[\ ,\ ]$. On three elements the bracket closes in the set.

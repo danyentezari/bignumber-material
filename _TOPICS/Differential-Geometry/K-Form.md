@@ -23,7 +23,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A $2$-form is an alternating bilinear function of two vectors.

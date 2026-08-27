@@ -16,7 +16,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 An open set is a member of the topology $\tau$.

@@ -68,7 +68,7 @@ He replaced the assumption of quadratic integrability by the integrability of $|
 Each number $p$ greater than $1$ determines a function class $L^{p}$.
 The letter $p$ names that power in $|f|^{p}$.
 
-## Elementary Example
+## Examples
 ### Simple
 
 The parameter $p$ is a real number at least $1$. The choice $p = 1$ gives the sum of absolute values.

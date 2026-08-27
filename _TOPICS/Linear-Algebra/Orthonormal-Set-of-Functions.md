@@ -24,7 +24,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 An orthonormal set of functions has pairwise integrals equal to $\delta_{mn}$.

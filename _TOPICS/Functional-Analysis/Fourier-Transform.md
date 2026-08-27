@@ -12,7 +12,7 @@ where
 
 Derivation [3, pp.32]...
 
-## Elementary Example
+## Examples
 ### Simple
 
 The Fourier transform turns a time-domain sample into frequency content. On three sample values, list the discrete inputs.

@@ -23,7 +23,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The preimage of a subset is the set of domain points sent into that subset.

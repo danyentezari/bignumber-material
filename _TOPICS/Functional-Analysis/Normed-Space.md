@@ -27,7 +27,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A normed space is a vector space with a norm. Take $\mathbb{R}^{2}$ with the Euclidean norm.

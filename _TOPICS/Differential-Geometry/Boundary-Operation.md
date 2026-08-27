@@ -155,7 +155,7 @@ where
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 The boundary operation $\partial$ maps a domain set $A$ to its edge set $B = \partial A$.

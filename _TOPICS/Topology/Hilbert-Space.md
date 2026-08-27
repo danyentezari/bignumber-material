@@ -73,7 +73,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A Hilbert space is a complete inner product space. The plane $\mathbb{R}^{2}$ with the dot product is Hilbert.

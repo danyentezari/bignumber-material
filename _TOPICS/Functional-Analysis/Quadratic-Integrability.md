@@ -19,7 +19,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 Quadratic integrability means $\int |f|^{2}$ is finite. On three sample points, sum the squares of absolute values.

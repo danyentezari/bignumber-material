@@ -20,7 +20,7 @@ where
 Stoke's Theorem is about manifolds, which are locally Euclidean. The integration applies to differential forms on those local regions. Differential forms are operators that allow applying calculus independent of any specific coordinate system.
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 Stokes equates a definite integral over a domain set $A$ with a definite integral over its edge $B = \partial A$.

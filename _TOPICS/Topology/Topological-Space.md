@@ -11,7 +11,7 @@ A topological space is a set equipped with a topology that is used to study cont
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A topological space is a pair $(X,\tau)$ with $\tau$ a topology on $X$.

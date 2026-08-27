@@ -40,7 +40,7 @@ A **vector space** over a field of scalars is a nonempty set $V$ of vectors with
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 Linear algebra studies vectors and linear maps. Here three vectors in a plane.

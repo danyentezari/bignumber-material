@@ -41,7 +41,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The Kronecker delta is $1$ when the two indices match and $0$ otherwise.

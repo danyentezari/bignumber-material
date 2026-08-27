@@ -16,7 +16,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 In a Hausdorff space, distinct points have disjoint neighborhoods.

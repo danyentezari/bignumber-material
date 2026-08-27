@@ -17,7 +17,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A linear function preserves addition and scalar multiplication.

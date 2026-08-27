@@ -12,7 +12,7 @@ A topological manifold is a Hausdorff space that is locally homeomorphic to Eucl
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A topological manifold is locally Euclidean, Hausdorff, and second countable. A line locally looks like $\mathbb{R}^{1}$.

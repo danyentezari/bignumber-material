@@ -23,7 +23,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A sequence converges when its terms approach a limit in the space. On $\mathbb{R}$, $1/n$ converges to $0$.

@@ -15,7 +15,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A Banach space is a complete normed space. The line $\mathbb{R}$ with absolute value as norm is Banach.

@@ -19,7 +19,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A one-form is a linear functional on vectors.

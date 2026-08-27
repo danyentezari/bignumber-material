@@ -24,7 +24,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The $2$-fold product is the Cartesian product of two copies of one set.

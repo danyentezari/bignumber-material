@@ -44,7 +44,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The boundary is closure minus interior. For a half-open interval, the boundary is the two endpoints.

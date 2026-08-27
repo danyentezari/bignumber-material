@@ -32,7 +32,7 @@ where
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 A discrete group closed under multiplication and inverses illustrates the group maps $\mu$ and $\iota$.

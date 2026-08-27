@@ -27,7 +27,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 An alternating $2$-linear map on three labeled vectors changes sign under a swap and vanishes on a repeated pair.

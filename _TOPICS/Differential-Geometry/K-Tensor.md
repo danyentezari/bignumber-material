@@ -22,7 +22,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A $2$-tensor is a bilinear real-valued map on two vectors. It need not be alternating.

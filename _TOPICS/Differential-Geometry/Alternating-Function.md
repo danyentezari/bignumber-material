@@ -21,7 +21,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 An alternating map on two vectors changes sign under a swap and is zero when the two inputs are equal.

@@ -43,7 +43,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 The tangent space at a point is spanned by a finite list of tangent basis vectors.

@@ -17,7 +17,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A quadratic form is a homogeneous polynomial of degree $2$.

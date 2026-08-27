@@ -26,7 +26,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A differential $1$-form assigns a linear functional to each point of a finite base.

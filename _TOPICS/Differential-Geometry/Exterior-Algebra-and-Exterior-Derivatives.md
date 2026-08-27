@@ -11,7 +11,7 @@ Consider [Figure 1](#fig:atlas-charts).
 
 Exterior dertivatives are differential operators.
 
-## Elementary Example
+## Examples
 ### Simple
 
 The exterior product of two basis covectors is a $2$-form that changes sign under a swap of vector inputs.

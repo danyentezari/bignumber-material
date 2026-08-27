@@ -22,7 +22,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A Cauchy sequence has terms that eventually lie close to each other. On the line, the sequence $1/n$ is Cauchy.

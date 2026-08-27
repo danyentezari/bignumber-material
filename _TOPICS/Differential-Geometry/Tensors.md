@@ -129,7 +129,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 
 ### Simple
 

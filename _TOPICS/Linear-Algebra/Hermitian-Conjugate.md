@@ -26,7 +26,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The Hermitian conjugate is the conjugate transpose of a matrix.

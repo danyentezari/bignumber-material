@@ -44,7 +44,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 An inner product assigns a scalar to each ordered pair of vectors. On $\mathbb{R}^{2}$ use the dot product.

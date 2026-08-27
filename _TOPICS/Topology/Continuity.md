@@ -19,7 +19,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A map is continuous when the preimage of every open set is open. On finite spaces, check each open set in the codomain.

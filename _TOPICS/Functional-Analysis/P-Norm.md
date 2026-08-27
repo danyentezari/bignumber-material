@@ -18,7 +18,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The $p$-norm of a finite sequence uses the power $p$ and the outer root $1/p$. Take $p = 1$.

@@ -1,32 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>310 Derivation of Taylor Expansion | Mathematics for Physics</title>
-<meta name="author" content="bignumber-material">
-<meta name="description" content="A derivation that is used to obtain a polynomial approximation and exact remainder, where a remainder is the difference between the function and polynomial. Taylor’s theorem. If a function is...">
-<meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="310 Derivation of Taylor Expansion | Mathematics for Physics">
-<meta property="og:type" content="book">
-<meta property="og:description" content="A derivation that is used to obtain a polynomial approximation and exact remainder, where a remainder is the difference between the function and polynomial. Taylor’s theorem. If a function is...">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="310 Derivation of Taylor Expansion | Mathematics for Physics">
-<meta name="twitter:description" content="A derivation that is used to obtain a polynomial approximation and exact remainder, where a remainder is the difference between the function and polynomial. Taylor’s theorem. If a function is...">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script><script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>315 Derivation of Taylor Expansion | Mathematics for Physics</title>
+
+    <meta name="author" content="bignumber-material" />
+  
+   <meta name="description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+   <meta name="generator" content="placeholder" />
+  <meta property="og:title" content="315 Derivation of Taylor Expansion | Mathematics for Physics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="315 Derivation of Taylor Expansion | Mathematics for Physics" />
+  
+  <meta name="twitter:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+  
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script>
+    <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet" />
+    <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script>
+    <script src="libs/bs3compat-0.11.0/transition.js"></script>
+    <script src="libs/bs3compat-0.11.0/tabs.js"></script>
+    <script src="libs/bs3compat-0.11.0/bs3compat.js"></script>
+    <link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet" />
+    <script src="libs/bs4_book-1.0.0/bs4_book.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script>
+    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-RCDW3GHNMP');
-    </script><!-- Serif + mono typefaces --><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<!-- Apply saved/preferred theme before first paint to avoid flashing --><script>
+    </script>
+
+    <!-- Serif + mono typefaces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet">
+
+    <!-- Apply saved/preferred theme before first paint to avoid flashing -->
+    <script>
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
@@ -53,20 +79,25 @@
           document.documentElement.style.fontSize = "17px";
         }
       })();
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
-<link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Calculus", "href": "calculus.html", "current": false}, {"title": "Derivation of Taylor Expansion", "href": "derivation-of-taylor-expansion.html", "current": true}]</script>
-<link rel="canonical" href="https://book.danyentezari.com/derivation-of-taylor-expansion.html">
-<meta property="og:url" content="https://book.danyentezari.com/derivation-of-taylor-expansion.html">
+      <link rel="stylesheet" href="style.css" />
+  
 </head>
+
 <body data-spy="scroll" data-target="#toc">
 
 <div class="container-fluid">
 <div class="row">
-  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book">
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
     <div class="d-flex align-items-start justify-content-between">
       <h1>
@@ -78,159 +109,22 @@
     <div id="main-nav" class="collapse-lg">
       <form role="search">
         <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-</form>
+      </form>
 
-      <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled">
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="classical-mechanics.html"><span class="header-section-number">5</span> Classical Mechanics</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="condensed-matter.html"><span class="header-section-number">6</span> Condensed Matter</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="physical-chemistry.html"><span class="header-section-number">7</span> Physical Chemistry</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="physics-principles.html"><span class="header-section-number">8</span> Physics Principles</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="topology.html"><span class="header-section-number">9</span> Topology</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="differential-geometry.html"><span class="header-section-number">10</span> Differential Geometry</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active-parent" href="calculus.html"><span class="header-section-number">11</span> Calculus</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="functional-analysis.html"><span class="header-section-number">12</span> Functional Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="linear-algebra.html"><span class="header-section-number">13</span> Linear Algebra</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="abstract-algebra.html"><span class="header-section-number">14</span> Abstract Algebra</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="differential-equations.html"><span class="header-section-number">15</span> Differential Equations</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="complex-analysis.html"><span class="header-section-number">16</span> Complex Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="real-analysis.html"><span class="header-section-number">17</span> Real Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="notes.html"><span class="header-section-number">18</span> Notes</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary.html"><span class="header-section-number">19</span> Glossary</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="symbols.html"><span class="header-section-number">20</span> Symbols</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="constants.html"><span class="header-section-number">21</span> Constants</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="site-index.html"><span class="header-section-number">22</span> Index</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="bibliography.html"><span class="header-section-number">23</span> Bibliography</a>
-</div>
-</li>
-</ul>
+      <nav aria-label="Table of contents">
+        <h2>Table of contents</h2>
+        <div id="book-toc"></div>
 
         <div class="book-extra">
-          
+          <p><a id="book-repo" href="#">View book source <i class="fab fa-github"></i></a></li></p>
         </div>
       </nav>
-</div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="derivation-of-taylor-expansion" class="section level1" number="310">
-<h1>
-<span class="header-section-number">310</span> Derivation of Taylor Expansion<a class="anchor" aria-label="anchor" href="#derivation-of-taylor-expansion"><i class="fas fa-link"></i></a>
-</h1>
+    </div>
+  </header>
+
+  <main class="col-sm-12 col-md-9 col-lg-7" id="content">
+<div id="derivation-of-taylor-expansion" class="section level1" number="315">
+<h1><span class="header-section-number">315</span> Derivation of Taylor Expansion</h1>
 <p>A derivation that is used to obtain a polynomial approximation and exact remainder, where a remainder is the difference between the function and polynomial.</p>
 <p>Taylor’s theorem. If a function is differentiable <span class="math inline">\(n+1\)</span> times near <span class="math inline">\(a\)</span>, then it equals its Taylor polynomial plus a remainder.</p>
 <p>The splitting into polynomial and remainder is</p>
@@ -239,16 +133,11 @@ f(x) = P_{n}(x) + R_{n+1}(x)
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(f\)</span> is the function being expanded.</li>
-<li>
-<span class="math inline">\(a\)</span> is the expansion point.</li>
-<li>
-<span class="math inline">\(x\)</span> is a nearby evaluation point.</li>
-<li>
-<span class="math inline">\(P_{n}(x)\)</span> is the Taylor polynomial of degree <span class="math inline">\(n\)</span>.</li>
-<li>
-<span class="math inline">\(R_{n+1}(x)\)</span> is the remainder.</li>
+<li><span class="math inline">\(f\)</span> is the function being expanded.</li>
+<li><span class="math inline">\(a\)</span> is the expansion point.</li>
+<li><span class="math inline">\(x\)</span> is a nearby evaluation point.</li>
+<li><span class="math inline">\(P_{n}(x)\)</span> is the Taylor polynomial of degree <span class="math inline">\(n\)</span>.</li>
+<li><span class="math inline">\(R_{n+1}(x)\)</span> is the remainder.</li>
 </ul>
 <p>Taylor polynomial. A polynomial whose value and first <span class="math inline">\(n\)</span> derivatives at <span class="math inline">\(a\)</span> match those of <span class="math inline">\(f\)</span>.</p>
 <p>The Taylor polynomial is</p>
@@ -257,9 +146,9 @@ P_{n}(x)
 =
 f(a)
 +
-f'(a)(x-a)
+f&#39;(a)(x-a)
 +
-\dfrac{f''(a)}{2!}(x-a)^{2}
+\dfrac{f&#39;&#39;(a)}{2!}(x-a)^{2}
 +
 \cdots
 +
@@ -267,10 +156,8 @@ f'(a)(x-a)
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(f^{(k)}(a)\)</span> is the <span class="math inline">\(k\)</span>th derivative of <span class="math inline">\(f\)</span> at <span class="math inline">\(a\)</span>.</li>
-<li>
-<span class="math inline">\(k!\)</span> is the factorial of <span class="math inline">\(k\)</span>.</li>
+<li><span class="math inline">\(f^{(k)}(a)\)</span> is the <span class="math inline">\(k\)</span>th derivative of <span class="math inline">\(f\)</span> at <span class="math inline">\(a\)</span>.</li>
+<li><span class="math inline">\(k!\)</span> is the factorial of <span class="math inline">\(k\)</span>.</li>
 </ul>
 <p>Remainder. The difference <span class="math inline">\(f(x)-P_{n}(x)\)</span>.</p>
 <p>Auxiliary functions. Helper functions of a running point <span class="math inline">\(u\)</span> that recast the remainder as a ratio of changes.</p>
@@ -280,9 +167,9 @@ f'(a)(x-a)
 =
 f(u)
 +
-f'(u)(x-u)
+f&#39;(u)(x-u)
 +
-\dfrac{f''(u)}{2!}(x-u)^{2}
+\dfrac{f&#39;&#39;(u)}{2!}(x-u)^{2}
 +
 \cdots
 +
@@ -293,12 +180,9 @@ f'(u)(x-u)
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(u\)</span> is a running point between <span class="math inline">\(a\)</span> and <span class="math inline">\(x\)</span>.</li>
-<li>
-<span class="math inline">\(\phi(u)\)</span> interpolates <span class="math inline">\(f\)</span> from <span class="math inline">\(u\)</span> toward <span class="math inline">\(x\)</span>.</li>
-<li>
-<span class="math inline">\(\psi(u)\)</span> is the <span class="math inline">\((n+1)\)</span>st power of the remaining distance.</li>
+<li><span class="math inline">\(u\)</span> is a running point between <span class="math inline">\(a\)</span> and <span class="math inline">\(x\)</span>.</li>
+<li><span class="math inline">\(\phi(u)\)</span> interpolates <span class="math inline">\(f\)</span> from <span class="math inline">\(u\)</span> toward <span class="math inline">\(x\)</span>.</li>
+<li><span class="math inline">\(\psi(u)\)</span> is the <span class="math inline">\((n+1)\)</span>st power of the remaining distance.</li>
 </ul>
 <p>At the endpoints these helpers satisfy <span class="math inline">\(\phi(x)=f(x)\)</span>, <span class="math inline">\(\psi(x)=0\)</span>, <span class="math inline">\(\phi(a)=P_{n}(x)\)</span>, and <span class="math inline">\(\psi(a)=(x-a)^{n+1}\)</span>.</p>
 <p>Cauchy’s mean-value theorem. The ratio of changes equals the ratio of derivatives at an interior point.</p>
@@ -306,30 +190,27 @@ f'(u)(x-u)
 <p><span class="math display">\[
 \dfrac{\phi(x)-\phi(a)}{\psi(x)-\psi(a)}
 =
-\dfrac{\phi'(\xi)}{\psi'(\xi)}
+\dfrac{\phi&#39;(\xi)}{\psi&#39;(\xi)}
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(\xi\)</span> is a point strictly between <span class="math inline">\(a\)</span> and <span class="math inline">\(x\)</span>.</li>
-<li>
-<span class="math inline">\(\phi'\)</span> and <span class="math inline">\(\psi'\)</span> are the derivatives of the auxiliary functions.</li>
+<li><span class="math inline">\(\xi\)</span> is a point strictly between <span class="math inline">\(a\)</span> and <span class="math inline">\(x\)</span>.</li>
+<li><span class="math inline">\(\phi&#39;\)</span> and <span class="math inline">\(\psi&#39;\)</span> are the derivatives of the auxiliary functions.</li>
 </ul>
 <p>Telescoping derivative. A derivative calculation that cancels all but the highest derivative term.</p>
 <p>The derivatives of the auxiliary functions are</p>
 <p><span class="math display">\[
-\phi'(u)
+\phi&#39;(u)
 =
 \dfrac{f^{(n+1)}(u)}{n!}(x-u)^{n}
 \qquad
-\psi'(u)
+\psi&#39;(u)
 =
 -(n+1)(x-u)^{n}
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(f^{(n+1)}(u)\)</span> is the <span class="math inline">\((n+1)\)</span>st derivative of <span class="math inline">\(f\)</span> at <span class="math inline">\(u\)</span>.</li>
+<li><span class="math inline">\(f^{(n+1)}(u)\)</span> is the <span class="math inline">\((n+1)\)</span>st derivative of <span class="math inline">\(f\)</span> at <span class="math inline">\(u\)</span>.</li>
 </ul>
 <p>Lagrange remainder. The error expressed using the next derivative at an unknown interior point.</p>
 <p>The Lagrange remainder is</p>
@@ -340,16 +221,12 @@ R_{n+1}(x)
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(\xi\)</span> is a point strictly between <span class="math inline">\(a\)</span> and <span class="math inline">\(x\)</span>.</li>
-<li>
-<span class="math inline">\(R_{n+1}(x)\)</span> is the remainder after <span class="math inline">\(n\)</span> Taylor terms.</li>
+<li><span class="math inline">\(\xi\)</span> is a point strictly between <span class="math inline">\(a\)</span> and <span class="math inline">\(x\)</span>.</li>
+<li><span class="math inline">\(R_{n+1}(x)\)</span> is the remainder after <span class="math inline">\(n\)</span> Taylor terms.</li>
 </ul>
 <p>Note: Also called Taylor’s formula. Also called Taylor’s theorem with remainder.</p>
-<div id="references-266" class="section level2" number="310.1">
-<h2>
-<span class="header-section-number">310.1</span> References<a class="anchor" aria-label="anchor" href="#references-266"><i class="fas fa-link"></i></a>
-</h2>
+<div id="references-270" class="section level2" number="315.1">
+<h2><span class="header-section-number">315.1</span> References</h2>
 <ol style="list-style-type: decimal">
 <li>Aleksandrov, A. D., Kolmogorov, A. N., &amp; Lavrent’ev, M. A. <em>Mathematics: Its Content, Methods and Meaning</em>. Vol. 1. Dover, 1999. Chapter II, Section 9 — Taylor’s formula via Cauchy’s generalized mean-value theorem; Lagrange remainder.</li>
 <li>Hubbard, J. H., &amp; Hubbard, B. B. <em>Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach</em>. 5th ed. Matrix Editions, 2015. Appendix A12 — Taylor’s theorem with remainder.</li>
@@ -357,12 +234,16 @@ R_{n+1}(x)
 </ol>
 <div class="topic-index">
 <ul>
+<li><a href="basic-derivation-of-jacobian.html">Basic Derivation of Jacobian</a></li>
 <li><a href="chain-rule.html">Chain Rule</a></li>
 <li><a href="cross-product.html">Cross Product</a></li>
 <li><a href="curl.html">Curl</a></li>
 <li><a href="curve.html">Curve</a></li>
 <li><a href="definite-integral.html">Definite Integral</a></li>
 <li><a href="derivation-of-curl.html">Derivation of Curl</a></li>
+<li><a href="derivation-of-divergence.html">Derivation of Divergence</a></li>
+<li><a href="derivation-of-grad.html">Derivation of Grad</a></li>
+<li><a href="derivation-of-jacobian.html">Derivation of Jacobian</a></li>
 <li><a href="derivation-of-taylor-expansion.html">Derivation of Taylor Expansion</a></li>
 <li><a href="divergence.html">Divergence</a></li>
 <li><a href="dot-product.html">Dot Product</a></li>
@@ -371,12 +252,14 @@ R_{n+1}(x)
 <li><a href="gradient.html">Gradient</a></li>
 <li><a href="improper-integral.html">Improper Integral</a></li>
 <li><a href="indefinite-integral.html">Indefinite Integral</a></li>
+<li><a href="jacobian.html">Jacobian</a></li>
 <li><a href="legendre-transform.html">Legendre Transform</a></li>
 <li><a href="legendre-transform-derivation.html">Legendre Transform Derivation</a></li>
 <li><a href="limit.html">Limit</a></li>
 <li><a href="line-integral.html">Line Integral</a></li>
 <li><a href="notes-1.html">Notes</a></li>
 <li><a href="parameterization.html">Parameterization</a></li>
+<li><a href="partial-derivative.html">Partial Derivative</a></li>
 <li><a href="real-parameter.html">Real Parameter</a></li>
 <li><a href="scalar-projection.html">Scalar Projection</a></li>
 <li><a href="smooth-curve.html">Smooth Curve</a></li>
@@ -856,7 +739,8 @@ R_{n+1}(x)
       initClassicLayout();
     }
   })();
-</script><script>
+</script>
+<script>
   /* Prefer heading matches in book search (e.g. "Lagrangian" page over References). */
   (function () {
     var WEIGHTED_FUSE_OPTIONS = {
@@ -952,28 +836,28 @@ R_{n+1}(x)
       start();
     }
   })();
-</script><div class="chapter-nav">
-<div class="prev"><a href="definite-integral.html"><span class="header-section-number">309</span> Definite Integral</a></div>
-<div class="next"><a href="divergence.html"><span class="header-section-number">311</span> Divergence</a></div>
-</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#derivation-of-taylor-expansion"><span class="header-section-number">310</span> Derivation of Taylor Expansion</a></li>
-<li><a class="nav-link" href="#references-266"><span class="header-section-number">310.1</span> References</a></li>
-</ul>
+</script>
+  </main>
+
+  <div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <div id="book-on-this-page"></div>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-          
+          <li><a id="book-source" href="#">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="#">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
-</div>
+      </div>
     </nav>
-</div>
+  </div>
 
 </div>
 </div> <!-- .container -->
 
-<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+<footer class="bg-primary text-light mt-5">
+  <div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
     <p>"<strong>Mathematics for Physics</strong>" was written by bignumber-material. </p>
@@ -984,7 +868,11 @@ R_{n+1}(x)
   </div>
 
 </div></div>
-</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+</footer>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
@@ -996,7 +884,8 @@ R_{n+1}(x)
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
-</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+</script>
+<script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
 for (let popover of popovers) {
   const div = document.createElement('div');
   div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
@@ -1014,4 +903,5 @@ for (let popover of popovers) {
 }
 </script>
 </body>
+
 </html>

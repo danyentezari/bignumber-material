@@ -45,7 +45,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 A symmetric array equals its transpose: $A_{ij} = A_{ji}$.

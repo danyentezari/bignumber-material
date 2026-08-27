@@ -46,7 +46,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 Smoothness means derivatives exist at sample points. Here a quadratic polynomial is smooth on a finite sample of the line.

@@ -26,7 +26,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The space $\ell^{p}$ consists of $p$-summable sequences with the $p$-norm. For $p = 1$, a three-term sequence is an element after zero-padding.

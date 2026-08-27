@@ -59,7 +59,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A $1$-form is a linear map from vectors to scalars.

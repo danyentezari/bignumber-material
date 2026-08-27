@@ -27,7 +27,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A $2$-covector is an alternating bilinear map on vectors.

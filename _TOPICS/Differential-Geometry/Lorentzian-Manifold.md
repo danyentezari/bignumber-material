@@ -43,7 +43,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 A Lorentzian metric has one negative direction. Let $\eta$ be the $1+1$ Minkowski metric.

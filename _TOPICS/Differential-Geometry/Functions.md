@@ -46,7 +46,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A function maps each domain element to exactly one codomain value.

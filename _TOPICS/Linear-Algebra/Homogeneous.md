@@ -80,7 +80,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A homogeneous expression keeps a single degree under scaling. The monomial $x^{2}$ is homogeneous of degree $2$.

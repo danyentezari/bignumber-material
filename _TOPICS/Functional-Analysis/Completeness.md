@@ -17,7 +17,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A metric space is complete when every Cauchy sequence converges in the space. The real line is complete.

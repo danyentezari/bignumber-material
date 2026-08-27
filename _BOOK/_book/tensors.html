@@ -1,32 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>301 Tensors | Mathematics for Physics</title>
-<meta name="author" content="bignumber-material">
-<meta name="description" content="A multilinear mapping on vectors and covectors that assigns a scalar that is used to represent quantities whose values transform consistently under a change of basis. definition [d] (Tensor =...">
-<meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="301 Tensors | Mathematics for Physics">
-<meta property="og:type" content="book">
-<meta property="og:description" content="A multilinear mapping on vectors and covectors that assigns a scalar that is used to represent quantities whose values transform consistently under a change of basis. definition [d] (Tensor =...">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="301 Tensors | Mathematics for Physics">
-<meta name="twitter:description" content="A multilinear mapping on vectors and covectors that assigns a scalar that is used to represent quantities whose values transform consistently under a change of basis. definition [d] (Tensor =...">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script><script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>301 Tensors | Mathematics for Physics</title>
+
+    <meta name="author" content="bignumber-material" />
+  
+   <meta name="description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+   <meta name="generator" content="placeholder" />
+  <meta property="og:title" content="301 Tensors | Mathematics for Physics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="301 Tensors | Mathematics for Physics" />
+  
+  <meta name="twitter:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+  
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script>
+    <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet" />
+    <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script>
+    <script src="libs/bs3compat-0.11.0/transition.js"></script>
+    <script src="libs/bs3compat-0.11.0/tabs.js"></script>
+    <script src="libs/bs3compat-0.11.0/bs3compat.js"></script>
+    <link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet" />
+    <script src="libs/bs4_book-1.0.0/bs4_book.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script>
+    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-RCDW3GHNMP');
-    </script><!-- Serif + mono typefaces --><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<!-- Apply saved/preferred theme before first paint to avoid flashing --><script>
+    </script>
+
+    <!-- Serif + mono typefaces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet">
+
+    <!-- Apply saved/preferred theme before first paint to avoid flashing -->
+    <script>
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
@@ -53,20 +79,25 @@
           document.documentElement.style.fontSize = "17px";
         }
       })();
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
-<link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Differential Geometry", "href": "differential-geometry.html", "current": false}, {"title": "Tensors", "href": "tensors.html", "current": true}]</script>
-<link rel="canonical" href="https://book.danyentezari.com/tensors.html">
-<meta property="og:url" content="https://book.danyentezari.com/tensors.html">
+      <link rel="stylesheet" href="style.css" />
+  
 </head>
+
 <body data-spy="scroll" data-target="#toc">
 
 <div class="container-fluid">
 <div class="row">
-  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book">
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
     <div class="d-flex align-items-start justify-content-between">
       <h1>
@@ -78,292 +109,121 @@
     <div id="main-nav" class="collapse-lg">
       <form role="search">
         <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-</form>
+      </form>
 
-      <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled">
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="classical-mechanics.html"><span class="header-section-number">5</span> Classical Mechanics</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="condensed-matter.html"><span class="header-section-number">6</span> Condensed Matter</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="physical-chemistry.html"><span class="header-section-number">7</span> Physical Chemistry</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="physics-principles.html"><span class="header-section-number">8</span> Physics Principles</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="topology.html"><span class="header-section-number">9</span> Topology</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active-parent" href="differential-geometry.html"><span class="header-section-number">10</span> Differential Geometry</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="calculus.html"><span class="header-section-number">11</span> Calculus</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="functional-analysis.html"><span class="header-section-number">12</span> Functional Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="linear-algebra.html"><span class="header-section-number">13</span> Linear Algebra</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="abstract-algebra.html"><span class="header-section-number">14</span> Abstract Algebra</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="differential-equations.html"><span class="header-section-number">15</span> Differential Equations</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="complex-analysis.html"><span class="header-section-number">16</span> Complex Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="real-analysis.html"><span class="header-section-number">17</span> Real Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="notes.html"><span class="header-section-number">18</span> Notes</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary.html"><span class="header-section-number">19</span> Glossary</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="symbols.html"><span class="header-section-number">20</span> Symbols</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="constants.html"><span class="header-section-number">21</span> Constants</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="site-index.html"><span class="header-section-number">22</span> Index</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="bibliography.html"><span class="header-section-number">23</span> Bibliography</a>
-</div>
-</li>
-</ul>
+      <nav aria-label="Table of contents">
+        <h2>Table of contents</h2>
+        <div id="book-toc"></div>
 
         <div class="book-extra">
-          
+          <p><a id="book-repo" href="#">View book source <i class="fab fa-github"></i></a></li></p>
         </div>
       </nav>
-</div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="tensors" class="section level1" number="301">
-<h1>
-<span class="header-section-number">301</span> Tensors<a class="anchor" aria-label="anchor" href="#tensors"><i class="fas fa-link"></i></a>
-</h1>
+    </div>
+  </header>
+
+  <main class="col-sm-12 col-md-9 col-lg-7" id="content">
+<div id="tensors" class="section level1" number="301">
+<h1><span class="header-section-number">301</span> Tensors</h1>
 <p>A multilinear mapping on vectors and covectors that assigns a scalar that is used to represent quantities whose values transform consistently under a change of basis.</p>
-<p><i></i></p>
+<p><i></p>
 <p><strong>definition [d]</strong> (<em>Tensor = Multilinear Map</em>) A multilinear, real-valued function of type <span class="math inline">\((r,s)\)</span> on a vector space <span class="math inline">\(V\)</span> and its dual <span class="math inline">\(V^{*}\)</span>:</p>
 <ul>
-<li>
-<span class="math inline">\(T : \underbrace{V^{*} \times \cdots \times V^{*}}_{r} \times \underbrace{V \times \cdots \times V}_{s} \rightarrow \mathbb{R}\)</span> .</li>
+<li><span class="math inline">\(T : \underbrace{V^{*} \times \cdots \times V^{*}}_{r} \times \underbrace{V \times \cdots \times V}_{s} \rightarrow \mathbb{R}\)</span> .</li>
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(T\)</span> is the tensor.</li>
-<li>
-<span class="math inline">\(V\)</span> is a vector space over <span class="math inline">\(\mathbb{R}\)</span>.</li>
-<li>
-<span class="math inline">\(V^{*}\)</span> is the dual space of <span class="math inline">\(V\)</span>.</li>
-<li>
-<span class="math inline">\(r\)</span> is the contravariant rank.</li>
-<li>
-<span class="math inline">\(s\)</span> is the covariant rank.</li>
-<li>
-<span class="math inline">\(\mathbb{R}\)</span> is the set of real numbers.</li>
+<li><span class="math inline">\(T\)</span> is the tensor.</li>
+<li><span class="math inline">\(V\)</span> is a vector space over <span class="math inline">\(\mathbb{R}\)</span>.</li>
+<li><span class="math inline">\(V^{*}\)</span> is the dual space of <span class="math inline">\(V\)</span>.</li>
+<li><span class="math inline">\(r\)</span> is the contravariant rank.</li>
+<li><span class="math inline">\(s\)</span> is the covariant rank.</li>
+<li><span class="math inline">\(\mathbb{R}\)</span> is the set of real numbers.</li>
 </ul>
 <p>Note:</p>
 <ul>
-<li>
-<span class="math inline">\(V\)</span> may equally be a vector space over <span class="math inline">\(\mathbb{C}\)</span>.</li>
-<li>
-<span class="math inline">\(T\)</span> is linear in each argument independently.</li>
+<li><span class="math inline">\(V\)</span> may equally be a vector space over <span class="math inline">\(\mathbb{C}\)</span>.</li>
+<li><span class="math inline">\(T\)</span> is linear in each argument independently.</li>
 <li>a scalar is type <span class="math inline">\((0,0)\)</span>; a vector is type <span class="math inline">\((1,0)\)</span>; a covector is type <span class="math inline">\((0,1)\)</span>.</li>
 </ul>
-<p></p>
-<p><i></i></p>
-<p><strong>definition [d]</strong> (<strong>Tensor</strong>) An array of components <span class="math inline">\(T^{i_1\ldots i_p}_{\ j_1\ldots j_q}\)</span> labeled by <span class="math inline">\(p\)</span> contravariant upper and <span class="math inline">\(q\)</span> covariant lower indices, whose components transform linearly under a coordinate change <span class="math inline">\(x \mapsto x'\)</span>:</p>
+<p></i></p>
+<p><i></p>
+<p><strong>definition [d]</strong> (<strong>Tensor</strong>) An array of components <span class="math inline">\(T^{i_1\ldots i_p}_{\ j_1\ldots j_q}\)</span> labeled by <span class="math inline">\(p\)</span> contravariant upper and <span class="math inline">\(q\)</span> covariant lower indices, whose components transform linearly under a coordinate change <span class="math inline">\(x \mapsto x&#39;\)</span>:</p>
 <ul>
-<li>(Contravariant) <span class="math inline">\((T')^{i} = \displaystyle \sum_{j} \dfrac{\partial x^{j}}{\partial (x')^{i}}\, T^{j}\)</span> .</li>
-<li>(Covariant) <span class="math inline">\((T')_{i} = \displaystyle \sum_{j} \dfrac{\partial (x')^{i}}{\partial x^{j}}\, T_{j}\)</span> .</li>
-<li>(Mixed rank 2) <span class="math inline">\((T')^{i}_{\ j} = \displaystyle \sum_{k,l} \dfrac{\partial x^{k}}{\partial (x')^{i}}\, \dfrac{\partial (x')^{j}}{\partial x^{l}}\, T^{k}_{\ l}\)</span> .</li>
+<li>(Contravariant) <span class="math inline">\((T&#39;)^{i} = \displaystyle \sum_{j} \dfrac{\partial x^{j}}{\partial (x&#39;)^{i}}\, T^{j}\)</span> .</li>
+<li>(Covariant) <span class="math inline">\((T&#39;)_{i} = \displaystyle \sum_{j} \dfrac{\partial (x&#39;)^{i}}{\partial x^{j}}\, T_{j}\)</span> .</li>
+<li>(Mixed rank 2) <span class="math inline">\((T&#39;)^{i}_{\ j} = \displaystyle \sum_{k,l} \dfrac{\partial x^{k}}{\partial (x&#39;)^{i}}\, \dfrac{\partial (x&#39;)^{j}}{\partial x^{l}}\, T^{k}_{\ l}\)</span> .</li>
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(T^{i_1\ldots i_p}_{\ j_1\ldots j_q}\)</span> are the components of the tensor.</li>
-<li>
-<span class="math inline">\(p\)</span> is the number of contravariant indices.</li>
-<li>
-<span class="math inline">\(q\)</span> is the number of covariant indices.</li>
-<li>
-<span class="math inline">\(x\)</span> and <span class="math inline">\(x'\)</span> are the old and new coordinates.</li>
-<li>
-<span class="math inline">\(T^{j}\)</span>, <span class="math inline">\(T_{j}\)</span>, <span class="math inline">\(T^{k}_{\ l}\)</span> are components in the old coordinates.</li>
-<li>
-<span class="math inline">\((T')^{i}\)</span>, <span class="math inline">\((T')_{i}\)</span>, <span class="math inline">\((T')^{i}_{\ j}\)</span> are components in the new coordinates.</li>
+<li><span class="math inline">\(T^{i_1\ldots i_p}_{\ j_1\ldots j_q}\)</span> are the components of the tensor.</li>
+<li><span class="math inline">\(p\)</span> is the number of contravariant indices.</li>
+<li><span class="math inline">\(q\)</span> is the number of covariant indices.</li>
+<li><span class="math inline">\(x\)</span> and <span class="math inline">\(x&#39;\)</span> are the old and new coordinates.</li>
+<li><span class="math inline">\(T^{j}\)</span>, <span class="math inline">\(T_{j}\)</span>, <span class="math inline">\(T^{k}_{\ l}\)</span> are components in the old coordinates.</li>
+<li><span class="math inline">\((T&#39;)^{i}\)</span>, <span class="math inline">\((T&#39;)_{i}\)</span>, <span class="math inline">\((T&#39;)^{i}_{\ j}\)</span> are components in the new coordinates.</li>
 </ul>
 <p>Note:</p>
 <ul>
 <li>the total rank is <span class="math inline">\(p + q\)</span>; in <span class="math inline">\(d\)</span> dimensions a rank-<span class="math inline">\(n\)</span> tensor has <span class="math inline">\(d^{n}\)</span> components.</li>
-<li>upper indices transform with the Jacobian <span class="math inline">\(\partial x^{j}/\partial (x')^{i}\)</span>; lower indices with its inverse <span class="math inline">\(\partial (x')^{i}/\partial x^{j}\)</span>.</li>
+<li>upper indices transform with the Jacobian <span class="math inline">\(\partial x^{j}/\partial (x&#39;)^{i}\)</span>; lower indices with its inverse <span class="math inline">\(\partial (x&#39;)^{i}/\partial x^{j}\)</span>.</li>
 <li>the transformation laws ensure the tensor represents a coordinate-independent geometric object.</li>
 </ul>
-<p></p>
-<div id="examples-5" class="section level2" number="301.1">
-<h2>
-<span class="header-section-number">301.1</span> Examples<a class="anchor" aria-label="anchor" href="#examples-5"><i class="fas fa-link"></i></a>
-</h2>
-<p><i></i></p>
+<p></i></p>
+<div id="examples-66" class="section level2" number="301.1">
+<h2><span class="header-section-number">301.1</span> Examples</h2>
+<p><i></p>
 <p><strong>example 1 [d]</strong> (<strong>Euclidean Metric on <span class="math inline">\(\mathbb{R}^{3}\)</span></strong> — Frankel, Arfken) On the fixed vector space <span class="math inline">\(V = \mathbb{R}^{3}\)</span> with the standard basis, the Euclidean inner product is the type-<span class="math inline">\((0,2)\)</span> tensor</p>
 <ul>
-<li>
-<span class="math inline">\(g : V \times V \rightarrow \mathbb{R}\)</span> ,</li>
-<li>
-<span class="math inline">\(g(u, v) = u \cdot v = \sum_{i,j} \delta_{ij}\, u^{i}\, v^{j}\)</span> ,</li>
+<li><span class="math inline">\(g : V \times V \rightarrow \mathbb{R}\)</span> ,</li>
+<li><span class="math inline">\(g(u, v) = u \cdot v = \sum_{i,j} \delta_{ij}\, u^{i}\, v^{j}\)</span> ,</li>
 </ul>
 <p>with components</p>
 <ul>
-<li>
-<span class="math inline">\((g_{ij}) = \operatorname{diag}(1,\, 1,\, 1) = I_{3}\)</span> .</li>
+<li><span class="math inline">\((g_{ij}) = \operatorname{diag}(1,\, 1,\, 1) = I_{3}\)</span> .</li>
 </ul>
 <p>As a multilinear map this is one bilinear form on <span class="math inline">\(V\)</span>, not a field of forms on a manifold.</p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(V = \mathbb{R}^{3}\)</span> is the underlying vector space.</li>
-<li>
-<span class="math inline">\(u, v \in V\)</span> are vectors.</li>
-<li>
-<span class="math inline">\(u^{i}, v^{j}\)</span> are components of <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span> in the standard basis.</li>
-<li>
-<span class="math inline">\(\delta_{ij}\)</span> is the Kronecker delta.</li>
-<li>
-<span class="math inline">\(I_{3}\)</span> is the <span class="math inline">\(3 \times 3\)</span> identity matrix.</li>
+<li><span class="math inline">\(V = \mathbb{R}^{3}\)</span> is the underlying vector space.</li>
+<li><span class="math inline">\(u, v \in V\)</span> are vectors.</li>
+<li><span class="math inline">\(u^{i}, v^{j}\)</span> are components of <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span> in the standard basis.</li>
+<li><span class="math inline">\(\delta_{ij}\)</span> is the Kronecker delta.</li>
+<li><span class="math inline">\(I_{3}\)</span> is the <span class="math inline">\(3 \times 3\)</span> identity matrix.</li>
 </ul>
 <p>Note:</p>
 <ul>
 <li>this is a single tensor of type <span class="math inline">\((0,2)\)</span> on <span class="math inline">\(V\)</span>.</li>
 <li>contrast with a metric tensor field, whose components <span class="math inline">\(g_{ij}(x)\)</span> depend on the point.</li>
 </ul>
-<p></p>
-<p><i></i></p>
+<p></i></p>
+<p><i></p>
 <p><strong>example 2 [d]</strong> (<strong>Mixed Kronecker Tensor</strong> — Carroll, Arfken) On a finite-dimensional vector space <span class="math inline">\(V\)</span>, the identity map <span class="math inline">\(\operatorname{id}_{V} : V \rightarrow V\)</span> is the type-<span class="math inline">\((1,1)\)</span> tensor <span class="math inline">\(\delta\)</span> with components</p>
 <ul>
-<li>
-<span class="math inline">\(\delta^{i}_{\ j} = \begin{cases} 1 &amp; \text{if } i = j \\ 0 &amp; \text{if } i \neq j \end{cases}\)</span> ,</li>
+<li><span class="math inline">\(\delta^{i}_{\ j} = \begin{cases} 1 &amp; \text{if } i = j \\ 0 &amp; \text{if } i \neq j \end{cases}\)</span> ,</li>
 </ul>
 <p>so that</p>
 <ul>
-<li>
-<span class="math inline">\(\delta(v, \omega) = \omega(v)\)</span> ,</li>
-<li>
-<span class="math inline">\(\delta^{i}_{\ j}\, v^{j} = v^{i}\)</span> .</li>
+<li><span class="math inline">\(\delta(v, \omega) = \omega(v)\)</span> ,</li>
+<li><span class="math inline">\(\delta^{i}_{\ j}\, v^{j} = v^{i}\)</span> .</li>
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(V\)</span> is a finite-dimensional vector space.</li>
-<li>
-<span class="math inline">\(\delta^{i}_{\ j}\)</span> are the components of the mixed Kronecker tensor.</li>
-<li>
-<span class="math inline">\(v \in V\)</span> is a vector with components <span class="math inline">\(v^{j}\)</span>.</li>
-<li>
-<span class="math inline">\(\omega \in V^{*}\)</span> is a covector.</li>
+<li><span class="math inline">\(V\)</span> is a finite-dimensional vector space.</li>
+<li><span class="math inline">\(\delta^{i}_{\ j}\)</span> are the components of the mixed Kronecker tensor.</li>
+<li><span class="math inline">\(v \in V\)</span> is a vector with components <span class="math inline">\(v^{j}\)</span>.</li>
+<li><span class="math inline">\(\omega \in V^{*}\)</span> is a covector.</li>
 </ul>
 <p>Note:</p>
 <ul>
-<li>
-<span class="math inline">\(\delta^{\mu}_{\ \nu}\)</span> is the identity map on vectors and one-forms.</li>
+<li><span class="math inline">\(\delta^{\mu}_{\ \nu}\)</span> is the identity map on vectors and one-forms.</li>
 <li>the components are numerical constants, independent of any point on a manifold.</li>
 </ul>
-<p></p>
-<p><i></i></p>
+<p></i></p>
+<p><i></p>
 <p><strong>example 3 [d]</strong> (<strong>Minkowski Metric Components</strong> — Griffiths) As an array of components, the flat spacetime metric tensor is</p>
 <ul>
-<li>
-<span class="math inline">\((g_{\mu\nu}) =
+<li><span class="math inline">\((g_{\mu\nu}) =
 \begin{bmatrix}
 -1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
@@ -373,26 +233,20 @@
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(g_{\mu\nu}\)</span> are the components of the Minkowski metric tensor.</li>
-<li>
-<span class="math inline">\(\mu, \nu\)</span> are spacetime indices running over <span class="math inline">\(0,1,2,3\)</span>.</li>
+<li><span class="math inline">\(g_{\mu\nu}\)</span> are the components of the Minkowski metric tensor.</li>
+<li><span class="math inline">\(\mu, \nu\)</span> are spacetime indices running over <span class="math inline">\(0,1,2,3\)</span>.</li>
 </ul>
 <p>Note:</p>
 <ul>
 <li>this is a type-<span class="math inline">\((0,2)\)</span> tensor written as a <span class="math inline">\(4 \times 4\)</span> array of components.</li>
 <li>the same array is often written <span class="math inline">\(\eta_{\mu\nu} = \operatorname{diag}(-1,\, 1,\, 1,\, 1)\)</span>.</li>
 </ul>
-<p></p>
+<p></i></p>
 </div>
-<div id="elementary-example-61" class="section level2" number="301.2">
-<h2>
-<span class="header-section-number">301.2</span> Elementary Example<a class="anchor" aria-label="anchor" href="#elementary-example-61"><i class="fas fa-link"></i></a>
-</h2>
+<div id="examples-67" class="section level2" number="301.2">
+<h2><span class="header-section-number">301.2</span> Examples</h2>
 <div id="simple-61" class="section level3" number="301.2.1">
-<h3>
-<span class="header-section-number">301.2.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple-61"><i class="fas fa-link"></i></a>
-</h3>
+<h3><span class="header-section-number">301.2.1</span> Simple</h3>
 <p>A type-<span class="math inline">\((0,2)\)</span> tensor returns a scalar from two vectors. On two basis vectors, list the four values.</p>
 <p><span class="math display">\[
 T : V \times V \rightarrow \mathbb{R}
@@ -405,9 +259,7 @@ T(e_{1},e_{1}) = 2,\quad T(e_{1},e_{2}) = 1,\quad T(e_{2},e_{1}) = 1,\quad T(e_{
 \]</span></p>
 </div>
 <div id="general-61" class="section level3" number="301.2.2">
-<h3>
-<span class="header-section-number">301.2.2</span> General<a class="anchor" aria-label="anchor" href="#general-61"><i class="fas fa-link"></i></a>
-</h3>
+<h3><span class="header-section-number">301.2.2</span> General</h3>
 <p>In three dimensions a type-<span class="math inline">\((0,2)\)</span> tensor is a <span class="math inline">\(3 \times 3\)</span> matrix of components <span class="math inline">\(T_{ij}\)</span>.</p>
 <p><span class="math display">\[
 T : \mathbb{R}^{3} \times \mathbb{R}^{3} \rightarrow \mathbb{R}
@@ -427,14 +279,10 @@ g(u,v) = \sum_{i,j=1}^{3} g_{ij}\, u^{i}\, v^{j} = u \cdot v
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(g\)</span> is the Euclidean metric tensor.</li>
-<li>
-<span class="math inline">\(g_{ij}\)</span> are its components in the standard basis.</li>
-<li>
-<span class="math inline">\(u^{i}, v^{j}\)</span> are components of vectors <span class="math inline">\(u, v\)</span> in <span class="math inline">\(\mathbb{R}^{3}\)</span>.</li>
-<li>
-<span class="math inline">\(I_{3}\)</span> is the <span class="math inline">\(3 \times 3\)</span> identity matrix.</li>
+<li><span class="math inline">\(g\)</span> is the Euclidean metric tensor.</li>
+<li><span class="math inline">\(g_{ij}\)</span> are its components in the standard basis.</li>
+<li><span class="math inline">\(u^{i}, v^{j}\)</span> are components of vectors <span class="math inline">\(u, v\)</span> in <span class="math inline">\(\mathbb{R}^{3}\)</span>.</li>
+<li><span class="math inline">\(I_{3}\)</span> is the <span class="math inline">\(3 \times 3\)</span> identity matrix.</li>
 </ul>
 <p>Let <span class="math inline">\(\delta\)</span> be the mixed Kronecker tensor. It is the type-<span class="math inline">\((1,1)\)</span> tensor for the identity map, with components <span class="math inline">\(\delta^{i}_{\ j}\)</span>.</p>
 <p><span class="math display">\[
@@ -448,25 +296,18 @@ g(u,v) = \sum_{i,j=1}^{3} g_{ij}\, u^{i}\, v^{j} = u \cdot v
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(\delta\)</span> is the mixed Kronecker tensor.</li>
-<li>
-<span class="math inline">\(\delta^{i}_{\ j}\)</span> equals <span class="math inline">\(1\)</span> if <span class="math inline">\(i = j\)</span> and equals <span class="math inline">\(0\)</span> if <span class="math inline">\(i \neq j\)</span>.</li>
-<li>
-<span class="math inline">\(v^{j}\)</span> are components of a vector <span class="math inline">\(v\)</span> in <span class="math inline">\(\mathbb{R}^{3}\)</span>.</li>
+<li><span class="math inline">\(\delta\)</span> is the mixed Kronecker tensor.</li>
+<li><span class="math inline">\(\delta^{i}_{\ j}\)</span> equals <span class="math inline">\(1\)</span> if <span class="math inline">\(i = j\)</span> and equals <span class="math inline">\(0\)</span> if <span class="math inline">\(i \neq j\)</span>.</li>
+<li><span class="math inline">\(v^{j}\)</span> are components of a vector <span class="math inline">\(v\)</span> in <span class="math inline">\(\mathbb{R}^{3}\)</span>.</li>
 </ul>
 </div>
 </div>
 <div id="historical-notes-1" class="section level2" number="301.3">
-<h2>
-<span class="header-section-number">301.3</span> Historical Notes<a class="anchor" aria-label="anchor" href="#historical-notes-1"><i class="fas fa-link"></i></a>
-</h2>
+<h2><span class="header-section-number">301.3</span> Historical Notes</h2>
 <p>Tensor calculus was established by Ricci and Levi-Cività in 1901.[8] Einstein adopted tensors for general relativity to ensure physical laws—such as the unified stress-energy-momentum tensor—remain invariant across all coordinate systems.[8]</p>
 </div>
 <div id="references-258" class="section level2" number="301.4">
-<h2>
-<span class="header-section-number">301.4</span> References<a class="anchor" aria-label="anchor" href="#references-258"><i class="fas fa-link"></i></a>
-</h2>
+<h2><span class="header-section-number">301.4</span> References</h2>
 <ol style="list-style-type: decimal">
 <li>Nash, C., &amp; Sen, S. <em>Topology and Geometry for Physicists</em>. Academic Press, 1983. — tensor as multilinear map.</li>
 <li>Carroll, S. <em>Spacetime and Geometry: An Introduction to General Relativity</em>. Cambridge University Press, 2021. — multilinear-map definition; mixed Kronecker as type <span class="math inline">\((1,1)\)</span>.</li>
@@ -993,7 +834,8 @@ g(u,v) = \sum_{i,j=1}^{3} g_{ij}\, u^{i}\, v^{j} = u \cdot v
       initClassicLayout();
     }
   })();
-</script><script>
+</script>
+<script>
   /* Prefer heading matches in book search (e.g. "Lagrangian" page over References). */
   (function () {
     var WEIGHTED_FUSE_OPTIONS = {
@@ -1089,36 +931,28 @@ g(u,v) = \sum_{i,j=1}^{3} g_{ij}\, u^{i}\, v^{j} = u \cdot v
       start();
     }
   })();
-</script><div class="chapter-nav">
-<div class="prev"><a href="tensor-field.html"><span class="header-section-number">300</span> Tensor Field</a></div>
-<div class="next"><a href="two-form.html"><span class="header-section-number">302</span> Two-Form</a></div>
-</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#tensors"><span class="header-section-number">301</span> Tensors</a></li>
-<li><a class="nav-link" href="#examples-5"><span class="header-section-number">301.1</span> Examples</a></li>
-<li>
-<a class="nav-link" href="#elementary-example-61"><span class="header-section-number">301.2</span> Elementary Example</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#simple-61"><span class="header-section-number">301.2.1</span> Simple</a></li>
-<li><a class="nav-link" href="#general-61"><span class="header-section-number">301.2.2</span> General</a></li>
-</ul>
-</li>
-<li><a class="nav-link" href="#historical-notes-1"><span class="header-section-number">301.3</span> Historical Notes</a></li>
-<li><a class="nav-link" href="#references-258"><span class="header-section-number">301.4</span> References</a></li>
-</ul>
+</script>
+  </main>
+
+  <div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <div id="book-on-this-page"></div>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-          
+          <li><a id="book-source" href="#">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="#">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
-</div>
+      </div>
     </nav>
-</div>
+  </div>
 
 </div>
 </div> <!-- .container -->
 
-<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+<footer class="bg-primary text-light mt-5">
+  <div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
     <p>"<strong>Mathematics for Physics</strong>" was written by bignumber-material. </p>
@@ -1129,7 +963,11 @@ g(u,v) = \sum_{i,j=1}^{3} g_{ij}\, u^{i}\, v^{j} = u \cdot v
   </div>
 
 </div></div>
-</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+</footer>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
@@ -1141,7 +979,8 @@ g(u,v) = \sum_{i,j=1}^{3} g_{ij}\, u^{i}\, v^{j} = u \cdot v
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
-</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+</script>
+<script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
 for (let popover of popovers) {
   const div = document.createElement('div');
   div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
@@ -1159,4 +998,5 @@ for (let popover of popovers) {
 }
 </script>
 </body>
+
 </html>

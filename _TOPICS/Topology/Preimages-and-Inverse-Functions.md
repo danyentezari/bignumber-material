@@ -115,7 +115,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A preimage collects inputs; an inverse function exists only for a bijection and returns single inputs.

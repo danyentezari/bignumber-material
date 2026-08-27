@@ -24,7 +24,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 An orthonormal set has unit vectors that are pairwise orthogonal.

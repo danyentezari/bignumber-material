@@ -48,7 +48,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A trivial bundle is the product of a base and a fiber. The projection $\pi$ maps each pair to its base point.

@@ -130,7 +130,7 @@ Therefore, $T$ is a $2$-covector on $\mathbb{R}^2$.
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A vector uses upper indices. A covector uses lower indices.

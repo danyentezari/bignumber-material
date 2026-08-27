@@ -33,7 +33,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The adjoint $T^{*}$ moves the inner product from $Tx$ onto $x$. On $\mathbb{R}^{2}$ with the dot product, the adjoint of a matrix is its transpose.

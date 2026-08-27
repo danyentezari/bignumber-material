@@ -35,7 +35,7 @@ where
 - $U$ is an open subset of $X$.
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A topological space is a set with a topology. Here three points and four open sets.

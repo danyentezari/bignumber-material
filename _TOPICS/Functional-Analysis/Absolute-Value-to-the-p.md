@@ -21,7 +21,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The map $f \mapsto |f|^{p}$ raises the absolute value to the power $p$. On three sample points with $p = 1$, this is just $|f|$.

@@ -56,7 +56,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 A smooth assignment attaches a tensor value to each point of a finite base.

@@ -18,7 +18,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 Open sets are the members of a topology. On $X = \{1,2,3\}$, the set $\{1\}$ is open in the listed topology.

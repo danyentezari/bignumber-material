@@ -23,7 +23,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 An injective map maps distinct inputs to distinct outputs.

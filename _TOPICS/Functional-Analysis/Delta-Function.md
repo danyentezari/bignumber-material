@@ -20,7 +20,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The delta distribution is concentrated at one point. Informally, it vanishes off $0$ and has total integral $1$.

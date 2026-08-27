@@ -18,7 +18,7 @@ where
 
 ![Geometric interpretation of the complex conjugate: reflecting a complex number across the real axis in the complex plane.](complex-conjugate-argand.png){#fig:complex-conjugate-argand}
 
-## Elementary Example
+## Examples
 ### Simple
 
 Complex conjugation flips the sign of the imaginary part.

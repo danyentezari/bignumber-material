@@ -23,7 +23,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 Integrability means $\int |f|$ is finite. On three sample heights, the discrete stand-in is a finite sum of absolute values.

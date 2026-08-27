@@ -45,7 +45,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 Let $g$ be a diagonal metric matrix. The inverse metric $g^{-1}$ is the matrix inverse of $g$.

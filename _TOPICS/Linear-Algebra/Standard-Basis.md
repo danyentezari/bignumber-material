@@ -38,7 +38,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The standard basis of $\mathbb{R}^{2}$ is the pair of unit axis vectors.

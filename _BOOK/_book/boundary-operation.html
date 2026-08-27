@@ -1,32 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>265 Boundary Operation | Mathematics for Physics</title>
-<meta name="author" content="bignumber-material">
-<meta name="description" content="A mapping that maps a domain to its edge that is used to relate a definite integral over a domain to a definite integral on that edge. Note: Also written \(\partial\). Also called boundary...">
-<meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="265 Boundary Operation | Mathematics for Physics">
-<meta property="og:type" content="book">
-<meta property="og:description" content="A mapping that maps a domain to its edge that is used to relate a definite integral over a domain to a definite integral on that edge. Note: Also written \(\partial\). Also called boundary...">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="265 Boundary Operation | Mathematics for Physics">
-<meta name="twitter:description" content="A mapping that maps a domain to its edge that is used to relate a definite integral over a domain to a definite integral on that edge. Note: Also written \(\partial\). Also called boundary...">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script><script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>265 Boundary Operation | Mathematics for Physics</title>
+
+    <meta name="author" content="bignumber-material" />
+  
+   <meta name="description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+   <meta name="generator" content="placeholder" />
+  <meta property="og:title" content="265 Boundary Operation | Mathematics for Physics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="265 Boundary Operation | Mathematics for Physics" />
+  
+  <meta name="twitter:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+  
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script>
+    <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet" />
+    <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script>
+    <script src="libs/bs3compat-0.11.0/transition.js"></script>
+    <script src="libs/bs3compat-0.11.0/tabs.js"></script>
+    <script src="libs/bs3compat-0.11.0/bs3compat.js"></script>
+    <link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet" />
+    <script src="libs/bs4_book-1.0.0/bs4_book.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script>
+    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-RCDW3GHNMP');
-    </script><!-- Serif + mono typefaces --><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<!-- Apply saved/preferred theme before first paint to avoid flashing --><script>
+    </script>
+
+    <!-- Serif + mono typefaces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet">
+
+    <!-- Apply saved/preferred theme before first paint to avoid flashing -->
+    <script>
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
@@ -53,20 +79,25 @@
           document.documentElement.style.fontSize = "17px";
         }
       })();
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
-<link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Differential Geometry", "href": "differential-geometry.html", "current": false}, {"title": "Boundary Operation", "href": "boundary-operation.html", "current": true}]</script>
-<link rel="canonical" href="https://book.danyentezari.com/boundary-operation.html">
-<meta property="og:url" content="https://book.danyentezari.com/boundary-operation.html">
+      <link rel="stylesheet" href="style.css" />
+  
 </head>
+
 <body data-spy="scroll" data-target="#toc">
 
 <div class="container-fluid">
 <div class="row">
-  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book">
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
     <div class="d-flex align-items-start justify-content-between">
       <h1>
@@ -78,178 +109,37 @@
     <div id="main-nav" class="collapse-lg">
       <form role="search">
         <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-</form>
+      </form>
 
-      <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled">
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="classical-mechanics.html"><span class="header-section-number">5</span> Classical Mechanics</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="condensed-matter.html"><span class="header-section-number">6</span> Condensed Matter</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="physical-chemistry.html"><span class="header-section-number">7</span> Physical Chemistry</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="physics-principles.html"><span class="header-section-number">8</span> Physics Principles</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="topology.html"><span class="header-section-number">9</span> Topology</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active-parent" href="differential-geometry.html"><span class="header-section-number">10</span> Differential Geometry</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="calculus.html"><span class="header-section-number">11</span> Calculus</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="functional-analysis.html"><span class="header-section-number">12</span> Functional Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="linear-algebra.html"><span class="header-section-number">13</span> Linear Algebra</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="abstract-algebra.html"><span class="header-section-number">14</span> Abstract Algebra</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="differential-equations.html"><span class="header-section-number">15</span> Differential Equations</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="complex-analysis.html"><span class="header-section-number">16</span> Complex Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="real-analysis.html"><span class="header-section-number">17</span> Real Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="notes.html"><span class="header-section-number">18</span> Notes</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary.html"><span class="header-section-number">19</span> Glossary</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="symbols.html"><span class="header-section-number">20</span> Symbols</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="constants.html"><span class="header-section-number">21</span> Constants</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="site-index.html"><span class="header-section-number">22</span> Index</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="bibliography.html"><span class="header-section-number">23</span> Bibliography</a>
-</div>
-</li>
-</ul>
+      <nav aria-label="Table of contents">
+        <h2>Table of contents</h2>
+        <div id="book-toc"></div>
 
         <div class="book-extra">
-          
+          <p><a id="book-repo" href="#">View book source <i class="fab fa-github"></i></a></li></p>
         </div>
       </nav>
-</div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="boundary-operation" class="section level1" number="265">
-<h1>
-<span class="header-section-number">265</span> Boundary Operation<a class="anchor" aria-label="anchor" href="#boundary-operation"><i class="fas fa-link"></i></a>
-</h1>
+    </div>
+  </header>
+
+  <main class="col-sm-12 col-md-9 col-lg-7" id="content">
+<div id="boundary-operation" class="section level1" number="265">
+<h1><span class="header-section-number">265</span> Boundary Operation</h1>
 <p>A mapping that maps a domain to its edge that is used to relate a definite integral over a domain to a definite integral on that edge.</p>
 <p>Note: Also written <span class="math inline">\(\partial\)</span>. Also called boundary operator.</p>
-<p><i></i></p>
+<p><i></p>
 <p><strong>definition [d]</strong> (<em>Boundary Operation = Boundary Operator = <span class="math inline">\(\partial\)</span></em>) From Emam: in more advanced discussions, the symbol <span class="math inline">\(\partial\)</span> is treated as an operator—a sort of derivative—and it has the property of being nilpotent, which means that applying it twice always vanishes:</p>
 <ul>
-<li>
-<span class="math inline">\(\partial^{2} = 0\)</span> .</li>
+<li><span class="math inline">\(\partial^{2} = 0\)</span> .</li>
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(\partial\)</span> is the boundary operation.</li>
-<li>
-<span class="math inline">\(\partial M\)</span> is the edge of a manifold or domain <span class="math inline">\(M\)</span>.</li>
-<li>
-<span class="math inline">\(\partial^{2} = 0\)</span> means the edge of an edge is empty.</li>
+<li><span class="math inline">\(\partial\)</span> is the boundary operation.</li>
+<li><span class="math inline">\(\partial M\)</span> is the edge of a manifold or domain <span class="math inline">\(M\)</span>.</li>
+<li><span class="math inline">\(\partial^{2} = 0\)</span> means the edge of an edge is empty.</li>
 </ul>
-<p></p>
-<p><i></i></p>
+<p></i></p>
+<p><i></p>
 <p><strong>definition [d]</strong> (<em>Boundary Operation</em>) From Gowers: in Stokes’s theorem,</p>
 <ul>
 <li><span class="math inline">\(\displaystyle \int_{S} d\omega = \int_{\partial S} \omega\)</span></li>
@@ -257,105 +147,80 @@
 <p>for an oriented manifold <span class="math inline">\(S\)</span> and form <span class="math inline">\(\omega\)</span>, where <span class="math inline">\(\partial S\)</span> is the oriented boundary of <span class="math inline">\(S\)</span>. Differentiation <span class="math inline">\(\omega \mapsto d\omega\)</span> is the adjoint of the boundary operation.</p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(\partial S\)</span> is the edge of <span class="math inline">\(S\)</span> under the boundary operation.</li>
-<li>
-<span class="math inline">\(d\omega\)</span> is the exterior derivative of <span class="math inline">\(\omega\)</span>.</li>
+<li><span class="math inline">\(\partial S\)</span> is the edge of <span class="math inline">\(S\)</span> under the boundary operation.</li>
+<li><span class="math inline">\(d\omega\)</span> is the exterior derivative of <span class="math inline">\(\omega\)</span>.</li>
 </ul>
-<p></p>
+<p></i></p>
 <p>A mapping associates a function with another function. Under this mapping, the definite integral of a derivative over a domain has the same value as the definite integral of the function over the edge of the domain that is used to find a solution to an equation.</p>
-<p><i></i></p>
+<p><i></p>
 <p><strong>definition [d]</strong> (<em>Boundary Operation</em>) From Gowers, stated with elementary terms: an equation relates the definite integral of a derivative over a domain to the definite integral over its edge,</p>
 <ul>
-<li>
-<span class="math inline">\(\displaystyle \int_{D} Df = \int_{\partial D} f\)</span> .</li>
+<li><span class="math inline">\(\displaystyle \int_{D} Df = \int_{\partial D} f\)</span> .</li>
 </ul>
 <p>where</p>
 <ul>
 <li>both integrals are definite integrals.</li>
-<li>
-<span class="math inline">\(D\)</span> is the domain, the set on which the definite integral of the derivative is taken.</li>
-<li>
-<span class="math inline">\(\partial D\)</span> is the edge of the domain under the boundary operation.</li>
-<li>
-<span class="math inline">\(f\)</span> is the function whose values appear in the definite integral on the edge.</li>
-<li>
-<span class="math inline">\(Df\)</span> is the derivative of <span class="math inline">\(f\)</span>, which appears in the definite integral over the domain.</li>
-<li>
-<span class="math inline">\(\partial\)</span> denotes the boundary operation.</li>
+<li><span class="math inline">\(D\)</span> is the domain, the set on which the definite integral of the derivative is taken.</li>
+<li><span class="math inline">\(\partial D\)</span> is the edge of the domain under the boundary operation.</li>
+<li><span class="math inline">\(f\)</span> is the function whose values appear in the definite integral on the edge.</li>
+<li><span class="math inline">\(Df\)</span> is the derivative of <span class="math inline">\(f\)</span>, which appears in the definite integral over the domain.</li>
+<li><span class="math inline">\(\partial\)</span> denotes the boundary operation.</li>
 </ul>
-<p></p>
-<div id="examples-1" class="section level2" number="265.1">
-<h2>
-<span class="header-section-number">265.1</span> Examples<a class="anchor" aria-label="anchor" href="#examples-1"><i class="fas fa-link"></i></a>
-</h2>
+<p></i></p>
+<div id="examples-26" class="section level2" number="265.1">
+<h2><span class="header-section-number">265.1</span> Examples</h2>
 <p>Before the boundary operation acts, one has a domain set <span class="math inline">\(A\)</span>. After the boundary operation acts, one has an edge set <span class="math inline">\(B = \partial A\)</span>. Stokes’s theorem then relates a definite integral over <span class="math inline">\(A\)</span> to a definite integral over <span class="math inline">\(B\)</span>.</p>
-<p><i></i></p>
+<p><i></p>
 <p><strong>example 1 [d]</strong> (<strong>Closed interval to endpoints</strong> — Nash and Sen; Emam) Before: take the domain set</p>
 <ul>
-<li>
-<span class="math inline">\(A = [a,b] = \{ x \in \mathbb{R} : a \le x \le b \}\)</span> .</li>
+<li><span class="math inline">\(A = [a,b] = \{ x \in \mathbb{R} : a \le x \le b \}\)</span> .</li>
 </ul>
 <p>After: the boundary operation maps <span class="math inline">\(A\)</span> to the edge set of endpoints</p>
 <ul>
-<li>
-<span class="math inline">\(B = \partial A = \{ a, b \}\)</span> .</li>
+<li><span class="math inline">\(B = \partial A = \{ a, b \}\)</span> .</li>
 </ul>
 <p>Nash and Sen record the same edge for the half-open interval: if <span class="math inline">\(U = [a,b)\)</span>, then <span class="math inline">\(U^{\circ} = (a,b)\)</span> and <span class="math inline">\(\overline{U} = [a,b]\)</span>, so <span class="math inline">\(b(U) = \overline{U} - U^{\circ} = \{ a, b \}\)</span>. Emam states the same passage of sets in manifold language: if <span class="math inline">\(M = [a,b]\)</span>, then <span class="math inline">\(\partial M\)</span> has dimension zero and is the pair of points <span class="math inline">\(\{ a, b \}\)</span>.</p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(A\)</span> is the domain set before <span class="math inline">\(\partial\)</span> acts.</li>
-<li>
-<span class="math inline">\(B = \partial A\)</span> is the edge set after <span class="math inline">\(\partial\)</span> acts.</li>
-<li>
-<span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are real numbers with <span class="math inline">\(a &lt; b\)</span>.</li>
+<li><span class="math inline">\(A\)</span> is the domain set before <span class="math inline">\(\partial\)</span> acts.</li>
+<li><span class="math inline">\(B = \partial A\)</span> is the edge set after <span class="math inline">\(\partial\)</span> acts.</li>
+<li><span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are real numbers with <span class="math inline">\(a &lt; b\)</span>.</li>
 </ul>
-<p></p>
-<p><i></i></p>
+<p></i></p>
+<p><i></p>
 <p><strong>example 2 [d]</strong> (<strong>Closed unit disk to circle</strong> — Lee) Before: take the domain set</p>
 <ul>
-<li>
-<span class="math inline">\(A = \overline{B}^{2} = \{ x \in \mathbb{R}^{2} : |x| \le 1 \}\)</span> .</li>
+<li><span class="math inline">\(A = \overline{B}^{2} = \{ x \in \mathbb{R}^{2} : |x| \le 1 \}\)</span> .</li>
 </ul>
 <p>After: the boundary operation maps <span class="math inline">\(A\)</span> to the unit circle</p>
 <ul>
-<li>
-<span class="math inline">\(B = \partial A = S^{1} = \{ x \in \mathbb{R}^{2} : |x| = 1 \}\)</span> .</li>
+<li><span class="math inline">\(B = \partial A = S^{1} = \{ x \in \mathbb{R}^{2} : |x| = 1 \}\)</span> .</li>
 </ul>
 <p>Lee: the closed unit disk <span class="math inline">\(\overline{B}^{2}\)</span> is a manifold with boundary whose manifold boundary is the circle. Its topological boundary as a subset of <span class="math inline">\(\mathbb{R}^{2}\)</span> is that same circle.</p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(A\)</span> is the domain set before <span class="math inline">\(\partial\)</span> acts.</li>
-<li>
-<span class="math inline">\(B = \partial A\)</span> is the edge set after <span class="math inline">\(\partial\)</span> acts.</li>
-<li>
-<span class="math inline">\(|x|\)</span> is the Euclidean length of <span class="math inline">\(x\)</span>.</li>
+<li><span class="math inline">\(A\)</span> is the domain set before <span class="math inline">\(\partial\)</span> acts.</li>
+<li><span class="math inline">\(B = \partial A\)</span> is the edge set after <span class="math inline">\(\partial\)</span> acts.</li>
+<li><span class="math inline">\(|x|\)</span> is the Euclidean length of <span class="math inline">\(x\)</span>.</li>
 </ul>
-<p></p>
-<p><i></i></p>
+<p></i></p>
+<p><i></p>
 <p><strong>example 3 [d]</strong> (<strong>Upper half-space to hyperplane</strong> — Lee) Before: take the domain set</p>
 <ul>
-<li>
-<span class="math inline">\(A = \mathbb{H}^{n} = \{ (x_{1},\ldots,x_{n}) \in \mathbb{R}^{n} : x_{n} \ge 0 \}\)</span> .</li>
+<li><span class="math inline">\(A = \mathbb{H}^{n} = \{ (x_{1},\ldots,x_{n}) \in \mathbb{R}^{n} : x_{n} \ge 0 \}\)</span> .</li>
 </ul>
 <p>After: the boundary operation maps <span class="math inline">\(A\)</span> to</p>
 <ul>
-<li>
-<span class="math inline">\(B = \partial A = \partial \mathbb{H}^{n} = \{ (x_{1},\ldots,x_{n}) \in \mathbb{R}^{n} : x_{n} = 0 \}\)</span> .</li>
+<li><span class="math inline">\(B = \partial A = \partial \mathbb{H}^{n} = \{ (x_{1},\ldots,x_{n}) \in \mathbb{R}^{n} : x_{n} = 0 \}\)</span> .</li>
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(A\)</span> is the domain set before <span class="math inline">\(\partial\)</span> acts.</li>
-<li>
-<span class="math inline">\(B = \partial A\)</span> is the edge set after <span class="math inline">\(\partial\)</span> acts.</li>
-<li>
-<span class="math inline">\(n\)</span> is a natural number with <span class="math inline">\(n &gt; 0\)</span>.</li>
+<li><span class="math inline">\(A\)</span> is the domain set before <span class="math inline">\(\partial\)</span> acts.</li>
+<li><span class="math inline">\(B = \partial A\)</span> is the edge set after <span class="math inline">\(\partial\)</span> acts.</li>
+<li><span class="math inline">\(n\)</span> is a natural number with <span class="math inline">\(n &gt; 0\)</span>.</li>
 </ul>
-<p></p>
-<p><i></i></p>
+<p></i></p>
+<p><i></p>
 <p><strong>example 4 [d]</strong> (<strong>Edge of an edge is empty</strong> — Emam; Nakahara) Apply <span class="math inline">\(\partial\)</span> twice to a solid ball. Before the first application,</p>
 <ul>
 <li><span class="math inline">\(A = D^{3}\)</span></li>
@@ -366,45 +231,34 @@
 </ul>
 <p>is the sphere. After a second application the edge of that edge is empty:</p>
 <ul>
-<li>
-<span class="math inline">\(\partial B = \partial^{2} A = \emptyset\)</span> .</li>
+<li><span class="math inline">\(\partial B = \partial^{2} A = \emptyset\)</span> .</li>
 </ul>
 <p>Emam: the boundary of a boundary is always vanishing; a closed manifold such as a circle has empty boundary, written <span class="math inline">\(\partial M = 0\)</span>, and <span class="math inline">\(\partial^{2} = 0\)</span>. The same holds for a sphere. Nakahara: the boundary of the solid ball <span class="math inline">\(D^{3}\)</span> is the sphere <span class="math inline">\(S^{2}\)</span>, and the boundary of the sphere is an empty set.</p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(A\)</span> is the domain set before <span class="math inline">\(\partial\)</span> acts.</li>
-<li>
-<span class="math inline">\(B = \partial A\)</span> is the edge set after one application of <span class="math inline">\(\partial\)</span>.</li>
-<li>
-<span class="math inline">\(\partial^{2} A = \emptyset\)</span> is the result after <span class="math inline">\(\partial\)</span> acts on <span class="math inline">\(B\)</span>.</li>
+<li><span class="math inline">\(A\)</span> is the domain set before <span class="math inline">\(\partial\)</span> acts.</li>
+<li><span class="math inline">\(B = \partial A\)</span> is the edge set after one application of <span class="math inline">\(\partial\)</span>.</li>
+<li><span class="math inline">\(\partial^{2} A = \emptyset\)</span> is the result after <span class="math inline">\(\partial\)</span> acts on <span class="math inline">\(B\)</span>.</li>
 </ul>
-<p></p>
-<p><i></i></p>
+<p></i></p>
+<p><i></p>
 <p><strong>example 5 [d]</strong> (<strong>Before and after in Stokes’s theorem</strong> — Gowers) Before: a definite integral is taken over a domain set <span class="math inline">\(A = D\)</span>. After the boundary operation produces <span class="math inline">\(B = \partial D\)</span>, Stokes’s theorem moves that definite integral onto the edge set:</p>
 <ul>
-<li>
-<span class="math inline">\(\displaystyle \int_{A} d\omega = \int_{B} \omega = \int_{\partial D} \omega\)</span> .</li>
+<li><span class="math inline">\(\displaystyle \int_{A} d\omega = \int_{B} \omega = \int_{\partial D} \omega\)</span> .</li>
 </ul>
 <p>The sets alone change from <span class="math inline">\(A\)</span> to <span class="math inline">\(B = \partial A\)</span>; the equality says the two definite integrals have the same value.</p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(A = D\)</span> is the domain set before the move.</li>
-<li>
-<span class="math inline">\(B = \partial D\)</span> is the edge set after <span class="math inline">\(\partial\)</span> acts.</li>
+<li><span class="math inline">\(A = D\)</span> is the domain set before the move.</li>
+<li><span class="math inline">\(B = \partial D\)</span> is the edge set after <span class="math inline">\(\partial\)</span> acts.</li>
 <li>both integrals are definite integrals.</li>
 </ul>
-<p></p>
+<p></i></p>
 </div>
-<div id="elementary-example-25" class="section level2" number="265.2">
-<h2>
-<span class="header-section-number">265.2</span> Elementary Example<a class="anchor" aria-label="anchor" href="#elementary-example-25"><i class="fas fa-link"></i></a>
-</h2>
+<div id="examples-27" class="section level2" number="265.2">
+<h2><span class="header-section-number">265.2</span> Examples</h2>
 <div id="simple-25" class="section level3" number="265.2.1">
-<h3>
-<span class="header-section-number">265.2.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple-25"><i class="fas fa-link"></i></a>
-</h3>
+<h3><span class="header-section-number">265.2.1</span> Simple</h3>
 <p>The boundary operation <span class="math inline">\(\partial\)</span> maps a domain set <span class="math inline">\(A\)</span> to its edge set <span class="math inline">\(B = \partial A\)</span>.</p>
 <p><span class="math display">\[
 A = \{ a,\ b,\ c,\ d \}
@@ -414,18 +268,13 @@ B = \partial A = \{ a,\ b \}
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(A\)</span> is the domain set before <span class="math inline">\(\partial\)</span> acts.</li>
-<li>
-<span class="math inline">\(B = \partial A\)</span> is the edge set after <span class="math inline">\(\partial\)</span> acts.</li>
-<li>
-<span class="math inline">\(\partial\)</span> is the boundary operation.</li>
+<li><span class="math inline">\(A\)</span> is the domain set before <span class="math inline">\(\partial\)</span> acts.</li>
+<li><span class="math inline">\(B = \partial A\)</span> is the edge set after <span class="math inline">\(\partial\)</span> acts.</li>
+<li><span class="math inline">\(\partial\)</span> is the boundary operation.</li>
 </ul>
 </div>
 <div id="general-25" class="section level3" number="265.2.2">
-<h3>
-<span class="header-section-number">265.2.2</span> General<a class="anchor" aria-label="anchor" href="#general-25"><i class="fas fa-link"></i></a>
-</h3>
+<h3><span class="header-section-number">265.2.2</span> General</h3>
 <p>Nilpotence says the edge of an edge is empty: <span class="math inline">\(\partial^{2} = 0\)</span>. A solid ball maps to a sphere, then to the empty set.</p>
 <p><span class="math display">\[
 A = D^{3}
@@ -438,19 +287,14 @@ B = \partial A = S^{2}
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(D^{3}\)</span> is the solid ball.</li>
-<li>
-<span class="math inline">\(S^{2}\)</span> is the sphere, the edge of <span class="math inline">\(D^{3}\)</span>.</li>
-<li>
-<span class="math inline">\(\emptyset\)</span> is the empty set.</li>
+<li><span class="math inline">\(D^{3}\)</span> is the solid ball.</li>
+<li><span class="math inline">\(S^{2}\)</span> is the sphere, the edge of <span class="math inline">\(D^{3}\)</span>.</li>
+<li><span class="math inline">\(\emptyset\)</span> is the empty set.</li>
 </ul>
 </div>
 </div>
 <div id="references-237" class="section level2" number="265.3">
-<h2>
-<span class="header-section-number">265.3</span> References<a class="anchor" aria-label="anchor" href="#references-237"><i class="fas fa-link"></i></a>
-</h2>
+<h2><span class="header-section-number">265.3</span> References</h2>
 <ol style="list-style-type: decimal">
 <li>Emam, M. H. <em>Covariant Physics</em>. Oxford University Press, 2021. — <span class="math inline">\(\partial\)</span> as a nilpotent operator; <span class="math inline">\(\partial^{2}=0\)</span>; line segment to endpoints.</li>
 <li>Gowers, T., Barrow-Green, J., &amp; Leader, I. (eds.). <em>The Princeton Companion to Mathematics</em>. Princeton University Press, 2008. — boundary operation in Stokes’s theorem; adjoint of differentiation.</li>
@@ -974,7 +818,8 @@ B = \partial A = S^{2}
       initClassicLayout();
     }
   })();
-</script><script>
+</script>
+<script>
   /* Prefer heading matches in book search (e.g. "Lagrangian" page over References). */
   (function () {
     var WEIGHTED_FUSE_OPTIONS = {
@@ -1070,35 +915,28 @@ B = \partial A = S^{2}
       start();
     }
   })();
-</script><div class="chapter-nav">
-<div class="prev"><a href="alternating-k-linear-function.html"><span class="header-section-number">264</span> Alternating k-linear function</a></div>
-<div class="next"><a href="bundle.html"><span class="header-section-number">266</span> Bundle</a></div>
-</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#boundary-operation"><span class="header-section-number">265</span> Boundary Operation</a></li>
-<li><a class="nav-link" href="#examples-1"><span class="header-section-number">265.1</span> Examples</a></li>
-<li>
-<a class="nav-link" href="#elementary-example-25"><span class="header-section-number">265.2</span> Elementary Example</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#simple-25"><span class="header-section-number">265.2.1</span> Simple</a></li>
-<li><a class="nav-link" href="#general-25"><span class="header-section-number">265.2.2</span> General</a></li>
-</ul>
-</li>
-<li><a class="nav-link" href="#references-237"><span class="header-section-number">265.3</span> References</a></li>
-</ul>
+</script>
+  </main>
+
+  <div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <div id="book-on-this-page"></div>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-          
+          <li><a id="book-source" href="#">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="#">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
-</div>
+      </div>
     </nav>
-</div>
+  </div>
 
 </div>
 </div> <!-- .container -->
 
-<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+<footer class="bg-primary text-light mt-5">
+  <div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
     <p>"<strong>Mathematics for Physics</strong>" was written by bignumber-material. </p>
@@ -1109,7 +947,11 @@ B = \partial A = S^{2}
   </div>
 
 </div></div>
-</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+</footer>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
@@ -1121,7 +963,8 @@ B = \partial A = S^{2}
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
-</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+</script>
+<script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
 for (let popover of popovers) {
   const div = document.createElement('div');
   div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
@@ -1139,4 +982,5 @@ for (let popover of popovers) {
 }
 </script>
 </body>
+
 </html>

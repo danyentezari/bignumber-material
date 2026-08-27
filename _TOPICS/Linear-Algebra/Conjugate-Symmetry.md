@@ -16,7 +16,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 Conjugate symmetry says swapping the two inputs conjugates the inner-product value.

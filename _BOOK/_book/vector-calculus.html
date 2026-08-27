@@ -1,32 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>327 Vector Calculus | Mathematics for Physics</title>
-<meta name="author" content="bignumber-material">
-<meta name="description" content="A set of derivative and integral operations on vector fields that is used to solve equations involving vectors that vary in space.  327.0.1 Stoke’s Theorem Let \(S\) be a piecewise smooth oriented...">
-<meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="327 Vector Calculus | Mathematics for Physics">
-<meta property="og:type" content="book">
-<meta property="og:description" content="A set of derivative and integral operations on vector fields that is used to solve equations involving vectors that vary in space.  327.0.1 Stoke’s Theorem Let \(S\) be a piecewise smooth oriented...">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="327 Vector Calculus | Mathematics for Physics">
-<meta name="twitter:description" content="A set of derivative and integral operations on vector fields that is used to solve equations involving vectors that vary in space.  327.0.1 Stoke’s Theorem Let \(S\) be a piecewise smooth oriented...">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script><script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>334 Vector Calculus | Mathematics for Physics</title>
+
+    <meta name="author" content="bignumber-material" />
+  
+   <meta name="description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+   <meta name="generator" content="placeholder" />
+  <meta property="og:title" content="334 Vector Calculus | Mathematics for Physics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="334 Vector Calculus | Mathematics for Physics" />
+  
+  <meta name="twitter:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+  
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script>
+    <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet" />
+    <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script>
+    <script src="libs/bs3compat-0.11.0/transition.js"></script>
+    <script src="libs/bs3compat-0.11.0/tabs.js"></script>
+    <script src="libs/bs3compat-0.11.0/bs3compat.js"></script>
+    <link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet" />
+    <script src="libs/bs4_book-1.0.0/bs4_book.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script>
+    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-RCDW3GHNMP');
-    </script><!-- Serif + mono typefaces --><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<!-- Apply saved/preferred theme before first paint to avoid flashing --><script>
+    </script>
+
+    <!-- Serif + mono typefaces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet">
+
+    <!-- Apply saved/preferred theme before first paint to avoid flashing -->
+    <script>
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
@@ -53,20 +79,25 @@
           document.documentElement.style.fontSize = "17px";
         }
       })();
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
-<link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Calculus", "href": "calculus.html", "current": false}, {"title": "Vector Calculus", "href": "vector-calculus.html", "current": true}]</script>
-<link rel="canonical" href="https://book.danyentezari.com/vector-calculus.html">
-<meta property="og:url" content="https://book.danyentezari.com/vector-calculus.html">
+      <link rel="stylesheet" href="style.css" />
+  
 </head>
+
 <body data-spy="scroll" data-target="#toc">
 
 <div class="container-fluid">
 <div class="row">
-  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book">
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
     <div class="d-flex align-items-start justify-content-between">
       <h1>
@@ -78,239 +109,81 @@
     <div id="main-nav" class="collapse-lg">
       <form role="search">
         <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-</form>
+      </form>
 
-      <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled">
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="classical-mechanics.html"><span class="header-section-number">5</span> Classical Mechanics</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="condensed-matter.html"><span class="header-section-number">6</span> Condensed Matter</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="physical-chemistry.html"><span class="header-section-number">7</span> Physical Chemistry</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="physics-principles.html"><span class="header-section-number">8</span> Physics Principles</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="topology.html"><span class="header-section-number">9</span> Topology</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="differential-geometry.html"><span class="header-section-number">10</span> Differential Geometry</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active-parent" href="calculus.html"><span class="header-section-number">11</span> Calculus</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="functional-analysis.html"><span class="header-section-number">12</span> Functional Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="linear-algebra.html"><span class="header-section-number">13</span> Linear Algebra</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="abstract-algebra.html"><span class="header-section-number">14</span> Abstract Algebra</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="differential-equations.html"><span class="header-section-number">15</span> Differential Equations</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="complex-analysis.html"><span class="header-section-number">16</span> Complex Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="real-analysis.html"><span class="header-section-number">17</span> Real Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="notes.html"><span class="header-section-number">18</span> Notes</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary.html"><span class="header-section-number">19</span> Glossary</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="symbols.html"><span class="header-section-number">20</span> Symbols</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="constants.html"><span class="header-section-number">21</span> Constants</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="site-index.html"><span class="header-section-number">22</span> Index</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="bibliography.html"><span class="header-section-number">23</span> Bibliography</a>
-</div>
-</li>
-</ul>
+      <nav aria-label="Table of contents">
+        <h2>Table of contents</h2>
+        <div id="book-toc"></div>
 
         <div class="book-extra">
-          
+          <p><a id="book-repo" href="#">View book source <i class="fab fa-github"></i></a></li></p>
         </div>
       </nav>
-</div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="vector-calculus" class="section level1" number="327">
-<h1>
-<span class="header-section-number">327</span> Vector Calculus<a class="anchor" aria-label="anchor" href="#vector-calculus"><i class="fas fa-link"></i></a>
-</h1>
+    </div>
+  </header>
+
+  <main class="col-sm-12 col-md-9 col-lg-7" id="content">
+<div id="vector-calculus" class="section level1" number="334">
+<h1><span class="header-section-number">334</span> Vector Calculus</h1>
 <p>A set of derivative and integral operations on vector fields that is used to solve equations involving vectors that vary in space.</p>
-<div id="stokes-theorem" class="section level3" number="327.0.1">
-<h3>
-<span class="header-section-number">327.0.1</span> Stoke’s Theorem<a class="anchor" aria-label="anchor" href="#stokes-theorem"><i class="fas fa-link"></i></a>
-</h3>
+<div id="stokes-theorem" class="section level3" number="334.0.1">
+<h3><span class="header-section-number">334.0.1</span> Stoke’s Theorem</h3>
 <p>Let <span class="math inline">\(S\)</span> be a piecewise smooth oriented surface in space, and let the boundary of <span class="math inline">\(S\)</span> be a piecewise smooth simple closed curve <span class="math inline">\(C\)</span>. If <span class="math inline">\(\mathbf{F}(x, y, z)\)</span> is a continuous vector function with continuous first partial derivatives in a domain containing <span class="math inline">\(S\)</span>, then:</p>
 <p><span class="math display">\[\iint_S (\text{curl } \mathbf{F}) \cdot \mathbf{n} \, dA = \oint_C \mathbf{F} \cdot \dfrac{d\mathbf{r}}{ds}(s) \, ds\]</span></p>
 <p>In this formula:</p>
 <ul>
-<li>
-<span class="math inline">\(\mathbf{n}\)</span> is the unit normal vector of <span class="math inline">\(S\)</span>.</li>
-<li>
-<span class="math inline">\(\dfrac{d\mathbf{r}}{ds}(s)\)</span> is the unit tangent vector of <span class="math inline">\(C\)</span>.</li>
-<li>
-<span class="math inline">\(s\)</span> is the arc length of <span class="math inline">\(C\)</span>.</li>
+<li><span class="math inline">\(\mathbf{n}\)</span> is the unit normal vector of <span class="math inline">\(S\)</span>.</li>
+<li><span class="math inline">\(\dfrac{d\mathbf{r}}{ds}(s)\)</span> is the unit tangent vector of <span class="math inline">\(C\)</span>.</li>
+<li><span class="math inline">\(s\)</span> is the arc length of <span class="math inline">\(C\)</span>.</li>
 <li>The integration around <span class="math inline">\(C\)</span> is performed in a sense consistent with the orientation of the normal vector <span class="math inline">\(\mathbf{n}\)</span>, following the right-hand rule.</li>
 </ul>
-<p><br></p>
+<p><br/></p>
 </div>
-<div id="flux" class="section level3" number="327.0.2">
-<h3>
-<span class="header-section-number">327.0.2</span> Flux<a class="anchor" aria-label="anchor" href="#flux"><i class="fas fa-link"></i></a>
-</h3>
+<div id="flux" class="section level3" number="334.0.2">
+<h3><span class="header-section-number">334.0.2</span> Flux</h3>
 <p>Total amount of a field or fluid passing through a surface.</p>
-<p><br></p>
+<p><br/></p>
 </div>
-<div id="double-integral" class="section level3" number="327.0.3">
-<h3>
-<span class="header-section-number">327.0.3</span> Double Integral<a class="anchor" aria-label="anchor" href="#double-integral"><i class="fas fa-link"></i></a>
-</h3>
+<div id="double-integral" class="section level3" number="334.0.3">
+<h3><span class="header-section-number">334.0.3</span> Double Integral</h3>
 <p>The double integral is defined by the following identity:
 <span class="math display">\[\iint_R f(x, y) \, dA = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*) \Delta A\]</span></p>
 <p>where</p>
 <ul>
-<li>
-<li>
-<span class="math inline">\(R\)</span> is a closed bounded region in the <span class="math inline">\(xy\)</span>-plane over which the function is integrated [1, 2].</li>
-<li>
-<span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are the number of subrectangles into which the region <span class="math inline">\(R\)</span> is partitioned [3, 4].</li>
-<li>
-<span class="math inline">\(R_{ij}\)</span> are the smaller subrectangles resulting from dividing <span class="math inline">\(R\)</span> using a grid of lines parallel to the axes [4, 5].</li>
-<li>
-<span class="math inline">\(\Delta A\)</span> represents the area of each subrectangle <span class="math inline">\(R_{ij}\)</span> [4, 6].</li>
-<li>
-<span class="math inline">\((x_{ij}^*, y_{ij}^*)\)</span> is an arbitrary sample point chosen within the subrectangle <span class="math inline">\(R_{ij}\)</span> [4, 6].</li>
+<li></li>
+<li><span class="math inline">\(R\)</span> is a closed bounded region in the <span class="math inline">\(xy\)</span>-plane over which the function is integrated [1, 2].</li>
+<li><span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are the number of subrectangles into which the region <span class="math inline">\(R\)</span> is partitioned [3, 4].</li>
+<li><span class="math inline">\(R_{ij}\)</span> are the smaller subrectangles resulting from dividing <span class="math inline">\(R\)</span> using a grid of lines parallel to the axes [4, 5].</li>
+<li><span class="math inline">\(\Delta A\)</span> represents the area of each subrectangle <span class="math inline">\(R_{ij}\)</span> [4, 6].</li>
+<li><span class="math inline">\((x_{ij}^*, y_{ij}^*)\)</span> is an arbitrary sample point chosen within the subrectangle <span class="math inline">\(R_{ij}\)</span> [4, 6].</li>
 <li>The limit is taken as <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> approach infinity such that the maximum diameter (the greatest distance between any two points within a subregion) approaches zero [3, 7].</li>
 <li>The function <span class="math inline">\(f(x, y)\)</span>, the integrand, is typically assumed to be continuous on <span class="math inline">\(R\)</span> to ensure the limit exists and is independent of the choice of sample points [7, 8].</li>
 </ul>
-<p><br></p>
+<p><br/></p>
 </div>
-<div id="double-integral-notational-variations" class="section level3" number="327.0.4">
-<h3>
-<span class="header-section-number">327.0.4</span> Double Integral Notational Variations<a class="anchor" aria-label="anchor" href="#double-integral-notational-variations"><i class="fas fa-link"></i></a>
-</h3>
+<div id="double-integral-notational-variations" class="section level3" number="334.0.4">
+<h3><span class="header-section-number">334.0.4</span> Double Integral Notational Variations</h3>
 <p>There exist double integral with two equivalent notations:
 * Differential Area Form: <span class="math inline">\(\displaystyle \iint_R f(x, y) \, dA\)</span>.
 * Coordinate Form: <span class="math inline">\(\displaystyle \iint_R f(x, y) \, dx \, dy\)</span>.</p>
-<p><br></p>
+<p><br/></p>
 </div>
-<div id="projection" class="section level3" number="327.0.5">
-<h3>
-<span class="header-section-number">327.0.5</span> Projection<a class="anchor" aria-label="anchor" href="#projection"><i class="fas fa-link"></i></a>
-</h3>
-<div class="inline-figure"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20260211170054272961/vec_3.webp"></div>
-<p><i></i></p>
+<div id="projection" class="section level3" number="334.0.5">
+<h3><span class="header-section-number">334.0.5</span> Projection</h3>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20260211170054272961/vec_3.webp" /></p>
+<p><i></p>
 <p><strong>definition</strong> (<em>vector projection</em>) The vector representing the “shadow” of a vector <span class="math inline">\(\mathbf{b}\)</span> cast onto the line containing a vector <span class="math inline">\(\mathbf{a}\)</span>, denoted by <span class="math inline">\(\text{proj}_{\mathbf{a}} \mathbf{b}\)</span>. Geometrically, it is the vector from the common initial point to the foot of the perpendicular dropped from the tip of <span class="math inline">\(\mathbf{b}\)</span> onto the line containing <span class="math inline">\(\mathbf{a}\)</span>. It is calculated using the following formula:</p>
 <ul>
 <li><span class="math inline">\(\text{proj}_{\mathbf{a}} \mathbf{b} = \left( \dfrac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|^2} \right) \mathbf{a}\)</span></li>
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(\mathbf{a}, \mathbf{b}\)</span> are vectors in a coordinate system.</li>
-<li>
-<span class="math inline">\(\mathbf{a} \cdot \mathbf{b}\)</span> is the dot product of the two vectors.</li>
-<li>
-<span class="math inline">\(|\mathbf{a}|\)</span> is the magnitude of vector <span class="math inline">\(\mathbf{a}\)</span>.</li>
+<li><span class="math inline">\(\mathbf{a}, \mathbf{b}\)</span> are vectors in a coordinate system.</li>
+<li><span class="math inline">\(\mathbf{a} \cdot \mathbf{b}\)</span> is the dot product of the two vectors.</li>
+<li><span class="math inline">\(|\mathbf{a}|\)</span> is the magnitude of vector <span class="math inline">\(\mathbf{a}\)</span>.</li>
 </ul>
-<p></p>
-<p><i></i></p>
+<p></i></p>
+<p><i></p>
 <p><strong>definition</strong> (<em>scalar projection</em>) The signed magnitude of the vector projection of <span class="math inline">\(\mathbf{b}\)</span> onto <span class="math inline">\(\mathbf{a}\)</span>, also referred to as the component of <span class="math inline">\(\mathbf{b}\)</span> along <span class="math inline">\(\mathbf{a}\)</span>, denoted by <span class="math inline">\(\text{comp}_{\mathbf{a}} \mathbf{b}\)</span>. It represents the length of the “shadow” and is positive if the angle between the vectors is acute and negative if it is obtuse. It is defined by the following formulas:</p>
 <ul>
 <li><span class="math inline">\(\text{comp}_{\mathbf{a}} \mathbf{b} = \dfrac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|}\)</span></li>
@@ -318,28 +191,27 @@
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(\mathbf{a}, \mathbf{b}\)</span> are vectors in a coordinate system.</li>
-<li>
-<span class="math inline">\(\theta\)</span> is the angle between vectors <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span>.</li>
-<li>
-<span class="math inline">\(|\mathbf{b}|\)</span> is the magnitude of vector <span class="math inline">\(\mathbf{b}\)</span>.</li>
+<li><span class="math inline">\(\mathbf{a}, \mathbf{b}\)</span> are vectors in a coordinate system.</li>
+<li><span class="math inline">\(\theta\)</span> is the angle between vectors <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span>.</li>
+<li><span class="math inline">\(|\mathbf{b}|\)</span> is the magnitude of vector <span class="math inline">\(\mathbf{b}\)</span>.</li>
 </ul>
-<p></p>
+<p></i></p>
 </div>
-<div id="topology-reference" class="section level3" number="327.0.6">
-<h3>
-<span class="header-section-number">327.0.6</span> Topology Reference<a class="anchor" aria-label="anchor" href="#topology-reference"><i class="fas fa-link"></i></a>
-</h3>
+<div id="topology-reference" class="section level3" number="334.0.6">
+<h3><span class="header-section-number">334.0.6</span> Topology Reference</h3>
 <p>–&gt; <a href="../lessons/topology.md">Topology.md</a></p>
 <div class="topic-index">
 <ul>
+<li><a href="basic-derivation-of-jacobian.html">Basic Derivation of Jacobian</a></li>
 <li><a href="chain-rule.html">Chain Rule</a></li>
 <li><a href="cross-product.html">Cross Product</a></li>
 <li><a href="curl.html">Curl</a></li>
 <li><a href="curve.html">Curve</a></li>
 <li><a href="definite-integral.html">Definite Integral</a></li>
 <li><a href="derivation-of-curl.html">Derivation of Curl</a></li>
+<li><a href="derivation-of-divergence.html">Derivation of Divergence</a></li>
+<li><a href="derivation-of-grad.html">Derivation of Grad</a></li>
+<li><a href="derivation-of-jacobian.html">Derivation of Jacobian</a></li>
 <li><a href="derivation-of-taylor-expansion.html">Derivation of Taylor Expansion</a></li>
 <li><a href="divergence.html">Divergence</a></li>
 <li><a href="dot-product.html">Dot Product</a></li>
@@ -348,12 +220,14 @@
 <li><a href="gradient.html">Gradient</a></li>
 <li><a href="improper-integral.html">Improper Integral</a></li>
 <li><a href="indefinite-integral.html">Indefinite Integral</a></li>
+<li><a href="jacobian.html">Jacobian</a></li>
 <li><a href="legendre-transform.html">Legendre Transform</a></li>
 <li><a href="legendre-transform-derivation.html">Legendre Transform Derivation</a></li>
 <li><a href="limit.html">Limit</a></li>
 <li><a href="line-integral.html">Line Integral</a></li>
 <li><a href="notes-1.html">Notes</a></li>
 <li><a href="parameterization.html">Parameterization</a></li>
+<li><a href="partial-derivative.html">Partial Derivative</a></li>
 <li><a href="real-parameter.html">Real Parameter</a></li>
 <li><a href="scalar-projection.html">Scalar Projection</a></li>
 <li><a href="smooth-curve.html">Smooth Curve</a></li>
@@ -833,7 +707,8 @@
       initClassicLayout();
     }
   })();
-</script><script>
+</script>
+<script>
   /* Prefer heading matches in book search (e.g. "Lagrangian" page over References). */
   (function () {
     var WEIGHTED_FUSE_OPTIONS = {
@@ -929,34 +804,28 @@
       start();
     }
   })();
-</script><div class="chapter-nav">
-<div class="prev"><a href="smooth-curve.html"><span class="header-section-number">326</span> Smooth Curve</a></div>
-<div class="next"><a href="vector-differential-operator.html"><span class="header-section-number">328</span> Vector Differential Operator</a></div>
-</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li>
-<a class="nav-link" href="#vector-calculus"><span class="header-section-number">327</span> Vector Calculus</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#stokes-theorem"><span class="header-section-number">327.0.1</span> Stoke’s Theorem</a></li>
-<li><a class="nav-link" href="#flux"><span class="header-section-number">327.0.2</span> Flux</a></li>
-<li><a class="nav-link" href="#double-integral"><span class="header-section-number">327.0.3</span> Double Integral</a></li>
-<li><a class="nav-link" href="#double-integral-notational-variations"><span class="header-section-number">327.0.4</span> Double Integral Notational Variations</a></li>
-<li><a class="nav-link" href="#projection"><span class="header-section-number">327.0.5</span> Projection</a></li>
-<li><a class="nav-link" href="#topology-reference"><span class="header-section-number">327.0.6</span> Topology Reference</a></li>
-</ul>
-</li></ul>
+</script>
+  </main>
+
+  <div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <div id="book-on-this-page"></div>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-          
+          <li><a id="book-source" href="#">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="#">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
-</div>
+      </div>
     </nav>
-</div>
+  </div>
 
 </div>
 </div> <!-- .container -->
 
-<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+<footer class="bg-primary text-light mt-5">
+  <div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
     <p>"<strong>Mathematics for Physics</strong>" was written by bignumber-material. </p>
@@ -967,7 +836,11 @@
   </div>
 
 </div></div>
-</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+</footer>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
@@ -979,7 +852,8 @@
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
-</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+</script>
+<script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
 for (let popover of popovers) {
   const div = document.createElement('div');
   div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
@@ -997,4 +871,5 @@ for (let popover of popovers) {
 }
 </script>
 </body>
+
 </html>

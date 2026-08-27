@@ -19,7 +19,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A bilinear map is linear in each slot separately. Values on two basis vectors need not change sign under a swap.

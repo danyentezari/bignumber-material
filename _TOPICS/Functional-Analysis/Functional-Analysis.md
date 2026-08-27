@@ -2,7 +2,7 @@
 
 Functional analysis is the study of function spaces and the operators acting on function spaces. In functional analysis, functions are viewed as points in a space. The main applications, in the context of physics, are the solution of differential and integral equations.
 
-## Elementary Example
+## Examples
 ### Simple
 
 Functional analysis treats functions as points of a space. Here three functions form a finite set of points.

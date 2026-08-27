@@ -50,7 +50,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 Covariant rank $s$ counts lower indices. A covector is type $(0,1)$, so $s = 1$.

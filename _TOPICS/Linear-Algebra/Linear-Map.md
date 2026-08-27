@@ -45,7 +45,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A linear map preserves linear combinations. Here a map $\mathbb{R}^{2} \rightarrow \mathbb{R}^{2}$.

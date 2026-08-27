@@ -45,7 +45,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 A type-$(0,2)$ tensor field assigns a bilinear form to each point.

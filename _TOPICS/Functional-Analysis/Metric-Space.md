@@ -21,7 +21,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A metric $d$ assigns a distance to each pair of points. On three points of the line, use absolute difference.

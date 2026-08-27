@@ -26,7 +26,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A complete set spans a dense subspace. In $\mathbb{R}^{2}$, the two standard basis vectors form a complete set.

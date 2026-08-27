@@ -28,7 +28,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The Cartesian product $X \times Y$ is the set of all ordered pairs with first entry from $X$ and second entry from $Y$.

@@ -40,7 +40,7 @@ where
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 A smooth mapping maps each domain point to a unique image. A finite sample of $f(x) = x^{2}$ shows the rule.

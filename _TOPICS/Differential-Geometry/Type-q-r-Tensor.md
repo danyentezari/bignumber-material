@@ -53,7 +53,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 A type-$(0,1)$ tensor is a covector: one lower index and no upper index.

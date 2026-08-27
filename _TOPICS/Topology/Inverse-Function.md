@@ -23,7 +23,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 An inverse function reverses a bijection: $f^{-1}(y) = x$ exactly when $f(x) = y$.

@@ -19,7 +19,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A two-form is antisymmetric on ordered pairs of vectors.

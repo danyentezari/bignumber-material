@@ -47,7 +47,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 A constant metric has matrix entries that do not depend on position. Let $g$ be the Euclidean metric on two axes.

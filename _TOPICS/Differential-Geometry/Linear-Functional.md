@@ -17,7 +17,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A linear functional maps each vector to a scalar.

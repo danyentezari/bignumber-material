@@ -44,7 +44,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 Nondegeneracy of a metric $g$ means: if $g(v,w) = 0$ for every $w$, then $v = 0$.

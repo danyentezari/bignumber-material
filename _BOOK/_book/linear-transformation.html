@@ -1,32 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>374 Linear Transformation | Mathematics for Physics</title>
-<meta name="author" content="bignumber-material">
-<meta name="description" content="A linear transformation is a mapping of a vector to another vector in a codomain that is used to represent a change in a scalar value. Note: Also called linear map. definition [d] (Linear...">
-<meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="374 Linear Transformation | Mathematics for Physics">
-<meta property="og:type" content="book">
-<meta property="og:description" content="A linear transformation is a mapping of a vector to another vector in a codomain that is used to represent a change in a scalar value. Note: Also called linear map. definition [d] (Linear...">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="374 Linear Transformation | Mathematics for Physics">
-<meta name="twitter:description" content="A linear transformation is a mapping of a vector to another vector in a codomain that is used to represent a change in a scalar value. Note: Also called linear map. definition [d] (Linear...">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script><script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>381 Linear Transformation | Mathematics for Physics</title>
+
+    <meta name="author" content="bignumber-material" />
+  
+   <meta name="description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+   <meta name="generator" content="placeholder" />
+  <meta property="og:title" content="381 Linear Transformation | Mathematics for Physics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="381 Linear Transformation | Mathematics for Physics" />
+  
+  <meta name="twitter:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+  
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script>
+    <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet" />
+    <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script>
+    <script src="libs/bs3compat-0.11.0/transition.js"></script>
+    <script src="libs/bs3compat-0.11.0/tabs.js"></script>
+    <script src="libs/bs3compat-0.11.0/bs3compat.js"></script>
+    <link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet" />
+    <script src="libs/bs4_book-1.0.0/bs4_book.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script>
+    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-RCDW3GHNMP');
-    </script><!-- Serif + mono typefaces --><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<!-- Apply saved/preferred theme before first paint to avoid flashing --><script>
+    </script>
+
+    <!-- Serif + mono typefaces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet">
+
+    <!-- Apply saved/preferred theme before first paint to avoid flashing -->
+    <script>
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
@@ -53,20 +79,25 @@
           document.documentElement.style.fontSize = "17px";
         }
       })();
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
-<link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Linear Algebra", "href": "linear-algebra.html", "current": false}, {"title": "Linear Transformation", "href": "linear-transformation.html", "current": true}]</script>
-<link rel="canonical" href="https://book.danyentezari.com/linear-transformation.html">
-<meta property="og:url" content="https://book.danyentezari.com/linear-transformation.html">
+      <link rel="stylesheet" href="style.css" />
+  
 </head>
+
 <body data-spy="scroll" data-target="#toc">
 
 <div class="container-fluid">
 <div class="row">
-  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book">
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
     <div class="d-flex align-items-start justify-content-between">
       <h1>
@@ -78,238 +109,77 @@
     <div id="main-nav" class="collapse-lg">
       <form role="search">
         <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-</form>
+      </form>
 
-      <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled">
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="classical-mechanics.html"><span class="header-section-number">5</span> Classical Mechanics</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="condensed-matter.html"><span class="header-section-number">6</span> Condensed Matter</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="physical-chemistry.html"><span class="header-section-number">7</span> Physical Chemistry</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="physics-principles.html"><span class="header-section-number">8</span> Physics Principles</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="topology.html"><span class="header-section-number">9</span> Topology</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="differential-geometry.html"><span class="header-section-number">10</span> Differential Geometry</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="calculus.html"><span class="header-section-number">11</span> Calculus</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="functional-analysis.html"><span class="header-section-number">12</span> Functional Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active-parent" href="linear-algebra.html"><span class="header-section-number">13</span> Linear Algebra</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="abstract-algebra.html"><span class="header-section-number">14</span> Abstract Algebra</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="differential-equations.html"><span class="header-section-number">15</span> Differential Equations</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="complex-analysis.html"><span class="header-section-number">16</span> Complex Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="real-analysis.html"><span class="header-section-number">17</span> Real Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="notes.html"><span class="header-section-number">18</span> Notes</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary.html"><span class="header-section-number">19</span> Glossary</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="symbols.html"><span class="header-section-number">20</span> Symbols</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="constants.html"><span class="header-section-number">21</span> Constants</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="site-index.html"><span class="header-section-number">22</span> Index</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="bibliography.html"><span class="header-section-number">23</span> Bibliography</a>
-</div>
-</li>
-</ul>
+      <nav aria-label="Table of contents">
+        <h2>Table of contents</h2>
+        <div id="book-toc"></div>
 
         <div class="book-extra">
-          
+          <p><a id="book-repo" href="#">View book source <i class="fab fa-github"></i></a></li></p>
         </div>
       </nav>
-</div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="linear-transformation" class="section level1" number="374">
-<h1>
-<span class="header-section-number">374</span> Linear Transformation<a class="anchor" aria-label="anchor" href="#linear-transformation"><i class="fas fa-link"></i></a>
-</h1>
+    </div>
+  </header>
+
+  <main class="col-sm-12 col-md-9 col-lg-7" id="content">
+<div id="linear-transformation" class="section level1" number="381">
+<h1><span class="header-section-number">381</span> Linear Transformation</h1>
 <p>A linear transformation is a mapping of a vector to another vector in a codomain that is used to represent a change in a scalar value.</p>
 <p>Note: Also called linear map.</p>
-<p><i></i></p>
+<p><i></p>
 <p><strong>definition [d]</strong> (<em>Linear Transformation = Linear Map</em>) From Hubbard and Hubbard Definition 1.3.2: a linear transformation <span class="math inline">\(T: \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}\)</span> is a mapping such that for all scalars <span class="math inline">\(a\)</span> and all <span class="math inline">\(\mathbf{v}, \mathbf{w} \in \mathbb{R}^{n}\)</span>,</p>
 <ul>
 <li><span class="math inline">\(T(\mathbf{v} + \mathbf{w}) = T(\mathbf{v}) + T(\mathbf{w})\)</span></li>
-<li>
-<span class="math inline">\(T(a\mathbf{v}) = a\, T(\mathbf{v})\)</span> .</li>
+<li><span class="math inline">\(T(a\mathbf{v}) = a\, T(\mathbf{v})\)</span> .</li>
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(T\)</span> is the linear transformation.</li>
-<li>
-<span class="math inline">\(\mathbb{R}^{n}\)</span> is the domain.</li>
-<li>
-<span class="math inline">\(\mathbb{R}^{m}\)</span> is the codomain.</li>
-<li>
-<span class="math inline">\(a\)</span> is a scalar.</li>
-<li>
-<span class="math inline">\(\mathbf{v}, \mathbf{w}\)</span> are vectors in <span class="math inline">\(\mathbb{R}^{n}\)</span>.</li>
+<li><span class="math inline">\(T\)</span> is the linear transformation.</li>
+<li><span class="math inline">\(\mathbb{R}^{n}\)</span> is the domain.</li>
+<li><span class="math inline">\(\mathbb{R}^{m}\)</span> is the codomain.</li>
+<li><span class="math inline">\(a\)</span> is a scalar.</li>
+<li><span class="math inline">\(\mathbf{v}, \mathbf{w}\)</span> are vectors in <span class="math inline">\(\mathbb{R}^{n}\)</span>.</li>
 </ul>
-<p></p>
-<div id="examples-8" class="section level2" number="374.1">
-<h2>
-<span class="header-section-number">374.1</span> Examples<a class="anchor" aria-label="anchor" href="#examples-8"><i class="fas fa-link"></i></a>
-</h2>
-<p><i></i></p>
+<p></i></p>
+<div id="examples-122" class="section level2" number="381.1">
+<h2><span class="header-section-number">381.1</span> Examples</h2>
+<p><i></p>
 <p><strong>example 1 [d]</strong> (<strong>Linear map <span class="math inline">\(\mathbb{R}^{3}\rightarrow\mathbb{R}^{2}\)</span></strong> — Dummit and Foote) Let <span class="math inline">\(V = \mathbb{R}^{3}\)</span> with the standard basis <span class="math inline">\(B = \{(1,0,0),(0,1,0),(0,0,1)\}\)</span> and let <span class="math inline">\(W = \mathbb{R}^{2}\)</span> with the standard basis <span class="math inline">\(E = \{(1,0),(0,1)}\)</span>. Let <span class="math inline">\(\phi\)</span> be the linear transformation</p>
 <ul>
-<li>
-<span class="math inline">\(\phi(x,y,z) = (x + 2y,\, x + y + z)\)</span> .</li>
+<li><span class="math inline">\(\phi(x,y,z) = (x + 2y,\, x + y + z)\)</span> .</li>
 </ul>
 <p>Since <span class="math inline">\(\phi(1,0,0) = (1,1)\)</span>, <span class="math inline">\(\phi(0,1,0) = (2,1)\)</span>, <span class="math inline">\(\phi(0,0,1) = (0,1)\)</span>, the matrix <span class="math inline">\(A = M(\phi)\)</span> is</p>
 <ul>
-<li>
-<span class="math inline">\(A = \begin{bmatrix} 1 &amp; 2 &amp; 0 \\ 1 &amp; 1 &amp; 1 \end{bmatrix}\)</span> .</li>
+<li><span class="math inline">\(A = \begin{bmatrix} 1 &amp; 2 &amp; 0 \\ 1 &amp; 1 &amp; 1 \end{bmatrix}\)</span> .</li>
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(\phi\)</span> is the linear transformation.</li>
-<li>
-<span class="math inline">\(V = \mathbb{R}^{3}\)</span> is the domain.</li>
-<li>
-<span class="math inline">\(W = \mathbb{R}^{2}\)</span> is the codomain.</li>
-<li>
-<span class="math inline">\((x,y,z)\)</span> are coordinates of a vector in <span class="math inline">\(V\)</span>.</li>
-<li>
-<span class="math inline">\(B\)</span> and <span class="math inline">\(E\)</span> are the standard bases of <span class="math inline">\(V\)</span> and <span class="math inline">\(W\)</span>.</li>
-<li>
-<span class="math inline">\(A\)</span> is the matrix of <span class="math inline">\(\phi\)</span> with respect to those bases.</li>
+<li><span class="math inline">\(\phi\)</span> is the linear transformation.</li>
+<li><span class="math inline">\(V = \mathbb{R}^{3}\)</span> is the domain.</li>
+<li><span class="math inline">\(W = \mathbb{R}^{2}\)</span> is the codomain.</li>
+<li><span class="math inline">\((x,y,z)\)</span> are coordinates of a vector in <span class="math inline">\(V\)</span>.</li>
+<li><span class="math inline">\(B\)</span> and <span class="math inline">\(E\)</span> are the standard bases of <span class="math inline">\(V\)</span> and <span class="math inline">\(W\)</span>.</li>
+<li><span class="math inline">\(A\)</span> is the matrix of <span class="math inline">\(\phi\)</span> with respect to those bases.</li>
 </ul>
-<p></p>
-<p><i></i></p>
+<p></i></p>
+<p><i></p>
 <p><strong>example 2 [d]</strong> (<strong>Rotation by an angle <span class="math inline">\(\theta\)</span></strong> — Hubbard and Hubbard) The transformation <span class="math inline">\(R\)</span> giving rotation by <span class="math inline">\(\theta\)</span> counterclockwise around the origin is linear, and its matrix is</p>
 <ul>
-<li>
-<span class="math inline">\([R] = \begin{bmatrix} \cos\theta &amp; -\sin\theta \\ \sin\theta &amp; \cos\theta \end{bmatrix}\)</span> .</li>
+<li><span class="math inline">\([R] = \begin{bmatrix} \cos\theta &amp; -\sin\theta \\ \sin\theta &amp; \cos\theta \end{bmatrix}\)</span> .</li>
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(R: \mathbb{R}^{2} \rightarrow \mathbb{R}^{2}\)</span> is the rotation mapping.</li>
-<li>
-<span class="math inline">\(\theta\)</span> is the angle of rotation.</li>
-<li>
-<span class="math inline">\([R]\)</span> is the matrix of <span class="math inline">\(R\)</span> with respect to the standard basis of <span class="math inline">\(\mathbb{R}^{2}\)</span>.</li>
+<li><span class="math inline">\(R: \mathbb{R}^{2} \rightarrow \mathbb{R}^{2}\)</span> is the rotation mapping.</li>
+<li><span class="math inline">\(\theta\)</span> is the angle of rotation.</li>
+<li><span class="math inline">\([R]\)</span> is the matrix of <span class="math inline">\(R\)</span> with respect to the standard basis of <span class="math inline">\(\mathbb{R}^{2}\)</span>.</li>
 </ul>
-<p></p>
+<p></i></p>
 </div>
-<div id="elementary-example-113" class="section level2" number="374.2">
-<h2>
-<span class="header-section-number">374.2</span> Elementary Example<a class="anchor" aria-label="anchor" href="#elementary-example-113"><i class="fas fa-link"></i></a>
-</h2>
-<div id="simple-113" class="section level3" number="374.2.1">
-<h3>
-<span class="header-section-number">374.2.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple-113"><i class="fas fa-link"></i></a>
-</h3>
+<div id="examples-123" class="section level2" number="381.2">
+<h2><span class="header-section-number">381.2</span> Examples</h2>
+<div id="simple-114" class="section level3" number="381.2.1">
+<h3><span class="header-section-number">381.2.1</span> Simple</h3>
 <p>A linear transformation maps vectors to vectors and preserves linear combinations.</p>
 <p><span class="math display">\[
 \phi : \mathbb{R}^{2} \rightarrow \mathbb{R}^{2}
@@ -322,14 +192,11 @@
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(\phi\)</span> is the linear transformation.</li>
+<li><span class="math inline">\(\phi\)</span> is the linear transformation.</li>
 </ul>
 </div>
-<div id="general-113" class="section level3" number="374.2.2">
-<h3>
-<span class="header-section-number">374.2.2</span> General<a class="anchor" aria-label="anchor" href="#general-113"><i class="fas fa-link"></i></a>
-</h3>
+<div id="general-114" class="section level3" number="381.2.2">
+<h3><span class="header-section-number">381.2.2</span> General</h3>
 <p>Rotation by an angle <span class="math inline">\(\theta\)</span> in the plane is a linear transformation with a <span class="math inline">\(2 \times 2\)</span> matrix.</p>
 <p><span class="math display">\[
 R_{\theta} = \begin{pmatrix} \cos\theta &amp; -\sin\theta \\ \sin\theta &amp; \cos\theta \end{pmatrix}
@@ -339,17 +206,13 @@ R_{\theta}(x,y) = (x\cos\theta - y\sin\theta,\ x\sin\theta + y\cos\theta)
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(R_{\theta}\)</span> is the rotation matrix.</li>
-<li>
-<span class="math inline">\(\theta\)</span> is a real angle.</li>
+<li><span class="math inline">\(R_{\theta}\)</span> is the rotation matrix.</li>
+<li><span class="math inline">\(\theta\)</span> is a real angle.</li>
 </ul>
 </div>
 </div>
-<div id="references-320" class="section level2" number="374.3">
-<h2>
-<span class="header-section-number">374.3</span> References<a class="anchor" aria-label="anchor" href="#references-320"><i class="fas fa-link"></i></a>
-</h2>
+<div id="references-326" class="section level2" number="381.3">
+<h2><span class="header-section-number">381.3</span> References</h2>
 <ol style="list-style-type: decimal">
 <li>Hubbard, J. H., &amp; Hubbard, B. B. <em>Vector Calculus, Linear Algebra, and Differential Forms</em>, Matrix Editions. — Definition 1.3.2; Example 1.3.9 (rotation by <span class="math inline">\(\theta\)</span>).</li>
 <li>Dummit, D. S., &amp; Foote, R. M. <em>Abstract Algebra</em>. Wiley, 2004. — linear map <span class="math inline">\(\phi:\mathbb{R}^{3}\rightarrow\mathbb{R}^{2}\)</span>, <span class="math inline">\(\phi(x,y,z)=(x+2y,\,x+y+z)\)</span>.</li>
@@ -856,7 +719,8 @@ R_{\theta}(x,y) = (x\cos\theta - y\sin\theta,\ x\sin\theta + y\cos\theta)
       initClassicLayout();
     }
   })();
-</script><script>
+</script>
+<script>
   /* Prefer heading matches in book search (e.g. "Lagrangian" page over References). */
   (function () {
     var WEIGHTED_FUSE_OPTIONS = {
@@ -952,35 +816,28 @@ R_{\theta}(x,y) = (x\cos\theta - y\sin\theta,\ x\sin\theta + y\cos\theta)
       start();
     }
   })();
-</script><div class="chapter-nav">
-<div class="prev"><a href="linear-map.html"><span class="header-section-number">373</span> Linear Map</a></div>
-<div class="next"><a href="operator.html"><span class="header-section-number">375</span> Operator</a></div>
-</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#linear-transformation"><span class="header-section-number">374</span> Linear Transformation</a></li>
-<li><a class="nav-link" href="#examples-8"><span class="header-section-number">374.1</span> Examples</a></li>
-<li>
-<a class="nav-link" href="#elementary-example-113"><span class="header-section-number">374.2</span> Elementary Example</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#simple-113"><span class="header-section-number">374.2.1</span> Simple</a></li>
-<li><a class="nav-link" href="#general-113"><span class="header-section-number">374.2.2</span> General</a></li>
-</ul>
-</li>
-<li><a class="nav-link" href="#references-320"><span class="header-section-number">374.3</span> References</a></li>
-</ul>
+</script>
+  </main>
+
+  <div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <div id="book-on-this-page"></div>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-          
+          <li><a id="book-source" href="#">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="#">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
-</div>
+      </div>
     </nav>
-</div>
+  </div>
 
 </div>
 </div> <!-- .container -->
 
-<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+<footer class="bg-primary text-light mt-5">
+  <div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
     <p>"<strong>Mathematics for Physics</strong>" was written by bignumber-material. </p>
@@ -991,7 +848,11 @@ R_{\theta}(x,y) = (x\cos\theta - y\sin\theta,\ x\sin\theta + y\cos\theta)
   </div>
 
 </div></div>
-</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+</footer>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
@@ -1003,7 +864,8 @@ R_{\theta}(x,y) = (x\cos\theta - y\sin\theta,\ x\sin\theta + y\cos\theta)
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
-</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+</script>
+<script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
 for (let popover of popovers) {
   const div = document.createElement('div');
   div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
@@ -1021,4 +883,5 @@ for (let popover of popovers) {
 }
 </script>
 </body>
+
 </html>

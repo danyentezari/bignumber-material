@@ -34,7 +34,7 @@ $$
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The square function is holomorphic on the whole plane.

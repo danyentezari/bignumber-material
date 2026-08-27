@@ -112,7 +112,7 @@ Note:
 </i>
 
 
-## Elementary Example
+## Examples
 ### Simple
 
 A tensor field assigns one tensor to each point of a domain.

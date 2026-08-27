@@ -49,7 +49,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A basis is a linearly independent spanning set. The standard basis of $\mathbb{R}^{2}$ has two vectors.

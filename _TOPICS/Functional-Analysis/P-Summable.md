@@ -17,7 +17,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A sequence is $p$-summable when $\sum |\xi_{j}|^{p}$ is finite. For $p = 1$, the finite sequence $(1,2,3)$ is $1$-summable.

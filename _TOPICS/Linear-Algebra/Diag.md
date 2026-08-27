@@ -45,7 +45,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The map $\operatorname{diag}$ places given scalars on the main diagonal.

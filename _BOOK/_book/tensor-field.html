@@ -1,32 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>300 Tensor Field | Mathematics for Physics</title>
-<meta name="author" content="bignumber-material">
-<meta name="description" content="A mapping that assigns a tensor to each point of a domain that is used to describe geometric quantities that vary from point to point. definition [d] (Tensor Field = Section) A mapping that...">
-<meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="300 Tensor Field | Mathematics for Physics">
-<meta property="og:type" content="book">
-<meta property="og:description" content="A mapping that assigns a tensor to each point of a domain that is used to describe geometric quantities that vary from point to point. definition [d] (Tensor Field = Section) A mapping that...">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="300 Tensor Field | Mathematics for Physics">
-<meta name="twitter:description" content="A mapping that assigns a tensor to each point of a domain that is used to describe geometric quantities that vary from point to point. definition [d] (Tensor Field = Section) A mapping that...">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script><script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>300 Tensor Field | Mathematics for Physics</title>
+
+    <meta name="author" content="bignumber-material" />
+  
+   <meta name="description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+   <meta name="generator" content="placeholder" />
+  <meta property="og:title" content="300 Tensor Field | Mathematics for Physics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="300 Tensor Field | Mathematics for Physics" />
+  
+  <meta name="twitter:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
+  
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script>
+    <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet" />
+    <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script>
+    <script src="libs/bs3compat-0.11.0/transition.js"></script>
+    <script src="libs/bs3compat-0.11.0/tabs.js"></script>
+    <script src="libs/bs3compat-0.11.0/bs3compat.js"></script>
+    <link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet" />
+    <script src="libs/bs4_book-1.0.0/bs4_book.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script>
+    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-RCDW3GHNMP');
-    </script><!-- Serif + mono typefaces --><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<!-- Apply saved/preferred theme before first paint to avoid flashing --><script>
+    </script>
+
+    <!-- Serif + mono typefaces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet">
+
+    <!-- Apply saved/preferred theme before first paint to avoid flashing -->
+    <script>
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
@@ -53,20 +79,25 @@
           document.documentElement.style.fontSize = "17px";
         }
       })();
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
-<link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Differential Geometry", "href": "differential-geometry.html", "current": false}, {"title": "Tensor Field", "href": "tensor-field.html", "current": true}]</script>
-<link rel="canonical" href="https://book.danyentezari.com/tensor-field.html">
-<meta property="og:url" content="https://book.danyentezari.com/tensor-field.html">
+      <link rel="stylesheet" href="style.css" />
+  
 </head>
+
 <body data-spy="scroll" data-target="#toc">
 
 <div class="container-fluid">
 <div class="row">
-  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book">
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
     <div class="d-flex align-items-start justify-content-between">
       <h1>
@@ -78,263 +109,98 @@
     <div id="main-nav" class="collapse-lg">
       <form role="search">
         <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-</form>
+      </form>
 
-      <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled">
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="classical-mechanics.html"><span class="header-section-number">5</span> Classical Mechanics</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="condensed-matter.html"><span class="header-section-number">6</span> Condensed Matter</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="physical-chemistry.html"><span class="header-section-number">7</span> Physical Chemistry</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="physics-principles.html"><span class="header-section-number">8</span> Physics Principles</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="topology.html"><span class="header-section-number">9</span> Topology</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active-parent" href="differential-geometry.html"><span class="header-section-number">10</span> Differential Geometry</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="calculus.html"><span class="header-section-number">11</span> Calculus</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="functional-analysis.html"><span class="header-section-number">12</span> Functional Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="linear-algebra.html"><span class="header-section-number">13</span> Linear Algebra</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="abstract-algebra.html"><span class="header-section-number">14</span> Abstract Algebra</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="differential-equations.html"><span class="header-section-number">15</span> Differential Equations</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="complex-analysis.html"><span class="header-section-number">16</span> Complex Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="real-analysis.html"><span class="header-section-number">17</span> Real Analysis</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="notes.html"><span class="header-section-number">18</span> Notes</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="glossary.html"><span class="header-section-number">19</span> Glossary</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="symbols.html"><span class="header-section-number">20</span> Symbols</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="constants.html"><span class="header-section-number">21</span> Constants</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="site-index.html"><span class="header-section-number">22</span> Index</a>
-</div>
-</li>
-<li class="book-toc-topic book-toc-topic--leaf">
-<div class="book-toc-topic-header">
-<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="bibliography.html"><span class="header-section-number">23</span> Bibliography</a>
-</div>
-</li>
-</ul>
+      <nav aria-label="Table of contents">
+        <h2>Table of contents</h2>
+        <div id="book-toc"></div>
 
         <div class="book-extra">
-          
+          <p><a id="book-repo" href="#">View book source <i class="fab fa-github"></i></a></li></p>
         </div>
       </nav>
-</div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="tensor-field" class="section level1" number="300">
-<h1>
-<span class="header-section-number">300</span> Tensor Field<a class="anchor" aria-label="anchor" href="#tensor-field"><i class="fas fa-link"></i></a>
-</h1>
+    </div>
+  </header>
+
+  <main class="col-sm-12 col-md-9 col-lg-7" id="content">
+<div id="tensor-field" class="section level1" number="300">
+<h1><span class="header-section-number">300</span> Tensor Field</h1>
 <p>A mapping that assigns a tensor to each point of a domain that is used to describe geometric quantities that vary from point to point.</p>
-<p><i></i></p>
+<p><i></p>
 <p><strong>definition [d]</strong> (<em>Tensor Field = Section</em>) A mapping that assigns to each point of a manifold a tensor of fixed type: for <span class="math inline">\(U \subset M\)</span>,</p>
 <ul>
-<li>
-<span class="math inline">\(T : U \rightarrow T^{r}_{\ s}(M)\)</span> ,</li>
-<li>
-<span class="math inline">\(T(P) \equiv T_{P} \in T^{r}_{\ s,P}(M)\)</span> .</li>
+<li><span class="math inline">\(T : U \rightarrow T^{r}_{\ s}(M)\)</span> ,</li>
+<li><span class="math inline">\(T(P) \equiv T_{P} \in T^{r}_{\ s,P}(M)\)</span> .</li>
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(M\)</span> is a smooth manifold.</li>
-<li>
-<span class="math inline">\(U\)</span> is a subset of <span class="math inline">\(M\)</span>.</li>
-<li>
-<span class="math inline">\(T\)</span> is the tensor field.</li>
-<li>
-<span class="math inline">\(P\)</span> is a point of <span class="math inline">\(M\)</span>.</li>
-<li>
-<span class="math inline">\(T^{r}_{\ s}(M)\)</span> is the bundle of type-<span class="math inline">\((r,s)\)</span> tensors on <span class="math inline">\(M\)</span>.</li>
-<li>
-<span class="math inline">\(T^{r}_{\ s,P}(M)\)</span> is the space of type-<span class="math inline">\((r,s)\)</span> tensors at <span class="math inline">\(P\)</span>.</li>
-<li>
-<span class="math inline">\(r\)</span> is the contravariant degree.</li>
-<li>
-<span class="math inline">\(s\)</span> is the covariant degree.</li>
+<li><span class="math inline">\(M\)</span> is a smooth manifold.</li>
+<li><span class="math inline">\(U\)</span> is a subset of <span class="math inline">\(M\)</span>.</li>
+<li><span class="math inline">\(T\)</span> is the tensor field.</li>
+<li><span class="math inline">\(P\)</span> is a point of <span class="math inline">\(M\)</span>.</li>
+<li><span class="math inline">\(T^{r}_{\ s}(M)\)</span> is the bundle of type-<span class="math inline">\((r,s)\)</span> tensors on <span class="math inline">\(M\)</span>.</li>
+<li><span class="math inline">\(T^{r}_{\ s,P}(M)\)</span> is the space of type-<span class="math inline">\((r,s)\)</span> tensors at <span class="math inline">\(P\)</span>.</li>
+<li><span class="math inline">\(r\)</span> is the contravariant degree.</li>
+<li><span class="math inline">\(s\)</span> is the covariant degree.</li>
 </ul>
 <p>Note:</p>
 <ul>
 <li>a smooth tensor field is a smooth such assignment, that is, a smooth section.</li>
 </ul>
-<p></p>
-<p><i></i></p>
+<p></i></p>
+<p><i></p>
 <p><strong>definition [d]</strong> (<em>Tensor Field = Section</em>) A coordinate-independent field on a manifold whose local components vary differentiably: at each point, a multilinear map</p>
 <ul>
-<li>
-<span class="math inline">\(T_{P} : \underbrace{(T_{P}M)^{*}\times\cdots\times(T_{P}M)^{*}}_{r} \times \underbrace{T_{P}M\times\cdots\times T_{P}M}_{s} \rightarrow \mathbb{R}\)</span> .</li>
+<li><span class="math inline">\(T_{P} : \underbrace{(T_{P}M)^{*}\times\cdots\times(T_{P}M)^{*}}_{r} \times \underbrace{T_{P}M\times\cdots\times T_{P}M}_{s} \rightarrow \mathbb{R}\)</span> .</li>
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(T_{P}\)</span> is the value of the tensor field at the point <span class="math inline">\(P\)</span>.</li>
-<li>
-<span class="math inline">\(T_{P}M\)</span> is the tangent space at <span class="math inline">\(P\)</span>.</li>
-<li>
-<span class="math inline">\((T_{P}M)^{*}\)</span> is the cotangent space at <span class="math inline">\(P\)</span>.</li>
-<li>
-<span class="math inline">\(r\)</span> is the number of covector arguments.</li>
-<li>
-<span class="math inline">\(s\)</span> is the number of vector arguments.</li>
-<li>
-<span class="math inline">\(\mathbb{R}\)</span> is the set of real numbers.</li>
+<li><span class="math inline">\(T_{P}\)</span> is the value of the tensor field at the point <span class="math inline">\(P\)</span>.</li>
+<li><span class="math inline">\(T_{P}M\)</span> is the tangent space at <span class="math inline">\(P\)</span>.</li>
+<li><span class="math inline">\((T_{P}M)^{*}\)</span> is the cotangent space at <span class="math inline">\(P\)</span>.</li>
+<li><span class="math inline">\(r\)</span> is the number of covector arguments.</li>
+<li><span class="math inline">\(s\)</span> is the number of vector arguments.</li>
+<li><span class="math inline">\(\mathbb{R}\)</span> is the set of real numbers.</li>
 </ul>
 <p>Note:</p>
 <ul>
 <li>examples: vector fields are type <span class="math inline">\((1,0)\)</span>; covector fields type <span class="math inline">\((0,1)\)</span>; the metric type <span class="math inline">\((0,2)\)</span>.</li>
 <li>equivalently, a section of the tensor bundle <span class="math inline">\(T^{r}_{\ s}(M)\)</span>.</li>
 </ul>
-<p></p>
-<div id="examples-4" class="section level2" number="300.1">
-<h2>
-<span class="header-section-number">300.1</span> Examples<a class="anchor" aria-label="anchor" href="#examples-4"><i class="fas fa-link"></i></a>
-</h2>
-<p><i></i></p>
+<p></i></p>
+<div id="examples-64" class="section level2" number="300.1">
+<h2><span class="header-section-number">300.1</span> Examples</h2>
+<p><i></p>
 <p><strong>example 1 [d]</strong> (<strong>Metric Tensor Field</strong> — Frankel) The type-<span class="math inline">\((0,2)\)</span> metric tensor field on <span class="math inline">\(\mathbb{R}^{3}\)</span> in spherical coordinates <span class="math inline">\((r, \theta, \phi)\)</span>, with line element</p>
 <ul>
-<li>
-<span class="math inline">\(ds^{2} = dr^{2} + r^{2}\, d\theta^{2} + r^{2}\sin^{2}\theta\, d\phi^{2}\)</span> .</li>
+<li><span class="math inline">\(ds^{2} = dr^{2} + r^{2}\, d\theta^{2} + r^{2}\sin^{2}\theta\, d\phi^{2}\)</span> .</li>
 </ul>
 <p>The nonzero components as functions of position are</p>
 <ul>
-<li>
-<span class="math inline">\(g_{rr}(r, \theta, \phi) = 1\)</span> ,</li>
-<li>
-<span class="math inline">\(g_{\theta\theta}(r, \theta, \phi) = r^{2}\)</span> ,</li>
-<li>
-<span class="math inline">\(g_{\phi\phi}(r, \theta, \phi) = r^{2}\sin^{2}\theta\)</span> .</li>
+<li><span class="math inline">\(g_{rr}(r, \theta, \phi) = 1\)</span> ,</li>
+<li><span class="math inline">\(g_{\theta\theta}(r, \theta, \phi) = r^{2}\)</span> ,</li>
+<li><span class="math inline">\(g_{\phi\phi}(r, \theta, \phi) = r^{2}\sin^{2}\theta\)</span> .</li>
 </ul>
 <p>In matrix form,</p>
 <ul>
-<li>
-<span class="math inline">\((g_{ij}) = \operatorname{diag}(1,\, r^{2},\, r^{2}\sin^{2}\theta)\)</span> .</li>
+<li><span class="math inline">\((g_{ij}) = \operatorname{diag}(1,\, r^{2},\, r^{2}\sin^{2}\theta)\)</span> .</li>
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\((r, \theta, \phi)\)</span> are spherical coordinates.</li>
-<li>
-<span class="math inline">\(g_{ij}\)</span> are the components of the metric tensor field.</li>
-<li>
-<span class="math inline">\(ds\)</span> is the infinitesimal arc length.</li>
+<li><span class="math inline">\((r, \theta, \phi)\)</span> are spherical coordinates.</li>
+<li><span class="math inline">\(g_{ij}\)</span> are the components of the metric tensor field.</li>
+<li><span class="math inline">\(ds\)</span> is the infinitesimal arc length.</li>
 </ul>
 <p>Note:</p>
 <ul>
 <li>off-diagonal components vanish.</li>
 <li>this is a smooth assignment of a symmetric type-<span class="math inline">\((0,2)\)</span> tensor to each point.</li>
 </ul>
-<p></p>
-<p><i></i></p>
+<p></i></p>
+<p><i></p>
 <p><strong>example 2 [d]</strong> (<strong>Electromagnetic Field Strength</strong> — Carroll, Hassani) The antisymmetric type-<span class="math inline">\((0,2)\)</span> tensor field <span class="math inline">\(F_{\mu\nu}\)</span> on Minkowski spacetime with coordinates <span class="math inline">\(x^{\mu} = (t, x, y, z)\)</span>:</p>
 <ul>
-<li>
-<span class="math inline">\(F_{\mu\nu} =
+<li><span class="math inline">\(F_{\mu\nu} =
 \begin{pmatrix}
 0 &amp; -E_{x} &amp; -E_{y} &amp; -E_{z} \\
 E_{x} &amp; 0 &amp; -B_{z} &amp; B_{y} \\
@@ -345,36 +211,26 @@ E_{z} &amp; -B_{y} &amp; B_{x} &amp; 0
 <p>where <span class="math inline">\(E_{i}(t,x,y,z)\)</span> and <span class="math inline">\(B_{i}(t,x,y,z)\)</span> are the electric and magnetic field components at each spacetime point.</p>
 <p>As a differential form,</p>
 <ul>
-<li>
-<span class="math inline">\(F = -E_{x}\, dt\wedge dx - E_{y}\, dt\wedge dy - E_{z}\, dt\wedge dz + B_{z}\, dx\wedge dy - B_{y}\, dx\wedge dz + B_{x}\, dy\wedge dz\)</span> .</li>
+<li><span class="math inline">\(F = -E_{x}\, dt\wedge dx - E_{y}\, dt\wedge dy - E_{z}\, dt\wedge dz + B_{z}\, dx\wedge dy - B_{y}\, dx\wedge dz + B_{x}\, dy\wedge dz\)</span> .</li>
 </ul>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(F_{\mu\nu}\)</span> are the components of the electromagnetic field strength tensor field.</li>
-<li>
-<span class="math inline">\(E_{x}, E_{y}, E_{z}\)</span> are the electric field components.</li>
-<li>
-<span class="math inline">\(B_{x}, B_{y}, B_{z}\)</span> are the magnetic field components.</li>
-<li>
-<span class="math inline">\(x^{\mu} = (t, x, y, z)\)</span> are spacetime coordinates.</li>
+<li><span class="math inline">\(F_{\mu\nu}\)</span> are the components of the electromagnetic field strength tensor field.</li>
+<li><span class="math inline">\(E_{x}, E_{y}, E_{z}\)</span> are the electric field components.</li>
+<li><span class="math inline">\(B_{x}, B_{y}, B_{z}\)</span> are the magnetic field components.</li>
+<li><span class="math inline">\(x^{\mu} = (t, x, y, z)\)</span> are spacetime coordinates.</li>
 </ul>
 <p>Note:</p>
 <ul>
-<li>
-<span class="math inline">\(F\)</span> assigns an antisymmetric bilinear form to each event in spacetime.</li>
+<li><span class="math inline">\(F\)</span> assigns an antisymmetric bilinear form to each event in spacetime.</li>
 <li>Hassani identifies <span class="math inline">\(F_{j0} = E_{j}\)</span>, <span class="math inline">\(F_{12} = B_{3}\)</span>, <span class="math inline">\(F_{13} = -B_{2}\)</span>, <span class="math inline">\(F_{23} = B_{1}\)</span>.</li>
 </ul>
-<p></p>
+<p></i></p>
 </div>
-<div id="elementary-example-60" class="section level2" number="300.2">
-<h2>
-<span class="header-section-number">300.2</span> Elementary Example<a class="anchor" aria-label="anchor" href="#elementary-example-60"><i class="fas fa-link"></i></a>
-</h2>
+<div id="examples-65" class="section level2" number="300.2">
+<h2><span class="header-section-number">300.2</span> Examples</h2>
 <div id="simple-60" class="section level3" number="300.2.1">
-<h3>
-<span class="header-section-number">300.2.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple-60"><i class="fas fa-link"></i></a>
-</h3>
+<h3><span class="header-section-number">300.2.1</span> Simple</h3>
 <p>A tensor field assigns one tensor to each point of a domain.</p>
 <p><span class="math display">\[
 U = \{ p,\ q,\ r \}
@@ -384,16 +240,12 @@ T(p) = e_{1},\quad T(q) = e_{2},\quad T(r) = 0
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(T\)</span> is the tensor field.</li>
-<li>
-<span class="math inline">\(T(p)\)</span> is the tensor at the point <span class="math inline">\(p\)</span>.</li>
+<li><span class="math inline">\(T\)</span> is the tensor field.</li>
+<li><span class="math inline">\(T(p)\)</span> is the tensor at the point <span class="math inline">\(p\)</span>.</li>
 </ul>
 </div>
 <div id="general-60" class="section level3" number="300.2.2">
-<h3>
-<span class="header-section-number">300.2.2</span> General<a class="anchor" aria-label="anchor" href="#general-60"><i class="fas fa-link"></i></a>
-</h3>
+<h3><span class="header-section-number">300.2.2</span> General</h3>
 <p>A type-<span class="math inline">\((0,2)\)</span> tensor field can assign a <span class="math inline">\(3 \times 3\)</span> matrix at each point.</p>
 <p><span class="math display">\[
 U = \{ p,\ q \}
@@ -403,17 +255,13 @@ T(p) = I_{3},\quad T(q) = \operatorname{diag}(1,2,3)
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(T(p)\)</span> is a type-<span class="math inline">\((0,2)\)</span> tensor at <span class="math inline">\(p\)</span>.</li>
-<li>
-<span class="math inline">\(I_{3}\)</span> is the <span class="math inline">\(3 \times 3\)</span> identity matrix.</li>
+<li><span class="math inline">\(T(p)\)</span> is a type-<span class="math inline">\((0,2)\)</span> tensor at <span class="math inline">\(p\)</span>.</li>
+<li><span class="math inline">\(I_{3}\)</span> is the <span class="math inline">\(3 \times 3\)</span> identity matrix.</li>
 </ul>
 </div>
 </div>
 <div id="references-257" class="section level2" number="300.3">
-<h2>
-<span class="header-section-number">300.3</span> References<a class="anchor" aria-label="anchor" href="#references-257"><i class="fas fa-link"></i></a>
-</h2>
+<h2><span class="header-section-number">300.3</span> References</h2>
 <ol style="list-style-type: decimal">
 <li>Hassani, S. <em>Mathematical Physics</em>, 2nd ed. Springer. — tensor field <span class="math inline">\(T:U\to T^{r}_{s}(M)\)</span>; electromagnetic field strength <span class="math inline">\(F\)</span>.</li>
 <li>Frankel, T. <em>The Geometry of Physics</em>, 3rd ed. Cambridge University Press. — metric tensor field in spherical coordinates; <span class="math inline">\(ds^{2}=dr^{2}+r^{2}d\theta^{2}+r^{2}\sin^{2}\theta\,d\phi^{2}\)</span>.</li>
@@ -936,7 +784,8 @@ T(p) = I_{3},\quad T(q) = \operatorname{diag}(1,2,3)
       initClassicLayout();
     }
   })();
-</script><script>
+</script>
+<script>
   /* Prefer heading matches in book search (e.g. "Lagrangian" page over References). */
   (function () {
     var WEIGHTED_FUSE_OPTIONS = {
@@ -1032,35 +881,28 @@ T(p) = I_{3},\quad T(q) = \operatorname{diag}(1,2,3)
       start();
     }
   })();
-</script><div class="chapter-nav">
-<div class="prev"><a href="tangent-space.html"><span class="header-section-number">299</span> Tangent Space</a></div>
-<div class="next"><a href="tensors.html"><span class="header-section-number">301</span> Tensors</a></div>
-</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#tensor-field"><span class="header-section-number">300</span> Tensor Field</a></li>
-<li><a class="nav-link" href="#examples-4"><span class="header-section-number">300.1</span> Examples</a></li>
-<li>
-<a class="nav-link" href="#elementary-example-60"><span class="header-section-number">300.2</span> Elementary Example</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#simple-60"><span class="header-section-number">300.2.1</span> Simple</a></li>
-<li><a class="nav-link" href="#general-60"><span class="header-section-number">300.2.2</span> General</a></li>
-</ul>
-</li>
-<li><a class="nav-link" href="#references-257"><span class="header-section-number">300.3</span> References</a></li>
-</ul>
+</script>
+  </main>
+
+  <div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <div id="book-on-this-page"></div>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-          
+          <li><a id="book-source" href="#">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="#">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
-</div>
+      </div>
     </nav>
-</div>
+  </div>
 
 </div>
 </div> <!-- .container -->
 
-<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+<footer class="bg-primary text-light mt-5">
+  <div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
     <p>"<strong>Mathematics for Physics</strong>" was written by bignumber-material. </p>
@@ -1071,7 +913,11 @@ T(p) = I_{3},\quad T(q) = \operatorname{diag}(1,2,3)
   </div>
 
 </div></div>
-</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+</footer>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
@@ -1083,7 +929,8 @@ T(p) = I_{3},\quad T(q) = \operatorname{diag}(1,2,3)
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
-</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+</script>
+<script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
 for (let popover of popovers) {
   const div = document.createElement('div');
   div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
@@ -1101,4 +948,5 @@ for (let popover of popovers) {
 }
 </script>
 </body>
+
 </html>

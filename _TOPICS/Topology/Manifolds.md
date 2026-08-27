@@ -29,7 +29,7 @@ Let's look at a more formal definition of a manifold.
 
 **Definition** (_Smooth Manifold_)
 
-## Elementary Example
+## Examples
 ### Simple
 
 A curve is a $1$-dimensional manifold: locally it looks like a line.

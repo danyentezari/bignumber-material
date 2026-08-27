@@ -28,7 +28,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 The dual space is the set of all linear functionals on $V$. On $\mathbb{R}^{2}$, each functional is a row of two components.

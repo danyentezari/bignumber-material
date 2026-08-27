@@ -26,7 +26,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A set is a collection of elements. Here a three-element set of numbers.

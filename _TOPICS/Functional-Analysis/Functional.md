@@ -54,7 +54,7 @@ where
 
 </i>
 
-## Elementary Example
+## Examples
 
 ### Simple
 

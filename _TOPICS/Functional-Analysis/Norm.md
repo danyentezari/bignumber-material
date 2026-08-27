@@ -27,7 +27,7 @@ Note:
 
 </i>
 
-## Elementary Example
+## Examples
 ### Simple
 
 A norm assigns a nonnegative length to each vector. On $\mathbb{R}^{2}$ use the Euclidean length.
