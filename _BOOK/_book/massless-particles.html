@@ -1,58 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>180 Massless Particles | Mathematics for Physics</title>
-
-    <meta name="author" content="bignumber-material" />
-  
-   <meta name="description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
-   <meta name="generator" content="placeholder" />
-  <meta property="og:title" content="180 Massless Particles | Mathematics for Physics" />
-  <meta property="og:type" content="book" />
-  
-  
-  <meta property="og:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="180 Massless Particles | Mathematics for Physics" />
-  
-  <meta name="twitter:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
-  
-  <!-- JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script>
-    <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet" />
-    <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script>
-    <script src="libs/bs3compat-0.11.0/transition.js"></script>
-    <script src="libs/bs3compat-0.11.0/tabs.js"></script>
-    <script src="libs/bs3compat-0.11.0/bs3compat.js"></script>
-    <link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet" />
-    <script src="libs/bs4_book-1.0.0/bs4_book.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script>
-    <script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>180 Massless Particles | Mathematics for Physics</title>
+<meta name="author" content="bignumber-material">
+<meta name="description" content="A particle with zero rest mass that always travels at the speed of light in vacuum, with energy and momentum proportional to each other. Perpetual motion at \(c\). A massless particle is never at...">
+<meta name="generator" content="bookdown 0.46 with bs4_book()">
+<meta property="og:title" content="180 Massless Particles | Mathematics for Physics">
+<meta property="og:type" content="book">
+<meta property="og:description" content="A particle with zero rest mass that always travels at the speed of light in vacuum, with energy and momentum proportional to each other. Perpetual motion at \(c\). A massless particle is never at...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="180 Massless Particles | Mathematics for Physics">
+<meta name="twitter:description" content="A particle with zero rest mass that always travels at the speed of light in vacuum, with energy and momentum proportional to each other. Perpetual motion at \(c\). A massless particle is never at...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script><script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-RCDW3GHNMP');
-    </script>
-
-    <!-- Serif + mono typefaces -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap"
-      rel="stylesheet">
-
-    <!-- Apply saved/preferred theme before first paint to avoid flashing -->
-    <script>
+    </script><!-- Serif + mono typefaces --><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<!-- Apply saved/preferred theme before first paint to avoid flashing --><script>
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
@@ -79,25 +53,20 @@
           document.documentElement.style.fontSize = "17px";
         }
       })();
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script>
-
-  <!-- CSS -->
-  <style type="text/css">
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
-      <link rel="stylesheet" href="style.css" />
-  
+<link rel="stylesheet" href="style.css">
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Special Relativity", "href": "special-relativity.html", "current": false}, {"title": "Massless Particles", "href": "massless-particles.html", "current": true}]</script>
+<link rel="canonical" href="https://book.danyentezari.com/massless-particles.html">
+<meta property="og:url" content="https://book.danyentezari.com/massless-particles.html">
 </head>
-
 <body data-spy="scroll" data-target="#toc">
 
 <div class="container-fluid">
 <div class="row">
-  <header class="col-sm-12 col-lg-3 sidebar sidebar-book">
-    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
     <div class="d-flex align-items-start justify-content-between">
       <h1>
@@ -109,22 +78,159 @@
     <div id="main-nav" class="collapse-lg">
       <form role="search">
         <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-      </form>
+</form>
 
-      <nav aria-label="Table of contents">
-        <h2>Table of contents</h2>
-        <div id="book-toc"></div>
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="active-parent" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="classical-mechanics.html"><span class="header-section-number">5</span> Classical Mechanics</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="condensed-matter.html"><span class="header-section-number">6</span> Condensed Matter</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="physical-chemistry.html"><span class="header-section-number">7</span> Physical Chemistry</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="physics-principles.html"><span class="header-section-number">8</span> Physics Principles</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="topology.html"><span class="header-section-number">9</span> Topology</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="differential-geometry.html"><span class="header-section-number">10</span> Differential Geometry</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="calculus.html"><span class="header-section-number">11</span> Calculus</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="functional-analysis.html"><span class="header-section-number">12</span> Functional Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="linear-algebra.html"><span class="header-section-number">13</span> Linear Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="abstract-algebra.html"><span class="header-section-number">14</span> Abstract Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="differential-equations.html"><span class="header-section-number">15</span> Differential Equations</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="complex-analysis.html"><span class="header-section-number">16</span> Complex Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="real-analysis.html"><span class="header-section-number">17</span> Real Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="notes.html"><span class="header-section-number">18</span> Notes</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="glossary.html"><span class="header-section-number">19</span> Glossary</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="symbols.html"><span class="header-section-number">20</span> Symbols</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="constants.html"><span class="header-section-number">21</span> Constants</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="site-index.html"><span class="header-section-number">22</span> Index</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="bibliography.html"><span class="header-section-number">23</span> Bibliography</a>
+</div>
+</li>
+</ul>
 
         <div class="book-extra">
-          <p><a id="book-repo" href="#">View book source <i class="fab fa-github"></i></a></li></p>
+          
         </div>
       </nav>
-    </div>
-  </header>
-
-  <main class="col-sm-12 col-md-9 col-lg-7" id="content">
-<div id="massless-particles" class="section level1" number="180">
-<h1><span class="header-section-number">180</span> Massless Particles</h1>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="massless-particles" class="section level1" number="180">
+<h1>
+<span class="header-section-number">180</span> Massless Particles<a class="anchor" aria-label="anchor" href="#massless-particles"><i class="fas fa-link"></i></a>
+</h1>
 <p>A particle with zero rest mass that always travels at the speed of light in vacuum, with energy and momentum proportional to each other.</p>
 <p>Perpetual motion at <span class="math inline">\(c\)</span>. A massless particle is never at rest. It travels at the speed of light in vacuum for every inertial observer. This principle is used to treat photons as the velocity standard of spacetime.</p>
 <p>The linear energy-momentum coupling. For zero rest mass, total energy is proportional to momentum. Rest mass is the mass in a rest frame, and a massless particle has none. This principle is used to compute the momentum of radiation from its energy.</p>
@@ -134,15 +240,20 @@ E = pc
 \]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(E\)</span> is the total energy.</li>
-<li><span class="math inline">\(p\)</span> is the magnitude of the momentum.</li>
-<li><span class="math inline">\(c\)</span> is the speed of light.</li>
+<li>
+<span class="math inline">\(E\)</span> is the total energy.</li>
+<li>
+<span class="math inline">\(p\)</span> is the magnitude of the momentum.</li>
+<li>
+<span class="math inline">\(c\)</span> is the speed of light.</li>
 </ul>
 <p>Absence of a rest frame. No inertial frame exists in which a massless particle is at rest. A rest frame is a coordinate system in which the particle’s spatial coordinates stay fixed. This principle is used to explain why proper time is not defined along a photon’s path.</p>
 <p>Null worldlines. The worldline of a massless particle is a null path. A lightlike worldline is a curve on which the spacetime interval vanishes. This principle is used to draw the light cone that bounds causal influence.</p>
 <p>The indeterminate <span class="math inline">\(\gamma m\)</span> limit. Energy and momentum remain finite because <span class="math inline">\(m=0\)</span> and <span class="math inline">\(v=c\)</span> together make the usual <span class="math inline">\(\gamma m\)</span> expressions an indeterminate limit. An indeterminate limit is that singular form of those expressions. This principle is used to allow massless energy carriers that Newtonian mechanics forbids.</p>
 <div id="references-169" class="section level2" number="180.1">
-<h2><span class="header-section-number">180.1</span> References</h2>
+<h2>
+<span class="header-section-number">180.1</span> References<a class="anchor" aria-label="anchor" href="#references-169"><i class="fas fa-link"></i></a>
+</h2>
 <ol style="list-style-type: decimal">
 <li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. — source for the heading explanation.</li>
 <li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — <span class="math inline">\(E=pc\)</span>; photons always at <span class="math inline">\(c\)</span>; indeterminate <span class="math inline">\(\gamma m\)</span> limit.</li>
@@ -680,8 +791,7 @@ E = pc
       initClassicLayout();
     }
   })();
-</script>
-<script>
+</script><script>
   /* Prefer heading matches in book search (e.g. "Lagrangian" page over References). */
   (function () {
     var WEIGHTED_FUSE_OPTIONS = {
@@ -777,28 +887,28 @@ E = pc
       start();
     }
   })();
-</script>
-  </main>
-
-  <div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-    <nav id="toc" data-toggle="toc" aria-label="On this page">
-      <h2>On this page</h2>
-      <div id="book-on-this-page"></div>
+</script><div class="chapter-nav">
+<div class="prev"><a href="mass-energy-equivalence.html"><span class="header-section-number">179</span> Mass-Energy Equivalence</a></div>
+<div class="next"><a href="minkowski-metric.html"><span class="header-section-number">181</span> Minkowski Metric</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#massless-particles"><span class="header-section-number">180</span> Massless Particles</a></li>
+<li><a class="nav-link" href="#references-169"><span class="header-section-number">180.1</span> References</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-          <li><a id="book-source" href="#">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="#">Edit this page <i class="fab fa-github"></i></a></li>
+          
         </ul>
-      </div>
+</div>
     </nav>
-  </div>
+</div>
 
 </div>
 </div> <!-- .container -->
 
-<footer class="bg-primary text-light mt-5">
-  <div class="container"><div class="row">
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
     <p>"<strong>Mathematics for Physics</strong>" was written by bignumber-material. </p>
@@ -809,11 +919,7 @@ E = pc
   </div>
 
 </div></div>
-</footer>
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
@@ -825,8 +931,7 @@ E = pc
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
-</script>
-<script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
 for (let popover of popovers) {
   const div = document.createElement('div');
   div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
@@ -843,6 +948,6 @@ for (let popover of popovers) {
   }
 }
 </script>
+<script src="latest-updates.js"></script>
 </body>
-
 </html>

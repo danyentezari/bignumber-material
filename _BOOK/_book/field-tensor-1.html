@@ -1,58 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>164 Field Tensor | Mathematics for Physics</title>
-
-    <meta name="author" content="bignumber-material" />
-  
-   <meta name="description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
-   <meta name="generator" content="placeholder" />
-  <meta property="og:title" content="164 Field Tensor | Mathematics for Physics" />
-  <meta property="og:type" content="book" />
-  
-  
-  <meta property="og:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="164 Field Tensor | Mathematics for Physics" />
-  
-  <meta name="twitter:description" content="This book is a collection of mathematical fundamentals and techniques for theoretical physics, particularly those related to electromagnetism." />
-  
-  <!-- JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script>
-    <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet" />
-    <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script>
-    <script src="libs/bs3compat-0.11.0/transition.js"></script>
-    <script src="libs/bs3compat-0.11.0/tabs.js"></script>
-    <script src="libs/bs3compat-0.11.0/bs3compat.js"></script>
-    <link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet" />
-    <script src="libs/bs4_book-1.0.0/bs4_book.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script>
-    <script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>164 Field Tensor | Mathematics for Physics</title>
+<meta name="author" content="bignumber-material">
+<meta name="description" content="The antisymmetric spacetime tensor that packages electric and magnetic field components into one covariant object in relativistic electrodynamics. Unified geometrical representation of...">
+<meta name="generator" content="bookdown 0.46 with bs4_book()">
+<meta property="og:title" content="164 Field Tensor | Mathematics for Physics">
+<meta property="og:type" content="book">
+<meta property="og:description" content="The antisymmetric spacetime tensor that packages electric and magnetic field components into one covariant object in relativistic electrodynamics. Unified geometrical representation of...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="164 Field Tensor | Mathematics for Physics">
+<meta name="twitter:description" content="The antisymmetric spacetime tensor that packages electric and magnetic field components into one covariant object in relativistic electrodynamics. Unified geometrical representation of...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script><script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-RCDW3GHNMP');
-    </script>
-
-    <!-- Serif + mono typefaces -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap"
-      rel="stylesheet">
-
-    <!-- Apply saved/preferred theme before first paint to avoid flashing -->
-    <script>
+    </script><!-- Serif + mono typefaces --><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<!-- Apply saved/preferred theme before first paint to avoid flashing --><script>
       (function () {
         try {
           var stored = localStorage.getItem("book-theme");
@@ -79,25 +53,20 @@
           document.documentElement.style.fontSize = "17px";
         }
       })();
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script>
-
-  <!-- CSS -->
-  <style type="text/css">
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
-      <link rel="stylesheet" href="style.css" />
-  
+<link rel="stylesheet" href="style.css">
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Special Relativity", "href": "special-relativity.html", "current": false}, {"title": "Field Tensor", "href": "field-tensor-1.html", "current": true}]</script>
+<link rel="canonical" href="https://book.danyentezari.com/field-tensor-1.html">
+<meta property="og:url" content="https://book.danyentezari.com/field-tensor-1.html">
 </head>
-
 <body data-spy="scroll" data-target="#toc">
 
 <div class="container-fluid">
 <div class="row">
-  <header class="col-sm-12 col-lg-3 sidebar sidebar-book">
-    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
     <div class="d-flex align-items-start justify-content-between">
       <h1>
@@ -109,22 +78,159 @@
     <div id="main-nav" class="collapse-lg">
       <form role="search">
         <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-      </form>
+</form>
 
-      <nav aria-label="Table of contents">
-        <h2>Table of contents</h2>
-        <div id="book-toc"></div>
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="active-parent" href="electromagnetism.html"><span class="header-section-number">2</span> Electromagnetism</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="quantum-mechanics.html"><span class="header-section-number">3</span> Quantum Mechanics</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="active-parent" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="classical-mechanics.html"><span class="header-section-number">5</span> Classical Mechanics</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="condensed-matter.html"><span class="header-section-number">6</span> Condensed Matter</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="physical-chemistry.html"><span class="header-section-number">7</span> Physical Chemistry</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="physics-principles.html"><span class="header-section-number">8</span> Physics Principles</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="topology.html"><span class="header-section-number">9</span> Topology</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="differential-geometry.html"><span class="header-section-number">10</span> Differential Geometry</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="calculus.html"><span class="header-section-number">11</span> Calculus</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="functional-analysis.html"><span class="header-section-number">12</span> Functional Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="linear-algebra.html"><span class="header-section-number">13</span> Linear Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="abstract-algebra.html"><span class="header-section-number">14</span> Abstract Algebra</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="differential-equations.html"><span class="header-section-number">15</span> Differential Equations</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="complex-analysis.html"><span class="header-section-number">16</span> Complex Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="real-analysis.html"><span class="header-section-number">17</span> Real Analysis</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="notes.html"><span class="header-section-number">18</span> Notes</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="glossary.html"><span class="header-section-number">19</span> Glossary</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="symbols.html"><span class="header-section-number">20</span> Symbols</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="constants.html"><span class="header-section-number">21</span> Constants</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="site-index.html"><span class="header-section-number">22</span> Index</a>
+</div>
+</li>
+<li class="book-toc-topic book-toc-topic--leaf">
+<div class="book-toc-topic-header">
+<span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
+<a class="" href="bibliography.html"><span class="header-section-number">23</span> Bibliography</a>
+</div>
+</li>
+</ul>
 
         <div class="book-extra">
-          <p><a id="book-repo" href="#">View book source <i class="fab fa-github"></i></a></li></p>
+          
         </div>
       </nav>
-    </div>
-  </header>
-
-  <main class="col-sm-12 col-md-9 col-lg-7" id="content">
-<div id="field-tensor-1" class="section level1" number="164">
-<h1><span class="header-section-number">164</span> Field Tensor</h1>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="field-tensor-1" class="section level1" number="164">
+<h1>
+<span class="header-section-number">164</span> Field Tensor<a class="anchor" aria-label="anchor" href="#field-tensor-1"><i class="fas fa-link"></i></a>
+</h1>
 <p>The antisymmetric spacetime tensor that packages electric and magnetic field components into one covariant object in relativistic electrodynamics.</p>
 <p>Unified geometrical representation of <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span>. Electric and magnetic fields form one antisymmetric second-rank tensor in spacetime. An antisymmetric tensor is a two-index object that changes sign when its indices are swapped. This principle is used to treat <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span> as frame-dependent parts of one field.</p>
 <p>The electromagnetic field tensor is</p>
@@ -139,10 +245,14 @@ F^{\mu\nu} =
 \]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(F^{\mu\nu}\)</span> is the electromagnetic field tensor.</li>
-<li><span class="math inline">\(E_{x}\)</span>, <span class="math inline">\(E_{y}\)</span>, <span class="math inline">\(E_{z}\)</span> are the electric-field components.</li>
-<li><span class="math inline">\(B_{x}\)</span>, <span class="math inline">\(B_{y}\)</span>, <span class="math inline">\(B_{z}\)</span> are the magnetic-field components.</li>
-<li><span class="math inline">\(c\)</span> is the speed of light.</li>
+<li>
+<span class="math inline">\(F^{\mu\nu}\)</span> is the electromagnetic field tensor.</li>
+<li>
+<span class="math inline">\(E_{x}\)</span>, <span class="math inline">\(E_{y}\)</span>, <span class="math inline">\(E_{z}\)</span> are the electric-field components.</li>
+<li>
+<span class="math inline">\(B_{x}\)</span>, <span class="math inline">\(B_{y}\)</span>, <span class="math inline">\(B_{z}\)</span> are the magnetic-field components.</li>
+<li>
+<span class="math inline">\(c\)</span> is the speed of light.</li>
 </ul>
 <p>Definition from the four-potential. The field tensor is the four-dimensional curl of the four-potential. The four-potential is the four-vector <span class="math inline">\(\left(\dfrac{V}{c},\,\mathbf{A}\right)\)</span>. This principle is used to obtain <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span> from derivatives of <span class="math inline">\(A^{\mu}\)</span>.</p>
 <p>The field tensor from the four-potential is</p>
@@ -151,9 +261,12 @@ F_{\mu\nu} = \partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}
 \]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(F_{\mu\nu}\)</span> is the covariant field tensor.</li>
-<li><span class="math inline">\(A_{\mu}\)</span> is the four-potential.</li>
-<li><span class="math inline">\(\partial_{\mu}\)</span> is the spacetime derivative.</li>
+<li>
+<span class="math inline">\(F_{\mu\nu}\)</span> is the covariant field tensor.</li>
+<li>
+<span class="math inline">\(A_{\mu}\)</span> is the four-potential.</li>
+<li>
+<span class="math inline">\(\partial_{\mu}\)</span> is the spacetime derivative.</li>
 </ul>
 <p>Covariant Maxwell equations. Maxwell’s four vector equations reduce to two tensor equations. Manifest covariance is the property that an equation written in tensors keeps its form under Lorentz transformations. The four-current is the four-vector <span class="math inline">\((c\rho,\,\mathbf{J})\)</span>. This principle is used to write electrodynamics so that it holds in every inertial frame.</p>
 <p>The inhomogeneous Maxwell equation is</p>
@@ -166,8 +279,10 @@ F_{\mu\nu} = \partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}
 \]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(J^{\nu}\)</span> is the four-current.</li>
-<li><span class="math inline">\(\mu_{0}\)</span> is the permeability of free space.</li>
+<li>
+<span class="math inline">\(J^{\nu}\)</span> is the four-current.</li>
+<li>
+<span class="math inline">\(\mu_{0}\)</span> is the permeability of free space.</li>
 </ul>
 <p>The relativistic Lorentz force. The four-force on a charge is the contraction of the field tensor with the four-velocity. Four-velocity is the rate of change of spacetime position with proper time. This principle is used to write electric and magnetic forces as one equation.</p>
 <p>The Minkowski force is</p>
@@ -176,9 +291,12 @@ f^{\mu} = q F^{\mu}{}_{\nu} U^{\nu}
 \]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(f^{\mu}\)</span> is the four-force.</li>
-<li><span class="math inline">\(q\)</span> is the charge.</li>
-<li><span class="math inline">\(U^{\nu}\)</span> is the four-velocity.</li>
+<li>
+<span class="math inline">\(f^{\mu}\)</span> is the four-force.</li>
+<li>
+<span class="math inline">\(q\)</span> is the charge.</li>
+<li>
+<span class="math inline">\(U^{\nu}\)</span> is the four-velocity.</li>
 </ul>
 <p>Frame-invariant field scalars. Some combinations of <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span> built from the field tensor are the same in every inertial frame. A spacetime invariant is a scalar unchanged by a Lorentz transformation. This principle is used to recognize a radiation field as a field with <span class="math inline">\(E^{2}-c^{2}B^{2}=0\)</span> in every frame.</p>
 <p>The field invariant is</p>
@@ -187,7 +305,9 @@ F_{\mu\nu}F^{\mu\nu} = 2\left(B^{2} - \dfrac{E^{2}}{c^{2}}\right)
 \]</span></p>
 <p>Note: Also called the Faraday tensor. Also called the electromagnetic field tensor.</p>
 <div id="references-153" class="section level2" number="164.1">
-<h2><span class="header-section-number">164.1</span> References</h2>
+<h2>
+<span class="header-section-number">164.1</span> References<a class="anchor" aria-label="anchor" href="#references-153"><i class="fas fa-link"></i></a>
+</h2>
 <ol style="list-style-type: decimal">
 <li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. — source for the heading explanation.</li>
 <li>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. Cambridge University Press, 2024. — <span class="math inline">\(F^{\mu\nu}\)</span> matrix; <span class="math inline">\(F_{\mu\nu}=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}\)</span>; covariant Maxwell equations; <span class="math inline">\(f^{\mu}=qF^{\mu}{}_{\nu}U^{\nu}\)</span>.</li>
@@ -724,8 +844,7 @@ F_{\mu\nu}F^{\mu\nu} = 2\left(B^{2} - \dfrac{E^{2}}{c^{2}}\right)
       initClassicLayout();
     }
   })();
-</script>
-<script>
+</script><script>
   /* Prefer heading matches in book search (e.g. "Lagrangian" page over References). */
   (function () {
     var WEIGHTED_FUSE_OPTIONS = {
@@ -821,28 +940,28 @@ F_{\mu\nu}F^{\mu\nu} = 2\left(B^{2} - \dfrac{E^{2}}{c^{2}}\right)
       start();
     }
   })();
-</script>
-  </main>
-
-  <div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-    <nav id="toc" data-toggle="toc" aria-label="On this page">
-      <h2>On this page</h2>
-      <div id="book-on-this-page"></div>
+</script><div class="chapter-nav">
+<div class="prev"><a href="events.html"><span class="header-section-number">163</span> Events</a></div>
+<div class="next"><a href="four-current.html"><span class="header-section-number">165</span> Four-Current</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#field-tensor-1"><span class="header-section-number">164</span> Field Tensor</a></li>
+<li><a class="nav-link" href="#references-153"><span class="header-section-number">164.1</span> References</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-          <li><a id="book-source" href="#">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="#">Edit this page <i class="fab fa-github"></i></a></li>
+          
         </ul>
-      </div>
+</div>
     </nav>
-  </div>
+</div>
 
 </div>
 </div> <!-- .container -->
 
-<footer class="bg-primary text-light mt-5">
-  <div class="container"><div class="row">
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
     <p>"<strong>Mathematics for Physics</strong>" was written by bignumber-material. </p>
@@ -853,11 +972,7 @@ F_{\mu\nu}F^{\mu\nu} = 2\left(B^{2} - \dfrac{E^{2}}{c^{2}}\right)
   </div>
 
 </div></div>
-</footer>
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
@@ -869,8 +984,7 @@ F_{\mu\nu}F^{\mu\nu} = 2\left(B^{2} - \dfrac{E^{2}}{c^{2}}\right)
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
-</script>
-<script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
 for (let popover of popovers) {
   const div = document.createElement('div');
   div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
@@ -887,6 +1001,6 @@ for (let popover of popovers) {
   }
 }
 </script>
+<script src="latest-updates.js"></script>
 </body>
-
 </html>
