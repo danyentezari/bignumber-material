@@ -69,12 +69,14 @@ Query the appropriate Notebook LLM document. The answer must be grounded from th
 67. Neighborhood
 68. Topology
 69. Probability
-70. Random variable
-71. Expectation
-72. Variance
-73. Graph
-74. Vertex
-75. Edge
+70. Distribution
+71. Probability Distribution
+72. Random Variable
+73. Expectation
+74. Variance
+75. Graph
+76. Vertex
+77. Edge
 
 Do not distract the reader by involving other mathematical terms outside of this list when they are not even done reading the explanation of the one they're currently reading!
 
