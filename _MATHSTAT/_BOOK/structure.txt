@@ -1,0 +1,91 @@
+# Handbook structure from main.tex.
+# Used by _MATHSTAT/_BOOK/build.sh (generate_topics.py) for sidebar and page order.
+#
+# Unindented lines are topic folders.
+# Nested lines are pages, in the same order as main.tex.
+# Lines starting with # are ignored.
+#
+# Preface in main.tex is the book Introduction (index.Rmd), not a topic folder.
+# Index and Bibliography are appended by the build.
+
+Probability Theory
+  Combinatorics
+    Permutation with Repetition
+    Permutation without Repetition
+    Combination without Repetition and the Binomial Coefficient
+  Important Concepts in Probability Theory
+    Central Limit Theorem
+    Law of Large Numbers
+  Bayes Theorem and Conditional Probability
+
+Random Variables
+  Discrete Random Variables
+  Continuous Random Variables
+
+Probability Distributions
+  Probability Distribution Functions
+    Probability Mass Function
+    Probability Density Function
+    Cumulative Probability Function
+  Important Probability Distributions
+    Binomial Distribution
+    Binomial Distribution and the Binomial Coefficient
+    Normal Distribution
+    Poisson Distribution
+    Chi-Squared Distribution
+    Student's T-Distribution
+    Fischer F-Distribution
+
+Overview of Moments
+  Expected Value
+  Variance
+  Skewness
+  Methods of Moments
+    Moment Generating Functions
+
+Maximum Likelihood
+  Likelihood Function
+  Log-Likelihood
+  Differentiating the Log-Likelihood Function
+  Maximum Likelihood Estimator (MLE)
+
+Measure Theory
+  Measure
+    Sigma-algebra
+    Measure Space
+    Measurable Space
+  Lebesgue Measure
+    Lebesgue Integral
+  Probability Measure
+    Probability Space
+
+Markov Chain Monte Carlo
+  Preliminaries
+    Stationary Distribution
+
+Fourier Analysis
+  Limiting Distribution
+  Characteristic Function
+
+Convergence of Random Variables, Distributions, and Probabilities
+
+Select Topics in Stochastic Calculus
+  Martingale
+  Stochastic Bridges
+  Stochastic Process
+  Stochastic Differential Equations
+
+Glossary
+  Experiment
+  Trial
+  Outcome
+  Sample Space
+  Event
+
+Mathematical Appendix
+  Infimum and Supremum
+  Exponential Function
+  Gamma Function
+  Manifolds
+
+Table of Symbols

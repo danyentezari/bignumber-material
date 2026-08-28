@@ -1,0 +1,13 @@
+---
+title: "Handbook for Mathematical Statistics and Probability Theory"
+author: "Dany Entezari"
+description: "This handbook is an active draft for learning probability theory from mathematical first principles, and for bridging probability theory with statistics and machine learning."
+site: bookdown::bookdown_site
+documentclass: book
+---
+
+# Introduction
+
+This handbook is an active draft. I am writing it with two goals in mind: first, to enable the interested reader to learn probability theory from mathematical first principles; second, to bridge what I consider a pedagogical gap between probability theory and its applications.
+
+I originally began writing this as supplementary material for my students, but I am now generalizing it for anyone interested in learning probability theory and its applications—namely statistics and machine learning—from first principles.

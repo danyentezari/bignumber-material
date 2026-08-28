@@ -1,0 +1,20 @@
+# Reorder these lines, then rebuild (_MATHSTAT/_BOOK/build.sh).
+# One _TOPICS folder name per line. Lines starting with # are ignored.
+# Introduction always stays first.
+# Index and Bibliography are appended after the topics listed here.
+
+Probability-Theory
+Random-Variables
+Probability-Distributions
+Overview-of-Moments
+Maximum-Likelihood
+Measure-Theory
+Markov-Chain-Monte-Carlo
+Fourier-Analysis
+Convergence-of-Random-Variables
+Stochastic-Calculus
+Glossary
+Mathematical-Appendix
+Symbols
+# Index
+# Bibliography

@@ -1,0 +1,46 @@
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RCDW3GHNMP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RCDW3GHNMP');
+</script>
+
+<!-- Serif + mono typefaces -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+  rel="stylesheet">
+
+<!-- Apply saved/preferred theme before first paint to avoid flashing -->
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("book-theme");
+      var mode = stored === "light" || stored === "dark" || stored === "system"
+        ? stored
+        : "system";
+      var theme = mode === "system"
+        ? (window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light")
+        : mode;
+      document.documentElement.setAttribute("data-theme", theme);
+      document.documentElement.setAttribute("data-theme-mode", mode);
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "light");
+      document.documentElement.setAttribute("data-theme-mode", "system");
+    }
+    document.documentElement.classList.add("theme-classic");
+    try {
+      var storedFont = localStorage.getItem("book-font-size");
+      document.documentElement.style.fontSize = (storedFont !== null ? storedFont : "17") + "px";
+    } catch (e) {
+      document.documentElement.style.fontSize = "17px";
+    }
+  })();
+</script>
