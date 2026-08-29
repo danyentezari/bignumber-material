@@ -62,6 +62,7 @@ Fourier Analysis
 
 Important Probability Distributions
   Binomial Distribution
+  Derivation of Standard Deviation in Binomial Distribution
   Binomial Distribution and the Binomial Coefficient
   Normal Distribution
   Poisson Distribution
@@ -70,6 +71,24 @@ Important Probability Distributions
   Fischer F-Distribution
 
 Derivation of Normal Distribution
+  Binomial Distribution
+  Stirling's Approximation
+  Wallis Product
+  De Moivre-Laplace Approximation
+  Standardization
+  Standard Normal Distribution
+  Gaussian Integral
+  Evaluate the Inner Integral
+  Change of Variables
+  Jacobian
+  Jacobian Example
+  Polar Coordinates
+  Polar Area Element
+  General Normal Distribution
+  Normalization
+  Mean
+  Variance
+  References
 
 Convergence of Random Variables, Distributions, and Probabilities
 
