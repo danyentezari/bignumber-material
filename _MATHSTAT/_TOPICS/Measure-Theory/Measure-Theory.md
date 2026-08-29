@@ -1,5 +1,7 @@
 # Measure Theory
 
+Measure Theory is about assigning a notion of size—such as length, area, volume, mass, or probability—to abstract sets, and studying the sets and functions relevant to that notion of size.
+
 ## Topics
 
 1. [Measure](measure.html)

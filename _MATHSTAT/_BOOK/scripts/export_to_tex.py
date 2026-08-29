@@ -51,13 +51,25 @@ def find_page(folder: Path, name: str) -> Path | None:
         return None
     key = slugify_text(name)
     hub = folder / f"{folder.name}.md"
+
+    def is_topic_md(path: Path) -> bool:
+        # Keep *.draft.md in git; never include them in the PDF export.
+        return (
+            path.is_file()
+            and path.suffix.lower() == ".md"
+            and not path.name.endswith(".draft.md")
+        )
+
+    # Prefer an exact stem match (Frequency-Domain.md for "Frequency Domain").
     for path in folder.iterdir():
-        if not path.is_file() or path.suffix.lower() != ".md":
-            continue
-        if slugify_text(extract_title(path)) == key or slugify_text(path.stem) == key:
+        if is_topic_md(path) and slugify_text(path.stem) == key:
             return path
-    if hub.is_file() and slugify_text(extract_title(hub)) == key:
-        return hub
+    for path in folder.iterdir():
+        if is_topic_md(path) and slugify_text(extract_title(path)) == key:
+            return path
+    if hub.is_file() and not hub.name.endswith(".draft.md"):
+        if slugify_text(extract_title(hub)) == key:
+            return hub
     return None
 
 

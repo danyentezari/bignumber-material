@@ -380,7 +380,7 @@ where
 %----------------------------------------------------------------------------
 \newpage
 \section{Measure Theory}
-Measure Theory is the study of...
+Measure Theory is about assigning a notion of size—such as length, area, volume, mass, or probability—to abstract sets, and studying the sets and functions relevant to that notion of size.
 
 %----------------------------------------------------------------------------
 \subsection{Measure}
@@ -527,6 +527,11 @@ A distribution is stationary if it is unchanged after a transition matrix is app
 %----------------------------------------------------------------------------
 \newpage
 \section{Fourier Analysis}
+Fourier Analysis, a special case of Harmonic Analysis, is the analysis of harmonic oscillations. 
+
+Harmonic oscillations are patterns produced by sinusoidal functions. At the centre of Fourier Analysis is the Fourier Transform, the input of which is some signal and the output of which is a characteristic function in the frequency domain, the set of real number representing the rates of oscillation.
+
+In the context of probability theory, the inputs are probability distributions. The idea is to decompose probability distributions into simpler distributions. The outputs are characteristic functions,
 
 %----------------------------------------------------------------------------
 \subsection{Limiting Distribution}
@@ -534,9 +539,27 @@ The distribution to which a sequence of random variables converges.
 
 %----------------------------------------------------------------------------
 \subsection{Characteristic Function}
-The \emph{characteristic function} is a unique representation of a probability distribution. This means that, with the characteristic function, the densities of any continuous random variable or the mass of a discrete random variable are determined for the entirety of the probability function's domain.
+In probability theory, the characteristic function is the output of the Fourier transform function.
 
-In probability theory, the characteristic function is the Fourier transform. The characteristic function is also known as the \emph{indicator function of a set}.
+\begin{mdframed}
+\begin{definition}[Characteristic Function]
+The characteristic function of a probability measure $\mu$ is
+
+$$
+\phi(t) = \displaystyle\int_{-\infty}^{\infty} e^{itx}\, \mu(dx)
+$$
+
+where
+
+\begin{itemize}
+    \item $\mu$ is a probability measure on the real line.
+    \item $\phi$ is the characteristic function of $\mu$.
+    \item $t$ is a real argument.
+    \item $x$ is the integration variable.
+    \item $i$ is the imaginary unit.
+\end{itemize}
+\end{definition}
+\end{mdframed}
 
 %----------------------------------------------------------------------------
 \newpage

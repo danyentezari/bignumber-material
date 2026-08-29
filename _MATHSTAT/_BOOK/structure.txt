@@ -64,6 +64,7 @@ Markov Chain Monte Carlo
     Stationary Distribution
 
 Fourier Analysis
+  Frequency Domain
   Limiting Distribution
   Characteristic Function
 

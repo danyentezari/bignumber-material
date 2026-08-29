@@ -1,5 +1,23 @@
 # Characteristic Function
 
-The *characteristic function* is a unique representation of a probability distribution. This means that, with the characteristic function, the densities of any continuous random variable or the mass of a discrete random variable are determined for the entirety of the probability function's domain.
+In probability theory, the characteristic function is the output of the Fourier transform function.
 
-In probability theory, the characteristic function is the Fourier transform. The characteristic function is also known as the *indicator function of a set*.
+<i>
+
+**definition [d]** (*Characteristic Function*) 
+
+The characteristic function of a probability measure $\mu$ is
+
+$$
+\phi(t) = \displaystyle\int_{-\infty}^{\infty} e^{itx}\, \mu(dx)
+$$
+
+where
+
+- $\mu$ is a probability measure on the real line.
+- $\phi$ is the characteristic function of $\mu$.
+- $t$ is a real argument.
+- $x$ is the integration variable.
+- $i$ is the imaginary unit.
+
+</i>

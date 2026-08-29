@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Watch topic sources and book chrome. On change: regenerate main.tex from
 # _TOPICS, rebuild main.pdf, and incrementally rebuild the HTML book.
+# Topic files ending in .draft.md are ignored (kept in git, not built).
 #
 # Usage: ./watch-build.sh
 # Stop:  Ctrl-C
@@ -88,6 +89,7 @@ fswatch -r \
       case "$path" in
         */_book/*|*/generated/*|*/.DS_Store|*~) continue ;;
         *.pdf|*.aux|*.log|*.fls|*.fdb_latexmk|*.synctex.gz) continue ;;
+        *.draft.md) continue ;;
         */main.tex) continue ;;
       esac
       changed+=("$path")
