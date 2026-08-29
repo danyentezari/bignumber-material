@@ -27,14 +27,6 @@ Probability Distributions
     Probability Mass Function
     Probability Density Function
     Cumulative Probability Function
-  Important Probability Distributions
-    Binomial Distribution
-    Binomial Distribution and the Binomial Coefficient
-    Normal Distribution
-    Poisson Distribution
-    Chi-Squared Distribution
-    Student's T-Distribution
-    Fischer F-Distribution
 
 Overview of Moments
   Expected Value
@@ -67,6 +59,15 @@ Fourier Analysis
   Frequency Domain
   Limiting Distribution
   Characteristic Function
+
+Important Probability Distributions
+  Binomial Distribution
+  Binomial Distribution and the Binomial Coefficient
+  Normal Distribution
+  Poisson Distribution
+  Chi-Squared Distribution
+  Student's T-Distribution
+  Fischer F-Distribution
 
 Convergence of Random Variables, Distributions, and Probabilities
 

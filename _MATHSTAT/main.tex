@@ -147,105 +147,6 @@ where
 The cumulative probability function of a discrete or continuous random variable will map, for every value in the random variable, the probability that the value will be observed.
 
 %----------------------------------------------------------------------------
-\subsection{Important Probability Distributions}
-
-%----------------------------------------------------------------------------
-\subsubsection{Binomial Distribution}
-The PMF of the binomial distribution is given by
-$$f(k)=P(X=k)={n \choose k} p^k (1-p)^{n-k}$$
-where
-
-\begin{itemize}
-    \item ${n \choose k}$ is the binomial coefficient
-    \item $n$ is a positive integer
-    \item $k$ a number between $0$ and $n$; specifically, $0 \leq r \leq n$
-\end{itemize}
-
-The binomial distribution is used when a discrete random variable has the following characteristics
-
-\begin{itemize}
-    \item fixed number of trials
-    \item trials can have only two outcomes (e.g, heads or tails)
-\end{itemize}
-
-%----------------------------------------------------------------------------
-\subsubsection{Binomial Distribution and the Binomial Coefficient}
-When expressing the PMF of the binomial distribution, sometimes the notation for the binomial coefficient is used.
-
-%----------------------------------------------------------------------------
-\subsubsection{Normal Distribution}
-The PDF of the normal distribution is given by
-$$f(x)=\frac{1}{\sigma{\sqrt{2\pi}}} \text{Exp} \bigg [ {-\frac{1}{2} \frac{(x-\mu)^2}{\sigma^2}} \bigg ]$$
-where
-
-\begin{itemize}
-    \item $\sigma$ is the population standard deviation
-    \item $n\sqrt{2\pi}$ is attributed to the central limit theorem
-    \item $\mu$ is the population mean average
-\end{itemize}
-
-The normal distribution is a generalization of the binomial distribution. This also means that the normal distribution makes it possible to find the probability of values that are not observed in the random variable.
-
-%----------------------------------------------------------------------------
-\subsubsection{Poisson Distribution}
-The PDF of the chi-squared distribution is given by
-$$ f(x)=P(X=k)=\frac{\lambda^k}{k!}e^{-\lambda} $$
-where
-
-\begin{itemize}
-    \item $\lambda$ is the average number of occurrences
-    \item $k$ is the number of successes
-    \item $e^x$ is the exponential function
-\end{itemize}
-
-The Poisson distribution is used to approximate the binomial distribution when the number of trials (i.e, experiments) are large but the number of successes few.
-
-%----------------------------------------------------------------------------
-\subsubsection{Chi-Squared Distribution}
-The PDF of the chi-squared distribution is given by
-$$ f(x) = \begin{cases} \frac{ x^{k/2-1}e^{-x/2} }{ 2^{k/2} \Gamma(k/2) }
-\enspace ; \text{ for }  x \geq 0  \\ 0 \enspace ; \quad \text{otherwise} \end{cases} $$ 
-
-where
-
-\begin{itemize}
-    \item $k$\ is parameter representing the degrees of freedom
-    \item $\Gamma(x)$ is the gamma function (see Special Functions)
-    \item $e$ is the exponential function (see Special Functions)
-\end{itemize}
-
-The Chi-Squared distribution is used to determine significant differences between samples and their population with respect to two or more categorical variables.
-
-%----------------------------------------------------------------------------
-\subsubsection{Student's T-Distribution}
-The PDF of the t-distribution is given by
-
-$$ f(x) = \frac{ \Gamma (\frac{v+1}{2}) }{ \sqrt{v \pi} \: \Gamma (\frac{v}{2}) } \Big (1+ \frac{t^2}{v} \Big ) ^ {-\frac{v+1}{2}} $$ 
-
-where
-
-\begin{itemize}
-    \item $\frac{1}{\sqrt{\pi\:n}} \frac{\Gamma((n+1)/2)}{\Gamma(n/2)}$ is the constant of proportionality
-\end{itemize}
-
-The t-distribution is used when the sample is almost normally distributed but has a size 30 or fewer.
-
-%----------------------------------------------------------------------------
-\subsubsection{Fischer F-Distribution}
-The PDF of the F-distribution is given by
-
-$$ f(x) = \begin{cases} \frac{\Gamma (\frac{v_1 + v_2}{2}) }{ \Gamma (\frac{v_1}{2}) \:  \Gamma (\frac{v_2}{2})  } v_1^{v_1/2} \: v_2^{ v_2/2} \: x^{ (v / 2)-1 } \: (v_2 + v_1 x)^{-(v_1 + v_2)/2} \enspace ; \quad x > 0 \\ 0 \enspace ; \quad x \leq 0 \end{cases} $$
-
-where
-
-\begin{itemize}
-    \item $v_1, v_2$ are degrees of freedom
-    \item $\Gamma(x)$ is the Gamma function (see Special Functions)
-\end{itemize}
-
-The F-distribution is the ratio of two random variables with chi-squared distribution. The F-distribution is used in ANOVA for two random variables and their mean square ratio.
-
-%----------------------------------------------------------------------------
 \newpage
 \section{Overview of Moments}
 Moments are specific descriptions of a probability distribution. 
@@ -560,6 +461,106 @@ where
 \end{itemize}
 \end{definition}
 \end{mdframed}
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Important Probability Distributions}
+
+%----------------------------------------------------------------------------
+\subsection{Binomial Distribution}
+The PMF of the binomial distribution is given by
+$$f(k)=P(X=k)={n \choose k} p^k (1-p)^{n-k}$$
+where
+
+\begin{itemize}
+    \item ${n \choose k}$ is the binomial coefficient
+    \item $n$ is a positive integer
+    \item $k$ a number between $0$ and $n$; specifically, $0 \leq r \leq n$
+\end{itemize}
+
+The binomial distribution is used when a discrete random variable has the following characteristics
+
+\begin{itemize}
+    \item fixed number of trials
+    \item trials can have only two outcomes (e.g, heads or tails)
+\end{itemize}
+
+%----------------------------------------------------------------------------
+\subsection{Binomial Distribution and the Binomial Coefficient}
+When expressing the PMF of the binomial distribution, sometimes the notation for the binomial coefficient is used.
+
+%----------------------------------------------------------------------------
+\subsection{Normal Distribution}
+The PDF of the normal distribution is given by
+$$f(x)=\frac{1}{\sigma{\sqrt{2\pi}}} \text{Exp} \bigg [ {-\frac{1}{2} \frac{(x-\mu)^2}{\sigma^2}} \bigg ]$$
+where
+
+\begin{itemize}
+    \item $\sigma$ is the population standard deviation
+    \item $n\sqrt{2\pi}$ is attributed to the central limit theorem
+    \item $\mu$ is the population mean average
+\end{itemize}
+
+The normal distribution is a generalization of the binomial distribution. This also means that the normal distribution makes it possible to find the probability of values that are not observed in the random variable.
+
+%----------------------------------------------------------------------------
+\subsection{Poisson Distribution}
+The PDF of the chi-squared distribution is given by
+$$ f(x)=P(X=k)=\frac{\lambda^k}{k!}e^{-\lambda} $$
+where
+
+\begin{itemize}
+    \item $\lambda$ is the average number of occurrences
+    \item $k$ is the number of successes
+    \item $e^x$ is the exponential function
+\end{itemize}
+
+The Poisson distribution is used to approximate the binomial distribution when the number of trials (i.e, experiments) are large but the number of successes few.
+
+%----------------------------------------------------------------------------
+\subsection{Chi-Squared Distribution}
+The PDF of the chi-squared distribution is given by
+$$ f(x) = \begin{cases} \frac{ x^{k/2-1}e^{-x/2} }{ 2^{k/2} \Gamma(k/2) }
+\enspace ; \text{ for }  x \geq 0  \\ 0 \enspace ; \quad \text{otherwise} \end{cases} $$ 
+
+where
+
+\begin{itemize}
+    \item $k$\ is parameter representing the degrees of freedom
+    \item $\Gamma(x)$ is the gamma function (see Special Functions)
+    \item $e$ is the exponential function (see Special Functions)
+\end{itemize}
+
+The Chi-Squared distribution is used to determine significant differences between samples and their population with respect to two or more categorical variables.
+
+%----------------------------------------------------------------------------
+\subsection{Student's T-Distribution}
+The PDF of the t-distribution is given by
+
+$$ f(x) = \frac{ \Gamma (\frac{v+1}{2}) }{ \sqrt{v \pi} \: \Gamma (\frac{v}{2}) } \Big (1+ \frac{t^2}{v} \Big ) ^ {-\frac{v+1}{2}} $$ 
+
+where
+
+\begin{itemize}
+    \item $\frac{1}{\sqrt{\pi\:n}} \frac{\Gamma((n+1)/2)}{\Gamma(n/2)}$ is the constant of proportionality
+\end{itemize}
+
+The t-distribution is used when the sample is almost normally distributed but has a size 30 or fewer.
+
+%----------------------------------------------------------------------------
+\subsection{Fischer F-Distribution}
+The PDF of the F-distribution is given by
+
+$$ f(x) = \begin{cases} \frac{\Gamma (\frac{v_1 + v_2}{2}) }{ \Gamma (\frac{v_1}{2}) \:  \Gamma (\frac{v_2}{2})  } v_1^{v_1/2} \: v_2^{ v_2/2} \: x^{ (v / 2)-1 } \: (v_2 + v_1 x)^{-(v_1 + v_2)/2} \enspace ; \quad x > 0 \\ 0 \enspace ; \quad x \leq 0 \end{cases} $$
+
+where
+
+\begin{itemize}
+    \item $v_1, v_2$ are degrees of freedom
+    \item $\Gamma(x)$ is the Gamma function (see Special Functions)
+\end{itemize}
+
+The F-distribution is the ratio of two random variables with chi-squared distribution. The F-distribution is used in ANOVA for two random variables and their mean square ratio.
 
 %----------------------------------------------------------------------------
 \newpage
