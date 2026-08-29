@@ -13,6 +13,7 @@ rmd_files:
   - "../_BOOK/generated/Markov-Chain-Monte-Carlo/Markov-Chain-Monte-Carlo.md"
   - "../_BOOK/generated/Fourier-Analysis/Fourier-Analysis.md"
   - "../_BOOK/generated/Important-Probability-Distributions/Important-Probability-Distributions.md"
+  - "../_BOOK/generated/Derivation-of-Normal-Distribution/Derivation-of-Normal-Distribution.md"
   - "../_BOOK/generated/Convergence-of-Random-Variables/Convergence-of-Random-Variables.md"
   - "../_BOOK/generated/Stochastic-Calculus/Stochastic-Calculus.md"
   - "../_BOOK/generated/Glossary/Glossary.md"

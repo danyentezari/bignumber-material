@@ -69,6 +69,8 @@ Important Probability Distributions
   Student's T-Distribution
   Fischer F-Distribution
 
+Derivation of Normal Distribution
+
 Convergence of Random Variables, Distributions, and Probabilities
 
 Select Topics in Stochastic Calculus
