@@ -71,6 +71,7 @@ Important Probability Distributions
   Fischer F-Distribution
 
 Derivation of Normal Distribution
+  Guide
   Binomial Distribution
   Stirling's Approximation
   Wallis Product

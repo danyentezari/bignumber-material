@@ -1,57 +1,41 @@
 # Variance
 
-Since $E[Z]=0$,
+<!-- pdf-page-width: wide -->
 
 $$
+\begin{align*}
 \operatorname{Var}(Z)
-=
-E[Z^2].
-$$
-
-Thus,
-
-$$
+&=
 E[Z^2]
-=
+\tag*{\just{Since $E[Z]=0$,}}
+\\[0.45em]
+E[Z^2]
+&=
 \frac{1}{\sqrt{2\pi}}
 \int_{-\infty}^{\infty}
-z^2e^{-z^2/2}\,dz.
-$$
-
-Using integration by parts,
-
-$$
-u=z
-$$
-
-and
-
-$$
+z^2e^{-z^2/2}\,dz
+\tag*{\just{Thus,}}
+\\[0.45em]
+u
+&=
+z
+\tag*{\just{Using integration by parts,}}
+\\[0.45em]
 dv
-=
-z e^{-z^2/2}\,dz.
-$$
-
-Then
-
-$$
+&=
+z e^{-z^2/2}\,dz
+\tag*{\just{and}}
+\\[0.45em]
 du
-=
+&=
 dz
-$$
-
-and
-
-$$
+\tag*{\just{Then}}
+\\[0.45em]
 v
-=
--e^{-z^2/2}.
-$$
-
-Therefore,
-
-$$
-\begin{aligned}
+&=
+-e^{-z^2/2}
+\tag*{\just{and}}
+\\[0.45em]
 \int_{-\infty}^{\infty}
 z^2e^{-z^2/2}\,dz
 &=
@@ -63,50 +47,36 @@ z^2e^{-z^2/2}\,dz
 e^{-z^2/2}\,dz
 \\
 &=
-\sqrt{2\pi}.
-\end{aligned}
-$$
-
-Hence,
-
-$$
+\sqrt{2\pi}
+\tag*{\just{Therefore,}}
+\\[0.45em]
 E[Z^2]
-=
-1.
-$$
-
-Therefore,
-
-$$
+&=
+1
+\tag*{\just{Hence,}}
+\\[0.45em]
 \operatorname{Var}(Z)
-=
-1.
-$$
-
-Since
-
-$$
+&=
+1
+\tag*{\just{Therefore,}}
+\\[0.45em]
 X
-=
-\mu+\sigma Z,
-$$
-
-we have
-
-$$
+&=
+\mu+\sigma Z
+\tag*{\just{Since}}
+\\[0.45em]
 \operatorname{Var}(X)
-=
-\sigma^2\operatorname{Var}(Z).
-$$
-
-Thus,
-
-$$
+&=
+\sigma^2\operatorname{Var}(Z)
+\tag*{\just{we have}}
+\\[0.45em]
 \boxed{
 \operatorname{Var}(X)
 =
 \sigma^2
-}.
+}
+\tag*{\just{Thus,}}
+\end{align*}
 $$
 
 Hence,

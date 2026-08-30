@@ -1,5 +1,7 @@
 # References
 
+<!-- pdf-page-width: wide -->
+
 1. Ross, S. M. *A First Course in Probability*. 10th ed. Pearson, 2019. §5.4, “Normal Random Variables,” p. 200 onward — definition and normalization of the normal density, including evaluation of the Gaussian integral by polar coordinates.
 
 2. Ross, S. M. *A First Course in Probability*. 10th ed. Pearson, 2019. §5.4.1, “The Normal Approximation to the Binomial Distribution,” p. 207 onward — the de Moivre-Laplace limit theorem and standardization of the binomial distribution.

@@ -100,7 +100,7 @@ def normalize_title_key(text: str) -> str:
 
 
 def is_draft_md(path: Path) -> bool:
-    return path.name.endswith(".draft.md")
+    return path.name.endswith(".draft.md") or path.name.endswith(".skip.md")
 
 
 def is_safe_md(path: Path) -> bool:

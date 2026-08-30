@@ -1,248 +1,133 @@
 # De Moivre-Laplace Approximation
 
-Apply Stirling's approximation to each factorial:
+<!-- pdf-page-width: wide -->
 
 $$
+\begin{align*}
+P(X_n=k)
+&=
+\frac{n!}{k!(n-k)!}p^kq^{n-k}
+\tag*{\just{Start from the binomial probability}}
+\\[0.45em]
 n!
-\approx
+&\approx
 \sqrt{2\pi n}
-\left(
-\frac{n}{e}
-\right)^n,
-$$
-
-$$
+\left(\frac{n}{e}\right)^n
+\\
 k!
-\approx
+&\approx
 \sqrt{2\pi k}
-\left(
-\frac{k}{e}
-\right)^k,
-$$
-
-and
-
-$$
+\left(\frac{k}{e}\right)^k
+\\
 (n-k)!
-\approx
+&\approx
 \sqrt{2\pi(n-k)}
-\left(
-\frac{n-k}{e}
-\right)^{n-k}.
-$$
-
-Substituting into the binomial probability gives
-
-$$
+\left(\frac{n-k}{e}\right)^{n-k}
+\tag*{\just{Approximate each factorial in the binomial coefficient using Stirling's formula}}
+\\[0.45em]
 P(X_n=k)
-\approx
-\sqrt{
-\frac{n}
-{2\pi k(n-k)}
-}
-\frac{
-n^np^kq^{n-k}
-}{
-k^k(n-k)^{n-k}
-}.
-$$
-
-Define the displacement from the mean:
-
-$$
+&\approx
+\sqrt{\frac{n}{2\pi k(n-k)}}
+\frac{n^np^kq^{n-k}}
+{k^k(n-k)^{n-k}}
+\tag*{\just{Substitute the three approximations and simplify}}
+\\[0.45em]
 \delta
-=
-k-np.
-$$
-
-Thus,
-
-$$
+&=
+k-np
+\tag*{\just{Measure the displacement of $k$ from the binomial mean}}
+\\[0.45em]
 k
-=
+&=
 np+\delta
-$$
-
-and
-
-$$
+\\
 n-k
-=
-nq-\delta.
-$$
-
-Consider the logarithm of the exponential factor:
-
-$$
+&=
+nq-\delta
+\tag*{\just{Express both success and failure counts in terms of the displacement}}
+\\[0.45em]
 L
-=
-\log
-\left[
-\frac{
-n^np^kq^{n-k}
-}{
-k^k(n-k)^{n-k}
-}
-\right].
-$$
-
-This becomes
-
-$$
-L
-=
--k
-\log
-\left(
-\frac{k}{np}
-\right)
--
-(n-k)
-\log
-\left(
-\frac{n-k}{nq}
-\right).
-$$
-
-Substituting
-
-$$
-k=np+\delta
-$$
-
-and
-
-$$
-n-k=nq-\delta
-$$
-
-gives
-
-$$
-L
-=
+&=
+\log\left[
+\frac{n^np^kq^{n-k}}
+{k^k(n-k)^{n-k}}
+\right]
+\tag*{\just{Take the logarithm to convert powers into products}}
+\\[0.45em]
+&=
+-k\log\left(\frac{k}{np}\right)
+-(n-k)\log\left(\frac{n-k}{nq}\right)
+\tag*{\just{Collect the terms involving $k$ and $n-k$}}
+\\[0.45em]
+&=
 -(np+\delta)
-\log
-\left(
-1+\frac{\delta}{np}
-\right)
--
-(nq-\delta)
-\log
-\left(
-1-\frac{\delta}{nq}
-\right).
-$$
-
-For values of $k$ near the mean, $\delta$ is small relative to $n$.
-
-Use the expansions
-
-$$
+\log\left(1+\frac{\delta}{np}\right)
+-(nq-\delta)
+\log\left(1-\frac{\delta}{nq}\right)
+\tag*{\just{Substitute the displacement expressions}}
+\\[0.45em]
 \log(1+t)
-=
-t-\frac{t^2}{2}
-+
-O(t^3)
-$$
-
-and
-
-$$
+&=
+t-\frac{t^2}{2}+O(t^3)
+\\
 \log(1-t)
-=
--t-\frac{t^2}{2}
-+
-O(t^3).
-$$
-
-The first-order terms cancel. The leading remaining term is
-
-$$
+&=
+-t-\frac{t^2}{2}+O(t^3)
+\tag*{\just{Expand the logarithms for $k$ near the mean}}
+\\[0.45em]
 L
-\approx
--\frac{\delta^2}{2npq}.
-$$
-
-Therefore,
-
-$$
-\frac{
-n^np^kq^{n-k}
-}{
-k^k(n-k)^{n-k}
-}
-\approx
-\exp
-\left(
+&\approx
 -\frac{\delta^2}{2npq}
-\right).
-$$
-
-For $k$ near $np$,
-
-$$
+\tag*{\just{The first-order terms cancel, leaving the quadratic term}}
+\\[0.45em]
+\frac{n^np^kq^{n-k}}
+{k^k(n-k)^{n-k}}
+&\approx
+\exp\left(
+-\frac{\delta^2}{2npq}
+\right)
+\tag*{\just{Exponentiate to recover the original factor}}
+\\[0.45em]
 k
-\approx
+&\approx
 np
-$$
-
-and
-
-$$
+\\
 n-k
-\approx
-nq.
-$$
-
-Therefore,
-
-$$
-\sqrt{
-\frac{n}
-{2\pi k(n-k)}
-}
-\approx
-\frac{1}{\sqrt{2\pi npq}}.
-$$
-
-Combining the two parts gives
-
-$$
-P(X_n=k)
-\approx
+&\approx
+nq
+\tag*{\just{Near the mean, replace the counts by their expected values}}
+\\[0.45em]
+\sqrt{\frac{n}{2\pi k(n-k)}}
+&\approx
 \frac{1}{\sqrt{2\pi npq}}
-\exp
-\left[
--\frac{(k-np)^2}{2npq}
-\right].
-$$
-
-Since
-
-$$
-\mu=np
-$$
-
-and
-
-$$
-\sigma^2=npq,
-$$
-
-this becomes
-
-$$
+\tag*{\just{Simplify the remaining prefactor}}
+\\[0.45em]
 P(X_n=k)
-\approx
+&\approx
+\frac{1}{\sqrt{2\pi npq}}
+\exp\left[
+-\frac{(k-np)^2}{2npq}
+\right]
+\tag*{\just{Combine the prefactor and exponential approximations}}
+\\[0.45em]
+\mu
+&=
+np
+\\
+\sigma^2
+&=
+npq
+\tag*{\just{Substitute the binomial mean and variance}}
+\\[0.45em]
+P(X_n=k)
+&\approx
 \frac{1}{\sigma\sqrt{2\pi}}
-\exp
-\left[
+\exp\left[
 -\frac{1}{2}
 \left(
 \frac{k-\mu}{\sigma}
 \right)^2
-\right].
+\right]
+\tag*{\just{Obtain the normal form of the binomial probability}}
+\end{align*}
 $$
-
-This is the form of the normal density.

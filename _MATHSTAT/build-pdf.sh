@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 # Regenerate main.tex from _TOPICS and build main.pdf once.
-# Topic files ending in .draft.md are ignored (kept in git, not exported).
+# Topic files ending in .draft.md or .skip.md are ignored (kept in git, not exported).
+#
+# Derivation of Normal Distribution PDF width is per page via a topic comment:
+#   <!-- pdf-page-width: default -->
+#   <!-- pdf-page-width: wide -->
+# (applied by _BOOK/scripts/export_to_tex.py)
 #
 # Usage: ./build-pdf.sh
 # HTML book: ./_BOOK/build.sh

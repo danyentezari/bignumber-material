@@ -1,18 +1,20 @@
 # Jacobian
 
-Let
+<!-- pdf-page-width: wide -->
 
 $$
-x=x(u,v),
+\begin{align*}
+x
+&=
+x(u,v),
 \qquad
-y=y(u,v).
-$$
-
-The Jacobian matrix is
-
-$$
-J
+y
 =
+y(u,v)
+\tag*{\just{Let}}
+\\[0.45em]
+J
+&=
 \begin{pmatrix}
 \dfrac{\partial x}{\partial u}
 &
@@ -21,43 +23,36 @@ J
 \dfrac{\partial y}{\partial u}
 &
 \dfrac{\partial y}{\partial v}
-\end{pmatrix}.
-$$
-
-Its determinant is
-
-$$
+\end{pmatrix}
+\tag*{\just{The Jacobian matrix is}}
+\\[0.45em]
 \det J
-=
+&=
 \frac{\partial x}{\partial u}
 \frac{\partial y}{\partial v}
 -
 \frac{\partial x}{\partial v}
-\frac{\partial y}{\partial u}.
-$$
-
-The absolute value of the determinant gives the local area-scaling factor:
-
-$$
+\frac{\partial y}{\partial u}
+\tag*{\just{Its determinant is}}
+\\[0.45em]
 dx\,dy
-=
+&=
 \left|
 \det J
 \right|
-du\,dv.
-$$
-
-Therefore,
-
-$$
+du\,dv
+\tag*{\just{The absolute value of the determinant gives the local area-scaling factor:}}
+\\[0.45em]
 \iint_R f(x,y)\,dx\,dy
-=
+&=
 \iint_S
 f(x(u,v),y(u,v))
 \left|
 \det J
 \right|
-du\,dv.
+du\,dv
+\tag*{\just{Therefore,}}
+\end{align*}
 $$
 
 where

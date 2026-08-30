@@ -28,6 +28,16 @@ BIBLIOGRAPHY = TOPICS_DIR / "Bibliography" / "Bibliography.md"
 
 HEADING_CMD = {0: "section", 1: "subsection", 2: "subsubsection"}
 
+# Per-page PDF margins for Derivation of Normal Distribution (see topic comments).
+# <!-- pdf-page-width: default -->  article defaults
+# <!-- pdf-page-width: wide -->     narrower margins for two-column justifications
+DERIVATION_FOLDER = "Derivation-of-Normal-Distribution"
+DERIVATION_GEOMETRY = "margin=0.75in"
+PAGE_WIDTH_RE = re.compile(
+    r"<!--\s*pdf-page-width:\s*(default|wide)\s*-->",
+    re.IGNORECASE,
+)
+
 
 def load_structure_nodes() -> list[tuple[int, str]]:
     nodes: list[tuple[int, str]] = []
@@ -53,11 +63,12 @@ def find_page(folder: Path, name: str) -> Path | None:
     hub = folder / f"{folder.name}.md"
 
     def is_topic_md(path: Path) -> bool:
-        # Keep *.draft.md in git; never include them in the PDF export.
+        # Keep *.draft.md / *.skip.md in git; never include them in the PDF export.
         return (
             path.is_file()
             and path.suffix.lower() == ".md"
             and not path.name.endswith(".draft.md")
+            and not path.name.endswith(".skip.md")
         )
 
     # Prefer an exact stem match (Frequency-Domain.md for "Frequency Domain").
@@ -67,7 +78,7 @@ def find_page(folder: Path, name: str) -> Path | None:
     for path in folder.iterdir():
         if is_topic_md(path) and slugify_text(extract_title(path)) == key:
             return path
-    if hub.is_file() and not hub.name.endswith(".draft.md"):
+    if hub.is_file() and not hub.name.endswith(".draft.md") and not hub.name.endswith(".skip.md"):
         if slugify_text(extract_title(hub)) == key:
             return hub
     return None
@@ -106,6 +117,7 @@ def protect_math(text: str) -> tuple[str, list[str]]:
         return f"@@MATH{len(chunks) - 1}@@"
 
     text = re.sub(r"\$\$[\s\S]*?\$\$", stash, text)
+    text = re.sub(r"\\\([\s\S]*?\\\)", stash, text)
     text = re.sub(r"\$[^$]+\$", stash, text)
     return text, chunks
 
@@ -113,6 +125,32 @@ def protect_math(text: str) -> tuple[str, list[str]]:
 def restore_math(text: str, chunks: list[str]) -> str:
     for i, chunk in enumerate(chunks):
         text = text.replace(f"@@MATH{i}@@", chunk)
+    return text
+
+
+# amsmath display environments must not sit inside $$...$$ in LaTeX
+_DISPLAY_ENVS = (
+    "align*",
+    "align",
+    "gather*",
+    "gather",
+    "multline*",
+    "multline",
+    "eqnarray*",
+    "eqnarray",
+    "flalign*",
+    "flalign",
+)
+
+
+def unwrap_display_envs(text: str) -> str:
+    """Strip $$ wrappers around amsmath display environments for PDF export."""
+    for env in _DISPLAY_ENVS:
+        text = re.sub(
+            rf"\$\$\s*(\\begin\{{{re.escape(env)}\}}[\s\S]*?\\end\{{{re.escape(env)}\}})\s*\$\$",
+            r"\1",
+            text,
+        )
     return text
 
 
@@ -147,7 +185,13 @@ def escape_tex(text: str) -> str:
     )
 
 
+def page_width_directive(text: str) -> str | None:
+    match = PAGE_WIDTH_RE.search(text)
+    return match.group(1).lower() if match else None
+
+
 def md_to_tex(text: str) -> str:
+    text = PAGE_WIDTH_RE.sub("", text)
     text = strip_h1_and_book_nav(text)
     if not text:
         return ""
@@ -249,6 +293,7 @@ def md_to_tex(text: str) -> str:
     text = convert_lists(text)
     text = restore_urls(text, urls)
     text = restore_math(text, math)
+    text = unwrap_display_envs(text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
 
@@ -284,6 +329,19 @@ def export() -> None:
     parts.append("")
 
     current_folder: Path | None = None
+    # PDF geometry state: "default" (article) or "wide" (narrower margins)
+    current_width = "default"
+
+    def set_page_width(desired: str) -> None:
+        nonlocal current_width
+        if desired == current_width:
+            return
+        if desired == "wide":
+            parts.append(f"\\newgeometry{{{DERIVATION_GEOMETRY}}}")
+        else:
+            parts.append("\\restoregeometry")
+        current_width = desired
+
     for i, (level, name) in enumerate(nodes):
         cmd = HEADING_CMD.get(level, "subsubsection")
         if level == 0:
@@ -298,16 +356,31 @@ def export() -> None:
         if not has_page and not node_has_children(nodes, i):
             continue
 
+        in_derivation = (
+            current_folder is not None and current_folder.name == DERIVATION_FOLDER
+        )
+
         parts.append("%----------------------------------------------------------------------------")
         if level == 0:
+            set_page_width("default")
             parts.append("\\newpage")
+
+        raw = page.read_text(encoding="utf-8") if has_page else ""
+        if in_derivation and has_page:
+            width = page_width_directive(raw) or "default"
+            set_page_width(width)
+        elif not in_derivation:
+            set_page_width("default")
+
         parts.append(f"\\{cmd}{{{name}}}")
 
         if has_page:
-            body = md_to_tex(page.read_text(encoding="utf-8"))
+            body = md_to_tex(raw)
             if body:
                 parts.append(body)
         parts.append("")
+
+    set_page_width("default")
 
     if BIBLIOGRAPHY.is_file():
         bib = md_to_tex(BIBLIOGRAPHY.read_text(encoding="utf-8"))

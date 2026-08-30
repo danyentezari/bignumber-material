@@ -1,5 +1,7 @@
 # Derivation of Normal Distribution
 
+<!-- pdf-page-width: default -->
+
 <i>
 
 **definition [d]** (*Normal Distribution*)
@@ -43,6 +45,7 @@ $$
 </i>
 
 This derivation establishes the normal distribution from the normal approximation to the binomial distribution and proves that the resulting probability density integrates to one.
+
 
 ## Topics
 

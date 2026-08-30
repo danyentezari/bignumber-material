@@ -1,26 +1,21 @@
 # Polar Coordinates
 
-Define
+<!-- pdf-page-width: wide -->
 
 $$
+\begin{align*}
 x
-=
+&=
 r\cos\theta
-$$
-
-and
-
-$$
+\tag*{\just{Define}}
+\\[0.45em]
 y
-=
-r\sin\theta.
-$$
-
-The Jacobian matrix is
-
-$$
+&=
+r\sin\theta
+\tag*{\just{and}}
+\\[0.45em]
 J
-=
+&=
 \begin{pmatrix}
 \dfrac{\partial x}{\partial r}
 &
@@ -29,14 +24,11 @@ J
 \dfrac{\partial y}{\partial r}
 &
 \dfrac{\partial y}{\partial\theta}
-\end{pmatrix}.
-$$
-
-Evaluating the derivatives,
-
-$$
+\end{pmatrix}
+\tag*{\just{The Jacobian matrix is}}
+\\[0.45em]
 J
-=
+&=
 \begin{pmatrix}
 \cos\theta
 &
@@ -45,13 +37,9 @@ J
 \sin\theta
 &
 r\cos\theta
-\end{pmatrix}.
-$$
-
-Therefore,
-
-$$
-\begin{aligned}
+\end{pmatrix}
+\tag*{\just{Evaluating the derivatives,}}
+\\[0.45em]
 \det J
 &=
 r\cos^2\theta
@@ -65,14 +53,12 @@ r
 \right)
 \\
 &=
-r.
-\end{aligned}
-$$
-
-Hence,
-
-$$
+r
+\tag*{\just{Therefore,}}
+\\[0.45em]
 dx\,dy
-=
-r\,dr\,d\theta.
+&=
+r\,dr\,d\theta
+\tag*{\just{Hence,}}
+\end{align*}
 $$

@@ -63,6 +63,7 @@ rmd_files:
   - "../_BOOK/generated/Important-Probability-Distributions/Chi-Squared-Distribution.md"
   - "../_BOOK/generated/Important-Probability-Distributions/Students-T-Distribution.md"
   - "../_BOOK/generated/Important-Probability-Distributions/Fischer-F-Distribution.md"
+  - "../_BOOK/generated/Derivation-of-Normal-Distribution/Guide.md"
   - "../_BOOK/generated/Derivation-of-Normal-Distribution/Binomial-Distribution-in-the-Derivation.md"
   - "../_BOOK/generated/Derivation-of-Normal-Distribution/Stirlings-Approximation.md"
   - "../_BOOK/generated/Derivation-of-Normal-Distribution/Wallis-Product.md"

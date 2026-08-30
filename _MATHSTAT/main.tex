@@ -9,8 +9,31 @@
 \usepackage{tabularx}
 \usepackage{mdframed}
 \usepackage{amsmath, amsthm}
+\usepackage{xcolor}
 \usepackage{hyperref}
+% pass: keep article defaults; per-page \newgeometry via <!-- pdf-page-width: wide -->
+\usepackage[pass]{geometry}
 \graphicspath{ {./images/} }
+
+% Right-column step justifications in derivation align* blocks.
+% Use as:  ... \tag*{\just{...}}  so text sits at the right margin and wraps.
+\allowdisplaybreaks[2]
+\newcommand{\justwidth}{0.36\textwidth}
+% Colored (later): \newcommand{\just}[1]{\textcolor{blue!55!cyan!65!white}{\parbox[t]{\justwidth}{\raggedright #1}}}
+\newcommand{\just}[1]{\parbox[t]{\justwidth}{\raggedright #1}}
+
+% Closing prose at article-default measure on a wide page (centered like default pages)
+\newlength{\defaultparwidth}
+\AtBeginDocument{\setlength{\defaultparwidth}{\textwidth}}
+\newcommand{\defaultwidthpar}[1]{%
+  \par
+  \noindent\hfill
+  \begin{minipage}{\defaultparwidth}%
+  #1%
+  \end{minipage}%
+  \hfill\null
+  \par
+}
 
 
 \title{Handbook for Mathematical Statistics and Probability Theory}
@@ -614,679 +637,397 @@ $$
 This derivation establishes the normal distribution from the normal approximation to the binomial distribution and proves that the resulting probability density integrates to one.
 
 %----------------------------------------------------------------------------
+\subsection{Guide}
+\begin{tabularx}{1\textwidth} {| >{\raggedright\arraybackslash}X | >{\raggedright\arraybackslash}X | >{\raggedright\arraybackslash}X |}
+\hline
+Term & Meaning & Derived in subsection \\
+\hline
+\(\mu\) & Mean, centre of the distribution & Binomial Distribution → General Normal Distribution \\
+\hline
+\(\sigma\) & Standard deviation, scale & Binomial Distribution → General Normal Distribution \\
+\hline
+\(\dfrac{x-\mu}{\sigma}\) & Standardized displacement from the mean & Standardization \\
+\hline
+\(\left(\dfrac{x-\mu}{\sigma}\right)^2\) & Squared standardized displacement & De Moivre–Laplace Approximation \\
+\hline
+\(-\dfrac12\left(\dfrac{x-\mu}{\sigma}\right)^2\) & Gaussian exponent & De Moivre–Laplace Approximation \\
+\hline
+\(\exp[\cdot]\) & Exponential form arising from the logarithmic approximation & De Moivre–Laplace Approximation \\
+\hline
+\(\sqrt{2\pi}\) & Gaussian normalization constant & Gaussian Integral \\
+\hline
+\(\dfrac{1}{\sqrt{2\pi}}\) & Standard-normal normalization factor & Standard Normal Distribution \\
+\hline
+\(\dfrac{1}{\sigma}\) & Scaling factor caused by \(x=\mu+\sigma z\) & General Normal Distribution \\
+\hline
+\(\dfrac{1}{\sigma\sqrt{2\pi}}\) & Final normalization factor & General Normal Distribution + Gaussian Integral \\
+\hline
+\end{tabularx}
+
+%----------------------------------------------------------------------------
+\newgeometry{margin=0.75in}
 \subsection{Binomial Distribution}
-Let
-
-$$
+\begin{align*}
 X_n
-\sim
+&\sim
 \operatorname{Bin}(n,p)
-$$
-
-and define
-
-$$
+\tag*{\just{$X_n$ is a binomial random variable}}
+\\[0.6em]
 q
-=
-1-p.
-$$
-
-The probability of obtaining exactly $k$ successes is
-
-$$
+&=
+1-p
+\tag*{\just{$q$ is the probability of failure}}
+\\[0.6em]
 P(X_n=k)
-=
-\binom{n}{k}
-p^kq^{n-k}.
-$$
-
-Therefore,
-
-$$
-P(X_n=k)
-=
-\frac{n!}{k!(n-k)!}
-p^kq^{n-k}.
-$$
-
-The binomial mean is
-
-$$
+&=
+\binom{n}{k}p^kq^{n-k}
+\tag*{\just{Probability of exactly $k$ successes}}
+\\[0.6em]
+&=
+\frac{n!}{k!(n-k)!}p^kq^{n-k}
+\tag*{\just{Expand the binomial coefficient}}
+\\[0.6em]
 \mu
-=
+&=
 np
-$$
-
-and its variance is
-
-$$
+\tag*{\just{Mean of the binomial distribution}}
+\\[0.6em]
 \sigma^2
-=
-npq.
-$$
-
-Therefore,
-
-$$
+&=
+npq
+\tag*{\just{Variance of the binomial distribution}}
+\\[0.6em]
 \sigma
-=
-\sqrt{npq}.
-$$
+&=
+\sqrt{npq}
+\tag*{\just{Standard deviation}}
+\end{align*}
 
 %----------------------------------------------------------------------------
 \subsection{Stirling's Approximation}
-Define
-
-$$
+\begin{align*}
 a_n
-=
-\frac{n!e^n}{n^{n+1/2}}.
-$$
-
-Taking logarithms,
-
-$$
+&=
+\frac{n!e^n}{n^{n+1/2}}
+\tag*{\just{Define the sequence}}
+\\[0.6em]
 \log a_n
-=
-\log(n!)
-+
-n
--
-\left(
-n+\frac{1}{2}
-\right)
-\log n.
-$$
-
-Consider consecutive terms:
-
-$$
+&=
+\log(n!)+n-\left(n+\frac12\right)\log n
+\tag*{\just{Take logarithms}}
+\\[0.6em]
 \log\frac{a_{n+1}}{a_n}
-=
-1
--
-\left(
-n+\frac{1}{2}
-\right)
-\log\left(
-1+\frac{1}{n}
-\right).
-$$
-
-Using
-
-$$
+&=
+1-\left(n+\frac12\right)
+\log\left(1+\frac1n\right)
+\tag*{\just{Compare consecutive terms}}
+\\[0.6em]
 \log(1+t)
-=
-t-\frac{t^2}{2}+\frac{t^3}{3}-\cdots,
-$$
-
-with
-
-$$
-t=\frac{1}{n},
-$$
-
-gives
-
-$$
+&=
+t-\frac{t^2}{2}+\frac{t^3}{3}-\cdots
+\tag*{\just{Use the logarithmic series}}
+\\[0.6em]
+t
+&=
+\frac1n
+\tag*{\just{Substitute}}
+\\[0.6em]
 \log\frac{a_{n+1}}{a_n}
-=
+&=
 -\frac{1}{12n^2}
 +
-O\left(
-\frac{1}{n^3}
-\right).
-$$
-
-Because
-
-$$
-\sum_{n=1}^{\infty}
-\frac{1}{n^2}
-$$
-
-converges, the sequence $\log a_n$ converges. Therefore,
-
-$$
+O\left(\frac1{n^3}\right)
+\tag*{\just{Expand and simplify}}
+\\[0.6em]
 a_n
-\rightarrow C
-$$
-
-for some positive constant $C$.
-
-Hence,
-
-$$
+&\to C
+\tag*{\just{The sequence converges}}
+\\[0.6em]
 n!
-\sim
+&\sim
+C\,n^{n+1/2}e^{-n}
+\tag*{\just{Solve for $n!$}}
+\\[0.6em]
+\binom{2n}{n}
+&=
+\frac{(2n)!}{(n!)^2}
+\tag*{\just{Apply the approximation}}
+\\[0.6em]
+&\sim
+\frac{\sqrt2}{C}\frac{4^n}{\sqrt n}
+\tag*{\just{Substitute and simplify}}
+\\[0.6em]
+\binom{2n}{n}
+&\sim
+\frac{4^n}{\sqrt{\pi n}}
+\tag*{\just{From the Wallis result}}
+\\[0.6em]
+\frac{\sqrt2}{C}
+&=
+\frac1{\sqrt\pi}
+\tag*{\just{Equate the two asymptotic forms}}
+\\[0.6em]
 C
-n^{n+1/2}
-e^{-n}.
-$$
-
-Apply this approximation to
-
-$$
-\binom{2n}{n}
-=
-\frac{(2n)!}{(n!)^2}.
-$$
-
-Then
-
-$$
-\binom{2n}{n}
-\sim
-\frac{
-C(2n)^{2n+1/2}e^{-2n}
-}{
-C^2n^{2n+1}e^{-2n}
-}.
-$$
-
-Simplifying,
-
-$$
-\binom{2n}{n}
-\sim
-\frac{\sqrt{2}}{C}
-\frac{4^n}{\sqrt{n}}.
-$$
-
-But the Wallis result gives
-
-$$
-\binom{2n}{n}
-\sim
-\frac{4^n}{\sqrt{\pi n}}.
-$$
-
-Comparing the two expressions,
-
-$$
-\frac{\sqrt{2}}{C}
-=
-\frac{1}{\sqrt{\pi}}.
-$$
-
-Therefore,
-
-$$
-C
-=
-\sqrt{2\pi}.
-$$
-
-Thus,
-
-$$
-\boxed{
+&=
+\sqrt{2\pi}
+\tag*{\just{Solve for the constant}}
+\\[0.6em]
 n!
-\sim
+&\sim
 \sqrt{2\pi n}
-\left(
-\frac{n}{e}
-\right)^n
-}
-$$
-
-or equivalently,
-
-$$
-\boxed{
-\lim_{n\to\infty}
-\frac{
-n!
-}{
-\sqrt{2\pi n}
-\left(
-\dfrac{n}{e}
-\right)^n
-}
-=
-1
-}.
-$$
+\left(\frac ne\right)^n
+\tag*{\just{Stirling's approximation}}
+\end{align*}
 
 %----------------------------------------------------------------------------
 \subsection{Wallis Product}
-Define
-
-$$
+\begin{align*}
 W_m
-=
-\int_0^{\pi/2}
-\sin^m x\,dx.
-$$
-
-Integration by parts gives the recurrence
-
-$$
+&=
+\int_0^{\pi/2}\sin^m x\,dx
+\tag*{\just{Define the Wallis integral}}
+\\[0.6em]
 W_m
-=
-\frac{m-1}{m}
-W_{m-2}.
-$$
-
-Since
-
-$$
+&=
+\frac{m-1}{m}W_{m-2}
+\tag*{\just{Integration by parts}}
+\\[0.6em]
 W_0
-=
+&=
 \frac{\pi}{2}
-$$
-
-and
-
-$$
+\tag*{\just{Initial even value}}
+\\[0.6em]
 W_1
-=
-1,
-$$
-
-we obtain
-
-$$
+&=
+1
+\tag*{\just{Initial odd value}}
+\\[0.6em]
 W_{2n}
-=
+&=
 \frac{1\cdot3\cdot5\cdots(2n-1)}
 {2\cdot4\cdot6\cdots(2n)}
 \frac{\pi}{2}
-$$
-
-and
-
-$$
+\tag*{\just{Apply the recurrence to even powers}}
+\\[0.6em]
 W_{2n+1}
-=
+&=
 \frac{2\cdot4\cdot6\cdots(2n)}
-{3\cdot5\cdot7\cdots(2n+1)}.
-$$
-
-This produces the Wallis product
-
-$$
-\boxed{
+{3\cdot5\cdot7\cdots(2n+1)}
+\tag*{\just{Apply the recurrence to odd powers}}
+\\[0.6em]
 \frac{\pi}{2}
-=
+&=
 \prod_{n=1}^{\infty}
-\frac{(2n)^2}
-{(2n-1)(2n+1)}
-}.
-$$
-
-The even integral can also be written
-
-$$
+\frac{(2n)^2}{(2n-1)(2n+1)}
+\tag*{\just{Wallis product}}
+\\[0.6em]
 W_{2n}
-=
+&=
 \frac{\pi}{2}
-\frac{\binom{2n}{n}}{4^n}.
-$$
-
-The odd integral is
-
-$$
+\frac{\binom{2n}{n}}{4^n}
+\tag*{\just{Rewrite the even integral}}
+\\[0.6em]
 W_{2n+1}
-=
+&=
 \frac{4^n}
-{(2n+1)\binom{2n}{n}}.
-$$
-
-Since
-
-$$
+{(2n+1)\binom{2n}{n}}
+\tag*{\just{Rewrite the odd integral}}
+\\[0.6em]
 W_{2n+1}
-<
+&<
 W_{2n}
 <
-W_{2n-1},
-$$
-
-and
-
-$$
+W_{2n-1}
+\tag*{\just{Compare consecutive integrals}}
+\\[0.6em]
 \frac{W_{2n-1}}{W_{2n+1}}
-=
+&=
 \frac{2n+1}{2n}
-\rightarrow1,
-$$
-
-it follows that
-
-$$
+\to1
+\tag*{\just{Take the limit}}
+\\[0.6em]
 \frac{W_{2n}}{W_{2n+1}}
-\rightarrow1.
-$$
-
-Substituting the explicit expressions gives
-
-$$
-\frac{\pi}{2}
-(2n+1)
+&\to1
+\tag*{\just{Apply the squeeze theorem}}
+\\[0.6em]
+\frac{\pi}{2}(2n+1)
 \frac{\binom{2n}{n}^2}{16^n}
-\rightarrow1.
-$$
-
-Therefore,
-
-$$
-\boxed{
+&\to1
+\tag*{\just{Substitute the explicit forms}}
+\\[0.6em]
 \binom{2n}{n}
-\sim
+&\sim
 \frac{4^n}{\sqrt{\pi n}}
-}.
-$$
-
-This result determines the constant that appears in Stirling's approximation.
+\tag*{\just{Central binomial coefficient asymptotic}}
+\end{align*}
 
 %----------------------------------------------------------------------------
 \subsection{De Moivre-Laplace Approximation}
-Apply Stirling's approximation to each factorial:
-
-$$
+\begin{align*}
+P(X_n=k)
+&=
+\frac{n!}{k!(n-k)!}p^kq^{n-k}
+\tag*{\just{Start from the binomial probability}}
+\\[0.45em]
 n!
-\approx
+&\approx
 \sqrt{2\pi n}
-\left(
-\frac{n}{e}
-\right)^n,
-$$
-
-$$
+\left(\frac{n}{e}\right)^n
+\\
 k!
-\approx
+&\approx
 \sqrt{2\pi k}
-\left(
-\frac{k}{e}
-\right)^k,
-$$
-
-and
-
-$$
+\left(\frac{k}{e}\right)^k
+\\
 (n-k)!
-\approx
+&\approx
 \sqrt{2\pi(n-k)}
-\left(
-\frac{n-k}{e}
-\right)^{n-k}.
-$$
-
-Substituting into the binomial probability gives
-
-$$
+\left(\frac{n-k}{e}\right)^{n-k}
+\tag*{\just{Approximate each factorial in the binomial coefficient using Stirling's formula}}
+\\[0.45em]
 P(X_n=k)
-\approx
-\sqrt{
-\frac{n}
-{2\pi k(n-k)}
-}
-\frac{
-n^np^kq^{n-k}
-}{
-k^k(n-k)^{n-k}
-}.
-$$
-
-Define the displacement from the mean:
-
-$$
+&\approx
+\sqrt{\frac{n}{2\pi k(n-k)}}
+\frac{n^np^kq^{n-k}}
+{k^k(n-k)^{n-k}}
+\tag*{\just{Substitute the three approximations and simplify}}
+\\[0.45em]
 \delta
-=
-k-np.
-$$
-
-Thus,
-
-$$
+&=
+k-np
+\tag*{\just{Measure the displacement of $k$ from the binomial mean}}
+\\[0.45em]
 k
-=
+&=
 np+\delta
-$$
-
-and
-
-$$
+\\
 n-k
-=
-nq-\delta.
-$$
-
-Consider the logarithm of the exponential factor:
-
-$$
+&=
+nq-\delta
+\tag*{\just{Express both success and failure counts in terms of the displacement}}
+\\[0.45em]
 L
-=
-\log
-\left[
-\frac{
-n^np^kq^{n-k}
-}{
-k^k(n-k)^{n-k}
-}
-\right].
-$$
-
-This becomes
-
-$$
-L
-=
--k
-\log
-\left(
-\frac{k}{np}
-\right)
--
-(n-k)
-\log
-\left(
-\frac{n-k}{nq}
-\right).
-$$
-
-Substituting
-
-$$
-k=np+\delta
-$$
-
-and
-
-$$
-n-k=nq-\delta
-$$
-
-gives
-
-$$
-L
-=
+&=
+\log\left[
+\frac{n^np^kq^{n-k}}
+{k^k(n-k)^{n-k}}
+\right]
+\tag*{\just{Take the logarithm to convert powers into products}}
+\\[0.45em]
+&=
+-k\log\left(\frac{k}{np}\right)
+-(n-k)\log\left(\frac{n-k}{nq}\right)
+\tag*{\just{Collect the terms involving $k$ and $n-k$}}
+\\[0.45em]
+&=
 -(np+\delta)
-\log
-\left(
-1+\frac{\delta}{np}
-\right)
--
-(nq-\delta)
-\log
-\left(
-1-\frac{\delta}{nq}
-\right).
-$$
-
-For values of $k$ near the mean, $\delta$ is small relative to $n$.
-
-Use the expansions
-
-$$
+\log\left(1+\frac{\delta}{np}\right)
+-(nq-\delta)
+\log\left(1-\frac{\delta}{nq}\right)
+\tag*{\just{Substitute the displacement expressions}}
+\\[0.45em]
 \log(1+t)
-=
-t-\frac{t^2}{2}
-+
-O(t^3)
-$$
-
-and
-
-$$
+&=
+t-\frac{t^2}{2}+O(t^3)
+\\
 \log(1-t)
-=
--t-\frac{t^2}{2}
-+
-O(t^3).
-$$
-
-The first-order terms cancel. The leading remaining term is
-
-$$
+&=
+-t-\frac{t^2}{2}+O(t^3)
+\tag*{\just{Expand the logarithms for $k$ near the mean}}
+\\[0.45em]
 L
-\approx
--\frac{\delta^2}{2npq}.
-$$
-
-Therefore,
-
-$$
-\frac{
-n^np^kq^{n-k}
-}{
-k^k(n-k)^{n-k}
-}
-\approx
-\exp
-\left(
+&\approx
 -\frac{\delta^2}{2npq}
-\right).
-$$
-
-For $k$ near $np$,
-
-$$
+\tag*{\just{The first-order terms cancel, leaving the quadratic term}}
+\\[0.45em]
+\frac{n^np^kq^{n-k}}
+{k^k(n-k)^{n-k}}
+&\approx
+\exp\left(
+-\frac{\delta^2}{2npq}
+\right)
+\tag*{\just{Exponentiate to recover the original factor}}
+\\[0.45em]
 k
-\approx
+&\approx
 np
-$$
-
-and
-
-$$
+\\
 n-k
-\approx
-nq.
-$$
-
-Therefore,
-
-$$
-\sqrt{
-\frac{n}
-{2\pi k(n-k)}
-}
-\approx
-\frac{1}{\sqrt{2\pi npq}}.
-$$
-
-Combining the two parts gives
-
-$$
-P(X_n=k)
-\approx
+&\approx
+nq
+\tag*{\just{Near the mean, replace the counts by their expected values}}
+\\[0.45em]
+\sqrt{\frac{n}{2\pi k(n-k)}}
+&\approx
 \frac{1}{\sqrt{2\pi npq}}
-\exp
-\left[
--\frac{(k-np)^2}{2npq}
-\right].
-$$
-
-Since
-
-$$
-\mu=np
-$$
-
-and
-
-$$
-\sigma^2=npq,
-$$
-
-this becomes
-
-$$
+\tag*{\just{Simplify the remaining prefactor}}
+\\[0.45em]
 P(X_n=k)
-\approx
+&\approx
+\frac{1}{\sqrt{2\pi npq}}
+\exp\left[
+-\frac{(k-np)^2}{2npq}
+\right]
+\tag*{\just{Combine the prefactor and exponential approximations}}
+\\[0.45em]
+\mu
+&=
+np
+\\
+\sigma^2
+&=
+npq
+\tag*{\just{Substitute the binomial mean and variance}}
+\\[0.45em]
+P(X_n=k)
+&\approx
 \frac{1}{\sigma\sqrt{2\pi}}
-\exp
-\left[
+\exp\left[
 -\frac{1}{2}
 \left(
 \frac{k-\mu}{\sigma}
 \right)^2
-\right].
-$$
-
-This is the form of the normal density.
+\right]
+\tag*{\just{Obtain the normal form of the binomial probability}}
+\end{align*}
 
 %----------------------------------------------------------------------------
 \subsection{Standardization}
-Define
-
-$$
+\begin{align*}
 z
-=
-\frac{k-np}{\sqrt{npq}}.
-$$
-
-Then
-
-$$
+&=
+\frac{k-np}{\sqrt{npq}}
+\tag*{\just{Define}}
+\\[0.45em]
 z
-=
-\frac{k-\mu}{\sigma}.
-$$
-
-Because $k$ changes in integer increments,
-
-$$
+&=
+\frac{k-\mu}{\sigma}
+\tag*{\just{Then}}
+\\[0.45em]
 \Delta k
-=
-1.
-$$
-
-Therefore, the corresponding increment in $z$ is
-
-$$
+&=
+1
+\tag*{\just{Because $k$ changes in integer increments,}}
+\\[0.45em]
 \Delta z
-=
-\frac{1}{\sqrt{npq}}.
-$$
-
-The binomial probability can therefore be written
-
-$$
+&=
+\frac{1}{\sqrt{npq}}
+\tag*{\just{Therefore, the corresponding increment in $z$ is}}
+\\[0.45em]
 P(X_n=k)
-\approx
+&\approx
 \frac{1}{\sqrt{2\pi}}
 e^{-z^2/2}
-\Delta z.
-$$
-
-For an interval
-
-$$
+\Delta z
+\tag*{\just{The binomial probability can therefore be written}}
+\\[0.45em]
 a
-\leq
+&\leq
 \frac{X_n-np}{\sqrt{npq}}
 \leq
-b,
-$$
-
-the probability is a sum of these terms:
-
-$$
+b
+\tag*{\just{For an interval}}
+\\[0.45em]
 P
 \left(
 a
@@ -1295,29 +1036,21 @@ a
 \leq
 b
 \right)
-\approx
+&\approx
 \sum
 \frac{1}{\sqrt{2\pi}}
 e^{-z_i^2/2}
-\Delta z.
-$$
-
-As
-
-$$
-n\rightarrow\infty,
-$$
-
-we have
-
-$$
 \Delta z
-\rightarrow0.
-$$
-
-The sum becomes a Riemann integral:
-
-$$
+\tag*{\just{the probability is a sum of these terms:}}
+\\[0.45em]
+n
+&\rightarrow\infty
+\tag*{\just{As}}
+\\[0.45em]
+\Delta z
+&\rightarrow0
+\tag*{\just{we have}}
+\\[0.45em]
 \boxed{
 P
 \left(
@@ -1332,80 +1065,63 @@ b
 \frac{1}{\sqrt{2\pi}}
 e^{-z^2/2}
 \,dz
-}.
-$$
+}
+\tag*{\just{The sum becomes a Riemann integral:}}
+\end{align*}
 
 This is the de Moivre-Laplace limit theorem.
 
 %----------------------------------------------------------------------------
 \subsection{Standard Normal Distribution}
-The limiting probability density is therefore
-
-$$
+\begin{align*}
 \phi(z)
-=
+&=
 \frac{1}{\sqrt{2\pi}}
-e^{-z^2/2}.
-$$
-
-The Gaussian integral proved that
-
-$$
+e^{-z^2/2}
+\tag*{\just{The limiting probability density is therefore}}
+\\[0.45em]
 \int_{-\infty}^{\infty}
 e^{-z^2/2}\,dz
-=
-\sqrt{2\pi}.
-$$
-
-Therefore,
-
-$$
+&=
+\sqrt{2\pi}
+\tag*{\just{The Gaussian integral proved that}}
+\\[0.45em]
 \int_{-\infty}^{\infty}
 \phi(z)\,dz
-=
+&=
 \frac{1}{\sqrt{2\pi}}
 \int_{-\infty}^{\infty}
-e^{-z^2/2}\,dz.
-$$
-
-Thus,
-
-$$
+e^{-z^2/2}\,dz
+\tag*{\just{Therefore,}}
+\\[0.45em]
 \int_{-\infty}^{\infty}
 \phi(z)\,dz
-=
-1.
-$$
-
-Hence,
-
-$$
+&=
+1
+\tag*{\just{Thus,}}
+\\[0.45em]
 \boxed{
 \phi(z)
 =
 \frac{1}{\sqrt{2\pi}}
 e^{-z^2/2}
 }
-$$
+\tag*{\just{Hence,}}
+\end{align*}
 
 is a probability density function.
 
 %----------------------------------------------------------------------------
 \subsection{Gaussian Integral}
-Define
-
-$$
+\begin{align*}
 I
-=
+&=
 \int_{-\infty}^{\infty}
-e^{-x^2/2}\,dx.
-$$
-
-The function has no elementary antiderivative. To evaluate the integral, square it:
-
-$$
+e^{-x^2/2}\,dx
+\tag*{\just{Define}}
+\\[0.45em]
 I^2
-=
+&=
 \left(
 \int_{-\infty}^{\infty}
 e^{-x^2/2}\,dx
@@ -1413,226 +1129,164 @@ e^{-x^2/2}\,dx
 \left(
 \int_{-\infty}^{\infty}
 e^{-y^2/2}\,dy
-\right).
-$$
-
-Combining the two integrals gives
-
-$$
+\right)
+\tag*{\just{The function has no elementary antiderivative. To evaluate the integral, square it:}}
+\\[0.45em]
 I^2
-=
+&=
 \int_{-\infty}^{\infty}
 \int_{-\infty}^{\infty}
 e^{-x^2/2}
 e^{-y^2/2}
-\,dx\,dy.
-$$
-
-Using
-
-$$
+\,dx\,dy
+\tag*{\just{Combining the two integrals gives}}
+\\[0.45em]
 e^a e^b
-=
-e^{a+b},
-$$
-
-we obtain
-
-$$
+&=
+e^{a+b}
+\tag*{\just{Using}}
+\\[0.45em]
 I^2
-=
+&=
 \int_{-\infty}^{\infty}
 \int_{-\infty}^{\infty}
 e^{-(x^2+y^2)/2}
-\,dx\,dy.
-$$
-
-The region of integration is the entire plane.
-
-Switch to polar coordinates:
-
-$$
+\,dx\,dy
+\tag*{\just{we obtain}}
+\\[0.45em]
 x
-=
-r\cos\theta,
-$$
-
-$$
+&=
+r\cos\theta
+\\
 y
-=
-r\sin\theta,
-$$
-
-and
-
-$$
+&=
+r\sin\theta
+\\
 x^2+y^2
-=
-r^2.
-$$
-
-The Jacobian gives
-
-$$
+&=
+r^2
+\tag*{\just{The region of integration is the entire plane. Switch to polar coordinates:}}
+\\[0.45em]
 dx\,dy
-=
-r\,dr\,d\theta.
-$$
-
-Therefore,
-
-$$
+&=
+r\,dr\,d\theta
+\tag*{\just{The Jacobian gives}}
+\\[0.45em]
 I^2
-=
+&=
 \int_0^{2\pi}
 \int_0^\infty
 e^{-r^2/2}
-r\,dr\,d\theta.
-$$
+r\,dr\,d\theta
+\tag*{\just{Therefore,}}
+\end{align*}
 
 %----------------------------------------------------------------------------
 \subsection{Evaluate the Inner Integral}
-Let
-
-$$
+\begin{align*}
 u
-=
-\frac{r^2}{2}.
-$$
-
-Then
-
-$$
+&=
+\frac{r^2}{2}
+\tag*{\just{Let}}
+\\[0.45em]
 du
-=
-r\,dr.
-$$
-
-Thus,
-
-$$
+&=
+r\,dr
+\tag*{\just{Then}}
+\\[0.45em]
 \int_0^\infty
 e^{-r^2/2}
 r\,dr
-=
-\int_0^\infty e^{-u}\,du.
-$$
-
-Therefore,
-
-$$
+&=
 \int_0^\infty e^{-u}\,du
-=
+\tag*{\just{Thus,}}
+\\[0.45em]
+\int_0^\infty e^{-u}\,du
+&=
 \left[
 -e^{-u}
 \right]_0^\infty
 =
-1.
-$$
-
-Hence,
-
-$$
+1
+\tag*{\just{Therefore,}}
+\\[0.45em]
 I^2
-=
-\int_0^{2\pi}1\,d\theta.
-$$
-
-Therefore,
-
-$$
+&=
+\int_0^{2\pi}1\,d\theta
+\tag*{\just{Hence,}}
+\\[0.45em]
 I^2
-=
-2\pi.
-$$
-
-Since $I>0$,
-
-$$
+&=
+2\pi
+\tag*{\just{Therefore,}}
+\\[0.45em]
 I
-=
-\sqrt{2\pi}.
-$$
-
-Thus,
-
-$$
+&=
+\sqrt{2\pi}
+\tag*{\just{Since $I>0$,}}
+\\[0.45em]
 \boxed{
 \int_{-\infty}^{\infty}
 e^{-x^2/2}\,dx
 =
 \sqrt{2\pi}
 }
-$$
-
-and equivalently,
-
-$$
+\tag*{\just{Thus,}}
+\\[0.45em]
 \boxed{
 \int_{-\infty}^{\infty}
 e^{-x^2}\,dx
 =
 \sqrt{\pi}
-}.
-$$
+}
+\tag*{\just{and equivalently,}}
+\end{align*}
 
 %----------------------------------------------------------------------------
 \subsection{Change of Variables}
-For a one-dimensional integral, let
-
-$$
-u=g(x).
-$$
-
-Then
-
-$$
+\begin{align*}
+u
+&=
+g(x)
+\tag*{\just{For a one-dimensional integral, let}}
+\\[0.45em]
 \frac{du}{dx}
-=
+&=
 g'(x)
-$$
-
-and therefore
-
-$$
+\tag*{\just{Then}}
+\\[0.45em]
 du
-=
-g'(x)\,dx.
-$$
-
-Thus,
-
-$$
+&=
+g'(x)\,dx
+\tag*{\just{and therefore}}
+\\[0.45em]
 \int f(g(x))g'(x)\,dx
-=
-\int f(u)\,du.
-$$
-
-For a definite integral,
-
-$$
+&=
+\int f(u)\,du
+\tag*{\just{Thus,}}
+\\[0.45em]
 \int_a^b f(g(x))g'(x)\,dx
-=
-\int_{g(a)}^{g(b)}f(u)\,du.
-$$
+&=
+\int_{g(a)}^{g(b)}f(u)\,du
+\tag*{\just{For a definite integral,}}
+\end{align*}
 
 The same principle extends to several variables, except that changes in area or volume must also be accounted for.
 
 %----------------------------------------------------------------------------
 \subsection{Jacobian}
-Let
-
-$$
-x=x(u,v),
+\begin{align*}
+x
+&=
+x(u,v),
 \qquad
-y=y(u,v).
-$$
-
-The Jacobian matrix is
-
-$$
-J
+y
 =
+y(u,v)
+\tag*{\just{Let}}
+\\[0.45em]
+J
+&=
 \begin{pmatrix}
 \dfrac{\partial x}{\partial u}
 &
@@ -1641,44 +1295,36 @@ J
 \dfrac{\partial y}{\partial u}
 &
 \dfrac{\partial y}{\partial v}
-\end{pmatrix}.
-$$
-
-Its determinant is
-
-$$
+\end{pmatrix}
+\tag*{\just{The Jacobian matrix is}}
+\\[0.45em]
 \det J
-=
+&=
 \frac{\partial x}{\partial u}
 \frac{\partial y}{\partial v}
 -
 \frac{\partial x}{\partial v}
-\frac{\partial y}{\partial u}.
-$$
-
-The absolute value of the determinant gives the local area-scaling factor:
-
-$$
+\frac{\partial y}{\partial u}
+\tag*{\just{Its determinant is}}
+\\[0.45em]
 dx\,dy
-=
+&=
 \left|
 \det J
 \right|
-du\,dv.
-$$
-
-Therefore,
-
-$$
+du\,dv
+\tag*{\just{The absolute value of the determinant gives the local area-scaling factor:}}
+\\[0.45em]
 \iint_R f(x,y)\,dx\,dy
-=
+&=
 \iint_S
 f(x(u,v),y(u,v))
 \left|
 \det J
 \right|
-du\,dv.
-$$
+du\,dv
+\tag*{\just{Therefore,}}
+\end{align*}
 
 where
 
@@ -1690,77 +1336,66 @@ where
 
 %----------------------------------------------------------------------------
 \subsection{Jacobian Example}
-Consider a parallelogram with side vectors
-
-$$
+\begin{align*}
 \mathbf{w}_1
-=
+&=
 \begin{pmatrix}
 2\\
 1
 \end{pmatrix}
-$$
-
-and
-
-$$
+\tag*{\just{Consider a parallelogram with side vectors}}
+\\[0.45em]
 \mathbf{w}_2
-=
+&=
 \begin{pmatrix}
 -1\\
 1
-\end{pmatrix}.
-$$
-
-Let its starting point be
-
-$$
+\end{pmatrix}
+\tag*{\just{and}}
+\\[0.45em]
 \mathbf{b}
-=
+&=
 \begin{pmatrix}
 1\\
 1
-\end{pmatrix}.
-$$
-
-Every point in the parallelogram is
-
-$$
+\end{pmatrix}
+\tag*{\just{Let its starting point be}}
+\\[0.45em]
 \begin{pmatrix}
 x\\
 y
 \end{pmatrix}
-=
+&=
 u\mathbf{w}_1
 +
 v\mathbf{w}_2
 +
-\mathbf{b}.
-$$
-
-Therefore,
-
-$$
+\mathbf{b}
+\tag*{\just{Every point in the parallelogram is}}
+\\[0.45em]
 x
-=
+&=
 2u-v+1
-$$
-
-and
-
-$$
+\tag*{\just{Therefore,}}
+\\[0.45em]
 y
-=
-u+v+1.
-$$
-
-For
-
-$$
-0\leq u\leq1,
+&=
+u+v+1
+\tag*{\just{and}}
+\\[0.45em]
+0
+&\leq
+u
+\leq
+1,
 \qquad
-0\leq v\leq1,
-$$
+0
+\leq
+v
+\leq
+1
+\tag*{\just{For}}
+\end{align*}
 
 the unit square in the $(u,v)$ coordinate system maps to the parallelogram in the $(x,y)$ coordinate system.
 
@@ -1779,78 +1414,57 @@ $(1,0)$ & $(3,2)$ \\
 $(1,1)$ & $(2,3)$ \\
 \hline
 \end{tabularx}
-The Jacobian is
-
-$$
+\begin{align*}
 J
-=
+&=
 \begin{pmatrix}
 2 & -1\\
 1 & 1
-\end{pmatrix}.
-$$
-
-Therefore,
-
-$$
+\end{pmatrix}
+\tag*{\just{The Jacobian is}}
+\\[0.45em]
 \det J
-=
+&=
 (2)(1)-(-1)(1)
 =
-3.
-$$
-
-The area of the parallelogram is
-
-$$
+3
+\tag*{\just{Therefore,}}
+\\[0.45em]
 A
-=
-\iint_P1\,dx\,dy.
-$$
-
-Changing variables,
-
-$$
+&=
+\iint_P1\,dx\,dy
+\tag*{\just{The area of the parallelogram is}}
+\\[0.45em]
 A
-=
+&=
 \int_0^1
 \int_0^1
-3\,du\,dv.
-$$
-
-Thus,
-
-$$
+3\,du\,dv
+\tag*{\just{Changing variables,}}
+\\[0.45em]
 A
-=
-3.
-$$
+&=
+3
+\tag*{\just{Thus,}}
+\end{align*}
 
-This demonstrates why the Jacobian determinant appears in a change of variables: it measures how an area element changes under the transformation.
+\defaultwidthpar{This demonstrates why the Jacobian determinant appears in a change of variables: it measures how an area element changes under the transformation.}
 
 %----------------------------------------------------------------------------
 \subsection{Polar Coordinates}
-Define
-
-$$
+\begin{align*}
 x
-=
+&=
 r\cos\theta
-$$
-
-and
-
-$$
+\tag*{\just{Define}}
+\\[0.45em]
 y
-=
-r\sin\theta.
-$$
-
-The Jacobian matrix is
-
-$$
+&=
+r\sin\theta
+\tag*{\just{and}}
+\\[0.45em]
 J
-=
+&=
 \begin{pmatrix}
 \dfrac{\partial x}{\partial r}
 &
@@ -1859,14 +1473,11 @@ J
 \dfrac{\partial y}{\partial r}
 &
 \dfrac{\partial y}{\partial\theta}
-\end{pmatrix}.
-$$
-
-Evaluating the derivatives,
-
-$$
+\end{pmatrix}
+\tag*{\just{The Jacobian matrix is}}
+\\[0.45em]
 J
-=
+&=
 \begin{pmatrix}
 \cos\theta
 &
@@ -1875,13 +1486,9 @@ J
 \sin\theta
 &
 r\cos\theta
-\end{pmatrix}.
-$$
-
-Therefore,
-
-$$
-\begin{aligned}
+\end{pmatrix}
+\tag*{\just{Evaluating the derivatives,}}
+\\[0.45em]
 \det J
 &=
 r\cos^2\theta
@@ -1895,74 +1502,52 @@ r
 \right)
 \\
 &=
-r.
-\end{aligned}
-$$
-
-Hence,
-
-$$
+r
+\tag*{\just{Therefore,}}
+\\[0.45em]
 dx\,dy
-=
-r\,dr\,d\theta.
-$$
+&=
+r\,dr\,d\theta
+\tag*{\just{Hence,}}
+\end{align*}
 
 %----------------------------------------------------------------------------
 \subsection{Polar Area Element}
-The area of a circular sector of radius $r$ and angle $\theta$ is
-
-$$
+\begin{align*}
 A
-=
-\frac{1}{2}r^2\theta.
-$$
-
-This follows because the sector occupies the fraction
-
-$$
-\frac{\theta}{2\pi}
-$$
-
-of a complete circle. Therefore,
-
-$$
+&=
+\frac{1}{2}r^2\theta
+\tag*{\just{The area of a circular sector of radius $r$ and angle $\theta$ is}}
+\\[0.45em]
+&\frac{\theta}{2\pi}
+\tag*{\just{This follows because the sector occupies the fraction}}
+\\[0.45em]
 A
-=
+&=
 \frac{\theta}{2\pi}
 \pi r^2
 =
-\frac{1}{2}r^2\theta.
-$$
-
-Consider a small polar region between radii $r_{i-1}$ and $r_i$ and angular width $\Delta\theta$.
-
-Its area is
-
-$$
+\frac{1}{2}r^2\theta
+\tag*{\just{of a complete circle. Therefore,}}
+\\[0.45em]
 \Delta A_i
-=
+&=
 \frac{1}{2}r_i^2\Delta\theta
 -
-\frac{1}{2}r_{i-1}^2\Delta\theta.
-$$
-
-Therefore,
-
-$$
+\frac{1}{2}r_{i-1}^2\Delta\theta
+\tag*{\just{Consider a small polar region between radii $r_{i-1}$ and $r_i$ and angular width $\Delta\theta$. Its area is}}
+\\[0.45em]
 \Delta A_i
-=
+&=
 \frac{1}{2}
 \left(
 r_i^2-r_{i-1}^2
 \right)
-\Delta\theta.
-$$
-
-Factoring,
-
-$$
+\Delta\theta
+\tag*{\just{Therefore,}}
+\\[0.45em]
 \Delta A_i
-=
+&=
 \frac{1}{2}
 \left(
 r_i+r_{i-1}
@@ -1970,114 +1555,80 @@ r_i+r_{i-1}
 \left(
 r_i-r_{i-1}
 \right)
-\Delta\theta.
-$$
-
-Define
-
-$$
+\Delta\theta
+\tag*{\just{Factoring,}}
+\\[0.45em]
 r_i^*
-=
+&=
 \frac{r_i+r_{i-1}}{2}
-$$
-
-and
-
-$$
+\tag*{\just{Define}}
+\\[0.45em]
 \Delta r
-=
-r_i-r_{i-1}.
-$$
-
-Then
-
-$$
+&=
+r_i-r_{i-1}
+\tag*{\just{and}}
+\\[0.45em]
 \Delta A_i
-=
+&=
 r_i^*
 \Delta r
-\Delta\theta.
-$$
-
-In the limit,
-
-$$
+\Delta\theta
+\tag*{\just{Then}}
+\\[0.45em]
 dA
-=
-r\,dr\,d\theta.
-$$
-
-Therefore, a double integral in polar coordinates becomes
-
-$$
+&=
+r\,dr\,d\theta
+\tag*{\just{In the limit,}}
+\\[0.45em]
 \iint_R f(x,y)\,dA
-=
+&=
 \iint_{R^*}
 f(r\cos\theta,r\sin\theta)
-r\,dr\,d\theta.
-$$
+r\,dr\,d\theta
+\tag*{\just{Therefore, a double integral in polar coordinates becomes}}
+\end{align*}
 
 %----------------------------------------------------------------------------
 \subsection{General Normal Distribution}
-Let
-
-$$
+\begin{align*}
 Z
-\sim
+&\sim
 N(0,1)
-$$
-
-and define
-
-$$
+\tag*{\just{Let}}
+\\[0.45em]
 X
-=
+&=
 \mu+\sigma Z,
 \qquad
-\sigma>0.
-$$
-
-Solving for $Z$,
-
-$$
+\sigma>0
+\tag*{\just{and define}}
+\\[0.45em]
 Z
-=
-\frac{X-\mu}{\sigma}.
-$$
-
-For values,
-
-$$
+&=
+\frac{X-\mu}{\sigma}
+\tag*{\just{Solving for $Z$,}}
+\\[0.45em]
 z
-=
-\frac{x-\mu}{\sigma}.
-$$
-
-Differentiating,
-
-$$
+&=
+\frac{x-\mu}{\sigma}
+\tag*{\just{For values,}}
+\\[0.45em]
 \frac{dz}{dx}
-=
-\frac{1}{\sigma}.
-$$
-
-Therefore, the change-of-variables rule for probability densities gives
-
-$$
+&=
+\frac{1}{\sigma}
+\tag*{\just{Differentiating,}}
+\\[0.45em]
 f_X(x)
-=
+&=
 \phi
 \left(
 \frac{x-\mu}{\sigma}
 \right)
-\frac{1}{\sigma}.
-$$
-
-Substituting the standard normal density,
-
-$$
+\frac{1}{\sigma}
+\tag*{\just{Therefore, the change-of-variables rule for probability densities gives}}
+\\[0.45em]
 f_X(x)
-=
+&=
 \frac{1}{\sigma}
 \frac{1}{\sqrt{2\pi}}
 \exp
@@ -2086,12 +1637,9 @@ f_X(x)
 \left(
 \frac{x-\mu}{\sigma}
 \right)^2
-\right].
-$$
-
-Therefore,
-
-$$
+\right]
+\tag*{\just{Substituting the standard normal density,}}
+\\[0.45em]
 \boxed{
 f(x;\mu,\sigma)
 =
@@ -2104,24 +1652,24 @@ f(x;\mu,\sigma)
 \right)^2
 \right]
 }
-$$
-
-for
-
-$$
--\infty<x<\infty,
+\tag*{\just{Therefore,}}
+\\[0.45em]
+-\infty
+&<
+x
+<
+\infty,
 \qquad
-\sigma>0.
-$$
+\sigma>0
+\tag*{\just{for}}
+\end{align*}
 
 %----------------------------------------------------------------------------
 \subsection{Normalization}
-Integrate the density:
-
-$$
+\begin{align*}
 \int_{-\infty}^{\infty}
 f(x;\mu,\sigma)\,dx
-=
+&=
 \int_{-\infty}^{\infty}
 \frac{1}{\sigma\sqrt{2\pi}}
 \exp
@@ -2131,29 +1679,19 @@ f(x;\mu,\sigma)\,dx
 \frac{x-\mu}{\sigma}
 \right)^2
 \right]
-dx.
-$$
-
-Let
-
-$$
-z
-=
-\frac{x-\mu}{\sigma}.
-$$
-
-Then
-
-$$
 dx
-=
-\sigma\,dz.
-$$
-
-Therefore,
-
-$$
-\begin{aligned}
+\tag*{\just{Integrate the density:}}
+\\[0.45em]
+z
+&=
+\frac{x-\mu}{\sigma}
+\tag*{\just{Let}}
+\\[0.45em]
+dx
+&=
+\sigma\,dz
+\tag*{\just{Then}}
+\\[0.45em]
 \int_{-\infty}^{\infty}
 f(x;\mu,\sigma)\,dx
 &=
@@ -2166,112 +1704,80 @@ e^{-z^2/2}\,dz
 \sqrt{2\pi}
 \\
 &=
-1.
-\end{aligned}
-$$
+1
+\tag*{\just{Therefore,}}
+\end{align*}
 
 Thus the normal density has total probability one.
 
 %----------------------------------------------------------------------------
 \subsection{Mean}
-For the standard normal distribution,
-
-$$
+\begin{align*}
 E[Z]
-=
+&=
 \frac{1}{\sqrt{2\pi}}
 \int_{-\infty}^{\infty}
-z e^{-z^2/2}\,dz.
-$$
-
-The integrand is an odd function over a symmetric interval. Therefore,
-
-$$
+z e^{-z^2/2}\,dz
+\tag*{\just{For the standard normal distribution,}}
+\\[0.45em]
 E[Z]
-=
-0.
-$$
-
-Since
-
-$$
+&=
+0
+\tag*{\just{The integrand is an odd function over a symmetric interval. Therefore,}}
+\\[0.45em]
 X
-=
-\mu+\sigma Z,
-$$
-
-we obtain
-
-$$
+&=
+\mu+\sigma Z
+\tag*{\just{Since}}
+\\[0.45em]
 E[X]
-=
-\mu+\sigma E[Z].
-$$
-
-Therefore,
-
-$$
+&=
+\mu+\sigma E[Z]
+\tag*{\just{we obtain}}
+\\[0.45em]
 \boxed{
 E[X]
 =
 \mu
-}.
-$$
+}
+\tag*{\just{Therefore,}}
+\end{align*}
 
 %----------------------------------------------------------------------------
 \subsection{Variance}
-Since $E[Z]=0$,
-
-$$
+\begin{align*}
 \operatorname{Var}(Z)
-=
-E[Z^2].
-$$
-
-Thus,
-
-$$
+&=
 E[Z^2]
-=
+\tag*{\just{Since $E[Z]=0$,}}
+\\[0.45em]
+E[Z^2]
+&=
 \frac{1}{\sqrt{2\pi}}
 \int_{-\infty}^{\infty}
-z^2e^{-z^2/2}\,dz.
-$$
-
-Using integration by parts,
-
-$$
-u=z
-$$
-
-and
-
-$$
+z^2e^{-z^2/2}\,dz
+\tag*{\just{Thus,}}
+\\[0.45em]
+u
+&=
+z
+\tag*{\just{Using integration by parts,}}
+\\[0.45em]
 dv
-=
-z e^{-z^2/2}\,dz.
-$$
-
-Then
-
-$$
+&=
+z e^{-z^2/2}\,dz
+\tag*{\just{and}}
+\\[0.45em]
 du
-=
+&=
 dz
-$$
-
-and
-
-$$
+\tag*{\just{Then}}
+\\[0.45em]
 v
-=
--e^{-z^2/2}.
-$$
-
-Therefore,
-
-$$
-\begin{aligned}
+&=
+-e^{-z^2/2}
+\tag*{\just{and}}
+\\[0.45em]
 \int_{-\infty}^{\infty}
 z^2e^{-z^2/2}\,dz
 &=
@@ -2283,51 +1789,36 @@ z^2e^{-z^2/2}\,dz
 e^{-z^2/2}\,dz
 \\
 &=
-\sqrt{2\pi}.
-\end{aligned}
-$$
-
-Hence,
-
-$$
+\sqrt{2\pi}
+\tag*{\just{Therefore,}}
+\\[0.45em]
 E[Z^2]
-=
-1.
-$$
-
-Therefore,
-
-$$
+&=
+1
+\tag*{\just{Hence,}}
+\\[0.45em]
 \operatorname{Var}(Z)
-=
-1.
-$$
-
-Since
-
-$$
+&=
+1
+\tag*{\just{Therefore,}}
+\\[0.45em]
 X
-=
-\mu+\sigma Z,
-$$
-
-we have
-
-$$
+&=
+\mu+\sigma Z
+\tag*{\just{Since}}
+\\[0.45em]
 \operatorname{Var}(X)
-=
-\sigma^2\operatorname{Var}(Z).
-$$
-
-Thus,
-
-$$
+&=
+\sigma^2\operatorname{Var}(Z)
+\tag*{\just{we have}}
+\\[0.45em]
 \boxed{
 \operatorname{Var}(X)
 =
 \sigma^2
-}.
-$$
+}
+\tag*{\just{Thus,}}
+\end{align*}
 
 Hence,
 
@@ -2382,6 +1873,7 @@ The normal density therefore arises as the continuous limiting form of the binom
 \end{enumerate}
 
 %----------------------------------------------------------------------------
+\restoregeometry
 \newpage
 \section{Convergence of Random Variables, Distributions, and Probabilities}
 Convergence of sequences is about how a sequence behaves as it approaches a specific limit. Convergence of functions is about how a function behaves through progression of its domain. 

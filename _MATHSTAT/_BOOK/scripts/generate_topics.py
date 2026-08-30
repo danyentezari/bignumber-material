@@ -337,7 +337,8 @@ def discover_topic_folders() -> list[Path]:
 
 
 def is_draft_md(path: Path) -> bool:
-    return path.name.endswith(".draft.md")
+    """True for topic backups excluded from PDF/HTML builds (.draft.md, .skip.md)."""
+    return path.name.endswith(".draft.md") or path.name.endswith(".skip.md")
 
 
 def is_bookdown_safe_filename(path: Path) -> bool:

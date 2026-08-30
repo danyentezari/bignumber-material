@@ -1,60 +1,43 @@
 # Standardization
 
-Define
+<!-- pdf-page-width: wide -->
 
 $$
+\begin{align*}
 z
-=
-\frac{k-np}{\sqrt{npq}}.
-$$
-
-Then
-
-$$
+&=
+\frac{k-np}{\sqrt{npq}}
+\tag*{\just{Define}}
+\\[0.45em]
 z
-=
-\frac{k-\mu}{\sigma}.
-$$
-
-Because $k$ changes in integer increments,
-
-$$
+&=
+\frac{k-\mu}{\sigma}
+\tag*{\just{Then}}
+\\[0.45em]
 \Delta k
-=
-1.
-$$
-
-Therefore, the corresponding increment in $z$ is
-
-$$
+&=
+1
+\tag*{\just{Because $k$ changes in integer increments,}}
+\\[0.45em]
 \Delta z
-=
-\frac{1}{\sqrt{npq}}.
-$$
-
-The binomial probability can therefore be written
-
-$$
+&=
+\frac{1}{\sqrt{npq}}
+\tag*{\just{Therefore, the corresponding increment in $z$ is}}
+\\[0.45em]
 P(X_n=k)
-\approx
+&\approx
 \frac{1}{\sqrt{2\pi}}
 e^{-z^2/2}
-\Delta z.
-$$
-
-For an interval
-
-$$
+\Delta z
+\tag*{\just{The binomial probability can therefore be written}}
+\\[0.45em]
 a
-\leq
+&\leq
 \frac{X_n-np}{\sqrt{npq}}
 \leq
-b,
-$$
-
-the probability is a sum of these terms:
-
-$$
+b
+\tag*{\just{For an interval}}
+\\[0.45em]
 P
 \left(
 a
@@ -63,29 +46,21 @@ a
 \leq
 b
 \right)
-\approx
+&\approx
 \sum
 \frac{1}{\sqrt{2\pi}}
 e^{-z_i^2/2}
-\Delta z.
-$$
-
-As
-
-$$
-n\rightarrow\infty,
-$$
-
-we have
-
-$$
 \Delta z
-\rightarrow0.
-$$
-
-The sum becomes a Riemann integral:
-
-$$
+\tag*{\just{the probability is a sum of these terms:}}
+\\[0.45em]
+n
+&\rightarrow\infty
+\tag*{\just{As}}
+\\[0.45em]
+\Delta z
+&\rightarrow0
+\tag*{\just{we have}}
+\\[0.45em]
 \boxed{
 P
 \left(
@@ -100,7 +75,9 @@ b
 \frac{1}{\sqrt{2\pi}}
 e^{-z^2/2}
 \,dz
-}.
+}
+\tag*{\just{The sum becomes a Riemann integral:}}
+\end{align*}
 $$
 
 This is the de Moivre-Laplace limit theorem.

@@ -1,59 +1,41 @@
 # Binomial Distribution
 
-Let
+<!-- pdf-page-width: wide -->
 
 $$
+\begin{align*}
 X_n
-\sim
+&\sim
 \operatorname{Bin}(n,p)
-$$
-
-and define
-
-$$
+\tag*{\just{$X_n$ is a binomial random variable}}
+\\[0.6em]
 q
-=
-1-p.
-$$
-
-The probability of obtaining exactly $k$ successes is
-
-$$
+&=
+1-p
+\tag*{\just{$q$ is the probability of failure}}
+\\[0.6em]
 P(X_n=k)
-=
-\binom{n}{k}
-p^kq^{n-k}.
-$$
-
-Therefore,
-
-$$
-P(X_n=k)
-=
-\frac{n!}{k!(n-k)!}
-p^kq^{n-k}.
-$$
-
-The binomial mean is
-
-$$
+&=
+\binom{n}{k}p^kq^{n-k}
+\tag*{\just{Probability of exactly $k$ successes}}
+\\[0.6em]
+&=
+\frac{n!}{k!(n-k)!}p^kq^{n-k}
+\tag*{\just{Expand the binomial coefficient}}
+\\[0.6em]
 \mu
-=
+&=
 np
-$$
-
-and its variance is
-
-$$
+\tag*{\just{Mean of the binomial distribution}}
+\\[0.6em]
 \sigma^2
-=
-npq.
-$$
-
-Therefore,
-
-$$
+&=
+npq
+\tag*{\just{Variance of the binomial distribution}}
+\\[0.6em]
 \sigma
-=
-\sqrt{npq}.
+&=
+\sqrt{npq}
+\tag*{\just{Standard deviation}}
+\end{align*}
 $$
