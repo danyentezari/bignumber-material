@@ -100,8 +100,12 @@ $$
 R
 &=
 \dfrac{\partial F_x}{\partial x}
+\\
+&\quad
 +
 \dfrac{\partial F_y}{\partial y}
+\\
+&\quad
 +
 \dfrac{\partial F_z}{\partial z}
 \end{align*}
@@ -281,8 +285,12 @@ $$
 &\approx
 \biggl(
 \dfrac{\partial F_x}{\partial x}
+\\
+&\quad
 +
 \dfrac{\partial F_y}{\partial y}
+\\
+&\quad
 +
 \dfrac{\partial F_z}{\partial z}
 \biggr)
@@ -302,8 +310,12 @@ $$
 \dfrac{\Delta\Phi}{\Delta V}
 &\approx
 \dfrac{\partial F_x}{\partial x}
+\\
+&\quad
 +
 \dfrac{\partial F_y}{\partial y}
+\\
+&\quad
 +
 \dfrac{\partial F_z}{\partial z}
 \end{align*}
@@ -322,8 +334,12 @@ $$
 \dfrac{\Delta\Phi}{\Delta V}
 &=
 \dfrac{\partial F_x}{\partial x}
+\\
+&\quad
 +
 \dfrac{\partial F_y}{\partial y}
+\\
+&\quad
 +
 \dfrac{\partial F_z}{\partial z}
 \end{align*}
@@ -341,8 +357,12 @@ $$
 \operatorname{div}\mathbf{F}
 &=
 \dfrac{\partial F_x}{\partial x}
+\\
+&\quad
 +
 \dfrac{\partial F_y}{\partial y}
+\\
+&\quad
 +
 \dfrac{\partial F_z}{\partial z}
 \end{align*}
@@ -442,7 +462,11 @@ $$
 \nabla
 &=
 \mathbf{i}\dfrac{\partial}{\partial x}
+\\
+&\quad
 +\mathbf{j}\dfrac{\partial}{\partial y}
+\\
+&\quad
 +\mathbf{k}\dfrac{\partial}{\partial z}
 \end{align*}
 $$
@@ -489,8 +513,12 @@ $$
 \nabla\cdot\mathbf{F}
 &=
 \dfrac{\partial F_x}{\partial x}
+\\
+&\quad
 +
 \dfrac{\partial F_y}{\partial y}
+\\
+&\quad
 +
 \dfrac{\partial F_z}{\partial z}
 \end{align*}
@@ -579,8 +607,12 @@ $$
 \operatorname{tr}(\operatorname{grad}\mathbf{F})
 &=
 \dfrac{\partial F_x}{\partial x}
+\\
+&\quad
 +
 \dfrac{\partial F_y}{\partial y}
+\\
+&\quad
 +
 \dfrac{\partial F_z}{\partial z}
 \end{align*}

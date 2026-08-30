@@ -100,7 +100,11 @@ $$
 \mathbf{R}
 &=
 \biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
+\\
+&\quad
 +\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
+\\
+&\quad
 +\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
 \end{align*}
 $$
@@ -117,7 +121,11 @@ $$
 \operatorname{curl}\mathbf{F}
 &=
 \biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
+\\
+&\quad
 +\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
+\\
+&\quad
 +\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
 \end{align*}
 $$
@@ -206,7 +214,11 @@ $$
 \mathbf{a}\times\mathbf{b}
 &=
 (a_2b_3-a_3b_2)\mathbf{i}
+\\
+&\quad
 +(a_3b_1-a_1b_3)\mathbf{j}
+\\
+&\quad
 +(a_1b_2-a_2b_1)\mathbf{k}
 \end{align*}
 $$
@@ -232,7 +244,11 @@ $$
 \nabla
 &=
 \mathbf{i}\dfrac{\partial}{\partial x}
+\\
+&\quad
 +\mathbf{j}\dfrac{\partial}{\partial y}
+\\
+&\quad
 +\mathbf{k}\dfrac{\partial}{\partial z}
 \end{align*}
 $$
@@ -279,7 +295,11 @@ $$
 \nabla\times\mathbf{F}
 &=
 \biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
+\\
+&\quad
 +\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
+\\
+&\quad
 +\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
 \end{align*}
 $$
@@ -384,12 +404,16 @@ $$
 \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\
 F_y & F_z
 \end{vmatrix}
+\\
+&\quad
 -
 \mathbf{j}
 \begin{vmatrix}
 \dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial z} \\
 F_x & F_z
 \end{vmatrix}
+\\
+&\quad
 +
 \mathbf{k}
 \begin{vmatrix}
@@ -411,8 +435,12 @@ $$
 \nabla\times\mathbf{F}
 &=
 \biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
+\\
+&\quad
 -
 \biggl(\dfrac{\partial F_z}{\partial x}-\dfrac{\partial F_x}{\partial z}\biggr)\mathbf{j}
+\\
+&\quad
 +
 \biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
 \end{align*}
@@ -430,8 +458,12 @@ $$
 \nabla\times\mathbf{F}
 &=
 \biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
+\\
+&\quad
 +
 \biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
+\\
+&\quad
 +
 \biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
 \end{align*}

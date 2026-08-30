@@ -808,11 +808,13 @@ html.theme-classic .entry-content .derivation-row {
 }
 
 html.theme-classic .entry-content .derivation-math {
+  max-width: 100%;
   min-width: 0;
-  overflow-x: auto;
 }
 
+html.theme-classic .entry-content .derivation-math .math,
 html.theme-classic .entry-content .derivation-math .math.display,
+html.theme-classic .entry-content .derivation-math .mjx-chtml,
 html.theme-classic .entry-content .derivation-math .MathJax_Display,
 html.theme-classic .entry-content .derivation-math .MJXc-display {
   margin: 0.15em 0 !important;

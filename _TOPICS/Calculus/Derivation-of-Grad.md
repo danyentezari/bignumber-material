@@ -230,24 +230,36 @@ $$
 \Delta F_x
 &\approx
 \dfrac{\partial F_x}{\partial x}\Delta x
+\\
+&\quad
 +
 \dfrac{\partial F_x}{\partial y}\Delta y
+\\
+&\quad
 +
 \dfrac{\partial F_x}{\partial z}\Delta z
 \\
 \Delta F_y
 &\approx
 \dfrac{\partial F_y}{\partial x}\Delta x
+\\
+&\quad
 +
 \dfrac{\partial F_y}{\partial y}\Delta y
+\\
+&\quad
 +
 \dfrac{\partial F_y}{\partial z}\Delta z
 \\
 \Delta F_z
 &\approx
 \dfrac{\partial F_z}{\partial x}\Delta x
+\\
+&\quad
 +
 \dfrac{\partial F_z}{\partial y}\Delta y
+\\
+&\quad
 +
 \dfrac{\partial F_z}{\partial z}\Delta z
 \end{align*}
@@ -393,7 +405,11 @@ $$
 \nabla
 &=
 \mathbf{i}\dfrac{\partial}{\partial x}
+\\
+&\quad
 +\mathbf{j}\dfrac{\partial}{\partial y}
+\\
+&\quad
 +\mathbf{k}\dfrac{\partial}{\partial z}
 \end{align*}
 $$
@@ -479,24 +495,36 @@ $$
 \nabla F_x
 &=
 \dfrac{\partial F_x}{\partial x}\mathbf{i}
+\\
+&\quad
 +
 \dfrac{\partial F_x}{\partial y}\mathbf{j}
+\\
+&\quad
 +
 \dfrac{\partial F_x}{\partial z}\mathbf{k}
 \\
 \nabla F_y
 &=
 \dfrac{\partial F_y}{\partial x}\mathbf{i}
+\\
+&\quad
 +
 \dfrac{\partial F_y}{\partial y}\mathbf{j}
+\\
+&\quad
 +
 \dfrac{\partial F_y}{\partial z}\mathbf{k}
 \\
 \nabla F_z
 &=
 \dfrac{\partial F_z}{\partial x}\mathbf{i}
+\\
+&\quad
 +
 \dfrac{\partial F_z}{\partial y}\mathbf{j}
+\\
+&\quad
 +
 \dfrac{\partial F_z}{\partial z}\mathbf{k}
 \end{align*}

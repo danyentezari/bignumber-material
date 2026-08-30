@@ -134,11 +134,23 @@ $$
 \begin{align*}
 \Delta F_1
 &\approx
-\dfrac{\partial F_1}{\partial x_1}\Delta x_1+\cdots+\dfrac{\partial F_1}{\partial x_n}\Delta x_n
+\dfrac{\partial F_1}{\partial x_1}\Delta x_1
+\\
+&\quad
++\cdots
+\\
+&\quad
++\dfrac{\partial F_1}{\partial x_n}\Delta x_n
 \\
 \Delta F_m
 &\approx
-\dfrac{\partial F_m}{\partial x_1}\Delta x_1+\cdots+\dfrac{\partial F_m}{\partial x_n}\Delta x_n
+\dfrac{\partial F_m}{\partial x_1}\Delta x_1
+\\
+&\quad
++\cdots
+\\
+&\quad
++\dfrac{\partial F_m}{\partial x_n}\Delta x_n
 \end{align*}
 $$
 
