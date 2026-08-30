@@ -458,6 +458,15 @@ main { margin-top: 1.5rem; }
   padding: 0.55rem 0.85rem;
   box-shadow: var(--shadow-sm);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* The autocomplete wrapper is injected around the input and must not shrink it */
+.algolia-autocomplete {
+  display: block !important;
+  width: 100% !important;
 }
 
 #search.form-control::placeholder {
@@ -782,6 +791,42 @@ footer.bg-primary a:hover {
 }
 
 .mjx-chtml { font-size: 1.04em; }
+
+html.theme-classic .entry-content .derivation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85em;
+  margin: 1.1em 0 1.4em;
+  max-width: 100%;
+}
+
+html.theme-classic .entry-content .derivation-row {
+  align-items: start;
+  column-gap: 1.15rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(10.5rem, 0.8fr);
+}
+
+html.theme-classic .entry-content .derivation-math {
+  min-width: 0;
+  overflow-x: auto;
+}
+
+html.theme-classic .entry-content .derivation-math .math.display,
+html.theme-classic .entry-content .derivation-math .MathJax_Display,
+html.theme-classic .entry-content .derivation-math .MJXc-display {
+  margin: 0.15em 0 !important;
+  max-width: 100% !important;
+  text-align: left !important;
+}
+
+html.theme-classic .entry-content .derivation-just {
+  color: var(--text);
+  font-size: 0.94em;
+  hyphens: auto;
+  line-height: 1.4;
+  margin: 0;
+}
 
 /* ----------------------------------------------------------------------
    Theme toggle button

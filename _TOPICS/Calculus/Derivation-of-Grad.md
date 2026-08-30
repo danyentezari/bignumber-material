@@ -2,17 +2,24 @@
 
 $\displaystyle \operatorname{grad}\mathbf{F} = J_{\mathbf{F}} = \begin{pmatrix} \dfrac{\partial F_{x}}{\partial x} & \dfrac{\partial F_{x}}{\partial y} & \dfrac{\partial F_{x}}{\partial z} \\ \dfrac{\partial F_{y}}{\partial x} & \dfrac{\partial F_{y}}{\partial y} & \dfrac{\partial F_{y}}{\partial z} \\ \dfrac{\partial F_{z}}{\partial x} & \dfrac{\partial F_{z}}{\partial y} & \dfrac{\partial F_{z}}{\partial z} \end{pmatrix}$
 
-Vector Field. Let
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \mathbf{F}
-=
-F_x\mathbf{i}
-+
-F_y\mathbf{j}
-+
-F_z\mathbf{k}
+&=
+F_x\mathbf{i}+F_y\mathbf{j}+F_z\mathbf{k}
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Start from a Cartesian vector field</div>
+</div>
+
+</div>
 
 where
 
@@ -24,61 +31,56 @@ where
 - $\mathbf{j}$ is the unit vector along $y$.
 - $\mathbf{k}$ is the unit vector along $z$.
 
-Differential Components. Define
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 (\operatorname{grad}\mathbf{F})_{11}
-=
-\frac{\partial F_x}{\partial x}
-$$
-
-$$
+&=
+\dfrac{\partial F_x}{\partial x}
+\\
 (\operatorname{grad}\mathbf{F})_{12}
-=
-\frac{\partial F_x}{\partial y}
-$$
-
-$$
+&=
+\dfrac{\partial F_x}{\partial y}
+\\
 (\operatorname{grad}\mathbf{F})_{13}
-=
-\frac{\partial F_x}{\partial z}
-$$
-
-$$
+&=
+\dfrac{\partial F_x}{\partial z}
+\\
 (\operatorname{grad}\mathbf{F})_{21}
-=
-\frac{\partial F_y}{\partial x}
-$$
-
-$$
+&=
+\dfrac{\partial F_y}{\partial x}
+\\
 (\operatorname{grad}\mathbf{F})_{22}
-=
-\frac{\partial F_y}{\partial y}
-$$
-
-$$
+&=
+\dfrac{\partial F_y}{\partial y}
+\\
 (\operatorname{grad}\mathbf{F})_{23}
-=
-\frac{\partial F_y}{\partial z}
-$$
-
-$$
+&=
+\dfrac{\partial F_y}{\partial z}
+\\
 (\operatorname{grad}\mathbf{F})_{31}
-=
-\frac{\partial F_z}{\partial x}
-$$
-
-$$
+&=
+\dfrac{\partial F_z}{\partial x}
+\\
 (\operatorname{grad}\mathbf{F})_{32}
-=
-\frac{\partial F_z}{\partial y}
+&=
+\dfrac{\partial F_z}{\partial y}
+\\
+(\operatorname{grad}\mathbf{F})_{33}
+&=
+\dfrac{\partial F_z}{\partial z}
+\end{align*}
 $$
 
-$$
-(\operatorname{grad}\mathbf{F})_{33}
-=
-\frac{\partial F_z}{\partial z}
-$$
+</div>
+<div class="derivation-just">Define the nine Cartesian differential components</div>
+</div>
+
+</div>
 
 where
 
@@ -86,11 +88,15 @@ where
 - $x$, $y$, $z$ are Cartesian coordinates.
 - $\partial$ denotes partial differentiation.
 
-These quantities form a Cartesian matrix of components. Therefore,
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \mathbf{R}
-=
+&=
 \begin{pmatrix}
 \dfrac{\partial F_x}{\partial x}
 &
@@ -110,18 +116,29 @@ $$
 &
 \dfrac{\partial F_z}{\partial z}
 \end{pmatrix}
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Assemble those components into a matrix</div>
+</div>
+
+</div>
 
 where
 
 - $\mathbf{R}$ is the resulting matrix field.
 - Each entry is a Cartesian differential component.
 
-Substituting the differential components gives
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \mathbf{R}
-=
+&=
 \begin{pmatrix}
 (\operatorname{grad}\mathbf{F})_{11}
 &
@@ -140,154 +157,113 @@ $$
 (\operatorname{grad}\mathbf{F})_{32}
 &
 (\operatorname{grad}\mathbf{F})_{33}
-\end{pmatrix}.
-$$
-
-Position. Let
-
-$$
-\mathbf{x}
-=
-\begin{pmatrix}
-x \\
-y \\
-z
 \end{pmatrix}
+\end{align*}
 $$
 
-and let a small change in position be
+</div>
+<div class="derivation-just">Rewrite the matrix in index form</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
+\mathbf{x}
+&=
+\begin{pmatrix} x \\ y \\ z \end{pmatrix}
+\\
 \Delta\mathbf{x}
-=
-\begin{pmatrix}
-\Delta x \\
-\Delta y \\
-\Delta z
-\end{pmatrix}.
+&=
+\begin{pmatrix} \Delta x \\ \Delta y \\ \Delta z \end{pmatrix}
+\end{align*}
 $$
 
-The corresponding change in the vector field is
+</div>
+<div class="derivation-just">Take a position and a small change in position</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \Delta\mathbf{F}
-=
-\mathbf{F}(\mathbf{x}+\Delta\mathbf{x})
--
-\mathbf{F}(\mathbf{x}).
+&=
+\mathbf{F}(\mathbf{x}+\Delta\mathbf{x})-\mathbf{F}(\mathbf{x})
+\end{align*}
 $$
 
-Writing each component,
+</div>
+<div class="derivation-just">Form the corresponding change in the field</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
-\Delta\mathbf{F}
-=
-\begin{pmatrix}
+\begin{align*}
+\Delta F_x
+&=
 F_x(x+\Delta x,y+\Delta y,z+\Delta z)-F_x(x,y,z)
 \\
+\Delta F_y
+&=
 F_y(x+\Delta x,y+\Delta y,z+\Delta z)-F_y(x,y,z)
 \\
+\Delta F_z
+&=
 F_z(x+\Delta x,y+\Delta y,z+\Delta z)-F_z(x,y,z)
-\end{pmatrix}.
+\end{align*}
 $$
 
-First Component. For the $x$-component,
+</div>
+<div class="derivation-just">Write the change in each Cartesian component</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \Delta F_x
-=
-F_x(x+\Delta x,y+\Delta y,z+\Delta z)
--
-F_x(x,y,z).
-$$
-
-For small changes, the first-order change is
-
-$$
-\Delta F_x
-\approx
-\frac{\partial F_x}{\partial x}\Delta x
-+
-\frac{\partial F_x}{\partial y}\Delta y
-+
-\frac{\partial F_x}{\partial z}\Delta z.
-$$
-
-Second Component. Similarly,
-
-$$
-\Delta F_y
-=
-F_y(x+\Delta x,y+\Delta y,z+\Delta z)
--
-F_y(x,y,z)
-$$
-
-and
-
-$$
-\Delta F_y
-\approx
-\frac{\partial F_y}{\partial x}\Delta x
-+
-\frac{\partial F_y}{\partial y}\Delta y
-+
-\frac{\partial F_y}{\partial z}\Delta z.
-$$
-
-Third Component. Similarly,
-
-$$
-\Delta F_z
-=
-F_z(x+\Delta x,y+\Delta y,z+\Delta z)
--
-F_z(x,y,z)
-$$
-
-and
-
-$$
-\Delta F_z
-\approx
-\frac{\partial F_z}{\partial x}\Delta x
-+
-\frac{\partial F_z}{\partial y}\Delta y
-+
-\frac{\partial F_z}{\partial z}\Delta z.
-$$
-
-Vector Change. Combining the three component changes gives
-
-$$
-\Delta\mathbf{F}
-\approx
-\begin{pmatrix}
+&\approx
 \dfrac{\partial F_x}{\partial x}\Delta x
 +
 \dfrac{\partial F_x}{\partial y}\Delta y
 +
 \dfrac{\partial F_x}{\partial z}\Delta z
-\\[6pt]
+\\
+\Delta F_y
+&\approx
 \dfrac{\partial F_y}{\partial x}\Delta x
 +
 \dfrac{\partial F_y}{\partial y}\Delta y
 +
 \dfrac{\partial F_y}{\partial z}\Delta z
-\\[6pt]
+\\
+\Delta F_z
+&\approx
 \dfrac{\partial F_z}{\partial x}\Delta x
 +
 \dfrac{\partial F_z}{\partial y}\Delta y
 +
 \dfrac{\partial F_z}{\partial z}\Delta z
-\end{pmatrix}.
+\end{align*}
 $$
 
-Gradient. This matrix is the gradient of $\mathbf{F}$:
+</div>
+<div class="derivation-just">Keep the first-order increment of each component</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \operatorname{grad}\mathbf{F}
-=
+&=
 \begin{pmatrix}
 \dfrac{\partial F_x}{\partial x}
 &
@@ -307,49 +283,70 @@ $$
 &
 \dfrac{\partial F_z}{\partial z}
 \end{pmatrix}
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Name this matrix the gradient of F</div>
+</div>
+
+</div>
 
 where
 
 - $\operatorname{grad}\mathbf{F}$ is the gradient of $\mathbf{F}$.
 - Each entry is a Cartesian gradient component.
 
-Thus,
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 (\operatorname{grad}\mathbf{F})_{ij}
-=
-\frac{\partial F_i}{\partial x_j}
+&=
+\dfrac{\partial F_i}{\partial x_j}
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Write the entries in index notation</div>
+</div>
+
+</div>
 
 where
 
 - $(x_1,x_2,x_3)=(x,y,z)$.
 - $(F_1,F_2,F_3)=(F_x,F_y,F_z)$.
 
-Matrix Multiplication. For
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \mathbf{a}
-=
+&=
 \begin{pmatrix}
 a_{11} & a_{12} & a_{13} \\
 a_{21} & a_{22} & a_{23} \\
 a_{31} & a_{32} & a_{33}
 \end{pmatrix}
-$$
-
-and
-
-$$
+\\
 \mathbf{b}
-=
-\begin{pmatrix}
-b_1 \\
-b_2 \\
-b_3
-\end{pmatrix}
+&=
+\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Write a general matrix and a general column vector</div>
+</div>
+
+</div>
 
 where
 
@@ -358,36 +355,54 @@ where
 - $a_{ij}$ are entries of $\mathbf{a}$.
 - $b_1$, $b_2$, $b_3$ are components of $\mathbf{b}$.
 
-The matrix product is
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \mathbf{a}\mathbf{b}
-=
+&=
 \begin{pmatrix}
-a_{11}b_1+a_{12}b_2+a_{13}b_3
-\\
-a_{21}b_1+a_{22}b_2+a_{23}b_3
-\\
+a_{11}b_1+a_{12}b_2+a_{13}b_3 \\
+a_{21}b_1+a_{22}b_2+a_{23}b_3 \\
 a_{31}b_1+a_{32}b_2+a_{33}b_3
 \end{pmatrix}
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Form the ordinary matrix product</div>
+</div>
+
+</div>
 
 where
 
 - $\mathbf{a}\mathbf{b}$ is the matrix product.
 - Each row is a Cartesian component.
 
-Differential Operator. Define
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \nabla
-=
-\mathbf{i}\frac{\partial}{\partial x}
-+
-\mathbf{j}\frac{\partial}{\partial y}
-+
-\mathbf{k}\frac{\partial}{\partial z}
+&=
+\mathbf{i}\dfrac{\partial}{\partial x}
++\mathbf{j}\dfrac{\partial}{\partial y}
++\mathbf{k}\dfrac{\partial}{\partial z}
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Define the vector differential operator</div>
+</div>
+
+</div>
 
 where
 
@@ -396,152 +411,215 @@ where
 - $\dfrac{\partial}{\partial y}$ differentiates with respect to $y$.
 - $\dfrac{\partial}{\partial z}$ differentiates with respect to $z$.
 
-Set
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
-\mathbf{a}=\operatorname{grad}\mathbf{F}
-$$
-
-and
-
-$$
-\mathbf{b}=\Delta\mathbf{x}.
-$$
-
-The matrix-product rule gives
-
-$$
-\Delta\mathbf{F}
-\approx
-\operatorname{grad}\mathbf{F}\,
+\begin{align*}
+\mathbf{a}
+&=
+\operatorname{grad}\mathbf{F}
+\\
+\mathbf{b}
+&=
 \Delta\mathbf{x}
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Identify the factors with the gradient matrix and the displacement</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
+\Delta\mathbf{F}
+&\approx
+\operatorname{grad}\mathbf{F}\,\Delta\mathbf{x}
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Apply the matrix-product rule</div>
+</div>
+
+</div>
 
 where
 
 - $\operatorname{grad}\mathbf{F}$ supplies the differential components.
 - $\Delta\mathbf{x}$ supplies the coordinate increments.
 
-Comparing with the component form,
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \operatorname{grad}\mathbf{F}
-=
-\mathbf{R}.
+&=
+\mathbf{R}
+\end{align*}
 $$
 
-Apply $\nabla$ separately to each scalar component of $\mathbf{F}$:
+</div>
+<div class="derivation-just">Compare with the assembled matrix</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \nabla F_x
-=
-\frac{\partial F_x}{\partial x}\mathbf{i}
+&=
+\dfrac{\partial F_x}{\partial x}\mathbf{i}
 +
-\frac{\partial F_x}{\partial y}\mathbf{j}
+\dfrac{\partial F_x}{\partial y}\mathbf{j}
 +
-\frac{\partial F_x}{\partial z}\mathbf{k}
-$$
-
-$$
+\dfrac{\partial F_x}{\partial z}\mathbf{k}
+\\
 \nabla F_y
-=
-\frac{\partial F_y}{\partial x}\mathbf{i}
+&=
+\dfrac{\partial F_y}{\partial x}\mathbf{i}
 +
-\frac{\partial F_y}{\partial y}\mathbf{j}
+\dfrac{\partial F_y}{\partial y}\mathbf{j}
 +
-\frac{\partial F_y}{\partial z}\mathbf{k}
-$$
-
-$$
+\dfrac{\partial F_y}{\partial z}\mathbf{k}
+\\
 \nabla F_z
-=
-\frac{\partial F_z}{\partial x}\mathbf{i}
+&=
+\dfrac{\partial F_z}{\partial x}\mathbf{i}
 +
-\frac{\partial F_z}{\partial y}\mathbf{j}
+\dfrac{\partial F_z}{\partial y}\mathbf{j}
 +
-\frac{\partial F_z}{\partial z}\mathbf{k}.
+\dfrac{\partial F_z}{\partial z}\mathbf{k}
+\end{align*}
 $$
 
-These three component gradients form the rows of the gradient matrix:
+</div>
+<div class="derivation-just">Apply nabla separately to each scalar component</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \operatorname{grad}\mathbf{F}
-=
+&=
 \begin{pmatrix}
-(\nabla F_x)^{T}
-\\
-(\nabla F_y)^{T}
-\\
+(\nabla F_x)^{T} \\
+(\nabla F_y)^{T} \\
 (\nabla F_z)^{T}
-\end{pmatrix}.
-$$
-
-Directional Change. Let
-
-$$
-\mathbf{u}
-=
-\begin{pmatrix}
-u_x \\
-u_y \\
-u_z
 \end{pmatrix}
+\end{align*}
 $$
 
-be a unit vector.
+</div>
+<div class="derivation-just">Stack those component gradients as the rows of the matrix</div>
+</div>
 
-A small displacement in this direction is
+</div>
+
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
+\mathbf{u}
+&=
+\begin{pmatrix} u_x \\ u_y \\ u_z \end{pmatrix}
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Take a unit direction</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 \Delta\mathbf{x}
-=
-\Delta s\,\mathbf{u}.
+&=
+\Delta s\,\mathbf{u}
+\end{align*}
 $$
 
-Substituting into
+</div>
+<div class="derivation-just">Write a small displacement along that direction</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \Delta\mathbf{F}
-\approx
-\operatorname{grad}\mathbf{F}\,
-\Delta\mathbf{x}
+&\approx
+\operatorname{grad}\mathbf{F}\,\mathbf{u}\,\Delta s
+\end{align*}
 $$
 
-gives
+</div>
+<div class="derivation-just">Substitute the directed displacement</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
-\Delta\mathbf{F}
-\approx
-\operatorname{grad}\mathbf{F}\,
-\mathbf{u}\,\Delta s.
-$$
-
-Dividing by $\Delta s$,
-
-$$
-\frac{\Delta\mathbf{F}}{\Delta s}
-\approx
-\operatorname{grad}\mathbf{F}\,\mathbf{u}.
-$$
-
-Taking the limit as $\Delta s\to0$ gives
-
-$$
-D_{\mathbf{u}}\mathbf{F}
-=
+\begin{align*}
+\dfrac{\Delta\mathbf{F}}{\Delta s}
+&\approx
 \operatorname{grad}\mathbf{F}\,\mathbf{u}
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Divide by the step length</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
+D_{\mathbf{u}}\mathbf{F}
+&=
+\operatorname{grad}\mathbf{F}\,\mathbf{u}
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Pass to the directional derivative</div>
+</div>
+
+</div>
 
 where
 
 - $D_{\mathbf{u}}\mathbf{F}$ is the directional derivative of the vector field.
 - $\mathbf{u}$ specifies the direction.
 
-Jacobian Form. The ordinary derivative of a map may be written
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 J_{\mathbf{F}}
-=
+&=
 \begin{pmatrix}
 \dfrac{\partial F_x}{\partial x}
 &
@@ -561,20 +639,38 @@ J_{\mathbf{F}}
 &
 \dfrac{\partial F_z}{\partial z}
 \end{pmatrix}
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Write the Jacobian matrix of the map F</div>
+</div>
+
+</div>
 
 where
 
 - $\mathbf{F}:\mathbb{R}^{3}\to\mathbb{R}^{3}$ is a vector-valued map.
 - $J_{\mathbf{F}}$ is the Jacobian matrix.
 
-Replacing the Jacobian by the gradient matrix gives
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \operatorname{grad}\mathbf{F}
-=
-J_{\mathbf{F}}.
+&=
+J_{\mathbf{F}}
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Identify the gradient matrix with the Jacobian</div>
+</div>
+
+</div>
 
 Hence,
 

@@ -3,7 +3,7 @@
 $$
 J_{\mathbf F}
 =
-\frac{\partial(F_1,\ldots,F_m)}
+\dfrac{\partial(F_1,\ldots,F_m)}
 {\partial(x_1,\ldots,x_n)}
 =
 \begin{pmatrix}
@@ -13,31 +13,28 @@ J_{\mathbf F}
 \end{pmatrix}
 $$
 
-Vector Function. Let
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \mathbf F
-=
-\begin{pmatrix}
-F_1 \\
-F_2 \\
-\vdots \\
-F_m
-\end{pmatrix}
-$$
-
-depend on
-
-$$
+&=
+\begin{pmatrix} F_1 \\ F_2 \\ \vdots \\ F_m \end{pmatrix}
+\\
 \mathbf x
-=
-\begin{pmatrix}
-x_1 \\
-x_2 \\
-\vdots \\
-x_n
-\end{pmatrix}.
+&=
+\begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Start from a vector-valued map and its input</div>
+</div>
+
+</div>
 
 where
 
@@ -48,72 +45,79 @@ where
 - $m$ is the number of outputs.
 - $n$ is the number of inputs.
 
-Small Input Change. Change the input by
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \Delta\mathbf x
-=
-\begin{pmatrix}
-\Delta x_1 \\
-\Delta x_2 \\
-\vdots \\
-\Delta x_n
-\end{pmatrix}.
+&=
+\begin{pmatrix} \Delta x_1 \\ \Delta x_2 \\ \vdots \\ \Delta x_n \end{pmatrix}
+\end{align*}
 $$
 
-The corresponding output change is
+</div>
+<div class="derivation-just">Change the input by a small increment</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \Delta\mathbf F
-=
-\mathbf F(\mathbf x+\Delta\mathbf x)
--
-\mathbf F(\mathbf x).
+&=
+\mathbf F(\mathbf x+\Delta\mathbf x)-\mathbf F(\mathbf x)
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Form the corresponding output change</div>
+</div>
+
+</div>
 
 where
 
 - $\Delta\mathbf x$ is the input change.
 - $\Delta\mathbf F$ is the output change.
 
-Component Change. Each output component changes according to
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
-\Delta F_i
-=
-F_i(\mathbf x+\Delta\mathbf x)
--
-F_i(\mathbf x).
-$$
-
-For a differentiable function, the first-order Taylor expansion gives
-
-$$
-\begin{aligned}
+\begin{align*}
 \Delta F_i
 &=
-F_i(\mathbf{x}+\Delta\mathbf{x})-F_i(\mathbf{x})
-\\
-&=
-F_i(x_1+\Delta x_1,\ldots,x_n+\Delta x_n)
--
-F_i(x_1,\ldots,x_n)
-\\
+F_i(\mathbf x+\Delta\mathbf x)-F_i(\mathbf x)
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Write the change in one output component</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
+\Delta F_i
 &\approx
 \sum_{j=1}^{n}
-\frac{\partial F_i}{\partial x_j}\Delta x_j
-\\
-&=
-\frac{\partial F_i}{\partial x_1}\Delta x_1
-+
-\frac{\partial F_i}{\partial x_2}\Delta x_2
-+
-\cdots
-+
-\frac{\partial F_i}{\partial x_n}\Delta x_n.
-\end{aligned}
+\dfrac{\partial F_i}{\partial x_j}\Delta x_j
+\end{align*}
 $$
 
+</div>
+<div class="derivation-just">Keep the first-order Taylor increment</div>
+</div>
+
+</div>
 
 where
 
@@ -121,71 +125,50 @@ where
 - $\partial F_i/\partial x_j$ measures coordinate sensitivity.
 - Higher-order terms vanish faster than $\Delta\mathbf x$.
 
-Writing this for every output gives
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \Delta F_1
-\approx
-\frac{\partial F_1}{\partial x_1}\Delta x_1
-+
-\cdots
-+
-\frac{\partial F_1}{\partial x_n}\Delta x_n,
-$$
-
-$$
-\Delta F_2
-\approx
-\frac{\partial F_2}{\partial x_1}\Delta x_1
-+
-\cdots
-+
-\frac{\partial F_2}{\partial x_n}\Delta x_n,
-$$
-
-$$
-\vdots
-$$
-
-$$
+&\approx
+\dfrac{\partial F_1}{\partial x_1}\Delta x_1+\cdots+\dfrac{\partial F_1}{\partial x_n}\Delta x_n
+\\
 \Delta F_m
-\approx
-\frac{\partial F_m}{\partial x_1}\Delta x_1
-+
-\cdots
-+
-\frac{\partial F_m}{\partial x_n}\Delta x_n.
+&\approx
+\dfrac{\partial F_m}{\partial x_1}\Delta x_1+\cdots+\dfrac{\partial F_m}{\partial x_n}\Delta x_n
+\end{align*}
 $$
 
-Matrix Form. These equations combine into
+</div>
+<div class="derivation-just">Repeat the increment for every output component</div>
+</div>
+
+</div>
+
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \begin{pmatrix}
 \Delta F_1 \\
 \Delta F_2 \\
 \vdots \\
 \Delta F_m
 \end{pmatrix}
-\approx
+&\approx
 \begin{pmatrix}
 \dfrac{\partial F_1}{\partial x_1}
-&
-\dfrac{\partial F_1}{\partial x_2}
 &
 \cdots
 &
 \dfrac{\partial F_1}{\partial x_n}
 \\
-\dfrac{\partial F_2}{\partial x_1}
-&
-\dfrac{\partial F_2}{\partial x_2}
-&
-\cdots
-&
-\dfrac{\partial F_2}{\partial x_n}
-\\
-\vdots
-&
 \vdots
 &
 \ddots
@@ -193,8 +176,6 @@ $$
 \vdots
 \\
 \dfrac{\partial F_m}{\partial x_1}
-&
-\dfrac{\partial F_m}{\partial x_2}
 &
 \cdots
 &
@@ -205,33 +186,28 @@ $$
 \Delta x_2 \\
 \vdots \\
 \Delta x_n
-\end{pmatrix}.
+\end{pmatrix}
+\end{align*}
 $$
 
-The matrix multiplying $\Delta\mathbf x$ is the Jacobian matrix:
+</div>
+<div class="derivation-just">Collect the component increments into a matrix product</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 J_{\mathbf F}
-=
+&=
 \begin{pmatrix}
 \dfrac{\partial F_1}{\partial x_1}
-&
-\dfrac{\partial F_1}{\partial x_2}
 &
 \cdots
 &
 \dfrac{\partial F_1}{\partial x_n}
 \\
-\dfrac{\partial F_2}{\partial x_1}
-&
-\dfrac{\partial F_2}{\partial x_2}
-&
-\cdots
-&
-\dfrac{\partial F_2}{\partial x_n}
-\\
-\vdots
-&
 \vdots
 &
 \ddots
@@ -240,13 +216,18 @@ J_{\mathbf F}
 \\
 \dfrac{\partial F_m}{\partial x_1}
 &
-\dfrac{\partial F_m}{\partial x_2}
-&
 \cdots
 &
 \dfrac{\partial F_m}{\partial x_n}
-\end{pmatrix}.
+\end{pmatrix}
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Name that matrix the Jacobian of F</div>
+</div>
+
+</div>
 
 where
 
@@ -255,126 +236,138 @@ where
 - Columns correspond to input coordinates.
 - Each entry is a partial derivative.
 
-Therefore,
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \Delta\mathbf F
-\approx
-J_{\mathbf F}\Delta\mathbf x.
+&\approx
+J_{\mathbf F}\Delta\mathbf x
+\end{align*}
 $$
 
-The Jacobian is the linear transformation that gives the first-order change in $\mathbf F$ from a small change in $\mathbf x$.
+</div>
+<div class="derivation-just">Read the first-order change as a linear map of the input increment</div>
+</div>
 
-Two Dimensions. Let
+</div>
+
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \mathbf F(x,y)
-=
-\begin{pmatrix}
-F_x(x,y) \\
-F_y(x,y)
-\end{pmatrix}.
-$$
-
-A small displacement is
-
-$$
+&=
+\begin{pmatrix} F_x(x,y) \\ F_y(x,y) \end{pmatrix}
+\\
 \Delta\mathbf x
-=
-\begin{pmatrix}
-\Delta x \\
-\Delta y
-\end{pmatrix}.
+&=
+\begin{pmatrix} \Delta x \\ \Delta y \end{pmatrix}
+\end{align*}
 $$
 
-The component changes are
+</div>
+<div class="derivation-just">Specialize to two input and two output coordinates</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \Delta F_x
-\approx
-\frac{\partial F_x}{\partial x}\Delta x
-+
-\frac{\partial F_x}{\partial y}\Delta y
-$$
-
-and
-
-$$
-\Delta F_y
-\approx
-\frac{\partial F_y}{\partial x}\Delta x
-+
-\frac{\partial F_y}{\partial y}\Delta y.
-$$
-
-Thus,
-
-$$
-\begin{pmatrix}
-\Delta F_x \\
-\Delta F_y
-\end{pmatrix}
-\approx
-\begin{pmatrix}
-\dfrac{\partial F_x}{\partial x}
-&
-\dfrac{\partial F_x}{\partial y}
+&\approx
+\dfrac{\partial F_x}{\partial x}\Delta x+\dfrac{\partial F_x}{\partial y}\Delta y
 \\
-\dfrac{\partial F_y}{\partial x}
-&
-\dfrac{\partial F_y}{\partial y}
-\end{pmatrix}
+\Delta F_y
+&\approx
+\dfrac{\partial F_y}{\partial x}\Delta x+\dfrac{\partial F_y}{\partial y}\Delta y
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Write the two first-order component changes</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
+\begin{pmatrix} \Delta F_x \\ \Delta F_y \end{pmatrix}
+&\approx
 \begin{pmatrix}
-\Delta x \\
-\Delta y
-\end{pmatrix}.
+\dfrac{\partial F_x}{\partial x} & \dfrac{\partial F_x}{\partial y} \\
+\dfrac{\partial F_y}{\partial x} & \dfrac{\partial F_y}{\partial y}
+\end{pmatrix}
+\begin{pmatrix} \Delta x \\ \Delta y \end{pmatrix}
+\end{align*}
 $$
 
-Hence,
+</div>
+<div class="derivation-just">Collect those increments into a two-by-two product</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 J_{\mathbf F}
-=
+&=
 \begin{pmatrix}
-\dfrac{\partial F_x}{\partial x}
-&
-\dfrac{\partial F_x}{\partial y}
-\\
-\dfrac{\partial F_y}{\partial x}
-&
-\dfrac{\partial F_y}{\partial y}
-\end{pmatrix}.
+\dfrac{\partial F_x}{\partial x} & \dfrac{\partial F_x}{\partial y} \\
+\dfrac{\partial F_y}{\partial x} & \dfrac{\partial F_y}{\partial y}
+\end{pmatrix}
+\end{align*}
 $$
 
-Jacobian Determinant. When the input and output dimensions are equal, the Jacobian matrix has a determinant.
+</div>
+<div class="derivation-just">Read off the two-dimensional Jacobian</div>
+</div>
 
-For two dimensions,
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \det J_{\mathbf F}
-=
+&=
 \begin{vmatrix}
-\dfrac{\partial F_x}{\partial x}
-&
-\dfrac{\partial F_x}{\partial y}
-\\
-\dfrac{\partial F_y}{\partial x}
-&
-\dfrac{\partial F_y}{\partial y}
-\end{vmatrix}.
+\dfrac{\partial F_x}{\partial x} & \dfrac{\partial F_x}{\partial y} \\
+\dfrac{\partial F_y}{\partial x} & \dfrac{\partial F_y}{\partial y}
+\end{vmatrix}
+\end{align*}
 $$
 
-Expanding gives
+</div>
+<div class="derivation-just">Form the Jacobian determinant when the dimensions match</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 \det J_{\mathbf F}
-=
-\frac{\partial F_x}{\partial x}
-\frac{\partial F_y}{\partial y}
+&=
+\dfrac{\partial F_x}{\partial x}\dfrac{\partial F_y}{\partial y}
 -
-\frac{\partial F_x}{\partial y}
-\frac{\partial F_y}{\partial x}.
+\dfrac{\partial F_x}{\partial y}\dfrac{\partial F_y}{\partial x}
+\end{align*}
 $$
+
+</div>
+<div class="derivation-just">Expand the two-by-two determinant</div>
+</div>
+
+</div>
 
 where
 
@@ -382,73 +375,93 @@ where
 - Its magnitude gives local area scaling.
 - Its sign gives orientation change.
 
-Area Scaling. Consider the coordinate displacements
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 d\mathbf x_1
-=
-\begin{pmatrix}
-dx \\
-0
-\end{pmatrix},
-\qquad
+&=
+\begin{pmatrix} dx \\ 0 \end{pmatrix}
+\\
 d\mathbf x_2
-=
-\begin{pmatrix}
-0 \\
-dy
-\end{pmatrix}.
+&=
+\begin{pmatrix} 0 \\ dy \end{pmatrix}
+\end{align*}
 $$
 
-Their original area is
+</div>
+<div class="derivation-just">Take the two coordinate edge displacements</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 dA
-=
-dx\,dy.
+&=
+dx\,dy
+\end{align*}
 $$
 
-The Jacobian maps these displacements to
+</div>
+<div class="derivation-just">Form the original area they span</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 d\mathbf F_1
-=
-J_{\mathbf F}d\mathbf x_1
-$$
-
-and
-
-$$
+&=
+J_{\mathbf F}\,d\mathbf x_1
+\\
 d\mathbf F_2
-=
-J_{\mathbf F}d\mathbf x_2.
+&=
+J_{\mathbf F}\,d\mathbf x_2
+\end{align*}
 $$
 
-Therefore,
+</div>
+<div class="derivation-just">Map those edges by the Jacobian</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 d\mathbf F_1
-=
+&=
 \begin{pmatrix}
 \dfrac{\partial F_x}{\partial x}dx \\
 \dfrac{\partial F_y}{\partial x}dx
-\end{pmatrix},
-$$
-
-$$
+\end{pmatrix}
+\\
 d\mathbf F_2
-=
+&=
 \begin{pmatrix}
 \dfrac{\partial F_x}{\partial y}dy \\
 \dfrac{\partial F_y}{\partial y}dy
-\end{pmatrix}.
+\end{pmatrix}
+\end{align*}
 $$
 
-These vectors form a parallelogram. Its signed area is
+</div>
+<div class="derivation-just">Write the images of the two edges</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 dA'
-=
+&=
 \begin{vmatrix}
 \dfrac{\partial F_x}{\partial x}dx
 &
@@ -457,42 +470,37 @@ dA'
 \dfrac{\partial F_y}{\partial x}dx
 &
 \dfrac{\partial F_y}{\partial y}dy
-\end{vmatrix}.
-$$
-
-Factoring out $dx\,dy$ gives
-
-$$
-dA'
-=
-\begin{vmatrix}
-\dfrac{\partial F_x}{\partial x}
-&
-\dfrac{\partial F_x}{\partial y}
-\\
-\dfrac{\partial F_y}{\partial x}
-&
-\dfrac{\partial F_y}{\partial y}
 \end{vmatrix}
-dx\,dy.
+\end{align*}
 $$
 
-Therefore,
+</div>
+<div class="derivation-just">Compute the signed area of the image parallelogram</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
+\begin{align*}
 dA'
-=
-\det(J_{\mathbf F})\,dA.
+&=
+\det(J_{\mathbf F})\,dA
+\end{align*}
 $$
 
-Thus, the Jacobian matrix gives the first-order transformation, while its determinant gives the corresponding area or volume scaling.
+</div>
+<div class="derivation-just">Factor out the original area</div>
+</div>
+
+</div>
 
 Hence,
 
 $$
 J_{\mathbf F}
 =
-\frac{\partial(F_1,\ldots,F_m)}
+\dfrac{\partial(F_1,\ldots,F_m)}
 {\partial(x_1,\ldots,x_n)}
 =
 \begin{pmatrix}

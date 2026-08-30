@@ -2,143 +2,319 @@
 
 $\displaystyle \operatorname{curl} \mathbf{F} = \nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ \dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\ F_{x} & F_{y} & F_{z} \end{vmatrix}$
 
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
+
 $$
 \begin{align*}
 \mathbf{F}
 &=
 F_x\mathbf{i}+F_y\mathbf{j}+F_z\mathbf{k}
-&&
-\qquad\just{Write the vector field}
-\\[0.6em]
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Start from a Cartesian vector field</div>
+</div>
+
+</div>
+
+where
+
+- $\mathbf{F}$ is a vector field.
+- $F_x$ is the $x$-component of $\mathbf{F}$.
+- $F_y$ is the $y$-component of $\mathbf{F}$.
+- $F_z$ is the $z$-component of $\mathbf{F}$.
+- $\mathbf{i}$ is the unit vector along $x$.
+- $\mathbf{j}$ is the unit vector along $y$.
+- $\mathbf{k}$ is the unit vector along $z$.
+
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 X
 &=
 \dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}
-&&
-\qquad\just{Define the x differential component}
-\\[0.6em]
+\\
 Y
 &=
 \dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}
-&&
-\qquad\just{Define the y differential component}
-\\[0.6em]
+\\
 Z
 &=
 \dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}
-&&
-\qquad\just{Define the z differential component}
-\\[0.6em]
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Define the three Cartesian differential components</div>
+</div>
+
+</div>
+
+where
+
+- $X$ is the differential component along $x$.
+- $Y$ is the differential component along $y$.
+- $Z$ is the differential component along $z$.
+- $x$, $y$, $z$ are Cartesian coordinates.
+- $\partial$ denotes partial differentiation.
+
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 \mathbf{R}
 &=
 X\mathbf{i}+Y\mathbf{j}+Z\mathbf{k}
-&&
-\qquad\just{Assemble the Cartesian vector}
-\\[0.6em]
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Assemble those components into one vector</div>
+</div>
+
+</div>
+
+where
+
+- $\mathbf{R}$ is the resulting vector field.
+- $X$, $Y$, $Z$ are its Cartesian components.
+
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 \mathbf{R}
 &=
 \biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
-&&
-\qquad\just{Substitute the differential components}
-\\
-&\quad
 +\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
-\\
-&\quad
 +\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
-\\[0.6em]
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Substitute the differential components</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 \operatorname{curl}\mathbf{F}
 &=
 \biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
-&&
-\qquad\just{Name this vector the curl of F}
-\\
-&\quad
 +\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
-\\
-&\quad
 +\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
-\\[0.6em]
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Name this vector the curl of F</div>
+</div>
+
+</div>
+
+where
+
+- $\operatorname{curl}\mathbf{F}$ is the curl of $\mathbf{F}$.
+- Each coefficient is a Cartesian curl component.
+
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 (\operatorname{curl}\mathbf{F})_x
 &=
 \dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}
-&&
-\qquad\just{Read the x-component}
-\\[0.6em]
+\\
 (\operatorname{curl}\mathbf{F})_y
 &=
 \dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}
-&&
-\qquad\just{Read the y-component}
-\\[0.6em]
+\\
 (\operatorname{curl}\mathbf{F})_z
 &=
 \dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}
-&&
-\qquad\just{Read the z-component}
-\\[0.6em]
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Read off the three Cartesian curl components</div>
+</div>
+
+</div>
+
+where
+
+- $(\operatorname{curl}\mathbf{F})_x$ is the $x$-component.
+- $(\operatorname{curl}\mathbf{F})_y$ is the $y$-component.
+- $(\operatorname{curl}\mathbf{F})_z$ is the $z$-component.
+
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 \mathbf{a}
 &=
 a_1\mathbf{i}+a_2\mathbf{j}+a_3\mathbf{k}
-&&
-\qquad\just{Take a general first vector}
-\\[0.6em]
+\\
 \mathbf{b}
 &=
 b_1\mathbf{i}+b_2\mathbf{j}+b_3\mathbf{k}
-&&
-\qquad\just{Take a general second vector}
-\\[0.6em]
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Write two general Cartesian vectors</div>
+</div>
+
+</div>
+
+where
+
+- $\mathbf{a}$ is the first vector.
+- $\mathbf{b}$ is the second vector.
+- $a_1$, $a_2$, $a_3$ are components of $\mathbf{a}$.
+- $b_1$, $b_2$, $b_3$ are components of $\mathbf{b}$.
+
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 \mathbf{a}\times\mathbf{b}
 &=
 (a_2b_3-a_3b_2)\mathbf{i}
-&&
-\qquad\just{Form the cross product}
-\\
-&\quad
 +(a_3b_1-a_1b_3)\mathbf{j}
-\\
-&\quad
 +(a_1b_2-a_2b_1)\mathbf{k}
-\\[0.6em]
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Form the cross product</div>
+</div>
+
+</div>
+
+where
+
+- $\mathbf{a}\times\mathbf{b}$ is the cross product.
+- Each coefficient is a Cartesian component.
+
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 \nabla
 &=
 \mathbf{i}\dfrac{\partial}{\partial x}
 +\mathbf{j}\dfrac{\partial}{\partial y}
 +\mathbf{k}\dfrac{\partial}{\partial z}
-&&
-\qquad\just{Define the vector differential operator}
-\\[0.6em]
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Define the vector differential operator</div>
+</div>
+
+</div>
+
+where
+
+- $\nabla$ is the vector differential operator.
+- $\dfrac{\partial}{\partial x}$ differentiates with respect to $x$.
+- $\dfrac{\partial}{\partial y}$ differentiates with respect to $y$.
+- $\dfrac{\partial}{\partial z}$ differentiates with respect to $z$.
+
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 \mathbf{a}
 &=
 \nabla
-&&
-\qquad\just{Set the first factor to nabla}
-\\[0.6em]
+\\
 \mathbf{b}
 &=
 \mathbf{F}
-&&
-\qquad\just{Set the second factor to F}
-\\[0.6em]
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Identify the cross-product factors with nabla and the field</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 \nabla\times\mathbf{F}
 &=
 \biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
-&&
-\qquad\just{Apply the cross-product rule}
-\\
-&\quad
 +\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
-\\
-&\quad
 +\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
-\\[0.6em]
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Apply the cross-product rule</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 \operatorname{curl}\mathbf{F}
 &=
 \nabla\times\mathbf{F}
-&&
-\qquad\just{Compare with the component form}
 \end{align*}
 $$
+
+</div>
+<div class="derivation-just">Compare with the component form</div>
+</div>
+
+</div>
+
+where
+
+- $\nabla$ supplies the differential operators.
+- $\mathbf{F}$ supplies the field components.
+- $\times$ applies the cross-product rule.
+
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
 
 $$
 \begin{align*}
@@ -149,9 +325,28 @@ $$
 a_1 & a_2 & a_3 \\
 b_1 & b_2 & b_3
 \end{vmatrix}
-&&
-\qquad\just{Write the cross product as a determinant}
-\\[0.6em]
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Write the cross product as a determinant</div>
+</div>
+
+</div>
+
+where
+
+- The first row contains Cartesian unit vectors.
+- The second row contains $\mathbf{a}$ components.
+- The third row contains $\mathbf{b}$ components.
+
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 \nabla\times\mathbf{F}
 &=
 \begin{vmatrix}
@@ -159,9 +354,29 @@ b_1 & b_2 & b_3
 \dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\
 F_x & F_y & F_z
 \end{vmatrix}
-&&
-\qquad\just{Replace a by nabla and b by F}
-\\[0.6em]
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Replace the two vectors by nabla and the field</div>
+</div>
+
+</div>
+
+where
+
+- The first row contains Cartesian unit vectors.
+- The second row contains differential operators.
+- The third row contains field components.
+- The determinant is symbolic.
+
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 \nabla\times\mathbf{F}
 &=
 \mathbf{i}
@@ -169,54 +384,64 @@ F_x & F_y & F_z
 \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\
 F_y & F_z
 \end{vmatrix}
-&&
-\qquad\just{Expand the determinant}
-\\
-&\quad
 -
 \mathbf{j}
 \begin{vmatrix}
 \dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial z} \\
 F_x & F_z
 \end{vmatrix}
-\\
-&\quad
 +
 \mathbf{k}
 \begin{vmatrix}
 \dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} \\
 F_x & F_y
 \end{vmatrix}
-\\[0.6em]
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Expand the determinant</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
 \nabla\times\mathbf{F}
 &=
 \biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
-&&
-\qquad\just{Evaluate the minors}
-\\
-&\quad
 -
 \biggl(\dfrac{\partial F_z}{\partial x}-\dfrac{\partial F_x}{\partial z}\biggr)\mathbf{j}
-\\
-&\quad
-+
-\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
-\\[0.6em]
-\nabla\times\mathbf{F}
-&=
-\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
-&&
-\qquad\just{Rearrange the y-component}
-\\
-&\quad
-+
-\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
-\\
-&\quad
 +
 \biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
 \end{align*}
 $$
+
+</div>
+<div class="derivation-just">Evaluate the minors</div>
+</div>
+
+<div class="derivation-row">
+<div class="derivation-math">
+
+$$
+\begin{align*}
+\nabla\times\mathbf{F}
+&=
+\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
++
+\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
++
+\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
+\end{align*}
+$$
+
+</div>
+<div class="derivation-just">Rearrange the y-component</div>
+</div>
+
+</div>
 
 Hence,
 
