@@ -2,414 +2,227 @@
 
 $\displaystyle \operatorname{curl} \mathbf{F} = \nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ \dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\ F_{x} & F_{y} & F_{z} \end{vmatrix}$
 
-Vector Field. Let
-
 $$
+\begin{align*}
 \mathbf{F}
-=
-F_x\mathbf{i}
-+
-F_y\mathbf{j}
-+
-F_z\mathbf{k}
-$$
-
-where
-
-- $\mathbf{F}$ is a vector field.
-- $F_x$ is the $x$-component of $\mathbf{F}$.
-- $F_y$ is the $y$-component of $\mathbf{F}$.
-- $F_z$ is the $z$-component of $\mathbf{F}$.
-- $\mathbf{i}$ is the unit vector along $x$.
-- $\mathbf{j}$ is the unit vector along $y$.
-- $\mathbf{k}$ is the unit vector along $z$.
-
-Differential Components. Define
-
-$$
+&=
+F_x\mathbf{i}+F_y\mathbf{j}+F_z\mathbf{k}
+&&
+\qquad\just{Write the vector field}
+\\[0.6em]
 X
-=
-\frac{\partial F_z}{\partial y}
--
-\frac{\partial F_y}{\partial z}
-$$
-
-$$
+&=
+\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}
+&&
+\qquad\just{Define the x differential component}
+\\[0.6em]
 Y
-=
-\frac{\partial F_x}{\partial z}
--
-\frac{\partial F_z}{\partial x}
-$$
-
-$$
+&=
+\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}
+&&
+\qquad\just{Define the y differential component}
+\\[0.6em]
 Z
-=
-\frac{\partial F_y}{\partial x}
--
-\frac{\partial F_x}{\partial y}
-$$
-
-where
-
-- $X$ is the differential component along $x$.
-- $Y$ is the differential component along $y$.
-- $Z$ is the differential component along $z$.
-- $x$, $y$, $z$ are Cartesian coordinates.
-- $\partial$ denotes partial differentiation.
-
-These quantities transform together as Cartesian vector components. Therefore,
-
-$$
+&=
+\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}
+&&
+\qquad\just{Define the z differential component}
+\\[0.6em]
 \mathbf{R}
-=
-X\mathbf{i}
-+
-Y\mathbf{j}
-+
-Z\mathbf{k}
-$$
-
-
-where
-
-- $\mathbf{R}$ is the resulting vector field.
-- $X$, $Y$, $Z$ are its Cartesian components.
-
-
-![A rectangular loop in the $yz$-plane with corners $(0,y,z)$, $(0,y+\Delta y,z)$, $(0,y+\Delta y,z+\Delta z)$, and $(0,y,z+\Delta z)$. The path is traversed counterclockwise as seen from the positive $x$-axis.](3d-coordinate-loop-diagram.png){#fig:3d-coordinate-loop-diagram}
-
-
-Substituting the differential components gives
-
-$$
+&=
+X\mathbf{i}+Y\mathbf{j}+Z\mathbf{k}
+&&
+\qquad\just{Assemble the Cartesian vector}
+\\[0.6em]
 \mathbf{R}
-=
-\left(
-\frac{\partial F_z}{\partial y}
--
-\frac{\partial F_y}{\partial z}
-\right)\mathbf{i}
-+
-\left(
-\frac{\partial F_x}{\partial z}
--
-\frac{\partial F_z}{\partial x}
-\right)\mathbf{j}
-+
-\left(
-\frac{\partial F_y}{\partial x}
--
-\frac{\partial F_x}{\partial y}
-\right)\mathbf{k}
-$$
-
-where
-
-- $\mathbf{i}$ gives the $x$ direction.
-- $\mathbf{j}$ gives the $y$ direction.
-- $\mathbf{k}$ gives the $z$ direction.
-
-Curl. This vector is the curl of $\mathbf{F}$:
-
-$$
+&=
+\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
+&&
+\qquad\just{Substitute the differential components}
+\\
+&\quad
++\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
+\\
+&\quad
++\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
+\\[0.6em]
 \operatorname{curl}\mathbf{F}
-=
-\left(
-\frac{\partial F_z}{\partial y}
--
-\frac{\partial F_y}{\partial z}
-\right)\mathbf{i}
-+
-\left(
-\frac{\partial F_x}{\partial z}
--
-\frac{\partial F_z}{\partial x}
-\right)\mathbf{j}
-+
-\left(
-\frac{\partial F_y}{\partial x}
--
-\frac{\partial F_x}{\partial y}
-\right)\mathbf{k}
-$$
-
-where
-
-- $\operatorname{curl}\mathbf{F}$ is the curl of $\mathbf{F}$.
-- Each coefficient is a Cartesian curl component.
-
-Thus,
-
-$$
+&=
+\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
+&&
+\qquad\just{Name this vector the curl of F}
+\\
+&\quad
++\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
+\\
+&\quad
++\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
+\\[0.6em]
 (\operatorname{curl}\mathbf{F})_x
-=
-\frac{\partial F_z}{\partial y}
--
-\frac{\partial F_y}{\partial z}
-$$
-
-$$
+&=
+\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}
+&&
+\qquad\just{Read the x-component}
+\\[0.6em]
 (\operatorname{curl}\mathbf{F})_y
-=
-\frac{\partial F_x}{\partial z}
--
-\frac{\partial F_z}{\partial x}
-$$
-
-$$
+&=
+\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}
+&&
+\qquad\just{Read the y-component}
+\\[0.6em]
 (\operatorname{curl}\mathbf{F})_z
-=
-\frac{\partial F_y}{\partial x}
--
-\frac{\partial F_x}{\partial y}
-$$
-
-where
-
-- $(\operatorname{curl}\mathbf{F})_x$ is the $x$-component.
-- $(\operatorname{curl}\mathbf{F})_y$ is the $y$-component.
-- $(\operatorname{curl}\mathbf{F})_z$ is the $z$-component.
-
-Cross Product. For
-
-$$
+&=
+\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}
+&&
+\qquad\just{Read the z-component}
+\\[0.6em]
 \mathbf{a}
-=
-a_1\mathbf{i}
-+
-a_2\mathbf{j}
-+
-a_3\mathbf{k}
-$$
-
-and
-
-$$
+&=
+a_1\mathbf{i}+a_2\mathbf{j}+a_3\mathbf{k}
+&&
+\qquad\just{Take a general first vector}
+\\[0.6em]
 \mathbf{b}
-=
-b_1\mathbf{i}
-+
-b_2\mathbf{j}
-+
-b_3\mathbf{k}
-$$
-
-where
-
-- $\mathbf{a}$ is the first vector.
-- $\mathbf{b}$ is the second vector.
-- $a_1$, $a_2$, $a_3$ are components of $\mathbf{a}$.
-- $b_1$, $b_2$, $b_3$ are components of $\mathbf{b}$.
-
-The cross product is
-
-$$
+&=
+b_1\mathbf{i}+b_2\mathbf{j}+b_3\mathbf{k}
+&&
+\qquad\just{Take a general second vector}
+\\[0.6em]
 \mathbf{a}\times\mathbf{b}
-=
+&=
 (a_2b_3-a_3b_2)\mathbf{i}
-+
-(a_3b_1-a_1b_3)\mathbf{j}
-+
-(a_1b_2-a_2b_1)\mathbf{k}
-$$
-
-where
-
-- $\mathbf{a}\times\mathbf{b}$ is the cross product.
-- Each coefficient is a Cartesian component.
-
-Differential Operator. Define
-
-$$
+&&
+\qquad\just{Form the cross product}
+\\
+&\quad
++(a_3b_1-a_1b_3)\mathbf{j}
+\\
+&\quad
++(a_1b_2-a_2b_1)\mathbf{k}
+\\[0.6em]
 \nabla
-=
-\mathbf{i}\frac{\partial}{\partial x}
-+
-\mathbf{j}\frac{\partial}{\partial y}
-+
-\mathbf{k}\frac{\partial}{\partial z}
-$$
-
-where
-
-- $\nabla$ is the vector differential operator.
-- $\dfrac{\partial}{\partial x}$ differentiates with respect to $x$.
-- $\dfrac{\partial}{\partial y}$ differentiates with respect to $y$.
-- $\dfrac{\partial}{\partial z}$ differentiates with respect to $z$.
-
-Set
-
-$$
-\mathbf{a}=\nabla
-$$
-
-and
-
-$$
-\mathbf{b}=\mathbf{F}.
-$$
-
-The cross-product rule gives
-
-$$
+&=
+\mathbf{i}\dfrac{\partial}{\partial x}
++\mathbf{j}\dfrac{\partial}{\partial y}
++\mathbf{k}\dfrac{\partial}{\partial z}
+&&
+\qquad\just{Define the vector differential operator}
+\\[0.6em]
+\mathbf{a}
+&=
+\nabla
+&&
+\qquad\just{Set the first factor to nabla}
+\\[0.6em]
+\mathbf{b}
+&=
+\mathbf{F}
+&&
+\qquad\just{Set the second factor to F}
+\\[0.6em]
 \nabla\times\mathbf{F}
-=
-\left(
-\frac{\partial F_z}{\partial y}
--
-\frac{\partial F_y}{\partial z}
-\right)\mathbf{i}
-+
-\left(
-\frac{\partial F_x}{\partial z}
--
-\frac{\partial F_z}{\partial x}
-\right)\mathbf{j}
-+
-\left(
-\frac{\partial F_y}{\partial x}
--
-\frac{\partial F_x}{\partial y}
-\right)\mathbf{k}
-$$
-
-where
-
-- $\nabla$ supplies the differential operators.
-- $\mathbf{F}$ supplies the field components.
-- $\times$ applies the cross-product rule.
-
-Comparing with the component form,
-
-$$
+&=
+\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
+&&
+\qquad\just{Apply the cross-product rule}
+\\
+&\quad
++\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
+\\
+&\quad
++\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
+\\[0.6em]
 \operatorname{curl}\mathbf{F}
-=
-\nabla\times\mathbf{F}.
+&=
+\nabla\times\mathbf{F}
+&&
+\qquad\just{Compare with the component form}
+\end{align*}
 $$
 
-Determinant Form. The ordinary cross product may be written
-
 $$
+\begin{align*}
 \mathbf{a}\times\mathbf{b}
-=
+&=
 \begin{vmatrix}
 \mathbf{i} & \mathbf{j} & \mathbf{k} \\
 a_1 & a_2 & a_3 \\
 b_1 & b_2 & b_3
 \end{vmatrix}
-$$
-
-where
-
-- The first row contains Cartesian unit vectors.
-- The second row contains $\mathbf{a}$ components.
-- The third row contains $\mathbf{b}$ components.
-
-Replacing $\mathbf{a}$ by $\nabla$ and $\mathbf{b}$ by $\mathbf{F}$ gives
-
-$$
+&&
+\qquad\just{Write the cross product as a determinant}
+\\[0.6em]
 \nabla\times\mathbf{F}
-=
+&=
 \begin{vmatrix}
 \mathbf{i} & \mathbf{j} & \mathbf{k} \\
-\dfrac{\partial}{\partial x}
-&
-\dfrac{\partial}{\partial y}
-&
-\dfrac{\partial}{\partial z} \\
+\dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\
 F_x & F_y & F_z
 \end{vmatrix}
-$$
-
-where
-
-- The first row contains Cartesian unit vectors.
-- The second row contains differential operators.
-- The third row contains field components.
-- The determinant is symbolic.
-
-Expanding the determinant,
-
-$$
+&&
+\qquad\just{Replace a by nabla and b by F}
+\\[0.6em]
 \nabla\times\mathbf{F}
-=
+&=
 \mathbf{i}
 \begin{vmatrix}
-\dfrac{\partial}{\partial y}
-&
-\dfrac{\partial}{\partial z} \\
+\dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\
 F_y & F_z
 \end{vmatrix}
+&&
+\qquad\just{Expand the determinant}
+\\
+&\quad
 -
 \mathbf{j}
 \begin{vmatrix}
-\dfrac{\partial}{\partial x}
-&
-\dfrac{\partial}{\partial z} \\
+\dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial z} \\
 F_x & F_z
 \end{vmatrix}
+\\
+&\quad
 +
 \mathbf{k}
 \begin{vmatrix}
-\dfrac{\partial}{\partial x}
-&
-\dfrac{\partial}{\partial y} \\
+\dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} \\
 F_x & F_y
-\end{vmatrix}.
-$$
-
-Evaluating the minors gives
-
-$$
+\end{vmatrix}
+\\[0.6em]
 \nabla\times\mathbf{F}
-=
-\left(
-\frac{\partial F_z}{\partial y}
+&=
+\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
+&&
+\qquad\just{Evaluate the minors}
+\\
+&\quad
 -
-\frac{\partial F_y}{\partial z}
-\right)\mathbf{i}
--
-\left(
-\frac{\partial F_z}{\partial x}
--
-\frac{\partial F_x}{\partial z}
-\right)\mathbf{j}
+\biggl(\dfrac{\partial F_z}{\partial x}-\dfrac{\partial F_x}{\partial z}\biggr)\mathbf{j}
+\\
+&\quad
 +
-\left(
-\frac{\partial F_y}{\partial x}
--
-\frac{\partial F_x}{\partial y}
-\right)\mathbf{k}.
-$$
-
-Rearranging the $y$-component,
-
-$$
+\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
+\\[0.6em]
 \nabla\times\mathbf{F}
-=
-\left(
-\frac{\partial F_z}{\partial y}
--
-\frac{\partial F_y}{\partial z}
-\right)\mathbf{i}
+&=
+\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
+&&
+\qquad\just{Rearrange the y-component}
+\\
+&\quad
 +
-\left(
-\frac{\partial F_x}{\partial z}
--
-\frac{\partial F_z}{\partial x}
-\right)\mathbf{j}
+\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
+\\
+&\quad
 +
-\left(
-\frac{\partial F_y}{\partial x}
--
-\frac{\partial F_x}{\partial y}
-\right)\mathbf{k}.
+\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
+\end{align*}
 $$
 
 Hence,
 
 $\displaystyle \operatorname{curl} \mathbf{F} = \nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ \dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\ F_{x} & F_{y} & F_{z} \end{vmatrix}$
+
+![A rectangular loop in the $yz$-plane with corners $(0,y,z)$, $(0,y+\Delta y,z)$, $(0,y+\Delta y,z+\Delta z)$, and $(0,y,z+\Delta z)$. The path is traversed counterclockwise as seen from the positive $x$-axis.](3d-coordinate-loop-diagram.png){#fig:3d-coordinate-loop-diagram}
 
 ## References
 
@@ -419,4 +232,4 @@ $\displaystyle \operatorname{curl} \mathbf{F} = \nabla \times \mathbf{F} = \begi
 
 3. Kreyszig, E. *Advanced Engineering Mathematics*, 10th ed. Wiley, 2011.
 
-4. Riley, K. F., Hobson, M. P., & Bence, S. J. *Mathematical Methods for Physics and Engineering*. 
+4. Riley, K. F., Hobson, M. P., & Bence, S. J. *Mathematical Methods for Physics and Engineering*.
