@@ -1,17 +1,28 @@
 # Derivation of Jacobian
 
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
+
 $$
+\begin{align*}
 J_{\mathbf F}
-=
-\dfrac{\partial(F_1,\ldots,F_m)}
-{\partial(x_1,\ldots,x_n)}
+&=
+\dfrac{\partial(F_1,\ldots,F_m)}{\partial(x_1,\ldots,x_n)}
 =
 \begin{pmatrix}
 \dfrac{\partial F_1}{\partial x_1} & \cdots & \dfrac{\partial F_1}{\partial x_n} \\
 \vdots & \ddots & \vdots \\
 \dfrac{\partial F_m}{\partial x_1} & \cdots & \dfrac{\partial F_m}{\partial x_n}
 \end{pmatrix}
+\end{align*}
 $$
+
+</div>
+</div>
+
+</div>
 
 <div class="derivation">
 
@@ -509,18 +520,29 @@ $$
 
 Hence,
 
+<div class="derivation">
+
+<div class="derivation-row">
+<div class="derivation-math">
+
 $$
+\begin{align*}
 J_{\mathbf F}
-=
-\dfrac{\partial(F_1,\ldots,F_m)}
-{\partial(x_1,\ldots,x_n)}
+&=
+\dfrac{\partial(F_1,\ldots,F_m)}{\partial(x_1,\ldots,x_n)}
 =
 \begin{pmatrix}
 \dfrac{\partial F_1}{\partial x_1} & \cdots & \dfrac{\partial F_1}{\partial x_n} \\
 \vdots & \ddots & \vdots \\
 \dfrac{\partial F_m}{\partial x_1} & \cdots & \dfrac{\partial F_m}{\partial x_n}
 \end{pmatrix}
+\end{align*}
 $$
+
+</div>
+</div>
+
+</div>
 
 ## References
 

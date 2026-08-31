@@ -792,6 +792,21 @@ footer.bg-primary a:hover {
 
 .mjx-chtml { font-size: 1.04em; }
 
+html.theme-classic #content .math.display,
+html.theme-classic #content .MathJax_Display,
+html.theme-classic #content .MJXc-display,
+html.theme-classic .entry-content .math.display,
+html.theme-classic .entry-content .MathJax_Display,
+html.theme-classic .entry-content .MJXc-display {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  text-align: left !important;
+}
+
+html.theme-classic .entry-content .derivation-row:not(:has(.derivation-just)) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 html.theme-classic .entry-content .derivation {
   display: flex;
   flex-direction: column;
