@@ -2,6 +2,8 @@
 
 <!-- pdf-page-width: wide -->
 
+\defaultwidthpar{Consider a parallelogram with side vectors}
+
 $$
 \begin{align*}
 \mathbf{w}_1
@@ -10,15 +12,14 @@ $$
 2\\
 1
 \end{pmatrix}
-\tag*{\just{Consider a parallelogram with side vectors}}
-\\[0.45em]
+\\
 \mathbf{w}_2
 &=
 \begin{pmatrix}
 -1\\
 1
 \end{pmatrix}
-\tag*{\just{and}}
+\tag*{\just{Choose two side vectors}}
 \\[0.45em]
 \mathbf{b}
 &=
@@ -26,7 +27,7 @@ $$
 1\\
 1
 \end{pmatrix}
-\tag*{\just{Let its starting point be}}
+\tag*{\just{Choose the starting point}}
 \\[0.45em]
 \begin{pmatrix}
 x\\
@@ -38,35 +39,33 @@ u\mathbf{w}_1
 v\mathbf{w}_2
 +
 \mathbf{b}
-\tag*{\just{Every point in the parallelogram is}}
+\tag*{\just{Parameterize every point in the parallelogram}}
 \\[0.45em]
 x
 &=
 2u-v+1
-\tag*{\just{Therefore,}}
-\\[0.45em]
+\\
 y
 &=
 u+v+1
-\tag*{\just{and}}
+\tag*{\just{Expand the vector equation}}
 \\[0.45em]
 0
 &\leq
 u
 \leq
-1,
-\qquad
+1
+\\
 0
-\leq
+&\leq
 v
 \leq
 1
-\tag*{\just{For}}
+\tag*{\just{The unit square maps to the parallelogram}}
 \end{align*}
 $$
 
 \defaultwidthpar{
-the unit square in the $(u,v)$ coordinate system maps to the parallelogram in the $(x,y)$ coordinate system.
 
 The vertices are
 
@@ -76,7 +75,10 @@ The vertices are
 | $(0,1)$ | $(0,2)$ |
 | $(1,0)$ | $(3,2)$ |
 | $(1,1)$ | $(2,3)$ |
+
 }
+
+\defaultwidthpar{The Jacobian is}
 
 $$
 \begin{align*}
@@ -86,31 +88,31 @@ J
 2 & -1\\
 1 & 1
 \end{pmatrix}
-\tag*{\just{The Jacobian is}}
+\tag*{\just{Differentiate the coordinate functions}}
 \\[0.45em]
 \det J
 &=
 (2)(1)-(-1)(1)
-=
+\\
+&=
 3
-\tag*{\just{Therefore,}}
+\tag*{\just{Compute the area-scaling factor}}
 \\[0.45em]
 A
 &=
-\iint_P1\,dx\,dy
-\tag*{\just{The area of the parallelogram is}}
+\iint_P
+1\,dx\,dy
+\tag*{\just{Express the parallelogram area as an integral}}
 \\[0.45em]
-A
 &=
 \int_0^1
 \int_0^1
 3\,du\,dv
-\tag*{\just{Changing variables,}}
+\tag*{\just{Change variables to the unit square}}
 \\[0.45em]
-A
 &=
 3
-\tag*{\just{Thus,}}
+\tag*{\just{Evaluate the integral}}
 \end{align*}
 $$
 

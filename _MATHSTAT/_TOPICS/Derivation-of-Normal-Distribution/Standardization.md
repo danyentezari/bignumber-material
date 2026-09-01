@@ -7,39 +7,37 @@ $$
 z
 &=
 \frac{k-np}{\sqrt{npq}}
-\tag*{\just{Define}}
+\tag*{\just{Standardize the displacement from the mean}}
 \\[0.45em]
-z
 &=
 \frac{k-\mu}{\sigma}
-\tag*{\just{Then}}
+\tag*{\just{Substitute the binomial mean and standard deviation}}
 \\[0.45em]
 \Delta k
 &=
 1
-\tag*{\just{Because $k$ changes in integer increments,}}
+\tag*{\just{$k$ changes in integer increments}}
 \\[0.45em]
 \Delta z
 &=
 \frac{1}{\sqrt{npq}}
-\tag*{\just{Therefore, the corresponding increment in $z$ is}}
+\tag*{\just{Find the corresponding increment in standardized coordinates}}
 \\[0.45em]
 P(X_n=k)
 &\approx
 \frac{1}{\sqrt{2\pi}}
 e^{-z^2/2}
 \Delta z
-\tag*{\just{The binomial probability can therefore be written}}
+\tag*{\just{Write each binomial mass as a Riemann-sum term}}
 \\[0.45em]
 a
 &\leq
 \frac{X_n-np}{\sqrt{npq}}
 \leq
 b
-\tag*{\just{For an interval}}
+\tag*{\just{Consider a fixed standardized interval}}
 \\[0.45em]
-P
-\left(
+P\left(
 a
 \leq
 \frac{X_n-np}{\sqrt{npq}}
@@ -51,33 +49,33 @@ b
 \frac{1}{\sqrt{2\pi}}
 e^{-z_i^2/2}
 \Delta z
-\tag*{\just{the probability is a sum of these terms:}}
+\tag*{\just{Sum the binomial probabilities over the interval}}
 \\[0.45em]
 n
-&\rightarrow\infty
-\tag*{\just{As}}
-\\[0.45em]
+&\longrightarrow
+\infty
+\\
 \Delta z
-&\rightarrow0
-\tag*{\just{we have}}
+&\longrightarrow
+0
+\tag*{\just{The standardized lattice becomes arbitrarily fine}}
 \\[0.45em]
-\boxed{
-P
-\left(
+P\left(
 a
 \leq
 \frac{X_n-np}{\sqrt{npq}}
 \leq
 b
 \right)
-\rightarrow
+&\longrightarrow
 \int_a^b
 \frac{1}{\sqrt{2\pi}}
 e^{-z^2/2}
 \,dz
-}
-\tag*{\just{The sum becomes a Riemann integral:}}
+\tag*{\just{The Riemann sum converges to the Gaussian integral}}
 \end{align*}
 $$
 
-This is the de Moivre-Laplace limit theorem.
+\defaultwidthpar{This proves the De Moivre-Laplace theorem.}
+
+$\square$

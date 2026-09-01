@@ -1,40 +1,62 @@
-# Variance
+# Corollary 5: Variance
 
 <!-- pdf-page-width: wide -->
+
+Corollary. If
+
+$$
+\begin{align*}
+X
+&\sim
+N(\mu,\sigma^2),
+\tag*{\just{Assume a general normal random variable}}
+\end{align*}
+$$
+
+then
+
+$$
+\begin{align*}
+\operatorname{Var}(X)
+&=
+\sigma^2.
+\tag*{\just{Variance of the normal distribution}}
+\end{align*}
+$$
+
+Proof.
 
 $$
 \begin{align*}
 \operatorname{Var}(Z)
 &=
 E[Z^2]
-\tag*{\just{Since $E[Z]=0$,}}
+\tag*{\just{$E[Z]=0$}}
 \\[0.45em]
 E[Z^2]
 &=
 \frac{1}{\sqrt{2\pi}}
 \int_{-\infty}^{\infty}
 z^2e^{-z^2/2}\,dz
-\tag*{\just{Thus,}}
+\tag*{\just{Write the second moment}}
 \\[0.45em]
 u
 &=
 z
-\tag*{\just{Using integration by parts,}}
-\\[0.45em]
+\\
 dv
 &=
 z e^{-z^2/2}\,dz
-\tag*{\just{and}}
+\tag*{\just{Choose terms for integration by parts}}
 \\[0.45em]
 du
 &=
 dz
-\tag*{\just{Then}}
-\\[0.45em]
+\\
 v
 &=
 -e^{-z^2/2}
-\tag*{\just{and}}
+\tag*{\just{Differentiate and integrate the chosen terms}}
 \\[0.45em]
 \int_{-\infty}^{\infty}
 z^2e^{-z^2/2}\,dz
@@ -45,57 +67,45 @@ z^2e^{-z^2/2}\,dz
 +
 \int_{-\infty}^{\infty}
 e^{-z^2/2}\,dz
-\\
+\tag*{\just{Apply integration by parts}}
+\\[0.45em]
 &=
 \sqrt{2\pi}
-\tag*{\just{Therefore,}}
+\tag*{\just{The boundary term vanishes and Lemma 1 evaluates the integral}}
 \\[0.45em]
 E[Z^2]
 &=
 1
-\tag*{\just{Hence,}}
+\tag*{\just{Divide by $\sqrt{2\pi}$}}
 \\[0.45em]
 \operatorname{Var}(Z)
 &=
 1
-\tag*{\just{Therefore,}}
+\tag*{\just{Standard normal variance}}
 \\[0.45em]
 X
 &=
 \mu+\sigma Z
-\tag*{\just{Since}}
+\tag*{\just{Use Definition 3}}
 \\[0.45em]
 \operatorname{Var}(X)
 &=
-\sigma^2\operatorname{Var}(Z)
-\tag*{\just{we have}}
+\sigma^2
+\operatorname{Var}(Z)
+\tag*{\just{Variance is invariant under translation and quadratic under scaling}}
+\\[0.45em]
+&=
+\sigma^2
+\tag*{\just{Substitute $\operatorname{Var}(Z)=1$}}
 \\[0.45em]
 \boxed{
 \operatorname{Var}(X)
 =
 \sigma^2
 }
-\tag*{\just{Thus,}}
+&&
+\tag*{\just{Variance of the general normal distribution}}
 \end{align*}
 $$
 
-
-\defaultwidthpar{
-Hence,
-
-$\displaystyle
-X\sim N(\mu,\sigma^2)
-\quad\Longrightarrow\quad
-f(x;\mu,\sigma)
-=
-\frac{1}{\sigma\sqrt{2\pi}}
-\exp\left[
--\frac{1}{2}
-\left(
-\frac{x-\mu}{\sigma}
-\right)^2
-\right].
-$
-
-The normal density therefore arises as the continuous limiting form of the binomial distribution under standardization, with the Gaussian integral supplying its normalization.
-}
+$\square$

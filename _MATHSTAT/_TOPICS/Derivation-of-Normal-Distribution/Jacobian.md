@@ -2,16 +2,18 @@
 
 <!-- pdf-page-width: wide -->
 
+Let
+
 $$
 \begin{align*}
 x
 &=
-x(u,v),
-\qquad
+x(u,v)
+\\
 y
-=
+&=
 y(u,v)
-\tag*{\just{Let}}
+\tag*{\just{Define a transformation from $(u,v)$ to $(x,y)$}}
 \\[0.45em]
 J
 &=
@@ -24,7 +26,7 @@ J
 &
 \dfrac{\partial y}{\partial v}
 \end{pmatrix}
-\tag*{\just{The Jacobian matrix is}}
+\tag*{\just{Form the Jacobian matrix}}
 \\[0.45em]
 \det J
 &=
@@ -33,7 +35,7 @@ J
 -
 \frac{\partial x}{\partial v}
 \frac{\partial y}{\partial u}
-\tag*{\just{Its determinant is}}
+\tag*{\just{Take its determinant}}
 \\[0.45em]
 dx\,dy
 &=
@@ -41,9 +43,10 @@ dx\,dy
 \det J
 \right|
 du\,dv
-\tag*{\just{The absolute value of the determinant gives the local area-scaling factor:}}
+\tag*{\just{The determinant gives the local area-scaling factor}}
 \\[0.45em]
-\iint_R f(x,y)\,dx\,dy
+\iint_R
+f(x,y)\,dx\,dy
 &=
 \iint_S
 f(x(u,v),y(u,v))
@@ -51,12 +54,16 @@ f(x(u,v),y(u,v))
 \det J
 \right|
 du\,dv
-\tag*{\just{Therefore,}}
+\tag*{\just{Apply the change-of-variables formula}}
 \end{align*}
 $$
+
+\defaultwidthpar{
 
 where
 
 - $R$ is the region in the $(x,y)$ coordinate system.
 - $S$ is the corresponding region in the $(u,v)$ coordinate system.
 - $J$ is the Jacobian matrix of the transformation.
+
+}

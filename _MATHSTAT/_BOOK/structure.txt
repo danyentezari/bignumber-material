@@ -97,24 +97,27 @@ Mathematical Appendix
   Manifolds
 
 Derivation of Normal Distribution
-  Guide
-  Binomial Distribution
-  Stirling's Approximation
-  Wallis Product
+  Definition 1: Binomial Distribution
+  Proposition 1: Binomial Mean and Variance
+  Lemma 2: Wallis Asymptotic
+  Theorem 1: Stirling's Approximation
+  Theorem 2: De Moivre-Laplace Theorem
   De Moivre-Laplace Approximation
   Standardization
-  Standard Normal Distribution
-  Gaussian Integral
-  Evaluate the Inner Integral
   Change of Variables
   Jacobian
   Jacobian Example
   Polar Coordinates
   Polar Area Element
-  General Normal Distribution
-  Normalization
-  Mean
-  Variance
+  Lemma 1: Gaussian Integral
+  Corollary 1: Standard Normal Density
+  Definition 2: Standard Normal Distribution
+  Definition 3: General Normal Distribution
+  Corollary 2: General Normal Density
+  Corollary 3: Normalization
+  Corollary 4: Mean
+  Corollary 5: Variance
+  Final Result
   References
 
 Table of Symbols

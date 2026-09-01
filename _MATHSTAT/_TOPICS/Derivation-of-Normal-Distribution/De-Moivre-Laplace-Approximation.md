@@ -23,7 +23,7 @@ k!
 &\approx
 \sqrt{2\pi(n-k)}
 \left(\frac{n-k}{e}\right)^{n-k}
-\tag*{\just{Approximate each factorial in the binomial coefficient using Stirling's formula}}
+\tag*{\just{Approximate each factorial using Theorem 1}}
 \\[0.45em]
 P(X_n=k)
 &\approx
@@ -117,7 +117,7 @@ np
 \sigma^2
 &=
 npq
-\tag*{\just{Substitute the binomial mean and variance}}
+\tag*{\just{Apply Proposition 1}}
 \\[0.45em]
 P(X_n=k)
 &\approx
