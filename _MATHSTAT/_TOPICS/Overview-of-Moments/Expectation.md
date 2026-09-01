@@ -148,3 +148,37 @@ where
 6. Rosenthal, J. S. *A First Look at Rigorous Probability Theory*. Chapter 4, §§4.1–4.2, pp. 48–50 — construction via simple, nonnegative, and signed variables; Chapter 6, Theorem 6.1.1, p. 67 — change of variables for $E[f(X)]$.
 7. Klenke, A. *Probability Theory: A Comprehensive Course*. Chapter 5, Theorem 5.4, p. 104 — linearity and monotonicity.
 8. Pfeiffer, P. E. *Concepts of Probability Theory*. Chapter 4, §4-4, (I4), p. 166 — integrability; Chapter 5, (E1), p. 203 — $E[a I_A]=a P(A)$; (E7), p. 205 — Markov and Chebyshev from $E[g(X)]\ge a P(A)$.
+
+<!--
+Discrete expectation. For a discrete random variable, the expectation is the probability-weighted sum of its possible values. This principle is used to calculate the mean value of discrete probability distributions.
+
+Continuous expectation. For a continuous random variable, the expectation is the integral of the variable multiplied by its probability density. This principle is used to calculate the mean value of continuous probability distributions.
+
+Linearity of expectation. The expectation of a linear combination of random variables equals the same linear combination of their expectations. This principle is used to simplify expected values of sums without requiring independence.
+
+Law of the unconscious statistician. The expectation of a function of a random variable can be computed directly from the distribution of the original random variable. This principle is used to calculate transformed expectations without first deriving the distribution of the transformed variable.
+
+Conditional expectation. The conditional expectation is the expected value of a random variable given specified information about another random variable. This principle is used to update expected values when additional information is known.
+
+Law of total expectation. The expectation of a random variable equals the expectation of its conditional expectation given another random variable. This principle is used to compute expectations by conditioning on information that makes the calculation simpler.
+
+Expectation of products under independence. Independent integrable random variables satisfy the equality between the expectation of their product and the product of their expectations. This principle is used to simplify expected products when independence is established.
+
+## Problems
+
+- Obtain $E(X+Y)=E(X)+E(Y)$ without independence and without a joint distribution.
+- Obtain $E[g(X)]$ from the law of $X$ without first finding the law of $g(X)$.
+- Decide whether $E(X)$ exists as a finite real number by testing $E|X|<\infty$.
+- Convert $P(A)$ into $E[I_A]$ for an event $A$.
+- Obtain $E(Y)=E[E(Y\mid X)]$ by conditioning.
+- Obtain $E(XY)=E(X)E(Y)$ for independent integrable random variables.
+- Identify the $L^2$-optimal predictor of $Y$ given $X$ as $E(Y\mid X)$.
+
+## Textbooks
+
+- Sheldon Ross, A First Course in Probability, Chapter 4, Random Variables.
+- Geoffrey Grimmett and David Stirzaker, Probability and Random Processes, Chapter 3, Discrete Random Variables, and Chapter 4, Continuous Random Variables.
+- Dimitri P. Bertsekas and John N. Tsitsiklis, Introduction to Probability, Chapter 2, Discrete Random Variables, and Chapter 3, General Random Variables.
+- Robert V. Hogg, Joseph W. McKean, and Allen T. Craig, Introduction to Mathematical Statistics, Chapter 1, Probability and Distributions.
+- William Feller, An Introduction to Probability Theory and Its Applications, Volume I, Chapter 9, Random Variables and Expected Values.
+-->

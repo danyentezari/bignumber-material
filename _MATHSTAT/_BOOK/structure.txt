@@ -14,9 +14,10 @@ Probability Theory
     Permutation without Repetition
     Combination without Repetition and the Binomial Coefficient
   Important Concepts in Probability Theory
-    Central Limit Theorem
-    Law of Large Numbers
-  Bayes Theorem and Conditional Probability
+  Central Limit Theorem
+  Law of Large Numbers
+  Conditional Probability
+  Bayes Theorem
 
 Random Variables
   Discrete Random Variables
@@ -73,7 +74,8 @@ Important Probability Distributions
   Student's T-Distribution
   Fischer F-Distribution
 
-Cauchy-Schwarz Inequality
+Functional Analysis
+  Cauchy-Schwarz Inequality
 
 Convergence of Random Variables, Distributions, and Probabilities
 

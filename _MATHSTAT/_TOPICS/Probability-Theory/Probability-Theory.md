@@ -11,4 +11,5 @@ Probability theory is about mathematical modeling of the phenomena of randomness
 5. [Important Concepts in Probability Theory](important-concepts-in-probability-theory.html)
 6. [Central Limit Theorem](central-limit-theorem.html)
 7. [Law of Large Numbers](law-of-large-numbers.html)
-8. [Bayes Theorem and Conditional Probability](bayes-theorem-and-conditional-probability.html)
+8. [Conditional Probability](conditional-probability.html)
+9. [Bayes Theorem](bayes-theorem.html)

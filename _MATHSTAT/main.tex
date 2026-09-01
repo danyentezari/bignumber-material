@@ -89,37 +89,101 @@ The binomial coefficient notation is used to express combination, alternatively.
 In this section, some properties of probability theory are highlighted because they are relevant throughout the statistics and probability theory.
 
 %----------------------------------------------------------------------------
-\subsubsection{Central Limit Theorem}
+\subsection{Central Limit Theorem}
 The \emph{central limit theorem} states that when samples are drawn from a population, where the size of the samples are 30 or greater, the samples will have a normal distribution. This theorem holds even if the population from which the samples are drawn does is not normally distributed.
 
 %----------------------------------------------------------------------------
-\subsubsection{Law of Large Numbers}
+\subsection{Law of Large Numbers}
 The \emph{law of large numbers} states that as the size of the sample increases, the mean of the sample will approach the mean of its population.
 
+\subsection{Problems}
+
+\begin{itemize}
+    \item Establish $\bar{X}_n \xrightarrow{P} \mu$ for independent identically distributed random variables with finite mean.
+    \item Establish $\bar{X}_n \xrightarrow{\mathrm{a.s.}} \mu$ for independent identically distributed integrable random variables.
+    \item Obtain $S_n/n \xrightarrow{P} 0$ for independent mean-zero summands under weak-law conditions.
+    \item Obtain $S_n/n \xrightarrow{\mathrm{a.s.}} 0$ for independent identically distributed mean-zero integrable summands.
+    \item Obtain $n^{-1}\sum_{i=1}^n 1_{\{X_i\in A\}} \xrightarrow{\mathrm{a.s.}} P(X\in A)$.
+    \item Obtain $n^{-1}\sum_{i=1}^n g(X_i) \xrightarrow{\mathrm{a.s.}} E[g(X)]$ when $g(X)$ is integrable.
+    \item Identify $\bar{X}_n \xrightarrow{P} \mu$ as the weak-law conclusion and $\bar{X}_n \xrightarrow{\mathrm{a.s.}} \mu$ as the strong-law conclusion.
+\end{itemize}
+
 %----------------------------------------------------------------------------
-\subsection{Bayes Theorem and Conditional Probability}
+\subsection{Conditional Probability}
+For events $A$ and $B$ with $P(B)>0$, the conditional probability of $A$ given $B$ is
+
+$$
+P(A\mid B)=\frac{P(A\cap B)}{P(B)}.
+$$
+
+where
+
+\begin{itemize}
+    \item $A$ and $B$ are events in the sample space.
+    \item $P(A\cap B)$ is the joint probability of $A$ and $B$.
+    \item $P(B)$ is the probability of $B$.
+    \item $P(A\mid B)$ is the conditional probability of $A$ given $B$.
+\end{itemize}
+
+The multiplication rule is
+
+$$
+P(A\cap B)=P(A\mid B)P(B)=P(B\mid A)P(A).
+$$
+
+The law of total probability states that if $\{B_i\}$ is a partition of the sample space, then
+
+$$
+P(A)=\sum_i P(A\mid B_i)P(B_i).
+$$
+
+\subsection{Problems}
+
+\begin{itemize}
+    \item Obtain $P(A\mid B)=\frac{P(A\cap B)}{P(B)}$ when $P(B)>0$.
+    \item Obtain $P(A\cap B)=P(A\mid B)P(B)$.
+    \item Obtain $P(A)=\sum_i P(A\mid B_i)P(B_i)$ for a countable partition $\{B_i\}$.
+    \item Obtain $P(A_1\cap\cdots\cap A_n)=P(A_1)\prod_{i=2}^n P(A_i\mid A_1\cap\cdots\cap A_{i-1})$.
+    \item Obtain $P(A\cap B\mid C)=P(A\mid C)P(B\mid C)$ when $A$ and $B$ are conditionally independent given $C$.
+    \item Obtain $P(A^c\mid B)=1-P(A\mid B)$ when $P(B)>0$.
+    \item Obtain $P(A\cup C\mid B)=P(A\mid B)+P(C\mid B)-P(A\cap C\mid B)$ when $P(B)>0$.
+\end{itemize}
+
+%----------------------------------------------------------------------------
+\subsection{Bayes Theorem}
 Frequentist statistics treats parameters as fixed and probabilities as long-run frequencies of repeated data.
 
 Bayesian statistics treats unknown parameters and hypotheses probabilistically, combining prior information with observed data to produce posterior probabilities.
 
-Fundamentally:
+Fundamentally, it goes like this:
 
 Frequentist: $P(\text{data}\mid\text{hypothesis})$
 
 Bayesian: $P(\text{hypothesis}\mid\text{data})$
 
-\begin{mdframed}
-\begin{definition}[Bayes Theorem]
-The \emph{bayesian theorem} is given by
-$$ P(A_i | B)  = \frac{P(A_i) \times P(B|A_i)}{ \sum_{i=k}^{n} P(B|A_i) } $$
-where 
+Bayes theorem is given by
+
+$$
+P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}.
+$$
+
+For a partition $\{B_i\}$,
+
+$$
+P(B_k\mid A)=\frac{P(A\mid B_k)P(B_k)}{\sum_i P(A\mid B_i)P(B_i)}.
+$$
+
+where
 
 \begin{itemize}
-    \item $A_i$ is a given a-priori event
-    \item $B$ is the a-posteriori event
+    \item $P(A)$ is the prior probability of $A$.
+    \item $P(B\mid A)$ is the likelihood of $B$ given $A$.
+    \item $P(B)$ is the marginal probability of $B$.
+    \item $P(A\mid B)$ is the posterior probability of $A$ given $B$.
+    \item $B_k$ is one cell of the partition.
+    \item $P(B_k)$ is the prior probability of $B_k$.
+    \item $P(A\mid B_k)$ is the likelihood of $A$ given $B_k$.
 \end{itemize}
-\end{definition}
-\end{mdframed}
 
 %----------------------------------------------------------------------------
 \newpage
@@ -744,7 +808,26 @@ The F-distribution is the ratio of two random variables with chi-squared distrib
 
 %----------------------------------------------------------------------------
 \newpage
-\section{Cauchy-Schwarz Inequality}
+\section{Functional Analysis}
+Functional analysis is the study of function spaces and the operators acting on function spaces. In functional analysis, functions are viewed as points in a space.
+
+\subsection{Problems}
+
+\begin{itemize}
+    \item Establish $|\langle x,y\rangle|\le\|x\|\|y\|$ in an inner product space.
+    \item Obtain $\|x+y\|\le\|x\|+\|y\|$ from the Cauchy-Schwarz inequality.
+    \item Show that a normed linear space is Banach by establishing convergence of every Cauchy sequence.
+    \item Establish that a linear operator is continuous exactly when it is bounded.
+    \item Obtain $\|T\|=\sup_{\|x\|\le 1}\|Tx\|$ for a bounded linear operator.
+    \item Establish existence and uniqueness of orthogonal projection onto a closed subspace of a Hilbert space.
+    \item Show that every bounded linear functional on a Hilbert space has the form $f(x)=\langle x,y\rangle$ for a unique $y$.
+    \item Establish $|E[XY]|\le\sqrt{E[X^2]E[Y^2]}$ for $X,Y\in L^2$.
+    \item Show that $E[X\mid G]$ is the orthogonal projection of $X\in L^2$ onto the closed subspace of $G$-measurable elements of $L^2$.
+    \item Obtain $|\mathrm{Corr}(X,Y)|\le 1$ from Cauchy-Schwarz in $L^2$.
+\end{itemize}
+
+%----------------------------------------------------------------------------
+\subsection{Cauchy-Schwarz Inequality}
 An inequality that is used to bound the absolute value of an inner product or of $E[XY]$ by the product of the corresponding $L^2$ norms, where an inner product is a bilinear pairing that induces a length, and where the $L^2$ norm of a square-integrable random variable $X$ is $\|X\|_2=\sqrt{E[X^2]}$.
 
 Note: Also called the Cauchy–Schwarz–Bunyakovsky inequality, or Schwarz’s inequality.
