@@ -107,6 +107,7 @@ $$
 f(z) = \dfrac{1}{\sqrt{2\pi}}\, e^{-\dfrac{1}{2}z^{2}}
 $$
 
+<!--
 ## Elementary Example
 
 ### Simple
@@ -140,6 +141,7 @@ $$
 where
 
 - $x$ is a real value.
+-->
 
 ## References
 

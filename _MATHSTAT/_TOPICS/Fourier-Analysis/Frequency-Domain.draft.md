@@ -68,6 +68,7 @@ where
 - $\hat{f}$ is the Fourier transform of $f$.
 - $t$ is the real argument of the transform.
 
+<!--
 ## Elementary Example
 
 ### Simple
@@ -102,6 +103,7 @@ where
 
 - $a_{k}$ is the coefficient of frequency $k\omega_{0}$.
 - $k$ is an integer index.
+-->
 
 ## References
 

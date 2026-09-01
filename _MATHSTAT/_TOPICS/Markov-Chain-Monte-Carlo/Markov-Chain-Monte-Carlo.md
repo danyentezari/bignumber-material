@@ -10,3 +10,6 @@ A Markov chain, in turn, is a sequence of random variables whose next state depe
 
 1. [Preliminaries](preliminaries.html)
 2. [Stationary Distribution](stationary-distribution.html)
+3. [State Space](state-space.html)
+4. [Gibbs Sampling](gibbs-sampling.html)
+5. [Metropolis-Hastings Algorithm](metropolis-hastings-algorithm.html)

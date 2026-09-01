@@ -99,6 +99,7 @@ where
 - $t$ is a real frequency.
 - $x$ is the integration variable.
 
+<!--
 ## Elementary Example
 
 ### Simple
@@ -126,6 +127,7 @@ where
 - $f$ is an integrable function on the real line.
 - $\hat{f}$ is the Fourier transform of $f$.
 - $t$ is a real frequency.
+-->
 
 ## Topics
 

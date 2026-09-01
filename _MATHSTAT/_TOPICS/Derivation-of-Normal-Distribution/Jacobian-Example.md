@@ -65,6 +65,7 @@ v
 \end{align*}
 $$
 
+\defaultwidthpar{
 the unit square in the $(u,v)$ coordinate system maps to the parallelogram in the $(x,y)$ coordinate system.
 
 The vertices are
@@ -75,6 +76,7 @@ The vertices are
 | $(0,1)$ | $(0,2)$ |
 | $(1,0)$ | $(3,2)$ |
 | $(1,1)$ | $(2,3)$ |
+}
 
 $$
 \begin{align*}

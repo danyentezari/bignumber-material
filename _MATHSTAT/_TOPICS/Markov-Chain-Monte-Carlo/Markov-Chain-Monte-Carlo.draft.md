@@ -37,6 +37,7 @@ Metropolis-Hastings. Start from any irreducible proposal chain on the state spac
 
 Gibbs sampling. Update one coordinate at a time by drawing from the conditional distribution of that coordinate given all the others. A conditional distribution is the law of one variable when the remaining variables are fixed. This principle is used to sample from a joint distribution when the conditionals are available.
 
+<!--
 ## Elementary Example
 
 ### Simple
@@ -70,13 +71,14 @@ where
 - $M$ is the number of states.
 - $a$ is the Zipf parameter.
 - $k$ is a state.
+-->
 
 ## Topics
 
 1. [Preliminaries](preliminaries.html)
 2. [Stationary Distribution](stationary-distribution.html)
 
-## References
+# References
 
 1. Klenke, A. *Probability Theory: A Comprehensive Course*. Chapter 18, §18.3, p. 398 — MCMC as simulating a chain whose law converges to $\pi$. Chapter 8, Definition 8.25 — transition kernel. Chapter 19, §19.2, p. 415 — detailed balance.
 2. Billingsley, P. *Probability and Measure*. Chapter 1, §8, pp. 112, 125 — Markov property; stationary distribution; Theorem 8.6 on convergence to $\pi$.

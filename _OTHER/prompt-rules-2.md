@@ -90,3 +90,14 @@ $\square$
 ```
 
 * Keep proofs and derivations concise, linear, and conventional. Use `$...$` for inline mathematics and `$$...$$` for displayed mathematics. Avoid unnecessary prose.
+* Before the References section of each SUBJECT file, include a list of 3–7 problem items that require this SUBJECT or any of the subtopics of SUBJECT. Each item must not exceed 20 words.
+
+```
+## Problems
+
+- [problem item]
+- [problem item]
+- [problem item]
+
+# References
+```

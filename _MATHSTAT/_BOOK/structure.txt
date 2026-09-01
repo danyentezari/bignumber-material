@@ -29,6 +29,7 @@ Probability Distributions
     Cumulative Probability Function
 
 Overview of Moments
+  Expectation
   Expected Value
   Variance
   Skewness
@@ -52,8 +53,10 @@ Measure Theory
     Probability Space
 
 Markov Chain Monte Carlo
-  Preliminaries
-    Stationary Distribution
+  State Space
+  Stationary Distribution
+  Gibbs Sampling
+  Metropolis-Hastings Algorithm
 
 Fourier Analysis
   Frequency Domain
@@ -70,26 +73,7 @@ Important Probability Distributions
   Student's T-Distribution
   Fischer F-Distribution
 
-Derivation of Normal Distribution
-  Guide
-  Binomial Distribution
-  Stirling's Approximation
-  Wallis Product
-  De Moivre-Laplace Approximation
-  Standardization
-  Standard Normal Distribution
-  Gaussian Integral
-  Evaluate the Inner Integral
-  Change of Variables
-  Jacobian
-  Jacobian Example
-  Polar Coordinates
-  Polar Area Element
-  General Normal Distribution
-  Normalization
-  Mean
-  Variance
-  References
+Cauchy-Schwarz Inequality
 
 Convergence of Random Variables, Distributions, and Probabilities
 
@@ -111,5 +95,26 @@ Mathematical Appendix
   Exponential Function
   Gamma Function
   Manifolds
+
+Derivation of Normal Distribution
+  Guide
+  Binomial Distribution
+  Stirling's Approximation
+  Wallis Product
+  De Moivre-Laplace Approximation
+  Standardization
+  Standard Normal Distribution
+  Gaussian Integral
+  Evaluate the Inner Integral
+  Change of Variables
+  Jacobian
+  Jacobian Example
+  Polar Coordinates
+  Polar Area Element
+  General Normal Distribution
+  Normalization
+  Mean
+  Variance
+  References
 
 Table of Symbols

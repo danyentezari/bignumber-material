@@ -98,10 +98,10 @@ def strip_h1_and_book_nav(text: str) -> str:
     kept: list[str] = []
     skipping = False
     for line in lines:
-        if re.match(r"^##\s+(Topics|References)\s*$", line, re.I):
+        if re.match(r"^#{1,2}\s+(Topics|References)\s*$", line, re.I):
             skipping = True
             continue
-        if skipping and re.match(r"^##\s+\S", line):
+        if skipping and re.match(r"^#{1,2}\s+\S", line):
             skipping = False
         if skipping:
             continue
@@ -190,8 +190,17 @@ def page_width_directive(text: str) -> str | None:
     return match.group(1).lower() if match else None
 
 
+HTML_COMMENT_RE = re.compile(r"<!--[\s\S]*?-->")
+
+
+def strip_html_comments(text: str) -> str:
+    """Drop HTML comments so commented markdown never reaches the PDF."""
+    return HTML_COMMENT_RE.sub("", text)
+
+
 def md_to_tex(text: str) -> str:
     text = PAGE_WIDTH_RE.sub("", text)
+    text = strip_html_comments(text)
     text = strip_h1_and_book_nav(text)
     if not text:
         return ""
@@ -263,7 +272,9 @@ def md_to_tex(text: str) -> str:
     text = re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
     text = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"\\emph{\1}", text)
 
-    text = re.sub(r"^## (.+)$", r"\\subsubsection{\1}", text, flags=re.MULTILINE)
+    # escape_tex already turned # into \#. Promote markdown headings.
+    text = re.sub(r"^\\#\\# (.+)$", r"\\subsection{\1}", text, flags=re.MULTILINE)
+    text = re.sub(r"^\\#\\#\\# (.+)$", r"\\subsubsection{\1}", text, flags=re.MULTILINE)
 
     def convert_lists(block: str) -> str:
         def one_list(match: re.Match[str], ordered: bool) -> str:

@@ -79,6 +79,8 @@ X
 \end{align*}
 $$
 
+
+\defaultwidthpar{
 Hence,
 
 $\displaystyle
@@ -96,3 +98,4 @@ f(x;\mu,\sigma)
 $
 
 The normal density therefore arises as the continuous limiting form of the binomial distribution under standardization, with the Gaussian integral supplying its normalization.
+}

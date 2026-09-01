@@ -98,6 +98,18 @@ The \emph{law of large numbers} states that as the size of the sample increases,
 
 %----------------------------------------------------------------------------
 \subsection{Bayes Theorem and Conditional Probability}
+Frequentist statistics treats parameters as fixed and probabilities as long-run frequencies of repeated data.
+
+Bayesian statistics treats unknown parameters and hypotheses probabilistically, combining prior information with observed data to produce posterior probabilities.
+
+Fundamentally:
+
+Frequentist: $P(\text{data}\mid\text{hypothesis})$
+
+Bayesian: $P(\text{hypothesis}\mid\text{data})$
+
+\begin{mdframed}
+\begin{definition}[Bayes Theorem]
 The \emph{bayesian theorem} is given by
 $$ P(A_i | B)  = \frac{P(A_i) \times P(B|A_i)}{ \sum_{i=k}^{n} P(B|A_i) } $$
 where 
@@ -106,6 +118,8 @@ where
     \item $A_i$ is a given a-priori event
     \item $B$ is the a-posteriori event
 \end{itemize}
+\end{definition}
+\end{mdframed}
 
 %----------------------------------------------------------------------------
 \newpage
@@ -179,6 +193,120 @@ $$ E(X^k) $$
 
 The $kth$ central moment is given by:
 $$ E((X-\mu)^k) $$
+
+%----------------------------------------------------------------------------
+\subsection{Expectation}
+A probability-weighted average of a random variable that is used to summarize its long-run mean value under a probability model, where a random variable is a measurable function from a sample space to the real line, and where the average is the integral of that function against the probability measure.
+
+Note: Also called expected value or mean.
+
+\begin{mdframed}
+\begin{definition}[Expectation of a Discrete Random Variable]
+The expectation of a discrete random variable $X$ whose distinct possible values are $x_1,x_2,\ldots$ is
+
+$$
+E(X)
+=
+\sum_{j} x_j\,P(X=x_j)
+$$
+
+where
+
+\begin{itemize}
+    \item $X$ is a discrete random variable.
+    \item $x_j$ are the distinct values of $X$.
+    \item $P(X=x_j)$ is the probability that $X$ equals $x_j$.
+\end{itemize}
+
+The expectation is undefined if $\sum_j |x_j|P(X=x_j)$ diverges.
+\end{definition}
+\end{mdframed}
+
+This principle is used to compute means for countable supports.
+
+\begin{mdframed}
+\begin{definition}[Expectation of a Continuous Random Variable]
+The expectation of a continuous random variable $X$ with PDF $f$ is
+
+$$
+E(X)
+=
+\int_{-\infty}^{\infty} x\,f(x)\,dx
+$$
+
+where
+
+\begin{itemize}
+    \item $X$ is a continuous random variable.
+    \item $f$ is the probability density function of $X$.
+\end{itemize}
+
+provided that $\int_{-\infty}^{\infty}|x|f(x)\,dx$ is finite.
+\end{definition}
+\end{mdframed}
+
+This principle is used to compute means for absolutely continuous laws.
+
+\begin{mdframed}
+\begin{definition}[Expectation as a Lebesgue Integral]
+If $X$ is a random variable on a probability space $(\Omega,\mathcal{F},P)$, the expectation of $X$ is
+
+$$
+E(X)
+=
+\int_\Omega X\,dP
+$$
+
+where
+
+\begin{itemize}
+    \item $(\Omega,\mathcal{F},P)$ is a probability space.
+    \item $X$ is a random variable on that space.
+    \item $dP$ denotes integration with respect to $P$.
+\end{itemize}
+
+provided the integral exists. If $E|X|<\infty$, then $X$ is integrable.
+\end{definition}
+\end{mdframed}
+
+This principle is used to unify discrete and continuous cases as one Lebesgue integral.
+
+Absolute integrability. $X$ is integrable if and only if $|X|$ is integrable, which requires $E|X|<\infty$ and rules out indeterminate $\infty-\infty$ forms. This principle is used to decide when $E(X)$ exists as a real number.
+
+Linearity. For integrable $X,Y$ and constant $c$, $E(X+Y)=E(X)+E(Y)$ and $E(cX)=cE(X)$, even when $X$ and $Y$ are dependent. This principle is used to compute means of sums without joint distributions.
+
+Monotonicity. If $X\le Y$ almost surely, then $E(X)\le E(Y)$, with equality if and only if $X=Y$ almost surely. This principle is used to compare expectations from almost-sure orderings.
+
+Fundamental bridge. For an event $A$ with indicator $I_A$, $P(A)=E(I_A)$. This principle is used to convert probability statements into expectation statements.
+
+\begin{mdframed}
+\begin{definition}[Law of the Unconscious Statistician]
+LOTUS in the discrete and continuous cases is
+
+$$
+E(g(X))
+=
+\sum_x g(x)\,P(X=x),
+\qquad
+E(g(X))
+=
+\int_{-\infty}^{\infty} g(x)\,f(x)\,dx
+$$
+
+where
+
+\begin{itemize}
+    \item $g$ is a real-valued function.
+    \item $f$ is the PDF of $X$ in the continuous case.
+\end{itemize}
+\end{definition}
+\end{mdframed}
+
+This principle is used to compute moments of transformed variables without first finding the law of $g(X)$.
+
+Tower property. $E(Y)=E[E(Y\mid X)]$ whenever the expectations exist. This principle is used to compute unconditional means by conditioning.
+
+Markov and Chebyshev. Nonnegative $g$ and $A=\{g(X)\ge a\}$ give $E[g(X)]\ge a\,P(A)$. With $g(x)=|x|$ one obtains Markov’s inequality; with $g(x)=(x-E[X])^2$ one obtains Chebyshev’s inequality. This principle is used to bound tails from moments.
 
 %----------------------------------------------------------------------------
 \subsection{Expected Value}
@@ -445,12 +573,37 @@ An MCMC algorithm draws samples from a target distribution by simulating a Marko
 A Markov chain, in turn, is a sequence of random variables whose next state depends only on the present state, and where a target distribution is the probability distribution one wants to sample from.
 
 %----------------------------------------------------------------------------
-\subsection{Preliminaries}
-Let us first establish some definitions.
-
-%----------------------------------------------------------------------------
-\subsubsection{Stationary Distribution}
+\subsection{Stationary Distribution}
 A distribution is stationary if it is unchanged after a transition matrix is applied to it.
+
+Global balance. A distribution $\pi$ is stationary when the probability of each state after one step equals the same probability before the step. This principle is used to write equations that $\pi$ must solve.
+
+\begin{mdframed}
+\begin{definition}[Global Balance Equations = Full Balance Equations]
+The global balance equations are
+
+$$
+\pi_j
+=
+\sum_{i \in S}
+\pi_i
+p_{ij},
+\qquad
+j \in S
+$$
+
+where
+
+\begin{itemize}
+    \item $S$ is the discrete state space.
+    \item $i$ is a current state.
+    \item $j$ is a next state.
+    \item $\pi_i$ is the stationary probability of state $i$.
+    \item $\pi_j$ is the stationary probability of state $j$.
+    \item $p_{ij}$ is the one-step transition probability from $i$ to $j$.
+\end{itemize}
+\end{definition}
+\end{mdframed}
 
 %----------------------------------------------------------------------------
 \newpage
@@ -588,6 +741,246 @@ where
 \end{itemize}
 
 The F-distribution is the ratio of two random variables with chi-squared distribution. The F-distribution is used in ANOVA for two random variables and their mean square ratio.
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Cauchy-Schwarz Inequality}
+An inequality that is used to bound the absolute value of an inner product or of $E[XY]$ by the product of the corresponding $L^2$ norms, where an inner product is a bilinear pairing that induces a length, and where the $L^2$ norm of a square-integrable random variable $X$ is $\|X\|_2=\sqrt{E[X^2]}$.
+
+Note: Also called the Cauchy–Schwarz–Bunyakovsky inequality, or Schwarz’s inequality.
+
+Expectation form. For random variables $X$ and $Y$ with finite second moments,
+
+$$
+|E[XY]|
+\le
+E[|XY|]
+\le
+\|X\|_2\,\|Y\|_2
+=
+\sqrt{E[X^2]\,E[Y^2]}
+$$
+
+where
+
+\begin{itemize}
+    \item $X$ and $Y$ are real random variables.
+    \item $E$ is expectation.
+    \item $\|X\|_2=\sqrt{E[X^2]}$ is the $L^2$ norm of $X$.
+\end{itemize}
+
+This principle is used to control products of random variables by their second moments.
+
+Inner-product form. In an inner-product space $L$ with $\langle\cdot,\cdot\rangle$ and $\|x\|=\sqrt{\langle x,x\rangle}$, for all $x,y\in L$,
+
+$$
+|\langle x,y\rangle|
+\le
+\|x\|\,\|y\|
+$$
+
+where
+
+\begin{itemize}
+    \item $\langle x,y\rangle$ is the inner product of $x$ and $y$.
+    \item $\|x\|$ is the norm induced by the inner product.
+\end{itemize}
+
+This principle is used to relate angles and lengths in abstract geometry, including $L^2$.
+
+Equality condition. Equality holds if and only if the two elements are linearly dependent: in $L^2$, iff there is a constant $\lambda$ such that $\lambda X+Y=0$ almost surely (or both are zero). This principle is used to characterize when the bound is sharp.
+
+Positivity proof. For every real $t$, $E[(Y-tX)^2]\ge 0$. Expanding and optimizing in $t$ yields the expectation form. This principle is used to derive Cauchy–Schwarz from nonnegativity of a quadratic.
+
+$L^2$ as an inner-product space. On centered square-integrable random variables, $\langle U,V\rangle=\mathrm{Cov}(U,V)=E[UV]$ is an inner product, and $\|X\|_2$ is a length. Uncorrelated variables are orthogonal. This principle is used to read covariance geometrically.
+
+Correlation bound. Applying Cauchy–Schwarz to $X-E[X]$ and $Y-E[Y]$ gives $|\mathrm{Cov}(X,Y)|\le\sqrt{\mathrm{Var}(X)\,\mathrm{Var}(Y)}$, hence $|\rho_{X,Y}|\le 1$, with $|\rho|=1$ iff the centered variables are linearly dependent a.s. This principle is used to place correlation in $[-1,1]$.
+
+Hölder specialization. Cauchy–Schwarz is Hölder’s inequality at $p=q=2$. This principle is used to nest Cauchy–Schwarz inside the broader $L^p$ toolkit.
+
+\subsection{Problems}
+
+\begin{itemize}
+    \item Lower-bound $P(X>0)$ by $(E[X])^2/E[X^2]$ for nonnegative random variables.
+    \item Derive the Cramér–Rao lower bound for unbiased estimators from covariance Cauchy–Schwarz.
+    \item Prove $|\rho(X,Y)|\le 1$, with equality if $Y=aX+b$ almost surely.
+    \item Prove $E[X]\,E[1/X]\ge 1$ for strictly positive random variables.
+    \item Prove the triangle inequality $\|u+v\|\le\|u\|+\|v\|$ in an inner-product space.
+    \item Minimize $\|x-y\|_2$ by orthogonal projection in an inner-product space. [ChatGPT]
+    \item Derive Cauchy–Schwarz as Hölder’s inequality with $p=q=2$. [ChatGPT]
+\end{itemize}
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Convergence of Random Variables, Distributions, and Probabilities}
+Convergence of sequences is about how a sequence behaves as it approaches a specific limit. Convergence of functions is about how a function behaves through progression of its domain. 
+
+Understanding the convergence of random variables, distributions, and probabilities is necessary for understanding how distributions behave asymptotically; that is, as a random variable tends toward a limiting value, or a distribution approaches a limiting form, or a probability converges to a fixed value.
+
+A random variable is a function when considered as a map from the sample space to real numbers, and a set when considered through its \emph{level set} — the set of outcomes in its domain that map to values in the codomain.
+
+A distribution is a function when considered as a map from the codomain of a random variable to probabilities, and a set when considered through the frequencies or densities associated with values in the codomain of a random variable.
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Select Topics in Stochastic Calculus}
+
+%----------------------------------------------------------------------------
+\subsection{Martingale}
+A \emph{martingale} is, informally, a description about a sequence of random variables.
+
+%----------------------------------------------------------------------------
+\subsection{Stochastic Bridges}
+A \emph{stochastic bridge} is a random sample path. Stochastic bridges are used to model and understand rare events.
+
+A \emph{random sample path}, in turn, is a sequence of random variables. Let us first start with a definition.
+
+\begin{mdframed}
+\begin{definition}[Random Sample Path]
+A \emph{random sample path} is a sequence of random variables, $ X_1, X_2,...,X_n $ such that
+
+\begin{enumerate}
+    \item $X_1, X_2, ..., X_n$ are independent \quad and
+    \item $X_1, X_2, ..., X_n$ have identical distributions
+\end{enumerate}
+\end{definition}
+\end{mdframed}
+
+When random variables are independent and have identical distributions, we use the abbreviation \emph{i.i.d}.
+
+%----------------------------------------------------------------------------
+\subsection{Stochastic Process}
+\begin{mdframed}
+\begin{definition}[Stochastic Process]
+A \emph{stochastic process} is a set of random variables, $\{X(t)\, t \in I\}$ defined on a probability space $(\Omega, \mathcal{F}, \mathbb{P})$, where
+
+\begin{enumerate}
+    \item $t$ is the time variable in I
+    \item $I$ is a real interval that is open, closed, or half-closed
+\end{enumerate}
+\end{definition}
+\end{mdframed}
+
+%----------------------------------------------------------------------------
+\subsection{Stochastic Differential Equations}
+Stochastic differential equations have applications in modeling systems with non-deterministic behavior. There is, however, a fundmanetla difference between SDEs and differential equations.
+
+$$d\xi(t) = b(\xi(t), t)dt + \sigma(\xi(t), t)dw(t)$$
+
+with initial condition
+
+$$\xi(0) = \xi_0$$
+
+Where:
+
+\begin{itemize}
+    \item $ \xi(t) $ is the n-dimensional stochastic process being modeled.
+    \item $ w(t) $ is an n-dimensional Brownian motion.
+    \item $ b(x, t) = (b_1(x, t), \dots, b_n(x, t)) $ is the drift coefficient (an n-vector).
+    \item $ \sigma(x, t) = (\sigma_{ij}(x, t))_{i,j=1}^n $ is the diffusion matrix (an n×n matrix).
+\end{itemize}
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Glossary}
+\paragraph{Experiment} A procedure that produces one outcome from a set of possible outcomes.  
+\emph{Example:} Rolling a die.
+
+\paragraph{Trial} An experiment with a binary outcome. \emph{Example:} Flipping a coin.
+
+\paragraph{Outcome} The result of an experiment or trial. For example, one outcome of flipping a coin is "heads" and the other is "tails".
+
+\paragraph{Sample Space} A sample space is the set of possible outcomes in a (random) experiment.
+
+\paragraph{Event} An event is a subset of a sample space. For example, an event can be the set of outcomes of rolling a dice five times. If there were another event where the dice were rolled, say, five times, then both events would be subsets of the sample space.
+
+%----------------------------------------------------------------------------
+\newpage
+\section{Mathematical Appendix}
+In this section, we look at some special functions and other concepts widely used in mathematics. This section is for helping you fill in the gaps.
+
+%----------------------------------------------------------------------------
+\subsection{Infimum and Supremum}
+\begin{mdframed}
+\begin{definition}[Infimum]
+An \emph{infimum} is the greatest lower bound of a set.
+
+\begin{itemize}
+    \item $m \leq x$ for every $x \in A$
+    \item there exists $x \in A$ such that $x < m + \varepsilon$, for every $\varepsilon > 0$
+\end{itemize}
+
+where
+
+\begin{itemize}
+    \item $m \in \mathbb{R}$ is a real number
+    \item $x \in A$ is a real number
+    \item $A \subset \mathbb{R}$ is a set of real numbers
+\end{itemize}
+\end{definition}
+\end{mdframed}
+
+\begin{mdframed}
+\begin{definition}[Supremum]
+An \emph{supremum} is the least upper bound of a set.
+
+\begin{itemize}
+    \item $m \geq x$ for every $x \in A$
+    \item there exists $x \in A$ such that $x > m - \varepsilon$, for every $\varepsilon > 0$
+\end{itemize}
+
+where
+
+\begin{itemize}
+    \item $m \in \mathbb{R}$ is a real number
+    \item $x \in A$ is a real number
+    \item $A \subset \mathbb{R}$ is a set of real numbers
+\end{itemize}
+\end{definition}
+\end{mdframed}
+
+%----------------------------------------------------------------------------
+\subsection{Exponential Function}
+The Exponential Function is defined by,
+$$ e^x = \text{Exp}(x) = \sum_{k=0}^{\infty} \frac{x^k}{k!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots   $$
+
+The letter $e$, which represents Euler's constant $\sim 2.718$, is the base unit for exponentiation. In other words, a function becomes exponential when the variable appears in the exponent:
+$$\quad f(x) = e^x. $$
+
+ 
+Note that we are equating $e^x$ to $\text{Exp}(x)$ because the latter is only an alternative (and more convenient) way to write the exponential function.
+
+%----------------------------------------------------------------------------
+\subsection{Gamma Function}
+The Gamma Function is defined by,
+$$ \Gamma(\alpha) = \int_0^\infty x^{\alpha-1} e^{-x} \: dx $$
+
+The Gamma Function is important because it generalizes the factorial function to all Real Numbers. The factorial operation ($n!$), as a function, is valid only for the Natural Numbers (1,2,3,..). The Gamma Function, however, extends the factorial operation to all Real Numbers greater than 0. For this reason, the Gamma Function is also known as the Generalized Factorial Function.
+
+%----------------------------------------------------------------------------
+\subsection{Manifolds}
+If a surface is a generalization of a curve, then a manifold is the generalization of both surfaces and curves. Here's another way to understand a manifold.
+
+\begin{itemize}
+    \item A curve is a one-dimension manifold.
+    \item A surface is a two-dimension manifold.
+\end{itemize}
+
+Beyond two dimensions, we just call these things n-manifold, where $n$ is the number of dimensions.
+
+\paragraph{Smooth Manifold} A smooth manifold is a manifold that is locally homeomorphic to a linear space, which is a vector space.
+
+\paragraph{Locally} A description about how a manifold looks like around a point. When used, it means that it would take exactly $n$ points to describe the manifold around a point.
+
+\paragraph{Homeomorphic} A description of a space that preserves the topological structure. An example is a sphere and a torus, which are homeomorphic to each other. By preserving the topological structure, we mean that the sphere and the torus have the same number of holes.
+
+\paragraph{Topological space} A topological space, $\mathcal{T}$, is a collection of subsets on $\mathcal{T}$ which contains
+
+\begin{itemize}
+    \item the empty set $\empty$
+    \item the space $\mathcal{T}$ itself
+    \item sets that are the result of unions and intersections
+\end{itemize}
 
 %----------------------------------------------------------------------------
 \newpage
@@ -1397,6 +1790,7 @@ v
 \tag*{\just{For}}
 \end{align*}
 
+\defaultwidthpar{
 the unit square in the $(u,v)$ coordinate system maps to the parallelogram in the $(x,y)$ coordinate system.
 
 The vertices are
@@ -1413,7 +1807,8 @@ $(1,0)$ & $(3,2)$ \\
 \hline
 $(1,1)$ & $(2,3)$ \\
 \hline
-\end{tabularx}
+\end{tabularx}}
+
 \begin{align*}
 J
 &=
@@ -1820,6 +2215,7 @@ X
 \tag*{\just{Thus,}}
 \end{align*}
 
+\defaultwidthpar{
 Hence,
 
 $\displaystyle
@@ -1837,8 +2233,10 @@ f(x;\mu,\sigma)
 $
 
 The normal density therefore arises as the continuous limiting form of the binomial distribution under standardization, with the Gaussian integral supplying its normalization.
+}
 
 %----------------------------------------------------------------------------
+\restoregeometry
 \subsection{References}
 \begin{enumerate}
     \item Ross, S. M. \emph{A First Course in Probability}. 10th ed. Pearson, 2019. §5.4, “Normal Random Variables,” p. 200 onward — definition and normalization of the normal density, including evaluation of the Gaussian integral by polar coordinates.
@@ -1871,179 +2269,6 @@ The normal density therefore arises as the continuous limiting form of the binom
 \begin{enumerate}
     \item Hald, A. \emph{A History of Probability and Statistics and Their Applications before 1750}. Wiley, 1990. Chapter 24, “De Moivre's Normal Approximation to the Binomial Distribution, 1733” — de Moivre's approximation, Stirling's formula, and Laplace's later extension.
 \end{enumerate}
-
-%----------------------------------------------------------------------------
-\restoregeometry
-\newpage
-\section{Convergence of Random Variables, Distributions, and Probabilities}
-Convergence of sequences is about how a sequence behaves as it approaches a specific limit. Convergence of functions is about how a function behaves through progression of its domain. 
-
-Understanding the convergence of random variables, distributions, and probabilities is necessary for understanding how distributions behave asymptotically; that is, as a random variable tends toward a limiting value, or a distribution approaches a limiting form, or a probability converges to a fixed value.
-
-A random variable is a function when considered as a map from the sample space to real numbers, and a set when considered through its \emph{level set} — the set of outcomes in its domain that map to values in the codomain.
-
-A distribution is a function when considered as a map from the codomain of a random variable to probabilities, and a set when considered through the frequencies or densities associated with values in the codomain of a random variable.
-
-%----------------------------------------------------------------------------
-\newpage
-\section{Select Topics in Stochastic Calculus}
-
-%----------------------------------------------------------------------------
-\subsection{Martingale}
-A \emph{martingale} is, informally, a description about a sequence of random variables.
-
-%----------------------------------------------------------------------------
-\subsection{Stochastic Bridges}
-A \emph{stochastic bridge} is a random sample path. Stochastic bridges are used to model and understand rare events.
-
-A \emph{random sample path}, in turn, is a sequence of random variables. Let us first start with a definition.
-
-\begin{mdframed}
-\begin{definition}[Random Sample Path]
-A \emph{random sample path} is a sequence of random variables, $ X_1, X_2,...,X_n $ such that
-
-\begin{enumerate}
-    \item $X_1, X_2, ..., X_n$ are independent \quad and
-    \item $X_1, X_2, ..., X_n$ have identical distributions
-\end{enumerate}
-\end{definition}
-\end{mdframed}
-
-When random variables are independent and have identical distributions, we use the abbreviation \emph{i.i.d}.
-
-%----------------------------------------------------------------------------
-\subsection{Stochastic Process}
-\begin{mdframed}
-\begin{definition}[Stochastic Process]
-A \emph{stochastic process} is a set of random variables, $\{X(t)\, t \in I\}$ defined on a probability space $(\Omega, \mathcal{F}, \mathbb{P})$, where
-
-\begin{enumerate}
-    \item $t$ is the time variable in I
-    \item $I$ is a real interval that is open, closed, or half-closed
-\end{enumerate}
-\end{definition}
-\end{mdframed}
-
-%----------------------------------------------------------------------------
-\subsection{Stochastic Differential Equations}
-Stochastic differential equations have applications in modeling systems with non-deterministic behavior. There is, however, a fundmanetla difference between SDEs and differential equations.
-
-$$d\xi(t) = b(\xi(t), t)dt + \sigma(\xi(t), t)dw(t)$$
-
-with initial condition
-
-$$\xi(0) = \xi_0$$
-
-Where:
-
-\begin{itemize}
-    \item $ \xi(t) $ is the n-dimensional stochastic process being modeled.
-    \item $ w(t) $ is an n-dimensional Brownian motion.
-    \item $ b(x, t) = (b_1(x, t), \dots, b_n(x, t)) $ is the drift coefficient (an n-vector).
-    \item $ \sigma(x, t) = (\sigma_{ij}(x, t))_{i,j=1}^n $ is the diffusion matrix (an n×n matrix).
-\end{itemize}
-
-%----------------------------------------------------------------------------
-\newpage
-\section{Glossary}
-\paragraph{Experiment} A procedure that produces one outcome from a set of possible outcomes.  
-\emph{Example:} Rolling a die.
-
-\paragraph{Trial} An experiment with a binary outcome. \emph{Example:} Flipping a coin.
-
-\paragraph{Outcome} The result of an experiment or trial. For example, one outcome of flipping a coin is "heads" and the other is "tails".
-
-\paragraph{Sample Space} A sample space is the set of possible outcomes in a (random) experiment.
-
-\paragraph{Event} An event is a subset of a sample space. For example, an event can be the set of outcomes of rolling a dice five times. If there were another event where the dice were rolled, say, five times, then both events would be subsets of the sample space.
-
-%----------------------------------------------------------------------------
-\newpage
-\section{Mathematical Appendix}
-In this section, we look at some special functions and other concepts widely used in mathematics. This section is for helping you fill in the gaps.
-
-%----------------------------------------------------------------------------
-\subsection{Infimum and Supremum}
-\begin{mdframed}
-\begin{definition}[Infimum]
-An \emph{infimum} is the greatest lower bound of a set.
-
-\begin{itemize}
-    \item $m \leq x$ for every $x \in A$
-    \item there exists $x \in A$ such that $x < m + \varepsilon$, for every $\varepsilon > 0$
-\end{itemize}
-
-where
-
-\begin{itemize}
-    \item $m \in \mathbb{R}$ is a real number
-    \item $x \in A$ is a real number
-    \item $A \subset \mathbb{R}$ is a set of real numbers
-\end{itemize}
-\end{definition}
-\end{mdframed}
-
-\begin{mdframed}
-\begin{definition}[Supremum]
-An \emph{supremum} is the least upper bound of a set.
-
-\begin{itemize}
-    \item $m \geq x$ for every $x \in A$
-    \item there exists $x \in A$ such that $x > m - \varepsilon$, for every $\varepsilon > 0$
-\end{itemize}
-
-where
-
-\begin{itemize}
-    \item $m \in \mathbb{R}$ is a real number
-    \item $x \in A$ is a real number
-    \item $A \subset \mathbb{R}$ is a set of real numbers
-\end{itemize}
-\end{definition}
-\end{mdframed}
-
-%----------------------------------------------------------------------------
-\subsection{Exponential Function}
-The Exponential Function is defined by,
-$$ e^x = \text{Exp}(x) = \sum_{k=0}^{\infty} \frac{x^k}{k!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots   $$
-
-The letter $e$, which represents Euler's constant $\sim 2.718$, is the base unit for exponentiation. In other words, a function becomes exponential when the variable appears in the exponent:
-$$\quad f(x) = e^x. $$
-
- 
-Note that we are equating $e^x$ to $\text{Exp}(x)$ because the latter is only an alternative (and more convenient) way to write the exponential function.
-
-%----------------------------------------------------------------------------
-\subsection{Gamma Function}
-The Gamma Function is defined by,
-$$ \Gamma(\alpha) = \int_0^\infty x^{\alpha-1} e^{-x} \: dx $$
-
-The Gamma Function is important because it generalizes the factorial function to all Real Numbers. The factorial operation ($n!$), as a function, is valid only for the Natural Numbers (1,2,3,..). The Gamma Function, however, extends the factorial operation to all Real Numbers greater than 0. For this reason, the Gamma Function is also known as the Generalized Factorial Function.
-
-%----------------------------------------------------------------------------
-\subsection{Manifolds}
-If a surface is a generalization of a curve, then a manifold is the generalization of both surfaces and curves. Here's another way to understand a manifold.
-
-\begin{itemize}
-    \item A curve is a one-dimension manifold.
-    \item A surface is a two-dimension manifold.
-\end{itemize}
-
-Beyond two dimensions, we just call these things n-manifold, where $n$ is the number of dimensions.
-
-\paragraph{Smooth Manifold} A smooth manifold is a manifold that is locally homeomorphic to a linear space, which is a vector space.
-
-\paragraph{Locally} A description about how a manifold looks like around a point. When used, it means that it would take exactly $n$ points to describe the manifold around a point.
-
-\paragraph{Homeomorphic} A description of a space that preserves the topological structure. An example is a sphere and a torus, which are homeomorphic to each other. By preserving the topological structure, we mean that the sphere and the torus have the same number of holes.
-
-\paragraph{Topological space} A topological space, $\mathcal{T}$, is a collection of subsets on $\mathcal{T}$ which contains
-
-\begin{itemize}
-    \item the empty set $\empty$
-    \item the space $\mathcal{T}$ itself
-    \item sets that are the result of unions and intersections
-\end{itemize}
 
 %----------------------------------------------------------------------------
 \newpage

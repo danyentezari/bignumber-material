@@ -41,6 +41,7 @@ Inversion. A characteristic function determines its measure through an inversion
 
 Continuity theorem. Pointwise convergence of characteristic functions yields weak convergence of the corresponding distributions. Weak convergence is convergence of distributions in the sense used for limiting laws. This principle is used to prove limit theorems for sequences of random variables.
 
+<!--
 ## Elementary Example
 
 ### Simple
@@ -69,6 +70,7 @@ where
 - $p$ is the success probability.
 - $q$ is $1-p$.
 - $t$ is a real argument.
+-->
 
 ## References
 
