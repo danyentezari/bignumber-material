@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import re
 import sys
+import textwrap
 from pathlib import Path
 
 BOOK_DIR = Path(__file__).resolve().parents[1]
@@ -109,11 +110,34 @@ def strip_h1_and_book_nav(text: str) -> str:
     return "\n".join(kept).strip()
 
 
+_DISPLAY_ENV_RE = re.compile(
+    r"\\begin\{(?:align|gather|multline|eqnarray|flalign)\*?\}"
+)
+
+
+def compact_display_math(chunk: str) -> str:
+    """Keep writer line-breaks in markdown; emit one-line $$...$$ for PDF.
+
+    Newlines inside ordinary display math are only for editing convenience;
+    LaTeX already treats them as spaces, but compacting avoids blank-line
+    accidents and matches Springer/Dover density in the generated .tex.
+    amsmath display environments keep their structure for unwrap_display_envs.
+    """
+    if not (chunk.startswith("$$") and chunk.endswith("$$")):
+        return chunk
+    inner = chunk[2:-2]
+    if _DISPLAY_ENV_RE.search(inner):
+        return chunk
+    inner = re.sub(r"[ \t]*\n[ \t]*", " ", inner)
+    inner = re.sub(r" {2,}", " ", inner).strip()
+    return f"$$\n{inner}\n$$"
+
+
 def protect_math(text: str) -> tuple[str, list[str]]:
     chunks: list[str] = []
 
     def stash(match: re.Match[str]) -> str:
-        chunks.append(match.group(0))
+        chunks.append(compact_display_math(match.group(0)))
         return f"@@MATH{len(chunks) - 1}@@"
 
     text = re.sub(r"\$\$[\s\S]*?\$\$", stash, text)
@@ -198,6 +222,243 @@ def strip_html_comments(text: str) -> str:
     return HTML_COMMENT_RE.sub("", text)
 
 
+def convert_html_breaks(text: str) -> str:
+    """Turn <br>, <br/>, <br /> into a PDF paragraph break with light spacing."""
+    return re.sub(r"<br\s*/?\s*>", r"\\par\\medskip\n", text, flags=re.I)
+
+
+_ITALIC_H4_WORDS = frozenset(
+    {
+        "example",
+        "remark",
+        "proof",
+        "counterexample",
+        "note",
+        "notation",
+        "claim",
+    }
+)
+
+
+def _styled_h4_head(title: str) -> str:
+    """Build a LaTeX run-in head from a #### title line (emphasis or keyword)."""
+    title = title.strip()
+    bold = re.match(r"^\*\*([^*]+)\*\*(.*)$", title)
+    if bold:
+        label, rest = bold.group(1).strip(), bold.group(2).strip()
+        head = f"\\textbf{{{label}}}"
+        return f"{head} {rest}".rstrip() if rest else head
+
+    italic = re.match(r"^\*([^*]+)\*(.*)$", title)
+    if italic:
+        label, rest = italic.group(1).strip(), italic.group(2).strip()
+        head = f"\\emph{{{label}}}"
+        return f"{head} {rest}".rstrip() if rest else head
+
+    # Keyword fallback when markers are omitted: Example → italic, Theorem → bold.
+    first = re.split(r"[\s.:]+", title, maxsplit=1)[0].lower()
+    if first in _ITALIC_H4_WORDS:
+        return f"\\emph{{{title}}}"
+    return f"\\textbf{{{title}}}"
+
+
+def _is_list_line(line: str) -> bool:
+    return bool(re.match(r"^[ \t]*(?:[-*]|\d+\.)[ \t]+", line))
+
+
+def preserve_block_newlines(body: str) -> str:
+    """Keep markdown line structure inside a block in the PDF.
+
+    - Single newlines between prose → PDF line breaks (\\\\)
+    - One blank line → normal paragraph break
+    - Extra blank lines → \\vspace so vertical gaps are visible
+    - List items and display math keep ordinary newlines
+    """
+    chunks: list[str] = []
+
+    def stash(match: re.Match[str]) -> str:
+        chunks.append(match.group(0))
+        return f"@@BMDMATH{len(chunks) - 1}@@"
+
+    text = re.sub(r"\$\$[\s\S]*?\$\$", stash, body)
+    text = re.sub(r"\\\([\s\S]*?\\\)", stash, text)
+    text = re.sub(r"(?<!\$)\$(?!\$)(?:\\\$|[^$\n])+\$", stash, text)
+
+    lines = text.split("\n")
+    out: list[str] = []
+    for i, line in enumerate(lines):
+        out.append(line.rstrip())
+        if i >= len(lines) - 1:
+            break
+        nxt = lines[i + 1]
+        if not line.strip() or not nxt.strip():
+            continue
+        if _is_list_line(line) or _is_list_line(nxt):
+            continue
+        # Display math already breaks the line; avoid \\ before/after it.
+        if "@@BMDMATH" in line or "@@BMDMATH" in nxt:
+            continue
+        # Soft break between adjacent non-empty prose lines.
+        out[-1] = out[-1] + r"\\"
+
+    text = "\n".join(out)
+
+    def blank_run(match: re.Match[str]) -> str:
+        # One blank line (two newlines) = normal paragraph.
+        # Each extra blank line adds one baselineskip of visible space.
+        extra = match.group(0).count("\n") - 2
+        if extra <= 0:
+            return "\n\n"
+        return f"\n\n\\vspace{{{extra}\\baselineskip}}\n\n"
+
+    text = re.sub(r"\n{2,}", blank_run, text)
+
+    for i, chunk in enumerate(chunks):
+        text = text.replace(f"@@BMDMATH{i}@@", chunk)
+    return text
+
+
+def _format_mdblock(head: str | None, body: str) -> str:
+    raw = textwrap.dedent(body)
+    body = preserve_block_newlines(raw.strip())
+    if head and body:
+        # The newline after a #### heading is Markdown structure, not authored
+        # body spacing. Keep textbook labels run-in: "Example 1. Let ...".
+        # Newlines within `body` are still preserved by preserve_block_newlines.
+        inner = f"{head} {body}"
+    elif head:
+        inner = head
+    else:
+        inner = body
+    return f"\\begin{{mdblock}}\n{inner}\n\\end{{mdblock}}\n"
+
+
+def convert_styled_h4_blocks(text: str) -> str:
+    """Turn foldable #### headings into flush-left example/theorem blocks.
+
+    Markdown (folds in the IDE):
+      #### *Example 1.*
+      body...
+
+      #### **Theorem 1.15** (Intersection of classes of sets)
+      body...
+
+    Also accepts plain ``#### Example 1`` / ``#### Theorem 1`` via keyword style.
+    Body runs until the next ATX heading (#–######) or end of text.
+    Single newlines in the body become PDF line breaks.
+    """
+    lines = text.splitlines(keepends=True)
+    if not lines:
+        return text
+
+    heading_re = re.compile(r"^(#{1,6})[ \t]+(.*)$")
+    out: list[str] = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        match = heading_re.match(line.rstrip("\n"))
+        if not match or len(match.group(1)) != 4:
+            out.append(line)
+            i += 1
+            continue
+
+        head = _styled_h4_head(match.group(2))
+        i += 1
+        body_lines: list[str] = []
+        while i < len(lines):
+            next_match = heading_re.match(lines[i].rstrip("\n"))
+            if next_match:
+                break
+            body_lines.append(lines[i])
+            i += 1
+
+        body = "".join(body_lines)
+        out.append(_format_mdblock(head, body))
+
+    return "".join(out)
+
+
+def convert_blocks(text: str) -> str:
+    """Turn markdown blocks into flush-left Springer-style mdblock environments.
+
+    Supported forms:
+      #### *Example 1.* / #### **Theorem 1**   (preferred; IDE-foldable)
+
+      ::: {.mdblock}
+      ...
+      :::
+
+      <block>...</block>   (legacy)
+    """
+    text = convert_styled_h4_blocks(text)
+
+    def one_block(match: re.Match[str]) -> str:
+        return _format_mdblock(None, match.group(1))
+
+    # Pandoc fenced divs: ::: {.mdblock} ... :::  or  ::: mdblock ... :::
+    text = re.sub(
+        r"^:::\s*(?:\{\.mdblock\}|mdblock)\s*\n([\s\S]*?)^:::\s*$",
+        one_block,
+        text,
+        flags=re.MULTILINE | re.I,
+    )
+    # Legacy HTML-ish tag
+    text = re.sub(
+        r"<block>\s*([\s\S]*?)\s*</block>",
+        one_block,
+        text,
+        flags=re.I,
+    )
+    return text
+
+
+MDBLOCK_BEGIN = "% BEGIN generated mdblock"
+MDBLOCK_END = "% END generated mdblock"
+
+MDBLOCK_ENV = r"""
+% BEGIN generated mdblock
+% Flush-left first line; later paragraphs keep normal indent.
+% Soft line-breaks inside the block come from markdown newlines.
+\newenvironment{mdblock}{%
+  \par\addvspace{1.5\baselineskip}%
+  \noindent\ignorespaces
+}{%
+  \par\addvspace{1.5\baselineskip}%
+}
+% END generated mdblock
+""".strip()
+
+
+def ensure_mdblock_env(preamble: str) -> str:
+    """Insert or replace the generated environment without parsing TeX braces."""
+    begin = preamble.find(MDBLOCK_BEGIN)
+    end = preamble.find(MDBLOCK_END, begin + 1)
+    if begin >= 0 and end >= 0:
+        end += len(MDBLOCK_END)
+        return preamble[:begin] + MDBLOCK_ENV + preamble[end:]
+
+    # Migrate the older unmarked definition. It was always immediately before
+    # \title; replacing that whole region also removes debris from old regex
+    # replacements that could leave unmatched `}%` lines on every export.
+    env = preamble.find(r"\newenvironment{mdblock}")
+    title = preamble.find(r"\title{", env + 1)
+    if env >= 0 and title >= 0:
+        comment = preamble.rfind("\n% Flush-left", 0, env)
+        start = comment + 1 if comment >= 0 else env
+        return (
+            preamble[:start].rstrip()
+            + "\n\n"
+            + MDBLOCK_ENV
+            + "\n\n"
+            + preamble[title:].lstrip()
+        )
+
+    marker = r"\newtheorem{definition}{Definition}"
+    if marker in preamble:
+        return preamble.replace(marker, MDBLOCK_ENV + "\n\n" + marker, 1)
+    return preamble.rstrip() + "\n\n" + MDBLOCK_ENV + "\n"
+
+
 def md_to_tex(text: str) -> str:
     text = PAGE_WIDTH_RE.sub("", text)
     text = strip_html_comments(text)
@@ -207,6 +468,8 @@ def md_to_tex(text: str) -> str:
     if not text.endswith("\n"):
         text += "\n"
 
+    text = convert_html_breaks(text)
+    text = convert_blocks(text)
     text, math = protect_math(text)
     text, urls = protect_urls(text)
     text = escape_tex(text)
@@ -318,7 +581,7 @@ def existing_preamble() -> str:
     )
     if not match:
         raise RuntimeError("Could not find preamble/tableofcontents in main.tex")
-    return match.group(1).rstrip()
+    return ensure_mdblock_env(match.group(1).rstrip())
 
 
 def node_has_children(nodes: list[tuple[int, str]], index: int) -> bool:

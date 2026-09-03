@@ -648,6 +648,49 @@ blockquote {
 
 blockquote > *:last-child { margin-bottom: 0; }
 
+/* Flush-left example/theorem blocks.
+   PDF: #### *Example* / #### **Theorem* → mdblock
+   HTML: same headings render as h4 with em/strong */
+.mdblock {
+  margin: 1.5em 0;
+  padding: 0;
+  text-indent: 0;
+}
+
+.mdblock > p,
+.mdblock > *:first-child {
+  text-indent: 0;
+  margin-left: 0;
+}
+
+.book .page-inner h4:has(> em),
+.book .page-inner h4:has(> strong) {
+  font-size: 1em;
+  font-weight: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  margin: 1.5em 0 0.35em;
+  padding: 0;
+  border: 0;
+  text-indent: 0;
+}
+
+.book .page-inner h4 > em {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.book .page-inner h4 > strong {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.book .page-inner h4:has(> em) + p,
+.book .page-inner h4:has(> strong) + p {
+  text-indent: 0;
+  margin-top: 0.25em;
+}
+
 table {
   color: var(--text);
 }
