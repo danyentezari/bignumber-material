@@ -1,4 +1,4 @@
-# Basic Derivation of Jacobian
+# Derivation of Basic Jacobian
 
 Example. Let
 

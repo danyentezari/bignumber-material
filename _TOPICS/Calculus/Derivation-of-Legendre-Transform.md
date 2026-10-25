@@ -1,10 +1,10 @@
-# Legendre Transform Derivation
+# Derivation of Legendre Transform
 
 A derivation of the Legendre transform that is used to change the independent variables of a function by subtracting a product of conjugate variables.
 
 <i>
 
-**definition [d]** (*Legendre Transform Derivation*) From Boas, Chapter 4, Section 11: start from a function $f(x,y)$ and write its differential
+**definition [d]** (*Derivation of Legendre Transform*) From Boas, Chapter 4, Section 11: start from a function $f(x,y)$ and write its differential
 
 - $df = p\, dx + q\, dy$ ,
 

@@ -266,6 +266,22 @@ def _is_list_line(line: str) -> bool:
     return bool(re.match(r"^[ \t]*(?:[-*]|\d+\.)[ \t]+", line))
 
 
+def convert_extra_blank_lines(text: str) -> str:
+    """Turn extra markdown blank lines into visible PDF vertical space.
+
+    One blank line stays a paragraph break. Each additional blank line
+    adds one baselineskip.
+    """
+
+    def blank_run(match: re.Match[str]) -> str:
+        extra = match.group(0).count("\n") - 2
+        if extra <= 0:
+            return "\n\n"
+        return f"\n\n\\vspace{{{extra}\\baselineskip}}\n\n"
+
+    return re.sub(r"\n{2,}", blank_run, text)
+
+
 def preserve_block_newlines(body: str) -> str:
     """Keep markdown line structure inside a block in the PDF.
 
@@ -301,17 +317,7 @@ def preserve_block_newlines(body: str) -> str:
         # Soft break between adjacent non-empty prose lines.
         out[-1] = out[-1] + r"\\"
 
-    text = "\n".join(out)
-
-    def blank_run(match: re.Match[str]) -> str:
-        # One blank line (two newlines) = normal paragraph.
-        # Each extra blank line adds one baselineskip of visible space.
-        extra = match.group(0).count("\n") - 2
-        if extra <= 0:
-            return "\n\n"
-        return f"\n\n\\vspace{{{extra}\\baselineskip}}\n\n"
-
-    text = re.sub(r"\n{2,}", blank_run, text)
+    text = convert_extra_blank_lines("\n".join(out))
 
     for i, chunk in enumerate(chunks):
         text = text.replace(f"@@BMDMATH{i}@@", chunk)
@@ -568,7 +574,7 @@ def md_to_tex(text: str) -> str:
     text = restore_urls(text, urls)
     text = restore_math(text, math)
     text = unwrap_display_envs(text)
-    text = re.sub(r"\n{3,}", "\n\n", text)
+    text = convert_extra_blank_lines(text)
     return text.strip()
 
 

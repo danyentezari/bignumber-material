@@ -75,6 +75,7 @@ Important Probability Distributions
   Fischer F-Distribution
 
 Functional Analysis
+  Cauchy
   Cauchy-Schwarz Inequality
 
 Convergence of Random Variables, Distributions, and Probabilities

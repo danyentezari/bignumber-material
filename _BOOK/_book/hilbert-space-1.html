@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>197 Relativistic Kinetic Energy Formula Derivation | Mathematics for Physics</title>
+<title>249 Hilbert Space | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="A derivation of the relativistic kinetic energy formula that is used to obtain \(K_{\mathrm{rel}} = (\gamma - 1)mc^{2}\) from the work done by a force. The relativistic kinetic energy is \[...">
+<meta name="description" content="A complete inner product space that is used to expand vectors in a basis and to represent bounded linear functionals, where an inner product space is a vecto...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="197 Relativistic Kinetic Energy Formula Derivation | Mathematics for Physics">
+<meta property="og:title" content="249 Hilbert Space | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="A derivation of the relativistic kinetic energy formula that is used to obtain \(K_{\mathrm{rel}} = (\gamma - 1)mc^{2}\) from the work done by a force. The relativistic kinetic energy is \[...">
+<meta property="og:description" content="A complete inner product space that is used to expand vectors in a basis and to represent bounded linear functionals, where an inner product space is a vecto...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="197 Relativistic Kinetic Energy Formula Derivation | Mathematics for Physics">
-<meta name="twitter:description" content="A derivation of the relativistic kinetic energy formula that is used to obtain \(K_{\mathrm{rel}} = (\gamma - 1)mc^{2}\) from the work done by a force. The relativistic kinetic energy is \[...">
+<meta name="twitter:title" content="249 Hilbert Space | Mathematics for Physics">
+<meta name="twitter:description" content="A complete inner product space that is used to expand vectors in a basis and to represent bounded linear functionals, where an inner product space is a vecto...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -53,14 +53,24 @@
           document.documentElement.style.fontSize = "17px";
         }
       })();
+    </script><script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        displayAlign: "left",
+        displayIndent: "0em",
+        TeX: {
+          Macros: {
+            just: ["\\text{#1}", 1]
+          }
+        }
+      });
     </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="style.css">
-<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Special Relativity", "href": "special-relativity.html", "current": false}, {"title": "Relativistic Kinetic Energy Formula Derivation", "href": "relativistic-kinetic-energy-formula-derivation.html", "current": true}]</script>
-<link rel="canonical" href="https://book.danyentezari.com/relativistic-kinetic-energy-formula-derivation.html">
-<meta property="og:url" content="https://book.danyentezari.com/relativistic-kinetic-energy-formula-derivation.html">
+<script type="application/json" id="page-breadcrumbs">[{"title": "Home", "href": "index.html", "current": false}, {"title": "Topology", "href": "topology.html", "current": false}, {"title": "Hilbert Space", "href": "hilbert-space-1.html", "current": true}]</script>
+<link rel="canonical" href="https://book.danyentezari.com/hilbert-space-1.html">
+<meta property="og:url" content="https://book.danyentezari.com/hilbert-space-1.html">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -103,7 +113,7 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="active-parent" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
+<a class="" href="special-relativity.html"><span class="header-section-number">4</span> Special Relativity</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
@@ -133,7 +143,7 @@
 <li class="book-toc-topic book-toc-topic--leaf">
 <div class="book-toc-topic-header">
 <span class="book-toc-toggle book-toc-toggle--placeholder" aria-hidden="true"></span>
-<a class="" href="topology.html"><span class="header-section-number">9</span> Topology</a>
+<a class="active-parent" href="topology.html"><span class="header-section-number">9</span> Topology</a>
 </div>
 </li>
 <li class="book-toc-topic book-toc-topic--leaf">
@@ -227,102 +237,327 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="relativistic-kinetic-energy-formula-derivation" class="section level1" number="197">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="hilbert-space" class="section level1" number="249">
 <h1>
-<span class="header-section-number">197</span> Relativistic Kinetic Energy Formula Derivation<a class="anchor" aria-label="anchor" href="#relativistic-kinetic-energy-formula-derivation"><i class="fas fa-link"></i></a>
+<span class="header-section-number">249</span> Hilbert Space<a class="anchor" aria-label="anchor" href="#hilbert-space"><i class="fas fa-link"></i></a>
 </h1>
-<p>A derivation of the relativistic kinetic energy formula that is used to obtain <span class="math inline">\(K_{\mathrm{rel}} = (\gamma - 1)mc^{2}\)</span> from the work done by a force.</p>
-<p>The relativistic kinetic energy is</p>
+<p>A complete inner product space that is used to expand vectors in a
+basis and to represent bounded linear functionals, where an inner
+product space is a vector space with an inner product, and where
+completeness is the property that every Cauchy sequence has a limit in
+the space.</p>
+<p>Note: Also written <span class="math inline">\(H\)</span>. Also
+written <span class="math inline">\(\mathcal{H}\)</span>. Also called a
+complete pre-Hilbert space.</p>
+<p>Inner product. An inner product is a scalar attached to each ordered
+pair of vectors. The pairing is linear in the first argument,
+conjugate-symmetric, and positive-definite. A conjugate-symmetric
+pairing swaps the arguments and takes the complex conjugate. A
+positive-definite pairing gives a positive length to every nonzero
+vector. This principle is used to measure angle and length.</p>
+<p>The inner product axioms are</p>
 <p><span class="math display">\[
-K_{\mathrm{rel}} = (\gamma - 1)mc^{2}
-\]</span></p>
-<p>with</p>
-<p><span class="math display">\[
-\gamma = \dfrac{1}{\sqrt{1-\dfrac{u^{2}}{c^{2}}}}
+\begin{aligned}
+\langle x+y,z\rangle
+&amp;=
+\langle x,z\rangle+\langle y,z\rangle
+\\
+\langle \alpha x,y\rangle
+&amp;=
+\alpha\langle x,y\rangle
+\\
+\langle x,y\rangle
+&amp;=
+\overline{\langle y,x\rangle}
+\\
+\langle x,x\rangle
+&amp;\ge
+0
+\end{aligned}
 \]</span></p>
 <p>where</p>
 <ul>
-<li>
-<span class="math inline">\(K_{\mathrm{rel}}\)</span> is the relativistic kinetic energy.</li>
-<li>
-<span class="math inline">\(\gamma\)</span> is the Lorentz factor.</li>
-<li>
-<span class="math inline">\(m\)</span> is the rest mass.</li>
-<li>
-<span class="math inline">\(c\)</span> is the speed of light in vacuum.</li>
-<li>
-<span class="math inline">\(u\)</span> is the particle speed.</li>
+<li><span class="math inline">\(x\)</span>, <span
+class="math inline">\(y\)</span>, <span class="math inline">\(z\)</span>
+are vectors.</li>
+<li><span class="math inline">\(\alpha\)</span> is a scalar.</li>
+<li><span class="math inline">\(\langle x,y\rangle\)</span> is the inner
+product of <span class="math inline">\(x\)</span> and <span
+class="math inline">\(y\)</span>.</li>
+<li><span class="math inline">\(\overline{\langle y,x\rangle}\)</span>
+is the complex conjugate of <span class="math inline">\(\langle
+y,x\rangle\)</span>.</li>
+<li><span class="math inline">\(\langle x,x\rangle=0\)</span> if and
+only if <span class="math inline">\(x=0\)</span>.</li>
 </ul>
-<div id="references-186" class="section level2" number="197.1">
+<p>Induced norm. The inner product defines a length by taking the square
+root of the inner product of a vector with itself. This principle is
+used to turn inner-product geometry into a normed space.</p>
+<p>The induced norm is</p>
+<p><span class="math display">\[
+\lVert x\rVert
+=
+\langle x,x\rangle^{\dfrac{1}{2}}
+\]</span></p>
+<p>where</p>
+<ul>
+<li><span class="math inline">\(\lVert x\rVert\)</span> is the length of
+<span class="math inline">\(x\)</span>.</li>
+</ul>
+<p>Induced metric. The distance between two vectors is the norm of their
+difference. This principle is used to define Cauchy sequences and
+completeness.</p>
+<p>The induced metric is</p>
+<p><span class="math display">\[
+d(x,y)
+=
+\lVert x-y\rVert
+\]</span></p>
+<p>where</p>
+<ul>
+<li><span class="math inline">\(d(x,y)\)</span> is the distance from
+<span class="math inline">\(x\)</span> to <span
+class="math inline">\(y\)</span>.</li>
+</ul>
+<p>Completeness. Every Cauchy sequence of vectors has a limit in the
+space. A Cauchy sequence is a sequence whose terms become arbitrarily
+close. This principle is used to keep limits of approximations inside
+the Hilbert space.</p>
+<p>Schwarz inequality. The absolute value of an inner product is at most
+the product of the two norms. Equality holds when the two vectors are
+linearly dependent. This principle is used to bound inner products.</p>
+<p>The Schwarz inequality is</p>
+<p><span class="math display">\[
+\bigl|\langle x,y\rangle\bigr|
+\le
+\lVert x\rVert\,\lVert y\rVert
+\]</span></p>
+<p>where</p>
+<ul>
+<li><span class="math inline">\(\bigl|\langle x,y\rangle\bigr|\)</span>
+is the absolute value of the inner product.</li>
+</ul>
+<p>Triangle inequality. The norm of a sum is at most the sum of the
+norms. This principle is used to control distances after addition.</p>
+<p>The triangle inequality is</p>
+<p><span class="math display">\[
+\lVert x+y\rVert
+\le
+\lVert x\rVert+\lVert y\rVert
+\]</span></p>
+<p>Parallelogram equality. The sum of the squared lengths of the two
+diagonals of a parallelogram equals twice the sum of the squared side
+lengths. This principle is used to recover the inner product from the
+norm.</p>
+<p>The parallelogram equality is</p>
+<p><span class="math display">\[
+\lVert x+y\rVert^{2}+\lVert x-y\rVert^{2}
+=
+2\bigl(\lVert x\rVert^{2}+\lVert y\rVert^{2}\bigr)
+\]</span></p>
+<p>Orthogonal projection. If <span class="math inline">\(Y\)</span> is a
+closed subspace of <span class="math inline">\(H\)</span>, then <span
+class="math inline">\(H\)</span> is the direct sum of <span
+class="math inline">\(Y\)</span> and its orthogonal complement. A closed
+subspace contains its limit points. The orthogonal complement is the set
+of vectors orthogonal to every vector of <span
+class="math inline">\(Y\)</span>. This principle is used to split a
+vector into a part in <span class="math inline">\(Y\)</span> and a part
+orthogonal to <span class="math inline">\(Y\)</span>.</p>
+<p>The direct sum theorem is</p>
+<p><span class="math display">\[
+H
+=
+Y\oplus Y^{\perp}
+\]</span></p>
+<p>where</p>
+<ul>
+<li><span class="math inline">\(H\)</span> is the Hilbert space.</li>
+<li><span class="math inline">\(Y\)</span> is a closed subspace of <span
+class="math inline">\(H\)</span>.</li>
+<li><span class="math inline">\(Y^{\perp}\)</span> is the orthogonal
+complement of <span class="math inline">\(Y\)</span>.</li>
+<li><span class="math inline">\(\oplus\)</span> is the direct sum of
+subspaces.</li>
+</ul>
+<p>Bessel inequality. For an orthonormal sequence, the sum of the
+squared moduli of the Fourier coefficients of a vector is at most the
+squared norm of the vector. An orthonormal sequence is a sequence of
+unit vectors that are pairwise orthogonal. This principle is used to
+bound Fourier coefficients.</p>
+<p>The Bessel inequality is</p>
+<p><span class="math display">\[
+\sum_{k}
+\bigl|\langle x,e_{k}\rangle\bigr|^{2}
+\le
+\lVert x\rVert^{2}
+\]</span></p>
+<p>where</p>
+<ul>
+<li><span class="math inline">\((e_{k})\)</span> is an orthonormal
+sequence.</li>
+<li><span class="math inline">\(\langle x,e_{k}\rangle\)</span> is the
+Fourier coefficient of <span class="math inline">\(x\)</span> along
+<span class="math inline">\(e_{k}\)</span>.</li>
+</ul>
+<p>Parseval relation. An orthonormal set is total if and only if the
+Parseval relation holds for every vector. A total orthonormal set is an
+orthonormal set whose span is dense. This principle is used to expand
+every vector as a Fourier series in the orthonormal set.</p>
+<p>The Parseval relation is</p>
+<p><span class="math display">\[
+\lVert x\rVert^{2}
+=
+\sum_{k}
+\bigl|\langle x,e_{k}\rangle\bigr|^{2}
+\]</span></p>
+<p>where</p>
+<ul>
+<li>the sum runs over the nonzero Fourier coefficients of <span
+class="math inline">\(x\)</span>.</li>
+</ul>
+<p>Riesz representation. Every bounded linear functional on a Hilbert
+space is the inner product against a unique vector, and that vector has
+the same norm as the functional. A bounded linear functional is a
+continuous linear map from the space into the scalars. This principle is
+used to identify dual elements with vectors in the space.</p>
+<p>The Riesz representation is</p>
+<p><span class="math display">\[
+f(x)
+=
+\langle x,z\rangle
+\]</span></p>
+<p>where</p>
+<ul>
+<li><span class="math inline">\(f\)</span> is a bounded linear
+functional on <span class="math inline">\(H\)</span>.</li>
+<li><span class="math inline">\(z\)</span> is the unique vector
+determined by <span class="math inline">\(f\)</span>.</li>
+<li><span class="math inline">\(\lVert z\rVert=\lVert
+f\rVert\)</span>.</li>
+</ul>
+<div id="elementary-example" class="section level2" number="249.1">
 <h2>
-<span class="header-section-number">197.1</span> References<a class="anchor" aria-label="anchor" href="#references-186"><i class="fas fa-link"></i></a>
+<span class="header-section-number">249.1</span> Elementary Example<a class="anchor" aria-label="anchor" href="#elementary-example"><i class="fas fa-link"></i></a>
+</h2>
+<div id="simple" class="section level3" number="249.1.1">
+<h3>
+<span class="header-section-number">249.1.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple"><i class="fas fa-link"></i></a>
+</h3>
+<p>The plane with the ordinary dot product is a Hilbert space.</p>
+<p><span class="math display">\[
+H=\mathbb{R}^{2}
+\]</span></p>
+<p><span class="math display">\[
+\langle (x_{1},x_{2}),(y_{1},y_{2})\rangle
+=
+x_{1}y_{1}+x_{2}y_{2}
+\]</span></p>
+<p>where</p>
+<ul>
+<li><span class="math inline">\(H\)</span> is the Hilbert space.</li>
+<li><span class="math inline">\((x_{1},x_{2})\)</span> and <span
+class="math inline">\((y_{1},y_{2})\)</span> are vectors in the
+plane.</li>
+</ul>
+</div>
+<div id="general" class="section level3" number="249.1.2">
+<h3>
+<span class="header-section-number">249.1.2</span> General<a class="anchor" aria-label="anchor" href="#general"><i class="fas fa-link"></i></a>
+</h3>
+<p>Euclidean <span class="math inline">\(n\)</span>-space with the
+standard inner product is a Hilbert space.</p>
+<p><span class="math display">\[
+\langle x,y\rangle
+=
+\sum_{j=1}^{n} \xi_{j}\eta_{j}
+\]</span></p>
+<p><span class="math display">\[
+d(x,y)
+=
+\Biggl(\sum_{j=1}^{n}(\xi_{j}-\eta_{j})^{2}\Biggr)^{\dfrac{1}{2}}
+\]</span></p>
+<p>where</p>
+<ul>
+<li><span class="math inline">\(x=(\xi_{1},\ldots,\xi_{n})\)</span> and
+<span class="math inline">\(y=(\eta_{1},\ldots,\eta_{n})\)</span> are
+vectors in <span class="math inline">\(\mathbb{R}^{n}\)</span>.</li>
+<li><span class="math inline">\(d(x,y)\)</span> is the Euclidean
+metric.</li>
+</ul>
+</div>
+</div>
+<div id="references" class="section level2" number="249.2">
+<h2>
+<span class="header-section-number">249.2</span> References<a class="anchor" aria-label="anchor" href="#references"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li>OpenStax. <em>University Physics Volume 3</em>, §5.9 Relativistic Energy. — <span class="math inline">\(K=\int F\,dx\)</span> with <span class="math inline">\(F=\dfrac{dp}{dt}\)</span> yields <span class="math inline">\(K_{\mathrm{rel}}=(\gamma-1)mc^{2}\)</span>; electron example at <span class="math inline">\(u=0.990c\)</span>. <a href="https://openstax.org/books/university-physics-volume-3/pages/5-9-relativistic-energy" class="uri">https://openstax.org/books/university-physics-volume-3/pages/5-9-relativistic-energy</a>
-</li>
+<li><p>Kreyszig, E. <em>Introductory Functional Analysis with
+Applications</em>. Wiley, 1989. §3.1-1 — inner product space and Hilbert
+space; §3.1-3, p. 131 — Euclidean space <span
+class="math inline">\(\mathbb{R}^{n}\)</span>; §3.2-1, p. 136 — Schwarz
+inequality and triangle inequality; §3.3-4, p. 146 — direct sum; §3.4-6,
+p. 157 — Bessel inequality; §3.6-3, p. 168 — totality and Parseval;
+§3.8-1, p. 188 — Riesz representation.</p></li>
+<li><p>Szekeres, P. <em>A Course in Modern Mathematical Physics: Groups,
+Hilbert Space and Differential Geometry</em>. Cambridge University
+Press, 2004. §5.2, Example 5.4, p. 134 — finite-dimensional inner
+product space.</p></li>
 </ol>
+<!--
+Hilbert space. A Hilbert space is a complete inner product space, so every Cauchy sequence converges within the space. This principle is used to combine completeness with the geometry of inner products.
+
+Cauchy-Schwarz inequality. Every Hilbert space satisfies $|\langle x,y\rangle|\leq\|x\|\|y\|$. This principle is used to bound inner products and establish fundamental norm inequalities.
+
+Orthogonality. Vectors $x$ and $y$ are orthogonal when $\langle x,y\rangle=0$. This principle is used to decompose vectors into mutually orthogonal components.
+
+Projection theorem. Every vector has a unique orthogonal projection onto a closed subspace. This principle is used to obtain nearest points and best approximations within closed subspaces.
+
+Orthonormal expansion. A complete orthonormal system represents vectors through convergent expansions in orthogonal components. This principle is used to express vectors through their inner product coefficients.
+
+Riesz representation theorem. Every bounded linear functional on a Hilbert space has the form $f(x)=\langle x,y\rangle$ for a unique $y$. This principle is used to represent continuous linear functionals by vectors.
+
+## Problems
+
+- Establish $|\langle x,y\rangle|\leq\|x\|\|y\|$.
+- Obtain $\|x+y\|^2=\|x\|^2+\|y\|^2$ when $\langle x,y\rangle=0$.
+- Establish existence and uniqueness of the orthogonal projection $P_M x$ onto a closed subspace $M$.
+- Show that $x-P_M x\in M^\perp$.
+- Obtain the decomposition $H=M\oplus M^\perp$ for a closed subspace $M$.
+- Establish Bessel's inequality for an orthonormal sequence.
+- Establish Parseval's identity for a complete orthonormal system.
+- Show that every bounded linear functional has a unique representation $f(x)=\langle x,y\rangle$.
+- Show that every Cauchy sequence in a Hilbert space converges to an element of the space.
+-->
 <div class="topic-index">
 <ul>
-<li><a href="annihilation.html">Annihilation</a></li>
-<li><a href="constancy-of-the-speed-of-light.html">Constancy of the Speed of Light</a></li>
-<li><a href="contracted-length.html">Contracted Length</a></li>
-<li><a href="coordinate-transformations.html">Coordinate Transformations</a></li>
-<li><a href="elastic-potential-energy-formula-derivation.html">Elastic Potential Energy Formula Derivation</a></li>
-<li><a href="electromagnetic-field-transformations.html">Electromagnetic Field Transformations</a></li>
-<li><a href="energy-momentum-relation.html">Energy-Momentum Relation</a></li>
-<li><a href="events.html">Events</a></li>
-<li><a href="field-tensor-1.html">Field Tensor</a></li>
-<li><a href="four-current.html">Four-Current</a></li>
-<li><a href="four-momentum.html">Four-Momentum</a></li>
-<li><a href="four-potential.html">Four-Potential</a></li>
-<li><a href="frame.html">Frame</a></li>
-<li><a href="gravitational-potential-energy-formula-derivation.html">Gravitational Potential Energy Formula Derivation</a></li>
-<li><a href="inertial-frame.html">Inertial Frame</a></li>
-<li><a href="inertial-reference-frames.html">Inertial Reference Frames</a></li>
-<li><a href="kinetic-energy.html">Kinetic Energy</a></li>
-<li><a href="kinetic-energy-formula-derivation.html">Kinetic Energy Formula Derivation</a></li>
-<li><a href="length-contraction.html">Length Contraction</a></li>
-<li><a href="light-cone.html">Light Cone</a></li>
-<li><a href="lorentz-factor.html">Lorentz Factor</a></li>
-<li><a href="lorentz-transformations-1.html">Lorentz Transformations</a></li>
-<li><a href="magnetism-as-a-relativistic-effect.html">Magnetism as a Relativistic Effect</a></li>
-<li><a href="mass-energy-equivalence.html">Mass-Energy Equivalence</a></li>
-<li><a href="massless-particles.html">Massless Particles</a></li>
-<li><a href="minkowski-metric.html">Minkowski Metric</a></li>
-<li><a href="minkowski-space.html">Minkowski Space</a></li>
-<li><a href="moving-clocks.html">Moving Clocks</a></li>
-<li><a href="newtonian-kinetic-energy-formula-derivation.html">Newtonian Kinetic Energy Formula Derivation</a></li>
-<li><a href="non-inertial-frames.html">Non-Inertial Frames</a></li>
-<li><a href="nuclear-energy.html">Nuclear Energy</a></li>
-<li><a href="particle-creation.html">Particle Creation</a></li>
-<li><a href="photon-energy.html">Photon Energy</a></li>
-<li><a href="potential-energy.html">Potential Energy</a></li>
-<li><a href="potential-energy-formula-derivation.html">Potential Energy Formula Derivation</a></li>
-<li><a href="principle-of-relativity.html">Principle of Relativity</a></li>
-<li><a href="proper-length.html">Proper Length</a></li>
-<li><a href="proper-time.html">Proper Time</a></li>
-<li><a href="rapidity.html">Rapidity</a></li>
-<li><a href="reference-frames.html">Reference Frames</a></li>
-<li><a href="relativistic-electrodynamics.html">Relativistic Electrodynamics</a></li>
-<li><a href="relativistic-kinetic-energy-formula-derivation.html">Relativistic Kinetic Energy Formula Derivation</a></li>
-<li><a href="relativistic-momentum.html">Relativistic Momentum</a></li>
-<li><a href="relativistic-momentum-and-energy.html">Relativistic Momentum and Energy</a></li>
-<li><a href="relativity-principle.html">Relativity Principle</a></li>
-<li><a href="rest-energy.html">Rest Energy</a></li>
-<li><a href="simultaneity.html">Simultaneity</a></li>
-<li><a href="spacetime.html">Spacetime</a></li>
-<li><a href="spacetime-interval.html">Spacetime Interval</a></li>
-<li><a href="time-dilation.html">Time Dilation</a></li>
-<li><a href="total-energy.html">Total Energy</a></li>
-<li><a href="twin-paradox.html">Twin Paradox</a></li>
-<li><a href="velocity-addition.html">Velocity Addition</a></li>
-<li><a href="visualization-of-spacetime.html">Visualization of Spacetime</a></li>
-<li><a href="worldlines.html">Worldlines</a></li>
+<li><a href="bijective.html">Bijective</a></li>
+<li><a href="boundary.html">Boundary</a></li>
+<li><a href="continuity.html">Continuity</a></li>
+<li><a href="hausdorff-space.html">Hausdorff Space</a></li>
+<li><a href="hilbert-space.html">Hilbert Space</a></li>
+<li><a href="hilbert-space-1.html">Hilbert Space</a></li>
+<li><a href="homeomorphism.html">Homeomorphism</a></li>
+<li><a href="injective.html">Injective</a></li>
+<li><a href="inverse-function.html">Inverse Function</a></li>
+<li><a href="manifolds.html">Manifolds</a></li>
+<li><a href="neighborhood.html">Neighborhood</a></li>
+<li><a href="open-set.html">Open Set</a></li>
+<li><a href="open-sets.html">Open Sets</a></li>
+<li><a href="preimage.html">Preimage</a></li>
+<li><a href="preimages-and-inverse-functions.html">Preimages and Inverse
+Functions</a></li>
+<li><a href="smooth-manifold.html">Smooth Manifold</a></li>
+<li><a href="surjective.html">Surjective</a></li>
+<li><a href="topological-manifold.html">Topological Manifold</a></li>
+<li><a href="topological-space.html">Topological Space</a></li>
+<li><a href="topological-spaces.html">Topological Spaces</a></li>
 </ul>
 </div>
+</div>
+</div>
 
-</div>
-</div>
+
 <script>
   (function () {
     var MOON =
@@ -887,13 +1122,19 @@ K_{\mathrm{rel}} = (\gamma - 1)mc^{2}
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="relativistic-electrodynamics.html"><span class="header-section-number">196</span> Relativistic Electrodynamics</a></div>
-<div class="next"><a href="relativistic-momentum.html"><span class="header-section-number">198</span> Relativistic Momentum</a></div>
+<div class="prev"><a href="hilbert-space.html"><span class="header-section-number">248</span> Hilbert Space</a></div>
+<div class="next"><a href="homeomorphism.html"><span class="header-section-number">250</span> Homeomorphism</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#relativistic-kinetic-energy-formula-derivation"><span class="header-section-number">197</span> Relativistic Kinetic Energy Formula Derivation</a></li>
-<li><a class="nav-link" href="#references-186"><span class="header-section-number">197.1</span> References</a></li>
+<li><a class="nav-link" href="#hilbert-space-1"><span class="header-section-number">249</span> Hilbert Space</a></li>
+<li>
+<a class="nav-link" href="#elementary-example"><span class="header-section-number">249.1</span> Elementary Example</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#simple-9"><span class="header-section-number">249.1.1</span> Simple</a></li>
+<li><a class="nav-link" href="#general-9"><span class="header-section-number">249.1.2</span> General</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#references-235"><span class="header-section-number">249.2</span> References</a></li>
 </ul>
 
       <div class="book-extra">

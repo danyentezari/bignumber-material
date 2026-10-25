@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>346 Fourier Transform | Mathematics for Physics</title>
+<title>348 Fourier Transform | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="Used to transform a signal from its time domain signal to its frequency domain signal. FFT Time-Frequency View \[F(x) = \dfrac{1}{\sqrt{2 \pi}} \displaystyle \int_{-\infty}^{\infty} f(u) e^{ixu}...">
+<meta name="description" content="An integral transform of a function that is used to express the function through continuous frequency components. Note: Also written \(\hat{f}\). Also written \(\tilde{f}\). Also called the...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="346 Fourier Transform | Mathematics for Physics">
+<meta property="og:title" content="348 Fourier Transform | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Used to transform a signal from its time domain signal to its frequency domain signal. FFT Time-Frequency View \[F(x) = \dfrac{1}{\sqrt{2 \pi}} \displaystyle \int_{-\infty}^{\infty} f(u) e^{ixu}...">
+<meta property="og:description" content="An integral transform of a function that is used to express the function through continuous frequency components. Note: Also written \(\hat{f}\). Also written \(\tilde{f}\). Also called the...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="346 Fourier Transform | Mathematics for Physics">
-<meta name="twitter:description" content="Used to transform a signal from its time domain signal to its frequency domain signal. FFT Time-Frequency View \[F(x) = \dfrac{1}{\sqrt{2 \pi}} \displaystyle \int_{-\infty}^{\infty} f(u) e^{ixu}...">
+<meta name="twitter:title" content="348 Fourier Transform | Mathematics for Physics">
+<meta name="twitter:description" content="An integral transform of a function that is used to express the function through continuous frequency components. Note: Also written \(\hat{f}\). Also written \(\tilde{f}\). Also called the...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -53,6 +53,16 @@
           document.documentElement.style.fontSize = "17px";
         }
       })();
+    </script><script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        displayAlign: "left",
+        displayIndent: "0em",
+        TeX: {
+          Macros: {
+            just: ["\\text{#1}", 1]
+          }
+        }
+      });
     </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
@@ -227,60 +237,117 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="fourier-transform" class="section level1" number="346">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="fourier-transform" class="section level1" number="348">
 <h1>
-<span class="header-section-number">346</span> Fourier Transform<a class="anchor" aria-label="anchor" href="#fourier-transform"><i class="fas fa-link"></i></a>
+<span class="header-section-number">348</span> Fourier Transform<a class="anchor" aria-label="anchor" href="#fourier-transform"><i class="fas fa-link"></i></a>
 </h1>
-<p>Used to transform a signal from its time domain signal to its frequency domain signal.</p>
-<div class="float">
-<img src="https://www.nti-audio.com/portals/0/pic/news/FFT-Time-Frequency-View-540.png" alt="FFT Time-Frequency View"><div class="figcaption">FFT Time-Frequency View</div>
-</div>
-<p><span class="math display">\[F(x) = \dfrac{1}{\sqrt{2 \pi}} \displaystyle \int_{-\infty}^{\infty} f(u) e^{ixu} \: du\]</span></p>
+<p>An integral transform of a function that is used to express the function through continuous frequency components.</p>
+<p>Note: Also written <span class="math inline">\(\hat{f}\)</span>. Also written <span class="math inline">\(\tilde{f}\)</span>. Also called the Fourier transform of <span class="math inline">\(f\)</span>.</p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em>Fourier Transform</em>) From Olver: the Fourier transform of a function <span class="math inline">\(f(x)\)</span> is</p>
+<ul>
+<li>
+<span class="math inline">\(\displaystyle \hat{f}(k) = \dfrac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} f(x)\, e^{-ikx}\, dx\)</span> .</li>
+</ul>
+<p>The inverse Fourier transform recovers the original function by</p>
+<ul>
+<li>
+<span class="math inline">\(\displaystyle f(x)\sim\dfrac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} \hat{f}(k)\, e^{ikx}\, dk\)</span> .</li>
+</ul>
 <p>where</p>
-<p>*<span class="math inline">\(e^{ix} = \cos(x) + i\sin(x)\)</span></p>
-<p>Derivation [3, pp.32]…</p>
-<div id="examples-86" class="section level2" number="346.1">
+<ul>
+<li>
+<span class="math inline">\(f\)</span> is the original function.</li>
+<li>
+<span class="math inline">\(\hat{f}\)</span> is the Fourier transform of <span class="math inline">\(f\)</span>.</li>
+<li>
+<span class="math inline">\(x\)</span> is the original variable.</li>
+<li>
+<span class="math inline">\(k\)</span> is the frequency variable.</li>
+<li>
+<span class="math inline">\(i\)</span> is the imaginary unit.</li>
+</ul>
+<p></p>
+<p><i></i></p>
+<p><strong>definition [d]</strong> (<em>Fourier Transform</em>) From Riley, Hobson, and Bence: the Fourier transform of <span class="math inline">\(f(t)\)</span> is</p>
+<ul>
+<li>
+<span class="math inline">\(\displaystyle \tilde{f}(\omega) = \dfrac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} f(t)\, e^{-i\omega t}\, dt\)</span> ,</li>
+</ul>
+<p>and its inverse is</p>
+<ul>
+<li>
+<span class="math inline">\(\displaystyle f(t) = \dfrac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} \tilde{f}(\omega)\, e^{i\omega t}\, d\omega\)</span> .</li>
+</ul>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(f\)</span> is the original function of <span class="math inline">\(t\)</span>.</li>
+<li>
+<span class="math inline">\(\tilde{f}\)</span> is the Fourier transform of <span class="math inline">\(f\)</span>.</li>
+<li>
+<span class="math inline">\(t\)</span> is the original variable.</li>
+<li>
+<span class="math inline">\(\omega\)</span> is the frequency variable.</li>
+<li>the product of the two normalizing constants equals <span class="math inline">\(\dfrac{1}{2\pi}\)</span>.</li>
+</ul>
+<p></p>
+<p>Forward transform. The transform integrates <span class="math inline">\(f\)</span> against a complex exponential of frequency <span class="math inline">\(k\)</span>. This principle is used to assign a complex amplitude to each frequency.</p>
+<p>Inverse transform. The inverse integral rebuilds <span class="math inline">\(f\)</span> from those amplitudes. This principle is used to recover the original function from its Fourier transform.</p>
+<p>Symmetric normalization. Placing <span class="math inline">\(\dfrac{1}{\sqrt{2\pi}}\)</span> in both formulas keeps the pair as symmetric as possible. This principle is used to fix the constant factors in the transform pair.</p>
+<div id="examples-87" class="section level2" number="348.1">
 <h2>
-<span class="header-section-number">346.1</span> Examples<a class="anchor" aria-label="anchor" href="#examples-86"><i class="fas fa-link"></i></a>
+<span class="header-section-number">348.1</span> Examples<a class="anchor" aria-label="anchor" href="#examples-87"><i class="fas fa-link"></i></a>
 </h2>
-<div id="simple-79" class="section level3" number="346.1.1">
+<div id="simple-81" class="section level3" number="348.1.1">
 <h3>
-<span class="header-section-number">346.1.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple-79"><i class="fas fa-link"></i></a>
+<span class="header-section-number">348.1.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple-81"><i class="fas fa-link"></i></a>
 </h3>
-<p>The Fourier transform turns a time-domain sample into frequency content. On three sample values, list the discrete inputs.</p>
+<p>Take the right-handed exponential pulse <span class="math inline">\(f_{r}(x)=e^{-ax}\)</span> for <span class="math inline">\(x&gt;0\)</span> and <span class="math inline">\(f_{r}(x)=0\)</span> for <span class="math inline">\(x&lt;0\)</span>, with <span class="math inline">\(a&gt;0\)</span>. Its Fourier transform is</p>
 <p><span class="math display">\[
-A = \{ 0,\ 1,\ 2 \}
-\]</span></p>
-<p><span class="math display">\[
-f(0) = 1,\quad f(1) = 0,\quad f(2) = -1
+\hat{f}_{r}(k) = \dfrac{1}{\sqrt{2\pi}\, (a+ik)}
 \]</span></p>
 <p>where</p>
 <ul>
 <li>
-<span class="math inline">\(f\)</span> is the time-domain function sampled on <span class="math inline">\(A\)</span>.</li>
-<li>the transform maps <span class="math inline">\(f\)</span> to a frequency-domain function <span class="math inline">\(F\)</span>.</li>
+<span class="math inline">\(a\)</span> is a positive decay rate.</li>
+<li>
+<span class="math inline">\(k\)</span> is the frequency variable.</li>
+<li>
+<span class="math inline">\(\hat{f}_{r}\)</span> is the Fourier transform of <span class="math inline">\(f_{r}\)</span>.</li>
 </ul>
 </div>
-<div id="general-79" class="section level3" number="346.1.2">
+<div id="general-81" class="section level3" number="348.1.2">
 <h3>
-<span class="header-section-number">346.1.2</span> General<a class="anchor" aria-label="anchor" href="#general-79"><i class="fas fa-link"></i></a>
+<span class="header-section-number">348.1.2</span> General<a class="anchor" aria-label="anchor" href="#general-81"><i class="fas fa-link"></i></a>
 </h3>
-<p>The continuous transform integrates <span class="math inline">\(f\)</span> against a complex exponential.</p>
+<p>For <span class="math inline">\(f(t)=0\)</span> when <span class="math inline">\(t&lt;0\)</span> and <span class="math inline">\(f(t)=A e^{-\lambda t}\)</span> when <span class="math inline">\(t\geq 0\)</span>, with <span class="math inline">\(\lambda&gt;0\)</span>, the transform is</p>
 <p><span class="math display">\[
-F(x) = \dfrac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f(u)\, e^{i x u}\, du
-\]</span></p>
-<p><span class="math display">\[
-e^{i x} = \cos x + i \sin x
+\tilde{f}(\omega) = \dfrac{A}{\sqrt{2\pi}\, (\lambda+i\omega)}
 \]</span></p>
 <p>where</p>
 <ul>
 <li>
-<span class="math inline">\(F\)</span> is the Fourier transform of <span class="math inline">\(f\)</span>.</li>
+<span class="math inline">\(A\)</span> is the amplitude at <span class="math inline">\(t=0\)</span>.</li>
 <li>
-<span class="math inline">\(u\)</span> is the integration variable in the time domain.</li>
+<span class="math inline">\(\lambda\)</span> is a positive decay rate.</li>
 <li>
-<span class="math inline">\(x\)</span> is the frequency variable.</li>
+<span class="math inline">\(\omega\)</span> is the frequency variable.</li>
+<li>
+<span class="math inline">\(\tilde{f}\)</span> is the Fourier transform of <span class="math inline">\(f\)</span>.</li>
 </ul>
+</div>
+</div>
+<div id="references-297" class="section level2" number="348.2">
+<h2>
+<span class="header-section-number">348.2</span> References<a class="anchor" aria-label="anchor" href="#references-297"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Olver, P. J. <em>Introduction to Partial Differential Equations</em>. Springer, 2016. Chapter 7, §7.1, pp. 264–267 — Fourier transform <span class="math inline">\(\hat{f}(k)\)</span>; inverse formula; exponential pulse example.</li>
+<li>Riley, K. F., Hobson, M. P., &amp; Bence, S. J. <em>Mathematical Methods for Physics and Engineering</em>. 3rd ed. Cambridge University Press, 2006. Chapter 13, §13.1, pp. 434–435 — symmetric Fourier transform pair; exponential decay example.</li>
+<li>Cahill, K. <em>Physical Mathematics</em>. Cambridge University Press, 2019. Chapter 4, §4.1–4.2 — Fourier transform pair; Gaussian transform.</li>
+<li>Hubbard, J. H., &amp; Hubbard, B. B. <em>Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach</em>. 5th ed. Matrix Editions, 2015. §4.11, Definition 4.11.24 — Fourier transform <span class="math inline">\(\hat{f}(\xi)=\int_{\mathbb{R}} f(x)e^{2\pi i\xi x}\, dx\)</span>.</li>
+</ol>
 <div class="topic-index">
 <ul>
 <li><a href="absolute-value-to-the-p.html">Absolute-Value-to-the-p</a></li>
@@ -291,7 +358,9 @@ e^{i x} = \cos x + i \sin x
 <li><a href="convergence.html">Convergence</a></li>
 <li><a href="delta-function.html">Delta Function</a></li>
 <li><a href="ell-p.html">Ell P</a></li>
+<li><a href="fourier-series.html">Fourier Series</a></li>
 <li><a href="fourier-transform.html">Fourier Transform</a></li>
+<li><a href="fourier-stieltjes-coefficients.html">Fourier-Stieltjes Coefficients</a></li>
 <li><a href="functional.html">Functional</a></li>
 <li><a href="integrability.html">Integrability</a></li>
 <li><a href="linear-space.html">Linear Space</a></li>
@@ -308,7 +377,6 @@ e^{i x} = \cos x + i \sin x
 </ul>
 </div>
 
-</div>
 </div>
 </div>
 <script>
@@ -875,18 +943,19 @@ e^{i x} = \cos x + i \sin x
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="ell-p.html"><span class="header-section-number">345</span> Ell P</a></div>
-<div class="next"><a href="functional.html"><span class="header-section-number">347</span> Functional</a></div>
+<div class="prev"><a href="fourier-series.html"><span class="header-section-number">347</span> Fourier Series</a></div>
+<div class="next"><a href="fourier-stieltjes-coefficients.html"><span class="header-section-number">349</span> Fourier-Stieltjes Coefficients</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#fourier-transform"><span class="header-section-number">346</span> Fourier Transform</a></li>
+<li><a class="nav-link" href="#fourier-transform"><span class="header-section-number">348</span> Fourier Transform</a></li>
 <li>
-<a class="nav-link" href="#examples-86"><span class="header-section-number">346.1</span> Examples</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#simple-79"><span class="header-section-number">346.1.1</span> Simple</a></li>
-<li><a class="nav-link" href="#general-79"><span class="header-section-number">346.1.2</span> General</a></li>
+<a class="nav-link" href="#examples-87"><span class="header-section-number">348.1</span> Examples</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#simple-81"><span class="header-section-number">348.1.1</span> Simple</a></li>
+<li><a class="nav-link" href="#general-81"><span class="header-section-number">348.1.2</span> General</a></li>
 </ul>
 </li>
+<li><a class="nav-link" href="#references-297"><span class="header-section-number">348.2</span> References</a></li>
 </ul>
 
       <div class="book-extra">

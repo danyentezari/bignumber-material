@@ -53,6 +53,16 @@
           document.documentElement.style.fontSize = "17px";
         }
       })();
+    </script><script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        displayAlign: "left",
+        displayIndent: "0em",
+        TeX: {
+          Macros: {
+            just: ["\\text{#1}", 1]
+          }
+        }
+      });
     </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
@@ -262,7 +272,6 @@
 <li><a href="atomic-orbitals.html">Atomic Orbitals</a></li>
 <li><a href="aufbau-principle.html">Aufbau Principle</a></li>
 <li><a href="banach-space.html">Banach Space</a></li>
-<li><a href="basic-derivation-of-jacobian.html">Basic Derivation of Jacobian</a></li>
 <li><a href="basis.html">Basis = Ordered Basis</a></li>
 <li><a href="bibliography.html">Bibliography</a></li>
 <li><a href="bijective.html">Bijective</a></li>
@@ -346,13 +355,21 @@
 <li><a href="vector-differential-operator.html">Del = Vector Differential Operator = Nabla = Gradient Operator</a></li>
 <li><a href="delta-function.html">Delta Distribution = Dirac Delta Function = Delta Function = Generalized Function</a></li>
 <li><a href="delta-function.html">Delta Function = Dirac Delta Function = Delta Distribution = Generalized Function</a></li>
+<li><a href="derivation-of-basic-jacobian.html">Derivation of Basic Jacobian</a></li>
 <li><a href="derivation-of-curl.html">Derivation of Curl</a></li>
 <li><a href="derivation-of-divergence.html">Derivation of Divergence</a></li>
+<li><a href="derivation-of-elastic-potential-energy-formula.html">Derivation of Elastic Potential Energy Formula</a></li>
 <li><a href="derivation-of-grad.html">Derivation of Grad</a></li>
+<li><a href="derivation-of-gravitational-potential-energy-formula.html">Derivation of Gravitational Potential Energy Formula</a></li>
 <li><a href="derivation-of-hamiltonian.html">Derivation of Hamiltonian</a></li>
 <li><a href="derivation-of-jacobian.html">Derivation of Jacobian</a></li>
+<li><a href="derivation-of-kinetic-energy-formula.html">Derivation of Kinetic Energy Formula</a></li>
 <li><a href="derivation-of-lagrangian.html">Derivation of Lagrangian</a></li>
 <li><a href="derivation-of-lagrangian-1.html">Derivation of Lagrangian</a></li>
+<li><a href="derivation-of-legendre-transform.html">Derivation of Legendre Transform</a></li>
+<li><a href="derivation-of-newtonian-kinetic-energy-formula.html">Derivation of Newtonian Kinetic Energy Formula</a></li>
+<li><a href="derivation-of-potential-energy-formula.html">Derivation of Potential Energy Formula</a></li>
+<li><a href="derivation-of-relativistic-kinetic-energy-formula.html">Derivation of Relativistic Kinetic Energy Formula</a></li>
 <li><a href="derivation-of-taylor-expansion.html">Derivation of Taylor Expansion</a></li>
 <li><a href="determinant.html">Determinant</a></li>
 <li><a href="diag.html">Diag</a></li>
@@ -383,7 +400,6 @@
 <li><a href="eigenvector.html">Eigenvector</a></li>
 <li><a href="eigenvector-1.html">Eigenvector</a></li>
 <li><a href="einstein-coefficients.html">Einstein Coefficients</a></li>
-<li><a href="elastic-potential-energy-formula-derivation.html">Elastic Potential Energy Formula Derivation</a></li>
 <li><a href="electric-charge.html">Electric Charge</a></li>
 <li><a href="electric-currents.html">Electric Currents</a></li>
 <li><a href="electric-field.html">Electric Field</a></li>
@@ -428,7 +444,9 @@
 <li><a href="four-current.html">Four-Current</a></li>
 <li><a href="four-momentum.html">Four-Momentum</a></li>
 <li><a href="four-potential.html">Four-Potential</a></li>
+<li><a href="fourier-series.html">Fourier Series</a></li>
 <li><a href="fourier-transform.html">Fourier Transform</a></li>
+<li><a href="fourier-stieltjes-coefficients.html">Fourier-Stieltjes Coefficients</a></li>
 <li><a href="frame.html">Frame</a></li>
 <li><a href="functional.html">Functional</a></li>
 <li><a href="functional-analysis.html">Functional Analysis</a></li>
@@ -444,7 +462,6 @@
 <li><a href="gradient.html">grad = Gradient = $\nabla f$</a></li>
 <li><a href="gradient.html">Gradient = grad = $\nabla f$</a></li>
 <li><a href="vector-differential-operator.html">Gradient Operator = Vector Differential Operator = Del = Nabla</a></li>
-<li><a href="gravitational-potential-energy-formula-derivation.html">Gravitational Potential Energy Formula Derivation</a></li>
 <li><a href="group.html">Group</a></li>
 <li><a href="group-theory.html">Group Theory</a></li>
 <li><a href="hall-effect.html">Hall Effect</a></li>
@@ -456,6 +473,7 @@
 <li><a href="conjugate-symmetry.html">Hermitian Symmetry = Conjugate Symmetry</a></li>
 <li><a href="hermitian-conjugate.html">Hermitian Transpose = Hermitian Conjugate = Adjoint = Conjugate Transpose</a></li>
 <li><a href="hilbert-space.html">Hilbert Space</a></li>
+<li><a href="hilbert-space-1.html">Hilbert Space</a></li>
 <li><a href="adjoint.html">Hilbert-Adjoint Operator = Adjoint</a></li>
 <li><a href="homeomorphism.html">Homeomorphism</a></li>
 <li><a href="homogeneity.html">Homogeneity</a></li>
@@ -490,13 +508,11 @@
 <li><a href="k-form.html">k-form</a></li>
 <li><a href="k-tensor.html">k-Tensor</a></li>
 <li><a href="kinetic-energy.html">Kinetic Energy</a></li>
-<li><a href="kinetic-energy-formula-derivation.html">Kinetic Energy Formula Derivation</a></li>
 <li><a href="kronecker-delta.html">Kronecker Delta = Kronecker Symbol</a></li>
 <li><a href="kronecker-delta.html">Kronecker Symbol = Kronecker Delta</a></li>
 <li><a href="lagrangian.html">Lagrangian</a></li>
 <li><a href="laplace-equation.html">Laplace Equation</a></li>
 <li><a href="legendre-transform.html">Legendre Transform</a></li>
-<li><a href="legendre-transform-derivation.html">Legendre Transform Derivation</a></li>
 <li><a href="length-contraction.html">Length Contraction</a></li>
 <li><a href="lie.html">Lie = Lie Group</a></li>
 <li><a href="lie-algebra.html">Lie Algebra</a></li>
@@ -556,7 +572,6 @@
 <li><a href="multipole-expansion.html">Multipole Expansion</a></li>
 <li><a href="vector-differential-operator.html">Nabla = Vector Differential Operator = Del = Gradient Operator</a></li>
 <li><a href="neighborhood.html">Neighborhood</a></li>
-<li><a href="newtonian-kinetic-energy-formula-derivation.html">Newtonian Kinetic Energy Formula Derivation</a></li>
 <li><a href="non-inertial-frames.html">Non-Inertial Frames</a></li>
 <li><a href="nondegenerate.html">Nondegenerate = Nonsingular = Invertible</a></li>
 <li><a href="nondegenerate-bilinear-form.html">Nondegenerate Bilinear Form</a></li>
@@ -602,7 +617,6 @@
 <li><a href="potential.html">Potential</a></li>
 <li><a href="potential-difference.html">Potential Difference</a></li>
 <li><a href="potential-energy.html">Potential Energy</a></li>
-<li><a href="potential-energy-formula-derivation.html">Potential Energy Formula Derivation</a></li>
 <li><a href="potential-wells.html">Potential Wells</a></li>
 <li><a href="potentials.html">Potentials</a></li>
 <li><a href="power.html">Power</a></li>
@@ -636,7 +650,6 @@
 <li><a href="smooth-curve.html">Regular Curve = Smooth Curve</a></li>
 <li><a href="relativistic-electrodynamics.html">Relativistic Electrodynamics</a></li>
 <li><a href="relativistic-electromagnetism.html">Relativistic Electromagnetism</a></li>
-<li><a href="relativistic-kinetic-energy-formula-derivation.html">Relativistic Kinetic Energy Formula Derivation</a></li>
 <li><a href="relativistic-momentum.html">Relativistic Momentum</a></li>
 <li><a href="relativistic-momentum-and-energy.html">Relativistic Momentum and Energy</a></li>
 <li><a href="relativity-principle.html">Relativity Principle</a></li>

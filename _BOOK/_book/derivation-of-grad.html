@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>313 Derivation of Grad | Mathematics for Physics</title>
+<title>314 Derivation of Grad | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="\(\displaystyle \operatorname{grad}\mathbf{F} = J_{\mathbf{F}} = \begin{pmatrix} \dfrac{\partial F_{x}}{\partial x} &amp; \dfrac{\partial F_{x}}{\partial y} &amp; \d...">
+<meta name="description" content="\(\displaystyle \operatorname{grad}\mathbf{F} = J_{\mathbf{F}} = \begin{pmatrix} \dfrac{\partial F_{x}}{\partial x} &amp; \dfrac{\partial F_{x}}{\partial y} &amp; \dfrac{\partial F_{x}}{\partial z} \\...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="313 Derivation of Grad | Mathematics for Physics">
+<meta property="og:title" content="314 Derivation of Grad | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="\(\displaystyle \operatorname{grad}\mathbf{F} = J_{\mathbf{F}} = \begin{pmatrix} \dfrac{\partial F_{x}}{\partial x} &amp; \dfrac{\partial F_{x}}{\partial y} &amp; \d...">
+<meta property="og:description" content="\(\displaystyle \operatorname{grad}\mathbf{F} = J_{\mathbf{F}} = \begin{pmatrix} \dfrac{\partial F_{x}}{\partial x} &amp; \dfrac{\partial F_{x}}{\partial y} &amp; \dfrac{\partial F_{x}}{\partial z} \\...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="313 Derivation of Grad | Mathematics for Physics">
-<meta name="twitter:description" content="\(\displaystyle \operatorname{grad}\mathbf{F} = J_{\mathbf{F}} = \begin{pmatrix} \dfrac{\partial F_{x}}{\partial x} &amp; \dfrac{\partial F_{x}}{\partial y} &amp; \d...">
+<meta name="twitter:title" content="314 Derivation of Grad | Mathematics for Physics">
+<meta name="twitter:description" content="\(\displaystyle \operatorname{grad}\mathbf{F} = J_{\mathbf{F}} = \begin{pmatrix} \dfrac{\partial F_{x}}{\partial x} &amp; \dfrac{\partial F_{x}}{\partial y} &amp; \dfrac{\partial F_{x}}{\partial z} \\...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -55,6 +55,8 @@
       })();
     </script><script type="text/x-mathjax-config">
       MathJax.Hub.Config({
+        displayAlign: "left",
+        displayIndent: "0em",
         TeX: {
           Macros: {
             just: ["\\text{#1}", 1]
@@ -235,18 +237,11 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="derivation-of-grad" class="section level1" number="313">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="derivation-of-grad" class="section level1" number="314">
 <h1>
-<span class="header-section-number">313</span> Derivation of Grad<a class="anchor" aria-label="anchor" href="#derivation-of-grad"><i class="fas fa-link"></i></a>
+<span class="header-section-number">314</span> Derivation of Grad<a class="anchor" aria-label="anchor" href="#derivation-of-grad"><i class="fas fa-link"></i></a>
 </h1>
-<p><span class="math inline">\(\displaystyle
-\operatorname{grad}\mathbf{F} = J_{\mathbf{F}} = \begin{pmatrix}
-\dfrac{\partial F_{x}}{\partial x} &amp; \dfrac{\partial F_{x}}{\partial
-y} &amp; \dfrac{\partial F_{x}}{\partial z} \\ \dfrac{\partial
-F_{y}}{\partial x} &amp; \dfrac{\partial F_{y}}{\partial y} &amp;
-\dfrac{\partial F_{y}}{\partial z} \\ \dfrac{\partial F_{z}}{\partial x}
-&amp; \dfrac{\partial F_{z}}{\partial y} &amp; \dfrac{\partial
-F_{z}}{\partial z} \end{pmatrix}\)</span></p>
+<p><span class="math inline">\(\displaystyle \operatorname{grad}\mathbf{F} = J_{\mathbf{F}} = \begin{pmatrix} \dfrac{\partial F_{x}}{\partial x} &amp; \dfrac{\partial F_{x}}{\partial y} &amp; \dfrac{\partial F_{x}}{\partial z} \\ \dfrac{\partial F_{y}}{\partial x} &amp; \dfrac{\partial F_{y}}{\partial y} &amp; \dfrac{\partial F_{y}}{\partial z} \\ \dfrac{\partial F_{z}}{\partial x} &amp; \dfrac{\partial F_{z}}{\partial y} &amp; \dfrac{\partial F_{z}}{\partial z} \end{pmatrix}\)</span></p>
 <div class="derivation">
 <div class="derivation-row">
 <div class="derivation-math">
@@ -265,23 +260,20 @@ Start from a Cartesian vector field
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\mathbf{F}\)</span> is a vector
-field.</li>
-<li><span class="math inline">\(F_x\)</span> is the <span
-class="math inline">\(x\)</span>-component of <span
-class="math inline">\(\mathbf{F}\)</span>.</li>
-<li><span class="math inline">\(F_y\)</span> is the <span
-class="math inline">\(y\)</span>-component of <span
-class="math inline">\(\mathbf{F}\)</span>.</li>
-<li><span class="math inline">\(F_z\)</span> is the <span
-class="math inline">\(z\)</span>-component of <span
-class="math inline">\(\mathbf{F}\)</span>.</li>
-<li><span class="math inline">\(\mathbf{i}\)</span> is the unit vector
-along <span class="math inline">\(x\)</span>.</li>
-<li><span class="math inline">\(\mathbf{j}\)</span> is the unit vector
-along <span class="math inline">\(y\)</span>.</li>
-<li><span class="math inline">\(\mathbf{k}\)</span> is the unit vector
-along <span class="math inline">\(z\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{F}\)</span> is a vector field.</li>
+<li>
+<span class="math inline">\(F_x\)</span> is the <span class="math inline">\(x\)</span>-component of <span class="math inline">\(\mathbf{F}\)</span>.</li>
+<li>
+<span class="math inline">\(F_y\)</span> is the <span class="math inline">\(y\)</span>-component of <span class="math inline">\(\mathbf{F}\)</span>.</li>
+<li>
+<span class="math inline">\(F_z\)</span> is the <span class="math inline">\(z\)</span>-component of <span class="math inline">\(\mathbf{F}\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{i}\)</span> is the unit vector along <span class="math inline">\(x\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{j}\)</span> is the unit vector along <span class="math inline">\(y\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{k}\)</span> is the unit vector along <span class="math inline">\(z\)</span>.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -333,15 +325,12 @@ Define the nine Cartesian differential components
 </div>
 <p>where</p>
 <ul>
-<li><span
-class="math inline">\((\operatorname{grad}\mathbf{F})_{ij}\)</span> is
-the differential component in row <span class="math inline">\(i\)</span>
-and column <span class="math inline">\(j\)</span>.</li>
-<li><span class="math inline">\(x\)</span>, <span
-class="math inline">\(y\)</span>, <span class="math inline">\(z\)</span>
-are Cartesian coordinates.</li>
-<li><span class="math inline">\(\partial\)</span> denotes partial
-differentiation.</li>
+<li>
+<span class="math inline">\((\operatorname{grad}\mathbf{F})_{ij}\)</span> is the differential component in row <span class="math inline">\(i\)</span> and column <span class="math inline">\(j\)</span>.</li>
+<li>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>, <span class="math inline">\(z\)</span> are Cartesian coordinates.</li>
+<li>
+<span class="math inline">\(\partial\)</span> denotes partial differentiation.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -379,8 +368,8 @@ Assemble those components into a matrix
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\mathbf{R}\)</span> is the resulting
-matrix field.</li>
+<li>
+<span class="math inline">\(\mathbf{R}\)</span> is the resulting matrix field.</li>
 <li>Each entry is a Cartesian differential component.</li>
 </ul>
 <div class="derivation">
@@ -551,8 +540,8 @@ Name this matrix the gradient of F
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\operatorname{grad}\mathbf{F}\)</span>
-is the gradient of <span class="math inline">\(\mathbf{F}\)</span>.</li>
+<li>
+<span class="math inline">\(\operatorname{grad}\mathbf{F}\)</span> is the gradient of <span class="math inline">\(\mathbf{F}\)</span>.</li>
 <li>Each entry is a Cartesian gradient component.</li>
 </ul>
 <div class="derivation">
@@ -573,9 +562,10 @@ Write the entries in index notation
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\((x_1,x_2,x_3)=(x,y,z)\)</span>.</li>
-<li><span
-class="math inline">\((F_1,F_2,F_3)=(F_x,F_y,F_z)\)</span>.</li>
+<li>
+<span class="math inline">\((x_1,x_2,x_3)=(x,y,z)\)</span>.</li>
+<li>
+<span class="math inline">\((F_1,F_2,F_3)=(F_x,F_y,F_z)\)</span>.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -603,16 +593,14 @@ Write a general matrix and a general column vector
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\mathbf{a}\)</span> is the first
-factor.</li>
-<li><span class="math inline">\(\mathbf{b}\)</span> is the second
-factor.</li>
-<li><span class="math inline">\(a_{ij}\)</span> are entries of <span
-class="math inline">\(\mathbf{a}\)</span>.</li>
-<li><span class="math inline">\(b_1\)</span>, <span
-class="math inline">\(b_2\)</span>, <span
-class="math inline">\(b_3\)</span> are components of <span
-class="math inline">\(\mathbf{b}\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{a}\)</span> is the first factor.</li>
+<li>
+<span class="math inline">\(\mathbf{b}\)</span> is the second factor.</li>
+<li>
+<span class="math inline">\(a_{ij}\)</span> are entries of <span class="math inline">\(\mathbf{a}\)</span>.</li>
+<li>
+<span class="math inline">\(b_1\)</span>, <span class="math inline">\(b_2\)</span>, <span class="math inline">\(b_3\)</span> are components of <span class="math inline">\(\mathbf{b}\)</span>.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -636,8 +624,8 @@ Form the ordinary matrix product
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\mathbf{a}\mathbf{b}\)</span> is the
-matrix product.</li>
+<li>
+<span class="math inline">\(\mathbf{a}\mathbf{b}\)</span> is the matrix product.</li>
 <li>Each row is a Cartesian component.</li>
 </ul>
 <div class="derivation">
@@ -664,17 +652,14 @@ Define the vector differential operator
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\nabla\)</span> is the vector
-differential operator.</li>
-<li><span class="math inline">\(\dfrac{\partial}{\partial x}\)</span>
-differentiates with respect to <span
-class="math inline">\(x\)</span>.</li>
-<li><span class="math inline">\(\dfrac{\partial}{\partial y}\)</span>
-differentiates with respect to <span
-class="math inline">\(y\)</span>.</li>
-<li><span class="math inline">\(\dfrac{\partial}{\partial z}\)</span>
-differentiates with respect to <span
-class="math inline">\(z\)</span>.</li>
+<li>
+<span class="math inline">\(\nabla\)</span> is the vector differential operator.</li>
+<li>
+<span class="math inline">\(\dfrac{\partial}{\partial x}\)</span> differentiates with respect to <span class="math inline">\(x\)</span>.</li>
+<li>
+<span class="math inline">\(\dfrac{\partial}{\partial y}\)</span> differentiates with respect to <span class="math inline">\(y\)</span>.</li>
+<li>
+<span class="math inline">\(\dfrac{\partial}{\partial z}\)</span> differentiates with respect to <span class="math inline">\(z\)</span>.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -712,10 +697,10 @@ Apply the matrix-product rule
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\operatorname{grad}\mathbf{F}\)</span>
-supplies the differential components.</li>
-<li><span class="math inline">\(\Delta\mathbf{x}\)</span> supplies the
-coordinate increments.</li>
+<li>
+<span class="math inline">\(\operatorname{grad}\mathbf{F}\)</span> supplies the differential components.</li>
+<li>
+<span class="math inline">\(\Delta\mathbf{x}\)</span> supplies the coordinate increments.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -871,10 +856,10 @@ Pass to the directional derivative
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(D_{\mathbf{u}}\mathbf{F}\)</span> is the
-directional derivative of the vector field.</li>
-<li><span class="math inline">\(\mathbf{u}\)</span> specifies the
-direction.</li>
+<li>
+<span class="math inline">\(D_{\mathbf{u}}\mathbf{F}\)</span> is the directional derivative of the vector field.</li>
+<li>
+<span class="math inline">\(\mathbf{u}\)</span> specifies the direction.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -912,11 +897,10 @@ Write the Jacobian matrix of the map F
 </div>
 <p>where</p>
 <ul>
-<li><span
-class="math inline">\(\mathbf{F}:\mathbb{R}^{3}\to\mathbb{R}^{3}\)</span>
-is a vector-valued map.</li>
-<li><span class="math inline">\(J_{\mathbf{F}}\)</span> is the Jacobian
-matrix.</li>
+<li>
+<span class="math inline">\(\mathbf{F}:\mathbb{R}^{3}\to\mathbb{R}^{3}\)</span> is a vector-valued map.</li>
+<li>
+<span class="math inline">\(J_{\mathbf{F}}\)</span> is the Jacobian matrix.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -935,73 +919,41 @@ Identify the gradient matrix with the Jacobian
 </div>
 </div>
 <p>Hence,</p>
-<p><span class="math inline">\(\displaystyle
-\operatorname{grad}\mathbf{F} = J_{\mathbf{F}} = \begin{pmatrix}
-\dfrac{\partial F_{x}}{\partial x} &amp; \dfrac{\partial F_{x}}{\partial
-y} &amp; \dfrac{\partial F_{x}}{\partial z} \\ \dfrac{\partial
-F_{y}}{\partial x} &amp; \dfrac{\partial F_{y}}{\partial y} &amp;
-\dfrac{\partial F_{y}}{\partial z} \\ \dfrac{\partial F_{z}}{\partial x}
-&amp; \dfrac{\partial F_{z}}{\partial y} &amp; \dfrac{\partial
-F_{z}}{\partial z} \end{pmatrix}\)</span></p>
-<div id="references" class="section level2" number="313.1">
+<p><span class="math inline">\(\displaystyle \operatorname{grad}\mathbf{F} = J_{\mathbf{F}} = \begin{pmatrix} \dfrac{\partial F_{x}}{\partial x} &amp; \dfrac{\partial F_{x}}{\partial y} &amp; \dfrac{\partial F_{x}}{\partial z} \\ \dfrac{\partial F_{y}}{\partial x} &amp; \dfrac{\partial F_{y}}{\partial y} &amp; \dfrac{\partial F_{y}}{\partial z} \\ \dfrac{\partial F_{z}}{\partial x} &amp; \dfrac{\partial F_{z}}{\partial y} &amp; \dfrac{\partial F_{z}}{\partial z} \end{pmatrix}\)</span></p>
+<div id="references-269" class="section level2" number="314.1">
 <h2>
-<span class="header-section-number">313.1</span> References<a class="anchor" aria-label="anchor" href="#references"><i class="fas fa-link"></i></a>
+<span class="header-section-number">314.1</span> References<a class="anchor" aria-label="anchor" href="#references-269"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li><p>Anand, L., &amp; Govindjee, S. <em>Continuum Mechanics of
-Solids</em>. Oxford University Press, 2020. Chapter 2, §§2.1–2.2,
-pp. 23–25 — directional derivatives of vector fields; the gradient of a
-vector field as a second-order tensor; <span
-class="math inline">\((\operatorname{grad}\mathbf{v})_{ij}=\partial
-v_i/\partial x_j\)</span>.</p></li>
-<li><p>Bower, A. F. <em>Applied Mechanics of Solids</em>. CRC Press,
-2009. Appendix A.2.8 — gradient of a vector field as a tensor field and
-its Cartesian matrix with entries <span class="math inline">\(\partial
-v_i/\partial x_j\)</span>.</p></li>
-<li><p>Hubbard, J. H., &amp; Hubbard, B. B. <em>Vector Calculus, Linear
-Algebra, and Differential Forms: A Unified Approach</em>. 5th ed. Matrix
-Editions, 2015. §1.7 — derivative of a map between finite-dimensional
-spaces and the Jacobian matrix formed from its first partial
-derivatives.</p></li>
-<li><p>Kreyszig, E. <em>Advanced Engineering Mathematics</em>. 10th
-ed. Wiley, 2011. §9.4, p. 375 onward — vector and scalar functions and
-partial derivatives of vector functions; §9.6, p. 392 onward — functions
-of several variables, total differentials, and chain rules.</p></li>
-<li><p>Riley, K. F., Hobson, M. P., &amp; Bence, S. J. <em>Mathematical
-Methods for Physics and Engineering</em>. 3rd ed. Cambridge University
-Press, 2006. Chapter 10, especially §§10.1, 10.4, 10.6–10.7 —
-differentiation of vectors, vector functions of several variables,
-scalar and vector fields, and vector differential operators.</p></li>
+<li><p>Anand, L., &amp; Govindjee, S. <em>Continuum Mechanics of Solids</em>. Oxford University Press, 2020. Chapter 2, §§2.1–2.2, pp. 23–25 — directional derivatives of vector fields; the gradient of a vector field as a second-order tensor; <span class="math inline">\((\operatorname{grad}\mathbf{v})_{ij}=\partial v_i/\partial x_j\)</span>.</p></li>
+<li><p>Bower, A. F. <em>Applied Mechanics of Solids</em>. CRC Press, 2009. Appendix A.2.8 — gradient of a vector field as a tensor field and its Cartesian matrix with entries <span class="math inline">\(\partial v_i/\partial x_j\)</span>.</p></li>
+<li><p>Hubbard, J. H., &amp; Hubbard, B. B. <em>Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach</em>. 5th ed. Matrix Editions, 2015. §1.7 — derivative of a map between finite-dimensional spaces and the Jacobian matrix formed from its first partial derivatives.</p></li>
+<li><p>Kreyszig, E. <em>Advanced Engineering Mathematics</em>. 10th ed. Wiley, 2011. §9.4, p. 375 onward — vector and scalar functions and partial derivatives of vector functions; §9.6, p. 392 onward — functions of several variables, total differentials, and chain rules.</p></li>
+<li><p>Riley, K. F., Hobson, M. P., &amp; Bence, S. J. <em>Mathematical Methods for Physics and Engineering</em>. 3rd ed. Cambridge University Press, 2006. Chapter 10, especially §§10.1, 10.4, 10.6–10.7 — differentiation of vectors, vector functions of several variables, scalar and vector fields, and vector differential operators.</p></li>
 </ol>
 <div class="topic-index">
 <ul>
-<li><a href="basic-derivation-of-jacobian.html">Basic Derivation of
-Jacobian</a></li>
 <li><a href="chain-rule.html">Chain Rule</a></li>
 <li><a href="cross-product.html">Cross Product</a></li>
 <li><a href="curl.html">Curl</a></li>
 <li><a href="curve.html">Curve</a></li>
 <li><a href="definite-integral.html">Definite Integral</a></li>
+<li><a href="derivation-of-basic-jacobian.html">Derivation of Basic Jacobian</a></li>
 <li><a href="derivation-of-curl.html">Derivation of Curl</a></li>
-<li><a href="derivation-of-divergence.html">Derivation of
-Divergence</a></li>
+<li><a href="derivation-of-divergence.html">Derivation of Divergence</a></li>
 <li><a href="derivation-of-grad.html">Derivation of Grad</a></li>
-<li><a href="derivation-of-jacobian.html">Derivation of
-Jacobian</a></li>
-<li><a href="derivation-of-taylor-expansion.html">Derivation of Taylor
-Expansion</a></li>
+<li><a href="derivation-of-jacobian.html">Derivation of Jacobian</a></li>
+<li><a href="derivation-of-legendre-transform.html">Derivation of Legendre Transform</a></li>
+<li><a href="derivation-of-taylor-expansion.html">Derivation of Taylor Expansion</a></li>
 <li><a href="divergence.html">Divergence</a></li>
 <li><a href="dot-product.html">Dot Product</a></li>
-<li><a href="envelope-of-tangent-lines.html">Envelope of Tangent
-Lines</a></li>
+<li><a href="envelope-of-tangent-lines.html">Envelope of Tangent Lines</a></li>
 <li><a href="general-functions.html">General Functions</a></li>
 <li><a href="gradient.html">Gradient</a></li>
 <li><a href="improper-integral.html">Improper Integral</a></li>
 <li><a href="indefinite-integral.html">Indefinite Integral</a></li>
 <li><a href="jacobian.html">Jacobian</a></li>
 <li><a href="legendre-transform.html">Legendre Transform</a></li>
-<li><a href="legendre-transform-derivation.html">Legendre Transform
-Derivation</a></li>
 <li><a href="limit.html">Limit</a></li>
 <li><a href="line-integral.html">Line Integral</a></li>
 <li><a href="notes-1.html">Notes</a></li>
@@ -1011,18 +963,14 @@ Derivation</a></li>
 <li><a href="scalar-projection.html">Scalar Projection</a></li>
 <li><a href="smooth-curve.html">Smooth Curve</a></li>
 <li><a href="vector-calculus.html">Vector Calculus</a></li>
-<li><a href="vector-differential-operator.html">Vector Differential
-Operator</a></li>
+<li><a href="vector-differential-operator.html">Vector Differential Operator</a></li>
 <li><a href="vector-field.html">Vector Field</a></li>
 <li><a href="vector-projection.html">Vector Projection</a></li>
 </ul>
 </div>
+
 </div>
 </div>
-
-
-
-
 <script>
   (function () {
     var MOON =
@@ -1587,13 +1535,13 @@ Operator</a></li>
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="derivation-of-divergence.html"><span class="header-section-number">312</span> Derivation of Divergence</a></div>
-<div class="next"><a href="derivation-of-jacobian.html"><span class="header-section-number">314</span> Derivation of Jacobian</a></div>
+<div class="prev"><a href="derivation-of-divergence.html"><span class="header-section-number">313</span> Derivation of Divergence</a></div>
+<div class="next"><a href="derivation-of-jacobian.html"><span class="header-section-number">315</span> Derivation of Jacobian</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#derivation-of-grad"><span class="header-section-number">313</span> Derivation of Grad</a></li>
-<li><a class="nav-link" href="#references-268"><span class="header-section-number">313.1</span> References</a></li>
+<li><a class="nav-link" href="#derivation-of-grad"><span class="header-section-number">314</span> Derivation of Grad</a></li>
+<li><a class="nav-link" href="#references-269"><span class="header-section-number">314.1</span> References</a></li>
 </ul>
 
       <div class="book-extra">

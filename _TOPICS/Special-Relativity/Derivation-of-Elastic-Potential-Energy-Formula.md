@@ -1,4 +1,4 @@
-# Elastic Potential Energy Formula Derivation
+# Derivation of Elastic Potential Energy Formula
 
 A derivation of the elastic potential energy formula that is used to obtain $U_{\mathrm{Sp}} = \dfrac{1}{2}k(\Delta s)^{2}$ from the spring force.
 

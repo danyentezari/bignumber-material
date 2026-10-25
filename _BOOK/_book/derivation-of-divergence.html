@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>312 Derivation of Divergence | Mathematics for Physics</title>
+<title>313 Derivation of Divergence | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="\(\displaystyle \operatorname{div}\mathbf{F} = \nabla\cdot\mathbf{F} = \dfrac{\partial F_{x}}{\partial x} + \dfrac{\partial F_{y}}{\partial y} + \dfrac{\part...">
+<meta name="description" content="\(\displaystyle \operatorname{div}\mathbf{F} = \nabla\cdot\mathbf{F} = \dfrac{\partial F_{x}}{\partial x} + \dfrac{\partial F_{y}}{\partial y} + \dfrac{\partial F_{z}}{\partial z}\)  \[...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="312 Derivation of Divergence | Mathematics for Physics">
+<meta property="og:title" content="313 Derivation of Divergence | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="\(\displaystyle \operatorname{div}\mathbf{F} = \nabla\cdot\mathbf{F} = \dfrac{\partial F_{x}}{\partial x} + \dfrac{\partial F_{y}}{\partial y} + \dfrac{\part...">
+<meta property="og:description" content="\(\displaystyle \operatorname{div}\mathbf{F} = \nabla\cdot\mathbf{F} = \dfrac{\partial F_{x}}{\partial x} + \dfrac{\partial F_{y}}{\partial y} + \dfrac{\partial F_{z}}{\partial z}\)  \[...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="312 Derivation of Divergence | Mathematics for Physics">
-<meta name="twitter:description" content="\(\displaystyle \operatorname{div}\mathbf{F} = \nabla\cdot\mathbf{F} = \dfrac{\partial F_{x}}{\partial x} + \dfrac{\partial F_{y}}{\partial y} + \dfrac{\part...">
+<meta name="twitter:title" content="313 Derivation of Divergence | Mathematics for Physics">
+<meta name="twitter:description" content="\(\displaystyle \operatorname{div}\mathbf{F} = \nabla\cdot\mathbf{F} = \dfrac{\partial F_{x}}{\partial x} + \dfrac{\partial F_{y}}{\partial y} + \dfrac{\partial F_{z}}{\partial z}\)  \[...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -55,6 +55,8 @@
       })();
     </script><script type="text/x-mathjax-config">
       MathJax.Hub.Config({
+        displayAlign: "left",
+        displayIndent: "0em",
         TeX: {
           Macros: {
             just: ["\\text{#1}", 1]
@@ -235,14 +237,11 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="derivation-of-divergence" class="section level1" number="312">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="derivation-of-divergence" class="section level1" number="313">
 <h1>
-<span class="header-section-number">312</span> Derivation of Divergence<a class="anchor" aria-label="anchor" href="#derivation-of-divergence"><i class="fas fa-link"></i></a>
+<span class="header-section-number">313</span> Derivation of Divergence<a class="anchor" aria-label="anchor" href="#derivation-of-divergence"><i class="fas fa-link"></i></a>
 </h1>
-<p><span class="math inline">\(\displaystyle
-\operatorname{div}\mathbf{F} = \nabla\cdot\mathbf{F} = \dfrac{\partial
-F_{x}}{\partial x} + \dfrac{\partial F_{y}}{\partial y} +
-\dfrac{\partial F_{z}}{\partial z}\)</span></p>
+<p><span class="math inline">\(\displaystyle \operatorname{div}\mathbf{F} = \nabla\cdot\mathbf{F} = \dfrac{\partial F_{x}}{\partial x} + \dfrac{\partial F_{y}}{\partial y} + \dfrac{\partial F_{z}}{\partial z}\)</span></p>
 <div class="derivation">
 <div class="derivation-row">
 <div class="derivation-math">
@@ -261,23 +260,20 @@ Start from a Cartesian vector field
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\mathbf{F}\)</span> is a vector
-field.</li>
-<li><span class="math inline">\(F_x\)</span> is the <span
-class="math inline">\(x\)</span>-component of <span
-class="math inline">\(\mathbf{F}\)</span>.</li>
-<li><span class="math inline">\(F_y\)</span> is the <span
-class="math inline">\(y\)</span>-component of <span
-class="math inline">\(\mathbf{F}\)</span>.</li>
-<li><span class="math inline">\(F_z\)</span> is the <span
-class="math inline">\(z\)</span>-component of <span
-class="math inline">\(\mathbf{F}\)</span>.</li>
-<li><span class="math inline">\(\mathbf{i}\)</span> is the unit vector
-along <span class="math inline">\(x\)</span>.</li>
-<li><span class="math inline">\(\mathbf{j}\)</span> is the unit vector
-along <span class="math inline">\(y\)</span>.</li>
-<li><span class="math inline">\(\mathbf{k}\)</span> is the unit vector
-along <span class="math inline">\(z\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{F}\)</span> is a vector field.</li>
+<li>
+<span class="math inline">\(F_x\)</span> is the <span class="math inline">\(x\)</span>-component of <span class="math inline">\(\mathbf{F}\)</span>.</li>
+<li>
+<span class="math inline">\(F_y\)</span> is the <span class="math inline">\(y\)</span>-component of <span class="math inline">\(\mathbf{F}\)</span>.</li>
+<li>
+<span class="math inline">\(F_z\)</span> is the <span class="math inline">\(z\)</span>-component of <span class="math inline">\(\mathbf{F}\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{i}\)</span> is the unit vector along <span class="math inline">\(x\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{j}\)</span> is the unit vector along <span class="math inline">\(y\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{k}\)</span> is the unit vector along <span class="math inline">\(z\)</span>.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -305,17 +301,16 @@ Define the three Cartesian differential contributions
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(X\)</span> is the differential component
-along <span class="math inline">\(x\)</span>.</li>
-<li><span class="math inline">\(Y\)</span> is the differential component
-along <span class="math inline">\(y\)</span>.</li>
-<li><span class="math inline">\(Z\)</span> is the differential component
-along <span class="math inline">\(z\)</span>.</li>
-<li><span class="math inline">\(x\)</span>, <span
-class="math inline">\(y\)</span>, <span class="math inline">\(z\)</span>
-are Cartesian coordinates.</li>
-<li><span class="math inline">\(\partial\)</span> denotes partial
-differentiation.</li>
+<li>
+<span class="math inline">\(X\)</span> is the differential component along <span class="math inline">\(x\)</span>.</li>
+<li>
+<span class="math inline">\(Y\)</span> is the differential component along <span class="math inline">\(y\)</span>.</li>
+<li>
+<span class="math inline">\(Z\)</span> is the differential component along <span class="math inline">\(z\)</span>.</li>
+<li>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>, <span class="math inline">\(z\)</span> are Cartesian coordinates.</li>
+<li>
+<span class="math inline">\(\partial\)</span> denotes partial differentiation.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -335,11 +330,10 @@ Add the contributions into one scalar
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(R\)</span> is the resulting scalar
-field.</li>
-<li><span class="math inline">\(X\)</span>, <span
-class="math inline">\(Y\)</span>, <span class="math inline">\(Z\)</span>
-are its Cartesian contributions.</li>
+<li>
+<span class="math inline">\(R\)</span> is the resulting scalar field.</li>
+<li>
+<span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span>, <span class="math inline">\(Z\)</span> are its Cartesian contributions.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -432,8 +426,7 @@ F_x(x,y,z)\,\Delta y\,\Delta z
 \]</span></p>
 </div>
 <div class="derivation-just">
-Reverse the sign on the opposite face, whose outward normal points
-backward
+Reverse the sign on the opposite face, whose outward normal points backward
 </div>
 </div>
 <div class="derivation-row">
@@ -499,8 +492,7 @@ Replace the difference by its first-order increment
 \]</span></p>
 </div>
 <div class="derivation-just">
-Convert each pair of opposite faces into a volume times a partial
-derivative
+Convert each pair of opposite faces into a volume times a partial derivative
 </div>
 </div>
 <div class="derivation-row">
@@ -612,8 +604,8 @@ Name this flux density the divergence of F
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\operatorname{div}\mathbf{F}\)</span> is
-the divergence of <span class="math inline">\(\mathbf{F}\)</span>.</li>
+<li>
+<span class="math inline">\(\operatorname{div}\mathbf{F}\)</span> is the divergence of <span class="math inline">\(\mathbf{F}\)</span>.</li>
 <li>Each term is a Cartesian differential contribution.</li>
 </ul>
 <div class="derivation">
@@ -654,18 +646,14 @@ Write two general Cartesian vectors
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\mathbf{a}\)</span> is the first
-vector.</li>
-<li><span class="math inline">\(\mathbf{b}\)</span> is the second
-vector.</li>
-<li><span class="math inline">\(a_1\)</span>, <span
-class="math inline">\(a_2\)</span>, <span
-class="math inline">\(a_3\)</span> are components of <span
-class="math inline">\(\mathbf{a}\)</span>.</li>
-<li><span class="math inline">\(b_1\)</span>, <span
-class="math inline">\(b_2\)</span>, <span
-class="math inline">\(b_3\)</span> are components of <span
-class="math inline">\(\mathbf{b}\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{a}\)</span> is the first vector.</li>
+<li>
+<span class="math inline">\(\mathbf{b}\)</span> is the second vector.</li>
+<li>
+<span class="math inline">\(a_1\)</span>, <span class="math inline">\(a_2\)</span>, <span class="math inline">\(a_3\)</span> are components of <span class="math inline">\(\mathbf{a}\)</span>.</li>
+<li>
+<span class="math inline">\(b_1\)</span>, <span class="math inline">\(b_2\)</span>, <span class="math inline">\(b_3\)</span> are components of <span class="math inline">\(\mathbf{b}\)</span>.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -685,8 +673,8 @@ Form the ordinary dot product
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\mathbf{a}\cdot\mathbf{b}\)</span> is
-the dot product.</li>
+<li>
+<span class="math inline">\(\mathbf{a}\cdot\mathbf{b}\)</span> is the dot product.</li>
 <li>Each term is a Cartesian contribution.</li>
 </ul>
 <div class="derivation">
@@ -713,17 +701,14 @@ Define the vector differential operator
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\nabla\)</span> is the vector
-differential operator.</li>
-<li><span class="math inline">\(\dfrac{\partial}{\partial x}\)</span>
-differentiates with respect to <span
-class="math inline">\(x\)</span>.</li>
-<li><span class="math inline">\(\dfrac{\partial}{\partial y}\)</span>
-differentiates with respect to <span
-class="math inline">\(y\)</span>.</li>
-<li><span class="math inline">\(\dfrac{\partial}{\partial z}\)</span>
-differentiates with respect to <span
-class="math inline">\(z\)</span>.</li>
+<li>
+<span class="math inline">\(\nabla\)</span> is the vector differential operator.</li>
+<li>
+<span class="math inline">\(\dfrac{\partial}{\partial x}\)</span> differentiates with respect to <span class="math inline">\(x\)</span>.</li>
+<li>
+<span class="math inline">\(\dfrac{\partial}{\partial y}\)</span> differentiates with respect to <span class="math inline">\(y\)</span>.</li>
+<li>
+<span class="math inline">\(\dfrac{\partial}{\partial z}\)</span> differentiates with respect to <span class="math inline">\(z\)</span>.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -769,12 +754,12 @@ Apply the dot-product rule
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\nabla\)</span> supplies the
-differential operators.</li>
-<li><span class="math inline">\(\mathbf{F}\)</span> supplies the field
-components.</li>
-<li><span class="math inline">\(\cdot\)</span> applies the dot-product
-rule.</li>
+<li>
+<span class="math inline">\(\nabla\)</span> supplies the differential operators.</li>
+<li>
+<span class="math inline">\(\mathbf{F}\)</span> supplies the field components.</li>
+<li>
+<span class="math inline">\(\cdot\)</span> applies the dot-product rule.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -857,8 +842,8 @@ Sum the diagonal entries
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\operatorname{tr}\)</span> denotes the
-trace of a matrix.</li>
+<li>
+<span class="math inline">\(\operatorname{tr}\)</span> denotes the trace of a matrix.</li>
 <li>The trace is the sum of the diagonal entries.</li>
 </ul>
 <div class="derivation">
@@ -878,62 +863,41 @@ Compare with the component form
 </div>
 </div>
 <p>Hence,</p>
-<p><span class="math inline">\(\displaystyle
-\operatorname{div}\mathbf{F} = \nabla\cdot\mathbf{F} = \dfrac{\partial
-F_{x}}{\partial x} + \dfrac{\partial F_{y}}{\partial y} +
-\dfrac{\partial F_{z}}{\partial z}\)</span></p>
-<div id="references" class="section level2" number="312.1">
+<p><span class="math inline">\(\displaystyle \operatorname{div}\mathbf{F} = \nabla\cdot\mathbf{F} = \dfrac{\partial F_{x}}{\partial x} + \dfrac{\partial F_{y}}{\partial y} + \dfrac{\partial F_{z}}{\partial z}\)</span></p>
+<div id="references-268" class="section level2" number="313.1">
 <h2>
-<span class="header-section-number">312.1</span> References<a class="anchor" aria-label="anchor" href="#references"><i class="fas fa-link"></i></a>
+<span class="header-section-number">313.1</span> References<a class="anchor" aria-label="anchor" href="#references-268"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li><p>Kreyszig, E. <em>Advanced Engineering Mathematics</em>. 10th
-ed. Wiley, 2011. §9.8 — divergence of a vector field and its Cartesian
-representation.</p></li>
-<li><p>Kreyszig, E. <em>Advanced Engineering Mathematics</em>. 10th
-ed. Wiley, 2011. §10.7 — Gauss’s divergence theorem and the relation
-between divergence and outward flux.</p></li>
-<li><p>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. 4th
-ed. Pearson, 2013. Chapter 1 — divergence, flux, and the divergence
-theorem.</p></li>
-<li><p>Riley, K. F., Hobson, M. P., &amp; Bence, S. J. <em>Mathematical
-Methods for Physics and Engineering</em>. 3rd ed. Cambridge University
-Press, 2006. Chapters 10–11 — vector differential operators and surface
-and volume integrals.</p></li>
-<li><p>Arfken, G. B., Weber, H. J., &amp; Harris, F. E. <em>Mathematical
-Methods for Physicists: A Comprehensive Guide</em>. 7th ed. Academic
-Press, 2012. Chapter 3 — vector analysis, differential vector operators,
-surface integrals, and integral theorems.</p></li>
+<li><p>Kreyszig, E. <em>Advanced Engineering Mathematics</em>. 10th ed. Wiley, 2011. §9.8 — divergence of a vector field and its Cartesian representation.</p></li>
+<li><p>Kreyszig, E. <em>Advanced Engineering Mathematics</em>. 10th ed. Wiley, 2011. §10.7 — Gauss’s divergence theorem and the relation between divergence and outward flux.</p></li>
+<li><p>Griffiths, D. J. <em>Introduction to Electrodynamics</em>. 4th ed. Pearson, 2013. Chapter 1 — divergence, flux, and the divergence theorem.</p></li>
+<li><p>Riley, K. F., Hobson, M. P., &amp; Bence, S. J. <em>Mathematical Methods for Physics and Engineering</em>. 3rd ed. Cambridge University Press, 2006. Chapters 10–11 — vector differential operators and surface and volume integrals.</p></li>
+<li><p>Arfken, G. B., Weber, H. J., &amp; Harris, F. E. <em>Mathematical Methods for Physicists: A Comprehensive Guide</em>. 7th ed. Academic Press, 2012. Chapter 3 — vector analysis, differential vector operators, surface integrals, and integral theorems.</p></li>
 </ol>
 <div class="topic-index">
 <ul>
-<li><a href="basic-derivation-of-jacobian.html">Basic Derivation of
-Jacobian</a></li>
 <li><a href="chain-rule.html">Chain Rule</a></li>
 <li><a href="cross-product.html">Cross Product</a></li>
 <li><a href="curl.html">Curl</a></li>
 <li><a href="curve.html">Curve</a></li>
 <li><a href="definite-integral.html">Definite Integral</a></li>
+<li><a href="derivation-of-basic-jacobian.html">Derivation of Basic Jacobian</a></li>
 <li><a href="derivation-of-curl.html">Derivation of Curl</a></li>
-<li><a href="derivation-of-divergence.html">Derivation of
-Divergence</a></li>
+<li><a href="derivation-of-divergence.html">Derivation of Divergence</a></li>
 <li><a href="derivation-of-grad.html">Derivation of Grad</a></li>
-<li><a href="derivation-of-jacobian.html">Derivation of
-Jacobian</a></li>
-<li><a href="derivation-of-taylor-expansion.html">Derivation of Taylor
-Expansion</a></li>
+<li><a href="derivation-of-jacobian.html">Derivation of Jacobian</a></li>
+<li><a href="derivation-of-legendre-transform.html">Derivation of Legendre Transform</a></li>
+<li><a href="derivation-of-taylor-expansion.html">Derivation of Taylor Expansion</a></li>
 <li><a href="divergence.html">Divergence</a></li>
 <li><a href="dot-product.html">Dot Product</a></li>
-<li><a href="envelope-of-tangent-lines.html">Envelope of Tangent
-Lines</a></li>
+<li><a href="envelope-of-tangent-lines.html">Envelope of Tangent Lines</a></li>
 <li><a href="general-functions.html">General Functions</a></li>
 <li><a href="gradient.html">Gradient</a></li>
 <li><a href="improper-integral.html">Improper Integral</a></li>
 <li><a href="indefinite-integral.html">Indefinite Integral</a></li>
 <li><a href="jacobian.html">Jacobian</a></li>
 <li><a href="legendre-transform.html">Legendre Transform</a></li>
-<li><a href="legendre-transform-derivation.html">Legendre Transform
-Derivation</a></li>
 <li><a href="limit.html">Limit</a></li>
 <li><a href="line-integral.html">Line Integral</a></li>
 <li><a href="notes-1.html">Notes</a></li>
@@ -943,18 +907,14 @@ Derivation</a></li>
 <li><a href="scalar-projection.html">Scalar Projection</a></li>
 <li><a href="smooth-curve.html">Smooth Curve</a></li>
 <li><a href="vector-calculus.html">Vector Calculus</a></li>
-<li><a href="vector-differential-operator.html">Vector Differential
-Operator</a></li>
+<li><a href="vector-differential-operator.html">Vector Differential Operator</a></li>
 <li><a href="vector-field.html">Vector Field</a></li>
 <li><a href="vector-projection.html">Vector Projection</a></li>
 </ul>
 </div>
+
 </div>
 </div>
-
-
-
-
 <script>
   (function () {
     var MOON =
@@ -1519,13 +1479,13 @@ Operator</a></li>
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="derivation-of-curl.html"><span class="header-section-number">311</span> Derivation of Curl</a></div>
-<div class="next"><a href="derivation-of-grad.html"><span class="header-section-number">313</span> Derivation of Grad</a></div>
+<div class="prev"><a href="derivation-of-curl.html"><span class="header-section-number">312</span> Derivation of Curl</a></div>
+<div class="next"><a href="derivation-of-grad.html"><span class="header-section-number">314</span> Derivation of Grad</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#derivation-of-divergence"><span class="header-section-number">312</span> Derivation of Divergence</a></li>
-<li><a class="nav-link" href="#references-267"><span class="header-section-number">312.1</span> References</a></li>
+<li><a class="nav-link" href="#derivation-of-divergence"><span class="header-section-number">313</span> Derivation of Divergence</a></li>
+<li><a class="nav-link" href="#references-268"><span class="header-section-number">313.1</span> References</a></li>
 </ul>
 
       <div class="book-extra">

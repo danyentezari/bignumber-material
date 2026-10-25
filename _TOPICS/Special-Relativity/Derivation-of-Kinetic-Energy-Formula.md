@@ -1,4 +1,4 @@
-# Kinetic Energy Formula Derivation
+# Derivation of Kinetic Energy Formula
 
 A derivation of the kinetic energy formula that is used to obtain the energy of motion from the work done by a force.
 
@@ -6,8 +6,8 @@ Note: Also called the work-energy derivation of kinetic energy.
 
 Related definitions:
 
-- [Newtonian Kinetic Energy Formula Derivation](Newtonian-Kinetic-Energy-Formula-Derivation.md)
-- [Relativistic Kinetic Energy Formula Derivation](Relativistic-Kinetic-Energy-Formula-Derivation.md)
+- [Derivation of Newtonian Kinetic Energy Formula](Derivation-of-Newtonian-Kinetic-Energy-Formula.md)
+- [Derivation of Relativistic Kinetic Energy Formula](Derivation-of-Relativistic-Kinetic-Energy-Formula.md)
 
 ## References
 

@@ -53,6 +53,16 @@
           document.documentElement.style.fontSize = "17px";
         }
       })();
+    </script><script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        displayAlign: "left",
+        displayIndent: "0em",
+        TeX: {
+          Macros: {
+            just: ["\\text{#1}", 1]
+          }
+        }
+      });
     </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
@@ -319,9 +329,9 @@ b_{1} &amp; b_{2} &amp; b_{3}
 <span class="math inline">\(\mathbf{b}\)</span> is the second vector.</li>
 </ul>
 <p>Note: Also called the vector product. Also denoted <span class="math inline">\(\mathbf{a}\times\mathbf{b}\)</span>.</p>
-<div id="references-262" class="section level2" number="307.1">
+<div id="references-263" class="section level2" number="307.1">
 <h2>
-<span class="header-section-number">307.1</span> References<a class="anchor" aria-label="anchor" href="#references-262"><i class="fas fa-link"></i></a>
+<span class="header-section-number">307.1</span> References<a class="anchor" aria-label="anchor" href="#references-263"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
 <li>Stewart, J., Clegg, D., &amp; Watson, S. <em>Calculus: Early Transcendentals</em>. Section 12.4 — determinant formula; <span class="math inline">\(\lvert\mathbf{a}\times\mathbf{b}\rvert=\lvert\mathbf{a}\rvert\lvert\mathbf{b}\rvert\sin\theta\)</span>; right-hand rule; orthogonality to both factors.</li>
@@ -332,16 +342,17 @@ b_{1} &amp; b_{2} &amp; b_{3}
 </ol>
 <div class="topic-index">
 <ul>
-<li><a href="basic-derivation-of-jacobian.html">Basic Derivation of Jacobian</a></li>
 <li><a href="chain-rule.html">Chain Rule</a></li>
 <li><a href="cross-product.html">Cross Product</a></li>
 <li><a href="curl.html">Curl</a></li>
 <li><a href="curve.html">Curve</a></li>
 <li><a href="definite-integral.html">Definite Integral</a></li>
+<li><a href="derivation-of-basic-jacobian.html">Derivation of Basic Jacobian</a></li>
 <li><a href="derivation-of-curl.html">Derivation of Curl</a></li>
 <li><a href="derivation-of-divergence.html">Derivation of Divergence</a></li>
 <li><a href="derivation-of-grad.html">Derivation of Grad</a></li>
 <li><a href="derivation-of-jacobian.html">Derivation of Jacobian</a></li>
+<li><a href="derivation-of-legendre-transform.html">Derivation of Legendre Transform</a></li>
 <li><a href="derivation-of-taylor-expansion.html">Derivation of Taylor Expansion</a></li>
 <li><a href="divergence.html">Divergence</a></li>
 <li><a href="dot-product.html">Dot Product</a></li>
@@ -352,7 +363,6 @@ b_{1} &amp; b_{2} &amp; b_{3}
 <li><a href="indefinite-integral.html">Indefinite Integral</a></li>
 <li><a href="jacobian.html">Jacobian</a></li>
 <li><a href="legendre-transform.html">Legendre Transform</a></li>
-<li><a href="legendre-transform-derivation.html">Legendre Transform Derivation</a></li>
 <li><a href="limit.html">Limit</a></li>
 <li><a href="line-integral.html">Line Integral</a></li>
 <li><a href="notes-1.html">Notes</a></li>
@@ -940,7 +950,7 @@ b_{1} &amp; b_{2} &amp; b_{3}
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#cross-product"><span class="header-section-number">307</span> Cross Product</a></li>
-<li><a class="nav-link" href="#references-262"><span class="header-section-number">307.1</span> References</a></li>
+<li><a class="nav-link" href="#references-263"><span class="header-section-number">307.1</span> References</a></li>
 </ul>
 
       <div class="book-extra">

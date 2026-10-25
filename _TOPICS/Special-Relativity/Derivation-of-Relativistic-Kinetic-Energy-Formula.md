@@ -1,4 +1,4 @@
-# Relativistic Kinetic Energy Formula Derivation
+# Derivation of Relativistic Kinetic Energy Formula
 
 A derivation of the relativistic kinetic energy formula that is used to obtain $K_{\mathrm{rel}} = (\gamma - 1)mc^{2}$ from the work done by a force.
 

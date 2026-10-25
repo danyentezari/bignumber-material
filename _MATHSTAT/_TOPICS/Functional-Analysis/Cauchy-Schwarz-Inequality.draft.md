@@ -2,6 +2,7 @@
 
 An inequality that is used to bound the absolute value of an inner product or of $E[XY]$ by the product of the corresponding $L^2$ norms, where an inner product is a bilinear pairing that induces a length, and where the $L^2$ norm of a square-integrable random variable $X$ is $\|X\|_2=\sqrt{E[X^2]}$.
 
+<!--
 Note: Also called the Cauchy–Schwarz–Bunyakovsky inequality, or Schwarz’s inequality.
 
 Expectation form. For random variables $X$ and $Y$ with finite second moments,
@@ -48,6 +49,8 @@ $L^2$ as an inner-product space. On centered square-integrable random variables,
 Correlation bound. Applying Cauchy–Schwarz to $X-E[X]$ and $Y-E[Y]$ gives $|\mathrm{Cov}(X,Y)|\le\sqrt{\mathrm{Var}(X)\,\mathrm{Var}(Y)}$, hence $|\rho_{X,Y}|\le 1$, with $|\rho|=1$ iff the centered variables are linearly dependent a.s. This principle is used to place correlation in $[-1,1]$.
 
 Hölder specialization. Cauchy–Schwarz is Hölder’s inequality at $p=q=2$. This principle is used to nest Cauchy–Schwarz inside the broader $L^p$ toolkit.
+-->
+
 
 <!--
 ## Elementary Example

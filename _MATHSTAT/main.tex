@@ -35,6 +35,16 @@
   \par
 }
 
+% BEGIN generated mdblock
+% Flush-left first line; later paragraphs keep normal indent.
+% Soft line-breaks inside the block come from markdown newlines.
+\newenvironment{mdblock}{%
+  \par\addvspace{1.5\baselineskip}%
+  \noindent\ignorespaces
+}{%
+  \par\addvspace{1.5\baselineskip}%
+}
+% END generated mdblock
 
 \title{Handbook for Mathematical Statistics and Probability Theory}
 \author{Dany Entezari}
@@ -67,20 +77,28 @@ Combinatorics is the mathematics of counting things efficiently. In combinatoric
 %----------------------------------------------------------------------------
 \subsubsection{Permutation with Repetition}
 The function for permutation with repetition (or replacement) is given by
-$$ P^{r}(n,r) = n^r  $$
+$$
+P^{r}(n,r) = n^r
+$$
 
 %----------------------------------------------------------------------------
 \subsubsection{Permutation without Repetition}
 The function for permutation without repetition (or replacement) is given by
-$$ P(n,r) = nPr = \frac{n!}{(n-r)!} $$
+$$
+P(n,r) = nPr = \frac{n!}{(n-r)!}
+$$
 
 %----------------------------------------------------------------------------
 \subsubsection{Combination without Repetition and the Binomial Coefficient}
 The function for combination without repetition (or replacement) is given by
-$$ C(n,r) = nCr = \frac{n!}{r!(n-r)!} $$ 
+$$
+C(n,r) = nCr = \frac{n!}{r!(n-r)!}
+$$ 
 
  
-$$ \binom{n}{k} = \frac{n!}{r!(n-r)!} $$ 
+$$
+\binom{n}{k} = \frac{n!}{r!(n-r)!}
+$$ 
 
 The binomial coefficient notation is used to express combination, alternatively. Binomial coefficients are so called because they are coefficients of terms in the Binomial Theorem.
 
@@ -218,7 +236,9 @@ Probability distribution functions are models of various types of data. These fu
 \subsubsection{Probability Mass Function}
 The probability mass function of a discrete random variable will map, for every value in the random variable, the probability that the value will be observed. The probability mass function is denoted by,
 
-$$ P(X=k) = p $$
+$$
+P(X=k) = p
+$$
 
 where $X$ is a discrete random variable, $k$ is an observable value, and $p$ is a probability.
 
@@ -226,7 +246,9 @@ where $X$ is a discrete random variable, $k$ is an observable value, and $p$ is 
 \subsubsection{Probability Density Function}
 The probability density function of a continuous random variable will map, for every value in the random variable, the probability that the value will be observed. The probability density function is denoted by,
 
-$$ P(X=k) = p $$
+$$
+P(X=k) = p
+$$
 
 where $X$ is a continuous random variable, $k$ is an observable value, and $p$ is a probability.
 
@@ -234,7 +256,9 @@ where $X$ is a continuous random variable, $k$ is an observable value, and $p$ i
 \subsubsection{Cumulative Probability Function}
 The cumulative probability function is denoted by
 
-$$ P(X \leq k) = p = \begin{cases} \sum_{i=1}^{k} f(x) \enspace; \quad \text{ if X is Discrete} \\ \int_{-\infty}^{k} f(x) \: dx \enspace; \quad \text{ if X is Continuous}  \end{cases} $$
+$$
+P(X \leq k) = p = \begin{cases} \sum_{i=1}^{k} f(x) \enspace; \quad \text{ if X is Discrete} \\ \int_{-\infty}^{k} f(x) \: dx \enspace; \quad \text{ if X is Continuous} \end{cases}
+$$
 
 where 
 
@@ -253,10 +277,14 @@ The cumulative probability function of a discrete or continuous random variable 
 Moments are specific descriptions of a probability distribution. 
 
 The $kth$ moment is given by
-$$ E(X^k) $$ 
+$$
+E(X^k)
+$$ 
 
 The $kth$ central moment is given by:
-$$ E((X-\mu)^k) $$
+$$
+E((X-\mu)^k)
+$$
 
 %----------------------------------------------------------------------------
 \subsection{Expectation}
@@ -269,9 +297,7 @@ Note: Also called expected value or mean.
 The expectation of a discrete random variable $X$ whose distinct possible values are $x_1,x_2,\ldots$ is
 
 $$
-E(X)
-=
-\sum_{j} x_j\,P(X=x_j)
+E(X) = \sum_{j} x_j\,P(X=x_j)
 $$
 
 where
@@ -293,9 +319,7 @@ This principle is used to compute means for countable supports.
 The expectation of a continuous random variable $X$ with PDF $f$ is
 
 $$
-E(X)
-=
-\int_{-\infty}^{\infty} x\,f(x)\,dx
+E(X) = \int_{-\infty}^{\infty} x\,f(x)\,dx
 $$
 
 where
@@ -316,9 +340,7 @@ This principle is used to compute means for absolutely continuous laws.
 If $X$ is a random variable on a probability space $(\Omega,\mathcal{F},P)$, the expectation of $X$ is
 
 $$
-E(X)
-=
-\int_\Omega X\,dP
+E(X) = \int_\Omega X\,dP
 $$
 
 where
@@ -348,13 +370,7 @@ Fundamental bridge. For an event $A$ with indicator $I_A$, $P(A)=E(I_A)$. This p
 LOTUS in the discrete and continuous cases is
 
 $$
-E(g(X))
-=
-\sum_x g(x)\,P(X=x),
-\qquad
-E(g(X))
-=
-\int_{-\infty}^{\infty} g(x)\,f(x)\,dx
+E(g(X)) = \sum_x g(x)\,P(X=x), \qquad E(g(X)) = \int_{-\infty}^{\infty} g(x)\,f(x)\,dx
 $$
 
 where
@@ -376,7 +392,9 @@ Markov and Chebyshev. Nonnegative $g$ and $A=\{g(X)\ge a\}$ give $E[g(X)]\ge a\,
 \subsection{Expected Value}
 The function of the expected value is given by
 
-$$ E(X) = \begin{cases} \sum_{i}^{k} x_i \cdot f(x_i) \enspace ; \quad \text{ if } X \text{ is discrete} \\ \\ \int_{-\infty}^{\infty} x_i \cdot f(x_i) \: dx_i \enspace ; \quad \text{ if } X \text{ is continuous} \end{cases} $$ 
+$$
+E(X) = \begin{cases} \sum_{i}^{k} x_i \cdot f(x_i) \enspace ; \quad \text{ if } X \text{ is discrete} \\ \\ \int_{-\infty}^{\infty} x_i \cdot f(x_i) \: dx_i \enspace ; \quad \text{ if } X \text{ is continuous} \end{cases}
+$$ 
 
 where
 
@@ -390,7 +408,9 @@ Expected Value is the average of the values of a random variable. The average is
 %----------------------------------------------------------------------------
 \subsection{Variance}
 The function for variance is given by
-$$ Var(X) = E(X-\mu)^2 = \sigma^2 $$
+$$
+Var(X) = E(X-\mu)^2 = \sigma^2
+$$
 where 
 
 \begin{itemize}
@@ -400,7 +420,9 @@ where
 
 Variance is a measurement of the spread of values of the random variable about the mean. Note that the square root of variance is the standard deviation. In other words, to arrive at the standard deviation of a random variable, the variance must first be calculated. Also, variance can be expressed as
 
-$$ Var(X) = E[X^2] - (E[X])^2  $$
+$$
+Var(X) = E[X^2] - (E[X])^2
+$$
 where
 
 \begin{itemize}
@@ -412,7 +434,9 @@ Note, the expression $E[X^2]$ means that the probability function in the functio
 %----------------------------------------------------------------------------
 \subsection{Skewness}
 The skewness coefficient is given by
-$$ \frac{E(X-\mu)^3}{\sigma^3} $$
+$$
+\frac{E(X-\mu)^3}{\sigma^3}
+$$
 where
 
 \begin{itemize}
@@ -433,7 +457,9 @@ Moment generating functions are used to find the characteristics (i.e, moments) 
 \section{Maximum Likelihood}
 Maximum Likelihood is a technique for estimating, by maximizing likelihood, any parameter of a population given the sample.
 
-$$ L(x_1,\dots,x_n ;\theta)=\prod_{i=1}^{n} f(x_i; \theta) $$ 
+$$
+L(x_1,\dots,x_n ;\theta)=\prod_{i=1}^{n} f(x_i; \theta)
+$$ 
 
 where 
 
@@ -449,7 +475,9 @@ where
 %----------------------------------------------------------------------------
 \subsection{Likelihood Function}
 The likelihood function is denoted by
-$$ L(x_1, \dots, x_n; \theta) $$
+$$
+L(x_1, \dots, x_n; \theta)
+$$
 where 
 
 \begin{itemize}
@@ -463,7 +491,9 @@ Note that the likelihood function can output very small probabilities, which is 
 \subsection{Log-Likelihood}
 The log-likelihood function is the natural logarithm of the likelihood function. log-likelihood function is given by
 
-$$ \ln(L(x_1, \dots, x_n; \theta)) = \ell(x_1, \dots, x_n; \theta) = \log_{e} ( L(x_1, \dots, x_n; \theta) ) $$ 
+$$
+\ln(L(x_1, \dots, x_n; \theta)) = \ell(x_1, \dots, x_n; \theta) = \log_{e} ( L(x_1, \dots, x_n; \theta) )
+$$ 
 
 Note that $ \ln(L(x, \theta)) $ is the natural logarithm; that is, the logarithm of base e. Thus, $ \ln(L(x_1, \dots, x_n, \theta)) = \log_{e} ( L(x_1, \dots, x_n, \theta) ) $.
 
@@ -477,12 +507,16 @@ Differentiating the log-likelihood function, $\ell(x_1, \dots, x_n,\theta)$, is 
 
 Since the (log) likelihood is a function of multiple variables, we apply the partial derivative to the likelihood function,
 
-$$ \frac{\partial}{\partial x_i} \ell(x_i; \theta) = \frac{\partial}{\partial x} \ln( L(x_i; \theta) ) $$
+$$
+\frac{\partial}{\partial x_i} \ell(x_i; \theta) = \frac{\partial}{\partial x} \ln( L(x_i; \theta) )
+$$
 
 %----------------------------------------------------------------------------
 \subsection{Maximum Likelihood Estimator (MLE)}
 An estimator is a function that is used to estimate a parameter.
-$$ \hat{\theta}(x_i) = \underset{\theta}{\text{argmax}} \: \ell(x_i; \theta) $$
+$$
+\hat{\theta}(x_i) = \underset{\theta}{\text{argmax}} \: \ell(x_i; \theta)
+$$
 where 
 
 \begin{itemize}
@@ -506,7 +540,9 @@ More formally, a measure is defined as a function that maps a $\sigma$-algebra t
 
 Usually, in mathematics convention, $\mu$ (pronounced "mu") stands for measure, but since $\mu$ is reserved, we will denote a measure with the uppercase variant, $\mathcal{M}$. 
 
-$$\mu: S \rightarrow [0,\infty)$$
+$$
+\mu: S \rightarrow [0,\infty)
+$$
 
 %----------------------------------------------------------------------------
 \subsubsection{Sigma-algebra}
@@ -528,7 +564,9 @@ A \emph{measure space} is a space $(E, \mathcal{E}, \mathcal{M} )$ where:
 \end{definition}
 \end{mdframed}
 
-In this definition, when we say $\mathcal{M}$ is the measure on $(E, \mathcal{E})$, we mean to say $$ \mathcal{M}: \mathcal{E} \rightarrow [0,\infty] $$.
+In this definition, when we say $\mathcal{M}$ is the measure on $(E, \mathcal{E})$, we mean to say $$
+\mathcal{M}: \mathcal{E} \rightarrow [0,\infty]
+$$.
 
 It is important to indicate that the measure is "on" the pair $(E, \mathcal{E})$ so that we know $\mathcal{E}$ are subsets of $E$.
 
@@ -647,13 +685,7 @@ Global balance. A distribution $\pi$ is stationary when the probability of each 
 The global balance equations are
 
 $$
-\pi_j
-=
-\sum_{i \in S}
-\pi_i
-p_{ij},
-\qquad
-j \in S
+\pi_j = \sum_{i \in S} \pi_i p_{ij}, \qquad j \in S
 $$
 
 where
@@ -713,7 +745,9 @@ where
 %----------------------------------------------------------------------------
 \subsection{Binomial Distribution}
 The PMF of the binomial distribution is given by
-$$f(k)=P(X=k)={n \choose k} p^k (1-p)^{n-k}$$
+$$
+f(k)=P(X=k)={n \choose k} p^k (1-p)^{n-k}
+$$
 where
 
 \begin{itemize}
@@ -736,7 +770,9 @@ When expressing the PMF of the binomial distribution, sometimes the notation for
 %----------------------------------------------------------------------------
 \subsection{Normal Distribution}
 The PDF of the normal distribution is given by
-$$f(x)=\frac{1}{\sigma{\sqrt{2\pi}}} \text{Exp} \bigg [ {-\frac{1}{2} \frac{(x-\mu)^2}{\sigma^2}} \bigg ]$$
+$$
+f(x)=\frac{1}{\sigma{\sqrt{2\pi}}} \text{Exp} \bigg [ {-\frac{1}{2} \frac{(x-\mu)^2}{\sigma^2}} \bigg ]
+$$
 where
 
 \begin{itemize}
@@ -750,7 +786,9 @@ The normal distribution is a generalization of the binomial distribution. This a
 %----------------------------------------------------------------------------
 \subsection{Poisson Distribution}
 The PDF of the chi-squared distribution is given by
-$$ f(x)=P(X=k)=\frac{\lambda^k}{k!}e^{-\lambda} $$
+$$
+f(x)=P(X=k)=\frac{\lambda^k}{k!}e^{-\lambda}
+$$
 where
 
 \begin{itemize}
@@ -764,8 +802,9 @@ The Poisson distribution is used to approximate the binomial distribution when t
 %----------------------------------------------------------------------------
 \subsection{Chi-Squared Distribution}
 The PDF of the chi-squared distribution is given by
-$$ f(x) = \begin{cases} \frac{ x^{k/2-1}e^{-x/2} }{ 2^{k/2} \Gamma(k/2) }
-\enspace ; \text{ for }  x \geq 0  \\ 0 \enspace ; \quad \text{otherwise} \end{cases} $$ 
+$$
+f(x) = \begin{cases} \frac{ x^{k/2-1}e^{-x/2} }{ 2^{k/2} \Gamma(k/2) } \enspace ; \text{ for } x \geq 0 \\ 0 \enspace ; \quad \text{otherwise} \end{cases}
+$$ 
 
 where
 
@@ -781,7 +820,9 @@ The Chi-Squared distribution is used to determine significant differences betwee
 \subsection{Student's T-Distribution}
 The PDF of the t-distribution is given by
 
-$$ f(x) = \frac{ \Gamma (\frac{v+1}{2}) }{ \sqrt{v \pi} \: \Gamma (\frac{v}{2}) } \Big (1+ \frac{t^2}{v} \Big ) ^ {-\frac{v+1}{2}} $$ 
+$$
+f(x) = \frac{ \Gamma (\frac{v+1}{2}) }{ \sqrt{v \pi} \: \Gamma (\frac{v}{2}) } \Big (1+ \frac{t^2}{v} \Big ) ^ {-\frac{v+1}{2}}
+$$ 
 
 where
 
@@ -795,7 +836,9 @@ The t-distribution is used when the sample is almost normally distributed but ha
 \subsection{Fischer F-Distribution}
 The PDF of the F-distribution is given by
 
-$$ f(x) = \begin{cases} \frac{\Gamma (\frac{v_1 + v_2}{2}) }{ \Gamma (\frac{v_1}{2}) \:  \Gamma (\frac{v_2}{2})  } v_1^{v_1/2} \: v_2^{ v_2/2} \: x^{ (v / 2)-1 } \: (v_2 + v_1 x)^{-(v_1 + v_2)/2} \enspace ; \quad x > 0 \\ 0 \enspace ; \quad x \leq 0 \end{cases} $$
+$$
+f(x) = \begin{cases} \frac{\Gamma (\frac{v_1 + v_2}{2}) }{ \Gamma (\frac{v_1}{2}) \: \Gamma (\frac{v_2}{2}) } v_1^{v_1/2} \: v_2^{ v_2/2} \: x^{ (v / 2)-1 } \: (v_2 + v_1 x)^{-(v_1 + v_2)/2} \enspace ; \quad x > 0 \\ 0 \enspace ; \quad x \leq 0 \end{cases}
+$$
 
 where
 
@@ -809,89 +852,82 @@ The F-distribution is the ratio of two random variables with chi-squared distrib
 %----------------------------------------------------------------------------
 \newpage
 \section{Functional Analysis}
-Functional analysis is the study of function spaces and the operators acting on function spaces. In functional analysis, functions are viewed as points in a space.
+Functional analysis is the study of function spaces and the operators acting on function spaces. In functional analysis, functions are viewed as points in a set.
 
-\subsection{Problems}
+This idea that functions are treated as points in a set is relevant because this allows us to, in probability theory, guarantee that limits and projections of random variables exist within the sets of functions where probability calculations occur.
+
+\begin{mdblock}
+\emph{Example 1.} Let
+
+$$
+X_n=\sum_{k=1}^{n}2^{-k}R_k
+$$
+
+where
 
 \begin{itemize}
-    \item Establish $|\langle x,y\rangle|\le\|x\|\|y\|$ in an inner product space.
-    \item Obtain $\|x+y\|\le\|x\|+\|y\|$ from the Cauchy-Schwarz inequality.
-    \item Show that a normed linear space is Banach by establishing convergence of every Cauchy sequence.
-    \item Establish that a linear operator is continuous exactly when it is bounded.
-    \item Obtain $\|T\|=\sup_{\|x\|\le 1}\|Tx\|$ for a bounded linear operator.
-    \item Establish existence and uniqueness of orthogonal projection onto a closed subspace of a Hilbert space.
-    \item Show that every bounded linear functional on a Hilbert space has the form $f(x)=\langle x,y\rangle$ for a unique $y$.
-    \item Establish $|E[XY]|\le\sqrt{E[X^2]E[Y^2]}$ for $X,Y\in L^2$.
-    \item Show that $E[X\mid G]$ is the orthogonal projection of $X\in L^2$ onto the closed subspace of $G$-measurable elements of $L^2$.
-    \item Obtain $|\mathrm{Corr}(X,Y)|\le 1$ from Cauchy-Schwarz in $L^2$.
+    \item $R_k$ are independent random variables
+    \item $E[R_k]=0$
+    \item $E[R_k^2]=1$
+    \item $2^{-k}$ is the coefficient weighting the $k$th random variable
+    \item $k$ is the index of the random variables in the sequence
 \end{itemize}
+
+Because $L^2$ is complete,
+
+$$
+X_n\xrightarrow{L^2}X.
+$$
+
+Here, $X\in L^2$ and $\xrightarrow{L^2}$ denotes convergence in $L^2$.
+
+Because $L^2(\sigma(R_1))$ is a closed subspace,
+
+$$
+E[X\mid R_1] = \frac12R_1.
+$$
+
+Here, $\sigma(R_1)$ is the sigma-algebra generated by $R_1$.
+
+The conditional expectation exists as the orthogonal projection of $X$ onto $L^2(\sigma(R_1))$ [2, 3].
+\end{mdblock}
+\subsubsection{\emph{Lemma. $(X_n)$ is Cauchy in $L^2$.}}
+
+Let
+
+$$
+\begin{aligned} X_j &= \sum_{k=1}^{j}\left(\frac12\right)^kR_k = 2^{-1}R_1+2^{-2}R_2+\cdots+2^{-j}R_j \\[0.5em] X_m-X_n &= \left(2^{-1}R_1+\cdots+2^{-n}R_n+\cdots+2^{-m}R_m\right) -\left(2^{-1}R_1+\cdots+2^{-n}R_n\right) \\ &= 2^{-(n+1)}R_{n+1}+\cdots+2^{-m}R_m = \sum_{k=n+1}^{m}2^{-k}R_k. \end{aligned}
+$$
+
+where $m>n$
+
+\vspace{1\baselineskip}
+
+Therefore, $\|X_m-X_n\|_2^2=E[(X_m-X_n)^2]$.
+
+\vspace{1\baselineskip}
+
+Expanding, $E[(X_m-X_n)^2]=\sum_{k=n+1}^{m}4^{-k}E[R_k^2]$.
+
+\vspace{1\baselineskip}
+
+The cross terms vanish because $R_k$ are independent and $E[R_k]=0$.
+
+\vspace{1\baselineskip}
+
+Since $E[R_k^2]=1$, $\|X_m-X_n\|_2^2=\sum_{k=n+1}^{m}4^{-k}$.
+
+\vspace{1\baselineskip}
+
+Since $\sum_{k=n+1}^{m}4^{-k}\to0$, $\|X_m-X_n\|_2\to0$.
+
+\vspace{1\baselineskip}
+
+Therefore, $(X_n)$ is Cauchy in $L^2$.
 
 %----------------------------------------------------------------------------
-\subsection{Cauchy-Schwarz Inequality}
-An inequality that is used to bound the absolute value of an inner product or of $E[XY]$ by the product of the corresponding $L^2$ norms, where an inner product is a bilinear pairing that induces a length, and where the $L^2$ norm of a square-integrable random variable $X$ is $\|X\|_2=\sqrt{E[X^2]}$.
-
-Note: Also called the Cauchy–Schwarz–Bunyakovsky inequality, or Schwarz’s inequality.
-
-Expectation form. For random variables $X$ and $Y$ with finite second moments,
-
-$$
-|E[XY]|
-\le
-E[|XY|]
-\le
-\|X\|_2\,\|Y\|_2
-=
-\sqrt{E[X^2]\,E[Y^2]}
-$$
-
-where
-
-\begin{itemize}
-    \item $X$ and $Y$ are real random variables.
-    \item $E$ is expectation.
-    \item $\|X\|_2=\sqrt{E[X^2]}$ is the $L^2$ norm of $X$.
-\end{itemize}
-
-This principle is used to control products of random variables by their second moments.
-
-Inner-product form. In an inner-product space $L$ with $\langle\cdot,\cdot\rangle$ and $\|x\|=\sqrt{\langle x,x\rangle}$, for all $x,y\in L$,
-
-$$
-|\langle x,y\rangle|
-\le
-\|x\|\,\|y\|
-$$
-
-where
-
-\begin{itemize}
-    \item $\langle x,y\rangle$ is the inner product of $x$ and $y$.
-    \item $\|x\|$ is the norm induced by the inner product.
-\end{itemize}
-
-This principle is used to relate angles and lengths in abstract geometry, including $L^2$.
-
-Equality condition. Equality holds if and only if the two elements are linearly dependent: in $L^2$, iff there is a constant $\lambda$ such that $\lambda X+Y=0$ almost surely (or both are zero). This principle is used to characterize when the bound is sharp.
-
-Positivity proof. For every real $t$, $E[(Y-tX)^2]\ge 0$. Expanding and optimizing in $t$ yields the expectation form. This principle is used to derive Cauchy–Schwarz from nonnegativity of a quadratic.
-
-$L^2$ as an inner-product space. On centered square-integrable random variables, $\langle U,V\rangle=\mathrm{Cov}(U,V)=E[UV]$ is an inner product, and $\|X\|_2$ is a length. Uncorrelated variables are orthogonal. This principle is used to read covariance geometrically.
-
-Correlation bound. Applying Cauchy–Schwarz to $X-E[X]$ and $Y-E[Y]$ gives $|\mathrm{Cov}(X,Y)|\le\sqrt{\mathrm{Var}(X)\,\mathrm{Var}(Y)}$, hence $|\rho_{X,Y}|\le 1$, with $|\rho|=1$ iff the centered variables are linearly dependent a.s. This principle is used to place correlation in $[-1,1]$.
-
-Hölder specialization. Cauchy–Schwarz is Hölder’s inequality at $p=q=2$. This principle is used to nest Cauchy–Schwarz inside the broader $L^p$ toolkit.
-
-\subsection{Problems}
-
-\begin{itemize}
-    \item Lower-bound $P(X>0)$ by $(E[X])^2/E[X^2]$ for nonnegative random variables.
-    \item Derive the Cramér–Rao lower bound for unbiased estimators from covariance Cauchy–Schwarz.
-    \item Prove $|\rho(X,Y)|\le 1$, with equality if $Y=aX+b$ almost surely.
-    \item Prove $E[X]\,E[1/X]\ge 1$ for strictly positive random variables.
-    \item Prove the triangle inequality $\|u+v\|\le\|u\|+\|v\|$ in an inner-product space.
-    \item Minimize $\|x-y\|_2$ by orthogonal projection in an inner-product space. [ChatGPT]
-    \item Derive Cauchy–Schwarz as Hölder’s inequality with $p=q=2$. [ChatGPT]
-\end{itemize}
+\subsection{Cauchy}
+A sequence that is used to analyze convergence without first identifying a limit, where convergence is approach to a fixed element and where a sequence is an ordered collection of elements.
 
 %----------------------------------------------------------------------------
 \newpage
@@ -948,11 +984,15 @@ A \emph{stochastic process} is a set of random variables, $\{X(t)\, t \in I\}$ d
 \subsection{Stochastic Differential Equations}
 Stochastic differential equations have applications in modeling systems with non-deterministic behavior. There is, however, a fundmanetla difference between SDEs and differential equations.
 
-$$d\xi(t) = b(\xi(t), t)dt + \sigma(\xi(t), t)dw(t)$$
+$$
+d\xi(t) = b(\xi(t), t)dt + \sigma(\xi(t), t)dw(t)
+$$
 
 with initial condition
 
-$$\xi(0) = \xi_0$$
+$$
+\xi(0) = \xi_0
+$$
 
 Where:
 
@@ -1025,10 +1065,14 @@ where
 %----------------------------------------------------------------------------
 \subsection{Exponential Function}
 The Exponential Function is defined by,
-$$ e^x = \text{Exp}(x) = \sum_{k=0}^{\infty} \frac{x^k}{k!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots   $$
+$$
+e^x = \text{Exp}(x) = \sum_{k=0}^{\infty} \frac{x^k}{k!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots
+$$
 
 The letter $e$, which represents Euler's constant $\sim 2.718$, is the base unit for exponentiation. In other words, a function becomes exponential when the variable appears in the exponent:
-$$\quad f(x) = e^x. $$
+$$
+\quad f(x) = e^x.
+$$
 
  
 Note that we are equating $e^x$ to $\text{Exp}(x)$ because the latter is only an alternative (and more convenient) way to write the exponential function.
@@ -1036,7 +1080,9 @@ Note that we are equating $e^x$ to $\text{Exp}(x)$ because the latter is only an
 %----------------------------------------------------------------------------
 \subsection{Gamma Function}
 The Gamma Function is defined by,
-$$ \Gamma(\alpha) = \int_0^\infty x^{\alpha-1} e^{-x} \: dx $$
+$$
+\Gamma(\alpha) = \int_0^\infty x^{\alpha-1} e^{-x} \: dx
+$$
 
 The Gamma Function is important because it generalizes the factorial function to all Real Numbers. The factorial operation ($n!$), as a function, is valid only for the Natural Numbers (1,2,3,..). The Gamma Function, however, extends the factorial operation to all Real Numbers greater than 0. For this reason, the Gamma Function is also known as the Generalized Factorial Function.
 

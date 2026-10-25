@@ -1,4 +1,4 @@
-# Newtonian Kinetic Energy Formula Derivation
+# Derivation of Newtonian Kinetic Energy Formula
 
 A derivation of the Newtonian kinetic energy formula that is used to obtain $K = \dfrac{1}{2}mv^{2}$ from the work-energy theorem.
 

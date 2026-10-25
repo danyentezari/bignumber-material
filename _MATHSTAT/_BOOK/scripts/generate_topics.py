@@ -187,6 +187,23 @@ def topic_index_for_siblings(
     return build_topic_index(entries)
 
 
+def demote_extra_atx_h1(text: str) -> str:
+    """Keep only the first '# ' heading. Later H1s become H2 so bookdown
+    does not split the page (e.g. '# References' stealing the topic index)."""
+    seen = False
+    lines: list[str] = []
+    for line in text.splitlines():
+        if line.startswith("# ") and not line.startswith("## "):
+            if seen:
+                lines.append("#" + line)
+            else:
+                lines.append(line)
+                seen = True
+        else:
+            lines.append(line)
+    return "\n".join(lines)
+
+
 def write_generated_page(folder: Path, source: Path, topic_index: str) -> Path:
     """Copy a topic markdown page into generated/, appending the folder topic index."""
     text = source.read_text(encoding="utf-8").rstrip()
@@ -195,7 +212,7 @@ def write_generated_page(folder: Path, source: Path, topic_index: str) -> Path:
     content = f"{text}\n\n"
     if topic_index:
         content += topic_index
-    generated_path.write_text(content, encoding="utf-8")
+    generated_path.write_text(demote_extra_atx_h1(content.rstrip()) + "\n", encoding="utf-8")
     return generated_path
 
 
@@ -222,7 +239,7 @@ def write_generated_main_topic(
         content += f"{body}\n\n"
     if topic_index:
         content += topic_index
-    generated_path.write_text(content, encoding="utf-8")
+    generated_path.write_text(demote_extra_atx_h1(content.rstrip()) + "\n", encoding="utf-8")
     return generated_path, title
 
 

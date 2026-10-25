@@ -1,4 +1,4 @@
-# Gravitational Potential Energy Formula Derivation
+# Derivation of Gravitational Potential Energy Formula
 
 A derivation of the gravitational potential energy formula that is used to obtain $U_{G} = mgy$ from the work done by gravity.
 

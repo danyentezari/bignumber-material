@@ -53,6 +53,16 @@
           document.documentElement.style.fontSize = "17px";
         }
       })();
+    </script><script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        displayAlign: "left",
+        displayIndent: "0em",
+        TeX: {
+          Macros: {
+            just: ["\\text{#1}", 1]
+          }
+        }
+      });
     </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
@@ -296,9 +306,9 @@
 <h2>
 <span class="header-section-number">306.1</span> Examples<a class="anchor" aria-label="anchor" href="#examples-71"><i class="fas fa-link"></i></a>
 </h2>
-<div id="simple-65" class="section level3" number="306.1.1">
+<div id="simple-66" class="section level3" number="306.1.1">
 <h3>
-<span class="header-section-number">306.1.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple-65"><i class="fas fa-link"></i></a>
+<span class="header-section-number">306.1.1</span> Simple<a class="anchor" aria-label="anchor" href="#simple-66"><i class="fas fa-link"></i></a>
 </h3>
 <p>For <span class="math inline">\(y = (x^{2} + 1)^{3}\)</span>, take <span class="math inline">\(u = x^{2} + 1\)</span> and <span class="math inline">\(y = u^{3}\)</span>.</p>
 <p><span class="math display">\[
@@ -320,9 +330,9 @@
 <span class="math inline">\(\dfrac{dy}{dx}\)</span> is the derivative of the composite.</li>
 </ul>
 </div>
-<div id="general-65" class="section level3" number="306.1.2">
+<div id="general-66" class="section level3" number="306.1.2">
 <h3>
-<span class="header-section-number">306.1.2</span> General<a class="anchor" aria-label="anchor" href="#general-65"><i class="fas fa-link"></i></a>
+<span class="header-section-number">306.1.2</span> General<a class="anchor" aria-label="anchor" href="#general-66"><i class="fas fa-link"></i></a>
 </h3>
 <p>For <span class="math inline">\(T = \dfrac{1}{2}m\left(\dfrac{dx}{dt}\right)^{2}\)</span> with <span class="math inline">\(x = x(t)\)</span>, the chain rule gives</p>
 <p><span class="math display">\[
@@ -347,25 +357,26 @@
 </ul>
 </div>
 </div>
-<div id="references-261" class="section level2" number="306.2">
+<div id="references-262" class="section level2" number="306.2">
 <h2>
-<span class="header-section-number">306.2</span> References<a class="anchor" aria-label="anchor" href="#references-261"><i class="fas fa-link"></i></a>
+<span class="header-section-number">306.2</span> References<a class="anchor" aria-label="anchor" href="#references-262"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
 <li>Stewart, J. <em>Calculus</em>. — chain rule <span class="math inline">\(\dfrac{dF}{dx}=\dfrac{df}{du}\dfrac{dg}{dx}\)</span>; Leibniz form <span class="math inline">\(\dfrac{dy}{dx}=\dfrac{dy}{du}\dfrac{du}{dx}\)</span>; power form <span class="math inline">\(\dfrac{d}{dx}[u^{n}]=nu^{n-1}\dfrac{du}{dx}\)</span>.</li>
 </ol>
 <div class="topic-index">
 <ul>
-<li><a href="basic-derivation-of-jacobian.html">Basic Derivation of Jacobian</a></li>
 <li><a href="chain-rule.html">Chain Rule</a></li>
 <li><a href="cross-product.html">Cross Product</a></li>
 <li><a href="curl.html">Curl</a></li>
 <li><a href="curve.html">Curve</a></li>
 <li><a href="definite-integral.html">Definite Integral</a></li>
+<li><a href="derivation-of-basic-jacobian.html">Derivation of Basic Jacobian</a></li>
 <li><a href="derivation-of-curl.html">Derivation of Curl</a></li>
 <li><a href="derivation-of-divergence.html">Derivation of Divergence</a></li>
 <li><a href="derivation-of-grad.html">Derivation of Grad</a></li>
 <li><a href="derivation-of-jacobian.html">Derivation of Jacobian</a></li>
+<li><a href="derivation-of-legendre-transform.html">Derivation of Legendre Transform</a></li>
 <li><a href="derivation-of-taylor-expansion.html">Derivation of Taylor Expansion</a></li>
 <li><a href="divergence.html">Divergence</a></li>
 <li><a href="dot-product.html">Dot Product</a></li>
@@ -376,7 +387,6 @@
 <li><a href="indefinite-integral.html">Indefinite Integral</a></li>
 <li><a href="jacobian.html">Jacobian</a></li>
 <li><a href="legendre-transform.html">Legendre Transform</a></li>
-<li><a href="legendre-transform-derivation.html">Legendre Transform Derivation</a></li>
 <li><a href="limit.html">Limit</a></li>
 <li><a href="line-integral.html">Line Integral</a></li>
 <li><a href="notes-1.html">Notes</a></li>
@@ -958,7 +968,7 @@
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="basic-derivation-of-jacobian.html"><span class="header-section-number">305</span> Basic Derivation of Jacobian</a></div>
+<div class="prev"><a href="type-qr-tensor.html"><span class="header-section-number">305</span> Type-(q,r) Tensor</a></div>
 <div class="next"><a href="cross-product.html"><span class="header-section-number">307</span> Cross Product</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
@@ -966,11 +976,11 @@
 <li><a class="nav-link" href="#chain-rule"><span class="header-section-number">306</span> Chain Rule</a></li>
 <li>
 <a class="nav-link" href="#examples-71"><span class="header-section-number">306.1</span> Examples</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#simple-65"><span class="header-section-number">306.1.1</span> Simple</a></li>
-<li><a class="nav-link" href="#general-65"><span class="header-section-number">306.1.2</span> General</a></li>
+<li><a class="nav-link" href="#simple-66"><span class="header-section-number">306.1.1</span> Simple</a></li>
+<li><a class="nav-link" href="#general-66"><span class="header-section-number">306.1.2</span> General</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#references-261"><span class="header-section-number">306.2</span> References</a></li>
+<li><a class="nav-link" href="#references-262"><span class="header-section-number">306.2</span> References</a></li>
 </ul>
 
       <div class="book-extra">

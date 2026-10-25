@@ -1,11 +1,11 @@
-# Potential Energy Formula Derivation
+# Derivation of Potential Energy Formula
 
 A derivation of the potential energy formula that is used to obtain $U(x_{2})-U(x_{1})=-\displaystyle\int_{x_{1}}^{x_{2}} F(x)\, dx$ from the work-energy theorem.
 
 Related definitions:
 
-- [Gravitational Potential Energy Formula Derivation](Gravitational-Potential-Energy-Formula-Derivation.md)
-- [Elastic Potential Energy Formula Derivation](Elastic-Potential-Energy-Formula-Derivation.md)
+- [Derivation of Gravitational Potential Energy Formula](Derivation-of-Gravitational-Potential-Energy-Formula.md)
+- [Derivation of Elastic Potential Energy Formula](Derivation-of-Elastic-Potential-Energy-Formula.md)
 
 The work-energy theorem is
 

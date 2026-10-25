@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>311 Derivation of Curl | Mathematics for Physics</title>
+<title>312 Derivation of Curl | Mathematics for Physics</title>
 <meta name="author" content="bignumber-material">
-<meta name="description" content="\(\displaystyle \operatorname{curl} \mathbf{F} = \nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \dfrac{\partial}{\partial...">
+<meta name="description" content="\(\displaystyle \operatorname{curl} \mathbf{F} = \nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \dfrac{\partial}{\partial x} &amp; \dfrac{\partial}{\partial y} &amp;...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="311 Derivation of Curl | Mathematics for Physics">
+<meta property="og:title" content="312 Derivation of Curl | Mathematics for Physics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="\(\displaystyle \operatorname{curl} \mathbf{F} = \nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \dfrac{\partial}{\partial...">
+<meta property="og:description" content="\(\displaystyle \operatorname{curl} \mathbf{F} = \nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \dfrac{\partial}{\partial x} &amp; \dfrac{\partial}{\partial y} &amp;...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="311 Derivation of Curl | Mathematics for Physics">
-<meta name="twitter:description" content="\(\displaystyle \operatorname{curl} \mathbf{F} = \nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \dfrac{\partial}{\partial...">
+<meta name="twitter:title" content="312 Derivation of Curl | Mathematics for Physics">
+<meta name="twitter:description" content="\(\displaystyle \operatorname{curl} \mathbf{F} = \nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \dfrac{\partial}{\partial x} &amp; \dfrac{\partial}{\partial y} &amp;...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -55,6 +55,8 @@
       })();
     </script><script type="text/x-mathjax-config">
       MathJax.Hub.Config({
+        displayAlign: "left",
+        displayIndent: "0em",
         TeX: {
           Macros: {
             just: ["\\text{#1}", 1]
@@ -235,15 +237,11 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="derivation-of-curl" class="section level1" number="311">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="derivation-of-curl" class="section level1" number="312">
 <h1>
-<span class="header-section-number">311</span> Derivation of Curl<a class="anchor" aria-label="anchor" href="#derivation-of-curl"><i class="fas fa-link"></i></a>
+<span class="header-section-number">312</span> Derivation of Curl<a class="anchor" aria-label="anchor" href="#derivation-of-curl"><i class="fas fa-link"></i></a>
 </h1>
-<p><span class="math inline">\(\displaystyle \operatorname{curl}
-\mathbf{F} = \nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} &amp;
-\mathbf{j} &amp; \mathbf{k} \\ \dfrac{\partial}{\partial x} &amp;
-\dfrac{\partial}{\partial y} &amp; \dfrac{\partial}{\partial z} \\ F_{x}
-&amp; F_{y} &amp; F_{z} \end{vmatrix}\)</span></p>
+<p><span class="math inline">\(\displaystyle \operatorname{curl} \mathbf{F} = \nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \dfrac{\partial}{\partial x} &amp; \dfrac{\partial}{\partial y} &amp; \dfrac{\partial}{\partial z} \\ F_{x} &amp; F_{y} &amp; F_{z} \end{vmatrix}\)</span></p>
 <div class="derivation">
 <div class="derivation-row">
 <div class="derivation-math">
@@ -262,23 +260,20 @@ Start from a Cartesian vector field
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\mathbf{F}\)</span> is a vector
-field.</li>
-<li><span class="math inline">\(F_x\)</span> is the <span
-class="math inline">\(x\)</span>-component of <span
-class="math inline">\(\mathbf{F}\)</span>.</li>
-<li><span class="math inline">\(F_y\)</span> is the <span
-class="math inline">\(y\)</span>-component of <span
-class="math inline">\(\mathbf{F}\)</span>.</li>
-<li><span class="math inline">\(F_z\)</span> is the <span
-class="math inline">\(z\)</span>-component of <span
-class="math inline">\(\mathbf{F}\)</span>.</li>
-<li><span class="math inline">\(\mathbf{i}\)</span> is the unit vector
-along <span class="math inline">\(x\)</span>.</li>
-<li><span class="math inline">\(\mathbf{j}\)</span> is the unit vector
-along <span class="math inline">\(y\)</span>.</li>
-<li><span class="math inline">\(\mathbf{k}\)</span> is the unit vector
-along <span class="math inline">\(z\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{F}\)</span> is a vector field.</li>
+<li>
+<span class="math inline">\(F_x\)</span> is the <span class="math inline">\(x\)</span>-component of <span class="math inline">\(\mathbf{F}\)</span>.</li>
+<li>
+<span class="math inline">\(F_y\)</span> is the <span class="math inline">\(y\)</span>-component of <span class="math inline">\(\mathbf{F}\)</span>.</li>
+<li>
+<span class="math inline">\(F_z\)</span> is the <span class="math inline">\(z\)</span>-component of <span class="math inline">\(\mathbf{F}\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{i}\)</span> is the unit vector along <span class="math inline">\(x\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{j}\)</span> is the unit vector along <span class="math inline">\(y\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{k}\)</span> is the unit vector along <span class="math inline">\(z\)</span>.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -306,17 +301,16 @@ Define the three Cartesian differential components
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(X\)</span> is the differential component
-along <span class="math inline">\(x\)</span>.</li>
-<li><span class="math inline">\(Y\)</span> is the differential component
-along <span class="math inline">\(y\)</span>.</li>
-<li><span class="math inline">\(Z\)</span> is the differential component
-along <span class="math inline">\(z\)</span>.</li>
-<li><span class="math inline">\(x\)</span>, <span
-class="math inline">\(y\)</span>, <span class="math inline">\(z\)</span>
-are Cartesian coordinates.</li>
-<li><span class="math inline">\(\partial\)</span> denotes partial
-differentiation.</li>
+<li>
+<span class="math inline">\(X\)</span> is the differential component along <span class="math inline">\(x\)</span>.</li>
+<li>
+<span class="math inline">\(Y\)</span> is the differential component along <span class="math inline">\(y\)</span>.</li>
+<li>
+<span class="math inline">\(Z\)</span> is the differential component along <span class="math inline">\(z\)</span>.</li>
+<li>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>, <span class="math inline">\(z\)</span> are Cartesian coordinates.</li>
+<li>
+<span class="math inline">\(\partial\)</span> denotes partial differentiation.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -336,11 +330,10 @@ Assemble those components into one vector
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\mathbf{R}\)</span> is the resulting
-vector field.</li>
-<li><span class="math inline">\(X\)</span>, <span
-class="math inline">\(Y\)</span>, <span class="math inline">\(Z\)</span>
-are its Cartesian components.</li>
+<li>
+<span class="math inline">\(\mathbf{R}\)</span> is the resulting vector field.</li>
+<li>
+<span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span>, <span class="math inline">\(Z\)</span> are its Cartesian components.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -349,16 +342,13 @@ are its Cartesian components.</li>
 \begin{align*}
 \mathbf{R}
 &amp;=
-\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial
-z}\biggr)\mathbf{i}
+\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
 \\
 &amp;\quad
-+\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial
-x}\biggr)\mathbf{j}
++\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
 \\
 &amp;\quad
-+\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial
-y}\biggr)\mathbf{k}
++\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
 \end{align*}
 \]</span></p>
 </div>
@@ -372,16 +362,13 @@ Substitute the differential components
 \begin{align*}
 \operatorname{curl}\mathbf{F}
 &amp;=
-\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial
-z}\biggr)\mathbf{i}
+\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
 \\
 &amp;\quad
-+\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial
-x}\biggr)\mathbf{j}
++\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
 \\
 &amp;\quad
-+\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial
-y}\biggr)\mathbf{k}
++\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
 \end{align*}
 \]</span></p>
 </div>
@@ -392,8 +379,8 @@ Name this vector the curl of F
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\operatorname{curl}\mathbf{F}\)</span>
-is the curl of <span class="math inline">\(\mathbf{F}\)</span>.</li>
+<li>
+<span class="math inline">\(\operatorname{curl}\mathbf{F}\)</span> is the curl of <span class="math inline">\(\mathbf{F}\)</span>.</li>
 <li>Each coefficient is a Cartesian curl component.</li>
 </ul>
 <div class="derivation">
@@ -422,15 +409,12 @@ Read off the three Cartesian curl components
 </div>
 <p>where</p>
 <ul>
-<li><span
-class="math inline">\((\operatorname{curl}\mathbf{F})_x\)</span> is the
-<span class="math inline">\(x\)</span>-component.</li>
-<li><span
-class="math inline">\((\operatorname{curl}\mathbf{F})_y\)</span> is the
-<span class="math inline">\(y\)</span>-component.</li>
-<li><span
-class="math inline">\((\operatorname{curl}\mathbf{F})_z\)</span> is the
-<span class="math inline">\(z\)</span>-component.</li>
+<li>
+<span class="math inline">\((\operatorname{curl}\mathbf{F})_x\)</span> is the <span class="math inline">\(x\)</span>-component.</li>
+<li>
+<span class="math inline">\((\operatorname{curl}\mathbf{F})_y\)</span> is the <span class="math inline">\(y\)</span>-component.</li>
+<li>
+<span class="math inline">\((\operatorname{curl}\mathbf{F})_z\)</span> is the <span class="math inline">\(z\)</span>-component.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -454,18 +438,14 @@ Write two general Cartesian vectors
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\mathbf{a}\)</span> is the first
-vector.</li>
-<li><span class="math inline">\(\mathbf{b}\)</span> is the second
-vector.</li>
-<li><span class="math inline">\(a_1\)</span>, <span
-class="math inline">\(a_2\)</span>, <span
-class="math inline">\(a_3\)</span> are components of <span
-class="math inline">\(\mathbf{a}\)</span>.</li>
-<li><span class="math inline">\(b_1\)</span>, <span
-class="math inline">\(b_2\)</span>, <span
-class="math inline">\(b_3\)</span> are components of <span
-class="math inline">\(\mathbf{b}\)</span>.</li>
+<li>
+<span class="math inline">\(\mathbf{a}\)</span> is the first vector.</li>
+<li>
+<span class="math inline">\(\mathbf{b}\)</span> is the second vector.</li>
+<li>
+<span class="math inline">\(a_1\)</span>, <span class="math inline">\(a_2\)</span>, <span class="math inline">\(a_3\)</span> are components of <span class="math inline">\(\mathbf{a}\)</span>.</li>
+<li>
+<span class="math inline">\(b_1\)</span>, <span class="math inline">\(b_2\)</span>, <span class="math inline">\(b_3\)</span> are components of <span class="math inline">\(\mathbf{b}\)</span>.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -491,8 +471,8 @@ Form the cross product
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\mathbf{a}\times\mathbf{b}\)</span> is
-the cross product.</li>
+<li>
+<span class="math inline">\(\mathbf{a}\times\mathbf{b}\)</span> is the cross product.</li>
 <li>Each coefficient is a Cartesian component.</li>
 </ul>
 <div class="derivation">
@@ -519,17 +499,14 @@ Define the vector differential operator
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\nabla\)</span> is the vector
-differential operator.</li>
-<li><span class="math inline">\(\dfrac{\partial}{\partial x}\)</span>
-differentiates with respect to <span
-class="math inline">\(x\)</span>.</li>
-<li><span class="math inline">\(\dfrac{\partial}{\partial y}\)</span>
-differentiates with respect to <span
-class="math inline">\(y\)</span>.</li>
-<li><span class="math inline">\(\dfrac{\partial}{\partial z}\)</span>
-differentiates with respect to <span
-class="math inline">\(z\)</span>.</li>
+<li>
+<span class="math inline">\(\nabla\)</span> is the vector differential operator.</li>
+<li>
+<span class="math inline">\(\dfrac{\partial}{\partial x}\)</span> differentiates with respect to <span class="math inline">\(x\)</span>.</li>
+<li>
+<span class="math inline">\(\dfrac{\partial}{\partial y}\)</span> differentiates with respect to <span class="math inline">\(y\)</span>.</li>
+<li>
+<span class="math inline">\(\dfrac{\partial}{\partial z}\)</span> differentiates with respect to <span class="math inline">\(z\)</span>.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -556,16 +533,13 @@ Identify the cross-product factors with nabla and the field
 \begin{align*}
 \nabla\times\mathbf{F}
 &amp;=
-\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial
-z}\biggr)\mathbf{i}
+\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
 \\
 &amp;\quad
-+\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial
-x}\biggr)\mathbf{j}
++\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
 \\
 &amp;\quad
-+\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial
-y}\biggr)\mathbf{k}
++\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
 \end{align*}
 \]</span></p>
 </div>
@@ -590,12 +564,12 @@ Compare with the component form
 </div>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(\nabla\)</span> supplies the
-differential operators.</li>
-<li><span class="math inline">\(\mathbf{F}\)</span> supplies the field
-components.</li>
-<li><span class="math inline">\(\times\)</span> applies the
-cross-product rule.</li>
+<li>
+<span class="math inline">\(\nabla\)</span> supplies the differential operators.</li>
+<li>
+<span class="math inline">\(\mathbf{F}\)</span> supplies the field components.</li>
+<li>
+<span class="math inline">\(\times\)</span> applies the cross-product rule.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -620,10 +594,8 @@ Write the cross product as a determinant
 <p>where</p>
 <ul>
 <li>The first row contains Cartesian unit vectors.</li>
-<li>The second row contains <span
-class="math inline">\(\mathbf{a}\)</span> components.</li>
-<li>The third row contains <span
-class="math inline">\(\mathbf{b}\)</span> components.</li>
+<li>The second row contains <span class="math inline">\(\mathbf{a}\)</span> components.</li>
+<li>The third row contains <span class="math inline">\(\mathbf{b}\)</span> components.</li>
 </ul>
 <div class="derivation">
 <div class="derivation-row">
@@ -634,8 +606,7 @@ class="math inline">\(\mathbf{b}\)</span> components.</li>
 &amp;=
 \begin{vmatrix}
 \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
-\dfrac{\partial}{\partial x} &amp; \dfrac{\partial}{\partial y} &amp;
-\dfrac{\partial}{\partial z} \\
+\dfrac{\partial}{\partial x} &amp; \dfrac{\partial}{\partial y} &amp; \dfrac{\partial}{\partial z} \\
 F_x &amp; F_y &amp; F_z
 \end{vmatrix}
 \end{align*}
@@ -694,18 +665,15 @@ Expand the determinant
 \begin{align*}
 \nabla\times\mathbf{F}
 &amp;=
-\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial
-z}\biggr)\mathbf{i}
+\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
 \\
 &amp;\quad
 -
-\biggl(\dfrac{\partial F_z}{\partial x}-\dfrac{\partial F_x}{\partial
-z}\biggr)\mathbf{j}
+\biggl(\dfrac{\partial F_z}{\partial x}-\dfrac{\partial F_x}{\partial z}\biggr)\mathbf{j}
 \\
 &amp;\quad
 +
-\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial
-y}\biggr)\mathbf{k}
+\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
 \end{align*}
 \]</span></p>
 </div>
@@ -719,18 +687,15 @@ Evaluate the minors
 \begin{align*}
 \nabla\times\mathbf{F}
 &amp;=
-\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial
-z}\biggr)\mathbf{i}
+\biggl(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z}\biggr)\mathbf{i}
 \\
 &amp;\quad
 +
-\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial
-x}\biggr)\mathbf{j}
+\biggl(\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x}\biggr)\mathbf{j}
 \\
 &amp;\quad
 +
-\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial
-y}\biggr)\mathbf{k}
+\biggl(\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\biggr)\mathbf{k}
 \end{align*}
 \]</span></p>
 </div>
@@ -740,67 +705,43 @@ Rearrange the y-component
 </div>
 </div>
 <p>Hence,</p>
-<p><span class="math inline">\(\displaystyle \operatorname{curl}
-\mathbf{F} = \nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} &amp;
-\mathbf{j} &amp; \mathbf{k} \\ \dfrac{\partial}{\partial x} &amp;
-\dfrac{\partial}{\partial y} &amp; \dfrac{\partial}{\partial z} \\ F_{x}
-&amp; F_{y} &amp; F_{z} \end{vmatrix}\)</span></p>
+<p><span class="math inline">\(\displaystyle \operatorname{curl} \mathbf{F} = \nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \dfrac{\partial}{\partial x} &amp; \dfrac{\partial}{\partial y} &amp; \dfrac{\partial}{\partial z} \\ F_{x} &amp; F_{y} &amp; F_{z} \end{vmatrix}\)</span></p>
 <div class="float" id="fig:3d-coordinate-loop-diagram">
-<img src="3d-coordinate-loop-diagram.png"
-alt="A rectangular loop in the yz-plane with corners (0,y,z), (0,y+\Delta y,z), (0,y+\Delta y,z+\Delta z), and (0,y,z+\Delta z). The path is traversed counterclockwise as seen from the positive x-axis." />
-<div class="figcaption">A rectangular loop in the <span
-class="math inline">\(yz\)</span>-plane with corners <span
-class="math inline">\((0,y,z)\)</span>, <span
-class="math inline">\((0,y+\Delta y,z)\)</span>, <span
-class="math inline">\((0,y+\Delta y,z+\Delta z)\)</span>, and <span
-class="math inline">\((0,y,z+\Delta z)\)</span>. The path is traversed
-counterclockwise as seen from the positive <span
-class="math inline">\(x\)</span>-axis.</div>
+<img src="3d-coordinate-loop-diagram.png" alt="A rectangular loop in the yz-plane with corners (0,y,z), (0,y+\Delta y,z), (0,y+\Delta y,z+\Delta z), and (0,y,z+\Delta z). The path is traversed counterclockwise as seen from the positive x-axis."><div class="figcaption">A rectangular loop in the <span class="math inline">\(yz\)</span>-plane with corners <span class="math inline">\((0,y,z)\)</span>, <span class="math inline">\((0,y+\Delta y,z)\)</span>, <span class="math inline">\((0,y+\Delta y,z+\Delta z)\)</span>, and <span class="math inline">\((0,y,z+\Delta z)\)</span>. The path is traversed counterclockwise as seen from the positive <span class="math inline">\(x\)</span>-axis.</div>
 </div>
-<div id="references" class="section level2" number="311.1">
+<div id="references-267" class="section level2" number="312.1">
 <h2>
-<span class="header-section-number">311.1</span> References<a class="anchor" aria-label="anchor" href="#references"><i class="fas fa-link"></i></a>
+<span class="header-section-number">312.1</span> References<a class="anchor" aria-label="anchor" href="#references-267"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li><p>MacCullagh, J. <em>An Essay towards a Dynamical Theory of
-Crystalline Reflexion and Refraction</em>. Transactions of the Royal
-Irish Academy, Vol. XXI. Read 9 December 1839; published 1846.</p></li>
-<li><p>Lunney, J. G. <em>James MacCullagh</em>. Trinity College Dublin,
-2015.</p></li>
-<li><p>Kreyszig, E. <em>Advanced Engineering Mathematics</em>, 10th
-ed. Wiley, 2011.</p></li>
-<li><p>Riley, K. F., Hobson, M. P., &amp; Bence, S. J. <em>Mathematical
-Methods for Physics and Engineering</em>.</p></li>
+<li><p>MacCullagh, J. <em>An Essay towards a Dynamical Theory of Crystalline Reflexion and Refraction</em>. Transactions of the Royal Irish Academy, Vol. XXI. Read 9 December 1839; published 1846.</p></li>
+<li><p>Lunney, J. G. <em>James MacCullagh</em>. Trinity College Dublin, 2015.</p></li>
+<li><p>Kreyszig, E. <em>Advanced Engineering Mathematics</em>, 10th ed. Wiley, 2011.</p></li>
+<li><p>Riley, K. F., Hobson, M. P., &amp; Bence, S. J. <em>Mathematical Methods for Physics and Engineering</em>.</p></li>
 </ol>
 <div class="topic-index">
 <ul>
-<li><a href="basic-derivation-of-jacobian.html">Basic Derivation of
-Jacobian</a></li>
 <li><a href="chain-rule.html">Chain Rule</a></li>
 <li><a href="cross-product.html">Cross Product</a></li>
 <li><a href="curl.html">Curl</a></li>
 <li><a href="curve.html">Curve</a></li>
 <li><a href="definite-integral.html">Definite Integral</a></li>
+<li><a href="derivation-of-basic-jacobian.html">Derivation of Basic Jacobian</a></li>
 <li><a href="derivation-of-curl.html">Derivation of Curl</a></li>
-<li><a href="derivation-of-divergence.html">Derivation of
-Divergence</a></li>
+<li><a href="derivation-of-divergence.html">Derivation of Divergence</a></li>
 <li><a href="derivation-of-grad.html">Derivation of Grad</a></li>
-<li><a href="derivation-of-jacobian.html">Derivation of
-Jacobian</a></li>
-<li><a href="derivation-of-taylor-expansion.html">Derivation of Taylor
-Expansion</a></li>
+<li><a href="derivation-of-jacobian.html">Derivation of Jacobian</a></li>
+<li><a href="derivation-of-legendre-transform.html">Derivation of Legendre Transform</a></li>
+<li><a href="derivation-of-taylor-expansion.html">Derivation of Taylor Expansion</a></li>
 <li><a href="divergence.html">Divergence</a></li>
 <li><a href="dot-product.html">Dot Product</a></li>
-<li><a href="envelope-of-tangent-lines.html">Envelope of Tangent
-Lines</a></li>
+<li><a href="envelope-of-tangent-lines.html">Envelope of Tangent Lines</a></li>
 <li><a href="general-functions.html">General Functions</a></li>
 <li><a href="gradient.html">Gradient</a></li>
 <li><a href="improper-integral.html">Improper Integral</a></li>
 <li><a href="indefinite-integral.html">Indefinite Integral</a></li>
 <li><a href="jacobian.html">Jacobian</a></li>
 <li><a href="legendre-transform.html">Legendre Transform</a></li>
-<li><a href="legendre-transform-derivation.html">Legendre Transform
-Derivation</a></li>
 <li><a href="limit.html">Limit</a></li>
 <li><a href="line-integral.html">Line Integral</a></li>
 <li><a href="notes-1.html">Notes</a></li>
@@ -810,19 +751,14 @@ Derivation</a></li>
 <li><a href="scalar-projection.html">Scalar Projection</a></li>
 <li><a href="smooth-curve.html">Smooth Curve</a></li>
 <li><a href="vector-calculus.html">Vector Calculus</a></li>
-<li><a href="vector-differential-operator.html">Vector Differential
-Operator</a></li>
+<li><a href="vector-differential-operator.html">Vector Differential Operator</a></li>
 <li><a href="vector-field.html">Vector Field</a></li>
 <li><a href="vector-projection.html">Vector Projection</a></li>
 </ul>
 </div>
+
 </div>
 </div>
-
-
-
-
-
 <script>
   (function () {
     var MOON =
@@ -1387,13 +1323,13 @@ Operator</a></li>
     }
   })();
 </script><div class="chapter-nav">
-<div class="prev"><a href="definite-integral.html"><span class="header-section-number">310</span> Definite Integral</a></div>
-<div class="next"><a href="derivation-of-divergence.html"><span class="header-section-number">312</span> Derivation of Divergence</a></div>
+<div class="prev"><a href="derivation-of-basic-jacobian.html"><span class="header-section-number">311</span> Derivation of Basic Jacobian</a></div>
+<div class="next"><a href="derivation-of-divergence.html"><span class="header-section-number">313</span> Derivation of Divergence</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#derivation-of-curl"><span class="header-section-number">311</span> Derivation of Curl</a></li>
-<li><a class="nav-link" href="#references-266"><span class="header-section-number">311.1</span> References</a></li>
+<li><a class="nav-link" href="#derivation-of-curl"><span class="header-section-number">312</span> Derivation of Curl</a></li>
+<li><a class="nav-link" href="#references-267"><span class="header-section-number">312.1</span> References</a></li>
 </ul>
 
       <div class="book-extra">

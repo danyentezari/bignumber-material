@@ -68,10 +68,6 @@
     <lastmod>2026-08-27</lastmod>
   </url>
   <url>
-    <loc>https://book.danyentezari.com/basic-derivation-of-jacobian.html</loc>
-    <lastmod>2026-08-27</lastmod>
-  </url>
-  <url>
     <loc>https://book.danyentezari.com/basis.html</loc>
     <lastmod>2026-08-27</lastmod>
   </url>
@@ -121,7 +117,7 @@
   </url>
   <url>
     <loc>https://book.danyentezari.com/calculus.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-08-31</lastmod>
   </url>
   <url>
     <loc>https://book.danyentezari.com/capacitance.html</loc>
@@ -336,16 +332,28 @@
     <lastmod>2026-08-27</lastmod>
   </url>
   <url>
+    <loc>https://book.danyentezari.com/derivation-of-basic-jacobian.html</loc>
+    <lastmod>2026-08-31</lastmod>
+  </url>
+  <url>
     <loc>https://book.danyentezari.com/derivation-of-curl.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-30</lastmod>
   </url>
   <url>
     <loc>https://book.danyentezari.com/derivation-of-divergence.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://book.danyentezari.com/derivation-of-elastic-potential-energy-formula.html</loc>
+    <lastmod>2026-08-31</lastmod>
   </url>
   <url>
     <loc>https://book.danyentezari.com/derivation-of-grad.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://book.danyentezari.com/derivation-of-gravitational-potential-energy-formula.html</loc>
+    <lastmod>2026-08-31</lastmod>
   </url>
   <url>
     <loc>https://book.danyentezari.com/derivation-of-hamiltonian.html</loc>
@@ -353,7 +361,11 @@
   </url>
   <url>
     <loc>https://book.danyentezari.com/derivation-of-jacobian.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-31</lastmod>
+  </url>
+  <url>
+    <loc>https://book.danyentezari.com/derivation-of-kinetic-energy-formula.html</loc>
+    <lastmod>2026-08-31</lastmod>
   </url>
   <url>
     <loc>https://book.danyentezari.com/derivation-of-lagrangian-1.html</loc>
@@ -362,6 +374,22 @@
   <url>
     <loc>https://book.danyentezari.com/derivation-of-lagrangian.html</loc>
     <lastmod>2026-08-18</lastmod>
+  </url>
+  <url>
+    <loc>https://book.danyentezari.com/derivation-of-legendre-transform.html</loc>
+    <lastmod>2026-08-31</lastmod>
+  </url>
+  <url>
+    <loc>https://book.danyentezari.com/derivation-of-newtonian-kinetic-energy-formula.html</loc>
+    <lastmod>2026-08-31</lastmod>
+  </url>
+  <url>
+    <loc>https://book.danyentezari.com/derivation-of-potential-energy-formula.html</loc>
+    <lastmod>2026-08-31</lastmod>
+  </url>
+  <url>
+    <loc>https://book.danyentezari.com/derivation-of-relativistic-kinetic-energy-formula.html</loc>
+    <lastmod>2026-08-31</lastmod>
   </url>
   <url>
     <loc>https://book.danyentezari.com/derivation-of-taylor-expansion.html</loc>
@@ -454,10 +482,6 @@
   <url>
     <loc>https://book.danyentezari.com/einstein-coefficients.html</loc>
     <lastmod>2026-08-19</lastmod>
-  </url>
-  <url>
-    <loc>https://book.danyentezari.com/elastic-potential-energy-formula-derivation.html</loc>
-    <lastmod>2026-08-18</lastmod>
   </url>
   <url>
     <loc>https://book.danyentezari.com/electric-charge.html</loc>
@@ -616,8 +640,16 @@
     <lastmod>2026-08-19</lastmod>
   </url>
   <url>
+    <loc>https://book.danyentezari.com/fourier-series.html</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://book.danyentezari.com/fourier-stieltjes-coefficients.html</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
     <loc>https://book.danyentezari.com/fourier-transform.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-30</lastmod>
   </url>
   <url>
     <loc>https://book.danyentezari.com/frame.html</loc>
@@ -625,7 +657,7 @@
   </url>
   <url>
     <loc>https://book.danyentezari.com/functional-analysis.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-30</lastmod>
   </url>
   <url>
     <loc>https://book.danyentezari.com/functional.html</loc>
@@ -668,10 +700,6 @@
     <lastmod>2026-07-25</lastmod>
   </url>
   <url>
-    <loc>https://book.danyentezari.com/gravitational-potential-energy-formula-derivation.html</loc>
-    <lastmod>2026-08-18</lastmod>
-  </url>
-  <url>
     <loc>https://book.danyentezari.com/group-theory.html</loc>
     <lastmod>2026-07-22</lastmod>
   </url>
@@ -698,6 +726,10 @@
   <url>
     <loc>https://book.danyentezari.com/hermitian.html</loc>
     <lastmod>2026-08-27</lastmod>
+  </url>
+  <url>
+    <loc>https://book.danyentezari.com/hilbert-space-1.html</loc>
+    <lastmod>2026-09-01</lastmod>
   </url>
   <url>
     <loc>https://book.danyentezari.com/hilbert-space.html</loc>
@@ -820,10 +852,6 @@
     <lastmod>2026-08-27</lastmod>
   </url>
   <url>
-    <loc>https://book.danyentezari.com/kinetic-energy-formula-derivation.html</loc>
-    <lastmod>2026-07-27</lastmod>
-  </url>
-  <url>
     <loc>https://book.danyentezari.com/kinetic-energy.html</loc>
     <lastmod>2026-08-19</lastmod>
   </url>
@@ -838,10 +866,6 @@
   <url>
     <loc>https://book.danyentezari.com/laplace-equation.html</loc>
     <lastmod>2026-08-19</lastmod>
-  </url>
-  <url>
-    <loc>https://book.danyentezari.com/legendre-transform-derivation.html</loc>
-    <lastmod>2026-08-27</lastmod>
   </url>
   <url>
     <loc>https://book.danyentezari.com/legendre-transform.html</loc>
@@ -1040,10 +1064,6 @@
     <lastmod>2026-08-27</lastmod>
   </url>
   <url>
-    <loc>https://book.danyentezari.com/newtonian-kinetic-energy-formula-derivation.html</loc>
-    <lastmod>2026-08-18</lastmod>
-  </url>
-  <url>
     <loc>https://book.danyentezari.com/non-inertial-frames.html</loc>
     <lastmod>2026-08-19</lastmod>
   </url>
@@ -1196,10 +1216,6 @@
     <lastmod>2026-08-19</lastmod>
   </url>
   <url>
-    <loc>https://book.danyentezari.com/potential-energy-formula-derivation.html</loc>
-    <lastmod>2026-08-18</lastmod>
-  </url>
-  <url>
     <loc>https://book.danyentezari.com/potential-energy.html</loc>
     <lastmod>2026-08-19</lastmod>
   </url>
@@ -1327,12 +1343,8 @@
     <lastmod>2026-08-19</lastmod>
   </url>
   <url>
-    <loc>https://book.danyentezari.com/relativistic-kinetic-energy-formula-derivation.html</loc>
-    <lastmod>2026-08-18</lastmod>
-  </url>
-  <url>
     <loc>https://book.danyentezari.com/relativistic-momentum-and-energy.html</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-31</lastmod>
   </url>
   <url>
     <loc>https://book.danyentezari.com/relativistic-momentum.html</loc>
@@ -1443,7 +1455,7 @@
   </url>
   <url>
     <loc>https://book.danyentezari.com/special-relativity.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-31</lastmod>
   </url>
   <url>
     <loc>https://book.danyentezari.com/spectroscopy.html</loc>
